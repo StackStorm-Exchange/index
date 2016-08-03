@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cp pack.yaml ~/packs/packs/"${CIRCLE_PROJECT_REPONAME}".yaml
+git -C ~/packs add .
+git -C ~/packs status
+git -C ~/packs commit -m "Update ${CIRCLE_PROJECT_REPONAME} pack"
+git -C ~/packs push origin

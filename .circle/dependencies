@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git config --global user.name "StackStorm Exchange"
+git config --global user.email "info@stackstorm.com"
+
+sudo pip install -r ~/packs/.circle/requirements.txt
