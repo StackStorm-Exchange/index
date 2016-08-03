@@ -1,0 +1,19 @@
+type: object
+properties:
+  name:
+    type: string
+  description:
+    type: string
+  keywords:
+    type: array
+  version:
+    type: string
+  author:
+    type: string
+  email:
+    type: string
+    format: email
+required:
+  - name
+  - version
+  - author

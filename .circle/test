@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+python ~/packs/.circle/validate.py "${CIRCLE_PROJECT_REPONAME}" pack.yaml ~/packs/.circle/pack.yaml.schema

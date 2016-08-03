@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+git config --global user.name "StackStorm Exchange"
+git config --global user.email "info@stackstorm.com"
+
+# removing broken symlink
+sudo rm -f /usr/local/lib/python2.7/dist-packages/setuptools-3.4.4-py2.7.egg
+
+sudo pip install -U pip setuptools virtualenv
+
+virtualenv ~/virtualenv
+. ~/virtualenv/bin/activate
+
+sudo pip install -r ~/packs/.circle/requirements.txt
