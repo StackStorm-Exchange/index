@@ -1,6 +1,6 @@
 checkout:
   post:
-    - git clone -b v0 https://github.com/stackstorm-exchange/index ~/index
+    - git clone -b master https://github.com/stackstorm-exchange/index ~/index
 
 dependencies:
   override:
