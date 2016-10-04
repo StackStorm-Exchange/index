@@ -2,6 +2,7 @@
 
 set -e
 
-export PACK_NAME=$(
-  python ~/index/.circle/validate.py "${CIRCLE_PROJECT_REPONAME}" pack.yaml ~/index/.circle/pack.yaml.schema
-)
+export PACK_NAME=$(python ~/index/.circle/validate.py "${CIRCLE_PROJECT_REPONAME}" pack.yaml ~/index/.circle/pack.yaml.schema)
+
+echo "Validated $PACK_NAME"
+echo "export PACK_NAME=$PACK_NAME" >> ~/.circlerc
