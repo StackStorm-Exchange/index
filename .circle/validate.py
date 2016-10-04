@@ -45,4 +45,4 @@ if __name__ == '__main__':
     validate_schema(pack_meta, pack_schema)
     validate_repo_name(pack_meta, repo_name)
 
-    os.environ['PACK_NAME'] = pack_meta['name']
+    print pack_meta['name']
