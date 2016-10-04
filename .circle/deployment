@@ -1,7 +1,8 @@
 #!/bin/sh
 
-cp pack.yaml ~/packs/packs/"${CIRCLE_PROJECT_REPONAME}".yaml
-git -C ~/packs add .
-git -C ~/packs status
-git -C ~/packs commit -m "Update ${CIRCLE_PROJECT_REPONAME} pack"
-git -C ~/packs push origin
+cp pack.yaml ~/index/index/v1/packs/"${CIRCLE_PROJECT_REPONAME}".yaml
+python ~/index/.circle/index.py ~/index/index/v1/
+git -C ~/index add .
+git -C ~/index status
+git -C ~/index commit -m "Update ${CIRCLE_PROJECT_REPONAME} pack"
+git -C ~/index push origin
