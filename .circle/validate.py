@@ -14,11 +14,13 @@
 # limitations under the License.
 
 import sys
+import os
 
 import jsonschema
 import yaml
 
 PREFIX = 'stackstorm'
+
 
 def load_yaml_file(path):
     with file(path, 'r') as stream:
@@ -26,8 +28,10 @@ def load_yaml_file(path):
 
     return text
 
+
 def validate_schema(instance, schema):
     return jsonschema.validate(instance, schema)
+
 
 def validate_repo_name(instance, repo_name):
     if '%s-%s' % (PREFIX, pack_meta['name']) != repo_name:
@@ -40,3 +44,5 @@ if __name__ == '__main__':
 
     validate_schema(pack_meta, pack_schema)
     validate_repo_name(pack_meta, repo_name)
+
+    os.environ['PACK_NAME'] = pack_meta['name']
