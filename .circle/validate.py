@@ -18,6 +18,8 @@ import sys
 import jsonschema
 import yaml
 
+PREFIX = 'stackstorm'
+
 def load_yaml_file(path):
     with file(path, 'r') as stream:
         text = yaml.load(stream)
@@ -28,7 +30,7 @@ def validate_schema(instance, schema):
     return jsonschema.validate(instance, schema)
 
 def validate_repo_name(instance, repo_name):
-    if pack_meta['name'] != repo_name:
+    if '%s-%s' % (PREFIX, pack_meta['name']) != repo_name:
         raise ValueError('Pack name is different from repository name.')
 
 if __name__ == '__main__':

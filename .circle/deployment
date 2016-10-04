@@ -2,4 +2,15 @@
 
 set -e
 
-python ~/packs/.circle/deploy.py pack.yaml "${CIRCLE_PROJECT_REPONAME}"
+# TODO: figure out how to make deploy.py rebuild the index.
+# python ~/packs/.circle/deploy.py pack.yaml "${CIRCLE_PROJECT_REPONAME}"
+
+# Move the pack.yaml file to the index
+cp pack.yaml ~/index/index/v1/packs/"${CIRCLE_PROJECT_REPONAME}".yaml
+# Rebuild the index JSON
+python ~/index/.circle/index.py ~/index/index/v1/
+# Commit
+git -C ~/index add .
+git -C ~/index status
+git -C ~/index commit -m "Update ${CIRCLE_PROJECT_REPONAME} pack and rebuild the index."
+git -C ~/index push origin
