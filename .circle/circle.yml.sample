@@ -4,11 +4,11 @@ checkout:
 
 dependencies:
   override:
-    - ~/packs/.circle/dependencies
+    - ~/index/.circle/dependencies
 
 test:
   override:
-    - ~/packs/.circle/test
+    - ~/index/.circle/test
 
 deployment:
   index:

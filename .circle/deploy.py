@@ -21,19 +21,19 @@ import sys
 import requests
 
 EXCHANGE_ORG = 'StackStorm-Exchange'
-INDEX_REPO = 'packs'
+INDEX_REPO = 'index'
 AUTH = (os.environ['MACHINE_USER'], os.environ['MACHINE_PASSWORD'])
 
 
 def get_file(pack_name):
-    url = 'https://api.github.com/repos/{}/{}/contents/packs/{}.yml'.format(
+    url = 'https://api.github.com/repos/{}/{}/contents/index/v1/packs/{}.yaml'.format(
         EXCHANGE_ORG, INDEX_REPO, pack_name
     )
 
     return requests.get(url)
 
 def put_file(pack_name, content, sha=None):
-    url = 'https://api.github.com/repos/{}/{}/contents/packs/{}.yml'.format(
+    url = 'https://api.github.com/repos/{}/{}/contents/index/v1/packs/{}.yaml'.format(
         EXCHANGE_ORG, INDEX_REPO, pack_name
     )
 

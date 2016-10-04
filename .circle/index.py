@@ -8,7 +8,8 @@ def build_index(path):
     packs = {}
     for filename in glob('%s/packs/*.yaml' % path):
       with open(filename, 'r') as pack:
-        packs.append(yaml.load(pack))
+        pack_meta = yaml.load(pack)
+        packs[pack_meta['name']] = pack_meta 
     with open('%s/index.json' % path, 'w') as outfile:
         json.dump(packs, outfile)
 
