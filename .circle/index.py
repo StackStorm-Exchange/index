@@ -13,7 +13,7 @@ def build_index(path):
     for filename in glob('%s/packs/*.yaml' % path):
         with open(filename, 'r') as pack:
             pack_meta = yaml.load(pack)
-        pack_meta['repo_url'] = 'https://github.org/%s/%s-%s' % (
+        pack_meta['repo_url'] = 'https://github.com/%s/%s-%s' % (
             EXCHANGE_NAME, EXCHANGE_PREFIX, pack_meta['name']
         )
         packs[pack_meta['name']] = pack_meta 
