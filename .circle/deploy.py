@@ -32,6 +32,7 @@ def get_file(pack_name):
 
     return requests.get(url)
 
+
 def put_file(pack_name, content, sha=None):
     url = 'https://api.github.com/repos/{}/{}/contents/index/v1/packs/{}.yaml'.format(
         EXCHANGE_ORG, INDEX_REPO, pack_name
@@ -46,6 +47,7 @@ def put_file(pack_name, content, sha=None):
         payload['sha'] = sha
 
     return requests.put(url, json=payload, auth=AUTH)
+
 
 def calculate_git_sha(content):
     sha = hashlib.sha1()
