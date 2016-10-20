@@ -19,17 +19,23 @@ This is a simplified index example:
 
 ```
 {
-  "aws": {
-    "name": "aws",
-    "version": "0.0.1",
-    <other metadata from pack.yaml>
-    "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws/"
+  "metadata": {
+    "generated_ts": 1476974445,
+    "hash": "79c790a6ca3c22783f4adabd5c163059",
   },
-  "sensu": {
-    "name": "sensu",
-    "version": "0.3.7",
-    <other metadata from pack.yaml>
-    "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu/"
+  "packs": {
+    "aws": {
+      "name": "aws",
+      "version": "0.0.1",
+      <other metadata from pack.yaml>
+      "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws/"
+    },
+    "sensu": {
+      "name": "sensu",
+      "version": "0.3.7",
+      <other metadata from pack.yaml>
+      "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu/"
+    }
   }
 }
 ```
