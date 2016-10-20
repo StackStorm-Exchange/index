@@ -1,98 +1,104 @@
 {
-    "jira": {
-        "version": 0.3, 
-        "name": "jira", 
-        "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira", 
-        "author": "st2-dev", 
-        "keywords": [
-            "issues", 
-            "ticket management", 
-            "project management"
-        ], 
-        "email": "info@stackstorm.com", 
-        "description": "st2 content pack containing jira integrations"
-    }, 
-    "github": {
-        "version": 0.4, 
-        "name": "github", 
-        "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-github", 
-        "author": "st2-dev", 
-        "keywords": [
-            "github", 
-            "git", 
-            "scm"
-        ], 
-        "email": "info@stackstorm.com", 
-        "description": "st2 content pack containing github integrations"
-    }, 
-    "sensu": {
-        "version": "0.1.0", 
-        "name": "sensu", 
-        "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu", 
-        "author": "st2-dev", 
-        "keywords": [
-            "sensu", 
-            "monitoring", 
-            "alerting"
-        ], 
-        "email": "info@stackstorm.com", 
-        "description": "st2 content pack containing sensu integrations"
-    }, 
-    "aws": {
-        "version": "0.6.5", 
-        "name": "aws", 
-        "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws", 
-        "author": "st2-dev", 
-        "keywords": [
-            "aws", 
-            "amazon web services", 
-            "amazon", 
-            "ec2", 
-            "sqs", 
-            "sns", 
-            "route53", 
-            "cloud", 
-            "iam", 
-            "vpc", 
-            "s3", 
-            "CloudFormation", 
-            "RDS", 
-            "SQS"
-        ], 
-        "email": "info@stackstorm.com", 
-        "description": "st2 content pack containing Amazon Web Services integrations."
-    }, 
-    "test": {
-        "version": "0.4", 
-        "name": "test", 
-        "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-test", 
-        "author": "st2-dev", 
-        "keywords": [
-            "some", 
-            "search", 
-            "another", 
-            "terms"
-        ], 
-        "email": "info@stackstorm.com", 
-        "description": "st2 pack to test package management pipeline"
-    }, 
-    "cloudflare": {
-        "version": "0.3", 
-        "name": "cloudflare", 
-        "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare", 
-        "author": "Jon Middleton", 
-        "keywords": [
-            "cloudflare"
-        ], 
-        "email": "jon.middleton@pulsant.com", 
-        "description": "A pack to interact with the Cloudflare service."
-    }, 
-    "powerpoint": {
-        "description": "The bestest pack on Earth!!111!1", 
-        "author": "Anthony Shaw", 
-        "version": "genericversionstring", 
-        "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerpoint", 
-        "email": "anthonyshaw@apache.org", 
-        "name": "powerpoint"
+    "metadata": {
+        "generated_ts": 1476985684,
+        "hash": "4e3e6a87f515b1dc89526bc144568c47"
+    },
+    "packs": {
+        "aws": {
+            "author": "st2-dev",
+            "description": "st2 content pack containing Amazon Web Services integrations.",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "aws",
+                "amazon web services",
+                "amazon",
+                "ec2",
+                "sqs",
+                "sns",
+                "route53",
+                "cloud",
+                "iam",
+                "vpc",
+                "s3",
+                "CloudFormation",
+                "RDS",
+                "SQS"
+            ],
+            "name": "aws",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
+            "version": "0.6.5"
+        },
+        "cloudflare": {
+            "author": "Jon Middleton",
+            "description": "A pack to interact with the Cloudflare service.",
+            "email": "jon.middleton@pulsant.com",
+            "keywords": [
+                "cloudflare"
+            ],
+            "name": "cloudflare",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
+            "version": "0.3"
+        },
+        "github": {
+            "author": "st2-dev",
+            "description": "st2 content pack containing github integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "github",
+                "git",
+                "scm"
+            ],
+            "name": "github",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-github",
+            "version": 0.4
+        },
+        "jira": {
+            "author": "st2-dev",
+            "description": "st2 content pack containing jira integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "issues",
+                "ticket management",
+                "project management"
+            ],
+            "name": "jira",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira",
+            "version": 0.3
+        },
+        "powerpoint": {
+            "author": "Anthony Shaw",
+            "description": "The bestest pack on Earth!!111!1",
+            "email": "anthonyshaw@apache.org",
+            "name": "powerpoint",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerpoint",
+            "version": "genericversionstring"
+        },
+        "sensu": {
+            "author": "st2-dev",
+            "description": "st2 content pack containing sensu integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "sensu",
+                "monitoring",
+                "alerting"
+            ],
+            "name": "sensu",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu",
+            "version": "0.1.0"
+        },
+        "test": {
+            "author": "st2-dev",
+            "description": "st2 pack to test package management pipeline",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "some",
+                "search",
+                "another",
+                "terms"
+            ],
+            "name": "test",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-test",
+            "version": "0.4"
+        }
     }
 }
