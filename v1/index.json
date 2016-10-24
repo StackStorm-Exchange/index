@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477316283,
-        "hash": "f85bea8a35409fd6ef384dd6762bad66"
+        "generated_ts": 1477316330,
+        "hash": "db91b3e5dd5239c0e3b246ea31d2da2a"
     },
     "packs": {
         "aws": {
@@ -456,6 +456,18 @@
             "name": "vdx",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx",
             "version": "0.0.1"
+        },
+        "victorops": {
+            "author": "Aamir",
+            "description": "Packs which allows integration with Victorops events.",
+            "email": "raza.aamir01@gmail.com",
+            "keywords": [
+                "victorps integration",
+                "open, ack and resolve incidents"
+            ],
+            "name": "victorops",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-victorops",
+            "version": "0.1.0"
         }
     }
 }
