@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477315619,
-        "hash": "d4fe0c89987060fca0da8cc39493546f"
+        "generated_ts": 1477315742,
+        "hash": "24698f2a03227a9d3c7c3a0a9f77c28c"
     },
     "packs": {
         "aws": {
@@ -401,6 +401,14 @@
             "name": "slack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
             "version": "0.2.1"
+        },
+        "st2": {
+            "author": "st2-dev",
+            "description": "StackStorm pack management",
+            "email": "info@stackstorm.com",
+            "name": "st2",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
+            "version": "0.1.2"
         },
         "test": {
             "author": "st2-dev",
