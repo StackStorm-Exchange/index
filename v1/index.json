@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477314775,
-        "hash": "4aeeae04c7e74936477affe853d4c569"
+        "generated_ts": 1477314941,
+        "hash": "3dc34bd2c7018eba3160f0c4e23377ac"
     },
     "packs": {
         "aws": {
@@ -293,6 +293,20 @@
             "name": "openhab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openhab",
             "version": "0.1.0"
+        },
+        "orion": {
+            "author": "Jon Middleton",
+            "description": "Intergrate via the OrionSDK to SolarWinds Orion",
+            "email": "jon.middleton@pulsant.com",
+            "keywords": [
+                "solarwinds",
+                "orion",
+                "ncm",
+                "npm"
+            ],
+            "name": "orion",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-orion",
+            "version": "0.5.0"
         },
         "powerpoint": {
             "author": "Anthony Shaw",
