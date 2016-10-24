@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477316393,
-        "hash": "e4596da9b96763222b416c0ef4642efa"
+        "generated_ts": 1477316542,
+        "hash": "93b4e74b47979096efaa33163f8244c4"
     },
     "packs": {
         "aws": {
@@ -476,6 +476,14 @@
             "name": "victorops",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-victorops",
             "version": "0.1.0"
+        },
+        "vsphere": {
+            "author": "Paul Mulvihill",
+            "description": "st2 content pack containing vsphere integrations.",
+            "email": "paul.mulvihill@pulsant.com",
+            "name": "vsphere",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
+            "version": "0.4.3"
         }
     }
 }
