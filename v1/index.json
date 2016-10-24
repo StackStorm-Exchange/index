@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477315402,
-        "hash": "c15510d09d3c419b97ea40df3aa3dcd3"
+        "generated_ts": 1477315418,
+        "hash": "e2708120612dbc962d5636e6a427879d"
     },
     "packs": {
         "aws": {
@@ -371,6 +371,14 @@
             "name": "sensu",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu",
             "version": "0.1.0"
+        },
+        "servicenow": {
+            "author": "James Fryman",
+            "description": "ServiceNow Integration Pack",
+            "email": "james@stackstorm.com",
+            "name": "servicenow",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
+            "version": "0.2.0"
         },
         "test": {
             "author": "st2-dev",
