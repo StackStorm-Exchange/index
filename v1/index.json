@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477315791,
-        "hash": "9d03c3ae2e9738722afd404c0f808a84"
+        "generated_ts": 1477315985,
+        "hash": "4bfac82c72f85a51a71b6dffd1267b14"
     },
     "packs": {
         "aws": {
@@ -434,6 +434,20 @@
             "name": "test",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-test",
             "version": "0.4"
+        },
+        "trello": {
+            "author": "James Fryman",
+            "description": "Integration with Trello, Web based Project Management",
+            "email": "james@stackstorm.com",
+            "keywords": [
+                "trello",
+                "kanban",
+                "productivity",
+                "collaboration"
+            ],
+            "name": "trello",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-trello",
+            "version": "0.2.0"
         }
     }
 }
