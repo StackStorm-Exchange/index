@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477315514,
-        "hash": "02ee2b7649fb1c53282ce206de3f0bf0"
+        "generated_ts": 1477315619,
+        "hash": "d4fe0c89987060fca0da8cc39493546f"
     },
     "packs": {
         "aws": {
@@ -387,6 +387,20 @@
             "name": "servicenow",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
             "version": "0.2.0"
+        },
+        "slack": {
+            "author": "st2-dev",
+            "description": "st2 content pack containing slack integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "slack",
+                "chat",
+                "messaging",
+                "instant messaging"
+            ],
+            "name": "slack",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
+            "version": "0.2.1"
         },
         "test": {
             "author": "st2-dev",
