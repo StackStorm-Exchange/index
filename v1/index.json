@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477315058,
-        "hash": "9d22afd768b2ce8fdb22a63c4ecd6a77"
+        "generated_ts": 1477315112,
+        "hash": "857968ff70011907d40c1e1d7ffcc6c6"
     },
     "packs": {
         "aws": {
@@ -307,6 +307,20 @@
             "name": "orion",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-orion",
             "version": "0.5.0"
+        },
+        "packer": {
+            "author": "James Fryman",
+            "description": "Hashicorp Packer builder integration",
+            "email": "james@stackstorm.com",
+            "keywords": [
+                "packer",
+                "provisioning",
+                "pipeline",
+                "hashicorp"
+            ],
+            "name": "packer",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packer",
+            "version": "0.1.0"
         },
         "powerpoint": {
             "author": "Anthony Shaw",
