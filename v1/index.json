@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1477315131,
-        "hash": "f1307bc93b7cb45b97c4d3ae9cd4b7ec"
+        "generated_ts": 1477315402,
+        "hash": "c15510d09d3c419b97ea40df3aa3dcd3"
     },
     "packs": {
         "aws": {
@@ -345,6 +345,19 @@
             "name": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
             "version": "0.1.1"
+        },
+        "salt": {
+            "author": "jcockhren",
+            "description": "st2 salt integration pack",
+            "email": "jurnell@sophicware.com",
+            "keywords": [
+                "salt",
+                "cfg management",
+                "configuration management"
+            ],
+            "name": "salt",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-salt",
+            "version": "0.4.4"
         },
         "sensu": {
             "author": "st2-dev",
