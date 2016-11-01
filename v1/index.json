@@ -1,11 +1,19 @@
 {
     "metadata": {
-        "generated_ts": 1477730130,
-        "hash": "fec44a091abe5c247d14849db924fe5d"
+        "generated_ts": 1477999734,
+        "hash": "a247010d68f1fa46489bea23d40d6419"
     },
     "packs": {
         "aws": {
             "author": "st2-dev",
+            "content": {
+                "actions": {
+                    "count": 637
+                },
+                "sensors": {
+                    "count": 2
+                }
+            },
             "description": "st2 content pack containing Amazon Web Services integrations.",
             "email": "info@stackstorm.com",
             "keywords": [
