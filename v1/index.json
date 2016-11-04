@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1478246451,
-        "hash": "1ef9aa2d4809235fd2d2ec4bf9b000e9"
+        "generated_ts": 1478246488,
+        "hash": "fd83485b3983e440593471ec3d4425cd"
     },
     "packs": {
         "aws": {
@@ -292,6 +292,11 @@
         },
         "nest": {
             "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 11
+                }
+            },
             "description": "StackStorm integration with Nest Thermostats",
             "email": "james@stackstorm.com",
             "name": "nest",
