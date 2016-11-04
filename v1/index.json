@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1478246617,
-        "hash": "35e792b9d026b6c15fd2a79ad45acba9"
+        "generated_ts": 1478250611,
+        "hash": "2e455648d3f52177fa5a098ba89e97b2"
     },
     "packs": {
         "aws": {
@@ -102,6 +102,17 @@
         },
         "duo": {
             "author": "Jon Middleton",
+            "content": {
+                "actions": {
+                    "count": 6
+                },
+                "aliases": {
+                    "count": 4
+                },
+                "tests": {
+                    "count": 4
+                }
+            },
             "description": "Use Duo 2FA authenication with StackStorm actions.",
             "email": "jon.middleton@pulsant.com",
             "keywords": [
