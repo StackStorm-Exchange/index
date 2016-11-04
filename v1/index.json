@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1478246333,
-        "hash": "0e17a34214f589b52b5c4362d9fadd70"
+        "generated_ts": 1478246451,
+        "hash": "1ef9aa2d4809235fd2d2ec4bf9b000e9"
     },
     "packs": {
         "aws": {
@@ -482,6 +482,14 @@
         },
         "vdx": {
             "author": "st2-dev",
+            "content": {
+                "actions": {
+                    "count": 55
+                },
+                "tests": {
+                    "count": 52
+                }
+            },
             "description": "Brocade VDX integration pack.",
             "email": "info@stackstorm.com",
             "name": "vdx",
