@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1478246488,
-        "hash": "fd83485b3983e440593471ec3d4425cd"
+        "generated_ts": 1478246617,
+        "hash": "35e792b9d026b6c15fd2a79ad45acba9"
     },
     "packs": {
         "aws": {
@@ -270,6 +270,14 @@
         },
         "mqtt": {
             "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
             "description": "MQTT Integration for StackStorm",
             "email": "james@stackstorm.com",
             "name": "mqtt",
