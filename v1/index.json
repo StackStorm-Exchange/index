@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1478246211,
-        "hash": "56071acc932b3317d7cfd0ffa84fe9be"
+        "generated_ts": 1478246333,
+        "hash": "0e17a34214f589b52b5c4362d9fadd70"
     },
     "packs": {
         "aws": {
@@ -502,6 +502,14 @@
         },
         "vsphere": {
             "author": "Paul Mulvihill",
+            "content": {
+                "actions": {
+                    "count": 21
+                },
+                "tests": {
+                    "count": 12
+                }
+            },
             "description": "st2 content pack containing vsphere integrations.",
             "email": "paul.mulvihill@pulsant.com",
             "name": "vsphere",
