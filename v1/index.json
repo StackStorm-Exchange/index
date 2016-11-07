@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1478537942,
-        "hash": "b825a3f897f0e18147c9afc3dec458de"
+        "generated_ts": 1478539242,
+        "hash": "58bcb281aac96e9329d74887ef40c8f3"
     },
     "packs": {
         "aws": {
@@ -470,7 +470,11 @@
         },
         "test": {
             "author": "st2-dev",
-            "content": {},
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
             "description": "st2 pack to test package management pipeline",
             "email": "info@stackstorm.com",
             "keywords": [
