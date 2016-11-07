@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1478539801,
-        "hash": "236b855cb06360aa9513b4091af95031"
+        "generated_ts": 1478548869,
+        "hash": "3eadc24e3575301c0f9a048a16222332"
     },
     "packs": {
         "aws": {
@@ -257,6 +257,37 @@
             "email": "james@stackstorm.com",
             "name": "lastline",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-lastline",
+            "version": "0.1.0"
+        },
+        "libcloud": {
+            "author": "st2-dev",
+            "content": {
+                "actions": {
+                    "count": 29
+                }
+            },
+            "description": "st2 content pack containing libcloud integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "libcloud",
+                "cloud",
+                "dns",
+                "dnsaas",
+                "lbaas",
+                "load balancers",
+                "aws",
+                "amazon",
+                "s3",
+                "ec2",
+                "rackspace",
+                "cloudstack",
+                "openstack",
+                "cloudsigma",
+                "gce",
+                "google compute engine"
+            ],
+            "name": "libcloud",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
             "version": "0.1.0"
         },
         "librato": {
