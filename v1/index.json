@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1478548869,
-        "hash": "3eadc24e3575301c0f9a048a16222332"
+        "generated_ts": 1478548911,
+        "hash": "86ef09eb5fecaae7bf0b049920fbb873"
     },
     "packs": {
         "aws": {
@@ -35,6 +35,22 @@
             "name": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
             "version": "0.6.5"
+        },
+        "bitcoin": {
+            "author": "st2-dev",
+            "content": {
+                "actions": {
+                    "count": 3
+                }
+            },
+            "description": "bitcoin integration pack",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "bitcoin"
+            ],
+            "name": "bitcoin",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitcoin",
+            "version": "0.1.0"
         },
         "cloudflare": {
             "author": "Jon Middleton",
