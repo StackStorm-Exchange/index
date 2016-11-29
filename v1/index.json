@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403424,
-        "hash": "c134562d92bd11e245ce93e3dd262eec"
+        "generated_ts": 1480403655,
+        "hash": "2692ece83075126ee578f19ba99d406f"
     },
     "packs": {
         "Circle CI": {
@@ -414,6 +414,20 @@
             "ref": "fireeye",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fireeye",
             "version": "0.2.0"
+        },
+        "fpm": {
+            "author": "jfryman",
+            "content": {
+                "actions": {
+                    "count": 15
+                }
+            },
+            "description": "fpm",
+            "email": "jfryman@FryBook-2.local",
+            "name": "fpm",
+            "ref": "fpm",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fpm",
+            "version": "0.1.0"
         },
         "freight": {
             "author": "James Fryman",
