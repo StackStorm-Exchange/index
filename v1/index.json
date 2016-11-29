@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402592,
-        "hash": "29eb8469e0922226deae15cbafe373d7"
+        "generated_ts": 1480402763,
+        "hash": "8969425ec3436cafa8b474ae7f176802"
     },
     "packs": {
         "Circle CI": {
@@ -298,6 +298,29 @@
             "ref": "docker",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-docker",
             "version": "0.1.0"
+        },
+        "dripstat": {
+            "author": "James Fryman",
+            "content": {
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Integration with the Dripstat Application Performance Monitoring tool",
+            "email": "james@fryman.io",
+            "keywords": [
+                "dripstat",
+                "java",
+                "monitoring",
+                "performance monitoring"
+            ],
+            "name": "dripstat",
+            "ref": "dripstat",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-dripstat",
+            "version": "0.2.0"
         },
         "duo": {
             "author": "Jon Middleton",
