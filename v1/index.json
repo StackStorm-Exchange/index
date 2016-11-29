@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480400983,
-        "hash": "3ff3ab4f881064b2739c8ca8c1b689bb"
+        "generated_ts": 1480400990,
+        "hash": "65a371318039853f95fb1ce9d4d7a642"
     },
     "packs": {
         "azure": {
@@ -25,6 +25,23 @@
             "name": "azure",
             "ref": "azure",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
+            "version": "0.1.0"
+        },
+        "bitcoin": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 3
+                }
+            },
+            "description": "bitcoin integration pack",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "bitcoin"
+            ],
+            "name": "bitcoin",
+            "ref": "bitcoin",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitcoin",
             "version": "0.1.0"
         },
         "reamaze": {
