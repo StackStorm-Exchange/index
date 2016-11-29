@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401389,
-        "hash": "e9f47c84cf9b5b1b469b917b198ed875"
+        "generated_ts": 1480401475,
+        "hash": "7976b64b5a853d271c2769416c258ee5"
     },
     "packs": {
         "Circle CI": {
@@ -116,6 +116,32 @@
             "ref": "chef",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-chef",
             "version": "0.1.1"
+        },
+        "clicrud": {
+            "author": "davidjohngee",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "aliases": {
+                    "count": 3
+                },
+                "rules": {
+                    "count": 5
+                }
+            },
+            "description": "CLICRUD integration for ST2",
+            "email": "david.gee@ipengineer.net",
+            "keywords": [
+                "icx",
+                "mlx",
+                "cli",
+                "clicrud"
+            ],
+            "name": "clicrud",
+            "ref": "clicrud",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-clicrud",
+            "version": "0.2.0"
         },
         "libcloud": {
             "author": "StackStorm, Inc.",
