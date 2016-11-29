@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480412923,
-        "hash": "f75b7311af3e7a9b720f41f0816acd7b"
+        "generated_ts": 1480422537,
+        "hash": "1ac8af038fdefd030d5fa189c3c10fe1"
     },
     "packs": {
         "Circle CI": {
@@ -1274,6 +1274,19 @@
             "ref": "openhab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openhab",
             "version": "0.2.0"
+        },
+        "openstack": {
+            "author": "st2dev",
+            "content": {
+                "actions": {
+                    "count": 158
+                }
+            },
+            "description": "OpenStack integration pack",
+            "email": "info@stackstorm.com",
+            "name": "openstack",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openstack",
+            "version": "0.1.0"
         },
         "opscenter": {
             "author": "StackStorm, Inc.",
