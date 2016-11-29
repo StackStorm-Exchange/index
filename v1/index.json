@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480412063,
-        "hash": "75a9a4e2c3e0d95615a99c7c7d0e4103"
+        "generated_ts": 1480412119,
+        "hash": "4a9ac3d98097a03695912370aadb2490"
     },
     "packs": {
         "Circle CI": {
@@ -1295,6 +1295,32 @@
             "name": "opscenter",
             "ref": "opscenter",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opscenter",
+            "version": "0.2.0"
+        },
+        "opsgenie": {
+            "author": "Jon Middleton",
+            "content": {
+                "actions": {
+                    "count": 22
+                },
+                "aliases": {
+                    "count": 2
+                },
+                "rules": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 22
+                }
+            },
+            "description": "A integration pack for the OpsGenie Service",
+            "email": "jon.middleton@pulsant.com",
+            "keywords": [
+                "OpsGenie"
+            ],
+            "name": "opsgenie",
+            "ref": "opsgenie",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opsgenie",
             "version": "0.2.0"
         },
         "orion": {
