@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480407876,
-        "hash": "c13ade3d418ec3a0aa442d4bb7110204"
+        "generated_ts": 1480408105,
+        "hash": "bfddca708d7aa25f3d1cdbe259937fe3"
     },
     "packs": {
         "Circle CI": {
@@ -664,6 +664,24 @@
             "ref": "github",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-github",
             "version": "0.6.0"
+        },
+        "google": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing google integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "google",
+                "search"
+            ],
+            "name": "google",
+            "ref": "google",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-google",
+            "version": "0.1.1"
         },
         "hue": {
             "author": "James Fryman",
