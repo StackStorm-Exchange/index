@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480404113,
-        "hash": "a410639748a0a3e3e3c2795b566cd5a4"
+        "generated_ts": 1480404154,
+        "hash": "3ba6fad86f43274e9bc05a8f4c301911"
     },
     "packs": {
         "Circle CI": {
@@ -618,6 +618,20 @@
             "name": "trello",
             "ref": "trello",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-trello",
+            "version": "0.2.0"
+        },
+        "twilio": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing twilio integrations",
+            "email": "info@stackstorm.com",
+            "name": "twilio",
+            "ref": "twilio",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-twilio",
             "version": "0.2.0"
         },
         "twitter": {
