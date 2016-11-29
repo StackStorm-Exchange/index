@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403363,
-        "hash": "7dcf6c520dc770d5c7a06b613ddf582d"
+        "generated_ts": 1480403424,
+        "hash": "c134562d92bd11e245ce93e3dd262eec"
     },
     "packs": {
         "Circle CI": {
@@ -560,6 +560,36 @@
             "ref": "urbandict",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-urbandict",
             "version": "0.1.0"
+        },
+        "vadc": {
+            "author": "mbodding",
+            "content": {
+                "actions": {
+                    "count": 28
+                },
+                "aliases": {
+                    "count": 13
+                },
+                "rules": {
+                    "count": 5
+                },
+                "sensors": {
+                    "count": 2
+                }
+            },
+            "description": "Brocade vADC actions",
+            "email": "mbodding@brocade.com",
+            "keywords": [
+                "brocade",
+                "vadc",
+                "vtm",
+                "bsd",
+                "loadbalancer"
+            ],
+            "name": "vadc",
+            "ref": "vadc",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vadc",
+            "version": "0.2.0"
         },
         "vault": {
             "author": "steve.neuharth",
