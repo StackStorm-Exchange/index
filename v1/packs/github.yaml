@@ -1,0 +1,21 @@
+ref: github
+name: github
+description: st2 content pack containing github integrations
+keywords:
+- github
+- git
+- scm
+version: 0.6.0
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 20
+  aliases:
+    count: 7
+  rules:
+    count: 1
+  sensors:
+    count: 1
+  tests:
+    count: 21

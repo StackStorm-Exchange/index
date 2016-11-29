@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480407780,
-        "hash": "6c9cd57b66934d0280c28a6a24bfecf5"
+        "generated_ts": 1480407876,
+        "hash": "c13ade3d418ec3a0aa442d4bb7110204"
     },
     "packs": {
         "Circle CI": {
@@ -633,6 +633,37 @@
             "ref": "git",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
             "version": "0.3.0"
+        },
+        "github": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 20
+                },
+                "aliases": {
+                    "count": 7
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 21
+                }
+            },
+            "description": "st2 content pack containing github integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "github",
+                "git",
+                "scm"
+            ],
+            "name": "github",
+            "ref": "github",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-github",
+            "version": "0.6.0"
         },
         "hue": {
             "author": "James Fryman",
