@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410179,
-        "hash": "f181527cba2a8b78f6da120a2478a9c4"
+        "generated_ts": 1480410197,
+        "hash": "8f460aa68aa68021ae36e485292b51e3"
     },
     "packs": {
         "Circle CI": {
@@ -1187,6 +1187,24 @@
             "ref": "powerpoint",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerpoint",
             "version": "0.1.0"
+        },
+        "qualys": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 9
+                }
+            },
+            "description": "Qualys Cloud Security Services integration pack",
+            "email": "anthony.shaw@dimensiondata.com",
+            "keywords": [
+                "security",
+                "qualys"
+            ],
+            "name": "qualys",
+            "ref": "qualys",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-qualys",
+            "version": "1.0.0"
         },
         "rabbitmq": {
             "author": "StackStorm, Inc.",
