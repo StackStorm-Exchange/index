@@ -1,9 +1,32 @@
 {
     "metadata": {
-        "generated_ts": 1480400823,
-        "hash": "362ba66f685bdd4d5c73434eeb33411e"
+        "generated_ts": 1480400983,
+        "hash": "3ff3ab4f881064b2739c8ca8c1b689bb"
     },
     "packs": {
+        "azure": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 13
+                }
+            },
+            "description": "st2 content pack containing Microsoft Azure integrations.",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "microsoft",
+                "azure",
+                "cloud",
+                "libcloud",
+                "servers",
+                "virtual machines",
+                "azure virtual machines"
+            ],
+            "name": "azure",
+            "ref": "azure",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
+            "version": "0.1.0"
+        },
         "reamaze": {
             "author": "James Fryman",
             "content": {
