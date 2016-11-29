@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401721,
-        "hash": "0a0d0377e2e981c6e856d08752ed2e7c"
+        "generated_ts": 1480401906,
+        "hash": "9deff0c86aecc7744713f02974276eb4"
     },
     "packs": {
         "Circle CI": {
@@ -178,6 +178,25 @@
             "ref": "clicrud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-clicrud",
             "version": "0.2.0"
+        },
+        "datadog": {
+            "author": "Lisa Bekdache",
+            "content": {
+                "actions": {
+                    "count": 51
+                }
+            },
+            "description": "datadog",
+            "email": "lisa.bekdache@dailymotion.com",
+            "keywords": [
+                "monitoring",
+                "alerting",
+                "saas"
+            ],
+            "name": "datadog",
+            "ref": "datadog",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-datadog",
+            "version": "0.0.2"
         },
         "libcloud": {
             "author": "StackStorm, Inc.",
