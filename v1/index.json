@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480407773,
-        "hash": "33eca0a08faa043806df08e6a8f8afe9"
+        "generated_ts": 1480407775,
+        "hash": "b9380d6de8894f06e3527b71e71b11c0"
     },
     "packs": {
         "Circle CI": {
@@ -652,6 +652,28 @@
             "ref": "hue",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hue",
             "version": "0.0.2"
+        },
+        "ipcam": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing integration for various home IP cams",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "ipcam",
+                "ip cam",
+                "ip camera",
+                "camera",
+                "smart home",
+                "home automation"
+            ],
+            "name": "ipcam",
+            "ref": "ipcam",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ipcam",
+            "version": "0.1.0"
         },
         "jmx": {
             "author": "StackStorm, Inc.",
