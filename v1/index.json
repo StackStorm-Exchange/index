@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408736,
-        "hash": "0ed97d590cceecbb340abdfbc5b6c86b"
+        "generated_ts": 1480408973,
+        "hash": "8ace60f4df9b51cbae9c9c6ded625fa3"
     },
     "packs": {
         "Circle CI": {
@@ -946,6 +946,23 @@
             "ref": "opscenter",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opscenter",
             "version": "0.2.0"
+        },
+        "packagecloud": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 7
+                }
+            },
+            "description": "packagecloud integration pack",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "packagecloud"
+            ],
+            "name": "packagecloud",
+            "ref": "packagecloud",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packagecloud",
+            "version": "0.4.0"
         },
         "packer": {
             "author": "James Fryman",
