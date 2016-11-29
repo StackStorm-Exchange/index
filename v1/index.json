@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402818,
-        "hash": "4619c271796fa4d395f5ee1247ae0d9f"
+        "generated_ts": 1480402916,
+        "hash": "bee45346b5e5c0ea38fb32f4b9404a00"
     },
     "packs": {
         "Circle CI": {
@@ -364,6 +364,19 @@
             "name": "email",
             "ref": "email",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-email",
+            "version": "0.1.0"
+        },
+        "excel": {
+            "author": "Tim Braly",
+            "content": {
+                "actions": {
+                    "count": 5
+                }
+            },
+            "description": "excel actions to read and write variables to an excel file",
+            "email": "tbraly@brocade.com",
+            "name": "excel",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-excel",
             "version": "0.1.0"
         },
         "freight": {
