@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480411278,
-        "hash": "c65231efc38c47cca57d488d63e71fc9"
+        "generated_ts": 1480411353,
+        "hash": "7940a0a37f3687b054af0675d49f8caf"
     },
     "packs": {
         "Circle CI": {
@@ -778,6 +778,26 @@
             "ref": "hpe_icsp",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hpe_icsp",
             "version": "0.5.0"
+        },
+        "hubot": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 6
+                },
+                "aliases": {
+                    "count": 3
+                },
+                "rules": {
+                    "count": 2
+                }
+            },
+            "description": "Hubot integration pack",
+            "email": "james@stackstorm.com",
+            "name": "hubot",
+            "ref": "hubot",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hubot",
+            "version": "0.2.0"
         },
         "hue": {
             "author": "James Fryman",
