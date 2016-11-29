@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480409779,
-        "hash": "c596d773b3893cc1d69fa0b45282b654"
+        "generated_ts": 1480409845,
+        "hash": "6e4e6b58973f3da222eba92d414e748b"
     },
     "packs": {
         "Circle CI": {
@@ -1204,6 +1204,24 @@
             "ref": "slack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
             "version": "0.3.0"
+        },
+        "softlayer": {
+            "author": "Itxaka Serrano Garcia",
+            "content": {
+                "actions": {
+                    "count": 4
+                }
+            },
+            "description": "st2 content pack containing Softlayer integrations.",
+            "email": "itxakaserrano@gmail.com",
+            "keywords": [
+                "softlayer",
+                "cloud"
+            ],
+            "name": "softlayer",
+            "ref": "softlayer",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-softlayer",
+            "version": "0.2.0"
         },
         "splunk": {
             "author": "StackStorm, Inc.",
