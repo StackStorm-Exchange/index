@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480411353,
-        "hash": "7940a0a37f3687b054af0675d49f8caf"
+        "generated_ts": 1480411420,
+        "hash": "dbe6a23f9e05b20cdcd265f32ca6868e"
     },
     "packs": {
         "Circle CI": {
@@ -945,6 +945,20 @@
             "ref": "kubernetes",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kubernetes",
             "version": "0.1.0"
+        },
+        "lastline": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 8
+                }
+            },
+            "description": "Lastline Security Breach Detection Integration",
+            "email": "james@stackstorm.com",
+            "name": "lastline",
+            "ref": "lastline",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-lastline",
+            "version": "0.2.0"
         },
         "libcloud": {
             "author": "StackStorm, Inc.",
