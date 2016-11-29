@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402435,
-        "hash": "1c27de09ca4c1a05a4993e1ffe3911c8"
+        "generated_ts": 1480402592,
+        "hash": "29eb8469e0922226deae15cbafe373d7"
     },
     "packs": {
         "Circle CI": {
@@ -253,6 +253,25 @@
             "ref": "device42",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
             "version": "0.3.0"
+        },
+        "dimensiondata": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 67
+                }
+            },
+            "description": "st2 content pack containing Dimension Data Cloud integrations",
+            "email": "anthony.shaw@dimensiondata.com",
+            "keywords": [
+                "cloud",
+                "load balancers",
+                "dimension data"
+            ],
+            "name": "dimensiondata",
+            "ref": "dimensiondata",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-dimensiondata",
+            "version": "0.1.0"
         },
         "docker": {
             "author": "StackStorm, Inc.",
