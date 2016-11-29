@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410775,
-        "hash": "d9d7a13b016eb3b9ae538a3ff4033266"
+        "generated_ts": 1480410878,
+        "hash": "faf05f0480c09b9c00b2f480926e5543"
     },
     "packs": {
         "Circle CI": {
@@ -65,6 +65,26 @@
             "name": "SmartThings",
             "ref": "smartthings",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-smartthings",
+            "version": "0.2.0"
+        },
+        "Travis CI": {
+            "author": "Aamir",
+            "content": {
+                "actions": {
+                    "count": 9
+                }
+            },
+            "description": "Pack which allows integration with Travis CI.",
+            "email": "raza.aamir01@gmail.com",
+            "keywords": [
+                "travis",
+                "travis ci",
+                "continuous integration",
+                "ci"
+            ],
+            "name": "Travis CI",
+            "ref": "travis_ci",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-travis-ci",
             "version": "0.2.0"
         },
         "activecampaign": {
