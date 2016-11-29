@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408998,
-        "hash": "1d158d248c669cc98c787fafccad29e3"
+        "generated_ts": 1480409096,
+        "hash": "964b131b6f61f15391d9131b6c550515"
     },
     "packs": {
         "Circle CI": {
@@ -1039,6 +1039,27 @@
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
             "version": "0.2.0"
+        },
+        "signalr": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing signalr integrations",
+            "email": "anthony.shaw@dimensiondata.com",
+            "keywords": [
+                "signalr",
+                "messaging"
+            ],
+            "name": "signalr",
+            "ref": "signalr",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-signalr",
+            "version": "0.1.0"
         },
         "slack": {
             "author": "StackStorm, Inc.",
