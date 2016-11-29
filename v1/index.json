@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480412199,
-        "hash": "0f326c24d3225ad2dfc190698f732b41"
+        "generated_ts": 1480412923,
+        "hash": "f75b7311af3e7a9b720f41f0816acd7b"
     },
     "packs": {
         "Circle CI": {
@@ -1910,6 +1910,23 @@
             "ref": "victorops",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-victorops",
             "version": "0.2.0"
+        },
+        "vsphere": {
+            "author": "Paul Mulvihill",
+            "content": {
+                "actions": {
+                    "count": 21
+                },
+                "tests": {
+                    "count": 12
+                }
+            },
+            "description": "st2 content pack containing vsphere integrations.",
+            "email": "paul.mulvihill@pulsant.com",
+            "name": "vsphere",
+            "ref": "vsphere",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
+            "version": "0.4.3"
         },
         "webpagetest": {
             "author": "Linuturk",
