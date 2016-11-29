@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408683,
-        "hash": "3da5ad85bed66420009f69b00a4313fb"
+        "generated_ts": 1480408736,
+        "hash": "0ed97d590cceecbb340abdfbc5b6c86b"
     },
     "packs": {
         "Circle CI": {
@@ -965,6 +965,31 @@
             "name": "packer",
             "ref": "packer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packer",
+            "version": "0.1.0"
+        },
+        "rabbitmq": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing rabbitmq integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "rabbitmq",
+                "queuing",
+                "messaging",
+                "aqmp",
+                "stomp",
+                "message broker"
+            ],
+            "name": "rabbitmq",
+            "ref": "rabbitmq",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-rabbitmq",
             "version": "0.1.0"
         },
         "reamaze": {
