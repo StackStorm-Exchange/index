@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480411099,
-        "hash": "1cc866044605e208dfab659ca7b235ef"
+        "generated_ts": 1480411274,
+        "hash": "60286e372962c7f6abb125300303f0c7"
     },
     "packs": {
         "Circle CI": {
@@ -764,6 +764,20 @@
             "ref": "gpg",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gpg",
             "version": "0.2.0"
+        },
+        "hpe_icsp": {
+            "author": "Paul Mulvihill",
+            "content": {
+                "actions": {
+                    "count": 13
+                }
+            },
+            "description": "Pack for HP Enterprise Insight Control Server Provisioning Integration",
+            "email": "paul.mulvihill@pulsant.com",
+            "name": "hpe_icsp",
+            "ref": "hpe_icsp",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hpe_icsp",
+            "version": "0.5.0"
         },
         "hue": {
             "author": "James Fryman",
