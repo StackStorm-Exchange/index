@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480404067,
-        "hash": "bb6122da47bb7a0a00654ee045be744b"
+        "generated_ts": 1480404113,
+        "hash": "a410639748a0a3e3e3c2795b566cd5a4"
     },
     "packs": {
         "Circle CI": {
@@ -743,6 +743,26 @@
             "ref": "webpagetest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-webpagetest",
             "version": "0.2.0"
+        },
+        "windows": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 6
+                }
+            },
+            "description": "st2 content pack containing windows integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "windows",
+                "wmi",
+                "windows management interface",
+                "wql"
+            ],
+            "name": "windows",
+            "ref": "windows",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-windows",
+            "version": "0.3.0"
         },
         "witai": {
             "author": "James Fryman",
