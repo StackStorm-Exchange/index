@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410061,
-        "hash": "862b940d9fec96cef4b6365bae491f47"
+        "generated_ts": 1480410179,
+        "hash": "f181527cba2a8b78f6da120a2478a9c4"
     },
     "packs": {
         "Circle CI": {
@@ -981,6 +981,29 @@
             "ref": "nest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
             "version": "0.2.0"
+        },
+        "networking_utils": {
+            "author": "Jon Middleton",
+            "content": {
+                "actions": {
+                    "count": 5
+                },
+                "tests": {
+                    "count": 4
+                }
+            },
+            "description": "A pack containing useful networking utils for use in workflows.",
+            "email": "jon.middleton@pulsant.com",
+            "keywords": [
+                "networking",
+                "utilities",
+                "ipv4",
+                "ipv6"
+            ],
+            "name": "networking_utils",
+            "ref": "networking_utils",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
+            "version": "0.1.0"
         },
         "newrelic": {
             "author": "StackStorm, Inc.",
