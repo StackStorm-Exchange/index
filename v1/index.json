@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408116,
-        "hash": "34d1ef4faac2c622fc59a7c98a29b0b5"
+        "generated_ts": 1480408174,
+        "hash": "4aeafb90949f9bc26bba2396a895843a"
     },
     "packs": {
         "Circle CI": {
@@ -682,6 +682,28 @@
             "ref": "google",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-google",
             "version": "0.1.1"
+        },
+        "gpg": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 4
+                }
+            },
+            "description": "Pack for working with GPG.",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "gpg",
+                "pgp",
+                "gnupg",
+                "privacy",
+                "encryption",
+                "crypto"
+            ],
+            "name": "gpg",
+            "ref": "gpg",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gpg",
+            "version": "0.2.0"
         },
         "hue": {
             "author": "James Fryman",
