@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401153,
-        "hash": "536476e35911a00e19b13721b55df3bf"
+        "generated_ts": 1480401348,
+        "hash": "c32431ebc51eb1a3f04585129cd065f4"
     },
     "packs": {
         "azure": {
@@ -67,6 +67,29 @@
             "ref": "bitcoin",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitcoin",
             "version": "0.1.0"
+        },
+        "chef": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 5
+                }
+            },
+            "description": "st2 chef integration pack",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "chef",
+                "chef-client",
+                "chef-solo",
+                "chef-apply",
+                "cfg management",
+                "configuration management",
+                "opscode"
+            ],
+            "name": "chef",
+            "ref": "chef",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-chef",
+            "version": "0.1.1"
         },
         "libcloud": {
             "author": "StackStorm, Inc.",
