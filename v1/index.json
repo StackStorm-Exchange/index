@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401128,
-        "hash": "a031c92d8aa7ac4a612f7c980bdec9ad"
+        "generated_ts": 1480401153,
+        "hash": "536476e35911a00e19b13721b55df3bf"
     },
     "packs": {
         "azure": {
@@ -66,6 +66,38 @@
             "name": "bitcoin",
             "ref": "bitcoin",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitcoin",
+            "version": "0.1.0"
+        },
+        "libcloud": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 29
+                }
+            },
+            "description": "st2 content pack containing libcloud integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "libcloud",
+                "cloud",
+                "dns",
+                "dnsaas",
+                "lbaas",
+                "load balancers",
+                "aws",
+                "amazon",
+                "s3",
+                "ec2",
+                "rackspace",
+                "cloudstack",
+                "openstack",
+                "cloudsigma",
+                "gce",
+                "google compute engine"
+            ],
+            "name": "libcloud",
+            "ref": "libcloud",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
             "version": "0.1.0"
         },
         "reamaze": {
