@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480405025,
-        "hash": "14af9ac865cdfbc6e511886a13d8c8be"
+        "generated_ts": 1480405062,
+        "hash": "daf61e552695ea72c85b4c4b2099f518"
     },
     "packs": {
         "Circle CI": {
@@ -240,6 +240,29 @@
             "ref": "consul",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-consul",
             "version": "0.3.0"
+        },
+        "csv": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 2
+                },
+                "tests": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing CSV integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "csv",
+                "serialization",
+                "deserialization",
+                "text processing"
+            ],
+            "name": "csv",
+            "ref": "csv",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-csv",
+            "version": "0.2.0"
         },
         "cubesensors": {
             "author": "StackStorm, Inc.",
