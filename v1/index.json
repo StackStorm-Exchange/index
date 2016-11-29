@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401906,
-        "hash": "9deff0c86aecc7744713f02974276eb4"
+        "generated_ts": 1480401932,
+        "hash": "a2b91f261bcb7c34db48012d454c2f3c"
     },
     "packs": {
         "Circle CI": {
@@ -177,6 +177,34 @@
             "name": "clicrud",
             "ref": "clicrud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-clicrud",
+            "version": "0.2.0"
+        },
+        "cubesensors": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing CubeSensors integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "cubesensors",
+                "iot",
+                "smart home",
+                "sensors",
+                "probes",
+                "home automation"
+            ],
+            "name": "cubesensors",
+            "ref": "cubesensors",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cubesensors",
             "version": "0.2.0"
         },
         "datadog": {
