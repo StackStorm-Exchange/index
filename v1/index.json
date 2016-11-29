@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480404985,
-        "hash": "adb9a7ff58aa8c0998b04fce95030a18"
+        "generated_ts": 1480405025,
+        "hash": "14af9ac865cdfbc6e511886a13d8c8be"
     },
     "packs": {
         "Circle CI": {
@@ -192,6 +192,26 @@
             "ref": "clicrud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-clicrud",
             "version": "0.2.0"
+        },
+        "cloudflare": {
+            "author": "Jon Middleton",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 1
+                }
+            },
+            "description": "A pack to interact with the Cloudflare service.",
+            "email": "jon.middleton@pulsant.com",
+            "keywords": [
+                "cloudflare"
+            ],
+            "name": "cloudflare",
+            "ref": "cloudflare",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
+            "version": "0.3.1"
         },
         "config_demo": {
             "author": "StackStorm, Inc.",
