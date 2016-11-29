@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480404972,
-        "hash": "c24e49672d8b6ecf68cf5cf33da26216"
+        "generated_ts": 1480404985,
+        "hash": "adb9a7ff58aa8c0998b04fce95030a18"
     },
     "packs": {
         "Circle CI": {
@@ -206,6 +206,20 @@
             "ref": "config_demo",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-config_demo",
             "version": "0.1.0"
+        },
+        "consul": {
+            "author": "jfryman",
+            "content": {
+                "actions": {
+                    "count": 12
+                }
+            },
+            "description": "consul",
+            "email": "james@fryman.io",
+            "name": "consul",
+            "ref": "consul",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-consul",
+            "version": "0.3.0"
         },
         "cubesensors": {
             "author": "StackStorm, Inc.",
