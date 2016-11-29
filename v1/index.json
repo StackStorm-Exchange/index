@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480404154,
-        "hash": "3ba6fad86f43274e9bc05a8f4c301911"
+        "generated_ts": 1480404295,
+        "hash": "5d045eca206c27e00c5556a2f7684e1c"
     },
     "packs": {
         "Circle CI": {
@@ -657,6 +657,26 @@
             "name": "twitter",
             "ref": "twitter",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-twitter",
+            "version": "0.2.0"
+        },
+        "typeform": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Typeform service integration pack",
+            "email": "info@stackstorm.com",
+            "name": "typeform",
+            "ref": "typeform",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-typeform",
             "version": "0.2.0"
         },
         "urbandict": {
