@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402094,
-        "hash": "1cbba3b570ab7800325ceeea9460f34d"
+        "generated_ts": 1480402256,
+        "hash": "ceebdaf9c90267995312950ca32acb0c"
     },
     "packs": {
         "Circle CI": {
@@ -239,6 +239,32 @@
             "ref": "datadog",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-datadog",
             "version": "0.0.2"
+        },
+        "docker": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "sensors": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing docker integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "docker",
+                "containers",
+                "virtualization",
+                "cgroups"
+            ],
+            "name": "docker",
+            "ref": "docker",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-docker",
+            "version": "0.1.0"
         },
         "email": {
             "author": "James Fryman",
