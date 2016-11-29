@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402763,
-        "hash": "8969425ec3436cafa8b474ae7f176802"
+        "generated_ts": 1480402818,
+        "hash": "4619c271796fa4d395f5ee1247ae0d9f"
     },
     "packs": {
         "Circle CI": {
@@ -364,6 +364,20 @@
             "name": "email",
             "ref": "email",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-email",
+            "version": "0.1.0"
+        },
+        "freight": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 2
+                }
+            },
+            "description": "freight",
+            "email": "james@fryman.io",
+            "name": "freight",
+            "ref": "freight",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-freight",
             "version": "0.1.0"
         },
         "git": {
