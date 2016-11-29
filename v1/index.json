@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408105,
-        "hash": "bfddca708d7aa25f3d1cdbe259937fe3"
+        "generated_ts": 1480408116,
+        "hash": "34d1ef4faac2c622fc59a7c98a29b0b5"
     },
     "packs": {
         "Circle CI": {
@@ -826,6 +826,31 @@
             "ref": "libcloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
             "version": "0.1.0"
+        },
+        "nagios": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "rules": {
+                    "count": 6
+                },
+                "tests": {
+                    "count": 1
+                },
+                "triggers": {
+                    "count": 1
+                }
+            },
+            "description": "Nagios integration pack. See README.md for setup instructions.",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "nagios",
+                "monitoring",
+                "alerting"
+            ],
+            "name": "nagios",
+            "ref": "nagios",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nagios",
+            "version": "0.2.0"
         },
         "reamaze": {
             "author": "James Fryman",

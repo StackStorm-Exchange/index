@@ -1,0 +1,17 @@
+ref: nagios
+name: nagios
+description: Nagios integration pack. See README.md for setup instructions.
+keywords:
+- nagios
+- monitoring
+- alerting
+version: 0.2.0
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  rules:
+    count: 6
+  tests:
+    count: 1
+  triggers:
+    count: 1
