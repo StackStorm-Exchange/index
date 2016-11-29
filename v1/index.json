@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401661,
-        "hash": "43d238abd303e675564e81832b12331f"
+        "generated_ts": 1480401721,
+        "hash": "0a0d0377e2e981c6e856d08752ed2e7c"
     },
     "packs": {
         "Circle CI": {
@@ -247,6 +247,23 @@
             "ref": "slack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
             "version": "0.3.0"
+        },
+        "st2": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 15
+                },
+                "aliases": {
+                    "count": 6
+                }
+            },
+            "description": "StackStorm pack management",
+            "email": "info@stackstorm.com",
+            "name": "st2",
+            "ref": "st2",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
+            "version": "0.2.0"
         },
         "vault": {
             "author": "steve.neuharth",
