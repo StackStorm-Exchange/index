@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480411274,
-        "hash": "60286e372962c7f6abb125300303f0c7"
+        "generated_ts": 1480411278,
+        "hash": "c65231efc38c47cca57d488d63e71fc9"
     },
     "packs": {
         "Circle CI": {
@@ -839,6 +839,27 @@
             "ref": "ipcam",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ipcam",
             "version": "0.1.0"
+        },
+        "irc": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing irc integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "irc",
+                "internet relay chat",
+                "chat",
+                "messaging",
+                "instant messaging"
+            ],
+            "name": "irc",
+            "ref": "irc",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-irc",
+            "version": "0.2.0"
         },
         "jenkins": {
             "author": "James Fryman",
