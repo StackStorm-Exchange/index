@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402272,
-        "hash": "ecd0e7c0f67a649dc17dc70a026a01bf"
+        "generated_ts": 1480402420,
+        "hash": "6193b26eb1a455abc537a739a736b194"
     },
     "packs": {
         "Circle CI": {
@@ -239,6 +239,20 @@
             "ref": "datadog",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-datadog",
             "version": "0.0.2"
+        },
+        "device42": {
+            "author": "Device42 Inc.",
+            "content": {
+                "actions": {
+                    "count": 3
+                }
+            },
+            "description": "Device42 Actions for StackStorm",
+            "email": "support@device42.com",
+            "name": "device42",
+            "ref": "device42",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
+            "version": "0.3.0"
         },
         "docker": {
             "author": "StackStorm, Inc.",
