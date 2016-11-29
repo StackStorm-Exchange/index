@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402256,
-        "hash": "ceebdaf9c90267995312950ca32acb0c"
+        "generated_ts": 1480402272,
+        "hash": "ecd0e7c0f67a649dc17dc70a026a01bf"
     },
     "packs": {
         "Circle CI": {
@@ -265,6 +265,30 @@
             "ref": "docker",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-docker",
             "version": "0.1.0"
+        },
+        "duo": {
+            "author": "Jon Middleton",
+            "content": {
+                "actions": {
+                    "count": 6
+                },
+                "aliases": {
+                    "count": 4
+                },
+                "tests": {
+                    "count": 4
+                }
+            },
+            "description": "Use Duo 2FA authenication with StackStorm actions.",
+            "email": "jon.middleton@pulsant.com",
+            "keywords": [
+                "2Fa",
+                "Duo"
+            ],
+            "name": "duo",
+            "ref": "duo",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-duo",
+            "version": "0.3.0"
         },
         "email": {
             "author": "James Fryman",
