@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408174,
-        "hash": "4aeafb90949f9bc26bba2396a895843a"
+        "generated_ts": 1480408224,
+        "hash": "5cfb2474bfb84483ed6751442565b201"
     },
     "packs": {
         "Circle CI": {
@@ -848,6 +848,23 @@
             "ref": "libcloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
             "version": "0.1.0"
+        },
+        "mqtt": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "MQTT Integration for StackStorm",
+            "email": "james@stackstorm.com",
+            "name": "mqtt",
+            "ref": "mqtt",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mqtt",
+            "version": "0.2.0"
         },
         "nagios": {
             "author": "StackStorm, Inc.",
