@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480409335,
-        "hash": "7b1fb268c3f63b729c54a980006490c1"
+        "generated_ts": 1480409412,
+        "hash": "b5bca238c5b7b043032ac69f096eab60"
     },
     "packs": {
         "Circle CI": {
@@ -1041,6 +1041,20 @@
             "ref": "packer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packer",
             "version": "0.1.0"
+        },
+        "pagerduty": {
+            "author": "Aamir",
+            "content": {
+                "actions": {
+                    "count": 4
+                }
+            },
+            "description": "Packs which allows integration with PagerDuty services.",
+            "email": "raza.aamir01@gmail.com",
+            "name": "pagerduty",
+            "ref": "pagerduty",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pagerduty",
+            "version": "0.2.0"
         },
         "rabbitmq": {
             "author": "StackStorm, Inc.",
