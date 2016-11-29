@@ -1,9 +1,35 @@
 {
     "metadata": {
-        "generated_ts": 1480401348,
-        "hash": "c32431ebc51eb1a3f04585129cd065f4"
+        "generated_ts": 1480401389,
+        "hash": "e9f47c84cf9b5b1b469b917b198ed875"
     },
     "packs": {
+        "Circle CI": {
+            "author": "StackStorm dev",
+            "content": {
+                "actions": {
+                    "count": 6
+                },
+                "sensors": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 2
+                }
+            },
+            "description": "Pack which allows integration with Circle CI.",
+            "email": "support@stackstorm.com",
+            "keywords": [
+                "circle",
+                "circle ci",
+                "continous integration",
+                "ci"
+            ],
+            "name": "Circle CI",
+            "ref": "circle_ci",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle-ci",
+            "version": "0.3.0"
+        },
         "azure": {
             "author": "StackStorm, Inc.",
             "content": {
