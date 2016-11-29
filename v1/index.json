@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480400990,
-        "hash": "65a371318039853f95fb1ce9d4d7a642"
+        "generated_ts": 1480401128,
+        "hash": "a031c92d8aa7ac4a612f7c980bdec9ad"
     },
     "packs": {
         "azure": {
@@ -26,6 +26,30 @@
             "ref": "azure",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
             "version": "0.1.0"
+        },
+        "bitbucket": {
+            "author": "Aamir",
+            "content": {
+                "actions": {
+                    "count": 16
+                },
+                "rules": {
+                    "count": 1
+                }
+            },
+            "description": "Pack which allows integration with Bitbucket.",
+            "email": "raza.aamir01@gmail.com",
+            "keywords": [
+                "bitbucket",
+                "vcs",
+                "mercurial",
+                "git",
+                "source control"
+            ],
+            "name": "bitbucket",
+            "ref": "bitbucket",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitbucket",
+            "version": "0.1.1"
         },
         "bitcoin": {
             "author": "StackStorm, Inc.",
