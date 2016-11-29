@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403694,
-        "hash": "0ae1806334e438fcfaf4b1ec397ad62c"
+        "generated_ts": 1480403738,
+        "hash": "589c9f05e8148c86e5eaed487132eed3"
     },
     "packs": {
         "Circle CI": {
@@ -660,6 +660,24 @@
             "name": "victorops",
             "ref": "victorops",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-victorops",
+            "version": "0.2.0"
+        },
+        "webpagetest": {
+            "author": "Linuturk",
+            "content": {
+                "actions": {
+                    "count": 3
+                }
+            },
+            "description": "st2 content pack containing webpagetest integrations",
+            "email": "linuturk@onitato.com",
+            "keywords": [
+                "webpagetest",
+                "benchmarking"
+            ],
+            "name": "webpagetest",
+            "ref": "webpagetest",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-webpagetest",
             "version": "0.2.0"
         },
         "witai": {
