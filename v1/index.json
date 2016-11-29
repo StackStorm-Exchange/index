@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480411687,
-        "hash": "77a73d13627e482046da0695670deac3"
+        "generated_ts": 1480411767,
+        "hash": "cb226d8d0c994fb7a7af4a8ba054c767"
     },
     "packs": {
         "Circle CI": {
@@ -105,6 +105,26 @@
             "name": "activecampaign",
             "ref": "activecampaign",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activecampaign",
+            "version": "0.2.0"
+        },
+        "alertlogic": {
+            "author": "Jon Middleton",
+            "content": {
+                "actions": {
+                    "count": 4
+                },
+                "aliases": {
+                    "count": 3
+                }
+            },
+            "description": "AlertLogic ActiveIntegration APIs",
+            "email": "jon.middleton@pulsant.com",
+            "keywords": [
+                "AlertLogic"
+            ],
+            "name": "alertlogic",
+            "ref": "alertlogic",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-alertlogic",
             "version": "0.2.0"
         },
         "ansible": {
