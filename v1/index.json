@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410585,
-        "hash": "7d2f0b3603907b40d898d59dec785de1"
+        "generated_ts": 1480410775,
+        "hash": "d9d7a13b016eb3b9ae538a3ff4033266"
     },
     "packs": {
         "Circle CI": {
@@ -1281,6 +1281,31 @@
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
             "version": "0.2.0"
+        },
+        "salt": {
+            "author": "jcockhren",
+            "content": {
+                "actions": {
+                    "count": 162
+                },
+                "aliases": {
+                    "count": 2
+                },
+                "tests": {
+                    "count": 1
+                }
+            },
+            "description": "st2 salt integration pack",
+            "email": "jurnell@sophicware.com",
+            "keywords": [
+                "salt",
+                "cfg management",
+                "configuration management"
+            ],
+            "name": "salt",
+            "ref": "salt",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-salt",
+            "version": "0.5.0"
         },
         "sensu": {
             "author": "StackStorm, Inc.",
