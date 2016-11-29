@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480405829,
-        "hash": "fac97c27c86466e63c1394e4cf3a79e3"
+        "generated_ts": 1480407773,
+        "hash": "33eca0a08faa043806df08e6a8f8afe9"
     },
     "packs": {
         "Circle CI": {
@@ -633,6 +633,25 @@
             "ref": "git",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
             "version": "0.3.0"
+        },
+        "hue": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 13
+                }
+            },
+            "description": "Philips Hue Pack",
+            "email": "james@stackstorm.com",
+            "keywords": [
+                "hue",
+                "philips",
+                "iot"
+            ],
+            "name": "hue",
+            "ref": "hue",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hue",
+            "version": "0.0.2"
         },
         "jmx": {
             "author": "StackStorm, Inc.",
