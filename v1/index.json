@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402916,
-        "hash": "bee45346b5e5c0ea38fb32f4b9404a00"
+        "generated_ts": 1480402981,
+        "hash": "651107138e62a82c80b36cd97fd0edf4"
     },
     "packs": {
         "Circle CI": {
@@ -345,6 +345,28 @@
             "ref": "duo",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-duo",
             "version": "0.3.0"
+        },
+        "elasticsearch": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 14
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 elasticsearch integration pack",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "elasticsearch",
+                "curator",
+                "databases"
+            ],
+            "name": "elasticsearch",
+            "ref": "elasticsearch",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-elasticsearch",
+            "version": "0.4.0"
         },
         "email": {
             "author": "James Fryman",
