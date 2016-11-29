@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408585,
-        "hash": "288460f055929b66cffa906d7ddc4e12"
+        "generated_ts": 1480408632,
+        "hash": "d5b11ef4d6d0ad5a3eb3eea8e5f2bef7"
     },
     "packs": {
         "Circle CI": {
@@ -923,6 +923,28 @@
             "name": "openhab",
             "ref": "openhab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openhab",
+            "version": "0.2.0"
+        },
+        "opscenter": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 20
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing datastax opscenter integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "datastax",
+                "cassandra",
+                "opscenter"
+            ],
+            "name": "opscenter",
+            "ref": "opscenter",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opscenter",
             "version": "0.2.0"
         },
         "reamaze": {
