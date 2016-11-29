@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410197,
-        "hash": "8f460aa68aa68021ae36e485292b51e3"
+        "generated_ts": 1480410400,
+        "hash": "15f921642b66d81f77fa89bc43098150"
     },
     "packs": {
         "Circle CI": {
@@ -42,6 +42,29 @@
             "name": "Digital Ocean",
             "ref": "digitalocean",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-digital-ocean",
+            "version": "0.2.0"
+        },
+        "SmartThings": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 12
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Integration with SmartThings",
+            "email": "james@stackstorm.com",
+            "keywords": [
+                "smartthings",
+                "iot",
+                "smart home",
+                "home automation"
+            ],
+            "name": "SmartThings",
+            "ref": "smartthings",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-smartthings",
             "version": "0.2.0"
         },
         "activecampaign": {
