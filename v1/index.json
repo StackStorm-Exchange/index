@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480405421,
-        "hash": "9fec788daecdfb9cedde2d40d364b77b"
+        "generated_ts": 1480405455,
+        "hash": "60208880e46ee08767bd6e4a22b81c28"
     },
     "packs": {
         "Circle CI": {
@@ -42,6 +42,26 @@
             "name": "Digital Ocean",
             "ref": "digitalocean",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-digital-ocean",
+            "version": "0.2.0"
+        },
+        "activecampaign": {
+            "author": "DoriftoShoes",
+            "content": {
+                "actions": {
+                    "count": 122
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Integration with ActiveCampaign",
+            "email": "patrick@stackstorm.com",
+            "name": "activecampaign",
+            "ref": "activecampaign",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activecampaign",
             "version": "0.2.0"
         },
         "aws": {
