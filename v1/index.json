@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403973,
-        "hash": "f09b7e9d3a1661806038583becaa3256"
+        "generated_ts": 1480404067,
+        "hash": "bb6122da47bb7a0a00654ee045be744b"
     },
     "packs": {
         "Circle CI": {
@@ -596,6 +596,29 @@
             "ref": "time",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-time",
             "version": "0.1.0"
+        },
+        "trello": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 14
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Integration with Trello, Web based Project Management",
+            "email": "james@stackstorm.com",
+            "keywords": [
+                "trello",
+                "kanban",
+                "productivity",
+                "collaboration"
+            ],
+            "name": "trello",
+            "ref": "trello",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-trello",
+            "version": "0.2.0"
         },
         "twitter": {
             "author": "StackStorm, Inc.",
