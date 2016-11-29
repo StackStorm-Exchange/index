@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480409096,
-        "hash": "964b131b6f61f15391d9131b6c550515"
+        "generated_ts": 1480409316,
+        "hash": "2db860fd8c3dc061e0ab3d67f7a99311"
     },
     "packs": {
         "Circle CI": {
@@ -865,6 +865,24 @@
             "ref": "libcloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
             "version": "0.1.0"
+        },
+        "mistral": {
+            "author": "StackStorm",
+            "content": {
+                "actions": {
+                    "count": 4
+                }
+            },
+            "description": "Mistral integrations to operate mistral.",
+            "email": "support@stackstorm.com",
+            "keywords": [
+                "mistral",
+                "workflows"
+            ],
+            "name": "mistral",
+            "ref": "mistral",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mistral",
+            "version": "0.2.0"
         },
         "mqtt": {
             "author": "James Fryman",
