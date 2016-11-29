@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480405662,
-        "hash": "02a81d523d29d2a140a7a40640153eda"
+        "generated_ts": 1480405731,
+        "hash": "7ab8539138a7c4ed183fe222de155379"
     },
     "packs": {
         "Circle CI": {
@@ -178,6 +178,24 @@
             "name": "bitcoin",
             "ref": "bitcoin",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitcoin",
+            "version": "0.1.0"
+        },
+        "cassandra": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 12
+                }
+            },
+            "description": "st2 content pack containing cassandra integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "datastax",
+                "cassandra"
+            ],
+            "name": "cassandra",
+            "ref": "cassandra",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cassandra",
             "version": "0.1.0"
         },
         "chef": {
