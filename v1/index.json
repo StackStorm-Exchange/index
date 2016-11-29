@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401932,
-        "hash": "a2b91f261bcb7c34db48012d454c2f3c"
+        "generated_ts": 1480402048,
+        "hash": "2012447a0242848a690ea9469a2a46a7"
     },
     "packs": {
         "Circle CI": {
@@ -225,6 +225,26 @@
             "ref": "datadog",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-datadog",
             "version": "0.0.2"
+        },
+        "email": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 2
+                }
+            },
+            "description": "E-Mail Actions/Sensors for StackStorm",
+            "email": "james@stackstorm.com",
+            "name": "email",
+            "ref": "email",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-email",
+            "version": "0.1.0"
         },
         "libcloud": {
             "author": "StackStorm, Inc.",
