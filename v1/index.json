@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410547,
-        "hash": "705fcfbffd68aae35e4d06ff6b634f4c"
+        "generated_ts": 1480410552,
+        "hash": "cefb56d84de5a6f23c0023acd0a0b3d4"
     },
     "packs": {
         "Circle CI": {
@@ -1295,6 +1295,23 @@
             "ref": "sensu",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu",
             "version": "0.3.0"
+        },
+        "servicenow": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 10
+                },
+                "aliases": {
+                    "count": 3
+                }
+            },
+            "description": "ServiceNow Integration Pack",
+            "email": "james@stackstorm.com",
+            "name": "servicenow",
+            "ref": "servicenow",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
+            "version": "0.2.0"
         },
         "signalr": {
             "author": "Anthony Shaw",
