@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480411767,
-        "hash": "cb226d8d0c994fb7a7af4a8ba054c767"
+        "generated_ts": 1480411861,
+        "hash": "ddb28ad2535f5abb7e55fec186deebc3"
     },
     "packs": {
         "Circle CI": {
@@ -1830,6 +1830,23 @@
             "ref": "vault",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vault",
             "version": "0.2.0"
+        },
+        "vdx": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 55
+                },
+                "tests": {
+                    "count": 52
+                }
+            },
+            "description": "Brocade VDX integration pack.",
+            "email": "info@stackstorm.com",
+            "name": "vdx",
+            "ref": "vdx",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx",
+            "version": "0.1.0"
         },
         "victorops": {
             "author": "Aamir",
