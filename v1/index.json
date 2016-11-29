@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480409412,
-        "hash": "b5bca238c5b7b043032ac69f096eab60"
+        "generated_ts": 1480409479,
+        "hash": "2693231ee1f2556c25984986c5e21cae"
     },
     "packs": {
         "Circle CI": {
@@ -900,6 +900,29 @@
             "ref": "mqtt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mqtt",
             "version": "0.2.0"
+        },
+        "mssql": {
+            "author": "codyaray",
+            "content": {
+                "actions": {
+                    "count": 6
+                },
+                "tests": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing Microsoft SQL Server integrations",
+            "email": "talktome@codyaray.com",
+            "keywords": [
+                "mssql",
+                "sql",
+                "microsoft",
+                "sql server"
+            ],
+            "name": "mssql",
+            "ref": "mssql",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mssql",
+            "version": "0.1.0"
         },
         "nagios": {
             "author": "StackStorm, Inc.",
