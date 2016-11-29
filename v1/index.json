@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402420,
-        "hash": "6193b26eb1a455abc537a739a736b194"
+        "generated_ts": 1480402435,
+        "hash": "1c27de09ca4c1a05a4993e1ffe3911c8"
     },
     "packs": {
         "Circle CI": {
@@ -323,6 +323,33 @@
             "ref": "email",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-email",
             "version": "0.1.0"
+        },
+        "git": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing git integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "git",
+                "scm"
+            ],
+            "name": "git",
+            "ref": "git",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
+            "version": "0.3.0"
         },
         "libcloud": {
             "author": "StackStorm, Inc.",
