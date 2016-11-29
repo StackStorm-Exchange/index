@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403655,
-        "hash": "2692ece83075126ee578f19ba99d406f"
+        "generated_ts": 1480403694,
+        "hash": "0ae1806334e438fcfaf4b1ec397ad62c"
     },
     "packs": {
         "Circle CI": {
@@ -554,6 +554,31 @@
             "name": "st2",
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
+            "version": "0.2.0"
+        },
+        "twitter": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 2
+                }
+            },
+            "description": "st2 content pack containing twitter integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "twitter",
+                "social media",
+                "social networks"
+            ],
+            "name": "twitter",
+            "ref": "twitter",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-twitter",
             "version": "0.2.0"
         },
         "urbandict": {
