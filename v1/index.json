@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480405731,
-        "hash": "7ab8539138a7c4ed183fe222de155379"
+        "generated_ts": 1480405829,
+        "hash": "fac97c27c86466e63c1394e4cf3a79e3"
     },
     "packs": {
         "Circle CI": {
@@ -63,6 +63,25 @@
             "ref": "activecampaign",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activecampaign",
             "version": "0.2.0"
+        },
+        "ansible": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 8
+                }
+            },
+            "description": "st2 content pack containing ansible integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "ansible",
+                "cfg management",
+                "configuration management"
+            ],
+            "name": "ansible",
+            "ref": "ansible",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ansible",
+            "version": "0.3.0"
         },
         "astral": {
             "author": "Tim Braly",
