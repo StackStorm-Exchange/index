@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401579,
-        "hash": "5b11e21a1b76ea190a8d5ea88f4e2ea3"
+        "generated_ts": 1480401661,
+        "hash": "43d238abd303e675564e81832b12331f"
     },
     "packs": {
         "Circle CI": {
@@ -224,6 +224,29 @@
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
             "version": "0.2.0"
+        },
+        "slack": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 60
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing slack integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "slack",
+                "chat",
+                "messaging",
+                "instant messaging"
+            ],
+            "name": "slack",
+            "ref": "slack",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
+            "version": "0.3.0"
         },
         "vault": {
             "author": "steve.neuharth",
