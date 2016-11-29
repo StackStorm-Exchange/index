@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410400,
-        "hash": "15f921642b66d81f77fa89bc43098150"
+        "generated_ts": 1480410547,
+        "hash": "705fcfbffd68aae35e4d06ff6b634f4c"
     },
     "packs": {
         "Circle CI": {
@@ -1267,6 +1267,34 @@
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
             "version": "0.2.0"
+        },
+        "sensu": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 19
+                },
+                "rules": {
+                    "count": 2
+                },
+                "tests": {
+                    "count": 1
+                },
+                "triggers": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing sensu integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "sensu",
+                "monitoring",
+                "alerting"
+            ],
+            "name": "sensu",
+            "ref": "sensu",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu",
+            "version": "0.3.0"
         },
         "signalr": {
             "author": "Anthony Shaw",

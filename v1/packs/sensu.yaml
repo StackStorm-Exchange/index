@@ -1,0 +1,19 @@
+ref: sensu
+name: sensu
+description: st2 content pack containing sensu integrations
+keywords:
+- sensu
+- monitoring
+- alerting
+version: 0.3.0
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 19
+  rules:
+    count: 2
+  tests:
+    count: 1
+  triggers:
+    count: 1
