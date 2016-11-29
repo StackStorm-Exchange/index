@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480409316,
-        "hash": "2db860fd8c3dc061e0ab3d67f7a99311"
+        "generated_ts": 1480409335,
+        "hash": "7b1fb268c3f63b729c54a980006490c1"
     },
     "packs": {
         "Circle CI": {
@@ -939,6 +939,29 @@
             "ref": "nest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
             "version": "0.2.0"
+        },
+        "newrelic": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 2
+                },
+                "sensors": {
+                    "count": 2
+                }
+            },
+            "description": "st2 content pack containing newrelic integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "new relic",
+                "monitoring",
+                "app monitoring",
+                "application level monitoring"
+            ],
+            "name": "newrelic",
+            "ref": "newrelic",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
+            "version": "0.3.0"
         },
         "openhab": {
             "author": "James Fryman",
