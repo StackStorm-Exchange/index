@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403289,
-        "hash": "141e6b231f869d6499c31a9e2c3e496a"
+        "generated_ts": 1480403355,
+        "hash": "ecfed8fd781e1f8976cc66b81e80161a"
     },
     "packs": {
         "Circle CI": {
@@ -615,6 +615,28 @@
             "ref": "xml",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-xml",
             "version": "0.1.0"
+        },
+        "zendesk": {
+            "author": "Casey Richardson",
+            "content": {
+                "actions": {
+                    "count": 4
+                },
+                "aliases": {
+                    "count": 4
+                }
+            },
+            "description": "st2 content pack containing zendesk integrations",
+            "email": "casey@bluechasm.com",
+            "keywords": [
+                "zendesk",
+                "support",
+                "ticketing"
+            ],
+            "name": "zendesk",
+            "ref": "zendesk",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zendesk",
+            "version": "0.2.0"
         },
         "zookeeper": {
             "author": "Cody A. Ray",
