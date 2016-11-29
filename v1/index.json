@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480404295,
-        "hash": "5d045eca206c27e00c5556a2f7684e1c"
+        "generated_ts": 1480404382,
+        "hash": "64d7d2327ffa7c9dff68e8f206466371"
     },
     "packs": {
         "Circle CI": {
@@ -537,6 +537,26 @@
             "name": "slack",
             "ref": "slack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
+            "version": "0.3.0"
+        },
+        "splunk": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "aliases": {
+                    "count": 1
+                }
+            },
+            "description": "Splunk integration pack",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "splunk"
+            ],
+            "name": "splunk",
+            "ref": "splunk",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-splunk",
             "version": "0.3.0"
         },
         "st2": {
