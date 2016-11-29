@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403355,
-        "hash": "ecfed8fd781e1f8976cc66b81e80161a"
+        "generated_ts": 1480403363,
+        "hash": "7dcf6c520dc770d5c7a06b613ddf582d"
     },
     "packs": {
         "Circle CI": {
@@ -592,6 +592,20 @@
             "ref": "victorops",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-victorops",
             "version": "0.2.0"
+        },
+        "witai": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "Wit AI Integration with StackStorm",
+            "email": "james@stackstorm.com",
+            "name": "witai",
+            "ref": "witai",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-witai",
+            "version": "0.1.0"
         },
         "xml": {
             "author": "StackStorm, Inc.",
