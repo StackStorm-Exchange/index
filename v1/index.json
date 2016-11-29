@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480409845,
-        "hash": "6e4e6b58973f3da222eba92d414e748b"
+        "generated_ts": 1480409864,
+        "hash": "ebe40e4ddf5857924196e3aad495cac0"
     },
     "packs": {
         "Circle CI": {
@@ -1121,6 +1121,20 @@
             "ref": "pagerduty",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pagerduty",
             "version": "0.2.0"
+        },
+        "powerpoint": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "Packs which allows integration with Microsoft Powerpoint",
+            "email": "anthonyshaw@apache.org",
+            "name": "powerpoint",
+            "ref": "powerpoint",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerpoint",
+            "version": "0.1.0"
         },
         "rabbitmq": {
             "author": "StackStorm, Inc.",
