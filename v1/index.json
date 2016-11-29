@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408224,
-        "hash": "5cfb2474bfb84483ed6751442565b201"
+        "generated_ts": 1480408423,
+        "hash": "574fb5ddcec5bdbad1578f36b9531322"
     },
     "packs": {
         "Circle CI": {
@@ -889,6 +889,20 @@
             "name": "nagios",
             "ref": "nagios",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nagios",
+            "version": "0.2.0"
+        },
+        "nest": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 11
+                }
+            },
+            "description": "StackStorm integration with Nest Thermostats",
+            "email": "james@stackstorm.com",
+            "name": "nest",
+            "ref": "nest",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
             "version": "0.2.0"
         },
         "reamaze": {
