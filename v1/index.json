@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408632,
-        "hash": "d5b11ef4d6d0ad5a3eb3eea8e5f2bef7"
+        "generated_ts": 1480408683,
+        "hash": "3da5ad85bed66420009f69b00a4313fb"
     },
     "packs": {
         "Circle CI": {
@@ -946,6 +946,26 @@
             "ref": "opscenter",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opscenter",
             "version": "0.2.0"
+        },
+        "packer": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 5
+                }
+            },
+            "description": "Hashicorp Packer builder integration",
+            "email": "james@stackstorm.com",
+            "keywords": [
+                "packer",
+                "provisioning",
+                "pipeline",
+                "hashicorp"
+            ],
+            "name": "packer",
+            "ref": "packer",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packer",
+            "version": "0.1.0"
         },
         "reamaze": {
             "author": "James Fryman",
