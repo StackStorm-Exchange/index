@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410878,
-        "hash": "faf05f0480c09b9c00b2f480926e5543"
+        "generated_ts": 1480410958,
+        "hash": "0446f6a6d936a361fb97e2086a8055c2"
     },
     "packs": {
         "Circle CI": {
@@ -1326,6 +1326,20 @@
             "ref": "salt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-salt",
             "version": "0.5.0"
+        },
+        "save_kittens": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 4
+                }
+            },
+            "description": "Save the world. One puzzle at a time.",
+            "email": "info@stackstorm.com",
+            "name": "save_kittens",
+            "ref": "save_kittens",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-save_kittens",
+            "version": "0.1.0"
         },
         "sensu": {
             "author": "StackStorm, Inc.",
