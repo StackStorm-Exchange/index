@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403091,
-        "hash": "4b1b6be19b2221a8f5d0c3243529ab6a"
+        "generated_ts": 1480403289,
+        "hash": "141e6b231f869d6499c31a9e2c3e496a"
     },
     "packs": {
         "Circle CI": {
@@ -541,6 +541,25 @@
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
             "version": "0.2.0"
+        },
+        "urbandict": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing urban dictionary integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "urban dict",
+                "urban dictionary",
+                "puns"
+            ],
+            "name": "urbandict",
+            "ref": "urbandict",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-urbandict",
+            "version": "0.1.0"
         },
         "vault": {
             "author": "steve.neuharth",
