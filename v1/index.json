@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408423,
-        "hash": "574fb5ddcec5bdbad1578f36b9531322"
+        "generated_ts": 1480408585,
+        "hash": "288460f055929b66cffa906d7ddc4e12"
     },
     "packs": {
         "Circle CI": {
@@ -903,6 +903,26 @@
             "name": "nest",
             "ref": "nest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
+            "version": "0.2.0"
+        },
+        "openhab": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 3
+                }
+            },
+            "description": "Integration with OpenHAB",
+            "email": "james@stackstorm.com",
+            "keywords": [
+                "openhab",
+                "iot",
+                "smart home",
+                "home automation"
+            ],
+            "name": "openhab",
+            "ref": "openhab",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openhab",
             "version": "0.2.0"
         },
         "reamaze": {
