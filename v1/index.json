@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480400747,
-        "hash": "82d7ea77078bf1b91a38adab794ba6d3"
+        "generated_ts": 1480400823,
+        "hash": "362ba66f685bdd4d5c73434eeb33411e"
     },
     "packs": {
         "reamaze": {
@@ -16,6 +16,20 @@
             "name": "reamaze",
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
+            "version": "0.2.0"
+        },
+        "vault": {
+            "author": "steve.neuharth",
+            "content": {
+                "actions": {
+                    "count": 6
+                }
+            },
+            "description": "vault",
+            "email": "steve.neuharth@target.com",
+            "name": "vault",
+            "ref": "vault",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vault",
             "version": "0.2.0"
         },
         "victorops": {
