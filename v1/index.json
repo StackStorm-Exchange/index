@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403738,
-        "hash": "589c9f05e8148c86e5eaed487132eed3"
+        "generated_ts": 1480403785,
+        "hash": "aec30f5336f719219875424b7a013dce"
     },
     "packs": {
         "Circle CI": {
@@ -555,6 +555,27 @@
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
             "version": "0.2.0"
+        },
+        "time": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 2
+                },
+                "tests": {
+                    "count": 2
+                }
+            },
+            "description": "st2 content pack containing different date and time related functionality",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "date",
+                "time"
+            ],
+            "name": "time",
+            "ref": "time",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-time",
+            "version": "0.1.0"
         },
         "twitter": {
             "author": "StackStorm, Inc.",
