@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410958,
-        "hash": "0446f6a6d936a361fb97e2086a8055c2"
+        "generated_ts": 1480411019,
+        "hash": "aed59b6e03c4d2aef0bafa4c891b7173"
     },
     "packs": {
         "Circle CI": {
@@ -825,6 +825,20 @@
             "ref": "ipcam",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ipcam",
             "version": "0.1.0"
+        },
+        "jenkins": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 6
+                }
+            },
+            "description": "Jenkins CI Integration Pack",
+            "email": "james@stackstorm.com",
+            "name": "jenkins",
+            "ref": "jenkins",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jenkins",
+            "version": "0.2.0"
         },
         "jmx": {
             "author": "StackStorm, Inc.",
