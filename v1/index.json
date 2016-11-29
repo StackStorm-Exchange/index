@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480408973,
-        "hash": "8ace60f4df9b51cbae9c9c6ded625fa3"
+        "generated_ts": 1480408998,
+        "hash": "1d158d248c669cc98c787fafccad29e3"
     },
     "packs": {
         "Circle CI": {
@@ -215,6 +215,23 @@
             "name": "cassandra",
             "ref": "cassandra",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cassandra",
+            "version": "0.1.0"
+        },
+        "check_mk": {
+            "author": "codyaray",
+            "content": {
+                "rules": {
+                    "count": 1
+                },
+                "triggers": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing Check_MK integrations",
+            "email": "talktome@codyaray.com",
+            "name": "check_mk",
+            "ref": "check_mk",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-check_mk",
             "version": "0.1.0"
         },
         "chef": {
