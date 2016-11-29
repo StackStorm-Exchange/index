@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480407775,
-        "hash": "b9380d6de8894f06e3527b71e71b11c0"
+        "generated_ts": 1480407780,
+        "hash": "6c9cd57b66934d0280c28a6a24bfecf5"
     },
     "packs": {
         "Circle CI": {
@@ -652,6 +652,26 @@
             "ref": "hue",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hue",
             "version": "0.0.2"
+        },
+        "icinga2": {
+            "author": "Igor Cherkaev",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Icinga2 Integration pack",
+            "email": "emptywee@protonmail.ch",
+            "name": "icinga2",
+            "ref": "icinga2",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-icinga2",
+            "version": "0.3.0"
         },
         "ipcam": {
             "author": "StackStorm, Inc.",
