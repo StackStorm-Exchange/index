@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480405455,
-        "hash": "60208880e46ee08767bd6e4a22b81c28"
+        "generated_ts": 1480405562,
+        "hash": "23cc9e86bf05de24ad35a6b9d64c5a33"
     },
     "packs": {
         "Circle CI": {
@@ -580,6 +580,29 @@
             "ref": "git",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
             "version": "0.3.0"
+        },
+        "jmx": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing Java JMX integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "jmx",
+                "javajmx",
+                "java management extensions",
+                "mbean"
+            ],
+            "name": "jmx",
+            "ref": "jmx",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jmx",
+            "version": "0.2.0"
         },
         "kubernetes": {
             "author": "Michael Ward",
