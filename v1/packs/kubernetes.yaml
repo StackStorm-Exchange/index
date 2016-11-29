@@ -1,0 +1,19 @@
+ref: kubernetes
+name: kubernetes
+description: st2 content pack containing Kubernetes sensors
+keywords:
+- kubenetes
+- sensors
+- thirdpartyresource
+version: 0.1.0
+author: Michael Ward
+email: mward29@gmail.com
+content:
+  actions:
+    count: 3
+  rules:
+    count: 2
+  sensors:
+    count: 1
+  tests:
+    count: 1

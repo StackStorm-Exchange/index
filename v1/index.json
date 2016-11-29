@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480405293,
-        "hash": "a09e66f9553373c4d39f96767d994ca7"
+        "generated_ts": 1480405421,
+        "hash": "9fec788daecdfb9cedde2d40d364b77b"
     },
     "packs": {
         "Circle CI": {
@@ -560,6 +560,34 @@
             "ref": "git",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
             "version": "0.3.0"
+        },
+        "kubernetes": {
+            "author": "Michael Ward",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "rules": {
+                    "count": 2
+                },
+                "sensors": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing Kubernetes sensors",
+            "email": "mward29@gmail.com",
+            "keywords": [
+                "kubenetes",
+                "sensors",
+                "thirdpartyresource"
+            ],
+            "name": "kubernetes",
+            "ref": "kubernetes",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kubernetes",
+            "version": "0.1.0"
         },
         "libcloud": {
             "author": "StackStorm, Inc.",
