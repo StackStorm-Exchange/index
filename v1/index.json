@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480400515,
-        "hash": "a6bd630d24804078eed87539b24593f3"
+        "generated_ts": 1480400613,
+        "hash": "b3ce008ca28591cfd7db6c39e489a0c9"
     },
     "packs": {
         "victorops": {
@@ -44,6 +44,20 @@
             "ref": "xml",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-xml",
             "version": "0.1.0"
+        },
+        "zookeeper": {
+            "author": "Cody A. Ray",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "st2 integration pack with zookeeper",
+            "email": "talktome@codyaray.com",
+            "name": "zookeeper",
+            "ref": "zookeeper",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zookeeper",
+            "version": "0.2.0"
         }
     }
 }
