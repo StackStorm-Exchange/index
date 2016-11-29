@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480410552,
-        "hash": "cefb56d84de5a6f23c0023acd0a0b3d4"
+        "generated_ts": 1480410585,
+        "hash": "7d2f0b3603907b40d898d59dec785de1"
     },
     "packs": {
         "Circle CI": {
@@ -1253,6 +1253,20 @@
             "ref": "rabbitmq",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-rabbitmq",
             "version": "0.1.0"
+        },
+        "rackspace": {
+            "author": "jfryman",
+            "content": {
+                "actions": {
+                    "count": 26
+                }
+            },
+            "description": "Packs which allows integration with Rackspace services such as servers, load balancers and DNS.",
+            "email": "james@stackstorm.com",
+            "name": "rackspace",
+            "ref": "rackspace",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-rackspace",
+            "version": "0.2.0"
         },
         "reamaze": {
             "author": "James Fryman",
