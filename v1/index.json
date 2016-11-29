@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480412119,
-        "hash": "4a9ac3d98097a03695912370aadb2490"
+        "generated_ts": 1480412199,
+        "hash": "0f326c24d3225ad2dfc190698f732b41"
     },
     "packs": {
         "Circle CI": {
@@ -1985,6 +1985,25 @@
             "ref": "xml",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-xml",
             "version": "0.1.0"
+        },
+        "yammer": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 19
+                }
+            },
+            "description": "st2 content pack containing yammer integrations",
+            "email": "anthony.shaw@dimensiondata.com",
+            "keywords": [
+                "yammer",
+                "chatops",
+                "social"
+            ],
+            "name": "yammer",
+            "ref": "yammer",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-yammer",
+            "version": "0.3.0"
         },
         "zendesk": {
             "author": "Casey Richardson",
