@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480409479,
-        "hash": "2693231ee1f2556c25984986c5e21cae"
+        "generated_ts": 1480409640,
+        "hash": "4e4717936cc77f23d4e9ea2a129bbdc8"
     },
     "packs": {
         "Circle CI": {
@@ -865,6 +865,25 @@
             "ref": "libcloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
             "version": "0.1.0"
+        },
+        "mailgun": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing mailgun integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "email",
+                "mail",
+                "mailgun"
+            ],
+            "name": "mailgun",
+            "ref": "mailgun",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mailgun",
+            "version": "0.2.0"
         },
         "mistral": {
             "author": "StackStorm",
