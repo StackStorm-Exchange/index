@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480411420,
-        "hash": "dbe6a23f9e05b20cdcd265f32ca6868e"
+        "generated_ts": 1480411663,
+        "hash": "67c8d5e6d7e4f56c6e65a759efdd9457"
     },
     "packs": {
         "Circle CI": {
@@ -894,6 +894,28 @@
             "ref": "jenkins",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jenkins",
             "version": "0.2.0"
+        },
+        "jira": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 4
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing jira integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "issues",
+                "ticket management",
+                "project management"
+            ],
+            "name": "jira",
+            "ref": "jira",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira",
+            "version": "0.4.0"
         },
         "jmx": {
             "author": "StackStorm, Inc.",
