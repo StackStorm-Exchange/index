@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480402981,
-        "hash": "651107138e62a82c80b36cd97fd0edf4"
+        "generated_ts": 1480403091,
+        "hash": "4b1b6be19b2221a8f5d0c3243529ab6a"
     },
     "packs": {
         "Circle CI": {
@@ -400,6 +400,20 @@
             "name": "excel",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-excel",
             "version": "0.1.0"
+        },
+        "fireeye": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 5
+                }
+            },
+            "description": "FireEye CM Series Integration",
+            "email": "james@stackstorm.com",
+            "name": "fireeye",
+            "ref": "fireeye",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fireeye",
+            "version": "0.2.0"
         },
         "freight": {
             "author": "James Fryman",
