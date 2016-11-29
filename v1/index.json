@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480403785,
-        "hash": "aec30f5336f719219875424b7a013dce"
+        "generated_ts": 1480403973,
+        "hash": "f09b7e9d3a1661806038583becaa3256"
     },
     "packs": {
         "Circle CI": {
@@ -554,6 +554,26 @@
             "name": "st2",
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
+            "version": "0.2.0"
+        },
+        "tesla": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 16
+                },
+                "aliases": {
+                    "count": 2
+                }
+            },
+            "description": "car horn automation",
+            "email": "anthony.shaw@dimensiondata.com",
+            "keywords": [
+                "tesla"
+            ],
+            "name": "tesla",
+            "ref": "tesla",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-tesla",
             "version": "0.2.0"
         },
         "time": {
