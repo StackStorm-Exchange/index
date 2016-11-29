@@ -1,92 +1,9 @@
 {
     "metadata": {
-        "generated_ts": 1480422537,
+        "generated_ts": 1480451668,
         "hash": "1ac8af038fdefd030d5fa189c3c10fe1"
     },
     "packs": {
-        "Circle CI": {
-            "author": "StackStorm dev",
-            "content": {
-                "actions": {
-                    "count": 6
-                },
-                "sensors": {
-                    "count": 1
-                },
-                "tests": {
-                    "count": 2
-                }
-            },
-            "description": "Pack which allows integration with Circle CI.",
-            "email": "support@stackstorm.com",
-            "keywords": [
-                "circle",
-                "circle ci",
-                "continous integration",
-                "ci"
-            ],
-            "name": "Circle CI",
-            "ref": "circle_ci",
-            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle-ci",
-            "version": "0.3.0"
-        },
-        "Digital Ocean": {
-            "author": "StackStorm, Inc.",
-            "content": {
-                "actions": {
-                    "count": 14
-                }
-            },
-            "description": "st2 content pack containing Digital Ocean integration.",
-            "email": "info@stackstorm.com",
-            "name": "Digital Ocean",
-            "ref": "digitalocean",
-            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-digital-ocean",
-            "version": "0.2.0"
-        },
-        "SmartThings": {
-            "author": "James Fryman",
-            "content": {
-                "actions": {
-                    "count": 12
-                },
-                "sensors": {
-                    "count": 1
-                }
-            },
-            "description": "Integration with SmartThings",
-            "email": "james@stackstorm.com",
-            "keywords": [
-                "smartthings",
-                "iot",
-                "smart home",
-                "home automation"
-            ],
-            "name": "SmartThings",
-            "ref": "smartthings",
-            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-smartthings",
-            "version": "0.2.0"
-        },
-        "Travis CI": {
-            "author": "Aamir",
-            "content": {
-                "actions": {
-                    "count": 9
-                }
-            },
-            "description": "Pack which allows integration with Travis CI.",
-            "email": "raza.aamir01@gmail.com",
-            "keywords": [
-                "travis",
-                "travis ci",
-                "continuous integration",
-                "ci"
-            ],
-            "name": "Travis CI",
-            "ref": "travis_ci",
-            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-travis-ci",
-            "version": "0.2.0"
-        },
         "activecampaign": {
             "author": "DoriftoShoes",
             "content": {
@@ -320,6 +237,32 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-chef",
             "version": "0.1.1"
         },
+        "circle_ci": {
+            "author": "StackStorm dev",
+            "content": {
+                "actions": {
+                    "count": 6
+                },
+                "sensors": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 2
+                }
+            },
+            "description": "Pack which allows integration with Circle CI.",
+            "email": "support@stackstorm.com",
+            "keywords": [
+                "circle",
+                "circle ci",
+                "continous integration",
+                "ci"
+            ],
+            "name": "Circle CI",
+            "ref": "circle_ci",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle-ci",
+            "version": "0.3.0"
+        },
         "cisco_spark": {
             "author": "Anthony Shaw",
             "content": {
@@ -497,6 +440,20 @@
             "ref": "device42",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
             "version": "0.3.0"
+        },
+        "digitalocean": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 14
+                }
+            },
+            "description": "st2 content pack containing Digital Ocean integration.",
+            "email": "info@stackstorm.com",
+            "name": "Digital Ocean",
+            "ref": "digitalocean",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-digital-ocean",
+            "version": "0.2.0"
         },
         "dimensiondata": {
             "author": "Anthony Shaw",
@@ -1648,6 +1605,29 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
             "version": "0.3.0"
         },
+        "smartthings": {
+            "author": "James Fryman",
+            "content": {
+                "actions": {
+                    "count": 12
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Integration with SmartThings",
+            "email": "james@stackstorm.com",
+            "keywords": [
+                "smartthings",
+                "iot",
+                "smart home",
+                "home automation"
+            ],
+            "name": "SmartThings",
+            "ref": "smartthings",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-smartthings",
+            "version": "0.2.0"
+        },
         "softlayer": {
             "author": "Itxaka Serrano Garcia",
             "content": {
@@ -1743,6 +1723,26 @@
             "ref": "time",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-time",
             "version": "0.1.0"
+        },
+        "travis_ci": {
+            "author": "Aamir",
+            "content": {
+                "actions": {
+                    "count": 9
+                }
+            },
+            "description": "Pack which allows integration with Travis CI.",
+            "email": "raza.aamir01@gmail.com",
+            "keywords": [
+                "travis",
+                "travis ci",
+                "continuous integration",
+                "ci"
+            ],
+            "name": "Travis CI",
+            "ref": "travis_ci",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-travis-ci",
+            "version": "0.2.0"
         },
         "trello": {
             "author": "James Fryman",
