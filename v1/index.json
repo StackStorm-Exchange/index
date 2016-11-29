@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480405062,
-        "hash": "daf61e552695ea72c85b4c4b2099f518"
+        "generated_ts": 1480405293,
+        "hash": "a09e66f9553373c4d39f96767d994ca7"
     },
     "packs": {
         "Circle CI": {
@@ -166,6 +166,26 @@
             "ref": "chef",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-chef",
             "version": "0.1.1"
+        },
+        "cisco_spark": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 19
+                }
+            },
+            "description": "cisco spark communication pack",
+            "email": "anthonyshaw@apache.org",
+            "keywords": [
+                "cisco",
+                "spark",
+                "video",
+                "chat"
+            ],
+            "name": "cisco_spark",
+            "ref": "cisco_spark",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_spark",
+            "version": "0.1.0"
         },
         "clicrud": {
             "author": "davidjohngee",
