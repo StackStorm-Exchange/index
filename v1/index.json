@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480401475,
-        "hash": "7976b64b5a853d271c2769416c258ee5"
+        "generated_ts": 1480401579,
+        "hash": "5b11e21a1b76ea190a8d5ea88f4e2ea3"
     },
     "packs": {
         "Circle CI": {
@@ -29,6 +29,42 @@
             "ref": "circle_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle-ci",
             "version": "0.3.0"
+        },
+        "aws": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 639
+                },
+                "sensors": {
+                    "count": 2
+                },
+                "tests": {
+                    "count": 3
+                }
+            },
+            "description": "st2 content pack containing Amazon Web Services integrations.",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "aws",
+                "amazon web services",
+                "amazon",
+                "ec2",
+                "sqs",
+                "sns",
+                "route53",
+                "cloud",
+                "iam",
+                "vpc",
+                "s3",
+                "CloudFormation",
+                "RDS",
+                "SQS"
+            ],
+            "name": "aws",
+            "ref": "aws",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
+            "version": "0.7.2"
         },
         "azure": {
             "author": "StackStorm, Inc.",
