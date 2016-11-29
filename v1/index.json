@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480411861,
-        "hash": "ddb28ad2535f5abb7e55fec186deebc3"
+        "generated_ts": 1480412063,
+        "hash": "75a9a4e2c3e0d95615a99c7c7d0e4103"
     },
     "packs": {
         "Circle CI": {
@@ -1390,6 +1390,25 @@
             "ref": "powerpoint",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerpoint",
             "version": "0.1.0"
+        },
+        "puppet": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 5
+                }
+            },
+            "description": "st2 content pack containing puppet integrations",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "puppet",
+                "cfg management",
+                "configuration management"
+            ],
+            "name": "puppet",
+            "ref": "puppet",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-puppet",
+            "version": "0.2.0"
         },
         "qualys": {
             "author": "Anthony Shaw",
