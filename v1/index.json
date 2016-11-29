@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480409640,
-        "hash": "4e4717936cc77f23d4e9ea2a129bbdc8"
+        "generated_ts": 1480409779,
+        "hash": "c596d773b3893cc1d69fa0b45282b654"
     },
     "packs": {
         "Circle CI": {
@@ -1004,6 +1004,30 @@
             "ref": "newrelic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
             "version": "0.3.0"
+        },
+        "octopusdeploy": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 6
+                },
+                "sensors": {
+                    "count": 2
+                }
+            },
+            "description": "st2 content pack containing octopusdeploy integrations",
+            "email": "anthony.shaw@dimensiondata.com",
+            "keywords": [
+                "octopus",
+                "octopusdeploy",
+                "deployment",
+                "continous deployment",
+                "continous integration"
+            ],
+            "name": "octopusdeploy",
+            "ref": "octopusdeploy",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-octopusdeploy",
+            "version": "0.1.0"
         },
         "openhab": {
             "author": "James Fryman",
