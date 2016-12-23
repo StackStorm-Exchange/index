@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1480453018,
-        "hash": "c4777309fedb5c00a4bbf1a8bd713065"
+        "generated_ts": 1482472514,
+        "hash": "41ed59b8f1a54cc75b9871ed3f276a7a"
     },
     "packs": {
         "activecampaign": {
@@ -113,7 +113,7 @@
             "name": "aws",
             "ref": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
-            "version": "0.7.2"
+            "version": "0.7.3"
         },
         "azure": {
             "author": "StackStorm, Inc.",
@@ -148,6 +148,9 @@
                     "count": 1
                 }
             },
+            "contributors": [
+                "Edward Medvedev <edward.medvedev@gmail.com>"
+            ],
             "description": "Pack which allows integration with Bitbucket.",
             "email": "raza.aamir01@gmail.com",
             "keywords": [
@@ -160,7 +163,8 @@
             "name": "bitbucket",
             "ref": "bitbucket",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitbucket",
-            "version": "0.1.1"
+            "stackstorm_version": ">=2.1.0",
+            "version": "0.3.0"
         },
         "bitcoin": {
             "author": "StackStorm, Inc.",
@@ -347,7 +351,7 @@
             "author": "jfryman",
             "content": {
                 "actions": {
-                    "count": 12
+                    "count": 15
                 }
             },
             "description": "consul",
@@ -700,7 +704,7 @@
             "name": "github",
             "ref": "github",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-github",
-            "version": "0.6.0"
+            "version": "0.6.1"
         },
         "google": {
             "author": "StackStorm, Inc.",
@@ -918,32 +922,32 @@
             "version": "0.2.0"
         },
         "kubernetes": {
-            "author": "Michael Ward",
+            "author": "Andrew Moore",
             "content": {
                 "actions": {
-                    "count": 3
+                    "count": 365
                 },
                 "rules": {
                     "count": 2
                 },
                 "sensors": {
-                    "count": 1
-                },
-                "tests": {
-                    "count": 1
+                    "count": 33
                 }
             },
+            "contributors": [
+                "Michael Ward <mward29@gmail.com>"
+            ],
             "description": "st2 content pack containing Kubernetes sensors",
-            "email": "mward29@gmail.com",
+            "email": "andrew.moore@pearson.com",
             "keywords": [
-                "kubenetes",
+                "kubernetes",
                 "sensors",
                 "thirdpartyresource"
             ],
             "name": "kubernetes",
             "ref": "kubernetes",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kubernetes",
-            "version": "0.1.0"
+            "version": "0.3.0"
         },
         "lastline": {
             "author": "James Fryman",
@@ -1879,7 +1883,7 @@
             "author": "steve.neuharth",
             "content": {
                 "actions": {
-                    "count": 6
+                    "count": 8
                 }
             },
             "description": "vault",
