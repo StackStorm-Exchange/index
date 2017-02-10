@@ -1,7 +1,7 @@
 ref: vsphere
 name: vsphere
 description: st2 content pack containing vsphere integrations.
-version: 0.4.5
+version: 0.4.6
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -10,5 +10,7 @@ contributors:
 content:
   actions:
     count: 22
+  sensors:
+    count: 1
   tests:
-    count: 13
+    count: 14
