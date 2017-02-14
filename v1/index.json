@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1486747381,
-        "hash": "2e25223b1c96a42dce5308270807308b"
+        "generated_ts": 1487093829,
+        "hash": "573f4e428dd87e35d8ff3859df44aa92"
     },
     "packs": {
         "activecampaign": {
@@ -1692,6 +1692,22 @@
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
             "version": "0.2.0"
+        },
+        "sumologic": {
+            "author": "Igor Cherkaev",
+            "content": {
+                "actions": {
+                    "count": 7
+                }
+            },
+            "description": "SumoLogic Integration",
+            "email": "igor.cherkaev@copart.com",
+            "keywords": [
+                "sumologic"
+            ],
+            "name": "sumologic",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sumologic",
+            "version": "0.9.6"
         },
         "tesla": {
             "author": "Anthony Shaw",
