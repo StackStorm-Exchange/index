@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1487093829,
-        "hash": "573f4e428dd87e35d8ff3859df44aa92"
+        "generated_ts": 1487657130,
+        "hash": "b82cea186660056bf6542510eed4b117"
     },
     "packs": {
         "activecampaign": {
@@ -1109,6 +1109,22 @@
             "ref": "mssql",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mssql",
             "version": "0.1.0"
+        },
+        "mysql": {
+            "author": "st2-dev",
+            "content": {
+                "actions": {
+                    "count": 2
+                }
+            },
+            "contributors": [
+                "Joe Topjian <joe@topjian.net>"
+            ],
+            "description": "Mysql integration pack",
+            "email": "info@stackstorm.com",
+            "name": "mysql",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mysql",
+            "version": "0.3.0"
         },
         "nagios": {
             "author": "StackStorm, Inc.",
