@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1488218296,
-        "hash": "3e1bbc9e921945508d8ab2d212cbd17c"
+        "generated_ts": 1488237739,
+        "hash": "8022c676e247f2fcb15359481f582e3c"
     },
     "packs": {
         "activecampaign": {
@@ -1164,6 +1164,22 @@
             "ref": "nest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
             "version": "0.2.0"
+        },
+        "network_essentials": {
+            "author": "Brocade",
+            "content": {
+                "actions": {
+                    "count": 51
+                },
+                "aliases": {
+                    "count": 1
+                }
+            },
+            "description": "Brocade Workflow Composer Network Essentials Pack",
+            "email": "support@brocade.com",
+            "name": "network_essentials",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-network_essentials",
+            "version": "1.0.0"
         },
         "networking_utils": {
             "author": "Jon Middleton",
