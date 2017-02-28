@@ -6,11 +6,14 @@ keywords:
 - utilities
 - ipv4
 - ipv6
-version: 0.1.0
+- geoip
+version: 0.2.0
 author: Jon Middleton
 email: jon.middleton@pulsant.com
 content:
   actions:
-    count: 5
+    count: 6
+  aliases:
+    count: 1
   tests:
-    count: 4
+    count: 6

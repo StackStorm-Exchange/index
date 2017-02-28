@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1488237739,
-        "hash": "8022c676e247f2fcb15359481f582e3c"
+        "generated_ts": 1488274379,
+        "hash": "25b8b0b0e1aa5497254c3ff32f087bb0"
     },
     "packs": {
         "activecampaign": {
@@ -1185,10 +1185,13 @@
             "author": "Jon Middleton",
             "content": {
                 "actions": {
-                    "count": 5
+                    "count": 6
+                },
+                "aliases": {
+                    "count": 1
                 },
                 "tests": {
-                    "count": 4
+                    "count": 6
                 }
             },
             "description": "A pack containing useful networking utils for use in workflows.",
@@ -1197,12 +1200,13 @@
                 "networking",
                 "utilities",
                 "ipv4",
-                "ipv6"
+                "ipv6",
+                "geoip"
             ],
             "name": "networking_utils",
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "version": "0.1.0"
+            "version": "0.2.0"
         },
         "newrelic": {
             "author": "StackStorm, Inc.",
