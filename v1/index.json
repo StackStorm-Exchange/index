@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1488326964,
-        "hash": "cf63e9eb5712ec76085363f3a2dde920"
+        "generated_ts": 1488345140,
+        "hash": "36614ca878472e61f4dd8fccb3868b29"
     },
     "packs": {
         "activecampaign": {
@@ -1177,7 +1177,15 @@
             },
             "description": "Brocade Workflow Composer Network Essentials Pack",
             "email": "support@brocade.com",
-            "name": "network_essentials",
+            "keywords": [
+                "networking",
+                "vdx",
+                "slx",
+                "network",
+                "network automation"
+            ],
+            "name": "Network Essentials",
+            "ref": "network_essentials",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-network_essentials",
             "version": "1.0.0"
         },
