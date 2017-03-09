@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1488966823,
-        "hash": "563bb034c2b5d32d069c666c56daeb08"
+        "generated_ts": 1489102030,
+        "hash": "70c7cf7a6b57dc3967c80d83dffdef07"
     },
     "packs": {
         "activecampaign": {
@@ -1149,6 +1149,30 @@
             "name": "nagios",
             "ref": "nagios",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nagios",
+            "version": "0.2.0"
+        },
+        "napalm": {
+            "author": "mierdin, Rob Woodward",
+            "content": {
+                "actions": {
+                    "count": 26
+                },
+                "rules": {
+                    "count": 3
+                }
+            },
+            "description": "A StackStorm pack for working with network devices using the NAPALM library",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "networking",
+                "napalm",
+                "cisco",
+                "juniper",
+                "arista",
+                "ibm"
+            ],
+            "name": "napalm",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm",
             "version": "0.2.0"
         },
         "nest": {
