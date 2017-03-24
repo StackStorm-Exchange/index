@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1489685420,
-        "hash": "7022a6f499982400b7fba5ee41140c96"
+        "generated_ts": 1490368965,
+        "hash": "28f2881eb4e7c2820041f37be06132d2"
     },
     "packs": {
         "activecampaign": {
@@ -291,27 +291,24 @@
             "author": "davidjohngee",
             "content": {
                 "actions": {
-                    "count": 3
-                },
-                "aliases": {
-                    "count": 3
-                },
-                "rules": {
-                    "count": 5
+                    "count": 2
                 }
             },
             "description": "CLICRUD integration for ST2",
             "email": "david.gee@ipengineer.net",
             "keywords": [
+                "Brocade",
                 "icx",
                 "mlx",
                 "cli",
-                "clicrud"
+                "clicrud",
+                "vrouter",
+                "vyatta"
             ],
             "name": "clicrud",
             "ref": "clicrud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-clicrud",
-            "version": "0.2.0"
+            "version": "0.3.0"
         },
         "cloudflare": {
             "author": "Jon Middleton",
