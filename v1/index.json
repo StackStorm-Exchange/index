@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1490368965,
-        "hash": "28f2881eb4e7c2820041f37be06132d2"
+        "generated_ts": 1490532420,
+        "hash": "e163408db177c389626b1231444ae963"
     },
     "packs": {
         "activecampaign": {
@@ -83,7 +83,7 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 822
+                    "count": 847
                 },
                 "sensors": {
                     "count": 2
@@ -108,12 +108,13 @@
                 "s3",
                 "CloudFormation",
                 "RDS",
-                "SQS"
+                "SQS",
+                "lambda"
             ],
             "name": "aws",
             "ref": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
-            "version": "0.7.9"
+            "version": "0.8.0"
         },
         "azure": {
             "author": "StackStorm, Inc.",
