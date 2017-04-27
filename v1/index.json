@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1493296908,
-        "hash": "a0954356d0ec2da6a2eaf4c0635d2b10"
+        "generated_ts": 1493318778,
+        "hash": "ec48c38759077d85e02e5d503f6cd15a"
     },
     "packs": {
         "activecampaign": {
@@ -925,6 +925,34 @@
             "name": "jmx",
             "ref": "jmx",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jmx",
+            "version": "0.2.0"
+        },
+        "kafka": {
+            "Contributors": [
+                "Target Corp., Lukas.Marty@Target.com"
+            ],
+            "author": "StackStorm",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "rules": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Integration pack for Apache Kafka message broker",
+            "email": "support@stackstorm.com",
+            "keywords": [
+                "kafka",
+                "queuing",
+                "messaging",
+                "message broker"
+            ],
+            "name": "kafka",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kafka",
             "version": "0.2.0"
         },
         "kubernetes": {
