@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1493440112,
-        "hash": "f183819205f88bc15017d26ae18de48a"
+        "generated_ts": 1493458985,
+        "hash": "f386cdaf245d8f209b9c46687de49e40"
     },
     "packs": {
         "activecampaign": {
@@ -662,6 +662,26 @@
             "ref": "freight",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-freight",
             "version": "0.1.0"
+        },
+        "ghost2logger": {
+            "author": "davidjohngee",
+            "content": {
+                "sensors": {
+                    "count": 2
+                }
+            },
+            "description": "Syslog end-point for match rule criteria",
+            "email": "david.gee@ipengineer.net",
+            "keywords": [
+                "Syslog",
+                "Go",
+                "Logging",
+                "Simple"
+            ],
+            "name": "ghost2logger",
+            "ref": "ghost2logger",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ghost2logger",
+            "version": "1.0.0"
         },
         "git": {
             "author": "StackStorm, Inc.",
