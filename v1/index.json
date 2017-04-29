@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1493439508,
-        "hash": "b43f8df200aeed67b2f21c3944497c04"
+        "generated_ts": 1493440112,
+        "hash": "f183819205f88bc15017d26ae18de48a"
     },
     "packs": {
         "activecampaign": {
@@ -1515,6 +1515,23 @@
             "ref": "powerpoint",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerpoint",
             "version": "0.1.0"
+        },
+        "prometheus": {
+            "author": "Daniel Chamot",
+            "content": {
+                "actions": {
+                    "count": 3
+                }
+            },
+            "description": "Interact with Prometheus HTTP API",
+            "email": "daniel@nullkarma.com",
+            "keywords": [
+                "prometheus"
+            ],
+            "name": "prometheus",
+            "ref": "prometheus",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-prometheus",
+            "version": "0.1.1"
         },
         "puppet": {
             "author": "StackStorm, Inc.",
