@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1493318778,
-        "hash": "ec48c38759077d85e02e5d503f6cd15a"
+        "generated_ts": 1493439508,
+        "hash": "b43f8df200aeed67b2f21c3944497c04"
     },
     "packs": {
         "activecampaign": {
@@ -617,6 +617,23 @@
             "ref": "fireeye",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fireeye",
             "version": "0.2.0"
+        },
+        "foreman": {
+            "author": "Daniel Chamot",
+            "content": {
+                "actions": {
+                    "count": 4
+                }
+            },
+            "description": "Interact with Foreman API v2",
+            "email": "daniel@nullkarma.com",
+            "keywords": [
+                "foreman"
+            ],
+            "name": "foreman",
+            "ref": "foreman",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-foreman",
+            "version": "0.2.1"
         },
         "fpm": {
             "author": "jfryman",
