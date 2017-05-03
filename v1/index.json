@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1493567680,
-        "hash": "0228b35d8b9eb6136a8c5569ee4f91d3"
+        "generated_ts": 1493823704,
+        "hash": "0c596df1dd05a2ee99268ef6fa417f84"
     },
     "packs": {
         "activecampaign": {
@@ -743,6 +743,22 @@
             "ref": "github",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-github",
             "version": "0.6.2"
+        },
+        "gitlab": {
+            "author": "Daniel Chamot",
+            "content": {
+                "actions": {
+                    "count": 3
+                }
+            },
+            "description": "GitLab Rest API",
+            "email": "daniel@nullkarma.com",
+            "keywords": [
+                "gitlab"
+            ],
+            "name": "gitlab",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gitlab",
+            "version": "0.5.0"
         },
         "google": {
             "author": "StackStorm, Inc.",
