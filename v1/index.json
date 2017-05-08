@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1494254857,
-        "hash": "22fcad3113de8aeb764b968d3b3245ea"
+        "generated_ts": 1494270128,
+        "hash": "faa766df77fa391eceace06d2d96717d"
     },
     "packs": {
         "acos": {
@@ -1897,6 +1897,26 @@
             "name": "sumologic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sumologic",
             "version": "0.9.6"
+        },
+        "telegram": {
+            "author": "Fabio Brito",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Telegram integration pack for Stack Storm",
+            "email": "psychopenguin@gmail.com",
+            "keywords": [
+                "telegram",
+                "messaging"
+            ],
+            "name": "telegram",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-telegram",
+            "version": "0.1.0"
         },
         "tesla": {
             "author": "Anthony Shaw",
