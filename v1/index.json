@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1494270128,
-        "hash": "faa766df77fa391eceace06d2d96717d"
+        "generated_ts": 1494271259,
+        "hash": "b918bc858ea60e1449cf36d3c0924f29"
     },
     "packs": {
         "acos": {
@@ -1604,6 +1604,24 @@
             "ref": "puppet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-puppet",
             "version": "0.2.0"
+        },
+        "pushbullet": {
+            "author": "Fabio Brito",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "Pushbullet integration pack for StackStorm",
+            "email": "psychopenguin@gmail.com",
+            "keywords": [
+                "telegram",
+                "messaging",
+                "SMS"
+            ],
+            "name": "pushbullet",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pushbullet",
+            "version": "0.1.0"
         },
         "qualys": {
             "author": "Anthony Shaw",
