@@ -1,9 +1,26 @@
 {
     "metadata": {
-        "generated_ts": 1494027298,
-        "hash": "35158e6620babf3c6002cc5d94b10f5e"
+        "generated_ts": 1494254857,
+        "hash": "22fcad3113de8aeb764b968d3b3245ea"
     },
     "packs": {
+        "acos": {
+            "author": "Hiroyasu OHYAMA",
+            "content": {
+                "actions": {
+                    "count": 15
+                },
+                "tests": {
+                    "count": 3
+                }
+            },
+            "description": "StackStorm pack for ACOS-based appliances of A10 Networks.",
+            "email": "user.localhost2000@gmail.com",
+            "name": "acos",
+            "ref": "acos",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-acos",
+            "version": "0.1.0"
+        },
         "activecampaign": {
             "author": "DoriftoShoes",
             "content": {
