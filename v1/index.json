@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1494321447,
-        "hash": "a8cfca5739e90bb3bb01c3e250a7e926"
+        "generated_ts": 1494361855,
+        "hash": "3cd3100bcc34d3886ec9a026bf20de6e"
     },
     "packs": {
         "acos": {
@@ -2213,6 +2213,29 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "version": "0.5.1"
+        },
+        "vyatta": {
+            "author": "Mehdi Abdelouahab",
+            "content": {
+                "actions": {
+                    "count": 47
+                },
+                "aliases": {
+                    "count": 20
+                },
+                "rules": {
+                    "count": 12
+                }
+            },
+            "description": "A StackStorm pack for working with vyatta vRouter",
+            "email": "mabdelou@brocade.com",
+            "keywords": [
+                "networking",
+                "vyatta"
+            ],
+            "name": "vyatta",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vyatta",
+            "version": "0.1.0"
         },
         "webpagetest": {
             "author": "Linuturk",
