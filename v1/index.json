@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1495205168,
-        "hash": "06c62b6213ad74060fd5d6649cefde58"
+        "generated_ts": 1495406218,
+        "hash": "03c78e2113fb55a62c805b95b36aafc4"
     },
     "packs": {
         "acos": {
@@ -296,7 +296,10 @@
             "author": "Anthony Shaw",
             "content": {
                 "actions": {
-                    "count": 19
+                    "count": 20
+                },
+                "rules": {
+                    "count": 1
                 }
             },
             "description": "cisco spark communication pack",
@@ -310,7 +313,7 @@
             "name": "cisco_spark",
             "ref": "cisco_spark",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_spark",
-            "version": "0.1.0"
+            "version": "0.2.0"
         },
         "clicrud": {
             "author": "davidjohngee",
