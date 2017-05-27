@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1495807724,
-        "hash": "4fb66f6b7574ef7ab447a18d96cb6ec7"
+        "generated_ts": 1495850821,
+        "hash": "8c4ea8ed8c82fd1b6148b9973d8ae1c8"
     },
     "packs": {
         "acos": {
@@ -2109,6 +2109,21 @@
             "ref": "typeform",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-typeform",
             "version": "0.3.0"
+        },
+        "ubersmith": {
+            "author": "James Cornman",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "contributors": null,
+            "description": "st2 content pack containing Ubersmith integrations.",
+            "email": "jizaymes@gmail.com",
+            "name": "ubersmith",
+            "ref": "ubersmith",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ubersmith",
+            "version": "0.1.0"
         },
         "urbandict": {
             "author": "StackStorm, Inc.",
