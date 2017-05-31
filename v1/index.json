@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1495902420,
-        "hash": "2fbdf34e64c701f27132fda8faedcb4c"
+        "generated_ts": 1496248232,
+        "hash": "14c71010cf2e26f8e54000cf8607fb9e"
     },
     "packs": {
         "acos": {
@@ -1312,6 +1312,23 @@
             "ref": "nest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
             "version": "0.2.0"
+        },
+        "netbox": {
+            "author": "John Anderson",
+            "content": {
+                "actions": {
+                    "count": 8
+                }
+            },
+            "description": "A StackStorm pack for integrating with netbox",
+            "email": "lampwins@gmail.com",
+            "keywords": [
+                "netbox",
+                "networking"
+            ],
+            "name": "netbox",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-netbox",
+            "version": "0.1.0"
         },
         "network_essentials": {
             "author": "Brocade",
