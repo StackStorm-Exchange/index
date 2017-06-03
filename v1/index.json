@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1496352310,
-        "hash": "0649bfe69cb50cb18fe41d8f098b1a7f"
+        "generated_ts": 1496501868,
+        "hash": "f9f4c149f7cc9e1f4d85321bd7198730"
     },
     "packs": {
         "acos": {
@@ -1025,7 +1025,7 @@
                     "count": 1
                 },
                 "sensors": {
-                    "count": 1
+                    "count": 2
                 }
             },
             "description": "Integration pack for Apache Kafka message broker",
@@ -1034,11 +1034,15 @@
                 "kafka",
                 "queuing",
                 "messaging",
-                "message broker"
+                "message broker",
+                "gcp",
+                "base64",
+                "stackdriver",
+                "google cloud"
             ],
             "name": "kafka",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kafka",
-            "version": "0.2.0"
+            "version": "0.2.1"
         },
         "kubernetes": {
             "author": "Andrew Moore",
