@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1496685834,
-        "hash": "e7ca39f110f889a18eb8a569c2f27627"
+        "generated_ts": 1496862160,
+        "hash": "da187b67dbd9ce8694cd2c83c77350ac"
     },
     "packs": {
         "acos": {
@@ -144,7 +144,10 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 13
+                    "count": 16
+                },
+                "aliases": {
+                    "count": 2
                 }
             },
             "description": "st2 content pack containing Microsoft Azure integrations.",
@@ -156,12 +159,13 @@
                 "libcloud",
                 "servers",
                 "virtual machines",
-                "azure virtual machines"
+                "azure virtual machines",
+                "azurerm"
             ],
             "name": "azure",
             "ref": "azure",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
-            "version": "0.2.0"
+            "version": "0.2.1"
         },
         "bitbucket": {
             "author": "Aamir",
