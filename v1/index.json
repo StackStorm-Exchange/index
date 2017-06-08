@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1496862160,
-        "hash": "da187b67dbd9ce8694cd2c83c77350ac"
+        "generated_ts": 1496884494,
+        "hash": "d8a2eaca1090e129be02110e4d264ab6"
     },
     "packs": {
         "acos": {
@@ -109,6 +109,9 @@
                 "actions": {
                     "count": 877
                 },
+                "aliases": {
+                    "count": 3
+                },
                 "sensors": {
                     "count": 2
                 },
@@ -138,7 +141,7 @@
             "name": "aws",
             "ref": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
-            "version": "0.9.2"
+            "version": "0.9.3"
         },
         "azure": {
             "author": "StackStorm, Inc.",
