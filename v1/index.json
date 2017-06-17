@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1497453124,
-        "hash": "83b77294e4dfb24c5172fc5b7805f347"
+        "generated_ts": 1497660342,
+        "hash": "edc0bd4dc39ab71a860c9aba57cc9bd0"
     },
     "packs": {
         "acos": {
@@ -46,6 +46,31 @@
             "ref": "activecampaign",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activecampaign",
             "version": "0.2.0"
+        },
+        "activedirectory": {
+            "author": "Encore Technologies",
+            "content": {
+                "actions": {
+                    "count": 77
+                },
+                "tests": {
+                    "count": 3
+                }
+            },
+            "description": "StackStorm integration pack for working with Microsoft Active Directory.",
+            "email": "code@encore.tech",
+            "keywords": [
+                "microsoft",
+                "ms",
+                "activedirectory",
+                "active",
+                "directory",
+                "ad"
+            ],
+            "name": "activedirectory",
+            "ref": "activedirectory",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activedirectory",
+            "version": "0.1.0"
         },
         "alertlogic": {
             "author": "Jon Middleton",
