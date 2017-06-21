@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1498013718,
-        "hash": "4bd1a54a29175ea51d5bbf751b24aa47"
+        "generated_ts": 1498029057,
+        "hash": "91ad685b40505509515c67f5ddec8af4"
     },
     "packs": {
         "acos": {
@@ -1261,6 +1261,29 @@
             "ref": "mqtt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mqtt",
             "version": "0.2.0"
+        },
+        "msexchange": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 5
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "A pack for interfacing with a Microsoft Exchange server",
+            "email": "anthonyshaw@apache.org",
+            "keywords": [
+                "mail",
+                "calendar",
+                "exchange",
+                "office365"
+            ],
+            "name": "Microsoft Exchange",
+            "ref": "msexchange",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-msexchange",
+            "version": "0.1.0"
         },
         "mssql": {
             "author": "codyaray",
