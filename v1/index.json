@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1497998477,
-        "hash": "a12cefd6cdfde6962692bebfd5aa8a8e"
+        "generated_ts": 1498013718,
+        "hash": "4bd1a54a29175ea51d5bbf751b24aa47"
     },
     "packs": {
         "acos": {
@@ -666,6 +666,29 @@
             "email": "tbraly@brocade.com",
             "name": "excel",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-excel",
+            "version": "0.1.0"
+        },
+        "exchange": {
+            "author": "Anthony Shaw",
+            "content": {
+                "actions": {
+                    "count": 5
+                },
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "A pack for interfacing with a Microsoft Exchange server",
+            "email": "anthonyshaw@apache.org",
+            "keywords": [
+                "mail",
+                "calendar",
+                "exchange",
+                "office365"
+            ],
+            "name": "Microsoft Exchange",
+            "ref": "exchange",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-exchange",
             "version": "0.1.0"
         },
         "fireeye": {
