@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1498084665,
-        "hash": "25021c592a058401662e2dec25cc89f1"
+        "generated_ts": 1498214084,
+        "hash": "5bf662a3e13e92915ace91806fd2f68c"
     },
     "packs": {
         "acos": {
@@ -98,6 +98,9 @@
             "content": {
                 "actions": {
                     "count": 8
+                },
+                "tests": {
+                    "count": 1
                 }
             },
             "description": "st2 content pack containing ansible integrations",
@@ -110,7 +113,7 @@
             "name": "ansible",
             "ref": "ansible",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ansible",
-            "version": "0.4.0"
+            "version": "0.5.0"
         },
         "astral": {
             "author": "Tim Braly",
