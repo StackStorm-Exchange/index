@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1498871267,
-        "hash": "f876d02da5b7446308bf267b3664fcf1"
+        "generated_ts": 1499065182,
+        "hash": "a63f6aa3386fe5afb83408a66428b79d"
     },
     "packs": {
         "acos": {
@@ -206,10 +206,17 @@
                 },
                 "rules": {
                     "count": 1
+                },
+                "sensors": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 1
                 }
             },
             "contributors": [
-                "Edward Medvedev <edward.medvedev@gmail.com>"
+                "Edward Medvedev <edward.medvedev@gmail.com>",
+                "Hiroyasu OHYAMA <user.localhost2000@gmail.com>"
             ],
             "description": "Pack which allows integration with Bitbucket.",
             "email": "raza.aamir01@gmail.com",
@@ -224,7 +231,7 @@
             "ref": "bitbucket",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitbucket",
             "stackstorm_version": ">=2.1.0",
-            "version": "0.4.0"
+            "version": "0.5.0"
         },
         "bitcoin": {
             "author": "StackStorm, Inc.",
