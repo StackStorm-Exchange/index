@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1499725387,
-        "hash": "f68267de4cc85909be47900ee0ab2431"
+        "generated_ts": 1499765791,
+        "hash": "60e44bfa083dab5c7855ed87301f571c"
     },
     "packs": {
         "acos": {
@@ -2160,6 +2160,27 @@
             "ref": "trello",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-trello",
             "version": "0.4.0"
+        },
+        "tuleap": {
+            "author": "Humbert Moreaux",
+            "content": {
+                "actions": {
+                    "count": 7
+                }
+            },
+            "description": "A Tuleap StackStorm pack",
+            "email": "crew@enalean.com",
+            "keywords": [
+                "Tuleap",
+                "ALM",
+                "Issue tracker",
+                "Open source",
+                "Agile tool"
+            ],
+            "name": "Tuleap",
+            "ref": "tuleap",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-tuleap",
+            "version": "0.1.0"
         },
         "twilio": {
             "author": "StackStorm, Inc.",
