@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1499770982,
-        "hash": "c10eb6ae66b64f6f347e8801dad7071c"
+        "generated_ts": 1499775681,
+        "hash": "0f5ce791b6cc1d17c811132eea6f273f"
     },
     "packs": {
         "acos": {
@@ -1695,6 +1695,28 @@
             "ref": "pagerduty",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pagerduty",
             "version": "0.4.0"
+        },
+        "phantomjs": {
+            "author": "Tomaz Muraus",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 1
+                }
+            },
+            "description": "st2 content pack containing PhantomJS integrations",
+            "email": "tomaz@tomaz.me",
+            "keywords": [
+                "phantomjs",
+                "browser",
+                "headless browser"
+            ],
+            "name": "phantomjs",
+            "ref": "phantomjs",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-phantomjs",
+            "version": "0.1.0"
         },
         "powerpoint": {
             "author": "Anthony Shaw",
