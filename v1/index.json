@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1499876611,
-        "hash": "88ea6d0b52ef76ef02651da3ce17d018"
+        "generated_ts": 1500270227,
+        "hash": "23c031d3834fff0f763dc11923cb0e26"
     },
     "packs": {
         "acos": {
@@ -517,6 +517,9 @@
             "content": {
                 "actions": {
                     "count": 14
+                },
+                "tests": {
+                    "count": 2
                 }
             },
             "description": "st2 content pack containing Digital Ocean integration.",
@@ -524,7 +527,7 @@
             "name": "Digital Ocean",
             "ref": "digitalocean",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-digitalocean",
-            "version": "0.3.0"
+            "version": "0.3.1"
         },
         "dimensiondata": {
             "author": "Anthony Shaw",
