@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1500270227,
-        "hash": "23c031d3834fff0f763dc11923cb0e26"
+        "generated_ts": 1500275464,
+        "hash": "7c52a71f0657a5c918d91b30f6d5a717"
     },
     "packs": {
         "acos": {
@@ -1034,6 +1034,24 @@
             "ref": "jenkins",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jenkins",
             "version": "0.4.0"
+        },
+        "jinja": {
+            "author": "StackStorm, inc.",
+            "content": {
+                "actions": {
+                    "count": 1
+                }
+            },
+            "description": "Jinja template engine",
+            "email": "support@stackstorm.com",
+            "keywords": [
+                "jinja",
+                "template",
+                "templating"
+            ],
+            "name": "jinja",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jinja",
+            "version": "0.1.0"
         },
         "jira": {
             "author": "StackStorm, Inc.",
