@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1500475160,
-        "hash": "834eaa0955db6ac9b3008dfa5eb2cd82"
+        "generated_ts": 1500484985,
+        "hash": "7bf6b568e54ff299940b6bae1d5af492"
     },
     "packs": {
         "acos": {
@@ -2412,6 +2412,20 @@
             "name": "vdx",
             "ref": "vdx",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx",
+            "version": "0.1.0"
+        },
+        "vdx_vtep": {
+            "author": "GSLAB",
+            "content": {
+                "actions": {
+                    "count": 19
+                }
+            },
+            "description": "VDX automation pack.",
+            "email": "yugendra.khonde@gslab.com",
+            "name": "vdx_vtep",
+            "ref": "vdx_vtep",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx_vtep",
             "version": "0.1.0"
         },
         "victorops": {
