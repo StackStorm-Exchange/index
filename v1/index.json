@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1500568831,
-        "hash": "c6de72d7ecdd0c88970f142901243ac0"
+        "generated_ts": 1500607391,
+        "hash": "0dbb46898b37b3056bcd9e87938642d4"
     },
     "packs": {
         "acos": {
@@ -1542,6 +1542,20 @@
             "ref": "newrelic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
             "version": "0.4.0"
+        },
+        "nsx_vtep": {
+            "author": "GSLAB",
+            "content": {
+                "actions": {
+                    "count": 4
+                }
+            },
+            "description": "NSX automation pack.",
+            "email": "yugendra.khonde@gslab.com",
+            "name": "nsx_vtep",
+            "ref": "nsx_vtep",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nsx_vtep",
+            "version": "0.1.0"
         },
         "octopusdeploy": {
             "author": "Anthony Shaw",
