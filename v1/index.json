@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1501190327,
-        "hash": "149fc2317b5effd74ddea2d0d2b11771"
+        "generated_ts": 1501201478,
+        "hash": "f29a8e6f6e26a204d00354b87093da47"
     },
     "packs": {
         "acos": {
@@ -280,10 +280,15 @@
             },
             "description": "st2 content pack containing Check_MK integrations",
             "email": "talktome@codyaray.com",
+            "keywords": [
+                "check_mk",
+                "monitoring",
+                "alerting"
+            ],
             "name": "check_mk",
             "ref": "check_mk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-check_mk",
-            "version": "0.1.0"
+            "version": "0.1.1"
         },
         "chef": {
             "author": "StackStorm, Inc.",
@@ -399,20 +404,6 @@
             "ref": "cloudflare",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
             "version": "0.3.1"
-        },
-        "config_demo": {
-            "author": "StackStorm, Inc.",
-            "content": {
-                "actions": {
-                    "count": 1
-                }
-            },
-            "description": "Pack which demonstrated new pack configuration functionality available in StackStorm v1.5 and above.",
-            "email": "info@stackstorm.com",
-            "name": "config_demo",
-            "ref": "config_demo",
-            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-config_demo",
-            "version": "0.1.0"
         },
         "consul": {
             "author": "jfryman",
@@ -680,29 +671,6 @@
             "name": "excel",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-excel",
             "version": "0.2.0"
-        },
-        "exchange": {
-            "author": "Anthony Shaw",
-            "content": {
-                "actions": {
-                    "count": 5
-                },
-                "sensors": {
-                    "count": 1
-                }
-            },
-            "description": "A pack for interfacing with a Microsoft Exchange server",
-            "email": "anthonyshaw@apache.org",
-            "keywords": [
-                "mail",
-                "calendar",
-                "exchange",
-                "office365"
-            ],
-            "name": "Microsoft Exchange",
-            "ref": "exchange",
-            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-exchange",
-            "version": "0.1.0"
         },
         "fireeye": {
             "author": "James Fryman",
