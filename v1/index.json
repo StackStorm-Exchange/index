@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1501201478,
-        "hash": "f29a8e6f6e26a204d00354b87093da47"
+        "generated_ts": 1501204560,
+        "hash": "af7eab65601f5456c224c5f95c7d3393"
     },
     "packs": {
         "acos": {
@@ -1411,12 +1411,16 @@
                     "count": 11
                 }
             },
-            "description": "StackStorm integration with Nest Thermostats",
+            "description": "Nest Home Device Control",
             "email": "james@stackstorm.com",
+            "keywords": [
+                "nest",
+                "home automation"
+            ],
             "name": "nest",
             "ref": "nest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
-            "version": "0.3.0"
+            "version": "0.3.1"
         },
         "netbox": {
             "author": "John Anderson, Jefferson White",
