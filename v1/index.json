@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1501480455,
-        "hash": "f8ef758966aa23fbcaf11fd97d7097a0"
+        "generated_ts": 1501480483,
+        "hash": "c3d4b1416311e7549ac5378643c1c136"
     },
     "packs": {
         "acos": {
@@ -1634,15 +1634,17 @@
                     "count": 22
                 }
             },
-            "description": "A integration pack for the OpsGenie Service",
+            "description": "OpsGenie Alerting and Incident Management Service",
             "email": "jon.middleton@pulsant.com",
             "keywords": [
-                "OpsGenie"
+                "OpsGenie",
+                "alerting",
+                "monitoring"
             ],
             "name": "opsgenie",
             "ref": "opsgenie",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opsgenie",
-            "version": "0.2.0"
+            "version": "0.2.1"
         },
         "orion": {
             "author": "Jon Middleton",
