@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1501480263,
-        "hash": "c329a437a5d29b70f27d3a839a600b10"
+        "generated_ts": 1501480439,
+        "hash": "9326ed67a3b6d0dae0fefff898f33c1f"
     },
     "packs": {
         "acos": {
@@ -1967,10 +1967,14 @@
             },
             "description": "ServiceNow Integration Pack",
             "email": "james@stackstorm.com",
+            "keywords": [
+                "servicenow",
+                "incident management"
+            ],
             "name": "servicenow",
             "ref": "servicenow",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
-            "version": "0.3.1"
+            "version": "0.3.2"
         },
         "signalr": {
             "author": "Anthony Shaw",
