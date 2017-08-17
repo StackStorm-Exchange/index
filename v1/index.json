@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1502961359,
-        "hash": "bed8a5962155e86f2c737f6bf3a24302"
+        "generated_ts": 1503013529,
+        "hash": "635048bd2b10fd6c4820dfbd6f4f9dde"
     },
     "packs": {
         "acos": {
@@ -2438,6 +2438,28 @@
             "ref": "victorops",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-victorops",
             "version": "0.3.0"
+        },
+        "vra7": {
+            "author": "Martez Reed",
+            "content": {
+                "actions": {
+                    "count": 3
+                },
+                "aliases": {
+                    "count": 3
+                }
+            },
+            "description": "VMware vRealize Automation 7 integration pack.",
+            "email": "martez.reed@greenreedtech.com",
+            "keywords": [
+                "vra7",
+                "vrealize automation",
+                "vmware"
+            ],
+            "name": "vra7",
+            "ref": "vra7",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vra7",
+            "version": "0.1.0"
         },
         "vsphere": {
             "author": "Paul Mulvihill",
