@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1506785591,
-        "hash": "f804dcf2cbfae58e554c94da78da3994"
+        "generated_ts": 1506994443,
+        "hash": "c6a54654232e9638d5151475b7159415"
     },
     "packs": {
         "acos": {
@@ -1425,6 +1425,25 @@
             "name": "napalm",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm",
             "version": "0.2.9"
+        },
+        "napalm_logs": {
+            "author": "John Anderson",
+            "content": {
+                "sensors": {
+                    "count": 1
+                }
+            },
+            "description": "Runs a napalm-logs client as a sensor and dispatches rendered logs as triggers.",
+            "email": "lampwins@gmail.com",
+            "keywords": [
+                "napalm-logs",
+                "napalm",
+                "syslog",
+                "networking"
+            ],
+            "name": "napalm_logs",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm_logs",
+            "version": "0.1.0"
         },
         "nest": {
             "author": "James Fryman",
