@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1508344130,
-        "hash": "e07d53cd3849c0de8b974a9f31d45d2b"
+        "generated_ts": 1508529550,
+        "hash": "3ea839a1d42236a7e8af004b77c891f0"
     },
     "packs": {
         "acos": {
@@ -709,18 +709,25 @@
             "author": "Daniel Chamot",
             "content": {
                 "actions": {
-                    "count": 4
+                    "count": 682
+                },
+                "tests": {
+                    "count": 2
                 }
             },
             "description": "Interact with Foreman API v2",
             "email": "daniel@nullkarma.com",
             "keywords": [
-                "foreman"
+                "foreman",
+                "satellite",
+                "red",
+                "hat",
+                "redhat"
             ],
             "name": "foreman",
             "ref": "foreman",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-foreman",
-            "version": "0.2.1"
+            "version": "1.0.0"
         },
         "fpm": {
             "author": "jfryman",
