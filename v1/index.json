@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1508529550,
-        "hash": "3ea839a1d42236a7e8af004b77c891f0"
+        "generated_ts": 1508544101,
+        "hash": "899970b6d52a495f958cdb5a88207b98"
     },
     "packs": {
         "acos": {
@@ -1124,6 +1124,20 @@
             "name": "kafka",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kafka",
             "version": "0.2.1"
+        },
+        "keycloak": {
+            "author": "devlm",
+            "content": {
+                "actions": {
+                    "count": 14
+                }
+            },
+            "description": "Keycloak Admin pack",
+            "email": "devlinm@gmail.com",
+            "name": "keycloak",
+            "ref": "keycloak",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-keycloak",
+            "version": "0.1.0"
         },
         "kubernetes": {
             "author": "Andrew Moore",
