@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1508957594,
-        "hash": "936d4ab2df739a0cfb262dd48becbd29"
+        "generated_ts": 1508990020,
+        "hash": "023bb3420129def5de2a7a63a942e340"
     },
     "packs": {
         "acos": {
@@ -2675,6 +2675,30 @@
             "ref": "yammer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-yammer",
             "version": "0.3.0"
+        },
+        "zabbix": {
+            "author": "Hiroyasu OHYAMA",
+            "content": {
+                "actions": {
+                    "count": 1
+                },
+                "tests": {
+                    "count": 2
+                },
+                "triggers": {
+                    "count": 1
+                }
+            },
+            "description": "StackStorm pack that contains Zabbix integrations",
+            "email": "user.localhost2000@gmail.com",
+            "keywords": [
+                "zabbix",
+                "monitoring"
+            ],
+            "name": "zabbix",
+            "ref": "zabbix",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zabbix",
+            "version": "0.1.0"
         },
         "zendesk": {
             "author": "Casey Richardson",
