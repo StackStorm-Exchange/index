@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1510197558,
-        "hash": "bb79904ae69a2f3a7dfdf07d4c598419"
+        "generated_ts": 1510262582,
+        "hash": "be9f9d9af1c01c457b0d435649658874"
     },
     "packs": {
         "acos": {
@@ -2206,6 +2206,24 @@
             "name": "telegram",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-telegram",
             "version": "0.2.1"
+        },
+        "terraform": {
+            "author": "Martez Reed",
+            "content": {
+                "actions": {
+                    "count": 12
+                }
+            },
+            "description": "st2 content pack containing Terraform integrations",
+            "email": "martez.reed@greenreedtech.com",
+            "keywords": [
+                "terraform"
+            ],
+            "name": "terraform",
+            "ref": "terraform",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-terraform",
+            "runner_type": "python-script",
+            "version": "0.1.0"
         },
         "tesla": {
             "author": "Anthony Shaw",
