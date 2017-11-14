@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1510332750,
-        "hash": "9ba6843e569f306b238b4935b49d7404"
+        "generated_ts": 1510685987,
+        "hash": "9d504676ed661e795718f9d2f7381c3a"
     },
     "packs": {
         "acos": {
@@ -493,15 +493,18 @@
             "author": "Device42 Inc.",
             "content": {
                 "actions": {
-                    "count": 3
+                    "count": 7
+                },
+                "rules": {
+                    "count": 2
                 }
             },
-            "description": "Device42 Actions for StackStorm",
+            "description": "Device42 Actions and Rules for StackStorm",
             "email": "support@device42.com",
             "name": "device42",
             "ref": "device42",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
-            "version": "0.4.1"
+            "version": "0.5.0"
         },
         "digitalocean": {
             "author": "StackStorm, Inc.",

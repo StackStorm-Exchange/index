@@ -1,9 +1,11 @@
 ref: device42
 name: device42
-description: Device42 Actions for StackStorm
-version: 0.4.1
+description: Device42 Actions and Rules for StackStorm
+version: 0.5.0
 author: Device42 Inc.
 email: support@device42.com
 content:
   actions:
-    count: 3
+    count: 7
+  rules:
+    count: 2
