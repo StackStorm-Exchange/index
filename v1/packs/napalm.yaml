@@ -7,7 +7,7 @@ keywords:
 - juniper
 - arista
 - ibm
-version: 0.2.10
+version: 0.2.11
 author: mierdin, Rob Woodward
 email: info@stackstorm.com
 content:
@@ -18,4 +18,6 @@ content:
   rules:
     count: 4
   sensors:
+    count: 1
+  tests:
     count: 1

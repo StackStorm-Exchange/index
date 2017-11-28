@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1511864719,
-        "hash": "5dd3f024348fc84cda0a0ee43110ed79"
+        "generated_ts": 1511892935,
+        "hash": "2e2e4aebfe9df71df3a34d080c4531d3"
     },
     "packs": {
         "acos": {
@@ -1442,6 +1442,9 @@
                 },
                 "sensors": {
                     "count": 1
+                },
+                "tests": {
+                    "count": 1
                 }
             },
             "description": "NAPALM network automation library integration pack",
@@ -1456,7 +1459,7 @@
             ],
             "name": "napalm",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm",
-            "version": "0.2.10"
+            "version": "0.2.11"
         },
         "napalm_logs": {
             "author": "John Anderson",
