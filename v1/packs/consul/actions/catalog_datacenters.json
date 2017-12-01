@@ -1,0 +1,8 @@
+{
+    "description": "Real-time query of all known datacenters in Consul",
+    "enabled": true,
+    "entry_point": "catalog_datacenters.py",
+    "name": "catalog_datacenters",
+    "parameters": {},
+    "runner_type": "python-script"
+}

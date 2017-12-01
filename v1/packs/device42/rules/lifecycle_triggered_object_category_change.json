@@ -1,0 +1,20 @@
+{
+    "action": {
+        "parameters": {
+            "additional_changes": "{'tags':'auto_lc_objcat_udpate'}",
+            "identifier": "{{trigger.body.data.device_id}}",
+            "identifier_type": "device_id",
+            "lc_type_id": "{{trigger.body.data.type_id}}"
+        },
+        "ref": "device42.udpate_object_category_by_lifecycle_id"
+    },
+    "description": "Respond to lifecycle event webhooks whenever a device gets a new lifecycle.  When this happens, update that devices object category. ",
+    "enabled": true,
+    "name": "lifecycle_triggered_object_category_change",
+    "trigger": {
+        "parameters": {
+            "url": "d42_lifecycle"
+        },
+        "type": "core.st2.webhook"
+    }
+}

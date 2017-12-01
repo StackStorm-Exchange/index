@@ -1,0 +1,19 @@
+{
+    "description": "List Sensu clients",
+    "enabled": true,
+    "entry_point": "client_list.py",
+    "name": "client_list",
+    "parameters": {
+        "limit": {
+            "default": null,
+            "description": "The number of clients to return.",
+            "type": "integer"
+        },
+        "offset": {
+            "default": null,
+            "description": "The number of clients to offset before returning items.",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,21 @@
+{
+    "description": "Retrieve moid of a VM object",
+    "entry_point": "vm_hw_moid_get.py",
+    "name": "vm_hw_moid_get",
+    "parameters": {
+        "vm_names": {
+            "description": "List of VM Names",
+            "position": 0,
+            "required": false,
+            "type": "array"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "VSphere within config to connect to",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

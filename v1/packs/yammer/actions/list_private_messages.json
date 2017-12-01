@@ -1,0 +1,24 @@
+{
+    "description": "List all private messages for the authenticated user",
+    "enabled": true,
+    "entry_point": "list_private_messages.py",
+    "name": "list_private_messages",
+    "parameters": {
+        "limit": {
+            "description": "Limit the number of messages",
+            "required": false,
+            "type": "integer"
+        },
+        "newer_than_message": {
+            "description": "Only show messages newer than this message ID",
+            "required": false,
+            "type": "integer"
+        },
+        "older_than_message": {
+            "description": "Only show messages older than this message ID",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

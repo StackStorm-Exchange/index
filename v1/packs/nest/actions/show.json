@@ -1,0 +1,17 @@
+{
+    "description": "Show current Nest information",
+    "enabled": true,
+    "entry_point": "show.py",
+    "name": "show",
+    "parameters": {
+        "device": {
+            "description": "ID of specific Nest device in a structure",
+            "type": "integer"
+        },
+        "structure": {
+            "description": "ID of Nest Home name",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

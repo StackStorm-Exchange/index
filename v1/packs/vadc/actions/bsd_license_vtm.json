@@ -1,0 +1,33 @@
+{
+    "description": "Service Director - License a vTM",
+    "enabled": true,
+    "entry_point": "bsd_license_vtm.py",
+    "name": "bsd_license_vtm",
+    "parameters": {
+        "address": {
+            "description": "vTM IP Address (Hostname will be used if none)",
+            "type": "string"
+        },
+        "bw": {
+            "description": "vTM Bandwidth required (Mb/s)",
+            "required": true,
+            "type": "integer"
+        },
+        "fp": {
+            "default": "STM-400_full",
+            "description": "vTM Feature Pack to apply",
+            "type": "string"
+        },
+        "password": {
+            "description": "vTM Password (Required for Universal FLA, REST Enabled hosts)",
+            "secret": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "vTM Hostname",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

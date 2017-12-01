@@ -1,0 +1,98 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnet.set",
+    "parameters": {
+        "allocation_pool": {
+            "description": "Allocation pool IP addresses for this subnet e.g.: start=192.168.199.2,end=192.168.199.254 (repeat option to add multiple IP addresses)",
+            "type": "string"
+        },
+        "base": {
+            "default": "subnet set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set subnet description",
+            "type": "string"
+        },
+        "dhcp": {
+            "default": false,
+            "description": "Enable DHCP",
+            "type": "boolean"
+        },
+        "dns_nameserver": {
+            "description": "DNS server for this subnet (repeat option to set multiple DNS servers)",
+            "type": "array"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnet_set = openstackclient.network.v2.subnet:SetSubnet')",
+            "immutable": true,
+            "type": "string"
+        },
+        "gateway": {
+            "description": "Specify a gateway for the subnet. The options are: <ip-address>: Specific IP address to use as the gateway, 'none': This subnet will not use a gateway, e.g.: --gateway 192.168.9.1, --gateway none.",
+            "type": "string"
+        },
+        "host_route": {
+            "description": "Additional route for this subnet e.g.: destination=10.10.0.0/16,gateway=192.168.71.254 destination: destination subnet (in CIDR notation) gateway: nexthop IP address (repeat option to add multiple routes)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Updated name of the subnet",
+            "type": "string"
+        },
+        "no_allocation_pool": {
+            "default": false,
+            "description": "Clear associated allocation-pools from the subnet. Specify both --allocation-pool and --no-allocation-pool to overwrite the current allocation pool information.",
+            "type": "boolean"
+        },
+        "no_dhcp": {
+            "default": false,
+            "description": "Disable DHCP",
+            "type": "boolean"
+        },
+        "no_dns_nameservers": {
+            "default": false,
+            "description": "Clear existing information of DNS Nameservers. Specify both --dns-nameserver and --no-dns-nameserver to overwrite the current DNS Nameserver information.",
+            "type": "boolean"
+        },
+        "no_host_route": {
+            "default": false,
+            "description": "Clear associated host-routes from the subnet. Specify both --host-route and --no-host-route to overwrite the current host route information.",
+            "type": "boolean"
+        },
+        "no_tag": {
+            "default": false,
+            "description": "Clear tags associated with the subnet. Specify both --tag and --no-tag to overwrite current tags",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "service_type": {
+            "description": "Service type for this subnet e.g.: network:floatingip_agent_gateway. Must be a valid device owner value for a network port (repeat option to set multiple service types)",
+            "type": "array"
+        },
+        "subnet": {
+            "description": "Subnet to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to be added to the subnet (repeat option to set multiple tags)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

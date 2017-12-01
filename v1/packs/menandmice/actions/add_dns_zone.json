@@ -1,0 +1,64 @@
+{
+    "description": "Invokes the Men&Mice SOAP command AddDNSZone (http://api.menandmice.com/8.1.0/#AddDNSZone)",
+    "enabled": true,
+    "entry_point": "lib/run_operation.py",
+    "name": "add_dns_zone",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a Men&Mice server.",
+            "required": false,
+            "type": "string"
+        },
+        "dns_zone": {
+            "description": "'type: DNSZone\n reference: http://api.menandmice.com/8.1.0/#DNSZone\n json_schema: {\n   \"dnssecSigned\": \"boolean\", \n   \"name\": \"string\", \n   \"dnsScopeName\": \"string\", \n   \"adIntegrated\": \"boolean\", \n   \"type\": \"string\", \n   \"adReplicationType\": \"string\", \n   \"dnsViewRef\": \"string\", \n   \"dynamic\": \"boolean\", \n   \"authority\": \"string\", \n   \"kskIDs\": \"string\", \n   \"adPartition\": \"string\", \n   \"zskIDs\": \"string\", \n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\", \n         \"value\": \"string\"\n       }\n     ]\n   }, \n   \"dnsViewRefs\": {\n     \"ref\": [\n       \"string\"\n     ]\n   }, \n   \"ref\": \"string\"\n }'\n",
+            "required": true,
+            "type": "object"
+        },
+        "masters": {
+            "description": "'type: ArrayOfIPAddress\n reference: http://api.menandmice.com/8.1.0/#ArrayOfIPAddress\n json_schema: {\n   \"address\": [\n     \"string\"\n   ]\n }'\n",
+            "required": false,
+            "type": "object"
+        },
+        "operation": {
+            "default": "AddDNSZone",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the Men&Mice password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Optional override of the Men&Mice port in <connection>.",
+            "required": false,
+            "type": "integer"
+        },
+        "save_comment": {
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the Men&Mice server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "type": "string"
+        },
+        "transport": {
+            "description": "Optional override of the Men&Mice transport in <connection>.",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the Men&Mice username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

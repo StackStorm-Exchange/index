@@ -1,0 +1,58 @@
+{
+    "description": "Set network trunk properties",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.trunk.set",
+    "parameters": {
+        "base": {
+            "default": "network trunk set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "A description of the trunk",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable trunk",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable trunk",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_trunk_set = neutronclient.osc.v2.trunk.network_trunk:SetNetworkTrunk')",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Set trunk name",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "subport": {
+            "description": "Subport to add. Subport is of form 'port=<name or ID>,segmentation-type=,segmentation-ID='(--subport) option can be repeated",
+            "type": "string"
+        },
+        "trunk": {
+            "description": "Trunk to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "List all issues for a given repository",
+    "enabled": true,
+    "entry_point": "list_issues.py",
+    "name": "list_issues",
+    "parameters": {
+        "repo": {
+            "description": "Name of the repository to list the issues for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

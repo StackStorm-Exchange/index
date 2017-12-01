@@ -1,0 +1,60 @@
+{
+    "description": "Create a VM on MCP 1 datacenter",
+    "enabled": true,
+    "entry_point": "create_vm_mcp1.py",
+    "name": "create_vm_mcp1",
+    "parameters": {
+        "cores_per_socket": {
+            "default": 1,
+            "description": "Override the number of cores per socket",
+            "type": "integer"
+        },
+        "cpu_count": {
+            "description": "Override the CPU count",
+            "type": "integer"
+        },
+        "cpu_speed": {
+            "default": "STANDARD",
+            "description": "The CPU speed type",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the new VM",
+            "type": "string"
+        },
+        "image_name": {
+            "description": "Name of the virtual machine image template to use",
+            "type": "string"
+        },
+        "is_started": {
+            "description": "Start the VM on deploy",
+            "type": "boolean"
+        },
+        "location": {
+            "description": "The ID of the data center (e.g. NA3)",
+            "type": "string"
+        },
+        "memory_gb": {
+            "description": "Override the image RAM in GB",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the virtual machine",
+            "type": "string"
+        },
+        "network_id": {
+            "description": "ID of the network to deploy into",
+            "type": "string"
+        },
+        "password": {
+            "description": "password for the new image",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

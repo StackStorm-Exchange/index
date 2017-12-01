@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cognito-idp_admin_delete_user_attributes",
+    "pack": "aws",
+    "parameters": {
+        "UserAttributeNames": {
+            "description": "An array of strings representing the user attribute names you wish to delete.",
+            "required": true,
+            "type": "array"
+        },
+        "UserPoolId": {
+            "description": "The user pool ID for the user pool where you want to delete user attributes.",
+            "required": true,
+            "type": "string"
+        },
+        "Username": {
+            "description": "The user name of the user from which you would like to delete attributes.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "admin_delete_user_attributes",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cognito-idp",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

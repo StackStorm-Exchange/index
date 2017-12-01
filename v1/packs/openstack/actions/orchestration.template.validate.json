@@ -1,0 +1,63 @@
+{
+    "description": "Validate a template",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "orchestration.template.validate",
+    "parameters": {
+        "base": {
+            "default": "orchestration template validate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "environment": {
+            "description": "Path to the environment. Can be specified multiple times",
+            "type": "array"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('orchestration_template_validate = heatclient.osc.v1.template:Validate')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to yaml (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ignore_errors": {
+            "description": "List of heat errors to ignore",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "parameter": {
+            "description": "Parameter values used to create the stack. This can be specified multiple times",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "show_nested": {
+            "default": false,
+            "description": "Resolve parameters from nested templates as well",
+            "type": "boolean"
+        },
+        "template": {
+            "description": "Path to the template",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

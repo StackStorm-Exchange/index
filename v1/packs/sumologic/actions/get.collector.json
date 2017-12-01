@@ -1,0 +1,20 @@
+{
+    "description": "Get collector by id or name. Returns object of the collector, if found.",
+    "enabled": true,
+    "entry_point": "get_collector.py",
+    "name": "get.collector",
+    "parameters": {
+        "collector_id": {
+            "default": 0,
+            "description": "ID of the collector to get.",
+            "required": false,
+            "type": "integer"
+        },
+        "collector_name": {
+            "description": "Exact name of the collector to get.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "iot_deprecate_thing_type",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "deprecate_thing_type",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "iot",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "thingTypeName": {
+            "description": "The name of the thing type to deprecate.",
+            "required": true,
+            "type": "string"
+        },
+        "undoDeprecate": {
+            "description": "Whether to undeprecate a deprecated thing type. If true, the thing type will not be deprecated anymore and you can associate it with things.",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

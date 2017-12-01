@@ -1,0 +1,14 @@
+{
+    "description": "Retrieve information about Tuleap project plannings.",
+    "enabled": true,
+    "entry_point": "get_plannings.py",
+    "name": "get_plannings",
+    "parameters": {
+        "project_id": {
+            "description": "The project id",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

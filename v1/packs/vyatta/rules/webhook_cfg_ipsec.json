@@ -1,0 +1,29 @@
+{
+    "action": {
+        "parameters": {
+            "eastDeviceIP": "{{trigger.body.eastDeviceIP}}",
+            "eastPrefix": "{{trigger.body.eastPrefix}}",
+            "eastTunnelIP": "{{trigger.body.eastTunnelIP}}",
+            "westDeviceIP": "{{trigger.body.westDeviceIP}}",
+            "westPrefix": "{{trigger.body.westPrefix}}",
+            "westTunnelIP": "{{trigger.body.westTunnelIP}}"
+        },
+        "ref": "vyatta.cfg_ipsec"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "cfg_ipsec",
+            "type": "contains"
+        }
+    },
+    "description": "Rule configuring an IPSec tunnel from a webhook payload",
+    "enabled": true,
+    "name": "webhook_cfg_ipsec",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "ack": {
+        "enabled": false
+    },
+    "action_ref": "vra7.get_number_of_vms",
+    "description": "Get number of VMs",
+    "formats": [
+        "How many vms are in vra",
+        "Tell me how many vms are in vra"
+    ],
+    "name": "get_number_of_vms",
+    "pack": "vra7",
+    "result": {
+        "format": "There are currently {{ execution.result.result }} VMs in vRA."
+    }
+}

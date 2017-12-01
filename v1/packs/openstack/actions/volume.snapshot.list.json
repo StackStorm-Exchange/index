@@ -1,0 +1,79 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.snapshot.list",
+    "parameters": {
+        "all_projects": {
+            "default": false,
+            "description": "Include all projects (admin only)",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "volume snapshot list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_snapshot_list = openstackclient.volume.v2.volume_snapshot:ListVolumeSnapshot')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "limit": {
+            "description": "Maximum number of snapshots to display",
+            "type": "integer"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "marker": {
+            "description": "The last snapshot ID of the previous page",
+            "type": "string"
+        },
+        "name": {
+            "description": "Filters results by a name.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Filter results by project (name or ID) (admin only)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "status": {
+            "description": "Filters results by a status. ('available', 'error', 'creating', 'deleting' or 'error-deleting') (choices: available, error, creating, deleting, error-deleting)",
+            "type": "string"
+        },
+        "volume": {
+            "description": "Filters results by a volume (name or ID).",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

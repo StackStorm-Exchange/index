@@ -1,0 +1,74 @@
+{
+    "description": "Get site(s) from NetBox",
+    "enabled": true,
+    "entry_point": "base_get_action.py",
+    "name": "dcim_get_sites",
+    "pack": "netbox",
+    "parameters": {
+        "asn": {
+            "description": "ASN assigned to the Site",
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/api/dcim/sites/",
+            "immutable": true
+        },
+        "facility": {
+            "description": "Facility for the Site",
+            "type": "string"
+        },
+        "id__in": {
+            "description": "List of Site IDs",
+            "type": "array"
+        },
+        "limit": {
+            "default": 50,
+            "description": "Max limit of objects to return from the request.",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the site",
+            "type": "string"
+        },
+        "offset": {
+            "default": 0,
+            "description": "Offset result set by X objects. Used for pagination.",
+            "type": "integer"
+        },
+        "q": {
+            "description": "Site query",
+            "type": "string"
+        },
+        "region": {
+            "description": "Region of devices",
+            "type": "string"
+        },
+        "region_id": {
+            "description": "ID of the Region",
+            "type": "integer"
+        },
+        "save_in_key_store": {
+            "default": false,
+            "description": "Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.",
+            "type": "boolean"
+        },
+        "save_in_key_store_key_name": {
+            "description": "Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.",
+            "type": "string"
+        },
+        "save_in_key_store_ttl": {
+            "default": 60,
+            "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
+            "type": "integer"
+        },
+        "tenant": {
+            "description": "Tenant of Sites",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "ID of the Tenant for Sites",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

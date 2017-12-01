@@ -1,0 +1,53 @@
+{
+    "class_name": "GitCommitSensor",
+    "description": "Sensor which monitors git repositories for new commits",
+    "entry_point": "git_commit_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new commit has been detected",
+            "name": "head_sha_monitor",
+            "payload_schema": {
+                "properties": {
+                    "author": {
+                        "type": "string"
+                    },
+                    "author_email": {
+                        "type": "string"
+                    },
+                    "author_tz_offset": {
+                        "type": "integer"
+                    },
+                    "authored_date": {
+                        "type": "string"
+                    },
+                    "branch": {
+                        "type": "string"
+                    },
+                    "commit_message": {
+                        "type": "string"
+                    },
+                    "committed_date": {
+                        "type": "string"
+                    },
+                    "committer": {
+                        "type": "string"
+                    },
+                    "committer_email": {
+                        "type": "string"
+                    },
+                    "committer_tz_offset": {
+                        "type": "integer"
+                    },
+                    "repository_url": {
+                        "type": "string"
+                    },
+                    "revision": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

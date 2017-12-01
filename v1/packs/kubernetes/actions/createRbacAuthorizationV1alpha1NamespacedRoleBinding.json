@@ -1,0 +1,28 @@
+{
+    "description": "create a RoleBinding",
+    "enabled": true,
+    "entry_point": "createRbacAuthorizationV1alpha1NamespacedRoleBinding.py",
+    "name": "createRbacAuthorizationV1alpha1NamespacedRoleBinding",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "namespace": {
+            "description": "object name and auth scope, such as for teams and projects",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

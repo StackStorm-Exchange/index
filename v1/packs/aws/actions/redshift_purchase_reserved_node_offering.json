@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "redshift_purchase_reserved_node_offering",
+    "pack": "aws",
+    "parameters": {
+        "NodeCount": {
+            "description": "The number of reserved nodes that you want to purchase. Default: 1 ",
+            "type": "integer"
+        },
+        "ReservedNodeOfferingId": {
+            "description": "The unique identifier of the reserved node offering you want to purchase.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "purchase_reserved_node_offering",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "redshift",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

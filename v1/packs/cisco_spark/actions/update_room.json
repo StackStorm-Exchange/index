@@ -1,0 +1,28 @@
+{
+    "description": "Update a room's parameters",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "update_room",
+    "parameters": {
+        "accessor": {
+            "default": "rooms",
+            "immutable": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "update",
+            "immutable": true,
+            "type": "string"
+        },
+        "roomId": {
+            "required": true,
+            "type": "string"
+        },
+        "title": {
+            "description": "New room title",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

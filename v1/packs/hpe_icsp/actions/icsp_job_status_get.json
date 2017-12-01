@@ -1,0 +1,39 @@
+{
+    "description": "Return Status of specified Job",
+    "enabled": true,
+    "entry_point": "icsp_job_status_get.py",
+    "name": "icsp_job_status_get",
+    "parameters": {
+        "connection_details": {
+            "description": "Connection details. eg { \"host\": \"192.168.0.1\", \"user\":\"username\", \"pass\": \"secret\" }",
+            "position": 3,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "job_id": {
+            "description": "URI for Job, blank will return all jobs listed",
+            "position": 0,
+            "required": false,
+            "type": "integer"
+        },
+        "monitor": {
+            "default": false,
+            "description": "Monitor Progress of The Job. False = One time check",
+            "position": 1,
+            "required": false,
+            "type": "boolean"
+        },
+        "monitor_interval": {
+            "default": 120,
+            "description": "Interval to check Job status (Seconds)",
+            "position": 2,
+            "required": false,
+            "type": "integer"
+        },
+        "timeout": {
+            "default": 3600
+        }
+    },
+    "runner_type": "python-script"
+}

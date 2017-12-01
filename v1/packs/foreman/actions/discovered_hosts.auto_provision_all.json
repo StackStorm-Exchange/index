@@ -1,0 +1,36 @@
+{
+    "description": "Execute rules against all currently discovered hosts (resource: POST /api/v2/discovered_hosts/auto_provision_all)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "discovered_hosts.auto_provision_all",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "discovered_hosts.auto_provision_all",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,13 @@
+{
+    "description": "Set nest to home mode",
+    "enabled": true,
+    "entry_point": "set_home.py",
+    "name": "set_home",
+    "parameters": {
+        "structure": {
+            "description": "ID of Nest Home name",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

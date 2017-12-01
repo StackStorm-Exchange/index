@@ -1,0 +1,50 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.agent.set",
+    "parameters": {
+        "base": {
+            "default": "network agent set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set network agent description",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable network agent",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable network agent",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_agent_set = openstackclient.network.v2.network_agent:SetNetworkAgent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "network_agent": {
+            "description": "Network agent to modify (ID only)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Get a user from the Github user database",
+    "enabled": true,
+    "entry_point": "get_user.py",
+    "name": "get_user",
+    "parameters": {
+        "token_user": {
+            "default": "{{action_context.api_user|default(None)}}",
+            "description": "The",
+            "type": "string"
+        },
+        "user": {
+            "description": "The username",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

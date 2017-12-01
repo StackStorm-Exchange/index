@@ -1,0 +1,14 @@
+{
+    "description": "List Sensu events for a given client",
+    "enabled": true,
+    "entry_point": "event_client_list.py",
+    "name": "event_client_list",
+    "parameters": {
+        "client": {
+            "description": "The client name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

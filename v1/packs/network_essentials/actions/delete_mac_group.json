@@ -1,0 +1,35 @@
+{
+    "description": "Delete Mac Groups.",
+    "enabled": true,
+    "entry_point": "delete_mac_group.py",
+    "name": "delete_mac_group",
+    "pack": "network_essentials",
+    "parameters": {
+        "mac_group_id": {
+            "description": "Single Mac Group id/range of Mac Group id/batch wise values. Valid Values [1,500]. For example 10 or 1-10 or 1,2-10,15",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

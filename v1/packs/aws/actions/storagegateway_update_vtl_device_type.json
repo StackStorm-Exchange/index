@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "storagegateway_update_vtl_device_type",
+    "pack": "aws",
+    "parameters": {
+        "DeviceType": {
+            "description": "The type of medium changer you want to select.  Valid Values: 'STK-L700', 'AWS-Gateway-VTL'",
+            "required": true,
+            "type": "string"
+        },
+        "VTLDeviceARN": {
+            "description": "The Amazon Resource Name (ARN) of the medium changer you want to select.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "update_vtl_device_type",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "storagegateway",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

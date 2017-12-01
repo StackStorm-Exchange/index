@@ -1,0 +1,55 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.qos.create",
+    "parameters": {
+        "base": {
+            "default": "volume qos create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "consumer": {
+            "default": "both",
+            "description": "Consumer of the QoS. Valid consumers: back-end, both, front-end (defaults to 'both') (choices: front-end, back-end, both)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_qos_create = openstackclient.volume.v2.qos_specs:CreateQos')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "New QoS specification name",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Set a QoS specification property (repeat option to set multiple properties)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

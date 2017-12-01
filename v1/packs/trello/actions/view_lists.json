@@ -1,0 +1,22 @@
+{
+    "description": "View all lists belonging to a board",
+    "enabled": true,
+    "entry_point": "view_lists.py",
+    "name": "view_lists",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "board_id": {
+            "description": "Board ID to retrieve lists from",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

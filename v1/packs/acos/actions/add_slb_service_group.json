@@ -1,0 +1,68 @@
+{
+    "description": "register a ServiceGroup to the SLB",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "add_slb_service_group",
+    "parameters": {
+        "action": {
+            "default": "create",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "lb_method": {
+            "default": "round-robin",
+            "description": "load balancing method, such as round-robin or weighted-rr",
+            "enum": [
+                "round-robin",
+                "weighted-rr",
+                "least-connection",
+                "weighted-least-connection",
+                "service-least-connection",
+                "service-weighted-least-connection",
+                "fastest-response",
+                "least-request",
+                "round-robin-strict",
+                "stateless-src-ip-hash",
+                "stateless-src-ip-only-hash",
+                "stateless-dst-ip-hash",
+                "stateless-src-dst-ip-hash",
+                "stateless-per-pkt-round-robin",
+                "src-ip-only-hash",
+                "src-ip-hash",
+                "dst-ip-only-hash",
+                "dst-ip-hash"
+            ],
+            "type": "string"
+        },
+        "name": {
+            "description": "name of ServiceGroup to add",
+            "required": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "slb.service_group",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "protocol": {
+            "default": "tcp",
+            "description": "protocol of TCP or UDP",
+            "enum": [
+                "tcp",
+                "udp"
+            ],
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

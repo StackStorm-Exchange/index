@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "cmd": "echo {{ trigger.message.attributes[0].attributeName }}: {{ trigger.message.attributes[0].attributeValue }}"
+        },
+        "ref": "core.local"
+    },
+    "criteria": {
+        "trigger.message.command": {
+            "pattern": "MONITOR",
+            "type": "equals"
+        },
+        "trigger.topic": {
+            "pattern": "test",
+            "type": "equals"
+        }
+    },
+    "description": "Rule to test Kafka Sensor",
+    "enabled": false,
+    "name": "parse_message",
+    "pack": "kafka",
+    "trigger": {
+        "parameters": {},
+        "type": "kafka.new_message"
+    }
+}

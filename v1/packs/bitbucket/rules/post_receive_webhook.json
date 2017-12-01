@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "packs": [
+                "https://bitbucket.org/{{trigger.body.repository.full_name}}={{trigger.body.refChanges[0].refId}}"
+            ]
+        },
+        "ref": "packs.install"
+    },
+    "criteria": {
+        "trigger.body": {
+            "pattern": "changesets",
+            "type": "exists"
+        }
+    },
+    "description": "Trigger ST2 pack deploy for commit on Git branch",
+    "enabled": false,
+    "name": "post_receive_webhook",
+    "pack": "bitbucket",
+    "trigger": {
+        "parameters": {
+            "url": "bitbucket_post_receive"
+        },
+        "type": "core.st2.webhook"
+    }
+}

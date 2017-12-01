@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.flavor.remove.profile",
+    "parameters": {
+        "base": {
+            "default": "network flavor remove profile",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_flavor_remove_profile = openstackclient.network.v2.network_flavor:RemoveNetworkFlavorFromProfile')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flavor": {
+            "description": "Network flavor (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "service_profile": {
+            "description": "Service profile (ID only)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

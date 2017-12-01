@@ -1,0 +1,24 @@
+{
+    "description": "Get a specific room",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "get_room",
+    "parameters": {
+        "accessor": {
+            "default": "rooms",
+            "immutable": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "get",
+            "immutable": true,
+            "type": "string"
+        },
+        "roomId": {
+            "description": "The ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Load package metadata from directory",
+    "enabled": true,
+    "entry_point": "",
+    "name": "load_metadata",
+    "parameters": {
+        "cmd": {
+            "default": "cat {{dir}}/{{file}}",
+            "immutable": true
+        },
+        "file": {
+            "default": "fpm.json",
+            "description": "File containing metadata",
+            "position": 2,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-remote"
+}

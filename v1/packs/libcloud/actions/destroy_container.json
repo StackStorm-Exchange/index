@@ -1,0 +1,19 @@
+{
+    "description": "Destroy a Container",
+    "enabled": true,
+    "entry_point": "destroy_container.py",
+    "name": "destroy_container",
+    "parameters": {
+        "container_id": {
+            "description": "ID of a container to destroy.",
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

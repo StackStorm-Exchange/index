@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.pause",
+    "parameters": {
+        "base": {
+            "default": "server pause",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_pause = openstackclient.compute.v2.server:PauseServer')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "server": {
+            "description": "Server(s) to pause (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

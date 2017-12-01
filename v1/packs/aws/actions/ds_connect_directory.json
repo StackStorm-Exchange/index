@@ -1,0 +1,55 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ds_connect_directory",
+    "pack": "aws",
+    "parameters": {
+        "ConnectSettings": {
+            "description": "A DirectoryConnectSettings object that contains additional information for the operation.",
+            "required": true,
+            "type": "object"
+        },
+        "Description": {
+            "description": "A textual description for the directory.",
+            "type": "string"
+        },
+        "Name": {
+            "description": "The fully-qualified name of the on-premises directory, such as corp.example.com.",
+            "required": true,
+            "type": "string"
+        },
+        "Password": {
+            "description": "The password for the on-premises user account.",
+            "required": true,
+            "type": "string"
+        },
+        "ShortName": {
+            "description": "The NetBIOS name of the on-premises directory, such as CORP.",
+            "type": "string"
+        },
+        "Size": {
+            "description": "The size of the directory.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "connect_directory",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ds",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

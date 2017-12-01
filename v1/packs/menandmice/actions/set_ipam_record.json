@@ -1,0 +1,68 @@
+{
+    "description": "Invokes the Men&Mice SOAP command SetIPAMRecord (http://api.menandmice.com/8.1.0/#SetIPAMRecord)",
+    "enabled": true,
+    "entry_point": "lib/run_operation.py",
+    "name": "set_ipam_record",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a Men&Mice server.",
+            "required": false,
+            "type": "string"
+        },
+        "force_override_of_naming_conflict_check": {
+            "required": false,
+            "type": "boolean"
+        },
+        "ipam_record_after": {
+            "description": "'type: IPAMRecord\n reference: http://api.menandmice.com/8.1.0/#IPAMRecord\n json_schema: {\n   \"dnsHosts\": {\n     \"dnsHost\": [\n       {\n         \"dnsRecord\": {\n           \"comment\": \"string\", \n           \"aging\": \"unsignedInt\", \n           \"dnsZoneRef\": \"string\", \n           \"name\": \"string\", \n           \"ref\": \"string\", \n           \"enabled\": \"boolean\", \n           \"data\": \"string\", \n           \"ttl\": \"string\", \n           \"type\": \"string\"\n         }, \n         \"ptrStatus\": \"string\", \n         \"relatedRecords\": {\n           \"dnsRecord\": [\n             {\n               \"comment\": \"string\", \n               \"aging\": \"unsignedInt\", \n               \"dnsZoneRef\": \"string\", \n               \"name\": \"string\", \n               \"ref\": \"string\", \n               \"enabled\": \"boolean\", \n               \"data\": \"string\", \n               \"ttl\": \"string\", \n               \"type\": \"string\"\n             }\n           ]\n         }\n       }\n     ]\n   }, \n   \"addrRef\": \"string\", \n   \"usage\": \"unsignedInt\", \n   \"discoveryType\": \"string\", \n   \"dhcpReservations\": {\n     \"dhcpReservation\": [\n       {\n         \"ref\": \"string\", \n         \"name\": \"string\", \n         \"reservationMethod\": \"string\", \n         \"type\": \"string\", \n         \"description\": \"string\", \n         \"filename\": \"string\", \n         \"ownerRef\": \"string\", \n         \"ddnsHostName\": \"string\", \n         \"nextServer\": \"string\", \n         \"clientIdentifier\": \"string\", \n         \"serverName\": \"string\", \n         \"addresses\": {\n           \"address\": [\n             \"string\"\n           ]\n         }\n       }\n     ]\n   }, \n   \"dhcpLeases\": {\n     \"dhcpLease\": [\n       {\n         \"name\": \"string\", \n         \"mac\": \"string\", \n         \"state\": \"string\", \n         \"address\": \"string\", \n         \"dhcpScopeRef\": \"string\", \n         \"type\": \"string\", \n         \"lease\": \"string\"\n       }\n     ]\n   }, \n   \"lastKnownClientIdentifier\": \"string\", \n   \"device\": \"string\", \n   \"state\": \"string\", \n   \"lastDiscoveryDate\": \"string\", \n   \"ptrStatus\": \"string\", \n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\", \n         \"value\": \"string\"\n       }\n     ]\n   }, \n   \"address\": \"string\", \n   \"claimed\": \"boolean\", \n   \"interface\": \"string\", \n   \"lastSeenDate\": \"string\", \n   \"extraneousPTR\": \"boolean\"\n }'\n",
+            "required": true,
+            "type": "object"
+        },
+        "ipam_record_before": {
+            "description": "'type: IPAMRecord\n reference: http://api.menandmice.com/8.1.0/#IPAMRecord\n json_schema: {\n   \"dnsHosts\": {\n     \"dnsHost\": [\n       {\n         \"dnsRecord\": {\n           \"comment\": \"string\", \n           \"aging\": \"unsignedInt\", \n           \"dnsZoneRef\": \"string\", \n           \"name\": \"string\", \n           \"ref\": \"string\", \n           \"enabled\": \"boolean\", \n           \"data\": \"string\", \n           \"ttl\": \"string\", \n           \"type\": \"string\"\n         }, \n         \"ptrStatus\": \"string\", \n         \"relatedRecords\": {\n           \"dnsRecord\": [\n             {\n               \"comment\": \"string\", \n               \"aging\": \"unsignedInt\", \n               \"dnsZoneRef\": \"string\", \n               \"name\": \"string\", \n               \"ref\": \"string\", \n               \"enabled\": \"boolean\", \n               \"data\": \"string\", \n               \"ttl\": \"string\", \n               \"type\": \"string\"\n             }\n           ]\n         }\n       }\n     ]\n   }, \n   \"addrRef\": \"string\", \n   \"usage\": \"unsignedInt\", \n   \"discoveryType\": \"string\", \n   \"dhcpReservations\": {\n     \"dhcpReservation\": [\n       {\n         \"ref\": \"string\", \n         \"name\": \"string\", \n         \"reservationMethod\": \"string\", \n         \"type\": \"string\", \n         \"description\": \"string\", \n         \"filename\": \"string\", \n         \"ownerRef\": \"string\", \n         \"ddnsHostName\": \"string\", \n         \"nextServer\": \"string\", \n         \"clientIdentifier\": \"string\", \n         \"serverName\": \"string\", \n         \"addresses\": {\n           \"address\": [\n             \"string\"\n           ]\n         }\n       }\n     ]\n   }, \n   \"dhcpLeases\": {\n     \"dhcpLease\": [\n       {\n         \"name\": \"string\", \n         \"mac\": \"string\", \n         \"state\": \"string\", \n         \"address\": \"string\", \n         \"dhcpScopeRef\": \"string\", \n         \"type\": \"string\", \n         \"lease\": \"string\"\n       }\n     ]\n   }, \n   \"lastKnownClientIdentifier\": \"string\", \n   \"device\": \"string\", \n   \"state\": \"string\", \n   \"lastDiscoveryDate\": \"string\", \n   \"ptrStatus\": \"string\", \n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\", \n         \"value\": \"string\"\n       }\n     ]\n   }, \n   \"address\": \"string\", \n   \"claimed\": \"boolean\", \n   \"interface\": \"string\", \n   \"lastSeenDate\": \"string\", \n   \"extraneousPTR\": \"boolean\"\n }'\n",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "SetIPAMRecord",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the Men&Mice password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Optional override of the Men&Mice port in <connection>.",
+            "required": false,
+            "type": "integer"
+        },
+        "save_comment": {
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the Men&Mice server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "type": "string"
+        },
+        "transport": {
+            "description": "Optional override of the Men&Mice transport in <connection>.",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the Men&Mice username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

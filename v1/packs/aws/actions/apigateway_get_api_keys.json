@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "apigateway_get_api_keys",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "get_api_keys",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "apigateway",
+            "type": "string"
+        },
+        "customerId": {
+            "description": "The identifier of a customer in AWS Marketplace or an external system, such as a developer portal.",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "includeValues": {
+            "description": "A boolean flag to specify whether (true) or not (false) the result contains key values.",
+            "type": "boolean"
+        },
+        "limit": {
+            "description": "The maximum number of ApiKeys to get information about.",
+            "type": "integer"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "nameQuery": {
+            "description": "The name of queried API keys.",
+            "type": "string"
+        },
+        "position": {
+            "description": "The position of the current ApiKeys resource to get information about.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

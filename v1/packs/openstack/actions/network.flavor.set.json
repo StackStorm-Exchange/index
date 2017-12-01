@@ -1,0 +1,54 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.flavor.set",
+    "parameters": {
+        "base": {
+            "default": "network flavor set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set network flavor description",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable network flavor",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable network flavor",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_flavor_set = openstackclient.network.v2.network_flavor:SetNetworkFlavor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flavor": {
+            "description": "Flavor to update (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Set flavor name",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "class_name": "DripstatAlertSensor",
+    "description": "Sensor which monitors Dripstat API for active alerts",
+    "entry_point": "dripstat_alert_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger representing an active alert",
+            "name": "alert",
+            "payload_info": [
+                "app_name",
+                "alert_type",
+                "started_at",
+                "started_at_iso8601",
+                "jvm_host"
+            ]
+        }
+    ]
+}

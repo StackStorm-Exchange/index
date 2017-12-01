@@ -1,0 +1,35 @@
+{
+    "description": "Configure ve interface",
+    "enabled": true,
+    "entry_point": "configure_ve_interface.py",
+    "name": "configure_ve_interface",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Device IP.",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "rbridge_id": {
+            "description": "rbridge id",
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        },
+        "ve_ip": {
+            "description": "Ve Interface IP",
+            "type": "string"
+        },
+        "ve_vlan": {
+            "description": "VLAN ID",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

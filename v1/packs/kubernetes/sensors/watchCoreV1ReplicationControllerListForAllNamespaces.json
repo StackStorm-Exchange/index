@@ -1,0 +1,41 @@
+{
+    "class_name": "watchCoreV1ReplicationControllerListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Replicationcontrollers objects.",
+    "entry_point": "watchCoreV1ReplicationControllerListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for replicationcontrollers event dispatch.",
+            "name": "replicationcontrollers",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

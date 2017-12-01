@@ -1,0 +1,101 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall.group.set",
+    "parameters": {
+        "base": {
+            "default": "firewall group set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the firewall group",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable firewall group",
+            "type": "boolean"
+        },
+        "egress_firewall_policy": {
+            "description": "Egress firewall policy (name or ID)",
+            "type": "string"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable firewall group",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall_group_set = neutronclient.osc.v2.fwaas.firewallgroup:SetFirewallGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "firewall_group": {
+            "description": "Firewall group to update (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "ingress_firewall_policy": {
+            "description": "Ingress firewall policy (name or ID)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name for the firewall group",
+            "type": "string"
+        },
+        "no_egress_firewall_policy": {
+            "default": false,
+            "description": "Detach egress firewall policy from the firewall group",
+            "type": "boolean"
+        },
+        "no_ingress_firewall_policy": {
+            "default": false,
+            "description": "Detach ingress firewall policy from the firewall group",
+            "type": "boolean"
+        },
+        "no_port": {
+            "default": false,
+            "description": "Detach all port from the firewall group",
+            "type": "boolean"
+        },
+        "no_share": {
+            "default": false,
+            "description": "Restrict use of the firewall group to the current project",
+            "type": "boolean"
+        },
+        "port": {
+            "description": "Port(s) (name or ID) to apply firewall group.  This option can be repeated",
+            "type": "array"
+        },
+        "private": {
+            "default": false,
+            "description": "Restrict use of the firewall group to the current project. This option is deprecated and would be removed in R release.",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "public": {
+            "default": false,
+            "description": "Make the firewall group public, which allows it to be used in all projects (as opposed to the default, which is to restrict its use to the current project). This option is deprecated and would be removed in R release.",
+            "type": "boolean"
+        },
+        "share": {
+            "default": false,
+            "description": "Share the firewall group to be used in all projects (by default, it is restricted to be used by the current project).",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

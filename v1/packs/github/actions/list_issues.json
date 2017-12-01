@@ -1,0 +1,50 @@
+{
+    "description": "Retrieve a list of issues (including pull requests) for a particular repository.",
+    "enabled": true,
+    "entry_point": "list_issues.py",
+    "name": "list_issues",
+    "parameters": {
+        "direction": {
+            "description": "Sort direction (e.g. asc / desc).",
+            "required": false,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Filter string.",
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "default": 20,
+            "description": "Maximum number of issues to return.",
+            "required": false,
+            "type": "number"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "since": {
+            "description": "Only returns issues newer than this timestamp.",
+            "required": false,
+            "type": "number"
+        },
+        "sort": {
+            "description": "Field to sort on.",
+            "required": false,
+            "type": "string"
+        },
+        "state": {
+            "description": "State to filter on.",
+            "required": false,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

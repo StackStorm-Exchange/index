@@ -1,0 +1,61 @@
+{
+    "description": "Configure a port channel or a physical interface as an Access interface.",
+    "enabled": true,
+    "entry_point": "create_switchport_access.py",
+    "name": "create_switchport_access",
+    "pack": "network_essentials",
+    "parameters": {
+        "intf_name": {
+            "description": "Interface name, for VDX in 3-tuple format (24/0/1), SLX in 2-tuple format (24/1)",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "tengigabitethernet",
+            "description": "Interface type",
+            "enum": [
+                "ethernet",
+                "tengigabitethernet",
+                "gigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet",
+                "port_channel"
+            ],
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mac_group_id": {
+            "description": "ID of previously created MAC group to be used in MAC-based VLAN classification at the access port.  Applicable only when Virtual Fabric is enabled.  This is a fabric-wide ID, valid values are 1 through 500.",
+            "position": 6,
+            "type": "array"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "VLAN ID to be configure on the interface. For 802.1Q VLANs, ID must be below 4096, for service or transport VFs valid range is from 4096 through 8191.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

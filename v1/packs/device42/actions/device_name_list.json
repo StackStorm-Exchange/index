@@ -1,0 +1,137 @@
+{
+    "description": "Returns list of devices names",
+    "enabled": true,
+    "entry_point": "device_name_list.py",
+    "name": "device_name_list",
+    "parameters": {
+        "asset_no": {
+            "description": "filter by asset #",
+            "type": "string"
+        },
+        "blade_host_name": {
+            "description": "filter by blade host name",
+            "type": "string"
+        },
+        "building": {
+            "description": "filter by building name. Only works if building ID is not present",
+            "type": "string"
+        },
+        "building_id": {
+            "description": "filter by building ID",
+            "type": "string"
+        },
+        "custom_fields_and": {
+            "description": "filter by custom fields, and filter, format of key1:value1,key2:value2",
+            "type": "string"
+        },
+        "custom_fields_or": {
+            "description": "filter by custom fields, or filter, format of key1:value1,key2:value2",
+            "type": "string"
+        },
+        "customer": {
+            "description": "filter by customer name",
+            "type": "string"
+        },
+        "first_added_gt": {
+            "description": "first added greater date YYYY-MM-DD format",
+            "type": "string"
+        },
+        "first_added_lt": {
+            "description": "first added less than date YYYY-MM-DD format",
+            "type": "string"
+        },
+        "hardware": {
+            "description": "filter by name of hardware model, comma separated for multiple hardware models (or filter).",
+            "type": "string"
+        },
+        "hardware_ids": {
+            "description": "filter by ID of hardware models, comma separated",
+            "type": "string"
+        },
+        "in_service": {
+            "description": "filter by whether in service or not. Use yes or no.",
+            "type": "string"
+        },
+        "is_it_blade_host": {
+            "description": "filter by whether blade host or not. Use yes or no.",
+            "type": "string"
+        },
+        "is_it_switch": {
+            "description": "filter by whether switch or not. Use yes or no.",
+            "type": "string"
+        },
+        "is_it_virtual_host": {
+            "description": "filter by whether virtual host or not. Use yes or no.",
+            "type": "string"
+        },
+        "last_updated_gt": {
+            "description": "last updated greater than date YYYY-MM-DD format",
+            "type": "string"
+        },
+        "last_updated_lt": {
+            "description": "last updated less than date YYYY-MM-DD format",
+            "type": "string"
+        },
+        "name": {
+            "description": "filter by name",
+            "type": "string"
+        },
+        "os": {
+            "description": "filter by OS name",
+            "type": "string"
+        },
+        "rack": {
+            "description": "filter by rack name. Only works if rack ID is not present",
+            "type": "string"
+        },
+        "rack_id": {
+            "description": "filter by rack ID",
+            "type": "string"
+        },
+        "room": {
+            "description": "filter by room name. Only works if room ID is not present",
+            "type": "string"
+        },
+        "room_id": {
+            "description": "filter by room ID",
+            "type": "string"
+        },
+        "serial_no": {
+            "description": "filter by serial #",
+            "type": "string"
+        },
+        "serial_no_contains": {
+            "description": "filter by partial serial match",
+            "type": "string"
+        },
+        "service_level": {
+            "description": "filter by service level name",
+            "type": "string"
+        },
+        "tags": {
+            "description": "filter by tags. comma separated for multiple tags (This is an OR filter, gets all the devices for all comma separated tags)",
+            "type": "string"
+        },
+        "tags_and": {
+            "description": "filter by all the tags, separated by comma. (This is an AND filter and all tags have to match for filter)",
+            "type": "string"
+        },
+        "type": {
+            "description": "filter by device type (physical, virtual, blade, other, cluster or unknown)",
+            "type": "string"
+        },
+        "uuid": {
+            "description": "filter by uuid (exact match)",
+            "type": "string"
+        },
+        "virtual_host_name": {
+            "description": "filter by virtual host name",
+            "type": "string"
+        },
+        "virtual_subtype": {
+            "description": "filter by virtual subtype",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

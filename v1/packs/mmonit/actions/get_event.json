@@ -1,0 +1,15 @@
+{
+    "description": "Returns details for a specific event.",
+    "enabled": true,
+    "entry_point": "get_event.py",
+    "name": "get_event",
+    "parameters": {
+        "event_id": {
+            "description": "ID of the event",
+            "position": 1,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,24 @@
+{
+    "description": "Delete a network",
+    "enabled": true,
+    "entry_point": "delete_network.py",
+    "name": "delete_network",
+    "parameters": {
+        "action": {
+            "default": "ex_delete_network",
+            "immutable": true,
+            "type": "string"
+        },
+        "network_id": {
+            "description": "The ID of the network to delete",
+            "required": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

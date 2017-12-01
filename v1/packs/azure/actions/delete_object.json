@@ -1,0 +1,19 @@
+{
+    "description": "Delete an object.",
+    "enabled": true,
+    "entry_point": "delete_object.py",
+    "name": "delete_object",
+    "parameters": {
+        "container_name": {
+            "description": "Name of the container the object belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "object_name": {
+            "description": "Name of the object to delete.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

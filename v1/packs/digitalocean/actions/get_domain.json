@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "do.py",
+    "name": "get_domain",
+    "parameters": {
+        "action": {
+            "default": "get_domain",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

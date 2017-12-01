@@ -1,0 +1,46 @@
+{
+    "description": "Retrieve list of Objects from VSphere",
+    "entry_point": "vm_env_items_get.py",
+    "name": "vm_env_items_get",
+    "parameters": {
+        "itemtype": {
+            "description": "Type of item to retrieve",
+            "enum": [
+                "DataCenter",
+                "DataCenter Cluster",
+                "Resource Pool",
+                "DataStore Cluster",
+                "DataStore",
+                "Virtual Machines",
+                "Networks",
+                "Distrubuted Portgroup",
+                "Hosts"
+            ],
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "parents": {
+            "default": false,
+            "description": "Include Items Parent ID within results",
+            "position": 1,
+            "required": false,
+            "type": "boolean"
+        },
+        "summary": {
+            "default": false,
+            "description": "Include Item summary within results",
+            "position": 2,
+            "required": false,
+            "type": "boolean"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "VSphere within config to connect to",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

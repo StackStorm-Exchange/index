@@ -1,0 +1,50 @@
+{
+    "description": "Add a new service to the local agent.",
+    "enabled": true,
+    "entry_point": "agent_service_register.py",
+    "name": "service_register",
+    "parameters": {
+        "address": {
+            "description": "IP address. Defaults to the address of the agent.",
+            "required": false,
+            "type": "string"
+        },
+        "check": {
+            "description": "An optional health *check* can be created for this service.",
+            "required": false,
+            "type": "string"
+        },
+        "enable_tag_override": {
+            "default": false,
+            "description": "An optional bool that enable you to modify a service tags from servers(consul agent role server)",
+            "required": false,
+            "type": "boolean"
+        },
+        "name": {
+            "description": "The name of the service.",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Port.",
+            "required": false,
+            "type": "string"
+        },
+        "service_id": {
+            "description": "The id of the service",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Tags.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "An optional _ACL token_ to apply to this request.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

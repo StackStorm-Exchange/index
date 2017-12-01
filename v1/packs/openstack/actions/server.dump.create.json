@@ -1,0 +1,36 @@
+{
+    "description": "Create a dump file in server(s)\n\n    Trigger crash dump in server(s) with features like kdump in Linux.\n    It will create a dump file in the server(s) dumping the server(s)'\n    memory, and also crash the server(s). OSC sees the dump file\n    (server dump) as a kind of resource.\n    ",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.dump.create",
+    "parameters": {
+        "base": {
+            "default": "server dump create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_dump_create = openstackclient.compute.v2.server:CreateServerDump')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "server": {
+            "description": "Server(s) to create dump file (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

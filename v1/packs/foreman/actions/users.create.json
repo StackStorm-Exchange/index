@@ -1,0 +1,41 @@
+{
+    "description": "Create a user (resource: POST /api/users)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "users.create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "users.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "user": {
+            "description": "'description: None\n parameters:\n     default_organization_id:\n       required: false\n       type: number\n       description:\n     firstname:\n       required: false\n       type: string\n       description:\n     admin:\n       required: false\n       type: string\n       description: is an admin account\n     lastname:\n       required: false\n       type: string\n       description:\n     default_location_id:\n       required: false\n       type: number\n       description:\n     locale:\n       required: false\n       type: string\n       description: User's preferred locale\n     timezone:\n       required: false\n       type: string\n       description: User's timezone\n     mail:\n       required: true\n       type: string\n       description:\n     login:\n       required: true\n       type: string\n       description:\n     password:\n       required: true\n       type: string\n       description:\n     auth_source_id:\n       required: true\n       type: number\n       description:\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,32 @@
+{
+    "description": "Change bulb color based on RGB Values",
+    "enabled": true,
+    "entry_point": "rgb.py",
+    "name": "rgb",
+    "parameters": {
+        "blue": {
+            "description": "Blue value",
+            "type": "integer"
+        },
+        "green": {
+            "description": "Green value",
+            "type": "integer"
+        },
+        "light_id": {
+            "description": "ID of the light to manage",
+            "required": true,
+            "type": "string"
+        },
+        "red": {
+            "description": "Red value",
+            "required": true,
+            "type": "integer"
+        },
+        "transition_time": {
+            "default": 5,
+            "description": "Duration of transition to new state",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

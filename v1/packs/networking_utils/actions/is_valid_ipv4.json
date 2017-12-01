@@ -1,0 +1,25 @@
+{
+    "description": "Check for a valid IPv4 address (and return some infomation).",
+    "enabled": true,
+    "entry_point": "is_valid_ip.py",
+    "name": "is_valid_ipv4",
+    "pack": "networking_utils",
+    "parameters": {
+        "ip_address": {
+            "description": "IP Address to valiadate",
+            "required": true,
+            "type": "string"
+        },
+        "no_loopback": {
+            "default": false,
+            "description": "Consider loopback addresses as invaild.",
+            "type": "boolean"
+        },
+        "only_v4": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

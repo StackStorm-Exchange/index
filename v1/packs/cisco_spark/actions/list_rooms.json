@@ -1,0 +1,19 @@
+{
+    "description": "List rooms available",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "list_rooms",
+    "parameters": {
+        "accessor": {
+            "default": "rooms",
+            "immutable": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "list",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

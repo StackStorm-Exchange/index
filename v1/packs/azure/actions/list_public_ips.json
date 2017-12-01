@@ -1,0 +1,14 @@
+{
+    "description": "List public IPs.",
+    "enabled": true,
+    "entry_point": "list_public_ips.py",
+    "name": "list_public_ips",
+    "parameters": {
+        "resource_group": {
+            "description": "resource_group",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

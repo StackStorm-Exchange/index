@@ -1,0 +1,14 @@
+{
+    "description": "Performs chef-solo run on remote hosts.",
+    "enabled": true,
+    "entry_point": "chef_ohai.py",
+    "name": "ohai",
+    "parameters": {
+        "path": {
+            "description": "Slash separated path to an ohai attribute.",
+            "position": 0,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-remote-script"
+}

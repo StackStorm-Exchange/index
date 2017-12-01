@@ -1,0 +1,31 @@
+{
+    "description": "Create a network",
+    "enabled": true,
+    "entry_point": "create_network.py",
+    "name": "create_network",
+    "parameters": {
+        "action": {
+            "default": "ex_create_network",
+            "immutable": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "The description of the network",
+            "type": "string"
+        },
+        "location": {
+            "description": "The ID of the datacenter (e.g. NA1)",
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the network",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

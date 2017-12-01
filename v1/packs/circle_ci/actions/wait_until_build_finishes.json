@@ -1,0 +1,40 @@
+{
+    "description": "Wait until build finishes.",
+    "enabled": true,
+    "entry_point": "wait_until_build_finishes.py",
+    "name": "wait_until_build_finishes",
+    "parameters": {
+        "build_num": {
+            "description": "Circle CI build number.",
+            "required": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "Name of project in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "vcs_type": {
+            "default": "github",
+            "description": "Name of version control system.",
+            "enum": [
+                "github",
+                "bitbucket"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "wait_timeout": {
+            "default": 600,
+            "description": "How long to wait before quits (in seconds).",
+            "required": false,
+            "type": "number"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.qos.associate",
+    "parameters": {
+        "base": {
+            "default": "volume qos associate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_qos_associate = openstackclient.volume.v2.qos_specs:AssociateQos')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "qos_spec": {
+            "description": "QoS specification to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "volume_type": {
+            "description": "Volume type to associate the QoS (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

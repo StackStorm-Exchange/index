@@ -1,0 +1,50 @@
+{
+    "description": "Show a specific deployment output.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "software.deployment.output.show",
+    "parameters": {
+        "all": {
+            "default": false,
+            "description": "Display all deployment outputs",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "software deployment output show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "deployment": {
+            "description": "ID of deployment to show the output for",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('software_deployment_output_show = heatclient.osc.v1.software_deployment:ShowOutputDeployment')",
+            "immutable": true,
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "Show full deployment logs in output",
+            "type": "boolean"
+        },
+        "output": {
+            "description": "Name of an output to display",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

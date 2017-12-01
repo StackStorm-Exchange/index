@@ -1,0 +1,64 @@
+{
+    "description": "Post events to the stream",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post_event",
+    "parameters": {
+        "aggregation_key": {
+            "description": "Arbitrary string to use for aggregation, max 100 chars",
+            "required": false,
+            "type": "string"
+        },
+        "alert_type": {
+            "description": "\"error\", \"warning\", \"info\" or \"success\"",
+            "required": false,
+            "type": "string"
+        },
+        "cls": {
+            "default": "DatadogPostEvent",
+            "immutable": true,
+            "type": "string"
+        },
+        "date_happenend": {
+            "description": "POSIX timestamp of the event",
+            "required": false,
+            "type": "integer"
+        },
+        "host": {
+            "description": "Hostname to associat with the event",
+            "required": false,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.events",
+            "immutable": true,
+            "type": "string"
+        },
+        "priority": {
+            "description": "The priority of the event ('normal' or 'low')",
+            "required": false,
+            "type": "string"
+        },
+        "source_type_name": {
+            "description": "The type of event being posted. Options: nagios, hudson, jenkins, user, my apps, feed, chef, puppet, git, bitbucket, fabric, capistrano",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "A list of tags to apply to the event",
+            "required": false,
+            "type": "array"
+        },
+        "text": {
+            "description": "Body of the event, limited to 4000 chars. Support markdown",
+            "required": true,
+            "type": "string"
+        },
+        "title": {
+            "description": "Event title, limited to 100 chars",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

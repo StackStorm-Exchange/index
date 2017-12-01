@@ -1,0 +1,19 @@
+{
+    "description": "Run a string GET query on the ServiceNow API",
+    "enabled": true,
+    "entry_point": "get_non_structured.py",
+    "name": "get_non_structured",
+    "parameters": {
+        "query": {
+            "description": "Non-Structured query for SN data",
+            "required": true,
+            "type": "string"
+        },
+        "table": {
+            "description": "Table to take action on",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

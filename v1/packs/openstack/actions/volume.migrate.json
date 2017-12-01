@@ -1,0 +1,56 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.migrate",
+    "parameters": {
+        "base": {
+            "default": "volume migrate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_migrate = openstackclient.volume.v2.volume:MigrateVolume')",
+            "immutable": true,
+            "type": "string"
+        },
+        "force_host_copy": {
+            "default": false,
+            "description": "Enable generic host-based force-migration, which bypasses driver optimizations",
+            "type": "boolean"
+        },
+        "host": {
+            "description": "Destination host (takes the form: host@backend-name#pool)",
+            "required": true,
+            "type": "string"
+        },
+        "lock_volume": {
+            "default": false,
+            "description": "If specified, the volume state will be locked and will not allow a migration to be aborted (possibly by another operation)",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "unlock_volume": {
+            "default": false,
+            "description": "If specified, the volume state will not be locked and the a migration can be aborted (default) (possibly by another operation)",
+            "type": "boolean"
+        },
+        "volume": {
+            "description": "Volume to migrate (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

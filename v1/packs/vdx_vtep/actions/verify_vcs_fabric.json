@@ -1,0 +1,35 @@
+{
+    "description": "verify vcs fabric.",
+    "enabled": true,
+    "entry_point": "verify_vcs_fabric.py",
+    "name": "verify_vcs_fabric",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Switch Management IP.",
+            "type": "string"
+        },
+        "nodes": {
+            "description": "Nodes",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "rbridge_ids": {
+            "description": "rbridge id",
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        },
+        "vcs_id": {
+            "description": "vcs id",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

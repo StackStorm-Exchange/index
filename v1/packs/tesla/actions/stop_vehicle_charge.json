@@ -1,0 +1,19 @@
+{
+    "description": "Stop a vehicle charge",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "stop_vehicle_charge",
+    "parameters": {
+        "action": {
+            "default": "charge_stop",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

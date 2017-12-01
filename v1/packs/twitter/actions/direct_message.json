@@ -1,0 +1,19 @@
+{
+    "description": "Direct message a user.",
+    "enabled": true,
+    "entry_point": "direct_message.py",
+    "name": "direct_message",
+    "parameters": {
+        "message": {
+            "description": "The message to send.",
+            "required": true,
+            "type": "string"
+        },
+        "screen_name": {
+            "description": "screen name of the user to direct message.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

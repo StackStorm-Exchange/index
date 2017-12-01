@@ -1,0 +1,41 @@
+{
+    "description": "Create an architecture (resource: POST /api/architectures)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "architectures.create",
+    "pack": "foreman",
+    "parameters": {
+        "architecture": {
+            "description": "'description: None\n parameters:\n     name:\n       required: true\n       type: string\n       description:\n     operatingsystem_ids:\n       required: false\n       type: array\n       description: Operating system IDs\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "architectures.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

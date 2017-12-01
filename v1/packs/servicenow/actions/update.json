@@ -1,0 +1,24 @@
+{
+    "description": "Update an entry in a ServiceNow Table",
+    "enabled": true,
+    "entry_point": "update.py",
+    "name": "update",
+    "parameters": {
+        "payload": {
+            "description": "Data to upload to ServiceNow",
+            "required": true,
+            "type": "object"
+        },
+        "sysid": {
+            "description": "ID of record",
+            "required": true,
+            "type": "string"
+        },
+        "table": {
+            "description": "Table to take action on",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

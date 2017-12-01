@@ -1,0 +1,60 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "workdocs_update_user",
+    "pack": "aws",
+    "parameters": {
+        "AuthenticationToken": {
+            "description": "Amazon WorkDocs authentication token. This field should not be set when using administrative API actions, as in accessing the API using AWS credentials.",
+            "type": "string"
+        },
+        "GivenName": {
+            "description": "The given name of the user.",
+            "type": "string"
+        },
+        "Locale": {
+            "description": "The locale of the user.",
+            "type": "string"
+        },
+        "StorageRule": {
+            "description": "The amount of storage for the user.",
+            "type": "object"
+        },
+        "Surname": {
+            "description": "The surname of the user.",
+            "type": "string"
+        },
+        "TimeZoneId": {
+            "description": "The time zone ID of the user.",
+            "type": "string"
+        },
+        "Type": {
+            "description": "The type of the user.",
+            "type": "string"
+        },
+        "UserId": {
+            "description": "The ID of the user.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "update_user",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "workdocs",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

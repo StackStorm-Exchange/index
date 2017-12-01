@@ -1,0 +1,59 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "bgpvpn.list",
+    "parameters": {
+        "base": {
+            "default": "bgpvpn list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bgpvpn_list = neutronclient.osc.v2.networking_bgpvpn.bgpvpn:ListBgpvpn')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "default": [],
+            "description": "Filter property to apply on returned BGP VPNs (repeat to filter on multiple properties)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Parse the (human readable) date string and return timestamp.",
+    "enabled": true,
+    "entry_point": "parse_date_string.py",
+    "name": "parse_date_string",
+    "parameters": {
+        "date_string": {
+            "description": "Date string to parse.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

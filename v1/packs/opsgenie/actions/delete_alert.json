@@ -1,0 +1,30 @@
+{
+    "description": "Delete an alert in OpsGenie",
+    "enabled": true,
+    "entry_point": "delete_alert.py",
+    "name": "delete_alert",
+    "pack": "opsgenie",
+    "parameters": {
+        "alert_id": {
+            "description": "Alert ID to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "alias": {
+            "default": null,
+            "description": "Alert ID to delete.",
+            "type": "string"
+        },
+        "source": {
+            "default": null,
+            "description": "User defined field to specify source of close action.",
+            "type": "string"
+        },
+        "user": {
+            "default": null,
+            "description": "Default owner of the execution.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

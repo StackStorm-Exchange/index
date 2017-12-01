@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "auto_import": "{{trigger.body.orion_start_discovery.auto_import}}",
+            "ip_ranges": "{{trigger.body.orion_start_discovery.ip_ranges | use_none}}",
+            "name": "{{trigger.body.orion_start_discovery.name}}",
+            "no_icmp_only": "{{trigger.body.orion_start_discovery.no_icmp_only}}",
+            "nodes": "{{trigger.body.orion_start_discovery.nodes | use_none}}",
+            "platform": "{{trigger.body.orion_start_discovery.platform}}",
+            "poller": "{{trigger.body.orion_start_discovery.poller}}",
+            "snmp_communities": "{{trigger.body.orion_start_discovery.snmp_communities}}",
+            "subnets": "{{trigger.body.orion_start_discovery.subnets | use_none}}"
+        },
+        "ref": "orion.start_discovery"
+    },
+    "criteria": {
+        "trigger.body": {
+            "pattern": "orion_start_discovery",
+            "type": "exists"
+        }
+    },
+    "description": "Trigger orion.node_create via a webhook",
+    "enabled": false,
+    "name": "start_discovery_webhook",
+    "pack": "orion",
+    "trigger": {
+        "parameters": {
+            "url": "orion_start_discovery"
+        },
+        "type": "core.st2.webhook"
+    }
+}

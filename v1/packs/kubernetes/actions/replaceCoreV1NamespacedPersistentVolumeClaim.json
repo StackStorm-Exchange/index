@@ -1,0 +1,33 @@
+{
+    "description": "replace the specified PersistentVolumeClaim",
+    "enabled": true,
+    "entry_point": "replaceCoreV1NamespacedPersistentVolumeClaim.py",
+    "name": "replaceCoreV1NamespacedPersistentVolumeClaim",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the PersistentVolumeClaim",
+            "required": true,
+            "type": "string"
+        },
+        "namespace": {
+            "description": "object name and auth scope, such as for teams and projects",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

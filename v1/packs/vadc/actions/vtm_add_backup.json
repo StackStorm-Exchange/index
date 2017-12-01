@@ -1,0 +1,19 @@
+{
+    "description": "vTM - Upload a Configuration Backup",
+    "enabled": true,
+    "entry_point": "vtm_add_backup.py",
+    "name": "vtm_add_backup",
+    "parameters": {
+        "tarball": {
+            "description": "tarball file name",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

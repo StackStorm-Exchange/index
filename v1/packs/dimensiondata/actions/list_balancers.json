@@ -1,0 +1,19 @@
+{
+    "description": "List the load balancers available",
+    "enabled": true,
+    "entry_point": "run_lb.py",
+    "name": "list_balancers",
+    "parameters": {
+        "action": {
+            "default": "list_balancers",
+            "immutable": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

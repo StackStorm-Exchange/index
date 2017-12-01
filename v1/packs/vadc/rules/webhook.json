@@ -1,0 +1,18 @@
+{
+    "action": {
+        "parameters": {
+            "cmd": "logger {{trigger.body}}"
+        },
+        "ref": "core.local"
+    },
+    "description": "Example vADC Web Hook Rule.",
+    "enabled": false,
+    "name": "webhook",
+    "pack": "vadc",
+    "trigger": {
+        "parameters": {
+            "url": "vadc_hook"
+        },
+        "type": "core.st2.webhook"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "ack": {
+        "enabled": false
+    },
+    "action_ref": "orion.list_sdk_verbs",
+    "description": "List Verbs in the Solarwinds OrionSDK that can be Invoked.",
+    "formats": [
+        {
+            "display": "orion sdk list verbs [{{v_filter}}]",
+            "representation": [
+                "orion sdk list verbs( {{v_filter}})?"
+            ]
+        }
+    ],
+    "name": "list_sdk_verbs",
+    "pack": "orion",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\n{% for item in execution.result.result.Entities %}\n*{{item.Entity}}*: _{{item.Method}}_\n{% endfor %}\n{% else %}\nError: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

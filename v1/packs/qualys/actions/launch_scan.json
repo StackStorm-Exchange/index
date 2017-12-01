@@ -1,0 +1,34 @@
+{
+    "description": "Launch a scan",
+    "enabled": true,
+    "entry_point": "launch_scan.py",
+    "name": "launch_scan",
+    "parameters": {
+        "asset_groups": {
+            "description": "Target an asset group or collection (CSV) of groups",
+            "required": false,
+            "type": "string"
+        },
+        "ip": {
+            "description": "Target a specific IP",
+            "required": false,
+            "type": "string"
+        },
+        "iscanner_name": {
+            "description": "The iscanner name (the scanner appliance)",
+            "required": false,
+            "type": "string"
+        },
+        "option_title": {
+            "description": "The option profile name of the scan",
+            "required": false,
+            "type": "string"
+        },
+        "title": {
+            "description": "The name of the scan",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

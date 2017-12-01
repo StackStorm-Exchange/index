@@ -1,0 +1,19 @@
+{
+    "description": "Associate a SSH key with your account",
+    "enabled": true,
+    "entry_point": "associate_ssh_key.py",
+    "name": "associate_ssh_key",
+    "parameters": {
+        "label": {
+            "description": "Label for the SSH key.",
+            "required": true,
+            "type": "string"
+        },
+        "ssh_key": {
+            "description": "Public SSH key to associate with your account.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

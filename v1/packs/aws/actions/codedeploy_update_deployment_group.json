@@ -1,0 +1,73 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "codedeploy_update_deployment_group",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "update_deployment_group",
+            "immutable": true,
+            "type": "string"
+        },
+        "alarmConfiguration": {
+            "description": "Information to add or change about Amazon CloudWatch alarms when the deployment group is updated. ",
+            "type": "object"
+        },
+        "applicationName": {
+            "description": "The application name corresponding to the deployment group to update.",
+            "required": true,
+            "type": "string"
+        },
+        "autoRollbackConfiguration": {
+            "description": "Information for an automatic rollback configuration that is added or changed when a deployment group is updated.",
+            "type": "object"
+        },
+        "autoScalingGroups": {
+            "description": "The replacement list of Auto Scaling groups to be included in the deployment group, if you want to change them. To keep the Auto Scaling groups, enter their names. To remove Auto Scaling groups, do not enter any Auto Scaling group names.",
+            "type": "array"
+        },
+        "cls": {
+            "default": "codedeploy",
+            "type": "string"
+        },
+        "currentDeploymentGroupName": {
+            "description": "The current name of the deployment group.",
+            "required": true,
+            "type": "string"
+        },
+        "deploymentConfigName": {
+            "description": "The replacement deployment configuration name to use, if you want to change it.",
+            "type": "string"
+        },
+        "ec2TagFilters": {
+            "description": "The replacement set of Amazon EC2 tags on which to filter, if you want to change them. To keep the existing tags, enter their names. To remove tags, do not enter any tag names.",
+            "type": "array"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "newDeploymentGroupName": {
+            "description": "The new name of the deployment group, if you want to change it.",
+            "type": "string"
+        },
+        "onPremisesInstanceTagFilters": {
+            "description": "The replacement set of on-premises instance tags on which to filter, if you want to change them. To keep the existing tags, enter their names. To remove tags, do not enter any tag names.",
+            "type": "array"
+        },
+        "serviceRoleArn": {
+            "description": "A replacement ARN for the service role, if you want to change it.",
+            "type": "string"
+        },
+        "triggerConfigurations": {
+            "description": "Information about triggers to change when the deployment group is updated. For examples, see Modify Triggers in an AWS CodeDeploy Deployment Group in the AWS CodeDeploy User Guide.",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

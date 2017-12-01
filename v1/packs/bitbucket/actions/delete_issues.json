@@ -1,0 +1,19 @@
+{
+    "description": "Delete issue for a given repository",
+    "enabled": true,
+    "entry_point": "delete_issues.py",
+    "name": "delete_issues",
+    "parameters": {
+        "ids": {
+            "description": "IDs of the issues to delete.",
+            "required": true,
+            "type": "array"
+        },
+        "repo": {
+            "description": "provide repositroy name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

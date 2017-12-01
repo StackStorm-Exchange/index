@@ -1,0 +1,14 @@
+{
+    "description": "List available zones.",
+    "enabled": true,
+    "entry_point": "list_dns_zones.py",
+    "name": "list_dns_zones",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

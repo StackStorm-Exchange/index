@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "greengrass_create_logger_definition_version",
+    "pack": "aws",
+    "parameters": {
+        "AmznClientToken": {
+            "description": "The client token used to request idempotent operations.",
+            "type": "string"
+        },
+        "LoggerDefinitionId": {
+            "description": "logger definition Id",
+            "required": true,
+            "type": "string"
+        },
+        "Loggers": {
+            "description": "List of loggers.",
+            "type": "array"
+        },
+        "action": {
+            "default": "create_logger_definition_version",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "greengrass",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

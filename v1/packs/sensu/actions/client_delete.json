@@ -1,0 +1,14 @@
+{
+    "description": "Delete a Sensu client",
+    "enabled": true,
+    "entry_point": "client_delete.py",
+    "name": "client_delete",
+    "parameters": {
+        "client": {
+            "description": "The client name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

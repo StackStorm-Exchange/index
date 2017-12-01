@@ -1,0 +1,16 @@
+{
+    "description": "Wait for a Task to complete and returns its result.",
+    "enabled": true,
+    "entry_point": "hello_vsphere.py",
+    "name": "hello_vsphere",
+    "parameters": {
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

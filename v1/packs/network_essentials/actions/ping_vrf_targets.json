@@ -1,0 +1,63 @@
+{
+    "description": "Ping target IPs from the switch using the specified VRF, uses the default VRF if VRF is not provided",
+    "enabled": true,
+    "entry_point": "ping_vrf_targets.py",
+    "name": "ping_vrf_targets",
+    "pack": "network_essentials",
+    "parameters": {
+        "count": {
+            "default": 4,
+            "description": "Count parameter for the ping command. Specifies the number of transmissions (pings).",
+            "position": 6,
+            "required": false,
+            "type": "integer"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "size": {
+            "default": 56,
+            "description": "Datagram size",
+            "position": 7,
+            "required": false,
+            "type": "integer"
+        },
+        "targets": {
+            "description": "One or more comma separated target IP addresses",
+            "position": 3,
+            "required": true,
+            "type": "array"
+        },
+        "timeout_value": {
+            "default": 1,
+            "description": "Timeout parameter for the ping command. Specifies the time (in seconds) to wait for a response.",
+            "position": 5,
+            "required": false,
+            "type": "integer"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        },
+        "vrf": {
+            "default": "default-vrf",
+            "description": "VRF name",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

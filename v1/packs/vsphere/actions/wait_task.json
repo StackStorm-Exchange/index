@@ -1,0 +1,21 @@
+{
+    "description": "Wait for a Task to complete and returns its result.",
+    "enabled": true,
+    "entry_point": "wait_for_task.py",
+    "name": "wait_task",
+    "parameters": {
+        "task_id": {
+            "description": "Task to track",
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

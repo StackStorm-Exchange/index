@@ -1,0 +1,25 @@
+{
+    "description": "vTM - Create a Configuration Backup",
+    "enabled": true,
+    "entry_point": "vtm_create_backup.py",
+    "name": "vtm_create_backup",
+    "parameters": {
+        "description": {
+            "default": "StackStorm Backup",
+            "description": "An optional description of the backup",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the Backup",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "compute.agent.delete",
+    "parameters": {
+        "base": {
+            "default": "compute agent delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('compute_agent_delete = openstackclient.compute.v2.agent:DeleteAgent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of agent(s) to delete",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

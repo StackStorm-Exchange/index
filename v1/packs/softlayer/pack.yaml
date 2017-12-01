@@ -1,0 +1,17 @@
+ref: softlayer
+name: softlayer
+description: st2 content pack containing Softlayer integrations.
+keywords:
+- softlayer
+- cloud
+version: 0.3.1
+author: Itxaka Serrano Garcia
+email: itxakaserrano@gmail.com
+content:
+  actions:
+    count: 4
+    resources:
+    - create_instance
+    - create_keypair
+    - delete_keypair
+    - destroy_instance

@@ -1,0 +1,17 @@
+{
+    "description": "Get the current humidity",
+    "enabled": true,
+    "entry_point": "get_humidity.py",
+    "name": "get_humidity",
+    "parameters": {
+        "device": {
+            "description": "ID of specific Nest device in a structure",
+            "type": "integer"
+        },
+        "structure": {
+            "description": "ID of Nest Home name",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

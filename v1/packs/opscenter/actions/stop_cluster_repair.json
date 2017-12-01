@@ -1,0 +1,14 @@
+{
+    "description": "Stop repair for cluster.",
+    "enabled": true,
+    "entry_point": "stop_cluster_repair.py",
+    "name": "stop_cluster_repair",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

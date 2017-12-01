@@ -1,0 +1,67 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "codebuild_create_project",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "create_project",
+            "immutable": true,
+            "type": "string"
+        },
+        "artifacts": {
+            "description": "Information about the build project's build output artifacts.",
+            "required": true,
+            "type": "object"
+        },
+        "cls": {
+            "default": "codebuild",
+            "type": "string"
+        },
+        "description": {
+            "description": "A meaningful description of the build project.",
+            "type": "string"
+        },
+        "encryptionKey": {
+            "description": "The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build project's build output artifacts. You can specify either the CMK's Amazon Resource Name (ARN) or, if available, the CMK's alias (using the format alias/alias-name ).",
+            "type": "string"
+        },
+        "environment": {
+            "description": "Information about the build project's build environment.",
+            "required": true,
+            "type": "object"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The build project's name.",
+            "required": true,
+            "type": "string"
+        },
+        "serviceRole": {
+            "description": "The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.",
+            "type": "string"
+        },
+        "source": {
+            "description": "Information about the build project's build input source code.",
+            "required": true,
+            "type": "object"
+        },
+        "tags": {
+            "description": "A set of tags for this build project. These tags are available for use by AWS services that support AWS CodeBuild build project tags.",
+            "type": "array"
+        },
+        "timeoutInMinutes": {
+            "description": "How long in minutes, from 5 to 480 (8 hours), for AWS CodeBuild to wait until timing out any related build that does not get marked as completed. The default is 60 minutes.",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,65 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.migrate",
+    "parameters": {
+        "base": {
+            "default": "server migrate",
+            "immutable": true,
+            "type": "string"
+        },
+        "block_migration": {
+            "default": false,
+            "description": "Perform a block live migration",
+            "type": "boolean"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "disk_overcommit": {
+            "default": false,
+            "description": "Allow disk over-commit on the destination host",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_migrate = openstackclient.compute.v2.server:MigrateServer')",
+            "immutable": true,
+            "type": "string"
+        },
+        "live": {
+            "description": "Target hostname",
+            "type": "string"
+        },
+        "no_disk_overcommit": {
+            "default": false,
+            "description": "Do not over-commit disk on the destination host (default)",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "server": {
+            "description": "Server (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "shared_migration": {
+            "default": false,
+            "description": "Perform a shared live migration (default)",
+            "type": "boolean"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait for migrate to complete",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

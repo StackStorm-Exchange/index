@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_create_reserved_instances_listing",
+    "pack": "aws",
+    "parameters": {
+        "ClientToken": {
+            "description": "Unique, case-sensitive identifier you provide to ensure idempotency of your listings. This helps avoid duplicate listings. For more information, see Ensuring Idempotency.",
+            "required": true,
+            "type": "string"
+        },
+        "InstanceCount": {
+            "description": "The number of instances that are a part of a Reserved Instance account to be listed in the Reserved Instance Marketplace. This number should be less than or equal to the instance count associated with the Reserved Instance ID specified in this call.",
+            "required": true,
+            "type": "integer"
+        },
+        "PriceSchedules": {
+            "description": "A list specifying the price of the Standard Reserved Instance for each month remaining in the Reserved Instance term.",
+            "required": true,
+            "type": "array"
+        },
+        "ReservedInstancesId": {
+            "description": "The ID of the active Standard Reserved Instance.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "create_reserved_instances_listing",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

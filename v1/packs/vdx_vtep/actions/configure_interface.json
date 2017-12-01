@@ -1,0 +1,43 @@
+{
+    "description": "configure interface",
+    "enabled": true,
+    "entry_point": "configure_interface.py",
+    "name": "configure_interface",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Device IP.",
+            "type": "string"
+        },
+        "intf_ip": {
+            "description": "interface IP",
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "interface Name/ID.",
+            "type": "string"
+        },
+        "intf_type": {
+            "description": "interface type",
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "switch management ip.",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "rbridge_id": {
+            "description": "rbridge id",
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

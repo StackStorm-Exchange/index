@@ -1,0 +1,19 @@
+{
+    "description": "vTM - Delete a Traffic IP Group",
+    "enabled": true,
+    "entry_point": "vtm_del_tip.py",
+    "name": "vtm_del_tip",
+    "parameters": {
+        "name": {
+            "description": "The name of the TIP to delete",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

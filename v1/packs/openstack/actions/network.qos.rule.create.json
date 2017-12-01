@@ -1,0 +1,76 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.qos.rule.create",
+    "parameters": {
+        "base": {
+            "default": "network qos rule create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "dscp_mark": {
+            "description": "DSCP mark: value can be 0, even numbers from 8-56, excluding 42, 44, 50, 52, and 54",
+            "type": "integer"
+        },
+        "egress": {
+            "default": false,
+            "description": "Egress traffic direction from the project point of view",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_qos_rule_create = openstackclient.network.v2.network_qos_rule:CreateNetworkQosRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ingress": {
+            "default": false,
+            "description": "Ingress traffic direction from the project point of view",
+            "type": "boolean"
+        },
+        "max_burst_kbits": {
+            "description": "Maximum burst in kilobits, 0 means automatic",
+            "type": "integer"
+        },
+        "max_kbps": {
+            "description": "Maximum bandwidth in kbps",
+            "type": "integer"
+        },
+        "min_kbps": {
+            "description": "Minimum guaranteed bandwidth in kbps",
+            "type": "integer"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "qos_policy": {
+            "description": "QoS policy that contains the rule (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "type": {
+            "description": "QoS rule type (dscp-marking, minimum-bandwidth, bandwidth-limit) (choices: minimum-bandwidth, dscp-marking, bandwidth-limit)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

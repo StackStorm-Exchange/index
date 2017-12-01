@@ -1,0 +1,15 @@
+{
+    "description": "Get the details of an email folder",
+    "enabled": true,
+    "entry_point": "get_folder.py",
+    "name": "get_folder",
+    "pack": "msexchange",
+    "parameters": {
+        "folder_name": {
+            "description": "Folder name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

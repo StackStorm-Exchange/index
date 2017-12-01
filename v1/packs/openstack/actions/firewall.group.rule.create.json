@@ -1,0 +1,135 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall.group.rule.create",
+    "parameters": {
+        "action": {
+            "description": "Action for the firewall rule (choices: allow, deny, reject)",
+            "type": "string"
+        },
+        "base": {
+            "default": "firewall group rule create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the firewall rule",
+            "type": "string"
+        },
+        "destination_ip_address": {
+            "description": "Destination IP address or subnet",
+            "type": "string"
+        },
+        "destination_port": {
+            "description": "Destination port number or range(integer in [1, 65535] or range like 123:456)",
+            "type": "string"
+        },
+        "disable_rule": {
+            "default": false,
+            "description": "Disable this rule",
+            "type": "boolean"
+        },
+        "enable_rule": {
+            "default": false,
+            "description": "Enable this rule (default is enabled)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall_group_rule_create = neutronclient.osc.v2.fwaas.firewallrule:CreateFirewallRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ip_version": {
+            "description": "Set IP version 4 or 6 (default is 4) (choices: 4, 6)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the firewall rule",
+            "type": "string"
+        },
+        "no_destination_ip_address": {
+            "default": false,
+            "description": "Detach destination IP address",
+            "type": "boolean"
+        },
+        "no_destination_port": {
+            "default": false,
+            "description": "Detach destination port number or range",
+            "type": "boolean"
+        },
+        "no_share": {
+            "default": false,
+            "description": "Restrict use of the firewall rule to the current project",
+            "type": "boolean"
+        },
+        "no_source_ip_address": {
+            "default": false,
+            "description": "Detach source IP address",
+            "type": "boolean"
+        },
+        "no_source_port": {
+            "default": false,
+            "description": "Detach source port number or range",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "private": {
+            "default": false,
+            "description": "Restrict use of the firewall rule to the current project.This option is deprecated and would be removed in R release.",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "protocol": {
+            "description": "Protocol for the firewall rule (choices: tcp, udp, icmp, any)",
+            "type": "string"
+        },
+        "public": {
+            "default": false,
+            "description": "Make the firewall policy public, which allows it to be used in all projects (as opposed to the default, which is to restrict its use to the current project). This option is deprecated and would be removed in R Release",
+            "type": "boolean"
+        },
+        "share": {
+            "default": false,
+            "description": "Share the firewall rule to be used in all projects (by default, it is restricted to be used by the current project).",
+            "type": "boolean"
+        },
+        "source_ip_address": {
+            "description": "Source IP address or subnet",
+            "type": "string"
+        },
+        "source_port": {
+            "description": "Source port number or range(integer in [1, 65535] or range like 123:456)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

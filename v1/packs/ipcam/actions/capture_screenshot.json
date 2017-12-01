@@ -1,0 +1,37 @@
+{
+    "description": "Capture a screenshot of the camera's FOV.",
+    "enabled": true,
+    "entry_point": "capture_screenshot.py",
+    "name": "capture_screenshot",
+    "parameters": {
+        "model": {
+            "description": "IP camera model.",
+            "enum": [
+                "easyn"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password used to authenticate.",
+            "required": false,
+            "type": "string"
+        },
+        "resolution": {
+            "description": "Optional capture resolution (e.g. 640*480). If not provided, camera's default value is used.",
+            "required": false,
+            "type": "string"
+        },
+        "url": {
+            "description": "Base URL to the camera web interface (e.g. https://192.168.1.101/)",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username used to authenticate.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "route53_update_traffic_policy_comment",
+    "pack": "aws",
+    "parameters": {
+        "Comment": {
+            "description": "The new comment for the specified traffic policy and version.",
+            "required": true,
+            "type": "string"
+        },
+        "Id": {
+            "description": "The value of Id for the traffic policy for which you want to update the comment.",
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "description": "The value of Version for the traffic policy for which you want to update the comment.",
+            "required": true,
+            "type": "integer"
+        },
+        "action": {
+            "default": "update_traffic_policy_comment",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "route53",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

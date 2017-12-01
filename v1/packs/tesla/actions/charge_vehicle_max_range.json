@@ -1,0 +1,19 @@
+{
+    "description": "Charge a vehicle for max range charge",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "charge_vehicle_max_range",
+    "parameters": {
+        "action": {
+            "default": "charge_max_range",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

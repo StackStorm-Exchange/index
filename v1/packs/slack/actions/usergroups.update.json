@@ -1,0 +1,42 @@
+{
+    "description": "This method updates the properties of an existing User Group.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "usergroups.update",
+    "parameters": {
+        "channels": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "usergroups.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "handle": {
+            "required": false,
+            "type": "string"
+        },
+        "include_count": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        },
+        "usergroup": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

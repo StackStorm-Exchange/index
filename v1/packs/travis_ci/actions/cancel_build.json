@@ -1,0 +1,14 @@
+{
+    "description": "Cancel a build.",
+    "enabled": true,
+    "entry_point": "cancel_build.py",
+    "name": "cancel_build",
+    "parameters": {
+        "build_id": {
+            "description": "id of the build to cancel.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

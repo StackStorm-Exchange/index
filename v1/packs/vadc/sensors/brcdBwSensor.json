@@ -1,0 +1,21 @@
+{
+    "class_name": "brcdBwSensor",
+    "description": "Brocade SD Bandwidth Sensor",
+    "enabled": false,
+    "entry_point": "brcd_bw_sensor.py",
+    "poll_interval": 60,
+    "trigger_types": [
+        {
+            "description": "Bandwidth Event Detected",
+            "name": "bsd_bandwidth_event",
+            "payload_info": [
+                "action",
+                "instance",
+                "tag",
+                "bandwidth",
+                "current",
+                "average"
+            ]
+        }
+    ]
+}

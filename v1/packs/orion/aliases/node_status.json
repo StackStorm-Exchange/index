@@ -1,0 +1,24 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "orion.node_status",
+    "description": "Query Solarwinds Orion for a nodes status (e.g. up/down).",
+    "formats": [
+        {
+            "display": "orion node status {{node}}",
+            "representation": [
+                "orion node status {{node}}"
+            ]
+        }
+    ],
+    "name": "node_status",
+    "pack": "orion",
+    "result": {
+        "extra": {
+            "color": "{{execution.result.result.color|default('#439FE0')}}"
+        },
+        "format": "{% if execution.status == 'succeeded' %}\n{{ execution.result.result.node }} is {{ execution.result.result.status }}\n{% else %}\nError: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

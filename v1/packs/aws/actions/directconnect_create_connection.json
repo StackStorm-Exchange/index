@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "directconnect_create_connection",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "create_connection",
+            "immutable": true,
+            "type": "string"
+        },
+        "bandwidth": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "directconnect",
+            "type": "string"
+        },
+        "connectionName": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "location": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

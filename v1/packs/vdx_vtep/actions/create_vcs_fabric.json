@@ -1,0 +1,31 @@
+{
+    "description": "Add VDX switch to VCS fabric.",
+    "enabled": true,
+    "entry_point": "create_vcs_fabric.py",
+    "name": "create_vcs_fabric",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Switch Management IP.",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "rbridge_id": {
+            "description": "rbridge id",
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        },
+        "vcs_id": {
+            "description": "vcs fabric id",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

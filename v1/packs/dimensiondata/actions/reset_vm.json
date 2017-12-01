@@ -1,0 +1,23 @@
+{
+    "description": "Reset a virtual machine",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "reset_vm",
+    "parameters": {
+        "action": {
+            "default": "ex_reset",
+            "immutable": true,
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

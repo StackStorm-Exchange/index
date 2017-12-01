@@ -1,0 +1,36 @@
+{
+    "class_name": "KafkaGCPMessageSensor",
+    "description": "Sensor which monitors Kafka broker for gcp stackdriver messages",
+    "entry_point": "gcp_message_sensor.py",
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new GCP format message has arrived",
+            "name": "new_GCPmessage",
+            "payload_schema": {
+                "properties": {
+                    "key": {
+                        "description": "Message's key (only for keyed messages)",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Captured message. JSON-serialized messages are automatically parsed. payload.message is base64 decoded",
+                        "type": "object"
+                    },
+                    "offset": {
+                        "description": "Consumer offset for current topic. Position of what has been consumed",
+                        "type": "integer"
+                    },
+                    "partition": {
+                        "description": "Topic partition number message belongs to",
+                        "type": "integer"
+                    },
+                    "topic": {
+                        "description": "Category from which message was retrieved",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

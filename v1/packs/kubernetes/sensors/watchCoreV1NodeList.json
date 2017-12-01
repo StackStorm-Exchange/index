@@ -1,0 +1,41 @@
+{
+    "class_name": "watchCoreV1NodeList",
+    "description": "Sensor that watches Kubernetes API for new Nodes objects.",
+    "entry_point": "watchCoreV1NodeList.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for nodes event dispatch.",
+            "name": "nodes",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

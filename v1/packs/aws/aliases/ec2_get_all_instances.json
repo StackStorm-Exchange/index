@@ -1,0 +1,22 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "aws.ec2_get_all_instances",
+    "description": "get all instances",
+    "formats": [
+        "aws ec2 get"
+    ],
+    "name": "ec2_get_all_instances",
+    "pack": "aws",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "#00ad52",
+                "footer": "AWS Pack"
+            }
+        },
+        "format": "{% if execution.status == 'succeeded' %}\n{% for line in execution.result.result %}\n   {% for ec2 in line -%}\n   {{ ec2.id }}  - {{ ec2.state }} -- {{ ec2.tags.Name }} -- {{ ec2.ip_address }}\n   {% endfor %}\n{% endfor %}\n{% else %}\nError: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

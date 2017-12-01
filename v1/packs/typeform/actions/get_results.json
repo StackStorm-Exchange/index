@@ -1,0 +1,23 @@
+{
+    "description": "Get Typeform registration results",
+    "enabled": true,
+    "entry_point": "get_results.py",
+    "name": "get_results",
+    "parameters": {
+        "api_key": {
+            "description": "Typeform API key if not specified in config.yaml",
+            "type": "string"
+        },
+        "completed": {
+            "default": true,
+            "description": "Only retrieve completed forms",
+            "type": "boolean"
+        },
+        "form_id": {
+            "description": "Get results for this form ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

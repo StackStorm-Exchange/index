@@ -1,0 +1,17 @@
+ref: irc
+name: irc
+description: st2 content pack containing irc integrations
+keywords:
+- irc
+- internet relay chat
+- chat
+- messaging
+- instant messaging
+version: 0.3.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  sensors:
+    count: 1
+    resources:
+    - IRCSensor

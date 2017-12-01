@@ -1,0 +1,24 @@
+{
+    "description": "vTM - Get/Download a Configuration Backup",
+    "enabled": true,
+    "entry_point": "vtm_get_backup.py",
+    "name": "vtm_get_backup",
+    "parameters": {
+        "name": {
+            "description": "The name of the Backup",
+            "required": true,
+            "type": "string"
+        },
+        "outdir": {
+            "description": "Output directory name",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

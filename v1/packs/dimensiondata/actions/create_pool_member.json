@@ -1,0 +1,29 @@
+{
+    "description": "add member to a pool",
+    "enabled": true,
+    "entry_point": "create_pool_member.py",
+    "name": "create_pool_member",
+    "parameters": {
+        "node_id": {
+            "description": "Id of the node",
+            "required": true,
+            "type": "string"
+        },
+        "pool_id": {
+            "description": "id of the pool",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "port",
+            "required": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

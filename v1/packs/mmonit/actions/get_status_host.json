@@ -1,0 +1,14 @@
+{
+    "description": "Returns detailed status of the given host.",
+    "enabled": true,
+    "entry_point": "get_status_host.py",
+    "name": "get_status_host",
+    "parameters": {
+        "host_id": {
+            "description": "ID of the host",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

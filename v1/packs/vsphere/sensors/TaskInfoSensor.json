@@ -1,0 +1,35 @@
+{
+    "class_name": "TaskInfoSensor",
+    "description": "Sensor which monitors vSphere task events",
+    "entry_point": "taskinfo_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new task information of vSphere has arrived",
+            "name": "taskinfo",
+            "payload_schema": {
+                "properties": {
+                    "completed_time": {
+                        "type": "string"
+                    },
+                    "operation_name": {
+                        "type": "string"
+                    },
+                    "queue_time": {
+                        "type": "string"
+                    },
+                    "start_time": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "task_id": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

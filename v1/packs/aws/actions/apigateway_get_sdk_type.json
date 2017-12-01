@@ -1,0 +1,32 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "apigateway_get_sdk_type",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "get_sdk_type",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "apigateway",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "id": {
+            "description": "The identifier of the queried SdkType instance.",
+            "required": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

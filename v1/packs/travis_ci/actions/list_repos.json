@@ -1,0 +1,14 @@
+{
+    "description": "List repositories for the provided user.",
+    "enabled": true,
+    "entry_point": "list_repos.py",
+    "name": "list_repos",
+    "parameters": {
+        "username": {
+            "description": "User to retrieve the repositories for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

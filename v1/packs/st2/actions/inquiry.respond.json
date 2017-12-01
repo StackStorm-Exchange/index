@@ -1,0 +1,19 @@
+{
+    "description": "Respond to an inquiry",
+    "enabled": true,
+    "entry_point": "inquiry_respond.py",
+    "name": "inquiry.respond",
+    "parameters": {
+        "id": {
+            "description": "ID of inquiry to which to respond",
+            "required": true,
+            "type": "string"
+        },
+        "response": {
+            "description": "Response payload",
+            "required": false,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

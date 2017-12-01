@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "deviceIP": "{{trigger.body.deviceIP}}",
+            "fw_instance_name": "{{trigger.body.fw_instance_name}}",
+            "rule_number": "{{trigger.body.rule_number}}"
+        },
+        "ref": "vyatta.del_fw_rule"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "del_fw_rule",
+            "type": "contains"
+        }
+    },
+    "description": "Rule deleting a FW rule from a webhook payload",
+    "enabled": true,
+    "name": "webhook_del_fw_rule",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

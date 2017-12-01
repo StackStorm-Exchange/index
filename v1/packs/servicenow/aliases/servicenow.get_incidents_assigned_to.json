@@ -1,0 +1,14 @@
+{
+    "ack": {
+        "format": "Finding all incidents assigned "
+    },
+    "action_ref": "servicenow.get_incidents_assigned_to",
+    "description": "Get a list of incidents assigned to a particular username",
+    "formats": [
+        "incidents assigned to {{name}}"
+    ],
+    "name": "servicenow.get_incidents_assigned_to",
+    "result": {
+        "format": "{% if execution.result.tasks[1].result.result|length %}\nfound some incidents for you: {~}\n{% for incident in execution.result.tasks[1].result.result %}\n{{ loop.index }}. *{{ incident.number }}*: {{incident.short_description}}\n{% endfor %}\n{% else %}\ncouldn't find anything, sorry!\n{% endif %}\n"
+    }
+}

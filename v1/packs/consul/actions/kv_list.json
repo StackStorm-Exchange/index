@@ -1,0 +1,26 @@
+{
+    "description": "List values from Consul server",
+    "enabled": true,
+    "entry_point": "kv_get.py",
+    "name": "kv_list",
+    "parameters": {
+        "key": {
+            "description": "Root Key for listing from Consul",
+            "required": true,
+            "type": "string"
+        },
+        "keys": {
+            "default": true,
+            "description": "Return a list of keys only",
+            "required": false,
+            "type": "boolean"
+        },
+        "recurse": {
+            "default": true,
+            "description": "Do a recursive retrieval?",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,31 @@
+{
+    "description": "Add certificate in NSX controller.",
+    "enabled": true,
+    "entry_point": "add_hw_gw.py",
+    "name": "add_hw_gw",
+    "pack": "nsx_vtep",
+    "parameters": {
+        "gw_name": {
+            "description": "Hardware device name.",
+            "type": "string"
+        },
+        "nsx_cert": {
+            "description": "Nsx-controller client certificate",
+            "type": "string"
+        },
+        "nsx_mgr_ip": {
+            "description": "NSX manager IP.",
+            "type": "string"
+        },
+        "nsx_mgr_pass": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "nsx_mgr_user": {
+            "description": "login username",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

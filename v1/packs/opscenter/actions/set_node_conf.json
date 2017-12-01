@@ -1,0 +1,24 @@
+{
+    "description": "Set node configuration.",
+    "enabled": true,
+    "entry_point": "set_node_conf.py",
+    "name": "set_node_conf",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        },
+        "node_conf": {
+            "description": "Node configuration YAML valid string.",
+            "required": true,
+            "type": "string"
+        },
+        "node_ip": {
+            "description": "IP of the node.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

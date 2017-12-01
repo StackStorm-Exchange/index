@@ -1,0 +1,45 @@
+{
+    "description": "Update an LDAP authentication source (resource: PUT /api/auth_source_ldaps/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "auth_source_ldaps.update",
+    "pack": "foreman",
+    "parameters": {
+        "auth_source_ldap": {
+            "description": "'description: None\n parameters:\n     attr_mail:\n       required: false\n       type: string\n       description: required if onthefly_register is true\n     tls:\n       required: false\n       type: string\n       description:\n     account:\n       required: false\n       type: string\n       description:\n     name:\n       required: false\n       type: string\n       description:\n     server_type:\n       required: false\n       type: string\n       description: type of the LDAP server\n     groups_base:\n       required: false\n       type: string\n       description: groups base DN\n     attr_photo:\n       required: false\n       type: string\n       description:\n     onthefly_register:\n       required: false\n       type: string\n       description:\n     host:\n       required: false\n       type: string\n       description:\n     account_password:\n       required: false\n       type: string\n       description: required if onthefly_register is true\n     attr_firstname:\n       required: false\n       type: string\n       description: required if onthefly_register is true\n     usergroup_sync:\n       required: false\n       type: string\n       description: sync external user groups on login\n     base_dn:\n       required: false\n       type: string\n       description:\n     attr_lastname:\n       required: false\n       type: string\n       description: required if onthefly_register is true\n     attr_login:\n       required: false\n       type: string\n       description: required if onthefly_register is true\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     port:\n       required: false\n       type: string\n       description: defaults to 389\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     ldap_filter:\n       required: false\n       type: string\n       description: LDAP filter\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "auth_source_ldaps.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

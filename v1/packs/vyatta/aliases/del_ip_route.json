@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.del_ip_route",
+    "description": "Delete ip route",
+    "formats": [
+        "(delete|del) ip route on device {{deviceIP}}: {{subnet}}"
+    ],
+    "name": "del_ip_route",
+    "result": {
+        "enabled": true
+    }
+}

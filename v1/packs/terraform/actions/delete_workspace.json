@@ -1,0 +1,25 @@
+{
+    "description": "Delete Terraform workspace",
+    "enabled": true,
+    "entry_point": "delete_workspace.py",
+    "name": "delete_workspace",
+    "parameters": {
+        "plan_path": {
+            "description": "Path of the terraform plan",
+            "required": true,
+            "type": "string"
+        },
+        "terraform_exec": {
+            "default": "terraform",
+            "description": "Terraform executable path (default: terraform in the $PATH)",
+            "required": false,
+            "type": "string"
+        },
+        "workspace": {
+            "description": "The name of the workspace to create",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

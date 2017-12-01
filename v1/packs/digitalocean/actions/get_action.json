@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "do.py",
+    "name": "get_action",
+    "parameters": {
+        "action": {
+            "default": "get_action",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

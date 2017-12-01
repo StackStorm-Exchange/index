@@ -1,0 +1,17 @@
+ref: fireeye
+name: fireeye
+description: FireEye CM Series Integration
+version: 0.3.1
+keywords:
+- security
+author: James Fryman
+email: james@stackstorm.com
+content:
+  actions:
+    count: 5
+    resources:
+    - get_alert_query
+    - get_submission_results
+    - get_submission_status
+    - submit_malware
+    - view_ax_config

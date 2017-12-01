@@ -1,0 +1,126 @@
+{
+    "description": "Submit a file to Lastline for analysis",
+    "enabled": true,
+    "entry_point": "submit_file.py",
+    "name": "submit_file",
+    "parameters": {
+        "allow_network_traffic": {
+            "description": "if False, all network connections will be redirected to a honeypot. Requires special permissions.",
+            "type": "boolean"
+        },
+        "analysis_env": {
+            "description": "environment in which to run analysis. This includes the operating system as well as version of tools such as Microsoft Office. Example usage: - windows7:office2003, or - windowsxp By default, analysis will run on all available operating systems using the most applicable tools.",
+            "type": "string"
+        },
+        "analysis_timeout": {
+            "description": "timeout in seconds after which to terminate analysis. The analysis engine might decide to extend this timeout if necessary. If all analysis subjects terminate before this timeout analysis might be shorter",
+            "type": "integer"
+        },
+        "apk_package_name": {
+            "description": "package name for APK files. Don\u2019t specify manually.",
+            "type": "string"
+        },
+        "bypass_cache": {
+            "description": "if True, the API will not serve a cached result. NOTE: This requires special privileges.",
+            "type": "boolean"
+        },
+        "client_ip": {
+            "description": "ASCII dotted-quad representation of the IP address of the client-side endpoint.",
+            "type": "string"
+        },
+        "client_port": {
+            "description": "integer representation of the port number of the client-side endpoint of the flow tuple.",
+            "type": "integer"
+        },
+        "delete_after_analysis": {
+            "description": "if True, the backend will delete the file after analysis is done (and noone previously submitted this file with this flag set)",
+            "type": "boolean"
+        },
+        "download_agent": {
+            "description": "HTTP user-agent header that was used when the submitted file was originally downloaded, as a 'string' of bytes (not unicode)",
+            "type": "string"
+        },
+        "download_path": {
+            "description": "host path from which the submitted file was originally downloaded, as a 'string' of bytes (not unicode)",
+            "type": "string"
+        },
+        "download_referer": {
+            "description": "HTTP referer header that was used when the submitted file was originally downloaded, as a string of bytes (not unicode)",
+            "type": "string"
+        },
+        "download_request": {
+            "description": "full HTTP request with which the submitted file was originally downloaded, as a string of bytes (not unicode)",
+            "type": "string"
+        },
+        "file_stream": {
+            "description": "file-like object containing the file to upload",
+            "required": true,
+            "type": "object"
+        },
+        "filename": {
+            "description": "filename to use during analysis. If none is passed, the analysis engine will pick an appropriate name automatically. An easy way to pass this value is to use 'file_stream.name' for most file-like objects",
+            "type": "string"
+        },
+        "full_report_score": {
+            "description": "if set, this value (between -1 and 101) determines starting at which scores a full report is returned. -1 and 101 indicate 'never return full report'; 0 indicates 'return full report at all times'",
+            "type": "integer"
+        },
+        "is_download": {
+            "default": true,
+            "description": "True if the transfer happened in the server -> client direction, False otherwise (client -> server).",
+            "type": "boolean"
+        },
+        "keep_behavior_log": {
+            "description": "if True, the raw behavior log extracted during analysis will be kept for post-processing. NOTE: This can generate very very large volumes of data and is not recommended. Requires special permissions",
+            "type": "boolean"
+        },
+        "keep_file_dumps": {
+            "description": "if True, all files generated during analysis will be kept for post-processing. NOTE: This can generate large volumes of data and is not recommended. Requires special permissions",
+            "type": "boolean"
+        },
+        "keep_memory_dumps": {
+            "description": "if True, all buffers allocated during analysis will be kept for post-processing. NOTE: This can generate large volumes of data and is not recommended. Requires special permissions",
+            "type": "boolean"
+        },
+        "password": {
+            "description": "password used to unpack encrypted archives",
+            "type": "string"
+        },
+        "protocol": {
+            "default": "http",
+            "description": "app-layer protocol in which the file got transferred. Short ASCII string.",
+            "type": "string"
+        },
+        "push_to_portal_account": {
+            "description": "if set, a successful submission will be pushed to the web-portal using the specified username",
+            "type": "boolean"
+        },
+        "raw": {
+            "default": false,
+            "description": "if True, return the raw JSON results of the API query",
+            "type": "boolean"
+        },
+        "report_version": {
+            "description": "Version name of the Report that will be returned (optional)",
+            "type": "string"
+        },
+        "server_host": {
+            "description": "hostname of the server-side endpoint of the connection, as a string of bytes (not unicode).",
+            "type": "string"
+        },
+        "server_ip": {
+            "description": "ASCII dotted-quad representation of the IP address of the server-side endpoint.",
+            "type": "string"
+        },
+        "server_port": {
+            "description": "integer representation of the port number of the server-side endpoint of the flow tuple.",
+            "type": "integer"
+        },
+        "verify": {
+            "default": true,
+            "description": "if False, disable SSL-certificate verification",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

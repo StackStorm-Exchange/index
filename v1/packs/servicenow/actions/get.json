@@ -1,0 +1,19 @@
+{
+    "description": "Get an entry from a ServiceNow Table",
+    "enabled": true,
+    "entry_point": "get.py",
+    "name": "get",
+    "parameters": {
+        "query": {
+            "description": "Structured query for SN data",
+            "required": true,
+            "type": "object"
+        },
+        "table": {
+            "description": "Table to take action on",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

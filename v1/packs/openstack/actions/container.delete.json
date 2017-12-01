@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "container.delete",
+    "parameters": {
+        "base": {
+            "default": "container delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "containers": {
+            "description": "Container(s) to delete",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('container_delete = openstackclient.object.v1.container:DeleteContainer')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "recursive": {
+            "default": false,
+            "description": "Recursively delete objects and container",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,28 @@
+{
+    "description": "Update monitoring plan on a node",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "update_monitoring_plan",
+    "parameters": {
+        "action": {
+            "default": "ex_update_monitoring_plan",
+            "immutable": true,
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        },
+        "service_plan": {
+            "default": "ESSENTIALS",
+            "description": "The new service plan, ESSENTIALS or ADVANCED",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

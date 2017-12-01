@@ -1,0 +1,63 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.backup.create",
+    "parameters": {
+        "base": {
+            "default": "server backup create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_backup_create = openstackclient.compute.v2.server_backup:CreateServerBackup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the backup image (default: server name)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "rotate": {
+            "description": "Number of backups to keep (default: 1)",
+            "type": "integer"
+        },
+        "server": {
+            "description": "Server to back up (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "type": {
+            "description": "Used to populate the backup_type property of the backup image (default: empty)",
+            "type": "string"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait for backup image create to complete",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

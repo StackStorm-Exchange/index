@@ -1,0 +1,43 @@
+{
+    "description": "Internal action - Configure a FW rule",
+    "enabled": true,
+    "entry_point": "0_cfg_fw_rule.py",
+    "name": "0_cfg_fw_rule",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "cmd_path": {
+            "description": "configuration session token",
+            "required": true,
+            "type": "string"
+        },
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "required": true,
+            "type": "string"
+        },
+        "fw_instance_name": {
+            "description": "Rule-set name",
+            "required": true,
+            "type": "string"
+        },
+        "rule_content": {
+            "description": "Rule number",
+            "required": true,
+            "type": "object"
+        },
+        "rule_number": {
+            "description": "Rule number",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

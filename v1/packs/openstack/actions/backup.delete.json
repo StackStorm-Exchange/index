@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "backup.delete",
+    "parameters": {
+        "backups": {
+            "description": "Backup(s) to delete (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "backup delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('backup_delete = openstackclient.volume.v2.backup:DeleteBackup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "force": {
+            "default": false,
+            "description": "Allow delete in state other than error or available",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "format": "Give me just a moment to find the sensors for you..."
+    },
+    "action_ref": "st2.sensors.list",
+    "description": "List available StackStorm sensors.",
+    "formats": [
+        "st2 list {{ limit=10 }} sensors",
+        "st2 list {{ limit=10 }} sensors from {{ pack }}"
+    ],
+    "name": "st2_sensors_list",
+    "result": {
+        "format": "Found {{ execution.result.result | length }} sensors:{~}\n{% for sensor in execution.result.result -%}\n    - {{ sensor.ref }} ({{ sensor.trigger_types | join(', ') }}) {{ sensor.description and ' - ' + sensor.description }}\n{%+ endfor %}\n"
+    }
+}

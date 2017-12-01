@@ -1,0 +1,27 @@
+{
+    "description": "Add a new list to a board",
+    "enabled": true,
+    "entry_point": "add_list.py",
+    "name": "add_list",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "board_id": {
+            "description": "Board ID to close",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of new list",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

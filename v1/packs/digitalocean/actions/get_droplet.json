@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "do.py",
+    "name": "get_droplet",
+    "parameters": {
+        "action": {
+            "default": "get_droplet",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,22 @@
+ref: qualys
+name: qualys
+description: Qualys Cloud Security Services integration pack
+keywords:
+- security
+- qualys
+version: 1.0.2
+author: Anthony Shaw
+email: anthony.shaw@dimensiondata.com
+content:
+  actions:
+    count: 9
+    resources:
+    - add_host
+    - add_hosts
+    - get_host
+    - get_host_range
+    - get_report
+    - launch_scan
+    - list_hosts_not_scanned_since
+    - list_reports
+    - list_scans

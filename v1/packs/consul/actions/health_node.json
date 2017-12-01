@@ -1,0 +1,35 @@
+{
+    "description": "Returns the health info of a node",
+    "enabled": true,
+    "entry_point": "health_node.py",
+    "name": "health_node",
+    "parameters": {
+        "dc": {
+            "description": "The datacenter of the node and defaults to this agents datacenter.",
+            "required": false,
+            "type": "string"
+        },
+        "index": {
+            "description": "The current Consul index. Useful to check for changes since last query was run.",
+            "required": false,
+            "type": "integer"
+        },
+        "node": {
+            "description": "The node providing the given service.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "An optional ACL token to apply to this request.",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "wait": {
+            "description": "Maximum duration to wait (e.g. '10s') to retrieve a given index.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,61 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "redshift_create_hsm_configuration",
+    "pack": "aws",
+    "parameters": {
+        "Description": {
+            "description": "A text description of the HSM configuration to be created.",
+            "required": true,
+            "type": "string"
+        },
+        "HsmConfigurationIdentifier": {
+            "description": "The identifier to be assigned to the new Amazon Redshift HSM configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "HsmIpAddress": {
+            "description": "The IP address that the Amazon Redshift cluster must use to access the HSM.",
+            "required": true,
+            "type": "string"
+        },
+        "HsmPartitionName": {
+            "description": "The name of the partition in the HSM where the Amazon Redshift clusters will store their database encryption keys.",
+            "required": true,
+            "type": "string"
+        },
+        "HsmPartitionPassword": {
+            "description": "The password required to access the HSM partition.",
+            "required": true,
+            "type": "string"
+        },
+        "HsmServerPublicCertificate": {
+            "description": "The HSMs public certificate file. When using Cloud HSM, the file name is server.pem.",
+            "required": true,
+            "type": "string"
+        },
+        "Tags": {
+            "description": "A list of tag instances.",
+            "type": "array"
+        },
+        "action": {
+            "default": "create_hsm_configuration",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "redshift",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

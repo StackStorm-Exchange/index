@@ -1,0 +1,25 @@
+{
+    "description": "Destroy a VM.",
+    "enabled": true,
+    "entry_point": "destroy_vm.py",
+    "name": "destroy_vm",
+    "parameters": {
+        "cloud_service_name": {
+            "description": "Cloud service the vm in question belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "deployment_slot": {
+            "default": "Production",
+            "description": "Deployment slot the vm in question belongs to.",
+            "required": false,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "ID of a VM to destroy.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

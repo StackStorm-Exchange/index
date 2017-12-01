@@ -1,0 +1,23 @@
+{
+    "description": "Get a VM by ID",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "get_vm",
+    "parameters": {
+        "action": {
+            "default": "ex_get_node_by_id",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "The ID of the VM",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,22 @@
+{
+    "action": {
+        "parameters": {
+            "channel": "stackstorm",
+            "message": "Bandwidth Alert: {{trigger.instance}}, Tag: {{trigger.tag}}, Bandwidth: {{trigger.bandwidth}}, current: {{trigger.current}}"
+        },
+        "ref": "chatops.post_message"
+    },
+    "criteria": {
+        "trigger.action": {
+            "pattern": "alert",
+            "type": "equals"
+        }
+    },
+    "description": "Realtime Bandwidth Alerts for BSD",
+    "enabled": false,
+    "name": "bsd_bandwidth_alert",
+    "pack": "vadc",
+    "trigger": {
+        "type": "vadc.bsd_bandwidth_event"
+    }
+}

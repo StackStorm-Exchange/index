@@ -1,0 +1,55 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.resize",
+    "parameters": {
+        "base": {
+            "default": "server resize",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "confirm": {
+            "default": false,
+            "description": "Confirm server resize is complete",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_resize = openstackclient.compute.v2.server:ResizeServer')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flavor": {
+            "description": "Resize server to specified flavor",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "revert": {
+            "default": false,
+            "description": "Restore server state before resize",
+            "type": "boolean"
+        },
+        "server": {
+            "description": "Server (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait for resize to complete",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

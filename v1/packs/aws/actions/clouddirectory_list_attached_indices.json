@@ -1,0 +1,49 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "clouddirectory_list_attached_indices",
+    "pack": "aws",
+    "parameters": {
+        "ConsistencyLevel": {
+            "description": "The consistency level to use for this operation.",
+            "type": "string"
+        },
+        "DirectoryArn": {
+            "description": "The ARN of the directory.",
+            "required": true,
+            "type": "string"
+        },
+        "MaxResults": {
+            "description": "The maximum number of results to retrieve.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "The pagination token.",
+            "type": "string"
+        },
+        "TargetReference": {
+            "description": "A reference to the object to that has indices attached.",
+            "required": true,
+            "type": "object"
+        },
+        "action": {
+            "default": "list_attached_indices",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "clouddirectory",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

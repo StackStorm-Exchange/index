@@ -1,0 +1,95 @@
+{
+    "description": "List stacks.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.list",
+    "parameters": {
+        "all_projects": {
+            "default": false,
+            "description": "Include all projects (admin only)",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "stack list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "deleted": {
+            "default": false,
+            "description": "Include soft-deleted stacks in the stack listing",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_list = heatclient.osc.v1.stack:ListStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "hidden": {
+            "default": false,
+            "description": "Include hidden stacks in the stack listing",
+            "type": "boolean"
+        },
+        "limit": {
+            "description": "The number of stacks returned",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output, this is implied by --all-projects",
+            "type": "boolean"
+        },
+        "marker": {
+            "description": "Only return stacks that appear after the given ID",
+            "type": "string"
+        },
+        "nested": {
+            "default": false,
+            "description": "Include nested stacks in the stack listing",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Filter properties to apply on returned stacks (repeat to filter on multiple properties)",
+            "type": "array"
+        },
+        "short": {
+            "default": false,
+            "description": "List fewer fields in output",
+            "type": "boolean"
+        },
+        "sort": {
+            "description": "Sort output by selected keys and directions (asc or desc) (default: asc). Specify multiple times to sort on multiple properties",
+            "type": "string"
+        },
+        "tag_mode": {
+            "description": "Method of filtering tags. Must be one of \"any\", \"not\", or \"not-any\". If not specified, multiple tags will be combined with the boolean AND expression",
+            "type": "string"
+        },
+        "tags": {
+            "description": "List of tags to filter by. Can be combined with --tag-mode to specify how to filter tags",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

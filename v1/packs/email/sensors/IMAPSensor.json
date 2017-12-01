@@ -1,0 +1,23 @@
+{
+    "class_name": "IMAPSensor",
+    "description": "Sensor that emits triggers when e-mail message is received via IMAP",
+    "entry_point": "imap_sensor.py",
+    "trigger_types": [
+        {
+            "description": "An e-mail receieved via the IMAP sensor",
+            "name": "imap.message",
+            "payload_info": [
+                "uid",
+                "from",
+                "to",
+                "headers",
+                "subject",
+                "date",
+                "message_id",
+                "body",
+                "attachments",
+                "mailbox_metadata"
+            ]
+        }
+    ]
+}

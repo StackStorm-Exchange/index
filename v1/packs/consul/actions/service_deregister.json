@@ -1,0 +1,14 @@
+{
+    "description": "Remove a service from the local agent.",
+    "enabled": true,
+    "entry_point": "agent_service_deregister.py",
+    "name": "service_deregister",
+    "parameters": {
+        "service_id": {
+            "description": "The id of the service to be removed.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

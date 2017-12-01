@@ -1,0 +1,50 @@
+{
+    "description": "Create stack snapshot.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.snapshot.create",
+    "parameters": {
+        "base": {
+            "default": "stack snapshot create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_snapshot_create = heatclient.osc.v1.snapshot:CreateSnapshot')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of snapshot",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

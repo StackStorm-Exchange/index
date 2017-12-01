@@ -1,0 +1,14 @@
+{
+    "description": "get available resources",
+    "enabled": true,
+    "entry_point": "getCertificatesV1alpha1APIResources.py",
+    "name": "getCertificatesV1alpha1APIResources",
+    "pack": "kubernetes",
+    "parameters": {
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

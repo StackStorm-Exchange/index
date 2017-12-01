@@ -1,0 +1,28 @@
+{
+    "description": "Apply Buidlplan to Specified Servers",
+    "enabled": true,
+    "entry_point": "icsp_buildplan_apply.py",
+    "name": "icsp_buildplan_apply",
+    "parameters": {
+        "buildplan_ids": {
+            "description": "List of build plan IDs",
+            "position": 1,
+            "required": true,
+            "type": "array"
+        },
+        "connection_details": {
+            "description": "Connection details. eg { \"host\": \"192.168.0.1\", \"user\":\"username\", \"pass\": \"secret\" }",
+            "position": 2,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "server_data": {
+            "description": "Server Data to apply Build plans to. eg {\"MID\": {\"Key\": \"Value\"}, \"970001\": {\"hostname\": \"testst2vm9\"}, \"980001\": {\"hostname\": \"testst2vm6\"}} Approved Keys: hostname, domain, workgroup",
+            "position": 0,
+            "required": true,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

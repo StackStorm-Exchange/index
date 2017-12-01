@@ -1,0 +1,54 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "router.unset",
+    "parameters": {
+        "all_tag": {
+            "default": false,
+            "description": "Clear all tags associated with the router",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "router unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('router_unset = openstackclient.network.v2.router:UnsetRouter')",
+            "immutable": true,
+            "type": "string"
+        },
+        "external_gateway": {
+            "default": false,
+            "description": "Remove external gateway information from the router",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "route": {
+            "description": "Routes to be removed from the router destination: destination subnet (in CIDR notation) gateway: nexthop IP address (repeat option to unset multiple routes)",
+            "type": "string"
+        },
+        "router": {
+            "description": "Router to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to be removed from the router (repeat option to remove multiple tags)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

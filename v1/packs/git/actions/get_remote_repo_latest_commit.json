@@ -1,0 +1,24 @@
+{
+    "description": "Retrieve SHA of the latest commit for the provided branch in a remote repository.",
+    "enabled": true,
+    "entry_point": "",
+    "name": "get_remote_repo_latest_commit",
+    "parameters": {
+        "branch": {
+            "default": "master",
+            "description": "Branch / ref to retrieve the latest commit for.",
+            "required": true,
+            "type": "string"
+        },
+        "cmd": {
+            "default": "git ls-remote {{ repo_remote }} {{ branch }} | awk '{% raw %}{ print $1 }{% endraw %}' | tr -d '\n'",
+            "immutable": true
+        },
+        "repo_remote": {
+            "description": "Repository remote.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-local"
+}

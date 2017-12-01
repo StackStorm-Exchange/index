@@ -1,0 +1,22 @@
+{
+    "description": "Launch an incident on PagerDuty",
+    "enabled": true,
+    "entry_point": "launch_incident.py",
+    "name": "launch_incident",
+    "parameters": {
+        "description": {
+            "description": "Description of the incident",
+            "required": true,
+            "type": "string"
+        },
+        "details": {
+            "description": "Details of the incident",
+            "type": "string"
+        },
+        "incident_key": {
+            "description": "De-duplication key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

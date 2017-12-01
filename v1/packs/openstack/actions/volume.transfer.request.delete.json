@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.transfer.request.delete",
+    "parameters": {
+        "base": {
+            "default": "volume transfer request delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_transfer_request_delete = openstackclient.volume.v2.volume_transfer_request:DeleteTransferRequest')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "transfer_request": {
+            "description": "Volume transfer request(s) to delete (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,46 @@
+{
+    "description": "Get current capsule synchronization status (resource: GET /katello/api/capsules/:id/content/sync)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "capsules.capsule_content_sync_status",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "Id of the capsule",
+            "required": true,
+            "type": "number"
+        },
+        "operation": {
+            "default": "capsules.capsule_content_sync_status",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Id of the organization to get the status for",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

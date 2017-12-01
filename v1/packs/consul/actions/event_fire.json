@@ -1,0 +1,34 @@
+{
+    "description": "Send an event to Consul's gossip protocol.",
+    "enabled": true,
+    "entry_point": "event_fire.py",
+    "name": "event_fire",
+    "parameters": {
+        "body": {
+            "description": "A Consul-opaque body to be delivered with the event.  Small than 100 bytes!",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Key to write in Consul",
+            "required": true,
+            "type": "string"
+        },
+        "node": {
+            "description": "A Regex which remote agents will filter against to determine if they should store the event.",
+            "required": false,
+            "type": "string"
+        },
+        "service": {
+            "description": "A Regex which remote agents will filter against to determine if they should store the event.",
+            "required": false,
+            "type": "string"
+        },
+        "tag": {
+            "description": "A Regex which remote agents will filter against to determine if they should store the event.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

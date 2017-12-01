@@ -1,0 +1,31 @@
+{
+    "description": "Create interface VLANs on a device",
+    "enabled": true,
+    "entry_point": "configure_vlan.py",
+    "name": "configure_vlan",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Device to get the NOS version",
+            "type": "string"
+        },
+        "intf_desc": {
+            "description": "Interface description name",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        },
+        "vlan": {
+            "description": "single vlan or range of vlans",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

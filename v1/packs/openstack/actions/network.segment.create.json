@@ -1,0 +1,68 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.segment.create",
+    "parameters": {
+        "base": {
+            "default": "network segment create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Network segment description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_segment_create = openstackclient.network.v2.network_segment:CreateNetworkSegment')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "New network segment name",
+            "required": true,
+            "type": "string"
+        },
+        "network": {
+            "description": "Network this network segment belongs to (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "network_type": {
+            "description": "Network type of this network segment (flat, geneve, gre, local, vlan or vxlan) (choices: flat, geneve, gre, local, vlan, vxlan)",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "physical_network": {
+            "description": "Physical network name of this network segment",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "segment": {
+            "description": "Segment identifier for this network segment which is based on the network type, VLAN ID for vlan network type and tunnel ID for geneve, gre and vxlan network types",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

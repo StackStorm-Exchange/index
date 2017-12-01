@@ -1,0 +1,14 @@
+{
+    "description": "get information of a group",
+    "enabled": true,
+    "entry_point": "getStorageAPIGroup.py",
+    "name": "getStorageAPIGroup",
+    "pack": "kubernetes",
+    "parameters": {
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

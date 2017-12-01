@@ -1,0 +1,48 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "compute.agent.set",
+    "parameters": {
+        "agent_version": {
+            "description": "Version of the agent",
+            "type": "string"
+        },
+        "base": {
+            "default": "compute agent set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('compute_agent_set = openstackclient.compute.v2.agent:SetAgent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the agent",
+            "required": true,
+            "type": "string"
+        },
+        "md5hash": {
+            "description": "MD5 hash of the agent",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "url": {
+            "description": "URL of the agent",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

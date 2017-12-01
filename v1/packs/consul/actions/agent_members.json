@@ -1,0 +1,14 @@
+{
+    "description": "Returns all the members that this agent currently sees.",
+    "enabled": true,
+    "entry_point": "agent_members.py",
+    "name": "agent_members",
+    "parameters": {
+        "wan": {
+            "description": "Returns the list of WAN members instead of the LAN members.",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

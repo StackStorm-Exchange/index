@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "apigateway_get_model_template",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "get_model_template",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "apigateway",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "modelName": {
+            "description": "The name of the model for which to generate a template.",
+            "required": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "restApiId": {
+            "description": "The ID of the RestApi under which the model exists.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

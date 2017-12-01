@@ -1,0 +1,35 @@
+{
+    "description": "Action Chain to process a BGP neighbor prefix limit exceeded event.",
+    "enabled": true,
+    "entry_point": "chains/bgp_prefix_exceeded_chain.yaml",
+    "name": "bgp_prefix_exceeded_chain",
+    "pack": "napalm",
+    "parameters": {
+        "asnum": {
+            "description": "AS Number of the neighbor that has gone down",
+            "required": true,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "Hostname of the device",
+            "required": true,
+            "type": "string"
+        },
+        "message": {
+            "description": "Syslog Message",
+            "required": true,
+            "type": "string"
+        },
+        "neighbor": {
+            "description": "IP Address of the neighbor that has gone down.",
+            "required": true,
+            "type": "string"
+        },
+        "prefixes": {
+            "description": "Number of prefixes the neighbor is sending",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "action-chain"
+}

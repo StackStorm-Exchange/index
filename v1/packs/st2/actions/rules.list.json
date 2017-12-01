@@ -1,0 +1,25 @@
+{
+    "description": "Retrieve a list of available StackStorm rules",
+    "enabled": true,
+    "entry_point": "rules_list.py",
+    "name": "rules.list",
+    "parameters": {
+        "exclude": {
+            "default": [],
+            "description": "List of attributes to exclude",
+            "type": "array"
+        },
+        "limit": {
+            "default": 10,
+            "description": "Maximum number of rules to return",
+            "required": false,
+            "type": "integer"
+        },
+        "pack": {
+            "description": "Optional pack to filter on",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

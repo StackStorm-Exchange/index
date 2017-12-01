@@ -1,0 +1,41 @@
+{
+    "description": "Create a VLAN",
+    "enabled": true,
+    "entry_point": "create_vlan.py",
+    "name": "create_vlan",
+    "parameters": {
+        "action": {
+            "default": "ex_create_vlan",
+            "immutable": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "The description of the VLAN",
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the VLAN",
+            "type": "string"
+        },
+        "network_domain_id": {
+            "description": "The ID of the hosting network domain",
+            "type": "string"
+        },
+        "private_ipv4_base_address": {
+            "default": "10.0.0.0",
+            "description": "The network address of the new VLAN (e.g. 10.0.10.0)",
+            "type": "string"
+        },
+        "private_ipv4_prefix_size": {
+            "default": "24",
+            "description": "Size of the network in the VLAN",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

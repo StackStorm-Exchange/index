@@ -1,0 +1,14 @@
+{
+    "description": "Update your status (post a new tweet).",
+    "enabled": true,
+    "entry_point": "update_status.py",
+    "name": "update_status",
+    "parameters": {
+        "status": {
+            "description": "New status (tweet message).",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

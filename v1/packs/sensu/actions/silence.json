@@ -1,0 +1,27 @@
+{
+    "description": "Silence a Sensu client or check",
+    "enabled": true,
+    "entry_point": "silence.py",
+    "name": "silence",
+    "parameters": {
+        "check": {
+            "description": "The optional check to silence on the specified client.",
+            "type": "string"
+        },
+        "client": {
+            "description": "Client to silence.",
+            "required": true,
+            "type": "string"
+        },
+        "expiration": {
+            "description": "Time to expire (in seconds).  If blank, stash will not expire.",
+            "type": "integer"
+        },
+        "message": {
+            "default": "Stash created by StackStorm",
+            "description": "Message to post with the silence stash.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

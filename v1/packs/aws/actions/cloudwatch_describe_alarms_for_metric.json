@@ -1,0 +1,57 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cloudwatch_describe_alarms_for_metric",
+    "pack": "aws",
+    "parameters": {
+        "Dimensions": {
+            "description": "The dimensions associated with the metric. If the metric has any associated dimensions, you must specify them in order for the call to succeed.",
+            "type": "array"
+        },
+        "ExtendedStatistic": {
+            "description": "The percentile statistic for the metric. Specify a value between p0.0 and p100.",
+            "type": "string"
+        },
+        "MetricName": {
+            "description": "The name of the metric.",
+            "required": true,
+            "type": "string"
+        },
+        "Namespace": {
+            "description": "The namespace of the metric.",
+            "required": true,
+            "type": "string"
+        },
+        "Period": {
+            "description": "The period, in seconds, over which the statistic is applied.",
+            "type": "integer"
+        },
+        "Statistic": {
+            "description": "The statistic for the metric, other than percentiles. For percentile statistics, use ExtendedStatistics.",
+            "type": "string"
+        },
+        "Unit": {
+            "description": "The unit for the metric.",
+            "type": "string"
+        },
+        "action": {
+            "default": "describe_alarms_for_metric",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cloudwatch",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

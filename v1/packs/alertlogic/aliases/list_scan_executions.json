@@ -1,0 +1,23 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": true,
+        "format": "Requesting Scan Executions for _{{execution.parameters.scan_title}}_..."
+    },
+    "action_ref": "alertlogic.scan_list_scan_executions",
+    "description": "List all the Executions AlertLogic of an scan",
+    "formats": [
+        {
+            "display": "alertlogic scan executions [customer_id <customer_id>] <scan_title>",
+            "representation": [
+                "alertlogic scan executions customer_id {{customer_id}} {{scan_title}}",
+                "alertlogic scan executions {{scan_title}}"
+            ]
+        }
+    ],
+    "name": "list_scan_executions",
+    "pack": "alertlogic",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nThe last 10 executions for _{{execution.parameters.scan_title}}_:{~}\n{% for item in execution.result.result.scans %}\n*{{item.id}}:* {{item.create_date}} to {{item.finish_date}} ({{item.duration}} {% if item.active %} - scanning{% else %}complete{% endif %})\n{% endfor %}\n{% else %}\nFailed!\n{% endif %}\n"
+    }
+}

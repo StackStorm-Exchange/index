@@ -1,0 +1,26 @@
+{
+    "description": "Add a new node to load balancer",
+    "enabled": true,
+    "entry_point": "add_node_to_loadbalancer.py",
+    "name": "add_node_to_loadbalancer",
+    "parameters": {
+        "ip": {
+            "description": "IP address of endpoint",
+            "position": 2,
+            "type": "string"
+        },
+        "loadbalancer_id": {
+            "description": "ID of the loadbalancer",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "default": "80",
+            "description": "Port the loadbalancer should forward to",
+            "position": 3,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

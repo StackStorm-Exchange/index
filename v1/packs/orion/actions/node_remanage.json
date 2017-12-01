@@ -1,0 +1,15 @@
+{
+    "description": "Re-manage an Solarwinds Orion node's",
+    "enabled": true,
+    "entry_point": "node_remanage.py",
+    "name": "node_remanage",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "The node to unmanage in Orion.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

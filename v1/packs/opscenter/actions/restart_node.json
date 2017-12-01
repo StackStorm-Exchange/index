@@ -1,0 +1,29 @@
+{
+    "description": "Restart node in cluster.",
+    "enabled": true,
+    "entry_point": "restart_node.py",
+    "name": "restart_node",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        },
+        "drain_first": {
+            "default": true,
+            "description": "Should drain node first before restarting?",
+            "type": "boolean"
+        },
+        "node_ip": {
+            "description": "IP of the node.",
+            "required": true,
+            "type": "string"
+        },
+        "wait_for_thrift": {
+            "default": true,
+            "description": "Should wait until thrift interface is up?",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

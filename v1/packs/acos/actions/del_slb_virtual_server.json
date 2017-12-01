@@ -1,0 +1,35 @@
+{
+    "description": "remove a VirutlServer from SLB",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "del_slb_virtual_server",
+    "pack": "acos",
+    "parameters": {
+        "action": {
+            "default": "delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of VirtualServer to remove",
+            "required": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "slb.virtual_server",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Test a domain on WebPageTest from a random location.",
+    "enabled": true,
+    "entry_point": "random_test.py",
+    "name": "random_test",
+    "parameters": {
+        "domain": {
+            "description": "Site to test.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

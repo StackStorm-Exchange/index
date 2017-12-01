@@ -1,0 +1,112 @@
+{
+    "description": "Add or remove an ACL rule to or from an L2 ACL",
+    "enabled": true,
+    "entry_point": "add_or_remove_l2_acl_rule.py",
+    "name": "add_or_remove_l2_acl_rule",
+    "pack": "network_essentials",
+    "parameters": {
+        "acl_name": {
+            "description": "Name of the access list",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "deny",
+            "description": "Action to apply on the traffic, either to drop (deny), allow (permit) or force drop (hard-drop)",
+            "enum": [
+                "deny",
+                "permit",
+                "hard-drop"
+            ],
+            "position": 6,
+            "type": "string"
+        },
+        "count": {
+            "default": "False",
+            "description": "Enables the packet count",
+            "position": 15,
+            "type": "string"
+        },
+        "delete": {
+            "default": false,
+            "description": "Indicates add or delete operation. TRUE indicates a remove operation.",
+            "position": 0,
+            "type": "boolean"
+        },
+        "dst": {
+            "default": "any",
+            "description": "Destination filter, can be 'any' or 'host', or the actual MAC of the destination in HHHH.HHHH.HHHH format.",
+            "position": 10,
+            "type": "string"
+        },
+        "dst_mac_addr_mask": {
+            "description": "Mask for the destination MAC in HHHH.HHHH.HHHH format.",
+            "position": 12,
+            "type": "string"
+        },
+        "dsthost": {
+            "description": "Destination MAC in HHHH.HHHH.HHHH format. The value is required only when the dst is 'host'",
+            "position": 11,
+            "type": "string"
+        },
+        "ethertype": {
+            "default": "arp",
+            "description": "EtherType, can be 'arp', 'fcoe', 'ipv4' or custom value between 1536 and 65535.",
+            "position": 13,
+            "type": "string"
+        },
+        "log": {
+            "default": "False",
+            "description": "Enables the logging",
+            "position": 16,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 3,
+            "secret": true,
+            "type": "string"
+        },
+        "seq_id": {
+            "description": "Sequence number of the rule.  For add operation, if not specified, the rule is added at the end of the list.",
+            "position": 5,
+            "type": "integer"
+        },
+        "source": {
+            "default": "any",
+            "description": "Source filter, can be 'any' or 'host', or the actual MAC in HHHH.HHHH.HHHH format.",
+            "position": 7,
+            "type": "string"
+        },
+        "src_mac_addr_mask": {
+            "description": "Mask for the source MAC in HHHH.HHHH.HHHH format.",
+            "position": 9,
+            "type": "string"
+        },
+        "srchost": {
+            "description": "The source MAC in HHHH.HHHH.HHHH format. The value is required only when the source is 'host'.",
+            "position": 8,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 2,
+            "type": "string"
+        },
+        "vlan": {
+            "description": "VLAN ID - custom value between 1 and 4096.",
+            "position": 14,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

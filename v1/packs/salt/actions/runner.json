@@ -1,0 +1,19 @@
+{
+    "description": "Run Salt Runner functions through Salt API",
+    "enabled": true,
+    "entry_point": "runner.py",
+    "name": "runner",
+    "parameters": {
+        "kwargs": {
+            "description": "Key Pair arguments to pass to the module",
+            "required": false,
+            "type": "object"
+        },
+        "module": {
+            "description": "The module to call",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

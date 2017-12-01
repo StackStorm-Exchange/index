@@ -1,0 +1,90 @@
+{
+    "description": "Create a stack.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.create",
+    "parameters": {
+        "base": {
+            "default": "stack create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "dry_run": {
+            "default": false,
+            "description": "Do not actually perform the stack create, but show what would be created",
+            "type": "boolean"
+        },
+        "enable_rollback": {
+            "default": false,
+            "description": "Enable rollback on create/update failure",
+            "type": "boolean"
+        },
+        "environment": {
+            "description": "Path to the environment. Can be specified multiple times",
+            "type": "array"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_create = heatclient.osc.v1.stack:CreateStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the stack to create",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "parameter": {
+            "description": "Parameter values used to create the stack. This can be specified multiple times",
+            "type": "array"
+        },
+        "parameter_file": {
+            "description": "Parameter values from file used to create the stack. This can be specified multiple times. Parameter values would be the content of the file",
+            "type": "array"
+        },
+        "pre_create": {
+            "description": "Name of a resource to set a pre-create hook to. Resources in nested stacks can be set using slash as a separator: nested_stack/another/my_resource. You can use wildcards to match multiple stacks or resources: nested_stack/an*/*_resource. This can be specified multiple times",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "tags": {
+            "description": "A list of tags to associate with the stack",
+            "type": "string"
+        },
+        "template": {
+            "description": "Path to the template",
+            "required": true,
+            "type": "string"
+        },
+        "timeout": {
+            "description": "Stack creating timeout in minutes",
+            "type": "integer"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait until stack goes to CREATE_COMPLETE or CREATE_FAILED",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

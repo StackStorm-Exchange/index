@@ -1,0 +1,81 @@
+{
+    "description": "List all users for role (resource: GET /api/roles/:role_id/users)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "roles.users_index",
+    "pack": "foreman",
+    "parameters": {
+        "auth_source_ldap_id": {
+            "description": "ID of LDAP authentication source",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
+        "operation": {
+            "default": "roles.users_index",
+            "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "sort results",
+            "required": false,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
+        },
+        "page": {
+            "description": "paginate results",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "number of entries per request",
+            "required": false,
+            "type": "string"
+        },
+        "role_id": {
+            "description": "ID of role",
+            "required": true,
+            "type": "string"
+        },
+        "search": {
+            "description": "filter results",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "usergroup_id": {
+            "description": "ID of user group",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

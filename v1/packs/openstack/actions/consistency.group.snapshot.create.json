@@ -1,0 +1,53 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "consistency.group.snapshot.create",
+    "parameters": {
+        "base": {
+            "default": "consistency group snapshot create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "consistency_group": {
+            "description": "Consistency group to snapshot (name or ID) (default to be the same as <snapshot-name>)",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of this consistency group snapshot",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('consistency_group_snapshot_create = openstackclient.volume.v2.consistency_group_snapshot:CreateConsistencyGroupSnapshot')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "snapshot_name": {
+            "description": "Name of new consistency group snapshot (default to None)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

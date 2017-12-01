@@ -1,0 +1,15 @@
+{
+    "description": "Read value from Vault server",
+    "enabled": true,
+    "entry_point": "read.py",
+    "name": "read",
+    "parameters": {
+        "path": {
+            "description": "Key to read from Vault",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

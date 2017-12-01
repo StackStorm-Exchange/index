@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "deviceIP": "{{trigger.body.deviceIP}}",
+            "intfNum": "{{trigger.body.intfNum}}",
+            "intfType": "{{trigger.body.intfType}}"
+        },
+        "ref": "vyatta.del_interface"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "del_interface",
+            "type": "contains"
+        }
+    },
+    "description": "Rule deleting an interface from a webhook payload",
+    "enabled": true,
+    "name": "webhook_del_interface",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

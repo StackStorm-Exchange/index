@@ -1,0 +1,52 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "logs_describe_log_streams",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "describe_log_streams",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "logs",
+            "type": "string"
+        },
+        "descending": {
+            "description": "If the value is true, results are returned in descending order. If the value is to false, results are returned in ascending order. The default value is false.",
+            "type": "boolean"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "limit": {
+            "description": "The maximum number of items returned. If you don't specify a value, the default is up to 50 items.",
+            "type": "integer"
+        },
+        "logGroupName": {
+            "description": "The name of the log group.",
+            "required": true,
+            "type": "string"
+        },
+        "logStreamNamePrefix": {
+            "description": "The prefix to match. You cannot specify this parameter if orderBy is LastEventTime.",
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "nextToken": {
+            "description": "The token for the next set of items to return. (You received this token from a previous call.)",
+            "type": "string"
+        },
+        "orderBy": {
+            "description": "If the value is LogStreamName, the results are ordered by log stream name. If the value is LastEventTime, the results are ordered by the event time. The default value is LogStreamName. If you order the results by event time, you cannot specify the logStreamNamePrefix parameter.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

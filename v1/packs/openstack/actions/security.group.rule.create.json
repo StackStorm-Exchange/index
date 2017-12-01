@@ -1,0 +1,53 @@
+{
+    "description": "Create a new security group rule",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "security.group.rule.create",
+    "parameters": {
+        "base": {
+            "default": "security group rule create",
+            "immutable": true,
+            "type": "string"
+        },
+        "dst_port": {
+            "default": "0:0",
+            "description": "Destination port, may be a range: 137:139 (default: 0; only required for proto tcp and udp)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('security_group_rule_create = openstackclient.compute.v2.security_group:CreateSecurityGroupRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "group": {
+            "description": "Create rule in this security group (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "proto": {
+            "default": "tcp",
+            "description": "IP protocol (icmp, tcp, udp; default: tcp)",
+            "type": "string"
+        },
+        "src_group": {
+            "description": "Source security group (ID only)",
+            "type": "string"
+        },
+        "src_ip": {
+            "default": "0.0.0.0/0",
+            "description": "Source IP address block (may use CIDR notation; default: 0.0.0.0/0)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

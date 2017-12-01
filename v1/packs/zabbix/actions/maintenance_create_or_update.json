@@ -1,0 +1,40 @@
+{
+    "description": "Create or update Zabbix Maintenance Window",
+    "enabled": true,
+    "entry_point": "maintenance_create_or_update.py",
+    "name": "maintenance_create_or_update",
+    "pack": "zabbix",
+    "parameters": {
+        "end_date": {
+            "description": "Date and time to end maintenance window ex. 2017-10-13 20:00 (Y-m-d H:M)",
+            "required": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Name of the Zabbix Host",
+            "required": true,
+            "type": "string"
+        },
+        "maintenance_type": {
+            "default": 0,
+            "description": "Type of maintenance valid values: 0 - with data collection 1 - without data collection",
+            "type": "integer"
+        },
+        "maintenance_window_name": {
+            "description": "Name that of the maintenance window",
+            "required": true,
+            "type": "string"
+        },
+        "start_date": {
+            "description": "Date and time to start maintenance window ex. 2017-10-13 11:00 (Y-m-d H:M)",
+            "required": true,
+            "type": "string"
+        },
+        "time_type": {
+            "default": 0,
+            "description": "Type of time period valid values: 0 - one time only; 2 - daily; 3 - weekly; 4 - monthly",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "floating.ip.unset",
+    "parameters": {
+        "base": {
+            "default": "floating ip unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('floating_ip_unset = openstackclient.network.v2.floating_ip:UnsetFloatingIP')",
+            "immutable": true,
+            "type": "string"
+        },
+        "floating_ip": {
+            "description": "Floating IP to disassociate (IP address or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "default": false,
+            "description": "Disassociate any port associated with the floating IP",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

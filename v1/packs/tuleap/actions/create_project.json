@@ -1,0 +1,27 @@
+{
+    "description": "Create a project.",
+    "enabled": true,
+    "entry_point": "create_project.py",
+    "name": "create_project",
+    "parameters": {
+        "description": {
+            "description": "The project description",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "label": {
+            "description": "The project label, the name of the project",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "short_name": {
+            "description": "The project short name, display on URL",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

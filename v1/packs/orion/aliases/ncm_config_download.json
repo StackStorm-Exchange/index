@@ -1,0 +1,22 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": true,
+        "format": "Downloading NCM config's for {{ execution.parameters.node }} you..."
+    },
+    "action_ref": "orion.ncm_config_download",
+    "description": "Download NCM configs for a node.",
+    "formats": [
+        {
+            "display": "orion ncm config-download {{node}}",
+            "representation": [
+                "orion ncm config-download {{node}}"
+            ]
+        }
+    ],
+    "name": "ncm_config_download",
+    "pack": "orion",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nOrion NCM Download of {{ execution.parameters.node }} has been successful!{~}\n{% for item, value in execution.result.result.iteritems() %}\n*{{item}}:* {{value.status}}\n{% endfor %}\n{% else %}\nError downloading Orion NCM config: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

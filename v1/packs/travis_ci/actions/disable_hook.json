@@ -1,0 +1,14 @@
+{
+    "description": "Disable hooks for a git repo.",
+    "enabled": true,
+    "entry_point": "disable_hook.py",
+    "name": "disable_hook",
+    "parameters": {
+        "hook_id": {
+            "description": "ID of the hook to disable.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

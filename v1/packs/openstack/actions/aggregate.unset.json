@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "aggregate.unset",
+    "parameters": {
+        "aggregate": {
+            "description": "Aggregate to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "aggregate unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('aggregate_unset = openstackclient.compute.v2.aggregate:UnsetAggregate')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Property to remove from aggregate (repeat option to remove multiple properties)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

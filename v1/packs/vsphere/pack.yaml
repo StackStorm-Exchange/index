@@ -1,0 +1,58 @@
+ref: vsphere
+name: vsphere
+description: st2 content pack containing vsphere integrations.
+version: 0.7.5
+author: Paul Mulvihill
+email: paul.mulvihill@pulsant.com
+contributors:
+- Igor Cherkaev <emptywee@gmail.com>
+- Hiroyasu OHYAMA <user.localhost2000@gmail.com>
+content:
+  actions:
+    count: 22
+    resources:
+    - get_moid
+    - get_vmconsole_urls
+    - get_vms
+    - hello_vsphere
+    - set_vm
+    - vm_check_tools
+    - vm_create_from_template
+    - vm_env_items_get
+    - vm_hw_barebones_create
+    - vm_hw_basic_build
+    - vm_hw_cpu_mem_edit
+    - vm_hw_detail_get
+    - vm_hw_hdd_add
+    - vm_hw_moid_get
+    - vm_hw_nic_add
+    - vm_hw_nic_edit
+    - vm_hw_power_off
+    - vm_hw_power_on
+    - vm_hw_remove
+    - vm_hw_scsi_controller_add
+    - vm_hw_uuid_get
+    - wait_task
+  sensors:
+    count: 1
+    resources:
+    - TaskInfoSensor
+  tests:
+    count: 16
+    resources:
+    - test_action_create_from_template.py
+    - test_action_get_moid.py
+    - test_action_hw_barebones_create.py
+    - test_action_hw_cpu_mem_edit.py
+    - test_action_hw_details_get.py
+    - test_action_hw_hdd_add.py
+    - test_action_hw_moid_get.py
+    - test_action_hw_nic_add.py
+    - test_action_hw_nic_edit.py
+    - test_action_hw_power.py
+    - test_action_hw_remove.py
+    - test_action_hw_scsi_controller_add.py
+    - test_action_hw_uuid_get.py
+    - test_config_schema.py
+    - test_sensor_taskinfo.py
+    - vsphere_base_action_test_case.py

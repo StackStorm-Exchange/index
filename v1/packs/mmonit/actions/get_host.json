@@ -1,0 +1,15 @@
+{
+    "description": "Returns details for the given host id.",
+    "enabled": true,
+    "entry_point": "get_host.py",
+    "name": "get_host",
+    "parameters": {
+        "host_id": {
+            "description": "ID of the host",
+            "position": 1,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

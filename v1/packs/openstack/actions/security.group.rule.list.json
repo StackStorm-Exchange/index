@@ -1,0 +1,29 @@
+{
+    "description": "List all security group rules",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "security.group.rule.list",
+    "parameters": {
+        "base": {
+            "default": "security group rule list",
+            "immutable": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('security_group_rule_list = openstackclient.compute.v2.security_group:ListSecurityGroupRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, html, json, table, yaml)",
+            "type": "string"
+        },
+        "group": {
+            "description": "List all rules in this security group",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,22 @@
+{
+    "description": "List seed nodes in cassandra config.",
+    "enabled": true,
+    "entry_point": "list_seed_nodes.py",
+    "name": "list_seed_nodes",
+    "parameters": {
+        "config_file": {
+            "default": "/etc/dse/cassandra/cassandra.yaml",
+            "description": "Path to cassandra config file",
+            "required": false,
+            "type": "string"
+        },
+        "kwarg_op": {
+            "default": "--",
+            "immutable": true
+        },
+        "sudo": {
+            "default": false
+        }
+    },
+    "runner_type": "remote-shell-script"
+}

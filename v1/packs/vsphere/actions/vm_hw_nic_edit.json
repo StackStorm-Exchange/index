@@ -1,0 +1,38 @@
+{
+    "description": "Alter Configuration of Network Adapater",
+    "enabled": true,
+    "entry_point": "vm_hw_nic_edit.py",
+    "name": "vm_hw_nic_edit",
+    "parameters": {
+        "network_adapter": {
+            "description": "Name of Network Adapater",
+            "required": true,
+            "type": "string"
+        },
+        "network_name": {
+            "description": "Network Adapater should be connected to. Distributed Port Groups take precedence over Standard Port Groups of the same name ",
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "VM to Flex.",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "VM Name to Flex.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured Vsphere connection",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

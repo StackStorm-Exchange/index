@@ -1,0 +1,15 @@
+{
+    "description": "Delete Orion Agent",
+    "enabled": true,
+    "entry_point": "agent_delete.py",
+    "name": "agent_delete",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "The node to delete in Orion.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

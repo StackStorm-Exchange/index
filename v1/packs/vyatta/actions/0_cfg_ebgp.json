@@ -1,0 +1,43 @@
+{
+    "description": "Internal action - Configure eBGP",
+    "enabled": true,
+    "entry_point": "0_cfg_ebgp.py",
+    "name": "0_cfg_ebgp",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "cmd_path": {
+            "description": "configuration session token",
+            "required": true,
+            "type": "string"
+        },
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "required": true,
+            "type": "string"
+        },
+        "localAS": {
+            "description": "Local AS number",
+            "required": true,
+            "type": "integer"
+        },
+        "neighborIP": {
+            "description": "IP address of remote vRouter",
+            "required": true,
+            "type": "string"
+        },
+        "remoteAS": {
+            "description": "Remote AS number",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

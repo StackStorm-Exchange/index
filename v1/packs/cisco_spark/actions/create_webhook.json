@@ -1,0 +1,49 @@
+{
+    "description": "Create a new webhook",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "create_webhook",
+    "parameters": {
+        "accessor": {
+            "default": "webhooks",
+            "immutable": true,
+            "type": "string"
+        },
+        "event": {
+            "description": "The event type for the webhook (see doc)",
+            "required": true,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Filter event matching",
+            "required": false,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "create",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Webhook name",
+            "required": true,
+            "type": "string"
+        },
+        "resource": {
+            "description": "The resource type for the webhook",
+            "required": true,
+            "type": "string"
+        },
+        "secret": {
+            "description": "Secret used to generate paylaod signature",
+            "required": false,
+            "type": "string"
+        },
+        "targetUrl": {
+            "description": "URL to call",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

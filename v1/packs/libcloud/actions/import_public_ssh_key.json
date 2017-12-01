@@ -1,0 +1,24 @@
+{
+    "description": "Import an existing public SSH key.",
+    "enabled": true,
+    "entry_point": "import_ssh_key.py",
+    "name": "import_public_ssh_key",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        },
+        "key_material": {
+            "description": "Public SSH key material",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name for the imported key pair",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,21 @@
+{
+    "description": "Post a message to stream for Duo 2FA",
+    "enabled": true,
+    "entry_point": "",
+    "name": "announce_success",
+    "parameters": {
+        "experimental": {
+            "default": true,
+            "immutable": true
+        },
+        "route": {
+            "default": "2fa"
+        },
+        "uuid": {
+            "description": "UUID of a frozen action.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "announcement"
+}

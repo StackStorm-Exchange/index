@@ -1,0 +1,19 @@
+{
+    "description": "vTM - Delete a Virtual Server",
+    "enabled": true,
+    "entry_point": "vtm_del_vserver.py",
+    "name": "vtm_del_vserver",
+    "parameters": {
+        "name": {
+            "description": "The name of the vserver to delete",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

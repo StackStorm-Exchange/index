@@ -1,0 +1,115 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "router.set",
+    "parameters": {
+        "base": {
+            "default": "router set",
+            "immutable": true,
+            "type": "string"
+        },
+        "centralized": {
+            "default": false,
+            "description": "Set router to centralized mode (disabled router only)",
+            "type": "boolean"
+        },
+        "clear_routes": {
+            "default": false,
+            "description": "==SUPPRESS==",
+            "type": "boolean"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set router description",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable router",
+            "type": "boolean"
+        },
+        "disable_snat": {
+            "default": false,
+            "description": "Disable Source NAT on external gateway",
+            "type": "boolean"
+        },
+        "distributed": {
+            "default": false,
+            "description": "Set router to distributed mode (disabled router only)",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable router",
+            "type": "boolean"
+        },
+        "enable_snat": {
+            "default": false,
+            "description": "Enable Source NAT on external gateway",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('router_set = openstackclient.network.v2.router:SetRouter')",
+            "immutable": true,
+            "type": "string"
+        },
+        "external_gateway": {
+            "description": "External Network used as router's gateway (name or ID)",
+            "type": "string"
+        },
+        "fixed_ip": {
+            "description": "Desired IP and/or subnet (name or ID)on external gateway: subnet=<subnet>,ip-address=<ip-address> (repeat option to set multiple fixed IP addresses)",
+            "type": "string"
+        },
+        "ha": {
+            "default": false,
+            "description": "Set the router as highly available (disabled router only)",
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Set router name",
+            "type": "string"
+        },
+        "no_ha": {
+            "default": false,
+            "description": "Clear high availability attribute of the router (disabled router only)",
+            "type": "boolean"
+        },
+        "no_route": {
+            "default": false,
+            "description": "Clear routes associated with the router. Specify both --route and --no-route to overwrite current value of route.",
+            "type": "boolean"
+        },
+        "no_tag": {
+            "default": false,
+            "description": "Clear tags associated with the router. Specify both --tag and --no-tag to overwrite current tags",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "route": {
+            "description": "Routes associated with the router destination: destination subnet (in CIDR notation) gateway: nexthop IP address (repeat option to set multiple routes)",
+            "type": "string"
+        },
+        "router": {
+            "description": "Router to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to be added to the router (repeat option to set multiple tags)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.ping",
+    "description": "Perform a \"ping\"",
+    "formats": [
+        "ping from device {{deviceIP}}: {{targetIP}}"
+    ],
+    "name": "ping",
+    "result": {
+        "enabled": true
+    }
+}

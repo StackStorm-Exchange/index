@@ -1,0 +1,76 @@
+{
+    "description": "Create BareBones VM (CPU, Ram, Graphics Only)",
+    "enabled": true,
+    "entry_point": "vm_hw_barebones_create.py",
+    "name": "vm_hw_barebones_create",
+    "parameters": {
+        "cluster": {
+            "description": "Cluster Name to Buid VM within",
+            "required": true,
+            "type": "string"
+        },
+        "cpu_size": {
+            "default": 2,
+            "description": "Number of CPUs",
+            "required": false,
+            "type": "integer"
+        },
+        "datacenter": {
+            "default": null,
+            "description": "Datacenter name - Specify if Multiple Datacenters within your VSphere instance.",
+            "required": false,
+            "type": "string"
+        },
+        "datastore": {
+            "description": "Datastore for VM Files",
+            "required": false,
+            "type": "string"
+        },
+        "datastore_cluster": {
+            "description": "Datastore Cluster for VM Files",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Annotation text for Server",
+            "required": false,
+            "type": "string"
+        },
+        "guestos": {
+            "description": "Guest OS Type",
+            "required": true,
+            "type": "string"
+        },
+        "ram_size": {
+            "default": 3,
+            "description": "Ammount of RAM in GB",
+            "required": false,
+            "type": "integer"
+        },
+        "resourcepool": {
+            "description": "Resource Pool for VM",
+            "required": false,
+            "type": "string"
+        },
+        "version": {
+            "default": "vmx-10",
+            "description": "VM Version",
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "Name of the new Virtual Machine",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Vsphere instance to connect to defined within config.yaml",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

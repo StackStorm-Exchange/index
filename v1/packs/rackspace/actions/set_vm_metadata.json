@@ -1,0 +1,19 @@
+{
+    "description": "Set metadata values for the provided VM.",
+    "enabled": true,
+    "entry_point": "set_vm_metadata.py",
+    "name": "set_vm_metadata",
+    "parameters": {
+        "metadata": {
+            "description": "Metadata to associate with the VM.",
+            "required": true,
+            "type": "object"
+        },
+        "vm_id": {
+            "description": "ID of a VM to operate on.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

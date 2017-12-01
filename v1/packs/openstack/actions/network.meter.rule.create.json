@@ -1,0 +1,79 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.meter.rule.create",
+    "parameters": {
+        "base": {
+            "default": "network meter rule create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "egress": {
+            "default": false,
+            "description": "Apply rule to outgoing network traffic",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_meter_rule_create = openstackclient.network.v2.network_meter_rule:CreateMeterRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "exclude": {
+            "default": false,
+            "description": "Exclude remote IP prefix from traffic count",
+            "type": "boolean"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "include": {
+            "default": false,
+            "description": "Include remote IP prefix from traffic count (default)",
+            "type": "boolean"
+        },
+        "ingress": {
+            "default": false,
+            "description": "Apply rule to incoming network traffic (default)",
+            "type": "boolean"
+        },
+        "meter": {
+            "description": "Label to associate with this metering rule (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "remote_ip_prefix": {
+            "description": "The remote IP prefix to associate with this rule",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

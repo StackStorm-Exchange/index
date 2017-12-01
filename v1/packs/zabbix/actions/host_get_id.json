@@ -1,0 +1,15 @@
+{
+    "description": "Get the ID of a Zabbix Host",
+    "enabled": true,
+    "entry_point": "host_get_id.py",
+    "name": "host_get_id",
+    "pack": "zabbix",
+    "parameters": {
+        "host": {
+            "description": "Name of the Zabbix Host",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

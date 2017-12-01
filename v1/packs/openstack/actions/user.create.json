@@ -1,0 +1,78 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "user.create",
+    "parameters": {
+        "base": {
+            "default": "user create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable user",
+            "type": "boolean"
+        },
+        "email": {
+            "description": "Set user email address",
+            "type": "string"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable user (default)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('user_create = openstackclient.identity.v2_0.user:CreateUser')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "New user name",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "or_show": {
+            "default": false,
+            "description": "Return existing user",
+            "type": "boolean"
+        },
+        "password": {
+            "description": "Set user password",
+            "type": "string"
+        },
+        "password_prompt": {
+            "default": false,
+            "description": "Prompt interactively for password",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Default project (name or ID)",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

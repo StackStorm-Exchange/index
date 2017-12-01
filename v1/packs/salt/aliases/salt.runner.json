@@ -1,0 +1,14 @@
+{
+    "ack": {
+        "format": "Running salt runner across minions"
+    },
+    "action_ref": "salt.runner",
+    "description": "Execute salt module.",
+    "formats": [
+        "salt {{module}}"
+    ],
+    "name": "salt.runner",
+    "result": {
+        "format": "Salt said{~} {{ execution.result.result.return }}"
+    }
+}

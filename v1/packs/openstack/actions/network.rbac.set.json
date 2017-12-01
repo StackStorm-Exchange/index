@@ -1,0 +1,44 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.rbac.set",
+    "parameters": {
+        "base": {
+            "default": "network rbac set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_rbac_set = openstackclient.network.v2.network_rbac:SetNetworkRBAC')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "rbac_policy": {
+            "description": "RBAC policy to be modified (ID only)",
+            "required": true,
+            "type": "string"
+        },
+        "target_project": {
+            "description": "The project to which the RBAC policy will be enforced (name or ID)",
+            "type": "string"
+        },
+        "target_project_domain": {
+            "description": "Domain the target project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,46 @@
+{
+    "description": "Add a subscription to a host (resource: PUT /api/hosts/:host_id/subscriptions/add_subscriptions)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.host_subscriptions_add_subscriptions",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "Id of the host",
+            "required": true,
+            "type": "number"
+        },
+        "operation": {
+            "default": "hosts.host_subscriptions_add_subscriptions",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "subscriptions": {
+            "description": "'description: Array of subscriptions to add\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool id\n     quantity:\n       required: true\n       type: string\n       description: Quantity of this subscriptions to add\n     '",
+            "required": true,
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

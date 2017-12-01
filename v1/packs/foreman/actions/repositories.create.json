@@ -1,0 +1,89 @@
+{
+    "description": "Create a custom repository (resource: POST /katello/api/repositories)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repositories.create",
+    "pack": "foreman",
+    "parameters": {
+        "checksum_type": {
+            "description": "checksum of the repository, currently 'sha1' & 'sha256'are supported.'",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_type": {
+            "description": "type of repo (either 'yum', 'puppet', 'docker', or'ostree')",
+            "required": true,
+            "type": "string"
+        },
+        "docker_upstream_name": {
+            "description": "name of the upstream docker repository",
+            "required": false,
+            "type": "string"
+        },
+        "download_policy": {
+            "description": "download policy for yum repos (either 'immediate','on_demand', or 'background')",
+            "required": false,
+            "type": "string"
+        },
+        "gpg_key_id": {
+            "description": "id of the gpg key that will be assigned to the new repository",
+            "required": false,
+            "type": "string"
+        },
+        "label": {
+            "required": false,
+            "type": "string"
+        },
+        "mirror_on_sync": {
+            "description": "true if this repository when synced has to be mirrored from the source andstale rpms removed.",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "repositories.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "product_id": {
+            "description": "Product the repository belongs to",
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "unprotected": {
+            "description": "true if this repository can be published via HTTP",
+            "required": false,
+            "type": "string"
+        },
+        "url": {
+            "description": "repository source url",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

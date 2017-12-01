@@ -1,0 +1,22 @@
+{
+    "description": "Set the hostname on a VM and update cloud.cfg",
+    "enabled": true,
+    "entry_point": "",
+    "name": "set_hostname_cloud",
+    "parameters": {
+        "cmd": {
+            "default": "sed -i -e \"s/\\(preserve_hostname: \\)false/\\1true/\" /etc/cloud/cloud.cfg && echo \"{{hostname}}\" > /etc/hostname && hostname {{hostname}} && echo \"127.0.0.1 {{hostname}}\" >> /etc/hosts",
+            "immutable": false
+        },
+        "hostname": {
+            "description": "The hostname to set",
+            "required": true,
+            "type": "string"
+        },
+        "kwarg_op": {
+            "default": "--",
+            "immutable": true
+        }
+    },
+    "runner_type": "run-remote"
+}

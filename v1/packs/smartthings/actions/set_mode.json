@@ -1,0 +1,14 @@
+{
+    "description": "Set current temperature.",
+    "enabled": true,
+    "entry_point": "command.py",
+    "name": "set_mode",
+    "parameters": {
+        "mode": {
+            "description": "Set SmartThings to this mode",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

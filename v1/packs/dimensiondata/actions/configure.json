@@ -1,0 +1,19 @@
+{
+    "description": "Configure the pack",
+    "enabled": true,
+    "entry_point": "configure.py",
+    "name": "configure",
+    "parameters": {
+        "api_password": {
+            "description": "The password for the Cloud Control API",
+            "required": true,
+            "type": "string"
+        },
+        "api_user": {
+            "description": "The username for the Cloud Control API",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

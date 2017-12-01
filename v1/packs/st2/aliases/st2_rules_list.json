@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "format": "Give me just a moment to find the rules for you..."
+    },
+    "action_ref": "st2.rules.list",
+    "description": "List available StackStorm rules.",
+    "formats": [
+        "st2 list {{ limit=10 }} rules",
+        "st2 list {{ limit=10 }} rules from {{ pack }}"
+    ],
+    "name": "st2_rules_list",
+    "result": {
+        "format": "Found {{ execution.result.result | length }} rules:{~}\n{% for rule in execution.result.result -%}\n    \u2022 {{ rule.ref }} ({{ rule.trigger.ref }} -> {{ rule.action.ref }}){{ rule.description and ' - ' + rule.description }}\n{%+ endfor %}\n"
+    }
+}

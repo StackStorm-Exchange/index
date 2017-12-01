@@ -1,0 +1,34 @@
+{
+    "description": "Assign a client role to a user",
+    "enabled": true,
+    "entry_point": "assign_client_role.py",
+    "name": "assign_client_role",
+    "pack": "keycloak",
+    "parameters": {
+        "client_id": {
+            "description": "keycloak internal client id",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "role_id": {
+            "description": "keycloak internal client role id",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "role_name": {
+            "description": "client role name",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "keycloak internal user id",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

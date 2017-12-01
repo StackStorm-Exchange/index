@@ -1,0 +1,46 @@
+{
+    "description": "Create a default template combination for an operating system (resource: POST /api/operatingsystems/:operatingsystem_id/os_default_templates)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "operatingsystems.os_default_templates_create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operatingsystem_id": {
+            "description": "ID of operating system",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "operatingsystems.os_default_templates_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "os_default_template": {
+            "description": "'description: None\n parameters:\n     template_kind_id:\n       required: false\n       type: string\n       description:\n     provisioning_template_id:\n       required: false\n       type: string\n       description: ID of provisioning template\n     config_template_id:\n       required: false\n       type: string\n       description: ID of provisioning template\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

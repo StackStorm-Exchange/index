@@ -1,0 +1,101 @@
+{
+    "description": "List an activation key's subscriptions (resource: GET /katello/api/activation_keys/:activation_key_id/subscriptions)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "activation_keys.subscriptions_index",
+    "pack": "foreman",
+    "parameters": {
+        "activation_key_id": {
+            "description": "Activation key ID",
+            "required": true,
+            "type": "string"
+        },
+        "available_for": {
+            "description": "Object to show subscriptions available for, either 'host' or'activation_key'",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "full_results": {
+            "description": "Whether or not to show all results",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "id of a host",
+            "required": false,
+            "type": "string"
+        },
+        "match_host": {
+            "description": "Ignore subscriptions that are unavailable to the specified host",
+            "required": false,
+            "type": "string"
+        },
+        "match_installed": {
+            "description": "Return subscriptions that match installed products of the specified host",
+            "required": false,
+            "type": "string"
+        },
+        "no_overlap": {
+            "description": "Return subscriptions which do not overlap with a currently-attachedsubscription",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "activation_keys.subscriptions_index",
+            "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "Sort field and order, eg. 'name DESC'",
+            "required": false,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Organization ID",
+            "required": true,
+            "type": "string"
+        },
+        "page": {
+            "description": "Page number, starting at 1",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "Number of results per page to return",
+            "required": false,
+            "type": "string"
+        },
+        "search": {
+            "description": "Search string",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "sort": {
+            "description": "'description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     '\n",
+            "required": false,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

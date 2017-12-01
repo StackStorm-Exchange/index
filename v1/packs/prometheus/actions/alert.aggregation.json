@@ -1,0 +1,18 @@
+{
+    "entry_point": "alert_aggregation.py",
+    "name": "alert.aggregation",
+    "parameters": {
+        "alerts": {
+            "type": "array"
+        },
+        "child": {
+            "description": "Label group child",
+            "type": "string"
+        },
+        "parent": {
+            "description": "Label group parent / outer label",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

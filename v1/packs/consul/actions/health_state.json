@@ -1,0 +1,48 @@
+{
+    "description": "Returns the checks in a given state",
+    "enabled": true,
+    "entry_point": "health_state.py",
+    "name": "health_state",
+    "parameters": {
+        "dc": {
+            "description": "The datacenter of the node and defaults to this agents datacenter.",
+            "required": false,
+            "type": "string"
+        },
+        "index": {
+            "description": "The current Consul index. Useful to check for changes since last query was run.",
+            "required": false,
+            "type": "integer"
+        },
+        "name": {
+            "default": "any",
+            "description": "Name of the supported state (any, unknown, passing, warning, critical).",
+            "enum": [
+                "any",
+                "unknown",
+                "passing",
+                "warning",
+                "critical"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "near": {
+            "description": "A node name to sort the resulting list in ascending order based on the estimated round trip time from that node.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "An optional ACL token to apply to this request.",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "wait": {
+            "description": "Maximum duration to wait (e.g. '10s') to retrieve a given index.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

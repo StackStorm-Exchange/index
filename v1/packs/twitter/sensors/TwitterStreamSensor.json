@@ -1,0 +1,22 @@
+{
+    "class_name": "TwitterStreamSensor",
+    "description": "Sensor which monitors twitter timeline for new tweets matching the specified criteria",
+    "entry_point": "twitter_stream_sensor.py",
+    "trigger_types": [
+        {
+            "description": "Trigger which represents a matching tweet",
+            "name": "stream_matched_tweet",
+            "payload_info": [
+                "id",
+                "created_at",
+                "lang",
+                "place",
+                "retweet_count",
+                "favorite_count",
+                "user",
+                "text",
+                "url"
+            ]
+        }
+    ]
+}

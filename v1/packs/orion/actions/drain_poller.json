@@ -1,0 +1,40 @@
+{
+    "description": "Drain nodes from one Orion poller to another.",
+    "enabled": true,
+    "entry_point": "workflows/drain_poller.yaml",
+    "name": "drain_poller",
+    "pack": "orion",
+    "parameters": {
+        "dst_poller": {
+            "description": "The destination poller to migrate nodes too.",
+            "required": true,
+            "type": "string"
+        },
+        "force": {
+            "default": false,
+            "description": "",
+            "type": "boolean"
+        },
+        "src_poller": {
+            "description": "The source poller to migrate nodes from.",
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "default": "Up",
+            "description": "Status that nodes are required to be in.",
+            "enum": [
+                "Up",
+                "Down",
+                "Any"
+            ],
+            "type": "string"
+        },
+        "whitelist": {
+            "default": null,
+            "description": "Limit nodes to the following",
+            "type": "array"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

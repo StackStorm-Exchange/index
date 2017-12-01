@@ -1,0 +1,47 @@
+{
+    "description": "Create a discovery profile in Solarwinds Orion.",
+    "enabled": true,
+    "entry_point": "start_discovery.py",
+    "name": "start_discovery",
+    "pack": "orion",
+    "parameters": {
+        "auto_import": {
+            "default": true,
+            "description": "Should nodes be auto imported post discovery.",
+            "type": "boolean"
+        },
+        "ip_ranges": {
+            "description": "List of ip_ranges (start_ip:end_ip) to add to Orion.",
+            "type": "array"
+        },
+        "name": {
+            "description": "Name for the discovery profile",
+            "required": true,
+            "type": "string"
+        },
+        "no_icmp_only": {
+            "default": true,
+            "description": "Should nodes that only respond to ICMP be skipped.",
+            "type": "boolean"
+        },
+        "nodes": {
+            "description": "List of DNS or IP addresses to add to Orion.",
+            "type": "array"
+        },
+        "poller": {
+            "default": "primary",
+            "description": "The name of the additional polling engine to use (defaults to primary).",
+            "type": "string"
+        },
+        "snmp_communities": {
+            "description": "Array of SNMP community strings or configured standard names (Note: must already be in use).",
+            "required": true,
+            "type": "array"
+        },
+        "subnets": {
+            "description": "List of subnets (ip/subnet) to add to Orion.",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

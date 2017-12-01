@@ -1,0 +1,14 @@
+{
+    "description": "This action searches through articles that may be related to a user query",
+    "enabled": true,
+    "entry_point": "article_search.py",
+    "name": "article_search",
+    "parameters": {
+        "query": {
+            "description": "Query string to send to article search",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

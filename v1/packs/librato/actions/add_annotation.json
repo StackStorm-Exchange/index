@@ -1,0 +1,34 @@
+{
+    "description": "Add an annotation",
+    "enabled": true,
+    "entry_point": "add_annotation.py",
+    "name": "add_annotation",
+    "parameters": {
+        "description": {
+            "description": "Annotation description.",
+            "required": false,
+            "type": "string"
+        },
+        "end_time": {
+            "description": "Annotation end time (unix timestamp).",
+            "required": false,
+            "type": "integer"
+        },
+        "start_time": {
+            "description": "Annotation start time (unix timestamp).",
+            "required": false,
+            "type": "integer"
+        },
+        "stream": {
+            "description": "Annotation stream to add the annotation to.",
+            "required": true,
+            "type": "string"
+        },
+        "title": {
+            "description": "Annotation title.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

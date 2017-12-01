@@ -1,0 +1,41 @@
+{
+    "class_name": "watchCoreV1PodListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Pods objects.",
+    "entry_point": "watchCoreV1PodListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for pods event dispatch.",
+            "name": "pods",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

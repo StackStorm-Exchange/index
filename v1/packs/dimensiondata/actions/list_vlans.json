@@ -1,0 +1,19 @@
+{
+    "description": "List the VLANs available",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "list_vlans",
+    "parameters": {
+        "action": {
+            "default": "ex_list_vlans",
+            "immutable": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

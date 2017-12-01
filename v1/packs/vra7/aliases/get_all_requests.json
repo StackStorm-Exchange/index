@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "enabled": false
+    },
+    "action_ref": "vra7.get_all_requests",
+    "description": "Get all requests",
+    "formats": [
+        "get all vra7 requests"
+    ],
+    "name": "get_all_requests",
+    "pack": "vra7",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\n{% for item in execution.result.result %}\nRequest: {{item.requestNumber}}  \nState:   {{item.state}}  \nItem:    {{item.requestedItemName}}\n\n{% endfor %}\n{% else %}\n{{execution.result.stdout}}{~}\n{% endif %}\n"
+    }
+}

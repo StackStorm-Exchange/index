@@ -1,0 +1,21 @@
+{
+    "description": "run list of EXOS commands on a remote switch.",
+    "enabled": true,
+    "entry_point": "cmd.py",
+    "name": "cmd",
+    "parameters": {
+        "cmd": {
+            "description": "List of EXOS CLI commands.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "ipaddress": {
+            "description": "IP address of the EXOS switch.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

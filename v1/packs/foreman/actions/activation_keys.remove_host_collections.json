@@ -1,0 +1,46 @@
+{
+    "description": " (resource: PUT /katello/api/activation_keys/:id/host_collections)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "activation_keys.remove_host_collections",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "host_collection_ids": {
+            "description": "List of host collection IDs to disassociate from the activation key",
+            "required": true,
+            "type": "array"
+        },
+        "id": {
+            "description": "ID of the activation key",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "activation_keys.remove_host_collections",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

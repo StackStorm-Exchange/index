@@ -1,0 +1,23 @@
+{
+    "description": "Deregister an external service in Consul",
+    "enabled": true,
+    "entry_point": "catalog_deregister.py",
+    "name": "catalog_deregister",
+    "parameters": {
+        "dc": {
+            "description": "Optional Data Center ID",
+            "type": "string"
+        },
+        "node": {
+            "description": "Node Name/ID",
+            "required": true,
+            "type": "string"
+        },
+        "service": {
+            "description": "Service Name/ID",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

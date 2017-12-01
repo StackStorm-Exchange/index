@@ -1,0 +1,14 @@
+{
+    "description": "Delete a metric from Librato",
+    "enabled": true,
+    "entry_point": "delete_metric.py",
+    "name": "delete_metric",
+    "parameters": {
+        "name": {
+            "description": "Metric to delete from Librato",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

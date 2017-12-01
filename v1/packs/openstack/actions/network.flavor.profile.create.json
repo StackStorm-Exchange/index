@@ -1,0 +1,71 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.flavor.profile.create",
+    "parameters": {
+        "base": {
+            "default": "network flavor profile create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the flavor profile",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable the flavor profile",
+            "type": "boolean"
+        },
+        "driver": {
+            "description": "Python module path to driver. This becomes required if --metainfo is missing and vice versa",
+            "type": "string"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable the flavor profile",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_flavor_profile_create = openstackclient.network.v2.network_flavor_profile:CreateNetworkFlavorProfile')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "metainfo": {
+            "description": "Metainfo for the flavor profile. This becomes required if --driver is missing and vice versa",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

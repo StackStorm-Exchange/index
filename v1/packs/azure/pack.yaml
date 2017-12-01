@@ -1,0 +1,40 @@
+ref: azure
+name: azure
+description: st2 content pack containing Microsoft Azure integrations.
+keywords:
+- microsoft
+- azure
+- cloud
+- libcloud
+- servers
+- virtual machines
+- azure virtual machines
+- azurerm
+version: 0.3.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 16
+    resources:
+    - create_container
+    - create_linked_resource_url
+    - create_resource
+    - create_vm
+    - delete_container
+    - delete_object
+    - destroy_vm
+    - get_scaleset_size
+    - list_container_objects
+    - list_containers
+    - list_public_ips
+    - list_resource_groups
+    - list_vms
+    - put_scaleset_size
+    - reboot_vm
+    - upload_file
+  aliases:
+    count: 2
+    resources:
+    - get_scale_size
+    - put_scale_size

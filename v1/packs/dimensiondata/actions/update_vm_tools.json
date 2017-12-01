@@ -1,0 +1,23 @@
+{
+    "description": "Update VMware tools on a node",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "update_vm_tools",
+    "parameters": {
+        "action": {
+            "default": "ex_update_vm_tools",
+            "immutable": true,
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

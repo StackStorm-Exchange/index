@@ -1,0 +1,35 @@
+{
+    "description": "Enable or disable VCS virtual-fabric on a VCS fabric, when enabled, expands the VLAN ID address space beyond the 802.1Q limit in the fabric, allowing VLANs with IDs greater than 4095, up through 8191.",
+    "enabled": true,
+    "entry_point": "enable_vf.py",
+    "name": "enable_vf",
+    "pack": "network_essentials",
+    "parameters": {
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        },
+        "virtual_fabric_enable": {
+            "default": true,
+            "description": "Set True to enable or False to disable virtual-fabric on VCS.",
+            "position": 3,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "run-python"
+}

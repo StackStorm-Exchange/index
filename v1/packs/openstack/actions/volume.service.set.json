@@ -1,0 +1,55 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.service.set",
+    "parameters": {
+        "base": {
+            "default": "volume service set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable volume service",
+            "type": "boolean"
+        },
+        "disable_reason": {
+            "description": "Reason for disabling the service (should be used with --disable option)",
+            "type": "string"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable volume service",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_service_set = openstackclient.volume.v2.service:SetService')",
+            "immutable": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Name of host",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "service": {
+            "description": "Name of service (Binary name)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

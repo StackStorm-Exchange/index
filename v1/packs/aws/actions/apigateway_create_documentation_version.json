@@ -1,0 +1,45 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "apigateway_create_documentation_version",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "create_documentation_version",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "apigateway",
+            "type": "string"
+        },
+        "description": {
+            "description": "A description about the new documentation snapshot.",
+            "type": "string"
+        },
+        "documentationVersion": {
+            "description": "[Required] The version identifier of the new snapshot.",
+            "required": true,
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "restApiId": {
+            "description": "[Required] Specifies the API identifier of the to-be-created documentation version.",
+            "required": true,
+            "type": "string"
+        },
+        "stageName": {
+            "description": "The stage name to be associated with the new documentation snapshot.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

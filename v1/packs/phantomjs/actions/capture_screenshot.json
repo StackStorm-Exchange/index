@@ -1,0 +1,32 @@
+{
+    "description": "Capture screenshot of a website and save it on disk.",
+    "enabled": true,
+    "entry_point": "capture_screenshot.py",
+    "name": "capture_screenshot",
+    "parameters": {
+        "screenshot_path": {
+            "description": "Optional path where screenshot should be saved. If not provided it defaults to \"/tmp\".",
+            "required": false
+        },
+        "url": {
+            "description": "URL of the website to capture the screenshot of.",
+            "required": true,
+            "type": "string"
+        },
+        "window_size": {
+            "default": [
+                1024,
+                768
+            ],
+            "description": "Window and screenshot size in pixels.",
+            "items": {
+                "type": "integer"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "run-python"
+}

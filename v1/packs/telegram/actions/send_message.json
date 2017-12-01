@@ -1,0 +1,19 @@
+{
+    "description": "send a message to a user or group",
+    "enabled": true,
+    "entry_point": "send_message.py",
+    "name": "send_message",
+    "parameters": {
+        "chat_id": {
+            "description": "chat_id to post the message",
+            "required": true,
+            "type": "integer"
+        },
+        "message": {
+            "description": "message to send",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

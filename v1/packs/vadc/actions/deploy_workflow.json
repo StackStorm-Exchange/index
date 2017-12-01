@@ -1,0 +1,34 @@
+{
+    "description": "A Mistral Workflow to deploy a vTM service",
+    "enabled": true,
+    "entry_point": "workflows/deploy_workflows.yaml",
+    "name": "deploy_workflow",
+    "parameters": {
+        "addresses": {
+            "description": "The IP Addresses to use for TIPs",
+            "required": true,
+            "type": "array"
+        },
+        "nodes": {
+            "description": "The nodes for the service",
+            "required": true,
+            "type": "array"
+        },
+        "service": {
+            "description": "The Service/Application ID",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM to deploy service",
+            "required": true,
+            "type": "string"
+        },
+        "vtms": {
+            "description": "The vTMs to host the service",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

@@ -1,0 +1,29 @@
+{
+    "description": "Set current operating mode",
+    "enabled": true,
+    "entry_point": "set_mode.py",
+    "name": "set_mode",
+    "parameters": {
+        "device": {
+            "description": "ID of specific Nest device in a structure",
+            "type": "integer"
+        },
+        "mode": {
+            "default": "cool",
+            "description": "Mode to set on the thermostat",
+            "enum": [
+                "heat",
+                "cool",
+                "range",
+                "off"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "structure": {
+            "description": "ID of Nest Home name",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

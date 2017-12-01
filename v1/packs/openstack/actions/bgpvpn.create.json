@@ -1,0 +1,74 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "bgpvpn.create",
+    "parameters": {
+        "base": {
+            "default": "bgpvpn create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bgpvpn_create = neutronclient.osc.v2.networking_bgpvpn.bgpvpn:CreateBgpvpn')",
+            "immutable": true,
+            "type": "string"
+        },
+        "export_target": {
+            "description": "Add Route Target to export list (repeat option for multiple Route Targets)",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "import_target": {
+            "description": "Add Route Target to import list (repeat option for multiple Route Targets)",
+            "type": "array"
+        },
+        "name": {
+            "description": "Name of the BGP VPN",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "route_distinguisher": {
+            "description": "Add Route Distinguisher to the list of Route Distinguishers from which a Route Distinguishers will be picked from to advertise a VPN route (repeat option for multiple Route Distinguishers)",
+            "type": "array"
+        },
+        "route_target": {
+            "description": "Add Route Target to import/export list (repeat option for multiple Route Targets)",
+            "type": "array"
+        },
+        "type": {
+            "default": "l3",
+            "description": "BGP VPN type selection between IP VPN (l3) and Ethernet VPN (l2) (default: l3) (choices: l2, l3)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

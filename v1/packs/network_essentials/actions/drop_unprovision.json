@@ -1,0 +1,78 @@
+{
+    "description": "This workflow accomplishes the task of allowing traffic back on a specified interface by first deleting the deny ACL currently on that interface. If may also delete the acl, if it is empty.",
+    "enabled": true,
+    "entry_point": "workflows/drop_unprovision.yaml",
+    "name": "drop_unprovision",
+    "pack": "network_essentials",
+    "parameters": {
+        "acl_name": {
+            "description": "access list name (max 63)",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "address_type": {
+            "description": "the address type IPv4 IPv6 or MAC used to create the acl.",
+            "enum": [
+                "ip",
+                "ipv6",
+                "mac"
+            ],
+            "position": 6,
+            "required": true,
+            "type": "string"
+        },
+        "delete_acl": {
+            "default": false,
+            "description": "Indicates whether the acl should be deleted.",
+            "position": 7,
+            "type": "boolean"
+        },
+        "intf_name": {
+            "description": "interface name as array (182/0/97)",
+            "position": 5,
+            "required": true,
+            "type": "array"
+        },
+        "intf_type": {
+            "default": "tengigabitethernet",
+            "description": "Interface type gigabitethernet or tengigabitethernet, etc",
+            "enum": [
+                "gigabitethernet",
+                "tengigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet",
+                "ethernet"
+            ],
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "device ip address",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "login password",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "seq_id": {
+            "description": "Sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290",
+            "position": 8,
+            "required": false,
+            "type": "integer"
+        },
+        "username": {
+            "default": "admin",
+            "description": "login username",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

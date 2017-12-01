@@ -1,0 +1,13 @@
+{
+    "description": "Deserialize and retrieve JSON serialized object from a datastore",
+    "enabled": true,
+    "entry_point": "kv_get_object.py",
+    "name": "kv.get_object",
+    "parameters": {
+        "key": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

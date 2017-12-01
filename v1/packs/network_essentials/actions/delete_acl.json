@@ -1,0 +1,34 @@
+{
+    "description": "Delete an existing Access Control List (ACL)",
+    "enabled": true,
+    "entry_point": "delete_acl.py",
+    "name": "delete_acl",
+    "pack": "network_essentials",
+    "parameters": {
+        "acl_name": {
+            "description": "Name of the ACL to be deleted",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,40 @@
+{
+    "description": "List all messages from my feed for the authenticated user",
+    "enabled": true,
+    "entry_point": "post_message.py",
+    "name": "post_message",
+    "parameters": {
+        "broadcast": {
+            "default": false,
+            "description": "Broadcast as announcement (network admins only)",
+            "required": false,
+            "type": "boolean"
+        },
+        "direct_to_id": {
+            "description": "Sends the message as a private message to the user ID specified",
+            "required": false,
+            "type": "string"
+        },
+        "group_id": {
+            "description": "The ID of the group to post the message to",
+            "required": true,
+            "type": "string"
+        },
+        "message": {
+            "description": "The message",
+            "required": true,
+            "type": "string"
+        },
+        "replied_to_id": {
+            "description": "The message ID this is in response to",
+            "required": false,
+            "type": "string"
+        },
+        "topics": {
+            "description": "A list of topics for the message",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

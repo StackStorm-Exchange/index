@@ -1,0 +1,15 @@
+{
+    "description": "Send an OpsGenie Heartbeat",
+    "enabled": true,
+    "entry_point": "send_heartbeat.py",
+    "name": "send_heartbeat",
+    "pack": "opsgenie",
+    "parameters": {
+        "name": {
+            "description": "Heartbeat name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

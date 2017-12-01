@@ -1,0 +1,51 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_describe_scheduled_instances",
+    "pack": "aws",
+    "parameters": {
+        "DryRun": {
+            "description": "Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.",
+            "type": "boolean"
+        },
+        "Filters": {
+            "description": "One or more filters.    availability-zone - The Availability Zone (for example, us-west-2a).    instance-type - The instance type (for example, c4.large).    network-platform - The network platform (EC2-Classic or EC2-VPC).    platform - The platform (Linux/UNIX or Windows).  ",
+            "type": "array"
+        },
+        "MaxResults": {
+            "description": "The maximum number of results to return in a single call. This value can be between 5 and 300. The default value is 100. To retrieve the remaining results, make another call with the returned NextToken value.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "The token for the next set of results.",
+            "type": "string"
+        },
+        "ScheduledInstanceIds": {
+            "description": "One or more Scheduled Instance IDs.",
+            "type": "array"
+        },
+        "SlotStartTimeRange": {
+            "description": "The time period for the first schedule to start.",
+            "type": "object"
+        },
+        "action": {
+            "default": "describe_scheduled_instances",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

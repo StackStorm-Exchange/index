@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "iot_list_things",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "list_things",
+            "immutable": true,
+            "type": "string"
+        },
+        "attributeName": {
+            "description": "The attribute name used to search for things.",
+            "type": "string"
+        },
+        "attributeValue": {
+            "description": "The attribute value used to search for things.",
+            "type": "string"
+        },
+        "cls": {
+            "default": "iot",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "maxResults": {
+            "description": "The maximum number of results to return in this operation.",
+            "type": "integer"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "nextToken": {
+            "description": "The token for the next set of results, or null if there are no additional results.",
+            "type": "string"
+        },
+        "thingTypeName": {
+            "description": "The name of the thing type used to search for things.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

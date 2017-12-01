@@ -1,0 +1,47 @@
+{
+    "description": "Send a message",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "send_message",
+    "parameters": {
+        "accessor": {
+            "default": "messages",
+            "immutable": true,
+            "type": "string"
+        },
+        "files": {
+            "description": "A list containing local paths or URL references for the message attachment(s)",
+            "type": "array"
+        },
+        "markdown": {
+            "description": "The message, in markdown format",
+            "required": false
+        },
+        "method_name": {
+            "default": "create",
+            "immutable": true,
+            "type": "string"
+        },
+        "roomId": {
+            "description": "The room ID",
+            "required": false,
+            "type": "string"
+        },
+        "text": {
+            "description": "The message, in plain text",
+            "required": true,
+            "type": "string"
+        },
+        "toPersonEmail": {
+            "description": "The email address of the recipient when sending a private 1:1 message",
+            "required": false,
+            "type": "string"
+        },
+        "toPersonId": {
+            "description": "The ID of the recipient when sending a private 1:1 message",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

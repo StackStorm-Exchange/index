@@ -1,0 +1,35 @@
+{
+    "description": "Remove a Server attribute on a ICSP registered server.",
+    "enabled": true,
+    "entry_point": "icsp_server_attribute_set.py",
+    "name": "icsp_server_attribute_del",
+    "parameters": {
+        "attribute_key": {
+            "description": "Attribute Key to add",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "connection_details": {
+            "description": "Connection details. eg { \"host\": \"192.168.0.1\", \"user\":\"username\", \"pass\": \"secret\" }",
+            "position": 3,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "function": {
+            "default": "Delete",
+            "description": "Add/Update attribute on server.",
+            "immutable": true,
+            "position": 2,
+            "type": "string"
+        },
+        "mid": {
+            "description": "Server MID",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,18 @@
+{
+    "description": "Send a text query to Wit.ai API",
+    "enabled": true,
+    "entry_point": "text_query.py",
+    "name": "text_query",
+    "parameters": {
+        "application": {
+            "description": "wit.ai application to process query against",
+            "type": "string"
+        },
+        "text": {
+            "description": "Text query to send",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

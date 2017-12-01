@@ -1,0 +1,14 @@
+{
+    "description": "List container clusters",
+    "enabled": true,
+    "entry_point": "list_container_clusters.py",
+    "name": "list_container_clusters",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

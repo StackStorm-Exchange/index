@@ -1,0 +1,35 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "clouddirectory_list_development_schema_arns",
+    "pack": "aws",
+    "parameters": {
+        "MaxResults": {
+            "description": "The maximum number of results to retrieve.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "The pagination token.",
+            "type": "string"
+        },
+        "action": {
+            "default": "list_development_schema_arns",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "clouddirectory",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

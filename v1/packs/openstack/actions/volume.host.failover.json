@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.host.failover",
+    "parameters": {
+        "base": {
+            "default": "volume host failover",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_host_failover = openstackclient.volume.v2.volume_host:FailoverVolumeHost')",
+            "immutable": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Name of volume host",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "volume_backend": {
+            "description": "The ID of the volume backend replication target where the host will failover to (required)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

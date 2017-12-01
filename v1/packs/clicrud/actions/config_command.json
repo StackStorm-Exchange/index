@@ -1,0 +1,31 @@
+{
+    "description": "Login in to a Brocade ICX/MLX and run a configuration command",
+    "enabled": true,
+    "entry_point": "config_command.py",
+    "name": "config_command",
+    "parameters": {
+        "command": {
+            "description": "List of commands to run.",
+            "minItems": 1,
+            "required": true,
+            "type": "array"
+        },
+        "environment": {
+            "default": "default",
+            "description": "What pre-configured credentials to use",
+            "required": false,
+            "type": "string"
+        },
+        "host": {
+            "description": "Valid IPv4 address or hostname that resolves.",
+            "required": true,
+            "type": "string"
+        },
+        "save": {
+            "description": "If true, config will be saved. False, it will not.",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

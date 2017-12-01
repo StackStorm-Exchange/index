@@ -1,0 +1,35 @@
+{
+    "class_name": "Icinga2StateChangeSensor",
+    "description": "Sensor for Icinga2 StateChange events.",
+    "enabled": false,
+    "entry_point": "icinga2_state_change_events.py",
+    "trigger_types": [
+        {
+            "description": "Icinga2 State Change event.",
+            "name": "event.state_change",
+            "payload_schema": {
+                "properties": {
+                    "check_result": {
+                        "type": "object"
+                    },
+                    "host": {
+                        "type": "string"
+                    },
+                    "service": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "integer"
+                    },
+                    "state_type": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

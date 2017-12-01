@@ -1,0 +1,17 @@
+{
+    "description": "SHA Mesage and Twitter handle for solving puzzles.",
+    "enabled": true,
+    "entry_point": "shait.py",
+    "name": "shait",
+    "parameters": {
+        "handle": {
+            "description": "Your twitter handle including @. Ex. @everythingIsAwesome",
+            "type": "string"
+        },
+        "message": {
+            "description": "Decrypted or decoded message as answer.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ds_remove_ip_routes",
+    "pack": "aws",
+    "parameters": {
+        "CidrIps": {
+            "description": "IP address blocks that you want to remove.",
+            "required": true,
+            "type": "array"
+        },
+        "DirectoryId": {
+            "description": "Identifier (ID) of the directory from which you want to remove the IP addresses.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "remove_ip_routes",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ds",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

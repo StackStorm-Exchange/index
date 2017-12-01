@@ -1,0 +1,29 @@
+{
+    "description": "Create new floating-ip",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "ip.floating.create",
+    "parameters": {
+        "base": {
+            "default": "ip floating create",
+            "immutable": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('ip_floating_create = openstackclient.compute.v2.floatingip:CreateFloatingIP')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: html, json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "pool": {
+            "description": "Pool to fetch floating IP from",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

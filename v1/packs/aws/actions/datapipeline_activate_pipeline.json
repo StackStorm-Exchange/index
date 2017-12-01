@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "datapipeline_activate_pipeline",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "activate_pipeline",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "datapipeline",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "parameterValues": {
+            "description": "A list of parameter values to pass to the pipeline at activation.",
+            "type": "array"
+        },
+        "pipelineId": {
+            "description": "The ID of the pipeline.",
+            "required": true,
+            "type": "string"
+        },
+        "startTimestamp": {
+            "description": "The date and time to resume the pipeline. By default, the pipeline resumes from the last completed execution.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

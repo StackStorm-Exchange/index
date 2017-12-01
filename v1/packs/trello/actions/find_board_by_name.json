@@ -1,0 +1,22 @@
+{
+    "description": "Lookup a board ID based on name. Returns one or more IDs",
+    "enabled": true,
+    "entry_point": "find_board_by_name.py",
+    "name": "find_board_by_name",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "name": {
+            "description": "Lookup a board ID based on name",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

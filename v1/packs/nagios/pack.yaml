@@ -1,0 +1,28 @@
+ref: nagios
+name: nagios
+description: Nagios integration pack. See README.md for setup instructions.
+keywords:
+- nagios
+- monitoring
+- alerting
+version: 0.2.0
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  rules:
+    count: 6
+    resources:
+    - notify_chat
+    - check_load
+    - check_load_procd
+    - check_load_procs
+    - send_mail
+    - check_proc
+  tests:
+    count: 1
+    resources:
+    - test_nagios_handler.py
+  triggers:
+    count: 1
+    resources:
+    - service_state_change

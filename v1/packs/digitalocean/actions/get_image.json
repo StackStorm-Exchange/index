@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "do.py",
+    "name": "get_image",
+    "parameters": {
+        "action": {
+            "default": "get_image",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

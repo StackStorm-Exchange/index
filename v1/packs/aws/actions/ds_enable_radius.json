@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ds_enable_radius",
+    "pack": "aws",
+    "parameters": {
+        "DirectoryId": {
+            "description": "The identifier of the directory for which to enable MFA.",
+            "required": true,
+            "type": "string"
+        },
+        "RadiusSettings": {
+            "description": "A RadiusSettings object that contains information about the RADIUS server.",
+            "required": true,
+            "type": "object"
+        },
+        "action": {
+            "default": "enable_radius",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ds",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

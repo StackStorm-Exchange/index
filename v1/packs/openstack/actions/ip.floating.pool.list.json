@@ -1,0 +1,24 @@
+{
+    "description": "List floating-ip-pools",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "ip.floating.pool.list",
+    "parameters": {
+        "base": {
+            "default": "ip floating pool list",
+            "immutable": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('ip_floating_pool_list = openstackclient.compute.v2.floatingippool:ListFloatingIPPool')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, html, json, table, yaml)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

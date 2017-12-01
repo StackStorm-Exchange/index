@@ -1,0 +1,41 @@
+{
+    "class_name": "watchCoreV1ResourceQuotaListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Resourcequotas objects.",
+    "entry_point": "watchCoreV1ResourceQuotaListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for resourcequotas event dispatch.",
+            "name": "resourcequotas",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

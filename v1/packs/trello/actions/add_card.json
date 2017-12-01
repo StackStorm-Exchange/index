@@ -1,0 +1,36 @@
+{
+    "description": "Add a new card to a list",
+    "enabled": true,
+    "entry_point": "add_card.py",
+    "name": "add_card",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "board_id": {
+            "description": "Board ID to assign the card to",
+            "required": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "Card contents",
+            "type": "string"
+        },
+        "list_id": {
+            "description": "List ID to assign the card to",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the new card",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

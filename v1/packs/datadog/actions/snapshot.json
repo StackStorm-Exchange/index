@@ -1,0 +1,39 @@
+{
+    "description": "Take graph snapshots",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "snapshot",
+    "parameters": {
+        "cls": {
+            "default": "DatadogGraphSnapshot",
+            "immutable": true,
+            "type": "string"
+        },
+        "end": {
+            "description": "POSIX timestamp of the end of the query",
+            "required": true,
+            "type": "integer"
+        },
+        "event_query": {
+            "description": "A query that will add event bands to the graph",
+            "required": false,
+            "type": "string"
+        },
+        "metric_query": {
+            "description": "The metric query",
+            "required": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.graphs",
+            "immutable": true,
+            "type": "string"
+        },
+        "start": {
+            "description": "POSIX timestamp of the start of the query",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,41 @@
+{
+    "class_name": "watchExtensionsV1beta1ThirdPartyResourceList",
+    "description": "Sensor that watches Kubernetes API for new Thirdpartyresources objects.",
+    "entry_point": "watchExtensionsV1beta1ThirdPartyResourceList.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for thirdpartyresources event dispatch.",
+            "name": "thirdpartyresources",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "description": "Get an balancer by name",
+    "enabled": true,
+    "entry_point": "get_balancer_by_name.py",
+    "name": "get_balancer_by_name",
+    "parameters": {
+        "balancer_name": {
+            "description": "The name of the balancer",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

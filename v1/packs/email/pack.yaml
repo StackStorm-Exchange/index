@@ -1,0 +1,24 @@
+ref: email
+name: email
+description: E-Mail Actions/Sensors for StackStorm
+keywords:
+- email
+- messaging
+- imap
+version: 1.0.1
+author: James Fryman
+email: james@stackstorm.com
+content:
+  actions:
+    count: 1
+    resources:
+    - send_email
+  rules:
+    count: 1
+    resources:
+    - Sample
+  sensors:
+    count: 2
+    resources:
+    - IMAPSensor
+    - SMTPSensor

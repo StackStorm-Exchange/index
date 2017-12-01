@@ -1,0 +1,61 @@
+{
+    "description": "Create a new session.",
+    "enabled": true,
+    "entry_point": "session_create.py",
+    "name": "session_create",
+    "pack": "consul",
+    "parameters": {
+        "behavior": {
+            "default": "release",
+            "description": "This controls the behavior when a session is invalidated.",
+            "enum": [
+                "release",
+                "delete"
+            ],
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "checks": {
+            "default": [
+                "serfHealth"
+            ],
+            "description": "A list of checks to associate with the session.",
+            "position": 2,
+            "required": false,
+            "type": "array"
+        },
+        "dc": {
+            "description": "The datacenter that this agent will communicate with.",
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
+        "lock_delay": {
+            "default": 15,
+            "description": "An integer of seconds.",
+            "position": 3,
+            "required": false,
+            "type": "integer"
+        },
+        "name": {
+            "description": "An optional human readable name for the session.",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "node": {
+            "description": "The node to create the session on",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "ttl": {
+            "description": "Invalidate the session if it is not renewed before the TTL expires.",
+            "position": 5,
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

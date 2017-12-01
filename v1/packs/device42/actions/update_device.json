@@ -1,0 +1,23 @@
+{
+    "description": "Update a device on D42",
+    "enabled": true,
+    "entry_point": "update_device.py",
+    "name": "update_device",
+    "parameters": {
+        "changes": {
+            "description": "key value pairs of fields to change",
+            "type": "object"
+        },
+        "identifier": {
+            "description": "contains the name / serial / asset / device_id of the device on D42 to return.  ",
+            "required": true,
+            "type": "string"
+        },
+        "identifier_type": {
+            "description": "designates the type of identifier used to call D42 API.  Can be name, serial, asset, or device_id.  ",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

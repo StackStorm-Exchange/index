@@ -1,0 +1,19 @@
+{
+    "description": "Get Cassandra cluster info.",
+    "enabled": true,
+    "entry_point": "get_cluster_info.py",
+    "name": "get_cluster_info",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        },
+        "cluster_property": {
+            "description": "Specific cluster property.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

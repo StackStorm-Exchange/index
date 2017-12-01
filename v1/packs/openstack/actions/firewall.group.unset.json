@@ -1,0 +1,70 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall.group.unset",
+    "parameters": {
+        "all_port": {
+            "default": false,
+            "description": "Remove all ports for this firewall group",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "firewall group unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "egress_firewall_policy": {
+            "default": false,
+            "description": "Egress firewall policy (name or ID) to delete",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": false,
+            "description": "Disable firewall group",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall_group_unset = neutronclient.osc.v2.fwaas.firewallgroup:UnsetFirewallGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "firewall_group": {
+            "description": "Firewall group to unset (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "ingress_firewall_policy": {
+            "default": false,
+            "description": "Ingress firewall policy (name or ID) to delete",
+            "type": "boolean"
+        },
+        "port": {
+            "description": "Port(s) (name or ID) to apply firewall group.  This option can be repeated",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "public": {
+            "default": false,
+            "description": "Make the firewall group public, which allows it to be used in all projects (as opposed to the default, which is to restrict its use to the current project). This option is deprecated and would be removed in R release.",
+            "type": "boolean"
+        },
+        "share": {
+            "default": false,
+            "description": "Restrict use of the firewall group to the current project",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

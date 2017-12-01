@@ -1,0 +1,19 @@
+{
+    "description": "Restart a container.",
+    "enabled": true,
+    "entry_point": "restart_container.py",
+    "name": "restart_container",
+    "parameters": {
+        "container_id": {
+            "description": "ID of a container to restart.",
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,28 @@
+{
+    "description": "read status of the specified HorizontalPodAutoscaler",
+    "enabled": true,
+    "entry_point": "readExtensionsV1beta1NamespacedHorizontalPodAutoscalerStatus.py",
+    "name": "readExtensionsV1beta1NamespacedHorizontalPodAutoscalerStatus",
+    "pack": "kubernetes",
+    "parameters": {
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the HorizontalPodAutoscaler",
+            "required": true,
+            "type": "string"
+        },
+        "namespace": {
+            "description": "object name and auth scope, such as for teams and projects",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

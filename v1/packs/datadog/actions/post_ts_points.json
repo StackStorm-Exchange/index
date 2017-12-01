@@ -1,0 +1,34 @@
+{
+    "description": "Post time-series data that can be graphed on Datadog's dashboards",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post_ts_points",
+    "parameters": {
+        "cls": {
+            "default": "DatadogPostTSPoints",
+            "immutable": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "The name of the host that produced the metric",
+            "required": false,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.metrics",
+            "immutable": true,
+            "type": "string"
+        },
+        "series": {
+            "description": "See http://docs.datadoghq.com/api/#metrics-post for informations about the form, i.e metric=my.metric,points=[(timestamp1, 3), (timestamp2, 4)]",
+            "required": true,
+            "type": "array"
+        },
+        "tags": {
+            "description": "A list of tags associated with the metric",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

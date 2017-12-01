@@ -1,0 +1,43 @@
+{
+    "description": "Internal action - Configure an interface",
+    "enabled": true,
+    "entry_point": "0_cfg_interface.py",
+    "name": "0_cfg_interface",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "address": {
+            "description": "IP Address",
+            "required": true,
+            "type": "string"
+        },
+        "cmd_path": {
+            "description": "configuration session token",
+            "required": true,
+            "type": "string"
+        },
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "required": true,
+            "type": "string"
+        },
+        "intfNum": {
+            "description": "Interface number",
+            "required": true,
+            "type": "string"
+        },
+        "intfType": {
+            "description": "Type of interface such as dataplane or loopback",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

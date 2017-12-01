@@ -1,0 +1,20 @@
+{
+    "description": "Execute an script on an Orion NCM Node.",
+    "enabled": true,
+    "entry_point": "ncm_execute_script.py",
+    "name": "ncm_execute_script",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "The node to add to Orion NCM.",
+            "required": true,
+            "type": "string"
+        },
+        "script": {
+            "description": "Orion NCM script to run",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

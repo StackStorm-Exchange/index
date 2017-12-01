@@ -1,0 +1,31 @@
+{
+    "description": "Clone a repository",
+    "enabled": true,
+    "entry_point": "",
+    "name": "clone",
+    "parameters": {
+        "cmd": {
+            "default": "git clone -b {{ref}} {{source}} {{destination}}",
+            "immutable": true
+        },
+        "destination": {
+            "description": "Location on the filesystem to clone the repository to",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "ref": {
+            "default": "master",
+            "description": "Requested git ref to check the repository out to.",
+            "position": 2,
+            "type": "string"
+        },
+        "source": {
+            "description": "Source URI to clone a repository from",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-remote"
+}

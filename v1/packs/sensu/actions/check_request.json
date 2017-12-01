@@ -1,0 +1,19 @@
+{
+    "description": "Schedule a Sensu check request",
+    "enabled": true,
+    "entry_point": "check_request.py",
+    "name": "check_request",
+    "parameters": {
+        "check": {
+            "description": "The check name",
+            "required": true,
+            "type": "string"
+        },
+        "subscribers": {
+            "description": "The subscribers to run the check on",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Create a new release in Octopus.",
+    "enabled": true,
+    "entry_point": "create_release.py",
+    "name": "create_release",
+    "parameters": {
+        "project_id": {
+            "description": "ID of the project in Octopus",
+            "required": true,
+            "type": "string"
+        },
+        "version": {
+            "description": "The version number to create",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

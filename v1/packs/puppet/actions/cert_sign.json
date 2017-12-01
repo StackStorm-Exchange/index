@@ -1,0 +1,21 @@
+{
+    "description": "Sign an outstanding certificate request.",
+    "enabled": true,
+    "entry_point": "cert_sign.py",
+    "name": "cert_sign",
+    "parameters": {
+        "environment": {
+            "description": "Environment to use.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Host to sign the certificate for",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

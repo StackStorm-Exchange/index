@@ -1,0 +1,23 @@
+{
+    "description": "List the firewall rules in a network domain",
+    "enabled": true,
+    "entry_point": "run_compute_network_domain.py",
+    "name": "list_firewall_rules",
+    "parameters": {
+        "action": {
+            "default": "ex_list_firewall_rules",
+            "immutable": true,
+            "type": "string"
+        },
+        "network_domain_id": {
+            "description": "The ID of the network domain",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,23 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": true,
+        "format": "Retrieving latest complete results for scan _{{execution.parameters.scan_title}}_..."
+    },
+    "action_ref": "alertlogic.scan_get_results_by_title",
+    "description": "Summary of the latest complete execution of an AlertLogic of an scan",
+    "formats": [
+        {
+            "display": "alertlogic scan results [customer_id <customer_id>] <scan_title>",
+            "representation": [
+                "alertlogic scan results customer_id {{customer_id}} {{scan_title}}",
+                "alertlogic scan results {{scan_title}}"
+            ]
+        }
+    ],
+    "name": "get_scan_results",
+    "pack": "alertlogic",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nScan _{{execution.parameters.scan_title}}_ found *{{execution.result.result.total_vulns}}* vulnerabilities on *{{execution.result.result.total_hosts}}* host(s){~}\n\n*Vulnerability Summary:*\n{% if execution.result.result.vulns_summary.Urgent != 0 %}_Urgent:_ {{execution.result.result.vulns_summary.Urgent}}; {% endif %}\n{% if execution.result.result.vulns_summary.Critical != 0 %}_Critical:_ {{execution.result.result.vulns_summary.Critical}}; {% endif %}\n{% if execution.result.result.vulns_summary.High != 0 %}_High:_ {{execution.result.result.vulns_summary.High}}; {% endif %}\n{% if execution.result.result.vulns_summary.Medium != 0 %}_Medium:_ {{execution.result.result.vulns_summary.Medium}}; {% endif %}\n{% if execution.result.result.vulns_summary.Low != 0 %}_Low:_ {{execution.result.result.vulns_summary.Low}}; {% endif %}\n{% if execution.result.result.vulns_summary.Unclassified != 0 %}_Unclassified:_ {{execution.result.result.vulns_summary.Unclassified}}; {% endif %}\n\n*Hosts:*\n{% for item in execution.result.result.scanned_hosts %}\n - <{{item.ui_link}}|{{item.ip_address}}> - *{% if item.host_name != '' %}{{item.host_name}}{% else %}?{% endif %}*\n{% endfor %}\n{% else %}\nFailed!\n{% endif %}\n"
+    }
+}

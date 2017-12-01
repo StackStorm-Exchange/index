@@ -1,0 +1,29 @@
+{
+    "action": {
+        "parameters": {
+            "eastASN": "{{trigger.body.eastASN}}",
+            "eastDeviceIP": "{{trigger.body.eastDeviceIP}}",
+            "eastPeeringIP": "{{trigger.body.eastPeeringIP}}",
+            "westASN": "{{trigger.body.westASN}}",
+            "westDeviceIP": "{{trigger.body.westDeviceIP}}",
+            "westPeeringIP": "{{trigger.body.westPeeringIP}}"
+        },
+        "ref": "vyatta.cfg_ebgp"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "cfg_ebgp",
+            "type": "contains"
+        }
+    },
+    "description": "Rule configuring an eBGP peering from a webhook payload",
+    "enabled": true,
+    "name": "webhook_cfg_ebgp",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "description": "Perform a \"show ip bgp neighbors\"",
+    "enabled": true,
+    "entry_point": "show_ip_bgp_neighbors.py",
+    "name": "show_ip_bgp_neighbors",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

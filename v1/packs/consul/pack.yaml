@@ -1,0 +1,45 @@
+ref: consul
+name: consul
+description: consul
+version: 0.6.1
+author: jfryman
+email: james@fryman.io
+content:
+  actions:
+    count: 35
+    resources:
+    - acl_create
+    - acl_destroy
+    - acl_list
+    - agent_checks
+    - agent_force_leave
+    - agent_join
+    - agent_maintenance
+    - agent_members
+    - service_deregister
+    - service_maintenance
+    - service_register
+    - agent_services
+    - catalog_datacenters
+    - catalog_deregister
+    - catalog_node
+    - catalog_nodes
+    - catalog_register
+    - catalog_service
+    - catalog_services
+    - event_fire
+    - event_list
+    - health_checks
+    - health_node
+    - health_service
+    - health_state
+    - kv_delete
+    - kv_get
+    - kv_list
+    - kv_put
+    - session_create
+    - session_destroy
+    - session_info
+    - session_list
+    - session_node
+    - session_renew

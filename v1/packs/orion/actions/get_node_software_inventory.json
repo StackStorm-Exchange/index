@@ -1,0 +1,28 @@
+{
+    "description": "Get Software Assets against node",
+    "enabled": true,
+    "entry_point": "get_node_software_inventory.py",
+    "name": "get_node_software_inventory",
+    "pack": "orion",
+    "parameters": {
+        "matchstring": {
+            "description": "Text to match against.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "matchtype": {
+            "default": "nodeid",
+            "description": "How to match node",
+            "enum": [
+                "sysname",
+                "caption",
+                "nodeid"
+            ],
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

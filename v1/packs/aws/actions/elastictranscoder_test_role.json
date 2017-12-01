@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "elastictranscoder_test_role",
+    "pack": "aws",
+    "parameters": {
+        "InputBucket": {
+            "description": "The Amazon S3 bucket that contains media files to be transcoded. The action attempts to read from this bucket.",
+            "required": true,
+            "type": "string"
+        },
+        "OutputBucket": {
+            "description": "The Amazon S3 bucket that Elastic Transcoder writes transcoded media files to. The action attempts to read from this bucket.",
+            "required": true,
+            "type": "string"
+        },
+        "Role": {
+            "description": "The IAM Amazon Resource Name (ARN) for the role that you want Elastic Transcoder to test.",
+            "required": true,
+            "type": "string"
+        },
+        "Topics": {
+            "description": "The ARNs of one or more Amazon Simple Notification Service (Amazon SNS) topics that you want the action to send a test notification to.",
+            "required": true,
+            "type": "array"
+        },
+        "action": {
+            "default": "test_role",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "elastictranscoder",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

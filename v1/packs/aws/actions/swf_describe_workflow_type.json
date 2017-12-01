@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "swf_describe_workflow_type",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "describe_workflow_type",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "swf",
+            "type": "string"
+        },
+        "domain": {
+            "description": "The name of the domain in which this workflow type is registered.",
+            "required": true,
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "workflowType": {
+            "description": "The workflow type to describe.",
+            "required": true,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

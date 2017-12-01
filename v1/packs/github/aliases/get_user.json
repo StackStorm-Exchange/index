@@ -1,0 +1,21 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "github.get_user",
+    "description": "Get the name of a GitHub user.",
+    "formats": [
+        {
+            "display": "github get user [type (enterprise\u00a6online)] {{user}}",
+            "representation": [
+                "github get user( type {{github_type}})? {{user}}"
+            ]
+        }
+    ],
+    "name": "get_user",
+    "pack": "github",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\n{{ execution.result.result.login}} {{ execution.result.result.name}}\n{% else %}\nError: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

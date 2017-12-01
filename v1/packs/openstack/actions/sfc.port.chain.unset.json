@@ -1,0 +1,49 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "sfc.port.chain.unset",
+    "parameters": {
+        "all_flow_classifier": {
+            "default": false,
+            "description": "Remove all flow classifiers from the port chain",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "sfc port chain unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('sfc_port_chain_unset = neutronclient.osc.v2.sfc.sfc_port_chain:UnsetSfcPortChain')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flow_classifier": {
+            "description": "Remove flow classifier(s) from the port chain (name or ID). This option can be repeated.",
+            "type": "array"
+        },
+        "port_chain": {
+            "description": "Port chain to unset (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "port_pair_group": {
+            "description": "Remove port pair group(s) from the port chain (name or ID). This option can be repeated.",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

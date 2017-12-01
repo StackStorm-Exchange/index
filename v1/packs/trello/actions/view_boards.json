@@ -1,0 +1,17 @@
+{
+    "description": "Return a dictionary of all boards and their IDs",
+    "enabled": true,
+    "entry_point": "view_boards.py",
+    "name": "view_boards",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

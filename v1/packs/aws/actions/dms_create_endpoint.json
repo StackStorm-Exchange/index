@@ -1,0 +1,82 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "dms_create_endpoint",
+    "pack": "aws",
+    "parameters": {
+        "CertificateArn": {
+            "description": "The Amazon Resource Number (ARN) for the certificate.",
+            "type": "string"
+        },
+        "DatabaseName": {
+            "description": "The name of the endpoint database.",
+            "type": "string"
+        },
+        "EndpointIdentifier": {
+            "description": "The database endpoint identifier. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.",
+            "required": true,
+            "type": "string"
+        },
+        "EndpointType": {
+            "description": "The type of endpoint.",
+            "required": true,
+            "type": "string"
+        },
+        "EngineName": {
+            "description": "The type of engine for the endpoint. Valid values include MYSQL, ORACLE, POSTGRES, MARIADB, AURORA, REDSHIFT, SYBASE, and SQLSERVER.",
+            "required": true,
+            "type": "string"
+        },
+        "ExtraConnectionAttributes": {
+            "description": "Additional attributes associated with the connection.",
+            "type": "string"
+        },
+        "KmsKeyId": {
+            "description": "The KMS key identifier that will be used to encrypt the connection parameters. If you do not specify a value for the KmsKeyId parameter, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.",
+            "type": "string"
+        },
+        "Password": {
+            "description": "The password to be used to login to the endpoint database.",
+            "type": "string"
+        },
+        "Port": {
+            "description": "The port used by the endpoint database.",
+            "type": "integer"
+        },
+        "ServerName": {
+            "description": "The name of the server where the endpoint database resides.",
+            "type": "string"
+        },
+        "SslMode": {
+            "description": "The SSL mode to use for the SSL connection. SSL mode can be one of four values: none, require, verify-ca, verify-full.  The default value is none.",
+            "type": "string"
+        },
+        "Tags": {
+            "description": "Tags to be added to the endpoint.",
+            "type": "array"
+        },
+        "Username": {
+            "description": "The user name to be used to login to the endpoint database.",
+            "type": "string"
+        },
+        "action": {
+            "default": "create_endpoint",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "dms",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

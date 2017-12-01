@@ -1,0 +1,46 @@
+{
+    "description": "Delete stack snapshot.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.snapshot.delete",
+    "parameters": {
+        "base": {
+            "default": "stack snapshot delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_snapshot_delete = heatclient.osc.v1.snapshot:DeleteSnapshot')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "snapshot": {
+            "description": "ID of stack snapshot",
+            "required": true,
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack",
+            "required": true,
+            "type": "string"
+        },
+        "yes": {
+            "default": false,
+            "description": "Skip yes/no prompt (assume yes)",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

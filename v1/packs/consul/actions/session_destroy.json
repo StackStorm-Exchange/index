@@ -1,0 +1,22 @@
+{
+    "description": "Destroy an existing session.",
+    "enabled": true,
+    "entry_point": "session_destroy.py",
+    "name": "session_destroy",
+    "pack": "consul",
+    "parameters": {
+        "dc": {
+            "description": "dc is the datacenter that this agent will communicate with.",
+            "position": 1,
+            "required": false,
+            "type": "integer"
+        },
+        "session_id": {
+            "description": "The session id to be destoryed.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

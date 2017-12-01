@@ -1,0 +1,71 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall.group.rule.unset",
+    "parameters": {
+        "base": {
+            "default": "firewall group rule unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "destination_ip_address": {
+            "default": false,
+            "description": "Destination IP address or subnet",
+            "type": "boolean"
+        },
+        "destination_port": {
+            "default": false,
+            "description": "Destination port number or range(integer in [1, 65535] or range like 123:456)",
+            "type": "boolean"
+        },
+        "enable_rule": {
+            "default": false,
+            "description": "Disable this rule",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall_group_rule_unset = neutronclient.osc.v2.fwaas.firewallrule:UnsetFirewallRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "firewall_rule": {
+            "description": "Firewall rule to unset (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "public": {
+            "default": false,
+            "description": "Restrict use of the firewall rule to the current project. This option is deprecated and would be removed in R Release.",
+            "type": "boolean"
+        },
+        "share": {
+            "default": false,
+            "description": "Restrict use of the firewall rule to the current project",
+            "type": "boolean"
+        },
+        "source_ip_address": {
+            "default": false,
+            "description": "Source IP address or subnet",
+            "type": "boolean"
+        },
+        "source_port": {
+            "default": false,
+            "description": "Source port number or range(integer in [1, 65535] or range like 123:456)",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

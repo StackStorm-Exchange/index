@@ -1,0 +1,15 @@
+{
+    "description": "Disable an OpsGenie Heartbeat",
+    "enabled": true,
+    "entry_point": "disable_heartbeat.py",
+    "name": "disable_heartbeat",
+    "pack": "opsgenie",
+    "parameters": {
+        "name": {
+            "description": "Heartbeat name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

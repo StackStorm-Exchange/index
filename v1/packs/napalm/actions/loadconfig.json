@@ -1,0 +1,63 @@
+{
+    "description": "Loads (merge) a configuration to a network device using NAPALM.",
+    "enabled": true,
+    "entry_point": "loadconfig.py",
+    "name": "loadconfig",
+    "parameters": {
+        "config_file": {
+            "description": "Absolute path to configuration file on local system that will be sent to the device. Need to specify either config_file or config_text. If both given, config_file takes precedence.",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "config_text": {
+            "description": "A command that will be sent to the device. Need to specify either config_file or config_text. If both given, config_file takes precedence.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "The credentials group which contains the username and password to log in",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "driver": {
+            "description": "Device driver name for connecting to device, see https://napalm.readthedocs.io/en/latest/support/index.html for list.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The hostname of the device to connect to. Driver must be specified if hostname is not in configuration. Hostname without FQDN can be given if device is in configuration.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "inline_transfer": {
+            "default": false,
+            "description": "If selected, the ios driver will use SSH and not SCP to transfer config",
+            "position": 7,
+            "required": false,
+            "type": "boolean"
+        },
+        "method": {
+            "default": "merge",
+            "description": "Method to load the config (either 'merge' or 'replace', default is 'merge')",
+            "enum": [
+                "merge",
+                "replace"
+            ],
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
+        "port": {
+            "description": "port for accessing device",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

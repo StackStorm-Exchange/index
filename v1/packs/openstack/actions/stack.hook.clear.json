@@ -1,0 +1,56 @@
+{
+    "description": "Clear resource hooks on a given stack.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.hook.clear",
+    "parameters": {
+        "base": {
+            "default": "stack hook clear",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_hook_clear = heatclient.osc.v1.stack:StackHookClear')",
+            "immutable": true,
+            "type": "string"
+        },
+        "hook": {
+            "description": "Resource names with hooks to clear. Resources in nested stacks can be set using slash as a separator: nested_stack/another/my_resource. You can use wildcards to match multiple stacks or resources: nested_stack/an*/*_resource",
+            "required": true,
+            "type": "string"
+        },
+        "pre_create": {
+            "default": false,
+            "description": "Clear the pre-create hooks",
+            "type": "boolean"
+        },
+        "pre_delete": {
+            "default": false,
+            "description": "Clear the pre-delete hooks",
+            "type": "boolean"
+        },
+        "pre_update": {
+            "default": false,
+            "description": "Clear the pre-update hooks",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Stack to display (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

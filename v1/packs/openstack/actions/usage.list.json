@@ -1,0 +1,49 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "usage.list",
+    "parameters": {
+        "base": {
+            "default": "usage list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "end": {
+            "description": "Usage range end date, ex 2012-01-20 (default: tomorrow)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('usage_list = openstackclient.compute.v2.usage:ListUsage')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "start": {
+            "description": "Usage range start date, ex 2012-01-20 (default: 4 weeks ago)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

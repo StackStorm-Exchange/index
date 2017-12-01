@@ -1,0 +1,36 @@
+{
+    "description": "vTM - Create StackStorm Alerting Action for webhook callback",
+    "enabled": true,
+    "entry_point": "vtm_add_webhook_action.py",
+    "name": "vtm_add_webhook_action",
+    "parameters": {
+        "api_hook": {
+            "description": "The St2 API-Hook URL. Eg: https://stackstorm/api/v1/webhooks/vadc_hook",
+            "required": true,
+            "type": "string"
+        },
+        "api_key": {
+            "description": "The St2 API-Key for use with this trigger",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "event": {
+            "description": "The name of an existing Event to attach the Action to",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "default": "st2Action",
+            "description": "The name of the Action. Default is st2Action",
+            "required": false,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,16 @@
+{
+    "description": "Delete policy from Vault server",
+    "enabled": true,
+    "entry_point": "delete_policy.py",
+    "name": "delete_policy",
+    "pack": "vault",
+    "parameters": {
+        "name": {
+            "description": "Policy to delete from Vault",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

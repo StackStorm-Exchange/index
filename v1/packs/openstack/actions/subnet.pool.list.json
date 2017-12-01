@@ -1,0 +1,98 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnet.pool.list",
+    "parameters": {
+        "address_scope": {
+            "description": "List only subnet pools of given address scope in output (name or ID)",
+            "type": "string"
+        },
+        "any_tags": {
+            "description": "List subnet pools which have any given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "base": {
+            "default": "subnet pool list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "default": {
+            "default": false,
+            "description": "List subnet pools used as the default external subnet pool",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnet_pool_list = openstackclient.network.v2.subnet_pool:ListSubnetPool')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "name": {
+            "description": "List only subnet pools of given name in output",
+            "type": "string"
+        },
+        "no_default": {
+            "default": false,
+            "description": "List subnet pools not used as the default external subnet pool",
+            "type": "boolean"
+        },
+        "no_share": {
+            "default": false,
+            "description": "List subnet pools not shared between projects",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "not_any_tags": {
+            "description": "Exclude subnet pools which have any given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "not_tags": {
+            "description": "Exclude subnet pools which have all given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "project": {
+            "description": "List subnet pools according to their project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "share": {
+            "default": false,
+            "description": "List subnet pools shared between projects",
+            "type": "boolean"
+        },
+        "tags": {
+            "description": "List subnet pools which have all given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

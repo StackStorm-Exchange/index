@@ -1,0 +1,14 @@
+{
+    "description": "List available node sizes.",
+    "enabled": true,
+    "entry_point": "list_sizes.py",
+    "name": "list_sizes",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

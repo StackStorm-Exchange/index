@@ -1,0 +1,19 @@
+{
+    "description": "List details of all the available builds.",
+    "enabled": true,
+    "entry_point": "list_builds.py",
+    "name": "list_builds",
+    "parameters": {
+        "repo_name": {
+            "description": "Name of the repository for getting build and branch information.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username whose repo's builds you want to see.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

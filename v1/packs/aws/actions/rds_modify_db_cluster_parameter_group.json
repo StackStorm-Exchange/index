@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "rds_modify_db_cluster_parameter_group",
+    "pack": "aws",
+    "parameters": {
+        "DBClusterParameterGroupName": {
+            "description": "The name of the DB cluster parameter group to modify.",
+            "required": true,
+            "type": "string"
+        },
+        "Parameters": {
+            "description": "A list of parameters in the DB cluster parameter group to modify.",
+            "required": true,
+            "type": "array"
+        },
+        "action": {
+            "default": "modify_db_cluster_parameter_group",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "rds",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

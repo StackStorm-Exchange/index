@@ -1,0 +1,14 @@
+{
+    "description": "Retrieve traffic statistics for a given repository",
+    "enabled": true,
+    "entry_point": "get_traffic_stats.py",
+    "name": "get_traffic_stats",
+    "parameters": {
+        "repo": {
+            "description": "Repository to query for traffic stats (org/repo)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

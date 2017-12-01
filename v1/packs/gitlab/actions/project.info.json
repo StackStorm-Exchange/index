@@ -1,0 +1,21 @@
+{
+    "description": "Get project metadata",
+    "entry_point": "project_info.py",
+    "name": "project.info",
+    "parameters": {
+        "project": {
+            "type": "string"
+        },
+        "token": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "verify_ssl": {
+            "default": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

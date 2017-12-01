@@ -1,0 +1,76 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_register_image",
+    "pack": "aws",
+    "parameters": {
+        "Architecture": {
+            "description": "The architecture of the AMI. Default: For Amazon EBS-backed AMIs, i386. For instance store-backed AMIs, the architecture specified in the manifest file.",
+            "type": "string"
+        },
+        "BlockDeviceMappings": {
+            "description": "One or more block device mapping entries.",
+            "type": "array"
+        },
+        "Description": {
+            "description": "A description for your AMI.",
+            "type": "string"
+        },
+        "DryRun": {
+            "description": "Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.",
+            "type": "boolean"
+        },
+        "EnaSupport": {
+            "description": "Set to true to enable enhanced networking with ENA for the AMI and any instances that you launch from the AMI. This option is supported only for HVM AMIs. Specifying this option with a PV AMI can make instances launched from the AMI unreachable.",
+            "type": "boolean"
+        },
+        "ImageLocation": {
+            "description": "The full path to your AMI manifest in Amazon S3 storage.",
+            "type": "string"
+        },
+        "KernelId": {
+            "description": "The ID of the kernel.",
+            "type": "string"
+        },
+        "Name": {
+            "description": "A name for your AMI. Constraints: 3-128 alphanumeric characters, parentheses (()), square brackets ([]), spaces ( ), periods (.), slashes (/), dashes (-), single quotes ('), at-signs (@), or underscores(_)",
+            "required": true,
+            "type": "string"
+        },
+        "RamdiskId": {
+            "description": "The ID of the RAM disk.",
+            "type": "string"
+        },
+        "RootDeviceName": {
+            "description": "The name of the root device (for example, /dev/sda1, or /dev/xvda).",
+            "type": "string"
+        },
+        "SriovNetSupport": {
+            "description": "Set to simple to enable enhanced networking with the Intel 82599 Virtual Function interface for the AMI and any instances that you launch from the AMI. There is no way to disable sriovNetSupport at this time. This option is supported only for HVM AMIs. Specifying this option with a PV AMI can make instances launched from the AMI unreachable.",
+            "type": "string"
+        },
+        "VirtualizationType": {
+            "description": "The type of virtualization. Default: paravirtual ",
+            "type": "string"
+        },
+        "action": {
+            "default": "register_image",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

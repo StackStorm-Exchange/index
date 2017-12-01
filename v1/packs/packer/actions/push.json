@@ -1,0 +1,43 @@
+{
+    "description": "Push a template to Hashicorp Atlas",
+    "enabled": true,
+    "entry_point": "push.py",
+    "name": "push",
+    "parameters": {
+        "cwd": {
+            "description": "Working directory for Packer definition",
+            "type": "string"
+        },
+        "exclude": {
+            "description": "Build all builds other than these. Takes an array",
+            "type": "object"
+        },
+        "message": {
+            "description": "A message to identify the purpose or changes in this Packer template much like a VCS commit message",
+            "type": "string"
+        },
+        "name": {
+            "description": "Atlas project name to push to.",
+            "required": true,
+            "type": "string"
+        },
+        "only": {
+            "description": "Build only builds by name. Takes an array",
+            "type": "object"
+        },
+        "packerfile": {
+            "description": "Packer template file",
+            "required": true,
+            "type": "string"
+        },
+        "variables": {
+            "description": "Variables passed to packer. Takes a dict",
+            "type": "object"
+        },
+        "variables_file": {
+            "description": "File path to file containing packer variables",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,44 @@
+{
+    "description": "Deploy a container",
+    "enabled": true,
+    "entry_point": "deploy_container.py",
+    "name": "deploy_container",
+    "parameters": {
+        "cluster_id": {
+            "description": "The Cluster ID to deploy to",
+            "required": false,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the container",
+            "required": true,
+            "type": "string"
+        },
+        "parameters": {
+            "description": "The boot parameters for the image",
+            "required": false,
+            "type": "string"
+        },
+        "repository_name": {
+            "description": "The repository name in docker hub",
+            "required": true,
+            "type": "string"
+        },
+        "start": {
+            "default": true,
+            "description": "Start the container on deployment",
+            "type": "boolean"
+        },
+        "tag": {
+            "description": "The tag e.g. latest",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

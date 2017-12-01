@@ -1,0 +1,31 @@
+{
+    "description": "attach_vlan_to_gw",
+    "enabled": true,
+    "entry_point": "attach_vlan_to_gw.py",
+    "name": "attach_vlan_to_gw",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Device IP.",
+            "type": "string"
+        },
+        "overlay_gateway_name": {
+            "description": "overlay gateway name",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        },
+        "vlan": {
+            "description": "vlan id",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

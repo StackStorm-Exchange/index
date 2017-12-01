@@ -1,0 +1,41 @@
+{
+    "description": "Upload facts for a host, creating the host if required (resource: POST /api/v2/discovered_hosts/facts)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "discovered_hosts.facts",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "facts": {
+            "description": "hash containing facts for the host with minimum set of facts:discovery_bootif, macaddress_eth0, ipaddress, ipaddress_eth0, interfaces:eth0 (example in case primary interface is named eth0)",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "discovered_hosts.facts",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,41 @@
+{
+    "class_name": "watchRbacAuthorizationV1alpha1RoleListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Roles objects.",
+    "entry_point": "watchRbacAuthorizationV1alpha1RoleListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for roles event dispatch.",
+            "name": "roles",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

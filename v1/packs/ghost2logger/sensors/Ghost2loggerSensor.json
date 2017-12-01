@@ -1,0 +1,24 @@
+{
+    "class_name": "Ghost2loggerSensor",
+    "description": "Sensor for Ghost2 Logger",
+    "entry_point": "ghost2loggersensor.py",
+    "trigger_types": [
+        {
+            "description": "Trigger indicates a Syslog pattern match.",
+            "name": "pattern_match",
+            "payload_schema": {
+                "properties": {
+                    "host": {
+                        "description": "Host that transmitted the message",
+                        "type": "string"
+                    },
+                    "pattern": {
+                        "description": "Pattern that was matched",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

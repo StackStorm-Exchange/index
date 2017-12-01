@@ -1,0 +1,127 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.create",
+    "parameters": {
+        "availability_zone": {
+            "description": "Select an availability zone for the server",
+            "type": "string"
+        },
+        "base": {
+            "default": "server create",
+            "immutable": true,
+            "type": "string"
+        },
+        "block_device_mapping": {
+            "default": [],
+            "description": "Create a block device on the server.\nBlock device mapping in the format\n<dev-name>=<id>:<type>:<size(GB)>:<delete-on-terminate>\n<dev-name>: block device name, like: vdb, xvdc (required)\n<id>: UUID of the volume or snapshot (required)\n<type>: volume or snapshot; default: volume (optional)\n<size(GB)>: volume size if create from snapshot (optional)\n<delete-on-terminate>: true or false; default: false (optional)\n(optional extension)",
+            "type": "array"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "config_drive": {
+            "default": "False",
+            "description": "Use specified volume as the config drive, or 'True' to use an ephemeral drive",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_create = openstackclient.compute.v2.server:CreateServer')",
+            "immutable": true,
+            "type": "string"
+        },
+        "file": {
+            "default": [],
+            "description": "File to inject into image before boot (repeat option to set multiple files)",
+            "type": "array"
+        },
+        "flavor": {
+            "description": "Create server with this flavor (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "hint": {
+            "default": [],
+            "description": "Hints for the scheduler (optional extension)",
+            "type": "array"
+        },
+        "image": {
+            "description": "Create server boot disk from this image (name or ID)",
+            "type": "string"
+        },
+        "key_name": {
+            "description": "Keypair to inject into this server (optional extension)",
+            "type": "string"
+        },
+        "max": {
+            "default": 1,
+            "description": "Maximum number of servers to launch (default=1)",
+            "type": "integer"
+        },
+        "min": {
+            "default": 1,
+            "description": "Minimum number of servers to launch (default=1)",
+            "type": "integer"
+        },
+        "network": {
+            "description": "Create a NIC on the server and connect it to network. Specify option multiple times to create multiple NICs. This is a wrapper for the '--nic net-id=<network>' parameter that provides simple syntax for the standard use case of connecting a new server to a given network. For more advanced use cases, refer to the '--nic' parameter.",
+            "type": "array"
+        },
+        "nic": {
+            "description": "Create a NIC on the server. Specify option multiple times to create multiple NICs. Either net-id or port-id must be provided, but not both. net-id: attach NIC to network with this UUID, port-id: attach NIC to port with this UUID, v4-fixed-ip: IPv4 fixed address for NIC (optional), v6-fixed-ip: IPv6 fixed address for NIC (optional), none: (v2.37+) no network is attached, auto: (v2.37+) the compute service will automatically allocate a network. Specifying a --nic of auto or none cannot be used with any other --nic value.",
+            "type": "array"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "port": {
+            "description": "Create a NIC on the server and connect it to port. Specify option multiple times to create multiple NICs. This is a wrapper for the '--nic port-id=<pord>' parameter that provides simple syntax for the standard use case of connecting a new server to a given port. For more advanced use cases, refer to the '--nic' parameter.",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Set a property on this server (repeat option to set multiple values)",
+            "type": "array"
+        },
+        "security_group": {
+            "default": [],
+            "description": "Security group to assign to this server (name or ID) (repeat option to set multiple groups)",
+            "type": "array"
+        },
+        "server_name": {
+            "description": "New server name",
+            "required": true,
+            "type": "string"
+        },
+        "user_data": {
+            "description": "User data file to serve from the metadata server",
+            "type": "string"
+        },
+        "volume": {
+            "description": "Create server using this volume as the boot disk (name or ID).\nThis option automatically creates a block device mapping with a boot index of 0. On many hypervisors (libvirt/kvm for example) this will be device vda. Do not create a duplicate mapping using --block-device-mapping for this volume.",
+            "type": "string"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait for build to complete",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

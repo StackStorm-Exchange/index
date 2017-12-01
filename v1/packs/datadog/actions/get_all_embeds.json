@@ -1,0 +1,19 @@
+{
+    "description": "Gets a list of previously created embeddable graphs",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_all_embeds",
+    "parameters": {
+        "cls": {
+            "default": "DatadogGetAllEmbeds",
+            "immutable": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.embeds",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

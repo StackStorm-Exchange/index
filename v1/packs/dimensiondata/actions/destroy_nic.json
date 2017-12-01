@@ -1,0 +1,23 @@
+{
+    "description": "Delete (remove) a NIC from a VM",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "destroy_nic",
+    "parameters": {
+        "action": {
+            "default": "ex_destroy_nic",
+            "immutable": true,
+            "type": "string"
+        },
+        "nic_id": {
+            "description": "The ID of the NIC (on the VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

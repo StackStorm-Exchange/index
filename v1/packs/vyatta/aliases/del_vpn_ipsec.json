@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.del_vpn_ipsec",
+    "description": "Delete VPN IPsec",
+    "formats": [
+        "(delete|del) vpn ipsec on device {{deviceIP}}"
+    ],
+    "name": "del_vpn_ipsec",
+    "result": {
+        "enabled": true
+    }
+}

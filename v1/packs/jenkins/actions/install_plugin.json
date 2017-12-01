@@ -1,0 +1,14 @@
+{
+    "description": "Install Jenkins plugin.",
+    "enabled": true,
+    "entry_point": "install_plugin.py",
+    "name": "install_plugin",
+    "parameters": {
+        "plugin": {
+            "description": "Name of the plugin to install",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

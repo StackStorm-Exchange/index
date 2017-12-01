@@ -1,0 +1,48 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "apigateway_create_rest_api",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "create_rest_api",
+            "immutable": true,
+            "type": "string"
+        },
+        "binaryMediaTypes": {
+            "description": "The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.",
+            "type": "array"
+        },
+        "cloneFrom": {
+            "description": "The ID of the RestApi that you want to clone from.",
+            "type": "string"
+        },
+        "cls": {
+            "default": "apigateway",
+            "type": "string"
+        },
+        "description": {
+            "description": "The description of the RestApi.",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the RestApi.",
+            "required": true,
+            "type": "string"
+        },
+        "version": {
+            "description": "A version identifier for the API.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

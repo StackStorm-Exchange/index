@@ -1,0 +1,46 @@
+{
+    "description": "Show an external user group for LDAP authentication source (resource: GET /api/auth_source_ldaps/:auth_source_ldap_id/external_usergroups/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "auth_source_ldaps.external_usergroups_auth_source_ldap_id_external_showusergroups",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of external user group",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "auth_source_ldaps.external_usergroups_auth_source_ldap_id_external_showusergroups",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "usergroup_id": {
+            "description": "ID or name of user group",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "class_name": "SignalRHubSensor",
+    "description": "Sensor which listens for push notifications raise by signalr",
+    "entry_point": "signalr_hub_sensor.py",
+    "trigger_types": [
+        {
+            "description": "A message received in the hub",
+            "name": "message_received",
+            "payload_info": [
+                "message"
+            ]
+        }
+    ]
+}

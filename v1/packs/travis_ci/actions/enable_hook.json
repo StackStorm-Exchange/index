@@ -1,0 +1,14 @@
+{
+    "description": "Enable hook for a git repo.",
+    "enabled": true,
+    "entry_point": "enable_hook.py",
+    "name": "enable_hook",
+    "parameters": {
+        "hook_id": {
+            "description": "ID of the hook to enable.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

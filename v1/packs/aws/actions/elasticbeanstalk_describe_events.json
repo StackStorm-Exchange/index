@@ -1,0 +1,71 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "elasticbeanstalk_describe_events",
+    "pack": "aws",
+    "parameters": {
+        "ApplicationName": {
+            "description": "If specified, AWS Elastic Beanstalk restricts the returned descriptions to include only those associated with this application.",
+            "type": "string"
+        },
+        "EndTime": {
+            "description": " If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that occur up to, but not including, the EndTime. ",
+            "type": "string"
+        },
+        "EnvironmentId": {
+            "description": "If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this environment.",
+            "type": "string"
+        },
+        "EnvironmentName": {
+            "description": "If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this environment.",
+            "type": "string"
+        },
+        "MaxRecords": {
+            "description": "Specifies the maximum number of events that can be returned, beginning with the most recent event.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "Pagination token. If specified, the events return the next batch of results.",
+            "type": "string"
+        },
+        "RequestId": {
+            "description": "If specified, AWS Elastic Beanstalk restricts the described events to include only those associated with this request ID.",
+            "type": "string"
+        },
+        "Severity": {
+            "description": "If specified, limits the events returned from this call to include only those with the specified severity or higher.",
+            "type": "string"
+        },
+        "StartTime": {
+            "description": "If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that occur on or after this time.",
+            "type": "string"
+        },
+        "TemplateName": {
+            "description": "If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that are associated with this environment configuration.",
+            "type": "string"
+        },
+        "VersionLabel": {
+            "description": "If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this application version.",
+            "type": "string"
+        },
+        "action": {
+            "default": "describe_events",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "elasticbeanstalk",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

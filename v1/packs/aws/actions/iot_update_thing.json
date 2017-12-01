@@ -1,0 +1,48 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "iot_update_thing",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "update_thing",
+            "immutable": true,
+            "type": "string"
+        },
+        "attributePayload": {
+            "description": "A list of thing attributes, a JSON string containing name-value pairs. For example: {\\'attributes\\':{\\'name1\\':\\'value2\\'}}) This data is used to add new attributes or update existing attributes.",
+            "type": "object"
+        },
+        "cls": {
+            "default": "iot",
+            "type": "string"
+        },
+        "expectedVersion": {
+            "description": "The expected version of the thing record in the registry. If the version of the record in the registry does not match the expected version specified in the request, the UpdateThing request is rejected with a VersionConflictException.",
+            "type": "integer"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "removeThingType": {
+            "description": "Remove a thing type association. If true, the assocation is removed.",
+            "type": "boolean"
+        },
+        "thingName": {
+            "description": "The name of the thing to update.",
+            "required": true,
+            "type": "string"
+        },
+        "thingTypeName": {
+            "description": "The name of the thing type.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

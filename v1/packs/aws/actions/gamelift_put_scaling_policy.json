@@ -1,0 +1,67 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "gamelift_put_scaling_policy",
+    "pack": "aws",
+    "parameters": {
+        "ComparisonOperator": {
+            "description": "Comparison operator to use when measuring the metric against the threshold value.",
+            "required": true,
+            "type": "string"
+        },
+        "EvaluationPeriods": {
+            "description": "Length of time (in minutes) the metric must be at or beyond the threshold before a scaling event is triggered.",
+            "required": true,
+            "type": "integer"
+        },
+        "FleetId": {
+            "description": "Unique identity for the fleet to scale with this policy.",
+            "required": true,
+            "type": "string"
+        },
+        "MetricName": {
+            "description": "Name of the Amazon GameLift-defined metric that is used to trigger an adjustment.    ActivatingGameSessions \u2013 number of game sessions in the process of being created (game session status = ACTIVATING).    ActiveGameSessions \u2013 number of game sessions currently running (game session status = ACTIVE).    CurrentPlayerSessions \u2013 number of active or reserved player sessions (player session status = ACTIVE or RESERVED).     AvailablePlayerSessions \u2013 number of player session slots currently available in active game sessions across the fleet, calculated by subtracting a game session's current player session count from its maximum player session count. This number includes game sessions that are not currently accepting players (game session PlayerSessionCreationPolicy = DENY_ALL).    ActiveInstances \u2013 number of instances currently running a game session.    IdleInstances \u2013 number of instances not currently running a game session.  ",
+            "required": true,
+            "type": "string"
+        },
+        "Name": {
+            "description": "Descriptive label associated with a scaling policy. Policy names do not need to be unique. A fleet can have only one scaling policy with the same name.",
+            "required": true,
+            "type": "string"
+        },
+        "ScalingAdjustment": {
+            "description": "Amount of adjustment to make, based on the scaling adjustment type.",
+            "required": true,
+            "type": "integer"
+        },
+        "ScalingAdjustmentType": {
+            "description": "Type of adjustment to make to a fleet's instance count (see FleetCapacity):    ChangeInCapacity \u2013 add (or subtract) the scaling adjustment value from the current instance count. Positive values scale up while negative values scale down.    ExactCapacity \u2013 set the instance count to the scaling adjustment value.    PercentChangeInCapacity \u2013 increase or reduce the current instance count by the scaling adjustment, read as a percentage. Positive values scale up while negative values scale down; for example, a value of '-10' scales the fleet down by 10%.  ",
+            "required": true,
+            "type": "string"
+        },
+        "Threshold": {
+            "description": "Metric value used to trigger a scaling event.",
+            "required": true,
+            "type": "number"
+        },
+        "action": {
+            "default": "put_scaling_policy",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "gamelift",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

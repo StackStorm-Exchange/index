@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "clouddirectory_attach_object",
+    "pack": "aws",
+    "parameters": {
+        "ChildReference": {
+            "description": "The child object reference to be attached to the object.",
+            "required": true,
+            "type": "object"
+        },
+        "DirectoryArn": {
+            "description": "Amazon Resource Name (ARN) that is associated with the Directory where both objects reside. For more information, see arns.",
+            "required": true,
+            "type": "string"
+        },
+        "LinkName": {
+            "description": "The link name with which the child object is attached to the parent.",
+            "required": true,
+            "type": "string"
+        },
+        "ParentReference": {
+            "description": "The parent object reference.",
+            "required": true,
+            "type": "object"
+        },
+        "action": {
+            "default": "attach_object",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "clouddirectory",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

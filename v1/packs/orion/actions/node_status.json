@@ -1,0 +1,15 @@
+{
+    "description": "Query Solarwinds Orion for a node's status (i.e. Up/Down)",
+    "enabled": true,
+    "entry_point": "node_status.py",
+    "name": "node_status",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "The node to query for state in Orion.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

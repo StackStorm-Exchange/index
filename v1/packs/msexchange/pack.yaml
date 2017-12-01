@@ -1,0 +1,24 @@
+ref: msexchange
+name: Microsoft Exchange
+description: A pack for interfacing with a Microsoft Exchange server
+keywords:
+- mail
+- calendar
+- exchange
+- office365
+version: 0.1.1
+author: Anthony Shaw
+email: anthonyshaw@apache.org
+content:
+  actions:
+    count: 5
+    resources:
+    - get_calendar_items
+    - get_folder
+    - list_folders
+    - search_items
+    - send_email
+  sensors:
+    count: 1
+    resources:
+    - ItemSensor

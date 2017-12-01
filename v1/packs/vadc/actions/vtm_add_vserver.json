@@ -1,0 +1,46 @@
+{
+    "description": "vTM - Configure a Virtual Server",
+    "enabled": true,
+    "entry_point": "vtm_add_vserver.py",
+    "name": "vtm_add_vserver",
+    "parameters": {
+        "extra": {
+            "description": "Additional JSON/YAML properties to merge during creation",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the VServer",
+            "required": true,
+            "type": "string"
+        },
+        "pool": {
+            "description": "The name of the pool to use",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "default": 80,
+            "description": "The port for the virtual server to listen on",
+            "required": false,
+            "type": "integer"
+        },
+        "protocol": {
+            "default": "http",
+            "description": "The protocol for the virtual server",
+            "required": false,
+            "type": "string"
+        },
+        "tip": {
+            "description": "The name of the TIP Group to use",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

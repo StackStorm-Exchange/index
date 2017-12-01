@@ -1,0 +1,61 @@
+{
+    "description": "Remove switch port trunk allowed vlan from an interface.",
+    "enabled": true,
+    "entry_point": "remove_switchport_trunk_allowed_vlan.py",
+    "name": "remove_switchport_trunk_allowed_vlan",
+    "pack": "network_essentials",
+    "parameters": {
+        "c_tag": {
+            "description": "Ctag Vlan ID.Valid values <1-4090>. Valid only on NOS devices",
+            "position": 6,
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "Interface name, for VDX in 3-tuple format (24/0/1), SLX in 2-tuple format (24/1) or Port-channel number <1-6144>.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "tengigabitethernet",
+            "description": "Interface type",
+            "enum": [
+                "ethernet",
+                "tengigabitethernet",
+                "gigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet",
+                "port_channel"
+            ],
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "Single or range of VLANs to be configured on the interface. NOS - Valid values <1-4090/8191 when VFAB disabled/enabled> SLX - Valid values <1-4090> For example, 5 or 4-7 or 4,6,9-11 or all. Range not supported for VFAB vlans.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

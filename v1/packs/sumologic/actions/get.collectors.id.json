@@ -1,0 +1,14 @@
+{
+    "description": "Get ID or IDs of collectors by their name. Returns array of IDs.",
+    "enabled": true,
+    "entry_point": "get_collectors_id.py",
+    "name": "get.collectors.id",
+    "parameters": {
+        "keyword": {
+            "description": "Name of the collectors to search for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

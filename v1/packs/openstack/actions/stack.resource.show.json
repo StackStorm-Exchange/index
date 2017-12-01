@@ -1,0 +1,55 @@
+{
+    "description": "Display stack resource.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.resource.show",
+    "parameters": {
+        "base": {
+            "default": "stack resource show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_resource_show = heatclient.osc.v1.resource:ResourceShow')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "resource": {
+            "description": "Name of resource",
+            "required": true,
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack to query",
+            "required": true,
+            "type": "string"
+        },
+        "with_attr": {
+            "description": "Attribute to show, can be specified multiple times",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,51 @@
+{
+    "description": "List environments in an organization (resource: GET /katello/api/organizations/:organization_id/environments)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "organizations.lifecycle_environments_index",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "library": {
+            "description": "set true if you want to see only library environments",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "filter only environments containing this name",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "organizations.lifecycle_environments_index",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "organization identifier",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

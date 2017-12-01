@@ -1,0 +1,49 @@
+{
+    "description": "Create node in the network domain",
+    "enabled": true,
+    "entry_point": "run_lb.py",
+    "name": "create_vip_node",
+    "parameters": {
+        "action": {
+            "default": "ex_create_node",
+            "immutable": true,
+            "type": "string"
+        },
+        "connection_limit": {
+            "default": 25000,
+            "description": "Maximum number of concurrent connections per sec",
+            "type": "integer"
+        },
+        "connection_rate_limit": {
+            "default": 2000,
+            "description": "Maximum number of concurrent sessions",
+            "type": "integer"
+        },
+        "ex_description": {
+            "description": "description of the node",
+            "required": true,
+            "type": "string"
+        },
+        "ip": {
+            "description": "IP Address of the node",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of the node",
+            "required": true,
+            "type": "string"
+        },
+        "network_domain_id": {
+            "description": "network domain id",
+            "required": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

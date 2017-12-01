@@ -1,0 +1,32 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cognito-idp_delete_user_pool",
+    "pack": "aws",
+    "parameters": {
+        "UserPoolId": {
+            "description": "The user pool ID for the user pool you want to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "delete_user_pool",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cognito-idp",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

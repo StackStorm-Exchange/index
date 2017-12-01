@@ -1,0 +1,35 @@
+{
+    "description": "Delete the port channel interface and delete the port chanel configuration from all the member ports",
+    "enabled": true,
+    "entry_point": "delete_l2_port_channel.py",
+    "name": "delete_l2_port_channel",
+    "pack": "network_essentials",
+    "parameters": {
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "port_channel_id": {
+            "description": "Port-channel interface number <NUMBER:1-6144>",
+            "position": 3,
+            "required": true,
+            "type": "integer"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

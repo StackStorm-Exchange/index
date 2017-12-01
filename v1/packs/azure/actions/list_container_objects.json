@@ -1,0 +1,14 @@
+{
+    "description": "List storage objects for the provided container.",
+    "enabled": true,
+    "entry_point": "list_container_objects.py",
+    "name": "list_container_objects",
+    "parameters": {
+        "name": {
+            "description": "Name of the container to list the objects for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

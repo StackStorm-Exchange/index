@@ -1,0 +1,41 @@
+{
+    "class_name": "watchExtensionsV1beta1DeploymentListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Deployments objects.",
+    "entry_point": "watchExtensionsV1beta1DeploymentListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for deployments event dispatch.",
+            "name": "deployments",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

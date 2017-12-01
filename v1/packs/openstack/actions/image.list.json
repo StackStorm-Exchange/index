@@ -1,0 +1,90 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "image.list",
+    "parameters": {
+        "base": {
+            "default": "image list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('image_list = openstackclient.image.v2.image:ListImage')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "limit": {
+            "description": "Maximum number of images to display.",
+            "type": "integer"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "marker": {
+            "description": "The last image of the previous page. Display list of images after marker. Display all images if not specified. (name or ID)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Filter images based on name.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "page_size": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "private": {
+            "default": false,
+            "description": "List only private images",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Filter output based on property",
+            "type": "array"
+        },
+        "public": {
+            "default": false,
+            "description": "List only public images",
+            "type": "boolean"
+        },
+        "shared": {
+            "default": false,
+            "description": "List only shared images",
+            "type": "boolean"
+        },
+        "sort": {
+            "default": "name:asc",
+            "description": "Sort output by selected keys and directions(asc or desc) (default: name:asc), multiple keys and directions can be specified separated by comma",
+            "type": "string"
+        },
+        "status": {
+            "description": "Filter images based on status.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

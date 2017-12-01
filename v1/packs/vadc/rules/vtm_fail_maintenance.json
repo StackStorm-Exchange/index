@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "error_level": "{{trigger.error_level}}",
+            "errors": "{{trigger.errors}}"
+        },
+        "ref": "vadc.remediate_pool_failure"
+    },
+    "criteria": {
+        "trigger.error_level": {
+            "pattern": "error",
+            "type": "equals"
+        },
+        "trigger.errors": {
+            "pattern": "failed_nodes: []",
+            "type": "ncontains"
+        }
+    },
+    "description": "Enter maintenance mode when all nodes fail",
+    "enabled": false,
+    "name": "vtm_fail_maintenance",
+    "pack": "vadc",
+    "trigger": {
+        "type": "vadc.bsd_failure_event"
+    }
+}

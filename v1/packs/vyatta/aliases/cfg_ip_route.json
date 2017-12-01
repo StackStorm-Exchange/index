@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.cfg_ip_route",
+    "description": "Configure a static route",
+    "formats": [
+        "(configure|cfg) ip route on device {{deviceIP}}: {{subnet}} {{eanextHopstPrefix}}"
+    ],
+    "name": "cfg_ip_route",
+    "result": {
+        "enabled": true
+    }
+}

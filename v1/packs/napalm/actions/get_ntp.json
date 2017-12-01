@@ -1,0 +1,57 @@
+{
+    "description": "Gets NTP information from a network device using NAPALM.",
+    "enabled": true,
+    "entry_point": "get_ntp.py",
+    "name": "get_ntp",
+    "parameters": {
+        "credentials": {
+            "description": "The credentials group which contains the username and password to log in",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "driver": {
+            "description": "Device driver name for connecting to device, see https://napalm.readthedocs.io/en/latest/support/index.html for list.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The hostname of the device to connect to. Driver must be specified if hostname is not in configuration. Hostname without FQDN can be given if device is in configuration.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "htmlout": {
+            "description": "In addition to the normal output also includes html output.",
+            "position": 5,
+            "required": false,
+            "type": "boolean"
+        },
+        "port": {
+            "description": "port for accessing device",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "query_type": {
+            "default": "stats",
+            "description": "The type of query to execute.",
+            "enum": [
+                "stats",
+                "servers",
+                "peers"
+            ],
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
+        "type": {
+            "description": "Type of NTP information to gather. Can be peers, servers or stats. Default is stats.",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

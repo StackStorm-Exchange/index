@@ -1,0 +1,46 @@
+{
+    "description": "Build images from a packer template",
+    "enabled": true,
+    "entry_point": "build.py",
+    "name": "build",
+    "parameters": {
+        "cwd": {
+            "description": "Working directory for Packer definition",
+            "type": "string"
+        },
+        "debug": {
+            "description": "Debug mode enabled for builds",
+            "type": "boolean"
+        },
+        "exclude": {
+            "description": "Build all builds other than these. Takes an array",
+            "type": "object"
+        },
+        "force": {
+            "description": "Force a build to continue if artifacts exist, deletes existing artifacts",
+            "type": "boolean"
+        },
+        "only": {
+            "description": "Build only builds by name. Takes an array",
+            "type": "object"
+        },
+        "packerfile": {
+            "description": "Packer template file",
+            "required": true,
+            "type": "string"
+        },
+        "parallel": {
+            "description": "Disable parallelization (on by default)",
+            "type": "boolean"
+        },
+        "variables": {
+            "description": "Variables passed to packer. Takes a dict",
+            "type": "object"
+        },
+        "variables_file": {
+            "description": "File path to file containing packer variables",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

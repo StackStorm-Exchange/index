@@ -1,0 +1,46 @@
+{
+    "description": "Remove a content view from an environment (resource: DELETE /katello/api/content_views/:id/environments/:environment_id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_views.ontent_remove_from_environmentviews",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "environment_id": {
+            "description": "environment numeric identifier",
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "content view numeric identifier",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_views.ontent_remove_from_environmentviews",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

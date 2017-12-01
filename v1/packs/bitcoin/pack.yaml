@@ -1,0 +1,15 @@
+ref: bitcoin
+name: bitcoin
+description: bitcoin integration pack
+keywords:
+- bitcoin
+version: 0.1.0
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 3
+    resources:
+    - getaccountaddress
+    - getwalletinfo
+    - sendtoaddresss

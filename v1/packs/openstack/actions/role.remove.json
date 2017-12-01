@@ -1,0 +1,46 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "role.remove",
+    "parameters": {
+        "base": {
+            "default": "role remove",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('role_remove = openstackclient.identity.v2_0.role:RemoveRole')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "Include <project> (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "role": {
+            "description": "Role to remove (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "Include <user> (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

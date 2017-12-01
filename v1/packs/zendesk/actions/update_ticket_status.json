@@ -1,0 +1,19 @@
+{
+    "description": "Updates the status of the zendesk ticket with the given ID",
+    "enabled": true,
+    "entry_point": "update_ticket_status.py",
+    "name": "update_ticket_status",
+    "parameters": {
+        "status": {
+            "description": "The status to change the ticket to",
+            "required": true,
+            "type": "string"
+        },
+        "ticket_id": {
+            "description": "ID of the ticket to change",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

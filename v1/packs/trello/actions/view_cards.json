@@ -1,0 +1,27 @@
+{
+    "description": "View all cards on a board",
+    "enabled": true,
+    "entry_point": "view_cards.py",
+    "name": "view_cards",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "board_id": {
+            "description": "Board ID to retrieve cards from",
+            "required": true,
+            "type": "string"
+        },
+        "list_id": {
+            "description": "List ID to retrieve cards from",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

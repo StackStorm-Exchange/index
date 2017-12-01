@@ -1,0 +1,25 @@
+{
+    "action": {
+        "parameters": {
+            "payload": "{{trigger}}"
+        },
+        "ref": "kubernetes.delete_tpr_sensor"
+    },
+    "criteria": {
+        "trigger.object_kind": {
+            "pattern": "ThirdPartyResource",
+            "type": "equals"
+        },
+        "trigger.resource": {
+            "pattern": "DELETED",
+            "type": "contains"
+        }
+    },
+    "description": "Delete third party resources",
+    "enabled": true,
+    "name": "kubernetes_third_party_resource_delete",
+    "pack": "kubernetes",
+    "trigger": {
+        "type": "kubernetes.thirdpartyresources"
+    }
+}

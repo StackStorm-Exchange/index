@@ -1,0 +1,28 @@
+{
+    "description": "Update a teams's parameters",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "update_team",
+    "parameters": {
+        "accessor": {
+            "default": "teams",
+            "immutable": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "update",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "New team name",
+            "required": true,
+            "type": "string"
+        },
+        "teamId": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,22 @@
+{
+    "action": {
+        "parameters": {
+            "bw": "{{trigger.bandwidth}}",
+            "vtm": "{{trigger.instance}}"
+        },
+        "ref": "vadc.bsd_set_vtm_bandwidth"
+    },
+    "criteria": {
+        "trigger.action": {
+            "pattern": "update",
+            "type": "equals"
+        }
+    },
+    "description": "Realtime Bandwidth Updater for BSD",
+    "enabled": false,
+    "name": "bsd_bandwidth_modify",
+    "pack": "vadc",
+    "trigger": {
+        "type": "vadc.bsd_bandwidth_event"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.del_bgp",
+    "description": "Delete BGP configuration",
+    "formats": [
+        "(delete|del) bgp on device {{deviceIP}}"
+    ],
+    "name": "del_bgp",
+    "result": {
+        "enabled": true
+    }
+}

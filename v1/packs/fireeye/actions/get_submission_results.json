@@ -1,0 +1,14 @@
+{
+    "description": "Query results of completed job",
+    "enabled": true,
+    "entry_point": "get_submission_results.py",
+    "name": "get_submission_results",
+    "parameters": {
+        "results_id": {
+            "description": "Submission key provided at submittal",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

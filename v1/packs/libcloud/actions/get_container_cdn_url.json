@@ -1,0 +1,19 @@
+{
+    "description": "Retrieve CDN URL for existing CDN enabled container",
+    "enabled": true,
+    "entry_point": "get_container_cdn_url.py",
+    "name": "get_container_cdn_url",
+    "parameters": {
+        "container_name": {
+            "description": "Name of the container to retrieve the CDN URL for.",
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

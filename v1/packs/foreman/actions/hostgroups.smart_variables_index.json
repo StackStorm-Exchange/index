@@ -1,0 +1,68 @@
+{
+    "description": "List of smart variables for a specific host group (resource: GET /api/hostgroups/:hostgroup_id/smart_variables)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hostgroups.smart_variables_index",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "required": false,
+            "type": "string"
+        },
+        "hostgroup_id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "hostgroups.smart_variables_index",
+            "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "sort results",
+            "required": false,
+            "type": "string"
+        },
+        "page": {
+            "description": "paginate results",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "number of entries per request",
+            "required": false,
+            "type": "string"
+        },
+        "puppetclass_id": {
+            "required": false,
+            "type": "string"
+        },
+        "search": {
+            "description": "filter results",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

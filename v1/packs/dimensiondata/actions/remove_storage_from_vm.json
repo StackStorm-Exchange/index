@@ -1,0 +1,27 @@
+{
+    "description": "Remove disk from VM",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "remove_storage_from_vm",
+    "parameters": {
+        "action": {
+            "default": "ex_remove_storage_from_node",
+            "immutable": true,
+            "type": "string"
+        },
+        "disk_id": {
+            "description": "The UUID of the disk to remove",
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "channel": "#console",
+            "message": "Test {{trigger.jvm_host}} {{trigger.started_at}} {{trigger.app_name}} {{trigger.alert_name}}"
+        },
+        "ref": "slack.post_message"
+    },
+    "criteria": {
+        "trigger.alert_name": {
+            "pattern": "appResponseTime",
+            "type": "eq"
+        }
+    },
+    "description": "test_rule",
+    "enabled": true,
+    "name": "test_rule",
+    "trigger": {
+        "type": "dripstat.alert"
+    }
+}

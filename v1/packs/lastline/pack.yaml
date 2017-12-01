@@ -1,0 +1,20 @@
+ref: lastline
+name: lastline
+description: Lastline Security Breach Detection Integration
+version: 0.2.1
+keywords:
+- security
+author: James Fryman
+email: james@stackstorm.com
+content:
+  actions:
+    count: 8
+    resources:
+    - get_completed
+    - get_progress
+    - get_result
+    - get_result_artifact
+    - get_result_summary
+    - submit_file
+    - submit_file_hash
+    - submit_url

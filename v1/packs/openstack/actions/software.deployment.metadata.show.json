@@ -1,0 +1,36 @@
+{
+    "description": "Get deployment configuration metadata for the specified server.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "software.deployment.metadata.show",
+    "parameters": {
+        "base": {
+            "default": "software deployment metadata show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('software_deployment_metadata_show = heatclient.osc.v1.software_deployment:ShowMetadataDeployment')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "server": {
+            "description": "ID of the server to fetch deployments for",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

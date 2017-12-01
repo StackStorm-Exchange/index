@@ -1,0 +1,35 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "codestar_list_projects",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "list_projects",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "codestar",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "maxResults": {
+            "description": "The maximum amount of data that can be contained in a single set of results.",
+            "type": "integer"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "nextToken": {
+            "description": "The continuation token to be used to return the next set of results, if the results cannot be returned in one response.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,25 @@
+{
+    "action": {
+        "parameters": {
+            "cmd": "echo \"{{trigger}}\" >> /tmp/sensu-sample.out"
+        },
+        "ref": "core.local"
+    },
+    "criteria": {
+        "trigger.check.name": {
+            "pattern": "st2actionrunner_check",
+            "type": "equals"
+        },
+        "trigger.check.output": {
+            "pattern": "CheckProcess CRITICAL*",
+            "type": "matchregex"
+        }
+    },
+    "description": "Sample rule that dogfoods st2.",
+    "enabled": true,
+    "name": "on_action_runner_check",
+    "pack": "sensu",
+    "trigger": {
+        "type": "sensu.event_handler"
+    }
+}

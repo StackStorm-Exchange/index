@@ -1,0 +1,22 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "aws.ec2_start_instances",
+    "description": "start instance",
+    "formats": [
+        "aws ec2 start {{instance_ids}}"
+    ],
+    "name": "ec2_start_instances",
+    "pack": "aws",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "#00ad52",
+                "footer": "AWS Pack"
+            }
+        },
+        "format": "{% for ec2 in execution.result.result -%}\n \u2022 {{ ec2.id }}  - {{ ec2.state }}\n{%+ endfor %}\n"
+    }
+}

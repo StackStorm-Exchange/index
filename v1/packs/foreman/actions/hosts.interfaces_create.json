@@ -1,0 +1,46 @@
+{
+    "description": "Create an interface on a host (resource: POST /api/hosts/:host_id/interfaces)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.interfaces_create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "ID or name of host",
+            "required": true,
+            "type": "string"
+        },
+        "interface": {
+            "description": "'description: interface information\n parameters:\n     provision:\n       required: false\n       type: string\n       description: Should this interface be used for TFTP of PXELinux (or SSH for image-basedhosts)? Each managed hosts needs to have one provision interface.\n     username:\n       required: false\n       type: string\n       description: Only for BMC interfaces.\n     password:\n       required: false\n       type: string\n       description: Only for BMC interfaces.\n     managed:\n       required: false\n       type: string\n       description: Should this interface be managed via DHCP and DNS capsule and should it beconfigured during provisioning?\n     name:\n       required: false\n       type: string\n       description: Interface's DNS name\n     subnet_id:\n       required: false\n       type: number\n       description: Satellite subnet ID of interface\n     ip:\n       required: false\n       type: string\n       description: IP address of interface\n     primary:\n       required: false\n       type: string\n       description: Should this interface be used for constructing the FQDN of the host? Eachmanaged hosts needs to have one primary interface.\n     virtual:\n       required: false\n       type: string\n       description: Alias or VLAN device\n     attached_to:\n       required: false\n       type: string\n       description: Identifier of the interface to which this interface belongs, e.g. eth1.Only for virtual interfaces.\n     bond_options:\n       required: false\n       type: string\n       description: Space separated options, e.g. miimon=100. Only for bond interfaces.\n     mac:\n       required: false\n       type: string\n       description: MAC address of interface. Required for managed interfaces on bare metal.\n     tag:\n       required: false\n       type: string\n       description: VLAN tag, this attribute has precedence over the subnet VLAN ID. Only forvirtual interfaces.\n     mode:\n       required: false\n       type: string\n       description: Bond mode of the interface, e.g. balance-rr. Only for bond interfaces.\n     provider:\n       required: false\n       type: string\n       description: Interface provider, e.g. IPMI. Only for BMC interfaces.\n     compute_attributes:\n       required: false\n       type: object\n       description: Additional compute resource specific attributes for the interface.\n     attached_devices:\n       required: false\n       type: array\n       description: Identifiers of attached interfaces, e.g. `['eth1','eth2']`. For bond interfaces those are the slaves. Only for bondand bridges interfaces.\n     identifier:\n       required: false\n       type: string\n       description: Device identifier, e.g. eth0 or eth1.1\n     type:\n       required: false\n       type: string\n       description: Interface type, e.g. bmc. Default is interface\n     domain_id:\n       required: false\n       type: number\n       description: Satellite domain ID of interface. Required for primary interfaces onmanaged hosts.\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "hosts.interfaces_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

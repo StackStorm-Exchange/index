@@ -1,0 +1,52 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "mturk_list_review_policy_results_for_hit",
+    "pack": "aws",
+    "parameters": {
+        "HITId": {
+            "description": "The unique identifier of the HIT to retrieve review results for.",
+            "required": true,
+            "type": "string"
+        },
+        "MaxResults": {
+            "description": "Limit the number of results returned.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "Pagination token",
+            "type": "string"
+        },
+        "PolicyLevels": {
+            "description": " The Policy Level(s) to retrieve review results for - HIT or Assignment. If omitted, the default behavior is to retrieve all data for both policy levels. For a list of all the described policies, see Review Policies. ",
+            "type": "array"
+        },
+        "RetrieveActions": {
+            "description": " Specify if the operation should retrieve a list of the actions taken executing the Review Policies and their outcomes. ",
+            "type": "boolean"
+        },
+        "RetrieveResults": {
+            "description": " Specify if the operation should retrieve a list of the results computed by the Review Policies. ",
+            "type": "boolean"
+        },
+        "action": {
+            "default": "list_review_policy_results_for_hit",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "mturk",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

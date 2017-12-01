@@ -1,0 +1,13 @@
+{
+    "description": "Set nest to away mode",
+    "enabled": true,
+    "entry_point": "set_away.py",
+    "name": "set_away",
+    "parameters": {
+        "structure": {
+            "description": "ID of Nest Home name",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

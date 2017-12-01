@@ -1,0 +1,14 @@
+{
+    "description": "Cancel long running request.",
+    "enabled": true,
+    "entry_point": "cancel_request.py",
+    "name": "cancel_request",
+    "parameters": {
+        "request_id": {
+            "description": "Request ID.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

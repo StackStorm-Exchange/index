@@ -1,0 +1,29 @@
+{
+    "description": "Create a new DNS zone.",
+    "enabled": true,
+    "entry_point": "create_dns_zone.py",
+    "name": "create_dns_zone",
+    "parameters": {
+        "comment": {
+            "description": "Optional comment to associate with a domain.",
+            "required": false,
+            "type": "string"
+        },
+        "email_address": {
+            "description": "Email address of the domain administrator.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Zone name (e.g. mydomain.com)",
+            "required": true,
+            "type": "string"
+        },
+        "ttl": {
+            "description": "Optional TTL. Default is 3600 and minimum is 300.",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

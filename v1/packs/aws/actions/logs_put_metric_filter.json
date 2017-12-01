@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "logs_put_metric_filter",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "put_metric_filter",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "logs",
+            "type": "string"
+        },
+        "filterName": {
+            "description": "A name for the metric filter.",
+            "required": true,
+            "type": "string"
+        },
+        "filterPattern": {
+            "description": "A filter pattern for extracting metric data out of ingested log events.",
+            "required": true,
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "logGroupName": {
+            "description": "The name of the log group.",
+            "required": true,
+            "type": "string"
+        },
+        "metricTransformations": {
+            "description": "A collection of information needed to define how metric data gets emitted.",
+            "required": true,
+            "type": "array"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,45 @@
+{
+    "description": "Get status of host (resource: GET /api/hosts/:id/status/:type)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.id_get_statusstatus",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "hosts.id_get_statusstatus",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "type": {
+            "description": "status type, can be one ofglobalconfigurationbuild",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

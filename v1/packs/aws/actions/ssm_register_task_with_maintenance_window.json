@@ -1,0 +1,78 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ssm_register_task_with_maintenance_window",
+    "pack": "aws",
+    "parameters": {
+        "ClientToken": {
+            "description": "User-provided idempotency token.",
+            "type": "string"
+        },
+        "LoggingInfo": {
+            "description": "A structure containing information about an Amazon S3 bucket to write instance-level logs to. ",
+            "type": "object"
+        },
+        "MaxConcurrency": {
+            "description": "The maximum number of targets this task can be run for in parallel.",
+            "required": true,
+            "type": "string"
+        },
+        "MaxErrors": {
+            "description": "The maximum number of errors allowed before this task stops being scheduled.",
+            "required": true,
+            "type": "string"
+        },
+        "Priority": {
+            "description": "The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.",
+            "type": "integer"
+        },
+        "ServiceRoleArn": {
+            "description": "The role that should be assumed when executing the task.",
+            "required": true,
+            "type": "string"
+        },
+        "Targets": {
+            "description": "The targets (either instances or tags). Instances are specified using Key=instanceids,Values=&lt;instanceid1&gt;,&lt;instanceid2&gt;. Tags are specified using Key=&lt;tag name&gt;,Values=&lt;tag value&gt;.",
+            "required": true,
+            "type": "array"
+        },
+        "TaskArn": {
+            "description": "The ARN of the task to execute ",
+            "required": true,
+            "type": "string"
+        },
+        "TaskParameters": {
+            "description": "The parameters that should be passed to the task when it is executed.",
+            "type": "object"
+        },
+        "TaskType": {
+            "description": "The type of task being registered.",
+            "required": true,
+            "type": "string"
+        },
+        "WindowId": {
+            "description": "The id of the Maintenance Window the task should be added to.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "register_task_with_maintenance_window",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ssm",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

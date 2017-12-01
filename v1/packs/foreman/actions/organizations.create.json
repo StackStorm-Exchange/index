@@ -1,0 +1,56 @@
+{
+    "description": "Create organization (resource: POST /katello/api/organizations)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "organizations.create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "description",
+            "required": false,
+            "type": "string"
+        },
+        "label": {
+            "description": "unique label",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "name",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "organizations.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization": {
+            "description": "'description: None\n parameters:\n     realm_ids:\n       required: false\n       type: array\n       description: Realm IDs\n     subnet_ids:\n       required: false\n       type: array\n       description: Subnet IDs\n     name:\n       required: true\n       type: string\n       description:\n     config_template_ids:\n       required: false\n       type: array\n       description: Provisioning template IDs\n     description:\n       required: false\n       type: string\n       description:\n     domain_ids:\n       required: false\n       type: array\n       description: Domain IDs\n     label:\n       required: false\n       type: string\n       description:\n     hostgroup_ids:\n       required: false\n       type: array\n       description: Host group IDs\n     user_ids:\n       required: false\n       type: array\n       description: User IDs\n     provisioning_template_ids:\n       required: false\n       type: array\n       description: Provisioning template IDs\n     smart_proxy_ids:\n       required: false\n       type: array\n       description: Capsule IDs\n     environment_ids:\n       required: false\n       type: array\n       description: Environment IDs\n     ptable_ids:\n       required: false\n       type: array\n       description: Partition template IDs\n     media_ids:\n       required: false\n       type: array\n       description: Media IDs\n     compute_resource_ids:\n       required: false\n       type: array\n       description: Compute resource IDs\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

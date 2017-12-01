@@ -1,0 +1,16 @@
+ref: librato
+name: librato
+description: Send and manage metrics with Librato
+version: 0.3.1
+author: James Fryman
+email: james@fryman.io
+content:
+  actions:
+    count: 6
+    resources:
+    - add_annotation
+    - delete_metric
+    - get_metric
+    - list_metrics
+    - submit_counter
+    - submit_gauge

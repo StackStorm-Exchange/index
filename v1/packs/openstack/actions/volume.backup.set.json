@@ -1,0 +1,48 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.backup.set",
+    "parameters": {
+        "backup": {
+            "description": "Backup to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "volume backup set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "New backup description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_backup_set = openstackclient.volume.v2.backup:SetVolumeBackup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "New backup name",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "state": {
+            "description": "New backup state (\"available\" or \"error\") (admin only) (This option simply changes the state of the backup in the database with no regard to actual status, exercise caution when using) (choices: available, error)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

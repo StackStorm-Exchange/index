@@ -1,0 +1,41 @@
+{
+    "class_name": "watchCoreV1PersistentVolumeList",
+    "description": "Sensor that watches Kubernetes API for new Persistentvolumes objects.",
+    "entry_point": "watchCoreV1PersistentVolumeList.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for persistentvolumes event dispatch.",
+            "name": "persistentvolumes",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

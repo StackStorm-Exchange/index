@@ -1,0 +1,47 @@
+{
+    "description": "This method returns a portion of message events from the specified public channel.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "channels.history",
+    "parameters": {
+        "channel": {
+            "required": true,
+            "type": "string"
+        },
+        "count": {
+            "default": "100",
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "channels.history",
+            "immutable": true,
+            "type": "string"
+        },
+        "inclusive": {
+            "default": "0",
+            "required": false,
+            "type": "string"
+        },
+        "latest": {
+            "default": "now",
+            "required": false,
+            "type": "string"
+        },
+        "oldest": {
+            "default": "0",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        },
+        "unreads": {
+            "default": "0",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

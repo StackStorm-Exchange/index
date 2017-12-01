@@ -1,0 +1,71 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "port.unset",
+    "parameters": {
+        "all_tag": {
+            "default": false,
+            "description": "Clear all tags associated with the port",
+            "type": "boolean"
+        },
+        "allowed_address": {
+            "description": "Desired allowed-address pair which should be removed from this port: ip-address=<ip-address> [,mac-address=<mac-address>] (repeat option to set multiple allowed-address pairs)",
+            "type": "string"
+        },
+        "base": {
+            "default": "port unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "binding_profile": {
+            "description": "Desired key which should be removed from binding:profile(repeat option to unset multiple binding:profile data)",
+            "type": "array"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "data_plane_status": {
+            "default": false,
+            "description": "Clear existing information of data plane status",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('port_unset = openstackclient.network.v2.port:UnsetPort')",
+            "immutable": true,
+            "type": "string"
+        },
+        "fixed_ip": {
+            "description": "Desired IP and/or subnet which should be removed from this port (name or ID): subnet=<subnet>,ip-address=<ip-address> (repeat option to unset multiple fixed IP addresses)",
+            "type": "string"
+        },
+        "port": {
+            "description": "Port to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "qos_policy": {
+            "default": false,
+            "description": "Remove the QoS policy attached to the port",
+            "type": "boolean"
+        },
+        "security_group": {
+            "description": "Security group which should be removed this port (name or ID) (repeat option to unset multiple security groups)",
+            "type": "array"
+        },
+        "tag": {
+            "description": "Tag to be removed from the port (repeat option to remove multiple tags)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

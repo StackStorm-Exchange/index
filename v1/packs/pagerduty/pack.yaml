@@ -1,0 +1,21 @@
+ref: pagerduty
+name: pagerduty
+description: Packs which allows integration with PagerDuty services.
+version: 0.4.1
+author: Aamir
+email: raza.aamir01@gmail.com
+content:
+  actions:
+    count: 4
+    resources:
+    - ack_incident
+    - launch_incident
+    - get_open_incidents
+    - resolve_incident
+  aliases:
+    count: 4
+    resources:
+    - ack_incident
+    - get_open_incidents
+    - launch_incident
+    - resolve_incident

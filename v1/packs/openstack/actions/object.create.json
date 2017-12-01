@@ -1,0 +1,55 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "object.create",
+    "parameters": {
+        "base": {
+            "default": "object create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "container": {
+            "description": "Container for new object",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('object_create = openstackclient.object.v1.object:CreateObject')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Upload a file and rename it. Can only be used when uploading a single object",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "objects": {
+            "description": "Local filename(s) to upload",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

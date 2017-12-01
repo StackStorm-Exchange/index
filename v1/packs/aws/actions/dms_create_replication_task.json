@@ -1,0 +1,69 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "dms_create_replication_task",
+    "pack": "aws",
+    "parameters": {
+        "CdcStartTime": {
+            "description": "The start time for the Change Data Capture (CDC) operation.",
+            "type": "string"
+        },
+        "MigrationType": {
+            "description": "The migration type.",
+            "required": true,
+            "type": "string"
+        },
+        "ReplicationInstanceArn": {
+            "description": "The Amazon Resource Name (ARN) of the replication instance.",
+            "required": true,
+            "type": "string"
+        },
+        "ReplicationTaskIdentifier": {
+            "description": "The replication task identifier. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  ",
+            "required": true,
+            "type": "string"
+        },
+        "ReplicationTaskSettings": {
+            "description": "Settings for the task, such as target metadata settings. For a complete list of task settings, see Task Settings for AWS Database Migration Service Tasks.",
+            "type": "string"
+        },
+        "SourceEndpointArn": {
+            "description": "The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.",
+            "required": true,
+            "type": "string"
+        },
+        "TableMappings": {
+            "description": "The path of the JSON file that contains the table mappings. Preceed the path with 'file://'. For example, --table-mappings file://mappingfile.json",
+            "required": true,
+            "type": "string"
+        },
+        "Tags": {
+            "description": "Tags to be added to the replication instance.",
+            "type": "array"
+        },
+        "TargetEndpointArn": {
+            "description": "The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "create_replication_task",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "dms",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

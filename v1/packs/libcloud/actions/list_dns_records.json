@@ -1,0 +1,19 @@
+{
+    "description": "List available DNS records for a particular zone.",
+    "enabled": true,
+    "entry_point": "list_dns_records.py",
+    "name": "list_dns_records",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        },
+        "zone_id": {
+            "description": "ID of the zone to list the records for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

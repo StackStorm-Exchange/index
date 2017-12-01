@@ -1,0 +1,30 @@
+{
+    "description": "Get the scan results for the latest complete execution.",
+    "enabled": true,
+    "entry_point": "scan_get_results_by_title.py",
+    "name": "scan_get_results_by_title",
+    "pack": "alertlogic",
+    "parameters": {
+        "customer_id": {
+            "default": null,
+            "description": "The customer ID.",
+            "type": "integer"
+        },
+        "new_ports": {
+            "default": false,
+            "description": "If true, only new vulnerable ports discovered during this scan execution will be shown.",
+            "type": "boolean"
+        },
+        "new_vulns": {
+            "default": false,
+            "description": "If true, only new vulnerabilities discovered during this scan execution will be shown.",
+            "type": "boolean"
+        },
+        "scan_title": {
+            "description": "Get results for this scan.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

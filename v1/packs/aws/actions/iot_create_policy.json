@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "iot_create_policy",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "create_policy",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "iot",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "policyDocument": {
+            "description": "The JSON document that describes the policy. policyDocument must have a minimum length of 1, with a maximum length of 2048, excluding whitespace.",
+            "required": true,
+            "type": "string"
+        },
+        "policyName": {
+            "description": "The policy name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

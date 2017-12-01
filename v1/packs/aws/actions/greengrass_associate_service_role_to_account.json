@@ -1,0 +1,31 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "greengrass_associate_service_role_to_account",
+    "pack": "aws",
+    "parameters": {
+        "RoleArn": {
+            "description": "Role arn you wish to associate with this account.",
+            "type": "string"
+        },
+        "action": {
+            "default": "associate_service_role_to_account",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "greengrass",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

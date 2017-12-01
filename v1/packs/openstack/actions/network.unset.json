@@ -1,0 +1,45 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.unset",
+    "parameters": {
+        "all_tag": {
+            "default": false,
+            "description": "Clear all tags associated with the network",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "network unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_unset = openstackclient.network.v2.network:UnsetNetwork')",
+            "immutable": true,
+            "type": "string"
+        },
+        "network": {
+            "description": "Network to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to be removed from the network (repeat option to remove multiple tags)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,28 @@
+{
+    "description": "partially update status of the specified Node",
+    "enabled": true,
+    "entry_point": "patchCoreV1NodeStatus.py",
+    "name": "patchCoreV1NodeStatus",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the Node",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

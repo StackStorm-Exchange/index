@@ -1,0 +1,51 @@
+{
+    "description": "Set resource's health.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.resource.mark.unhealthy",
+    "parameters": {
+        "base": {
+            "default": "stack resource mark unhealthy",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_resource_mark_unhealthy = heatclient.osc.v1.resource:ResourceMarkUnhealthy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "reason": {
+            "default": "",
+            "description": "Reason for state change",
+            "type": "string"
+        },
+        "reset": {
+            "default": false,
+            "description": "Set the resource as healthy",
+            "type": "boolean"
+        },
+        "resource": {
+            "description": "Name of the resource",
+            "required": true,
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack the resource belongs to",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "Stop node.",
+    "enabled": true,
+    "entry_point": "stop_node.py",
+    "name": "stop_node",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        },
+        "drain_node": {
+            "default": true,
+            "description": "Should drain node before stopping?",
+            "required": false,
+            "type": "boolean"
+        },
+        "node_ip": {
+            "description": "IP of the node.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

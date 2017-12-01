@@ -1,0 +1,18 @@
+{
+    "description": "Run Salt Runner functions through Salt API",
+    "enabled": true,
+    "entry_point": "runner.py",
+    "name": "runner_cloud.profile",
+    "parameters": {
+        "kwargs": {
+            "required": false,
+            "type": "object"
+        },
+        "module": {
+            "default": "cloud.profile",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

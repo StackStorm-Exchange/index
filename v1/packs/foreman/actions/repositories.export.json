@@ -1,0 +1,56 @@
+{
+    "description": "Export a repository (resource: POST /katello/api/repositories/:id/export)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repositories.export",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "export_to_iso": {
+            "description": "Export to ISO format",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "Repository identifier",
+            "required": true,
+            "type": "string"
+        },
+        "iso_mb_size": {
+            "description": "maximum size of each ISO in MB",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "repositories.export",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "since": {
+            "description": "Optional date of last export (ex: 2010-01-01T12:00:00Z)",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

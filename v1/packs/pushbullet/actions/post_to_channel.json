@@ -1,0 +1,24 @@
+{
+    "description": "Post a message to a channel",
+    "enabled": true,
+    "entry_point": "post_to_channel.py",
+    "name": "post_to_channel",
+    "parameters": {
+        "channel": {
+            "description": "channel tag to post message",
+            "required": true,
+            "type": "string"
+        },
+        "message": {
+            "description": "the message to be posted",
+            "required": true,
+            "type": "string"
+        },
+        "subject": {
+            "description": "subject of the message",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

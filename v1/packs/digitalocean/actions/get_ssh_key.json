@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "do.py",
+    "name": "get_ssh_key",
+    "parameters": {
+        "action": {
+            "default": "get_ssh_key",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

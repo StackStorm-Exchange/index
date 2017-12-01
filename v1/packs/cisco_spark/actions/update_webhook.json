@@ -1,0 +1,33 @@
+{
+    "description": "Update a webhook's parameters",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "update_webhook",
+    "parameters": {
+        "accessor": {
+            "default": "webhooks",
+            "immutable": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "update",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "New name",
+            "required": true,
+            "type": "string"
+        },
+        "targetUrl": {
+            "description": "New target URL",
+            "required": true,
+            "type": "string"
+        },
+        "webhookId": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

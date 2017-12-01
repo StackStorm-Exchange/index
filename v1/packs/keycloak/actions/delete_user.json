@@ -1,0 +1,16 @@
+{
+    "description": "Delete a user",
+    "enabled": true,
+    "entry_point": "delete_user.py",
+    "name": "delete_user",
+    "pack": "keycloak",
+    "parameters": {
+        "user_id": {
+            "description": "keycloak internal user id",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

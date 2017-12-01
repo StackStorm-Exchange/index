@@ -1,0 +1,57 @@
+{
+    "description": "Create a VE, assign IP addresses and VRF on multiple switches.",
+    "enabled": true,
+    "entry_point": "create_ve.py",
+    "name": "create_ve",
+    "pack": "network_essentials",
+    "parameters": {
+        "ip_address": {
+            "description": "Single or list of IPv4/IPv6 addresses to be configured on the VE. IPv4/subnet-length or IPv6/prefix-length, for example 10.0.0.10/22, 30.0.0.10/22.",
+            "position": 5,
+            "type": "array"
+        },
+        "ipv6_use_link_local_only": {
+            "default": false,
+            "description": "IPv6 link local",
+            "position": 7,
+            "type": "boolean"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "rbridge_id": {
+            "description": "Single or list of RBridge IDs separated by comma, for example, 1 or 1,2, 4.  This parameter is only applicable for VDX switches.",
+            "position": 3,
+            "required": false,
+            "type": "array"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "Interface VLAN ID. <NUMBER:1-4090/8191>, can be greater than 4090 only if VF is enabled.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "vrf_name": {
+            "description": "VRF name. For example vrf32 or 32",
+            "position": 6,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

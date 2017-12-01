@@ -1,0 +1,17 @@
+{
+    "description": "Update the Freight cache and regenerate the repository",
+    "enabled": true,
+    "entry_point": "",
+    "name": "update_cache",
+    "parameters": {
+        "cmd": {
+            "default": "freight cache",
+            "immutable": true
+        },
+        "sudo": {
+            "default": true,
+            "immutable": true
+        }
+    },
+    "runner_type": "run-remote"
+}

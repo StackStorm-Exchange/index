@@ -1,0 +1,25 @@
+{
+    "action": {
+        "parameters": {
+            "body": "We received an email",
+            "from": "stackstorm@yourcompanyname.com",
+            "subject": "Email Received",
+            "to": "janedoe@gmail.com"
+        },
+        "ref": "core.sendmail"
+    },
+    "criteria": {
+        "trigger.from": {
+            "pattern": "johndoe@gmail.com",
+            "type": "contains"
+        }
+    },
+    "description": "Rule which sends an email when an email from johndoe@gmail.com is received",
+    "enabled": false,
+    "name": "Sample",
+    "pack": "email",
+    "trigger": {
+        "parameters": {},
+        "type": "email.imap.message"
+    }
+}

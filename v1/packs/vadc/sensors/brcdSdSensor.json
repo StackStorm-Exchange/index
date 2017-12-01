@@ -1,0 +1,18 @@
+{
+    "class_name": "brcdSdSensor",
+    "description": "Brocade Service Director Sensor",
+    "enabled": false,
+    "entry_point": "brcd_sd_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Failure Event Detected",
+            "name": "bsd_failure_event",
+            "payload_info": [
+                "status",
+                "error_level",
+                "errors"
+            ]
+        }
+    ]
+}

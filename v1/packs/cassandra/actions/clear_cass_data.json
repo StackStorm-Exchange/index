@@ -1,0 +1,20 @@
+{
+    "description": "Clear cassandra data directory.",
+    "enabled": true,
+    "entry_point": "",
+    "name": "clear_cass_data",
+    "parameters": {
+        "cmd": {
+            "default": "rm -rf {{data_dir}}/*"
+        },
+        "data_dir": {
+            "description": "Path to cassandra data dir - usually /var/lib/cassandra/",
+            "required": true,
+            "type": "string"
+        },
+        "sudo": {
+            "default": true
+        }
+    },
+    "runner_type": "remote-shell-cmd"
+}

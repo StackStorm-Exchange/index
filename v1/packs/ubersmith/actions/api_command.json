@@ -1,0 +1,28 @@
+{
+    "description": "Interact with Ubersmith",
+    "enabled": true,
+    "entry_point": "api_command.py",
+    "name": "api_command",
+    "parameters": {
+        "command": {
+            "default": null,
+            "description": "Module such as client.count or client.latest_client",
+            "required": false,
+            "type": "string"
+        },
+        "params": {
+            "default": null,
+            "description": "JSON of Parameters",
+            "required": false,
+            "type": "object"
+        },
+        "ubersmith": {
+            "default": null,
+            "description": "Pre-Configured ubersmith connection details",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

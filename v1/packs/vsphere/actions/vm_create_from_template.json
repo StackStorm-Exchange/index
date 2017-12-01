@@ -1,0 +1,68 @@
+{
+    "description": "Create a new VM from existing template.",
+    "enabled": true,
+    "entry_point": "vm_create_from_template.py",
+    "name": "vm_create_from_template",
+    "parameters": {
+        "datacenter_id": {
+            "description": "Datacenter in which to place VM.",
+            "required": true,
+            "type": "string"
+        },
+        "datastore_id": {
+            "description": "Datastore in which to place VM.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name fo a new VM",
+            "required": true,
+            "type": "string"
+        },
+        "networks": {
+            "additionalProperties": false,
+            "default": [],
+            "description": "(Optional) Configuration to set IP addresses for each Network-adapters",
+            "properties": {
+                "domain": {
+                    "default": "localhost",
+                    "description": "Domain name which is set to the target Network Adapter",
+                    "type": "string"
+                },
+                "gateway": {
+                    "default": "0.0.0.0",
+                    "description": "Gateway address associated with the specified IP Address",
+                    "type": "string"
+                },
+                "ipaddr": {
+                    "default": "0.0.0.0",
+                    "description": "IP Address to set to the Network Adapter",
+                    "type": "string"
+                },
+                "netmask": {
+                    "default": "255.255.255.0",
+                    "description": "Subnetmask of the specified IP Address",
+                    "type": "string"
+                }
+            },
+            "type": "array"
+        },
+        "resourcepool_id": {
+            "description": "Resourcepool in which to place VM.",
+            "required": true,
+            "type": "string"
+        },
+        "template_id": {
+            "description": "Id of template to use.",
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured VSphere connection",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

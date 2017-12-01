@@ -1,0 +1,14 @@
+{
+    "description": "List available VMs.",
+    "enabled": true,
+    "entry_point": "list_vms.py",
+    "name": "list_vms",
+    "parameters": {
+        "cloud_service_name": {
+            "description": "Cloud service to list the VMs for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

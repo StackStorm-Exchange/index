@@ -1,0 +1,14 @@
+{
+    "description": "List all messages in a topic",
+    "enabled": true,
+    "entry_point": "list_messages_about_topic.py",
+    "name": "list_messages_about_topic",
+    "parameters": {
+        "topic_id": {
+            "description": "the topic ID to show messages from",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

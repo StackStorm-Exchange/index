@@ -1,0 +1,27 @@
+{
+    "description": "Set value in datastore",
+    "enabled": true,
+    "entry_point": "kv_set.py",
+    "name": "kv.set",
+    "parameters": {
+        "compress": {
+            "description": "True to compress the value before storing it in a datastore",
+            "required": false,
+            "type": "boolean"
+        },
+        "key": {
+            "required": true,
+            "type": "string"
+        },
+        "ttl": {
+            "description": "Optional TTL for the provided value",
+            "required": false,
+            "type": "integer"
+        },
+        "value": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

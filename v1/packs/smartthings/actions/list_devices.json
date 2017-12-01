@@ -1,0 +1,21 @@
+{
+    "description": "List devices of a specific type from SmartThings",
+    "enabled": true,
+    "entry_point": "list_devices.py",
+    "name": "list_devices",
+    "parameters": {
+        "device_type": {
+            "description": "Device type",
+            "enum": [
+                "switch",
+                "motion",
+                "temperature",
+                "contact",
+                "presence",
+                "lock"
+            ],
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,27 @@
+{
+    "description": "Print message to standard output.",
+    "enabled": true,
+    "entry_point": "put_scaleset_size.py",
+    "name": "put_scaleset_size",
+    "parameters": {
+        "count": {
+            "description": "count",
+            "position": 2,
+            "required": true,
+            "type": "integer"
+        },
+        "resource_group": {
+            "description": "resource_group",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "scale_group": {
+            "description": "scale_group",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

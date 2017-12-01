@@ -1,0 +1,19 @@
+{
+    "description": "Test a domain on WebPageTest.",
+    "enabled": true,
+    "entry_point": "request_test.py",
+    "name": "request_test",
+    "parameters": {
+        "domain": {
+            "description": "Site to test.",
+            "required": true,
+            "type": "string"
+        },
+        "location": {
+            "description": "Location to test from.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,15 @@
+{
+    "description": "Discover and add Interfaces for a Solarwinds Orion node.",
+    "enabled": true,
+    "entry_point": "node_discover_and_add_interfaces.py",
+    "name": "node_discover_and_add_interfaces",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "The node to unmanage in Orion.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

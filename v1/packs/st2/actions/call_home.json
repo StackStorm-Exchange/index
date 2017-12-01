@@ -1,0 +1,8 @@
+{
+    "description": "Sends anonymous data install data to a StackStorm write-only S3 dropbox",
+    "enabled": true,
+    "entry_point": "workflows/call_home.yaml",
+    "name": "call_home",
+    "parameters": {},
+    "runner_type": "action-chain"
+}

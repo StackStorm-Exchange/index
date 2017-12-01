@@ -1,0 +1,31 @@
+{
+    "description": "Restart cassandra cluster.",
+    "enabled": true,
+    "entry_point": "restart_cluster.py",
+    "name": "restart_cluster",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        },
+        "drain_first": {
+            "default": true,
+            "description": "Should drain nodes before restarting?",
+            "required": false,
+            "type": "boolean"
+        },
+        "ips": {
+            "description": "List of IPs to restart. By default, all nodes will be restarted.",
+            "required": false,
+            "type": "array"
+        },
+        "sleep_interval": {
+            "default": 60,
+            "description": "Time to sleep before restarting next node.",
+            "required": false,
+            "type": "number"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,17 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": true,
+        "format": "Checking connection to Duo..."
+    },
+    "action_ref": "duo.auth_ping",
+    "description": "Check the Duo platform can be reached.",
+    "formats": [
+        "duo auth ping"
+    ],
+    "name": "auth_ping",
+    "pack": "duo",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nDuo is Up! @ {{execution.result.result.time}}{~}\n{% else %}\nPing Failed!{~}\n{% endif %}\n"
+    }
+}

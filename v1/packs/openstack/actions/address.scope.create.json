@@ -1,0 +1,69 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "address.scope.create",
+    "parameters": {
+        "base": {
+            "default": "address scope create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('address_scope_create = openstackclient.network.v2.address_scope:CreateAddressScope')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ip_version": {
+            "default": 4,
+            "description": "IP version (default is 4) (choices: 4, 6)",
+            "type": "integer"
+        },
+        "name": {
+            "description": "New address scope name",
+            "required": true,
+            "type": "string"
+        },
+        "no_share": {
+            "default": false,
+            "description": "Do not share the address scope between projects (default)",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "share": {
+            "default": false,
+            "description": "Share the address scope between projects",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

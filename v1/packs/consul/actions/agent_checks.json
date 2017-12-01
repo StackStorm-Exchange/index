@@ -1,0 +1,7 @@
+{
+    "description": "Returns all the checks that are registered with the local agent.",
+    "enabled": true,
+    "entry_point": "agent_checks.py",
+    "name": "agent_checks",
+    "runner_type": "python-script"
+}

@@ -1,0 +1,15 @@
+{
+    "description": "List the custom properties for a Solarwinds Orion node's",
+    "enabled": true,
+    "entry_point": "list_node_custom_properties.py",
+    "name": "list_node_custom_properties",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "The node to unmanage in Orion.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

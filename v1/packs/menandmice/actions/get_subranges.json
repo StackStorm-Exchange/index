@@ -1,0 +1,58 @@
+{
+    "description": "Invokes the Men&Mice SOAP command GetSubranges (http://api.menandmice.com/8.1.0/#GetSubranges)",
+    "enabled": true,
+    "entry_point": "lib/run_operation.py",
+    "name": "get_subranges",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a Men&Mice server.",
+            "required": false,
+            "type": "string"
+        },
+        "depth": {
+            "required": false,
+            "type": "integer"
+        },
+        "operation": {
+            "default": "GetSubranges",
+            "immutable": true,
+            "type": "string"
+        },
+        "parent_ref": {
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the Men&Mice password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Optional override of the Men&Mice port in <connection>.",
+            "required": false,
+            "type": "integer"
+        },
+        "server": {
+            "description": "Optional override of the Men&Mice server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "type": "string"
+        },
+        "transport": {
+            "description": "Optional override of the Men&Mice transport in <connection>.",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the Men&Mice username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

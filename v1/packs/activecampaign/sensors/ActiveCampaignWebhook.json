@@ -1,0 +1,26 @@
+{
+    "class_name": "ActiveCampaignWebhook",
+    "description": "ActiveCampaign Webhook sensor",
+    "entry_point": "ac_webhook.py",
+    "trigger_types": [
+        {
+            "description": "ActiveCampaign webhook handler trigger",
+            "name": "webhook",
+            "payload_schema": {
+                "properties": {
+                    "action": {
+                        "description": "Action verb included in URL, like http://<addr>/webhook/action",
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "object"
+                    },
+                    "headers": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

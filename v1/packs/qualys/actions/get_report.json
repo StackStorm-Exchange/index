@@ -1,0 +1,14 @@
+{
+    "description": "Get a report",
+    "enabled": true,
+    "entry_point": "get_report.py",
+    "name": "get_report",
+    "parameters": {
+        "id": {
+            "description": "Report ID",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

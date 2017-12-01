@@ -1,0 +1,8 @@
+{
+    "description": "Carry liveness check against Duo API host.",
+    "enabled": true,
+    "entry_point": "auth_ping.py",
+    "name": "auth_ping",
+    "pack": "duo",
+    "runner_type": "python-script"
+}

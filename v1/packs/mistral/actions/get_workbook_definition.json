@@ -1,0 +1,15 @@
+{
+    "description": "Get the definition of the mistral workbook.",
+    "enabled": true,
+    "entry_point": "get_workbook_definition.py",
+    "name": "get_workbook_definition",
+    "pack": "mistral",
+    "parameters": {
+        "workbook": {
+            "description": "Name of the workbook",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

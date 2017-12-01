@@ -1,0 +1,51 @@
+{
+    "description": "Publish a content view (resource: POST /katello/api/content_views/:id/publish)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_views.publish",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the new published content view version",
+            "required": false,
+            "type": "string"
+        },
+        "force_yum_metadata_regeneration": {
+            "description": "Force yum metadata regeneration on the repositories in the content viewversion",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "Content view identifier",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_views.publish",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

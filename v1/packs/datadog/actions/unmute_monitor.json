@@ -1,0 +1,34 @@
+{
+    "description": "Unmute a monitor",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "unmute_monitor",
+    "parameters": {
+        "all_scopes": {
+            "description": "Clear muting across all scopes",
+            "required": false,
+            "type": "boolean"
+        },
+        "cls": {
+            "default": "DatadogUnmuteMonitor",
+            "immutable": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.monitors",
+            "immutable": true,
+            "type": "string"
+        },
+        "monitor_id": {
+            "description": "The id of the monitor to unmute",
+            "required": true,
+            "type": "integer"
+        },
+        "scope": {
+            "description": "The scope to apply the mute to, e.g. role:db",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

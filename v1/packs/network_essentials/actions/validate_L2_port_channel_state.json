@@ -1,0 +1,35 @@
+{
+    "description": "Validate the port channel state by verifying the sync state of all member ports is 1.",
+    "enabled": true,
+    "entry_point": "validate_l2_port_channel_state.py",
+    "name": "validate_L2_port_channel_state",
+    "pack": "network_essentials",
+    "parameters": {
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "port_channel_id": {
+            "description": "Portchannel interface number. <NUMBER:1-6144>",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

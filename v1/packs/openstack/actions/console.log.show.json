@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "console.log.show",
+    "parameters": {
+        "base": {
+            "default": "console log show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('console_log_show = openstackclient.compute.v2.console:ShowConsoleLog')",
+            "immutable": true,
+            "type": "string"
+        },
+        "lines": {
+            "description": "Number of lines to display from the end of the log (default=all)",
+            "type": "integer"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "server": {
+            "description": "Server to show console log (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

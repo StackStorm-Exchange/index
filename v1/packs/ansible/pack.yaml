@@ -1,0 +1,26 @@
+ref: ansible
+name: ansible
+description: st2 content pack containing ansible integrations
+keywords:
+- ansible
+- cfg management
+- configuration management
+version: 0.5.3
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 8
+    resources:
+    - command
+    - command_local
+    - galaxy.install
+    - galaxy.list
+    - galaxy.remove
+    - playbook
+    - vault.decrypt
+    - vault.encrypt
+  tests:
+    count: 1
+    resources:
+    - test_actions_lib_ansiblebaserunner.py

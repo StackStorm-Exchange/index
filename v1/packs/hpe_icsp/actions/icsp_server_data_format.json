@@ -1,0 +1,40 @@
+{
+    "description": "Generate Server Data Input for bulidplan apply action. MID and Hostname arrays must contain the same number of values. Option values of domain and workgroup can be provided but will be ignored if element count differs from MID count.",
+    "enabled": true,
+    "entry_point": "icsp_server_data_format.py",
+    "name": "icsp_server_data_format",
+    "parameters": {
+        "connection_details": {
+            "description": "Connection details. eg { \"host\": \"192.168.0.1\", \"user\":\"username\", \"pass\": \"secret\" }",
+            "position": 3,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "hostnames": {
+            "description": "Array of hostname values",
+            "position": 2,
+            "required": true,
+            "type": "array"
+        },
+        "identifier_type": {
+            "default": "mid",
+            "description": "What type of Identifiers have been provided",
+            "enum": [
+                "mid",
+                "serialnumber",
+                "uuid"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "identifiers": {
+            "description": "List of host identifiers (mid,serialnumber or uuid). Must be on a single type.",
+            "position": 0,
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

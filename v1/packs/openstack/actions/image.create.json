@@ -1,0 +1,151 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "image.create",
+    "parameters": {
+        "base": {
+            "default": "image create",
+            "immutable": true,
+            "type": "string"
+        },
+        "checksum": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "community": {
+            "default": false,
+            "description": "Image is accessible to the community",
+            "type": "boolean"
+        },
+        "container_format": {
+            "default": "bare",
+            "description": "Image container format. The supported options are: ami, ari, aki, bare, docker, ova, ovf. The default format is: bare (choices: ami, ari, aki, bare, docker, ova, ovf)",
+            "type": "string"
+        },
+        "copy_from": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "disk_format": {
+            "default": "raw",
+            "description": "Image disk format. The supported options are: ami, ari, aki, vhd, vmdk, raw, qcow2, vhdx, vdi, iso, ploop. The default format is: raw (choices: ami, ari, aki, vhd, vmdk, raw, qcow2, vhdx, vdi, iso, ploop)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('image_create = openstackclient.image.v2.image:CreateImage')",
+            "immutable": true,
+            "type": "string"
+        },
+        "file": {
+            "description": "Upload image from local file",
+            "type": "string"
+        },
+        "force": {
+            "default": false,
+            "description": "Force image creation if volume is in use (only meaningful with --volume)",
+            "type": "boolean"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "id": {
+            "description": "Image ID to reserve",
+            "type": "string"
+        },
+        "location": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "min_disk": {
+            "description": "Minimum disk size needed to boot image, in gigabytes",
+            "type": "integer"
+        },
+        "min_ram": {
+            "description": "Minimum RAM size needed to boot image, in megabytes",
+            "type": "integer"
+        },
+        "name": {
+            "description": "New image name",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "owner": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "private": {
+            "default": false,
+            "description": "Image is inaccessible to the public (default)",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Set an alternate project on this image (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Set a property on this image (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "protected": {
+            "default": false,
+            "description": "Prevent image from being deleted",
+            "type": "boolean"
+        },
+        "public": {
+            "default": false,
+            "description": "Image is accessible to the public",
+            "type": "boolean"
+        },
+        "shared": {
+            "default": false,
+            "description": "Image can be shared",
+            "type": "boolean"
+        },
+        "size": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "store": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "tag": {
+            "description": "Set a tag on this image (repeat option to set multiple tags)",
+            "type": "array"
+        },
+        "unprotected": {
+            "default": false,
+            "description": "Allow image to be deleted (default)",
+            "type": "boolean"
+        },
+        "volume": {
+            "description": "Create image from a volume",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

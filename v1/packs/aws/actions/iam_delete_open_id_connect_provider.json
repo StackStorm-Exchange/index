@@ -1,0 +1,32 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "iam_delete_open_id_connect_provider",
+    "pack": "aws",
+    "parameters": {
+        "OpenIDConnectProviderArn": {
+            "description": "The Amazon Resource Name (ARN) of the IAM OpenID Connect provider resource object to delete. You can get a list of OpenID Connect provider resource ARNs by using the ListOpenIDConnectProviders action.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "delete_open_id_connect_provider",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "iam",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,57 @@
+{
+    "description": "Import puppet classes from puppet Capsule for an environment (resource: POST /api/environments/:environment_id/smart_proxies/:id/import_puppetclasses)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "environments.environment_id_smart_import_puppetclassesproxies",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "dryrun": {
+            "required": false,
+            "type": "string"
+        },
+        "environment_id": {
+            "required": true,
+            "type": "string"
+        },
+        "except": {
+            "description": "Optional comma-delimited string containing either 'new','updated', or 'obsolete' that is used to limit the importedPuppet classes",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "environments.environment_id_smart_import_puppetclassesproxies",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "smart_proxy_id": {
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "List teams available",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "list_teams",
+    "parameters": {
+        "accessor": {
+            "default": "teams",
+            "immutable": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "list",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

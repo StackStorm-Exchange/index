@@ -1,0 +1,22 @@
+{
+    "description": "Create a new board",
+    "enabled": true,
+    "entry_point": "add_board.py",
+    "name": "add_board",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of new board",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

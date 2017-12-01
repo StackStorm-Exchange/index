@@ -1,0 +1,49 @@
+{
+    "description": "Signal a resource with optional data.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.resource.signal",
+    "parameters": {
+        "base": {
+            "default": "stack resource signal",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "data": {
+            "description": "JSON Data to send to the signal handler",
+            "type": "string"
+        },
+        "data_file": {
+            "description": "File containing JSON data to send to the signal handler",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_resource_signal = heatclient.osc.v1.resource:ResourceSignal')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "resource": {
+            "description": "Name of the resoure to signal",
+            "required": true,
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack the resource belongs to",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "List all services for a given repository",
+    "enabled": true,
+    "entry_point": "list_services.py",
+    "name": "list_services",
+    "parameters": {
+        "repo": {
+            "description": "Name of the repository to list the services for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

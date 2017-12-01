@@ -1,0 +1,32 @@
+{
+    "class_name": "SlackSensor",
+    "description": "Sensor which monitors Slack for activity",
+    "entry_point": "slack_sensor.py",
+    "poll_interval": 15,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates a new message has been posted to a channel",
+            "name": "message",
+            "payload_schema": {
+                "properties": {
+                    "channel": {
+                        "type": "object"
+                    },
+                    "text": {
+                        "type": "string"
+                    },
+                    "timestamp": {
+                        "type": "integer"
+                    },
+                    "timestamp_raw": {
+                        "type": "string"
+                    },
+                    "user": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

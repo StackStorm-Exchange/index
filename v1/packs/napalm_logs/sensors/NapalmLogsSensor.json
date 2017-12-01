@@ -1,0 +1,19 @@
+{
+    "class_name": "NapalmLogsSensor",
+    "description": "Napalm-logs as a sensor. Rendered logs are dispatched as triggers.",
+    "entry_point": "napalm_logs_client.py",
+    "trigger_types": [
+        {
+            "description": "Log instance from Napalm-logs",
+            "name": "log",
+            "payload_schema": {
+                "properties": {
+                    "payload": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

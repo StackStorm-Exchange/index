@@ -1,0 +1,82 @@
+{
+    "class_name": "IRCSensor",
+    "description": "Sensor which monitors IRC and dispatches a trigger for each public and private message",
+    "entry_point": "irc_sensor.py",
+    "trigger_types": [
+        {
+            "description": "Trigger which represents a public message",
+            "name": "pubmsg",
+            "payload_schema": {
+                "properties": {
+                    "channel": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "object"
+                    },
+                    "timestamp": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Trigger which represents a private message",
+            "name": "privmsg",
+            "payload_schema": {
+                "properties": {
+                    "message": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "object"
+                    },
+                    "timestamp": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Trigger which represents user joining a channel",
+            "name": "join",
+            "payload_schema": {
+                "properties": {
+                    "channel": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "object"
+                    },
+                    "timestamp": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Trigger which represents user parting a channel",
+            "name": "part",
+            "payload_schema": {
+                "properties": {
+                    "channel": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "object"
+                    },
+                    "timestamp": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

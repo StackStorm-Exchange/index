@@ -1,0 +1,31 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "route53domains_resend_contact_reachability_email",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "resend_contact_reachability_email",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "route53domains",
+            "type": "string"
+        },
+        "domainName": {
+            "description": "The name of the domain for which you want Amazon Route 53 to resend a confirmation email to the registrant contact. Type: String Default: None Required: Yes",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

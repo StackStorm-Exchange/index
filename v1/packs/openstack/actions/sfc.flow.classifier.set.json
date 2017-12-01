@@ -1,0 +1,44 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "sfc.flow.classifier.set",
+    "parameters": {
+        "base": {
+            "default": "sfc flow classifier set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the flow classifier",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('sfc_flow_classifier_set = neutronclient.osc.v2.sfc.sfc_flow_classifier:SetSfcFlowClassifier')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flow_classifier": {
+            "description": "Flow classifier to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the flow classifier",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

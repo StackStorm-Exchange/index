@@ -1,0 +1,15 @@
+{
+    "description": "Delete an OpsGenie Heartbeat",
+    "enabled": true,
+    "entry_point": "delete_heartbeat.py",
+    "name": "delete_heartbeat",
+    "pack": "opsgenie",
+    "parameters": {
+        "name": {
+            "description": "Heartbeat name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

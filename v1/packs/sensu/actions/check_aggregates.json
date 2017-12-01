@@ -1,0 +1,18 @@
+{
+    "description": "Get Sensu check aggregates",
+    "enabled": true,
+    "entry_point": "aggregate_check.py",
+    "name": "check_aggregates",
+    "parameters": {
+        "age": {
+            "description": "Maximum age of results to return",
+            "type": "string"
+        },
+        "check": {
+            "description": "The client name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

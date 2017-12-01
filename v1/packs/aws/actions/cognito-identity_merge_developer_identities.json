@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cognito-identity_merge_developer_identities",
+    "pack": "aws",
+    "parameters": {
+        "DestinationUserIdentifier": {
+            "description": "User identifier for the destination user. The value should be a DeveloperUserIdentifier.",
+            "required": true,
+            "type": "string"
+        },
+        "DeveloperProviderName": {
+            "description": "The 'domain' by which Cognito will refer to your users. This is a (pseudo) domain name that you provide while creating an identity pool. This name acts as a placeholder that allows your backend and the Cognito service to communicate about the developer provider. For the DeveloperProviderName, you can use letters as well as period (.), underscore (_), and dash (-).",
+            "required": true,
+            "type": "string"
+        },
+        "IdentityPoolId": {
+            "description": "An identity pool ID in the format REGION:GUID.",
+            "required": true,
+            "type": "string"
+        },
+        "SourceUserIdentifier": {
+            "description": "User identifier for the source user. The value should be a DeveloperUserIdentifier.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "merge_developer_identities",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cognito-identity",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

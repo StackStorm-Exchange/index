@@ -1,0 +1,45 @@
+{
+    "description": "Update a job template (resource: PUT /api/job_templates/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "job_templates.update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "job_template": {
+            "description": "'description: None\n parameters:\n     locked:\n       required: false\n       type: string\n       description: Whether or not the template is locked for editing\n     name:\n       required: false\n       type: string\n       description: Template name\n     description_format:\n       required: false\n       type: string\n       description: This template is used to generate the description. Input values can be usedusing the syntax %{package}. You may also include the job category andtemplate name using %{job_category} and %{template_name}.\n     snippet:\n       required: false\n       type: string\n       description:\n     ssh:\n       required: false\n       type: object\n       description: SSH provider specific options\n       parameters:\n         effective_user:\n           required: false\n           type: object\n           description: Effective user options\n           parameters:\n             overridable:\n               required: false\n               type: string\n               description: Whether it should be allowed to override the effective user from theinvocation form.\n             value:\n               required: false\n               type: string\n               description: What user should be used to run the script (using sudo-like mechanisms)\n             current_user:\n               required: false\n               type: string\n               description: Whether the current user login should be used as the effective user\n     template:\n       required: false\n       type: string\n       description:\n     job_category:\n       required: false\n       type: string\n       description: Job category\n     audit_comment:\n       required: false\n       type: string\n       description:\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     provider_type:\n       required: false\n       type: string\n       description: Provider type\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "job_templates.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

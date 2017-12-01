@@ -1,0 +1,39 @@
+{
+    "description": "Register an external service in Consul",
+    "enabled": true,
+    "entry_point": "catalog_register.py",
+    "name": "catalog_register",
+    "parameters": {
+        "address": {
+            "description": "IP Address of the service",
+            "required": true,
+            "type": "string"
+        },
+        "dc": {
+            "description": "Optional Data Center ID",
+            "required": false,
+            "type": "string"
+        },
+        "node": {
+            "description": "Node Name/ID",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "The Service Port",
+            "required": true,
+            "type": "integer"
+        },
+        "service": {
+            "description": "Service Name/ID",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Optional Array of Tags",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,41 @@
+{
+    "class_name": "watchAppsV1beta1StatefulSetListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Statefulsets objects.",
+    "entry_point": "watchAppsV1beta1StatefulSetListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for statefulsets event dispatch.",
+            "name": "statefulsets",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "description": "Send an invitation to join a Slack Org",
+    "enabled": true,
+    "entry_point": "send_invite.py",
+    "name": "users.admin.invite",
+    "parameters": {
+        "attempts": {
+            "description": "",
+            "type": "integer"
+        },
+        "channels": {
+            "description": "Channels to auto join.",
+            "type": "string"
+        },
+        "email": {
+            "description": "Email address to send invitation to.",
+            "required": true,
+            "type": "string"
+        },
+        "first_name": {
+            "description": "Users first name",
+            "type": "string"
+        },
+        "set_active": {
+            "description": "Should the user be active.",
+            "type": "boolean"
+        },
+        "token": {
+            "description": "Slack API token.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

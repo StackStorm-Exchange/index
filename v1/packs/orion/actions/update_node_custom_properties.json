@@ -1,0 +1,25 @@
+{
+    "description": "Update an Orion Nodes custom properties",
+    "enabled": true,
+    "entry_point": "update_node_custom_properties.py",
+    "name": "update_node_custom_properties",
+    "pack": "orion",
+    "parameters": {
+        "custom_property": {
+            "description": "The custom property to update",
+            "required": true,
+            "type": "string"
+        },
+        "node": {
+            "description": "The node to poll in Orion.",
+            "required": true,
+            "type": "string"
+        },
+        "value": {
+            "description": "The custom property to update",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

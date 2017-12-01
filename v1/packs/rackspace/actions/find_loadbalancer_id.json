@@ -1,0 +1,14 @@
+{
+    "description": "Find a loadbalancer id based on name",
+    "enabled": true,
+    "entry_point": "find_loadbalancer_id.py",
+    "name": "find_loadbalancer_id",
+    "parameters": {
+        "name": {
+            "description": "Name of loadbalancer to find ID of",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

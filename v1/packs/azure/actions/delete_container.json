@@ -1,0 +1,14 @@
+{
+    "description": "Delete a storage container.",
+    "enabled": true,
+    "entry_point": "delete_container.py",
+    "name": "delete_container",
+    "parameters": {
+        "name": {
+            "description": "Name of the container to delete.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

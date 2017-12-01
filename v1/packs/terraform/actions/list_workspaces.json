@@ -1,0 +1,20 @@
+{
+    "description": "List Terraform workspaces",
+    "enabled": true,
+    "entry_point": "list_workspaces.py",
+    "name": "list_workspaces",
+    "parameters": {
+        "plan_path": {
+            "description": "Path of the terraform plan",
+            "required": true,
+            "type": "string"
+        },
+        "terraform_exec": {
+            "default": "terraform",
+            "description": "Terraform executable path (default: terraform in the $PATH)",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

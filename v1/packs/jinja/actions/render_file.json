@@ -1,0 +1,32 @@
+{
+    "description": "Render template",
+    "enabled": true,
+    "entry_point": "render_file.py",
+    "name": "render_file",
+    "parameters": {
+        "context": {
+            "default": {},
+            "description": "Context to render",
+            "type": "object"
+        },
+        "include_execution": {
+            "description": "Include execution of the certain id to jinja context as `__execution` property",
+            "type": "string"
+        },
+        "include_six": {
+            "default": true,
+            "type": "boolean"
+        },
+        "template_pack": {
+            "description": "Path to the template",
+            "required": true,
+            "type": "string"
+        },
+        "template_path": {
+            "description": "Path to the template",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

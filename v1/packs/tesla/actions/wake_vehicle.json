@@ -1,0 +1,19 @@
+{
+    "description": "Wake a vehicle",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "wake_vehicle",
+    "parameters": {
+        "action": {
+            "default": "wake_up",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

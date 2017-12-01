@@ -1,0 +1,15 @@
+{
+    "description": "Start DSE cassandra service.",
+    "enabled": true,
+    "entry_point": "",
+    "name": "start_dse",
+    "parameters": {
+        "cmd": {
+            "default": "service dse start"
+        },
+        "sudo": {
+            "default": true
+        }
+    },
+    "runner_type": "remote-shell-cmd"
+}

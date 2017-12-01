@@ -1,0 +1,35 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "elb_describe_load_balancer_policies",
+    "pack": "aws",
+    "parameters": {
+        "LoadBalancerName": {
+            "description": "The name of the load balancer.",
+            "type": "string"
+        },
+        "PolicyNames": {
+            "description": "The names of the policies.",
+            "type": "array"
+        },
+        "action": {
+            "default": "describe_load_balancer_policies",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "elb",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

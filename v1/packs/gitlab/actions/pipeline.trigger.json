@@ -1,0 +1,36 @@
+{
+    "description": "Trigger a pipeline",
+    "entry_point": "pipeline_trigger.py",
+    "name": "pipeline.trigger",
+    "parameters": {
+        "project_id": {
+            "required": true,
+            "type": "string"
+        },
+        "ref": {
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Auth Token",
+            "type": "string"
+        },
+        "trigger_token": {
+            "description": "CI Trigger Token",
+            "required": true,
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "variables": {
+            "description": "Pass variables to pipeline",
+            "type": "object"
+        },
+        "verify_ssl": {
+            "default": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "list all Third Party Resources",
+    "enabled": true,
+    "entry_point": "listAllTPR.py",
+    "name": "listAllTPR",
+    "pack": "kubernetes",
+    "parameters": {
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

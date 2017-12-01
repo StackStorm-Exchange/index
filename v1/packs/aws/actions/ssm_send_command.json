@@ -1,0 +1,88 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ssm_send_command",
+    "pack": "aws",
+    "parameters": {
+        "Comment": {
+            "description": "User-specified information about the command, such as a brief description of what the command should do.",
+            "type": "string"
+        },
+        "DocumentHash": {
+            "description": "The Sha256 or Sha1 hash created by the system when the document was created.   Sha1 hashes have been deprecated. ",
+            "type": "string"
+        },
+        "DocumentHashType": {
+            "description": "Sha256 or Sha1.  Sha1 hashes have been deprecated. ",
+            "type": "string"
+        },
+        "DocumentName": {
+            "description": "Required. The name of the SSM document to execute. This can be an SSM public document or a custom document.",
+            "required": true,
+            "type": "string"
+        },
+        "InstanceIds": {
+            "description": "Required. The instance IDs where the command should execute. You can specify a maximum of 50 IDs.",
+            "type": "array"
+        },
+        "MaxConcurrency": {
+            "description": "(Optional) The maximum number of instances that are allowed to execute the command at the same time. You can specify a number such as \u201c10\u201d or a percentage such as \u201c10%\u201d. The default value is 50. For more information about how to use MaxConcurrency, see Executing a Command Using Amazon EC2 Run Command (Linux) or Executing a Command Using Amazon EC2 Run Command (Windows).",
+            "type": "string"
+        },
+        "MaxErrors": {
+            "description": "The maximum number of errors allowed without the command failing. When the command fails one more time beyond the value of MaxErrors, the systems stops sending the command to additional targets. You can specify a number like \u201c10\u201d or a percentage like \u201c10%\u201d. The default value is 50. For more information about how to use MaxErrors, see Executing a Command Using Amazon EC2 Run Command (Linux) or Executing a Command Using Amazon EC2 Run Command (Windows).",
+            "type": "string"
+        },
+        "NotificationConfig": {
+            "description": "Configurations for sending notifications.",
+            "type": "object"
+        },
+        "OutputS3BucketName": {
+            "description": "The name of the S3 bucket where command execution responses should be stored.",
+            "type": "string"
+        },
+        "OutputS3KeyPrefix": {
+            "description": "The directory structure within the S3 bucket where the responses should be stored.",
+            "type": "string"
+        },
+        "OutputS3Region": {
+            "description": "(Optional) The region where the Amazon Simple Storage Service (Amazon S3) output bucket is located. The default value is the region where Run Command is being called.",
+            "type": "string"
+        },
+        "Parameters": {
+            "description": "The required and optional parameters specified in the SSM document being executed.",
+            "type": "object"
+        },
+        "ServiceRoleArn": {
+            "description": "The IAM role that Systems Manager uses to send notifications. ",
+            "type": "string"
+        },
+        "Targets": {
+            "description": "(Optional) An array of search criteria that targets instances using a Key;Value combination that you specify. Targets is required if you don't provide one or more instance IDs in the call. For more information about how to use Targets, see Executing a Command Using Amazon EC2 Run Command (Linux) or Executing a Command Using Amazon EC2 Run Command (Windows).",
+            "type": "array"
+        },
+        "TimeoutSeconds": {
+            "description": "If this time is reached and the command has not already started executing, it will not execute.",
+            "type": "integer"
+        },
+        "action": {
+            "default": "send_command",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ssm",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

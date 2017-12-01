@@ -1,0 +1,14 @@
+ref: google
+name: google
+description: st2 content pack containing google integrations
+keywords:
+- google
+- search
+version: 0.2.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 1
+    resources:
+    - get_search_results

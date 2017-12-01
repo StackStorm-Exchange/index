@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "channel": "563b5f7f21f7a36d7bd5baaf",
+            "message": "Icinga2 service {{trigger.service}} on host {{trigger.host}} has changed its state to {{ trigger.state|int }}, state type {{ trigger.state_type|int }} {{trigger.check_result.output}}"
+        },
+        "ref": "chatops.post_message"
+    },
+    "criteria": {
+        "trigger.state_type": {
+            "pattern": 0.1,
+            "type": "gt"
+        },
+        "trigger.type": {
+            "pattern": "StateChange",
+            "type": "eq"
+        }
+    },
+    "description": "Post to chat when icinga2 service state changes",
+    "enabled": false,
+    "name": "relay_to_chat",
+    "pack": "icinga2",
+    "trigger": {
+        "type": "icinga2.event.state_change"
+    }
+}

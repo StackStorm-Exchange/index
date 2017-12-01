@@ -1,0 +1,27 @@
+{
+    "description": "Delete an existing DNS record.",
+    "enabled": true,
+    "entry_point": "delete_dns_record.py",
+    "name": "delete_dns_record",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "record_id": {
+            "description": "ID of a record to delete",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "zone_id": {
+            "description": "ID of the zone to list the records for.",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

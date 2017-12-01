@@ -1,0 +1,56 @@
+{
+    "description": "Remove subscriptions from one or more hosts (resource: PUT /api/hosts/bulk/subscriptions/remove_subscriptions)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.hosts_bulk_actions_remove_subscriptions",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "excluded": {
+            "description": "'description: None\n parameters:\n     ids:\n       required: false\n       type: array\n       description: List of system ids to exclude and not run an action on\n     '\n",
+            "required": true,
+            "type": "object"
+        },
+        "included": {
+            "description": "'description: None\n parameters:\n     search:\n       required: false\n       type: string\n       description: Search string for systems to perform an action on\n     ids:\n       required: false\n       type: array\n       description: List of system ids to perform an action on\n     '\n",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "hosts.hosts_bulk_actions_remove_subscriptions",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "ID of the organization",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "subscriptions": {
+            "description": "'description: Array of subscriptions to remove\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool id\n     quantity:\n       required: false\n       type: number\n       description: Quantity of specified subscription to remove\n     '",
+            "required": false,
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

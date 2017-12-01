@@ -1,0 +1,44 @@
+{
+    "description": "Invoke a provided MBean method exposed over JMX.",
+    "enabled": true,
+    "entry_point": "invoke_method.py",
+    "name": "invoke_method",
+    "parameters": {
+        "arguments": {
+            "description": "List of arguments to pass to the method.",
+            "required": false,
+            "type": "array"
+        },
+        "bean_name": {
+            "description": "MBean name.",
+            "required": true,
+            "type": "string"
+        },
+        "command": {
+            "description": "Command to invoke.",
+            "required": true,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "JMX service hostname.",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional JMX authentication password.",
+            "required": false,
+            "type": "string"
+        },
+        "port": {
+            "description": "JMX service port",
+            "required": true,
+            "type": "integer"
+        },
+        "username": {
+            "description": "Optional JMX authentication username.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

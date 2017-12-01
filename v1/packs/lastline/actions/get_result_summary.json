@@ -1,0 +1,27 @@
+{
+    "description": "Get result summary for a previously submitted analysis task.",
+    "enabled": true,
+    "entry_point": "get_result_summary.py",
+    "name": "get_result_summary",
+    "parameters": {
+        "raw": {
+            "description": "if True, return the raw JSON results of the API query",
+            "type": "boolean"
+        },
+        "requested_format": {
+            "default": "json",
+            "description": "JSON, XML, PDF, or RTF. If format is not JSON, this implies raw.",
+            "type": "string"
+        },
+        "score_only": {
+            "description": "if True, return even less data (only score and threat/threat-class classification).",
+            "type": "boolean"
+        },
+        "uuid": {
+            "description": "the unique identifier of the submitted task, as returned in the task_uuid field of submit methods.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

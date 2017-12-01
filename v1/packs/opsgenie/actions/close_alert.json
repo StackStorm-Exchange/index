@@ -1,0 +1,35 @@
+{
+    "description": "Close an alert in OpsGenie",
+    "enabled": true,
+    "entry_point": "close_alert.py",
+    "name": "close_alert",
+    "pack": "opsgenie",
+    "parameters": {
+        "alert_id": {
+            "default": null,
+            "description": "Alert ID to close.",
+            "type": "string"
+        },
+        "alias": {
+            "default": null,
+            "description": "Alert ID to close.",
+            "type": "string"
+        },
+        "note": {
+            "default": null,
+            "description": "Additional alert note",
+            "type": "string"
+        },
+        "source": {
+            "default": null,
+            "description": "User defined field to specify source of close action.",
+            "type": "string"
+        },
+        "user": {
+            "default": null,
+            "description": "Default owner of the execution.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

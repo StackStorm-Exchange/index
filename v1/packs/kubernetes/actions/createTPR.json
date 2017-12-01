@@ -1,0 +1,19 @@
+{
+    "description": "create a Third Party Resource",
+    "enabled": true,
+    "entry_point": "createTPR.py",
+    "name": "createTPR",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

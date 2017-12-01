@@ -1,0 +1,50 @@
+{
+    "description": "List resource types.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "orchestration.resource.type.list",
+    "parameters": {
+        "base": {
+            "default": "orchestration resource type list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('orchestration_resource_type_list = heatclient.osc.v1.resource_type:ResourceTypeList')",
+            "immutable": true,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Filter parameters to apply on returned resource types. This can be specified multiple times. It can be any of name, version or support_status",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "Show resource types with corresponding description of each resource type.",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,17 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": true,
+        "format": "Requesting authentication of workflow via a Duo push request..."
+    },
+    "action_ref": "duo.auth_wrap_demo",
+    "description": "Demo wrapping an action with authentication via the Duo platform",
+    "formats": [
+        "duo auth demo"
+    ],
+    "name": "auth_demo",
+    "pack": "duo",
+    "result": {
+        "format": "{% if execution.result.auth %}\n*Success*: {{execution.result.message}}{~}\n{% else %}\n*Failure*: {{execution.result.message}}{~}\n{% endif %}\n"
+    }
+}

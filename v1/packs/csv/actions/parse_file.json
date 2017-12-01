@@ -1,0 +1,26 @@
+{
+    "description": "Parse a file in CSV format and return JSON object.",
+    "enabled": true,
+    "entry_point": "parse_file.py",
+    "name": "parse_file",
+    "parameters": {
+        "delimiter": {
+            "default": ",",
+            "description": "String delimiter character.",
+            "required": false,
+            "type": "string"
+        },
+        "file_path": {
+            "description": "Path to the file to parse.",
+            "required": true,
+            "type": "string"
+        },
+        "quote_char": {
+            "default": "\"",
+            "description": "Character used to quote the strings.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

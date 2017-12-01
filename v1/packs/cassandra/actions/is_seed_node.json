@@ -1,0 +1,27 @@
+{
+    "description": "Find whether given node is a seed node.",
+    "enabled": true,
+    "entry_point": "is_seed_node.py",
+    "name": "is_seed_node",
+    "parameters": {
+        "config_file": {
+            "default": "/etc/dse/cassandra/cassandra.yaml",
+            "description": "Path to cassandra config file",
+            "required": false,
+            "type": "string"
+        },
+        "kwarg_op": {
+            "default": "--",
+            "immutable": true
+        },
+        "node_id": {
+            "description": "Host or IP to check if it's a seed node.",
+            "required": true,
+            "type": "string"
+        },
+        "sudo": {
+            "default": false
+        }
+    },
+    "runner_type": "remote-shell-script"
+}

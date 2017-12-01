@@ -1,0 +1,37 @@
+ref: networking_utils
+name: networking_utils
+description: Useful networking utils for use in workflows.
+keywords:
+- networking
+- utilities
+- ipv4
+- ipv6
+- geoip
+version: 0.4.1
+author: Jon Middleton
+email: jon.middleton@pulsant.com
+content:
+  actions:
+    count: 7
+    resources:
+    - geoip
+    - is_valid_asa_nameif
+    - is_valid_hostname
+    - is_valid_ip
+    - is_valid_ip_port
+    - is_valid_ipv4
+    - is_valid_ipv6
+  aliases:
+    count: 1
+    resources:
+    - geoip
+  tests:
+    count: 7
+    resources:
+    - networking_utils_base_test_case.py
+    - test_action_aliases.py
+    - test_action_geoip.py
+    - test_action_is_valid_asa_nameif.py
+    - test_action_is_valid_hostname.py
+    - test_action_is_valid_ip.py
+    - test_action_is_valid_ip_port.py

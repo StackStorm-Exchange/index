@@ -1,0 +1,22 @@
+{
+    "action": {
+        "parameters": {
+            "channel": "#general",
+            "message": "NAGIOS {{trigger.service}} ID:{{trigger.event_id}} STATE:{{trigger.state}}/{{trigger.state_type}} {{trigger.msg}}"
+        },
+        "ref": "chatops.post_message"
+    },
+    "criteria": {
+        "trigger.attempt": {
+            "pattern": 2,
+            "type": "gt"
+        }
+    },
+    "description": "Post to chat when nagios service state changes",
+    "enabled": false,
+    "name": "notify_chat",
+    "pack": "nagios",
+    "trigger": {
+        "type": "nagios.service_state_change"
+    }
+}

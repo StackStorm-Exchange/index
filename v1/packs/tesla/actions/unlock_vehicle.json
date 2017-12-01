@@ -1,0 +1,19 @@
+{
+    "description": "Unlock the doors of a vehicle",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "unlock_vehicle",
+    "parameters": {
+        "action": {
+            "default": "door_unlock",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

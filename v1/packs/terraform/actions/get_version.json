@@ -1,0 +1,15 @@
+{
+    "description": "Get the Terraform version",
+    "enabled": true,
+    "entry_point": "get_version.py",
+    "name": "get_version",
+    "parameters": {
+        "terraform_exec": {
+            "default": "terraform",
+            "description": "Terraform executable path (default: terraform in the $PATH)",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

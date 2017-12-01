@@ -1,0 +1,14 @@
+{
+    "description": "Retrieve information about Tuleap tracker artifacts.",
+    "enabled": true,
+    "entry_point": "get_artifacts.py",
+    "name": "get_artifacts",
+    "parameters": {
+        "tracker_id": {
+            "description": "The tracker id",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,20 @@
+ref: time
+name: time
+description: st2 content pack containing different date and time related functionality
+keywords:
+- date
+- time
+version: 0.2.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 2
+    resources:
+    - get_week_boundaries
+    - parse_date_string
+  tests:
+    count: 2
+    resources:
+    - test_action_get_week_boundaries.py
+    - test_action_parse_date_string.py

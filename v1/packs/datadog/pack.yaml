@@ -1,0 +1,65 @@
+ref: datadog
+name: datadog
+description: datadog
+keywords:
+- monitoring
+- alerting
+- saas
+version: 0.1.3
+author: Lisa Bekdache
+email: lisa.bekdache@dailymotion.com
+content:
+  actions:
+    count: 51
+    resources:
+    - post_check_run
+    - create_comment
+    - delete_comment
+    - edit_comment
+    - schedule_monitor_downtime
+    - create_embed
+    - enable_embed
+    - get_all_embeds
+    - get_embed
+    - revoke_embed
+    - delete_event
+    - get_event
+    - post_event
+    - query_event_stream
+    - snapshot
+    - mute_host
+    - unmute_host
+    - post_ts_points
+    - query_ts_points
+    - create_monitor
+    - delete_monitor
+    - edit_monitor
+    - get_all_monitors
+    - get_monitor
+    - mute_all_monitors
+    - mute_monitor
+    - unmute_all_monitors
+    - unmute_monitor
+    - create_screenboard
+    - delete_screenboard
+    - get_all_screenboards
+    - get_screenboard
+    - revoke_shared_screenboard
+    - share_screenboard
+    - update_screenboard
+    - search
+    - add_host_tags
+    - get_host_tags
+    - get_tags
+    - remove_host_tags
+    - update_host_tags
+    - create_timeboard
+    - delete_timeboard
+    - get_all_timeboards
+    - get_timeboard
+    - update_timeboard
+    - create_user
+    - disable_user
+    - get_all_users
+    - get_user
+    - update_user

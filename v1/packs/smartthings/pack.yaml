@@ -1,0 +1,31 @@
+ref: smartthings
+name: SmartThings
+description: Integration with SmartThings
+keywords:
+- smartthings
+- iot
+- smart home
+- home automation
+version: 0.3.1
+author: James Fryman
+email: james@stackstorm.com
+content:
+  actions:
+    count: 12
+    resources:
+    - command
+    - disengage_lock
+    - engage_lock
+    - find_id_by_name
+    - get_device_info
+    - list_devices
+    - set_mode
+    - set_temperature
+    - toggle_lock
+    - toggle_switch
+    - turn_off_switch
+    - turn_on_switch
+  sensors:
+    count: 1
+    resources:
+    - SmartThingsSensor

@@ -1,0 +1,24 @@
+{
+    "description": "Delete a floating-ip",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "ip.floating.delete",
+    "parameters": {
+        "base": {
+            "default": "ip floating delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('ip_floating_delete = openstackclient.compute.v2.floatingip:DeleteFloatingIP')",
+            "immutable": true,
+            "type": "string"
+        },
+        "ip_address": {
+            "description": "IP address to delete",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,85 @@
+{
+    "description": "Remove an ACL from physical port, port channel, VE or mgmt interface.",
+    "enabled": true,
+    "entry_point": "remove_acl.py",
+    "name": "remove_acl",
+    "pack": "network_essentials",
+    "parameters": {
+        "acl_direction": {
+            "default": "in",
+            "description": "ACL direction",
+            "enum": [
+                "in",
+                "out"
+            ],
+            "position": 7,
+            "required": true,
+            "type": "string"
+        },
+        "acl_name": {
+            "description": "ACL name",
+            "position": 6,
+            "required": true,
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "Interface names, can be comma separated physical ports, port channel numbers or VEs. Examples are 224/0/1, 224/0/2 or 7, 8, 9",
+            "position": 4,
+            "required": true,
+            "type": "array"
+        },
+        "intf_type": {
+            "default": "tengigabitethernet",
+            "description": "Interface type",
+            "enum": [
+                "gigabitethernet",
+                "tengigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet",
+                "port_channel",
+                "ve",
+                "loopback",
+                "ethernet"
+            ],
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "rbridge_id": {
+            "description": "RBridge ID of the VDX switch.  This parameter is only applicable to VDX switches",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
+        "traffic_type": {
+            "description": "Traffic type for the ACL being removed",
+            "enum": [
+                "switched",
+                "routed"
+            ],
+            "position": 8,
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

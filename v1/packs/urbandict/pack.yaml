@@ -1,0 +1,15 @@
+ref: urbandict
+name: urbandict
+description: st2 content pack containing urban dictionary integrations
+keywords:
+- urban dict
+- urban dictionary
+- puns
+version: 0.2.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 1
+    resources:
+    - get_definitions

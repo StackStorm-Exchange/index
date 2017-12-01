@@ -1,0 +1,186 @@
+{
+    "description": "Configure IPSec Tunnel",
+    "enabled": true,
+    "entry_point": "workflows/cfg_ipsec.yaml",
+    "name": "cfg_ipsec",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "eastDeviceIP": {
+            "description": "IP address of East vRouter",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "eastPrefix": {
+            "description": "IP Prefix of East vRouter",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "eastTunnelIP": {
+            "description": "IP address of the tunnel end on East vRouter",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "espEncryption": {
+            "default": "aes256",
+            "description": "Encryption algorithm for ESP group",
+            "enum": [
+                "aes128",
+                "aes256",
+                "aes128gcm128",
+                "aes256gcm128",
+                "3des"
+            ],
+            "position": 14,
+            "required": true,
+            "type": "string"
+        },
+        "espGroup": {
+            "default": "ESP-1",
+            "description": "IKE Group",
+            "position": 12,
+            "required": true,
+            "type": "string"
+        },
+        "espHashAlg": {
+            "default": "sha1",
+            "description": "Hash algorithm for ESP group",
+            "enum": [
+                "md5",
+                null,
+                "sha1",
+                "sha1_160",
+                "sha2_256",
+                "sha2_384",
+                "sha2_512"
+            ],
+            "position": 15,
+            "required": true,
+            "type": "string"
+        },
+        "espLifetime": {
+            "default": 3600,
+            "description": "Lifetime of the ESP group",
+            "position": 16,
+            "required": true,
+            "type": "integer"
+        },
+        "espProposal": {
+            "default": 1,
+            "description": "Proposal of ESP Group",
+            "position": 13,
+            "required": true,
+            "type": "integer"
+        },
+        "ikeEncryption": {
+            "default": "aes256",
+            "description": "Encryption algorithm for IKE group",
+            "enum": [
+                "aes128",
+                "aes256",
+                "aes128gcm128",
+                "aes256gcm128",
+                "3des"
+            ],
+            "position": 9,
+            "required": true,
+            "type": "string"
+        },
+        "ikeGroup": {
+            "default": "IKE-1",
+            "description": "IKE Group",
+            "position": 6,
+            "required": true,
+            "type": "string"
+        },
+        "ikeHashAlg": {
+            "default": "sha1",
+            "description": "Hash algorithm for IKE group",
+            "enum": [
+                "md5",
+                null,
+                "sha1",
+                "sha1_160",
+                "sha2_256",
+                "sha2_384",
+                "sha2_512"
+            ],
+            "position": 10,
+            "required": true,
+            "type": "string"
+        },
+        "ikeLifetime": {
+            "default": 3600,
+            "description": "Lifetime of the IKE group",
+            "position": 11,
+            "required": true,
+            "type": "integer"
+        },
+        "ikeProposal": {
+            "default": 1,
+            "description": "Proposal of IKE Group",
+            "position": 7,
+            "required": true,
+            "type": "integer"
+        },
+        "ikeVersion": {
+            "default": 2,
+            "description": "IKE version",
+            "enum": [
+                2,
+                1
+            ],
+            "position": 8,
+            "required": true,
+            "type": "integer"
+        },
+        "psk": {
+            "default": "TheAmazingPSK",
+            "description": "Pre Shared Key",
+            "position": 17,
+            "required": true,
+            "type": "string"
+        },
+        "tunnelID": {
+            "default": 1,
+            "description": "Tunnel ID",
+            "position": 18,
+            "required": true,
+            "type": "integer"
+        },
+        "westDeviceIP": {
+            "description": "IP address of West vRouter",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "westPrefix": {
+            "description": "IP Prefix of West vRouter",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "westTunnelIP": {
+            "description": "IP address of the tunnel end on West vRouter",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "workflow": {
+            "default": "vyatta.cfg_ipsec.main",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

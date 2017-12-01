@@ -1,0 +1,65 @@
+{
+    "description": "Show package detail",
+    "enabled": true,
+    "name": "show_package",
+    "pack": "packagecloud",
+    "parameters": {
+        "api_token": {
+            "default": "{{st2kv.system.pkg_cloud_token}}",
+            "description": "Token to access the packagecloud API",
+            "type": "string"
+        },
+        "arch": {
+            "enum": [
+                "x86_64",
+                "amd64"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "distro": {
+            "enum": [
+                "debian",
+                "el",
+                "ubuntu"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "distro_version": {
+            "required": true,
+            "type": "string"
+        },
+        "package": {
+            "required": true,
+            "type": "string"
+        },
+        "package_revision": {
+            "required": true,
+            "type": "string"
+        },
+        "package_type": {
+            "enum": [
+                "deb",
+                "rpm"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "package_version": {
+            "required": true,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Name of the packagecloud repo",
+            "required": true,
+            "type": "string"
+        },
+        "url": {
+            "default": "https://{{api_token}}:@packagecloud.io/api/v1/repos/{{repo}}/package/{{package_type}}/{{distro}}/{{distro_version}}/{{package}}/{{arch}}/{{package_version}}{% if distro == \"el\" %}/{% else %}-{% endif %}{{package_revision}}.json",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

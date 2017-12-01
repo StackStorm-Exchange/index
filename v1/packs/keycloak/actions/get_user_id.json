@@ -1,0 +1,16 @@
+{
+    "description": "Get a user id from its name",
+    "enabled": true,
+    "entry_point": "get_user_id.py",
+    "name": "get_user_id",
+    "pack": "keycloak",
+    "parameters": {
+        "username": {
+            "description": "username",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,32 @@
+{
+    "description": "Send a generic command to a device",
+    "enabled": true,
+    "entry_point": "command.py",
+    "name": "command",
+    "parameters": {
+        "command": {
+            "description": "Command to send to device",
+            "required": true,
+            "type": "string"
+        },
+        "device_id": {
+            "description": "ID of device",
+            "required": true,
+            "type": "string"
+        },
+        "device_type": {
+            "description": "Device type",
+            "enum": [
+                "switch",
+                "motion",
+                "temperature",
+                "contact",
+                "presence",
+                "lock"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

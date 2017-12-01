@@ -1,0 +1,23 @@
+{
+    "description": "Send message to Apache Kafka broker system.",
+    "enabled": true,
+    "entry_point": "produce.py",
+    "name": "produce",
+    "parameters": {
+        "hosts": {
+            "description": "Kafka hostname(s) to connect in host:port format. Comma-separated for several hosts.",
+            "type": "string"
+        },
+        "message": {
+            "description": "The message to produce.",
+            "required": true,
+            "type": "string"
+        },
+        "topic": {
+            "description": "Kafka Topic to publish the message on.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

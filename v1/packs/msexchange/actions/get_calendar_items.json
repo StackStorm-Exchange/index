@@ -1,0 +1,34 @@
+{
+    "description": "Get the items in the calendar within a date range",
+    "enabled": true,
+    "entry_point": "get_calendar_items.py",
+    "name": "get_calendar_items",
+    "pack": "msexchange",
+    "parameters": {
+        "end_day": {
+            "required": true,
+            "type": "integer"
+        },
+        "end_month": {
+            "required": true,
+            "type": "integer"
+        },
+        "end_year": {
+            "required": true,
+            "type": "integer"
+        },
+        "start_day": {
+            "required": true,
+            "type": "integer"
+        },
+        "start_month": {
+            "required": true,
+            "type": "integer"
+        },
+        "start_year": {
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "run-python"
+}

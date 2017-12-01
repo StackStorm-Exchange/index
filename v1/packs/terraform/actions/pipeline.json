@@ -1,0 +1,35 @@
+{
+    "description": "A workflow that can be used as a pipeline for Terraform execution",
+    "enabled": true,
+    "entry_point": "workflows/pipeline.yaml",
+    "name": "pipeline",
+    "parameters": {
+        "backend": {
+            "description": "backend configuration variable file",
+            "required": false,
+            "type": "string"
+        },
+        "plan_path": {
+            "description": "path of the Terraform files",
+            "required": true,
+            "type": "string"
+        },
+        "terraform_exec": {
+            "description": "path of the Terraform bin",
+            "required": false,
+            "type": "string"
+        },
+        "variable_files": {
+            "description": "Terraform variable files",
+            "required": false,
+            "type": "array"
+        },
+        "workspace": {
+            "default": "default",
+            "description": "The name of the Terraform workspace to use.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

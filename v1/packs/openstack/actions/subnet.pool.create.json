@@ -1,0 +1,112 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnet.pool.create",
+    "parameters": {
+        "address_scope": {
+            "description": "Set address scope associated with the subnet pool (name or ID), prefixes must be unique across address scopes",
+            "type": "string"
+        },
+        "base": {
+            "default": "subnet pool create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "default": {
+            "default": false,
+            "description": "Set this as a default subnet pool",
+            "type": "boolean"
+        },
+        "default_prefix_length": {
+            "description": "Set subnet pool default prefix length",
+            "type": "integer"
+        },
+        "default_quota": {
+            "description": "Set default quota for subnet pool as the number ofIP addresses allowed in a subnet",
+            "type": "integer"
+        },
+        "description": {
+            "description": "Set subnet pool description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnet_pool_create = openstackclient.network.v2.subnet_pool:CreateSubnetPool')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "max_prefix_length": {
+            "description": "Set subnet pool maximum prefix length",
+            "type": "integer"
+        },
+        "min_prefix_length": {
+            "description": "Set subnet pool minimum prefix length",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the new subnet pool",
+            "required": true,
+            "type": "string"
+        },
+        "no_default": {
+            "default": false,
+            "description": "Set this as a non-default subnet pool",
+            "type": "boolean"
+        },
+        "no_share": {
+            "default": false,
+            "description": "Set this subnet pool as not shared",
+            "type": "boolean"
+        },
+        "no_tag": {
+            "default": false,
+            "description": "No tags associated with the subnet pool",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pool_prefix": {
+            "description": "Set subnet pool prefixes (in CIDR notation) (repeat option to set multiple prefixes)",
+            "required": true,
+            "type": "array"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "share": {
+            "default": false,
+            "description": "Set this subnet pool as shared",
+            "type": "boolean"
+        },
+        "tag": {
+            "description": "Tag to be added to the subnet pool (repeat option to set multiple tags)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

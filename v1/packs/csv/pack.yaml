@@ -1,0 +1,22 @@
+ref: csv
+name: csv
+description: st2 content pack containing CSV integrations
+keywords:
+- csv
+- serialization
+- deserialization
+- text processing
+version: 0.4.2
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 3
+    resources:
+    - format
+    - parse
+    - parse_file
+  tests:
+    count: 1
+    resources:
+    - test_action_parse.py

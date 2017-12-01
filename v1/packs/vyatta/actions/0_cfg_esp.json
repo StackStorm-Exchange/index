@@ -1,0 +1,53 @@
+{
+    "description": "Internal action - Configure ESP",
+    "enabled": true,
+    "entry_point": "0_cfg_esp.py",
+    "name": "0_cfg_esp",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "cmd_path": {
+            "description": "configuration session token",
+            "required": true,
+            "type": "string"
+        },
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "required": true,
+            "type": "string"
+        },
+        "encryption": {
+            "description": "encryption algorithm for ESP group",
+            "required": true,
+            "type": "string"
+        },
+        "espGroup": {
+            "description": "ESP Group",
+            "required": true,
+            "type": "string"
+        },
+        "hashAlg": {
+            "description": "hash algorithm for ESP group",
+            "required": true,
+            "type": "string"
+        },
+        "lifetime": {
+            "description": "lifetime of the ESP group",
+            "required": true,
+            "type": "integer"
+        },
+        "proposal": {
+            "description": "ESP proposal",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

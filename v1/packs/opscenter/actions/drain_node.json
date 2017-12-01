@@ -1,0 +1,19 @@
+{
+    "description": "Drain node.",
+    "enabled": true,
+    "entry_point": "drain_node.py",
+    "name": "drain_node",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        },
+        "node_ip": {
+            "description": "IP of the node.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

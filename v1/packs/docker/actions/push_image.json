@@ -1,0 +1,23 @@
+{
+    "description": "Push docker image action. Equivalent to docker push.",
+    "enabled": true,
+    "entry_point": "push_image.py",
+    "name": "push_image",
+    "parameters": {
+        "insecure_registry": {
+            "default": false,
+            "description": "Allow image to be pushed to insecure registry (http vs https).",
+            "type": "boolean"
+        },
+        "repo": {
+            "description": "Repository to push the image to.",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to use for this image (optional).",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

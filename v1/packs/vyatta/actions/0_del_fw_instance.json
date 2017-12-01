@@ -1,0 +1,47 @@
+{
+    "description": "Internal action - Delete a FW instance",
+    "enabled": true,
+    "entry_point": "0_del_fw_instance.py",
+    "name": "0_del_fw_instance",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "cmd_path": {
+            "description": "configuration session token",
+            "required": true,
+            "type": "string"
+        },
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "required": true,
+            "type": "string"
+        },
+        "direction": {
+            "description": "In or Out",
+            "enum": [
+                "in",
+                "out"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "fw_instance_name": {
+            "description": "Rule-set name",
+            "required": true,
+            "type": "string"
+        },
+        "intfNum": {
+            "description": "Interface number",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

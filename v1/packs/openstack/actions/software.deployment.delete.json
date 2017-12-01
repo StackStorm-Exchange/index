@@ -1,0 +1,36 @@
+{
+    "description": "Delete software deployment(s) and correlative config(s).",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "software.deployment.delete",
+    "parameters": {
+        "base": {
+            "default": "software deployment delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "deployment": {
+            "description": "ID of the deployment(s) to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('software_deployment_delete = heatclient.osc.v1.software_deployment:DeleteDeployment')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

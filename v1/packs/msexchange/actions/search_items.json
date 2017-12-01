@@ -1,0 +1,25 @@
+{
+    "description": "Search and return items in a folder",
+    "enabled": true,
+    "entry_point": "search_items.py",
+    "name": "search_items",
+    "pack": "msexchange",
+    "parameters": {
+        "folder": {
+            "description": "Folder to look within",
+            "type": "string"
+        },
+        "include_body": {
+            "default": true,
+            "description": "Include the body of the message in the responses",
+            "required": false,
+            "type": "boolean"
+        },
+        "subject": {
+            "description": "Subject of the email",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

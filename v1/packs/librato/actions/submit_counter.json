@@ -1,0 +1,24 @@
+{
+    "description": "List all metrics setup on Librato",
+    "enabled": true,
+    "entry_point": "submit_counter.py",
+    "name": "submit_counter",
+    "parameters": {
+        "name": {
+            "description": "Name of metric to store counter value",
+            "required": true,
+            "type": "string"
+        },
+        "source": {
+            "description": "Describes the originating source of a measurement",
+            "required": true,
+            "type": "string"
+        },
+        "value": {
+            "description": "Data value to submit as counter to said metric",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

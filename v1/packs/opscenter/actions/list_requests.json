@@ -1,0 +1,25 @@
+{
+    "description": "List all requests made to opscenter.",
+    "enabled": true,
+    "entry_point": "list_requests.py",
+    "name": "list_requests",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        },
+        "list_all": {
+            "default": true,
+            "description": "Display all requests. Setting this to false will show only latest request.",
+            "required": false,
+            "type": "boolean"
+        },
+        "request_type": {
+            "description": "Request type to list requests for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,76 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "bgpvpn.set",
+    "parameters": {
+        "base": {
+            "default": "bgpvpn set",
+            "immutable": true,
+            "type": "string"
+        },
+        "bgpvpn": {
+            "description": "BGP VPN to update (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bgpvpn_set = neutronclient.osc.v2.networking_bgpvpn.bgpvpn:SetBgpvpn')",
+            "immutable": true,
+            "type": "string"
+        },
+        "export_target": {
+            "description": "Add Route Target to export list (repeat option for multiple Route Targets)",
+            "type": "array"
+        },
+        "import_target": {
+            "description": "Add Route Target to import list (repeat option for multiple Route Targets)",
+            "type": "array"
+        },
+        "name": {
+            "description": "Name of the BGP VPN",
+            "type": "string"
+        },
+        "no_export_target": {
+            "default": false,
+            "description": "Empty export route target list",
+            "type": "boolean"
+        },
+        "no_import_target": {
+            "default": false,
+            "description": "Empty import route target list",
+            "type": "boolean"
+        },
+        "no_route_distinguisher": {
+            "default": false,
+            "description": "Empty route distinguisher list",
+            "type": "boolean"
+        },
+        "no_route_target": {
+            "default": false,
+            "description": "Empty route target list",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "route_distinguisher": {
+            "description": "Add Route Distinguisher to the list of Route Distinguishers from which a Route Distinguishers will be picked from to advertise a VPN route (repeat option for multiple Route Distinguishers)",
+            "type": "array"
+        },
+        "route_target": {
+            "description": "Add Route Target to import/export list (repeat option for multiple Route Targets)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

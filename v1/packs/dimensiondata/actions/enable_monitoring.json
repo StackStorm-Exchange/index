@@ -1,0 +1,28 @@
+{
+    "description": "Enable monitoring on a node",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "enable_monitoring",
+    "parameters": {
+        "action": {
+            "default": "ex_enable_monitoring",
+            "immutable": true,
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        },
+        "service_plan": {
+            "default": "ESSENTIALS",
+            "description": "The service plan, ESSENTIALS or ADVANCED",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

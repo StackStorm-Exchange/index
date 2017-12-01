@@ -1,0 +1,77 @@
+{
+    "description": "Create a network trunk for a given project",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.trunk.create",
+    "parameters": {
+        "base": {
+            "default": "network trunk create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "A description of the trunk",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable trunk",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": true,
+            "description": "Enable trunk (default)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_trunk_create = neutronclient.osc.v2.trunk.network_trunk:CreateNetworkTrunk')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the trunk to create",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "parent_port": {
+            "description": "Parent port belonging to this trunk (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "subport": {
+            "description": "Subport to add. Subport is of form 'port=<name or ID>,segmentation-type=,segmentation-ID=' (--subport) option can be repeated",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

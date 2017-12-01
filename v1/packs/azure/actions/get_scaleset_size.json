@@ -1,0 +1,21 @@
+{
+    "description": "Print message to standard output.",
+    "enabled": true,
+    "entry_point": "get_scaleset_size.py",
+    "name": "get_scaleset_size",
+    "parameters": {
+        "resource_group": {
+            "description": "resource_group",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "scale_group": {
+            "description": "scale_group",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

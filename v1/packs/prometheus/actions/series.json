@@ -1,0 +1,11 @@
+{
+    "description": "Query Prometheus Series API",
+    "entry_point": "series.py",
+    "name": "series",
+    "parameters": {
+        "queries": {
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

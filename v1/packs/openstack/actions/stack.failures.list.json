@@ -1,0 +1,41 @@
+{
+    "description": "Show information about failed stack resources.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.failures.list",
+    "parameters": {
+        "base": {
+            "default": "stack failures list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_failures_list = heatclient.osc.v1.stack_failures:ListStackFailures')",
+            "immutable": true,
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "Show full deployment logs in output",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Stack to display (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

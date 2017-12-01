@@ -1,0 +1,33 @@
+ref: trello
+name: trello
+description: Integration with Trello, Web based Project Management
+version: 0.4.1
+author: James Fryman
+email: james@stackstorm.com
+keywords:
+- trello
+- kanban
+- productivity
+- collaboration
+content:
+  actions:
+    count: 14
+    resources:
+    - add_board
+    - add_card
+    - add_list
+    - close_board
+    - close_card
+    - close_list
+    - find_board_by_name
+    - find_card_by_name
+    - find_list_by_name
+    - move_card
+    - view_boards
+    - view_cards
+    - view_lists
+    - view_organizations
+  sensors:
+    count: 1
+    resources:
+    - TrelloListSensor

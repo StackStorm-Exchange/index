@@ -1,0 +1,48 @@
+{
+    "description": "Show an override value for a specific smart class parameter (resource: GET /api/smart_class_parameters/:smart_class_parameter_id/override_values/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "smart_class_parameters.override_values_smart_class_parameter_id_override_showvalues",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "smart_class_parameters.override_values_smart_class_parameter_id_override_showvalues",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "smart_class_parameter_id": {
+            "required": true,
+            "type": "string"
+        },
+        "smart_variable_id": {
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

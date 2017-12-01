@@ -1,0 +1,32 @@
+{
+    "description": "Run Salt Execution modules through Salt API",
+    "enabled": true,
+    "entry_point": "local.py",
+    "name": "local_cron.rm_env",
+    "parameters": {
+        "args": {
+            "required": false,
+            "type": "array"
+        },
+        "expr_form": {
+            "default": "glob",
+            "required": false,
+            "type": "string"
+        },
+        "kwargs": {
+            "required": false,
+            "type": "object"
+        },
+        "module": {
+            "default": "cron.rm_env",
+            "immutable": true,
+            "type": "string"
+        },
+        "target": {
+            "default": "*",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

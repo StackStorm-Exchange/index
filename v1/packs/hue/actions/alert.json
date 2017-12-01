@@ -1,0 +1,18 @@
+{
+    "description": "Send an alert to a light",
+    "enabled": true,
+    "entry_point": "alert.py",
+    "name": "alert",
+    "parameters": {
+        "light_id": {
+            "description": "ID of the light to manage",
+            "required": true,
+            "type": "string"
+        },
+        "long_alert": {
+            "description": "Send a long alert to the light",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

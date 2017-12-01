@@ -1,0 +1,45 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "sfc.port.pair.group.unset",
+    "parameters": {
+        "all_port_pair": {
+            "default": false,
+            "description": "Remove all port pairs from the port pair group",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "sfc port pair group unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('sfc_port_pair_group_unset = neutronclient.osc.v2.sfc.sfc_port_pair_group:UnsetSfcPortPairGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "port_pair": {
+            "description": "Remove port pair(s) from the port pair group (name or ID). This option can be repeated.",
+            "type": "array"
+        },
+        "port_pair_group": {
+            "description": "Port pair group to unset (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

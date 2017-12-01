@@ -1,0 +1,49 @@
+{
+    "description": "Apply Attribute with server unique values across multiple servers.",
+    "enabled": true,
+    "entry_point": "workflows/icsp_multi_server_attribute_add.yaml",
+    "name": "icsp_multi_server_attribute_add",
+    "pack": "hpe_icsp",
+    "parameters": {
+        "attribute_key": {
+            "description": "Attribute Key to be added.",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "attribute_values": {
+            "description": "List of Values to be set against servers. Must match order of identifier.",
+            "position": 3,
+            "required": true,
+            "type": "array"
+        },
+        "connection_details": {
+            "description": "Overriding connection details for ICSP server",
+            "position": 4,
+            "required": false,
+            "type": "object"
+        },
+        "id_type": {
+            "default": "serialnumber",
+            "enum": [
+                "serialnumber",
+                "uuid"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "identifiers": {
+            "description": "List of Serial Numbers or UUID of the target Servers (must be all of same type).",
+            "position": 0,
+            "required": true,
+            "type": "array"
+        },
+        "workflow": {
+            "default": "hpe_icsp.icsp_multi_server_attribute_add.entry",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

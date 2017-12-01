@@ -1,0 +1,40 @@
+{
+    "description": "print bash completion command\n    ",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "complete",
+    "parameters": {
+        "base": {
+            "default": "complete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "<cliff.commandmanager.EntryPointWrapper object at 0x7f284050d610>",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Command name to support with command completion",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "shell": {
+            "default": "bash",
+            "description": "Shell being used. Use none for data only (default: bash) (choices: bash, none)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

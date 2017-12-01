@@ -1,0 +1,43 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_describe_iam_instance_profile_associations",
+    "pack": "aws",
+    "parameters": {
+        "AssociationIds": {
+            "description": "One or more IAM instance profile associations.",
+            "type": "array"
+        },
+        "Filters": {
+            "description": "One or more filters.    instance-id - The ID of the instance.    state - The state of the association (associating | associated | disassociating | disassociated).  ",
+            "type": "array"
+        },
+        "MaxResults": {
+            "description": "The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "The token to request the next page of results.",
+            "type": "string"
+        },
+        "action": {
+            "default": "describe_iam_instance_profile_associations",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,41 @@
+{
+    "description": "Create a job invocation (resource: POST /api/job_invocations)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "job_invocations.create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "job_invocation": {
+            "description": "'description: None\n parameters:\n     inputs:\n       required: false\n       type: object\n       description: Inputs to use\n     search_query:\n       required: false\n       type: number\n       description:\n     description_format:\n       required: false\n       type: string\n       description: Override the description format from the template for this invocation only\n     concurrency_control:\n       required: false\n       type: object\n       description: Control concurrency level and distribution over time\n       parameters:\n         concurrency_level:\n           required: false\n           type: number\n           description: Run at most N tasks at a time\n         time_span:\n           required: false\n           type: number\n           description: Distribute tasks over N seconds\n     targeting_type:\n       required: true\n       type: string\n       description: Invocation type, one of {\"static_query\"=>\"Static Query\",\"dynamic_query\"=>\"Dynamic Query\"}\n     recurrence:\n       required: false\n       type: object\n       description: Create a recurring job\n       parameters:\n         cron_line:\n           required: false\n           type: string\n           description: How often the job should occur, in the cron format\n         max_iteration:\n           required: false\n           type: string\n           description: Repeat a maximum of N times\n         end_time:\n           required: false\n           type: string\n           description: Perform no more executions after this time\n     bookmark_id:\n       required: false\n       type: number\n       description:\n     job_template_id:\n       required: true\n       type: string\n       description: The job template to use\n     scheduling:\n       required: false\n       type: object\n       description: Schedule the job to start at a later time\n       parameters:\n         start_before:\n           required: false\n           type: string\n           description: Indicates that the action should be cancelled if it cannot be startedbefore this time.\n         start_at:\n           required: false\n           type: string\n           description: Schedule the job for a future time\n     ssh:\n       required: false\n       type: object\n       description: SSH provider specific options\n       parameters:\n         effective_user:\n           required: false\n           type: string\n           description: What user should be used to run the script (using sudo-like mechanisms).Defaults to a template parameter or global setting.\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "job_invocations.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

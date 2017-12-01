@@ -1,0 +1,34 @@
+{
+    "description": "Run a basic check to see if WinRM is responding",
+    "enabled": true,
+    "entry_point": "try_winrm.py",
+    "name": "try_winrm",
+    "parameters": {
+        "host": {
+            "description": "IP address of a Windows server to run the query on",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Account password.",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "TCP port",
+            "required": false,
+            "type": "integer"
+        },
+        "secure": {
+            "description": "Use HTTPS",
+            "required": false,
+            "type": "boolean"
+        },
+        "username": {
+            "description": "Account username.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

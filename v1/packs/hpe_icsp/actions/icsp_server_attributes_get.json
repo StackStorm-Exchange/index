@@ -1,0 +1,40 @@
+{
+    "description": "Retrieve Attributes set against Server",
+    "enabled": true,
+    "entry_point": "icsp_server_attributes_get.py",
+    "name": "icsp_server_attributes_get",
+    "parameters": {
+        "attribute_key": {
+            "description": "Attribute key to retrieve. Blank = All keys returned",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "attribute_type": {
+            "default": "all",
+            "description": "Type of Attribute to retrieve. Default = All types",
+            "enum": [
+                "all",
+                "server",
+                "facility"
+            ],
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "connection_details": {
+            "description": "Connection details. eg { \"host\": \"192.168.0.1\", \"user\":\"username\", \"pass\": \"secret\" }",
+            "position": 3,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "mids": {
+            "description": "Server MID list.",
+            "position": 0,
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

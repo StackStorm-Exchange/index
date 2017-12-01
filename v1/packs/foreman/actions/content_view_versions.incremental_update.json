@@ -1,0 +1,66 @@
+{
+    "description": "Perform an Incremental Update on one or more Content View Versions (resource: POST /katello/api/content_view_versions/incremental_update)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_view_versions.incremental_update",
+    "pack": "foreman",
+    "parameters": {
+        "add_content": {
+            "description": "'description: None\n parameters:\n     package_ids:\n       required: false\n       type: array\n       description: Package ids or uuids to copy into the new versions.\n     errata_ids:\n       required: false\n       type: array\n       description: Errata ids or uuids to copy into the new versions.\n     puppet_module_ids:\n       required: false\n       type: array\n       description: Puppet Module ids or uuids to copy into the new versions.\n     '\n",
+            "required": false,
+            "type": "object"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_version_environments": {
+            "description": "'description: None\n parameters:\n     content_view_version_id:\n       required: false\n       type: string\n       description: Content View Version Ids to perform an incremental update on.  May containcomposites as well as one or more components to update.\n     environment_ids:\n       required: false\n       type: array\n       description: The list of environments to promote the specified Content View Version to(replacing the older version).\n     '\n",
+            "required": false,
+            "type": "array"
+        },
+        "description": {
+            "description": "The description for the new generated Content View Versions",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_view_versions.incremental_update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "propagate_all_composites": {
+            "description": "If true, will publish a new composite version using any specifiedcontent_view_version_id that has been promoted to a lifecycle environment.",
+            "required": false,
+            "type": "string"
+        },
+        "resolve_dependencies": {
+            "description": "If true, when adding the specified errata or packages, any neededdependencies will be copied as well.",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "update_hosts": {
+            "description": "'description: After generating the incremental update, apply the changes to the specifiedhosts.  Only Errata are supported currently.\n parameters:\n     included:\n       required: true\n       type: object\n       description:\n       parameters:\n         search:\n           required: false\n           type: string\n           description: Search string for host to perform an action on\n         ids:\n           required: false\n           type: array\n           description: List of host ids to perform an action on\n     excluded:\n       required: false\n       type: object\n       description:\n       parameters:\n         ids:\n           required: false\n           type: array\n           description: List of host ids to exclude and not run an action on\n     '",
+            "required": false,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

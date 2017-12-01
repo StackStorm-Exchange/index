@@ -1,0 +1,20 @@
+{
+    "description": "Kill a running mistral workflow.",
+    "enabled": true,
+    "entry_point": "kill_workflow.py",
+    "name": "kill_workflow",
+    "pack": "mistral",
+    "parameters": {
+        "execution_id": {
+            "description": "Workflow execution id.",
+            "required": true,
+            "type": "string"
+        },
+        "kill_msg": {
+            "description": "Message to use for audit.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

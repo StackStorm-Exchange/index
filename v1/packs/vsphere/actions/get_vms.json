@@ -1,0 +1,76 @@
+{
+    "description": "Retrieves the virtual machines on a vCenter Server system. It computes the union of Virtual Machine sets based on each parameter.",
+    "enabled": true,
+    "entry_point": "get_vms.py",
+    "name": "get_vms",
+    "parameters": {
+        "clusters": {
+            "description": "Comma-separated moId's of the vSphere compute cluster objects, where VMs are going to be searched.\n",
+            "required": false,
+            "type": "array"
+        },
+        "datacenters": {
+            "description": "Comma-separated moId's of the vSphere datacenter objects, where VMs are going to be searched.\n",
+            "required": false,
+            "type": "array"
+        },
+        "datastore_clusters": {
+            "description": "Comma-separated moId's of the Datastore Clusters accociated with searched VMs.",
+            "required": false,
+            "type": "array"
+        },
+        "datastores": {
+            "description": "Comma-separated moId's of the Datastores accociated with searched VMs.",
+            "required": false,
+            "type": "array"
+        },
+        "folders": {
+            "description": "Comma-separated moId's of the vSphere folder objects, where VMs are going to be searched.\n",
+            "required": false,
+            "type": "array"
+        },
+        "hosts": {
+            "description": "Comma-separated moId's of the vSphere Host objects, where VMs are going to be searched.\n",
+            "required": false,
+            "type": "array"
+        },
+        "ids": {
+            "description": "Comma-separated ids of Virtual Machines to retrieve.",
+            "required": false,
+            "type": "array"
+        },
+        "names": {
+            "description": "Comma-separated names of Virtual Machines to retrieve.",
+            "required": false,
+            "type": "array"
+        },
+        "no_recursion": {
+            "default": false,
+            "description": "Specifies, whether or not to disable the recursive behavior or the command. By default it is False\n",
+            "required": false,
+            "type": "boolean"
+        },
+        "resource_pools": {
+            "description": "Comma-separated moId's of the vSphere ResourcePool objects, where VMs are going to be searched.\n",
+            "required": false,
+            "type": "array"
+        },
+        "vapps": {
+            "description": "Comma-separated moId's of the vSphere VApp objects, where VMs are going to be searched.\n",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_switches": {
+            "description": "Comma-separated moId's of the Virtual Switches, to which the searched VMs' network adapters are attached.\n",
+            "required": false,
+            "type": "array"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details\n",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

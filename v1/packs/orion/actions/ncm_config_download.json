@@ -1,0 +1,23 @@
+{
+    "description": "Download config(s) from Solarwinds NCM Orion module.",
+    "enabled": true,
+    "entry_point": "ncm_config_download.py",
+    "name": "ncm_config_download",
+    "pack": "orion",
+    "parameters": {
+        "configs": {
+            "default": [
+                "running",
+                "startup"
+            ],
+            "description": "Which config(s) to download from NCM.",
+            "type": "array"
+        },
+        "node": {
+            "description": "The node to act on.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

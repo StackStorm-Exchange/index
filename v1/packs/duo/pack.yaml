@@ -1,0 +1,33 @@
+ref: duo
+name: duo
+description: Use Duo 2FA authenication with StackStorm actions.
+keywords:
+- 2Fa
+- Duo
+version: 0.3.2
+author: Jon Middleton
+email: jon.middleton@pulsant.com
+content:
+  actions:
+    count: 6
+    resources:
+    - announce_success
+    - auth_auth
+    - auth_chatops
+    - auth_check
+    - auth_ping
+    - auth_wrap_demo
+  aliases:
+    count: 4
+    resources:
+    - auth_auth
+    - auth_check
+    - auth_demo
+    - auth_ping
+  tests:
+    count: 4
+    resources:
+    - duo_base_test_case.py
+    - test_action_auth_auth.py
+    - test_action_auth_check.py
+    - test_action_auth_ping.py

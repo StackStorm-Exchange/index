@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.show_vpn_ipsec_sa",
+    "description": "Perform a \"show vpn ipsec sa\"",
+    "formats": [
+        "(show|sh) vpn ipsec sa on {{deviceIP}}"
+    ],
+    "name": "show_vpn_ipsec_sa",
+    "result": {
+        "enabled": true
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "appstream_update_stack",
+    "pack": "aws",
+    "parameters": {
+        "Description": {
+            "description": "The description displayed to end users on the AppStream 2.0 portal.",
+            "type": "string"
+        },
+        "DisplayName": {
+            "description": "The name displayed to end users on the AppStream 2.0 portal.",
+            "type": "string"
+        },
+        "Name": {
+            "description": "The name of the stack to update.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "update_stack",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "appstream",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+name: excel
+description: excel actions to read and write variables to an excel file
+version: 0.2.3
+author: Tim Braly
+email: tbraly@brocade.com
+content:
+  actions:
+    count: 5
+    resources:
+    - get_keys_for_columns
+    - get_keys_for_rows
+    - get_sheets
+    - get_variables
+    - set_variables

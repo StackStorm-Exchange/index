@@ -1,0 +1,41 @@
+{
+    "class_name": "watchExtensionsV1beta1JobListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Jobs objects.",
+    "entry_point": "watchExtensionsV1beta1JobListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for jobs event dispatch.",
+            "name": "jobs",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "sns_add_permission",
+    "pack": "aws",
+    "parameters": {
+        "AWSAccountId": {
+            "description": "The AWS account IDs of the users (principals) who will be given access to the specified actions. The users must have AWS accounts, but do not need to be signed up for this service.",
+            "required": true,
+            "type": "array"
+        },
+        "ActionName": {
+            "description": "The action you want to allow for the specified principal(s). Valid values: any Amazon SNS action name.",
+            "required": true,
+            "type": "array"
+        },
+        "Label": {
+            "description": "A unique identifier for the new policy statement.",
+            "required": true,
+            "type": "string"
+        },
+        "TopicArn": {
+            "description": "The ARN of the topic whose access control policy you wish to modify.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "add_permission",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "sns",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

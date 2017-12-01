@@ -1,0 +1,17 @@
+ref: cloudflare
+name: cloudflare
+description: A pack to interact with the Cloudflare service.
+keywords:
+- cloudflare
+version: 0.3.2
+author: Jon Middleton
+email: jon.middleton@pulsant.com
+content:
+  actions:
+    count: 1
+    resources:
+    - get_ips
+  tests:
+    count: 1
+    resources:
+    - test_action_get_ips.py

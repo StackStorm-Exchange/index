@@ -1,0 +1,27 @@
+{
+    "description": "Retrieve uuid of a VM object",
+    "entry_point": "vm_hw_uuid_get.py",
+    "name": "vm_hw_uuid_get",
+    "parameters": {
+        "vm_ids": {
+            "description": "Comma seperated list of VM ids",
+            "position": 0,
+            "required": false,
+            "type": "array"
+        },
+        "vm_names": {
+            "description": "Comma seperated list of VM Names",
+            "position": 1,
+            "required": false,
+            "type": "array"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

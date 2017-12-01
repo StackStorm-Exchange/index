@@ -1,0 +1,29 @@
+{
+    "description": "Get switch details from a device",
+    "enabled": true,
+    "entry_point": "get_switch_details.py",
+    "name": "get_switch_details",
+    "pack": "network_essentials",
+    "parameters": {
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

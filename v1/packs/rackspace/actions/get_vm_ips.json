@@ -1,0 +1,24 @@
+{
+    "description": "Retrieve public IP addresses for all the available VMs. Optionally filter by metadata and count.",
+    "enabled": true,
+    "entry_point": "get_vm_ips.py",
+    "name": "get_vm_ips",
+    "parameters": {
+        "count": {
+            "description": "If provided, only return the specified number of entries",
+            "required": false,
+            "type": "integer"
+        },
+        "metadata": {
+            "description": "If provided, only return server which contain the provided metadata values.",
+            "required": false,
+            "type": "object"
+        },
+        "region": {
+            "description": "Optional region name. Defaults to region specified in the config.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

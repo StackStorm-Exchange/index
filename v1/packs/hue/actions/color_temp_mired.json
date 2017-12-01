@@ -1,0 +1,24 @@
+{
+    "description": "Change the bulb color temperature to a specific temperature in mired scale",
+    "enabled": true,
+    "entry_point": "color_temp_mired.py",
+    "name": "color_temp_mired",
+    "parameters": {
+        "light_id": {
+            "description": "ID of the light to manage",
+            "required": true,
+            "type": "string"
+        },
+        "temperature": {
+            "description": "Color temperature",
+            "required": true,
+            "type": "integer"
+        },
+        "transition_time": {
+            "default": 5,
+            "description": "Duration of transition to new state",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

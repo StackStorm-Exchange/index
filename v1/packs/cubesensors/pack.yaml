@@ -1,0 +1,28 @@
+ref: cubesensors
+name: cubesensors
+description: st2 content pack containing CubeSensors integrations
+keywords:
+- cubesensors
+- iot
+- smart home
+- sensors
+- probes
+- home automation
+version: 0.3.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 3
+    resources:
+    - get_device
+    - get_measurements
+    - list_devices
+  rules:
+    count: 1
+    resources:
+    - cubesensors_device_low_charge_notification
+  sensors:
+    count: 1
+    resources:
+    - CubeSensorsMeasurementsSensor

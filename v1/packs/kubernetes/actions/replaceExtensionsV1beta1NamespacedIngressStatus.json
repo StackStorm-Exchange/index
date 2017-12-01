@@ -1,0 +1,33 @@
+{
+    "description": "replace status of the specified Ingress",
+    "enabled": true,
+    "entry_point": "replaceExtensionsV1beta1NamespacedIngressStatus.py",
+    "name": "replaceExtensionsV1beta1NamespacedIngressStatus",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the Ingress",
+            "required": true,
+            "type": "string"
+        },
+        "namespace": {
+            "description": "object name and auth scope, such as for teams and projects",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

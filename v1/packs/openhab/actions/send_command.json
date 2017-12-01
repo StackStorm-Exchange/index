@@ -1,0 +1,19 @@
+{
+    "description": "Send a command to an item",
+    "enabled": true,
+    "entry_point": "send_command.py",
+    "name": "send_command",
+    "parameters": {
+        "command": {
+            "description": "Command to send",
+            "required": true,
+            "type": "string"
+        },
+        "item": {
+            "description": "Item to send commands to",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

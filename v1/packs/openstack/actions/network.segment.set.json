@@ -1,0 +1,44 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.segment.set",
+    "parameters": {
+        "base": {
+            "default": "network segment set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set network segment description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_segment_set = openstackclient.network.v2.network_segment:SetNetworkSegment')",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Set network segment name",
+            "type": "string"
+        },
+        "network_segment": {
+            "description": "Network segment to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,27 @@
+{
+    "description": "Update a devices object category and more  on D42 based on an incoming lifecycle event ID.  ",
+    "enabled": true,
+    "entry_point": "lc_objcat_updater.py",
+    "name": "update_object_category_by_lifecycle_id",
+    "parameters": {
+        "additional_changes": {
+            "description": "optionally, you may make additional changes to this device via a key value pair object input through this parameter",
+            "type": "object"
+        },
+        "identifier": {
+            "description": "contains the name / serial / asset / device_id of the device on D42 to return.  ",
+            "required": true,
+            "type": "string"
+        },
+        "identifier_type": {
+            "description": "designates the type of identifier used to call D42 API.  Can be name, serial, asset, or device_id.  ",
+            "required": true,
+            "type": "string"
+        },
+        "lc_type_id": {
+            "description": "id of lc id from D42",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

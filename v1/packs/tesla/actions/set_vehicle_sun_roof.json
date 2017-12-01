@@ -1,0 +1,29 @@
+{
+    "description": "Set vehicle sun roof position",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "set_vehicle_sun_roof",
+    "parameters": {
+        "action": {
+            "default": "sun_roof_control",
+            "immutable": true,
+            "type": "string"
+        },
+        "percent": {
+            "description": "The open amount",
+            "required": false,
+            "type": "integer"
+        },
+        "state": {
+            "description": "One of move, open, close, comfort, vent",
+            "required": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

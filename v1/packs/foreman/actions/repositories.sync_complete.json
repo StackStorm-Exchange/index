@@ -1,0 +1,51 @@
+{
+    "description": " (resource: POST /katello/api/repositories/sync_complete)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repositories.sync_complete",
+    "pack": "foreman",
+    "parameters": {
+        "call_report": {
+            "description": "'description: None\n parameters:\n     task_id:\n       required: true\n       type: string\n       description:\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "repositories.sync_complete",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "'description: None\n parameters:\n     repo_id:\n       required: true\n       type: string\n       description:\n     '\n",
+            "required": true,
+            "type": "object"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "shared secret token",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

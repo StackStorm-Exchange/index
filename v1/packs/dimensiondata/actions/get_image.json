@@ -1,0 +1,23 @@
+{
+    "description": "Get an image by ID",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "get_image",
+    "parameters": {
+        "action": {
+            "default": "get_image",
+            "immutable": true,
+            "type": "string"
+        },
+        "image_id": {
+            "description": "The ID of the image",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

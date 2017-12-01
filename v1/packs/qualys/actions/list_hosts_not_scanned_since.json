@@ -1,0 +1,14 @@
+{
+    "description": "Get a list of host not scanned in a number of days",
+    "enabled": true,
+    "entry_point": "list_hosts_not_scanned_since.py",
+    "name": "list_hosts_not_scanned_since",
+    "parameters": {
+        "days": {
+            "description": "The number of days since last scanned",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

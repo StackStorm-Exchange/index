@@ -1,0 +1,33 @@
+{
+    "description": "Create a new security group",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "security.group.create",
+    "parameters": {
+        "base": {
+            "default": "security group create",
+            "immutable": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "Security group description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('security_group_create = openstackclient.compute.v2.security_group:CreateSecurityGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: html, json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "New security group name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

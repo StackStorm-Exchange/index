@@ -1,0 +1,22 @@
+{
+    "action": {
+        "parameters": {
+            "channel": "stackstorm",
+            "message": "Bandwidth Updated: {{trigger.instance}}, Tag: {{trigger.tag}}, Bandwidth: {{trigger.bandwidth}}, current: {{trigger.current}}, average: {{trigger.average}}"
+        },
+        "ref": "chatops.post_message"
+    },
+    "criteria": {
+        "trigger.action": {
+            "pattern": "update",
+            "type": "equals"
+        }
+    },
+    "description": "Notify ChatOps of a Bandwidth Update",
+    "enabled": false,
+    "name": "bsd_bandwidth_notify",
+    "pack": "vadc",
+    "trigger": {
+        "type": "vadc.bsd_bandwidth_event"
+    }
+}

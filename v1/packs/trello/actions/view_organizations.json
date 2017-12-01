@@ -1,0 +1,17 @@
+{
+    "description": "List all organizations for user",
+    "enabled": true,
+    "entry_point": "view_organizations.py",
+    "name": "view_organizations",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

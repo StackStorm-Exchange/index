@@ -1,0 +1,27 @@
+ref: octopusdeploy
+name: octopusdeploy
+description: st2 content pack containing octopusdeploy integrations
+keywords:
+- octopus
+- octopusdeploy
+- deployment
+- continous deployment
+- continous integration
+version: 0.1.2
+author: Anthony Shaw
+email: anthony.shaw@dimensiondata.com
+content:
+  actions:
+    count: 6
+    resources:
+    - add_machine
+    - create_release
+    - deploy_release
+    - list_deployments
+    - list_projects
+    - list_releases
+  sensors:
+    count: 2
+    resources:
+    - NewDeploymentSensor
+    - NewReleaseSensor

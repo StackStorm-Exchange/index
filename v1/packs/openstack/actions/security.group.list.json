@@ -1,0 +1,29 @@
+{
+    "description": "List all security groups",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "security.group.list",
+    "parameters": {
+        "all_projects": {
+            "default": false,
+            "description": "Display information from all projects (admin only)",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "security group list",
+            "immutable": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('security_group_list = openstackclient.compute.v2.security_group:ListSecurityGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, html, json, table, yaml)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
