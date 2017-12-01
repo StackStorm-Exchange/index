@@ -1,0 +1,32 @@
+{
+    "api_key": {
+        "description": "API key used for authentication if custom API key desired",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "api_url": {
+        "description": "Base URL for StackStorm API endpoint",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "auth_url": {
+        "description": "Base URL for StackStorm AUTH endpoint",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "base_url": {
+        "description": "Base URL for StackStorm API endpoints",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "cacert": {
+        "description": "Set to True or path to validate certificates",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "api_key": {
+        "description": "ActiveCampaign API Key.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "url": {
+        "description": "ActiveCampaign Account URL",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "webhook": {
+        "additionalProperties": false,
+        "description": "Webhook sensor specific settings.",
+        "properties": {
+            "host": {
+                "default": "0.0.0.0",
+                "description": "IP to listen on - defaults to 0.0.0.0",
+                "required": false,
+                "type": "string"
+            },
+            "path": {
+                "default": "webhook",
+                "description": "Webhook path - defaults to 'webhook'",
+                "required": false,
+                "type": "string"
+            },
+            "port": {
+                "default": 9991,
+                "description": "Port to listen on - defaults to 9991",
+                "required": false,
+                "type": "integer"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "admin_host": {
+        "description": "The Duo API Server hostname.",
+        "required": false,
+        "type": "string"
+    },
+    "admin_ikey": {
+        "description": "The Duo Admin api-integration-key",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "admin_skey": {
+        "description": "The Duo Admin secret key",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "auth_host": {
+        "description": "The Duo API Server hostname.",
+        "required": true,
+        "type": "string"
+    },
+    "auth_ikey": {
+        "description": "The Duo api-integration-key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "auth_skey": {
+        "description": "The Duo secret key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

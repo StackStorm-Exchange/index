@@ -1,0 +1,50 @@
+{
+    "consumer_key": {
+        "description": "Consumer key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "oauth_secret": {
+        "description": "OAuth secret",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "oauth_token": {
+        "description": "OAuth token",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "poll_interval": {
+        "default": 30,
+        "description": "Polling interval - default 30s",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "project": {
+        "description": "Project to be used as default for actions that don't require or allow a project",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "rsa_cert_file": {
+        "description": "Path to a private key file, e.g. /home/vagrant/jira.pem",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "url": {
+        "description": "URL of the JIRA instance (e.g. ``https://myproject.atlassian.net``)",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "verify": {
+        "default": true,
+        "description": "Verify SSL certificate. Set to False to disable verification. Default True",
+        "type": "boolean"
+    }
+}

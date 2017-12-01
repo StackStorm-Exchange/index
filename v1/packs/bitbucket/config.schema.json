@@ -1,0 +1,71 @@
+{
+    "email": {
+        "description": "Your email address",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "Bitbucket password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "sensor": {
+        "additionalProperties": false,
+        "properties": {
+            "bitbucket_server_url": {
+                "description": "URL of BitBucket server (this is only required to set in the case of the 'bitbucket_type' is set 'server')",
+                "required": false,
+                "type": "string"
+            },
+            "bitbucket_type": {
+                "description": "BitBucket service type",
+                "enum": [
+                    "cloud",
+                    "server"
+                ],
+                "required": true,
+                "type": "string"
+            },
+            "targets": {
+                "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "branches": {
+                            "default": [
+                                "master"
+                            ],
+                            "description": "Branch name to monitor in the repository",
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        "repository": {
+                            "description": "Repository name to monitor including username/project (e.g. hoge/fuga)",
+                            "required": true,
+                            "type": "string"
+                        }
+                    },
+                    "required": true,
+                    "type": "object"
+                },
+                "required": true,
+                "type": "array"
+            },
+            "timeout": {
+                "default": 20,
+                "description": "Timeout seconds for confirmation processing",
+                "type": "integer"
+            }
+        },
+        "type": "object"
+    },
+    "username": {
+        "description": "Bitbucket username",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

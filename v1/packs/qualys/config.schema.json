@@ -1,0 +1,20 @@
+{
+    "hostname": {
+        "description": "Hostname of the Qualys API",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "Password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "username": {
+        "description": "Username for the qualys API",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

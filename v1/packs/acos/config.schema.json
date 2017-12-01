@@ -1,0 +1,39 @@
+{
+    "appliance": {
+        "description": "Appliance parameters to connect",
+        "items": {
+            "additionalProperties": false,
+            "properties": {
+                "api_version": {
+                    "default": "v3.0",
+                    "description": "version number of aXAPI to request ACOS appliance",
+                    "enum": [
+                        "v2.1",
+                        "v3.0"
+                    ],
+                    "required": false,
+                    "type": "string"
+                },
+                "passwd": {
+                    "description": "Password of the specified userid",
+                    "required": true,
+                    "secret": true,
+                    "type": "string"
+                },
+                "target": {
+                    "description": "Management IP address of the target appliance to operate",
+                    "required": true,
+                    "type": "string"
+                },
+                "userid": {
+                    "description": "Admin userid to login",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "type": "array"
+    }
+}

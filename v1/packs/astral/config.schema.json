@@ -1,0 +1,21 @@
+{
+    "latitude": {
+        "description": "Latitude of the location",
+        "required": true,
+        "secret": false,
+        "type": "number"
+    },
+    "longitude": {
+        "description": "Longitude of the location",
+        "required": true,
+        "secret": false,
+        "type": "number"
+    },
+    "timezone": {
+        "default": "GMT+0",
+        "description": "Time zone to display in results",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

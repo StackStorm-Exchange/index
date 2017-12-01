@@ -1,0 +1,65 @@
+{
+    "aws_access_key_id": {
+        "description": "AWS access key to use.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "aws_secret_access_key": {
+        "description": "AWS access secret to use.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "region": {
+        "default": "us-east-1",
+        "description": "AWS region to use.",
+        "required": true,
+        "type": "string"
+    },
+    "service_notifications_sensor": {
+        "properties": {
+            "host": {
+                "default": "localhost",
+                "description": "Listen host for the HTTP interface from Amazon SNS",
+                "type": "string"
+            },
+            "path": {
+                "description": "Path where the events need to be sent from Amazon SNS",
+                "type": "string"
+            },
+            "port": {
+                "default": 12345,
+                "description": "Listen path for the HTTP interface from Amazon SNS",
+                "type": "integer"
+            }
+        },
+        "type": "object"
+    },
+    "sqs_other": {
+        "properties": {
+            "max_number_of_messages": {
+                "default": 1,
+                "description": "The maximum number of messages that Amazon SQS returns",
+                "type": "integer"
+            }
+        },
+        "type": "object"
+    },
+    "sqs_sensor": {
+        "properties": {
+            "input_queues": {
+                "description": "Names of queue to fetch messages from Amazon SQS",
+                "items": {
+                    "type": "string"
+                },
+                "type": "array"
+            }
+        },
+        "type": "object"
+    },
+    "st2_user_data": {
+        "description": "The file for all invocations of the 'aws.ec2_run_instances' action",
+        "type": "string"
+    }
+}

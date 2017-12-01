@@ -1,0 +1,62 @@
+{
+    "cooldown_multiplier": {
+        "default": 2,
+        "description": "Multiple of query window to cooldown after successful hit. Default 2",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "count_threshold": {
+        "default": 5,
+        "description": "Minimum number of hits before emitting trigger. Default 5",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "host": {
+        "description": "Host where Elasticsearch is running",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "http_auth": {
+        "default": "",
+        "description": "Username and password for authentication",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "index": {
+        "description": "Index to query",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "port": {
+        "default": 9200,
+        "description": "Elasticsearch port - default 9200",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "query_string": {
+        "description": "String to query for",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "query_window": {
+        "default": 30,
+        "description": "Rolling window size in seconds. Default 30s",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "use_ssl": {
+        "default": false,
+        "description": "Boolean indicating if SSL must be used or not",
+        "required": false,
+        "secret": false,
+        "type": "boolean"
+    }
+}

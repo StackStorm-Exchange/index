@@ -1,0 +1,14 @@
+{
+    "account_sid": {
+        "description": "Account SID, 34-character string starting with AC",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "auth_token": {
+        "description": "Twilio authentication token",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

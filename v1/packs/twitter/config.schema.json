@@ -1,0 +1,47 @@
+{
+    "access_token": {
+        "description": "Your access token.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "access_token_secret": {
+        "description": "Your access token secret.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "consumer_key": {
+        "description": "Your consumer key.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "consumer_secret": {
+        "description": "Your consumer secret.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "count": {
+        "default": 30,
+        "description": "Number of latest tweets matching criteria to receive. Default 30",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "language": {
+        "description": "Optional: only return tweets in this language - e.g. en, jp",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "query": {
+        "description": "A list of strings to query for",
+        "items": {
+            "type": "string"
+        },
+        "required": true,
+        "type": "array"
+    }
+}

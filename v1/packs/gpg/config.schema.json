@@ -1,0 +1,22 @@
+{
+    "debug": {
+        "default": false,
+        "description": "Optional debug flag - set to True to enable debug mode",
+        "required": false,
+        "secret": false,
+        "type": "boolean"
+    },
+    "gpgbinary": {
+        "default": "gpg",
+        "description": "Optional path to the gpg binary to use",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "gpghome": {
+        "description": "Optional path to gpg keyring home",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    }
+}

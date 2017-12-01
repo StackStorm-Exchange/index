@@ -1,0 +1,85 @@
+{
+    "build_options": {
+        "additionalProperties": false,
+        "description": "Build options.",
+        "properties": {
+            "nocache": {
+                "default": false,
+                "description": "Build cache - set to True to use no cache",
+                "type": "boolean"
+            },
+            "quiet": {
+                "default": false,
+                "description": "Quiet build - default false",
+                "type": "boolean"
+            },
+            "rm": {
+                "default": false,
+                "description": "Set to true to remove intermediate containers",
+                "type": "boolean"
+            },
+            "timeout": {
+                "default": 10,
+                "description": "Build timeout in seconds - default 10s",
+                "type": "integer"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "poll_interval": {
+        "default": 5,
+        "description": "Docker poll interval",
+        "type": "integer"
+    },
+    "ps_options": {
+        "additionalProperties": false,
+        "description": "Container list options.",
+        "properties": {
+            "before": {
+                "default": null,
+                "description": "Filters containers created before given ID or name",
+                "type": "string"
+            },
+            "latest": {
+                "default": false,
+                "description": "Show the latest created container (default false)",
+                "type": "boolean"
+            },
+            "quiet": {
+                "default": false,
+                "description": "Set to True to only display numeric IDs",
+                "type": "boolean"
+            },
+            "since": {
+                "default": null,
+                "description": "Filters containers created since given ID or name",
+                "type": "string"
+            },
+            "trunc": {
+                "default": true,
+                "description": "Set to False to truncate output",
+                "type": "boolean"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "timeout": {
+        "default": 60,
+        "description": "Docker timeout",
+        "type": "integer"
+    },
+    "url": {
+        "default": "unix:///var/run/docker.sock",
+        "description": "Path to Docker socket or URI to Docker Daemon",
+        "required": true,
+        "type": "string"
+    },
+    "version": {
+        "default": "1.13",
+        "description": "Docker version - e.g. 1.13",
+        "required": true,
+        "type": "string"
+    }
+}

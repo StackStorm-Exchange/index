@@ -1,0 +1,20 @@
+{
+    "api_token": {
+        "description": "Lastline API token",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "key": {
+        "description": "Lastline API Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "url": {
+        "default": "https://analysis.lastline.com",
+        "description": "URL of Lastline Endpoint. By default: uses Lastline Cloud",
+        "secret": false,
+        "type": "string"
+    }
+}

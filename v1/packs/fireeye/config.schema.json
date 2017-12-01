@@ -1,0 +1,20 @@
+{
+    "api_url": {
+        "description": "HTTPS endpoint of FireEye CM appliance. (e.g.: https://fqdn.to.device)",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "FireEye password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "username": {
+        "description": "FireEye username",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

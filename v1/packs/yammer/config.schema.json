@@ -1,0 +1,26 @@
+{
+    "access_code": {
+        "description": "OAuth Access code, provided once auth action is run",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "client_id": {
+        "description": "Client ID provided by the Yammer Developer configuration",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "client_secret": {
+        "description": "Client secret provided by the Yammer Developer configuration",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "expected_redirect": {
+        "description": "URL redirect as configured in the Yammer Developer configuration",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

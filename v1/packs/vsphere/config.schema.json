@@ -1,0 +1,64 @@
+{
+    "sensors": {
+        "properties": {
+            "taskinfo": {
+                "properties": {
+                    "tasknum": {
+                        "default": 1,
+                        "description": "The number of tasks to check at a polling processing",
+                        "type": "integer"
+                    },
+                    "vsphere": {
+                        "default": "default",
+                        "description": "vSphere environment to poll, as specified in the config. Uses 'default' if not set",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    },
+    "ssl_verify": {
+        "default": true,
+        "description": "Verify SSL certificate used with vCenter Server.",
+        "type": "boolean"
+    },
+    "vcenters": {
+        "additionalProperties": false,
+        "properties": {
+            "host": {
+                "description": "Hostname or IP address of vSphere Server.",
+                "required": true,
+                "type": "string"
+            },
+            "passwd": {
+                "description": "The password of the specified user.",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "port": {
+                "description": "TCP port number for the vSphere Server.",
+                "required": true,
+                "type": "integer"
+            },
+            "user": {
+                "description": "Authentication user-id for the vSphere Server.",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "vsphere": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/vcenters"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

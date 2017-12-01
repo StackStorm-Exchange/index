@@ -1,0 +1,37 @@
+{
+    "excel_file": {
+        "default": "",
+        "description": "Path and filename to excel file",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "key_column": {
+        "default": 1,
+        "description": "Column in the spreadsheet that contains the key field",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "lock_file_delay": {
+        "default": 1,
+        "description": "Delay in seconds between attempts to read a file that was previously locked",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "lock_file_retries": {
+        "default": 3,
+        "description": "Number of times to retry to open a the excel file for edits",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "variable_name_row": {
+        "default": 1,
+        "description": "Row in the spreadsheet that contains the variables names",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    }
+}

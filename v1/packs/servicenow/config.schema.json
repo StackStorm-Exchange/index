@@ -1,0 +1,24 @@
+{
+    "default_payload": {
+        "description": "ServiceNow options that will be passed to all requests",
+        "required": false,
+        "type": "object"
+    },
+    "instance_name": {
+        "description": "Instance name, provided by ServiceNow",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "Password for the servicenow account",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "username": {
+        "description": "Username for the servicenow account",
+        "required": true,
+        "type": "string"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "password": {
+        "description": "Logon password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "primary_smtp_address": {
+        "description": "Your primary SMTP address e.g. example@example.com",
+        "required": true,
+        "type": "string"
+    },
+    "sensor_folder": {
+        "default": "Inbox",
+        "description": "Folder to monitor in the sensor",
+        "required": true,
+        "type": "string"
+    },
+    "server": {
+        "description": "Optional server hostname, for when autodiscover is not available",
+        "required": false,
+        "type": "string"
+    },
+    "timezone": {
+        "default": "Europe/London",
+        "description": "Timezone of user",
+        "required": true,
+        "type": "string"
+    },
+    "username": {
+        "description": "Logon username, either NT style DOMAIN\\user or FQDN style user@fulldomain.com",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "verify_ssl": {
+        "default": true,
+        "description": "Verify endpoint SSL details",
+        "required": true,
+        "type": "boolean"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "host": {
+        "description": "Mmonit host to connect to for actions.",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "Password to connect to mmonit for actions",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "shared_sensors_config": {
+        "additionalProperties": false,
+        "description": "Sensor specific settings.",
+        "properties": {
+            "active": {
+                "default": 1,
+                "description": "The active events filter. Possible values: 0=show all events, 1=show only active errors, 2=show only active errors but exclude user dismissed errors. Default 1.",
+                "required": true,
+                "type": "integer"
+            },
+            "event_types": {
+                "default": [
+                    "1",
+                    "2"
+                ],
+                "description": "List of events to listen for. Possible values: 0=success, 1=error, 2=change. 1 and 2 by default",
+                "items": {
+                    "type": "string"
+                },
+                "required": true,
+                "type": "array"
+            },
+            "host": {
+                "description": "Mmonit host to connect to for sensor.",
+                "required": true,
+                "type": "string"
+            },
+            "password": {
+                "description": "Password to connect to mmonit for sensor",
+                "required": true,
+                "type": "string"
+            },
+            "username": {
+                "description": "Username to connect to mmonit for sensor",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "username": {
+        "description": "Username to connect to mmonit for actions",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

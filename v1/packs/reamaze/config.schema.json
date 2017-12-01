@@ -1,0 +1,20 @@
+{
+    "api_token": {
+        "description": "API token for user",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "brand": {
+        "description": "Scoped brand to send API requests to",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "email": {
+        "description": "Email of user connecting to reamaze",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "api_key": {
+        "description": "PagerDuty API Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "debug": {
+        "default": false,
+        "description": "Set to True to enable additional logging",
+        "secret": false,
+        "type": "boolean"
+    },
+    "service_key": {
+        "description": "PagerDuty Service Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

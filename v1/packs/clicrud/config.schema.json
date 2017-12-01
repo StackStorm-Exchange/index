@@ -1,0 +1,63 @@
+{
+    "environment": {
+        "properties": {
+            "default": {
+                "properties": {
+                    "b64enable": {
+                        "description": "Enable password base64d.",
+                        "required": false,
+                        "secret": true,
+                        "type": "string"
+                    },
+                    "b64password": {
+                        "description": "Password used to authenticate base64d.",
+                        "required": false,
+                        "secret": true,
+                        "type": "string"
+                    },
+                    "enable": {
+                        "default": "password",
+                        "description": "Enable password.",
+                        "required": false,
+                        "secret": true,
+                        "type": "string"
+                    },
+                    "method": {
+                        "default": "ssh",
+                        "description": "Connection method.",
+                        "enum": [
+                            "ssh",
+                            "telnet"
+                        ],
+                        "required": true,
+                        "secret": false,
+                        "type": "string"
+                    },
+                    "password": {
+                        "default": "password",
+                        "description": "Password used to authenticate.",
+                        "required": false,
+                        "secret": true,
+                        "type": "string"
+                    },
+                    "port": {
+                        "description": "Override the port number for Telnet or SSH.",
+                        "required": false,
+                        "secret": false,
+                        "type": "integer"
+                    },
+                    "username": {
+                        "default": "admin",
+                        "description": "Username used to authenticate.",
+                        "required": true,
+                        "secret": false,
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

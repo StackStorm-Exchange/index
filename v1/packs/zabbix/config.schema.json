@@ -1,0 +1,24 @@
+{
+    "zabbix": {
+        "additionalProperties": false,
+        "description": "Configuration to authenticate with Zabbix Server",
+        "properties": {
+            "password": {
+                "default": "zabbix",
+                "secret": true,
+                "type": "string"
+            },
+            "url": {
+                "default": "http://localhost/zabbix",
+                "description": "The zabbix login URL",
+                "type": "string"
+            },
+            "username": {
+                "default": "Admin",
+                "type": "string"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

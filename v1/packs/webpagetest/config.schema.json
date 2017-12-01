@@ -1,0 +1,15 @@
+{
+    "key": {
+        "description": "The API key from the WebPageTest Public Instance",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "wpt_url": {
+        "default": "http://webpagetest.org",
+        "description": "Base URL for the WebPageTest instance to use",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

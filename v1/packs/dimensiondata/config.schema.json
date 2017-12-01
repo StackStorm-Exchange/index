@@ -1,0 +1,14 @@
+{
+    "api_password": {
+        "description": "API secret",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "api_user": {
+        "description": "API username",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

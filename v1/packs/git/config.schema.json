@@ -1,0 +1,24 @@
+{
+    "repositories": {
+        "description": "Array of Git Repos to monitor",
+        "items": {
+            "properties": {
+                "branch": {
+                    "default": "master",
+                    "description": "Branch to monitor - e.g. master",
+                    "required": true,
+                    "type": "string"
+                },
+                "url": {
+                    "description": "URL of Git repo to monitor - can use any suppported protocol",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "required": true,
+        "type": "array"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "api_version": {
+        "default": "v2",
+        "description": "Mistral API version",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "host": {
+        "default": "http://localhost:8989/",
+        "description": "Mistral URL",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

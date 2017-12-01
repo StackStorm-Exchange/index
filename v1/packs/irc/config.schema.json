@@ -1,0 +1,28 @@
+{
+    "channels": {
+        "description": "A list of channels to join and monitor",
+        "items": {
+            "type": "string"
+        },
+        "required": true,
+        "type": "array"
+    },
+    "nickname": {
+        "description": "Nickname for the bot",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "Optional password for the nickname",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "server": {
+        "description": "Server to connect to in `<hostname:port>` format, e.g. `irc.freenode.net:6667`",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

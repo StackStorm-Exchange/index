@@ -1,0 +1,34 @@
+{
+    "hostname": {
+        "description": "FQDN to vRealize Automation 7 API endpoint (e.x.: vrealize.mycompany.org)",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "vRealize Automation 7 user account password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "tenant": {
+        "default": "vsphere.local",
+        "description": "vRealize Automation 7 tenant (Defaults to vsphere.local if not supplied)",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "username": {
+        "description": "vRealize Automation 7 user account username",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "verify_ssl": {
+        "default": true,
+        "description": "Whether ST2 should verify the vRealize Automation 7 API endpoint",
+        "required": false,
+        "secret": false,
+        "type": "boolean"
+    }
+}

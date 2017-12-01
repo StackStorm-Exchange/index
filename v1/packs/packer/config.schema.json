@@ -1,0 +1,17 @@
+{
+    "atlas_token": {
+        "description": "Hashicorp Atlas token, needed for `push` action",
+        "secret": true,
+        "type": "string"
+    },
+    "exec_path": {
+        "default": "/usr/local/bin/packer",
+        "description": "Path to Packer binary. Default /usr/local/bin/packer",
+        "type": "string"
+    },
+    "variables": {
+        "default": {},
+        "description": "Variables passed to packer. Takes a dict",
+        "type": "object"
+    }
+}

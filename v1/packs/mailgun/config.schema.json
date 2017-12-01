@@ -1,0 +1,14 @@
+{
+    "api_key": {
+        "description": "Mailgun API key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "domain": {
+        "description": "Your mailgun domain, e.g. myuser.mailgun.org",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

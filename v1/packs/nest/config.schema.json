@@ -1,0 +1,28 @@
+{
+    "device": {
+        "default": 0,
+        "description": "Default nest device ID to query (Default: 0)",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "password": {
+        "description": "Nest.com password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "structure": {
+        "default": 0,
+        "description": "Default nest home ID to query (Default: 0)",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "username": {
+        "description": "Nest.com username",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

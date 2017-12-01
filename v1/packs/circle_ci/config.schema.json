@@ -1,0 +1,31 @@
+{
+    "endpoints": {
+        "default": [
+            "build/events"
+        ],
+        "items": {
+            "type": "string"
+        },
+        "required": false,
+        "type": "array"
+    },
+    "host": {
+        "description": "Circle CI server host.",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "port": {
+        "default": 8531,
+        "description": "Circle CI server port.",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "token": {
+        "description": "Circle CI auth token.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

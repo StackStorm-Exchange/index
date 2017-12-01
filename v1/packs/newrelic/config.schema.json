@@ -1,0 +1,47 @@
+{
+    "api_key": {
+        "description": "New Relic API Key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "api_url": {
+        "default": "https://api.newrelic.com/v2/",
+        "description": "New Relic API URL. Default https://api.newrlic.com/v2/",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "sensor_config": {
+        "additionalProperties": false,
+        "description": "Sensor specific settings.",
+        "properties": {
+            "host": {
+                "default": "0.0.0.0",
+                "description": "IP Address sensor should listen on. Default 0.0.0.0",
+                "required": false,
+                "type": "string"
+            },
+            "normal_report_delay": {
+                "default": 300,
+                "description": "Delay before firing return to normal event. Default 300s",
+                "required": false,
+                "type": "integer"
+            },
+            "port": {
+                "default": 10001,
+                "description": "Port Address sensor should listen on. Default 10001",
+                "required": false,
+                "type": "integer"
+            },
+            "url": {
+                "default": "/st2/nrhook/",
+                "description": "URI path for sensor. Default /st2/nrhook",
+                "required": false,
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}
