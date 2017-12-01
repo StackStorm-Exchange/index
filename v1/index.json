@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1512112900,
-        "hash": "4d258fd7884465e48fa6a823c7f9cf0e"
+        "generated_ts": 1512114003,
+        "hash": "df961ba71d71a114997cd80232ff66a7"
     },
     "packs": {
         "acos": {
@@ -9543,6 +9543,34 @@
             "ref": "tesla",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-tesla",
             "version": "0.2.2"
+        },
+        "test": {
+            "author": "st2-dev",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "list_vms",
+                        "parse"
+                    ]
+                },
+                "tests": {
+                    "count": 1,
+                    "resources": [
+                        "test_action_parse_xml.py"
+                    ]
+                }
+            },
+            "description": "st2 pack to test package management pipeline",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "some",
+                "search",
+                "terms"
+            ],
+            "name": "test",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-test",
+            "version": "0.4.0"
         },
         "time": {
             "author": "StackStorm, Inc.",
