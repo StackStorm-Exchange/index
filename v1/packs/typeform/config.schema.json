@@ -1,0 +1,69 @@
+{
+    "api_key": {
+        "description": "Typeform API Key",
+        "secret": true,
+        "type": "string"
+    },
+    "completed": {
+        "default": true,
+        "description": "Set to False to retrieve all forms, not just completed. Default True",
+        "type": "boolean"
+    },
+    "form_id": {
+        "description": "ID for your typeform Form",
+        "secret": false,
+        "type": "string"
+    },
+    "mysql": {
+        "additionalProperties": false,
+        "description": "MySQL specific settings.",
+        "properties": {
+            "host": {
+                "description": "Hostname/IP of MySQL DB",
+                "required": true,
+                "type": "string"
+            },
+            "name": {
+                "description": "Name of MySQL DB",
+                "required": true,
+                "type": "string"
+            },
+            "pass": {
+                "description": "Password for MySQL",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "user": {
+                "description": "Username to for MySQL",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "sensor": {
+        "additionalProperties": false,
+        "description": "Sensor specific settings.",
+        "properties": {
+            "retries": {
+                "default": 3,
+                "description": "Number of retries to attempt",
+                "type": "integer"
+            },
+            "retry_delay": {
+                "default": 30,
+                "description": "Delay in seconds between retries",
+                "type": "integer"
+            },
+            "timeout": {
+                "default": 20,
+                "description": "Time in seconds to wait before timeout",
+                "type": "integer"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

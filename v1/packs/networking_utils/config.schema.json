@@ -1,0 +1,20 @@
+{
+    "asn_db": {
+        "default": "/opt/geoip2/GeoLite2-ASN.mmdb",
+        "description": "Path to GeoLite2-ASN database",
+        "required": true,
+        "type": "string"
+    },
+    "city_db": {
+        "default": "/opt/geoip2/GeoLite2-City.mmdb",
+        "description": "Path to City GeoIP2 database",
+        "required": true,
+        "type": "string"
+    },
+    "isp_db": {
+        "default": "/opt/geoip2/GeoIP2-ISP.mmdb",
+        "description": "Path to ISP GeoIP2 database",
+        "required": true,
+        "type": "string"
+    }
+}

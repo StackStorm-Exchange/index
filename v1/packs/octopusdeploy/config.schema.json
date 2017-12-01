@@ -1,0 +1,20 @@
+{
+    "api_key": {
+        "description": "API key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "host": {
+        "description": "Octopus Deploy API host name",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "port": {
+        "default": 443,
+        "description": "Server port to use",
+        "required": true,
+        "type": "integer"
+    }
+}

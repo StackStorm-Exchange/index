@@ -1,0 +1,34 @@
+{
+    "connections": {
+        "additionalProperties": false,
+        "properties": {
+            "password": {
+                "description": "Password to login to the server",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "server": {
+                "description": "IP/Hostname of the server",
+                "required": true,
+                "type": "string"
+            },
+            "username": {
+                "description": "Username to login to the server",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "foreman": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/connections"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

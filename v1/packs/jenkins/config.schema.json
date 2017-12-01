@@ -1,0 +1,20 @@
+{
+    "password": {
+        "description": "Jenkins Password (if auth is enabled)",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "url": {
+        "description": "FQDN to Jenkins API endpoint (e.x.: http://jenkins.mycompany.org:8080)",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "username": {
+        "description": "Jenkins Username (if auth is enabled)",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    }
+}

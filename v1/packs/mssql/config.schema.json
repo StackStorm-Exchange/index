@@ -1,0 +1,66 @@
+{
+    "connections": {
+        "description": "Database connection parameters",
+        "items": {
+            "properties": {
+                "database": {
+                    "description": "Database name - connection name used if not set",
+                    "required": false,
+                    "secret": false,
+                    "type": "string"
+                },
+                "password": {
+                    "description": "Password for MS-SQL.",
+                    "required": true,
+                    "secret": true,
+                    "type": "string"
+                },
+                "server": {
+                    "description": "Database hostname",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "user": {
+                    "description": "Database user.",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "required": false,
+        "type": "object"
+    },
+    "default": {
+        "description": "Default database connection to use",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "output_csv": {
+        "additionalProperties": false,
+        "description": "Output file parameters",
+        "properties": {
+            "directory": {
+                "default": null,
+                "description": "Directory to use. Will use tempfile if `null`",
+                "type": "string"
+            },
+            "file_prefix": {
+                "default": "mssql-query",
+                "description": "Filename prefix to use - default mssql-query",
+                "type": "string"
+            },
+            "file_suffix": {
+                "default": ".csv",
+                "description": "File suffix to use - default .csv",
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "host": {
+        "description": "Host where Sensu API endpoint is running",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "pass": {
+        "description": "Sensu integration password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "port": {
+        "default": 4567,
+        "description": "Sensu API port (default 4567)",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "ssl": {
+        "default": false,
+        "description": "Set to true to use SSL",
+        "required": false,
+        "secret": false,
+        "type": "boolean"
+    },
+    "user": {
+        "description": "Sensu integration user",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

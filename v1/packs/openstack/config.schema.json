@@ -1,0 +1,80 @@
+{
+    "messaging": {
+        "additionalProperties": false,
+        "description": "Zaqar messaging configuration.",
+        "properties": {
+            "claim_grace": {
+                "default": 60,
+                "description": "Claim Grace",
+                "type": "integer"
+            },
+            "claim_ttl": {
+                "default": 60,
+                "description": "Claim TTL",
+                "type": "integer"
+            },
+            "queues": {
+                "description": "Queues to monitor",
+                "type": "array"
+            },
+            "service_type": {
+                "default": "messaging",
+                "description": "Messaging Service Type",
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "openstackrc": {
+        "description": "Path to OpenStack RC file",
+        "required": false,
+        "type": "string"
+    },
+    "password": {
+        "additionalProperties": false,
+        "description": "Password configuration.",
+        "properties": {
+            "OS_AUTH_URL": {
+                "description": "OpenStack Authentication URL",
+                "type": "string"
+            },
+            "OS_PASSWORD": {
+                "description": "OpenStack Password",
+                "secret": true,
+                "type": "string"
+            },
+            "OS_TENANT_ID": {
+                "description": "OpenStack Tenant ID",
+                "type": "string"
+            },
+            "OS_TENANT_NAME": {
+                "description": "OpenStack Tenant Name",
+                "type": "string"
+            },
+            "OS_USERNAME": {
+                "description": "OpenStack Username",
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "token": {
+        "additionalProperties": false,
+        "description": "Token configuration.",
+        "properties": {
+            "OS_TOKEN": {
+                "description": "OpenStack Token",
+                "secret": true,
+                "type": "string"
+            },
+            "OS_URL": {
+                "description": "OpenStack URL",
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

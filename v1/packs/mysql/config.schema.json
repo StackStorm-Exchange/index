@@ -1,0 +1,37 @@
+{
+    "connections": {
+        "description": "Database connection parameters",
+        "items": {
+            "properties": {
+                "db": {
+                    "description": "Name of database.",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "host": {
+                    "description": "Database hostname",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "pass": {
+                    "description": "Password used to authenticate.",
+                    "required": true,
+                    "secret": true,
+                    "type": "string"
+                },
+                "user": {
+                    "description": "Username for DB",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "required": false,
+        "type": "object"
+    }
+}

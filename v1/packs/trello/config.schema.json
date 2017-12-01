@@ -1,0 +1,67 @@
+{
+    "api_key": {
+        "description": "User API Key",
+        "required": true,
+        "type": "string"
+    },
+    "list_actions_sensor": {
+        "additionalProperties": true,
+        "description": "Sensor specific settings",
+        "properties": {
+            "api_key": {
+                "description": "Sensor-specific API Key",
+                "type": "string"
+            },
+            "lists": {
+                "description": "Lists to monitor",
+                "items": {
+                    "properties": {
+                        "api_key": {
+                            "description": "Optional List-specific API Key",
+                            "required": false,
+                            "type": "string"
+                        },
+                        "board_id": {
+                            "description": "Board ID where list is located",
+                            "required": true,
+                            "type": "string"
+                        },
+                        "filter": {
+                            "filter": "Filter actions by type, e.g. createCard, deleteCard",
+                            "items": {
+                                "type": "string"
+                            },
+                            "required": false,
+                            "type": "array"
+                        },
+                        "list_id": {
+                            "description": "Trello List ID",
+                            "required": true,
+                            "type": "string"
+                        },
+                        "token": {
+                            "description": "Optional List-specific Token",
+                            "required": false,
+                            "type": "string"
+                        }
+                    },
+                    "required": true,
+                    "type": "object"
+                },
+                "type": "array"
+            },
+            "token": {
+                "description": "Sensor-specific oAuth Token",
+                "secret": true,
+                "type": "string"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "token": {
+        "description": "User oAuth Token for R/W Access",
+        "secret": true,
+        "type": "string"
+    }
+}

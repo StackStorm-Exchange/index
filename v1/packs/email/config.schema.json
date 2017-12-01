@@ -1,0 +1,132 @@
+{
+    "attachment_datastore_ttl": {
+        "default": 1800,
+        "description": "TTL in seconds to keep attachments in the datastore. Default 1800",
+        "required": false,
+        "type": "integer"
+    },
+    "imap_accounts": {
+        "description": "IMAP accounts",
+        "items": {
+            "properties": {
+                "download_attachments": {
+                    "default": false,
+                    "description": "Set to True to download attachments to datastore. Default False",
+                    "type": "boolean"
+                },
+                "folder": {
+                    "default": "INBOX",
+                    "description": "Folder to check for email. Default INBOX",
+                    "required": false,
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name of the account",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "password": {
+                    "description": "Mailbox password.",
+                    "required": true,
+                    "secret": true,
+                    "type": "string"
+                },
+                "port": {
+                    "default": 993,
+                    "description": "Port to connect to - e.g. 993, 143.",
+                    "required": true,
+                    "type": "integer"
+                },
+                "secure": {
+                    "default": true,
+                    "description": "Set to False to disable secure protocol. Default value is True.",
+                    "type": "boolean"
+                },
+                "server": {
+                    "description": "Email server name - e.g. imap.gmail.com",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "username": {
+                    "description": "Mailbox username",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "required": true,
+        "type": "array"
+    },
+    "max_attachment_size": {
+        "default": 1024,
+        "description": "Maxium size of downloaded attachment in bytes (default 1024)",
+        "required": false,
+        "type": "integer"
+    },
+    "sensor_smtp_listen_ip": {
+        "default": "127.0.0.1",
+        "description": "IP address to for SMTP sensor to listen on",
+        "required": false,
+        "type": "string"
+    },
+    "sensor_smtp_listen_port": {
+        "default": 1025,
+        "description": "Port for SMTP sensor to listen on. Default 1025",
+        "required": false,
+        "type": "integer"
+    },
+    "smtp_accounts": {
+        "description": "SMTP accounts",
+        "items": {
+            "properties": {
+                "name": {
+                    "description": "Name of the account",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "password": {
+                    "description": "Mailbox password.",
+                    "required": true,
+                    "secret": true,
+                    "type": "string"
+                },
+                "port": {
+                    "default": 465,
+                    "description": "Port to connect to - e.g. 465, 587.",
+                    "required": true,
+                    "type": "integer"
+                },
+                "secure": {
+                    "default": true,
+                    "description": "Set to False to disable secure protocol. Default value is True.",
+                    "type": "boolean"
+                },
+                "server": {
+                    "description": "Email server name - e.g. imap.gmail.com",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "smtp_auth": {
+                    "default": true,
+                    "description": "Authenticate username and password with SMTP server to send email. Default True",
+                    "type": "boolean"
+                },
+                "username": {
+                    "description": "Mailbox username",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "required": true,
+        "type": "array"
+    }
+}

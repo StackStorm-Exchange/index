@@ -1,0 +1,51 @@
+{
+    "connection": {
+        "additionalProperties": false,
+        "properties": {
+            "password": {
+                "description": "Password of the specified username",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "port": {
+                "description": "Port number override used for the connection (80, 443) (none means use the default for the transport)",
+                "required": false,
+                "type": "integer"
+            },
+            "server": {
+                "description": "Men&Mice server hostname/ip to connect with",
+                "required": true,
+                "type": "string"
+            },
+            "transport": {
+                "default": "http",
+                "description": "Transport used for the connection (http, https)",
+                "required": false,
+                "type": "string"
+            },
+            "username": {
+                "description": "Username for authentication",
+                "required": true,
+                "type": "string"
+            },
+            "wsdl_endpoint": {
+                "default": "_mmwebext/mmwebext.dll?wsdl",
+                "description": "HTTP URI for the WSDL file on the server",
+                "required": false,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "menandmice": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/connection"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

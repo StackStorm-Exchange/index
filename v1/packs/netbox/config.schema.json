@@ -1,0 +1,22 @@
+{
+    "api_token": {
+        "description": "API Token to use against the API",
+        "required": true,
+        "type": "string"
+    },
+    "hostname": {
+        "description": "Hostname for the NetBox server",
+        "required": true,
+        "type": "string"
+    },
+    "ssl_verify": {
+        "description": "Verify ssl/tls protocol certs when contacting the API.",
+        "required": true,
+        "type": "boolean"
+    },
+    "use_https": {
+        "description": "Use HTTPS when contacting the API",
+        "required": true,
+        "type": "boolean"
+    }
+}

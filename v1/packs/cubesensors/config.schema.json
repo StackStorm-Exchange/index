@@ -1,0 +1,42 @@
+{
+    "access_token": {
+        "description": "Your access token.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "access_token_secret": {
+        "description": "Your access token secret.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "consumer_key": {
+        "description": "Your consumer key.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "consumer_secret": {
+        "description": "Your consumer secret.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "sensor": {
+        "additionalProperties": false,
+        "description": "Sensor specific settings.",
+        "properties": {
+            "device_uids": {
+                "description": "A list of device UIDs to poll metrics for.",
+                "items": {
+                    "type": "string"
+                },
+                "required": false,
+                "type": "array"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

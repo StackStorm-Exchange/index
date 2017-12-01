@@ -1,0 +1,47 @@
+{
+    "orion_host": {
+        "description": "The name / IP of the primary Orion server.",
+        "required": true,
+        "type": "string"
+    },
+    "orion_label": {
+        "default": "orion",
+        "description": "The label to use when referencing the Orion platform.",
+        "required": true,
+        "type": "string"
+    },
+    "orion_password": {
+        "description": "The password for the Orion server.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "orion_user": {
+        "description": "The username for the Orion server.",
+        "required": true,
+        "type": "string"
+    },
+    "snmp_customer": {
+        "default": "customer",
+        "description": "The SNMP community that will be used by default",
+        "required": true,
+        "type": "string"
+    },
+    "snmp_default": {
+        "description": "The SNMP community that will be used by default",
+        "required": true,
+        "type": "string"
+    },
+    "snmp_internal": {
+        "default": "internal",
+        "description": "The SNMP community that will be used by default",
+        "required": true,
+        "type": "string"
+    },
+    "unmanage_max": {
+        "default": 60,
+        "description": "Max allowed time (in minutes) that a node can be put into an unmanaged state.",
+        "required": true,
+        "type": "integer"
+    }
+}

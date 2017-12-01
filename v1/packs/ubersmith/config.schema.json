@@ -1,0 +1,34 @@
+{
+    "instance": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/instances"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "instances": {
+        "additionalProperties": false,
+        "properties": {
+            "api_token": {
+                "description": "Authentication API Token",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "api_user": {
+                "description": "Authentication API Key",
+                "required": true,
+                "type": "string"
+            },
+            "url": {
+                "description": "URL for accessing Ubersmith instance",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+}

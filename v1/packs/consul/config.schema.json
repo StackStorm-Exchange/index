@@ -1,0 +1,34 @@
+{
+    "host": {
+        "default": "127.0.0.1",
+        "description": "Consul server IP/name.  Default 127.0.0.1",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "port": {
+        "default": 8500,
+        "description": "Consul server port. Default 8500",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "scheme": {
+        "default": "http",
+        "description": "Consul scheme to use. Default http",
+        "required": false,
+        "type": "string"
+    },
+    "token": {
+        "description": "Consul API token",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "verify": {
+        "default": false,
+        "description": "Verify the SSL certificate for HTTPS requests. Default false",
+        "required": false,
+        "type": "boolean"
+    }
+}

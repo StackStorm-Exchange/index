@@ -1,0 +1,16 @@
+{
+    "zookeeper_hosts": {
+        "default": "localhost:2181",
+        "description": "Comma-separated list of ZooKeeper hosts (including ports).",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "zookeeper_root": {
+        "default": "/",
+        "description": "The root node to use for all ZooKeeper operations.",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

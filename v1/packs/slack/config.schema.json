@@ -1,0 +1,98 @@
+{
+    "action_token": {
+        "description": "Slack Action token.",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "admin": {
+        "additionalProperties": false,
+        "description": "Admin-action specific settings.",
+        "properties": {
+            "admin_token": {
+                "default": "",
+                "description": "Admin-level token for adding new users",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            },
+            "attempts": {
+                "default": 1,
+                "description": "Number of attempts to make to add the new user",
+                "required": false,
+                "type": "integer"
+            },
+            "auto_join_channels": {
+                "description": "A list of channels to auto-join the new account to",
+                "items": {
+                    "type": "string"
+                },
+                "required": false,
+                "type": "array"
+            },
+            "organization": {
+                "description": "Name of organisation to add new user to",
+                "required": true,
+                "type": "string"
+            },
+            "set_active": {
+                "default": true,
+                "description": "Set new user as active? Default true",
+                "required": false,
+                "type": "boolean"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "post_message_action": {
+        "additionalProperties": false,
+        "description": "Post message action specific settings.",
+        "properties": {
+            "channel": {
+                "description": "Channel to send message to - e.g. #mychannel. If not specified, will use channel selected when configuring webook",
+                "required": false,
+                "type": "string"
+            },
+            "icon_emoji": {
+                "default": ":panda_face:",
+                "description": "Default icon of user under which messages will be posted",
+                "required": false,
+                "type": "string"
+            },
+            "username": {
+                "description": "Default name of user under which messages will be posted",
+                "required": true,
+                "type": "string"
+            },
+            "webhook_url": {
+                "description": "Webhook URL, e.g. https://hooks.slack.com/services/<replace me>",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "sensor": {
+        "additionalProperties": false,
+        "description": "Sensor specific settings.",
+        "properties": {
+            "strip_formatting": {
+                "default": false,
+                "description": "Slack automatically parses URLs, images, channels, and usernames by default. This option returns raw data. Default false",
+                "required": false,
+                "type": "boolean"
+            },
+            "token": {
+                "default": "",
+                "description": "Authentication token used to authenticate against Real Time Messaging API.",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

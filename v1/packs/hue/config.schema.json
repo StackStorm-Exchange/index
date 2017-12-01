@@ -1,0 +1,13 @@
+{
+    "client_identifier": {
+        "description": "API Key from the Philips Hue Bridge.",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "station_ip": {
+        "description": "IP address or FQDN of Philips Hue Bridge.",
+        "required": true,
+        "type": "string"
+    }
+}

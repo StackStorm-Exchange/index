@@ -1,0 +1,70 @@
+{
+    "config_repo": {
+        "description": "Git repository where configurations are located",
+        "required": false,
+        "type": "string"
+    },
+    "cred_group": {
+        "additionalProperties": false,
+        "properties": {
+            "password": {
+                "description": "Password for network device",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "username": {
+                "description": "Username for network device",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "credentials": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/cred_group"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "devices": {
+        "description": "List of devices to map the device hostname with the driver and credentials",
+        "items": {
+            "properties": {
+                "credentials": {
+                    "description": "Credentials group used to login to the device",
+                    "required": true,
+                    "type": "string"
+                },
+                "driver": {
+                    "description": "Driver for the device",
+                    "required": true,
+                    "type": "string"
+                },
+                "hostname": {
+                    "description": "Hostname for the device",
+                    "required": true,
+                    "type": "string"
+                },
+                "port": {
+                    "description": "Port for the device",
+                    "required": false,
+                    "type": "integer"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "required": true,
+        "type": "array"
+    },
+    "html_table_class": {
+        "description": "Class for table in HTML output.",
+        "required": true,
+        "type": "string"
+    }
+}

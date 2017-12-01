@@ -1,0 +1,27 @@
+{
+    "api_key": {
+        "description": "Your cloud account API key",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "debug": {
+        "default": false,
+        "description": "Optional debug flag. Set to True to enable additional logging.",
+        "required": false,
+        "secret": false,
+        "type": "boolean"
+    },
+    "region": {
+        "description": "Default region to use for all operations. Can be overriden on per-action basis.",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "username": {
+        "description": "Your cloud account username",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

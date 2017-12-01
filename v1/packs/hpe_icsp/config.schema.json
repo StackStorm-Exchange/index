@@ -1,0 +1,34 @@
+{
+    "apiv": {
+        "default": 102,
+        "description": "API version - default 102",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "host": {
+        "description": "HPE ICSP Server",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "pass": {
+        "description": "ICSP Password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "sslverify": {
+        "default": false,
+        "description": "Set to True to verify SSL certificates. Default False",
+        "required": false,
+        "secret": false,
+        "type": "boolean"
+    },
+    "user": {
+        "description": "ICSP Username",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

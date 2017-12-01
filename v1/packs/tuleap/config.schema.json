@@ -1,0 +1,19 @@
+{
+    "tuleap_domain_name": {
+        "description": "Tuleap domain name",
+        "required": true,
+        "type": "string"
+    },
+    "tuleap_password": {
+        "description": "The Tuleap user password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "tuleap_username": {
+        "description": "The Tuleap username",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

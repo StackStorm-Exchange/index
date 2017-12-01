@@ -1,0 +1,49 @@
+{
+    "sensor_config": {
+        "additionalProperties": true,
+        "description": "RabbitMQ Sensor settings",
+        "properties": {
+            "host": {
+                "description": "RabbitMQ host to connect to",
+                "required": true,
+                "type": "string"
+            },
+            "password": {
+                "description": "Optional password for RabbitMQ",
+                "secret": true,
+                "type": "string"
+            },
+            "rabbitmq_queue_sensor": {
+                "additionalProperties": true,
+                "description": "Queue settings",
+                "properties": {
+                    "deserialization_method": {
+                        "description": "Method used to de-serialize body. Default is to leave body as-is",
+                        "enum": [
+                            "json",
+                            "pickle"
+                        ],
+                        "required": false,
+                        "type": "string"
+                    },
+                    "queues": {
+                        "description": "List of queues to monitor",
+                        "items": {
+                            "required": true,
+                            "type": "string"
+                        },
+                        "type": "array"
+                    }
+                },
+                "required": true,
+                "type": "object"
+            },
+            "username": {
+                "description": "Optional username for RabbitMQ",
+                "type": "string"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

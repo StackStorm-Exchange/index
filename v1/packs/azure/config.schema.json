@@ -1,0 +1,68 @@
+{
+    "compute": {
+        "additionalProperties": false,
+        "description": "Compute-specific settings.",
+        "properties": {
+            "cert_file": {
+                "description": "Path to certificate file used for authentication",
+                "required": false,
+                "type": "string"
+            },
+            "subscription_id": {
+                "description": "Azure subscription ID",
+                "required": false,
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "resource_manager": {
+        "additionalProperties": false,
+        "description": "Resource Manager-specific settings.",
+        "properties": {
+            "client_id": {
+                "description": "Resource manager client ID",
+                "required": false,
+                "type": "string"
+            },
+            "default_resource_group": {
+                "description": "Default Resource Group",
+                "required": false,
+                "type": "string"
+            },
+            "secret": {
+                "description": "Resource manager token",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            },
+            "tenant": {
+                "description": "Resource manager tenant ID",
+                "required": false,
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "storage": {
+        "additionalProperties": false,
+        "description": "Storage-specific settings.",
+        "properties": {
+            "access_key": {
+                "description": "Storage account access key",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            },
+            "name": {
+                "description": "Storage account name",
+                "required": false,
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

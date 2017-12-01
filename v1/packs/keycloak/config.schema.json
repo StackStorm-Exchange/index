@@ -1,0 +1,46 @@
+{
+    "host": {
+        "default": "127.0.0.1",
+        "description": "Keycloak server IP/name.  Default 127.0.0.1",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "default": "admin",
+        "description": "Keycloak password. Default admin",
+        "required": true,
+        "type": "string"
+    },
+    "port": {
+        "default": "443",
+        "description": "Keycloak server port. Default 443",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "realm": {
+        "default": "master",
+        "description": "Keycloak realm. Default master",
+        "required": true,
+        "type": "string"
+    },
+    "scheme": {
+        "default": "https",
+        "description": "Keycloak HTTP scheme. Default https",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "user": {
+        "default": "admin",
+        "description": "Keycloak password. Default admin",
+        "required": true,
+        "type": "string"
+    },
+    "verify": {
+        "description": "SSL Verify. Default True",
+        "required": true,
+        "type": "boolean"
+    }
+}

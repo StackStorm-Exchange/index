@@ -1,0 +1,49 @@
+{
+    "attribute_keys": {
+        "description": "A list of attribute keys for compound attributes",
+        "items": {
+            "type": "string"
+        },
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "attribute_name": {
+        "description": "Attribute of the object to be checked - e.g. HeapMemoryUsage",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "email": {
+        "default": "localhost",
+        "description": "JMX service hostname. Default localhost",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "object_name": {
+        "description": "Name of the object to be checked - e.g. java.lang:type=Memory",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "Optional JMX password",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "port": {
+        "default": 7199,
+        "description": "JMX service port. Default 7199",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "username": {
+        "description": "Optional JMX username",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    }
+}

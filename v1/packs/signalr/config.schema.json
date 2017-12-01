@@ -1,0 +1,14 @@
+{
+    "hub_name": {
+        "description": "Name of the hub (namespace)",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "hub_url": {
+        "description": "URL for the signalr hub",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

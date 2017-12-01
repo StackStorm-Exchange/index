@@ -1,0 +1,84 @@
+{
+    "client_id": {
+        "default": "st2-kafka-producer",
+        "description": "Unique client ID to identify ourselves when sending",
+        "required": true,
+        "type": "string"
+    },
+    "gcp_message_sensor": {
+        "additionalProperties": true,
+        "description": "GCP sensor specific settings",
+        "properties": {
+            "client_id": {
+                "default": "st2gcpclient",
+                "description": "The sensors client ID",
+                "required": true,
+                "type": "string"
+            },
+            "group_id": {
+                "default": "st2gcpgroup",
+                "description": "The sensors group ID",
+                "required": true,
+                "type": "string"
+            },
+            "hosts": {
+                "default": "172.16.1.10:9092",
+                "description": "List of Kafka brokers hosts:port for sensor to connect to",
+                "required": true,
+                "type": "string"
+            },
+            "topics": {
+                "description": "List of base64 encoded topics for the sensor to subscribe to",
+                "items": {
+                    "default": "test",
+                    "required": true,
+                    "type": "string"
+                },
+                "type": "array"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "hosts": {
+        "default": "172.16.1.10:9092",
+        "description": "List of Kafka brokers hosts:port for sender action.",
+        "required": true,
+        "type": "string"
+    },
+    "message_sensor": {
+        "additionalProperties": true,
+        "description": "Sensor specific settings",
+        "properties": {
+            "client_id": {
+                "default": "testclientID",
+                "description": "The sensors client ID",
+                "required": true,
+                "type": "string"
+            },
+            "group_id": {
+                "default": "testgroupID",
+                "description": "The sensors group ID",
+                "required": true,
+                "type": "string"
+            },
+            "hosts": {
+                "default": "172.16.1.10:9092",
+                "description": "List of Kafka brokers hosts:port for sensor to connect to",
+                "required": true,
+                "type": "string"
+            },
+            "topics": {
+                "description": "List of topics for the sensor to subscribe to",
+                "items": {
+                    "default": "test",
+                    "required": true,
+                    "type": "string"
+                },
+                "type": "array"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

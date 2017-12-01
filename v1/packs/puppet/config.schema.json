@@ -1,0 +1,33 @@
+{
+    "ca_cert_path": {
+        "description": "Path to the CA cert file",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "client_cert_key_path": {
+        "description": "Path to the private key file used for the client certificate",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "client_cert_path": {
+        "description": "Path to the client certificate file used for authentication",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "hostname": {
+        "description": "Hostname of the Puppet master",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "port": {
+        "default": 8140,
+        "description": "Puppet API port",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "kubernetes_api_url": {
+        "description": "kubernetes api url",
+        "required": true,
+        "type": "string"
+    },
+    "password": {
+        "description": "kubernetes password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "template_path": {
+        "default": "/opt/stackstorm/packs/kubernetes/",
+        "description": "location of kubernetes sensor templates",
+        "required": true,
+        "type": "string"
+    },
+    "user": {
+        "default": "admin",
+        "description": "kubernetes username",
+        "required": true,
+        "type": "string"
+    },
+    "verify": {
+        "default": false,
+        "description": "SSL verify",
+        "type": "boolean"
+    }
+}

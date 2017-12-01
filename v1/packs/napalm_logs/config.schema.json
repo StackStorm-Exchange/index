@@ -1,0 +1,27 @@
+{
+    "auth_address": {
+        "description": "Napalm-logs authentication server address/fqdn",
+        "required": true,
+        "type": "string"
+    },
+    "auth_port": {
+        "default": 49018,
+        "description": "Napalm-logs authentication server port",
+        "type": "integer"
+    },
+    "certificate_file": {
+        "default": "/opt/stackstorm/configs/napalm-logs.crt",
+        "description": "Full file path to the certificate used on the napalm-logs server.",
+        "type": "string"
+    },
+    "server_address": {
+        "description": "Napalm-logs server address/fqdn",
+        "required": true,
+        "type": "string"
+    },
+    "server_port": {
+        "default": 49017,
+        "description": "Napalm-logs server port",
+        "type": "integer"
+    }
+}

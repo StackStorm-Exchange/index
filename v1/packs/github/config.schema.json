@@ -1,0 +1,93 @@
+{
+    "base_url": {
+        "default": "https://api.github.com",
+        "description": "The GitHub URL, for GitHub Enterprise please set enterprise_url.",
+        "required": true,
+        "type": "string"
+    },
+    "deployment_environment": {
+        "default": "production",
+        "description": "The environment for this StackStorm server.",
+        "required": true,
+        "type": "string"
+    },
+    "enterprise_url": {
+        "description": "GitHub API url (including /api/v3) of your GitHub Enterprise hostname.",
+        "type": "string"
+    },
+    "github_type": {
+        "default": "online",
+        "description": "Default to either github or enterprise.",
+        "enum": [
+            "online",
+            "enterprise"
+        ],
+        "required": true,
+        "type": "string"
+    },
+    "password": {
+        "description": "GitHub Password",
+        "type": "string"
+    },
+    "repository_sensor": {
+        "additionalProperties": false,
+        "description": "Sensor specific settings.",
+        "properties": {
+            "count": {
+                "default": 30,
+                "description": "Maximum number of old events to retrieve",
+                "required": false,
+                "type": "integer"
+            },
+            "event_type_whitelist": {
+                "default": [
+                    "IssuesEvent",
+                    "IssueCommentEvent",
+                    "ForkEvent",
+                    "WatchEvent",
+                    "ReleaseEvent",
+                    "PushEvent"
+                ],
+                "description": "Event types to watch for, e.g. IssuesEvent, PushEvent",
+                "items": {
+                    "type": "string"
+                },
+                "required": false,
+                "type": "array"
+            },
+            "repositories": {
+                "description": "Repositories to monitor",
+                "items": {
+                    "properties": {
+                        "name": {
+                            "description": "Repository name",
+                            "required": true,
+                            "type": "string"
+                        },
+                        "user": {
+                            "description": "GitHub user or organization name",
+                            "required": true,
+                            "type": "string"
+                        }
+                    },
+                    "required": true,
+                    "type": "object"
+                },
+                "required": true,
+                "type": "array"
+            }
+        },
+        "required": false,
+        "type": "object"
+    },
+    "token": {
+        "default": "{{system.github_oauth_token}}",
+        "description": "GitHub oAuth Token",
+        "required": true,
+        "type": "string"
+    },
+    "user": {
+        "description": "GitHub Username",
+        "type": "string"
+    }
+}

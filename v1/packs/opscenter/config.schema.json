@@ -1,0 +1,14 @@
+{
+    "cluster_id": {
+        "description": "Opscenter cluster ID, e.g. st2democluster",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "opscenter_base_url": {
+        "description": "Opscenter URL, e.g. http://10.0.2.248:8888",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

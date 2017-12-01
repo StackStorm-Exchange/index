@@ -1,0 +1,20 @@
+{
+    "api_endpoint": {
+        "description": "HTTP endpoint for SmartThings SmartApp",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "api_key": {
+        "description": "Shared API Key to send SmartThings events -> StackStorm",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "api_token": {
+        "description": "API token to send commands from StackStorm -> SmartThings",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    }
+}

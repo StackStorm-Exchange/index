@@ -1,0 +1,23 @@
+{
+    "d42_password": {
+        "description": "Device42 password.",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "d42_server": {
+        "description": "Device42 instance address (with protocol and without trailing slash).",
+        "required": true,
+        "type": "string"
+    },
+    "d42_username": {
+        "description": "Device42 username.",
+        "required": true,
+        "type": "string"
+    },
+    "verify_certificate": {
+        "default": false,
+        "description": "Set to false in case of self-signed SSL certificate.",
+        "type": "boolean"
+    }
+}

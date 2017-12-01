@@ -1,0 +1,17 @@
+{
+    "applications": {
+        "description": "Applications and API Keys",
+        "items": {
+            "required": true,
+            "type": "string"
+        },
+        "required": false,
+        "type": "object"
+    },
+    "default_application": {
+        "description": "Default application to query if not specified by action",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    }
+}

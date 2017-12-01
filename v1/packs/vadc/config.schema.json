@@ -1,0 +1,81 @@
+{
+    "brcd_bw_headroom": {
+        "default": "10",
+        "description": "Brocade Bandwidth Sensor: How much bandwidth headroom should a vTM maintain?",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_bw_manage": {
+        "description": "Brocade Bandwidth Sensor: Set to 'all' or a list of vTMs which should have their bandwdith automatically assigned.",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_bw_minimum": {
+        "default": "10",
+        "description": "Brocade Bandwidth Sensor: The minimum amount of bandwidth to assign to a vTM",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_bw_roundup": {
+        "default": "10",
+        "description": "Brocade Bandwidth Sensor: Roundup bw to nearest n Mb",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_bw_track": {
+        "default": "10",
+        "description": "Brocade Bandwidth Sensor: How many sensor measurements to track?",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_bw_warn": {
+        "default": "10",
+        "description": "Brocade Bandwidth Sensor: Warning threshold for non-managed vTMs",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_sd_host": {
+        "default": "{{system.brcd_sd_host}}",
+        "description": "Service Director API EndPoint (eg https://sd1:8100/). Required if brcd_sd_proxy is true",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_sd_pass": {
+        "default": "{{system.brcd_sd_pass}}",
+        "description": "Service Director REST Password. Required if brcd_sd_proxy is true",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "brcd_sd_proxy": {
+        "default": true,
+        "description": "Configure vTMs via a Brocade Services Director? Set to False if you want to connect directly",
+        "required": true,
+        "type": "boolean"
+    },
+    "brcd_sd_user": {
+        "default": "{{system.brcd_sd_user}}",
+        "description": "Service Director REST User. Required if brcd_sd_proxy is true",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_vtm_host": {
+        "default": "{{user.brcd_vtm_host}}",
+        "description": "vTM API EndPoint (eg https://vtm01:9070/). Required if brcd_sd_proxy is false",
+        "required": false,
+        "type": "string"
+    },
+    "brcd_vtm_pass": {
+        "default": "{{user.brcd_vtm_pass}}",
+        "description": "vTM REST Password. Required if brcd_sd_proxy is false",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "brcd_vtm_user": {
+        "default": "{{user.brcd_vtm_user}}",
+        "description": "vTM REST User. Required if brcd_sd_proxy is false",
+        "required": false,
+        "type": "string"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "token": {
+        "description": "Librato access token",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "user": {
+        "description": "Librato user",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

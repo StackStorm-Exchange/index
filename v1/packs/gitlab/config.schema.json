@@ -1,0 +1,13 @@
+{
+    "token": {
+        "type": "string"
+    },
+    "url": {
+        "description": "Gitlab Url",
+        "type": "string"
+    },
+    "verify_ssl": {
+        "default": false,
+        "type": "boolean"
+    }
+}

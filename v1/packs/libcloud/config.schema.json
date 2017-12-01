@@ -1,0 +1,56 @@
+{
+    "credentials": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/providers"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "providers": {
+        "additionalProperties": false,
+        "properties": {
+            "api_key": {
+                "description": "Credentials for provider",
+                "required": true,
+                "type": "string"
+            },
+            "api_secret": {
+                "description": "Secret for provider",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "host": {
+                "description": "Provider host if required - e.g. for Kubernetes",
+                "required": false,
+                "type": "string"
+            },
+            "provider": {
+                "description": "Provider name - e.g. ec2_us_east, rackspace",
+                "required": true,
+                "type": "string"
+            },
+            "region": {
+                "description": "Provider region (if required)",
+                "required": false,
+                "type": "string"
+            },
+            "type": {
+                "description": "Provider type - e.g. compute, storage, dns",
+                "enum": [
+                    "compute",
+                    "storage",
+                    "dns",
+                    "loadbalancer",
+                    "container"
+                ],
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+}

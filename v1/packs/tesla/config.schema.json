@@ -1,0 +1,14 @@
+{
+    "tesla_password": {
+        "description": "Password for your Tesla account",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "tesla_username": {
+        "description": "Username for your Tesla account",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}
