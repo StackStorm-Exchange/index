@@ -1,0 +1,44 @@
+{
+    "description": "Create a new DNS record.",
+    "enabled": true,
+    "entry_point": "create_dns_record.py",
+    "name": "create_dns_record",
+    "parameters": {
+        "comment": {
+            "description": "Optional comment to associate with a record.",
+            "required": false,
+            "type": "string"
+        },
+        "data": {
+            "description": "Record data (e.g. 1.2.3.4)",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Full record name including a domain (e.g. myrecord.mydomain.com)",
+            "required": true,
+            "type": "string"
+        },
+        "priority": {
+            "description": "Optional priority. Only required for MX records.",
+            "required": false,
+            "type": "string"
+        },
+        "ttl": {
+            "description": "Optional record TTL. Default is 3600 and minimum is 300.",
+            "required": false,
+            "type": "integer"
+        },
+        "type": {
+            "description": "Record type (e.g. A, AAAA, TXT, MX, etc.)",
+            "required": true,
+            "type": "string"
+        },
+        "zone_id": {
+            "description": "ID of a zone you want to create a record in.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

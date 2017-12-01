@@ -1,0 +1,139 @@
+{
+    "description": "Update a source for a collector.",
+    "enabled": true,
+    "entry_point": "update_source.py",
+    "name": "update.source",
+    "parameters": {
+        "auth_method": {
+            "description": "Authentication method used to connect to the remote machine. Options are \"password\" to connect with a password, or \"key\" to connect with an SSH key.",
+            "required": false,
+            "type": "string"
+        },
+        "auto_line_matching": {
+            "description": "Auto line matching.",
+            "required": false,
+            "type": "boolean"
+        },
+        "automatic_date_parsing": {
+            "description": "Automatic Date Parsing.",
+            "required": false,
+            "type": "boolean"
+        },
+        "blacklist": {
+            "description": "Comma-separated list of valid path expressions from which logs will not be collected.",
+            "required": false,
+            "type": "array"
+        },
+        "category": {
+            "description": "Category for the source.",
+            "required": false,
+            "type": "string"
+        },
+        "collector_id": {
+            "description": "ID of the collectors to update the sources for.",
+            "required": true,
+            "type": "integer"
+        },
+        "content_type": {
+            "description": "Content type, e.g. HostMetrics",
+            "required": false,
+            "type": "string"
+        },
+        "cutoff_timestamp": {
+            "description": "Cutoff timestamp.",
+            "required": false,
+            "type": "integer"
+        },
+        "descr": {
+            "description": "Description of the source.",
+            "required": false,
+            "type": "string"
+        },
+        "encoding": {
+            "description": "Logs encoding.",
+            "required": false,
+            "type": "string"
+        },
+        "force_timezone": {
+            "description": "Force timezone.",
+            "required": false,
+            "type": "boolean"
+        },
+        "hostname": {
+            "description": "Hostname for the source.",
+            "required": false,
+            "type": "string"
+        },
+        "interval": {
+            "description": "Interval.",
+            "required": false,
+            "type": "integer"
+        },
+        "key_password": {
+            "description": "Password to SSH key to connect to the remote machine, required only with authMethod is set to key.",
+            "required": false,
+            "type": "string"
+        },
+        "key_path": {
+            "description": "Path to SSH key used to connect to the remote machine. Required only when authMethod is set to key.",
+            "required": false,
+            "type": "string"
+        },
+        "manual_prefix_regexp": {
+            "description": "Boundary Regex - Expression to match message boundary e.g. (?<!\\)(\r+)",
+            "required": false,
+            "type": "string"
+        },
+        "metrics": {
+            "description": "Metrics.",
+            "required": false,
+            "type": "array"
+        },
+        "multiline_processing_enabled": {
+            "description": "Multiline processing.",
+            "required": false,
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Name of the source.",
+            "required": false,
+            "type": "string"
+        },
+        "path_expression": {
+            "description": "Path expression.",
+            "required": false,
+            "type": "string"
+        },
+        "remote_hosts": {
+            "description": "Host name of remote machine(s).",
+            "required": false,
+            "type": "array"
+        },
+        "remote_password": {
+            "description": "Password used to connect to remote machine. Required only when authMethod is set to password.",
+            "required": false,
+            "type": "string"
+        },
+        "remote_port": {
+            "description": "Port of remote machine (SSH).",
+            "required": false,
+            "type": "integer"
+        },
+        "remote_user": {
+            "description": "User account to connect with the remote machine.",
+            "required": false,
+            "type": "string"
+        },
+        "source_id": {
+            "description": "ID of the source to update.",
+            "required": true,
+            "type": "integer"
+        },
+        "timezone": {
+            "description": "Timezone used in the timestamps of the logs.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

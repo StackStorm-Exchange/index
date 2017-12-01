@@ -1,0 +1,19 @@
+{
+    "description": "List the networks available",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "list_networks",
+    "parameters": {
+        "action": {
+            "default": "ex_list_networks",
+            "immutable": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

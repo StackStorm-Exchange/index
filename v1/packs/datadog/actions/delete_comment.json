@@ -1,0 +1,24 @@
+{
+    "description": "Delete comment",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete_comment",
+    "parameters": {
+        "cls": {
+            "default": "DatadogDeleteComment",
+            "immutable": true,
+            "type": "string"
+        },
+        "comment_id": {
+            "description": "The id of the comment to delete",
+            "required": true,
+            "type": "integer"
+        },
+        "module_path": {
+            "default": "lib.comments",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

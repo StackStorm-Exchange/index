@@ -1,0 +1,8 @@
+{
+    "action_ref": "vadc.vtm_add_pool",
+    "description": "deploy a pool on a vTM",
+    "formats": [
+        "vtm add pool {{name}} on {{vtm}} with {{nodes}}"
+    ],
+    "name": "vtm_add_pool"
+}

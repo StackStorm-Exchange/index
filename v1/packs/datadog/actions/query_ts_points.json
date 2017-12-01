@@ -1,0 +1,34 @@
+{
+    "description": "Query for metrics from any time period",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "query_ts_points",
+    "parameters": {
+        "cls": {
+            "default": "DatadogPostTSPoints",
+            "immutable": true,
+            "type": "string"
+        },
+        "end": {
+            "description": "POSIX timestamp",
+            "required": true,
+            "type": "integer"
+        },
+        "module_path": {
+            "default": "lib.metrics",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "The query string, see http://docs.datadoghq.com/graphing/ for the syntax",
+            "required": true,
+            "type": "string"
+        },
+        "start": {
+            "description": "POSIX timestamp",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

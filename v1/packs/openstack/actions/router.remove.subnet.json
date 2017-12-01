@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "router.remove.subnet",
+    "parameters": {
+        "base": {
+            "default": "router remove subnet",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('router_remove_subnet = openstackclient.network.v2.router:RemoveSubnetFromRouter')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "router": {
+            "description": "Router from which the subnet will be removed (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "subnet": {
+            "description": "Subnet to be removed (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

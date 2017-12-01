@@ -1,0 +1,71 @@
+ref: network_essentials
+name: Network Essentials
+description: Brocade Workflow Composer Network Essentials Pack
+keywords:
+- networking
+- vdx
+- slx
+- network
+- network automation
+- Brocade
+- NOS
+- SLXOS
+- Extreme
+version: 1.1.3
+author: Brocade
+email: support@brocade.com
+content:
+  actions:
+    count: 47
+    resources:
+    - add_ipv4_rule_acl
+    - add_ipv6_rule_acl
+    - add_or_remove_l2_acl_rule
+    - apply_acl
+    - autopick_port_channel_id
+    - configure_mac_group
+    - configure_mac_move_detection
+    - configure_mgmt_virtual_ip
+    - create_acl
+    - create_l2_port_channel
+    - create_switchport_access
+    - create_switchport_trunk
+    - create_ve
+    - create_vlan
+    - create_vrf
+    - create_vrrpe
+    - delete_acl
+    - delete_ipv4_rule_acl
+    - delete_l2_port_channel
+    - delete_mac_group
+    - delete_switchport
+    - delete_ve
+    - delete_vlan
+    - delete_vrf
+    - delete_vrrpe
+    - drop_provision
+    - drop_unprovision
+    - enable_vf
+    - execute_cli
+    - find_host_ip
+    - find_mac
+    - find_my_host_vcs
+    - get_next_available_vf_id
+    - get_os_version
+    - get_switch_details
+    - ping_vrf_targets
+    - remove_acl
+    - remove_switchport_trunk_allowed_vlan
+    - set_intf_admin_state
+    - set_l2_mtu
+    - set_l2_system_mtu
+    - set_l3_mtu
+    - set_l3_system_mtu
+    - validate_interface_state
+    - validate_interface_vlan
+    - validate_L2_port_channel_state
+    - validate_vrrpe_state
+  aliases:
+    count: 1
+    resources:
+    - find_mac

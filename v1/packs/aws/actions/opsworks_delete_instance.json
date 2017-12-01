@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "opsworks_delete_instance",
+    "pack": "aws",
+    "parameters": {
+        "DeleteElasticIp": {
+            "description": "Whether to delete the instance Elastic IP address.",
+            "type": "boolean"
+        },
+        "DeleteVolumes": {
+            "description": "Whether to delete the instance's Amazon EBS volumes.",
+            "type": "boolean"
+        },
+        "InstanceId": {
+            "description": "The instance ID.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "delete_instance",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "opsworks",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

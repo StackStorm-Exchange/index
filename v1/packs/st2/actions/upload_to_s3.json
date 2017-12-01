@@ -1,0 +1,24 @@
+{
+    "description": "Sends collected data to write-only StackStorm S3 bucket",
+    "enabled": true,
+    "entry_point": "upload_to_s3.py",
+    "name": "upload_to_s3",
+    "parameters": {
+        "bucket": {
+            "default": "st2express-install",
+            "description": "S3 bucket to upload file",
+            "type": "string"
+        },
+        "file_name": {
+            "description": "Full pathname of file to upload on filesystem",
+            "required": true,
+            "type": "string"
+        },
+        "remote_file": {
+            "description": "Name of file on remote end. If not provided it defaults to the local file name",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

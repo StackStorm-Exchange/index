@@ -1,0 +1,61 @@
+{
+    "description": "Update a puppet module associated with the content view (resource: PUT /katello/api/content_views/:content_view_id/content_view_puppet_modules/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_views.content_view_puppet_modules_ontent_updateviews",
+    "pack": "foreman",
+    "parameters": {
+        "author": {
+            "description": "author of the puppet module",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_id": {
+            "description": "content view identifier",
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "puppet module ID",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of the puppet module",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_views.content_view_puppet_modules_ontent_updateviews",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "uuid": {
+            "description": "the uuid of the puppet module to associate",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

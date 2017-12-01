@@ -1,0 +1,25 @@
+{
+    "description": "trigger the workflow which will attach vlan to overlay gateway",
+    "enabled": true,
+    "entry_point": "workflows/attach_vlan_to_gw.yaml",
+    "name": "attach_vlan_to_gw_workflow",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "lswitch_name": {
+            "description": "Logical switch name.",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Port",
+            "required": true,
+            "type": "string"
+        },
+        "vlan": {
+            "description": "VLAN ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "action-chain"
+}

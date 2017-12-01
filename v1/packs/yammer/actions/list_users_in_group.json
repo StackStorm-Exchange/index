@@ -1,0 +1,19 @@
+{
+    "description": "List all users in group",
+    "enabled": true,
+    "entry_point": "list_users_in_group.py",
+    "name": "list_users_in_group",
+    "parameters": {
+        "group_id": {
+            "description": "The group ID",
+            "required": true,
+            "type": "integer"
+        },
+        "page": {
+            "description": "Page to fetch",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

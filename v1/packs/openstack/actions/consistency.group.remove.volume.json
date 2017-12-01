@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "consistency.group.remove.volume",
+    "parameters": {
+        "base": {
+            "default": "consistency group remove volume",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "consistency_group": {
+            "description": "Consistency group containing <volume> (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('consistency_group_remove_volume = openstackclient.volume.v2.consistency_group:RemoveVolumeFromConsistencyGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "volumes": {
+            "description": "Volume(s) to remove from <consistency-group> (name or ID) (repeat option to remove multiple volumes)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "List all branches for a given repository",
+    "enabled": true,
+    "entry_point": "list_branches.py",
+    "name": "list_branches",
+    "parameters": {
+        "repo": {
+            "description": "Name of the repository to list the branches for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

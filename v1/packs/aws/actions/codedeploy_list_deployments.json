@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "codedeploy_list_deployments",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "list_deployments",
+            "immutable": true,
+            "type": "string"
+        },
+        "applicationName": {
+            "description": "The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.",
+            "type": "string"
+        },
+        "cls": {
+            "default": "codedeploy",
+            "type": "string"
+        },
+        "createTimeRange": {
+            "description": "A time range (start and end) for returning a subset of the list of deployments.",
+            "type": "object"
+        },
+        "deploymentGroupName": {
+            "description": "The name of an existing deployment group for the specified application.",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "includeOnlyStatuses": {
+            "description": "A subset of deployments to list by status:   Created: Include created deployments in the resulting list.   Queued: Include queued deployments in the resulting list.   In Progress: Include in-progress deployments in the resulting list.   Succeeded: Include successful deployments in the resulting list.   Failed: Include failed deployments in the resulting list.   Stopped: Include stopped deployments in the resulting list.  ",
+            "type": "array"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "nextToken": {
+            "description": "An identifier returned from the previous list deployments call. It can be used to return the next set of deployments in the list.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

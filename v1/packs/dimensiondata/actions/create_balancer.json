@@ -1,0 +1,40 @@
+{
+    "description": "Create a load balancer",
+    "enabled": true,
+    "entry_point": "create_balancer.py",
+    "name": "create_balancer",
+    "parameters": {
+        "algorithm": {
+            "default": "ROUND_ROBIN",
+            "description": "The algorithm of the balancer, choice of LEAST_CONNECTIONS, ROUND_ROBIN, SHORTEST_RESPONSE, PERSISTENT_IP",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the balancer",
+            "required": true,
+            "type": "string"
+        },
+        "network_domain_id": {
+            "description": "Network Domian ID",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "The TCP/UDP port of the balancer",
+            "required": true,
+            "type": "string"
+        },
+        "protocol": {
+            "description": "The protocol of the balancer",
+            "required": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

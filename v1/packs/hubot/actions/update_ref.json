@@ -1,0 +1,25 @@
+{
+    "description": "Manage Hubot installs on a per-pack basis",
+    "enabled": true,
+    "entry_point": "update_ref.sh",
+    "name": "update_ref",
+    "parameters": {
+        "branch": {
+            "default": "master",
+            "description": "Branch to deploy",
+            "position": 0,
+            "type": "string"
+        },
+        "cwd": {
+            "default": "/opt/hubot/hubot"
+        },
+        "hosts": {
+            "default": "127.0.0.1"
+        },
+        "sudo": {
+            "default": true,
+            "immutable": true
+        }
+    },
+    "runner_type": "run-remote-script"
+}

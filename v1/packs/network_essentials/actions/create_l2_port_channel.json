@@ -1,0 +1,81 @@
+{
+    "description": "Create an L2 port channel (LAG or vLAG) in Static or LACP mode",
+    "enabled": true,
+    "entry_point": "create_l2_port_channel.py",
+    "name": "create_l2_port_channel",
+    "pack": "network_essentials",
+    "parameters": {
+        "intf_type": {
+            "default": "tengigabitethernet",
+            "description": "Interface type ethernet/gigabitethernet/tengigabitethernet/fortygigabitethernet/hundredgigabitethernet",
+            "enum": [
+                "tengigabitethernet",
+                "gigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet",
+                "ethernet"
+            ],
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "mode": {
+            "default": "standard",
+            "description": "Port channel type",
+            "enum": [
+                "standard",
+                "brocade"
+            ],
+            "position": 6,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "port_channel_desc": {
+            "description": "Port channel interface description without any space",
+            "position": 8,
+            "type": "string"
+        },
+        "port_channel_id": {
+            "description": "Port channel interface number.<NUMBER:1-6144>",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "ports": {
+            "description": "Single or list of ports that are members of the port channel. Examples for VDX, SLX are  24/0/1, 24/0/2 or 1/13, 1/14",
+            "position": 4,
+            "required": true,
+            "type": "array"
+        },
+        "protocol": {
+            "default": "active",
+            "description": "Port channel mode",
+            "enum": [
+                "active",
+                "passive",
+                "modeon"
+            ],
+            "position": 7,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,51 @@
+{
+    "description": "Show SoftwareDeployment Details.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "software.deployment.show",
+    "parameters": {
+        "base": {
+            "default": "software deployment show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "deployment": {
+            "description": "ID of the deployment",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('software_deployment_show = heatclient.osc.v1.software_deployment:ShowDeployment')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "Show more fields in output",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

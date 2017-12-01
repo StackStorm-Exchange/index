@@ -1,0 +1,41 @@
+{
+    "description": "Create a discovered host for testing (use /facts to create new hosts) (resource: POST /api/v2/discovered_hosts)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "discovered_hosts.create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "discovered_host": {
+            "description": "'description: None\n parameters:\n     ip:\n       required: true\n       type: string\n       description:\n     mac:\n       required: true\n       type: string\n       description:\n     name:\n       required: true\n       type: string\n       description:\n     '",
+            "required": false,
+            "type": "object"
+        },
+        "operation": {
+            "default": "discovered_hosts.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

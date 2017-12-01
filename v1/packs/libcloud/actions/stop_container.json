@@ -1,0 +1,19 @@
+{
+    "description": "Stop a container.",
+    "enabled": true,
+    "entry_point": "stop_container.py",
+    "name": "stop_container",
+    "parameters": {
+        "container_id": {
+            "description": "ID of a container to stop.",
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

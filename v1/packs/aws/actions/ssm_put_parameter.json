@@ -1,0 +1,54 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ssm_put_parameter",
+    "pack": "aws",
+    "parameters": {
+        "Description": {
+            "description": "Information about the parameter that you want to add to the system",
+            "type": "string"
+        },
+        "KeyId": {
+            "description": "The parameter key ID that you want to add to the system.",
+            "type": "string"
+        },
+        "Name": {
+            "description": "The name of the parameter that you want to add to the system.",
+            "required": true,
+            "type": "string"
+        },
+        "Overwrite": {
+            "description": "Overwrite an existing parameter.",
+            "type": "boolean"
+        },
+        "Type": {
+            "description": "The type of parameter that you want to add to the system.",
+            "required": true,
+            "type": "string"
+        },
+        "Value": {
+            "description": "The parameter value that you want to add to the system.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "put_parameter",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ssm",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

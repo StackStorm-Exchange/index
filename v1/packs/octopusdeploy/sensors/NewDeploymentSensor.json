@@ -1,0 +1,21 @@
+{
+    "class_name": "NewDeploymentSensor",
+    "description": "A sensor for new deployments.",
+    "entry_point": "new_deployment_sensor.py",
+    "poll_interval": 60,
+    "trigger_types": [
+        {
+            "description": "A deployment has been created.",
+            "name": "new_deployment",
+            "payload_info": [
+                "id",
+                "name",
+                "comments",
+                "assembled",
+                "version",
+                "author",
+                "project_id"
+            ]
+        }
+    ]
+}

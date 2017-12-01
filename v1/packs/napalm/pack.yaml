@@ -1,0 +1,62 @@
+name: napalm
+description: NAPALM network automation library integration pack
+keywords:
+- networking
+- napalm
+- cisco
+- juniper
+- arista
+- ibm
+version: 0.2.11
+author: mierdin, Rob Woodward
+email: info@stackstorm.com
+content:
+  actions:
+    count: 27
+    resources:
+    - bgp_prefix_exceeded_chain
+    - check_consistency
+    - cli
+    - configuration_change_workflow
+    - get_arp_table
+    - get_bgp_config
+    - get_bgp_neighbors
+    - get_bgp_neighbors_detail
+    - get_config
+    - get_environment
+    - get_facts
+    - get_firewall_policies
+    - get_interfaces
+    - get_lldp_neighbors
+    - get_log
+    - get_mac_address_table
+    - get_network_instances
+    - get_ntp
+    - get_optics
+    - get_probes_config
+    - get_probes_results
+    - get_route_to
+    - get_snmp_information
+    - interface_down_workflow
+    - loadconfig
+    - ping
+    - traceroute
+  aliases:
+    count: 1
+    resources:
+    - check_consistency
+  rules:
+    count: 4
+    resources:
+    - bgp_prefix_exceeded
+    - configuration_change
+    - interface_down
+    - lldp_remediate
+  sensors:
+    count: 1
+    resources:
+    - NapalmLLDPSensor
+  tests:
+    count: 1
+    resources:
+    - test_action_loadconfig.py

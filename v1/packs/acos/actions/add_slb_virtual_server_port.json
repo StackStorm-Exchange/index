@@ -1,0 +1,85 @@
+{
+    "description": "Add a virtual-server-port to the SLB",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "add_slb_virtual_server_port",
+    "pack": "acos",
+    "parameters": {
+        "action": {
+            "default": "create",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "default": "",
+            "description": "the name of VirtualPort to be registered",
+            "type": "string"
+        },
+        "object_path": {
+            "default": "slb.virtual_server.vport",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "port": {
+            "description": "port-number of VirtualPort to set",
+            "required": true,
+            "type": "integer"
+        },
+        "protocol": {
+            "description": "protocol of VirtualPort to set",
+            "enum": [
+                "tcp",
+                "udp",
+                "others",
+                "diameter",
+                "dns-tcp",
+                "dns-udp",
+                "fast-http",
+                "fix",
+                "ftp",
+                "ftp-proxy",
+                "http",
+                "https",
+                "mlb",
+                "mms",
+                "mysql",
+                "mssql",
+                "radius",
+                "rtsp",
+                "sip",
+                "sip-tcp",
+                "sips",
+                "smpp-tcp",
+                "spdy",
+                "spdys",
+                "smtp",
+                "ssl-proxy",
+                "tcp-proxy",
+                "tftp"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "service_group_name": {
+            "default": "",
+            "description": "the name of ServiceGroup to set",
+            "type": "string"
+        },
+        "virtual_server_name": {
+            "description": "the name of VirtualServer to set",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

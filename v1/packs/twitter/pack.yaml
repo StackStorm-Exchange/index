@@ -1,0 +1,26 @@
+ref: twitter
+name: twitter
+description: st2 content pack containing twitter integrations
+keywords:
+- twitter
+- social media
+- social networks
+version: 0.3.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 3
+    resources:
+    - direct_message
+    - follow
+    - update_status
+  rules:
+    count: 1
+    resources:
+    - relay_tweet_to_slack
+  sensors:
+    count: 2
+    resources:
+    - TwitterSearchSensor
+    - TwitterStreamSensor

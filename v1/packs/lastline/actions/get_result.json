@@ -1,0 +1,45 @@
+{
+    "description": "Get results for a previously submitted analysis task.",
+    "enabled": true,
+    "entry_point": "get_result.py",
+    "name": "get_result",
+    "parameters": {
+        "full_report_score": {
+            "description": "if set, this value (between -1 and 101) determines starting at which scores a full report is returned. -1 and 101 indicate 'never return full report'; 0 indicates 'return full report at all times'",
+            "type": "integer"
+        },
+        "include_scoring_components": {
+            "description": "if True, the result will contain details of all components contributing to the overall score. Requires special permissions",
+            "type": "boolean"
+        },
+        "raw": {
+            "default": false,
+            "description": "if True, return the raw JSON results of the API query",
+            "type": "boolean"
+        },
+        "report_uuid": {
+            "description": "if set, include this report in the result.",
+            "type": "string"
+        },
+        "report_version": {
+            "description": "Version name of the Report that will be returned (optional)",
+            "type": "string"
+        },
+        "requested_format": {
+            "default": "json",
+            "description": "JSON, XML, PDF, or RTF. If format is not JSON, this implies raw.",
+            "type": "string"
+        },
+        "uuid": {
+            "description": "the unique identifier of the submitted task, as returned in the task_uuid field of submit methods.",
+            "required": true,
+            "type": "string"
+        },
+        "verify": {
+            "default": true,
+            "description": "if False, disable SSL-certificate verification",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

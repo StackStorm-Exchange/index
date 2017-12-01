@@ -1,0 +1,32 @@
+{
+    "description": "verify vcs fabric is ready.",
+    "enabled": true,
+    "entry_point": "verify_vcs_ready.py",
+    "name": "verify_vcs_ready",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Switch Management IP.",
+            "type": "string"
+        },
+        "nodes": {
+            "default": "2",
+            "description": "Total number of nodes in cluster.",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 3600,
+            "type": "integer"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

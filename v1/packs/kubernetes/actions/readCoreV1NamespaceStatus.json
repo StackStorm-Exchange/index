@@ -1,0 +1,23 @@
+{
+    "description": "read status of the specified Namespace",
+    "enabled": true,
+    "entry_point": "readCoreV1NamespaceStatus.py",
+    "name": "readCoreV1NamespaceStatus",
+    "pack": "kubernetes",
+    "parameters": {
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the Namespace",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

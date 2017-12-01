@@ -1,0 +1,25 @@
+{
+    "description": "Fetch events from Consul agent's buffer.",
+    "enabled": true,
+    "entry_point": "event_list.py",
+    "name": "event_list",
+    "parameters": {
+        "index": {
+            "description": "The current event Consul index",
+            "required": false,
+            "type": "integer"
+        },
+        "name": {
+            "default": "",
+            "description": "The type of events to list. An empty string, lists all available.",
+            "required": true,
+            "type": "string"
+        },
+        "wait": {
+            "description": "The maximum duration to wait (e.g. '10s') to retrieve a given index.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

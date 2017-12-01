@@ -1,0 +1,14 @@
+{
+    "description": "List ARM resource group names",
+    "enabled": true,
+    "entry_point": "list_resource_groups.py",
+    "name": "list_resource_groups",
+    "parameters": {
+        "subscription_id": {
+            "description": "Azure subscription ID.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

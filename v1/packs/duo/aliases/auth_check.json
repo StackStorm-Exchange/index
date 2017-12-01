@@ -1,0 +1,17 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": true,
+        "format": "Chekcing setup for Duo authentication..."
+    },
+    "action_ref": "duo.auth_check",
+    "description": "Test the integration setup to the Duo platform",
+    "formats": [
+        "duo auth check"
+    ],
+    "name": "auth_check",
+    "pack": "duo",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nThe Integration key & secret key is *valid*! @ {{execution.result.result.time}}{~}\n{% else %}\nThe Integration key & secret key is *invalid*!{~}\n{{execution.result.stdout}}\n{% endif %}\n"
+    }
+}

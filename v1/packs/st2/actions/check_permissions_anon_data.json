@@ -1,0 +1,16 @@
+{
+    "description": "Check if sending anonymous data is allowed.",
+    "enabled": true,
+    "entry_point": "check_permissions_anon_data.py",
+    "name": "check_permissions_anon_data",
+    "pack": "st2",
+    "parameters": {
+        "collect_anonymous_data": {
+            "default": "false",
+            "description": "Whether to call_home or not. All forms of true are acceptable.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

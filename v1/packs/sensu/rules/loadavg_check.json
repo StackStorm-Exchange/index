@@ -1,0 +1,34 @@
+{
+    "action": {
+        "parameters": {
+            "hostname": "{{trigger.client.address}}"
+        },
+        "ref": "linux.diag_loadavg"
+    },
+    "criteria": {
+        "trigger.action": {
+            "pattern": "create",
+            "type": "matchregex"
+        },
+        "trigger.check.name": {
+            "pattern": "check_load",
+            "type": "equals"
+        },
+        "trigger.check.output": {
+            "pattern": ".*CRITICAL.*",
+            "type": "matchregex"
+        },
+        "trigger.occurrences": {
+            "pattern": 1,
+            "type": "gt"
+        }
+    },
+    "description": "Run diagnostic checks when receiving a high load alert",
+    "enabled": true,
+    "name": "loadavg_check",
+    "pack": "sensu",
+    "trigger": {
+        "parameters": {},
+        "type": "sensu.event_handler"
+    }
+}

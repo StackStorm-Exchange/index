@@ -1,0 +1,40 @@
+{
+    "description": "Returns first column of first row from result. This action is useful if you want just a single value, as in 'SELECT COUNT(*) FROM employees'",
+    "enabled": true,
+    "entry_point": "mssql_runner.py",
+    "name": "execute.scalar",
+    "pack": "mssql",
+    "parameters": {
+        "action": {
+            "default": "execute_scalar",
+            "immutable": true,
+            "type": "string"
+        },
+        "database": {
+            "description": "Database name if not specified in config.",
+            "type": "string"
+        },
+        "params": {
+            "description": "Parameters for interpolation in the query_string.",
+            "type": "string"
+        },
+        "password": {
+            "description": "Database password if not specified in config.",
+            "type": "string"
+        },
+        "query_string": {
+            "description": "Query to send to MS SQL Server.",
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Database host if not specified in config.",
+            "type": "string"
+        },
+        "user": {
+            "description": "Database user if not specified in config.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,21 @@
+{
+    "description": "Retrieve information about Tuleap project milestones.",
+    "enabled": true,
+    "entry_point": "get_milestones.py",
+    "name": "get_milestones",
+    "parameters": {
+        "order": {
+            "description": "ascending/descending to get milestones in ascending or descending order",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "The project id",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

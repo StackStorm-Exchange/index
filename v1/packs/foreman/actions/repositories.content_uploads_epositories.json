@@ -1,0 +1,56 @@
+{
+    "description": "Upload a chunk of the file's content (resource: PUT /katello/api/repositories/:repository_id/content_uploads/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repositories.content_uploads_epositories",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content": {
+            "description": "The actual file contents",
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "Upload request id",
+            "required": true,
+            "type": "string"
+        },
+        "offset": {
+            "description": "The offset in the file where the content starts",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "repositories.content_uploads_epositories",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "repository_id": {
+            "description": "Repository id",
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

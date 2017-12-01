@@ -1,0 +1,45 @@
+{
+    "description": "Update a user group (resource: PUT /api/usergroups/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "usergroups.update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "usergroups.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "usergroup": {
+            "description": "'description: None\n parameters:\n     admin:\n       required: false\n       type: string\n       description: is an admin user group\n     user_ids:\n       required: false\n       type: array\n       description:\n     role_ids:\n       required: false\n       type: array\n       description:\n     usergroup_ids:\n       required: false\n       type: array\n       description:\n     name:\n       required: false\n       type: string\n       description:\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

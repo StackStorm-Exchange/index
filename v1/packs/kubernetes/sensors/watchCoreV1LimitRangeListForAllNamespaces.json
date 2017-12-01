@@ -1,0 +1,41 @@
+{
+    "class_name": "watchCoreV1LimitRangeListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Limitranges objects.",
+    "entry_point": "watchCoreV1LimitRangeListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for limitranges event dispatch.",
+            "name": "limitranges",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

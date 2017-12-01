@@ -1,0 +1,14 @@
+{
+    "ack": {
+        "format": "Reassiging incident"
+    },
+    "action_ref": "servicenow.assign_incident_to",
+    "description": "Assign an incident to a username",
+    "formats": [
+        "assign incident {{number}} to {{name}}"
+    ],
+    "name": "servicenow.assign_incident_to",
+    "result": {
+        "format": "incident reassigned"
+    }
+}

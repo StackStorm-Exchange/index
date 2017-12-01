@@ -1,0 +1,24 @@
+{
+    "description": "Delete BGP configuration",
+    "enabled": true,
+    "entry_point": "chains/del_bgp.yaml",
+    "name": "del_bgp",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "action-chain"
+}

@@ -1,0 +1,36 @@
+{
+    "description": "Get metric data for metric.",
+    "enabled": true,
+    "entry_point": "get_metric_data.py",
+    "name": "get_metric_data",
+    "parameters": {
+        "app_id": {
+            "description": "New Relic application id.",
+            "type": "string"
+        },
+        "from": {
+            "description": "Start time (ISO format, e.g. 2014-03-01T20:59:00+00:00)",
+            "required": true,
+            "type": "string"
+        },
+        "metric_base_name": {
+            "description": "Base name of the metric.",
+            "required": true,
+            "type": "string"
+        },
+        "metrics": {
+            "description": "Comma separated list of metric names.",
+            "items": {
+                "type": "string"
+            },
+            "required": true,
+            "type": "array"
+        },
+        "to": {
+            "description": "End time (ISO format, e.g. 2014-03-01T20:59:00+00:00)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

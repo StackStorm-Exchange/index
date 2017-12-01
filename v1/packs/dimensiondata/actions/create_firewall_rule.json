@@ -1,0 +1,98 @@
+{
+    "description": "Create a firewall (ACL) rule in a network domain",
+    "enabled": true,
+    "entry_point": "create_firewall_rule.py",
+    "name": "create_firewall_rule",
+    "parameters": {
+        "action": {
+            "default": "ex_create_firewall_rule",
+            "immutable": true,
+            "type": "string"
+        },
+        "any_destination": {
+            "default": false,
+            "description": "Rule is for any destination IP",
+            "type": "boolean"
+        },
+        "any_source": {
+            "default": false,
+            "description": "Rule is for any destination IP",
+            "type": "boolean"
+        },
+        "destination_ip": {
+            "description": "The IP of the destination",
+            "type": "string"
+        },
+        "destination_ip_prefix_size": {
+            "description": "The IP range to allow, leave blank for a specific IP",
+            "required": false,
+            "type": "string"
+        },
+        "destination_port_begin": {
+            "description": "The destination port, leave blank for any",
+            "required": false,
+            "type": "integer"
+        },
+        "destination_port_end": {
+            "description": "The destination port end, leave blank for any or a specific port",
+            "required": false,
+            "type": "integer"
+        },
+        "fw_action": {
+            "default": "ACCEPT_DECISIVELY",
+            "description": "Whether to ACCEPT_DECISIVELY or DROP",
+            "required": true,
+            "type": "string"
+        },
+        "ip_version": {
+            "default": "IPV4",
+            "description": "IPV4 or IPV6",
+            "type": "string"
+        },
+        "name": {
+            "description": "The firewall rule name",
+            "required": true,
+            "type": "string"
+        },
+        "network_domain_id": {
+            "description": "The ID of the network domain",
+            "type": "string"
+        },
+        "position": {
+            "description": "The rule position",
+            "required": true,
+            "type": "integer"
+        },
+        "protocol": {
+            "default": "TCP",
+            "description": "The protocol, TCP, IP, UDP",
+            "required": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        },
+        "source_ip": {
+            "description": "The IP of the source",
+            "type": "string"
+        },
+        "source_ip_prefix_size": {
+            "description": "The IP range to allow, leave blank for a specific IP",
+            "required": false,
+            "type": "string"
+        },
+        "source_port_begin": {
+            "description": "The source port, leave blank for any",
+            "required": false,
+            "type": "integer"
+        },
+        "source_port_end": {
+            "description": "The source port end, leave blank for any or a specific port",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

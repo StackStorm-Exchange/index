@@ -1,0 +1,27 @@
+{
+    "description": "Close a list belonging to a board",
+    "enabled": true,
+    "entry_point": "close_list.py",
+    "name": "close_list",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "board_id": {
+            "description": "Board ID where target list lives",
+            "required": true,
+            "type": "string"
+        },
+        "list_id": {
+            "description": "List ID to close",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

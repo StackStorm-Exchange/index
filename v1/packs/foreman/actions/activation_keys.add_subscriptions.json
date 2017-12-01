@@ -1,0 +1,56 @@
+{
+    "description": "Attach a subscription (resource: PUT /katello/api/activation_keys/:id/add_subscriptions)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "activation_keys.add_subscriptions",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the activation key",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "activation_keys.add_subscriptions",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "quantity": {
+            "description": "Quantity of this subscription to add",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "subscription_id": {
+            "description": "Subscription identifier",
+            "required": false,
+            "type": "string"
+        },
+        "subscriptions": {
+            "description": "'description: Array of subscriptions to add\n parameters:\n     id:\n       required: false\n       type: string\n       description: Subscription Pool uuid\n     quantity:\n       required: false\n       type: string\n       description: Quantity of this subscriptions to add\n     '",
+            "required": false,
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

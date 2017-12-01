@@ -1,0 +1,33 @@
+ref: yammer
+name: yammer
+description: st2 content pack containing yammer integrations
+keywords:
+- yammer
+- chatops
+- social
+version: 0.3.1
+author: Anthony Shaw
+email: anthony.shaw@dimensiondata.com
+content:
+  actions:
+    count: 19
+    resources:
+    - authenticate
+    - delete_group
+    - delete_message
+    - email_message
+    - get_group_by_id
+    - get_user_by_email
+    - get_user_by_id
+    - like_message
+    - list_groups
+    - list_messages
+    - list_messages_about_topic
+    - list_messages_from_user
+    - list_messages_in_group
+    - list_messages_my_feed
+    - list_private_messages
+    - list_users
+    - list_users_in_group
+    - post_message
+    - suspend_user

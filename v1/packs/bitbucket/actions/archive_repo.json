@@ -1,0 +1,14 @@
+{
+    "description": "Retruns a path to the downloaded archived repository",
+    "enabled": true,
+    "entry_point": "archive_repo.py",
+    "name": "archive_repo",
+    "parameters": {
+        "repo": {
+            "description": "Name of the repository to archive.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

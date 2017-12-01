@@ -1,0 +1,46 @@
+{
+    "description": "Run build for project and branch.",
+    "enabled": true,
+    "entry_point": "run_build.py",
+    "name": "run_build",
+    "pack": "circle_ci",
+    "parameters": {
+        "branch": {
+            "description": "Branch to run the build on.",
+            "type": "string"
+        },
+        "build_parameters": {
+            "description": "k-v pair of extra build_parameters",
+            "type": "object"
+        },
+        "project": {
+            "description": "Name of project in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to run the build on.",
+            "type": "string"
+        },
+        "username": {
+            "description": "Username in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "vcs_revision": {
+            "description": "Commit SHA/revision (usually github SHA).",
+            "type": "string"
+        },
+        "vcs_type": {
+            "default": "github",
+            "description": "Name of version control system.",
+            "enum": [
+                "github",
+                "bitbucket"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "format": "Running splunk query \"{{ execution.parameters.query }}\""
+    },
+    "action_ref": "splunk.search",
+    "description": "Splunk one-shot search",
+    "formats": [
+        "splunk one-shot {{ query }}",
+        "splunk query {{ query }}"
+    ],
+    "name": "search",
+    "result": {
+        "format": "Splunk query results: {~} {{ execution.result }}"
+    }
+}

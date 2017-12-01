@@ -1,0 +1,36 @@
+{
+    "description": "Delete a given network trunk",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.trunk.delete",
+    "parameters": {
+        "base": {
+            "default": "network trunk delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_trunk_delete = neutronclient.osc.v2.trunk.network_trunk:DeleteNetworkTrunk')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "trunk": {
+            "description": "Trunk(s) to delete (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

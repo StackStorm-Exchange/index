@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.qos.rule.delete",
+    "parameters": {
+        "base": {
+            "default": "network qos rule delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_qos_rule_delete = openstackclient.network.v2.network_qos_rule:DeleteNetworkQosRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "Network QoS rule to delete (ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "qos_policy": {
+            "description": "QoS policy that contains the rule (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

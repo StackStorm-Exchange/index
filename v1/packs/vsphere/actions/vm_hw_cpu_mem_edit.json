@@ -1,0 +1,38 @@
+{
+    "description": "Adjust CPU and RAM allocation for a Virtual Machine",
+    "enabled": true,
+    "entry_point": "vm_hw_cpu_mem_edit.py",
+    "name": "vm_hw_cpu_mem_edit",
+    "parameters": {
+        "cpu_edit": {
+            "description": "Number of CPUs to allocate",
+            "required": false,
+            "type": "integer"
+        },
+        "mem_edit": {
+            "description": "Amount of RAM to assign (GB)",
+            "required": false,
+            "type": "integer"
+        },
+        "vm_id": {
+            "description": "VM ID to edit.",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "VM Name to edit.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Vsphere to connect to",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

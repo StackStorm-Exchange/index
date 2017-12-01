@@ -1,0 +1,78 @@
+{
+    "description": "Create a software deployment.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "software.deployment.create",
+    "parameters": {
+        "action": {
+            "default": "UPDATE",
+            "description": "Name of an action for this deployment. This can be a custom action, or one of CREATE, UPDATE, DELETE, SUSPEND, RESUME. Default is UPDATE",
+            "type": "string"
+        },
+        "base": {
+            "default": "software deployment create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "config": {
+            "description": "ID of the configuration to deploy",
+            "type": "string"
+        },
+        "container": {
+            "description": "Optional name of container to store TEMP_URL_SIGNAL objects in. If not specified a container will be created with a name derived from the DEPLOY_NAME",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('software_deployment_create = heatclient.osc.v1.software_deployment:CreateDeployment')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to yaml (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "input_value": {
+            "description": "Input value to set on the deployment. This can be specified multiple times.",
+            "type": "array"
+        },
+        "name": {
+            "description": "Name of the derived config associated with this deployment. This is used to apply a sort order to the list of configurations currently deployed to the server.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "server": {
+            "description": "ID of the server being deployed to",
+            "required": true,
+            "type": "string"
+        },
+        "signal_transport": {
+            "default": "TEMP_URL_SIGNAL",
+            "description": "How the server should signal to heat with the deployment output values. TEMP_URL_SIGNAL will create a Swift TempURL to be signaled via HTTP PUT. ZAQAR_SIGNAL will create a dedicated zaqar queue to be signaled using the provided keystone credentials.NO_SIGNAL will result in the resource going to the COMPLETE state without waiting for any signal",
+            "type": "string"
+        },
+        "timeout": {
+            "default": 60,
+            "description": "Deployment timeout in minutes",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

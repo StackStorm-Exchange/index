@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "clouddirectory_publish_schema",
+    "pack": "aws",
+    "parameters": {
+        "DevelopmentSchemaArn": {
+            "description": "The Amazon Resource Name (ARN) that is associated with the development schema. For more information, see arns.",
+            "required": true,
+            "type": "string"
+        },
+        "Name": {
+            "description": "The new name under which the schema will be published. If this is not provided, the development schema is considered.",
+            "type": "string"
+        },
+        "Version": {
+            "description": "The version under which the schema will be published.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "publish_schema",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "clouddirectory",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

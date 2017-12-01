@@ -1,0 +1,65 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "consistency.group.create",
+    "parameters": {
+        "availability_zone": {
+            "description": "Availability zone for this consistency group (not available if creating consistency group from source)",
+            "type": "string"
+        },
+        "base": {
+            "default": "consistency group create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "consistency_group_snapshot": {
+            "description": "Existing consistency group snapshot (name or ID)",
+            "type": "string"
+        },
+        "consistency_group_source": {
+            "description": "Existing consistency group (name or ID)",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of this consistency group",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('consistency_group_create = openstackclient.volume.v2.consistency_group:CreateConsistencyGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of new consistency group (default to None)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "volume_type": {
+            "description": "Volume type of this consistency group (name or ID)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

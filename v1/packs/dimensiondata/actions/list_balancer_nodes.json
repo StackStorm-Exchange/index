@@ -1,0 +1,19 @@
+{
+    "description": "List the load balancer nodes",
+    "enabled": true,
+    "entry_point": "run_lb.py",
+    "name": "list_balancer_nodes",
+    "parameters": {
+        "action": {
+            "default": "ex_get_nodes",
+            "immutable": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,23 @@
+{
+    "description": "Implements the logic to create and save switch certificate.",
+    "enabled": true,
+    "entry_point": "create_nsxcntl_client_cert.py",
+    "name": "create_nsxcntl_client_cert",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Switch Virtual IP.",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

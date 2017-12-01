@@ -1,0 +1,41 @@
+{
+    "description": "Create a domain (resource: POST /api/domains)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "domains.create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "domain": {
+            "description": "'description: None\n parameters:\n     name:\n       required: true\n       type: string\n       description: The full DNS domain name\n     domain_parameters_attributes:\n       required: false\n       type: array\n       description: Array of parameters (name, value)\n     dns_id:\n       required: false\n       type: string\n       description: DNS Capsule to use within this domain\n     fullname:\n       required: false\n       type: string\n       description: Description of the domain\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "domains.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

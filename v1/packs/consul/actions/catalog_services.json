@@ -1,0 +1,40 @@
+{
+    "description": "Returns all services known about in the *dc* datacenter.",
+    "enabled": true,
+    "entry_point": "catalog_services.py",
+    "name": "catalog_services",
+    "parameters": {
+        "consistency": {
+            "description": "Consul supports 3 different consistency modes for reads. Read Consul's documentation for details.",
+            "enum": [
+                "default",
+                "consistent",
+                "stale"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "dc": {
+            "description": "The datacenter that this agent will communicate with.",
+            "required": false,
+            "type": "string"
+        },
+        "index": {
+            "description": "The current Consul index. Used to check for changes since last query was run.",
+            "required": false,
+            "type": "integer"
+        },
+        "token": {
+            "description": "An optional ACL token to apply to this request.",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "wait": {
+            "description": "Maximum duration to wait (e.g. '10s') to retrieve a given index.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

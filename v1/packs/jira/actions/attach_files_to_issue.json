@@ -1,0 +1,22 @@
+{
+    "description": "Attach multiple files to JIRA issue / ticket.",
+    "enabled": true,
+    "entry_point": "attach_files_to_issue.py",
+    "name": "attach_files_to_issue",
+    "parameters": {
+        "file_paths": {
+            "description": "List to file paths to attach.",
+            "items": {
+                "type": "string"
+            },
+            "required": true,
+            "type": "array"
+        },
+        "issue_key": {
+            "description": "Issue key (e.g. PROJECT-1000).",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

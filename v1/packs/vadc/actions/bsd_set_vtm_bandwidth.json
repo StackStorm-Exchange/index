@@ -1,0 +1,19 @@
+{
+    "description": "Service Director - Set vTM Bandwidth Allocation",
+    "enabled": true,
+    "entry_point": "bsd_set_vtm_bandwidth.py",
+    "name": "bsd_set_vtm_bandwidth",
+    "parameters": {
+        "bw": {
+            "description": "Bandwidth to allocate in Mbps",
+            "required": true,
+            "type": "integer"
+        },
+        "vtm": {
+            "description": "Set bandwidth allocation for a vTM",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

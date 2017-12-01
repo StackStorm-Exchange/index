@@ -1,0 +1,19 @@
+{
+    "description": "Start a container.",
+    "enabled": true,
+    "entry_point": "start_container.py",
+    "name": "start_container",
+    "parameters": {
+        "container_id": {
+            "description": "ID of a container to start.",
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

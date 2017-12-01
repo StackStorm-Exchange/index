@@ -1,0 +1,49 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "xray_get_trace_summaries",
+    "pack": "aws",
+    "parameters": {
+        "EndTime": {
+            "description": "The end of the time frame for which to retrieve traces.",
+            "required": true,
+            "type": "string"
+        },
+        "FilterExpression": {
+            "description": "Specify a filter expression to retrieve trace summaries for services or requests that meet certain requirements.",
+            "type": "string"
+        },
+        "NextToken": {
+            "description": "Specify the pagination token returned by a previous request to retrieve the next page of results.",
+            "type": "string"
+        },
+        "Sampling": {
+            "description": "Set to true to get summaries for only a subset of available traces.",
+            "type": "boolean"
+        },
+        "StartTime": {
+            "description": "The start of the time frame for which to retrieve traces.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "get_trace_summaries",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "xray",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

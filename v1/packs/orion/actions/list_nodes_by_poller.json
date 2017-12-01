@@ -1,0 +1,30 @@
+{
+    "description": "List the nodes on a Solarwinds Orion poller",
+    "enabled": true,
+    "entry_point": "list_nodes_by_poller.py",
+    "name": "list_nodes_by_poller",
+    "pack": "orion",
+    "parameters": {
+        "poller": {
+            "default": "primary",
+            "description": "The poller to list nodes on.",
+            "type": "string"
+        },
+        "status": {
+            "default": "Up",
+            "description": "Status that nodes are required to be in.",
+            "enum": [
+                "Up",
+                "Down",
+                "Any"
+            ],
+            "type": "string"
+        },
+        "whitelist": {
+            "default": null,
+            "description": "Limit nodes to the following",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

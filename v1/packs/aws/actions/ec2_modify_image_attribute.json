@@ -1,0 +1,68 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_modify_image_attribute",
+    "pack": "aws",
+    "parameters": {
+        "Attribute": {
+            "description": "The name of the attribute to modify.",
+            "type": "string"
+        },
+        "Description": {
+            "description": "A description for the AMI.",
+            "type": "object"
+        },
+        "DryRun": {
+            "description": "Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.",
+            "type": "boolean"
+        },
+        "ImageId": {
+            "description": "The ID of the AMI.",
+            "required": true,
+            "type": "string"
+        },
+        "LaunchPermission": {
+            "description": "A launch permission modification.",
+            "type": "object"
+        },
+        "OperationType": {
+            "description": "The operation type.",
+            "type": "string"
+        },
+        "ProductCodes": {
+            "description": "One or more product codes. After you add a product code to an AMI, it can't be removed. This is only valid when modifying the productCodes attribute.",
+            "type": "array"
+        },
+        "UserGroups": {
+            "description": "One or more user groups. This is only valid when modifying the launchPermission attribute.",
+            "type": "array"
+        },
+        "UserIds": {
+            "description": "One or more AWS account IDs. This is only valid when modifying the launchPermission attribute.",
+            "type": "array"
+        },
+        "Value": {
+            "description": "The value of the attribute being modified. This is only valid when modifying the description attribute.",
+            "type": "string"
+        },
+        "action": {
+            "default": "modify_image_attribute",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

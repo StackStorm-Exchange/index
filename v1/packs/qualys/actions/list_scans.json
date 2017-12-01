@@ -1,0 +1,34 @@
+{
+    "description": "List the scans",
+    "enabled": true,
+    "entry_point": "list_scans.py",
+    "name": "list_scans",
+    "parameters": {
+        "launched_after": {
+            "description": "filter by a date in the format YYYY-MM-DD",
+            "required": false,
+            "type": "string"
+        },
+        "scan_type": {
+            "description": "Filter by type, accepts \"On-Demand\", and \"Scheduled\".",
+            "required": false,
+            "type": "string"
+        },
+        "state": {
+            "description": "parameter accepts \"Running\", \"Paused\", \"Canceled\", \"Finished\", \"Error\", \"Queued\", and \"Loading\".",
+            "required": false,
+            "type": "string"
+        },
+        "title": {
+            "description": "Filter by scan title",
+            "required": false,
+            "type": "string"
+        },
+        "user_login": {
+            "description": "Filter by a user name",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

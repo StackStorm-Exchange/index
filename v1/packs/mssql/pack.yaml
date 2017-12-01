@@ -1,0 +1,26 @@
+ref: mssql
+name: mssql
+description: st2 content pack containing Microsoft SQL Server integrations
+keywords:
+- mssql
+- sql
+- microsoft
+- sql server
+- database
+version: 0.2.1
+author: codyaray
+email: talktome@codyaray.com
+content:
+  actions:
+    count: 6
+    resources:
+    - execute.insert
+    - execute.non_query
+    - execute.query
+    - execute.query_and_email
+    - execute.row
+    - execute.scalar
+  tests:
+    count: 1
+    resources:
+    - test_mssql_action.py

@@ -1,0 +1,39 @@
+ref: cisco_spark
+name: cisco_spark
+description: cisco spark communication pack
+keywords:
+- cisco
+- spark
+- video
+- chat
+version: 0.3.1
+author: Anthony Shaw
+email: anthonyshaw@apache.org
+content:
+  actions:
+    count: 20
+    resources:
+    - create_room
+    - create_team
+    - create_webhook
+    - delete_message
+    - delete_room
+    - delete_team
+    - delete_webhook
+    - get_message
+    - get_room
+    - get_team
+    - get_webhook
+    - handle_webhook
+    - list_messages
+    - list_rooms
+    - list_teams
+    - list_webhooks
+    - send_message
+    - update_room
+    - update_team
+    - update_webhook
+  rules:
+    count: 1
+    resources:
+    - chatops_webhook

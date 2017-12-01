@@ -1,0 +1,26 @@
+{
+    "class_name": "CubeSensorsMeasurementsSensor",
+    "description": "Sensor which polls CubeSensors API for new measurements and dispatch a trigger every time a new measurement is detected.",
+    "entry_point": "measurements_sensor.py",
+    "poll_interval": 120,
+    "trigger_types": [
+        {
+            "description": "Trigger which contains measurements for a particular device.",
+            "name": "measurements",
+            "payload_schema": {
+                "properties": {
+                    "device_name": {
+                        "type": "string"
+                    },
+                    "device_uid": {
+                        "type": "string"
+                    },
+                    "measurements": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

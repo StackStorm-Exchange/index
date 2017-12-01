@@ -1,0 +1,32 @@
+{
+    "class_name": "GithubRepositorySensor",
+    "description": "Sensor which monitors Github repository for activity",
+    "entry_point": "github_repository_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates a new repository action",
+            "name": "repository_event",
+            "payload_schema": {
+                "properties": {
+                    "actor": {
+                        "type": "object"
+                    },
+                    "created_at": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "payload": {
+                        "type": "object"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

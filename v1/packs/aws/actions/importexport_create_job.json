@@ -1,0 +1,50 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "importexport_create_job",
+    "pack": "aws",
+    "parameters": {
+        "APIVersion": {
+            "description": "",
+            "type": "string"
+        },
+        "JobType": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "Manifest": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "ManifestAddendum": {
+            "description": "",
+            "type": "string"
+        },
+        "ValidateOnly": {
+            "description": "",
+            "required": true,
+            "type": "boolean"
+        },
+        "action": {
+            "default": "create_job",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "importexport",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

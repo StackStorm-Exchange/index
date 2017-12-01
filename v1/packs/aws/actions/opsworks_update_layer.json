@@ -1,0 +1,92 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "opsworks_update_layer",
+    "pack": "aws",
+    "parameters": {
+        "Attributes": {
+            "description": "One or more user-defined key/value pairs to be added to the stack attributes.",
+            "type": "object"
+        },
+        "AutoAssignElasticIps": {
+            "description": "Whether to automatically assign an Elastic IP address to the layer's instances. For more information, see How to Edit a Layer.",
+            "type": "boolean"
+        },
+        "AutoAssignPublicIps": {
+            "description": "For stacks that are running in a VPC, whether to automatically assign a public IP address to the layer's instances. For more information, see How to Edit a Layer.",
+            "type": "boolean"
+        },
+        "CustomInstanceProfileArn": {
+            "description": "The ARN of an IAM profile to be used for all of the layer's EC2 instances. For more information about IAM ARNs, see Using Identifiers.",
+            "type": "string"
+        },
+        "CustomJson": {
+            "description": "A JSON-formatted string containing custom stack configuration and deployment attributes to be installed on the layer's instances. For more information, see  Using Custom JSON. ",
+            "type": "string"
+        },
+        "CustomRecipes": {
+            "description": "A LayerCustomRecipes object that specifies the layer's custom recipes.",
+            "type": "object"
+        },
+        "CustomSecurityGroupIds": {
+            "description": "An array containing the layer's custom security group IDs.",
+            "type": "array"
+        },
+        "EnableAutoHealing": {
+            "description": "Whether to disable auto healing for the layer.",
+            "type": "boolean"
+        },
+        "InstallUpdatesOnBoot": {
+            "description": "Whether to install operating system and package updates when the instance boots. The default value is true. To control when updates are installed, set this value to false. You must then update your instances manually by using CreateDeployment to run the update_dependencies stack command or manually running yum (Amazon Linux) or apt-get (Ubuntu) on the instances.   We strongly recommend using the default value of true, to ensure that your instances have the latest security updates. ",
+            "type": "boolean"
+        },
+        "LayerId": {
+            "description": "The layer ID.",
+            "required": true,
+            "type": "string"
+        },
+        "LifecycleEventConfiguration": {
+            "description": "",
+            "type": "object"
+        },
+        "Name": {
+            "description": "The layer name, which is used by the console.",
+            "type": "string"
+        },
+        "Packages": {
+            "description": "An array of Package objects that describe the layer's packages.",
+            "type": "array"
+        },
+        "Shortname": {
+            "description": "For custom layers only, use this parameter to specify the layer's short name, which is used internally by AWS OpsWorksand by Chef. The short name is also used as the name for the directory where your app files are installed. It can have a maximum of 200 characters and must be in the following format: /\\A[a-z0-9\\-\\_\\.]+\\Z/. The built-in layers' short names are defined by AWS OpsWorks. For more information, see the Layer Reference ",
+            "type": "string"
+        },
+        "UseEbsOptimizedInstances": {
+            "description": "Whether to use Amazon EBS-optimized instances.",
+            "type": "boolean"
+        },
+        "VolumeConfigurations": {
+            "description": "A VolumeConfigurations object that describes the layer's Amazon EBS volumes.",
+            "type": "array"
+        },
+        "action": {
+            "default": "update_layer",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "opsworks",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

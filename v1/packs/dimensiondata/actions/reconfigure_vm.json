@@ -1,0 +1,39 @@
+{
+    "description": "Reconfigure the virtual hardware specification of a node",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "reconfigure_vm",
+    "parameters": {
+        "action": {
+            "default": "ex_reconfigure_node",
+            "immutable": true,
+            "type": "string"
+        },
+        "cores_per_socket": {
+            "description": "Changes the number of cores per socket",
+            "type": "integer"
+        },
+        "cpu_count": {
+            "description": "Change the CPU count",
+            "type": "integer"
+        },
+        "cpu_performance": {
+            "description": "The CPU speed type",
+            "type": "string"
+        },
+        "memory_gb": {
+            "description": "Change the RAM in GB",
+            "type": "integer"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Like a particular message",
+    "enabled": true,
+    "entry_point": "like_message.py",
+    "name": "like_message",
+    "parameters": {
+        "message_id": {
+            "description": "The message ID to like",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

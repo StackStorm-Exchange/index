@@ -1,0 +1,15 @@
+{
+    "description": "Check for a valid hostanme (and return some infomation).",
+    "enabled": true,
+    "entry_point": "is_valid_hostname.py",
+    "name": "is_valid_hostname",
+    "pack": "networking_utils",
+    "parameters": {
+        "hostname": {
+            "description": "Hostname to valiadate",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

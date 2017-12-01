@@ -1,0 +1,15 @@
+{
+    "description": "Return GeoIP information for a given IP Address.",
+    "enabled": true,
+    "entry_point": "geoip.py",
+    "name": "geoip",
+    "pack": "networking_utils",
+    "parameters": {
+        "ip_addresses": {
+            "description": "IP Addresses to valiadate",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

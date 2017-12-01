@@ -1,0 +1,49 @@
+{
+    "description": "Apply OS Build plans to a series of Machine Serial Number/UUIDs. This will create a batch job in ICSP for the specified servers.",
+    "enabled": true,
+    "entry_point": "workflows/icsp_ids_to_os.yaml",
+    "name": "icsp_ids_to_os",
+    "pack": "hpe_icsp",
+    "parameters": {
+        "buildplan_ids": {
+            "description": "Comma seperated list of Builplan URI ids",
+            "position": 3,
+            "required": true,
+            "type": "array"
+        },
+        "connection_details": {
+            "description": "Overriding connection details for ICSP server",
+            "position": 4,
+            "required": false,
+            "type": "object"
+        },
+        "hostnames": {
+            "description": "Hostname to be applied to this server, Must match order of identifiers.",
+            "position": 2,
+            "required": true,
+            "type": "array"
+        },
+        "id_type": {
+            "default": "serialnumber",
+            "enum": [
+                "serialnumber",
+                "UUID"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "identifiers": {
+            "description": "List of Serial Numbers or UUID of the target Servers (must be all of same type).",
+            "position": 0,
+            "required": true,
+            "type": "array"
+        },
+        "workflow": {
+            "default": "hpe_icsp.icsp_ids_to_os.entry",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

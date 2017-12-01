@@ -1,0 +1,49 @@
+{
+    "description": "Create a monitor",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "create_monitor",
+    "parameters": {
+        "cls": {
+            "default": "DatadogCreateMonitor",
+            "immutable": true,
+            "type": "string"
+        },
+        "message": {
+            "description": "A message to include with notifications for this monitor. Email notifications can be sent to specific users by using the same '@username' notation as events.",
+            "required": false,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.monitors",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the alert",
+            "required": false,
+            "type": "string"
+        },
+        "options": {
+            "description": "A dictionary of options for the monitor. There are options that are common to all types as well as options that are specific to certain monitor types. See http://docs.datadoghq.com/api/#monitor-create",
+            "required": false,
+            "type": "object"
+        },
+        "query": {
+            "description": "The monitor query to notify on with syntax varying depending on what type of monitor you are creating, see http://docs.datadoghq.com/api/#monitor-create",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "A list of tags to associate with your monitor",
+            "required": false,
+            "type": "array"
+        },
+        "type": {
+            "description": "The type of the monitor, chosen from: metric alert, service check, event alert",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,20 @@
+{
+    "description": "Update an Orion Nodes poller",
+    "enabled": true,
+    "entry_point": "update_node_poller.py",
+    "name": "update_node_poller",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "The node to poll in Orion.",
+            "required": true,
+            "type": "string"
+        },
+        "poller": {
+            "description": "The name of the poller to move the node to.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

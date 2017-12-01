@@ -1,0 +1,46 @@
+{
+    "description": "Delete stack(s).",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.delete",
+    "parameters": {
+        "base": {
+            "default": "stack delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_delete = heatclient.osc.v1.stack:DeleteStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Stack(s) to delete (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait for stack delete to complete",
+            "type": "boolean"
+        },
+        "yes": {
+            "default": false,
+            "description": "Skip yes/no prompt (assume yes)",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

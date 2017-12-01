@@ -1,0 +1,44 @@
+{
+    "description": "Creates a new embeddable graph",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "create_embed",
+    "parameters": {
+        "cls": {
+            "default": "DatadogCreateEmbed",
+            "immutable": true,
+            "type": "string"
+        },
+        "graph": {
+            "description": "The graph definition",
+            "required": true,
+            "type": "object"
+        },
+        "legend": {
+            "description": "The flag determining if the graph includes a legend. Must be one of yes or no",
+            "required": false,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.embeds",
+            "immutable": true,
+            "type": "string"
+        },
+        "size": {
+            "description": "The size of the graph. Must be one of small, medium, large, and xlarge",
+            "required": false,
+            "type": "string"
+        },
+        "timeframe": {
+            "description": "The timegrame for the graph. Must be one of 1_hour, 4_hours, 1_day, 2_days, and 1_week",
+            "required": false,
+            "type": "string"
+        },
+        "title": {
+            "description": "Determines graph title",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

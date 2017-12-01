@@ -1,0 +1,16 @@
+{
+    "description": "Get client roles",
+    "enabled": true,
+    "entry_point": "get_client_roles.py",
+    "name": "get_client_roles",
+    "pack": "keycloak",
+    "parameters": {
+        "client_id": {
+            "description": "keycloak internal client id",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

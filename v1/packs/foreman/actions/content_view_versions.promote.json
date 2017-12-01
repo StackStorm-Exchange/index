@@ -1,0 +1,66 @@
+{
+    "description": "Promote a content view version (resource: POST /katello/api/content_view_versions/:id/promote)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_view_versions.promote",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "The description for the content view version promotion",
+            "required": false,
+            "type": "string"
+        },
+        "environment_id": {
+            "description": "LifeCycle Environment identifier",
+            "required": false,
+            "type": "string"
+        },
+        "environment_ids": {
+            "description": "Identifiers for Lifecycle Environment",
+            "required": false,
+            "type": "array"
+        },
+        "force": {
+            "description": "force content view promotion and bypass lifecycle environment restriction",
+            "required": false,
+            "type": "string"
+        },
+        "force_yum_metadata_regeneration": {
+            "description": "Force metadata regeneration on the repositories in the content view version",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "Content view version identifier",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_view_versions.promote",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

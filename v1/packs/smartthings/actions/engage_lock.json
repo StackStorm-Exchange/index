@@ -1,0 +1,24 @@
+{
+    "description": "Engage (lock) a device that can be locked",
+    "enabled": true,
+    "entry_point": "command.py",
+    "name": "engage_lock",
+    "parameters": {
+        "command": {
+            "default": "lock",
+            "immutable": true,
+            "type": "string"
+        },
+        "device_id": {
+            "description": "ID of switch",
+            "required": true,
+            "type": "string"
+        },
+        "device_type": {
+            "default": "lock",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

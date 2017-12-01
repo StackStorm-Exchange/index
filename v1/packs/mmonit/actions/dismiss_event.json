@@ -1,0 +1,15 @@
+{
+    "description": "Dismiss the given active event so it doesn't show up in the event list if active filter is set to 2.",
+    "enabled": true,
+    "entry_point": "dismiss_event.py",
+    "name": "dismiss_event",
+    "parameters": {
+        "event_id": {
+            "description": "The event id to dismiss",
+            "position": 1,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

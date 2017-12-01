@@ -1,0 +1,29 @@
+{
+    "action": {
+        "parameters": {
+            "ip_address": "{{trigger.body.orion_node_create.ip_address}}",
+            "node": "{{trigger.body.orion_node_create.node}}",
+            "platform": "{{trigger.body.orion_node_create.platform}}",
+            "poller": "{{trigger.body.orion_node_create.poller}}",
+            "status": "{{trigger.body.orion_node_create.status}}",
+            "std_community": "{{trigger.body.orion_node_create.std_community}}"
+        },
+        "ref": "orion.node_create"
+    },
+    "criteria": {
+        "trigger.body": {
+            "pattern": "orion_node_create",
+            "type": "exists"
+        }
+    },
+    "description": "Trigger orion.node_create via a webhook",
+    "enabled": false,
+    "name": "node_create_webhook",
+    "pack": "orion",
+    "trigger": {
+        "parameters": {
+            "url": "orion_node_create"
+        },
+        "type": "core.st2.webhook"
+    }
+}

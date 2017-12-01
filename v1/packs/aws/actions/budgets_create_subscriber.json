@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "budgets_create_subscriber",
+    "pack": "aws",
+    "parameters": {
+        "AccountId": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "BudgetName": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "Notification": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "Subscriber": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "action": {
+            "default": "create_subscriber",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "budgets",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

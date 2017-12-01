@@ -1,0 +1,29 @@
+{
+    "description": "Run a WMI query on a particular Windows host.",
+    "enabled": true,
+    "entry_point": "wmi_query.py",
+    "name": "wmi_query",
+    "parameters": {
+        "host": {
+            "description": "IP address of a Windows server to run the query on",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Account password.",
+            "required": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "WQL query to run.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Account username.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

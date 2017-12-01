@@ -1,0 +1,40 @@
+{
+    "description": "Send some BTC to supplied address.",
+    "enabled": true,
+    "entry_point": "",
+    "name": "sendtoaddresss",
+    "parameters": {
+        "amount": {
+            "required": true,
+            "type": "number"
+        },
+        "cmd": {
+            "default": "bitcoin-cli sendtoaddress {{to}} {{amount}} {{comment}} {{comment_to}}",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "comment": {
+            "default": "",
+            "required": false,
+            "type": "string"
+        },
+        "comment_to": {
+            "default": "",
+            "required": false,
+            "type": "string"
+        },
+        "hosts": {
+            "default": "{{system.btc_wallet}}",
+            "immutable": true
+        },
+        "sudo": {
+            "immutable": true
+        },
+        "to": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "remote-shell-cmd"
+}

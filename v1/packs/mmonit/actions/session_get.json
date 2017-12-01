@@ -1,0 +1,14 @@
+{
+    "description": "Returns the session attribute matching the session_key argument. If no keys are specified, all stored attributes in the session are returned.",
+    "enabled": true,
+    "entry_point": "session_get.py",
+    "name": "session_get",
+    "parameters": {
+        "session_key": {
+            "description": "The key used to store the data in the session.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

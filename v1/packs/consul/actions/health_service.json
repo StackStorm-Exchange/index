@@ -1,0 +1,50 @@
+{
+    "description": "Returns the nodes and health info of a service",
+    "enabled": true,
+    "entry_point": "health_service.py",
+    "name": "health_service",
+    "parameters": {
+        "dc": {
+            "description": "The datacenter of the node and defaults to this agents datacenter.",
+            "required": false,
+            "type": "string"
+        },
+        "index": {
+            "description": "The current Consul index. Useful to check for changes since last query was run.",
+            "required": false,
+            "type": "integer"
+        },
+        "near": {
+            "description": "A node name to sort the resulting list in ascending order based on the estimated round trip time from that node.",
+            "required": false,
+            "type": "string"
+        },
+        "passing": {
+            "description": "Set to True will filter results to only those nodes whose checks are currently passing.",
+            "required": false,
+            "type": "string"
+        },
+        "service": {
+            "description": "Name of the service to query in Consul.",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Filter the results by tag.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "An optional ACL token to apply to this request.",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "wait": {
+            "description": "Maximum duration to wait (e.g. '10s') to retrieve a given index.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

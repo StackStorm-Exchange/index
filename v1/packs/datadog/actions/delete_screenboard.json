@@ -1,0 +1,24 @@
+{
+    "description": "Delete an existing screenboard",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete_screenboard",
+    "parameters": {
+        "board_id": {
+            "description": "The id of the screenboard to delete",
+            "required": true,
+            "type": "integer"
+        },
+        "cls": {
+            "default": "DatadogDeleteScreenboard",
+            "immutable": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.screenboards",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Stop a running VM.",
+    "enabled": true,
+    "entry_point": "stop_vm.py",
+    "name": "stop_vm",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "ID of a VM to stop.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,31 @@
+{
+    "description": "Update the size of a disk",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "update_disk_size",
+    "parameters": {
+        "action": {
+            "default": "ex_change_storage_speed",
+            "immutable": true,
+            "type": "string"
+        },
+        "disk_id": {
+            "description": "The UUID of the disk",
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        },
+        "size": {
+            "description": "The size of the disk in GB",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

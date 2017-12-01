@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ssm_start_automation_execution",
+    "pack": "aws",
+    "parameters": {
+        "DocumentName": {
+            "description": "The name of the Automation document to use for this execution.",
+            "required": true,
+            "type": "string"
+        },
+        "DocumentVersion": {
+            "description": "The version of the Automation document to use for this execution.",
+            "type": "string"
+        },
+        "Parameters": {
+            "description": "A key-value map of execution parameters, which match the declared parameters in the Automation document.",
+            "type": "object"
+        },
+        "action": {
+            "default": "start_automation_execution",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ssm",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

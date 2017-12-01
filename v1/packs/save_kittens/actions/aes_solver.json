@@ -1,0 +1,22 @@
+{
+    "description": "Decrypt or Encrypt AES.",
+    "enabled": true,
+    "entry_point": "aes_solver.py",
+    "name": "aes_solver",
+    "parameters": {
+        "aes_key": {
+            "description": "Optional AES Key. Default key is used if none provided.",
+            "secret": true,
+            "type": "string"
+        },
+        "encrypt": {
+            "description": "Optionally encrypt the message.",
+            "type": "boolean"
+        },
+        "message": {
+            "description": "Encrypted message to decrypt.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,137 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnet.create",
+    "parameters": {
+        "allocation_pool": {
+            "description": "Allocation pool IP addresses for this subnet e.g.: start=192.168.199.2,end=192.168.199.254 (repeat option to add multiple IP addresses)",
+            "type": "string"
+        },
+        "base": {
+            "default": "subnet create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set subnet description",
+            "type": "string"
+        },
+        "dhcp": {
+            "default": false,
+            "description": "Enable DHCP (default)",
+            "type": "boolean"
+        },
+        "dns_nameserver": {
+            "description": "DNS server for this subnet (repeat option to set multiple DNS servers)",
+            "type": "array"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnet_create = openstackclient.network.v2.subnet:CreateSubnet')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "gateway": {
+            "default": "auto",
+            "description": "Specify a gateway for the subnet.  The three options are: <ip-address>: Specific IP address to use as the gateway, 'auto': Gateway address should automatically be chosen from within the subnet itself, 'none': This subnet will not use a gateway, e.g.: --gateway 192.168.9.1, --gateway auto, --gateway none (default is 'auto').",
+            "type": "string"
+        },
+        "host_route": {
+            "description": "Additional route for this subnet e.g.: destination=10.10.0.0/16,gateway=192.168.71.254 destination: destination subnet (in CIDR notation) gateway: nexthop IP address (repeat option to add multiple routes)",
+            "type": "string"
+        },
+        "ip_version": {
+            "default": 4,
+            "description": "IP version (default is 4).  Note that when subnet pool is specified, IP version is determined from the subnet pool and this option is ignored. (choices: 4, 6)",
+            "type": "integer"
+        },
+        "ipv6_address_mode": {
+            "description": "IPv6 address mode, valid modes: [dhcpv6-stateful, dhcpv6-stateless, slaac] (choices: dhcpv6-stateful, dhcpv6-stateless, slaac)",
+            "type": "string"
+        },
+        "ipv6_ra_mode": {
+            "description": "IPv6 RA (Router Advertisement) mode, valid modes: [dhcpv6-stateful, dhcpv6-stateless, slaac] (choices: dhcpv6-stateful, dhcpv6-stateless, slaac)",
+            "type": "string"
+        },
+        "name": {
+            "description": "New subnet name",
+            "required": true,
+            "type": "string"
+        },
+        "network": {
+            "description": "Network this subnet belongs to (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "network_segment": {
+            "description": "Network segment to associate with this subnet (name or ID)",
+            "type": "string"
+        },
+        "no_dhcp": {
+            "default": false,
+            "description": "Disable DHCP",
+            "type": "boolean"
+        },
+        "no_tag": {
+            "default": false,
+            "description": "No tags associated with the subnet",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "prefix_length": {
+            "description": "Prefix length for subnet allocation from subnet pool",
+            "type": "string"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "service_type": {
+            "description": "Service type for this subnet e.g.: network:floatingip_agent_gateway. Must be a valid device owner value for a network port (repeat option to set multiple service types)",
+            "type": "array"
+        },
+        "subnet_pool": {
+            "description": "Subnet pool from which this subnet will obtain a CIDR (Name or ID)",
+            "type": "string"
+        },
+        "subnet_range": {
+            "description": "Subnet range in CIDR notation (required if --subnet-pool is not specified, optional otherwise)",
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to be added to the subnet (repeat option to set multiple tags)",
+            "type": "array"
+        },
+        "use_default_subnet_pool": {
+            "default": false,
+            "description": "Use default subnet pool for --ip-version",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

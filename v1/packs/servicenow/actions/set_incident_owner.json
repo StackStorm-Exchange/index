@@ -1,0 +1,18 @@
+{
+    "description": "Run a string GET query on the ServiceNow API",
+    "enabled": true,
+    "entry_point": "set_incident_owner.py",
+    "name": "set_incident_owner",
+    "parameters": {
+        "number": {
+            "required": true,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "Users name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

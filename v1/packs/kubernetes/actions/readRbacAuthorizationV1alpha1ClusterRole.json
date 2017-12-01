@@ -1,0 +1,23 @@
+{
+    "description": "read the specified ClusterRole",
+    "enabled": true,
+    "entry_point": "readRbacAuthorizationV1alpha1ClusterRole.py",
+    "name": "readRbacAuthorizationV1alpha1ClusterRole",
+    "pack": "kubernetes",
+    "parameters": {
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the ClusterRole",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

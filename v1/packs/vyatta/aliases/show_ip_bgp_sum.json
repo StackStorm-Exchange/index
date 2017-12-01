@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.show_ip_bgp_sum",
+    "description": "Perform a \"show ip bgp sum\"",
+    "formats": [
+        "(show|sh) ip bgp (summary|sum) on {{deviceIP}}"
+    ],
+    "name": "show_ip_bgp_sum",
+    "result": {
+        "enabled": true
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "description": "Get status on an item",
+    "enabled": true,
+    "entry_point": "get_status.py",
+    "name": "get_status",
+    "parameters": {
+        "item": {
+            "description": "Item to get status of",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Delete SSH key",
+    "enabled": true,
+    "entry_point": "delete_ssh_key.py",
+    "name": "delete_ssh_key",
+    "parameters": {
+        "key_id": {
+            "description": "ID of a SSH key to delete.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

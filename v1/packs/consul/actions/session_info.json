@@ -1,0 +1,46 @@
+{
+    "description": "Returns a tuple of (index, session) for the session in the dc datacenter.",
+    "enabled": true,
+    "entry_point": "session_info.py",
+    "name": "session_info",
+    "pack": "consul",
+    "parameters": {
+        "consistency": {
+            "description": "The consistency mode to use reads.",
+            "enum": [
+                "default",
+                "consistent",
+                "stale"
+            ],
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "dc": {
+            "description": "The datacenter that this agent will communicate with.",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "index": {
+            "description": "The current Consul index.",
+            "position": 1,
+            "required": false,
+            "type": "array"
+        },
+        "session_id": {
+            "description": "Search for the session which has the id in the datacenter.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "wait": {
+            "default": "15s",
+            "description": "The maximum duration to wait (e.g. '10s') to retrieve a given index.",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

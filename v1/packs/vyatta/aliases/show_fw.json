@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.show_fw",
+    "description": "Perform a \"show ip route\"",
+    "formats": [
+        "(show|sh) (firewall|fw) on {{deviceIP}}"
+    ],
+    "name": "show_fw",
+    "result": {
+        "enabled": true
+    }
+}

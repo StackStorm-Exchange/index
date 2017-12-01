@@ -1,0 +1,83 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall.group.policy.set",
+    "parameters": {
+        "audited": {
+            "default": false,
+            "description": "Enable auditing for the policy",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "firewall group policy set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the firewall policy",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall_group_policy_set = neutronclient.osc.v2.fwaas.firewallpolicy:SetFirewallPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "firewall_policy": {
+            "description": "Firewall policy to update (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "firewall_rule": {
+            "description": "Firewall rule(s) to apply (name or ID)",
+            "type": "array"
+        },
+        "name": {
+            "description": "Name for the firewall policy",
+            "type": "string"
+        },
+        "no_audited": {
+            "default": false,
+            "description": "Disable auditing for the policy",
+            "type": "boolean"
+        },
+        "no_firewall_rule": {
+            "default": false,
+            "description": "Remove all firewall rules from firewall policy",
+            "type": "boolean"
+        },
+        "no_share": {
+            "default": false,
+            "description": "Restrict use of the firewall policy to the current project",
+            "type": "boolean"
+        },
+        "private": {
+            "default": false,
+            "description": "Restrict use of the firewall policy to the current project.This option is deprecated and would be removed in R release.",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "public": {
+            "default": false,
+            "description": "Make the firewall policy public, which allows it to be used in all projects (as opposed to the default, which is to restrict its use to the current project.) This option is deprecated and would be removed in R release.",
+            "type": "boolean"
+        },
+        "share": {
+            "default": false,
+            "description": "Share the firewall policy to be used in all projects (by default, it is restricted to be used by the current project).",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

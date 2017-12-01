@@ -1,0 +1,71 @@
+{
+    "description": "Update a sync plan (resource: PUT /katello/api/sync_plans/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "sync_plans.update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "sync plan description",
+            "required": false,
+            "type": "string"
+        },
+        "enabled": {
+            "description": "enables or disables synchronization",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "sync plan numeric identifier",
+            "required": true,
+            "type": "string"
+        },
+        "interval": {
+            "description": "how often synchronization should run",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "sync plan name",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "sync_plans.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Filter sync plans by organization name or label",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "sync_date": {
+            "description": "start datetime of synchronization",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

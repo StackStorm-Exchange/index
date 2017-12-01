@@ -1,0 +1,51 @@
+{
+    "description": "Resume a stack.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.resume",
+    "parameters": {
+        "base": {
+            "default": "stack resume",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_resume = heatclient.osc.v1.stack:ResumeStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Stack(s) to resume (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait for resume to complete",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

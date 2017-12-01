@@ -1,0 +1,14 @@
+{
+    "description": "Retrieve job information",
+    "enabled": true,
+    "entry_point": "get_job_info.py",
+    "name": "get_job_info",
+    "parameters": {
+        "project": {
+            "description": "Name of the Jenkins job",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

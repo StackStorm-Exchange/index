@@ -1,0 +1,22 @@
+ref: newrelic
+name: newrelic
+description: st2 content pack containing newrelic integrations
+keywords:
+- new relic
+- monitoring
+- app monitoring
+- application level monitoring
+version: 0.4.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 2
+    resources:
+    - get_alerts
+    - get_metric_data
+  sensors:
+    count: 2
+    resources:
+    - NewRelicHookSensor
+    - LegacyNewRelicHookSensor

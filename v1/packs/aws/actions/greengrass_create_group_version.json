@@ -1,0 +1,56 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "greengrass_create_group_version",
+    "pack": "aws",
+    "parameters": {
+        "AmznClientToken": {
+            "description": "The client token used to request idempotent operations.",
+            "type": "string"
+        },
+        "CoreDefinitionVersionArn": {
+            "description": "Core definition version arn for this group.",
+            "type": "string"
+        },
+        "DeviceDefinitionVersionArn": {
+            "description": "Device definition version arn for this group.",
+            "type": "string"
+        },
+        "FunctionDefinitionVersionArn": {
+            "description": "Function definition version arn for this group.",
+            "type": "string"
+        },
+        "GroupId": {
+            "description": "The unique Id of the AWS Greengrass Group",
+            "required": true,
+            "type": "string"
+        },
+        "LoggerDefinitionVersionArn": {
+            "description": "Logger definitionv ersion arn for this group.",
+            "type": "string"
+        },
+        "SubscriptionDefinitionVersionArn": {
+            "description": "Subscription definition version arn for this group.",
+            "type": "string"
+        },
+        "action": {
+            "default": "create_group_version",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "greengrass",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

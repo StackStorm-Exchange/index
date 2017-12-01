@@ -1,0 +1,25 @@
+ref: icinga2
+name: icinga2
+description: Icinga2 Integration pack
+keywords:
+- icinga
+- monitoring
+- alerting
+version: 0.3.2
+author: Igor Cherkaev
+email: emptywee@protonmail.ch
+content:
+  actions:
+    count: 3
+    resources:
+    - get_host
+    - get_service
+    - get_status
+  rules:
+    count: 1
+    resources:
+    - relay_to_chat
+  sensors:
+    count: 1
+    resources:
+    - Icinga2StateChangeSensor

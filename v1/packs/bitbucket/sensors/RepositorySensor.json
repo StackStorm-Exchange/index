@@ -1,0 +1,62 @@
+{
+    "class_name": "RepositorySensor",
+    "description": "Sensor which monitors BitBucket (Server/Cloud) repository for activity",
+    "entry_point": "repository_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates a new repository action",
+            "name": "repository_event",
+            "payload_schema": {
+                "properties": {
+                    "created_at": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "payload": {
+                        "properties": {
+                            "branch": {
+                                "type": "string"
+                            },
+                            "changed_files": {
+                                "properties": {
+                                    "added": {
+                                        "items": "string",
+                                        "type": "array"
+                                    },
+                                    "deleted": {
+                                        "items": "string",
+                                        "type": "array"
+                                    },
+                                    "modified": {
+                                        "items": "string",
+                                        "type": "array"
+                                    },
+                                    "moved": {
+                                        "items": "string",
+                                        "type": "array"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "commits": {
+                                "items": "object",
+                                "type": "array"
+                            },
+                            "repository": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

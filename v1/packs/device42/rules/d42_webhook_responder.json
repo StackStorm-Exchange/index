@@ -1,0 +1,17 @@
+{
+    "action": {
+        "parameters": {
+            "cmd": "echo \"{{trigger.body}}\" >> ~/st2.d42_webhook_responder.out"
+        },
+        "ref": "core.local"
+    },
+    "description": "Sample rule resonding to d42 device updated webhook. This rule can be easily modified to respond to any Device42 webhook.  ",
+    "enabled": true,
+    "name": "d42_webhook_responder",
+    "trigger": {
+        "parameters": {
+            "url": "d42"
+        },
+        "type": "core.st2.webhook"
+    }
+}

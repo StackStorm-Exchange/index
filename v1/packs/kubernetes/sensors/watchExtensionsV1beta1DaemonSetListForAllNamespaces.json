@@ -1,0 +1,41 @@
+{
+    "class_name": "watchExtensionsV1beta1DaemonSetListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Daemonsets objects.",
+    "entry_point": "watchExtensionsV1beta1DaemonSetListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for daemonsets event dispatch.",
+            "name": "daemonsets",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

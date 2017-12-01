@@ -1,0 +1,89 @@
+{
+    "description": "Request existing alert profiles with optional filters",
+    "enabled": true,
+    "entry_point": "get_alert_query.py",
+    "name": "get_alert_query",
+    "parameters": {
+        "callback_domain": {
+            "description": "Searches for alerts that include callbacks to the specified domain",
+            "type": "string"
+        },
+        "dst_ip": {
+            "description": "The destination IPv4 or IPv6 address related to the malware alert",
+            "type": "string"
+        },
+        "duration": {
+            "description": "Specifies the interval to search",
+            "enum": [
+                "1_hour",
+                "2_hours",
+                "6_hours",
+                "12_hours",
+                "24_hours",
+                "48_hours"
+            ],
+            "type": "string"
+        },
+        "end_time": {
+            "description": "End time of the query. Format: (YYYY-MM-DDTHH:mm:ss.sss-OH:om, example: (2013-01-24T16:30:00.000-07:00",
+            "type": "string"
+        },
+        "file_name": {
+            "description": "The name of the malware file",
+            "type": "string"
+        },
+        "file_type": {
+            "description": "The malware file type",
+            "type": "string"
+        },
+        "info_level": {
+            "description": "Specifies the level of information to be returned. Default: concise",
+            "enum": [
+                "concise",
+                "normal",
+                "extended"
+            ],
+            "type": "string"
+        },
+        "malware_name": {
+            "description": "The name of the malware object",
+            "type": "string"
+        },
+        "malware_type": {
+            "description": "The type of the malware object",
+            "enum": [
+                "domain_match",
+                "malware_callback",
+                "malware_object",
+                "web_infection",
+                "infection_match"
+            ],
+            "type": "string"
+        },
+        "md5": {
+            "description": "Searches for alerts that include a specific MD5 hash",
+            "type": "string"
+        },
+        "recipient_email": {
+            "description": "The email address of the malware object receiver",
+            "type": "string"
+        },
+        "sender_email": {
+            "description": "The email address of the malware object sender",
+            "type": "string"
+        },
+        "src_ip": {
+            "description": "The source IPv4 or IPv6 address related to the malware alert",
+            "type": "string"
+        },
+        "start_time": {
+            "description": "Start time of the query. Format: (YYYY-MM-DDTHH:mm:ss.sss-OH:om, example: (2013-01-24T16:30:00.000-07:00",
+            "type": "string"
+        },
+        "url": {
+            "description": "The malware file type",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

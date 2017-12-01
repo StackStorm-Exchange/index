@@ -1,0 +1,30 @@
+{
+    "description": "vTM - Configure a SSL Server Certifcate",
+    "enabled": true,
+    "entry_point": "vtm_add_server_cert.py",
+    "name": "vtm_add_server_cert",
+    "parameters": {
+        "name": {
+            "description": "The name of the Certificate entry",
+            "required": true,
+            "type": "string"
+        },
+        "private": {
+            "description": "The private key",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "public": {
+            "description": "The public certificate",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,49 @@
+{
+    "description": "Add New Hdd to Virtual Machine. You must Provide Either VM_ID or Name.",
+    "enabled": true,
+    "entry_point": "vm_hw_nic_add.py",
+    "name": "vm_hw_nic_add",
+    "parameters": {
+        "network_name": {
+            "description": "Network to attach NIC to. Distributed Port Groups take precedence over Standard port Groups of the same name.",
+            "required": true,
+            "type": "string"
+        },
+        "nictype": {
+            "default": "VMXNET3",
+            "description": "Type of Network Card",
+            "required": false,
+            "type": "string"
+        },
+        "stayconnected": {
+            "default": true,
+            "description": "Should this network adapter always be connected",
+            "type": "boolean"
+        },
+        "vm_id": {
+            "description": "Virtual Machine ID (vm-1234)",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "Virtual Machine Name",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured VSphere connection",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "wakeonlan": {
+            "default": false,
+            "description": "Enable wake on Lan for this adapter",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

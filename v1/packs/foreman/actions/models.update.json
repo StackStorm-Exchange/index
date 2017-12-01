@@ -1,0 +1,45 @@
+{
+    "description": "Update a hardware model (resource: PUT /api/models/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "models.update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "model": {
+            "description": "'description: None\n parameters:\n     info:\n       required: false\n       type: string\n       description:\n     hardware_model:\n       required: false\n       type: string\n       description:\n     vendor_class:\n       required: false\n       type: string\n       description:\n     name:\n       required: false\n       type: string\n       description:\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "models.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

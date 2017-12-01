@@ -1,0 +1,29 @@
+ref: vdx_vtep
+name: vdx_vtep
+description: VDX automation pack.
+version: 0.1.1
+author: GSLAB
+email: yugendra.khonde@gslab.com
+content:
+  actions:
+    count: 19
+    resources:
+    - attach_vlan_to_gw
+    - configure_VXLAN_gateway
+    - configure_interface
+    - configure_nsx_controller
+    - configure_switchport_trunk
+    - configure_vcenter
+    - configure_vcs_vip
+    - configure_vdx
+    - attach_vlan_to_gw_workflow
+    - configure_ve_interface
+    - configure_vlan
+    - create_nsxcntl_client_cert
+    - create_vcs_fabric
+    - get_nsxcntl_client_cert
+    - get_principal_node
+    - publish_configs
+    - publish_configs_day1
+    - verify_vcs_fabric
+    - verify_vcs_ready

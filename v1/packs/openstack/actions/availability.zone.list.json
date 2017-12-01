@@ -1,0 +1,61 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "availability.zone.list",
+    "parameters": {
+        "base": {
+            "default": "availability zone list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "compute": {
+            "default": false,
+            "description": "List compute availability zones",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('availability_zone_list = openstackclient.common.availability_zone:ListAvailabilityZone')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "network": {
+            "default": false,
+            "description": "List network availability zones",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "volume": {
+            "default": false,
+            "description": "List volume availability zones",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

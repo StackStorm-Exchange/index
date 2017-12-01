@@ -1,0 +1,41 @@
+{
+    "class_name": "watchCoreV1EndpointsListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Endpoints objects.",
+    "entry_point": "watchCoreV1EndpointsListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for endpoints event dispatch.",
+            "name": "endpoints",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

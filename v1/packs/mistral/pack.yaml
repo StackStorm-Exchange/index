@@ -1,0 +1,17 @@
+ref: mistral
+name: mistral
+description: Mistral integrations to operate mistral.
+keywords:
+- mistral
+- workflows
+version: 0.3.1
+author: StackStorm
+email: support@stackstorm.com
+content:
+  actions:
+    count: 4
+    resources:
+    - get_task_results
+    - get_workbook_definition
+    - get_workflow_results
+    - kill_workflow

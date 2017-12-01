@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "lightsail_get_instance_access_details",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "get_instance_access_details",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "lightsail",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "instanceName": {
+            "description": "The name of the instance to access.",
+            "required": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "protocol": {
+            "description": "The protocol to use to connect to your instance. Defaults to ssh.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

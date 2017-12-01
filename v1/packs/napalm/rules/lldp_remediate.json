@@ -1,0 +1,18 @@
+{
+    "action": {
+        "parameters": {
+            "config_file": "/vagrant/remediation_config.txt",
+            "hostname": "vsrx01"
+        },
+        "ref": "napalm.loadconfig"
+    },
+    "criteria": {},
+    "description": "Demonstrate simple auto-remediation event",
+    "enabled": true,
+    "name": "lldp_remediate",
+    "pack": "napalm",
+    "trigger": {
+        "parameters": {},
+        "type": "napalm.LLDPNeighborDecrease"
+    }
+}

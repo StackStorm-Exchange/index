@@ -1,0 +1,25 @@
+{
+    "description": "Retrieve a list of executions.",
+    "enabled": true,
+    "entry_point": "executions_list.py",
+    "name": "executions.list",
+    "parameters": {
+        "action": {
+            "description": "Optional action to filter the executions on",
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "default": 10,
+            "description": "Maximum number of executions to return",
+            "required": false,
+            "type": "integer"
+        },
+        "status": {
+            "description": "Optional status to filter the executions on",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

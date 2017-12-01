@@ -1,0 +1,52 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "lambda_update_function_code",
+    "pack": "aws",
+    "parameters": {
+        "FunctionName": {
+            "description": "The existing Lambda function name whose code you want to replace.  You can specify a function name (for example, Thumbnail) or you can specify Amazon Resource Name (ARN) of the function (for example, arn:aws:lambda:us-west-2:account-id:function:ThumbNail). AWS Lambda also allows you to specify a partial ARN (for example, account-id:Thumbnail). Note that the length constraint applies only to the ARN. If you specify only the function name, it is limited to 64 character in length. ",
+            "required": true,
+            "type": "string"
+        },
+        "Publish": {
+            "description": "This boolean parameter can be used to request AWS Lambda to update the Lambda function and publish a version as an atomic operation.",
+            "type": "boolean"
+        },
+        "S3Bucket": {
+            "description": "Amazon S3 bucket name where the .zip file containing your deployment package is stored. This bucket must reside in the same AWS Region where you are creating the Lambda function.",
+            "type": "string"
+        },
+        "S3Key": {
+            "description": "The Amazon S3 object (the deployment package) key name you want to upload.",
+            "type": "string"
+        },
+        "S3ObjectVersion": {
+            "description": "The Amazon S3 object (the deployment package) version you want to upload.",
+            "type": "string"
+        },
+        "ZipFile": {
+            "description": "The contents of your zip file containing your deployment package. If you are using the web API directly, the contents of the zip file must be base64-encoded. If you are using the AWS SDKs or the AWS CLI, the SDKs or CLI will do the encoding for you. For more information about creating a .zip file, see Execution Permissions in the AWS Lambda Developer Guide. ",
+            "type": "string"
+        },
+        "action": {
+            "default": "update_function_code",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "lambda",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

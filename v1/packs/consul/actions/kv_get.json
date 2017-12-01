@@ -1,0 +1,62 @@
+{
+    "description": "Get value from Consul key/value store",
+    "enabled": true,
+    "entry_point": "kv_get.py",
+    "name": "kv_get",
+    "parameters": {
+        "consistency": {
+            "description": "Can be either default, consistent or stale",
+            "required": false,
+            "type": "string"
+        },
+        "dc": {
+            "description": "Optionally the datacenter to communicate with.",
+            "required": false,
+            "type": "string"
+        },
+        "from_json": {
+            "default": false,
+            "description": "Deserialise retrieved keys as JSON.",
+            "required": false,
+            "type": "boolean"
+        },
+        "index": {
+            "description": "The current Consul index, suitable to wait for changes since this query was last run.",
+            "required": false,
+            "type": "integer"
+        },
+        "key": {
+            "description": "Key to retrieve from Consul",
+            "required": true,
+            "type": "string"
+        },
+        "keys": {
+            "default": false,
+            "description": "Return a list of keys only",
+            "required": false,
+            "type": "boolean"
+        },
+        "recurse": {
+            "default": false,
+            "description": "Do a recursive retrieval?",
+            "required": false,
+            "type": "boolean"
+        },
+        "separator": {
+            "description": "Can be used with keys to list keys only up to a given separator character.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "An optional ACL token to apply to this request.",
+            "required": false,
+            "type": "string"
+        },
+        "wait": {
+            "description": "The maximum duration to wait (e.g. '10s') to retrieve a given index.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

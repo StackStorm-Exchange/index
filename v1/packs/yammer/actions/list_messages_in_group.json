@@ -1,0 +1,29 @@
+{
+    "description": "List all messages in a group",
+    "enabled": true,
+    "entry_point": "list_messages_in_group.py",
+    "name": "list_messages_in_group",
+    "parameters": {
+        "group_id": {
+            "description": "the group ID to show messages from",
+            "required": true,
+            "type": "integer"
+        },
+        "limit": {
+            "description": "Limit the number of messages",
+            "required": false,
+            "type": "integer"
+        },
+        "newer_than_message": {
+            "description": "Only show messages newer than this message ID",
+            "required": false,
+            "type": "integer"
+        },
+        "older_than_message": {
+            "description": "Only show messages older than this message ID",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

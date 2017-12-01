@@ -1,0 +1,23 @@
+{
+    "description": "Delete a network domain",
+    "enabled": true,
+    "entry_point": "run_compute_network_domain.py",
+    "name": "delete_network_domain",
+    "parameters": {
+        "action": {
+            "default": "ex_delete_network_domain",
+            "immutable": true,
+            "type": "string"
+        },
+        "network_domain_id": {
+            "description": "The ID of the network domain",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

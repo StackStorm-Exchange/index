@@ -1,0 +1,21 @@
+{
+    "description": "Write a key/value to Vault",
+    "enabled": true,
+    "entry_point": "write.py",
+    "name": "write",
+    "parameters": {
+        "path": {
+            "description": "Path to the Vault secrets",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "values": {
+            "description": "Keys and values to write in Vault ({\"key\":\"value\", \"key2\": \"value2\"}",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

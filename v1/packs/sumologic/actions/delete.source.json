@@ -1,0 +1,19 @@
+{
+    "description": "Delete source for a collector.",
+    "enabled": true,
+    "entry_point": "delete_source.py",
+    "name": "delete.source",
+    "parameters": {
+        "collector_id": {
+            "description": "ID of the collectors to delete the source for.",
+            "required": true,
+            "type": "integer"
+        },
+        "source_id": {
+            "description": "ID of the source to delete.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

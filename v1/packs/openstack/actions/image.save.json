@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "image.save",
+    "parameters": {
+        "base": {
+            "default": "image save",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('image_save = openstackclient.image.v2.image:SaveImage')",
+            "immutable": true,
+            "type": "string"
+        },
+        "file": {
+            "description": "Downloaded image save filename (default: stdout)",
+            "type": "string"
+        },
+        "image": {
+            "description": "Image to save (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

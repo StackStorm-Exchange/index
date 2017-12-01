@@ -1,0 +1,73 @@
+{
+    "description": "Adopt a stack.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.adopt",
+    "parameters": {
+        "adopt_file": {
+            "description": "Path to adopt stack data file",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "stack adopt",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "enable_rollback": {
+            "default": false,
+            "description": "Enable rollback on create/update failure",
+            "type": "boolean"
+        },
+        "environment": {
+            "description": "Path to the environment. Can be specified multiple times",
+            "type": "array"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_adopt = heatclient.osc.v1.stack:AdoptStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the stack to adopt",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "parameter": {
+            "description": "Parameter values used to create the stack. Can be specified multiple times",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "timeout": {
+            "description": "Stack creation timeout in minutes",
+            "type": "integer"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait until stack adopt completes",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

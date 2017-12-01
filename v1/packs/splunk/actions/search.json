@@ -1,0 +1,13 @@
+{
+    "description": "Splunk one-shot search",
+    "entry_point": "search.py",
+    "name": "search",
+    "parameters": {
+        "query": {
+            "description": "Search query (e.g. 'search * | head 10')",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

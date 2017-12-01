@@ -1,0 +1,44 @@
+{
+    "description": "Update a timeboard",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "update_timeboard",
+    "parameters": {
+        "board_id": {
+            "description": "Board id",
+            "required": true,
+            "type": "integer"
+        },
+        "board_title": {
+            "description": "The name of the dashboard",
+            "required": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "DatadogUpdateTimeboard",
+            "immutable": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "The description of the dashboard",
+            "required": false,
+            "type": "string"
+        },
+        "graphs": {
+            "description": "A list of graph definitions, see http://docs.datadoghq.com/api/#dashboards-update",
+            "required": true,
+            "type": "array"
+        },
+        "module_path": {
+            "default": "lib.timeboards",
+            "immutable": true,
+            "type": "string"
+        },
+        "template_variables": {
+            "description": "A list of template variables for using Dashboard templating",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

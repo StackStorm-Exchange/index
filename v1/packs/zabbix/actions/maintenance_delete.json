@@ -1,0 +1,18 @@
+{
+    "description": "Delete Zabbix Maintenance Window",
+    "enabled": true,
+    "entry_point": "maintenance_delete.py",
+    "name": "maintenance_delete",
+    "pack": "zabbix",
+    "parameters": {
+        "maintenance_id": {
+            "description": "ID of the maintenance window",
+            "type": "string"
+        },
+        "maintenance_window_name": {
+            "description": "Name that of the maintenance window",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,16 @@
+{
+    "ack": {
+        "enabled": false
+    },
+    "action_ref": "vra7.get_resource_by_name",
+    "description": "Get resource by name",
+    "formats": [
+        "get details about {{resourceName}}",
+        "tell me about {{resourceName}}"
+    ],
+    "name": "get_resource_by_name",
+    "pack": "vra7",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\n{% for item in execution.result.result %}\nRequest: {{item.requestNumber}}  \nState:   {{item.state}}  \nItem:    {{item.requestedItemName}}\n\n{% endfor %}\n{% else %}\n{{execution.result.stdout}}{~}\n{% endif %}\n"
+    }
+}

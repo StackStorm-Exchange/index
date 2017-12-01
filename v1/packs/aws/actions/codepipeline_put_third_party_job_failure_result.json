@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "codepipeline_put_third_party_job_failure_result",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "put_third_party_job_failure_result",
+            "immutable": true,
+            "type": "string"
+        },
+        "clientToken": {
+            "description": "The clientToken portion of the clientId and clientToken pair used to verify that the calling entity is allowed access to the job and its details.",
+            "required": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "codepipeline",
+            "type": "string"
+        },
+        "failureDetails": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "jobId": {
+            "description": "The ID of the job that failed. This is the same ID returned from PollForThirdPartyJobs.",
+            "required": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

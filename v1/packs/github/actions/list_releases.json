@@ -1,0 +1,24 @@
+{
+    "description": "List releases for a GitHub repository",
+    "enabled": true,
+    "entry_point": "list_releases.py",
+    "name": "list_releases",
+    "parameters": {
+        "api_user": {
+            "default": "{{action_context.api_user|default(None)}}",
+            "description": "The API user",
+            "type": "string"
+        },
+        "github_type": {
+            "default": null,
+            "description": "The type of github installation to target, if unset will use the configured default.",
+            "type": "string"
+        },
+        "repository": {
+            "description": "The full (Organization|User)/repository path",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

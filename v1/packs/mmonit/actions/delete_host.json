@@ -1,0 +1,15 @@
+{
+    "description": "Returns details for the given host id.",
+    "enabled": true,
+    "entry_point": "delete_host.py",
+    "name": "delete_host",
+    "parameters": {
+        "host_id": {
+            "description": "The id of the host to delete.",
+            "position": 1,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

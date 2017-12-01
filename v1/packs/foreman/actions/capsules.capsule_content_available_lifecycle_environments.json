@@ -1,0 +1,46 @@
+{
+    "description": "List the lifecycle environments not attached to the capsule (resource: GET /katello/api/capsules/:id/content/available_lifecycle_environments)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "capsules.capsule_content_available_lifecycle_environments",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "Id of the capsule",
+            "required": true,
+            "type": "number"
+        },
+        "operation": {
+            "default": "capsules.capsule_content_available_lifecycle_environments",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Id of the organization to limit environments on",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,36 @@
+{
+    "description": "Delete software configs",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "software.config.delete",
+    "parameters": {
+        "base": {
+            "default": "software config delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "config": {
+            "description": "IDs of the software configs to delete",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('software_config_delete = heatclient.osc.v1.software_config:DeleteConfig')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

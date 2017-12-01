@@ -1,0 +1,66 @@
+{
+    "description": "Creates a new instance",
+    "enabled": true,
+    "entry_point": "create_instance.py",
+    "name": "create_instance",
+    "parameters": {
+        "bandwidth": {
+            "default": 10,
+            "description": "Max Bandwith for this instance network card.",
+            "required": false,
+            "type": "integer"
+        },
+        "cpus": {
+            "default": 1,
+            "description": "Cpus for this instance.",
+            "required": false,
+            "type": "integer"
+        },
+        "datacenter": {
+            "description": "Datacenter where this instace will be launched.",
+            "required": true,
+            "type": "string"
+        },
+        "disk": {
+            "default": 100,
+            "description": "Disk size for this instance.",
+            "required": false,
+            "type": "integer"
+        },
+        "domain": {
+            "default": "example.com",
+            "description": "domain to attach to the instance.",
+            "required": false,
+            "type": "string"
+        },
+        "keyname": {
+            "description": "Ssh key to attach to this instance.",
+            "required": false,
+            "type": "string"
+        },
+        "local_disk": {
+            "default": true,
+            "description": "If disk is local (True) or SAN (False).",
+            "required": false,
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Hostname for the instance.",
+            "required": true,
+            "type": "string"
+        },
+        "os": {
+            "default": "DEBIAN_LATEST",
+            "description": "Softlayer OS Image to boot this instance from.",
+            "required": false,
+            "type": "string"
+        },
+        "ram": {
+            "default": 2048,
+            "description": "Ram size for this instance.",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

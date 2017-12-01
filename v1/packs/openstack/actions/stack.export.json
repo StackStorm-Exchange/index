@@ -1,0 +1,50 @@
+{
+    "description": "Export stack data json.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.export",
+    "parameters": {
+        "base": {
+            "default": "stack export",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_export = heatclient.osc.v1.stack:ExportStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to json (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "output_file": {
+            "description": "File to output export data",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack to export",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

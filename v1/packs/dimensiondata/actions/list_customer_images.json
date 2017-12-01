@@ -1,0 +1,19 @@
+{
+    "description": "List the images available",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "list_customer_images",
+    "parameters": {
+        "action": {
+            "default": "ex_list_customer_images",
+            "immutable": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

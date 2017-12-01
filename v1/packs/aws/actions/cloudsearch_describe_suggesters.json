@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cloudsearch_describe_suggesters",
+    "pack": "aws",
+    "parameters": {
+        "Deployed": {
+            "description": "Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.",
+            "type": "boolean"
+        },
+        "DomainName": {
+            "description": "The name of the domain you want to describe.",
+            "required": true,
+            "type": "string"
+        },
+        "SuggesterNames": {
+            "description": "The suggesters you want to describe.",
+            "type": "array"
+        },
+        "action": {
+            "default": "describe_suggesters",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cloudsearch",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

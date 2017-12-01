@@ -1,0 +1,41 @@
+{
+    "class_name": "watchAutoscalingV1HorizontalPodAutoscalerListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Horizontalpodautoscalers objects.",
+    "entry_point": "watchAutoscalingV1HorizontalPodAutoscalerListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for horizontalpodautoscalers event dispatch.",
+            "name": "horizontalpodautoscalers",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

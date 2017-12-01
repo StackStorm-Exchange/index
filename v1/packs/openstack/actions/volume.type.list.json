@@ -1,0 +1,66 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.type.list",
+    "parameters": {
+        "base": {
+            "default": "volume type list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "default": {
+            "default": false,
+            "description": "List the default volume type",
+            "type": "boolean"
+        },
+        "encryption_type": {
+            "default": false,
+            "description": "Display encryption information for each volume type (admin only)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_type_list = openstackclient.volume.v2.volume_type:ListVolumeType')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "private": {
+            "default": false,
+            "description": "List only private types (admin only)",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "public": {
+            "default": false,
+            "description": "List only public types",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

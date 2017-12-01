@@ -1,0 +1,35 @@
+{
+    "description": "Get info for build number.",
+    "enabled": true,
+    "entry_point": "get_build_info.py",
+    "name": "get_build_info",
+    "pack": "circle_ci",
+    "parameters": {
+        "build_num": {
+            "description": "Build number from circle CI.",
+            "required": true,
+            "type": "integer"
+        },
+        "project": {
+            "description": "Name of project in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "vcs_type": {
+            "default": "github",
+            "description": "Name of version control system.",
+            "enum": [
+                "github",
+                "bitbucket"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

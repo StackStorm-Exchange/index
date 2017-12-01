@@ -1,0 +1,19 @@
+{
+    "description": "Comment on a JIRA issue / ticket.",
+    "enabled": true,
+    "entry_point": "comment_issue.py",
+    "name": "comment_issue",
+    "parameters": {
+        "comment_text": {
+            "description": "the comment itself.",
+            "required": true,
+            "type": "string"
+        },
+        "issue_key": {
+            "description": "Issue key (e.g. PROJECT-1000).",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

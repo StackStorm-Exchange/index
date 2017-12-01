@@ -1,0 +1,16 @@
+{
+    "description": "Get Node ID value",
+    "enabled": true,
+    "entry_point": "get_node_id.py",
+    "name": "get_node_id",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "Name or IP of node.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

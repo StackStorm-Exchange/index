@@ -1,0 +1,26 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "github.list_releases",
+    "description": "List the releases for a repository.",
+    "formats": [
+        {
+            "display": "github releases list [type (enterprise\u00a6online)] {{repository}}",
+            "representation": [
+                "github releases list( type {{github_type}})? {{repository}}"
+            ]
+        }
+    ],
+    "name": "list_releases",
+    "pack": "github",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "#00ad52"
+            }
+        },
+        "format": "{% if execution.status == 'succeeded' %}\nThe releases for _{{execution.parameters.repository}}_:{~}\n{% for release in execution.result.result %}\n<{{release.html_url}}|{{release.tag_name}}: {{release.name}}> (by {{release.author}} @ {{release.published_at}}){% if release.prerelease %} _Prerelease_{% endif %}{% if release.draft %} _Draft_{% endif %}.\n{% endfor %}\n{% else %}\nError: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

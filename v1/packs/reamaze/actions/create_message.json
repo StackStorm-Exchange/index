@@ -1,0 +1,33 @@
+{
+    "description": "Create a new message under a specific conversation",
+    "enabled": true,
+    "entry_point": "create_message.py",
+    "name": "create_message",
+    "parameters": {
+        "message": {
+            "description": "Message to be posted to conversation",
+            "required": true,
+            "type": "string"
+        },
+        "slug": {
+            "description": "Slug name of conversation to be posted to",
+            "required": true,
+            "type": "string"
+        },
+        "suppress_notification": {
+            "default": false,
+            "description": "Optionally disable an email or integration to be fired with this message",
+            "type": "boolean"
+        },
+        "visibility": {
+            "default": "internal",
+            "description": "Regular or internal note type",
+            "enum": [
+                "internal",
+                "regular"
+            ],
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

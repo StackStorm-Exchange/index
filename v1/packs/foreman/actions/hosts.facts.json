@@ -1,0 +1,56 @@
+{
+    "description": "Upload facts for a host, creating the host if required (resource: POST /api/hosts/facts)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.facts",
+    "pack": "foreman",
+    "parameters": {
+        "certname": {
+            "description": "optional: certname of the host",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "facts": {
+            "description": "hash containing the facts for the host",
+            "required": true,
+            "type": "object"
+        },
+        "name": {
+            "description": "hostname of the host",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "hosts.facts",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "type": {
+            "description": "optional: the STI type of host to create",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

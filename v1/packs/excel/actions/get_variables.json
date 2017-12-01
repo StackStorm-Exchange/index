@@ -1,0 +1,43 @@
+{
+    "description": "returns a json object of the variables for a given key in the excel file",
+    "enabled": true,
+    "entry_point": "get_variables.py",
+    "name": "get_variables",
+    "parameters": {
+        "excel_file": {
+            "description": "Excel file name",
+            "required": false,
+            "type": "string"
+        },
+        "key": {
+            "description": "Key to get",
+            "required": true,
+            "type": "string"
+        },
+        "key_column": {
+            "default": 1,
+            "description": "Starting column for keys",
+            "required": false,
+            "type": "integer"
+        },
+        "sheet": {
+            "default": "Sheet1",
+            "description": "Excel sheet name",
+            "required": true,
+            "type": "string"
+        },
+        "variable_name_row": {
+            "default": 1,
+            "description": "Starting row for variable names",
+            "required": false,
+            "type": "integer"
+        },
+        "variables": {
+            "default": "[]",
+            "description": "Target a specific or subset of variables - in json format",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

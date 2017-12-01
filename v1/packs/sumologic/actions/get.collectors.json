@@ -1,0 +1,20 @@
+{
+    "description": "Get a list of collectors by their name. Returns array of objects.",
+    "enabled": true,
+    "entry_point": "get_collectors.py",
+    "name": "get.collectors",
+    "parameters": {
+        "exact_match": {
+            "default": false,
+            "description": "Search with exact match or occurrence of the keyword.",
+            "required": false,
+            "type": "boolean"
+        },
+        "keyword": {
+            "description": "Name of the collectors to search for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

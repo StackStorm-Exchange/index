@@ -1,0 +1,46 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.agent.remove.network",
+    "parameters": {
+        "agent_id": {
+            "description": "Agent to which a network is removed (ID only)",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "network agent remove network",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "dhcp": {
+            "default": false,
+            "description": "Remove network from DHCP agent",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_agent_remove_network = openstackclient.network.v2.network_agent:RemoveNetworkFromAgent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "network": {
+            "description": "Network to be removed from an agent (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

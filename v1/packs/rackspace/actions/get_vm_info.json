@@ -1,0 +1,19 @@
+{
+    "description": "Retrieve information for a provided VM. Optionally filter on the metadata values.",
+    "enabled": true,
+    "entry_point": "get_vm_info.py",
+    "name": "get_vm_info",
+    "parameters": {
+        "region": {
+            "description": "Optional region name. Defaults to region specified in the config.",
+            "required": false,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "ID of a VM to get information on",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

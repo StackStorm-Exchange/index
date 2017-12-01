@@ -1,0 +1,23 @@
+{
+    "action": {
+        "parameters": {
+            "channel": "{{trigger.data.source_channel}}",
+            "result": "{{trigger}}",
+            "user": "{{trigger.data.user}}"
+        },
+        "ref": "hubot.post_result"
+    },
+    "criteria": {
+        "trigger.route": {
+            "pattern": "hubot",
+            "type": "equals"
+        }
+    },
+    "description": "Notification rule to send messages to Hubot",
+    "enabled": true,
+    "name": "notify_hubot",
+    "pack": "hubot",
+    "trigger": {
+        "type": "core.st2.generic.notifytrigger"
+    }
+}

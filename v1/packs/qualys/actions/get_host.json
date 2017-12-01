@@ -1,0 +1,14 @@
+{
+    "description": "Get a registered host from the host collection",
+    "enabled": true,
+    "entry_point": "get_host.py",
+    "name": "get_host",
+    "parameters": {
+        "host": {
+            "description": "The host name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

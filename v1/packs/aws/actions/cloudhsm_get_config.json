@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cloudhsm_get_config",
+    "pack": "aws",
+    "parameters": {
+        "ClientArn": {
+            "description": "The ARN of the client.",
+            "required": true,
+            "type": "string"
+        },
+        "ClientVersion": {
+            "description": "The client version.",
+            "required": true,
+            "type": "string"
+        },
+        "HapgList": {
+            "description": "A list of ARNs that identify the high-availability partition groups that are associated with the client.",
+            "required": true,
+            "type": "array"
+        },
+        "action": {
+            "default": "get_config",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cloudhsm",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

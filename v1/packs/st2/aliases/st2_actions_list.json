@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "format": "Give me just a moment to find the actions for you..."
+    },
+    "action_ref": "st2.actions.list",
+    "description": "List available StackStorm actions.",
+    "formats": [
+        "st2 list {{ limit=10 }} actions",
+        "st2 list {{ limit=10 }} actions from {{ pack }}"
+    ],
+    "name": "st2_actions_list",
+    "result": {
+        "format": "Found {{ execution.result.result | length }} actions:{~}\n{% for action in execution.result.result -%}\n    \u2022 {{ action.ref }}{{ action.description and ' - ' + action.description }}\n{%+ endfor %}\n"
+    }
+}

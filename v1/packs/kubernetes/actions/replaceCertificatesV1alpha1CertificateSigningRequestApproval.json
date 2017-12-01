@@ -1,0 +1,28 @@
+{
+    "description": "replace approval of the specified CertificateSigningRequest",
+    "enabled": true,
+    "entry_point": "replaceCertificatesV1alpha1CertificateSigningRequestApproval.py",
+    "name": "replaceCertificatesV1alpha1CertificateSigningRequestApproval",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the CertificateSigningRequest",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

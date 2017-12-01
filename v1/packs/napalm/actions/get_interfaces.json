@@ -1,0 +1,57 @@
+{
+    "description": "Get interfaces from a device using NAPALM.",
+    "enabled": true,
+    "entry_point": "get_interfaces.py",
+    "name": "get_interfaces",
+    "parameters": {
+        "counters": {
+            "description": "Get only counter information for the interfaces interfaces",
+            "position": 5,
+            "required": false,
+            "type": "boolean"
+        },
+        "credentials": {
+            "description": "The credentials group which contains the username and password to log in",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "driver": {
+            "description": "Device driver name for connecting to device, see https://napalm.readthedocs.io/en/latest/support/index.html for list.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The hostname of the device to connect to. Driver must be specified if hostname is not in configuration. Hostname without FQDN can be given if device is in configuration.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "htmlout": {
+            "description": "In addition to the normal output also includes html output.",
+            "position": 7,
+            "required": false,
+            "type": "boolean"
+        },
+        "interface": {
+            "description": "Get details of a specific interface.",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "ipaddresses": {
+            "description": "Get only the ip addresses on the interfaces",
+            "position": 6,
+            "required": false,
+            "type": "boolean"
+        },
+        "port": {
+            "description": "port for accessing device",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

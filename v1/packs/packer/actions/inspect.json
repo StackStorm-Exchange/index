@@ -1,0 +1,18 @@
+{
+    "description": "Takes a template and outputs the various components a template defines",
+    "enabled": true,
+    "entry_point": "inspect.py",
+    "name": "inspect",
+    "parameters": {
+        "cwd": {
+            "description": "Working directory for Packer installation",
+            "type": "string"
+        },
+        "packerfile": {
+            "description": "Packer template file",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

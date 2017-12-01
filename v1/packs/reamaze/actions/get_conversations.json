@@ -1,0 +1,41 @@
+{
+    "description": "This action looks through open re:amaze issues and reports back status",
+    "enabled": true,
+    "entry_point": "get_conversations.py",
+    "name": "get_conversations",
+    "parameters": {
+        "data": {
+            "description": "An object of key/value pairs `data[key]=value will return conversations matching data pairs",
+            "type": "object"
+        },
+        "email": {
+            "description": "Filter conversations based on user email",
+            "type": "string"
+        },
+        "filter_issues": {
+            "default": "open",
+            "description": "Filter conversations based on status",
+            "enum": [
+                "archived",
+                "open",
+                "unassigned",
+                "all"
+            ],
+            "type": "string"
+        },
+        "sort": {
+            "default": "create_at",
+            "description": "Sort results based on last activity or creation",
+            "enum": [
+                "updated",
+                "create_at"
+            ],
+            "type": "string"
+        },
+        "tag": {
+            "description": "Will return conversations matching specific tags",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

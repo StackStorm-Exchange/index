@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "devicefarm_list_suites",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "list_suites",
+            "immutable": true,
+            "type": "string"
+        },
+        "arn": {
+            "description": "The suites' ARNs.",
+            "required": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "devicefarm",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "nextToken": {
+            "description": "An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

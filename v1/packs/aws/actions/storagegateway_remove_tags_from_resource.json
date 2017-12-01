@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "storagegateway_remove_tags_from_resource",
+    "pack": "aws",
+    "parameters": {
+        "ResourceARN": {
+            "description": "The Amazon Resource Name (ARN) of the resource you want to remove the tags from.",
+            "required": true,
+            "type": "string"
+        },
+        "TagKeys": {
+            "description": "The keys of the tags you want to remove from the specified resource. A tag is composed of a key/value pair.",
+            "required": true,
+            "type": "array"
+        },
+        "action": {
+            "default": "remove_tags_from_resource",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "storagegateway",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,24 @@
+ref: travis_ci
+name: Travis CI
+description: Pack which allows integration with Travis CI.
+keywords:
+- travis
+- travis ci
+- continuous integration
+- ci
+version: 0.3.2
+author: Aamir
+email: raza.aamir01@gmail.com
+content:
+  actions:
+    count: 9
+    resources:
+    - cancel_build
+    - disable_hook
+    - enable_hook
+    - get_repo
+    - list_branches
+    - list_builds
+    - list_hooks
+    - list_repos
+    - restart_build

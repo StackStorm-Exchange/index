@@ -1,0 +1,45 @@
+{
+    "description": "Update a smart variable (resource: PUT /api/smart_variables/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "smart_variables.update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "smart_variables.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "smart_variable": {
+            "description": "'description: None\n parameters:\n     default_value:\n       required: false\n       type: string\n       description: Default value of variable\n     validator_rule:\n       required: false\n       type: string\n       description: Used to enforce certain values for the parameter values\n     avoid_duplicates:\n       required: false\n       type: string\n       description: Remove duplicate values (only array type)\n     description:\n       required: false\n       type: string\n       description: Description of variable\n     override_value_order:\n       required: false\n       type: string\n       description: The order in which values are resolved\n     puppetclass_id:\n       required: false\n       type: string\n       description: Puppet class ID\n     merge_default:\n       required: false\n       type: string\n       description: Include default value when merging all matching values\n     hidden_value:\n       required: false\n       type: string\n       description: When enabled the parameter is hidden in the UI\n     validator_type:\n       required: false\n       type: string\n       description: Types of validation values\n     variable:\n       required: false\n       type: string\n       description: Name of variable\n     variable_type:\n       required: false\n       type: string\n       description: Types of variable values\n     merge_overrides:\n       required: false\n       type: string\n       description: Merge all matching values (only array/hash type)\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

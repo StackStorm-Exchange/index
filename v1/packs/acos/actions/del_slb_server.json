@@ -1,0 +1,34 @@
+{
+    "description": "remove a server which is registered in SLB",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "del_slb_server",
+    "parameters": {
+        "action": {
+            "default": "delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of server to delete",
+            "required": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "slb.server",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

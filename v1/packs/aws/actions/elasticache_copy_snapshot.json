@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "elasticache_copy_snapshot",
+    "pack": "aws",
+    "parameters": {
+        "SourceSnapshotName": {
+            "description": "The name of an existing snapshot from which to make a copy.",
+            "required": true,
+            "type": "string"
+        },
+        "TargetBucket": {
+            "description": "The Amazon S3 bucket to which the snapshot is exported. This parameter is used only when exporting a snapshot for external access. When using this parameter to export a snapshot, be sure Amazon ElastiCache has the needed permissions to this S3 bucket. For more information, see Step 2: Grant ElastiCache Access to Your Amazon S3 Bucket in the Amazon ElastiCache User Guide. For more information, see Exporting a Snapshot in the Amazon ElastiCache User Guide.",
+            "type": "string"
+        },
+        "TargetSnapshotName": {
+            "description": "A name for the snapshot copy. ElastiCache does not permit overwriting a snapshot, therefore this name must be unique within its context - ElastiCache or an Amazon S3 bucket if exporting.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "copy_snapshot",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "elasticache",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

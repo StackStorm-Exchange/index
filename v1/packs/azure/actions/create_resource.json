@@ -1,0 +1,49 @@
+{
+    "description": "Create a new ARM Generic Resource.",
+    "enabled": true,
+    "entry_point": "create_resource.py",
+    "name": "create_resource",
+    "parameters": {
+        "api_version": {
+            "description": "API version, e.g.'2015-05-01-preview'",
+            "required": true,
+            "type": "string"
+        },
+        "group_name": {
+            "description": "Resource group name to use",
+            "required": true,
+            "type": "string"
+        },
+        "location": {
+            "description": "Datacenter location, e.g. 'West US'",
+            "required": true,
+            "type": "string"
+        },
+        "parent_resource_path": {
+            "description": "Parent path",
+            "required": false,
+            "type": "string"
+        },
+        "resource_name": {
+            "description": "Name of the new resource",
+            "required": true,
+            "type": "string"
+        },
+        "resource_provider_namespace": {
+            "description": "Provider namespace e.g. Microsoft.Compute",
+            "required": true,
+            "type": "string"
+        },
+        "resource_type": {
+            "description": "Resource type code, e.g. 'availabilitySets'",
+            "required": true,
+            "type": "string"
+        },
+        "subscription_id": {
+            "description": "Azure subscription ID.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

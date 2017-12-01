@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.show_system_memory",
+    "description": "Perform a \"show system memory\"",
+    "formats": [
+        "(show|sh) (system|sys) memory on {{deviceIP}}"
+    ],
+    "name": "show_system_memory",
+    "result": {
+        "enabled": true
+    }
+}

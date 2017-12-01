@@ -1,0 +1,71 @@
+{
+    "description": "Create a content view (resource: POST /katello/api/content_views)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_views.create",
+    "pack": "foreman",
+    "parameters": {
+        "component_ids": {
+            "description": "List of component content view version ids for composite views",
+            "required": false,
+            "type": "array"
+        },
+        "composite": {
+            "description": "Composite content view",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the content view",
+            "required": false,
+            "type": "string"
+        },
+        "label": {
+            "description": "Content view label",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the content view",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_views.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Organization identifier",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "repository_ids": {
+            "description": "List of repository ids",
+            "required": false,
+            "type": "array"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

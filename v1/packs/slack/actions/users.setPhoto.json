@@ -1,0 +1,34 @@
+{
+    "description": "This method allows the user to set their profile image. The caller can pass image data via image.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "users.setPhoto",
+    "parameters": {
+        "crop_w": {
+            "required": false,
+            "type": "string"
+        },
+        "crop_x": {
+            "required": false,
+            "type": "string"
+        },
+        "crop_y": {
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "users.setPhoto",
+            "immutable": true,
+            "type": "string"
+        },
+        "image": {
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+ref: check_mk
+name: check_mk
+description: st2 content pack containing Check_MK integrations
+keywords:
+- check_mk
+- monitoring
+- alerting
+version: 0.2.0
+author: codyaray
+email: talktome@codyaray.com
+content:
+  rules:
+    count: 1
+    resources:
+    - sample.on_disk_full_check
+  triggers:
+    count: 1
+    resources:
+    - event_handler

@@ -1,0 +1,20 @@
+{
+    "description": "List all the arguments for a entity and verb that can be invloked via Solarwinds Orion.",
+    "enabled": true,
+    "entry_point": "list_sdk_verb_args.py",
+    "name": "list_sdk_verb_args",
+    "pack": "orion",
+    "parameters": {
+        "entity_name": {
+            "description": "The entity name to look up.",
+            "required": true,
+            "type": "string"
+        },
+        "verb_name": {
+            "description": "The Verb name to look up.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

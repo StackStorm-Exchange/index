@@ -1,0 +1,14 @@
+{
+    "description": "Retrieve current measurements for a particular device (cube).",
+    "enabled": true,
+    "entry_point": "get_measurements.py",
+    "name": "get_measurements",
+    "parameters": {
+        "device_uid": {
+            "description": "UID of a device to retrieve the measurements for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

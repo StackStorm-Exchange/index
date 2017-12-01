@@ -1,0 +1,35 @@
+{
+    "description": "Create a new JIRA issue / ticket.",
+    "enabled": true,
+    "entry_point": "create_issue.py",
+    "name": "create_issue",
+    "parameters": {
+        "description": {
+            "description": "Issue description.",
+            "required": false,
+            "type": "string"
+        },
+        "extra_fields": {
+            "description": "extra fields like priority, labels, custom fields, etc",
+            "required": false,
+            "type": "object"
+        },
+        "project": {
+            "description": "destination Project in Jira.",
+            "required": false,
+            "type": "string"
+        },
+        "summary": {
+            "description": "Issue summary.",
+            "required": true,
+            "type": "string"
+        },
+        "type": {
+            "default": "Task",
+            "description": "Issue type. Typical issues type include Task, Story, Epic, Bug. You can also specify a custom issue type.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

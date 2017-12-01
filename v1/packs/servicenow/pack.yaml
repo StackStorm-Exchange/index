@@ -1,0 +1,29 @@
+ref: servicenow
+name: servicenow
+description: ServiceNow Integration Pack
+keywords:
+- servicenow
+- incident management
+version: 0.3.3
+author: James Fryman
+email: james@stackstorm.com
+content:
+  actions:
+    count: 10
+    resources:
+    - approve_change
+    - assign_incident_to
+    - delete
+    - get
+    - get_incidents_assigned_to
+    - get_non_structured
+    - get_user
+    - insert
+    - set_incident_owner
+    - update
+  aliases:
+    count: 3
+    resources:
+    - servicenow.approve_change
+    - servicenow.assign_incident_to
+    - servicenow.get_incidents_assigned_to

@@ -1,0 +1,25 @@
+ref: zendesk
+name: zendesk
+description: st2 content pack containing zendesk integrations
+keywords:
+- zendesk
+- support
+- ticketing
+version: 0.3.1
+author: Casey Richardson
+email: casey@bluechasm.com
+content:
+  actions:
+    count: 4
+    resources:
+    - create_ticket
+    - search_tickets
+    - update_ticket
+    - update_ticket_status
+  aliases:
+    count: 4
+    resources:
+    - create_ticket
+    - search_tickets
+    - update_ticket
+    - update_ticket_status

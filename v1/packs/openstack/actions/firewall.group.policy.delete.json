@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall.group.policy.delete",
+    "parameters": {
+        "base": {
+            "default": "firewall group policy delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall_group_policy_delete = neutronclient.osc.v2.fwaas.firewallpolicy:DeleteFirewallPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "firewall_policy": {
+            "description": "Firewall policy(s) to delete (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

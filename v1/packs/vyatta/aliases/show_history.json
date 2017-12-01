@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.show_history",
+    "description": "Perform a \"show history\"",
+    "formats": [
+        "(show|sh) history on {{deviceIP}}"
+    ],
+    "name": "show_history",
+    "result": {
+        "enabled": true
+    }
+}

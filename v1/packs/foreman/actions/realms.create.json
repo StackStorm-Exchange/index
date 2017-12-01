@@ -1,0 +1,41 @@
+{
+    "description": "Create a realm (resource: POST /api/realms)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "realms.create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "realms.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "realm": {
+            "description": "'description: None\n parameters:\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     realm_proxy_id:\n       required: true\n       type: string\n       description: Capsule to use for this realm\n     name:\n       required: true\n       type: string\n       description: The realm name, e.g. EXAMPLE.COM\n     realm_type:\n       required: true\n       type: string\n       description: Realm type, e.g. Red Hat Identity Management or Active Directory\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

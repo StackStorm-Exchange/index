@@ -1,0 +1,54 @@
+{
+    "description": "add a server to the ServiceGroup as a member",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "add_slb_service_group_member",
+    "pack": "acos",
+    "parameters": {
+        "action": {
+            "default": "create",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "slb.service_group.member",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "server_name": {
+            "default": "",
+            "description": "the name of server to add",
+            "type": "string"
+        },
+        "server_port": {
+            "default": 80,
+            "description": "the port-number of server to add",
+            "type": "integer"
+        },
+        "service_group_name": {
+            "description": "the ServiceGroup name to register a member",
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "default": true,
+            "description": "the status of taradd memmber to add",
+            "enum": [
+                true,
+                false
+            ],
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

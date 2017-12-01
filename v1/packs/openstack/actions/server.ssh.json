@@ -1,0 +1,82 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.ssh",
+    "parameters": {
+        "address_type": {
+            "default": "public",
+            "description": "Use other IP address (public, private, etc)",
+            "type": "string"
+        },
+        "base": {
+            "default": "server ssh",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_ssh = openstackclient.compute.v2.server:SshServer')",
+            "immutable": true,
+            "type": "string"
+        },
+        "identity": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "ipv4": {
+            "default": false,
+            "description": "Use only IPv4 addresses",
+            "type": "boolean"
+        },
+        "ipv6": {
+            "default": false,
+            "description": "Use only IPv6 addresses",
+            "type": "boolean"
+        },
+        "login": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "option": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "port": {
+            "description": "==SUPPRESS==",
+            "type": "integer"
+        },
+        "private": {
+            "default": "public",
+            "description": "Use private IP address",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "public": {
+            "default": "public",
+            "description": "Use public IP address",
+            "type": "string"
+        },
+        "server": {
+            "description": "Server (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "verbose": {
+            "default": false,
+            "description": "==SUPPRESS==",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

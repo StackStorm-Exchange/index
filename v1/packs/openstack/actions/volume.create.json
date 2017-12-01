@@ -1,0 +1,123 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.create",
+    "parameters": {
+        "availability_zone": {
+            "description": "Create volume in <availability-zone>",
+            "type": "string"
+        },
+        "base": {
+            "default": "volume create",
+            "immutable": true,
+            "type": "string"
+        },
+        "bootable": {
+            "default": false,
+            "description": "Mark volume as bootable",
+            "type": "boolean"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "consistency_group": {
+            "description": "Consistency group where the new volume belongs to",
+            "type": "string"
+        },
+        "description": {
+            "description": "Volume description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_create = openstackclient.volume.v2.volume:CreateVolume')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "hint": {
+            "description": "Arbitrary scheduler hint key-value pairs to help boot an instance (repeat option to set multiple hints)",
+            "type": "array"
+        },
+        "image": {
+            "description": "Use <image> as source of volume (name or ID)",
+            "type": "string"
+        },
+        "multi_attach": {
+            "default": false,
+            "description": "Allow volume to be attached more than once (default to False)",
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Volume name",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "non_bootable": {
+            "default": false,
+            "description": "Mark volume as non-bootable (default)",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Specify an alternate project (name or ID)",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Set a property to this volume (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "read_only": {
+            "default": false,
+            "description": "Set volume to read-only access mode",
+            "type": "boolean"
+        },
+        "read_write": {
+            "default": false,
+            "description": "Set volume to read-write access mode (default)",
+            "type": "boolean"
+        },
+        "size": {
+            "description": "Volume size in GB (Required unless --snapshot or --source or --source-replicated is specified)",
+            "type": "integer"
+        },
+        "snapshot": {
+            "description": "Use <snapshot> as source of volume (name or ID)",
+            "type": "string"
+        },
+        "source": {
+            "description": "Volume to clone (name or ID)",
+            "type": "string"
+        },
+        "source_replicated": {
+            "description": "Replicated volume to clone (name or ID)",
+            "type": "string"
+        },
+        "type": {
+            "description": "Set the type of volume",
+            "type": "string"
+        },
+        "user": {
+            "description": "Specify an alternate user (name or ID)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,49 @@
+{
+    "description": "Update a template input (resource: PUT /api/templates/:template_id/template_inputs/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "templates.template_inputs_template_id_template_updateinputs",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "templates.template_inputs_template_id_template_updateinputs",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "template_id": {
+            "required": true,
+            "type": "string"
+        },
+        "template_input": {
+            "description": "'description: None\n parameters:\n     fact_name:\n       required: false\n       type: string\n       description: Fact name, used when input type is fact\n     name:\n       required: false\n       type: string\n       description: Input name\n     input_type:\n       required: false\n       type: string\n       description: Input type\n     required:\n       required: false\n       type: string\n       description: Input is required\n     puppet_parameter_class:\n       required: false\n       type: string\n       description: Puppet class name, used when input type is puppet_parameter\n     puppet_parameter_name:\n       required: false\n       type: string\n       description: Puppet parameter name, used when input type is puppet_parameter\n     variable_name:\n       required: false\n       type: string\n       description: Variable name, used when input type is variable\n     options:\n       required: false\n       type: array\n       description: Selectable values for user inputs\n     advanced:\n       required: false\n       type: string\n       description: Input is advanced\n     description:\n       required: false\n       type: string\n       description: Input description\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

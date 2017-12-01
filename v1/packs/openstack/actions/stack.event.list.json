@@ -1,0 +1,75 @@
+{
+    "description": "List events.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.event.list",
+    "parameters": {
+        "base": {
+            "default": "stack event list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_event_list = heatclient.osc.v1.event:ListEvent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Filter parameters to apply on returned events",
+            "type": "array"
+        },
+        "follow": {
+            "default": false,
+            "description": "Print events until process is halted",
+            "type": "boolean"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to log (choices: csv, json, log, table, value, yaml)",
+            "type": "string"
+        },
+        "limit": {
+            "description": "Limit the number of events returned",
+            "type": "integer"
+        },
+        "marker": {
+            "description": "Only return events that appear after the given ID",
+            "type": "string"
+        },
+        "nested_depth": {
+            "description": "Depth of nested stacks from which to display events. Note: this cannot be specified with --resource",
+            "type": "integer"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "resource": {
+            "description": "Name of resource to show events for. Note: this cannot be specified with --nested-depth",
+            "type": "string"
+        },
+        "sort": {
+            "description": "Sort output by selected keys and directions (asc or desc) (default: asc). Specify multiple times to sort on multiple keys. Sort key can be: \"event_time\" (default), \"resource_name\", \"links\", \"logical_resource_id\", \"resource_status\", \"resource_status_reason\", \"physical_resource_id\", or \"id\". You can leave the key empty and specify \":desc\" for sorting by reverse time.",
+            "type": "array"
+        },
+        "stack": {
+            "description": "Name or ID of stack to show events for",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

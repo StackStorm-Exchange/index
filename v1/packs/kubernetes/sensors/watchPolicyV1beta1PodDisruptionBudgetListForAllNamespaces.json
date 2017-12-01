@@ -1,0 +1,41 @@
+{
+    "class_name": "watchPolicyV1beta1PodDisruptionBudgetListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Poddisruptionbudgets objects.",
+    "entry_point": "watchPolicyV1beta1PodDisruptionBudgetListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for poddisruptionbudgets event dispatch.",
+            "name": "poddisruptionbudgets",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

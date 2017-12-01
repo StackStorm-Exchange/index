@@ -1,0 +1,63 @@
+{
+    "description": "Create a new Token",
+    "enabled": true,
+    "entry_point": "create_token.py",
+    "name": "create_token",
+    "pack": "vault",
+    "parameters": {
+        "display_name": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "meta": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "no_default_policy": {
+            "default": false,
+            "description": "",
+            "required": false,
+            "type": "boolean"
+        },
+        "no_parent": {
+            "default": false,
+            "description": "",
+            "required": false,
+            "type": "boolean"
+        },
+        "num_uses": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "orphan": {
+            "default": false,
+            "description": "",
+            "required": false,
+            "type": "boolean"
+        },
+        "policies": {
+            "description": "",
+            "required": false,
+            "type": "array"
+        },
+        "token_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "ttl": {
+            "description": "",
+            "required": false,
+            "type": "integer"
+        },
+        "wrap_ttl": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

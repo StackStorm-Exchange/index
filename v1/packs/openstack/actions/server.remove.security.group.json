@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.remove.security.group",
+    "parameters": {
+        "base": {
+            "default": "server remove security group",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_remove_security_group = openstackclient.compute.v2.server:RemoveServerSecurityGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "group": {
+            "description": "Name or ID of security group to remove from server",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "server": {
+            "description": "Name or ID of server to use",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

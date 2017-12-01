@@ -1,0 +1,44 @@
+{
+    "description": "List messages available",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "list_messages",
+    "parameters": {
+        "accessor": {
+            "default": "messages",
+            "immutable": true,
+            "type": "string"
+        },
+        "before": {
+            "description": "List messages sent before a date and time, in ISO8601 format",
+            "required": false,
+            "type": "string"
+        },
+        "beforeMessage": {
+            "description": "List messages sent before a message, by message ID",
+            "required": false,
+            "type": "string"
+        },
+        "max": {
+            "description": "Limit the maximum number of messages returned",
+            "required": false,
+            "type": "integer"
+        },
+        "mentionedPeople": {
+            "description": "List messages for a person, by personId or me.",
+            "required": false,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "list",
+            "immutable": true,
+            "type": "string"
+        },
+        "roomId": {
+            "description": "Room ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,24 @@
+{
+    "description": "Detach a member to a load balancer",
+    "enabled": true,
+    "entry_point": "balancer_detach_member.py",
+    "name": "balancer_detach_member",
+    "parameters": {
+        "balancer_id": {
+            "description": "ID of the load balancer",
+            "required": true,
+            "type": "string"
+        },
+        "member_id": {
+            "description": "The ID of the member to detach",
+            "required": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

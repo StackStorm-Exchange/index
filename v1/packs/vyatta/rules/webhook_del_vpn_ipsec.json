@@ -1,0 +1,24 @@
+{
+    "action": {
+        "parameters": {
+            "deviceIP": "{{trigger.body.deviceIP}}"
+        },
+        "ref": "vyatta.del_vpn_ipsec"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "del_vpn_ipsec",
+            "type": "contains"
+        }
+    },
+    "description": "Rule deleting VPN IPSec from a webhook payload",
+    "enabled": true,
+    "name": "webhook_del_vpn_ipsec",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

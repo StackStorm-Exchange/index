@@ -1,0 +1,22 @@
+{
+    "description": "Create a new Vault policy",
+    "enabled": true,
+    "entry_point": "set_policy.py",
+    "name": "set_policy",
+    "pack": "vault",
+    "parameters": {
+        "name": {
+            "description": "Name of new Vault Policy",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "rules": {
+            "description": "Policy rules",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

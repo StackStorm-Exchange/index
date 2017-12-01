@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "greengrass_associate_role_to_group",
+    "pack": "aws",
+    "parameters": {
+        "GroupId": {
+            "description": "The unique Id of the AWS Greengrass Group",
+            "required": true,
+            "type": "string"
+        },
+        "RoleArn": {
+            "description": "Role arn you wish to associate with this group.",
+            "type": "string"
+        },
+        "action": {
+            "default": "associate_role_to_group",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "greengrass",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

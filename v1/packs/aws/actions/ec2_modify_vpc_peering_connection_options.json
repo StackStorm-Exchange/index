@@ -1,0 +1,44 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_modify_vpc_peering_connection_options",
+    "pack": "aws",
+    "parameters": {
+        "AccepterPeeringConnectionOptions": {
+            "description": "The VPC peering connection options for the accepter VPC.",
+            "type": "object"
+        },
+        "DryRun": {
+            "description": "Checks whether you have the required permissions for the operation, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.",
+            "type": "boolean"
+        },
+        "RequesterPeeringConnectionOptions": {
+            "description": "The VPC peering connection options for the requester VPC.",
+            "type": "object"
+        },
+        "VpcPeeringConnectionId": {
+            "description": "The ID of the VPC peering connection.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "modify_vpc_peering_connection_options",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

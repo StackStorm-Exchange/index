@@ -1,0 +1,21 @@
+ref: gpg
+name: gpg
+description: Pack for working with GPG.
+keywords:
+- gpg
+- pgp
+- gnupg
+- privacy
+- encryption
+- crypto
+version: 0.3.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 4
+    resources:
+    - decrypt_file
+    - encrypt_file
+    - import_keys
+    - list_keys

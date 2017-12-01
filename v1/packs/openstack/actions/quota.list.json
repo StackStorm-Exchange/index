@@ -1,0 +1,56 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "quota.list",
+    "parameters": {
+        "base": {
+            "default": "quota list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "compute": {
+            "default": false,
+            "description": "List compute quota",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('quota_list = openstackclient.common.quota:ListQuota')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "network": {
+            "default": false,
+            "description": "List network quota",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "volume": {
+            "default": false,
+            "description": "List volume quota",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

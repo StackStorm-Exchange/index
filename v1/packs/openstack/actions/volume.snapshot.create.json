@@ -1,0 +1,67 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.snapshot.create",
+    "parameters": {
+        "base": {
+            "default": "volume snapshot create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the snapshot",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_snapshot_create = openstackclient.volume.v2.volume_snapshot:CreateVolumeSnapshot')",
+            "immutable": true,
+            "type": "string"
+        },
+        "force": {
+            "default": false,
+            "description": "Create a snapshot attached to an instance. Default is False",
+            "type": "boolean"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Set a property to this snapshot (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "remote_source": {
+            "description": "The attribute(s) of the exsiting remote volume snapshot (admin required) (repeat option to specify multiple attributes) e.g.: '--remote-source source-name=test_name --remote-source source-id=test_id'",
+            "type": "array"
+        },
+        "snapshot_name": {
+            "description": "Name of the new snapshot",
+            "required": true,
+            "type": "string"
+        },
+        "volume": {
+            "description": "Volume to snapshot (name or ID) (default is <snapshot-name>)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

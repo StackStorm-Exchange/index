@@ -1,0 +1,34 @@
+{
+    "description": "remove a ServiceGroup from SLB",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "del_slb_service_group",
+    "parameters": {
+        "action": {
+            "default": "delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of ServiceGroup to remove",
+            "required": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "slb.service_group",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

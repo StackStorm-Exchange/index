@@ -1,0 +1,41 @@
+{
+    "description": "delete a LimitRange",
+    "enabled": true,
+    "entry_point": "deleteCoreV1NamespacedLimitRange.py",
+    "name": "deleteCoreV1NamespacedLimitRange",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "gracePeriodSeconds": {
+            "description": "The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately.",
+            "type": "integer"
+        },
+        "name": {
+            "description": "name of the LimitRange",
+            "required": true,
+            "type": "string"
+        },
+        "namespace": {
+            "description": "object name and auth scope, such as for teams and projects",
+            "required": true,
+            "type": "string"
+        },
+        "orphanDependents": {
+            "description": "Should the dependent objects be orphaned. If true/false, the orphan finalizer will be added to/removed from the object's finalizers list.",
+            "type": "boolean"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

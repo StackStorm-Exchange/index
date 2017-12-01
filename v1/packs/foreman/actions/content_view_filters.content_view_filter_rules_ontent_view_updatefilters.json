@@ -1,0 +1,86 @@
+{
+    "description": "Update a filter rule. The parameters included should be based upon the filter type. (resource: PUT /katello/api/content_view_filters/:content_view_filter_id/rules/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_view_filters.content_view_filter_rules_ontent_view_updatefilters",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_filter_id": {
+            "description": "filter identifier",
+            "required": true,
+            "type": "string"
+        },
+        "end_date": {
+            "description": "erratum: end date (YYYY-MM-DD)",
+            "required": false,
+            "type": "string"
+        },
+        "errata_id": {
+            "description": "erratum: id",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "rule identifier",
+            "required": true,
+            "type": "string"
+        },
+        "max_version": {
+            "description": "package: maximum version",
+            "required": false,
+            "type": "string"
+        },
+        "min_version": {
+            "description": "package: minimum version",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "package or package group: name",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_view_filters.content_view_filter_rules_ontent_view_updatefilters",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "start_date": {
+            "description": "erratum: start date (YYYY-MM-DD)",
+            "required": false,
+            "type": "string"
+        },
+        "types": {
+            "description": "erratum: types (enhancement, bugfix, security)",
+            "required": false,
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "version": {
+            "description": "package: version",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

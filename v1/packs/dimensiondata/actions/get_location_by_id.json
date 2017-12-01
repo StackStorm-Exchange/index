@@ -1,0 +1,23 @@
+{
+    "description": "Get a location (DC) by ID e.g. NA1",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "get_location_by_id",
+    "parameters": {
+        "action": {
+            "default": "ex_get_location_by_id",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "The location ID",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

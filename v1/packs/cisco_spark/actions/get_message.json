@@ -1,0 +1,24 @@
+{
+    "description": "Get a specific message",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "get_message",
+    "parameters": {
+        "accessor": {
+            "default": "messages",
+            "immutable": true,
+            "type": "string"
+        },
+        "messageId": {
+            "description": "The ID",
+            "required": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "get",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

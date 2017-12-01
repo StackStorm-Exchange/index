@@ -1,0 +1,37 @@
+{
+    "class_name": "ServiceNotificationsSensor",
+    "description": "Sensor which exposes an HTTP interface and listens for AWS service notifications delivered via AWS SNS",
+    "entry_point": "service_notifications_sensor.py",
+    "trigger_types": [
+        {
+            "description": "Trigger which represents a service notification",
+            "name": "service_notification",
+            "payload_schema": {
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "payload": {
+                        "type": "object"
+                    },
+                    "region": {
+                        "type": "string"
+                    },
+                    "request_parameters": {
+                        "type": "object"
+                    },
+                    "response_elements": {
+                        "type": "object"
+                    },
+                    "source": {
+                        "type": "string"
+                    },
+                    "timestamp": {
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

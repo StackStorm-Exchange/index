@@ -1,0 +1,14 @@
+{
+    "description": "List teams in organization",
+    "enabled": true,
+    "entry_point": "list_teams.py",
+    "name": "list_teams",
+    "parameters": {
+        "organization": {
+            "description": "The organization to list teams for",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

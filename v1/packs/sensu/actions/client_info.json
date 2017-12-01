@@ -1,0 +1,14 @@
+{
+    "description": "Get Sensu client info",
+    "enabled": true,
+    "entry_point": "client_info.py",
+    "name": "client_info",
+    "parameters": {
+        "client": {
+            "description": "The client name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Lock the doors of a vehicle",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "lock_vehicle",
+    "parameters": {
+        "action": {
+            "default": "door_lock",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

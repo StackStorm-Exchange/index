@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.cfg_ipsec",
+    "description": "Configure IPSec Tunnel",
+    "formats": [
+        "(configure|cfg) ipsec between {{eastDeviceIP}} {{eastTunnelIP}} {{eastPrefix}} and {{westDeviceIP}} {{westTunnelIP}} {{westPrefix}}"
+    ],
+    "name": "cfg_ipsec",
+    "result": {
+        "enabled": true
+    }
+}

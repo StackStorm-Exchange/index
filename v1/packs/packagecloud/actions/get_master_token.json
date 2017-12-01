@@ -1,0 +1,32 @@
+{
+    "description": "Get master token for user!",
+    "enabled": true,
+    "entry_point": "get_master_token.sh",
+    "name": "get_master_token",
+    "pack": "packagecloud",
+    "parameters": {
+        "repository": {
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "sudo": {
+            "default": true,
+            "immutable": true
+        },
+        "timeout": {
+            "default": 300
+        },
+        "token_name": {
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "local-shell-script"
+}

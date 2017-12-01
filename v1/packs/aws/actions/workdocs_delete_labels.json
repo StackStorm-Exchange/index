@@ -1,0 +1,44 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "workdocs_delete_labels",
+    "pack": "aws",
+    "parameters": {
+        "AuthenticationToken": {
+            "description": "Amazon WorkDocs authentication token. This field should not be set when using administrative API actions, as in accessing the API using AWS credentials.",
+            "type": "string"
+        },
+        "DeleteAll": {
+            "description": "Flag to request removal of all labels from the specified resource.",
+            "type": "boolean"
+        },
+        "Labels": {
+            "description": "List of labels to delete from the resource.",
+            "type": "array"
+        },
+        "ResourceId": {
+            "description": "The ID of the resource.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "delete_labels",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "workdocs",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

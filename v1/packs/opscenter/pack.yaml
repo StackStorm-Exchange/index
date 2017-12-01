@@ -1,0 +1,38 @@
+ref: opscenter
+name: opscenter
+description: st2 content pack containing datastax opscenter integrations
+keywords:
+- datastax
+- cassandra
+- opscenter
+version: 0.2.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 20
+    resources:
+    - cancel_request
+    - decommission_node
+    - drain_node
+    - get_cluster_configs
+    - get_cluster_info
+    - get_cluster_repair_progress
+    - get_node_conf
+    - get_node_info
+    - get_nodes_info
+    - get_repair_status
+    - get_request_status
+    - get_storage_capacity
+    - list_requests
+    - restart_cluster
+    - restart_node
+    - set_node_conf
+    - start_cluster_repair
+    - start_node
+    - stop_cluster_repair
+    - stop_node
+  sensors:
+    count: 1
+    resources:
+    - EventsConsumer

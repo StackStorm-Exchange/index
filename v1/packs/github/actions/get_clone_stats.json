@@ -1,0 +1,14 @@
+{
+    "description": "Retrieve clone statistics for a given repository",
+    "enabled": true,
+    "entry_point": "get_clone_stats.py",
+    "name": "get_clone_stats",
+    "parameters": {
+        "repo": {
+            "description": "Repository to query for clone stats (org/repo)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

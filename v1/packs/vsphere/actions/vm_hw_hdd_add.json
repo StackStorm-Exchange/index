@@ -1,0 +1,54 @@
+{
+    "description": "Add New Hdd to Virtual Machine. You must Provide Either VM_ID or Name.",
+    "enabled": true,
+    "entry_point": "vm_hw_hdd_add.py",
+    "name": "vm_hw_hdd_add",
+    "parameters": {
+        "datastore": {
+            "description": "Datastore for new Drive",
+            "required": false,
+            "type": "string"
+        },
+        "datastore_cluster": {
+            "description": "Datastore Cluster for new Drive",
+            "required": false,
+            "type": "string"
+        },
+        "disk_size": {
+            "default": 40,
+            "description": "Size of new Drive in GB",
+            "required": true,
+            "type": "integer"
+        },
+        "provision_type": {
+            "default": "thin",
+            "description": "Drive Provisioning (thick|thin)",
+            "enum": [
+                "thin",
+                "thick"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "Virtual Machine ID (vm-1234)",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "Virtual Machine Name",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured Vsphere to connect to",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

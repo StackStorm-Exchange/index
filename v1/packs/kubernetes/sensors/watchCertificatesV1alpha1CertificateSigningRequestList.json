@@ -1,0 +1,41 @@
+{
+    "class_name": "watchCertificatesV1alpha1CertificateSigningRequestList",
+    "description": "Sensor that watches Kubernetes API for new Certificatesigningrequests objects.",
+    "entry_point": "watchCertificatesV1alpha1CertificateSigningRequestList.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for certificatesigningrequests event dispatch.",
+            "name": "certificatesigningrequests",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

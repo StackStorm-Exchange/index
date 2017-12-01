@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "channel": "{{system.opsgenie_timer_hb_channel}}",
+            "message": "opsgenie heartbeat send {{system.opsgenie_timer_hb_name}}{~}",
+            "user": "{{system.opsgenie_timer_hb_user}}"
+        },
+        "ref": "chatops.post_message"
+    },
+    "description": null,
+    "enabled": false,
+    "name": "send_heartbeat_timer",
+    "pack": "opsgenie",
+    "trigger": {
+        "parameters": {
+            "delta": 12,
+            "unit": "minutes"
+        },
+        "type": "core.st2.IntervalTimer"
+    }
+}

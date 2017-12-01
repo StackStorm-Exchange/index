@@ -1,0 +1,26 @@
+{
+    "class_name": "EventsConsumer",
+    "description": "Sensor which consumes all opscenter events and injects them into StackStorm.",
+    "entry_point": "events_consumer.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger which represents an opscenter event",
+            "name": "event",
+            "pack": "opscenter",
+            "payload_info": [
+                "action",
+                "api_source_ip",
+                "event_source",
+                "level",
+                "level_str",
+                "message",
+                "source_node",
+                "success",
+                "target_node",
+                "time",
+                "user"
+            ]
+        }
+    ]
+}

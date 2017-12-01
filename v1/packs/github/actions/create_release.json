@@ -1,0 +1,61 @@
+{
+    "description": "Create a new release for a GitHub repository",
+    "enabled": true,
+    "entry_point": "create_release.py",
+    "name": "create_release",
+    "parameters": {
+        "api_user": {
+            "default": "{{action_context.api_user|default(None)}}",
+            "description": "The API user",
+            "type": "string"
+        },
+        "body": {
+            "description": "Text describing the contents of the tag.",
+            "required": true,
+            "type": "string"
+        },
+        "draft": {
+            "default": false,
+            "description": "Create a draft (unpublished) release",
+            "immutable": true,
+            "type": "boolean"
+        },
+        "github_type": {
+            "default": null,
+            "description": "The type of github installation to target, if unset will use the configured default.",
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the tag.",
+            "required": true,
+            "type": "string"
+        },
+        "prerelease": {
+            "default": false,
+            "description": "Identify the release as a prerelease.",
+            "immutable": true,
+            "type": "boolean"
+        },
+        "repository": {
+            "description": "The full (Organization|User)/repository path",
+            "required": true,
+            "type": "string"
+        },
+        "target_commitish": {
+            "default": "master",
+            "description": "The value that determines where the Git tag is created from (Can be any branch or commit SHA).",
+            "type": "string"
+        },
+        "version_increase": {
+            "default": "patch",
+            "description": "Which part of the version number to increased from the latest tag.",
+            "enum": [
+                "major",
+                "minor",
+                "patch"
+            ],
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

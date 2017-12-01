@@ -1,0 +1,14 @@
+{
+    "description": "Create a Repository",
+    "enabled": true,
+    "entry_point": "create_repo.py",
+    "name": "create_repo",
+    "parameters": {
+        "repo": {
+            "description": "Name of the repository to to create.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

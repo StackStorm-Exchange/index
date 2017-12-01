@@ -1,0 +1,24 @@
+ref: nest
+name: nest
+description: Nest Home Device Control
+keywords:
+- nest
+- home automation
+version: 0.3.2
+author: James Fryman
+email: james@stackstorm.com
+content:
+  actions:
+    count: 11
+    resources:
+    - get_humidity
+    - get_mode
+    - get_temperature
+    - set_away
+    - set_fan
+    - set_home
+    - set_humidity
+    - set_mode
+    - set_temperature
+    - show
+    - toggle_away

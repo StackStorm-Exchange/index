@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "object.unset",
+    "parameters": {
+        "base": {
+            "default": "object unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "container": {
+            "description": "Modify <object> from <container>",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('object_unset = openstackclient.object.v1.object:UnsetObject')",
+            "immutable": true,
+            "type": "string"
+        },
+        "object": {
+            "description": "Object to modify",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "default": [],
+            "description": "Property to remove from object (repeat option to remove multiple properties)",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,44 @@
+{
+    "description": "Insert data into a MySQL database",
+    "enabled": true,
+    "entry_point": "insert.py",
+    "name": "insert",
+    "parameters": {
+        "connection": {
+            "default": null,
+            "description": "Connection entry in configs/mysql.yaml to pull connection info from",
+            "type": "string"
+        },
+        "data": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "db": {
+            "default": null,
+            "description": "Database name if not specified in config",
+            "type": "string"
+        },
+        "host": {
+            "default": null,
+            "description": "Database host if not specified in config",
+            "type": "string"
+        },
+        "passwd": {
+            "default": null,
+            "description": "Database password if not specified in config",
+            "type": "string"
+        },
+        "table": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "default": null,
+            "description": "Database user if not specified in config",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,28 @@
+ref: git
+name: git
+description: st2 content pack containing git integrations
+keywords:
+- git
+- scm
+version: 0.4.0
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 3
+    resources:
+    - clone
+    - get_local_repo_latest_commit
+    - get_remote_repo_latest_commit
+  rules:
+    count: 1
+    resources:
+    - st2.webhook.github.pulls.merge.sample
+  sensors:
+    count: 1
+    resources:
+    - GitCommitSensor
+  tests:
+    count: 1
+    resources:
+    - test_commit_sensor.py

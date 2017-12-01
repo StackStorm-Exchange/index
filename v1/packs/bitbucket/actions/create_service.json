@@ -1,0 +1,24 @@
+{
+    "description": "Create a service/hook for a given repository",
+    "enabled": true,
+    "entry_point": "create_service.py",
+    "name": "create_service",
+    "parameters": {
+        "repo": {
+            "description": "Name of the repository to create a server / hook for.",
+            "required": true,
+            "type": "string"
+        },
+        "service": {
+            "description": "Service type. For example, POST, issues, Jenkins, ReadtheDocs, etc.",
+            "required": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "Provide URL for the service.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,28 @@
+{
+    "description": "replace finalize of the specified Namespace",
+    "enabled": true,
+    "entry_point": "replaceCoreV1NamespaceFinalize.py",
+    "name": "replaceCoreV1NamespaceFinalize",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the Namespace",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

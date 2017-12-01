@@ -1,0 +1,92 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnet.pool.set",
+    "parameters": {
+        "address_scope": {
+            "description": "Set address scope associated with the subnet pool (name or ID), prefixes must be unique across address scopes",
+            "type": "string"
+        },
+        "base": {
+            "default": "subnet pool set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "default": {
+            "default": false,
+            "description": "Set this as a default subnet pool",
+            "type": "boolean"
+        },
+        "default_prefix_length": {
+            "description": "Set subnet pool default prefix length",
+            "type": "integer"
+        },
+        "default_quota": {
+            "description": "Set default quota for subnet pool as the number ofIP addresses allowed in a subnet",
+            "type": "integer"
+        },
+        "description": {
+            "description": "Set subnet pool description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnet_pool_set = openstackclient.network.v2.subnet_pool:SetSubnetPool')",
+            "immutable": true,
+            "type": "string"
+        },
+        "max_prefix_length": {
+            "description": "Set subnet pool maximum prefix length",
+            "type": "integer"
+        },
+        "min_prefix_length": {
+            "description": "Set subnet pool minimum prefix length",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Set subnet pool name",
+            "type": "string"
+        },
+        "no_address_scope": {
+            "default": false,
+            "description": "Remove address scope associated with the subnet pool",
+            "type": "boolean"
+        },
+        "no_default": {
+            "default": false,
+            "description": "Set this as a non-default subnet pool",
+            "type": "boolean"
+        },
+        "no_tag": {
+            "default": false,
+            "description": "Clear tags associated with the subnet pool. Specify both --tag and --no-tag to overwrite current tags",
+            "type": "boolean"
+        },
+        "pool_prefix": {
+            "description": "Set subnet pool prefixes (in CIDR notation) (repeat option to set multiple prefixes)",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "subnet_pool": {
+            "description": "Subnet pool to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to be added to the subnet pool (repeat option to set multiple tags)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

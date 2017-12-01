@@ -1,0 +1,15 @@
+{
+    "description": "Get list of folders within a folder",
+    "enabled": true,
+    "entry_point": "list_folders.py",
+    "name": "list_folders",
+    "pack": "msexchange",
+    "parameters": {
+        "root": {
+            "description": "Folder to start from, if not provided looks at root",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

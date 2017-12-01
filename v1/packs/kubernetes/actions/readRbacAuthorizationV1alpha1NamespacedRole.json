@@ -1,0 +1,28 @@
+{
+    "description": "read the specified Role",
+    "enabled": true,
+    "entry_point": "readRbacAuthorizationV1alpha1NamespacedRole.py",
+    "name": "readRbacAuthorizationV1alpha1NamespacedRole",
+    "pack": "kubernetes",
+    "parameters": {
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the Role",
+            "required": true,
+            "type": "string"
+        },
+        "namespace": {
+            "description": "object name and auth scope, such as for teams and projects",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

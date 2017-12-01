@@ -1,0 +1,83 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.list",
+    "parameters": {
+        "all_projects": {
+            "default": false,
+            "description": "Include all projects (admin only)",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "volume list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_list = openstackclient.volume.v2.volume:ListVolume')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "limit": {
+            "description": "Maximum number of volumes to display",
+            "type": "integer"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "marker": {
+            "description": "The last volume ID of the previous page",
+            "type": "string"
+        },
+        "name": {
+            "description": "Filter results by volume name",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Filter results by project (name or ID) (admin only)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "status": {
+            "description": "Filter results by status",
+            "type": "string"
+        },
+        "user": {
+            "description": "Filter results by user (name or ID) (admin only)",
+            "type": "string"
+        },
+        "user_domain": {
+            "description": "Domain the user belongs to (name or ID). This can be used in case collisions between user names exist.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,36 @@
+ref: st2
+name: st2
+description: StackStorm pack management
+version: 1.0.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 16
+    resources:
+    - actions.list
+    - call_home
+    - check_permissions_anon_data
+    - executions.get
+    - executions.list
+    - executions.re_run
+    - inquiry.respond
+    - kv.delete
+    - kv.get
+    - kv.get_object
+    - kv.grep
+    - kv.set
+    - kv.set_object
+    - rules.list
+    - sensors.list
+    - upload_to_s3
+  aliases:
+    count: 7
+    resources:
+    - st2_actions_list
+    - st2_executions_get
+    - st2_executions_list
+    - st2_executions_re_run
+    - st2_inquiry_respond
+    - st2_rules_list
+    - st2_sensors_list

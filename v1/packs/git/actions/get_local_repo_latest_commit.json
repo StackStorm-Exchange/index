@@ -1,0 +1,24 @@
+{
+    "description": "Retrieve SHA of the latest commit for the provided branch in a local repository.",
+    "enabled": true,
+    "entry_point": "",
+    "name": "get_local_repo_latest_commit",
+    "parameters": {
+        "branch": {
+            "default": "master",
+            "description": "Branch / ref to retrieve the latest commit for.",
+            "required": true,
+            "type": "string"
+        },
+        "cmd": {
+            "default": "cd {{ repo_path }} && git rev-parse {{ branch }}",
+            "immutable": true
+        },
+        "repo_path": {
+            "description": "Path to the directory containg the git repository.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-remote"
+}

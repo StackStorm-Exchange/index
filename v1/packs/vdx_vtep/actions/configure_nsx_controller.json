@@ -1,0 +1,31 @@
+{
+    "description": "configure nsx controller",
+    "enabled": true,
+    "entry_point": "configure_nsx_controller.py",
+    "name": "configure_nsx_controller",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Device IP.",
+            "type": "string"
+        },
+        "nsx_cnt_ip": {
+            "description": "NSX Controller IP.",
+            "type": "string"
+        },
+        "nsx_cnt_name": {
+            "description": "NSX Controller Name.",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

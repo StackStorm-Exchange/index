@@ -1,0 +1,14 @@
+{
+    "description": "Get Sensu check info",
+    "enabled": true,
+    "entry_point": "check_info.py",
+    "name": "check_info",
+    "parameters": {
+        "check": {
+            "description": "The check name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

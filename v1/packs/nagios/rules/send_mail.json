@@ -1,0 +1,18 @@
+{
+    "action": {
+        "parameters": {
+            "body": "{{trigger.service}} on {{trigger.host}} is {{trigger.state}} {{trigger.state_type}}.<br>Attempts: {{trigger.attempt}}.<br>MSG: {{trigger.msg}}",
+            "subject": "ST2 Nagios Service Alert [{{trigger.state_type}}]: {{trigger.state}}",
+            "to": "changeme@example.com"
+        },
+        "ref": "core.sendmail"
+    },
+    "criteria": {},
+    "description": "Send mail when nagios service state changes",
+    "enabled": false,
+    "name": "send_mail",
+    "pack": "nagios",
+    "trigger": {
+        "type": "nagios.service_state_change"
+    }
+}

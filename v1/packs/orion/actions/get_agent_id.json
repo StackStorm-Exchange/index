@@ -1,0 +1,15 @@
+{
+    "description": "Get Agent ID value",
+    "enabled": true,
+    "entry_point": "get_agent_id.py",
+    "name": "get_agent_id",
+    "pack": "orion",
+    "parameters": {
+        "node": {
+            "description": "Name or IP of node.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

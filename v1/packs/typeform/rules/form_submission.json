@@ -1,0 +1,18 @@
+{
+    "action": {
+        "parameters": {
+            "data": "{{trigger}}",
+            "db": "community",
+            "table": "user_registration"
+        },
+        "ref": "mysql.insert"
+    },
+    "criteria": {},
+    "description": "Post to slack on new user submission",
+    "enabled": true,
+    "name": "form_submission",
+    "trigger": {
+        "pack": "typeform",
+        "type": "typeform.registration"
+    }
+}

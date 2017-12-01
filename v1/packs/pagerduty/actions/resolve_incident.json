@@ -1,0 +1,17 @@
+{
+    "description": "Resolve an incident whose id is provided",
+    "enabled": true,
+    "entry_point": "resolve_incident.py",
+    "name": "resolve_incident",
+    "parameters": {
+        "email": {
+            "description": "Email address used to acknowledge the incident",
+            "type": "string"
+        },
+        "ids": {
+            "description": "Array of incident ids",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

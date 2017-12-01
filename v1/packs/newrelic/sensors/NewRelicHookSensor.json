@@ -1,0 +1,68 @@
+{
+    "class_name": "NewRelicHookSensor",
+    "description": "Sensor which watches for alerts from NewRelic API.",
+    "enabled": true,
+    "entry_point": "new_relic_app_sensor.py",
+    "trigger_types": [
+        {
+            "description": "",
+            "name": "WebAppAlertTrigger",
+            "payload_schema": {
+                "properties": {
+                    "alert": {
+                        "type": "object"
+                    },
+                    "headers": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "",
+            "name": "WebAppNormalTrigger",
+            "payload_schema": {
+                "properties": {
+                    "alert": {
+                        "type": "object"
+                    },
+                    "headers": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "",
+            "name": "ServerAlertTrigger",
+            "payload_schema": {
+                "properties": {
+                    "alert": {
+                        "type": "object"
+                    },
+                    "headers": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "",
+            "name": "ServerNormalTrigger",
+            "payload_schema": {
+                "properties": {
+                    "alert": {
+                        "type": "object"
+                    },
+                    "headers": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

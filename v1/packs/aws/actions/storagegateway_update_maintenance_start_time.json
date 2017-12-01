@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "storagegateway_update_maintenance_start_time",
+    "pack": "aws",
+    "parameters": {
+        "DayOfWeek": {
+            "description": "The maintenance start time day of the week represented as an ordinal number from 0 to 6, where 0 represents Sunday and 6 Saturday.",
+            "required": true,
+            "type": "integer"
+        },
+        "GatewayARN": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "HourOfDay": {
+            "description": "The hour component of the maintenance start time represented as hh, where hh is the hour (00 to 23). The hour of the day is in the time zone of the gateway.",
+            "required": true,
+            "type": "integer"
+        },
+        "MinuteOfHour": {
+            "description": "The minute component of the maintenance start time represented as mm, where mm is the minute (00 to 59). The minute of the hour is in the time zone of the gateway.",
+            "required": true,
+            "type": "integer"
+        },
+        "action": {
+            "default": "update_maintenance_start_time",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "storagegateway",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Delete services for a given repository.",
+    "enabled": true,
+    "entry_point": "delete_services.py",
+    "name": "delete_services",
+    "parameters": {
+        "ids": {
+            "description": "IDs of the services to delete.",
+            "required": true,
+            "type": "array"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

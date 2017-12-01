@@ -1,0 +1,72 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.type.set",
+    "parameters": {
+        "base": {
+            "default": "volume type set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set volume type description",
+            "type": "string"
+        },
+        "encryption_cipher": {
+            "description": "Set the encryption algorithm or mode for this volume type (e.g \"aes-xts-plain64\") (admin only)",
+            "type": "string"
+        },
+        "encryption_control_location": {
+            "description": "Set the notional service where the encryption is performed (\"front-end\" or \"back-end\") (admin only) (The default value for this option is \"front-end\" when setting encryption type of a volume for the first time. Consider using other encryption options such as: \"--encryption-cipher\", \"--encryption-key-size\" and \"--encryption-provider\") (choices: front-end, back-end)",
+            "type": "string"
+        },
+        "encryption_key_size": {
+            "description": "Set the size of the encryption key of this volume type (e.g \"128\" or \"256\") (admin only)",
+            "type": "integer"
+        },
+        "encryption_provider": {
+            "description": "Set the class that provides encryption support for this volume type (e.g \"LuksEncryptor\") (admin only) (This option is required when setting encryption type of a volume for the first time. Consider using other encryption options such as: \"--encryption-cipher\", \"--encryption-key-size\" and \"--encryption-control-location\")",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_type_set = openstackclient.volume.v2.volume_type:SetVolumeType')",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Set volume type name",
+            "type": "string"
+        },
+        "project": {
+            "description": "Set volume type access to project (name or ID) (admin only)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Set a property on this volume type (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "volume_type": {
+            "description": "Volume type to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

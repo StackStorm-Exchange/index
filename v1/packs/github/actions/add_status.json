@@ -1,0 +1,44 @@
+{
+    "description": "Add a commit status for a provided ref.",
+    "enabled": true,
+    "entry_point": "add_status.py",
+    "name": "add_status",
+    "parameters": {
+        "context": {
+            "description": "A string label to differentiate this status from the status of other systems. Default: \"default\"",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "A short description of the status.",
+            "required": false,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "sha": {
+            "description": "Commit SHA",
+            "required": true,
+            "type": "string"
+        },
+        "state": {
+            "description": "State of the status (pending, success, error, failure)",
+            "required": true,
+            "type": "string"
+        },
+        "target_url": {
+            "description": "The target URL to associate with this status.",
+            "required": false,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

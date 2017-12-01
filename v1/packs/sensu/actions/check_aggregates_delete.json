@@ -1,0 +1,14 @@
+{
+    "description": "Delete Sensu check aggregates",
+    "enabled": true,
+    "entry_point": "aggregate_check_delete.py",
+    "name": "check_aggregates_delete",
+    "parameters": {
+        "check": {
+            "description": "The client name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

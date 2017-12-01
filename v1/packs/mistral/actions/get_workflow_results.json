@@ -1,0 +1,15 @@
+{
+    "description": "Get results of mistral workflow.",
+    "enabled": true,
+    "entry_point": "get_results/get_workflow_results.py",
+    "name": "get_workflow_results",
+    "pack": "mistral",
+    "parameters": {
+        "execution_id": {
+            "description": "Workflow execution id.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

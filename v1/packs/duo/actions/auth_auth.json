@@ -1,0 +1,48 @@
+{
+    "description": "Carry out an duo auth.",
+    "enabled": true,
+    "entry_point": "auth_auth.py",
+    "name": "auth_auth",
+    "pack": "duo",
+    "parameters": {
+        "device": {
+            "default": "auto",
+            "description": "The device ID to use.",
+            "type": "string"
+        },
+        "factor": {
+            "default": "auto",
+            "description": "Factor to use for authentication.",
+            "enum": [
+                "auto",
+                "push",
+                "passcode",
+                "phone"
+            ],
+            "type": "string"
+        },
+        "ipaddr": {
+            "description": "The IP address of the user to be authenticated, in dotted quad format.",
+            "type": "string"
+        },
+        "passcode": {
+            "description": "Passcode entered by the user.",
+            "type": "string"
+        },
+        "push_type": {
+            "default": "ChatOps",
+            "description": "This string is displayed in the Duo Mobile app before the word \u201crequest\u201d. ",
+            "type": "string"
+        },
+        "pushinfo": {
+            "description": "Extra key/value pairs for push auth (format in object notation).",
+            "type": "object"
+        },
+        "username": {
+            "default": "{{action_context.api_user}}",
+            "description": "The Duo username to auth.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

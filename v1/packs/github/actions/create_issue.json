@@ -1,0 +1,34 @@
+{
+    "description": "Create a Github issue.",
+    "enabled": true,
+    "entry_point": "create_issue.py",
+    "name": "create_issue",
+    "parameters": {
+        "assignee": {
+            "description": "Assignee",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "title": {
+            "description": "Title",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

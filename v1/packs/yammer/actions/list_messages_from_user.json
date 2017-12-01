@@ -1,0 +1,29 @@
+{
+    "description": "List all messages from my feed for the authenticated user",
+    "enabled": true,
+    "entry_point": "list_messages_from_user.py",
+    "name": "list_messages_from_user",
+    "parameters": {
+        "limit": {
+            "description": "Limit the number of messages",
+            "required": false,
+            "type": "integer"
+        },
+        "newer_than_message": {
+            "description": "Only show messages newer than this message ID",
+            "required": false,
+            "type": "integer"
+        },
+        "older_than_message": {
+            "description": "Only show messages older than this message ID",
+            "required": false,
+            "type": "integer"
+        },
+        "user_id": {
+            "description": "the user ID to show messages from",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

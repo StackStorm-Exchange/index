@@ -1,0 +1,19 @@
+ref: phantomjs
+name: phantomjs
+description: st2 content pack containing PhantomJS integrations
+keywords:
+- phantomjs
+- browser
+- headless browser
+version: 0.1.1
+author: Tomaz Muraus
+email: tomaz@tomaz.me
+content:
+  actions:
+    count: 1
+    resources:
+    - capture_screenshot
+  tests:
+    count: 1
+    resources:
+    - test_action_capture_screenshot.py

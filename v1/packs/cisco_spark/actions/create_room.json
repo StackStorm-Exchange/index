@@ -1,0 +1,29 @@
+{
+    "description": "Create a new room",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "create_room",
+    "parameters": {
+        "accessor": {
+            "default": "rooms",
+            "immutable": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "create",
+            "immutable": true,
+            "type": "string"
+        },
+        "teamId": {
+            "description": "The team ID with which this room is associated",
+            "required": false,
+            "type": "string"
+        },
+        "title": {
+            "description": "Room title",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

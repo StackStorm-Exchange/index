@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_associate_iam_instance_profile",
+    "pack": "aws",
+    "parameters": {
+        "IamInstanceProfile": {
+            "description": "The IAM instance profile.",
+            "required": true,
+            "type": "object"
+        },
+        "InstanceId": {
+            "description": "The ID of the instance.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "associate_iam_instance_profile",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

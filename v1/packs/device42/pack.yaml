@@ -1,0 +1,22 @@
+ref: device42
+name: device42
+description: Device42 Actions and Rules for StackStorm
+version: 0.5.0
+author: Device42 Inc.
+email: support@device42.com
+content:
+  actions:
+    count: 7
+    resources:
+    - device_name_list
+    - get_device_by_id
+    - get_dns_zone
+    - get_lifecycle_events
+    - update_object_category_by_lifecycle_id
+    - suggest_next_ip
+    - update_device
+  rules:
+    count: 2
+    resources:
+    - d42_webhook_responder
+    - lifecycle_triggered_object_category_change

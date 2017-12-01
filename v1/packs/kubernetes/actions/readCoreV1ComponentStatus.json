@@ -1,0 +1,23 @@
+{
+    "description": "read the specified ComponentStatus",
+    "enabled": true,
+    "entry_point": "readCoreV1ComponentStatus.py",
+    "name": "readCoreV1ComponentStatus",
+    "pack": "kubernetes",
+    "parameters": {
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the ComponentStatus",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

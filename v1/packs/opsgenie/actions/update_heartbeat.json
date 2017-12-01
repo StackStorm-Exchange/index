@@ -1,0 +1,40 @@
+{
+    "description": "Update an Heartbeat in OpsGenie",
+    "enabled": true,
+    "entry_point": "add_heartbeat.py",
+    "name": "update_heartbeat",
+    "pack": "opsgenie",
+    "parameters": {
+        "description": {
+            "default": null,
+            "description": "An optional description of the heartbeat.",
+            "type": "string"
+        },
+        "enabled": {
+            "default": false,
+            "description": "Enable/disable heartbeat monitoring.",
+            "type": "boolean"
+        },
+        "interval": {
+            "default": null,
+            "description": "Specifies how often a heartbeat message should be expected.",
+            "type": "integer"
+        },
+        "intervalUnit": {
+            "default": "minutes",
+            "description": "interval specified as minutes, hours or days.",
+            "enum": [
+                "minutes",
+                "hours",
+                "days"
+            ],
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the heartbeat.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

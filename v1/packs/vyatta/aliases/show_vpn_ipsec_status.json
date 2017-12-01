@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.show_vpn_ipsec_status",
+    "description": "Perform a \"show vpn ipsec status\"",
+    "formats": [
+        "(show|sh) vpn ipsec status on {{deviceIP}}"
+    ],
+    "name": "show_vpn_ipsec_status",
+    "result": {
+        "enabled": true
+    }
+}

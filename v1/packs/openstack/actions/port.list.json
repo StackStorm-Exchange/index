@@ -1,0 +1,94 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "port.list",
+    "parameters": {
+        "any_tags": {
+            "description": "List ports which have any given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "base": {
+            "default": "port list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "device_owner": {
+            "description": "List only ports with the specified device owner. This is the entity that uses the port (for example, network:dhcp).",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('port_list = openstackclient.network.v2.port:ListPort')",
+            "immutable": true,
+            "type": "string"
+        },
+        "fixed_ip": {
+            "description": "Desired IP and/or subnet for filtering ports (name or ID): subnet=<subnet>,ip-address=<ip-address> (repeat option to set multiple fixed IP addresses)",
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "mac_address": {
+            "description": "List only ports with this MAC address",
+            "type": "string"
+        },
+        "network": {
+            "description": "List only ports connected to this network (name or ID)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "not_any_tags": {
+            "description": "Exclude ports which have any given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "not_tags": {
+            "description": "Exclude ports which have all given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "project": {
+            "description": "List ports according to their project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "router": {
+            "description": "List only ports attached to this router (name or ID)",
+            "type": "string"
+        },
+        "server": {
+            "description": "List only ports attached to this server (name or ID)",
+            "type": "string"
+        },
+        "tags": {
+            "description": "List ports which have all given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

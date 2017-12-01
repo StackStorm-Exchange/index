@@ -1,0 +1,16 @@
+{
+    "description": "List RabbitMQ exchanges",
+    "enabled": true,
+    "entry_point": "list_exchanges.py",
+    "name": "list_exchanges",
+    "parameters": {
+        "vhost": {
+            "default": "",
+            "description": "Optional vhost to list the exchanges for",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-remote-script"
+}

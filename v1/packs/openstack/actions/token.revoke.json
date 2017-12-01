@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "token.revoke",
+    "parameters": {
+        "base": {
+            "default": "token revoke",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('token_revoke = openstackclient.identity.v2_0.token:RevokeToken')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "token": {
+            "description": "Token to be deleted",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

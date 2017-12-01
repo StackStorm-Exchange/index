@@ -1,0 +1,12 @@
+{
+    "description": "Run a string GET query on the ServiceNow API",
+    "enabled": true,
+    "entry_point": "approve_change.py",
+    "name": "approve_change",
+    "parameters": {
+        "number": {
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

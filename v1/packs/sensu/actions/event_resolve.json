@@ -1,0 +1,19 @@
+{
+    "description": "Resolve a Sensu event",
+    "enabled": true,
+    "entry_point": "event_delete.py",
+    "name": "event_resolve",
+    "parameters": {
+        "check": {
+            "description": "The check name",
+            "required": true,
+            "type": "string"
+        },
+        "client": {
+            "description": "The client name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

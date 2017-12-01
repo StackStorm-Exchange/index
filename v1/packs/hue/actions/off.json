@@ -1,0 +1,19 @@
+{
+    "description": "Turn off a bulb",
+    "enabled": true,
+    "entry_point": "off.py",
+    "name": "off",
+    "parameters": {
+        "light_id": {
+            "description": "ID of the light to manage",
+            "required": true,
+            "type": "string"
+        },
+        "transition_time": {
+            "default": 5,
+            "description": "Duration of transition to new state",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

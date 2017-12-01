@@ -1,0 +1,50 @@
+{
+    "description": "Abandon stack and output results.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.abandon",
+    "parameters": {
+        "base": {
+            "default": "stack abandon",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_abandon = heatclient.osc.v1.stack:AbandonStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to json (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "output_file": {
+            "description": "File to output abandon results",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack to abandon",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

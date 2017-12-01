@@ -1,0 +1,20 @@
+{
+    "description": "Searches tickets on Zendesk",
+    "enabled": true,
+    "entry_point": "search_tickets.py",
+    "name": "search_tickets",
+    "parameters": {
+        "limit": {
+            "default": 10,
+            "description": "A limit on the amount of results returned",
+            "required": false,
+            "type": "integer"
+        },
+        "query": {
+            "description": "The search query",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

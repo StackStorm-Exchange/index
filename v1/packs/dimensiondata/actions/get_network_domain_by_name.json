@@ -1,0 +1,18 @@
+{
+    "description": "Get an network domain by name",
+    "enabled": true,
+    "entry_point": "get_network_domain_by_name.py",
+    "name": "get_network_domain_by_name",
+    "parameters": {
+        "network_domain_name": {
+            "description": "The name of the network domain",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

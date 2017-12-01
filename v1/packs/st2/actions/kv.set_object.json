@@ -1,0 +1,22 @@
+{
+    "description": "Serialize and store object in a datastore",
+    "enabled": true,
+    "entry_point": "kv_set_object.py",
+    "name": "kv.set_object",
+    "parameters": {
+        "key": {
+            "required": true,
+            "type": "string"
+        },
+        "ttl": {
+            "description": "Optional TTL for the provided value",
+            "required": false,
+            "type": "integer"
+        },
+        "value": {
+            "required": true,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

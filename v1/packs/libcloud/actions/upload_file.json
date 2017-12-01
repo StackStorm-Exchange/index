@@ -1,0 +1,29 @@
+{
+    "description": "Upload a file to the provided container",
+    "enabled": true,
+    "entry_point": "upload_file.py",
+    "name": "upload_file",
+    "parameters": {
+        "container_name": {
+            "description": "Name of the container to upload the file to.",
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        },
+        "file_path": {
+            "description": "Path to the local file to upload.",
+            "required": true,
+            "type": "string"
+        },
+        "object_name": {
+            "description": "Name for the uploaded object. If not provided, local file name is used.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,97 @@
+{
+    "description": "Update a stack.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.update",
+    "parameters": {
+        "base": {
+            "default": "stack update",
+            "immutable": true,
+            "type": "string"
+        },
+        "clear_parameter": {
+            "description": "Remove the parameters from the set of parameters of current stack for the stack-update. The default value in the template will be used. This can be specified multiple times",
+            "type": "array"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "dry_run": {
+            "default": false,
+            "description": "Do not actually perform the stack update, but show what would be changed",
+            "type": "boolean"
+        },
+        "environment": {
+            "description": "Path to the environment. Can be specified multiple times",
+            "type": "array"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_update = heatclient.osc.v1.stack:UpdateStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "existing": {
+            "default": false,
+            "description": "Re-use the template, parameters and environment of the current stack. If the template argument is omitted then the existing template is used. If no --environment is specified then the existing environment is used. Parameters specified in --parameter will patch over the existing values in the current stack. Parameters omitted will keep the existing values",
+            "type": "boolean"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "parameter": {
+            "description": "Parameter values used to create the stack. This can be specified multiple times",
+            "type": "array"
+        },
+        "parameter_file": {
+            "description": "Parameter values from file used to create the stack. This can be specified multiple times. Parameter value would be the content of the file",
+            "type": "array"
+        },
+        "pre_update": {
+            "description": "Name of a resource to set a pre-update hook to. Resources in nested stacks can be set using slash as a separator: nested_stack/another/my_resource. You can use wildcards to match multiple stacks or resources: nested_stack/an*/*_resource. This can be specified multiple times",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "rollback": {
+            "description": "Set rollback on update failure. Value \"enabled\" sets rollback to enabled. Value \"disabled\" sets rollback to disabled. Value \"keep\" uses the value of existing stack to be updated (default)",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack to update",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "An updated list of tags to associate with the stack",
+            "type": "string"
+        },
+        "template": {
+            "description": "Path to the template",
+            "type": "string"
+        },
+        "timeout": {
+            "description": "Stack update timeout in minutes",
+            "type": "integer"
+        },
+        "wait": {
+            "default": false,
+            "description": "Wait until stack goes to UPDATE_COMPLETE or UPDATE_FAILED",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

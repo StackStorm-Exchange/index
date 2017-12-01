@@ -1,0 +1,49 @@
+{
+    "description": "Select data from a MySQL database",
+    "enabled": true,
+    "entry_point": "select.py",
+    "name": "select",
+    "parameters": {
+        "connection": {
+            "default": null,
+            "description": "Connection entry in configs/mysql.yaml to pull connection info from",
+            "type": "string"
+        },
+        "data": {
+            "description": "Any values to be interpolated into the query",
+            "required": false,
+            "type": "array"
+        },
+        "db": {
+            "default": null,
+            "description": "Database name if not specified in config",
+            "type": "string"
+        },
+        "host": {
+            "default": null,
+            "description": "Database host if not specified in config",
+            "type": "string"
+        },
+        "key": {
+            "description": "The name of a key in the Datastore to store the result",
+            "required": false,
+            "type": "string"
+        },
+        "passwd": {
+            "default": null,
+            "description": "Database password if not specified in config",
+            "type": "string"
+        },
+        "query": {
+            "description": "The select query to execute",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "default": null,
+            "description": "Database user if not specified in config",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

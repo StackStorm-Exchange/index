@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "consistency.group.snapshot.delete",
+    "parameters": {
+        "base": {
+            "default": "consistency group snapshot delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "consistency_group_snapshot": {
+            "description": "Consistency group snapshot(s) to delete (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('consistency_group_snapshot_delete = openstackclient.volume.v2.consistency_group_snapshot:DeleteConsistencyGroupSnapshot')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

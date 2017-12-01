@@ -1,0 +1,22 @@
+{
+    "description": "Retreive Available BuildPlans",
+    "enabled": true,
+    "entry_point": "icsp_buildplan_get.py",
+    "name": "icsp_buildplan_get",
+    "parameters": {
+        "connection_details": {
+            "description": "Connection details. eg { \"host\": \"192.168.0.1\", \"user\":\"username\", \"pass\": \"secret\" }",
+            "position": 1,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "plan_names": {
+            "description": "Lst of plan names (Case sensitive)",
+            "position": 0,
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

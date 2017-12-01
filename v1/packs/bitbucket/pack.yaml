@@ -1,0 +1,48 @@
+ref: bitbucket
+name: bitbucket
+description: Pack which allows integration with Bitbucket.
+keywords:
+- bitbucket
+- vcs
+- mercurial
+- git
+- source control
+version: 0.5.4
+stackstorm_version: '>=2.1.0'
+author: Aamir
+email: raza.aamir01@gmail.com
+contributors:
+- Edward Medvedev <edward.medvedev@gmail.com>
+- Hiroyasu OHYAMA <user.localhost2000@gmail.com>
+content:
+  actions:
+    count: 16
+    resources:
+    - archive_repo
+    - associate_ssh_key
+    - create_issue
+    - create_repo
+    - create_service
+    - delete_issues
+    - delete_repo
+    - delete_services
+    - delete_ssh_key
+    - list_branches
+    - list_issues
+    - list_repos
+    - list_services
+    - list_ssh_keys
+    - update_issue
+    - update_service
+  rules:
+    count: 1
+    resources:
+    - post_receive_webhook
+  sensors:
+    count: 1
+    resources:
+    - RepositorySensor
+  tests:
+    count: 1
+    resources:
+    - test_repository_sensor.py

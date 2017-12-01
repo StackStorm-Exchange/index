@@ -1,0 +1,24 @@
+{
+    "description": "Put a given service into _maintenance mode_.",
+    "enabled": true,
+    "entry_point": "agent_service_maintenance.py",
+    "name": "service_maintenance",
+    "parameters": {
+        "enable": {
+            "description": "True: enable maintenance mode.  False; disable maintenance mode.",
+            "required": true,
+            "type": "boolean"
+        },
+        "reason": {
+            "description": "An optional string to aid human operators.",
+            "required": false,
+            "type": "string"
+        },
+        "service_id": {
+            "description": "The id of the service to be removed.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

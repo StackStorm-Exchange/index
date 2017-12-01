@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "cmd": "{{trigger.service}} 1 10",
+            "hosts": "{{trigger.host}}"
+        },
+        "ref": "check_pgrep"
+    },
+    "criteria": {
+        "service": {
+            "pattern": "(.*)_check_(.*)_process",
+            "type": "matchregex"
+        },
+        "state_type": {
+            "pattern": "HARD",
+            "type": "matchregex"
+        }
+    },
+    "description": "Check process state on host",
+    "enabled": true,
+    "name": "check_proc",
+    "pack": "nagios",
+    "trigger": {
+        "type": "nagios.service_state_change"
+    }
+}

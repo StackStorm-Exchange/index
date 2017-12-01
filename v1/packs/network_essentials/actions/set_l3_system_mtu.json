@@ -1,0 +1,46 @@
+{
+    "description": "Set L3 system MTU on the VCS fabric or vLag pair. Only supported on VDX devices.",
+    "enabled": true,
+    "entry_point": "set_l3_system_mtu.py",
+    "name": "set_l3_system_mtu",
+    "pack": "network_essentials",
+    "parameters": {
+        "afi": {
+            "default": "ipv4",
+            "description": "IP version",
+            "enum": [
+                "ipv4",
+                "ipv6"
+            ],
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Virtual IP of the VCS Fabric or management IP of the switch.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "mtu_size": {
+            "description": "MTU size in bytes <Number:1300-9100> for IPV4, <Number:1280-9100> for IPV6",
+            "position": 3,
+            "required": true,
+            "type": "integer"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

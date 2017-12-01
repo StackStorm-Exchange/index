@@ -1,0 +1,31 @@
+{
+    "description": "Clone a VM to a customer image",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "clone_vm_to_image",
+    "parameters": {
+        "action": {
+            "default": "ex_clone_node_to_image",
+            "immutable": true,
+            "type": "string"
+        },
+        "image_description": {
+            "description": "The image description",
+            "type": "string"
+        },
+        "image_name": {
+            "description": "The image name",
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

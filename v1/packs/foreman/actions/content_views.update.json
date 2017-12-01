@@ -1,0 +1,61 @@
+{
+    "description": "Update a content view (resource: PUT /katello/api/content_views/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_views.update",
+    "pack": "foreman",
+    "parameters": {
+        "component_ids": {
+            "description": "List of component content view version ids for composite views",
+            "required": false,
+            "type": "array"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the content view",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "Content view identifier",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "New name for the content view",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_views.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "repository_ids": {
+            "description": "List of repository ids",
+            "required": false,
+            "type": "array"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

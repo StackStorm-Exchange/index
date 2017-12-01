@@ -1,0 +1,73 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.flavor.create",
+    "parameters": {
+        "base": {
+            "default": "network flavor create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the flavor",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable the flavor",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable the flavor (default)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_flavor_create = openstackclient.network.v2.network_flavor:CreateNetworkFlavor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name for the flavor",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "service_type": {
+            "description": "Service type to which the flavor applies to: e.g. VPN (See openstack network service provider list for loaded examples.)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

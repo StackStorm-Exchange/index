@@ -1,0 +1,19 @@
+{
+    "description": "Delete a DNS record.",
+    "enabled": true,
+    "entry_point": "delete_dns_record.py",
+    "name": "delete_dns_record",
+    "parameters": {
+        "record_id": {
+            "description": "ID of a DNS record to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "zone_id": {
+            "description": "ID of a DNS zone record belongs to.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

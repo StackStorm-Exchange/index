@@ -1,0 +1,44 @@
+{
+    "description": "Run a command via WinRM",
+    "enabled": true,
+    "entry_point": "winrm_cmd.py",
+    "name": "winrm_cmd",
+    "parameters": {
+        "command": {
+            "description": "The command to run",
+            "required": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "IP address of a Windows server to run the query on",
+            "required": true,
+            "type": "string"
+        },
+        "params": {
+            "description": "array of parameters for the command",
+            "required": true,
+            "type": "array"
+        },
+        "password": {
+            "description": "Account password.",
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "TCP port",
+            "required": false,
+            "type": "integer"
+        },
+        "secure": {
+            "description": "Use HTTPS",
+            "required": false,
+            "type": "boolean"
+        },
+        "username": {
+            "description": "Account username.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,71 @@
+{
+    "description": "create a filter for a content view (resource: post /katello/api/content_view_filters)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_view_filters.create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_id": {
+            "description": "content view identifier",
+            "required": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "description of the filter",
+            "required": false,
+            "type": "string"
+        },
+        "inclusion": {
+            "description": "specifies if content should be included or excluded, default:inclusion=false",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of the filter",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_view_filters.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "original_packages": {
+            "description": "add all packages without errata to the included/excluded list. (packagefilter only)",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "repository_ids": {
+            "description": "list of repository ids",
+            "required": false,
+            "type": "array"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "type": {
+            "description": "type of filter (e.g. rpm, package_group, erratum)",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

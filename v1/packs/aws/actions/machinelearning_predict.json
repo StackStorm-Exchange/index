@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "machinelearning_predict",
+    "pack": "aws",
+    "parameters": {
+        "MLModelId": {
+            "description": "A unique identifier of the MLModel.",
+            "required": true,
+            "type": "string"
+        },
+        "PredictEndpoint": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "Record": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "action": {
+            "default": "predict",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "machinelearning",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

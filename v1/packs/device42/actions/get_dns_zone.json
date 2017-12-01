@@ -1,0 +1,37 @@
+{
+    "description": "Returns DNS zone file",
+    "enabled": true,
+    "entry_point": "get_dns_zone.py",
+    "name": "get_dns_zone",
+    "parameters": {
+        "content": {
+            "description": "Content (e.g. IP address for type A)",
+            "type": "string"
+        },
+        "domain": {
+            "description": "name of the domain",
+            "type": "string"
+        },
+        "name": {
+            "description": "name on the DNS record",
+            "type": "string"
+        },
+        "nameserver": {
+            "description": "Nameserver",
+            "type": "string"
+        },
+        "record_type": {
+            "description": "type of the record. e.g. AAAA",
+            "type": "string"
+        },
+        "tags": {
+            "description": "Match ANY tags",
+            "type": "string"
+        },
+        "tags_and": {
+            "description": "Match ALL tags",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

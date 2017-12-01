@@ -1,0 +1,24 @@
+{
+    "description": "Delete a security group",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "security.group.delete",
+    "parameters": {
+        "base": {
+            "default": "security group delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('security_group_delete = openstackclient.compute.v2.security_group:DeleteSecurityGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "group": {
+            "description": "Name or ID of security group to delete",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

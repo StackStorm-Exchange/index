@@ -1,0 +1,20 @@
+ref: clicrud
+name: clicrud
+description: CLICRUD integration for ST2
+keywords:
+- Brocade
+- icx
+- mlx
+- cli
+- clicrud
+- vrouter
+- vyatta
+version: 0.3.3
+author: davidjohngee
+email: david.gee@ipengineer.net
+content:
+  actions:
+    count: 2
+    resources:
+    - config_command
+    - ops_command

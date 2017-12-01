@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "autoscaling_delete_policy",
+    "pack": "aws",
+    "parameters": {
+        "AutoScalingGroupName": {
+            "description": "The name of the Auto Scaling group.",
+            "type": "string"
+        },
+        "PolicyName": {
+            "description": "The name or Amazon Resource Name (ARN) of the policy.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "delete_policy",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "autoscaling",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,22 @@
+{
+    "ack": {
+        "append_url": true,
+        "enabled": true
+    },
+    "action_ref": "aws.ec2_stop_instances",
+    "description": "stop instance",
+    "formats": [
+        "aws ec2 stop {{instance_ids}}"
+    ],
+    "name": "ec2_stop_instances",
+    "pack": "aws",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "#00ad52",
+                "footer": "AWS Pack"
+            }
+        },
+        "format": "{% for ec2 in execution.result.result -%}\n \u2022 {{ ec2.id }}  - {{ ec2.state }}\n{%+ endfor %}\n"
+    }
+}

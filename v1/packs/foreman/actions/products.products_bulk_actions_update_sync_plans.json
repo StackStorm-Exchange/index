@@ -1,0 +1,46 @@
+{
+    "description": "Sync one or more products (resource: PUT /katello/api/products/bulk/sync_plan)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "products.products_bulk_actions_update_sync_plans",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "ids": {
+            "description": "List of product ids",
+            "required": true,
+            "type": "array"
+        },
+        "operation": {
+            "default": "products.products_bulk_actions_update_sync_plans",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "plan_id": {
+            "description": "Sync plan identifier to attach",
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

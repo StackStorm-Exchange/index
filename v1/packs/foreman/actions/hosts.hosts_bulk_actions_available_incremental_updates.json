@@ -1,0 +1,56 @@
+{
+    "description": "Given a set of hosts and errata, lists the content view versions and environments that need updating. (resource: POST /api/hosts/bulk/available_incremental_updates)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.hosts_bulk_actions_available_incremental_updates",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "errata_ids": {
+            "description": "List of Errata ids",
+            "required": false,
+            "type": "array"
+        },
+        "excluded": {
+            "description": "'description: None\n parameters:\n     ids:\n       required: false\n       type: array\n       description: List of system ids to exclude and not run an action on\n     '\n",
+            "required": true,
+            "type": "object"
+        },
+        "included": {
+            "description": "'description: None\n parameters:\n     search:\n       required: false\n       type: string\n       description: Search string for systems to perform an action on\n     ids:\n       required: false\n       type: array\n       description: List of system ids to perform an action on\n     '\n",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "hosts.hosts_bulk_actions_available_incremental_updates",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "ID of the organization",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

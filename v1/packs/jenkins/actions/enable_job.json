@@ -1,0 +1,14 @@
+{
+    "description": "Enable Jenkins Job.",
+    "enabled": true,
+    "entry_point": "enable_job.py",
+    "name": "enable_job",
+    "parameters": {
+        "name": {
+            "description": "Name of the job to enable.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

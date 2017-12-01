@@ -1,0 +1,57 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.snapshot.set",
+    "parameters": {
+        "base": {
+            "default": "volume snapshot set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "New snapshot description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_snapshot_set = openstackclient.volume.v2.volume_snapshot:SetVolumeSnapshot')",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "New snapshot name",
+            "type": "string"
+        },
+        "no_property": {
+            "default": false,
+            "description": "Remove all properties from <snapshot> (specify both --no-property and --property to remove the current properties before setting new properties.)",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Property to add/change for this snapshot (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "snapshot": {
+            "description": "Snapshot to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "state": {
+            "description": "New snapshot state. (\"available\", \"error\", \"creating\", \"deleting\", or \"error_deleting\") (admin only) (This option simply changes the state of the snapshot in the database with no regard to actual status, exercise caution when using) (choices: available, error, creating, deleting, error-deleting)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

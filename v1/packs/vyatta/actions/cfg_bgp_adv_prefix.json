@@ -1,0 +1,36 @@
+{
+    "description": "Configure advertisement of BGP prefixes",
+    "enabled": true,
+    "entry_point": "chains/cfg_bgp_adv_prefix.yaml",
+    "name": "cfg_bgp_adv_prefix",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "localAS": {
+            "description": "Local AS number",
+            "position": 1,
+            "required": true,
+            "type": "integer"
+        },
+        "prefix": {
+            "description": "list of IP prefix to advertise",
+            "position": 2,
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "action-chain"
+}

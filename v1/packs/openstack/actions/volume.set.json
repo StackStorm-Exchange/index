@@ -1,0 +1,93 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.set",
+    "parameters": {
+        "base": {
+            "default": "volume set",
+            "immutable": true,
+            "type": "string"
+        },
+        "bootable": {
+            "default": false,
+            "description": "Mark volume as bootable",
+            "type": "boolean"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "New volume description",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_set = openstackclient.volume.v2.volume:SetVolume')",
+            "immutable": true,
+            "type": "string"
+        },
+        "image_property": {
+            "description": "Set an image property on this volume (repeat option to set multiple image properties)",
+            "type": "array"
+        },
+        "name": {
+            "description": "New volume name",
+            "type": "string"
+        },
+        "no_property": {
+            "default": false,
+            "description": "Remove all properties from <volume> (specify both --no-property and --property to remove the current properties before setting new properties.)",
+            "type": "boolean"
+        },
+        "non_bootable": {
+            "default": false,
+            "description": "Mark volume as non-bootable",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Set a property on this volume (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "read_only": {
+            "default": false,
+            "description": "Set volume to read-only access mode",
+            "type": "boolean"
+        },
+        "read_write": {
+            "default": false,
+            "description": "Set volume to read-write access mode",
+            "type": "boolean"
+        },
+        "retype_policy": {
+            "description": "Migration policy while re-typing volume (\"never\" or \"on-demand\", default is \"never\" ) (available only when --type option is specified) (choices: never, on-demand)",
+            "type": "string"
+        },
+        "size": {
+            "description": "Extend volume size in GB",
+            "type": "integer"
+        },
+        "state": {
+            "description": "New volume state (\"available\", \"error\", \"creating\", \"deleting\", \"in-use\", \"attaching\", \"detaching\", \"error_deleting\" or \"maintenance\") (admin only) (This option simply changes the state of the volume in the database with no regard to actual status, exercise caution when using) (choices: available, error, creating, deleting, in-use, attaching, detaching, error_deleting, maintenance)",
+            "type": "string"
+        },
+        "type": {
+            "description": "New volume type (name or ID)",
+            "type": "string"
+        },
+        "volume": {
+            "description": "Volume to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

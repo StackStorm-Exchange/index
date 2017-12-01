@@ -1,0 +1,19 @@
+{
+    "description": "Get Sensu event info",
+    "enabled": true,
+    "entry_point": "event_info.py",
+    "name": "event_info",
+    "parameters": {
+        "check": {
+            "description": "The check to get information on",
+            "required": true,
+            "type": "string"
+        },
+        "client": {
+            "description": "The client name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

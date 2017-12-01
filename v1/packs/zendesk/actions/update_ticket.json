@@ -1,0 +1,24 @@
+{
+    "description": "Updates a ticket on Zendesk",
+    "enabled": true,
+    "entry_point": "update_ticket.py",
+    "name": "update_ticket",
+    "parameters": {
+        "comment_text": {
+            "description": "The text of the comment",
+            "required": true,
+            "type": "string"
+        },
+        "public": {
+            "description": "Whether or not to post the response publicly",
+            "required": false,
+            "type": "boolean"
+        },
+        "ticket_id": {
+            "description": "The ID of the ticket to update",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,41 @@
+{
+    "description": "Create a report (resource: POST /api/config_reports)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "config_reports.create",
+    "pack": "foreman",
+    "parameters": {
+        "config_report": {
+            "description": "'description: None\n parameters:\n     reported_at:\n       required: true\n       type: string\n       description: UTC time of report\n     status:\n       required: true\n       type: object\n       description: Hash of status type totals\n     host:\n       required: true\n       type: string\n       description: Hostname or certname\n     metrics:\n       required: true\n       type: object\n       description: Hash of report metrics, can be just {}\n     logs:\n       required: false\n       type: array\n       description: Optional array of log hashes\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "config_reports.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

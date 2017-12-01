@@ -1,0 +1,44 @@
+{
+    "description": "vTM - Configure a Pool",
+    "enabled": true,
+    "entry_point": "vtm_add_pool.py",
+    "name": "vtm_add_pool",
+    "parameters": {
+        "algorithm": {
+            "description": "Load Balancing algorithm for the pool",
+            "required": false,
+            "type": "string"
+        },
+        "extra": {
+            "description": "Additional JSON/YAML properties to merge during creation",
+            "required": false,
+            "type": "string"
+        },
+        "monitors": {
+            "description": "Health Monitor for the pool",
+            "required": false,
+            "type": "array"
+        },
+        "name": {
+            "description": "The name of the pool",
+            "required": true,
+            "type": "string"
+        },
+        "nodes": {
+            "description": "Array of nodes for the pool",
+            "required": true,
+            "type": "array"
+        },
+        "persistence": {
+            "description": "Persistence class for the pool",
+            "required": false,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

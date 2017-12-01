@@ -1,0 +1,15 @@
+{
+    "description": "Determine which branch Hubot is currently running",
+    "enabled": true,
+    "entry_point": "branch.sh",
+    "name": "branch",
+    "parameters": {
+        "cwd": {
+            "default": "/opt/hubot/hubot"
+        },
+        "hosts": {
+            "default": "127.0.0.1"
+        }
+    },
+    "runner_type": "run-remote-script"
+}

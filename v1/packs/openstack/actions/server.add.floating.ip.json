@@ -1,0 +1,45 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "server.add.floating.ip",
+    "parameters": {
+        "base": {
+            "default": "server add floating ip",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('server_add_floating_ip = openstackclient.compute.v2.server:AddFloatingIP')",
+            "immutable": true,
+            "type": "string"
+        },
+        "fixed_ip_address": {
+            "description": "Fixed IP address to associate with this floating IP address",
+            "type": "string"
+        },
+        "ip_address": {
+            "description": "Floating IP address to assign to server (IP only)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "server": {
+            "description": "Server to receive the floating IP address (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

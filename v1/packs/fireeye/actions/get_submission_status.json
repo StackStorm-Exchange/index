@@ -1,0 +1,14 @@
+{
+    "description": "Query status of running job",
+    "enabled": true,
+    "entry_point": "get_submission_status.py",
+    "name": "get_submission_status",
+    "parameters": {
+        "submission_id": {
+            "description": "Submission key provided at submittal",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,36 @@
+{
+    "class_name": "KafkaMessageSensor",
+    "description": "Sensor which monitors Kafka broker for a new messages",
+    "entry_point": "message_sensor.py",
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new message has arrived to Apache Kafka",
+            "name": "new_message",
+            "payload_schema": {
+                "properties": {
+                    "key": {
+                        "description": "Message's key (only for keyed messages)",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "Captured message. JSON-serialized messages are automatically parsed",
+                        "type": "object"
+                    },
+                    "offset": {
+                        "description": "Consumer offset for current topic. Position of what has been consumed",
+                        "type": "integer"
+                    },
+                    "partition": {
+                        "description": "Topic partition number message belongs to",
+                        "type": "integer"
+                    },
+                    "topic": {
+                        "description": "Category from which message was retrieved",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

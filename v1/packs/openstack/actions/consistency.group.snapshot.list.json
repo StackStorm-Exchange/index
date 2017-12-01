@@ -1,0 +1,59 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "consistency.group.snapshot.list",
+    "parameters": {
+        "all_projects": {
+            "default": false,
+            "description": "Show detail for all projects (admin only) (defaults to False)",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "consistency group snapshot list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "consistency_group": {
+            "description": "Filters results by a consistency group (name or ID)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('consistency_group_snapshot_list = openstackclient.volume.v2.consistency_group_snapshot:ListConsistencyGroupSnapshot')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "status": {
+            "description": "Filters results by a status (\"available\", \"error\", \"creating\", \"deleting\" or \"error_deleting\") (choices: available, error, creating, deleting, error-deleting)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

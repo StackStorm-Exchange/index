@@ -1,0 +1,164 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "image.set",
+    "parameters": {
+        "accept": {
+            "default": false,
+            "description": "Accept the image membership",
+            "type": "boolean"
+        },
+        "activate": {
+            "default": false,
+            "description": "Activate the image",
+            "type": "boolean"
+        },
+        "architecture": {
+            "description": "Operating system architecture",
+            "type": "string"
+        },
+        "base": {
+            "default": "image set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "community": {
+            "default": false,
+            "description": "Image is accessible to the community",
+            "type": "boolean"
+        },
+        "container_format": {
+            "description": "Image container format. The supported options are: ami, ari, aki, bare, docker, ova, ovf (choices: ami, ari, aki, bare, docker, ova, ovf)",
+            "type": "string"
+        },
+        "deactivate": {
+            "default": false,
+            "description": "Deactivate the image",
+            "type": "boolean"
+        },
+        "disk_format": {
+            "description": "Image disk format. The supported options are: ami, ari, aki, vhd, vmdk, raw, qcow2, vhdx, vdi, iso, ploop (choices: ami, ari, aki, vhd, vmdk, raw, qcow2, vhdx, vdi, iso, ploop)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('image_set = openstackclient.image.v2.image:SetImage')",
+            "immutable": true,
+            "type": "string"
+        },
+        "image": {
+            "description": "Image to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "instance_id": {
+            "description": "ID of server instance used to create this image",
+            "type": "string"
+        },
+        "instance_uuid": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "kernel_id": {
+            "description": "ID of kernel image used to boot this disk image",
+            "type": "string"
+        },
+        "min_disk": {
+            "description": "Minimum disk size needed to boot image, in gigabytes",
+            "type": "integer"
+        },
+        "min_ram": {
+            "description": "Minimum RAM size needed to boot image, in megabytes",
+            "type": "integer"
+        },
+        "name": {
+            "description": "New image name",
+            "type": "string"
+        },
+        "os_distro": {
+            "description": "Operating system distribution name",
+            "type": "string"
+        },
+        "os_version": {
+            "description": "Operating system distribution version",
+            "type": "string"
+        },
+        "owner": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "pending": {
+            "default": false,
+            "description": "Reset the image membership to 'pending'",
+            "type": "boolean"
+        },
+        "private": {
+            "default": false,
+            "description": "Image is inaccessible to the public (default)",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Set an alternate project on this image (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Set a property on this image (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "protected": {
+            "default": false,
+            "description": "Prevent image from being deleted",
+            "type": "boolean"
+        },
+        "public": {
+            "default": false,
+            "description": "Image is accessible to the public",
+            "type": "boolean"
+        },
+        "ramdisk_id": {
+            "description": "ID of ramdisk image used to boot this disk image",
+            "type": "string"
+        },
+        "reject": {
+            "default": false,
+            "description": "Reject the image membership",
+            "type": "boolean"
+        },
+        "shared": {
+            "default": false,
+            "description": "Image can be shared",
+            "type": "boolean"
+        },
+        "tag": {
+            "default": [],
+            "description": "Set a tag on this image (repeat option to set multiple tags)",
+            "type": "array"
+        },
+        "unprotected": {
+            "default": false,
+            "description": "Allow image to be deleted (default)",
+            "type": "boolean"
+        },
+        "visibility": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

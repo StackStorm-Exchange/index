@@ -1,0 +1,27 @@
+{
+    "description": "Attach a VM to a VLAN",
+    "enabled": true,
+    "entry_point": "attach_node_to_vlan.py",
+    "name": "attach_node_to_vlan",
+    "parameters": {
+        "action": {
+            "default": "ex_attach_node_to_vlan",
+            "immutable": true,
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "The ID of the VLAN",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

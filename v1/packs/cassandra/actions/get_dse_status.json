@@ -1,0 +1,15 @@
+{
+    "description": "Get DSE cassandra service status.",
+    "enabled": true,
+    "entry_point": "",
+    "name": "get_dse_status",
+    "parameters": {
+        "cmd": {
+            "default": "service dse status"
+        },
+        "sudo": {
+            "default": true
+        }
+    },
+    "runner_type": "remote-shell-cmd"
+}

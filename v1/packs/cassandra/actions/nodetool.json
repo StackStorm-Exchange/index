@@ -1,0 +1,37 @@
+{
+    "description": "Cassandra nodetool wrapper.",
+    "enabled": true,
+    "entry_point": "",
+    "name": "nodetool",
+    "parameters": {
+        "cmd": {
+            "default": "{{nodetool_path}} -h {{nodetool_host}} -p {{nodetool_port}} {{command}}"
+        },
+        "command": {
+            "description": "nodetool command to run. E.g. ``info``",
+            "required": true,
+            "type": "string"
+        },
+        "nodetool_host": {
+            "default": "127.0.0.1",
+            "description": "IP/Hostname for nodeltool host argument.",
+            "required": false,
+            "type": "string"
+        },
+        "nodetool_path": {
+            "default": "nodetool",
+            "required": false,
+            "type": "string"
+        },
+        "nodetool_port": {
+            "default": "7199",
+            "description": "Port for nodetool.",
+            "required": false,
+            "type": "string"
+        },
+        "sudo": {
+            "default": false
+        }
+    },
+    "runner_type": "remote-shell-cmd"
+}

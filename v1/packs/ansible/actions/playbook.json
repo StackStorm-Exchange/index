@@ -1,0 +1,155 @@
+{
+    "description": "Run ansible playbook",
+    "enabled": true,
+    "entry_point": "ansible_playbook.py",
+    "name": "playbook",
+    "parameters": {
+        "background": {
+            "description": "Fork in Background asynchronously for X seconds [-B]",
+            "type": "integer"
+        },
+        "become": {
+            "description": "Run operations with become (nopasswd implied) [-b]",
+            "type": "boolean"
+        },
+        "become_method": {
+            "description": "Privilege escalation method to use. Valid choices: sudo, su, pbrun, pfexec, runas (default=sudo)",
+            "enum": [
+                "sudo",
+                "su",
+                "pbrun",
+                "pfexec",
+                "runas"
+            ],
+            "type": "string"
+        },
+        "become_user": {
+            "description": "Run operations as this user. Works only with 'become'",
+            "type": "string"
+        },
+        "check": {
+            "description": "Don't make any changes; instead, try to predict some of the changes that may occur [-C]",
+            "type": "boolean"
+        },
+        "connection": {
+            "description": "Connection type to use (default=smart) [-c]",
+            "type": "string"
+        },
+        "cwd": {
+            "description": "Working directory where the command will be executed in",
+            "type": "string"
+        },
+        "diff": {
+            "description": "when changing (small) files and templates, show the differences in those files; works great with --check [-D]",
+            "type": "boolean"
+        },
+        "extra_vars": {
+            "description": "List of additional variables to pass to ansible. Each variable is represented as \"key=value\" or \"@path/to/file.yaml|json\" or use a yaml dict (\"key: [1, 2, 3]\") to send JSON. [-e]",
+            "type": "array"
+        },
+        "flush_cache": {
+            "description": "Clear the fact cache",
+            "type": "boolean"
+        },
+        "force_handlers": {
+            "description": "Run handlers even if a task fails",
+            "type": "boolean"
+        },
+        "forks": {
+            "description": "Specify number of parallel processes to use (default=5) [-f]",
+            "type": "integer"
+        },
+        "help": {
+            "description": "Show help message and exit [-h]",
+            "type": "boolean"
+        },
+        "inventory_file": {
+            "description": "Inventory host file (default=/etc/ansible/hosts) [-i]",
+            "type": "string"
+        },
+        "kwarg_op": {
+            "default": "--",
+            "description": "Lock operator type to '--'",
+            "immutable": true,
+            "type": "string"
+        },
+        "limit": {
+            "description": "Further limit selected hosts to an additional pattern [-l]",
+            "type": "string"
+        },
+        "list_hosts": {
+            "description": "Outputs a list of matching hosts; does not execute anything else",
+            "type": "boolean"
+        },
+        "list_tags": {
+            "description": "List all available tags",
+            "type": "boolean"
+        },
+        "list_tasks": {
+            "description": "List all tasks that would be executed",
+            "type": "boolean"
+        },
+        "module_path": {
+            "description": "Specify path(s) to module library (default=None) [-M]",
+            "type": "string"
+        },
+        "playbook": {
+            "description": "Playbook file",
+            "position": 0,
+            "type": "string"
+        },
+        "private_key": {
+            "description": "Use this file to authenticate the connection",
+            "type": "string"
+        },
+        "skip_tags": {
+            "description": "Only run plays and tasks whose tags do not match these values",
+            "type": "string"
+        },
+        "start_at_task": {
+            "description": "Start the playbook at the task matching this name",
+            "type": "string"
+        },
+        "sudo": {
+            "default": true,
+            "description": "Lock sudo, the behavior is controlled by ansible 'become_' options",
+            "type": "boolean"
+        },
+        "syntax_check": {
+            "description": "Perform a syntax check on the playbook, but do not execute it",
+            "type": "boolean"
+        },
+        "tags": {
+            "description": "Only run plays and tasks tagged with these values [-t]",
+            "type": "string"
+        },
+        "timeout": {
+            "default": 900,
+            "description": "Action timeout in seconds. Action will get killed if it doesn't finish in timeout seconds",
+            "type": "integer"
+        },
+        "user": {
+            "description": "Connect to remote hosts as this user (default=root) [-u]",
+            "type": "string"
+        },
+        "vault_password_file": {
+            "description": "Vault password file",
+            "type": "string"
+        },
+        "verbose": {
+            "description": "Verbose mode (-vvvv to enable connection debugging)",
+            "enum": [
+                "v",
+                "vv",
+                "vvv",
+                "vvvv"
+            ],
+            "type": "string"
+        },
+        "version": {
+            "description": "Show ansible version number and exit",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "local-shell-script"
+}

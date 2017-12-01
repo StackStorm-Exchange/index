@@ -1,0 +1,22 @@
+{
+    "description": "This method closes a multiparty direct message channel.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "mpim.close",
+    "parameters": {
+        "channel": {
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "mpim.close",
+            "immutable": true,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

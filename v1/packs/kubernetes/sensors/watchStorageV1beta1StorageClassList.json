@@ -1,0 +1,41 @@
+{
+    "class_name": "watchStorageV1beta1StorageClassList",
+    "description": "Sensor that watches Kubernetes API for new Storageclasses objects.",
+    "entry_point": "watchStorageV1beta1StorageClassList.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for storageclasses event dispatch.",
+            "name": "storageclasses",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

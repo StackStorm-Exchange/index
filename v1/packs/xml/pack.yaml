@@ -1,0 +1,21 @@
+ref: xml
+name: xml
+description: st2 content pack containing XML integrations
+keywords:
+- xml
+- serialization
+- deserialization
+- text processing
+version: 0.3.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 2
+    resources:
+    - parse
+    - parse_file
+  tests:
+    count: 1
+    resources:
+    - test_action_parse_xml.py

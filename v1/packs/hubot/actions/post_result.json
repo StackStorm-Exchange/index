@@ -1,0 +1,29 @@
+{
+    "description": "Post an execution result to Hubot",
+    "enabled": true,
+    "entry_point": "post_result.py",
+    "name": "post_result",
+    "pack": "hubot",
+    "parameters": {
+        "channel": {
+            "description": "Channel to post to",
+            "required": true,
+            "type": "string"
+        },
+        "result": {
+            "description": "Result to send.",
+            "required": true,
+            "type": "object"
+        },
+        "user": {
+            "description": "Explicitly notify a user",
+            "type": "string"
+        },
+        "whisper": {
+            "default": false,
+            "description": "Send a private message to user",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

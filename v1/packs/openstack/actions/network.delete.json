@@ -1,0 +1,24 @@
+{
+    "description": "Delete network(s)",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.delete",
+    "parameters": {
+        "base": {
+            "default": "network delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_delete = openstackclient.network.v2.network:DeleteNetwork')",
+            "immutable": true,
+            "type": "string"
+        },
+        "networks": {
+            "description": "Network to delete (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,32 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "waf_get_change_token_status",
+    "pack": "aws",
+    "parameters": {
+        "ChangeToken": {
+            "description": "The change token for which you want to get the status. This change token was previously returned in the GetChangeToken response.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "get_change_token_status",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "waf",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

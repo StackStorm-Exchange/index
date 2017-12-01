@@ -1,0 +1,32 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "zendesk.update_ticket_status",
+    "description": "Updates the status of a Zendesk ticket",
+    "formats": [
+        "zendesk mark {{ ticket_id }} {{ status }}"
+    ],
+    "name": "update_ticket_status",
+    "pack": "zendesk",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "{% if execution.result.result.error is not defined%}good{% else %}danger{% endif %}",
+                "fallback": "Zendesk Ticket Status Changed",
+                "fields": [
+                    {
+                        "short": true,
+                        "title": "Zendesk Page",
+                        "value": "{% if execution.result.result.error is not defined%}<{{execution.result.result.ticket_url}}|Ticket #{{execution.result.result.ticket_id}}>{% else %}Not Available{% endif %}"
+                    }
+                ],
+                "footer": "Zendesk",
+                "footer_icon": "https://zen-marketing-documentation.s3.amazonaws.com/docs/en/branding-logo-zendesk.png",
+                "title": "{% if execution.result.result.error is not defined %}Ticket status changed!{% else %}Error!{% endif %}"
+            }
+        },
+        "format": "{% if execution.result.result.error is not defined %}\nTicket *#{{execution.result.result.ticket_id}}* has been marked *{{execution.result.result.status}}*.\n{% else %}\nError: {{execution.result.result.error}}\n{% endif %}"
+    }
+}

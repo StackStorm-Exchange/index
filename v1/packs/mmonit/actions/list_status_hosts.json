@@ -1,0 +1,50 @@
+{
+    "description": "Returns the current status of all hosts registered in M/Monit.",
+    "enabled": true,
+    "entry_point": "list_status_hosts.py",
+    "name": "list_status_hosts",
+    "parameters": {
+        "host_id": {
+            "description": "Show only hosts with matching host id.",
+            "required": false,
+            "type": "integer"
+        },
+        "hostgroupid": {
+            "description": "Show only hosts which are member of the given hostgroupid",
+            "required": false,
+            "type": "integer"
+        },
+        "led": {
+            "description": "Show only hosts with matching led. Possible values: 0=red, 1=orange, 2=green, 3=gray.",
+            "enum": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "required": false,
+            "type": "integer"
+        },
+        "machine": {
+            "description": "Show only hosts with matching machine.",
+            "required": false,
+            "type": "string"
+        },
+        "platform": {
+            "description": "Show only hosts with matching platform.",
+            "required": false,
+            "type": "string"
+        },
+        "status": {
+            "description": "Show only hosts with matching status. Possible values: 0=active, 1=inactive, 2=ignored.",
+            "enum": [
+                0,
+                1,
+                2
+            ],
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

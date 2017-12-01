@@ -1,0 +1,61 @@
+{
+    "description": "Updates a product (resource: PUT /katello/api/products/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "products.update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Product description",
+            "required": false,
+            "type": "string"
+        },
+        "gpg_key_id": {
+            "description": "Identifier of the GPG key",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "product numeric identifier",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Product name",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "products.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "sync_plan_id": {
+            "description": "Plan numeric identifier",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

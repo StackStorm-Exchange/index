@@ -1,0 +1,44 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "lex-models_put_slot_type",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "put_slot_type",
+            "immutable": true,
+            "type": "string"
+        },
+        "checksum": {
+            "description": "Identifies a specific revision of the $LATEST version. When you create a new slot type, leave the checksum field blank. If you specify a checksum you get a BadRequestException exception. When you want to update a slot type, set the checksum field to the checksum of the most recent revision of the $LATEST version. If you don't specify the  checksum field, or if the checksum does not match the $LATEST version, you get a PreconditionFailedException exception.",
+            "type": "string"
+        },
+        "cls": {
+            "default": "lex-models",
+            "type": "string"
+        },
+        "description": {
+            "description": "A description of the slot type.",
+            "type": "string"
+        },
+        "enumerationValues": {
+            "description": "A list of EnumerationValue objects that defines the values that the slot type can take.",
+            "type": "array"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the slot type. The name is not case sensitive.  The name can't match a built-in slot type name, or a built-in slot type name with 'AMAZON.' removed. For example, because there is a built-in slot type called AMAZON.DATE, you can't create a custom slot type called DATE. For a list of built-in slot types, see Slot Type Reference in the Alexa Skills Kit.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

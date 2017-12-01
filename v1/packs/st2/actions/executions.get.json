@@ -1,0 +1,25 @@
+{
+    "description": "Retrieve details of a single execution.",
+    "enabled": true,
+    "entry_point": "executions_get.py",
+    "name": "executions.get",
+    "parameters": {
+        "exclude": {
+            "default": [
+                "trigger",
+                "trigger_type",
+                "trigger_instance",
+                "liveaction",
+                "context"
+            ],
+            "description": "List of attributes to exclude",
+            "type": "array"
+        },
+        "id": {
+            "description": "ID of execution to retrieve the details for",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

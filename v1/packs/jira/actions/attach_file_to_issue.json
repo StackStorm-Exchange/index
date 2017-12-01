@@ -1,0 +1,24 @@
+{
+    "description": "Attach a file to JIRA issue / ticket.",
+    "enabled": true,
+    "entry_point": "attach_file_to_issue.py",
+    "name": "attach_file_to_issue",
+    "parameters": {
+        "file_name": {
+            "description": "Optional file name for the attachment. If not provided, name of the file on disk is assumed.",
+            "required": false,
+            "type": "string"
+        },
+        "file_path": {
+            "description": "Path of the file to attach to issue.",
+            "required": true,
+            "type": "string"
+        },
+        "issue_key": {
+            "description": "Issue key (e.g. PROJECT-1000).",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

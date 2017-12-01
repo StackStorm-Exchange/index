@@ -1,0 +1,14 @@
+{
+    "description": "Get repair status for cluster.",
+    "enabled": true,
+    "entry_point": "get_repair_status.py",
+    "name": "get_repair_status",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

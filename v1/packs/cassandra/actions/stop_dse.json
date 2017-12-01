@@ -1,0 +1,15 @@
+{
+    "description": "Stop DSE cassandra service.",
+    "enabled": true,
+    "entry_point": "",
+    "name": "stop_dse",
+    "parameters": {
+        "cmd": {
+            "default": "service dse stop"
+        },
+        "sudo": {
+            "default": true
+        }
+    },
+    "runner_type": "remote-shell-cmd"
+}

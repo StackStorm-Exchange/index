@@ -1,0 +1,14 @@
+{
+    "description": "Suspend a user",
+    "enabled": true,
+    "entry_point": "suspend_user.py",
+    "name": "suspend_user",
+    "parameters": {
+        "id": {
+            "description": "User ID",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

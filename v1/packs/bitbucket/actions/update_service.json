@@ -1,0 +1,24 @@
+{
+    "description": "Update hook/service for a given repository",
+    "enabled": true,
+    "entry_point": "update_service.py",
+    "name": "update_service",
+    "parameters": {
+        "id": {
+            "description": "ID of the service.",
+            "required": true,
+            "type": "integer"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "New service URL.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

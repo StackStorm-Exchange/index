@@ -1,0 +1,57 @@
+{
+    "description": "Create new network",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.create",
+    "parameters": {
+        "base": {
+            "default": "network create",
+            "immutable": true,
+            "type": "string"
+        },
+        "disable": {
+            "default": true,
+            "description": "Disable network",
+            "type": "boolean"
+        },
+        "domain": {
+            "description": "Owner's domain (name or ID)",
+            "type": "string"
+        },
+        "enable": {
+            "default": true,
+            "description": "Enable network (default)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_create = openstackclient.network.v2.network:CreateNetwork')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: html, json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "New network name",
+            "required": true,
+            "type": "string"
+        },
+        "no_share": {
+            "default": true,
+            "description": "Do not share the network between projects",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "share": {
+            "default": false,
+            "description": "Share the network between projects",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,64 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "limits.show",
+    "parameters": {
+        "absolute": {
+            "default": false,
+            "description": "Show absolute limits",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "limits show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "domain": {
+            "description": "Domain the project belongs to (name or ID) [only valid with --absolute]",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('limits_show = openstackclient.common.limits:ShowLimits')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Show limits for a specific project (name or ID) [only valid with --absolute]",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "rate": {
+            "default": false,
+            "description": "Show rate limits",
+            "type": "boolean"
+        },
+        "reserved": {
+            "default": false,
+            "description": "Include reservations count [only valid with --absolute]",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

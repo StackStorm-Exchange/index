@@ -1,0 +1,15 @@
+{
+    "class_name": "ElasticsearchCountSensor",
+    "description": "Sensor to count ES events over a specified interval",
+    "entry_point": "count_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger which represents the exceeded count threshold",
+            "name": "count_event",
+            "payload_info": [
+                "results"
+            ]
+        }
+    ]
+}

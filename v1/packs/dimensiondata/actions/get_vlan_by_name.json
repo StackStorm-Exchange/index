@@ -1,0 +1,22 @@
+{
+    "description": "Get vlan by name",
+    "enabled": true,
+    "entry_point": "get_vlan_by_name.py",
+    "name": "get_vlan_by_name",
+    "parameters": {
+        "network_domain_id": {
+            "description": "The network domain ID",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        },
+        "vlan_name": {
+            "description": "The name of the vlan",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

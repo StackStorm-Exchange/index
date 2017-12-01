@@ -1,0 +1,19 @@
+{
+    "description": "List all the available vms. Optionally filter on the metadata values.",
+    "enabled": true,
+    "entry_point": "list_vms.py",
+    "name": "list_vms",
+    "parameters": {
+        "metadata": {
+            "description": "If provided, only return server which contain the provided metadata values.",
+            "required": false,
+            "type": "object"
+        },
+        "region": {
+            "description": "Optional region name. Defaults to region specified in the config.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

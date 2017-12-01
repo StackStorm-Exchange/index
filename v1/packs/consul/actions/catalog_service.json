@@ -1,0 +1,49 @@
+{
+    "description": "Returns the nodes providing *service* in the *dc* datacenter.",
+    "enabled": true,
+    "entry_point": "catalog_service.py",
+    "name": "catalog_service",
+    "parameters": {
+        "consistency": {
+            "description": "Can be either 'default', 'consistent' or 'stale'.",
+            "required": false,
+            "type": "string"
+        },
+        "dc": {
+            "description": "The datacenter to query for nodes.",
+            "required": false,
+            "type": "string"
+        },
+        "index": {
+            "description": "The current Consul index, suitable for making subsequent calls to wait for changes since this query was last run.",
+            "required": false,
+            "type": "string"
+        },
+        "near": {
+            "description": "A node name to sort the resulting list in ascending order based on the estimated round trip time from that node.",
+            "required": false,
+            "type": "string"
+        },
+        "service": {
+            "description": "The service to query for nodes.",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "The list of nodes returned will be filtered by that tag",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "An optional _ACL token_ to apply to this request.",
+            "required": false,
+            "type": "string"
+        },
+        "wait": {
+            "description": "The maximum duration to wait (e.g. '10s') to retrieve a given index.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

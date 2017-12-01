@@ -1,0 +1,48 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "flavor.unset",
+    "parameters": {
+        "base": {
+            "default": "flavor unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('flavor_unset = openstackclient.compute.v2.flavor:UnsetFlavor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flavor": {
+            "description": "Flavor to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "Remove flavor access from project (name or ID) (admin only)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Property to remove from flavor (repeat option to unset multiple properties)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

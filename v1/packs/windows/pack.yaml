@@ -1,0 +1,21 @@
+ref: windows
+name: windows
+description: st2 content pack containing windows integrations
+keywords:
+- windows
+- wmi
+- windows management interface
+- wql
+version: 0.4.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 6
+    resources:
+    - lockdown_winrm
+    - setup_winrm
+    - try_winrm
+    - winexe_cmd
+    - winrm_cmd
+    - wmi_query

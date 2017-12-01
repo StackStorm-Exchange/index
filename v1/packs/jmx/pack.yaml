@@ -1,0 +1,20 @@
+ref: jmx
+name: jmx
+description: st2 content pack containing Java JMX integrations
+keywords:
+- jmx
+- javajmx
+- java management extensions
+- mbean
+version: 0.3.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 1
+    resources:
+    - invoke_method
+  sensors:
+    count: 1
+    resources:
+    - JMXSensor

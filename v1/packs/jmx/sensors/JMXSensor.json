@@ -1,0 +1,29 @@
+{
+    "class_name": "JMXSensor",
+    "description": "Sensor which monitors Java application for attributes / metrics exposed through JMX protocol",
+    "entry_point": "jmx_sensor.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates a JMX metric",
+            "name": "metric",
+            "payload_schema": {
+                "properties": {
+                    "attribute_keys": {
+                        "type": "array"
+                    },
+                    "attribute_name": {
+                        "type": "string"
+                    },
+                    "metric": {
+                        "type": "object"
+                    },
+                    "object_name": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

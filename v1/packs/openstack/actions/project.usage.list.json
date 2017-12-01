@@ -1,0 +1,32 @@
+{
+    "description": "List resource usage per project",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "project.usage.list",
+    "parameters": {
+        "base": {
+            "default": "project usage list",
+            "immutable": true,
+            "type": "string"
+        },
+        "end": {
+            "description": "Usage range end date, ex 2012-01-20 (default: tomorrow)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('project_usage_list = openstackclient.compute.v2.usage:ListProjectUsage')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, html, json, table, yaml)",
+            "type": "string"
+        },
+        "start": {
+            "description": "Usage range start date, ex 2012-01-20 (default: 4 weeks ago)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

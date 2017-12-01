@@ -1,0 +1,19 @@
+{
+    "description": "Open the charge port of a vehicle",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "open_charge_port_door",
+    "parameters": {
+        "action": {
+            "default": "charge_port_door_open",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

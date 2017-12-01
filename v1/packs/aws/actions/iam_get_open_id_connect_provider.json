@@ -1,0 +1,32 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "iam_get_open_id_connect_provider",
+    "pack": "aws",
+    "parameters": {
+        "OpenIDConnectProviderArn": {
+            "description": "The Amazon Resource Name (ARN) of the OIDC provider resource object in IAM to get information for. You can get a list of OIDC provider resource ARNs by using the ListOpenIDConnectProviders action. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "get_open_id_connect_provider",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "iam",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

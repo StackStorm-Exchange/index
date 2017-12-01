@@ -1,0 +1,19 @@
+{
+    "description": "Sensu System Health",
+    "enabled": true,
+    "entry_point": "health.py",
+    "name": "health",
+    "parameters": {
+        "consumers": {
+            "default": 2,
+            "description": "The minimum number of transport consumers to be considered healthy.",
+            "type": "integer"
+        },
+        "messages": {
+            "default": 100,
+            "description": "The maximum number of transport queued messages to be considered healthy.",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

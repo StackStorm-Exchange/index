@@ -1,0 +1,14 @@
+{
+    "description": "Find bulb ID based on nickname",
+    "enabled": true,
+    "entry_point": "find_id_by_name.py",
+    "name": "find_id_by_name",
+    "parameters": {
+        "name": {
+            "description": "Name of bulb to lookup ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

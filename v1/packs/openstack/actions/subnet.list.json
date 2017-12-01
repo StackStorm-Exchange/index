@@ -1,0 +1,104 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnet.list",
+    "parameters": {
+        "any_tags": {
+            "description": "List subnets which have any given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "base": {
+            "default": "subnet list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "dhcp": {
+            "default": false,
+            "description": "List subnets which have DHCP enabled",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnet_list = openstackclient.network.v2.subnet:ListSubnet')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "gateway": {
+            "description": "List only subnets of given gateway IP in output",
+            "type": "string"
+        },
+        "ip_version": {
+            "description": "List only subnets of given IP version in output.Allowed values for IP version are 4 and 6. (choices: 4, 6)",
+            "type": "integer"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        },
+        "name": {
+            "description": "List only subnets of given name in output",
+            "type": "string"
+        },
+        "network": {
+            "description": "List only subnets which belong to a given network in output (name or ID)",
+            "type": "string"
+        },
+        "no_dhcp": {
+            "default": false,
+            "description": "List subnets which have DHCP disabled",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "not_any_tags": {
+            "description": "Exclude subnets which have any given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "not_tags": {
+            "description": "Exclude subnets which have all given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        },
+        "project": {
+            "description": "List only subnets which belong to a given project in output (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "service_type": {
+            "description": "List only subnets of a given service type in output e.g.: network:floatingip_agent_gateway. Must be a valid device owner value for a network port (repeat option to list multiple service types)",
+            "type": "array"
+        },
+        "subnet_range": {
+            "description": "List only subnets of given subnet range (in CIDR notation) in output e.g.: --subnet-range 10.10.0.0/16",
+            "type": "string"
+        },
+        "tags": {
+            "description": "List subnets which have all given tag(s) (Comma-separated list of tags)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

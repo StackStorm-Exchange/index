@@ -1,0 +1,27 @@
+{
+    "description": "Move a card from one board/list to another board/list",
+    "enabled": true,
+    "entry_point": "move_card.py",
+    "name": "move_card",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "card_id": {
+            "description": "Card ID to move",
+            "required": true,
+            "type": "string"
+        },
+        "target_list_id": {
+            "description": "Target List ID to move a card to",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

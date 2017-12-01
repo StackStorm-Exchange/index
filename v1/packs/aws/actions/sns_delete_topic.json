@@ -1,0 +1,32 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "sns_delete_topic",
+    "pack": "aws",
+    "parameters": {
+        "TopicArn": {
+            "description": "The ARN of the topic you want to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "delete_topic",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "sns",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

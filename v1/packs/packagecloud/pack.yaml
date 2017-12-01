@@ -1,0 +1,19 @@
+ref: packagecloud
+name: packagecloud
+description: packagecloud integration pack
+keywords:
+- packagecloud
+version: 0.4.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 7
+    resources:
+    - create_master_token
+    - destroy_master_token
+    - destroy_read_token
+    - get_master_token
+    - list_master_token
+    - list_packages
+    - show_package

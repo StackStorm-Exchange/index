@@ -1,0 +1,32 @@
+{
+    "class_name": "DockerSensor",
+    "description": "Docker sensor",
+    "entry_point": "docker_container_sensor.py",
+    "poll_interval": 5,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a container has been started",
+            "name": "container_tracker.started",
+            "payload_schema": {
+                "properties": {
+                    "container_info": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        {
+            "description": "Trigger which indicates that a container has been stopped",
+            "name": "container_tracker.stopped",
+            "payload_schema": {
+                "properties": {
+                    "container_info": {
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

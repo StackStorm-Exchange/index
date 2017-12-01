@@ -1,0 +1,29 @@
+{
+    "description": "vTM - Configure a Session Persistence Class",
+    "enabled": true,
+    "entry_point": "vtm_add_persistence.py",
+    "name": "vtm_add_persistence",
+    "parameters": {
+        "cookie": {
+            "description": "The cookie name for use with the 'cookie' method",
+            "required": false,
+            "type": "string"
+        },
+        "method": {
+            "description": "The type of persistence to use",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the persistence class",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

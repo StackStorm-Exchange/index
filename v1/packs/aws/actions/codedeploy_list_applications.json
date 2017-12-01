@@ -1,0 +1,31 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "codedeploy_list_applications",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "list_applications",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "codedeploy",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "nextToken": {
+            "description": "An identifier returned from the previous list applications call. It can be used to return the next set of applications in the list.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

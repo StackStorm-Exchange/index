@@ -1,0 +1,61 @@
+{
+    "description": "Configure port channel or a physical interface as a Trunk interface.",
+    "enabled": true,
+    "entry_point": "create_switchport_trunk.py",
+    "name": "create_switchport_trunk",
+    "pack": "network_essentials",
+    "parameters": {
+        "c_tag": {
+            "description": "Specifies an incoming C-TAG or range of C-TAGs for service or transport VLANs in a Virtual Fabrics context.  For service VF only single ID is allowed, for Transport VFs a range of IDs, for example, 100-200, or 10,20,100-200.",
+            "position": 6,
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "Interface name, for VDX in 3-tuple format (24/0/1), SLX in 2-tuple format (24/1) or Port-channel number <1-6144>.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "tengigabitethernet",
+            "description": "Interface type",
+            "enum": [
+                "ethernet",
+                "tengigabitethernet",
+                "gigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet",
+                "port_channel"
+            ],
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "For 802.1Q VLANs, single or range of VLANs, for example, 5 or 4-7 or 4,6,9-11 or all; ID must be below 4096.  For service or transport VFs, single ID, range can be from 4096 through 8191.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

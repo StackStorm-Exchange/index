@@ -1,0 +1,49 @@
+{
+    "description": "Update a foreign input set (resource: PUT /api/templates/:template_id/foreign_input_sets/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "templates.foreign_input_sets_template_id_foreign_input_updatesets",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "foreign_input_set": {
+            "description": "'description: None\n parameters:\n     include:\n       required: false\n       type: string\n       description: A comma separated list of input names to be included from the foreigntemplate.\n     include_all:\n       required: false\n       type: string\n       description: Include all inputs from the foreign template\n     description:\n       required: false\n       type: string\n       description: Input set description\n     target_template_id:\n       required: false\n       type: string\n       description: Target template ID\n     exclude:\n       required: false\n       type: string\n       description: A comma separated list of input names to be included from the foreigntemplate.\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "templates.foreign_input_sets_template_id_foreign_input_updatesets",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "template_id": {
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

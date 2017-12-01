@@ -1,0 +1,14 @@
+{
+    "description": "vTM - List Configuration Backups",
+    "enabled": true,
+    "entry_point": "vtm_list_backups.py",
+    "name": "vtm_list_backups",
+    "parameters": {
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+name: pushbullet
+description: Pushbullet integration pack for StackStorm
+keywords:
+- telegram
+- messaging
+- SMS
+version: 0.2.1
+author: Fabio Brito
+email: psychopenguin@gmail.com
+content:
+  actions:
+    count: 1
+    resources:
+    - post_to_channel

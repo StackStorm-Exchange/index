@@ -1,0 +1,20 @@
+{
+    "description": "Retrieve Google search results for the provided query.",
+    "enabled": true,
+    "entry_point": "get_search_results.py",
+    "name": "get_search_results",
+    "parameters": {
+        "count": {
+            "default": 10,
+            "description": "Maximum number of results to retrieve.",
+            "required": false,
+            "type": "integer"
+        },
+        "query": {
+            "description": "Search query.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

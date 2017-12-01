@@ -1,0 +1,20 @@
+{
+    "ack": {
+        "enabled": false
+    },
+    "action_ref": "opsgenie.send_heartbeat",
+    "description": "Send an OpsGenie hearbeat.",
+    "formats": [
+        {
+            "display": "opsgenie heartbeat send {{name}}",
+            "representation": [
+                "opsgenie heartbeat send {{name}}"
+            ]
+        }
+    ],
+    "name": "send_heartbeat",
+    "pack": "opsgenie",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nHeartbeat was {{execution.result.result.status}} (code: {{execution.result.result.code}}){~}\n{% else %}\nCould not sent an heartbeat to OpsGenie. See see {{execution.id}} for details.{~}\n{% endif %}\n"
+    }
+}

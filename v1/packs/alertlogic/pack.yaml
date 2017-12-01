@@ -1,0 +1,23 @@
+ref: alertlogic
+name: alertlogic
+description: AlertLogic ActiveIntegration APIs
+keywords:
+- AlertLogic
+- security
+version: 0.2.1
+author: Jon Middleton
+email: jon.middleton@pulsant.com
+content:
+  actions:
+    count: 4
+    resources:
+    - scan_get_results
+    - scan_get_results_by_title
+    - scan_list_scan_executions
+    - scan_list_scans
+  aliases:
+    count: 3
+    resources:
+    - list_scan_executions
+    - get_scan_results
+    - list_scans

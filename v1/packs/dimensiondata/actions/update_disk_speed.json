@@ -1,0 +1,31 @@
+{
+    "description": "Update the speed of a disk",
+    "enabled": true,
+    "entry_point": "run_compute_node.py",
+    "name": "update_disk_speed",
+    "parameters": {
+        "action": {
+            "default": "ex_change_storage_size",
+            "immutable": true,
+            "type": "string"
+        },
+        "disk_id": {
+            "description": "The UUID of the disk",
+            "type": "string"
+        },
+        "node_id": {
+            "description": "The ID of the node (VM)",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        },
+        "speed": {
+            "description": "The speed of the storage to add e.g. STANDARD",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

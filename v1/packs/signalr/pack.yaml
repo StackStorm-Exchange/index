@@ -1,0 +1,18 @@
+ref: signalr
+name: signalr
+description: Signalr messaging integration
+keywords:
+- signalr
+- messaging
+version: 0.1.2
+author: Anthony Shaw
+email: anthony.shaw@dimensiondata.com
+content:
+  actions:
+    count: 1
+    resources:
+    - send_message
+  sensors:
+    count: 1
+    resources:
+    - SignalRHubSensor

@@ -1,0 +1,40 @@
+name: acos
+ref: acos
+description: StackStorm pack for ACOS-based appliances of A10 Networks.
+keywords:
+- acos
+- load balancer
+- ADC
+- network
+version: 0.2.4
+author: Hiroyasu OHYAMA
+email: user.localhost2000@gmail.com
+content:
+  actions:
+    count: 19
+    resources:
+    - add_slb_server
+    - add_slb_server_port
+    - add_slb_service_group
+    - add_slb_service_group_member
+    - add_slb_virtual_server
+    - add_slb_virtual_server_port
+    - del_slb_server
+    - del_slb_server_port
+    - del_slb_service_group
+    - del_slb_service_group_member
+    - del_slb_virtual_server
+    - del_slb_virtual_server_port
+    - get_slb_server
+    - get_slb_service_group
+    - get_slb_service_group_members
+    - get_slb_virtual_server
+    - list_slb_servers
+    - list_slb_service_groups
+    - list_slb_virtual_servers
+  tests:
+    count: 3
+    resources:
+    - acos_base_action_test_case.py
+    - test_get_slb_server.py
+    - test_list_slb_servers.py

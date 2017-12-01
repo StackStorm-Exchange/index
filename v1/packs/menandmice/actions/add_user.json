@@ -1,0 +1,59 @@
+{
+    "description": "Invokes the Men&Mice SOAP command AddUser (http://api.menandmice.com/8.1.0/#AddUser)",
+    "enabled": true,
+    "entry_point": "lib/run_operation.py",
+    "name": "add_user",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a Men&Mice server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "AddUser",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the Men&Mice password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Optional override of the Men&Mice port in <connection>.",
+            "required": false,
+            "type": "integer"
+        },
+        "save_comment": {
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the Men&Mice server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "type": "string"
+        },
+        "transport": {
+            "description": "Optional override of the Men&Mice transport in <connection>.",
+            "required": false,
+            "type": "string"
+        },
+        "user": {
+            "description": "'type: User\n reference: http://api.menandmice.com/8.1.0/#User\n json_schema: {\n   \"name\": \"string\", \n   \"authenticationType\": \"string\", \n   \"roles\": {\n     \"object\": [\n       {\n         \"objType\": \"string\", \n         \"ref\": \"string\", \n         \"name\": \"string\"\n       }\n     ]\n   }, \n   \"groups\": {\n     \"object\": [\n       {\n         \"objType\": \"string\", \n         \"ref\": \"string\", \n         \"name\": \"string\"\n       }\n     ]\n   }, \n   \"fullName\": \"string\", \n   \"password\": \"string\", \n   \"ref\": \"string\", \n   \"email\": \"string\", \n   \"description\": \"string\"\n }'\n",
+            "required": true,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the Men&Mice username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

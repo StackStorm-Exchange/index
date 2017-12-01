@@ -1,0 +1,55 @@
+{
+    "description": "Show stack output.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.output.show",
+    "parameters": {
+        "all": {
+            "default": false,
+            "description": "Display all stack outputs",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "stack output show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_output_show = heatclient.osc.v1.stack:OutputShowStack')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "output": {
+            "description": "Name of an output to display",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Name or ID of stack to query",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

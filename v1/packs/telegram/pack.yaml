@@ -1,0 +1,17 @@
+name: telegram
+description: Telegram integration pack for Stack Storm
+keywords:
+- telegram
+- messaging
+version: 0.2.1
+author: Fabio Brito
+email: psychopenguin@gmail.com
+content:
+  actions:
+    count: 1
+    resources:
+    - send_message
+  sensors:
+    count: 1
+    resources:
+    - TelegramSensor

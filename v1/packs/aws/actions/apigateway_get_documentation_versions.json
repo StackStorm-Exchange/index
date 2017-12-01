@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "apigateway_get_documentation_versions",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "get_documentation_versions",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "apigateway",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "limit": {
+            "description": "The page size of the returned documentation versions.",
+            "type": "integer"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "position": {
+            "description": "The position of the returned DocumentationVersion in the DocumentationVersions collection.",
+            "type": "string"
+        },
+        "restApiId": {
+            "description": "[Required] The identifier of an API of the to-be-retrieved documentation versions.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "configure VXLAN gateway",
+    "enabled": true,
+    "entry_point": "configure_VXLAN_gateway.py",
+    "name": "configure_VXLAN_gateway",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Device IP.",
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "interface name/id",
+            "type": "string"
+        },
+        "overlay_gateway_name": {
+            "description": "overlay gateway name",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "rbridge_ids": {
+            "description": "rbridge id",
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        },
+        "vlan": {
+            "description": "vlan id",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

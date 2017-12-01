@@ -1,0 +1,22 @@
+{
+    "description": "Retrieve details for specified server",
+    "enabled": true,
+    "entry_point": "icsp_server_details_get.py",
+    "name": "icsp_server_details_get",
+    "parameters": {
+        "connection_details": {
+            "description": "Connection details. eg { \"host\": \"192.168.0.1\", \"user\":\"username\", \"pass\": \"secret\" }",
+            "position": 1,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "mid": {
+            "description": "MID of Server to retrieve",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

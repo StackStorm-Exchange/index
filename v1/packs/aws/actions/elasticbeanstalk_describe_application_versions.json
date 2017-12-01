@@ -1,0 +1,43 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "elasticbeanstalk_describe_application_versions",
+    "pack": "aws",
+    "parameters": {
+        "ApplicationName": {
+            "description": "Specify an application name to show only application versions for that application.",
+            "type": "string"
+        },
+        "MaxRecords": {
+            "description": "Specify a maximum number of application versions to paginate in the request.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "Specify a next token to retrieve the next page in a paginated request.",
+            "type": "string"
+        },
+        "VersionLabels": {
+            "description": "Specify a version label to show a specific application version.",
+            "type": "array"
+        },
+        "action": {
+            "default": "describe_application_versions",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "elasticbeanstalk",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

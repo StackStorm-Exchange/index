@@ -1,0 +1,16 @@
+{
+    "action": {
+        "parameters": {
+            "channel": "#twitter-relay",
+            "message": "@{{trigger.user.screen_name}} tweeted on {{trigger.created_at}}: {{trigger.text}} - {{trigger.url}}"
+        },
+        "ref": "slack.post_message"
+    },
+    "description": "Relay Tweet to the Slack channel.",
+    "enabled": true,
+    "name": "relay_tweet_to_slack",
+    "trigger": {
+        "parameters": {},
+        "type": "twitter.matched_tweet"
+    }
+}

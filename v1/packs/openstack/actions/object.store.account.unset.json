@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "object.store.account.unset",
+    "parameters": {
+        "base": {
+            "default": "object store account unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('object_store_account_unset = openstackclient.object.v1.account:UnsetAccount')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "default": [],
+            "description": "Property to remove from account (repeat option to remove multiple properties)",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

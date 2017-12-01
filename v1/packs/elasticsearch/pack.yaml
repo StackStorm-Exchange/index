@@ -1,0 +1,32 @@
+ref: elasticsearch
+name: elasticsearch
+description: st2 elasticsearch integration pack
+keywords:
+- elasticsearch
+- curator
+- databases
+version: 0.5.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 14
+    resources:
+    - indices.alias
+    - indices.allocation
+    - indices.bloom
+    - indices.close
+    - indices.delete
+    - indices.open
+    - indices.optimize
+    - indices.replicas
+    - indices.show
+    - indices.snapshot
+    - search.body
+    - search.q
+    - snapshots.delete
+    - snapshots.show
+  sensors:
+    count: 1
+    resources:
+    - ElasticsearchCountSensor

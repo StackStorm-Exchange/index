@@ -1,0 +1,25 @@
+name: netbox
+description: A StackStorm pack for integrating with NetBox
+keywords:
+- netbox
+- networking
+- ipam
+- dcim
+version: 0.3.2
+author: John Anderson, Jefferson White
+email: lampwins@gmail.com
+content:
+  actions:
+    count: 11
+    resources:
+    - dcim_get_devices
+    - dcim_get_interface_connections
+    - dcim_get_interfaces
+    - dcim_get_sites
+    - ipam_get_available_ips
+    - ipam_get_ip_addresses
+    - ipam_get_prefixes
+    - ipam_get_vlan_groups
+    - ipam_get_vlans
+    - ipam_get_vrfs
+    - ipam_post_available_ips

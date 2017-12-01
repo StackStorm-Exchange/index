@@ -1,0 +1,45 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "volume.qos.disassociate",
+    "parameters": {
+        "all": {
+            "default": false,
+            "description": "Disassociate the QoS from every volume type",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "volume qos disassociate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('volume_qos_disassociate = openstackclient.volume.v2.qos_specs:DisassociateQos')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "qos_spec": {
+            "description": "QoS specification to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "volume_type": {
+            "description": "Volume type to disassociate the QoS from (name or ID)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

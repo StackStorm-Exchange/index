@@ -1,0 +1,29 @@
+{
+    "description": "vTM - Enable or Disable Maintenance on a service",
+    "enabled": true,
+    "entry_point": "vtm_maintenance_mode.py",
+    "name": "vtm_maintenance_mode",
+    "parameters": {
+        "enable": {
+            "default": true,
+            "description": "enable or disable the maintenance rule",
+            "type": "boolean"
+        },
+        "rule": {
+            "description": "The name of the maintenance rule",
+            "required": true,
+            "type": "string"
+        },
+        "vserver": {
+            "description": "The name of the Virtual Server",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

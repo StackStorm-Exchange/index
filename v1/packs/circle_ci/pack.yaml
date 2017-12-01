@@ -1,0 +1,30 @@
+ref: circle_ci
+name: Circle CI
+description: Pack which allows integration with Circle CI.
+keywords:
+- circle
+- circle ci
+- continous integration
+- ci
+version: 0.5.1
+author: StackStorm dev
+email: support@stackstorm.com
+content:
+  actions:
+    count: 6
+    resources:
+    - cancel_build
+    - get_build_info
+    - get_build_number
+    - retry_build
+    - run_build
+    - wait_until_build_finishes
+  sensors:
+    count: 1
+    resources:
+    - CircleCIWebhookSensor
+  tests:
+    count: 2
+    resources:
+    - test_get_build_number_action.py
+    - test_wait_until_build_finishes.py

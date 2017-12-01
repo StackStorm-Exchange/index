@@ -1,0 +1,49 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ssm_describe_maintenance_window_execution_task_invocations",
+    "pack": "aws",
+    "parameters": {
+        "Filters": {
+            "description": "Optional filters used to scope down the returned task invocations. The supported filter key is STATUS with the corresponding values PENDING, IN_PROGRESS, SUCCESS, FAILED, TIMED_OUT, CANCELLING, and CANCELLED.",
+            "type": "array"
+        },
+        "MaxResults": {
+            "description": "The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "The token for the next set of items to return. (You received this token from a previous call.)",
+            "type": "string"
+        },
+        "TaskId": {
+            "description": "The ID of the specific task in the Maintenance Window task that should be retrieved.",
+            "required": true,
+            "type": "string"
+        },
+        "WindowExecutionId": {
+            "description": "The ID of the Maintenance Window execution the task is part of.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "describe_maintenance_window_execution_task_invocations",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ssm",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

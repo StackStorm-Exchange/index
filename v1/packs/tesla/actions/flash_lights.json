@@ -1,0 +1,19 @@
+{
+    "description": "Flash lights of a vehicle",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "flash_lights",
+    "parameters": {
+        "action": {
+            "default": "flash_lights",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

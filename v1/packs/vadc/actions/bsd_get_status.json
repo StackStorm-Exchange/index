@@ -1,0 +1,18 @@
+{
+    "description": "Service Director - Get Service Status",
+    "enabled": true,
+    "entry_point": "bsd_get_status.py",
+    "name": "bsd_get_status",
+    "parameters": {
+        "stringify": {
+            "default": false,
+            "description": "Output a String rather than JSON",
+            "type": "boolean"
+        },
+        "vtm": {
+            "description": "Show status of a single vTM",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

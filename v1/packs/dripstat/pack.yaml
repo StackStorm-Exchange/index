@@ -1,0 +1,20 @@
+ref: dripstat
+name: dripstat
+description: Integration with the Dripstat Application Performance Monitoring tool
+keywords:
+- dripstat
+- java
+- monitoring
+- performance monitoring
+version: 0.2.0
+author: James Fryman
+email: james@fryman.io
+content:
+  rules:
+    count: 1
+    resources:
+    - test_rule
+  sensors:
+    count: 1
+    resources:
+    - DripstatAlertSensor

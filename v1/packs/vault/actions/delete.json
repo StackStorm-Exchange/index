@@ -1,0 +1,15 @@
+{
+    "description": "Delete value from Vault server",
+    "enabled": true,
+    "entry_point": "delete.py",
+    "name": "delete",
+    "parameters": {
+        "path": {
+            "description": "Path to delete from Vault",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

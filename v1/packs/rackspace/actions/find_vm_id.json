@@ -1,0 +1,14 @@
+{
+    "description": "Find a virtual machine id based on name",
+    "enabled": true,
+    "entry_point": "find_vm_id.py",
+    "name": "find_vm_id",
+    "parameters": {
+        "name": {
+            "description": "Name of VM to find ID of",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

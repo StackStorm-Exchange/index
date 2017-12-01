@@ -1,0 +1,36 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "iot_create_thing_type",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "create_thing_type",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "iot",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "thingTypeName": {
+            "description": "The name of the thing type.",
+            "required": true,
+            "type": "string"
+        },
+        "thingTypeProperties": {
+            "description": "The ThingTypeProperties for the thing type to create. It contains information about the new thing type including a description, and a list of searchable thing attribute names.",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Get alerts for app.",
+    "enabled": true,
+    "entry_point": "get_alerts.py",
+    "name": "get_alerts",
+    "parameters": {
+        "app_name": {
+            "description": "New relic app name.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

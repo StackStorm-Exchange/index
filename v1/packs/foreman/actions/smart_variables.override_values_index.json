@@ -1,0 +1,54 @@
+{
+    "description": "List of override values for a specific smart variable (resource: GET /api/smart_variables/:smart_variable_id/override_values)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "smart_variables.override_values_index",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "smart_variables.override_values_index",
+            "immutable": true,
+            "type": "string"
+        },
+        "page": {
+            "description": "paginate results",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "number of entries per request",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "smart_class_parameter_id": {
+            "required": false,
+            "type": "string"
+        },
+        "smart_variable_id": {
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

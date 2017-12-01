@@ -1,0 +1,46 @@
+{
+    "description": "Delete a host's interface (resource: DELETE /api/hosts/:host_id/interfaces/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.interfaces_host_id_destroyinterfaces",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "ID or name of host",
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of interface",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "hosts.interfaces_host_id_destroyinterfaces",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Create a PowerPoint presentation",
+    "enabled": true,
+    "entry_point": "build_presentation.py",
+    "name": "build_presentation",
+    "parameters": {
+        "path": {
+            "description": "Path to where the PPTX file should be saved.",
+            "required": true,
+            "type": "string"
+        },
+        "slides": {
+            "description": "Content of the slides, a list of dict, with fields 'layout', 'title' and 'text'",
+            "required": true,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

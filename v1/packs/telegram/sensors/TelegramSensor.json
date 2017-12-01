@@ -1,0 +1,15 @@
+{
+    "class_name": "TelegramSensor",
+    "description": "Sensor which monitors telegram updates",
+    "entry_point": "telegram_sensor.py",
+    "poll_interval": 5,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new update has been detected",
+            "name": "new_update",
+            "payload_schema": {
+                "type": "object"
+            }
+        }
+    ]
+}

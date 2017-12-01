@@ -1,0 +1,25 @@
+{
+    "action": {
+        "parameters": {
+            "hosts": "{{trigger.host}}"
+        },
+        "ref": "linux.check_loadavg"
+    },
+    "criteria": {
+        "trigger.service": {
+            "pattern": "(.*)_check_loadavg",
+            "type": "matchregex"
+        },
+        "trigger.state_type": {
+            "pattern": "HARD",
+            "type": "matchregex"
+        }
+    },
+    "description": "Check cpu load on host",
+    "enabled": false,
+    "name": "check_load",
+    "pack": "nagios",
+    "trigger": {
+        "type": "nagios.service_state_change"
+    }
+}

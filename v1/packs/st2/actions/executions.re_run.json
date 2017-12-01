@@ -1,0 +1,19 @@
+{
+    "description": "Re-run an action execution.",
+    "enabled": true,
+    "entry_point": "executions_re_run.py",
+    "name": "executions.re_run",
+    "parameters": {
+        "id": {
+            "description": "ID of execution to re-run",
+            "required": true,
+            "type": "string"
+        },
+        "parameters": {
+            "description": "Parameter overrides",
+            "required": false,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

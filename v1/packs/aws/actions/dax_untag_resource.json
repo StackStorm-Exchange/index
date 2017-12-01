@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "dax_untag_resource",
+    "pack": "aws",
+    "parameters": {
+        "ResourceName": {
+            "description": "The name of the DAX resource from which the tags should be removed.",
+            "required": true,
+            "type": "string"
+        },
+        "TagKeys": {
+            "description": "A list of tag keys. If the DAX cluster has any tags with these keys, then the tags are removed from the cluster.",
+            "required": true,
+            "type": "array"
+        },
+        "action": {
+            "default": "untag_resource",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "dax",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

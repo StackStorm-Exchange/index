@@ -1,0 +1,20 @@
+{
+    "description": "Wait for a Task to complete and returns its result.",
+    "enabled": true,
+    "entry_point": "vm_check_tools.py",
+    "name": "vm_check_tools",
+    "parameters": {
+        "vm_id": {
+            "description": "VM whose Tools to check.",
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Delete a DNS zone.",
+    "enabled": true,
+    "entry_point": "delete_dns_zone.py",
+    "name": "delete_dns_zone",
+    "parameters": {
+        "zone_id": {
+            "description": "ID of a DNS zone to delete.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

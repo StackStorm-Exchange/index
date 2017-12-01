@@ -1,0 +1,97 @@
+{
+    "description": "Add an L3 IPv4 ACL rule to an existing ACL",
+    "enabled": true,
+    "entry_point": "add_ipv4_rule_acl.py",
+    "name": "add_ipv4_rule_acl",
+    "pack": "network_essentials",
+    "parameters": {
+        "acl_name": {
+            "description": "Name of the access list",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "permit",
+            "description": "Action performed by ACL rule",
+            "enum": [
+                "permit",
+                "deny",
+                "hard-drop"
+            ],
+            "position": 5,
+            "type": "string"
+        },
+        "count": {
+            "default": "False",
+            "description": "Enables statistics for the rule",
+            "position": 11,
+            "required": false,
+            "type": "string"
+        },
+        "destination": {
+            "description": "Destination address filters { any | S_IPaddress/mask(0.0.0.255) | host,S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+            "position": 8,
+            "required": false,
+            "type": "string"
+        },
+        "dscp": {
+            "description": "Matches the specified value against the DSCP value of the packet to filter.  Allowed values are 0 through 63.",
+            "position": 9,
+            "required": false,
+            "type": "string"
+        },
+        "log": {
+            "default": "False",
+            "description": "Enables logging for the rule (Available for permit or deny only)",
+            "position": 12,
+            "required": false,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "protocol_type": {
+            "description": "Type of IP packets to be filtered based on protocol. Valid values are <0-255> or key words tcp, udp, icmp or ip",
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
+        "seq_id": {
+            "description": "Sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290",
+            "position": 4,
+            "required": false,
+            "type": "integer"
+        },
+        "source": {
+            "default": "any",
+            "description": "Source address filters { any | S_IPaddress/mask(0.0.0.255) | host,S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+            "position": 7,
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "VLAN interface to which the ACL is bound",
+            "position": 10,
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

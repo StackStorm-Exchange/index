@@ -1,0 +1,79 @@
+{
+    "description": "Run a ping from a network device using NAPALM.",
+    "enabled": true,
+    "entry_point": "ping.py",
+    "name": "ping",
+    "parameters": {
+        "count": {
+            "default": 5,
+            "description": "Number of probes to send",
+            "position": 9,
+            "required": false,
+            "type": "integer"
+        },
+        "credentials": {
+            "description": "The credentials group which contains the username and password to log in.;\u2265",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "destination": {
+            "description": "Destination IP address",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "driver": {
+            "description": "Device driver name for connecting to device, see https://napalm.readthedocs.io/en/latest/support/index.html for list.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The hostname of the device to connect to. Driver must be specified if hostname is not in configuration. Hostname without FQDN can be given if device is in configuration.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "htmlout": {
+            "description": "In addition to the normal output also includes html output.",
+            "position": 10,
+            "required": false,
+            "type": "boolean"
+        },
+        "pingtout": {
+            "default": 2,
+            "description": "Timeout",
+            "position": 7,
+            "required": false,
+            "type": "integer"
+        },
+        "port": {
+            "description": "port for accessing device",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "size": {
+            "default": 100,
+            "description": "Size of Packet to send",
+            "position": 8,
+            "required": false,
+            "type": "integer"
+        },
+        "source": {
+            "description": "Source IP address to run the ping from",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
+        "ttl": {
+            "default": 255,
+            "description": "Time to live / Maximum Hops",
+            "position": 6,
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

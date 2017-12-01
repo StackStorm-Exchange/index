@@ -1,0 +1,14 @@
+{
+    "description": "Check to see whether a sensor already exists",
+    "enabled": true,
+    "entry_point": "check_sensor_list.py",
+    "name": "check_sensor_list",
+    "pack": "kubernetes",
+    "parameters": {
+        "search": {
+            "description": "check whether this sensor already exists",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

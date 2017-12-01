@@ -1,0 +1,14 @@
+{
+    "description": "Delete session attributes matching key. If no keys were specified, delete all stored attributes.",
+    "enabled": true,
+    "entry_point": "session_delete.py",
+    "name": "session_delete",
+    "parameters": {
+        "session_key": {
+            "description": "The key of the session attribute to delete",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

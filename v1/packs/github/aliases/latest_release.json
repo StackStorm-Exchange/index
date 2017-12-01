@@ -1,0 +1,33 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "github.latest_release",
+    "description": "Get the latest release for a repository.",
+    "formats": [
+        {
+            "display": "github release latest [type (enterprise\u00a6online)] {{repository}}",
+            "representation": [
+                "github release latest( type {{github_type}})? {{repository}}"
+            ]
+        }
+    ],
+    "name": "latest_release",
+    "pack": "github",
+    "result": {
+        "extra": {
+            "slack": {
+                "author_icon": "{{execution.result.result.avatar_url}}",
+                "author_name": "{{execution.result.result.author}}",
+                "color": "#00ad52",
+                "footer": "GitHub",
+                "text": "{{execution.result.result.body}}",
+                "title": "{{execution.result.result.tag_name}} - {{execution.result.result.name}}",
+                "title_link": "{{execution.result.result.html_url}}",
+                "ts": "{{execution.result.result.ts_published_at}}"
+            }
+        },
+        "format": "{% if execution.status == 'succeeded' %}\nThe latest release for _{{execution.parameters.repository}}_ is {{execution.result.result.tag_name}} ({{execution.result.result.name}}){~}\n{{execution.result.result.body}}\n{% else %}\nError: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

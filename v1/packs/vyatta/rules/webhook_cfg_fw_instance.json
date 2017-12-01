@@ -1,0 +1,27 @@
+{
+    "action": {
+        "parameters": {
+            "deviceIP": "{{trigger.body.deviceIP}}",
+            "direction": "{{trigger.body.direction}}",
+            "fw_instance_name": "{{trigger.body.fw_instance_name}}",
+            "intfNum": "{{trigger.body.intfNum}}"
+        },
+        "ref": "vyatta.cfg_fw_instance"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "cfg_fw_instance",
+            "type": "contains"
+        }
+    },
+    "description": "Rule configuring a FW instance from a webhook payload",
+    "enabled": true,
+    "name": "webhook_cfg_fw_instance",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

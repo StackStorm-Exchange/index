@@ -1,0 +1,54 @@
+{
+    "description": "Configure an eBGP peering",
+    "enabled": true,
+    "entry_point": "workflows/cfg_ebgp.yaml",
+    "name": "cfg_ebgp",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "eastASN": {
+            "description": "AS number of East vRouter",
+            "position": 1,
+            "required": true,
+            "type": "integer"
+        },
+        "eastDeviceIP": {
+            "description": "IP address of East vRouter",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "eastPeeringIP": {
+            "description": "IP address of the peering on East-end",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "westASN": {
+            "description": "AS number of West vRouter",
+            "position": 4,
+            "required": true,
+            "type": "integer"
+        },
+        "westDeviceIP": {
+            "description": "IP address of West vRouter",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "westPeeringIP": {
+            "description": "IP address of the peering on West-end",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

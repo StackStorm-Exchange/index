@@ -1,0 +1,19 @@
+{
+    "description": "List the locations available",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "list_locations",
+    "parameters": {
+        "action": {
+            "default": "list_locations",
+            "immutable": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

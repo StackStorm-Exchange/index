@@ -1,0 +1,19 @@
+{
+    "description": "Get Cassandra cluster nodes info.",
+    "enabled": true,
+    "entry_point": "get_node_conf.py",
+    "name": "get_node_conf",
+    "parameters": {
+        "cluster_id": {
+            "description": "Name of the cass cluster E.g.: Test-Cluster.",
+            "required": false,
+            "type": "string"
+        },
+        "node_ip": {
+            "description": "IP of the node. You can also specify 'DC' name here; e.g. IAD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

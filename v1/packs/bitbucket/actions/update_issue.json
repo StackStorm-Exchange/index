@@ -1,0 +1,24 @@
+{
+    "description": "Update issue for a given repository",
+    "enabled": true,
+    "entry_point": "update_issue.py",
+    "name": "update_issue",
+    "parameters": {
+        "desc": {
+            "description": "Issue description.",
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the issue to update.",
+            "required": true,
+            "type": "integer"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

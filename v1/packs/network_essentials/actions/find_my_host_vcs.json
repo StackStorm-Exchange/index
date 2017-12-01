@@ -1,0 +1,45 @@
+{
+    "description": "Find the switch port in a VCS fabric to which a virtual or physical host is connected using host IP",
+    "enabled": true,
+    "entry_point": "workflows/find_my_host_vcs.yaml",
+    "name": "find_my_host_vcs",
+    "pack": "network_essentials",
+    "parameters": {
+        "ip_address": {
+            "description": "Host IP address",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Virtual management IP address of the VCS fabric",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 1,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 0,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2",
+    "tags": [
+        {
+            "name": "group",
+            "value": "Manage VCS Fabric Tenants and Edge Ports"
+        },
+        {
+            "name": "suite",
+            "value": "DCFABRIC"
+        }
+    ]
+}

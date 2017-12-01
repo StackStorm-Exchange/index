@@ -1,0 +1,22 @@
+{
+    "description": "Close a board",
+    "enabled": true,
+    "entry_point": "close_board.py",
+    "name": "close_board",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "board_id": {
+            "description": "Board ID to close",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

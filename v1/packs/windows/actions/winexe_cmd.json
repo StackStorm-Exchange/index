@@ -1,0 +1,29 @@
+{
+    "description": "Run a command via WinEXE (samba/RPC)",
+    "enabled": true,
+    "entry_point": "winexe_cmd.py",
+    "name": "winexe_cmd",
+    "parameters": {
+        "command": {
+            "description": "The command to run",
+            "required": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "IP address of a Windows server",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Account password.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Account username.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,71 @@
+{
+    "description": "Remove versions and/or environments from a content view and reassign systems and keys (resource: PUT /katello/api/content_views/:id/remove)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_views.remove",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_version_ids": {
+            "description": "content view version identifiers to be deleted",
+            "required": false,
+            "type": "string"
+        },
+        "environment_ids": {
+            "description": "environment numeric identifiers to be removed",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "content view numeric identifier",
+            "required": true,
+            "type": "string"
+        },
+        "key_content_view_id": {
+            "description": "content view to reassign orphaned activation keys to",
+            "required": false,
+            "type": "string"
+        },
+        "key_environment_id": {
+            "description": "environment to reassign orphaned activation keys to",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "content_views.remove",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "system_content_view_id": {
+            "description": "content view to reassign orphaned systems to",
+            "required": false,
+            "type": "string"
+        },
+        "system_environment_id": {
+            "description": "environment to reassign orphaned systems to",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

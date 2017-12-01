@@ -1,0 +1,34 @@
+{
+    "description": "Send an email.",
+    "enabled": true,
+    "entry_point": "send_email.py",
+    "name": "send_email",
+    "parameters": {
+        "account": {
+            "description": "Account to use. Must be configured in email.yaml",
+            "required": true,
+            "type": "string"
+        },
+        "email_from": {
+            "description": "Email address to use as FROM.",
+            "required": true,
+            "type": "string"
+        },
+        "email_to": {
+            "description": "Email addresses to send TO.",
+            "required": true,
+            "type": "array"
+        },
+        "message": {
+            "description": "Message to send on the email",
+            "required": true,
+            "type": "string"
+        },
+        "subject": {
+            "description": "Subject of the email",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

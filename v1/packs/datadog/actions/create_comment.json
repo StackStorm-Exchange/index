@@ -1,0 +1,34 @@
+{
+    "description": "Add a new comment",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "create_comment",
+    "parameters": {
+        "cls": {
+            "default": "DatadogCreateComment",
+            "immutable": true,
+            "type": "string"
+        },
+        "handle": {
+            "description": "The handle of the user making the comment",
+            "required": false,
+            "type": "string"
+        },
+        "message": {
+            "description": "The comment text",
+            "required": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.comments",
+            "immutable": true,
+            "type": "string"
+        },
+        "related_event_id": {
+            "description": "The id of another comment or event to reply to",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,21 @@
+{
+    "description": "List all project pipelines",
+    "entry_point": "pipeline_list.py",
+    "name": "pipeline.list",
+    "parameters": {
+        "project": {
+            "type": "string"
+        },
+        "token": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "verify_ssl": {
+            "default": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

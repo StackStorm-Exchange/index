@@ -1,0 +1,59 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "sfc.port.pair.group.create",
+    "parameters": {
+        "base": {
+            "default": "sfc port pair group create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the port pair group",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('sfc_port_pair_group_create = neutronclient.osc.v2.sfc.sfc_port_pair_group:CreateSfcPortPairGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the port pair group",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "port_pair": {
+            "default": [],
+            "description": "Port pair (name or ID). This option can be repeated.",
+            "type": "array"
+        },
+        "port_pair_group_parameters": {
+            "description": "Dictionary of port pair group parameters. Currently only one parameter lb-fields is supported. <lb-fields> is a & separated list of load-balancing fields.",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

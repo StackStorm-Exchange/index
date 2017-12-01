@@ -1,0 +1,65 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "compute.service.set",
+    "parameters": {
+        "base": {
+            "default": "compute service set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable service",
+            "type": "boolean"
+        },
+        "disable_reason": {
+            "description": "Reason for disabling the service (in quotas). Should be used with --disable option.",
+            "type": "string"
+        },
+        "down": {
+            "default": false,
+            "description": "Force down service",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable service",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('compute_service_set = openstackclient.compute.v2.service:SetService')",
+            "immutable": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Name of host",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "service": {
+            "description": "Name of service (Binary name)",
+            "required": true,
+            "type": "string"
+        },
+        "up": {
+            "default": false,
+            "description": "Force up service",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

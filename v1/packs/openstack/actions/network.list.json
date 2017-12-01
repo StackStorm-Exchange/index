@@ -1,0 +1,38 @@
+{
+    "description": "List networks",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.list",
+    "parameters": {
+        "base": {
+            "default": "network list",
+            "immutable": true,
+            "type": "string"
+        },
+        "dhcp": {
+            "description": "DHCP agent ID",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_list = openstackclient.network.v2.network:ListNetwork')",
+            "immutable": true,
+            "type": "string"
+        },
+        "external": {
+            "default": false,
+            "description": "List external networks",
+            "type": "boolean"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, html, json, table, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "List additional fields in output",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

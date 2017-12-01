@@ -1,0 +1,72 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "compute.agent.create",
+    "parameters": {
+        "architecture": {
+            "description": "Type of architecture",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "compute agent create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('compute_agent_create = openstackclient.compute.v2.agent:CreateAgent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "hypervisor": {
+            "default": "xen",
+            "description": "Type of hypervisor",
+            "required": true,
+            "type": "string"
+        },
+        "md5hash": {
+            "description": "MD5 hash",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "os": {
+            "description": "Type of OS",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "url": {
+            "description": "URL",
+            "required": true,
+            "type": "string"
+        },
+        "version": {
+            "description": "Version",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

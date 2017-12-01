@@ -1,0 +1,32 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "zendesk.create_ticket",
+    "description": "Create a Zendesk ticket",
+    "formats": [
+        "zendesk create {{ subject }} {{ description }}"
+    ],
+    "name": "create_ticket",
+    "pack": "zendesk",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "{% if execution.result.result.error is not defined %}good{% else %}danger{% endif %}",
+                "fallback": "New Zendesk Ticket",
+                "fields": [
+                    {
+                        "short": true,
+                        "title": "Zendesk Page",
+                        "value": "{% if execution.result.result.error is not defined%}<{{execution.result.result.ticket_url}}|Ticket #{{execution.result.result.ticket_id}}>{% else %}Not Available{% endif %}"
+                    }
+                ],
+                "footer": "Zendesk",
+                "footer_icon": "https://zen-marketing-documentation.s3.amazonaws.com/docs/en/branding-logo-zendesk.png",
+                "title": "{% if execution.result.result.error is not defined %}{{execution.result.result.subject}}{% else %}Error!{% endif %}"
+            }
+        },
+        "format": "{% if execution.result.result.error is not defined %}\nThe ID for the newly created ticket is *{{execution.result.result.ticket_id}}*{~}```{{execution.result.result.description}}```\n{% else %}\nError: {{execution.result.result.error}}\n{% endif %}"
+    }
+}

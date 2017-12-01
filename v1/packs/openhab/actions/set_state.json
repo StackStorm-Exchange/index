@@ -1,0 +1,19 @@
+{
+    "description": "Set state on an item",
+    "enabled": true,
+    "entry_point": "set_state.py",
+    "name": "set_state",
+    "parameters": {
+        "item": {
+            "description": "Item to set state on",
+            "required": true,
+            "type": "string"
+        },
+        "state": {
+            "description": "Value to set state of an item to",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

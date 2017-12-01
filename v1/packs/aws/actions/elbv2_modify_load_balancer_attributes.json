@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "elbv2_modify_load_balancer_attributes",
+    "pack": "aws",
+    "parameters": {
+        "Attributes": {
+            "description": "The load balancer attributes.",
+            "required": true,
+            "type": "array"
+        },
+        "LoadBalancerArn": {
+            "description": "The Amazon Resource Name (ARN) of the load balancer.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "modify_load_balancer_attributes",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "elbv2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

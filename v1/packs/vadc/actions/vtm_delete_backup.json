@@ -1,0 +1,19 @@
+{
+    "description": "vTM - Delete a Configuration Backup",
+    "enabled": true,
+    "entry_point": "vtm_delete_backup.py",
+    "name": "vtm_delete_backup",
+    "parameters": {
+        "name": {
+            "description": "The Backup you wish to restore",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure, the tag or instance ID on BSD.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

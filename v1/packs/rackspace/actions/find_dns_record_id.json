@@ -1,0 +1,19 @@
+{
+    "description": "Find a DNS record ID based on name",
+    "enabled": true,
+    "entry_point": "find_dns_record_id.py",
+    "name": "find_dns_record_id",
+    "parameters": {
+        "name": {
+            "description": "Name of loadbalancer to find ID of",
+            "required": true,
+            "type": "string"
+        },
+        "zone_id": {
+            "description": "ID of a DNS zone record belongs to.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

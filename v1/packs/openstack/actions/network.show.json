@@ -1,0 +1,29 @@
+{
+    "description": "Show network details",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.show",
+    "parameters": {
+        "base": {
+            "default": "network show",
+            "immutable": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_show = openstackclient.network.v2.network:ShowNetwork')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: html, json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "identifier": {
+            "description": "Network to display (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

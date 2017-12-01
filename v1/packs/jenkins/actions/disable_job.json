@@ -1,0 +1,14 @@
+{
+    "description": "Disable Jenkins Job.",
+    "enabled": true,
+    "entry_point": "disable_job.py",
+    "name": "disable_job",
+    "parameters": {
+        "name": {
+            "description": "Name of the job to disable.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

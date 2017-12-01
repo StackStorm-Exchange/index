@@ -1,0 +1,110 @@
+{
+    "description": "WorkFlow to build a base VM hardware and optional power on (CPU, RAM, HDD, NIC)",
+    "enabled": true,
+    "entry_point": "workflows/vm_hw_basic_build.yaml",
+    "name": "vm_hw_basic_build",
+    "pack": "vsphere",
+    "parameters": {
+        "vm_cpu": {
+            "default": 1,
+            "description": "Number of CPU's to attach to this VM",
+            "position": 5,
+            "type": "integer"
+        },
+        "vm_ctrl_type": {
+            "default": "ParaVirtual",
+            "description": "Type of HDD SCSI Controller to be used on this machine",
+            "type": "string"
+        },
+        "vm_datastore": {
+            "description": "Datastore core VM Files will be store against (vmx files). Use unless datastoreCluster is provided.",
+            "position": 7,
+            "required": false,
+            "type": "string"
+        },
+        "vm_dc": {
+            "default": null,
+            "description": "DataCenter to Buid VM within",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "vm_dccluster": {
+            "description": "DataCenter Cluster to Buid VM within",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "vm_description": {
+            "description": "Simple description about Virtual Machine",
+            "position": 13,
+            "type": "string"
+        },
+        "vm_dscluster": {
+            "description": "Datastore Cluster core VM Files will be store against (vmx files).",
+            "position": 8,
+            "required": false,
+            "type": "string"
+        },
+        "vm_guestos": {
+            "default": "rhel6_64guest",
+            "position": 12,
+            "type": "string"
+        },
+        "vm_hdd_dscluster": {
+            "description": "Which Datastore Cluster should be used for this HDD. Blank = same as Base VM",
+            "type": "string"
+        },
+        "vm_hdd_size": {
+            "default": 40,
+            "description": "Size of HDD in GB",
+            "position": 9,
+            "type": "integer"
+        },
+        "vm_name": {
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vm_nic_netname": {
+            "description": "Which network do you want to attach to?",
+            "position": 11,
+            "required": true,
+            "type": "string"
+        },
+        "vm_nic_type": {
+            "default": "vmxnet3",
+            "description": "Type of Network Adapter to attach",
+            "position": 10,
+            "type": "string"
+        },
+        "vm_poweron": {
+            "default": false,
+            "description": "Power VM on after creation (default=True)",
+            "position": 14,
+            "type": "boolean"
+        },
+        "vm_ram": {
+            "default": 2,
+            "description": "RAM (GB) assigned to server)",
+            "position": 6,
+            "type": "integer"
+        },
+        "vm_resourcepool": {
+            "position": 4,
+            "type": "string"
+        },
+        "vm_version": {
+            "default": "vmx-09",
+            "description": "Virtual Machine Hardware Version",
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured Vsphere Connection",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

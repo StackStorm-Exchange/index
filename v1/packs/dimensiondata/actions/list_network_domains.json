@@ -1,0 +1,19 @@
+{
+    "description": "List the network domains available",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "list_network_domains",
+    "parameters": {
+        "action": {
+            "default": "ex_list_network_domains",
+            "immutable": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

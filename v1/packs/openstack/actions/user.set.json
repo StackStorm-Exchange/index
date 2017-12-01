@@ -1,0 +1,67 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "user.set",
+    "parameters": {
+        "base": {
+            "default": "user set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable user",
+            "type": "boolean"
+        },
+        "email": {
+            "description": "Set user email address",
+            "type": "string"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable user (default)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('user_set = openstackclient.identity.v2_0.user:SetUser')",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Set user name",
+            "type": "string"
+        },
+        "password": {
+            "description": "Set user password",
+            "type": "string"
+        },
+        "password_prompt": {
+            "default": false,
+            "description": "Prompt interactively for password",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Set default project (name or ID)",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "user": {
+            "description": "User to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

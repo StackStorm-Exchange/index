@@ -1,0 +1,43 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "gamelift_create_build",
+    "pack": "aws",
+    "parameters": {
+        "Name": {
+            "description": "Descriptive label associated with a build. Build names do not need to be unique. A build name can be changed later using UpdateBuild .",
+            "type": "string"
+        },
+        "OperatingSystem": {
+            "description": "Operating system that the game server binaries are built to run on. This value determines the type of fleet resources that you can use for this build.",
+            "type": "string"
+        },
+        "StorageLocation": {
+            "description": "",
+            "type": "object"
+        },
+        "Version": {
+            "description": "Version associated with this build. Version strings do not need to be unique to a build. A build version can be changed later using UpdateBuild .",
+            "type": "string"
+        },
+        "action": {
+            "default": "create_build",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "gamelift",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,48 @@
+{
+    "description": "remove a server-port to the SLB",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "del_slb_server_port",
+    "parameters": {
+        "action": {
+            "default": "delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "slb.server.port",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "port": {
+            "description": "port-number to remove",
+            "required": true,
+            "type": "string"
+        },
+        "protocol": {
+            "description": "protocol type to remove",
+            "enum": [
+                "tcp",
+                "udp"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "server_name": {
+            "description": "name of target Server to remove port",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

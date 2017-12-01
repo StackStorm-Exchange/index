@@ -1,0 +1,14 @@
+{
+    "description": "Get a device with full details from D42 by its ID",
+    "enabled": true,
+    "entry_point": "get_device_by_id.py",
+    "name": "get_device_by_id",
+    "parameters": {
+        "device_id": {
+            "description": "ID of device on D42.  ",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

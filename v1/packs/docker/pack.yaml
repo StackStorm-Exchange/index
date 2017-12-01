@@ -1,0 +1,26 @@
+ref: docker
+name: docker
+description: st2 content pack containing docker integrations
+keywords:
+- docker
+- containers
+- virtualization
+- cgroups
+version: 0.3.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 3
+    resources:
+    - build_image
+    - pull_image
+    - push_image
+  sensors:
+    count: 1
+    resources:
+    - DockerSensor
+  tests:
+    count: 1
+    resources:
+    - test_sensor_docker_sensor.py

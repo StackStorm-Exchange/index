@@ -1,0 +1,41 @@
+{
+    "class_name": "watchRbacAuthorizationV1alpha1RoleBindingListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Rolebindings objects.",
+    "entry_point": "watchRbacAuthorizationV1alpha1RoleBindingListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for rolebindings event dispatch.",
+            "name": "rolebindings",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

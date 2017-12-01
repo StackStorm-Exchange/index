@@ -1,0 +1,27 @@
+{
+    "description": "Unmanage an Solarwinds Orion node's",
+    "enabled": true,
+    "entry_point": "node_unmanage.py",
+    "name": "node_unmanage",
+    "pack": "orion",
+    "parameters": {
+        "end_date": {
+            "description": "Date and time to remanage node ex. 2017-10-13 20:00 (Y-m-d H:M)",
+            "type": "string"
+        },
+        "minutes": {
+            "description": "Number of minutes to unmanage a node for",
+            "type": "integer"
+        },
+        "node": {
+            "description": "The node to unmanage in Orion.",
+            "required": true,
+            "type": "string"
+        },
+        "start_date": {
+            "description": "Date and time to unmanage node ex. 2017-10-13 11:00 (Y-m-d H:M)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Enable CDN for container and return the CDN URL",
+    "enabled": true,
+    "entry_point": "enable_cdn_for_container.py",
+    "name": "enable_cdn_for_container",
+    "parameters": {
+        "container_name": {
+            "description": "Name of the container to enable the CDN for.",
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

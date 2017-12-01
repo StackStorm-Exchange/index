@@ -1,0 +1,59 @@
+{
+    "description": "Process an github deployment event and install a pack if the environment matches.",
+    "enabled": true,
+    "entry_point": "workflows/deployment_event.yaml",
+    "name": "deployment_event",
+    "parameters": {
+        "creator": {
+            "description": "Who created the deployment (will be used to update the deployment status.",
+            "required": true,
+            "type": "string"
+        },
+        "deploy_desc": {
+            "description": "The description of the deployment.",
+            "required": true,
+            "type": "string"
+        },
+        "deploy_env": {
+            "default": "production",
+            "description": "The environment to target.",
+            "type": "string"
+        },
+        "deploy_id": {
+            "description": "The deployment ID.",
+            "required": true,
+            "type": "integer"
+        },
+        "deploy_payload": {
+            "default": "{}",
+            "description": "Additional payload information from GitHub",
+            "type": "string"
+        },
+        "deploy_ref": {
+            "default": "master",
+            "description": "The branch to deploy (Note: tags are not supported!)",
+            "type": "string"
+        },
+        "deploy_sha": {
+            "description": "The SHA of the commit to deploy.",
+            "required": true,
+            "type": "string"
+        },
+        "repo_fullname": {
+            "description": "The full repo path (e.g. [Org|User]/repo_name",
+            "required": true,
+            "type": "string"
+        },
+        "repo_name": {
+            "description": "The repo name.",
+            "required": true,
+            "type": "string"
+        },
+        "ssh_url": {
+            "description": "The location of the repo for using with SSH.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

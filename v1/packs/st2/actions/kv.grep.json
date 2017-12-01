@@ -1,0 +1,13 @@
+{
+    "description": "Grep for values in datastore",
+    "enabled": true,
+    "entry_point": "kv_grep.py",
+    "name": "kv.grep",
+    "parameters": {
+        "query": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

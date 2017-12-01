@@ -1,0 +1,55 @@
+{
+    "description": "Create an Access Control List",
+    "enabled": true,
+    "entry_point": "create_acl.py",
+    "name": "create_acl",
+    "pack": "network_essentials",
+    "parameters": {
+        "acl_name": {
+            "description": "Unique name for ACL, can be up to 63 characters long, and must begin with a-z, A-Z or 0-9. You can also use underscore (_) or hyphen (-) in an ACL name, but not as the first character.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "acl_type": {
+            "description": "ACL type, extended or standard",
+            "enum": [
+                "standard",
+                "extended"
+            ],
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "address_type": {
+            "default": "ip",
+            "description": "ACL address type, ip or ipv6 or mac",
+            "enum": [
+                "ip",
+                "ipv6",
+                "mac"
+            ],
+            "position": 3,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

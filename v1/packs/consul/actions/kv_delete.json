@@ -1,0 +1,36 @@
+{
+    "description": "Deletes a single key or if *recurse* is True, all keys sharing a prefix.",
+    "enabled": true,
+    "entry_point": "kv_delete.py",
+    "name": "kv_delete",
+    "pack": "consul",
+    "parameters": {
+        "cas": {
+            "description": "An optional flag is used to turn the DELETE into a Check-And-Set operation.",
+            "required": false,
+            "type": "integer"
+        },
+        "dc": {
+            "description": "Optional datacenter that you wish to communicate with.",
+            "required": false,
+            "type": "string"
+        },
+        "key": {
+            "description": "Key to Delete from Consul",
+            "required": true,
+            "type": "string"
+        },
+        "recurse": {
+            "default": false,
+            "description": "Recursively delete keys?",
+            "required": false,
+            "type": "boolean"
+        },
+        "token": {
+            "description": "An optional ACL token to apply to this request.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,81 @@
+{
+    "description": "Register a host with subscription and information. (resource: POST /api/hosts/subscriptions)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.host_subscriptions_create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_id": {
+            "description": "Content View ID",
+            "required": true,
+            "type": "number"
+        },
+        "facts": {
+            "description": "Key-value hash of subscription-manager facts, nesting uses a perioddelimiter (.)",
+            "required": false,
+            "type": "object"
+        },
+        "hypervisor_guest_uuids": {
+            "description": "UUIDs of the virtual guests from the host's hypervisor",
+            "required": false,
+            "type": "array"
+        },
+        "installed_products": {
+            "description": "'description: List of products installed on the host\n parameters:\n     product_id:\n       required: false\n       type: string\n       description: Product id as listed from a host's installed products,         this isnot the same product id as the products api returns\n     product_name:\n       required: false\n       type: string\n       description: Product name as listed from a host's installed products\n     '\n",
+            "required": false,
+            "type": "array"
+        },
+        "lifecycle_environment_id": {
+            "description": "Lifecycle Environment ID",
+            "required": true,
+            "type": "number"
+        },
+        "name": {
+            "description": "Name of the host",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "hosts.host_subscriptions_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "release_version": {
+            "description": "Release version of the content host",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "service_level": {
+            "description": "A service level for auto-healing process, e.g. SELF-SUPPORT",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "uuid": {
+            "description": "UUID to use for registered host, random uuid is generated if not provided",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,40 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "iam_update_user",
+    "pack": "aws",
+    "parameters": {
+        "NewPath": {
+            "description": "New path for the IAM user. Include this parameter only if you're changing the user's path. This paramater allows (per its regex pattern) a string of characters consisting of either a forward slash (/) by itself or a string that must begin and end with forward slashes, containing any ASCII character from the ! (\\u0021) thru the DEL character (\\u007F), including most punctuation characters, digits, and upper and lowercased letters.",
+            "type": "string"
+        },
+        "NewUserName": {
+            "description": "New name for the user. Include this parameter only if you're changing the user's name. This parameter allows (per its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: =,.@-",
+            "type": "string"
+        },
+        "UserName": {
+            "description": "Name of the user to update. If you're changing the name of the user, this is the original user name. This parameter allows (per its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: =,.@-",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "update_user",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "iam",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

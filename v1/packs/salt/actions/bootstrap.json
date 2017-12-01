@@ -1,0 +1,24 @@
+{
+    "description": "Bootstrap servers with salt.cloud runner",
+    "enabled": true,
+    "entry_point": "salt_bootstrap.py",
+    "name": "bootstrap",
+    "parameters": {
+        "instance_id": {
+            "description": "Instance id of the server",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the server",
+            "required": true,
+            "type": "string"
+        },
+        "provider": {
+            "description": "Provider for the server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

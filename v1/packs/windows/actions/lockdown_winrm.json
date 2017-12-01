@@ -1,0 +1,24 @@
+{
+    "description": "Disable remote WinRM access via RPC",
+    "enabled": true,
+    "entry_point": "lockdown_winrm.py",
+    "name": "lockdown_winrm",
+    "parameters": {
+        "host": {
+            "description": "IP address of a Windows server",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Account password.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Account username.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

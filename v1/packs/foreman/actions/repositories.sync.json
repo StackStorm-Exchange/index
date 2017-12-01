@@ -1,0 +1,61 @@
+{
+    "description": "Sync a repository (resource: POST /katello/api/repositories/:id/sync)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repositories.sync",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "repository ID",
+            "required": true,
+            "type": "string"
+        },
+        "incremental": {
+            "description": "perform an incremental import",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "repositories.sync",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "skip_metadata_check": {
+            "description": "Force sync even if no upstream changes are detected. Only used with yumrepositories.",
+            "required": false,
+            "type": "string"
+        },
+        "source_url": {
+            "description": "temporarily override feed URL for sync",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "validate_contents": {
+            "description": "Force a sync and validate the checksums of all content. Only used with yumrepositories.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

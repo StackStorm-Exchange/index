@@ -1,0 +1,16 @@
+{
+    "description": "Read policy from Vault server",
+    "enabled": true,
+    "entry_point": "get_policy.py",
+    "name": "get_policy",
+    "pack": "vault",
+    "parameters": {
+        "name": {
+            "description": "Policy to read from Vault",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

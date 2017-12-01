@@ -1,0 +1,14 @@
+{
+    "description": "List available node images.",
+    "enabled": true,
+    "entry_point": "list_images.py",
+    "name": "list_images",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

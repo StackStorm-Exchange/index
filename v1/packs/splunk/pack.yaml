@@ -1,0 +1,17 @@
+ref: splunk
+name: splunk
+description: Splunk integration pack
+keywords:
+- splunk
+version: 0.5.2
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 1
+    resources:
+    - search
+  aliases:
+    count: 1
+    resources:
+    - search

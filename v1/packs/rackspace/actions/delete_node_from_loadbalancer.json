@@ -1,0 +1,21 @@
+{
+    "description": "Delete a node from a load balancer",
+    "enabled": true,
+    "entry_point": "delete_node_from_loadbalancer.py",
+    "name": "delete_node_from_loadbalancer",
+    "parameters": {
+        "ip": {
+            "description": "IP to remove",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "loadbalancer_id": {
+            "description": "ID of the loadbalancer",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

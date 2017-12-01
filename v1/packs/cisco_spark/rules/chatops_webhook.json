@@ -1,0 +1,18 @@
+{
+    "action": {
+        "parameters": {
+            "messageId": "{{trigger.body.data.id}}",
+            "roomId": "{{trigger.body.data.roomId}}"
+        },
+        "ref": "cisco_spark.handle_webhook"
+    },
+    "enabled": false,
+    "name": "chatops_webhook",
+    "pack": "cisco_spark",
+    "trigger": {
+        "parameters": {
+            "url": "cisco_spark_chatops"
+        },
+        "type": "core.st2.webhook"
+    }
+}

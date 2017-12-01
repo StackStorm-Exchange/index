@@ -1,0 +1,51 @@
+{
+    "description": "Import uploads into a repository (resource: PUT /katello/api/repositories/:id/import_uploads)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repositories.import_uploads",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "Repository id",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "repositories.import_uploads",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "publish_repository": {
+            "description": "Whether or not to regenerate the repository on disk. Default: true",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "upload_ids": {
+            "description": "Array of upload ids to import",
+            "required": true,
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

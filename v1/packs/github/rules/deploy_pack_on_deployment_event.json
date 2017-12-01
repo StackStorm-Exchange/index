@@ -1,0 +1,33 @@
+{
+    "action": {
+        "parameters": {
+            "creator": "{{trigger.body.deployment.creator.login}}",
+            "deploy_desc": "{{trigger.body.deployment.description}}",
+            "deploy_env": "{{trigger.body.deployment.environment}}",
+            "deploy_id": "{{trigger.body.deployment.id}}",
+            "deploy_payload": "{{trigger.body.deployment.payload}}",
+            "deploy_ref": "{{trigger.body.deployment.ref}}",
+            "deploy_sha": "{{trigger.body.deployment.sha}}",
+            "repo_fullname": "{{trigger.body.repository.full_name}}",
+            "repo_name": "{{trigger.body.repository.name}}",
+            "ssh_url": "{{trigger.body.repository.ssh_url}}"
+        },
+        "ref": "github.deployment_event"
+    },
+    "criteria": {
+        "trigger.body": {
+            "pattern": "deployment",
+            "type": "exists"
+        }
+    },
+    "description": "Trigger an ST2 pack.install when receiving a deployment event from GitHub.",
+    "enabled": false,
+    "name": "deploy_pack_on_deployment_event",
+    "pack": "github",
+    "trigger": {
+        "parameters": {
+            "url": "github_deployment_event"
+        },
+        "type": "core.st2.webhook"
+    }
+}

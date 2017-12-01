@@ -1,0 +1,62 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "sfc.port.chain.set",
+    "parameters": {
+        "base": {
+            "default": "sfc port chain set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the port chain",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('sfc_port_chain_set = neutronclient.osc.v2.sfc.sfc_port_chain:SetSfcPortChain')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flow_classifier": {
+            "description": "Add flow classifier (name or ID). This option can be repeated.",
+            "type": "array"
+        },
+        "name": {
+            "description": "Name of the port chain",
+            "type": "string"
+        },
+        "no_flow_classifier": {
+            "default": false,
+            "description": "Associate no flow classifier with the port chain",
+            "type": "boolean"
+        },
+        "no_port_pair_group": {
+            "default": false,
+            "description": "Remove associated port pair group from the port chain.At least one --port-pair-group must be specified together.",
+            "type": "boolean"
+        },
+        "port_chain": {
+            "description": "Port chain to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "port_pair_group": {
+            "description": "Add port pair group (name or ID). This option can be repeated.",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "cmd": "echo \"{{trigger}}\" >> /tmp/activecampaign.webhook_sample.out"
+        },
+        "ref": "core.local"
+    },
+    "criteria": {
+        "trigger.action": {
+            "pattern": "my_action",
+            "type": "equals"
+        }
+    },
+    "description": "Test rule that dumps webhook payload to a file.",
+    "enabled": true,
+    "name": "on_webhook_dump",
+    "pack": "activecampaign",
+    "trigger": {
+        "type": "activecampaign.webhook"
+    }
+}

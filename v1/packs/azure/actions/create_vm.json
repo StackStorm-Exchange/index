@@ -1,0 +1,56 @@
+{
+    "description": "Create a new VM.",
+    "enabled": true,
+    "entry_point": "create_vm.py",
+    "name": "create_vm",
+    "parameters": {
+        "admin_user_id": {
+            "default": "azureuser",
+            "description": "Admin user id.",
+            "required": false,
+            "type": "string"
+        },
+        "cloud_service_name": {
+            "description": "Name of the Azure cloud service to use.",
+            "required": true,
+            "type": "string"
+        },
+        "deployment_name": {
+            "description": "The name of the deployment. If not provided, it defaults to using the cloud service name.",
+            "required": false,
+            "type": "string"
+        },
+        "deployment_slot": {
+            "default": "Production",
+            "description": "Deployment slot (production or staging) to use.",
+            "required": false,
+            "type": "string"
+        },
+        "image_id": {
+            "description": "ID of an image to use.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name fo a new VM.",
+            "required": true,
+            "type": "string"
+        },
+        "new_deployment": {
+            "default": false,
+            "description": "True to create a new deployment instead of using an existing one.",
+            "required": false,
+            "type": "string"
+        },
+        "size_id": {
+            "description": "ID of a size to use.",
+            "required": true,
+            "type": "string"
+        },
+        "storage_service_name": {
+            "description": "Name of the storage service to use.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

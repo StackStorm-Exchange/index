@@ -1,0 +1,52 @@
+{
+    "description": "List packages for a repo",
+    "enabled": true,
+    "entry_point": "list_packages.py",
+    "name": "list_packages",
+    "pack": "packagecloud",
+    "parameters": {
+        "api_token": {
+            "default": "{{st2kv.system.pkg_cloud_token}}",
+            "description": "Token to access the packagecloud API",
+            "type": "string"
+        },
+        "distro_version": {
+            "description": "Select by specific distro",
+            "type": "string"
+        },
+        "package": {
+            "description": "Select by specific packages",
+            "type": "string"
+        },
+        "per_page": {
+            "default": 200,
+            "type": "number"
+        },
+        "release": {
+            "description": "Select by release number",
+            "type": "string"
+        },
+        "repo": {
+            "description": "Name of the packagecloud repo",
+            "required": true,
+            "type": "string"
+        },
+        "sort_packages": {
+            "default": true,
+            "type": "boolean"
+        },
+        "sort_type": {
+            "default": "descending",
+            "enum": [
+                "descending",
+                "ascending"
+            ],
+            "type": "string"
+        },
+        "version": {
+            "description": "Select by package version",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

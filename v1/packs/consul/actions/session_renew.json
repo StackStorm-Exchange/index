@@ -1,0 +1,22 @@
+{
+    "description": "Extend the expiration by the TTL for sessions that have a TTL.",
+    "enabled": true,
+    "entry_point": "session_renew.py",
+    "name": "session_renew",
+    "pack": "consul",
+    "parameters": {
+        "dc": {
+            "description": "The datacenter that this agent will communicate with.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "session_id": {
+            "description": "The session to renew.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

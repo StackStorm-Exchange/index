@@ -1,0 +1,32 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "github.create_release",
+    "description": "Create a new git release.",
+    "formats": [
+        {
+            "display": "github release create {{repository}} [type (enterprise\u00a6online)] [version {{version_increase}] [commit {{target_commitish}}] name {{name}} body {{body}}",
+            "representation": [
+                "github release create {{repository}}( type {{github_type}})?( version {{version_increase}})?( commit {{target_commitish}})? name {{name}} body {{body}}"
+            ]
+        }
+    ],
+    "name": "create_release",
+    "pack": "github",
+    "result": {
+        "extra": {
+            "slack": {
+                "author_name": "{{execution.result.result.author}}",
+                "color": "#00ad52",
+                "footer": "GitHub",
+                "text": "{{execution.result.result.body}}",
+                "title": "{{execution.result.result.tag_name}} - {{execution.result.result.name}}",
+                "title_link": "{{execution.result.result.html_url}}",
+                "ts": "{{execution.result.result.ts_published_at}}"
+            }
+        },
+        "format": "{% if execution.status == 'succeeded' %}\nCreated a new release for _{{execution.parameters.repository}}_ with the tag {{execution.result.result.tag_name}}{~}\n{{execution.result.result.body}}\n{% else %}\nError: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

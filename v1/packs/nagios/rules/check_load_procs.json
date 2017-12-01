@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "cmd": "state R",
+            "hosts": "{{trigger.host}}"
+        },
+        "ref": "check_procs"
+    },
+    "criteria": {
+        "trigger.service": {
+            "pattern": "(.*)_check_loadavg",
+            "type": "matchregex"
+        },
+        "trigger.state_type": {
+            "pattern": "HARD",
+            "type": "matchregex"
+        }
+    },
+    "description": "Check running procs on host when load is high",
+    "enabled": true,
+    "name": "check_load_procs",
+    "pack": "nagios",
+    "trigger": {
+        "type": "nagios.service_state_change"
+    }
+}

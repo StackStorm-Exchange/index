@@ -1,0 +1,46 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.agent.add.router",
+    "parameters": {
+        "agent_id": {
+            "description": "Agent to which a router is added (ID only)",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "network agent add router",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_agent_add_router = openstackclient.network.v2.network_agent:AddRouterToAgent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "l3": {
+            "default": false,
+            "description": "Add router to an L3 agent",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "router": {
+            "description": "Router to be added to an agent (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

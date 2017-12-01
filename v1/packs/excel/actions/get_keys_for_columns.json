@@ -1,0 +1,31 @@
+{
+    "description": "returns an array of the row keys for a given sheet in the excel file",
+    "enabled": true,
+    "entry_point": "get_keys_for_columns.py",
+    "name": "get_keys_for_columns",
+    "parameters": {
+        "excel_file": {
+            "description": "Excel file name",
+            "required": false,
+            "type": "string"
+        },
+        "key_column": {
+            "default": 1,
+            "description": "Starting column for keys",
+            "required": false,
+            "type": "integer"
+        },
+        "sheet": {
+            "description": "Excel sheet name",
+            "required": true,
+            "type": "string"
+        },
+        "variable_name_row": {
+            "default": 1,
+            "description": "Starting row for variable names",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

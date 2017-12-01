@@ -1,0 +1,45 @@
+{
+    "description": "Create an image (resource: POST /api/compute_resources/:compute_resource_id/images)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "compute_resources.images_create",
+    "pack": "foreman",
+    "parameters": {
+        "compute_resource_id": {
+            "required": true,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "image": {
+            "description": "'description: None\n parameters:\n     username:\n       required: true\n       type: string\n       description:\n     operatingsystem_id:\n       required: false\n       type: string\n       description: ID of operating system\n     compute_resource_id:\n       required: false\n       type: string\n       description: ID of compute resource\n     uuid:\n       required: true\n       type: string\n       description:\n     user_data:\n       required: false\n       type: string\n       description: Whether or not the image supports user data\n     architecture_id:\n       required: false\n       type: string\n       description: ID of architecture\n     name:\n       required: true\n       type: string\n       description:\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "operation": {
+            "default": "compute_resources.images_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

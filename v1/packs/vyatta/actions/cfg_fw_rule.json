@@ -1,0 +1,42 @@
+{
+    "description": "Configure a FW rule",
+    "enabled": true,
+    "entry_point": "chains/cfg_fw_rule.yaml",
+    "name": "cfg_fw_rule",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "fw_instance_name": {
+            "description": "Rule-set name",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "rule_content": {
+            "description": "Rule number",
+            "position": 3,
+            "required": true,
+            "type": "object"
+        },
+        "rule_number": {
+            "description": "Rule number",
+            "position": 2,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "action-chain"
+}

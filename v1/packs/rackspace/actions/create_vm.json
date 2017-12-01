@@ -1,0 +1,39 @@
+{
+    "description": "Create a new VM / cloud server",
+    "enabled": true,
+    "entry_point": "create_vm.py",
+    "name": "create_vm",
+    "parameters": {
+        "flavor_id": {
+            "description": "ID of the flavor to use",
+            "required": true,
+            "type": "string"
+        },
+        "image_id": {
+            "description": "ID of an image to use",
+            "required": true,
+            "type": "string"
+        },
+        "key_material": {
+            "description": "Optional public SSH key material",
+            "required": false,
+            "type": "string"
+        },
+        "metadata": {
+            "description": "Optional metadata to associate with the server (key/value pairs).",
+            "required": false,
+            "type": "object"
+        },
+        "name": {
+            "description": "Name for the created server",
+            "required": true,
+            "type": "string"
+        },
+        "region": {
+            "description": "Optional region name. Defaults to region specified in the config.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

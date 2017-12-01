@@ -1,0 +1,39 @@
+{
+    "description": "get lifecycle events from D42 with optional filtering parameters. https://api.device42.com/#asset-device-life-cycle",
+    "enabled": true,
+    "entry_point": "get_lifecycle_events.py",
+    "name": "get_lifecycle_events",
+    "parameters": {
+        "asset": {
+            "description": "filter by asset name",
+            "required": false,
+            "type": "string"
+        },
+        "date_gt": {
+            "description": "filter by date greater than (YYYY-MM-DD)",
+            "required": false,
+            "type": "string"
+        },
+        "date_lt": {
+            "description": "filter by date less than (YYYY-MM-DD)",
+            "required": false,
+            "type": "string"
+        },
+        "device_name": {
+            "description": "Unique name of device on D42.  ",
+            "required": false,
+            "type": "string"
+        },
+        "enduser": {
+            "description": "filter by end user name",
+            "required": false,
+            "type": "string"
+        },
+        "lc_type": {
+            "description": "filter by existing event type",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

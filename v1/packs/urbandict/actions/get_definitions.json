@@ -1,0 +1,14 @@
+{
+    "description": "Retrieve definitions from urbandict for the provided term.",
+    "enabled": true,
+    "entry_point": "get_definitions.py",
+    "name": "get_definitions",
+    "parameters": {
+        "term": {
+            "description": "Term to retrieve the definitions for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

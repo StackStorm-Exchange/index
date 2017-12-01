@@ -1,0 +1,11 @@
+ref: zookeeper
+name: zookeeper
+description: st2 integration pack with zookeeper
+version: 0.2.1
+author: Cody A. Ray
+email: talktome@codyaray.com
+content:
+  actions:
+    count: 1
+    resources:
+    - non_blocking_lease

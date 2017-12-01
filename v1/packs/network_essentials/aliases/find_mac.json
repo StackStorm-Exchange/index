@@ -1,0 +1,8 @@
+{
+    "action_ref": "network_essentials.find_mac",
+    "description": "Find the interface/Port-Channel/Tunnel where the MAC address shows up in a VCS fabric",
+    "formats": [
+        "find MAC {{macs}} on {{host}}"
+    ],
+    "name": "find_mac"
+}

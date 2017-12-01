@@ -1,0 +1,18 @@
+{
+    "description": "get ipv6 address of vm",
+    "enabled": true,
+    "entry_point": "get_ipv6_address_of_vm.py",
+    "name": "get_ipv6_address_of_vm",
+    "parameters": {
+        "id": {
+            "description": "The ID of the VM",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

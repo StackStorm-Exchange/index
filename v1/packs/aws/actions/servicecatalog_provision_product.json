@@ -1,0 +1,67 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "servicecatalog_provision_product",
+    "pack": "aws",
+    "parameters": {
+        "AcceptLanguage": {
+            "description": "The language code to use for this operation. Supported language codes are as follows: 'en' (English) 'jp' (Japanese) 'zh' (Chinese) If no code is specified, 'en' is used as the default.",
+            "type": "string"
+        },
+        "NotificationArns": {
+            "description": "Passed to CloudFormation. The SNS topic ARNs to which to publish stack-related events.",
+            "type": "array"
+        },
+        "PathId": {
+            "description": "The identifier of the path for this product's provisioning. This value is optional if the product has a default path, and is required if there is more than one path for the specified product.",
+            "type": "string"
+        },
+        "ProductId": {
+            "description": "The product identifier.",
+            "required": true,
+            "type": "string"
+        },
+        "ProvisionToken": {
+            "description": "An idempotency token that uniquely identifies the provisioning request. ",
+            "required": true,
+            "type": "string"
+        },
+        "ProvisionedProductName": {
+            "description": "A user-friendly name to identify the ProvisionedProduct object. This value must be unique for the AWS account and cannot be updated after the product is provisioned.",
+            "required": true,
+            "type": "string"
+        },
+        "ProvisioningArtifactId": {
+            "description": "The provisioning artifact identifier for this product.",
+            "required": true,
+            "type": "string"
+        },
+        "ProvisioningParameters": {
+            "description": "Parameters specified by the administrator that are required for provisioning the product.",
+            "type": "array"
+        },
+        "Tags": {
+            "description": "A list of tags to use as provisioning options.",
+            "type": "array"
+        },
+        "action": {
+            "default": "provision_product",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "servicecatalog",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

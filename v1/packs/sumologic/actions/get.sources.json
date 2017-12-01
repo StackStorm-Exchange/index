@@ -1,0 +1,14 @@
+{
+    "description": "Get a list of sources by ID of collector. Returns array of objects.",
+    "enabled": true,
+    "entry_point": "get_sources.py",
+    "name": "get.sources",
+    "parameters": {
+        "collector_id": {
+            "description": "ID of the collectors to get sources for.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

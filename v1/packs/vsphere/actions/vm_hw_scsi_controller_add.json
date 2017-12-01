@@ -1,0 +1,51 @@
+{
+    "description": "Add SCSI Controller to VM. You must provide at least one of VM_ID or Name",
+    "enabled": true,
+    "entry_point": "vm_hw_scsi_controller_add.py",
+    "name": "vm_hw_scsi_controller_add",
+    "parameters": {
+        "controller_type": {
+            "default": "ParaVirtual",
+            "description": "Type of Controller to Add",
+            "enum": [
+                "ParaVirtual",
+                "BusLogic",
+                "LSILogic",
+                "LSILogicSAS"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "scsi_sharing": {
+            "default": "None",
+            "description": "Type of SCSI Bus Sharing",
+            "enum": [
+                "None",
+                "Physical",
+                "Virtual"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "Virtual Machine ID",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "Virtual Machine Name",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vsphere connection details",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

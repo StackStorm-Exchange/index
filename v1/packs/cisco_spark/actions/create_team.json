@@ -1,0 +1,24 @@
+{
+    "description": "Create a new team",
+    "enabled": true,
+    "entry_point": "generic_action.py",
+    "name": "create_team",
+    "parameters": {
+        "accessor": {
+            "default": "teams",
+            "immutable": true,
+            "type": "string"
+        },
+        "method_name": {
+            "default": "create",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Team name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

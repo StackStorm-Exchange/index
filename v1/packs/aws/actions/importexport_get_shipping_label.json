@@ -1,0 +1,76 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "importexport_get_shipping_label",
+    "pack": "aws",
+    "parameters": {
+        "APIVersion": {
+            "description": "",
+            "type": "string"
+        },
+        "action": {
+            "default": "get_shipping_label",
+            "immutable": true,
+            "type": "string"
+        },
+        "city": {
+            "description": "",
+            "type": "string"
+        },
+        "cls": {
+            "default": "importexport",
+            "type": "string"
+        },
+        "company": {
+            "description": "",
+            "type": "string"
+        },
+        "country": {
+            "description": "",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "jobIds": {
+            "description": "",
+            "required": true,
+            "type": "array"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "",
+            "type": "string"
+        },
+        "phoneNumber": {
+            "description": "",
+            "type": "string"
+        },
+        "postalCode": {
+            "description": "",
+            "type": "string"
+        },
+        "stateOrProvince": {
+            "description": "",
+            "type": "string"
+        },
+        "street1": {
+            "description": "",
+            "type": "string"
+        },
+        "street2": {
+            "description": "",
+            "type": "string"
+        },
+        "street3": {
+            "description": "",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

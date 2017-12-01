@@ -1,0 +1,57 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cognito-identity_create_identity_pool",
+    "pack": "aws",
+    "parameters": {
+        "AllowUnauthenticatedIdentities": {
+            "description": "TRUE if the identity pool supports unauthenticated logins.",
+            "required": true,
+            "type": "boolean"
+        },
+        "CognitoIdentityProviders": {
+            "description": "An array of Amazon Cognito Identity user pools and their client IDs.",
+            "type": "array"
+        },
+        "DeveloperProviderName": {
+            "description": "The 'domain' by which Cognito will refer to your users. This name acts as a placeholder that allows your backend and the Cognito service to communicate about the developer provider. For the DeveloperProviderName, you can use letters as well as period (.), underscore (_), and dash (-). Once you have set a developer provider name, you cannot change it. Please take care in setting this parameter.",
+            "type": "string"
+        },
+        "IdentityPoolName": {
+            "description": "A string that you provide.",
+            "required": true,
+            "type": "string"
+        },
+        "OpenIdConnectProviderARNs": {
+            "description": "A list of OpendID Connect provider ARNs.",
+            "type": "array"
+        },
+        "SamlProviderARNs": {
+            "description": "An array of Amazon Resource Names (ARNs) of the SAML provider for your identity pool.",
+            "type": "array"
+        },
+        "SupportedLoginProviders": {
+            "description": "Optional key:value pairs mapping provider names to provider app IDs.",
+            "type": "object"
+        },
+        "action": {
+            "default": "create_identity_pool",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cognito-identity",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

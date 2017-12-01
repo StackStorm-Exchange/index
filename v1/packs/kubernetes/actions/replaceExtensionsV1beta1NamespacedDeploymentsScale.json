@@ -1,0 +1,33 @@
+{
+    "description": "replace scale of the specified Scale",
+    "enabled": true,
+    "entry_point": "replaceExtensionsV1beta1NamespacedDeploymentsScale.py",
+    "name": "replaceExtensionsV1beta1NamespacedDeploymentsScale",
+    "pack": "kubernetes",
+    "parameters": {
+        "body": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "config_override": {
+            "description": "override stackstorm config",
+            "type": "object"
+        },
+        "name": {
+            "description": "name of the Scale",
+            "required": true,
+            "type": "string"
+        },
+        "namespace": {
+            "description": "object name and auth scope, such as for teams and projects",
+            "required": true,
+            "type": "string"
+        },
+        "pretty": {
+            "description": "If 'true', then the output is pretty printed.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

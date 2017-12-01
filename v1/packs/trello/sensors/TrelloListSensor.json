@@ -1,0 +1,64 @@
+{
+    "class_name": "TrelloListSensor",
+    "description": "Sensor which monitors Trello list for a new actions (events)",
+    "entry_point": "list_actions_sensor.py",
+    "poll_interval": 15,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new action (event) occurred in specified Trello list",
+            "name": "new_action",
+            "payload_schema": {
+                "properties": {
+                    "data": {
+                        "description": "Structurized data returned for action, depends on action type",
+                        "type": "object"
+                    },
+                    "date": {
+                        "description": "When action occurred",
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "Unique action ID",
+                        "type": "string"
+                    },
+                    "idMemberCreator": {
+                        "description": "User ID who initiated the action",
+                        "type": "string"
+                    },
+                    "memberCreator": {
+                        "description": "Additional info about user who initiated action",
+                        "properties": {
+                            "avatarHash": {
+                                "description": "Avatar hash (md5)",
+                                "type": "string"
+                            },
+                            "fullName": {
+                                "description": "User's full name",
+                                "type": "string"
+                            },
+                            "id": {
+                                "description": "User ID",
+                                "type": "string"
+                            },
+                            "initials": {
+                                "description": "User's initials",
+                                "type": "string"
+                            },
+                            "username": {
+                                "description": "Username",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": {
+                        "description": "Action type (ex: createCard)",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

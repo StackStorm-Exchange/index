@@ -1,0 +1,22 @@
+ref: typeform
+name: typeform
+description: Typeform service integration pack
+keywords:
+- typeform
+- web forms
+version: 0.4.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 1
+    resources:
+    - get_results
+  rules:
+    count: 1
+    resources:
+    - form_submission
+  sensors:
+    count: 1
+    resources:
+    - TypeformRegistrationSensor

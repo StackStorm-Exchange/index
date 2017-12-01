@@ -1,0 +1,35 @@
+ref: mmonit
+name: mmonit
+description: st2 content pack containing mmonit integrations
+keywords:
+- monitoring
+- mmonit
+version: 0.4.1
+author: Itxaka Serrano Garcia
+email: itxakaserrano@gmail.com
+content:
+  actions:
+    count: 18
+    resources:
+    - action_host
+    - delete_host
+    - dismiss_event
+    - get_event
+    - get_host
+    - get_status_host
+    - get_uptime_hosts
+    - list_events
+    - list_hosts
+    - list_status_hosts
+    - list_uptime_hosts
+    - session_delete
+    - session_get
+    - session_put
+    - summary_events
+    - summary_status
+    - test_connection_to_host
+    - update_host
+  sensors:
+    count: 1
+    resources:
+    - MmonitEventsSensor

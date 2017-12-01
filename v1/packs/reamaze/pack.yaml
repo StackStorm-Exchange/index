@@ -1,0 +1,16 @@
+ref: reamaze
+name: reamaze
+description: reamaze Integration Pack
+version: 0.2.1
+author: James Fryman
+email: james@stackstorm.com
+content:
+  actions:
+    count: 6
+    resources:
+    - article_create
+    - article_get
+    - article_search
+    - article_update
+    - create_message
+    - get_conversations

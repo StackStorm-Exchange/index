@@ -1,0 +1,27 @@
+{
+    "description": "Create a new loadbalancer.",
+    "enabled": true,
+    "entry_point": "create_loadbalancer.py",
+    "name": "create_loadbalancer",
+    "parameters": {
+        "name": {
+            "description": "Name of the new loadbalancer",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "default": 80,
+            "description": "Port the loadbalancer should listen on.",
+            "position": 2,
+            "type": "integer"
+        },
+        "protocol": {
+            "default": "HTTP",
+            "description": "Loadbalancer protocol",
+            "position": 3,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "returns an array in json format of the sheet names in the excel file",
+    "enabled": true,
+    "entry_point": "get_sheets.py",
+    "name": "get_sheets",
+    "parameters": {
+        "excel_file": {
+            "description": "Excel file name",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

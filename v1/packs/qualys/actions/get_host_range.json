@@ -1,0 +1,19 @@
+{
+    "description": "Get the status of a range of hosts (IP range)",
+    "enabled": true,
+    "entry_point": "get_host.py",
+    "name": "get_host_range",
+    "parameters": {
+        "host_end": {
+            "description": "The last host in the range",
+            "required": true,
+            "type": "string"
+        },
+        "host_start": {
+            "description": "The first host",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

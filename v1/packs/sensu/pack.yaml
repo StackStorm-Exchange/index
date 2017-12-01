@@ -1,0 +1,46 @@
+ref: sensu
+name: sensu
+description: st2 content pack containing sensu integrations
+keywords:
+- sensu
+- monitoring
+- alerting
+version: 0.5.1
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 19
+    resources:
+    - check_aggregates
+    - check_aggregates_delete
+    - aggregate_list
+    - check_info
+    - check_list
+    - check_request
+    - client_delete
+    - client_history
+    - client_info
+    - client_list
+    - event_client_list
+    - event_delete
+    - event_info
+    - event_list
+    - event_resolve
+    - health
+    - info
+    - silence
+    - unsilence
+  rules:
+    count: 2
+    resources:
+    - loadavg_check
+    - on_action_runner_check
+  tests:
+    count: 1
+    resources:
+    - test_sensu_handler.py
+  triggers:
+    count: 1
+    resources:
+    - event_handler

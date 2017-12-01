@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cognito-idp_admin_set_user_settings",
+    "pack": "aws",
+    "parameters": {
+        "MFAOptions": {
+            "description": "Specifies the options for MFA (e.g., email or phone number).",
+            "required": true,
+            "type": "array"
+        },
+        "UserPoolId": {
+            "description": "The user pool ID for the user pool where you want to set the user's settings, such as MFA options.",
+            "required": true,
+            "type": "string"
+        },
+        "Username": {
+            "description": "The user name of the user for whom you wish to set user settings.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "admin_set_user_settings",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cognito-idp",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,23 @@
+{
+    "description": "List the members of a load balancer pool",
+    "enabled": true,
+    "entry_point": "run_lb.py",
+    "name": "list_pool_members",
+    "parameters": {
+        "action": {
+            "default": "ex_get_pool_members",
+            "immutable": true,
+            "type": "string"
+        },
+        "pool_id": {
+            "description": "The Load Balancer Pool ID",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

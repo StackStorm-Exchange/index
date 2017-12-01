@@ -1,0 +1,36 @@
+{
+    "description": "print detailed help for another command\n    ",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "help",
+    "parameters": {
+        "base": {
+            "default": "help",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "cmd": {
+            "description": "name of the command",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "<cliff.commandmanager.EntryPointWrapper object at 0x7f284050d5d0>",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

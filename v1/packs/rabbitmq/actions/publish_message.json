@@ -1,0 +1,77 @@
+{
+    "description": "Publish a message in RabbitMQ",
+    "enabled": true,
+    "entry_point": "publish_message.py",
+    "name": "publish_message",
+    "parameters": {
+        "exchange": {
+            "default": "",
+            "description": "The exchange to publish the message on",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "exchange_durable": {
+            "default": false,
+            "description": "Whether or not the exchange is durable",
+            "position": 7,
+            "required": true,
+            "type": "boolean"
+        },
+        "exchange_type": {
+            "default": "direct",
+            "description": "The type of exchange",
+            "position": 6,
+            "required": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Hostname or IP Address to connect to",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "message": {
+            "description": "The message",
+            "position": 9,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "guest",
+            "description": "The password to authenticate with",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "port": {
+            "default": 5672,
+            "description": "TCP port to connect to",
+            "position": 1,
+            "required": true,
+            "type": "integer"
+        },
+        "routing_key": {
+            "default": "",
+            "description": "The routing key for the message",
+            "position": 8,
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "guest",
+            "description": "The username to connect with",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "virtual_host": {
+            "default": "/",
+            "description": "RabbitMQ virtual host to use",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

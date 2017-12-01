@@ -1,0 +1,25 @@
+{
+    "action": {
+        "parameters": {
+            "deviceIP": "{{trigger.body.deviceIP}}",
+            "subnet": "{{trigger.body.subnet}}"
+        },
+        "ref": "vyatta.del_ip_route"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "del_ip_route",
+            "type": "contains"
+        }
+    },
+    "description": "Rule deleting an interface from a webhook payload",
+    "enabled": true,
+    "name": "webhook_del_ip_route",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "s3_put_bucket_inventory_configuration",
+    "pack": "aws",
+    "parameters": {
+        "Bucket": {
+            "description": "The name of the bucket where the inventory configuration will be stored.",
+            "required": true,
+            "type": "string"
+        },
+        "Id": {
+            "description": "The ID used to identify the inventory configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "InventoryConfiguration": {
+            "description": "Specifies the inventory configuration.",
+            "required": true,
+            "type": "object"
+        },
+        "action": {
+            "default": "put_bucket_inventory_configuration",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "s3",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

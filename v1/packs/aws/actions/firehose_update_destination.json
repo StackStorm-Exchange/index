@@ -1,0 +1,58 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "firehose_update_destination",
+    "pack": "aws",
+    "parameters": {
+        "CurrentDeliveryStreamVersionId": {
+            "description": "Obtain this value from the VersionId result of DeliveryStreamDescription. This value is required, and helps the service to perform conditional operations. For example, if there is a interleaving update and this value is null, then the update destination fails. After the update is successful, the VersionId value is updated. The service then performs a merge of the old configuration with the new configuration.",
+            "required": true,
+            "type": "string"
+        },
+        "DeliveryStreamName": {
+            "description": "The name of the delivery stream.",
+            "required": true,
+            "type": "string"
+        },
+        "DestinationId": {
+            "description": "The ID of the destination.",
+            "required": true,
+            "type": "string"
+        },
+        "ElasticsearchDestinationUpdate": {
+            "description": "Describes an update for a destination in Amazon ES.",
+            "type": "object"
+        },
+        "ExtendedS3DestinationUpdate": {
+            "description": "Describes an update for a destination in Amazon S3.",
+            "type": "object"
+        },
+        "RedshiftDestinationUpdate": {
+            "description": "Describes an update for a destination in Amazon Redshift.",
+            "type": "object"
+        },
+        "S3DestinationUpdate": {
+            "description": "[Deprecated] Describes an update for a destination in Amazon S3.",
+            "type": "object"
+        },
+        "action": {
+            "default": "update_destination",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "firehose",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

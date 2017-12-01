@@ -1,0 +1,47 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cognito-sync_register_device",
+    "pack": "aws",
+    "parameters": {
+        "IdentityId": {
+            "description": "The unique ID for this identity.",
+            "required": true,
+            "type": "string"
+        },
+        "IdentityPoolId": {
+            "description": "A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. Here, the ID of the pool that the identity belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "Platform": {
+            "description": "The SNS platform type (e.g. GCM, SDM, APNS, APNS_SANDBOX).",
+            "required": true,
+            "type": "string"
+        },
+        "Token": {
+            "description": "The push token.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "register_device",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cognito-sync",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

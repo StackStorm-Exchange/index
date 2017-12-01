@@ -1,0 +1,41 @@
+{
+    "description": "Create a policy (resource: POST /api/v2/compliance/policies)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "compliance.foreman_openscap_policies_create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "compliance.foreman_openscap_policies_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "policy": {
+            "description": "'description: None\n parameters:\n     name:\n       required: true\n       type: string\n       description: Policy name\n     scap_content_id:\n       required: true\n       type: number\n       description: Policy scap content id\n     period:\n       required: true\n       type: string\n       description: Policy schedule period\n     weekday:\n       required: true\n       type: string\n       description: Policy schedule weekday\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     scap_content_profile_id:\n       required: true\n       type: number\n       description: Policy scap content profile id\n     hostgroup_ids:\n       required: false\n       type: array\n       description: Apply policy to hostgroups\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     description:\n       required: false\n       type: string\n       description: Policy description\n     '",
+            "required": true,
+            "type": "object"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

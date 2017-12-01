@@ -1,0 +1,27 @@
+{
+    "description": "This sends a SMS using twilio.",
+    "enabled": true,
+    "entry_point": "send_sms.py",
+    "name": "send_sms",
+    "parameters": {
+        "body": {
+            "description": "Body of the message.",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "from_number": {
+            "description": "Your twilio 'from' number in E.164 format. Example +14151234567.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "to_number": {
+            "description": "Recipient number in E.164 format. Example +14151234567.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

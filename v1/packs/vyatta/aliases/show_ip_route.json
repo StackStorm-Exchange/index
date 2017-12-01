@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.show_ip_route",
+    "description": "Perform a \"show ip route\"",
+    "formats": [
+        "(show|sh) ip (route|ro) on {{deviceIP}}"
+    ],
+    "name": "show_ip_route",
+    "result": {
+        "enabled": true
+    }
+}

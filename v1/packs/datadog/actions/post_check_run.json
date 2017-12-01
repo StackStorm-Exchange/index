@@ -1,0 +1,49 @@
+{
+    "description": "Post check run",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post_check_run",
+    "parameters": {
+        "check": {
+            "description": "The text for the message",
+            "required": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "DatadogPostCheckRun",
+            "immutable": true,
+            "type": "string"
+        },
+        "host_name": {
+            "description": "The name of the host submitting the check",
+            "required": true,
+            "type": "string"
+        },
+        "message": {
+            "description": "A description of why this status occurred",
+            "required": false,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.checks",
+            "immutable": true,
+            "type": "string"
+        },
+        "status": {
+            "description": "An integer for the status of the check. Options: '0': OK, '1': WARNING, '2': CRITICAL, '3': UNKNOWN",
+            "required": true,
+            "type": "integer"
+        },
+        "tags": {
+            "description": "A list of key:val tags for this check",
+            "required": false,
+            "type": "array"
+        },
+        "timestamp": {
+            "description": "POSIX timestamp of the event",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

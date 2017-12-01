@@ -1,0 +1,19 @@
+{
+    "description": "Stop a vehicle AC",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "stop_vehicle_ac",
+    "parameters": {
+        "action": {
+            "default": "auto_conditioning_stop",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

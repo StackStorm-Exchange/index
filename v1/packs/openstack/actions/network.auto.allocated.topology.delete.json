@@ -1,0 +1,39 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "network.auto.allocated.topology.delete",
+    "parameters": {
+        "base": {
+            "default": "network auto allocated topology delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('network_auto_allocated_topology_delete = openstackclient.network.v2.network_auto_allocated_topology:DeleteAutoAllocatedTopology')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "Delete auto allocated topology for a given project. Default is the current project",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

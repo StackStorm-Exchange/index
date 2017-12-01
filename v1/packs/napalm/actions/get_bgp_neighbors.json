@@ -1,0 +1,52 @@
+{
+    "description": "Get the BGP neighbors from a device using NAPALM.",
+    "enabled": true,
+    "entry_point": "get_bgp_neighbors.py",
+    "name": "get_bgp_neighbors",
+    "parameters": {
+        "credentials": {
+            "description": "The credentials group which contains the username and password to log in",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "driver": {
+            "description": "Device driver name for connecting to device, see https://napalm.readthedocs.io/en/latest/support/index.html for list.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The hostname of the device to connect to. Driver must be specified if hostname is not in configuration. Hostname without FQDN can be given if device is in configuration.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "htmlout": {
+            "description": "In addition to the normal output also includes html output.",
+            "position": 6,
+            "required": false,
+            "type": "boolean"
+        },
+        "neighbor": {
+            "description": "Get a specific BGP neighbor, for more detailed neighbor output use the get_bgp_neighbors_detail action instead.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
+        "port": {
+            "description": "port for accessing device",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "routing_instance": {
+            "default": "global",
+            "description": "Get BGP neighbor details for a speific routing instance.",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

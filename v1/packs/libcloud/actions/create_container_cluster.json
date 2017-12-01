@@ -1,0 +1,19 @@
+{
+    "description": "Create a cluster container",
+    "enabled": true,
+    "entry_point": "create_container_cluster.py",
+    "name": "create_container_cluster",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the cluster",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

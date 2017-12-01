@@ -1,0 +1,20 @@
+{
+    "description": "Update the status of a Zabbix Host",
+    "enabled": true,
+    "entry_point": "host_update_status.py",
+    "name": "host_update_status",
+    "pack": "zabbix",
+    "parameters": {
+        "host": {
+            "description": "Name of the Zabbix Host",
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "description": "Status to set the Zabbix Host to valid values: 0 - monitored host 1 - unmonitored host",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

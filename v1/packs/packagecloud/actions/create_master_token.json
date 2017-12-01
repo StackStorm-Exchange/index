@@ -1,0 +1,33 @@
+{
+    "description": "create master token for a repository",
+    "enabled": true,
+    "name": "create_master_token",
+    "pack": "packagecloud",
+    "parameters": {
+        "cmd": {
+            "default": "package_cloud master_token create {{user}}/{{repository}} {{token_name}} {% if concise -%} | grep 'Master token' | awk '{ print $6}' {% endif %}",
+            "immutable": true
+        },
+        "concise": {
+            "default": false,
+            "type": "boolean"
+        },
+        "repository": {
+            "required": true,
+            "type": "string"
+        },
+        "sudo": {
+            "default": true,
+            "immutable": true
+        },
+        "token_name": {
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "local-shell-cmd"
+}

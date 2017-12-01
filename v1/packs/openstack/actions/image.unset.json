@@ -1,0 +1,46 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "image.unset",
+    "parameters": {
+        "base": {
+            "default": "image unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('image_unset = openstackclient.image.v2.image:UnsetImage')",
+            "immutable": true,
+            "type": "string"
+        },
+        "image": {
+            "description": "Image to modify (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "default": [],
+            "description": "Unset a property on this image (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "tag": {
+            "default": [],
+            "description": "Unset a tag on this image (repeat option to set multiple tags)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,51 @@
+{
+    "description": "List the available functions.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "orchestration.template.function.list",
+    "parameters": {
+        "base": {
+            "default": "orchestration template function list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('orchestration_template_function_list = heatclient.osc.v1.template:FunctionList')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "template_version": {
+            "description": "Template version to get the functions for",
+            "required": true,
+            "type": "string"
+        },
+        "with_conditions": {
+            "default": false,
+            "description": "Show condition functions for template.",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

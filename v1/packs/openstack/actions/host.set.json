@@ -1,0 +1,56 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "host.set",
+    "parameters": {
+        "base": {
+            "default": "host set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable the host",
+            "type": "boolean"
+        },
+        "disable_maintenance": {
+            "default": false,
+            "description": "Disable maintenance mode for the host",
+            "type": "boolean"
+        },
+        "enable": {
+            "default": false,
+            "description": "Enable the host",
+            "type": "boolean"
+        },
+        "enable_maintenance": {
+            "default": false,
+            "description": "Enable maintenance mode for the host",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('host_set = openstackclient.compute.v2.host:SetHost')",
+            "immutable": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Host to modify (name only)",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

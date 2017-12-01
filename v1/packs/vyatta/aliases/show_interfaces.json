@@ -1,0 +1,11 @@
+{
+    "action_ref": "vyatta.show_interfaces",
+    "description": "Perform a \"show interfaces\"",
+    "formats": [
+        "(show|sh) (interfaces|int) on {{deviceIP}}"
+    ],
+    "name": "show_interfaces",
+    "result": {
+        "enabled": true
+    }
+}

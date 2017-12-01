@@ -1,0 +1,42 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cognito-identity_unlink_identity",
+    "pack": "aws",
+    "parameters": {
+        "IdentityId": {
+            "description": "A unique identifier in the format REGION:GUID.",
+            "required": true,
+            "type": "string"
+        },
+        "Logins": {
+            "description": "A set of optional name-value pairs that map provider names to provider tokens.",
+            "required": true,
+            "type": "object"
+        },
+        "LoginsToRemove": {
+            "description": "Provider names to unlink from this identity.",
+            "required": true,
+            "type": "array"
+        },
+        "action": {
+            "default": "unlink_identity",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cognito-identity",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

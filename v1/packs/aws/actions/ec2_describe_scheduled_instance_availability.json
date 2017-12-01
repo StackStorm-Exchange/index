@@ -1,0 +1,61 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_describe_scheduled_instance_availability",
+    "pack": "aws",
+    "parameters": {
+        "DryRun": {
+            "description": "Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.",
+            "type": "boolean"
+        },
+        "Filters": {
+            "description": "One or more filters.    availability-zone - The Availability Zone (for example, us-west-2a).    instance-type - The instance type (for example, c4.large).    network-platform - The network platform (EC2-Classic or EC2-VPC).    platform - The platform (Linux/UNIX or Windows).  ",
+            "type": "array"
+        },
+        "FirstSlotStartTimeRange": {
+            "description": "The time period for the first schedule to start.",
+            "required": true,
+            "type": "object"
+        },
+        "MaxResults": {
+            "description": "The maximum number of results to return in a single call. This value can be between 5 and 300. The default value is 300. To retrieve the remaining results, make another call with the returned NextToken value.",
+            "type": "integer"
+        },
+        "MaxSlotDurationInHours": {
+            "description": "The maximum available duration, in hours. This value must be greater than MinSlotDurationInHours and less than 1,720.",
+            "type": "integer"
+        },
+        "MinSlotDurationInHours": {
+            "description": "The minimum available duration, in hours. The minimum required duration is 1,200 hours per year. For example, the minimum daily schedule is 4 hours, the minimum weekly schedule is 24 hours, and the minimum monthly schedule is 100 hours.",
+            "type": "integer"
+        },
+        "NextToken": {
+            "description": "The token for the next set of results.",
+            "type": "string"
+        },
+        "Recurrence": {
+            "description": "The schedule recurrence.",
+            "required": true,
+            "type": "object"
+        },
+        "action": {
+            "default": "describe_scheduled_instance_availability",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

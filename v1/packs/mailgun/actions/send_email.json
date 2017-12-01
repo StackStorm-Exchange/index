@@ -1,0 +1,34 @@
+{
+    "description": "Send email via Mailgun HTTP API.",
+    "enabled": true,
+    "entry_point": "send_email.py",
+    "name": "send_email",
+    "parameters": {
+        "html": {
+            "description": "Email body (html version)",
+            "required": false,
+            "type": "string"
+        },
+        "recipient": {
+            "description": "Reciepient (e.g. \"recipient@example.com\" or \"John Doe <recipient@example.com>\")",
+            "required": true,
+            "type": "string"
+        },
+        "sender": {
+            "description": "Sender (e.g. \"sender@example.com\" or \"John Doe <sender@example.com>\")",
+            "required": true,
+            "type": "string"
+        },
+        "subject": {
+            "description": "Email subject",
+            "required": true,
+            "type": "string"
+        },
+        "text": {
+            "description": "Email body (plain text version)",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

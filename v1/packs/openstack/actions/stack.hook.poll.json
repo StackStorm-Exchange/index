@@ -1,0 +1,50 @@
+{
+    "description": "List resources with pending hook for a stack.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "stack.hook.poll",
+    "parameters": {
+        "base": {
+            "default": "stack hook poll",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('stack_hook_poll = heatclient.osc.v1.stack:StackHookPoll')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "nested_depth": {
+            "description": "Depth of nested stacks from which to display hooks",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "stack": {
+            "description": "Stack to display (name or ID)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

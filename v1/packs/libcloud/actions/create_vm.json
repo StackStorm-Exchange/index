@@ -1,0 +1,39 @@
+{
+    "description": "Create a new VM.",
+    "enabled": true,
+    "entry_point": "create_vm.py",
+    "name": "create_vm",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        },
+        "image_id": {
+            "description": "ID of an image to use",
+            "type": "string"
+        },
+        "image_name": {
+            "description": "name of the image to use",
+            "type": "string"
+        },
+        "location_id": {
+            "description": "ID of a location to use",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name fo a new VM",
+            "required": true,
+            "type": "string"
+        },
+        "size_id": {
+            "description": "ID of a size to use",
+            "type": "string"
+        },
+        "size_name": {
+            "description": "name of the size to use",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

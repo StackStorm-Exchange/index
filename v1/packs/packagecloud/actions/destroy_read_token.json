@@ -1,0 +1,35 @@
+{
+    "description": "destroy read token for a repository",
+    "enabled": true,
+    "name": "destroy_read_token",
+    "pack": "packagecloud",
+    "parameters": {
+        "cmd": {
+            "default": "package_cloud read_token destroy {{user}}/{{repository}} {{master_token_name}}/{{read_token_name}}",
+            "immutable": true
+        },
+        "master_token_name": {
+            "description": "Not the token value but the name used. See https://packagecloud.io/docs#revocation.",
+            "required": true,
+            "type": "string"
+        },
+        "read_token_name": {
+            "description": "Not the token value but the name used. See https://packagecloud.io/docs#revocation.",
+            "required": true,
+            "type": "string"
+        },
+        "repository": {
+            "required": true,
+            "type": "string"
+        },
+        "sudo": {
+            "default": true,
+            "immutable": true
+        },
+        "user": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "local-shell-cmd"
+}

@@ -1,0 +1,22 @@
+{
+    "description": "Retrieve a metric from Librato",
+    "enabled": true,
+    "entry_point": "get_metric.py",
+    "name": "get_metric",
+    "parameters": {
+        "count": {
+            "description": "The number of metrics to retrieve (default: 1)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Metric to retrieve from Librato",
+            "required": true,
+            "type": "string"
+        },
+        "resolution": {
+            "description": "Resolution of metric to retrieve (default: 1)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

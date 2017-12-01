@@ -1,0 +1,14 @@
+{
+    "description": "List load balancers",
+    "enabled": true,
+    "entry_point": "list_balancers.py",
+    "name": "list_balancers",
+    "parameters": {
+        "credentials": {
+            "description": "Name of the credentials set (as defined in the config) to use.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

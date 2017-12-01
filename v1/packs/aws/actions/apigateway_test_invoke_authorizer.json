@@ -1,0 +1,54 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "apigateway_test_invoke_authorizer",
+    "pack": "aws",
+    "parameters": {
+        "action": {
+            "default": "test_invoke_authorizer",
+            "immutable": true,
+            "type": "string"
+        },
+        "additionalContext": {
+            "description": "[Optional] A key-value map of additional context variables.",
+            "type": "object"
+        },
+        "authorizerId": {
+            "description": "Specifies a test invoke authorizer request's Authorizer ID.",
+            "required": true,
+            "type": "string"
+        },
+        "body": {
+            "description": "[Optional] The simulated request body of an incoming invocation request.",
+            "type": "string"
+        },
+        "cls": {
+            "default": "apigateway",
+            "type": "string"
+        },
+        "headers": {
+            "description": "[Required] A key-value map of headers to simulate an incoming invocation request. This is where the incoming authorization token, or identity source, should be specified.",
+            "type": "object"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        },
+        "pathWithQueryString": {
+            "description": "[Optional] The URI path, including query string, of the simulated invocation request. Use this to specify path parameters and query string parameters.",
+            "type": "string"
+        },
+        "restApiId": {
+            "description": "Specifies a test invoke authorizer request's RestApi identifier.",
+            "required": true,
+            "type": "string"
+        },
+        "stageVariables": {
+            "description": "A key-value map of stage variables to simulate an invocation on a deployed Stage.",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

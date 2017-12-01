@@ -1,0 +1,14 @@
+{
+    "description": "Get resource by name",
+    "enabled": true,
+    "entry_point": "get_resource_by_name.py",
+    "name": "get_resource_by_name",
+    "parameters": {
+        "resourceName": {
+            "description": "Name of the resource to retrieve",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

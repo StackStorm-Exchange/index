@@ -1,0 +1,22 @@
+{
+    "class_name": "RabbitMQQueueSensor",
+    "description": "Sensor which monitors a RabbitMQ queue for new messages",
+    "entry_point": "queues_sensor.py",
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new message has arrived",
+            "name": "new_message",
+            "payload_schema": {
+                "properties": {
+                    "body": {
+                        "type": "object"
+                    },
+                    "queue": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

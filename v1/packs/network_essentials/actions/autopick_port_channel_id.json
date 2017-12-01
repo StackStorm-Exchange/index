@@ -1,0 +1,29 @@
+{
+    "description": "Auto pick the lowest available Port Channel ID on the device.",
+    "enabled": true,
+    "entry_point": "autopick_port_channel_id.py",
+    "name": "autopick_port_channel_id",
+    "pack": "network_essentials",
+    "parameters": {
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

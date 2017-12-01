@@ -1,0 +1,32 @@
+{
+    "description": "Find whether given node is a seed node.",
+    "enabled": true,
+    "entry_point": "wait_for_port_open.py",
+    "name": "wait_for_port_open",
+    "parameters": {
+        "check_port": {
+            "description": "Port to check.",
+            "required": true,
+            "type": "integer"
+        },
+        "kwarg_op": {
+            "default": "--",
+            "immutable": true
+        },
+        "server": {
+            "description": "Host ip or name.",
+            "required": true,
+            "type": "string"
+        },
+        "sleep": {
+            "default": 10,
+            "description": "Interval to sleep before re-check",
+            "required": false,
+            "type": "number"
+        },
+        "sudo": {
+            "default": false
+        }
+    },
+    "runner_type": "remote-shell-script"
+}

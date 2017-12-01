@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "enabled": false
+    },
+    "action_ref": "pagerduty.get_open_incidents",
+    "description": "Return a list of open PagerDuty incidents",
+    "formats": [
+        "get open incidents"
+    ],
+    "name": "get_open_incidents",
+    "pack": "pagerduty",
+    "result": {
+        "format": "{% if execution.status == \"succeeded\" %}\n  {% for item in execution.result.result %}\n{{ item.key }} is '{{ item.status }}': Title '{{ item.desc }}'\n  {% endfor %}\n{% else %}\n  {% if execution.result.stderr %}*Stderr:* ```{{ execution.result.stderr }}```{% endif %}\n{% endif %}\n"
+    }
+}

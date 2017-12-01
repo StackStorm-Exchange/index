@@ -1,0 +1,60 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall.group.policy.unset",
+    "parameters": {
+        "all_firewall_rule": {
+            "default": false,
+            "description": "Remove all firewall rules from the firewall policy",
+            "type": "boolean"
+        },
+        "audited": {
+            "default": false,
+            "description": "Disable auditing for the policy",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "firewall group policy unset",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall_group_policy_unset = neutronclient.osc.v2.fwaas.firewallpolicy:UnsetFirewallPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "firewall_policy": {
+            "description": "Firewall policy to unset (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "firewall_rule": {
+            "description": "Remove firewall rule(s) from the firewall policy (name or ID)",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "public": {
+            "default": false,
+            "description": "Restrict use of the firewall policy to the current project. This option is deprecated and would be removed in R release.",
+            "type": "boolean"
+        },
+        "share": {
+            "default": false,
+            "description": "Restrict use of the firewall policy to the current project",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

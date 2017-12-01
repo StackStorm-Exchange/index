@@ -1,0 +1,30 @@
+{
+    "description": "Run salt LocalClient functions",
+    "enabled": true,
+    "entry_point": "client.py",
+    "name": "client",
+    "parameters": {
+        "args": {
+            "description": "Arguments to pass to the module",
+            "required": false,
+            "type": "array"
+        },
+        "kwargs": {
+            "description": "Key Pair arguments to pass to the module",
+            "required": false,
+            "type": "object"
+        },
+        "matches": {
+            "default": "*",
+            "description": "Minions to target",
+            "required": false,
+            "type": "string"
+        },
+        "module": {
+            "description": "Execution module to run on targets",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

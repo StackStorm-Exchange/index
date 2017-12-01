@@ -1,0 +1,16 @@
+{
+    "description": "Destroy an acl token",
+    "enabled": true,
+    "entry_point": "acl_destroy.py",
+    "name": "acl_destroy",
+    "pack": "consul",
+    "parameters": {
+        "acl_id": {
+            "description": "Token to destroy",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

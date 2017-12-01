@@ -1,0 +1,86 @@
+{
+    "description": "List all parameters for an operating system (resource: GET /api/operatingsystems/:operatingsystem_id/parameters)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "operatingsystems.parameters_index",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "domain_id": {
+            "description": "ID of domain",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "ID of host",
+            "required": false,
+            "type": "string"
+        },
+        "hostgroup_id": {
+            "description": "ID of host group",
+            "required": false,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "ID of location",
+            "required": false,
+            "type": "string"
+        },
+        "operatingsystem_id": {
+            "description": "ID of operating system",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "operatingsystems.parameters_index",
+            "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "sort results",
+            "required": false,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "ID of organization",
+            "required": false,
+            "type": "string"
+        },
+        "page": {
+            "description": "paginate results",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "number of entries per request",
+            "required": false,
+            "type": "string"
+        },
+        "search": {
+            "description": "filter results",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

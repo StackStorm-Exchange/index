@@ -1,0 +1,14 @@
+{
+    "description": "Create a new storage container.",
+    "enabled": true,
+    "entry_point": "create_container.py",
+    "name": "create_container",
+    "parameters": {
+        "name": {
+            "description": "Container name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

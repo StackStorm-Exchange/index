@@ -1,0 +1,28 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": true,
+        "format": "Adding {{execution.parameters.node}} to Orion for you..."
+    },
+    "action_ref": "orion.node_create",
+    "description": "Create a Node on a Solarwinds Orion Plaform (standard SNMP string).",
+    "formats": [
+        {
+            "display": "orion node create <node> ip <ip_address> [snmp <community>] [<poller=primary>]",
+            "representation": [
+                "orion node create {{node}} ip {{ip_address}}( snmp {{community}})?( {{poller=primary}})?"
+            ]
+        },
+        {
+            "display": "create orion node <node> at <ip_address> [with community] [on <poller=primary>]",
+            "representation": [
+                "create orion node {{node}} at {{ip_address}}( with {{community}})?( on {{poller=primary}})?"
+            ]
+        }
+    ],
+    "name": "node_create",
+    "pack": "orion",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nCreated {{execution.parameters.node}} ({{execution.parameters.ip_address}}) on {{execution.result.result.label}} {~}\nThe NodeID is {{execution.result.result.node_id}}\n{% else %}\nError: {{execution.result.stdout}}{~}\nSee {{execution.id}} for more details.\n{% endif %}\n"
+    }
+}

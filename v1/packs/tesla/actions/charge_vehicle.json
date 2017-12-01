@@ -1,0 +1,19 @@
+{
+    "description": "Charge a vehicle for standard charge",
+    "enabled": true,
+    "entry_point": "vehicle_action.py",
+    "name": "charge_vehicle",
+    "parameters": {
+        "action": {
+            "default": "charge_standard",
+            "immutable": true,
+            "type": "string"
+        },
+        "vin": {
+            "description": "The vehicle identification number",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,41 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "consistency.group.add.volume",
+    "parameters": {
+        "base": {
+            "default": "consistency group add volume",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "consistency_group": {
+            "description": "Consistency group to contain <volume> (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('consistency_group_add_volume = openstackclient.volume.v2.consistency_group:AddVolumeToConsistencyGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "volumes": {
+            "description": "Volume(s) to add to <consistency-group> (name or ID) (repeat option to add multiple volumes)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,24 @@
+{
+    "description": "Perform a \"show ip route summary\"",
+    "enabled": true,
+    "entry_point": "show_ip_route_sum.py",
+    "name": "show_ip_route_sum",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

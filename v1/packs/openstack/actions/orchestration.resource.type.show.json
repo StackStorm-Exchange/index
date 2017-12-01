@@ -1,0 +1,55 @@
+{
+    "description": "Show details and optionally generate a template for a resource type.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "orchestration.resource.type.show",
+    "parameters": {
+        "base": {
+            "default": "orchestration resource type show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('orchestration_resource_type_show = heatclient.osc.v1.resource_type:ResourceTypeShow')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to yaml (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "long": {
+            "default": false,
+            "description": "Show resource type with corresponding description.",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "resource_type": {
+            "description": "Resource type to show details for",
+            "required": true,
+            "type": "string"
+        },
+        "template_type": {
+            "description": "Optional template type to generate, hot or cfn",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

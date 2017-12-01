@@ -1,0 +1,34 @@
+{
+    "description": "Update all tags for a host on Datadog",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "update_host_tags",
+    "parameters": {
+        "cls": {
+            "default": "DatadogUpdateHostTags",
+            "immutable": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Host to set tags",
+            "required": true,
+            "type": "string"
+        },
+        "module_path": {
+            "default": "lib.tags",
+            "immutable": true,
+            "type": "string"
+        },
+        "source": {
+            "description": "The source of the tags (e.g. chef, puppet)",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "A list of tags to apply to the host",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,20 @@
+{
+    "description": "List all the verbs that can be invloked via Solarwinds Orion",
+    "enabled": true,
+    "entry_point": "list_sdk_verbs.py",
+    "name": "list_sdk_verbs",
+    "pack": "orion",
+    "parameters": {
+        "can_invoke": {
+            "default": true,
+            "description": "Limit to verbs that can (or cannot) be invoked via the OrionSDK.",
+            "type": "boolean"
+        },
+        "v_filter": {
+            "default": null,
+            "description": "Filter methods and verbs with this string.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

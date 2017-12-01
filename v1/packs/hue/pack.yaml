@@ -1,0 +1,27 @@
+ref: hue
+name: hue
+description: Philips Hue Pack
+version: 0.1.1
+author: James Fryman
+email: james@stackstorm.com
+keywords:
+- hue
+- philips
+- iot
+content:
+  actions:
+    count: 13
+    resources:
+    - alert
+    - brightness
+    - color_temp_kelvin
+    - color_temp_mired
+    - current_state
+    - find_id_by_name
+    - list_bulbs
+    - 'off'
+    - 'on'
+    - rgb
+    - set_state
+    - toggle
+    - xy

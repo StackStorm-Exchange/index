@@ -1,0 +1,37 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_enable_vgw_route_propagation",
+    "pack": "aws",
+    "parameters": {
+        "GatewayId": {
+            "description": "The ID of the virtual private gateway.",
+            "required": true,
+            "type": "string"
+        },
+        "RouteTableId": {
+            "description": "The ID of the route table.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "enable_vgw_route_propagation",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,55 @@
+{
+    "description": "Show an image (resource: GET /api/operatingsystems/:operatingsystem_id/images/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "operatingsystems.images_operatingsystem_id_showimages",
+    "pack": "foreman",
+    "parameters": {
+        "architecture_id": {
+            "description": "ID of architecture",
+            "required": false,
+            "type": "string"
+        },
+        "compute_resource_id": {
+            "description": "ID of compute resource",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operatingsystem_id": {
+            "description": "ID of operating system",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "operatingsystems.images_operatingsystem_id_showimages",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

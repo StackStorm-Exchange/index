@@ -1,0 +1,20 @@
+{
+    "description": "Exclusive lease that does not block.",
+    "enabled": true,
+    "entry_point": "non_blocking_lease.py",
+    "name": "non_blocking_lease",
+    "pack": "zookeeper",
+    "parameters": {
+        "lease_name": {
+            "description": "a zookeeper path to uniquely identify the lease (appended to zookeeper root, if configured)",
+            "required": true,
+            "type": "string"
+        },
+        "lease_time": {
+            "default": 30,
+            "description": "Duration during which the lease is reserved in seconds",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

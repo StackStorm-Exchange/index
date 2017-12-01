@@ -1,0 +1,64 @@
+{
+    "description": "Creates new object with first available IP address in the given prefix",
+    "enabled": true,
+    "entry_point": "base_post_action.py",
+    "name": "ipam_post_available_ips",
+    "pack": "netbox",
+    "parameters": {
+        "description": {
+            "description": "Description of the newly assigned IP address",
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/api/ipam/prefixes/{{ id }}/available-ips/",
+            "immutable": true
+        },
+        "id": {
+            "description": "ID of the prefix to get.",
+            "type": "integer"
+        },
+        "is_pool": {
+            "description": "IP address is a pool",
+            "type": "boolean"
+        },
+        "limit": {
+            "default": 50,
+            "description": "Max limit of objects to return from the request.",
+            "type": "integer"
+        },
+        "offset": {
+            "default": 0,
+            "description": "Offset result set by X objects. Used for pagination.",
+            "type": "integer"
+        },
+        "prefix": {
+            "description": "Prefix that this IP address belongs to",
+            "type": "string"
+        },
+        "role": {
+            "description": "IP address role",
+            "type": "integer"
+        },
+        "site": {
+            "description": "Site that this IP address belongs to",
+            "type": "integer"
+        },
+        "status": {
+            "description": "Status of the newly assigned IP address",
+            "type": "string"
+        },
+        "tenant": {
+            "description": "Tenant the IP address belongs to",
+            "type": "integer"
+        },
+        "vlan": {
+            "description": "VLAN that this IP address belongs to",
+            "type": "integer"
+        },
+        "vrf": {
+            "description": "VRF the IP address is a member of",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

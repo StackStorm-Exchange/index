@@ -1,0 +1,27 @@
+{
+    "description": "List the Virtual Machines available",
+    "enabled": true,
+    "entry_point": "list_vms.py",
+    "name": "list_vms",
+    "parameters": {
+        "action": {
+            "default": "list_nodes",
+            "immutable": true,
+            "type": "string"
+        },
+        "ex_location": {
+            "description": "The datacenter ID e.g. NA11",
+            "type": "string"
+        },
+        "ex_name": {
+            "description": "The name of the VM",
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

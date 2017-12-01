@@ -1,0 +1,29 @@
+{
+    "class_name": "ItemSensor",
+    "description": "Sensor that detects items.",
+    "entry_point": "item_sensor.py",
+    "polling_interval": 60,
+    "trigger_types": [
+        {
+            "description": "New item in folder",
+            "name": "exchange_new_item",
+            "payload_schema": {
+                "properties": {
+                    "body": {
+                        "type": "string"
+                    },
+                    "datetime_received": {
+                        "type": "string"
+                    },
+                    "item_id": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

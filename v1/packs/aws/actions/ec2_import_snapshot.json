@@ -1,0 +1,51 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "ec2_import_snapshot",
+    "pack": "aws",
+    "parameters": {
+        "ClientData": {
+            "description": "The client-specific data.",
+            "type": "object"
+        },
+        "ClientToken": {
+            "description": "Token to enable idempotency for VM import requests.",
+            "type": "string"
+        },
+        "Description": {
+            "description": "The description string for the import snapshot task.",
+            "type": "string"
+        },
+        "DiskContainer": {
+            "description": "Information about the disk container.",
+            "type": "object"
+        },
+        "DryRun": {
+            "description": "Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.",
+            "type": "boolean"
+        },
+        "RoleName": {
+            "description": "The name of the role to use when not using the default role, 'vmimport'.",
+            "type": "string"
+        },
+        "action": {
+            "default": "import_snapshot",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "ec2",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

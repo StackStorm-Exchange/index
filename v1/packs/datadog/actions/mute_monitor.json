@@ -1,0 +1,34 @@
+{
+    "description": "Mute a monitor",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "mute_monitor",
+    "parameters": {
+        "cls": {
+            "default": "DatadogMuteMonitor",
+            "immutable": true,
+            "type": "string"
+        },
+        "end": {
+            "description": "A POSIX timestamp for when the mute should end",
+            "required": false,
+            "type": "integer"
+        },
+        "module_path": {
+            "default": "lib.monitors",
+            "immutable": true,
+            "type": "string"
+        },
+        "monitor_id": {
+            "description": "The id of the monitor to mute",
+            "required": true,
+            "type": "integer"
+        },
+        "scope": {
+            "description": "The scope to apply the mute to, e.g. role:db",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,22 @@
+{
+    "description": "Close a card",
+    "enabled": true,
+    "entry_point": "close_card.py",
+    "name": "close_card",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "card_id": {
+            "description": "ID of the card to close",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

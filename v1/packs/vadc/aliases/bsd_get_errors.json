@@ -1,0 +1,17 @@
+{
+    "action_ref": "vadc.bsd_get_errors",
+    "description": "Get Current Errors from BSD",
+    "formats": [
+        {
+            "display": "bsd errors",
+            "representation": [
+                "bsd errors {{stringify=true}}",
+                "bsd get errors {{stringify=true}}"
+            ]
+        }
+    ],
+    "name": "bsd_get_errors",
+    "result": {
+        "format": "{{execution.result.result}}"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "description": "Lookup a Card ID based on name. Returns one or more IDs",
+    "enabled": true,
+    "entry_point": "find_card_by_name.py",
+    "name": "find_card_by_name",
+    "parameters": {
+        "api_key": {
+            "description": "User API Key overriding the system key",
+            "type": "string"
+        },
+        "board_id": {
+            "description": "Board ID where card lives",
+            "required": true,
+            "type": "string"
+        },
+        "list_id": {
+            "description": "List ID where card lives",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Lookup a list ID based on name",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "User oAuth Token overriding the system key",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

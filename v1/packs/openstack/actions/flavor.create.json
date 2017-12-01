@@ -1,0 +1,103 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "flavor.create",
+    "parameters": {
+        "base": {
+            "default": "flavor create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "disk": {
+            "default": 0,
+            "description": "Disk size in GB (default 0G)",
+            "type": "integer"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('flavor_create = openstackclient.compute.v2.flavor:CreateFlavor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "ephemeral": {
+            "default": 0,
+            "description": "Ephemeral disk size in GB (default 0G)",
+            "type": "integer"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "id": {
+            "default": "auto",
+            "description": "Unique flavor ID; 'auto' creates a UUID (default: auto)",
+            "type": "string"
+        },
+        "name": {
+            "description": "New flavor name",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "private": {
+            "default": true,
+            "description": "Flavor is not available to other projects",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Allow <project> to access private flavor (name or ID) (Must be used with --private option)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "property": {
+            "description": "Property to add for this flavor (repeat option to set multiple properties)",
+            "type": "array"
+        },
+        "public": {
+            "default": true,
+            "description": "Flavor is available to other projects (default)",
+            "type": "boolean"
+        },
+        "ram": {
+            "default": 256,
+            "description": "Memory size in MB (default 256M)",
+            "type": "integer"
+        },
+        "rxtx_factor": {
+            "default": 1.0,
+            "description": "RX/TX factor (default 1.0)",
+            "type": "number"
+        },
+        "swap": {
+            "default": 0,
+            "description": "Swap space size in MB (default 0M)",
+            "type": "integer"
+        },
+        "vcpus": {
+            "default": 1,
+            "description": "Number of vcpus (default 1)",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

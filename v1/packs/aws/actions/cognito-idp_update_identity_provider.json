@@ -1,0 +1,49 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cognito-idp_update_identity_provider",
+    "pack": "aws",
+    "parameters": {
+        "AttributeMapping": {
+            "description": "The identity provider attribute mapping to be changed.",
+            "type": "object"
+        },
+        "IdpIdentifiers": {
+            "description": "A list of identity provider identifiers.",
+            "type": "array"
+        },
+        "ProviderDetails": {
+            "description": "The identity provider details to be updated, such as MetadataURL and MetadataFile.",
+            "type": "object"
+        },
+        "ProviderName": {
+            "description": "The identity provider name.",
+            "required": true,
+            "type": "string"
+        },
+        "UserPoolId": {
+            "description": "The user pool ID.",
+            "required": true,
+            "type": "string"
+        },
+        "action": {
+            "default": "update_identity_provider",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cognito-idp",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

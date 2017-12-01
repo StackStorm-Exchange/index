@@ -1,0 +1,24 @@
+{
+    "class_name": "SmartThingsSensor",
+    "description": "Sensor listening for HTTP events from SmartThings",
+    "entry_point": "smartthings_sensor.py",
+    "trigger_types": [
+        {
+            "description": "SmartThings Device Event",
+            "name": "event",
+            "payload_info": [
+                "id",
+                "name",
+                "value",
+                "device_id",
+                "hub_id",
+                "location_id",
+                "state_change",
+                "raw_description",
+                "description",
+                "date",
+                "iso_date"
+            ]
+        }
+    ]
+}

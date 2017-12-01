@@ -1,0 +1,23 @@
+{
+    "description": "Delete a VLAN",
+    "enabled": true,
+    "entry_point": "run_compute.py",
+    "name": "delete_vlan",
+    "parameters": {
+        "action": {
+            "default": "ex_delete_vlan",
+            "immutable": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "The ID of the VLAN",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Instructs the agent to force a node into the left state.",
+    "enabled": true,
+    "entry_point": "agent_force_leave.py",
+    "name": "agent_force_leave",
+    "parameters": {
+        "node": {
+            "description": "The node to change state for.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

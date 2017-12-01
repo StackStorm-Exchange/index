@@ -1,0 +1,33 @@
+{
+    "description": "Delete server from ICSP server list.",
+    "enabled": true,
+    "entry_point": "icsp_server_delete.py",
+    "name": "icsp_server_delete",
+    "parameters": {
+        "connection_details": {
+            "description": "Connection details. eg { \"host\": \"192.168.0.1\", \"user\":\"username\", \"pass\": \"secret\" }",
+            "position": 2,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "id_type": {
+            "description": "Type of Identifier used.",
+            "enum": [
+                "mids",
+                "serialnumber",
+                "uuid"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "identifiers": {
+            "description": "Server idenfiter list list.",
+            "position": 0,
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

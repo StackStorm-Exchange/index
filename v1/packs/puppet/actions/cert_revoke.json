@@ -1,0 +1,21 @@
+{
+    "description": "Revoke the certificate of a client.",
+    "enabled": true,
+    "entry_point": "cert_revoke.py",
+    "name": "cert_revoke",
+    "parameters": {
+        "environment": {
+            "description": "Environment to use.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Host (or serial number) to revoke the certificate for.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

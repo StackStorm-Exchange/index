@@ -1,0 +1,27 @@
+{
+    "action": {
+        "parameters": {
+            "address": "{{trigger.body.address}}",
+            "deviceIP": "{{trigger.body.deviceIP}}",
+            "intfNum": "{{trigger.body.intfNum}}",
+            "intfType": "{{trigger.body.intfType}}"
+        },
+        "ref": "vyatta.cfg_interface"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "cfg_interface",
+            "type": "contains"
+        }
+    },
+    "description": "Rule configuring an interface from a webhook payload",
+    "enabled": true,
+    "name": "webhook_cfg_interface",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

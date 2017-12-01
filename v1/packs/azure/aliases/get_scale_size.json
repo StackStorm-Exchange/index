@@ -1,0 +1,28 @@
+{
+    "ack": {
+        "append_url": false,
+        "enabled": false
+    },
+    "action_ref": "azure.get_scaleset_size",
+    "description": "Get scaleset size",
+    "formats": [
+        {
+            "display": "azure scaleset get {{resource_group}} name {{name}}",
+            "representation": [
+                "azure scaleset get {{resource_group}} name {{scale_group}}"
+            ]
+        }
+    ],
+    "name": "get_scale_size",
+    "pack": "azure",
+    "result": {
+        "extra": {
+            "slack": {
+                "capacity": "{{execution.result.result.capacity}}",
+                "color": "#00ad52",
+                "footer": "Azure"
+            }
+        },
+        "format": "{% if execution.status == 'succeeded' %}\nScaleset of _{{execution.parameters.scale_group}}_ at _{{execution.parameters.resource_group}}_  is {{execution.result.result.capacity}}{~}\n{{execution.result.result.body}}\n{% else %}\nError: {{execution.result.stdout}}{~}See {{execution.id}} for more details.\n{% endif %}"
+    }
+}

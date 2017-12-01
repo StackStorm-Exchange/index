@@ -1,0 +1,29 @@
+{
+    "description": "Attach a member to a load balancer",
+    "enabled": true,
+    "entry_point": "balancer_attach_member.py",
+    "name": "balancer_attach_member",
+    "parameters": {
+        "balancer_id": {
+            "description": "ID of the load balancer",
+            "required": true,
+            "type": "string"
+        },
+        "member_ip": {
+            "description": "The IP of the member to attach",
+            "required": true,
+            "type": "string"
+        },
+        "member_port": {
+            "description": "The TCP/UDP port of the member",
+            "required": true,
+            "type": "string"
+        },
+        "region": {
+            "default": "dd-na",
+            "description": "The region code",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

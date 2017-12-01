@@ -1,0 +1,32 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "cur_put_report_definition",
+    "pack": "aws",
+    "parameters": {
+        "ReportDefinition": {
+            "description": "",
+            "required": true,
+            "type": "object"
+        },
+        "action": {
+            "default": "put_report_definition",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "cur",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

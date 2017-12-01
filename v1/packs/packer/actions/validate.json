@@ -1,0 +1,34 @@
+{
+    "description": "Validate a packer template",
+    "enabled": true,
+    "entry_point": "validate.py",
+    "name": "validate",
+    "parameters": {
+        "cwd": {
+            "description": "Working directory for Packer installation",
+            "type": "string"
+        },
+        "exclude": {
+            "description": "Build all builds other than these. Takes an array",
+            "type": "object"
+        },
+        "only": {
+            "description": "Build only builds by name. Takes an array",
+            "type": "object"
+        },
+        "packerfile": {
+            "description": "Packer template file",
+            "required": true,
+            "type": "string"
+        },
+        "variables": {
+            "description": "Variables passed to packer. Takes a dict",
+            "type": "object"
+        },
+        "variables_file": {
+            "description": "File path to file containing packer variables",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

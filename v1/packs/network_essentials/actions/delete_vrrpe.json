@@ -1,0 +1,51 @@
+{
+    "description": "Delete VRRPe group",
+    "enabled": true,
+    "entry_point": "delete_vrrpe.py",
+    "name": "delete_vrrpe",
+    "pack": "network_essentials",
+    "parameters": {
+        "ip_version": {
+            "default": "IPv4",
+            "description": "IPv4 or IPv6 group",
+            "position": 6,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "Management IP address of the target device",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "Login password to connect to the device",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "rbridge_id": {
+            "description": "RBridge IDs of the VDX switches, for example 51 or 51,52. This parameter is only applicable for VDX switches.",
+            "position": 3,
+            "type": "array"
+        },
+        "username": {
+            "default": "admin",
+            "description": "Login user name to connect to the device",
+            "position": 1,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "VLAN ID. Allowed range for SLX devices <NUMBER:1-4090>, for VDX <NUMBER:1-4090/8191> greater than 4090 only if VF is enabled",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "vrrpe_group": {
+            "description": "Virtual extender group ID",
+            "position": 5,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

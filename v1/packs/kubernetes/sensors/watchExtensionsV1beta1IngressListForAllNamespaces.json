@@ -1,0 +1,41 @@
+{
+    "class_name": "watchExtensionsV1beta1IngressListForAllNamespaces",
+    "description": "Sensor that watches Kubernetes API for new Ingresses objects.",
+    "entry_point": "watchExtensionsV1beta1IngressListForAllNamespaces.py",
+    "trigger_types": [
+        {
+            "description": "Trigger for ingresses event dispatch.",
+            "name": "ingresses",
+            "payload_schema": {
+                "properties": {
+                    "labels": {
+                        "anyOf": [
+                            {
+                                "type": "object"
+                            },
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "namespace": {
+                        "type": "string"
+                    },
+                    "object_kind": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

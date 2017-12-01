@@ -1,0 +1,25 @@
+{
+    "description": "List master tokens for a repository",
+    "enabled": true,
+    "name": "list_master_token",
+    "pack": "packagecloud",
+    "parameters": {
+        "cmd": {
+            "default": "package_cloud master_token list {{user}}/{{repository}}",
+            "immutable": true
+        },
+        "repository": {
+            "required": true,
+            "type": "string"
+        },
+        "sudo": {
+            "default": true,
+            "immutable": true
+        },
+        "user": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "local-shell-cmd"
+}

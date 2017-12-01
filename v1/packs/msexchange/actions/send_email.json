@@ -1,0 +1,31 @@
+{
+    "description": "Send an email",
+    "enabled": true,
+    "entry_point": "send_email.py",
+    "name": "send_email",
+    "pack": "msexchange",
+    "parameters": {
+        "body": {
+            "description": "Contents of the email",
+            "required": true,
+            "type": "string"
+        },
+        "store": {
+            "default": true,
+            "description": "Store the email in the Sent folder once sent",
+            "required": true,
+            "type": "boolean"
+        },
+        "subject": {
+            "description": "Subject of the email",
+            "required": true,
+            "type": "string"
+        },
+        "to_recipients": {
+            "description": "To recipients",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "run-python"
+}

@@ -1,0 +1,38 @@
+{
+    "description": "Internal action - Configure a static route",
+    "enabled": true,
+    "entry_point": "0_cfg_ip_route.py",
+    "name": "0_cfg_ip_route",
+    "notify": {
+        "on-complete": {
+            "message": "\"@channel: Action succeeded.\"",
+            "routes": [
+                "slack"
+            ]
+        }
+    },
+    "pack": "vyatta",
+    "parameters": {
+        "cmd_path": {
+            "description": "configuration session token",
+            "required": true,
+            "type": "string"
+        },
+        "deviceIP": {
+            "description": "IP address of vRouter",
+            "required": true,
+            "type": "string"
+        },
+        "nextHop": {
+            "description": "NextHop IP Address",
+            "required": true,
+            "type": "string"
+        },
+        "subnet": {
+            "description": "Destination IP subnet",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

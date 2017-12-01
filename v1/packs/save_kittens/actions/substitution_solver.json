@@ -1,0 +1,22 @@
+{
+    "description": "Encode or decode subsitition puzzle",
+    "enabled": true,
+    "entry_point": "substitution_solver.py",
+    "name": "substitution_solver",
+    "parameters": {
+        "cipher": {
+            "description": "If decoding, which cipher should we use?",
+            "secret": true,
+            "type": "string"
+        },
+        "encode": {
+            "description": "Optionally encode or decode provided message.",
+            "type": "boolean"
+        },
+        "message": {
+            "description": "Message to encode or decode.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

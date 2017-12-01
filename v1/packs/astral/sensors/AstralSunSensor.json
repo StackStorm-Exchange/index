@@ -1,0 +1,24 @@
+{
+    "class_name": "AstralSunSensor",
+    "description": "Sensor that fires triggers for dawn, sunrise, sunset, and dusk",
+    "entry_point": "astral_sun_sensor.py",
+    "poll_interval": 60,
+    "trigger_types": [
+        {
+            "description": "It's now dawn",
+            "name": "dawn"
+        },
+        {
+            "description": "It's now sunrise",
+            "name": "sunrise"
+        },
+        {
+            "description": "It's now sunset",
+            "name": "sunset"
+        },
+        {
+            "description": "It's now dusk",
+            "name": "dusk"
+        }
+    ]
+}

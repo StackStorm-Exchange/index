@@ -1,0 +1,40 @@
+{
+    "description": "Get build number for given SHA.",
+    "enabled": true,
+    "entry_point": "get_build_number.py",
+    "name": "get_build_number",
+    "parameters": {
+        "project": {
+            "description": "Name of project in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "search_limit": {
+            "default": 10,
+            "description": "Number of previous builds to search.",
+            "required": false,
+            "type": "number"
+        },
+        "username": {
+            "description": "Username in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "vcs_revision": {
+            "description": "Commit SHA/revision (usually github SHA).",
+            "required": true,
+            "type": "string"
+        },
+        "vcs_type": {
+            "default": "github",
+            "description": "Name of version control system.",
+            "enum": [
+                "github",
+                "bitbucket"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

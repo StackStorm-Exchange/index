@@ -1,0 +1,14 @@
+{
+    "description": "Get Sensu client history",
+    "enabled": true,
+    "entry_point": "client_history.py",
+    "name": "client_history",
+    "parameters": {
+        "client": {
+            "description": "The client name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

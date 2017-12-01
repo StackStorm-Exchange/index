@@ -1,0 +1,87 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "sfc.flow.classifier.create",
+    "parameters": {
+        "base": {
+            "default": "sfc flow classifier create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the flow classifier",
+            "type": "string"
+        },
+        "destination_ip_prefix": {
+            "description": "Destination IP address in CIDR notation",
+            "type": "string"
+        },
+        "destination_port": {
+            "description": "Destination protocol port (allowed range [1,65535]. Must be specified as a:b, where a=min-port and b=max-port) in the allowed range.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('sfc_flow_classifier_create = neutronclient.osc.v2.sfc.sfc_flow_classifier:CreateSfcFlowClassifier')",
+            "immutable": true,
+            "type": "string"
+        },
+        "ethertype": {
+            "default": "IPv4",
+            "description": "L2 ethertype, default is IPv4 (choices: IPv4, IPv6)",
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "l7_parameters": {
+            "description": "Dictionary of L7 parameters. Currently, no value is supported for this option.",
+            "type": "string"
+        },
+        "logical_destination_port": {
+            "description": "Neutron destination port (name or ID)",
+            "type": "string"
+        },
+        "logical_source_port": {
+            "description": "Neutron source port (name or ID)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the flow classifier",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "protocol": {
+            "description": "IP protocol name. Protocol name should be as per IANA standard.",
+            "type": "string"
+        },
+        "source_ip_prefix": {
+            "description": "Source IP address in CIDR notation",
+            "type": "string"
+        },
+        "source_port": {
+            "description": "Source protocol port (allowed range [1,65535]. Must be specified as a:b, where a=min-port and b=max-port) in the allowed range.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

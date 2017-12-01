@@ -1,0 +1,149 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "port.create",
+    "parameters": {
+        "allowed_address": {
+            "description": "Add allowed-address pair associated with this port: ip-address=<ip-address>[,mac-address=<mac-address>] (repeat option to set multiple allowed-address pairs)",
+            "type": "string"
+        },
+        "base": {
+            "default": "port create",
+            "immutable": true,
+            "type": "string"
+        },
+        "binding_profile": {
+            "description": "Custom data to be passed as binding:profile. Data may be passed as <key>=<value> or JSON. (repeat option to set multiple binding:profile data)",
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of this port",
+            "type": "string"
+        },
+        "device": {
+            "description": "Port device ID",
+            "type": "string"
+        },
+        "device_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "device_owner": {
+            "description": "Device owner of this port. This is the entity that uses the port (for example, network:dhcp).",
+            "type": "string"
+        },
+        "disable": {
+            "default": false,
+            "description": "Disable port",
+            "type": "boolean"
+        },
+        "disable_port_security": {
+            "default": false,
+            "description": "Disable port security for this port",
+            "type": "boolean"
+        },
+        "dns_name": {
+            "description": "Set DNS name to this port (requires DNS integration extension)",
+            "type": "string"
+        },
+        "enable": {
+            "default": true,
+            "description": "Enable port (default)",
+            "type": "boolean"
+        },
+        "enable_port_security": {
+            "default": false,
+            "description": "Enable port security for this port (Default)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('port_create = openstackclient.network.v2.port:CreatePort')",
+            "immutable": true,
+            "type": "string"
+        },
+        "fixed_ip": {
+            "description": "Desired IP and/or subnet for this port (name or ID): subnet=<subnet>,ip-address=<ip-address> (repeat option to set multiple fixed IP addresses)",
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "host": {
+            "description": "Allocate port on host <host-id> (ID only)",
+            "type": "string"
+        },
+        "host_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "mac_address": {
+            "description": "MAC address of this port (admin only)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of this port",
+            "required": true,
+            "type": "string"
+        },
+        "network": {
+            "description": "Network this port belongs to (name or ID)",
+            "required": true,
+            "type": "string"
+        },
+        "no_security_group": {
+            "default": false,
+            "description": "Associate no security groups with this port",
+            "type": "boolean"
+        },
+        "no_tag": {
+            "default": false,
+            "description": "No tags associated with the port",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project": {
+            "description": "Owner's project (name or ID)",
+            "type": "string"
+        },
+        "project_domain": {
+            "description": "Domain the project belongs to (name or ID). This can be used in case collisions between project names exist.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "qos_policy": {
+            "description": "Attach QoS policy to this port (name or ID)",
+            "type": "string"
+        },
+        "security_group": {
+            "description": "Security group to associate with this port (name or ID) (repeat option to set multiple security groups)",
+            "type": "array"
+        },
+        "tag": {
+            "description": "Tag to be added to the port (repeat option to set multiple tags)",
+            "type": "array"
+        },
+        "vnic_type": {
+            "description": "VNIC type for this port (direct | direct-physical | macvtap | normal | baremetal | virtio-forwarder,  default: normal) (choices: direct, direct-physical, macvtap, normal, baremetal, virtio-forwarder)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

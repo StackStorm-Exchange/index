@@ -1,0 +1,24 @@
+{
+    "description": "Add (and invite if not a member) a user to a team",
+    "enabled": true,
+    "entry_point": "add_team_membership.py",
+    "name": "add_team_membership",
+    "parameters": {
+        "organization": {
+            "description": "Organization the team belongs to",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "Team ID.",
+            "required": true,
+            "type": "integer"
+        },
+        "user": {
+            "description": "User to invite",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

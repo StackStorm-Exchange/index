@@ -1,0 +1,34 @@
+{
+    "description": "vTM - Set Nodes in a Pool",
+    "enabled": true,
+    "entry_point": "vtm_set_pool_nodes.py",
+    "name": "vtm_set_pool_nodes",
+    "parameters": {
+        "active": {
+            "description": "The list of ACTIVE nodes",
+            "required": false,
+            "type": "array"
+        },
+        "disabled": {
+            "description": "The list of DISABLED nodes",
+            "required": false,
+            "type": "array"
+        },
+        "draining": {
+            "description": "The list of DRAINING nodes",
+            "required": false,
+            "type": "array"
+        },
+        "pool": {
+            "description": "The name of the pool",
+            "required": true,
+            "type": "string"
+        },
+        "vtm": {
+            "description": "The vTM instance to configure",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "configure vcenter",
+    "enabled": true,
+    "entry_point": "configure_vcenter.py",
+    "name": "configure_vcenter",
+    "pack": "vdx_vtep",
+    "parameters": {
+        "host": {
+            "description": "Device IP.",
+            "type": "string"
+        },
+        "password": {
+            "description": "login password",
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "login username",
+            "type": "string"
+        },
+        "vcenter_name": {
+            "description": "Vcenter Name",
+            "type": "string"
+        },
+        "vcenter_pass": {
+            "description": "vcenter login pass",
+            "type": "string"
+        },
+        "vcenter_url": {
+            "description": "vcenter url",
+            "type": "string"
+        },
+        "vcenter_user": {
+            "description": "vcenter login user",
+            "type": "string"
+        }
+    },
+    "runner_type": "run-python"
+}

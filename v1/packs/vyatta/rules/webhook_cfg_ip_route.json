@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "deviceIP": "{{trigger.body.deviceIP}}",
+            "nextHop": "{{trigger.body.nextHop}}",
+            "subnet": "{{trigger.body.subnet}}"
+        },
+        "ref": "vyatta.cfg_ip_route"
+    },
+    "criteria": {
+        "trigger.body.task": {
+            "pattern": "cfg_ip_route",
+            "type": "contains"
+        }
+    },
+    "description": "Rule configuring a sta ftic route rom a webhook payload",
+    "enabled": true,
+    "name": "webhook_cfg_ip_route",
+    "pack": "vyatta",
+    "trigger": {
+        "parameters": {
+            "url": "vrouter"
+        },
+        "type": "core.st2.webhook"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "description": "Emails the message identified by message_id to the authenticated user.",
+    "enabled": true,
+    "entry_point": "email_message.py",
+    "name": "email_message",
+    "parameters": {
+        "id": {
+            "description": "Message ID",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

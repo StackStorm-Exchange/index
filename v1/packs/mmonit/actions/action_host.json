@@ -1,0 +1,31 @@
+{
+    "description": "Performs the specified action for the selected host services.",
+    "enabled": true,
+    "entry_point": "action_host.py",
+    "name": "action_host",
+    "parameters": {
+        "action": {
+            "description": "The action. Possible values: \"start\", \"stop\", \"restart\", \"monitor\", \"unmonitor\".",
+            "enum": [
+                "start",
+                "stop",
+                "restart",
+                "monitor",
+                "unmonitor"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "The host id.",
+            "required": true,
+            "type": "integer"
+        },
+        "service": {
+            "description": "The service name to perform the action on.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

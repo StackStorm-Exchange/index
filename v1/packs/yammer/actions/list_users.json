@@ -1,0 +1,32 @@
+{
+    "description": "List all users in network",
+    "enabled": true,
+    "entry_point": "list_users.py",
+    "name": "list_users",
+    "parameters": {
+        "letter": {
+            "description": "the first letter of the name to fetch",
+            "required": false,
+            "type": "string"
+        },
+        "page": {
+            "description": "Page to fetch",
+            "required": false,
+            "type": "integer"
+        },
+        "reverse": {
+            "default": false,
+            "type": "boolean"
+        },
+        "sort_by": {
+            "default": "username",
+            "enum": [
+                "messages",
+                "followers",
+                "username"
+            ],
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

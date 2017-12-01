@@ -1,0 +1,25 @@
+{
+    "description": "Plan the changes required to reach the desired state of the configuration",
+    "enabled": true,
+    "entry_point": "plan.py",
+    "name": "plan",
+    "parameters": {
+        "plan_path": {
+            "description": "Path of the terraform plan",
+            "required": true,
+            "type": "string"
+        },
+        "terraform_exec": {
+            "default": "terraform",
+            "description": "Terraform executable path (default: terraform in the $PATH)",
+            "required": false,
+            "type": "string"
+        },
+        "variable_files": {
+            "description": "Terraform variable files",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}
