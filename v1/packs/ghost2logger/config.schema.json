@@ -61,5 +61,19 @@
         "required": true,
         "secret": false,
         "type": "string"
+    },
+    "web_hook_auth_header_key": {
+        "default": "Authorization",
+        "description": "Header key name for the output webhook capability.",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "web_hook_auth_header_val": {
+        "default": "Basic YWRtaW46YWRtaW4=",
+        "description": "Header value for the output webhook capability.",
+        "required": true,
+        "secret": false,
+        "type": "string"
     }
 }
