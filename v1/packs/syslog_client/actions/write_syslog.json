@@ -1,0 +1,64 @@
+{
+    "description": "Write a message via syslog protocol",
+    "enabled": true,
+    "entry_point": "write_syslog.py",
+    "name": "write_syslog",
+    "pack": "syslog_client",
+    "parameters": {
+        "facility": {
+            "default": "user",
+            "description": "Priority of the message.",
+            "enum": [
+                "auth",
+                "authpriv",
+                "cron",
+                "daemon",
+                "ftp",
+                "kern",
+                "local0",
+                "local1",
+                "local2",
+                "local3",
+                "local4",
+                "local5",
+                "local6",
+                "local7",
+                "lpr",
+                "mail",
+                "news",
+                "security",
+                "syslog",
+                "user",
+                "uucp"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "message": {
+            "description": "The content to be sent to the syslog server.",
+            "required": true,
+            "type": "string"
+        },
+        "priority": {
+            "default": "info",
+            "description": "Priority of the message.",
+            "enum": [
+                "notice",
+                "alert",
+                "warn",
+                "warning",
+                "crit",
+                "info",
+                "err",
+                "critical",
+                "error",
+                "debug",
+                "panic",
+                "emerg"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

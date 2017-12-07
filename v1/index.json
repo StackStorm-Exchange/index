@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1512581485,
-        "hash": "f69f316eb58fd00a5f3a32d4584c18db"
+        "generated_ts": 1512633599,
+        "hash": "72c7655b059b387f074ea0a868b54a2f"
     },
     "packs": {
         "acos": {
@@ -9443,6 +9443,41 @@
             "name": "sumologic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sumologic",
             "version": "0.9.7"
+        },
+        "syslog_client": {
+            "author": "Carlos",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "format_execution_result",
+                        "log_via_syslog",
+                        "write_syslog"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "write_log"
+                    ]
+                },
+                "tests": {
+                    "count": 2,
+                    "resources": [
+                        "__init__.py",
+                        "test_format_result.py"
+                    ]
+                }
+            },
+            "description": "Syslog Client actions",
+            "email": "nzlosh@yahoo.com",
+            "keywords": [
+                "syslog",
+                "monitoring"
+            ],
+            "name": "syslog_client",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-syslog_client",
+            "version": "0.0.1"
         },
         "telegram": {
             "author": "Fabio Brito",

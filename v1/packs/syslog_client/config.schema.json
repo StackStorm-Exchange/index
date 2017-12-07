@@ -1,0 +1,27 @@
+{
+    "port": {
+        "default": 514,
+        "description": "The port the syslog daemon is listening on. Default: 514",
+        "required": true,
+        "secret": false,
+        "type": "integer"
+    },
+    "protocol": {
+        "default": "UDP",
+        "description": "The protocol to use UDP/TCP.  Default: UDP",
+        "enum": [
+            "UDP",
+            "TCP"
+        ],
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "server": {
+        "default": "localhost",
+        "description": "The DNS or IP address of the syslog server. Default: localhost",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

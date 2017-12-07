@@ -1,0 +1,24 @@
+name: syslog_client
+description: Syslog Client actions
+keywords:
+- syslog
+- monitoring
+version: 0.0.1
+author: Carlos
+email: nzlosh@yahoo.com
+content:
+  actions:
+    count: 3
+    resources:
+    - format_execution_result
+    - log_via_syslog
+    - write_syslog
+  rules:
+    count: 1
+    resources:
+    - write_log
+  tests:
+    count: 2
+    resources:
+    - __init__.py
+    - test_format_result.py

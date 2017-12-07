@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "execution_id": "{{ trigger.execution_id }}"
+        },
+        "ref": "syslog_client.log_via_syslog"
+    },
+    "criteria": {
+        "trigger.route": {
+            "pattern": "syslog",
+            "type": "equals"
+        }
+    },
+    "description": "Notification rule to send results of action executions to syslog",
+    "enabled": true,
+    "name": "write_log",
+    "pack": "syslog_client",
+    "trigger": {
+        "type": "core.st2.generic.notifytrigger"
+    }
+}

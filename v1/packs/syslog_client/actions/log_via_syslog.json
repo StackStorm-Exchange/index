@@ -1,0 +1,18 @@
+{
+    "description": "Post a message to syslog",
+    "enabled": true,
+    "entry_point": "action-chains/log_via_syslog.yaml",
+    "name": "log_via_syslog",
+    "pack": "syslog_client",
+    "parameters": {
+        "execution_id": {
+            "description": "The execution id used to write a log entry to syslog.",
+            "type": "string"
+        },
+        "experimental": {
+            "default": true,
+            "immutable": true
+        }
+    },
+    "runner_type": "action-chain"
+}
