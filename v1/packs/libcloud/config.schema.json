@@ -23,6 +23,11 @@
                 "secret": true,
                 "type": "string"
             },
+            "extra_kwargs": {
+                "description": "Additional keyword arguments passed to the driver constructor (e.g. 'project' for GCE, etc.)",
+                "required": false,
+                "type": "object"
+            },
             "host": {
                 "description": "Provider host if required - e.g. for Kubernetes",
                 "required": false,
