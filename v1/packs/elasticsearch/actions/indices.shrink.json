@@ -1,11 +1,11 @@
 {
-    "description": "Apply shard allocation filtering rules to the specified indices",
+    "description": "Shrink",
     "enabled": true,
     "entry_point": "curator_runner.py",
-    "name": "indices.allocation",
+    "name": "indices.shrink",
     "parameters": {
         "action": {
-            "default": "indices.allocation",
+            "default": "indices.shrink",
             "immutable": true,
             "type": "string"
         },
@@ -13,20 +13,25 @@
             "description": "Do not filter indices.  Act on all indices.",
             "type": "boolean"
         },
-        "allocation_type": {
-            "default": "require",
-            "description": "The value of this setting must be one of require, include, or exclude.",
-            "type": "string"
-        },
         "continue_if_exception": {
             "default": false,
             "description": "If set to true, Curator will attempt to continue on to the next action.",
+            "type": "boolean"
+        },
+        "copy_aliases": {
+            "default": false,
+            "description": "Whether to copy each source index aliases to target index after shrinking. The aliases will be added to target index and deleted from source index at the same time. (default: False)",
             "type": "boolean"
         },
         "curator_json": {
             "default": "~/.curator/curator.json",
             "description": "Path to curator YAML file used to specify filters",
             "type": "string"
+        },
+        "delete_after": {
+            "default": true,
+            "description": "Whether to delete each index after shrinking. (default: True)",
+            "type": "boolean"
         },
         "disable_action": {
             "default": false,
@@ -44,6 +49,10 @@
                 "type": "string"
             },
             "type": "array"
+        },
+        "extra_settings": {
+            "description": "A dictionary where the permitted root keys are 'settings' and 'aliases'.",
+            "type": "object"
         },
         "filters": {
             "description": "JSON formatted string of filters",
@@ -70,11 +79,6 @@
             },
             "type": "array"
         },
-        "key": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster.",
-            "required": true,
-            "type": "string"
-        },
         "log_level": {
             "default": "warn",
             "description": "Log level [critical|error|warning|info|debug].",
@@ -86,8 +90,19 @@
             "type": "boolean"
         },
         "max_wait": {
-            "default": 300,
-            "description": "Number of seconds to wait for shard routing and reallocation to complete before giving up. A max_wait value of -1 will wait indefinitely.",
+            "description": "Maximum number of seconds to wait_for_completion.",
+            "type": "integer"
+        },
+        "node_filters": {
+            "description": "A dictionary, representing the filters. If the value of the shrink_node is DETERMINISTIC, the values in 'node_filters' will be used while determining which node to allocate the shards on beore performing the shrink.",
+            "type": "string"
+        },
+        "number_of_replicas": {
+            "description": "The number of replicas for the shrunk index",
+            "type": "integer"
+        },
+        "number_of_shards": {
+            "description": "The number of shards the shrunk index should have",
             "type": "integer"
         },
         "operation_timeout": {
@@ -98,6 +113,23 @@
         },
         "port": {
             "description": "Elasticsearch port.",
+            "type": "string"
+        },
+        "post_allocation": {
+            "description": "A dictionary, with keys 'allocation_type', 'key', and 'value'. If populated, the 'allocation_type', 'key' and 'value' will be applied to the shrunk index to re-route it.",
+            "type": "object"
+        },
+        "shrink_node": {
+            "description": "The node name to use as the shrink target, or DETERMINISTIC, which will use the values in node_filters to determine which node will be the shrink node.",
+            "type": "string"
+        },
+        "shrink_prefix": {
+            "description": "Prepend the shrunk index with this value",
+            "type": "string"
+        },
+        "shrink_suffix": {
+            "default": "-shrink",
+            "description": "Append the value to the shrunk index (default: -shrink)",
             "type": "string"
         },
         "timeout": {
@@ -118,18 +150,16 @@
             "description": "Connect to Elasticsearch through SSL.",
             "type": "boolean"
         },
-        "value": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster. For example, you might have set node.tag: myvalue. To match allocation in this case, set value to myvalue.",
-            "type": "string"
+        "wait_for_active_shards": {
+            "description": "The number of shards expected to be active before returning.",
+            "type": "integer"
         },
         "wait_for_completion": {
-            "default": true,
-            "description": "Wait for the shard routing to complete before continuing.",
+            "description": "Wait (or not) for the operation to complete before returning. You should not normally change this, ever. (default: True)",
             "type": "boolean"
         },
         "wait_interval": {
-            "default": 10,
-            "description": "Poll for completion every wait_interval seconds.",
+            "description": "How long in seconds to wait between checks for completion.",
             "type": "integer"
         }
     },

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1513623977,
-        "hash": "d6057d0522daf562b9b11c4d610ac6b1"
+        "generated_ts": 1513727957,
+        "hash": "afc4c3037da5d75b35ac7bf60d0e515b"
     },
     "packs": {
         "acos": {
@@ -4871,21 +4871,28 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 14,
+                    "count": 21,
                     "resources": [
+                        "cluster.cluster_routing",
                         "indices.alias",
                         "indices.allocation",
-                        "indices.bloom",
                         "indices.close",
-                        "indices.delete",
+                        "indices.create_index",
+                        "indices.delete_indices",
+                        "indices.forcemerge",
+                        "indices.index_settings",
                         "indices.open",
                         "indices.optimize",
+                        "indices.reindex",
                         "indices.replicas",
+                        "indices.rollover",
                         "indices.show",
+                        "indices.shrink",
                         "indices.snapshot",
                         "search.body",
                         "search.q",
-                        "snapshots.delete",
+                        "snapshots.delete_snapshots",
+                        "snapshots.restore",
                         "snapshots.show"
                     ]
                 },
@@ -4906,7 +4913,7 @@
             "name": "elasticsearch",
             "ref": "elasticsearch",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-elasticsearch",
-            "version": "0.5.1"
+            "version": "1.0.0"
         },
         "email": {
             "author": "James Fryman",

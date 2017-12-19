@@ -1,11 +1,11 @@
 {
-    "description": "Apply shard allocation filtering rules to the specified indices",
+    "description": "Rollover",
     "enabled": true,
     "entry_point": "curator_runner.py",
-    "name": "indices.allocation",
+    "name": "indices.rollover",
     "parameters": {
         "action": {
-            "default": "indices.allocation",
+            "default": "indices.rollover",
             "immutable": true,
             "type": "string"
         },
@@ -13,10 +13,9 @@
             "description": "Do not filter indices.  Act on all indices.",
             "type": "boolean"
         },
-        "allocation_type": {
-            "default": "require",
-            "description": "The value of this setting must be one of require, include, or exclude.",
-            "type": "string"
+        "conditions": {
+            "description": "A dictionary of conditions to test",
+            "type": "object"
         },
         "continue_if_exception": {
             "default": false,
@@ -45,6 +44,10 @@
             },
             "type": "array"
         },
+        "extra_settings": {
+            "description": "Must either be 'None', or a dictionary of settings to apply to the new index on rollover. This is used in place of 'settings' in the Rollover API, mostly because it's already existent in other places here in Curator.",
+            "type": "object"
+        },
         "filters": {
             "description": "JSON formatted string of filters",
             "type": "string"
@@ -70,11 +73,6 @@
             },
             "type": "array"
         },
-        "key": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster.",
-            "required": true,
-            "type": "string"
-        },
         "log_level": {
             "default": "warn",
             "description": "Log level [critical|error|warning|info|debug].",
@@ -85,10 +83,13 @@
             "description": "Only operate on elected master node.",
             "type": "boolean"
         },
-        "max_wait": {
-            "default": 300,
-            "description": "Number of seconds to wait for shard routing and reallocation to complete before giving up. A max_wait value of -1 will wait indefinitely.",
-            "type": "integer"
+        "name": {
+            "description": "The name of the single-index-mapped alias to test for rollover conditions.",
+            "type": "string"
+        },
+        "new_index": {
+            "description": "The new index name",
+            "type": "string"
         },
         "operation_timeout": {
             "default": "{{timeout}}",
@@ -118,18 +119,8 @@
             "description": "Connect to Elasticsearch through SSL.",
             "type": "boolean"
         },
-        "value": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster. For example, you might have set node.tag: myvalue. To match allocation in this case, set value to myvalue.",
-            "type": "string"
-        },
-        "wait_for_completion": {
-            "default": true,
-            "description": "Wait for the shard routing to complete before continuing.",
-            "type": "boolean"
-        },
-        "wait_interval": {
-            "default": 10,
-            "description": "Poll for completion every wait_interval seconds.",
+        "wait_for_active_shards": {
+            "description": "The number of shards expected to be active before returning.",
             "type": "integer"
         }
     },

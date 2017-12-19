@@ -1,22 +1,17 @@
 {
-    "description": "Apply shard allocation filtering rules to the specified indices",
+    "description": "Delete snapshots",
     "enabled": true,
     "entry_point": "curator_runner.py",
-    "name": "indices.allocation",
+    "name": "snapshots.delete_snapshots",
     "parameters": {
         "action": {
-            "default": "indices.allocation",
+            "default": "snapshots.delete_snapshots",
             "immutable": true,
             "type": "string"
         },
-        "all_indices": {
-            "description": "Do not filter indices.  Act on all indices.",
+        "all_snapshots": {
+            "description": "Do not filter snapshots.  Act on all snapshots.",
             "type": "boolean"
-        },
-        "allocation_type": {
-            "default": "require",
-            "description": "The value of this setting must be one of require, include, or exclude.",
-            "type": "string"
         },
         "continue_if_exception": {
             "default": false,
@@ -39,7 +34,7 @@
             "type": "boolean"
         },
         "exclude": {
-            "description": "Index list to exclude from the operation.",
+            "description": "Snapshot list to operate on.",
             "items": {
                 "type": "string"
             },
@@ -63,18 +58,6 @@
             "description": "When set to true, the action will exit with an INFO level log message indicating such. If set to false, an ERROR level message will be logged and curator will exit with code 1.",
             "type": "boolean"
         },
-        "index": {
-            "description": "Index list to operate on.",
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "key": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster.",
-            "required": true,
-            "type": "string"
-        },
         "log_level": {
             "default": "warn",
             "description": "Log level [critical|error|warning|info|debug].",
@@ -85,11 +68,6 @@
             "description": "Only operate on elected master node.",
             "type": "boolean"
         },
-        "max_wait": {
-            "default": 300,
-            "description": "Number of seconds to wait for shard routing and reallocation to complete before giving up. A max_wait value of -1 will wait indefinitely.",
-            "type": "integer"
-        },
         "operation_timeout": {
             "default": "{{timeout}}",
             "description": "Elasticsearch operation timeout in seconds. (It's equal to action timeout).",
@@ -99,6 +77,18 @@
         "port": {
             "description": "Elasticsearch port.",
             "type": "string"
+        },
+        "repository": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "snapshot": {
+            "description": "Include the provided snapshot in the list. A comma separated list.",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
         },
         "timeout": {
             "default": 600,
@@ -117,20 +107,6 @@
             "default": false,
             "description": "Connect to Elasticsearch through SSL.",
             "type": "boolean"
-        },
-        "value": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster. For example, you might have set node.tag: myvalue. To match allocation in this case, set value to myvalue.",
-            "type": "string"
-        },
-        "wait_for_completion": {
-            "default": true,
-            "description": "Wait for the shard routing to complete before continuing.",
-            "type": "boolean"
-        },
-        "wait_interval": {
-            "default": 10,
-            "description": "Poll for completion every wait_interval seconds.",
-            "type": "integer"
         }
     },
     "runner_type": "python-script"

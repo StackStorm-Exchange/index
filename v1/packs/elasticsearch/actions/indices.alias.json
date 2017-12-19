@@ -9,8 +9,27 @@
             "immutable": true,
             "type": "string"
         },
+        "add": {
+            "description": "Add to alias.",
+            "type": "string"
+        },
         "all_indices": {
             "description": "Do not filter indices.  Act on all indices.",
+            "type": "boolean"
+        },
+        "continue_if_exception": {
+            "default": false,
+            "description": "If set to true, Curator will attempt to continue on to the next action.",
+            "type": "boolean"
+        },
+        "curator_json": {
+            "default": "~/.curator/curator.json",
+            "description": "Path to curator YAML file used to specify filters",
+            "type": "string"
+        },
+        "disable_action": {
+            "default": false,
+            "description": "If set to true, Curator will ignore the current action. The default value is false.",
             "type": "boolean"
         },
         "dry_run": {
@@ -25,6 +44,14 @@
             },
             "type": "array"
         },
+        "extra_settings": {
+            "description": "The extra_settings option allows the addition of extra settings with the add directive. These settings are ignored for remove.",
+            "type": "object"
+        },
+        "filters": {
+            "description": "JSON formatted string of filters",
+            "type": "string"
+        },
         "host": {
             "description": "Elasticsearch host.",
             "required": true,
@@ -33,6 +60,11 @@
         "http_auth": {
             "description": "Use Basic Authentication ex: user:pass",
             "type": "string"
+        },
+        "ignore_empty_list": {
+            "default": false,
+            "description": "When set to true, the action will exit with an INFO level log message indicating such. If set to false, an ERROR level message will be logged and curator will exit with code 1.",
+            "type": "boolean"
         },
         "index": {
             "description": "Index list to operate on.",
@@ -56,14 +88,6 @@
             "required": true,
             "type": "string"
         },
-        "newer_than": {
-            "description": "Include only indices newer than n time_units.",
-            "type": "integer"
-        },
-        "older_than": {
-            "description": "Include only indices older than n  time_units.",
-            "type": "integer"
-        },
         "operation_timeout": {
             "default": "{{timeout}}",
             "description": "Elasticsearch operation timeout in seconds. (It's equal to action timeout).",
@@ -74,26 +98,8 @@
             "description": "Elasticsearch port.",
             "type": "string"
         },
-        "prefix": {
-            "description": "Include only indices beginning with prefix.",
-            "type": "string"
-        },
-        "regex": {
-            "description": "Provide your own regex, e.g '^prefix-.*-suffix$'.",
-            "type": "string"
-        },
         "remove": {
-            "default": false,
             "description": "Remove from alias rather than add.",
-            "type": "boolean"
-        },
-        "suffix": {
-            "description": "Include only indices ending with suffix.",
-            "type": "string"
-        },
-        "time_unit": {
-            "default": "days",
-            "description": "Unit of time to reckon by [hours|days|weeks|months].",
             "type": "string"
         },
         "timeout": {
@@ -101,9 +107,9 @@
             "description": "Don't wait for action completion more then the specified timeout.",
             "type": "integer"
         },
-        "timestring": {
-            "description": "Python strftime string to match your index definition, e.g. 2015.07.15 would be %Y.%m.%d.",
-            "type": "string"
+        "timeout_override": {
+            "description": "snapshot, restore and forcemerge override this value to 21600 if unset. The close action will override this value to 180 if unset. All other actions have no default value.",
+            "type": "integer"
         },
         "url_prefix": {
             "description": "Elasticsearch http url prefix.",
@@ -112,6 +118,11 @@
         "use_ssl": {
             "default": false,
             "description": "Connect to Elasticsearch through SSL.",
+            "type": "boolean"
+        },
+        "warn_if_no_indices": {
+            "default": false,
+            "description": "This setting specifies whether or not the alias action should continue with a warning or return immediately in the event that the filters in the add or remove section result in an empty index list.",
             "type": "boolean"
         }
     },

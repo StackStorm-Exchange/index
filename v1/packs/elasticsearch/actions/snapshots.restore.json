@@ -1,22 +1,17 @@
 {
-    "description": "Apply shard allocation filtering rules to the specified indices",
+    "description": "Restore",
     "enabled": true,
     "entry_point": "curator_runner.py",
-    "name": "indices.allocation",
+    "name": "snapshots.restore",
     "parameters": {
         "action": {
-            "default": "indices.allocation",
+            "default": "snapshots.restore",
             "immutable": true,
             "type": "string"
         },
         "all_indices": {
             "description": "Do not filter indices.  Act on all indices.",
             "type": "boolean"
-        },
-        "allocation_type": {
-            "default": "require",
-            "description": "The value of this setting must be one of require, include, or exclude.",
-            "type": "string"
         },
         "continue_if_exception": {
             "default": false,
@@ -45,6 +40,10 @@
             },
             "type": "array"
         },
+        "extra_settings": {
+            "description": "Extra settings, including shard count and settings to omit.",
+            "type": "object"
+        },
         "filters": {
             "description": "JSON formatted string of filters",
             "type": "string"
@@ -63,6 +62,21 @@
             "description": "When set to true, the action will exit with an INFO level log message indicating such. If set to false, an ERROR level message will be logged and curator will exit with code 1.",
             "type": "boolean"
         },
+        "ignore_unavailable": {
+            "default": false,
+            "description": "Ignore unavailable shards/indices. (default: False)",
+            "type": "boolean"
+        },
+        "include_aliases": {
+            "default": false,
+            "description": "If set to True, restore aliases with the indices. (default: False)",
+            "type": "boolean"
+        },
+        "include_global_state": {
+            "default": false,
+            "description": "Restore cluster global state with snapshot. (default: False)",
+            "type": "boolean"
+        },
         "index": {
             "description": "Index list to operate on.",
             "items": {
@@ -70,10 +84,12 @@
             },
             "type": "array"
         },
-        "key": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster.",
-            "required": true,
-            "type": "string"
+        "indices": {
+            "description": "A list of indices to restore. If no indices are provided, it will restore all indices in the snapshot.",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
         },
         "log_level": {
             "default": "warn",
@@ -86,9 +102,12 @@
             "type": "boolean"
         },
         "max_wait": {
-            "default": 300,
-            "description": "Number of seconds to wait for shard routing and reallocation to complete before giving up. A max_wait value of -1 will wait indefinitely.",
+            "description": "Maximum number of seconds to wait_for_completion",
             "type": "integer"
+        },
+        "name": {
+            "description": "Name of the snapshot to restore. If no name is provided, it will restore the most recent snapshot by age.",
+            "type": "string"
         },
         "operation_timeout": {
             "default": "{{timeout}}",
@@ -96,9 +115,27 @@
             "immutable": true,
             "type": "string"
         },
+        "partial": {
+            "default": false,
+            "description": "Do not fail if primary shard is unavailable. (default: False)",
+            "type": "boolean"
+        },
         "port": {
             "description": "Elasticsearch port.",
             "type": "string"
+        },
+        "rename_pattern": {
+            "description": "A regular expression pattern with one or more captures, e.g. index_(.+)",
+            "type": "string"
+        },
+        "rename_replacement": {
+            "description": "A target index name pattern with $# numbered references to the captures in rename_pattern, e.g. restored_index_$1",
+            "type": "string"
+        },
+        "skip_repo_fs_check": {
+            "default": false,
+            "description": "Do not validate write access to repository on all cluster nodes before proceeding. (default: False). Useful for shared filesystems where intermittent timeouts can affect validation, but won't likely affect snapshot success.",
+            "type": "boolean"
         },
         "timeout": {
             "default": 600,
@@ -118,18 +155,13 @@
             "description": "Connect to Elasticsearch through SSL.",
             "type": "boolean"
         },
-        "value": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster. For example, you might have set node.tag: myvalue. To match allocation in this case, set value to myvalue.",
-            "type": "string"
-        },
         "wait_for_completion": {
             "default": true,
-            "description": "Wait for the shard routing to complete before continuing.",
+            "description": "Wait (or not) for the operation to complete before returning. (default: True)",
             "type": "boolean"
         },
         "wait_interval": {
-            "default": 10,
-            "description": "Poll for completion every wait_interval seconds.",
+            "description": "How long in seconds to wait between checks for completion.",
             "type": "integer"
         }
     },

@@ -1,22 +1,17 @@
 {
-    "description": "Apply shard allocation filtering rules to the specified indices",
+    "description": "Cluster routing",
     "enabled": true,
     "entry_point": "curator_runner.py",
-    "name": "indices.allocation",
+    "name": "cluster.cluster_routing",
     "parameters": {
         "action": {
-            "default": "indices.allocation",
+            "default": "cluster.cluster_routing",
             "immutable": true,
             "type": "string"
         },
         "all_indices": {
             "description": "Do not filter indices.  Act on all indices.",
             "type": "boolean"
-        },
-        "allocation_type": {
-            "default": "require",
-            "description": "The value of this setting must be one of require, include, or exclude.",
-            "type": "string"
         },
         "continue_if_exception": {
             "default": false,
@@ -70,11 +65,6 @@
             },
             "type": "array"
         },
-        "key": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster.",
-            "required": true,
-            "type": "string"
-        },
         "log_level": {
             "default": "warn",
             "description": "Log level [critical|error|warning|info|debug].",
@@ -86,8 +76,7 @@
             "type": "boolean"
         },
         "max_wait": {
-            "default": 300,
-            "description": "Number of seconds to wait for shard routing and reallocation to complete before giving up. A max_wait value of -1 will wait indefinitely.",
+            "description": "Maximum number of seconds to wait_for_completion",
             "type": "integer"
         },
         "operation_timeout": {
@@ -98,6 +87,15 @@
         },
         "port": {
             "description": "Elasticsearch port.",
+            "type": "string"
+        },
+        "routing_type": {
+            "description": "Type of routing to apply. Either 'allocation' or 'rebalance'",
+            "type": "string"
+        },
+        "setting": {
+            "default": "enable",
+            "description": "Currently, the only acceptable value for setting is 'enable'. This is here in case that changes.",
             "type": "string"
         },
         "timeout": {
@@ -119,17 +117,16 @@
             "type": "boolean"
         },
         "value": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster. For example, you might have set node.tag: myvalue. To match allocation in this case, set value to myvalue.",
+            "description": "Used only if 'setting' is 'enable'. Semi-dependent on 'routing_type'. Acceptable values for allocation and rebalance are 'all', 'primaries', and 'none' (string, not NoneType). If routing_type is allocation, this can also be 'new_primaries', and if rebalance, it can be 'replicas'.",
             "type": "string"
         },
         "wait_for_completion": {
-            "default": true,
-            "description": "Wait for the shard routing to complete before continuing.",
+            "default": false,
+            "description": "Wait (or not) for the operation to complete before returning.",
             "type": "boolean"
         },
         "wait_interval": {
-            "default": 10,
-            "description": "Poll for completion every wait_interval seconds.",
+            "description": "How long in seconds to wait between checks for completion.",
             "type": "integer"
         }
     },

@@ -1,22 +1,17 @@
 {
-    "description": "Apply shard allocation filtering rules to the specified indices",
+    "description": "Force merge",
     "enabled": true,
     "entry_point": "curator_runner.py",
-    "name": "indices.allocation",
+    "name": "indices.forcemerge",
     "parameters": {
         "action": {
-            "default": "indices.allocation",
+            "default": "indices.forcemerge",
             "immutable": true,
             "type": "string"
         },
         "all_indices": {
             "description": "Do not filter indices.  Act on all indices.",
             "type": "boolean"
-        },
-        "allocation_type": {
-            "default": "require",
-            "description": "The value of this setting must be one of require, include, or exclude.",
-            "type": "string"
         },
         "continue_if_exception": {
             "default": false,
@@ -27,6 +22,10 @@
             "default": "~/.curator/curator.json",
             "description": "Path to curator YAML file used to specify filters",
             "type": "string"
+        },
+        "delay": {
+            "description": "Number of seconds to delay between forceMerge operations",
+            "type": "integer"
         },
         "disable_action": {
             "default": false,
@@ -70,11 +69,6 @@
             },
             "type": "array"
         },
-        "key": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster.",
-            "required": true,
-            "type": "string"
-        },
         "log_level": {
             "default": "warn",
             "description": "Log level [critical|error|warning|info|debug].",
@@ -85,9 +79,8 @@
             "description": "Only operate on elected master node.",
             "type": "boolean"
         },
-        "max_wait": {
-            "default": 300,
-            "description": "Number of seconds to wait for shard routing and reallocation to complete before giving up. A max_wait value of -1 will wait indefinitely.",
+        "max_num_segments": {
+            "description": "Number of segments per shard to forceMerge",
             "type": "integer"
         },
         "operation_timeout": {
@@ -117,20 +110,6 @@
             "default": false,
             "description": "Connect to Elasticsearch through SSL.",
             "type": "boolean"
-        },
-        "value": {
-            "description": "The value of this setting should correspond to a node setting on one or more nodes in your cluster. For example, you might have set node.tag: myvalue. To match allocation in this case, set value to myvalue.",
-            "type": "string"
-        },
-        "wait_for_completion": {
-            "default": true,
-            "description": "Wait for the shard routing to complete before continuing.",
-            "type": "boolean"
-        },
-        "wait_interval": {
-            "default": 10,
-            "description": "Poll for completion every wait_interval seconds.",
-            "type": "integer"
         }
     },
     "runner_type": "python-script"
