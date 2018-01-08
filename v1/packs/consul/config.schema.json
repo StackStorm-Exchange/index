@@ -1,4 +1,15 @@
 {
+    "consistency": {
+        "default": "default",
+        "description": "The consistency mode to use by default for all reads that support the consistency option.",
+        "enum": [
+            "default",
+            "consistent",
+            "stale"
+        ],
+        "required": false,
+        "type": "string"
+    },
     "host": {
         "default": "127.0.0.1",
         "description": "Consul server IP/name.  Default 127.0.0.1",
