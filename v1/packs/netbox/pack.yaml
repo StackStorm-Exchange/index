@@ -5,12 +5,12 @@ keywords:
 - networking
 - ipam
 - dcim
-version: 0.3.2
+version: 0.4.0
 author: John Anderson, Jefferson White
 email: lampwins@gmail.com
 content:
   actions:
-    count: 11
+    count: 22
     resources:
     - dcim_get_devices
     - dcim_get_interface_connections
@@ -23,3 +23,14 @@ content:
     - ipam_get_vlans
     - ipam_get_vrfs
     - ipam_post_available_ips
+    - virtualization_get_cluster_groups
+    - virtualization_get_cluster_types
+    - virtualization_get_clusters
+    - virtualization_get_interfaces
+    - virtualization_get_virtual_machines
+    - virtualization_patch_interfaces
+    - virtualization_patch_virtual_machines
+    - virtualization_post_interfaces
+    - virtualization_post_virtual_machines
+    - virtualization_put_interfaces
+    - virtualization_put_virtual_machines

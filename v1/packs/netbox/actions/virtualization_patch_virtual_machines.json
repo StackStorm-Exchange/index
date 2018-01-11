@@ -1,0 +1,62 @@
+{
+    "description": "PATCH virtual machine to NetBox",
+    "enabled": true,
+    "entry_point": "base_patch_action.py",
+    "name": "virtualization_patch_virtual_machines",
+    "pack": "netbox",
+    "parameters": {
+        "cluster": {
+            "description": "ID of the Cluster",
+            "type": "integer"
+        },
+        "comments": {
+            "description": "Comments for the Virtual Machine",
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom field(s) object for the Virtual Machine",
+            "type": "object"
+        },
+        "disk": {
+            "description": "Disk size of the Virtual Machine",
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/api/virtualization/virtual-machines/{{ id }}/",
+            "immutable": true
+        },
+        "id": {
+            "description": "ID of the Virtual Machine",
+            "type": "integer"
+        },
+        "memory": {
+            "description": "Memory of the Virtual Machine",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the inteface",
+            "type": "string"
+        },
+        "platform": {
+            "description": "ID of the Platform",
+            "type": "integer"
+        },
+        "role": {
+            "description": "ID of the Role",
+            "type": "integer"
+        },
+        "status": {
+            "description": "Status of the Virtual Machine",
+            "type": "integer"
+        },
+        "tenant": {
+            "description": "ID of the Tenant",
+            "type": "integer"
+        },
+        "vcpus": {
+            "description": "vCPU count of the Virtual Machine",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1515638019,
-        "hash": "0f1403bf4ffc5ec00b9c0e8152b879a6"
+        "generated_ts": 1515660267,
+        "hash": "a6cf9643417426590ba0e214dee10a91"
     },
     "packs": {
         "acos": {
@@ -7529,7 +7529,7 @@
             "author": "John Anderson, Jefferson White",
             "content": {
                 "actions": {
-                    "count": 11,
+                    "count": 22,
                     "resources": [
                         "dcim_get_devices",
                         "dcim_get_interface_connections",
@@ -7541,7 +7541,18 @@
                         "ipam_get_vlan_groups",
                         "ipam_get_vlans",
                         "ipam_get_vrfs",
-                        "ipam_post_available_ips"
+                        "ipam_post_available_ips",
+                        "virtualization_get_cluster_groups",
+                        "virtualization_get_cluster_types",
+                        "virtualization_get_clusters",
+                        "virtualization_get_interfaces",
+                        "virtualization_get_virtual_machines",
+                        "virtualization_patch_interfaces",
+                        "virtualization_patch_virtual_machines",
+                        "virtualization_post_interfaces",
+                        "virtualization_post_virtual_machines",
+                        "virtualization_put_interfaces",
+                        "virtualization_put_virtual_machines"
                     ]
                 }
             },
@@ -7555,7 +7566,7 @@
             ],
             "name": "netbox",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-netbox",
-            "version": "0.3.2"
+            "version": "0.4.0"
         },
         "network_essentials": {
             "author": "Brocade",

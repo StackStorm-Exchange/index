@@ -1,0 +1,42 @@
+{
+    "description": "PATCH Virtual Machine Interface to NetBox",
+    "enabled": true,
+    "entry_point": "base_patch_action.py",
+    "name": "virtualization_patch_interfaces",
+    "pack": "netbox",
+    "parameters": {
+        "description": {
+            "description": "Description for the Interface",
+            "type": "string"
+        },
+        "enabled": {
+            "description": "Admin status of the interface",
+            "type": "boolean"
+        },
+        "endpoint_uri": {
+            "default": "/api/virtualization/interfaces/{{ id }}/",
+            "immutable": true
+        },
+        "id": {
+            "description": "ID of the virtual machine Interface",
+            "type": "integer"
+        },
+        "mac_address": {
+            "description": "MAC Address of the interface",
+            "type": "string"
+        },
+        "mtu": {
+            "description": "MTU value of the interface",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the inteface",
+            "type": "string"
+        },
+        "virtual_machine": {
+            "description": "ID of the Virtual Machine",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

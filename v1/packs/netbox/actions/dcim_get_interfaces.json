@@ -21,6 +21,10 @@
             "description": "Form factor value",
             "type": "integer"
         },
+        "id": {
+            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "type": "integer"
+        },
         "id__in": {
             "description": "List of Interface IDs",
             "type": "array"

@@ -1,0 +1,66 @@
+{
+    "description": "POST virtual machine to NetBox",
+    "enabled": true,
+    "entry_point": "base_post_action.py",
+    "name": "virtualization_post_virtual_machines",
+    "pack": "netbox",
+    "parameters": {
+        "cluster": {
+            "description": "ID of the Cluster",
+            "type": "integer"
+        },
+        "comments": {
+            "description": "Comments for the Virtual Machine",
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom field(s) object for the Virtual Machine",
+            "type": "object"
+        },
+        "disk": {
+            "description": "Disk size of the Virtual Machine",
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/api/virtualization/virtual-machines/",
+            "immutable": true
+        },
+        "memory": {
+            "description": "Memory of the Virtual Machine",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the inteface",
+            "type": "string"
+        },
+        "platform": {
+            "description": "ID of the Platform",
+            "type": "integer"
+        },
+        "primary_ip4": {
+            "description": "ID of the ipv4 address to use as the pirmary IP for the Virtual Machine",
+            "type": "integer"
+        },
+        "primary_ip6": {
+            "description": "ID of the ipv6 address to use as the pirmary IP for the Virtual Machine",
+            "type": "integer"
+        },
+        "role": {
+            "description": "ID of the Role",
+            "type": "integer"
+        },
+        "status": {
+            "description": "Status of the Virtual Machine",
+            "type": "integer"
+        },
+        "tenant": {
+            "description": "ID of the Tenant",
+            "type": "integer"
+        },
+        "vcpus": {
+            "description": "vCPU count of the Virtual Machine",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}
