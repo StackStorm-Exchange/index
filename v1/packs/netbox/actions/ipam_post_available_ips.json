@@ -5,6 +5,14 @@
     "name": "ipam_post_available_ips",
     "pack": "netbox",
     "parameters": {
+        "address": {
+            "description": "The address value for this IP",
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "IP Address custom fields object",
+            "type": "object"
+        },
         "description": {
             "description": "Description of the newly assigned IP address",
             "type": "string"
@@ -17,13 +25,17 @@
             "description": "ID of the prefix.",
             "type": "integer"
         },
-        "is_pool": {
-            "description": "IP address is a pool",
-            "type": "boolean"
+        "interface": {
+            "description": "ID of the interface to assign this IP to",
+            "type": "integer"
         },
         "limit": {
             "default": 50,
             "description": "Max limit of objects to return from the request.",
+            "type": "integer"
+        },
+        "nat_inside": {
+            "description": "ID of the NAT IP Address",
             "type": "integer"
         },
         "offset": {
@@ -31,32 +43,20 @@
             "description": "Offset result set by X objects. Used for pagination.",
             "type": "integer"
         },
-        "prefix": {
-            "description": "Prefix that this IP address belongs to",
-            "type": "string"
-        },
         "role": {
-            "description": "IP address role",
-            "type": "integer"
-        },
-        "site": {
-            "description": "Site that this IP address belongs to",
+            "description": "ID of the IP address role",
             "type": "integer"
         },
         "status": {
-            "description": "Status of the newly assigned IP address",
-            "type": "string"
-        },
-        "tenant": {
-            "description": "Tenant the IP address belongs to",
+            "description": "ID of the Status of the newly assigned IP address",
             "type": "integer"
         },
-        "vlan": {
-            "description": "VLAN that this IP address belongs to",
+        "tenant": {
+            "description": "ID of the Tenant the IP address belongs to",
             "type": "integer"
         },
         "vrf": {
-            "description": "VRF the IP address is a member of",
+            "description": "ID of the VRF the IP address is a member of",
             "type": "integer"
         }
     },
