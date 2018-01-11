@@ -41,6 +41,14 @@
             "description": "ID of the Platform",
             "type": "integer"
         },
+        "primary_ip4": {
+            "description": "ID of the ipv4 address to use as the pirmary IP for the Virtual Machine",
+            "type": "integer"
+        },
+        "primary_ip6": {
+            "description": "ID of the ipv6 address to use as the pirmary IP for the Virtual Machine",
+            "type": "integer"
+        },
         "role": {
             "description": "ID of the Role",
             "type": "integer"
