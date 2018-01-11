@@ -1,0 +1,18 @@
+{
+    "action": {
+        "parameters": {
+            "cmd": "echo \"{{trigger.body}}\" >> ~/st2.paloalto.out"
+        },
+        "ref": "core.local"
+    },
+    "description": "Test rule dumping http webhook payload to a file",
+    "enabled": false,
+    "name": "test_rule",
+    "pack": "paloalto",
+    "trigger": {
+        "parameters": {
+            "url": "paloalto"
+        },
+        "type": "core.st2.webhook"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "action": {
+        "parameters": {
+            "firewall": "2.2.2.2",
+            "ip": "{{trigger.body.source}}"
+        },
+        "ref": "paloalto.dag_update"
+    },
+    "description": "update DAG for firewall 3.3.3.3 - no criteria",
+    "enabled": true,
+    "name": "dag_update_fw2",
+    "pack": "paloalto",
+    "trigger": {
+        "parameters": {
+            "url": "paloalto"
+        },
+        "type": "core.st2.webhook"
+    }
+}

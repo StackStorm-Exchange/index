@@ -1,0 +1,20 @@
+ref: paloalto
+name: paloalto
+description: Block threats on Palo Alto Networks firewalls
+keywords:
+- firewalls
+- threats
+version: 0.1.0
+author: Irek Romaniuk
+email: irek.romaniuk@gmail.com
+content:
+  actions:
+    count: 1
+    resources:
+    - dag_update
+  rules:
+    count: 3
+    resources:
+    - dag_update_fw1
+    - dag_update_fw2
+    - test_rule

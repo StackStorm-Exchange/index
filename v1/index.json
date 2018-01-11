@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1515625747,
-        "hash": "4d274051a7242e88f55ba50358a28bed"
+        "generated_ts": 1515638019,
+        "hash": "0f1403bf4ffc5ec00b9c0e8152b879a6"
     },
     "packs": {
         "acos": {
@@ -8571,6 +8571,35 @@
             "ref": "pagerduty",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pagerduty",
             "version": "0.4.1"
+        },
+        "paloalto": {
+            "author": "Irek Romaniuk",
+            "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "dag_update"
+                    ]
+                },
+                "rules": {
+                    "count": 3,
+                    "resources": [
+                        "dag_update_fw1",
+                        "dag_update_fw2",
+                        "test_rule"
+                    ]
+                }
+            },
+            "description": "Block threats on Palo Alto Networks firewalls",
+            "email": "irek.romaniuk@gmail.com",
+            "keywords": [
+                "firewalls",
+                "threats"
+            ],
+            "name": "paloalto",
+            "ref": "paloalto",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-paloalto",
+            "version": "0.1.0"
         },
         "phantomjs": {
             "author": "Tomaz Muraus",

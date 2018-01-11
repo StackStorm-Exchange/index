@@ -1,0 +1,21 @@
+{
+    "description": "update DAG: dynamic address group",
+    "enabled": true,
+    "entry_point": "dag_update.py",
+    "name": "dag_update",
+    "parameters": {
+        "firewall": {
+            "description": "Firewall address",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "ip": {
+            "description": "Source address",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
