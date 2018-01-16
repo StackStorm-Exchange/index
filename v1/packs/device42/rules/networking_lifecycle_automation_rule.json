@@ -1,0 +1,28 @@
+{
+    "action": {
+        "parameters": {
+            "device_id": "{{trigger.body.data.device_id}}",
+            "omapi_key": "+PoRtIuTdp46vz2yxVwkQHH2wsjcZJCHcx4bgUA7ykckYR9F6+bazazPAxcslO3DXwMKGgQ6wZro4/JgZ/hBbA==",
+            "omapi_key_name": "omapi_key",
+            "subnet_id": "4",
+            "subnet_name": "provisioning_automation_internal_network",
+            "subnet_network_mask": "192.168.41.0/24"
+        },
+        "ref": "device42.networking_lifecycle_automation"
+    },
+    "criteria": {
+        "trigger.body.data.type_id": {
+            "pattern": "15",
+            "type": "equals"
+        }
+    },
+    "description": "When a device enters the networking lifecycle, execute the networking_lifecycle_automation action chain.",
+    "enabled": true,
+    "name": "networking_lifecycle_automation_rule",
+    "trigger": {
+        "parameters": {
+            "url": "d42_lifecycle"
+        },
+        "type": "core.st2.webhook"
+    }
+}

@@ -6,7 +6,7 @@
             "identifier_type": "device_id",
             "lc_type_id": "{{trigger.body.data.type_id}}"
         },
-        "ref": "device42.udpate_object_category_by_lifecycle_id"
+        "ref": "device42.update_object_category_by_lifecycle_id"
     },
     "description": "Respond to lifecycle event webhooks whenever a device gets a new lifecycle.  When this happens, update that devices object category. ",
     "enabled": true,

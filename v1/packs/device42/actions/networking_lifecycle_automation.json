@@ -1,0 +1,53 @@
+{
+    "description": "gets device then suggests the next IP in a subnet and creates it in Device42. Adds IP to device in D42. Creates DHCP reservation and creates a specific PXE config for this machine.",
+    "enabled": true,
+    "entry_point": "chains/networking_lifecycle_automation.yaml",
+    "name": "networking_lifecycle_automation",
+    "pack": "device42",
+    "parameters": {
+        "device_id": {
+            "description": "ID of device to link the IP that will be created to.  The device_id often times comes from a webhook from Device42. ",
+            "type": "string"
+        },
+        "ip_type": {
+            "description": "static / DHCP / reserved",
+            "type": "string"
+        },
+        "omapi_key": {
+            "description": "auth key for OMAPI DHCP requests",
+            "required": true,
+            "type": "string"
+        },
+        "omapi_key_name": {
+            "description": "name of the auth key for OMAPI DHCP requests as set in /etc/dhcp/dhcpd.conf on the DHCP server.",
+            "required": true,
+            "type": "string"
+        },
+        "subnet_id": {
+            "description": "ID of subnet to get next IP suggestion from and subnet to add IP to",
+            "required": true,
+            "type": "string"
+        },
+        "subnet_name": {
+            "description": "name of subnet to get next IP suggestion from and subnet to add IP to.",
+            "type": "string"
+        },
+        "subnet_network_mask": {
+            "description": "network/mask notation, e.g.: 192.168.1.0/24",
+            "type": "string"
+        },
+        "tags": {
+            "description": "Tags to add to IP",
+            "type": "string"
+        },
+        "vrf_group": {
+            "description": "name of VRF group IP will / should belong to",
+            "type": "string"
+        },
+        "vrf_group_id": {
+            "description": "ID of VRF group IP will / should belong to",
+            "type": "string"
+        }
+    },
+    "runner_type": "action-chain"
+}

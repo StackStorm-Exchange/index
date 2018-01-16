@@ -1,12 +1,16 @@
 {
-    "description": "Update a devices object category and more  on D42 based on an incoming lifecycle event ID.  ",
+    "description": "Adds a lifecycle event to a Device",
     "enabled": true,
-    "entry_point": "update_object_category_by_lifecycle_id.py",
-    "name": "update_object_category_by_lifecycle_id",
+    "entry_point": "add_device_lifecycle.py",
+    "name": "add_device_lifecycle",
     "parameters": {
         "additional_changes": {
             "description": "optionally, you may make additional changes to this device via a key value pair object input through this parameter",
             "type": "object"
+        },
+        "device_name_prefix": {
+            "description": "optional conditional prefix.  if present, only will run on devices starting with this prefix.",
+            "type": "string"
         },
         "identifier": {
             "description": "contains the name / serial / asset / device_id of the device on D42 to return.  ",
@@ -18,8 +22,9 @@
             "required": true,
             "type": "string"
         },
-        "lc_type_id": {
-            "description": "id of lc id from D42",
+        "lc": {
+            "description": "lc to add to Device",
+            "required": true,
             "type": "string"
         }
     },

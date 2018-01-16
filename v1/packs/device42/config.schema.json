@@ -1,4 +1,14 @@
 {
+    "d42_api_path": {
+        "default": "/api/1.0/",
+        "description": "for calls to the regular API at /api/1.0",
+        "type": "string"
+    },
+    "d42_doql_api_path": {
+        "default": "/services/data/v1.0/query/",
+        "description": "for calls to the doql API",
+        "type": "string"
+    },
     "d42_password": {
         "description": "Device42 password.",
         "required": true,

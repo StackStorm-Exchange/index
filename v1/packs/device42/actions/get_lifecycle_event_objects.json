@@ -1,0 +1,7 @@
+{
+    "description": "Returns a list of lifecycle event objects from D42.  Useful for populating ST2 datastore. ",
+    "enabled": true,
+    "entry_point": "get_lifecycle_event_objects.py",
+    "name": "get_lifecycle_event_objects",
+    "runner_type": "python-script"
+}

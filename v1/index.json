@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1516127299,
-        "hash": "268cdeadb655279879dba735661a0c3a"
+        "generated_ts": 1516137164,
+        "hash": "735c8ddabca8cd89a52a915783c419ee"
     },
     "packs": {
         "acos": {
@@ -4606,22 +4606,31 @@
             "author": "Device42 Inc.",
             "content": {
                 "actions": {
-                    "count": 7,
+                    "count": 14,
                     "resources": [
+                        "add_device_lifecycle",
+                        "create_dhcp_lease_reservation",
+                        "create_or_edit_ip",
                         "device_name_list",
                         "get_device_by_id",
                         "get_dns_zone",
+                        "get_lifecycle_event_objects",
                         "get_lifecycle_events",
-                        "update_object_category_by_lifecycle_id",
+                        "networking_lifecycle_automation",
+                        "suggest_and_create_ip",
                         "suggest_next_ip",
-                        "update_device"
+                        "update_device",
+                        "update_object_category_by_lifecycle_id",
+                        "write_pxe_cfg"
                     ]
                 },
                 "rules": {
-                    "count": 2,
+                    "count": 4,
                     "resources": [
                         "d42_webhook_responder",
-                        "lifecycle_triggered_object_category_change"
+                        "device_created_initial_lifecycle",
+                        "lifecycle_triggered_object_category_change",
+                        "networking_lifecycle_automation_rule"
                     ]
                 }
             },
@@ -4630,7 +4639,7 @@
             "name": "device42",
             "ref": "device42",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
-            "version": "0.5.0"
+            "version": "0.7.0"
         },
         "digitalocean": {
             "author": "StackStorm, Inc.",

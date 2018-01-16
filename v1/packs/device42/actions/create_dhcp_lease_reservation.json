@@ -1,0 +1,44 @@
+{
+    "description": "Create DHCP lease reservation between a MAC address and IP address as stored in Device42 on a DHCP server of your choice. Utilizies pypureomapi to make OMAPI requests to isc-dhcp-server / dhcpd linux type DHCP servers. ",
+    "enabled": true,
+    "entry_point": "create_dhcp_lease_reservation.py",
+    "name": "create_dhcp_lease_reservation",
+    "parameters": {
+        "auth_key": {
+            "description": "the base 64 encoded, byte type authorization key itself",
+            "required": true,
+            "type": "string"
+        },
+        "auth_key_name": {
+            "description": "name of omapi auth key to use to sign requests",
+            "required": true,
+            "type": "string"
+        },
+        "dhcp_host": {
+            "description": "hostname or IP of dhcp server to make OMAPI call to",
+            "required": true,
+            "type": "string"
+        },
+        "dhcp_port": {
+            "description": "port to communicate with dhcp server on",
+            "required": true,
+            "type": "integer"
+        },
+        "mac_addr": {
+            "description": "MAC address of the machine that will be given the reserved IP",
+            "required": true,
+            "type": "string"
+        },
+        "reserved_ip": {
+            "description": "IP to create a lease reservation for",
+            "required": true,
+            "type": "string"
+        },
+        "server_name": {
+            "description": "optional hostname to create the machine under",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

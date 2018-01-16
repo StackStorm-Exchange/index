@@ -1,0 +1,31 @@
+{
+    "action": {
+        "parameters": {
+            "additional_changes": "{'tags':'{{trigger.body.time_stamp}}'}",
+            "identifier": "{{trigger.body.data.name}}",
+            "identifier_type": "device",
+            "lc": "purchasing"
+        },
+        "ref": "device42.add_device_lifecycle"
+    },
+    "criteria": {
+        "trigger.body.action": {
+            "pattern": "I",
+            "type": "iequals"
+        },
+        "trigger.body.data.notes": {
+            "pattern": "provisioning_auto",
+            "type": "icontains"
+        }
+    },
+    "description": "Initializes new devices created in the automated server provisioning workflow with the \"purchasing\" lifecycle",
+    "enabled": true,
+    "name": "device_created_initial_lifecycle",
+    "pack": "device42",
+    "trigger": {
+        "parameters": {
+            "url": "d42"
+        },
+        "type": "core.st2.webhook"
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "description": "Create or edit an IP Address in D42",
+    "enabled": true,
+    "entry_point": "create_or_edit_ip.py",
+    "name": "create_or_edit_ip",
+    "parameters": {
+        "available": {
+            "description": "If yes - then IP is marked as available and device and mac address associations are cleared.",
+            "type": "string"
+        },
+        "clear_all": {
+            "description": "If yes - then IP is marked as available and device and mac address associations are cleared",
+            "type": "string"
+        },
+        "debug": {
+            "description": "if True, will print full Response text, if false, returns object.  use to debug output",
+            "type": "boolean"
+        },
+        "device_name": {
+            "description": "name of device to associate the new IP with.",
+            "type": "string"
+        },
+        "ip_type": {
+            "description": "DHCP / Static",
+            "type": "string"
+        },
+        "ipaddress": {
+            "description": "IP address to create",
+            "required": true,
+            "type": "string"
+        },
+        "macaddress": {
+            "description": "mac address to associate this IP address with in Device42.",
+            "type": "string"
+        },
+        "subnet_name": {
+            "description": "name of subnet to create IP in",
+            "type": "string"
+        },
+        "subnet_network_mask": {
+            "description": "enter in network/mask notation, e.g.: 192.168.1.0/24",
+            "type": "string"
+        },
+        "tags": {
+            "description": "tags to add to IP",
+            "type": "string"
+        },
+        "vrf_group": {
+            "description": "name of the VRF group - useful if you have overlapping subnets in your Device42 instance",
+            "type": "string"
+        },
+        "vrf_group_id": {
+            "description": "ID of the VRF group - useful if you have overlapping subnets in your Device42 instance",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

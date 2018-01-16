@@ -1,0 +1,23 @@
+{
+    "description": "Simply writes a pxe cfg for an incoming MAC addr + OS. Requires configuration based on your environment specific PXE configuration.",
+    "enabled": true,
+    "entry_point": "write_pxe_cfg.py",
+    "name": "write_pxe_cfg",
+    "parameters": {
+        "mac_addr": {
+            "description": "MAC address of the machine that will be given the reserved IP",
+            "required": true,
+            "type": "string"
+        },
+        "os": {
+            "description": "Value of OS on Device, used to select a PXE config template. If left empty, default PXE config will be selected.",
+            "required": true,
+            "type": "string"
+        },
+        "pxe_cfg_dir": {
+            "description": "Location of PXE config directory.  Defaults to /opt/tftpboot/pxelinux.cfg",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
