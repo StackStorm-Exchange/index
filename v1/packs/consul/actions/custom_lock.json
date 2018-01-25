@@ -1,0 +1,66 @@
+{
+    "description": "Create a lock or semaphore.  Used for synchronising discret workflows.",
+    "enabled": true,
+    "entry_point": "custom_lock.py",
+    "name": "custom_lock",
+    "parameters": {
+        "acquire_timeout": {
+            "default": 10,
+            "description": "Number of seconds to wait for the lock to be acquired.",
+            "required": false,
+            "type": "integer"
+        },
+        "behavior": {
+            "default": "release",
+            "description": "The behavior to use when the lock expires (release or delete).",
+            "enum": [
+                "release",
+                "delete"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "checks": {
+            "description": "A list of the health checks used to determine if the lock should be invalidated.",
+            "required": false,
+            "type": "array"
+        },
+        "dc": {
+            "description": "Optional datacenter that you wish to communicate with.",
+            "required": false,
+            "type": "string"
+        },
+        "key_prefix": {
+            "description": "KV path to prefix to lock name.",
+            "required": true,
+            "type": "string"
+        },
+        "max_locks": {
+            "default": 1,
+            "description": "Maximum number of concurrent holders for the lock.",
+            "required": false,
+            "type": "integer"
+        },
+        "name": {
+            "description": "The name of the lock.",
+            "required": false,
+            "type": "string"
+        },
+        "node": {
+            "description": "The node that will establish and maintain the lock.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "An optional ACL token to apply to this request.",
+            "required": false,
+            "type": "string"
+        },
+        "ttl": {
+            "description": "Time to Live before the lock expires (between 10 and 86400 seconds).",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

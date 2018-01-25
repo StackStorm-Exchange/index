@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1516616132,
-        "hash": "756deb45e50cfc7c18372987431cdb78"
+        "generated_ts": 1516879254,
+        "hash": "58beb34e13a2166981df5ca3441dd62e"
     },
     "packs": {
         "acos": {
@@ -4413,7 +4413,7 @@
             "author": "jfryman",
             "content": {
                 "actions": {
-                    "count": 35,
+                    "count": 37,
                     "resources": [
                         "acl_create",
                         "acl_destroy",
@@ -4434,6 +4434,8 @@
                         "catalog_register",
                         "catalog_service",
                         "catalog_services",
+                        "custom_lock",
+                        "custom_unlock",
                         "event_fire",
                         "event_list",
                         "health_checks",
@@ -4458,7 +4460,7 @@
             "name": "consul",
             "ref": "consul",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-consul",
-            "version": "0.6.2"
+            "version": "0.6.3"
         },
         "csv": {
             "author": "StackStorm, Inc.",

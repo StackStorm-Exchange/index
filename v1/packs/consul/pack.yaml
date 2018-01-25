@@ -1,12 +1,12 @@
 ref: consul
 name: consul
 description: consul
-version: 0.6.2
+version: 0.6.3
 author: jfryman
 email: james@fryman.io
 content:
   actions:
-    count: 35
+    count: 37
     resources:
     - acl_create
     - acl_destroy
@@ -27,6 +27,8 @@ content:
     - catalog_register
     - catalog_service
     - catalog_services
+    - custom_lock
+    - custom_unlock
     - event_fire
     - event_list
     - health_checks
