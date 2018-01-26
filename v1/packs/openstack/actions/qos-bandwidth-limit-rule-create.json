@@ -1,0 +1,62 @@
+{
+    "description": "Create a qos bandwidth limit rule.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "qos-bandwidth-limit-rule-create",
+    "parameters": {
+        "base": {
+            "default": "qos-bandwidth-limit-rule-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('qos-bandwidth-limit-rule-create = neutronclient.neutron.v2_0.qos.bandwidth_limit_rule:CreateQoSBandwidthLimitRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "max_burst_kbps": {
+            "description": "Maximum burst bandwidth in kbps.",
+            "type": "string"
+        },
+        "max_kbps": {
+            "description": "Maximum bandwidth in kbps.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "policy": {
+            "description": "ID or name of the QoS policy.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

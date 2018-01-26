@@ -1,0 +1,45 @@
+{
+    "description": "Remove an internal network interface from a router.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "router-interface-delete",
+    "parameters": {
+        "base": {
+            "default": "router-interface-delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('router-interface-delete = neutronclient.neutron.v2_0.router:RemoveInterfaceRouter')",
+            "immutable": true,
+            "type": "string"
+        },
+        "interface": {
+            "description": "The format is \"SUBNET|subnet=SUBNET|port=PORT\". Either a subnet or port must be specified. Both ID and name are accepted as SUBNET or PORT. Note that \"subnet=\" can be omitted when specifying a subnet.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "router": {
+            "description": "ID or name of the router.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

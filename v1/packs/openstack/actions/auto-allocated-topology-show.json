@@ -1,0 +1,58 @@
+{
+    "description": "Show the auto-allocated topology of a given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "auto-allocated-topology-show",
+    "parameters": {
+        "base": {
+            "default": "auto-allocated-topology-show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "dry_run": {
+            "default": false,
+            "description": "Validate the requirements for auto-allocated-topology. (Does not return a topology.)",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('auto-allocated-topology-show = neutronclient.neutron.v2_0.auto_allocated_topology:ShowAutoAllocatedTopology')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pos_tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "The owner tenant ID.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

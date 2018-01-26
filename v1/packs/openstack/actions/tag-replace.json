@@ -1,0 +1,50 @@
+{
+    "description": "Replace all tags on the resource.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "tag-replace",
+    "parameters": {
+        "base": {
+            "default": "tag-replace",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('tag-replace = neutronclient.neutron.v2_0.tag:ReplaceTag')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "resource": {
+            "description": "Resource name or ID.",
+            "required": true,
+            "type": "string"
+        },
+        "resource_type": {
+            "description": "Resource Type. (choices: network, subnet, port, router, subnetpool)",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag (This option can be repeated).",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

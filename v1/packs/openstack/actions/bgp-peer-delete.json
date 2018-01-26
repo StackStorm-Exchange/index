@@ -1,0 +1,40 @@
+{
+    "description": "Delete a BGP peer.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "bgp-peer-delete",
+    "parameters": {
+        "base": {
+            "default": "bgp-peer-delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bgp-peer-delete = neutronclient.neutron.v2_0.bgp.peer:DeletePeer')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID(s) or name(s) of bgp_peer to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

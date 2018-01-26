@@ -1,0 +1,31 @@
+{
+    "description": "Prints all of the commands and options for bash-completion.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "bash-completion",
+    "parameters": {
+        "base": {
+            "default": "bash-completion",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bash-completion = neutronclient.shell:BashCompletionCommand')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

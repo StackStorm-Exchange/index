@@ -1,0 +1,84 @@
+{
+    "description": "Create a subnetpool for a given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnetpool-create",
+    "parameters": {
+        "address_scope": {
+            "description": "ID or name of the address scope with which the subnetpool is associated. Prefixes must be unique across address scopes.",
+            "type": "string"
+        },
+        "base": {
+            "default": "subnetpool-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "default_prefixlen": {
+            "description": "Subnetpool default prefix length.",
+            "type": "integer"
+        },
+        "description": {
+            "description": "Description of subnetpool.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnetpool-create = neutronclient.neutron.v2_0.subnetpool:CreateSubnetPool')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "max_prefixlen": {
+            "description": "Subnetpool maximum prefix length.",
+            "type": "integer"
+        },
+        "min_prefixlen": {
+            "description": "Subnetpool minimum prefix length.",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the subnetpool to be created.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pool_prefix": {
+            "description": "Subnetpool prefixes (This option can be repeated).",
+            "required": true,
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "shared": {
+            "default": false,
+            "description": "Set the subnetpool as shared.",
+            "type": "boolean"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

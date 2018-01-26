@@ -1,0 +1,65 @@
+{
+    "description": "List L3 agents hosting a router.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "l3-agent-list-hosting-router",
+    "parameters": {
+        "base": {
+            "default": "l3-agent-list-hosting-router",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('l3-agent-list-hosting-router = neutronclient.neutron.v2_0.agentscheduler:ListL3AgentsHostingRouter')",
+            "immutable": true,
+            "type": "string"
+        },
+        "field": {
+            "default": [],
+            "description": "Specify the field(s) to be returned by server. You can repeat this option.",
+            "type": "array"
+        },
+        "fields": {
+            "default": [],
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "router": {
+            "description": "Router to query.",
+            "required": true,
+            "type": "string"
+        },
+        "show_details": {
+            "default": false,
+            "description": "==SUPPRESS==",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

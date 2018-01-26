@@ -1,0 +1,76 @@
+{
+    "description": "Update a given IPsec site connection.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "ipsec-site-connection-update",
+    "parameters": {
+        "base": {
+            "default": "ipsec-site-connection-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set a description for the connection.",
+            "type": "string"
+        },
+        "dpd": {
+            "description": " Ipsec connection. Dead Peer Detection attributes. 'action'-hold,clear,disabled,restart,restart-by-peer. 'interval' and 'timeout' are non negative integers.  'interval' should be less than 'timeout' value.  'action', default:hold 'interval', default:30,  'timeout', default:120.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('ipsec-site-connection-update = neutronclient.neutron.v2_0.vpn.ipsec_site_connection:UpdateIPsecSiteConnection')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of IPsec site connection to update.",
+            "required": true,
+            "type": "string"
+        },
+        "local_ep_group": {
+            "description": "Local endpoint group ID/name with subnet(s) for IPSec connection.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Set friendly name for the connection.",
+            "type": "string"
+        },
+        "peer_address": {
+            "description": "Peer gateway public IPv4/IPv6 address or FQDN.",
+            "type": "string"
+        },
+        "peer_cidr": {
+            "description": "[DEPRECATED in Mitaka] Remote subnet(s) in CIDR format. Cannot be specified when using endpoint groups. Only applicable, if subnet provided for VPN service.",
+            "type": "array"
+        },
+        "peer_ep_group": {
+            "description": "Peer endpoint group ID/name with CIDR(s) for IPSec connection.",
+            "type": "string"
+        },
+        "peer_id": {
+            "description": "Peer router identity for authentication. Can be IPv4/IPv6 address, e-mail address, key id, or FQDN.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "psk": {
+            "description": "Pre-shared key string.",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

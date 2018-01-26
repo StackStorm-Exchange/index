@@ -1,0 +1,58 @@
+{
+    "description": "Show history for an alarm",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "alarm-history.show",
+    "parameters": {
+        "alarm_id": {
+            "description": "ID of an alarm",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "alarm-history show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('alarm-history show = aodhclient.v2.alarm_history_cli:CliAlarmHistoryShow')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, html, json, json, table, value, yaml, yaml)",
+            "type": "string"
+        },
+        "limit": {
+            "description": "Number of resources to return (Default is server default)",
+            "type": "integer"
+        },
+        "marker": {
+            "description": "Last item of the previous listing. Return the next results after this value,the supported marker is event_id.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "sort": {
+            "description": "Sort of resource attribute. e.g. timestamp:desc",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

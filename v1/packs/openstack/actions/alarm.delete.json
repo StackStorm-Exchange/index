@@ -1,0 +1,39 @@
+{
+    "description": "Delete an alarm",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "alarm.delete",
+    "parameters": {
+        "base": {
+            "default": "alarm delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.pare('alarm delete = aodhclient.v2.alarm_cli:CliAlarmDelete')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of an alarm.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the alarm",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

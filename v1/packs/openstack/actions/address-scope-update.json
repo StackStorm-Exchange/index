@@ -1,0 +1,44 @@
+{
+    "description": "Update an address scope.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "address-scope-update",
+    "parameters": {
+        "base": {
+            "default": "address-scope-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('address-scope-update = neutronclient.neutron.v2_0.address_scope:UpdateAddressScope')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of address_scope to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Updated name of the address scope.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

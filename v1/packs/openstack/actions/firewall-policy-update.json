@@ -1,0 +1,52 @@
+{
+    "description": "Update a given firewall policy.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall-policy-update",
+    "parameters": {
+        "base": {
+            "default": "firewall-policy-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the firewall policy.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall-policy-update = neutronclient.neutron.v2_0.fw.firewallpolicy:UpdateFirewallPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "firewall_rules": {
+            "description": "Ordered list of whitespace-delimited firewall rule names or IDs; e.g., --firewall-rules \"rule1 rule2\"",
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of firewall_policy to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name for the firewall policy.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

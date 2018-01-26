@@ -1,0 +1,82 @@
+{
+    "description": "Create a floating IP for a given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "floatingip-create",
+    "parameters": {
+        "base": {
+            "default": "floatingip-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the floating IP.",
+            "type": "string"
+        },
+        "dns_domain": {
+            "description": "Assign DNS domain to the floatingip (requires DNS integration extension)",
+            "type": "string"
+        },
+        "dns_name": {
+            "description": "Assign DNS name to the floatingip (requires DNS integration extension)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('floatingip-create = neutronclient.neutron.v2_0.floatingip:CreateFloatingIP')",
+            "immutable": true,
+            "type": "string"
+        },
+        "fixed_ip_address": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "floating_ip_address": {
+            "description": "IP address of the floating IP",
+            "type": "string"
+        },
+        "floating_network_id": {
+            "description": "ID or name of the network from which the floating IP is allocated.",
+            "required": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "port_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "subnet": {
+            "description": "Subnet ID on which you want to create the floating IP.",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

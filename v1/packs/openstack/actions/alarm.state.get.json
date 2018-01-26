@@ -1,0 +1,49 @@
+{
+    "description": "Delete an alarm",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "alarm.state.get",
+    "parameters": {
+        "base": {
+            "default": "alarm state get",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('alarm state get = aodhclient.v2.alarm_cli:CliAlarmStateGet')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: html, json, json, shell, table, value, yaml, yaml)",
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of an alarm.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the alarm",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

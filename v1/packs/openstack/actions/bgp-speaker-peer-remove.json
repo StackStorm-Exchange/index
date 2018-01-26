@@ -1,0 +1,45 @@
+{
+    "description": "Remove a peer from the BGP speaker.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "bgp-speaker-peer-remove",
+    "parameters": {
+        "base": {
+            "default": "bgp-speaker-peer-remove",
+            "immutable": true,
+            "type": "string"
+        },
+        "bgp_peer": {
+            "description": "ID or name of the BGP peer to remove.",
+            "required": true,
+            "type": "string"
+        },
+        "bgp_speaker": {
+            "description": "ID or name of the BGP speaker.",
+            "required": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bgp-speaker-peer-remove = neutronclient.neutron.v2_0.bgp.speaker:RemovePeerFromSpeaker')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

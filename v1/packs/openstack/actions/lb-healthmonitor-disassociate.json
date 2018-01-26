@@ -1,0 +1,45 @@
+{
+    "description": "Remove a mapping from a health monitor to a pool.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "lb-healthmonitor-disassociate",
+    "parameters": {
+        "base": {
+            "default": "lb-healthmonitor-disassociate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lb-healthmonitor-disassociate = neutronclient.neutron.v2_0.lb.healthmonitor:DisassociateHealthMonitor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "health_monitor_id": {
+            "description": "Health monitor to disassociate.",
+            "required": true,
+            "type": "string"
+        },
+        "pool_id": {
+            "description": "ID of the pool to be disassociated with the health monitor.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

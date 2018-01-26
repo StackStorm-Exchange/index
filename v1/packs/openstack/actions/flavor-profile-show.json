@@ -1,0 +1,65 @@
+{
+    "description": "Show information about a given Neutron service flavor profile.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "flavor-profile-show",
+    "parameters": {
+        "base": {
+            "default": "flavor-profile-show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('flavor-profile-show = neutronclient.neutron.v2_0.flavor.flavor_profile:ShowFlavorProfile')",
+            "immutable": true,
+            "type": "string"
+        },
+        "field": {
+            "default": [],
+            "description": "Specify the field(s) to be returned by server. You can repeat this option.",
+            "type": "array"
+        },
+        "fields": {
+            "default": [],
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of service_profile to look up.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "show_details": {
+            "default": false,
+            "description": "==SUPPRESS==",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

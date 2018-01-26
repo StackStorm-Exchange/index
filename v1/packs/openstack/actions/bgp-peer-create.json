@@ -1,0 +1,73 @@
+{
+    "description": "Create a BGP Peer.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "bgp-peer-create",
+    "parameters": {
+        "auth_type": {
+            "default": "none",
+            "description": "Authentication algorithm. Supported algorithms: none(default), md5 (choices: none, md5)",
+            "type": "string"
+        },
+        "base": {
+            "default": "bgp-peer-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bgp-peer-create = neutronclient.neutron.v2_0.bgp.peer:CreatePeer')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the BGP peer to create.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "password": {
+            "description": "Authentication password.",
+            "type": "string"
+        },
+        "peer_ip": {
+            "description": "Peer IP address.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "remote_as": {
+            "description": "Peer AS number. (Integer in [1, 65535] is allowed.)",
+            "required": true,
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

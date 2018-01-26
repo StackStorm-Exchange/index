@@ -1,0 +1,63 @@
+{
+    "description": "Create a Neutron service flavor.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "flavor-create",
+    "parameters": {
+        "base": {
+            "default": "flavor-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the flavor.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('flavor-create = neutronclient.neutron.v2_0.flavor.flavor:CreateFlavor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name for the flavor.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "service_type": {
+            "description": "Service type to which the flavor applies to: e.g. VPN. (See service-provider-list for loaded examples.)",
+            "required": true,
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

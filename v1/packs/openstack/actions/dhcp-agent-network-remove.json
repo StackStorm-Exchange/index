@@ -1,0 +1,45 @@
+{
+    "description": "Remove a network from a DHCP agent.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "dhcp-agent-network-remove",
+    "parameters": {
+        "base": {
+            "default": "dhcp-agent-network-remove",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "dhcp_agent": {
+            "description": "ID of the DHCP agent.",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('dhcp-agent-network-remove = neutronclient.neutron.v2_0.agentscheduler:RemoveNetworkFromDhcpAgent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "network": {
+            "description": "Network to remove.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

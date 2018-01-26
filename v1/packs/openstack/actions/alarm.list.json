@@ -1,0 +1,61 @@
+{
+    "description": "List alarms",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "alarm.list",
+    "parameters": {
+        "base": {
+            "default": "alarm list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('alarm list = aodhclient.v2.alarm_cli:CliAlarmList')",
+            "immutable": true,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Filter parameters to apply on returned alarms.",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, html, json, json, table, value, yaml, yaml)",
+            "type": "string"
+        },
+        "limit": {
+            "description": "Number of resources to return (Default is server default)",
+            "type": "integer"
+        },
+        "marker": {
+            "description": "Last item of the previous listing. Return the next results after this value,the supported marker is alarm_id.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "query": {
+            "description": "Rich query supported by aodh, e.g. project_id!=my-id user_id=foo or user_id=bar",
+            "type": "string"
+        },
+        "sort": {
+            "description": "Sort of resource attribute, e.g. name:asc",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

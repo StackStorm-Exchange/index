@@ -1,0 +1,79 @@
+{
+    "description": "Update subnet's information.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnet-update",
+    "parameters": {
+        "allocation_pool": {
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "base": {
+            "default": "subnet-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of this subnet.",
+            "type": "string"
+        },
+        "disable_dhcp": {
+            "default": false,
+            "description": "Disable DHCP for this subnet.",
+            "type": "boolean"
+        },
+        "dns_nameserver": {
+            "description": "DNS name server for this subnet (This option can be repeated).",
+            "type": "array"
+        },
+        "enable_dhcp": {
+            "default": false,
+            "description": "Enable DHCP for this subnet.",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnet-update = neutronclient.neutron.v2_0.subnet:UpdateSubnet')",
+            "immutable": true,
+            "type": "string"
+        },
+        "gateway": {
+            "description": "Gateway IP of this subnet.",
+            "type": "string"
+        },
+        "host_route": {
+            "description": "Additional route (This option can be repeated).",
+            "type": "array"
+        },
+        "id": {
+            "description": "ID or name of subnet to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of this subnet.",
+            "type": "string"
+        },
+        "no_gateway": {
+            "default": false,
+            "description": "Do not configure a gateway for this subnet.",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

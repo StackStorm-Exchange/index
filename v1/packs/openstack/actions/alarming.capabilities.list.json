@@ -1,0 +1,41 @@
+{
+    "description": "List capabilities",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "alarming.capabilities.list",
+    "parameters": {
+        "base": {
+            "default": "capabilities list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.prase('alarming capabilities list = aodhclient.v2.capabilities_cli:CliCapabilitiesList')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: html, json, json, shell, table, value, yaml, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

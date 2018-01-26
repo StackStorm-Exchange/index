@@ -1,0 +1,50 @@
+{
+    "description": "Add a tag into the resource.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "tag-add",
+    "parameters": {
+        "base": {
+            "default": "tag-add",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('tag-add = neutronclient.neutron.v2_0.tag:AddTag')",
+            "immutable": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "resource": {
+            "description": "Resource name or ID.",
+            "required": true,
+            "type": "string"
+        },
+        "resource_type": {
+            "description": "Resource Type. (choices: network, subnet, port, router, subnetpool)",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Tag to be added.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

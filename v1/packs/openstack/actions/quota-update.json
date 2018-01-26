@@ -1,0 +1,109 @@
+{
+    "description": "Update a given tenant's quotas.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "quota-update",
+    "parameters": {
+        "base": {
+            "default": "quota-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('quota-update = neutronclient.neutron.v2_0.quota:UpdateQuota')",
+            "immutable": true,
+            "type": "string"
+        },
+        "floatingip": {
+            "description": "The limit of floating IPs.",
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "health_monitor": {
+            "description": "The limit of health monitors.",
+            "type": "string"
+        },
+        "listener": {
+            "description": "The limit of listeners.",
+            "type": "string"
+        },
+        "loadbalancer": {
+            "description": "The limit of load balancers.",
+            "type": "string"
+        },
+        "member": {
+            "description": "The limit of pool members.",
+            "type": "string"
+        },
+        "network": {
+            "description": "The limit of networks.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pool": {
+            "description": "The limit of pools.",
+            "type": "string"
+        },
+        "port": {
+            "description": "The limit of ports.",
+            "type": "string"
+        },
+        "pos_tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "rbac_policy": {
+            "description": "The limit of RBAC policies.",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "router": {
+            "description": "The limit of routers.",
+            "type": "string"
+        },
+        "security_group": {
+            "description": "The limit of security groups.",
+            "type": "string"
+        },
+        "security_group_rule": {
+            "description": "The limit of security groups rules.",
+            "type": "string"
+        },
+        "subnet": {
+            "description": "The limit of subnets.",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "vip": {
+            "description": "The limit of vips.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

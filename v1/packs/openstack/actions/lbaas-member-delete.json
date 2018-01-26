@@ -1,0 +1,45 @@
+{
+    "description": "LBaaS v2 Delete a given member.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "lbaas-member-delete",
+    "parameters": {
+        "base": {
+            "default": "lbaas-member-delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-member-delete = neutronclient.neutron.v2_0.lb.v2.member:DeleteMember')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID(s) or name(s) of member to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "pool": {
+            "description": "ID or name of the pool that this member belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

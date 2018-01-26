@@ -1,0 +1,76 @@
+{
+    "description": "Update a given firewall rule.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "firewall-rule-update",
+    "parameters": {
+        "action": {
+            "description": "Action for the firewall rule. (choices: allow, deny, reject)",
+            "type": "string"
+        },
+        "base": {
+            "default": "firewall-rule-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the firewall rule.",
+            "type": "string"
+        },
+        "destination_ip_address": {
+            "description": "Destination IP address or subnet.",
+            "type": "string"
+        },
+        "destination_port": {
+            "description": "Destination port (integer in [1, 65535] or range in a:b).",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall-rule-update = neutronclient.neutron.v2_0.fw.firewallrule:UpdateFirewallRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of firewall_rule to update.",
+            "required": true,
+            "type": "string"
+        },
+        "ip_version": {
+            "description": "Update IP version for the firewall rule. (choices: 4, 6)",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name for the firewall rule.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "protocol": {
+            "description": "Protocol for the firewall rule. (choices: tcp, udp, icmp, any)",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "source_ip_address": {
+            "description": "Source IP address or subnet.",
+            "type": "string"
+        },
+        "source_port": {
+            "description": "Source port (integer in [1, 65535] or range in a:b).",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,82 @@
+{
+    "description": "LBaaS v2 Create a member.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "lbaas-member-create",
+    "parameters": {
+        "address": {
+            "description": "IP address of the pool member in the pool.",
+            "required": true,
+            "type": "string"
+        },
+        "admin_state_down": {
+            "default": true,
+            "description": "Set admin state up to false.",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "lbaas-member-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-member-create = neutronclient.neutron.v2_0.lb.v2.member:CreateMember')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the member.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pool": {
+            "description": "ID or name of the pool that this member belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "protocol_port": {
+            "description": "Port on which the pool member listens for requests or connections.",
+            "required": true,
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "subnet": {
+            "description": "Subnet ID or name for the member.",
+            "required": true,
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "weight": {
+            "description": "Weight of the member in the pool (default:1, [0..256]).",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

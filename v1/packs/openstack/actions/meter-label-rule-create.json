@@ -1,0 +1,69 @@
+{
+    "description": "Create a metering label rule for a given label.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "meter-label-rule-create",
+    "parameters": {
+        "base": {
+            "default": "meter-label-rule-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "direction": {
+            "default": "ingress",
+            "description": "Direction of traffic, default: ingress. (choices: ingress, egress)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('meter-label-rule-create = neutronclient.neutron.v2_0.metering:CreateMeteringLabelRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "excluded": {
+            "default": false,
+            "description": "Exclude this CIDR from the label, default: not excluded.",
+            "type": "boolean"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "label_id": {
+            "description": "ID or name of the label.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "remote_ip_prefix": {
+            "description": "CIDR to match on.",
+            "required": true,
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

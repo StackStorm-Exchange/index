@@ -1,0 +1,73 @@
+{
+    "description": "Update subnetpool's information.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnetpool-update",
+    "parameters": {
+        "address_scope": {
+            "description": "ID or name of the address scope with which the subnetpool is associated. Prefixes must be unique across address scopes.",
+            "type": "string"
+        },
+        "base": {
+            "default": "subnetpool-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "default_prefixlen": {
+            "description": "Subnetpool default prefix length.",
+            "type": "integer"
+        },
+        "description": {
+            "description": "Description of subnetpool.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnetpool-update = neutronclient.neutron.v2_0.subnetpool:UpdateSubnetPool')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of subnetpool to update.",
+            "required": true,
+            "type": "string"
+        },
+        "max_prefixlen": {
+            "description": "Subnetpool maximum prefix length.",
+            "type": "integer"
+        },
+        "min_prefixlen": {
+            "description": "Subnetpool minimum prefix length.",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Updated name of the subnetpool.",
+            "type": "string"
+        },
+        "no_address_scope": {
+            "default": false,
+            "description": "Detach subnetpool from the address scope.",
+            "type": "boolean"
+        },
+        "pool_prefix": {
+            "description": "Subnetpool prefixes (This option can be repeated).",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

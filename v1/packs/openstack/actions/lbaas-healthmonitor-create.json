@@ -1,0 +1,95 @@
+{
+    "description": "LBaaS v2 Create a healthmonitor.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "lbaas-healthmonitor-create",
+    "parameters": {
+        "admin_state_down": {
+            "default": true,
+            "description": "Set admin state up to false.",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "lbaas-healthmonitor-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "delay": {
+            "description": "The time in seconds between sending probes to members.",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-healthmonitor-create = neutronclient.neutron.v2_0.lb.v2.healthmonitor:CreateHealthMonitor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "expected_codes": {
+            "description": "The list of HTTP status codes expected in response from the member to declare it healthy. This attribute can contain one value, or a list of values separated by comma, or a range of values (e.g. \"200-299\"). If this attribute is not specified, it defaults to \"200\".",
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "http_method": {
+            "description": "The HTTP method used for requests by the monitor of type HTTP.",
+            "type": "string"
+        },
+        "max_retries": {
+            "description": "Number of permissible connection failures before changing the member status to INACTIVE. [1..10].",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the health monitor.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pool": {
+            "description": "ID or name of the pool that this healthmonitor will monitor.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "timeout": {
+            "description": "Maximum number of seconds for a monitor to wait for a connection to be established before it times out. The value must be less than the delay value.",
+            "required": true,
+            "type": "integer"
+        },
+        "type": {
+            "description": "One of the predefined health monitor types. (choices: PING, TCP, HTTP, HTTPS)",
+            "required": true,
+            "type": "string"
+        },
+        "url_path": {
+            "description": "The HTTP path used in the HTTP request used by the monitor to test a member health. This must be a string beginning with a / (forward slash).",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

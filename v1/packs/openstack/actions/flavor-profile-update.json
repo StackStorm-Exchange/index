@@ -1,0 +1,52 @@
+{
+    "description": "Update a given Neutron service flavor profile.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "flavor-profile-update",
+    "parameters": {
+        "base": {
+            "default": "flavor-profile-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the flavor profile.",
+            "type": "string"
+        },
+        "driver": {
+            "description": "Python module path to driver.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('flavor-profile-update = neutronclient.neutron.v2_0.flavor.flavor_profile:UpdateFlavorProfile')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of service_profile to update.",
+            "required": true,
+            "type": "string"
+        },
+        "metainfo": {
+            "description": "Metainfo for the flavor profile.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

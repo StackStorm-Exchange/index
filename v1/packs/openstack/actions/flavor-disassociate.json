@@ -1,0 +1,45 @@
+{
+    "description": "Disassociate a Neutron service flavor from a flavor profile.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "flavor-disassociate",
+    "parameters": {
+        "base": {
+            "default": "flavor-disassociate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('flavor-disassociate = neutronclient.neutron.v2_0.flavor.flavor:DisassociateFlavor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flavor": {
+            "description": "ID or name of the flavor to be disassociated.",
+            "required": true,
+            "type": "string"
+        },
+        "flavor_profile": {
+            "description": "ID of the flavor profile to be disassociated from the flavor.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

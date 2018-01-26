@@ -1,0 +1,55 @@
+{
+    "description": "Update the given qos minimum bandwidth rule.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "qos-minimum-bandwidth-rule-update",
+    "parameters": {
+        "base": {
+            "default": "qos-minimum-bandwidth-rule-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "direction": {
+            "description": "Traffic direction. (choices: egress)",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('qos-minimum-bandwidth-rule-update = neutronclient.neutron.v2_0.qos.minimum_bandwidth_rule:UpdateQoSMinimumBandwidthRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of minimum_bandwidth_rule to update.",
+            "required": true,
+            "type": "string"
+        },
+        "min_kbps": {
+            "description": "QoS minimum bandwidth assurance, expressed in kilobits per second.",
+            "required": true,
+            "type": "string"
+        },
+        "policy": {
+            "description": "ID or name of the QoS policy.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

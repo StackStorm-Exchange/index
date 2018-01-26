@@ -1,0 +1,151 @@
+{
+    "description": "Create an alarm",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "alarm.create",
+    "parameters": {
+        "aggregation_method": {
+            "description": "The aggregation_method to compare to the threshold.",
+            "type": "string"
+        },
+        "alarm_action": {
+            "description": "URL to invoke when state transitions to alarm. May be used multiple times",
+            "type": "array"
+        },
+        "base": {
+            "default": "alarm create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "comparison_operator": {
+            "description": "Operator to compare with, one of: ['lt', 'le', 'eq', 'ne', 'ge', 'gt'] (choices: lt, le, eq, ne, ge, gt)",
+            "type": "string"
+        },
+        "composite_rule": {
+            "description": "Composite threshold rule with JSON format, the form can be a nested dict which combine threshold/gnocchi rules by \"and\", \"or\". For example, the form is like: {\"or\":[RULE1, RULE2, {\"and\": [RULE3, RULE4]}]}, The RULEx can be basic threshold rules but must include a \"type\" field, like this: {\"threshold\": 0.8,\"meter_name\":\"cpu_util\",\"type\":\"threshold\"}",
+            "type": "string"
+        },
+        "description": {
+            "description": "Free text description of the alarm",
+            "type": "string"
+        },
+        "enabled": {
+            "description": "True if alarm evaluation is enabled",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('alarm create = aodhclient.v2.alarm_cli:CliAlarmCreate')",
+            "immutable": true,
+            "type": "string"
+        },
+        "evaluation_periods": {
+            "description": "Number of periods to evaluate over",
+            "type": "integer"
+        },
+        "event_type": {
+            "description": "Event type to evaluate against",
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: html, json, json, shell, table, value, yaml, yaml)",
+            "type": "string"
+        },
+        "granularity": {
+            "description": "The time range in seconds over which to query.",
+            "type": "string"
+        },
+        "insufficient_data_action": {
+            "description": "URL to invoke when state transitions to insufficient data. May be used multiple times",
+            "type": "array"
+        },
+        "meter_name": {
+            "description": "Meter to evaluate against",
+            "type": "string"
+        },
+        "metric": {
+            "description": "Metric to evaluate against.",
+            "type": "string"
+        },
+        "metrics": {
+            "description": "The list of metric ids.",
+            "type": "array"
+        },
+        "name": {
+            "description": "Name of the alarm",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "ok_action": {
+            "description": "URL to invoke when state transitions to OK. May be used multiple times",
+            "type": "array"
+        },
+        "period": {
+            "description": "Length of each period (seconds) to evaluate over.",
+            "type": "integer"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "query": {
+            "description": "For alarms of type threshold or event: key[op]data_type::value; list. data_type is optional, but if supplied must be string, integer, float, or boolean. For alarms of type gnocchi_aggregation_by_resources_threshold: need to specify a complex query json string, like: {\"and\": [{\"=\": {\"ended_at\": null}}, ...]}.",
+            "type": "string"
+        },
+        "repeat_actions": {
+            "description": "True if actions should be repeatedly notified while alarm remains in target state",
+            "type": "string"
+        },
+        "resource_id": {
+            "description": "The id of a resource.",
+            "type": "string"
+        },
+        "resource_type": {
+            "description": "The type of resource.",
+            "type": "string"
+        },
+        "severity": {
+            "description": "Severity of the alarm, one of: ['low', 'moderate', 'critical'] (choices: low, moderate, critical)",
+            "type": "string"
+        },
+        "state": {
+            "description": "State of the alarm, one of: ['ok', 'alarm', 'insufficient data'] (choices: ok, alarm, insufficient data)",
+            "type": "string"
+        },
+        "statistic": {
+            "description": "Statistic to evaluate, one of: ['max', 'min', 'avg', 'sum', 'count'] (choices: max, min, avg, sum, count)",
+            "type": "string"
+        },
+        "threshold": {
+            "description": "Threshold to evaluate against.",
+            "type": "number"
+        },
+        "time_constraint": {
+            "description": "Only evaluate the alarm if the time at evaluation is within this time constraint. Start point(s) of the constraint are specified with a cron expression, whereas its duration is given in seconds. Can be specified multiple times for multiple time constraints, format is: name=<CONSTRAINT_NAME>;start=<CRON>;duration=<SECONDS>;[description=<DESCRIPTION>;[timezone=<IANA Timezone>]]",
+            "type": "array"
+        },
+        "type": {
+            "description": "Type of alarm, should be one of: threshold, event, composite, gnocchi_resources_threshold, gnocchi_aggregation_by_metrics_threshold, gnocchi_aggregation_by_resources_threshold. (choices: threshold, event, composite, gnocchi_resources_threshold, gnocchi_aggregation_by_metrics_threshold, gnocchi_aggregation_by_resources_threshold)",
+            "required": true,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "User to associate with alarm (configurable by admin users only)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

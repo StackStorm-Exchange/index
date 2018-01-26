@@ -1,0 +1,61 @@
+{
+    "description": "Create a Neutron service flavor profile.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "flavor-profile-create",
+    "parameters": {
+        "base": {
+            "default": "flavor-profile-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the flavor profile.",
+            "type": "string"
+        },
+        "driver": {
+            "description": "Python module path to driver.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('flavor-profile-create = neutronclient.neutron.v2_0.flavor.flavor_profile:CreateFlavorProfile')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "metainfo": {
+            "description": "Metainfo for the flavor profile.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

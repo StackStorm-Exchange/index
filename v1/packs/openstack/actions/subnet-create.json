@@ -1,0 +1,126 @@
+{
+    "description": "Create a subnet for a given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "subnet-create",
+    "parameters": {
+        "allocation_pool": {
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "base": {
+            "default": "subnet-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cidr": {
+            "description": "CIDR of subnet to create.",
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of this subnet.",
+            "type": "string"
+        },
+        "disable_dhcp": {
+            "default": false,
+            "description": "Disable DHCP for this subnet.",
+            "type": "boolean"
+        },
+        "dns_nameserver": {
+            "description": "DNS name server for this subnet (This option can be repeated).",
+            "type": "array"
+        },
+        "enable_dhcp": {
+            "default": false,
+            "description": "Enable DHCP for this subnet.",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('subnet-create = neutronclient.neutron.v2_0.subnet:CreateSubnet')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "gateway": {
+            "description": "Gateway IP of this subnet.",
+            "type": "string"
+        },
+        "host_route": {
+            "description": "Additional route (This option can be repeated).",
+            "type": "array"
+        },
+        "ip_version": {
+            "description": "==SUPPRESS== (choices: 4, 6)",
+            "type": "integer"
+        },
+        "ipv6_address_mode": {
+            "description": "IPv6 address mode. (choices: dhcpv6-stateful, dhcpv6-stateless, slaac)",
+            "type": "string"
+        },
+        "ipv6_ra_mode": {
+            "description": "IPv6 RA (Router Advertisement) mode. (choices: dhcpv6-stateful, dhcpv6-stateless, slaac)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of this subnet.",
+            "type": "string"
+        },
+        "network_id": {
+            "description": "Network ID or name this subnet belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "no_gateway": {
+            "default": false,
+            "description": "Do not configure a gateway for this subnet.",
+            "type": "boolean"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "prefixlen": {
+            "description": "Prefix length for subnet allocation from subnetpool.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "segment": {
+            "description": "ID of segment with which this subnet will be associated.",
+            "type": "string"
+        },
+        "subnetpool": {
+            "description": "ID or name of subnetpool from which this subnet will obtain a CIDR.",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "use_default_subnetpool": {
+            "default": false,
+            "description": "Use default subnetpool for ip_version, if it exists.",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

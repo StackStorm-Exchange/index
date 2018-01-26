@@ -1,0 +1,107 @@
+{
+    "description": "Update port's information.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "port-update",
+    "parameters": {
+        "admin_state_up": {
+            "description": "==SUPPRESS== (choices: True, False)",
+            "type": "string"
+        },
+        "allowed_address_pair": {
+            "default": [],
+            "description": "Allowed address pair associated with the port. \"ip_address\" parameter is required. IP address or CIDR can be specified for \"ip_address\". \"mac_address\" parameter is optional. You can repeat this option.",
+            "type": "array"
+        },
+        "base": {
+            "default": "port-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of this port.",
+            "type": "string"
+        },
+        "device_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "device_owner": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "dns_name": {
+            "description": "Assign DNS name to the port (requires DNS integration extension.)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('port-update = neutronclient.neutron.v2_0.port:UpdatePort')",
+            "immutable": true,
+            "type": "string"
+        },
+        "extra_dhcp_opt": {
+            "default": [],
+            "description": "Extra dhcp options to be assigned to this port: opt_name=<dhcp_option_name>,opt_value=<value>,ip_version={4,6}. You can repeat this option.",
+            "type": "array"
+        },
+        "fixed_ip": {
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "id": {
+            "description": "ID or name of port to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of this port.",
+            "type": "string"
+        },
+        "no_allowed_address_pairs": {
+            "default": false,
+            "description": "Associate no allowed address pairs with the port.",
+            "type": "boolean"
+        },
+        "no_dns_name": {
+            "default": false,
+            "description": "Unassign DNS name from the port (requires DNS integration extension.)",
+            "type": "boolean"
+        },
+        "no_qos_policy": {
+            "default": false,
+            "description": "Detach QoS policy from the resource.",
+            "type": "boolean"
+        },
+        "no_security_groups": {
+            "default": false,
+            "description": "Associate no security groups with the port.",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "qos_policy": {
+            "description": "ID or name of the QoS policy that shouldbe attached to the resource.",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "security_group": {
+            "default": [],
+            "description": "Security group associated with the port. You can repeat this option.",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

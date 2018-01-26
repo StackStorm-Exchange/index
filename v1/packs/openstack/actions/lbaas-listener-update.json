@@ -1,0 +1,56 @@
+{
+    "description": "LBaaS v2 Update a given listener.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "lbaas-listener-update",
+    "parameters": {
+        "base": {
+            "default": "lbaas-listener-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "connection_limit": {
+            "description": "The maximum number of connections per second allowed for the listener. Positive integer or -1 for unlimited (default).",
+            "type": "integer"
+        },
+        "default_pool": {
+            "description": "Default pool for the listener.",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the listener.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-listener-update = neutronclient.neutron.v2_0.lb.v2.listener:UpdateListener')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of listener to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the listener.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
