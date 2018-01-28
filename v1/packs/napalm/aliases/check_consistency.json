@@ -7,6 +7,6 @@
     "name": "check_consistency",
     "pack": "napalm",
     "result": {
-        "format": "{% if execution.result.result.deviation %}\n  The configuration on {{ execution.parameters.hostname }} has deviated from the golden configuration.\n\n  Diff to follow:\n    {{ execution.result.result.diff_contents }}\n\n{% else %}\n  The configuration on {{ execution.parameters.hostname }} exactly matches the golden configuration.\n{% endif %}\n"
+        "format": "{% if execution.status != \"failed\"  %}\n  {% if execution.result.result.deviation %}\n    The configuration on {{ execution.parameters.hostname }} has deviated from the golden configuration.\n\n    Diff to follow:\n      {{ execution.result.result.diff_contents }}\n\n  {% else %}\n    The configuration on {{ execution.parameters.hostname }} exactly matches the golden configuration.\n  {% endif %}\n{% else %}\n  There was a problem running this consistency check.\n{% endif %}\n"
     }
 }
