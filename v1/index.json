@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1517356091,
-        "hash": "98a8e564f8ab3513525e71e7ae1d685b"
+        "generated_ts": 1517517848,
+        "hash": "044e6a17e00790d6ce52d59387fd5fd6"
     },
     "packs": {
         "acos": {
@@ -4408,6 +4408,29 @@
             "ref": "cloudflare",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
             "version": "0.3.2"
+        },
+        "cloudshark": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "upload"
+                    ]
+                }
+            },
+            "description": "CloudShark Packet Analysis",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "cloudshark",
+                "pcap",
+                "wireshark",
+                "tcpdump"
+            ],
+            "name": "CloudShark",
+            "ref": "cloudshark",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudshark",
+            "version": "0.1.0"
         },
         "consul": {
             "author": "jfryman",

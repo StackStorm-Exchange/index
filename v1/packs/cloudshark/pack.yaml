@@ -1,0 +1,16 @@
+ref: cloudshark
+name: CloudShark
+description: CloudShark Packet Analysis
+keywords:
+- cloudshark
+- pcap
+- wireshark
+- tcpdump
+version: 0.1.0
+author: StackStorm, Inc.
+email: info@stackstorm.com
+content:
+  actions:
+    count: 1
+    resources:
+    - upload
