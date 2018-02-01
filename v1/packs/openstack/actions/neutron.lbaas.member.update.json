@@ -1,0 +1,53 @@
+{
+    "description": "LBaaS v2 Update a given member.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lbaas.member.update",
+    "parameters": {
+        "base": {
+            "default": "lbaas-member-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-member-update = neutronclient.neutron.v2_0.lb.v2.member:UpdateMember')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of member to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the member.",
+            "type": "string"
+        },
+        "pool": {
+            "description": "ID or name of the pool that this member belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "weight": {
+            "description": "Weight of the member in the pool (default:1, [0..256]).",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

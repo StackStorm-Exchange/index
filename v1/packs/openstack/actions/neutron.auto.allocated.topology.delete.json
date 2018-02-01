@@ -1,0 +1,43 @@
+{
+    "description": "Delete the auto-allocated topology of a given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.auto.allocated.topology.delete",
+    "parameters": {
+        "base": {
+            "default": "auto-allocated-topology-delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('auto-allocated-topology-delete = neutronclient.neutron.v2_0.auto_allocated_topology:DeleteAutoAllocatedTopology')",
+            "immutable": true,
+            "type": "string"
+        },
+        "pos_tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "The owner tenant ID.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

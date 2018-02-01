@@ -1,0 +1,61 @@
+{
+    "description": "LBaaS v2 Update a given pool.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lbaas.pool.update",
+    "parameters": {
+        "base": {
+            "default": "lbaas-pool-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the pool.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-pool-update = neutronclient.neutron.v2_0.lb.v2.pool:UpdatePool')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of pool to update.",
+            "required": true,
+            "type": "string"
+        },
+        "lb_algorithm": {
+            "description": "The algorithm used to distribute load between the members of the pool. (choices: ROUND_ROBIN, LEAST_CONNECTIONS, SOURCE_IP)",
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the pool.",
+            "type": "string"
+        },
+        "no_session_persistence": {
+            "default": false,
+            "description": "Clear session persistence for the pool.",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "session_persistence": {
+            "description": "The type of session persistence to use and associated cookie name.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

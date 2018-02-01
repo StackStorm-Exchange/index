@@ -1,0 +1,87 @@
+{
+    "description": "Create an IKE policy.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.vpn.ikepolicy.create",
+    "parameters": {
+        "auth_algorithm": {
+            "default": "sha1",
+            "description": "Authentication algorithm, default:sha1. (choices: sha1, sha256, sha384, sha512)",
+            "type": "string"
+        },
+        "base": {
+            "default": "vpn-ikepolicy-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the IKE policy.",
+            "type": "string"
+        },
+        "encryption_algorithm": {
+            "default": "aes-128",
+            "description": "Encryption algorithm, default:aes-128.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('vpn-ikepolicy-create = neutronclient.neutron.v2_0.vpn.ikepolicy:CreateIKEPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ike_version": {
+            "default": "v1",
+            "description": "IKE version for the policy, default:v1. (choices: v1, v2)",
+            "type": "string"
+        },
+        "lifetime": {
+            "description": "IKE lifetime attributes. 'units'-seconds, default:seconds. 'value'-non negative integer, default:3600.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the IKE policy.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pfs": {
+            "default": "group5",
+            "description": "Perfect Forward Secrecy, default:group5.",
+            "type": "string"
+        },
+        "phase1_negotiation_mode": {
+            "default": "main",
+            "description": "IKE Phase1 negotiation mode, default:main. (choices: main)",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

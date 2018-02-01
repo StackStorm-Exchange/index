@@ -1,0 +1,87 @@
+{
+    "description": "Create an IPsec policy.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.vpn.ipsecpolicy.create",
+    "parameters": {
+        "auth_algorithm": {
+            "default": "sha1",
+            "description": "Authentication algorithm for IPsec policy, default:sha1. (choices: sha1, sha256, sha384, sha512)",
+            "type": "string"
+        },
+        "base": {
+            "default": "vpn-ipsecpolicy-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the IPsec policy.",
+            "type": "string"
+        },
+        "encapsulation_mode": {
+            "default": "tunnel",
+            "description": "Encapsulation mode for IPsec policy, default:tunnel. (choices: tunnel, transport)",
+            "type": "string"
+        },
+        "encryption_algorithm": {
+            "default": "aes-128",
+            "description": "Encryption algorithm for IPsec policy, default:aes-128.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('vpn-ipsecpolicy-create = neutronclient.neutron.v2_0.vpn.ipsecpolicy:CreateIPsecPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "lifetime": {
+            "description": "IPsec lifetime attributes. 'units'-seconds, default:seconds. 'value'-non negative integer, default:3600.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the IPsec policy.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pfs": {
+            "default": "group5",
+            "description": "Perfect Forward Secrecy for IPsec policy, default:group5.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "transform_protocol": {
+            "default": "esp",
+            "description": "Transform protocol for IPsec policy, default:esp. (choices: esp, ah, ah-esp)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

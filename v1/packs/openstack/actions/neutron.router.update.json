@@ -1,0 +1,57 @@
+{
+    "description": "Update router's information.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.router.update",
+    "parameters": {
+        "base": {
+            "default": "router-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of router.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('router-update = neutronclient.neutron.v2_0.router:UpdateRouter')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of router to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Updated name of the router.",
+            "type": "string"
+        },
+        "no_routes": {
+            "default": false,
+            "description": "Remove routes associated with the router.",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "route": {
+            "description": "Route to associate with the router. You can repeat this option.",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

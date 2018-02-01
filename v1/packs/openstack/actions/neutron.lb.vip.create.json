@@ -1,0 +1,91 @@
+{
+    "description": "Create a vip.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lb.vip.create",
+    "parameters": {
+        "address": {
+            "description": "IP address of the vip.",
+            "type": "string"
+        },
+        "admin_state_down": {
+            "default": true,
+            "description": "Set admin state up to false.",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "lb-vip-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "connection_limit": {
+            "description": "The maximum number of connections per second allowed for the vip. Valid values: a positive integer or -1 for unlimited (default).",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the vip to be created.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lb-vip-create = neutronclient.neutron.v2_0.lb.vip:CreateVip')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the vip to be created.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "pool_id": {
+            "description": "ID or name of the pool to which this vip belongs.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "protocol": {
+            "description": "Protocol for balancing. (choices: TCP, HTTP, HTTPS)",
+            "required": true,
+            "type": "string"
+        },
+        "protocol_port": {
+            "description": "TCP port on which to listen for client traffic that is associated with the vip address.",
+            "required": true,
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "subnet_id": {
+            "description": "The subnet on which to allocate the vip address.",
+            "required": true,
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

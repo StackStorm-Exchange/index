@@ -1,0 +1,59 @@
+{
+    "description": "Set the external network gateway for a router.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.router.gateway.set",
+    "parameters": {
+        "base": {
+            "default": "router-gateway-set",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "disable_snat": {
+            "default": false,
+            "description": "Disable source NAT on the router gateway.",
+            "type": "boolean"
+        },
+        "enable_snat": {
+            "default": false,
+            "description": "Enable source NAT on the router gateway.",
+            "type": "boolean"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('router-gateway-set = neutronclient.neutron.v2_0.router:SetGatewayRouter')",
+            "immutable": true,
+            "type": "string"
+        },
+        "external_network": {
+            "description": "ID or name of the external network for the gateway.",
+            "required": true,
+            "type": "string"
+        },
+        "fixed_ip": {
+            "description": "Desired IP and/or subnet on external network: subnet_id=<name_or_id>,ip_address=<ip>. You can specify both of subnet_id and ip_address or specify one of them as well. You can repeat this option.",
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "router": {
+            "description": "ID or name of the router.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

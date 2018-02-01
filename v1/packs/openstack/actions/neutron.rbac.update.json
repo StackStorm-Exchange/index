@@ -1,0 +1,44 @@
+{
+    "description": "Update RBAC policy for given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.rbac.update",
+    "parameters": {
+        "base": {
+            "default": "rbac-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('rbac-update = neutronclient.neutron.v2_0.rbac:UpdateRBACPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of rbac_policy to update.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "target_tenant": {
+            "description": "ID of the tenant to which the RBAC policy will be enforced.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

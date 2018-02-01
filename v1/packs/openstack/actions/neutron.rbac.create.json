@@ -1,0 +1,69 @@
+{
+    "description": "Create a RBAC policy for a given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.rbac.create",
+    "parameters": {
+        "action": {
+            "description": "Action for the RBAC policy. (choices: access_as_external, access_as_shared)",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "rbac-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('rbac-create = neutronclient.neutron.v2_0.rbac:CreateRBACPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "ID or name of the RBAC object.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "target_tenant": {
+            "default": "*",
+            "description": "ID of the tenant to which the RBAC policy will be enforced.",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "type": {
+            "description": "Type of the object that RBAC policy affects. (choices: qos-policy, network)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

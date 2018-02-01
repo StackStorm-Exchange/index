@@ -1,0 +1,49 @@
+{
+    "description": "Create a mapping between a floating IP and a fixed IP.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.floatingip.associate",
+    "parameters": {
+        "base": {
+            "default": "floatingip-associate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('floatingip-associate = neutronclient.neutron.v2_0.floatingip:AssociateFloatingIP')",
+            "immutable": true,
+            "type": "string"
+        },
+        "fixed_ip_address": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "floatingip_id": {
+            "description": "ID of the floating IP to associate.",
+            "required": true,
+            "type": "string"
+        },
+        "port_id": {
+            "description": "ID or name of the port to be associated with the floating IP.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

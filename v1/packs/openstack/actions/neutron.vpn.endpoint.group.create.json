@@ -1,0 +1,67 @@
+{
+    "description": "Create a VPN endpoint group.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.vpn.endpoint.group.create",
+    "parameters": {
+        "base": {
+            "default": "vpn-endpoint-group-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set a description for the endpoint group.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('vpn-endpoint-group-create = neutronclient.neutron.v2_0.vpn.endpoint_group:CreateEndpointGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Set a name for the endpoint group.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "type": {
+            "description": "Type of endpoints in group (e.g. subnet, cidr, vlan).",
+            "required": true,
+            "type": "string"
+        },
+        "value": {
+            "description": "Endpoint(s) for the group. Must all be of the same type.",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

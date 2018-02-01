@@ -1,0 +1,53 @@
+{
+    "description": "Insert a rule into a given firewall policy.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.firewall.policy.insert.rule",
+    "parameters": {
+        "base": {
+            "default": "firewall-policy-insert-rule",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall-policy-insert-rule = neutronclient.neutron.v2_0.fw.firewallpolicy:FirewallPolicyInsertRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "firewall_rule_id": {
+            "description": "New rule to insert.",
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of firewall_policy to update.",
+            "required": true,
+            "type": "string"
+        },
+        "insert_after": {
+            "description": "Insert after this rule.",
+            "type": "string"
+        },
+        "insert_before": {
+            "description": "Insert before this rule.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

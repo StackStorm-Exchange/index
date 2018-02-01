@@ -1,0 +1,66 @@
+{
+    "description": "Update network's information.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.net.update",
+    "parameters": {
+        "base": {
+            "default": "net-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of this network.",
+            "type": "string"
+        },
+        "dns_domain": {
+            "description": "Assign DNS domain to the network (requires DNS integration extension.)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('net-update = neutronclient.neutron.v2_0.network:UpdateNetwork')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of network to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the network.",
+            "type": "string"
+        },
+        "no_dns_domain": {
+            "default": false,
+            "description": "Unassign DNS domain from the network (requires DNS integration extension.)",
+            "type": "boolean"
+        },
+        "no_qos_policy": {
+            "default": false,
+            "description": "Detach QoS policy from the resource.",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "qos_policy": {
+            "description": "ID or name of the QoS policy that shouldbe attached to the resource.",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

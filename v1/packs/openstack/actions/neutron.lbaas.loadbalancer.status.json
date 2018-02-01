@@ -1,0 +1,40 @@
+{
+    "description": "Retrieve status for a given loadbalancer.\n\n    The only output is a formatted JSON tree, and the table format\n    does not support this type of data.\n    ",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lbaas.loadbalancer.status",
+    "parameters": {
+        "base": {
+            "default": "lbaas-loadbalancer-status",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-loadbalancer-status = neutronclient.neutron.v2_0.lb.v2.loadbalancer:RetrieveLoadBalancerStatus')",
+            "immutable": true,
+            "type": "string"
+        },
+        "loadbalancer": {
+            "description": "ID or name of loadbalancer to show.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

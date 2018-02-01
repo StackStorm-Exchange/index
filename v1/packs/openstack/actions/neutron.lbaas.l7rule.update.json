@@ -1,0 +1,66 @@
+{
+    "description": "LBaaS v2 Update a given L7 rule.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lbaas.l7rule.update",
+    "parameters": {
+        "base": {
+            "default": "lbaas-l7rule-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "compare_type": {
+            "description": "Rule compare type. (choices: REGEX, STARTS_WITH, ENDS_WITH, CONTAINS, EQUAL_TO)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-l7rule-update = neutronclient.neutron.v2_0.lb.v2.l7rule:UpdateL7Rule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of rule to update.",
+            "required": true,
+            "type": "string"
+        },
+        "invert_compare": {
+            "default": false,
+            "description": "Invert the compare type.",
+            "type": "boolean"
+        },
+        "key": {
+            "description": "Key to compare. Relevant for HEADER and COOKIE types only.",
+            "type": "string"
+        },
+        "l7policy": {
+            "description": "ID or name of L7 policy this rule belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "type": {
+            "description": "Rule type. (choices: HOST_NAME, PATH, FILE_TYPE, HEADER, COOKIE)",
+            "type": "string"
+        },
+        "value": {
+            "description": "Value to compare.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

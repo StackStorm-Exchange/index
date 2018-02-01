@@ -1,0 +1,92 @@
+{
+    "description": "LBaaS v2 Create a listener.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lbaas.listener.create",
+    "parameters": {
+        "admin_state_down": {
+            "default": true,
+            "description": "Set admin state up to false.",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "lbaas-listener-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "connection_limit": {
+            "description": "The maximum number of connections per second allowed for the listener. Positive integer or -1 for unlimited (default).",
+            "type": "integer"
+        },
+        "default_pool": {
+            "description": "Default pool for the listener.",
+            "type": "string"
+        },
+        "default_tls_container_ref": {
+            "description": "Default TLS container reference to retrieve TLS information.",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the listener.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-listener-create = neutronclient.neutron.v2_0.lb.v2.listener:CreateListener')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "loadbalancer": {
+            "description": "ID or name of the load balancer.",
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the listener. At least one of --default-pool or --loadbalancer must be specified.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "protocol": {
+            "description": "Protocol for the listener. (choices: TCP, HTTP, HTTPS, TERMINATED_HTTPS)",
+            "required": true,
+            "type": "string"
+        },
+        "protocol_port": {
+            "description": "Protocol port for the listener.",
+            "required": true,
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "sni_container_refs": {
+            "description": "List of TLS container references for SNI.",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

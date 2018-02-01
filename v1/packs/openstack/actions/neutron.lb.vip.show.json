@@ -1,0 +1,65 @@
+{
+    "description": "Show information of a given vip.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lb.vip.show",
+    "parameters": {
+        "base": {
+            "default": "lb-vip-show",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lb-vip-show = neutronclient.neutron.v2_0.lb.vip:ShowVip')",
+            "immutable": true,
+            "type": "string"
+        },
+        "field": {
+            "default": [],
+            "description": "Specify the field(s) to be returned by server. You can repeat this option.",
+            "type": "array"
+        },
+        "fields": {
+            "default": [],
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of vip to look up.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "show_details": {
+            "default": false,
+            "description": "==SUPPRESS==",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,40 @@
+{
+    "description": "Remove a mapping from a floating IP to a fixed IP.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.floatingip.disassociate",
+    "parameters": {
+        "base": {
+            "default": "floatingip-disassociate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('floatingip-disassociate = neutronclient.neutron.v2_0.floatingip:DisassociateFloatingIP')",
+            "immutable": true,
+            "type": "string"
+        },
+        "floatingip_id": {
+            "description": "ID of the floating IP to disassociate.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

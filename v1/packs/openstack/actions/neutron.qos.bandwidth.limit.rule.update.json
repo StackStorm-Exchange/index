@@ -1,0 +1,53 @@
+{
+    "description": "Update the given qos bandwidth limit rule.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.qos.bandwidth.limit.rule.update",
+    "parameters": {
+        "base": {
+            "default": "qos-bandwidth-limit-rule-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('qos-bandwidth-limit-rule-update = neutronclient.neutron.v2_0.qos.bandwidth_limit_rule:UpdateQoSBandwidthLimitRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of bandwidth_limit_rule to update.",
+            "required": true,
+            "type": "string"
+        },
+        "max_burst_kbps": {
+            "description": "Maximum burst bandwidth in kbps.",
+            "type": "string"
+        },
+        "max_kbps": {
+            "description": "Maximum bandwidth in kbps.",
+            "type": "string"
+        },
+        "policy": {
+            "description": "ID or name of the QoS policy.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

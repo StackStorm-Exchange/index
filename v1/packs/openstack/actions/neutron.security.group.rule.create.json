@@ -1,0 +1,87 @@
+{
+    "description": "Create a security group rule.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.security.group.rule.create",
+    "parameters": {
+        "base": {
+            "default": "security-group-rule-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of security group rule.",
+            "type": "string"
+        },
+        "direction": {
+            "default": "ingress",
+            "description": "Direction of traffic: ingress/egress. (choices: ingress, egress)",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('security-group-rule-create = neutronclient.neutron.v2_0.securitygroup:CreateSecurityGroupRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "ethertype": {
+            "description": "IPv4/IPv6",
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "port_range_max": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "port_range_min": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "protocol": {
+            "description": "Protocol of packet. Allowed values are [icmp, icmpv6, tcp, udp] and integer representations [0-255].",
+            "type": "string"
+        },
+        "remote_group_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "remote_ip_prefix": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "security_group_id": {
+            "description": "ID or name of the security group to which the rule is added.",
+            "required": true,
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

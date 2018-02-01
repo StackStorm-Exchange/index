@@ -1,0 +1,64 @@
+{
+    "description": "Create a BGP Speaker.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.bgp.speaker.create",
+    "parameters": {
+        "base": {
+            "default": "bgp-speaker-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bgp-speaker-create = neutronclient.neutron.v2_0.bgp.speaker:CreateSpeaker')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ip_version": {
+            "default": 4,
+            "description": "IP version for the BGP speaker (default is 4). (choices: 4, 6)",
+            "type": "integer"
+        },
+        "local_as": {
+            "description": "Local AS number. (Integer in [1, 65535] is allowed.)",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the BGP speaker to create.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

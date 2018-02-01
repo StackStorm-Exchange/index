@@ -1,0 +1,88 @@
+{
+    "description": "Create a firewall rule.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.firewall.rule.create",
+    "parameters": {
+        "action": {
+            "description": "Action for the firewall rule. (choices: allow, deny, reject)",
+            "required": true,
+            "type": "string"
+        },
+        "base": {
+            "default": "firewall-rule-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description for the firewall rule.",
+            "type": "string"
+        },
+        "destination_ip_address": {
+            "description": "Destination IP address or subnet.",
+            "type": "string"
+        },
+        "destination_port": {
+            "description": "Destination port (integer in [1, 65535] or range in a:b).",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('firewall-rule-create = neutronclient.neutron.v2_0.fw.firewallrule:CreateFirewallRule')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ip_version": {
+            "default": 4,
+            "description": "IP version for the firewall rule (default is 4). (choices: 4, 6)",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name for the firewall rule.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "protocol": {
+            "description": "Protocol for the firewall rule. (choices: tcp, udp, icmp, any)",
+            "required": true,
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "source_ip_address": {
+            "description": "Source IP address or subnet.",
+            "type": "string"
+        },
+        "source_port": {
+            "description": "Source port (integer in [1, 65535] or range in a:b).",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

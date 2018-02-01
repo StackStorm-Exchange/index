@@ -1,0 +1,40 @@
+{
+    "description": "Update a given vip.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lb.vip.update",
+    "parameters": {
+        "base": {
+            "default": "lb-vip-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lb-vip-update = neutronclient.neutron.v2_0.lb.vip:UpdateVip')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of vip to update.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,52 @@
+{
+    "description": "Update a given IPsec policy.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.vpn.ipsecpolicy.update",
+    "parameters": {
+        "base": {
+            "default": "vpn-ipsecpolicy-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the IPsec policy.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('vpn-ipsecpolicy-update = neutronclient.neutron.v2_0.vpn.ipsecpolicy:UpdateIPsecPolicy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of IPsec policy to update.",
+            "required": true,
+            "type": "string"
+        },
+        "lifetime": {
+            "description": "IPsec lifetime attributes. 'units'-seconds, default:seconds. 'value'-non negative integer, default:3600.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Updated name of the IPsec policy.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

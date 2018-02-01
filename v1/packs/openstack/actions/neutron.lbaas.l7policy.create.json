@@ -1,0 +1,84 @@
+{
+    "description": "LBaaS v2 Create L7 policy.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lbaas.l7policy.create",
+    "parameters": {
+        "action": {
+            "description": "Action type of the policy. (choices: REJECT, REDIRECT_TO_POOL, REDIRECT_TO_URL)",
+            "required": true,
+            "type": "string"
+        },
+        "admin_state_down": {
+            "default": true,
+            "description": "Set admin state up to false.",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "lbaas-l7policy-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Description of the policy.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-l7policy-create = neutronclient.neutron.v2_0.lb.v2.l7policy:CreateL7Policy')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "listener": {
+            "description": "ID or name of the listener this policy belongs to.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the policy.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "position": {
+            "description": "L7 policy position in ordered policies list. This must be an integer starting from 1. Not specifying the position will place the policy at the tail of existing policies list.",
+            "type": "integer"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "redirect_pool": {
+            "description": "ID or name of the pool for REDIRECT_TO_POOL action type.",
+            "type": "string"
+        },
+        "redirect_url": {
+            "description": "URL for REDIRECT_TO_URL action type. This should be a valid URL string.",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,118 @@
+{
+    "description": "Create an IPsec site connection.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.ipsec.site.connection.create",
+    "parameters": {
+        "admin_state_down": {
+            "default": true,
+            "description": "Set admin state up to false.",
+            "type": "boolean"
+        },
+        "base": {
+            "default": "ipsec-site-connection-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set a description for the connection.",
+            "type": "string"
+        },
+        "dpd": {
+            "description": " Ipsec connection. Dead Peer Detection attributes. 'action'-hold,clear,disabled,restart,restart-by-peer. 'interval' and 'timeout' are non negative integers.  'interval' should be less than 'timeout' value.  'action', default:hold 'interval', default:30,  'timeout', default:120.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('ipsec-site-connection-create = neutronclient.neutron.v2_0.vpn.ipsec_site_connection:CreateIPsecSiteConnection')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ikepolicy_id": {
+            "description": "IKE policy ID associated with this connection.",
+            "required": true,
+            "type": "string"
+        },
+        "initiator": {
+            "default": "bi-directional",
+            "description": "Initiator state in lowercase, default:bi-directional (choices: bi-directional, response-only)",
+            "type": "string"
+        },
+        "ipsecpolicy_id": {
+            "description": "IPsec policy ID associated with this connection.",
+            "required": true,
+            "type": "string"
+        },
+        "local_ep_group": {
+            "description": "Local endpoint group ID/name with subnet(s) for IPSec connection.",
+            "type": "string"
+        },
+        "mtu": {
+            "default": "1500",
+            "description": "MTU size for the connection, default:1500.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Set friendly name for the connection.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "peer_address": {
+            "description": "Peer gateway public IPv4/IPv6 address or FQDN.",
+            "required": true,
+            "type": "string"
+        },
+        "peer_cidr": {
+            "description": "[DEPRECATED in Mitaka] Remote subnet(s) in CIDR format. Cannot be specified when using endpoint groups. Only applicable, if subnet provided for VPN service.",
+            "type": "array"
+        },
+        "peer_ep_group": {
+            "description": "Peer endpoint group ID/name with CIDR(s) for IPSec connection.",
+            "type": "string"
+        },
+        "peer_id": {
+            "description": "Peer router identity for authentication. Can be IPv4/IPv6 address, e-mail address, key id, or FQDN.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "psk": {
+            "description": "Pre-shared key string.",
+            "required": true,
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        },
+        "vpnservice_id": {
+            "description": "VPN service instance ID associated with this connection.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

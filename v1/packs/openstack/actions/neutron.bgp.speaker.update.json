@@ -1,0 +1,44 @@
+{
+    "description": "Update BGP Speaker's information.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.bgp.speaker.update",
+    "parameters": {
+        "base": {
+            "default": "bgp-speaker-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('bgp-speaker-update = neutronclient.neutron.v2_0.bgp.speaker:UpdateSpeaker')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of bgp_speaker to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the BGP speaker to update.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,48 @@
+{
+    "description": "Update a given VPN endpoint group.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.vpn.endpoint.group.update",
+    "parameters": {
+        "base": {
+            "default": "vpn-endpoint-group-update",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "description": {
+            "description": "Set a description for the endpoint group.",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('vpn-endpoint-group-update = neutronclient.neutron.v2_0.vpn.endpoint_group:UpdateEndpointGroup')",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID or name of endpoint_group to update.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Set a name for the endpoint group.",
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

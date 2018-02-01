@@ -1,0 +1,74 @@
+{
+    "description": "LBaaS v2 List listeners that belong to a given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.lbaas.listener.list",
+    "parameters": {
+        "base": {
+            "default": "lbaas-listener-list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('lbaas-listener-list = neutronclient.neutron.v2_0.lb.v2.listener:ListListener')",
+            "immutable": true,
+            "type": "string"
+        },
+        "field": {
+            "default": [],
+            "description": "Specify the field(s) to be returned by server. You can repeat this option.",
+            "type": "array"
+        },
+        "fields": {
+            "default": [],
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "page_size": {
+            "description": "Specify retrieve unit of each request, then split one request to several requests.",
+            "type": "integer"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "show_details": {
+            "default": false,
+            "description": "==SUPPRESS==",
+            "type": "boolean"
+        },
+        "sort_dir": {
+            "default": [],
+            "description": "Sorts the list in the specified direction. You can repeat this option. (choices: asc, desc)",
+            "type": "array"
+        },
+        "sort_key": {
+            "default": [],
+            "description": "Sorts the list by the specified fields in the specified directions. You can repeat this option, but you must specify an equal number of sort_dir and sort_key values. Extra sort_dir options are ignored. Missing sort_dir options use the default asc value.",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

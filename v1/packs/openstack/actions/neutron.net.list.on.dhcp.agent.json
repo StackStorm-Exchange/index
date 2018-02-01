@@ -1,0 +1,107 @@
+{
+    "description": "List the networks on a DHCP agent.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.net.list.on.dhcp.agent",
+    "parameters": {
+        "base": {
+            "default": "net-list-on-dhcp-agent",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "dhcp_agent": {
+            "description": "ID of the DHCP agent.",
+            "required": true,
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('net-list-on-dhcp-agent = neutronclient.neutron.v2_0.agentscheduler:ListNetworksOnDhcpAgent')",
+            "immutable": true,
+            "type": "string"
+        },
+        "field": {
+            "default": [],
+            "description": "Specify the field(s) to be returned by server. You can repeat this option.",
+            "type": "array"
+        },
+        "fields": {
+            "default": [],
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "name": {
+            "description": "Filter networks according to their name.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "not_tags": {
+            "description": "Filter and list networks which does not have all given tags. Multiple tags can be set like --not-tags <tag[,tag...]>",
+            "type": "string"
+        },
+        "not_tags_any": {
+            "description": "Filter and list networks which does not have any given tags. Multiple tags can be set like --not-tags-any <tag[,tag...]>",
+            "type": "string"
+        },
+        "page_size": {
+            "description": "Specify retrieve unit of each request, then split one request to several requests.",
+            "type": "integer"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "show_details": {
+            "default": false,
+            "description": "==SUPPRESS==",
+            "type": "boolean"
+        },
+        "sort_dir": {
+            "default": [],
+            "description": "Sorts the list in the specified direction. You can repeat this option. (choices: asc, desc)",
+            "type": "array"
+        },
+        "sort_key": {
+            "default": [],
+            "description": "Sorts the list by the specified fields in the specified directions. You can repeat this option, but you must specify an equal number of sort_dir and sort_key values. Extra sort_dir options are ignored. Missing sort_dir options use the default asc value.",
+            "type": "array"
+        },
+        "status": {
+            "description": "Filter networks according to their operation status.(For example: ACTIVE, ERROR etc)",
+            "type": "string"
+        },
+        "tags": {
+            "description": "Filter and list networks which has all given tags. Multiple tags can be set like --tags <tag[,tag...]>",
+            "type": "string"
+        },
+        "tags_any": {
+            "description": "Filter and list networks which has any given tags. Multiple tags can be set like --tags-any <tag[,tag...]>",
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "Filter networks belonging to the given tenant.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

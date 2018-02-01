@@ -1,0 +1,45 @@
+{
+    "description": "Associate a Neutron service flavor with a flavor profile.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.flavor.associate",
+    "parameters": {
+        "base": {
+            "default": "flavor-associate",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('flavor-associate = neutronclient.neutron.v2_0.flavor.flavor:AssociateFlavor')",
+            "immutable": true,
+            "type": "string"
+        },
+        "flavor": {
+            "description": "ID or name of the flavor to associate.",
+            "required": true,
+            "type": "string"
+        },
+        "flavor_profile": {
+            "description": "ID of the flavor profile to be associated with the flavor.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

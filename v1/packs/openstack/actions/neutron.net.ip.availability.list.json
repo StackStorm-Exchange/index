@@ -1,0 +1,87 @@
+{
+    "description": "List IP usage of networks",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.net.ip.availability.list",
+    "parameters": {
+        "base": {
+            "default": "net-ip-availability-list",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('net-ip-availability-list = neutronclient.neutron.v2_0.network_ip_availability:ListIpAvailability')",
+            "immutable": true,
+            "type": "string"
+        },
+        "field": {
+            "default": [],
+            "description": "Specify the field(s) to be returned by server. You can repeat this option.",
+            "type": "array"
+        },
+        "fields": {
+            "default": [],
+            "description": "==SUPPRESS==",
+            "type": "array"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, json, table, value, yaml)",
+            "type": "string"
+        },
+        "ip_version": {
+            "default": 4,
+            "description": "Returns IP availability for the network subnets with a given IP version. Default: 4 (choices: 4, 6)",
+            "type": "integer"
+        },
+        "network_id": {
+            "description": "Returns IP availability for the network matching a given network ID.",
+            "type": "string"
+        },
+        "network_name": {
+            "description": "Returns IP availability for the network matching a given name.",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "show_details": {
+            "default": false,
+            "description": "==SUPPRESS==",
+            "type": "boolean"
+        },
+        "sort_dir": {
+            "default": [],
+            "description": "Sorts the list in the specified direction. You can repeat this option. (choices: asc, desc)",
+            "type": "array"
+        },
+        "sort_key": {
+            "default": [],
+            "description": "Sorts the list by the specified fields in the specified directions. You can repeat this option, but you must specify an equal number of sort_dir and sort_key values. Extra sort_dir options are ignored. Missing sort_dir options use the default asc value.",
+            "type": "array"
+        },
+        "tenant_id": {
+            "description": "Returns IP availability for the networks with a given tenant ID.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

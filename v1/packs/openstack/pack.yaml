@@ -12,20 +12,11 @@ content:
   actions:
     count: 702
     resources:
-    - address-scope-create
-    - address-scope-delete
-    - address-scope-list
-    - address-scope-show
-    - address-scope-update
     - address.scope.create
     - address.scope.delete
     - address.scope.list
     - address.scope.set
     - address.scope.show
-    - agent-delete
-    - agent-list
-    - agent-show
-    - agent-update
     - aggregate.add.host
     - aggregate.create
     - aggregate.delete
@@ -34,19 +25,16 @@ content:
     - aggregate.set
     - aggregate.show
     - aggregate.unset
-    - alarm-history.search
-    - alarm-history.show
     - alarm.create
     - alarm.delete
+    - alarm.history.search
+    - alarm.history.show
     - alarm.list
     - alarm.show
     - alarm.state.get
     - alarm.state.set
     - alarm.update
     - alarming.capabilities.list
-    - auto-allocated-topology-delete
-    - auto-allocated-topology-show
-    - availability-zone-list
     - availability.zone.list
     - backup.create
     - backup.delete
@@ -54,25 +42,6 @@ content:
     - backup.restore
     - backup.show
     - bash-completion
-    - bgp-dragent-list-hosting-speaker
-    - bgp-dragent-speaker-add
-    - bgp-dragent-speaker-remove
-    - bgp-peer-create
-    - bgp-peer-delete
-    - bgp-peer-list
-    - bgp-peer-show
-    - bgp-peer-update
-    - bgp-speaker-advertiseroute-list
-    - bgp-speaker-create
-    - bgp-speaker-delete
-    - bgp-speaker-list-on-dragent
-    - bgp-speaker-list
-    - bgp-speaker-network-add
-    - bgp-speaker-network-remove
-    - bgp-speaker-peer-add
-    - bgp-speaker-peer-remove
-    - bgp-speaker-show
-    - bgp-speaker-update
     - bgpvpn.create
     - bgpvpn.delete
     - bgpvpn.list
@@ -119,9 +88,6 @@ content:
     - container.set
     - container.show
     - container.unset
-    - dhcp-agent-list-hosting-net
-    - dhcp-agent-network-add
-    - dhcp-agent-network-remove
     - ec2.credentials.create
     - ec2.credentials.delete
     - ec2.credentials.list
@@ -130,27 +96,8 @@ content:
     - endpoint.delete
     - endpoint.list
     - endpoint.show
-    - ext-list
-    - ext-show
     - extension.list
     - extension.show
-    - firewall-create
-    - firewall-delete
-    - firewall-list
-    - firewall-policy-create
-    - firewall-policy-delete
-    - firewall-policy-insert-rule
-    - firewall-policy-list
-    - firewall-policy-remove-rule
-    - firewall-policy-show
-    - firewall-policy-update
-    - firewall-rule-create
-    - firewall-rule-delete
-    - firewall-rule-list
-    - firewall-rule-show
-    - firewall-rule-update
-    - firewall-show
-    - firewall-update
     - firewall.group.create
     - firewall.group.delete
     - firewall.group.list
@@ -171,18 +118,6 @@ content:
     - firewall.group.set
     - firewall.group.show
     - firewall.group.unset
-    - flavor-associate
-    - flavor-create
-    - flavor-delete
-    - flavor-disassociate
-    - flavor-list
-    - flavor-profile-create
-    - flavor-profile-delete
-    - flavor-profile-list
-    - flavor-profile-show
-    - flavor-profile-update
-    - flavor-show
-    - flavor-update
     - flavor.create
     - flavor.delete
     - flavor.list
@@ -191,12 +126,6 @@ content:
     - flavor.unset
     - floating.ip.set
     - floating.ip.unset
-    - floatingip-associate
-    - floatingip-create
-    - floatingip-delete
-    - floatingip-disassociate
-    - floatingip-list
-    - floatingip-show
     - help
     - host.list
     - host.set
@@ -223,101 +152,12 @@ content:
     - ip.floating.list
     - ip.floating.pool.list
     - ip.floating.remove
-    - ipsec-site-connection-create
-    - ipsec-site-connection-delete
-    - ipsec-site-connection-list
-    - ipsec-site-connection-show
-    - ipsec-site-connection-update
     - keypair.create
     - keypair.delete
     - keypair.list
     - keypair.show
-    - l3-agent-list-hosting-router
-    - l3-agent-router-add
-    - l3-agent-router-remove
-    - lb-agent-hosting-pool
-    - lb-healthmonitor-associate
-    - lb-healthmonitor-create
-    - lb-healthmonitor-delete
-    - lb-healthmonitor-disassociate
-    - lb-healthmonitor-list
-    - lb-healthmonitor-show
-    - lb-healthmonitor-update
-    - lb-member-create
-    - lb-member-delete
-    - lb-member-list
-    - lb-member-show
-    - lb-member-update
-    - lb-pool-create
-    - lb-pool-delete
-    - lb-pool-list-on-agent
-    - lb-pool-list
-    - lb-pool-show
-    - lb-pool-stats
-    - lb-pool-update
-    - lb-vip-create
-    - lb-vip-delete
-    - lb-vip-list
-    - lb-vip-show
-    - lb-vip-update
-    - lbaas-agent-hosting-loadbalancer
-    - lbaas-healthmonitor-create
-    - lbaas-healthmonitor-delete
-    - lbaas-healthmonitor-list
-    - lbaas-healthmonitor-show
-    - lbaas-healthmonitor-update
-    - lbaas-l7policy-create
-    - lbaas-l7policy-delete
-    - lbaas-l7policy-list
-    - lbaas-l7policy-show
-    - lbaas-l7policy-update
-    - lbaas-l7rule-create
-    - lbaas-l7rule-delete
-    - lbaas-l7rule-list
-    - lbaas-l7rule-show
-    - lbaas-l7rule-update
-    - lbaas-listener-create
-    - lbaas-listener-delete
-    - lbaas-listener-list
-    - lbaas-listener-show
-    - lbaas-listener-update
-    - lbaas-loadbalancer-create
-    - lbaas-loadbalancer-delete
-    - lbaas-loadbalancer-list-on-agent
-    - lbaas-loadbalancer-list
-    - lbaas-loadbalancer-show
-    - lbaas-loadbalancer-stats
-    - lbaas-loadbalancer-status
-    - lbaas-loadbalancer-update
-    - lbaas-member-create
-    - lbaas-member-delete
-    - lbaas-member-list
-    - lbaas-member-show
-    - lbaas-member-update
-    - lbaas-pool-create
-    - lbaas-pool-delete
-    - lbaas-pool-list
-    - lbaas-pool-show
-    - lbaas-pool-update
     - limits.show
-    - meter-label-create
-    - meter-label-delete
-    - meter-label-list
-    - meter-label-rule-create
-    - meter-label-rule-delete
-    - meter-label-rule-list
-    - meter-label-rule-show
-    - meter-label-show
     - module.list
-    - net-create
-    - net-delete
-    - net-external-list
-    - net-ip-availability-list
-    - net-ip-availability-show
-    - net-list-on-dhcp-agent
-    - net-list
-    - net-show
-    - net-update
     - network.agent.add.network
     - network.agent.add.router
     - network.agent.delete
@@ -383,6 +223,257 @@ content:
     - network.trunk.show
     - network.trunk.unset
     - network.unset
+    - neutron.address.scope.create
+    - neutron.address.scope.delete
+    - neutron.address.scope.list
+    - neutron.address.scope.show
+    - neutron.address.scope.update
+    - neutron.agent.delete
+    - neutron.agent.list
+    - neutron.agent.show
+    - neutron.agent.update
+    - neutron.auto.allocated.topology.delete
+    - neutron.auto.allocated.topology.show
+    - neutron.availability.zone.list
+    - neutron.bgp.dragent.list.hosting.speaker
+    - neutron.bgp.dragent.speaker.add
+    - neutron.bgp.dragent.speaker.remove
+    - neutron.bgp.peer.create
+    - neutron.bgp.peer.delete
+    - neutron.bgp.peer.list
+    - neutron.bgp.peer.show
+    - neutron.bgp.peer.update
+    - neutron.bgp.speaker.advertiseroute.list
+    - neutron.bgp.speaker.create
+    - neutron.bgp.speaker.delete
+    - neutron.bgp.speaker.list.on.dragent
+    - neutron.bgp.speaker.list
+    - neutron.bgp.speaker.network.add
+    - neutron.bgp.speaker.network.remove
+    - neutron.bgp.speaker.peer.add
+    - neutron.bgp.speaker.peer.remove
+    - neutron.bgp.speaker.show
+    - neutron.bgp.speaker.update
+    - neutron.dhcp.agent.list.hosting.net
+    - neutron.dhcp.agent.network.add
+    - neutron.dhcp.agent.network.remove
+    - neutron.ext.list
+    - neutron.ext.show
+    - neutron.firewall.create
+    - neutron.firewall.delete
+    - neutron.firewall.list
+    - neutron.firewall.policy.create
+    - neutron.firewall.policy.delete
+    - neutron.firewall.policy.insert.rule
+    - neutron.firewall.policy.list
+    - neutron.firewall.policy.remove.rule
+    - neutron.firewall.policy.show
+    - neutron.firewall.policy.update
+    - neutron.firewall.rule.create
+    - neutron.firewall.rule.delete
+    - neutron.firewall.rule.list
+    - neutron.firewall.rule.show
+    - neutron.firewall.rule.update
+    - neutron.firewall.show
+    - neutron.firewall.update
+    - neutron.flavor.associate
+    - neutron.flavor.create
+    - neutron.flavor.delete
+    - neutron.flavor.disassociate
+    - neutron.flavor.list
+    - neutron.flavor.profile.create
+    - neutron.flavor.profile.delete
+    - neutron.flavor.profile.list
+    - neutron.flavor.profile.show
+    - neutron.flavor.profile.update
+    - neutron.flavor.show
+    - neutron.flavor.update
+    - neutron.floatingip.associate
+    - neutron.floatingip.create
+    - neutron.floatingip.delete
+    - neutron.floatingip.disassociate
+    - neutron.floatingip.list
+    - neutron.floatingip.show
+    - neutron.ipsec.site.connection.create
+    - neutron.ipsec.site.connection.delete
+    - neutron.ipsec.site.connection.list
+    - neutron.ipsec.site.connection.show
+    - neutron.ipsec.site.connection.update
+    - neutron.l3.agent.list.hosting.router
+    - neutron.l3.agent.router.add
+    - neutron.l3.agent.router.remove
+    - neutron.lb.agent.hosting.pool
+    - neutron.lb.healthmonitor.associate
+    - neutron.lb.healthmonitor.create
+    - neutron.lb.healthmonitor.delete
+    - neutron.lb.healthmonitor.disassociate
+    - neutron.lb.healthmonitor.list
+    - neutron.lb.healthmonitor.show
+    - neutron.lb.healthmonitor.update
+    - neutron.lb.member.create
+    - neutron.lb.member.delete
+    - neutron.lb.member.list
+    - neutron.lb.member.show
+    - neutron.lb.member.update
+    - neutron.lb.pool.create
+    - neutron.lb.pool.delete
+    - neutron.lb.pool.list.on.agent
+    - neutron.lb.pool.list
+    - neutron.lb.pool.show
+    - neutron.lb.pool.stats
+    - neutron.lb.pool.update
+    - neutron.lb.vip.create
+    - neutron.lb.vip.delete
+    - neutron.lb.vip.list
+    - neutron.lb.vip.show
+    - neutron.lb.vip.update
+    - neutron.lbaas.agent.hosting.loadbalancer
+    - neutron.lbaas.healthmonitor.create
+    - neutron.lbaas.healthmonitor.delete
+    - neutron.lbaas.healthmonitor.list
+    - neutron.lbaas.healthmonitor.show
+    - neutron.lbaas.healthmonitor.update
+    - neutron.lbaas.l7policy.create
+    - neutron.lbaas.l7policy.delete
+    - neutron.lbaas.l7policy.list
+    - neutron.lbaas.l7policy.show
+    - neutron.lbaas.l7policy.update
+    - neutron.lbaas.l7rule.create
+    - neutron.lbaas.l7rule.delete
+    - neutron.lbaas.l7rule.list
+    - neutron.lbaas.l7rule.show
+    - neutron.lbaas.l7rule.update
+    - neutron.lbaas.listener.create
+    - neutron.lbaas.listener.delete
+    - neutron.lbaas.listener.list
+    - neutron.lbaas.listener.show
+    - neutron.lbaas.listener.update
+    - neutron.lbaas.loadbalancer.create
+    - neutron.lbaas.loadbalancer.delete
+    - neutron.lbaas.loadbalancer.list.on.agent
+    - neutron.lbaas.loadbalancer.list
+    - neutron.lbaas.loadbalancer.show
+    - neutron.lbaas.loadbalancer.stats
+    - neutron.lbaas.loadbalancer.status
+    - neutron.lbaas.loadbalancer.update
+    - neutron.lbaas.member.create
+    - neutron.lbaas.member.delete
+    - neutron.lbaas.member.list
+    - neutron.lbaas.member.show
+    - neutron.lbaas.member.update
+    - neutron.lbaas.pool.create
+    - neutron.lbaas.pool.delete
+    - neutron.lbaas.pool.list
+    - neutron.lbaas.pool.show
+    - neutron.lbaas.pool.update
+    - neutron.meter.label.create
+    - neutron.meter.label.delete
+    - neutron.meter.label.list
+    - neutron.meter.label.rule.create
+    - neutron.meter.label.rule.delete
+    - neutron.meter.label.rule.list
+    - neutron.meter.label.rule.show
+    - neutron.meter.label.show
+    - neutron.net.create
+    - neutron.net.delete
+    - neutron.net.external.list
+    - neutron.net.ip.availability.list
+    - neutron.net.ip.availability.show
+    - neutron.net.list.on.dhcp.agent
+    - neutron.net.list
+    - neutron.net.show
+    - neutron.net.update
+    - neutron.port.create
+    - neutron.port.delete
+    - neutron.port.list
+    - neutron.port.show
+    - neutron.port.update
+    - neutron.purge
+    - neutron.qos.available.rule.types
+    - neutron.qos.bandwidth.limit.rule.create
+    - neutron.qos.bandwidth.limit.rule.delete
+    - neutron.qos.bandwidth.limit.rule.list
+    - neutron.qos.bandwidth.limit.rule.show
+    - neutron.qos.bandwidth.limit.rule.update
+    - neutron.qos.dscp.marking.rule.create
+    - neutron.qos.dscp.marking.rule.delete
+    - neutron.qos.dscp.marking.rule.list
+    - neutron.qos.dscp.marking.rule.show
+    - neutron.qos.dscp.marking.rule.update
+    - neutron.qos.minimum.bandwidth.rule.create
+    - neutron.qos.minimum.bandwidth.rule.delete
+    - neutron.qos.minimum.bandwidth.rule.list
+    - neutron.qos.minimum.bandwidth.rule.show
+    - neutron.qos.minimum.bandwidth.rule.update
+    - neutron.qos.policy.create
+    - neutron.qos.policy.delete
+    - neutron.qos.policy.list
+    - neutron.qos.policy.show
+    - neutron.qos.policy.update
+    - neutron.quota.default.show
+    - neutron.quota.delete
+    - neutron.quota.list
+    - neutron.quota.show
+    - neutron.quota.update
+    - neutron.rbac.create
+    - neutron.rbac.delete
+    - neutron.rbac.list
+    - neutron.rbac.show
+    - neutron.rbac.update
+    - neutron.router.create
+    - neutron.router.delete
+    - neutron.router.gateway.clear
+    - neutron.router.gateway.set
+    - neutron.router.interface.add
+    - neutron.router.interface.delete
+    - neutron.router.list.on.l3.agent
+    - neutron.router.list
+    - neutron.router.port.list
+    - neutron.router.show
+    - neutron.router.update
+    - neutron.security.group.create
+    - neutron.security.group.delete
+    - neutron.security.group.list
+    - neutron.security.group.rule.create
+    - neutron.security.group.rule.delete
+    - neutron.security.group.rule.list
+    - neutron.security.group.rule.show
+    - neutron.security.group.show
+    - neutron.security.group.update
+    - neutron.service.provider.list
+    - neutron.subnet.create
+    - neutron.subnet.delete
+    - neutron.subnet.list
+    - neutron.subnet.show
+    - neutron.subnet.update
+    - neutron.subnetpool.create
+    - neutron.subnetpool.delete
+    - neutron.subnetpool.list
+    - neutron.subnetpool.show
+    - neutron.subnetpool.update
+    - neutron.tag.add
+    - neutron.tag.remove
+    - neutron.tag.replace
+    - neutron.vpn.endpoint.group.create
+    - neutron.vpn.endpoint.group.delete
+    - neutron.vpn.endpoint.group.list
+    - neutron.vpn.endpoint.group.show
+    - neutron.vpn.endpoint.group.update
+    - neutron.vpn.ikepolicy.create
+    - neutron.vpn.ikepolicy.delete
+    - neutron.vpn.ikepolicy.list
+    - neutron.vpn.ikepolicy.show
+    - neutron.vpn.ikepolicy.update
+    - neutron.vpn.ipsecpolicy.create
+    - neutron.vpn.ipsecpolicy.delete
+    - neutron.vpn.ipsecpolicy.list
+    - neutron.vpn.ipsecpolicy.show
+    - neutron.vpn.ipsecpolicy.update
+    - neutron.vpn.service.create
+    - neutron.vpn.service.delete
+    - neutron.vpn.service.list
+    - neutron.vpn.service.show
+    - neutron.vpn.service.update
     - object.create
     - object.delete
     - object.list
@@ -400,11 +491,6 @@ content:
     - orchestration.template.function.list
     - orchestration.template.validate
     - orchestration.template.version.list
-    - port-create
-    - port-delete
-    - port-list
-    - port-show
-    - port-update
     - port.create
     - port.delete
     - port.list
@@ -419,41 +505,9 @@ content:
     - project.show
     - project.unset
     - project.usage.list
-    - purge
-    - qos-available-rule-types
-    - qos-bandwidth-limit-rule-create
-    - qos-bandwidth-limit-rule-delete
-    - qos-bandwidth-limit-rule-list
-    - qos-bandwidth-limit-rule-show
-    - qos-bandwidth-limit-rule-update
-    - qos-dscp-marking-rule-create
-    - qos-dscp-marking-rule-delete
-    - qos-dscp-marking-rule-list
-    - qos-dscp-marking-rule-show
-    - qos-dscp-marking-rule-update
-    - qos-minimum-bandwidth-rule-create
-    - qos-minimum-bandwidth-rule-delete
-    - qos-minimum-bandwidth-rule-list
-    - qos-minimum-bandwidth-rule-show
-    - qos-minimum-bandwidth-rule-update
-    - qos-policy-create
-    - qos-policy-delete
-    - qos-policy-list
-    - qos-policy-show
-    - qos-policy-update
-    - quota-default-show
-    - quota-delete
-    - quota-list
-    - quota-show
-    - quota-update
     - quota.list
     - quota.set
     - quota.show
-    - rbac-create
-    - rbac-delete
-    - rbac-list
-    - rbac-show
-    - rbac-update
     - role.add
     - role.assignment.list
     - role.create
@@ -461,17 +515,6 @@ content:
     - role.list
     - role.remove
     - role.show
-    - router-create
-    - router-delete
-    - router-gateway-clear
-    - router-gateway-set
-    - router-interface-add
-    - router-interface-delete
-    - router-list-on-l3-agent
-    - router-list
-    - router-port-list
-    - router-show
-    - router-update
     - router.add.port
     - router.add.subnet
     - router.create
@@ -482,15 +525,6 @@ content:
     - router.set
     - router.show
     - router.unset
-    - security-group-create
-    - security-group-delete
-    - security-group-list
-    - security-group-rule-create
-    - security-group-rule-delete
-    - security-group-rule-list
-    - security-group-rule-show
-    - security-group-show
-    - security-group-update
     - security.group.create
     - security.group.delete
     - security.group.list
@@ -542,7 +576,6 @@ content:
     - server.unrescue
     - server.unset
     - server.unshelve
-    - service-provider-list
     - service.create
     - service.delete
     - service.list
@@ -617,11 +650,6 @@ content:
     - stack.suspend
     - stack.template.show
     - stack.update
-    - subnet-create
-    - subnet-delete
-    - subnet-list
-    - subnet-show
-    - subnet-update
     - subnet.create
     - subnet.delete
     - subnet.list
@@ -634,14 +662,6 @@ content:
     - subnet.set
     - subnet.show
     - subnet.unset
-    - subnetpool-create
-    - subnetpool-delete
-    - subnetpool-list
-    - subnetpool-show
-    - subnetpool-update
-    - tag-add
-    - tag-remove
-    - tag-replace
     - token.issue
     - token.revoke
     - usage.list
@@ -694,26 +714,6 @@ content:
     - volume.type.show
     - volume.type.unset
     - volume.unset
-    - vpn-endpoint-group-create
-    - vpn-endpoint-group-delete
-    - vpn-endpoint-group-list
-    - vpn-endpoint-group-show
-    - vpn-endpoint-group-update
-    - vpn-ikepolicy-create
-    - vpn-ikepolicy-delete
-    - vpn-ikepolicy-list
-    - vpn-ikepolicy-show
-    - vpn-ikepolicy-update
-    - vpn-ipsecpolicy-create
-    - vpn-ipsecpolicy-delete
-    - vpn-ipsecpolicy-list
-    - vpn-ipsecpolicy-show
-    - vpn-ipsecpolicy-update
-    - vpn-service-create
-    - vpn-service-delete
-    - vpn-service-list
-    - vpn-service-show
-    - vpn-service-update
   sensors:
     count: 1
     resources:

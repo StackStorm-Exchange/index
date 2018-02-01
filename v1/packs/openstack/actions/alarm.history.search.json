@@ -1,0 +1,45 @@
+{
+    "description": "Show history for all alarms based on query",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "alarm.history.search",
+    "parameters": {
+        "base": {
+            "default": "alarm-history search",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('alarm-history search = aodhclient.v2.alarm_history_cli:CliAlarmHistorySearch')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: csv, html, json, json, table, value, yaml, yaml)",
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "query": {
+            "description": "Rich query supported by aodh, e.g. project_id!=my-id user_id=foo or user_id=bar",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

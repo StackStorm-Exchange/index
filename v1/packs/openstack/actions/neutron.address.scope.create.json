@@ -1,0 +1,64 @@
+{
+    "description": "Create an address scope for a given tenant.",
+    "enabled": true,
+    "entry_point": "src/wrapper.py",
+    "name": "neutron.address.scope.create",
+    "parameters": {
+        "base": {
+            "default": "address-scope-create",
+            "immutable": true,
+            "type": "string"
+        },
+        "cloud": {
+            "description": "A specific cloud to query",
+            "type": "string"
+        },
+        "ep": {
+            "default": "EntryPoint.parse('address-scope-create = neutronclient.neutron.v2_0.address_scope:CreateAddressScope')",
+            "immutable": true,
+            "type": "string"
+        },
+        "format": {
+            "default": "json",
+            "description": "the output format, defaults to table (choices: json, shell, table, value, yaml)",
+            "type": "string"
+        },
+        "ip_version": {
+            "description": "Specify the address family of the address scope. (choices: 4, 6)",
+            "required": true,
+            "type": "integer"
+        },
+        "name": {
+            "description": "Specify the name of the address scope.",
+            "required": true,
+            "type": "string"
+        },
+        "noindent": {
+            "default": false,
+            "description": "whether to disable indenting the JSON",
+            "type": "boolean"
+        },
+        "project_id": {
+            "description": "Run the action under a different project, identified by id",
+            "type": "string"
+        },
+        "project_name": {
+            "description": "Run the action under a different project, identified by name",
+            "type": "string"
+        },
+        "request_format": {
+            "description": "==SUPPRESS== (choices: json)",
+            "type": "string"
+        },
+        "shared": {
+            "default": false,
+            "description": "Set the address scope as shared.",
+            "type": "boolean"
+        },
+        "tenant_id": {
+            "description": "==SUPPRESS==",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
