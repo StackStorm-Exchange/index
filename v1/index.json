@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1517519250,
-        "hash": "a3b194496702dff0c1a09cba613dab0f"
+        "generated_ts": 1518042212,
+        "hash": "6b2b053030e0d34f04d53a7ae22a8e18"
     },
     "packs": {
         "acos": {
@@ -5761,6 +5761,40 @@
             "ref": "foreman",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-foreman",
             "version": "1.0.1"
+        },
+        "fortinet": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 13,
+                    "resources": [
+                        "create_address_group",
+                        "create_address_object",
+                        "create_firewall_policy",
+                        "delete_address_group",
+                        "delete_address_object",
+                        "delete_firewall_policy",
+                        "get_address_group",
+                        "get_address_object",
+                        "get_firewall_policy",
+                        "move_firewall_policy",
+                        "update_address_object",
+                        "update_address_object",
+                        "update_firewall_policy"
+                    ]
+                }
+            },
+            "description": "St2 integration with Fortinet Firewall",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "firewalls",
+                "threat",
+                "security"
+            ],
+            "name": "fortinet",
+            "ref": "fortinet",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fortinet",
+            "version": "0.0.1"
         },
         "fpm": {
             "author": "jfryman",

@@ -1,0 +1,21 @@
+{
+    "description": "Create Address Group Details",
+    "enabled": true,
+    "entry_point": "create_address_group.py",
+    "name": "create_address_group",
+    "pack": "fortinet",
+    "parameters": {
+        "name": {
+            "description": "name of the address group",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "Address Group configuration",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

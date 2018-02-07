@@ -1,0 +1,21 @@
+{
+    "description": "Create Address Object Details",
+    "enabled": true,
+    "entry_point": "create_address_object.py",
+    "name": "create_address_object",
+    "pack": "fortinet",
+    "parameters": {
+        "name": {
+            "description": "name of the address object",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "Address Object configuration",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

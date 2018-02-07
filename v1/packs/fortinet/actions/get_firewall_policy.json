@@ -1,0 +1,14 @@
+{
+    "description": "Get Firewall Policy Details",
+    "enabled": true,
+    "entry_point": "get_firewall_policy.py",
+    "name": "get_firewall_policy",
+    "pack": "fortinet",
+    "parameters": {
+        "name_or_id": {
+            "description": "ID of the firewall policy",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

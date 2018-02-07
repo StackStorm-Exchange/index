@@ -1,0 +1,14 @@
+{
+    "description": "Get Address Object Details",
+    "enabled": true,
+    "entry_point": "get_address_object.py",
+    "name": "get_address_object",
+    "pack": "fortinet",
+    "parameters": {
+        "name": {
+            "description": "name of the address object",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

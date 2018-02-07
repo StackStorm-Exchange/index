@@ -1,0 +1,32 @@
+{
+    "description": "Move Firewall Policy Details",
+    "enabled": true,
+    "entry_point": "move_firewall_policy.py",
+    "name": "move_firewall_policy",
+    "pack": "fortinet",
+    "parameters": {
+        "neighbor": {
+            "description": "ID of the policy being used as a positional anchor",
+            "position": 2,
+            "required": true,
+            "type": "integer"
+        },
+        "policy_id": {
+            "description": "ID of the policy being moved",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        },
+        "position": {
+            "description": "position ('before' or 'after')",
+            "enum": [
+                "before",
+                "after"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

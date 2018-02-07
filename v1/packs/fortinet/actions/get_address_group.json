@@ -1,0 +1,14 @@
+{
+    "description": "Get Firewall Address Group",
+    "enabled": true,
+    "entry_point": "get_address_group.py",
+    "name": "get_address_group",
+    "pack": "fortinet",
+    "parameters": {
+        "name": {
+            "description": "name of the address group",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

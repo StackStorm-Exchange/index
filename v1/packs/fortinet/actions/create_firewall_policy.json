@@ -1,0 +1,21 @@
+{
+    "description": "Create Firewall Policy Details",
+    "enabled": true,
+    "entry_point": "create_firewall_policy.py",
+    "name": "create_firewall_policy",
+    "pack": "fortinet",
+    "parameters": {
+        "payload": {
+            "description": "Firewall Policy configuration",
+            "required": true,
+            "type": "string"
+        },
+        "policy_id": {
+            "description": "Firewall policy ID",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

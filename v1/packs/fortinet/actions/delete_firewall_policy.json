@@ -1,0 +1,15 @@
+{
+    "description": "Delete Firewall Policy",
+    "enabled": true,
+    "entry_point": "delete_firewall_policy.py",
+    "name": "delete_firewall_policy",
+    "pack": "fortinet",
+    "parameters": {
+        "policy_id": {
+            "description": "ID of the Firewall Policy",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

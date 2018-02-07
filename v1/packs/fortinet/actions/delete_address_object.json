@@ -1,0 +1,15 @@
+{
+    "description": "Delete Address Object Details",
+    "enabled": true,
+    "entry_point": "delete_address_object.py",
+    "name": "delete_address_object",
+    "pack": "fortinet",
+    "parameters": {
+        "name": {
+            "description": "name of the address object",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

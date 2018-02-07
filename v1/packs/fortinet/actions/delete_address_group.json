@@ -1,0 +1,15 @@
+{
+    "description": "Delete Address Group Details",
+    "enabled": true,
+    "entry_point": "delete_address_group.py",
+    "name": "delete_address_group",
+    "pack": "fortinet",
+    "parameters": {
+        "name": {
+            "description": "name of the address group",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

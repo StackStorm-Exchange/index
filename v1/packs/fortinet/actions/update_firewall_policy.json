@@ -1,0 +1,21 @@
+{
+    "description": "Update Firewall Policy Details",
+    "enabled": true,
+    "entry_point": "update_firewall_policy.py",
+    "name": "update_firewall_policy",
+    "pack": "fortinet",
+    "parameters": {
+        "payload": {
+            "description": "Firewall Policy configuration",
+            "required": true,
+            "type": "string"
+        },
+        "policy_id": {
+            "description": "Policy ID of the firewall policy",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}
