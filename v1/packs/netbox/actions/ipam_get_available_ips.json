@@ -6,12 +6,8 @@
     "pack": "netbox",
     "parameters": {
         "endpoint_uri": {
-            "default": "/api/ipam/prefixes/{{ id }}/available-ips/",
+            "default": "/api/ipam/prefixes/{{ prefix_id }}/available-ips/",
             "immutable": true
-        },
-        "id": {
-            "description": "ID of the prefix to get.",
-            "type": "integer"
         },
         "limit": {
             "default": 50,
@@ -21,6 +17,10 @@
         "offset": {
             "default": 0,
             "description": "Offset result set by X objects. Used for pagination.",
+            "type": "integer"
+        },
+        "prefix_id": {
+            "description": "ID of the prefix to get.",
             "type": "integer"
         },
         "save_in_key_store": {
