@@ -4,11 +4,5 @@
     "entry_point": "getAutoscalingV1APIResources.py",
     "name": "getAutoscalingV1APIResources",
     "pack": "kubernetes",
-    "parameters": {
-        "config_override": {
-            "description": "override stackstorm config",
-            "type": "object"
-        }
-    },
     "runner_type": "python-script"
 }

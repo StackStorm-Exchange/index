@@ -1,4 +1,12 @@
 {
+    "client_cert_key_path": {
+        "description": "client cert key path",
+        "type": "string"
+    },
+    "client_cert_path": {
+        "description": "client cert path",
+        "type": "string"
+    },
     "kubernetes_api_url": {
         "description": "kubernetes api url",
         "required": true,
@@ -6,7 +14,6 @@
     },
     "password": {
         "description": "kubernetes password",
-        "required": true,
         "secret": true,
         "type": "string"
     },
@@ -17,9 +24,7 @@
         "type": "string"
     },
     "user": {
-        "default": "admin",
         "description": "kubernetes username",
-        "required": true,
         "type": "string"
     },
     "verify": {

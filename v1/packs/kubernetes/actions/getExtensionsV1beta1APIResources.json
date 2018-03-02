@@ -4,11 +4,5 @@
     "entry_point": "getExtensionsV1beta1APIResources.py",
     "name": "getExtensionsV1beta1APIResources",
     "pack": "kubernetes",
-    "parameters": {
-        "config_override": {
-            "description": "override stackstorm config",
-            "type": "object"
-        }
-    },
     "runner_type": "python-script"
 }

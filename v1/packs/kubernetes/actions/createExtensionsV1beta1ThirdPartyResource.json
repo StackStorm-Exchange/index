@@ -12,6 +12,7 @@
         },
         "config_override": {
             "description": "override stackstorm config",
+            "secret": true,
             "type": "object"
         },
         "pretty": {
