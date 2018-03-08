@@ -25,7 +25,6 @@
         },
         "host": {
             "description": "Elasticsearch host.",
-            "required": true,
             "type": "string"
         },
         "http_auth": {
@@ -38,8 +37,8 @@
             "type": "string"
         },
         "log_level": {
-            "default": "warn",
-            "description": "Log level [critical|error|warning|info|debug].",
+            "default": "WARNING",
+            "description": "Log level [CRITICAL|ERROR|WARNING|INFO|DEBUG].",
             "type": "string"
         },
         "master_only": {
