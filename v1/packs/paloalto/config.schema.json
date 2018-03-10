@@ -1,12 +1,45 @@
 {
-    "api_key": {
-        "description": "Palo Alto API key",
+    "firewall": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/firewalls"
+            }
+        },
         "required": true,
-        "type": "string"
+        "type": "object"
     },
-    "tag": {
-        "description": "Palo Alto object tag",
-        "required": true,
-        "type": "string"
+    "firewalls": {
+        "additionalProperties": false,
+        "properties": {
+            "api_key": {
+                "description": "The api key for this user.",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            },
+            "api_password": {
+                "description": "The password of the specified user.",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            },
+            "api_username": {
+                "description": "Authentication user-id for the firewall api.",
+                "required": false,
+                "type": "string"
+            },
+            "host": {
+                "description": "Hostname or IP address of firewall.",
+                "required": true,
+                "type": "string"
+            },
+            "port": {
+                "default": 443,
+                "description": "TCP port number for the firewall connection.",
+                "type": "integer"
+            }
+        },
+        "type": "object"
     }
 }

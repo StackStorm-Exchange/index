@@ -1,0 +1,29 @@
+{
+    "description": "Unregister an IP/tag(s) or update an existing registration",
+    "enabled": true,
+    "entry_point": "unregister_ip.py",
+    "name": "unregister_ip",
+    "parameters": {
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "ip": {
+            "description": "IP Address to unregister",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Single tag to unregister from the IP address",
+            "required": false,
+            "type": "string"
+        },
+        "tag_list": {
+            "description": "List of tags to unregister from IP address",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

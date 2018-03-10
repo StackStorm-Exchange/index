@@ -1,0 +1,54 @@
+{
+    "description": "Add a new address object or update an existing one",
+    "enabled": true,
+    "entry_point": "apply_single_object.py",
+    "name": "apply_address_object",
+    "parameters": {
+        "class_string": {
+            "default": "AddressObject",
+            "immutable": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "Object description",
+            "required": false,
+            "type": "string"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to add the object to. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the object",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "List of static administrative tags to assign to the object",
+            "required": false,
+            "type": "array"
+        },
+        "type": {
+            "default": "ip-netmask",
+            "description": "String value of dynamic match criteria",
+            "enum": [
+                "ip-netmask",
+                "ip-range",
+                "fqdn"
+            ],
+            "type": "string"
+        },
+        "value": {
+            "description": "Value of the object",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

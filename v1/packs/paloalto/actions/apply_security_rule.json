@@ -1,0 +1,173 @@
+{
+    "description": "Add a new security rule object or update an existing one",
+    "enabled": true,
+    "entry_point": "apply_single_policy.py",
+    "name": "apply_security_rule",
+    "parameters": {
+        "action": {
+            "description": "Action to take (Not all options are available on all PAN-OS versions.)",
+            "enum": [
+                "deny",
+                "allow",
+                "drop",
+                "reset-client",
+                "reset-server",
+                "reset-both Note"
+            ],
+            "type": "string"
+        },
+        "application": {
+            "description": "Applications",
+            "type": "array"
+        },
+        "category": {
+            "description": "Destination URL Categories",
+            "type": "array"
+        },
+        "class_string": {
+            "default": "SecurityRule",
+            "immutable": true,
+            "type": "string"
+        },
+        "data_filtering": {
+            "description": "Data Filtering Security Profile",
+            "type": "string"
+        },
+        "description": {
+            "description": "Object description",
+            "required": false,
+            "type": "string"
+        },
+        "destination": {
+            "description": "Destination addresses",
+            "type": "array"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to add the object to. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "disable_server_response_inspection": {
+            "description": "Disable server response inspection",
+            "type": "boolean"
+        },
+        "disabled": {
+            "description": "Disable this rule",
+            "type": "boolean"
+        },
+        "file_blocking": {
+            "description": "File Blocking Security Profile",
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "fromzone": {
+            "description": "From zones",
+            "type": "array"
+        },
+        "group": {
+            "description": "Security Profile Group",
+            "type": "string"
+        },
+        "icmp_unreachable": {
+            "description": "Send ICMP Unreachable",
+            "type": "boolean"
+        },
+        "log_end": {
+            "description": "Log at session end",
+            "type": "boolean"
+        },
+        "log_setting": {
+            "description": "Log forwarding profile",
+            "type": "string"
+        },
+        "log_start": {
+            "description": "Log at session start",
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Name of the object",
+            "required": true,
+            "type": "string"
+        },
+        "negate_destination": {
+            "description": "Match on the reverse of the 'destination' attribute",
+            "type": "boolean"
+        },
+        "negate_source": {
+            "description": "Match on the reverse of the 'source' attribute",
+            "type": "boolean"
+        },
+        "negate_target": {
+            "description": "Target all but the listed target firewalls (applies to panorama/device groups only)",
+            "type": "boolean"
+        },
+        "pre_rulebase": {
+            "default": true,
+            "description": "When using Panorama, denotes whether the policy should be added the Pre or Post Rulebase. Defaults to Pre Rulebase.",
+            "type": "boolean"
+        },
+        "schedule": {
+            "description": "Schedule Profile",
+            "type": "string"
+        },
+        "service": {
+            "default": [
+                "application-default"
+            ],
+            "description": "Destination services (ports)",
+            "type": "array"
+        },
+        "source": {
+            "description": "Source addresses",
+            "type": "array"
+        },
+        "spyware": {
+            "description": "Anti-Spyware Security Profile",
+            "type": "string"
+        },
+        "tag": {
+            "description": "List of static administrative tags to assign to the object",
+            "required": false,
+            "type": "array"
+        },
+        "target": {
+            "description": "Apply this policy to the listed firewalls only (applies to panorama/device groups only)",
+            "type": "array"
+        },
+        "tozone": {
+            "description": "To zones",
+            "type": "array"
+        },
+        "type": {
+            "default": "universal",
+            "description": "Rule type",
+            "enum": [
+                "universal",
+                "intrazone",
+                "interzone"
+            ],
+            "type": "string"
+        },
+        "url_filtering": {
+            "description": "URL Filtering Security Profile",
+            "type": "string"
+        },
+        "virus": {
+            "description": "Antivirus Security Profile",
+            "type": "string"
+        },
+        "vulnerability": {
+            "description": "Vulnerability Protection Security Profile",
+            "type": "string"
+        },
+        "wildfire_analysis": {
+            "description": "Wildfire Analysis Security Profile",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

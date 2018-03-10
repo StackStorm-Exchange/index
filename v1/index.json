@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1520539244,
-        "hash": "29a22eb88ea0787c16fcae3f82453407"
+        "generated_ts": 1520657718,
+        "hash": "1c8e915d59c92bf566e38814b3a3d1cf"
     },
     "packs": {
         "acos": {
@@ -8916,24 +8916,36 @@
             "version": "0.4.2"
         },
         "paloalto": {
-            "author": "Irek Romaniuk",
+            "author": "Irek Romaniuk, John Anderson",
             "content": {
                 "actions": {
-                    "count": 1,
+                    "count": 15,
                     "resources": [
-                        "dag_update"
+                        "apply_address_group",
+                        "apply_address_object",
+                        "apply_security_rule",
+                        "apply_service_group",
+                        "apply_service_object",
+                        "bulk_apply_address_groups",
+                        "bulk_apply_address_objects",
+                        "bulk_apply_security_rules",
+                        "bulk_apply_service_groups",
+                        "bulk_apply_service_objects",
+                        "bulk_register_ip",
+                        "bulk_unregister_ip",
+                        "commit",
+                        "register_ip",
+                        "unregister_ip"
                     ]
                 },
                 "rules": {
-                    "count": 3,
+                    "count": 1,
                     "resources": [
-                        "dag_update_fw1",
-                        "dag_update_fw2",
-                        "test_rule"
+                        "block_bad_actors"
                     ]
                 }
             },
-            "description": "Block threats on Palo Alto Networks firewalls",
+            "description": "Interact with Palo Alto firewalls",
             "email": "irek.romaniuk@gmail.com",
             "keywords": [
                 "firewalls",
@@ -8942,7 +8954,7 @@
             "name": "paloalto",
             "ref": "paloalto",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-paloalto",
-            "version": "0.1.0"
+            "version": "0.2.0"
         },
         "phantomjs": {
             "author": "Tomaz Muraus",

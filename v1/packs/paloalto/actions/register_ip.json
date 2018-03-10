@@ -1,0 +1,29 @@
+{
+    "description": "Register a new IP/tag(s) or update an existing registration",
+    "enabled": true,
+    "entry_point": "register_ip.py",
+    "name": "register_ip",
+    "parameters": {
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "ip": {
+            "description": "IP Address to register",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "Single tag to register to the IP address",
+            "required": false,
+            "type": "string"
+        },
+        "tag_list": {
+            "description": "List of tags to register to IP address",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

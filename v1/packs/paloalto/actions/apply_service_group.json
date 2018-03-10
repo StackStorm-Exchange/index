@@ -1,0 +1,39 @@
+{
+    "description": "Add a new service group or update an existing one",
+    "enabled": true,
+    "entry_point": "apply_single_object.py",
+    "name": "apply_service_group",
+    "parameters": {
+        "class_string": {
+            "default": "ServiceGroup",
+            "immutable": true,
+            "type": "string"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to add the object to. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the object",
+            "required": true,
+            "type": "string"
+        },
+        "tag": {
+            "description": "List of static administrative tags to assign to the object",
+            "required": false,
+            "type": "array"
+        },
+        "value": {
+            "description": "List of service/group object names",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

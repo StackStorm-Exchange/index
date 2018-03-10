@@ -1,0 +1,25 @@
+{
+    "action": {
+        "parameters": {
+            "ip": "{{trigger.body.source}}",
+            "tag": "bad-actor"
+        },
+        "ref": "paloalto.register_ip"
+    },
+    "criteria": {
+        "trigger.body.severity": {
+            "pattern": "critical",
+            "type": "contains"
+        }
+    },
+    "description": "Register the payload IP to the default firewall with the bad-actor tag",
+    "enabled": true,
+    "name": "block_bad_actors",
+    "pack": "paloalto",
+    "trigger": {
+        "parameters": {
+            "url": "paloalto"
+        },
+        "type": "core.st2.webhook"
+    }
+}

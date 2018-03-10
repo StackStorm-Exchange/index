@@ -1,20 +1,32 @@
 ref: paloalto
 name: paloalto
-description: Block threats on Palo Alto Networks firewalls
+description: Interact with Palo Alto firewalls
 keywords:
 - firewalls
 - threats
-version: 0.1.0
-author: Irek Romaniuk
+version: 0.2.0
+author: Irek Romaniuk, John Anderson
 email: irek.romaniuk@gmail.com
 content:
   actions:
+    count: 15
+    resources:
+    - apply_address_group
+    - apply_address_object
+    - apply_security_rule
+    - apply_service_group
+    - apply_service_object
+    - bulk_apply_address_groups
+    - bulk_apply_address_objects
+    - bulk_apply_security_rules
+    - bulk_apply_service_groups
+    - bulk_apply_service_objects
+    - bulk_register_ip
+    - bulk_unregister_ip
+    - commit
+    - register_ip
+    - unregister_ip
+  rules:
     count: 1
     resources:
-    - dag_update
-  rules:
-    count: 3
-    resources:
-    - dag_update_fw1
-    - dag_update_fw2
-    - test_rule
+    - block_bad_actors

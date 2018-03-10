@@ -1,0 +1,29 @@
+{
+    "description": "Add new service groups or update existing ones in bulk",
+    "enabled": true,
+    "entry_point": "bulk_apply_objects.py",
+    "name": "bulk_apply_service_groups",
+    "parameters": {
+        "class_string": {
+            "default": "ServiceGroup",
+            "immutable": true,
+            "type": "string"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to add the objects to. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "objects": {
+            "description": "List of objects to bulk apply. Each object will be validated before being applied",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

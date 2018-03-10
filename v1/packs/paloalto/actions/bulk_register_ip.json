@@ -1,0 +1,19 @@
+{
+    "description": "Register new IPs/tag(s) or update existing registrations in bulk",
+    "enabled": true,
+    "entry_point": "bulk_register_ip.py",
+    "name": "bulk_register_ip",
+    "parameters": {
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "objects": {
+            "description": "List of objects to bulk register. Each object will be validated before being applied",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

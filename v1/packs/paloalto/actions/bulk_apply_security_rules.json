@@ -1,0 +1,34 @@
+{
+    "description": "Add new security rule objects or update existing ones in bulk",
+    "enabled": true,
+    "entry_point": "bulk_apply_policies.py",
+    "name": "bulk_apply_security_rules",
+    "parameters": {
+        "class_string": {
+            "default": "SecurityRule",
+            "immutable": true,
+            "type": "string"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to add the objects to. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "objects": {
+            "description": "List of objects to bulk apply. Each object will be validated before being applied",
+            "required": true,
+            "type": "array"
+        },
+        "pre_rulebase": {
+            "default": true,
+            "description": "When using Panorama, denotes whether the policy should be added the Pre or Post Rulebase. Defaults to Pre Rulebase.",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}
