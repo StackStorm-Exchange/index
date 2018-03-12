@@ -1,0 +1,15 @@
+ref: kayako
+name: Kayako
+description: Kayako customer ticket management
+keywords:
+- tickets
+- ticket management
+version: 0.1.0
+author: Antagonist B.V.
+email: info@antagonist.nl
+content:
+  actions:
+    count: 2
+    resources:
+    - create_ticket
+    - create_ticket_post

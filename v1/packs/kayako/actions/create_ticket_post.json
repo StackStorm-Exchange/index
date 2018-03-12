@@ -1,0 +1,24 @@
+{
+    "description": "Create a new post on a Kayako ticket and send it. Returns the unique ticket_post id.",
+    "enabled": true,
+    "entry_point": "create_ticket_post.py",
+    "name": "create_ticket_post",
+    "parameters": {
+        "contents": {
+            "description": "Ticket-post contents (body of email, if sent).",
+            "required": true,
+            "type": "string"
+        },
+        "staff_email": {
+            "description": "E-mail address of staff user this ticketpost will be created as.",
+            "required": true,
+            "type": "string"
+        },
+        "ticket_id": {
+            "description": "Ticket id.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}
