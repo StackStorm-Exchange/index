@@ -16,6 +16,12 @@
             "required": true,
             "type": "boolean"
         },
+        "include_customfields": {
+            "default": false,
+            "description": "True to include custom fields.",
+            "required": true,
+            "type": "boolean"
+        },
         "max_results": {
             "default": 50,
             "description": "Maximum number of returned results",
