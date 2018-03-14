@@ -1,0 +1,34 @@
+{
+    "description": "Get Service Object(s) from the device",
+    "enabled": true,
+    "entry_point": "get_object.py",
+    "name": "get_service_objects",
+    "parameters": {
+        "class_string": {
+            "default": "ServiceObject",
+            "immutable": true,
+            "type": "string"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to add the object to. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the object. When not passed, all objects of this type will be returned.",
+            "required": false,
+            "type": "string"
+        },
+        "serialize": {
+            "default": true,
+            "description": "When true, the return object(s) will be json serialized. When false, the action will return the raw pandevice python object(s).",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

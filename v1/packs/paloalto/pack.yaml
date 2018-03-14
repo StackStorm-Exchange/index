@@ -4,12 +4,12 @@ description: Interact with Palo Alto firewalls
 keywords:
 - firewalls
 - threats
-version: 0.2.0
+version: 0.2.1
 author: Irek Romaniuk, John Anderson
 email: irek.romaniuk@gmail.com
 content:
   actions:
-    count: 15
+    count: 20
     resources:
     - apply_address_group
     - apply_address_object
@@ -24,6 +24,11 @@ content:
     - bulk_register_ip
     - bulk_unregister_ip
     - commit
+    - get_address_groups
+    - get_address_objects
+    - get_security_rules
+    - get_service_groups
+    - get_service_objects
     - register_ip
     - unregister_ip
   rules:
