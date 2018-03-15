@@ -24,6 +24,15 @@
             "required": true,
             "type": "string"
         },
+        "mime": {
+            "default": "plain",
+            "description": "The mime type of the message (html or plain).",
+            "enum": [
+                "plain",
+                "html"
+            ],
+            "type": "string"
+        },
         "subject": {
             "description": "Subject of the email",
             "required": true,
