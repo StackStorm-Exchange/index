@@ -1,0 +1,25 @@
+{
+    "database": {
+        "default": 0,
+        "description": "Database number to use",
+        "required": true,
+        "type": "integer"
+    },
+    "host": {
+        "description": "Hostname or IP address of the Redis instance",
+        "required": true,
+        "type": "string"
+    },
+    "password": {
+        "description": "Password if authentication required ",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "port": {
+        "default": 6379,
+        "description": "Redis Port",
+        "required": true,
+        "type": "integer"
+    }
+}

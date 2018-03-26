@@ -1,0 +1,39 @@
+{
+    "description": "Set key to provided string.",
+    "enabled": true,
+    "entry_point": "set.py",
+    "name": "set",
+    "parameters": {
+        "ex": {
+            "description": "Expiry time, in seconds.",
+            "required": false,
+            "type": "integer"
+        },
+        "key": {
+            "description": "Key",
+            "required": true,
+            "type": "string"
+        },
+        "nx": {
+            "description": "Only set the key if it does not already exist.",
+            "required": false,
+            "type": "boolean"
+        },
+        "px": {
+            "description": "Expiry time, in milliseconds.",
+            "required": false,
+            "type": "integer"
+        },
+        "value": {
+            "description": "Value",
+            "required": true,
+            "type": "string"
+        },
+        "xx": {
+            "description": "Only set the key if it already exists.",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,15 @@
+ref: redis
+name: redis
+description: Redis key-value actions
+keywords:
+- database
+- redis
+version: 0.0.1
+author: Antagonist B.V.
+email: systeembeheer@antagonist.nl
+content:
+  actions:
+    count: 2
+    resources:
+    - del
+    - set

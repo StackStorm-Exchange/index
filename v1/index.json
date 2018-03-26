@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1521133239,
-        "hash": "623ad98fff7299988b222917b47237ad"
+        "generated_ts": 1522107293,
+        "hash": "9b5713ebdaaeb6d06a94b11ba6b7eb37"
     },
     "packs": {
         "acos": {
@@ -9222,6 +9222,28 @@
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
             "version": "0.2.1"
+        },
+        "redis": {
+            "author": "Antagonist B.V.",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "del",
+                        "set"
+                    ]
+                }
+            },
+            "description": "Redis key-value actions",
+            "email": "systeembeheer@antagonist.nl",
+            "keywords": [
+                "database",
+                "redis"
+            ],
+            "name": "redis",
+            "ref": "redis",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-redis",
+            "version": "0.0.1"
         },
         "salt": {
             "author": "jcockhren",

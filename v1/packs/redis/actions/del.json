@@ -1,0 +1,14 @@
+{
+    "description": "Removes the specified key.",
+    "enabled": true,
+    "entry_point": "del.py",
+    "name": "del",
+    "parameters": {
+        "key": {
+            "description": "The key to delete",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
