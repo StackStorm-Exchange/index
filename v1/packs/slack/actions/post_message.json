@@ -29,6 +29,11 @@
             "description": "Bot username.",
             "required": false,
             "type": "string"
+        },
+        "webhook_url": {
+            "description": "Optional Webhook url",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"
