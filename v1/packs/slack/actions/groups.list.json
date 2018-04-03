@@ -1,5 +1,5 @@
 {
-    "description": "This method returns a list of private channels in the team that the caller is in and archived groups that the caller was in. The list of (non-deactivated) members in each private channel is also returned.",
+    "description": "Lists private channels that the calling user has access to.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "groups.list",
@@ -15,7 +15,7 @@
             "type": "string"
         },
         "exclude_members": {
-            "default": false,
+            "default": "false",
             "required": false,
             "type": "string"
         },

@@ -1,5 +1,5 @@
 {
-    "description": "This method returns a portion of messages/events from the specified multiparty direct message channel. To read the entire history for a multiparty direct message, call the method with no latest or oldest arguments, and then continue paging using the instructions below.",
+    "description": "Fetches history of messages and events from a multiparty direct message.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "mpim.history",

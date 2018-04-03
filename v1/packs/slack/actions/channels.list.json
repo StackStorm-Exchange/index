@@ -1,21 +1,30 @@
 {
-    "description": "This method returns a list of all channels in the team. This includes channels the caller is in, channels they are not currently in, and archived channels but does not include private channels. The number of (non-deactivated) members in each channel is also returned.",
+    "description": "Lists all channels in a Slack team.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "channels.list",
     "parameters": {
+        "cursor": {
+            "required": false,
+            "type": "string"
+        },
         "end_point": {
             "default": "channels.list",
             "immutable": true,
             "type": "string"
         },
         "exclude_archived": {
-            "default": false,
+            "default": "false",
             "required": false,
             "type": "string"
         },
         "exclude_members": {
-            "default": false,
+            "default": "false",
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "default": "0",
             "required": false,
             "type": "string"
         },

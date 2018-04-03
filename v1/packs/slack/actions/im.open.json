@@ -1,5 +1,5 @@
 {
-    "description": "This method opens a direct message channel with another member of your Slack team.",
+    "description": "Opens a direct message channel.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "im.open",
@@ -7,6 +7,10 @@
         "end_point": {
             "default": "im.open",
             "immutable": true,
+            "type": "string"
+        },
+        "include_locale": {
+            "required": false,
             "type": "string"
         },
         "return_im": {
