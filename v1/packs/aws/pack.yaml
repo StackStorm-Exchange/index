@@ -17,7 +17,8 @@ keywords:
 - RDS
 - SQS
 - lambda
-version: 1.0.0
+- kinesis
+version: 1.0.1
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
@@ -3617,11 +3618,10 @@ content:
     - ServiceNotificationsSensor
     - AWSSQSSensor
   tests:
-    count: 6
+    count: 5
     resources:
     - aws_base_action_test_case.py
     - test_action_cloudformation.py
     - test_action_get_bucket.py
-    - test_action_initialize.py
     - test_action_vpc_get_all_subnets.py
     - test_sensor_sqs.py

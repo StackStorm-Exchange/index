@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1522835107,
-        "hash": "c866efc0168a32417be054ef8859eabe"
+        "generated_ts": 1522872292,
+        "hash": "3bdbb940a9eb0518f23a1bd01b4d3f7a"
     },
     "packs": {
         "acos": {
@@ -4009,12 +4009,11 @@
                     ]
                 },
                 "tests": {
-                    "count": 6,
+                    "count": 5,
                     "resources": [
                         "aws_base_action_test_case.py",
                         "test_action_cloudformation.py",
                         "test_action_get_bucket.py",
-                        "test_action_initialize.py",
                         "test_action_vpc_get_all_subnets.py",
                         "test_sensor_sqs.py"
                     ]
@@ -4037,12 +4036,13 @@
                 "CloudFormation",
                 "RDS",
                 "SQS",
-                "lambda"
+                "lambda",
+                "kinesis"
             ],
             "name": "aws",
             "ref": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         "azure": {
             "author": "StackStorm, Inc.",
