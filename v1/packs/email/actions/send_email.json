@@ -10,7 +10,10 @@
             "type": "string"
         },
         "attachments": {
-            "description": "The absolute file path(s) as attachments.",
+            "description": "The absolute paths to the files to be included as attachments.",
+            "items": {
+                "type": "string"
+            },
             "type": "array"
         },
         "email_from": {
