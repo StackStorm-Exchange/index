@@ -9,6 +9,10 @@
             "required": true,
             "type": "string"
         },
+        "attachments": {
+            "description": "The absolute file path(s) as attachments.",
+            "type": "array"
+        },
         "email_from": {
             "description": "Email address to use as FROM.",
             "required": true,
