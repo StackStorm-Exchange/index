@@ -6,12 +6,12 @@ keywords:
 - chat
 - messaging
 - instant messaging
-version: 0.7.0
+version: 0.8.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 112
+    count: 113
     resources:
     - api.test
     - auth.revoke
@@ -125,6 +125,7 @@ content:
     - users.setActive
     - users.setPhoto
     - users.setPresence
+    - users_filter_by
   sensors:
     count: 1
     resources:

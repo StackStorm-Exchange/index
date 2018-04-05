@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1522946695,
-        "hash": "7a0e19a084a26b15c81201503a50fa98"
+        "generated_ts": 1522949478,
+        "hash": "25f6a6e7b633d0bf01a9cc82372034d7"
     },
     "packs": {
         "acos": {
@@ -9589,7 +9589,7 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 112,
+                    "count": 113,
                     "resources": [
                         "api.test",
                         "auth.revoke",
@@ -9702,7 +9702,8 @@
                         "users.profile.set",
                         "users.setActive",
                         "users.setPhoto",
-                        "users.setPresence"
+                        "users.setPresence",
+                        "users_filter_by"
                     ]
                 },
                 "sensors": {
@@ -9723,7 +9724,7 @@
             "name": "slack",
             "ref": "slack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
-            "version": "0.7.0"
+            "version": "0.8.0"
         },
         "smartthings": {
             "author": "James Fryman",
