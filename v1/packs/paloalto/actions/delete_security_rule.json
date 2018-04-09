@@ -1,0 +1,34 @@
+{
+    "description": "Delete a security rule object",
+    "enabled": true,
+    "entry_point": "delete_single_policy.py",
+    "name": "delete_security_rule",
+    "parameters": {
+        "class_string": {
+            "default": "SecurityRule",
+            "immutable": true,
+            "type": "string"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to delete the object from. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the object",
+            "required": true,
+            "type": "string"
+        },
+        "pre_rulebase": {
+            "default": true,
+            "description": "When using Panorama, denotes whether the policy should be added the Pre or Post Rulebase. Defaults to Pre Rulebase.",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

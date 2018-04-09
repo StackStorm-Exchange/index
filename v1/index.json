@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1522949478,
-        "hash": "25f6a6e7b633d0bf01a9cc82372034d7"
+        "generated_ts": 1523244439,
+        "hash": "8b176fac592e73217c1d0bb9b6f01a94"
     },
     "packs": {
         "acos": {
@@ -8941,7 +8941,7 @@
             "author": "Irek Romaniuk, John Anderson",
             "content": {
                 "actions": {
-                    "count": 20,
+                    "count": 30,
                     "resources": [
                         "apply_address_group",
                         "apply_address_object",
@@ -8953,9 +8953,19 @@
                         "bulk_apply_security_rules",
                         "bulk_apply_service_groups",
                         "bulk_apply_service_objects",
+                        "bulk_delete_address_groups",
+                        "bulk_delete_address_objects",
+                        "bulk_delete_security_rules",
+                        "bulk_delete_service_groups",
+                        "bulk_delete_service_objects",
                         "bulk_register_ip",
                         "bulk_unregister_ip",
                         "commit",
+                        "delete_address_group",
+                        "delete_address_object",
+                        "delete_security_rule",
+                        "delete_service_group",
+                        "delete_service_object",
                         "get_address_groups",
                         "get_address_objects",
                         "get_security_rules",
@@ -8981,7 +8991,7 @@
             "name": "paloalto",
             "ref": "paloalto",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-paloalto",
-            "version": "0.2.1"
+            "version": "0.3.0"
         },
         "phantomjs": {
             "author": "Tomaz Muraus",

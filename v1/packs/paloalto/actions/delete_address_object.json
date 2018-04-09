@@ -1,0 +1,29 @@
+{
+    "description": "Delete an address object",
+    "enabled": true,
+    "entry_point": "delete_single_object.py",
+    "name": "delete_address_object",
+    "parameters": {
+        "class_string": {
+            "default": "AddressObject",
+            "immutable": true,
+            "type": "string"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to delete the object from. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the object",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

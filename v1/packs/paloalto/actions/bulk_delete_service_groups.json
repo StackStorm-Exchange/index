@@ -1,0 +1,29 @@
+{
+    "description": "Delete service groups in bulk",
+    "enabled": true,
+    "entry_point": "bulk_delete_objects.py",
+    "name": "bulk_delete_service_groups",
+    "parameters": {
+        "class_string": {
+            "default": "ServiceGroup",
+            "immutable": true,
+            "type": "string"
+        },
+        "device_group": {
+            "description": "If interacting with a Panorama, the device group to delete the objects from. Will default to Shared if using Panorama",
+            "required": false,
+            "type": "string"
+        },
+        "firewall": {
+            "description": "Predefined firewall from pack config",
+            "required": false,
+            "type": "string"
+        },
+        "objects": {
+            "description": "List of objects names to bulk delete.",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}
