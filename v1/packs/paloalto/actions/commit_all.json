@@ -1,9 +1,14 @@
 {
-    "description": "Issue a commit ot the firewall",
+    "description": "Issue a commit all on a Panorama",
     "enabled": true,
-    "entry_point": "commit.py",
-    "name": "commit",
+    "entry_point": "commit_all.py",
+    "name": "commit_all",
     "parameters": {
+        "device_group": {
+            "default": "all",
+            "description": "If passed, the commit will be limited to this device group, otherwise a Panorama commit will commit all device groups.",
+            "type": "string"
+        },
         "exception": {
             "default": false,
             "description": "Only raise exceptions (and fail the action) if there are commit errors. Requires sync/sync_all to use.",
@@ -17,6 +22,11 @@
         "sync": {
             "default": false,
             "description": "If true, the action will wait for the commit to complete on the device (synchronous action), otherwise the commit will simply be requested of the action.",
+            "type": "boolean"
+        },
+        "sync_all": {
+            "default": false,
+            "description": "If true, the action will wait for the commit on all firewalls in device groups to complete (synchronous action), otherwise the commit will simply be requested of the action. Requires sync to use",
             "type": "boolean"
         }
     },
