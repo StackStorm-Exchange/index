@@ -68,6 +68,7 @@
             "webhook_url": {
                 "description": "Webhook URL, e.g. https://hooks.slack.com/services/<replace me>",
                 "required": true,
+                "secret": true,
                 "type": "string"
             }
         },
