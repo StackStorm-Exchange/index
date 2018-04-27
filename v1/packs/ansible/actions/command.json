@@ -40,7 +40,8 @@
             "type": "string"
         },
         "cwd": {
-            "description": "Working directory where the command will be executed in",
+            "default": "/opt/stackstorm/packs/{% if action_context.parent is defined %}{{ action_context.parent.pack }}{% else %}{{ action_context.pack }}{% endif %}",
+            "description": "Working directory where the command will be executed in (default: current pack/workflow dir)",
             "type": "string"
         },
         "extra_vars": {
