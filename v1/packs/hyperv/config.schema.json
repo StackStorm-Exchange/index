@@ -1,0 +1,57 @@
+{
+    "credentials": {
+        "additionalProperties": false,
+        "properties": {
+            "password": {
+                "description": "The password of the specified user.",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "port": {
+                "description": "Port number for the WinRM connection (overrides global when using this credential).",
+                "required": false,
+                "type": "integer"
+            },
+            "transport": {
+                "description": "Transport used for WinRM (basic, plaintext, certificate, ssl, kerberos, ntlm, credssp) (overrides global when using this credential).",
+                "required": false,
+                "type": "string"
+            },
+            "username": {
+                "description": "Username and domain for the WinRM connection (example: ad_user@domain.tld).",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "hyperv": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/credentials"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "output": {
+        "default": "json",
+        "description": "Output format of cmdlets exected by this pack (json, raw) (global).",
+        "required": true,
+        "type": "string"
+    },
+    "port": {
+        "default": 5986,
+        "description": "Port number for the WinRM connection (global).",
+        "required": false,
+        "type": "integer"
+    },
+    "transport": {
+        "default": "ntlm",
+        "description": "Transport used for WinRM (basic, plaintext, certificate, ssl, kerberos, ntlm, credssp) (global).",
+        "required": false,
+        "type": "string"
+    }
+}
