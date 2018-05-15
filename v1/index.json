@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526352097,
-        "hash": "d5569423768d2b0f21b6fa3ed093879b"
+        "generated_ts": 1526352145,
+        "hash": "7cc3851c90e31bc5680b6ba674e098c1"
     },
     "packs": {
         "acos": {
@@ -4273,11 +4273,11 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "cancel_build",
-                        "get_build_info",
                         "get_build_number",
-                        "retry_build",
                         "run_build",
+                        "retry_build",
+                        "get_build_info",
+                        "cancel_build",
                         "wait_until_build_finishes"
                     ]
                 },
@@ -4295,7 +4295,7 @@
                     ]
                 }
             },
-            "description": "Pack which allows integration with Circle CI.",
+            "description": "CircleCI CI/CD Pipeline",
             "email": "support@stackstorm.com",
             "keywords": [
                 "circle",
@@ -4306,7 +4306,7 @@
             "name": "Circle CI",
             "ref": "circle_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle_ci",
-            "version": "0.5.1"
+            "version": "0.5.2"
         },
         "cisco_spark": {
             "author": "Anthony Shaw",

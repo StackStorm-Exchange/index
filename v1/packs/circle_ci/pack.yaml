@@ -1,23 +1,23 @@
 ref: circle_ci
 name: Circle CI
-description: Pack which allows integration with Circle CI.
+description: CircleCI CI/CD Pipeline
 keywords:
 - circle
 - circle ci
 - continous integration
 - ci
-version: 0.5.1
+version: 0.5.2
 author: StackStorm dev
 email: support@stackstorm.com
 content:
   actions:
     count: 6
     resources:
-    - cancel_build
-    - get_build_info
     - get_build_number
-    - retry_build
     - run_build
+    - retry_build
+    - get_build_info
+    - cancel_build
     - wait_until_build_finishes
   sensors:
     count: 1
