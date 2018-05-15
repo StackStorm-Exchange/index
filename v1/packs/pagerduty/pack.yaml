@@ -8,14 +8,14 @@ content:
   actions:
     count: 4
     resources:
-    - ack_incident
-    - launch_incident
     - get_open_incidents
+    - launch_incident
     - resolve_incident
+    - ack_incident
   aliases:
     count: 4
     resources:
-    - ack_incident
     - get_open_incidents
     - launch_incident
     - resolve_incident
+    - ack_incident

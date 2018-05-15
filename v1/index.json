@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526350126,
-        "hash": "8cbadcde954ae948b405f9a9e33498a6"
+        "generated_ts": 1526350157,
+        "hash": "fd31e70880798b0e2b19b2c4a3722cb4"
     },
     "packs": {
         "acos": {
@@ -9163,19 +9163,19 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "ack_incident",
-                        "launch_incident",
                         "get_open_incidents",
-                        "resolve_incident"
+                        "launch_incident",
+                        "resolve_incident",
+                        "ack_incident"
                     ]
                 },
                 "aliases": {
                     "count": 4,
                     "resources": [
-                        "ack_incident",
                         "get_open_incidents",
                         "launch_incident",
-                        "resolve_incident"
+                        "resolve_incident",
+                        "ack_incident"
                     ]
                 }
             },
