@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526349971,
-        "hash": "ab921cb8f12b14874dce909df0d27269"
+        "generated_ts": 1526349984,
+        "hash": "520eee6eb74e5ac05cdbf2dd84383d2f"
     },
     "packs": {
         "acos": {
@@ -6678,20 +6678,20 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "assign_client_role",
-                        "create_client_role",
-                        "create_user",
-                        "delete_user",
-                        "get_client",
-                        "get_client_id",
-                        "get_client_role_id",
                         "get_client_roles",
-                        "get_clients",
-                        "get_roles",
+                        "assign_client_role",
                         "get_server_info",
+                        "get_client_role_id",
+                        "create_client_role",
+                        "get_clients",
                         "get_user",
                         "get_user_id",
-                        "update_user"
+                        "update_user",
+                        "delete_user",
+                        "get_roles",
+                        "get_client_id",
+                        "create_user",
+                        "get_client"
                     ]
                 }
             },
