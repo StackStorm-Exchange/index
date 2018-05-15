@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526350210,
-        "hash": "0b451282ee5fee1bab8721e83895f9d1"
+        "generated_ts": 1526350220,
+        "hash": "8b4af9fea7d340228a2395c5abf36c91"
     },
     "packs": {
         "acos": {
@@ -9316,10 +9316,10 @@
                 "actions": {
                     "count": 5,
                     "resources": [
-                        "apply",
                         "cert_clean",
-                        "cert_revoke",
                         "cert_sign",
+                        "apply",
+                        "cert_revoke",
                         "run_agent"
                     ]
                 }

@@ -12,8 +12,8 @@ content:
   actions:
     count: 5
     resources:
-    - apply
     - cert_clean
-    - cert_revoke
     - cert_sign
+    - apply
+    - cert_revoke
     - run_agent
