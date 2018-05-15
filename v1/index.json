@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526358393,
-        "hash": "bbc8d5bcff90e5cf78d27b62cbb365ca"
+        "generated_ts": 1526358406,
+        "hash": "ce2bdad8cac9a8ea7eb6512481561821"
     },
     "packs": {
         "acos": {
@@ -7995,13 +7995,13 @@
                 "actions": {
                     "count": 7,
                     "resources": [
-                        "geoip",
-                        "is_valid_asa_nameif",
                         "is_valid_hostname",
-                        "is_valid_ip",
+                        "is_valid_asa_nameif",
+                        "geoip",
                         "is_valid_ip_port",
-                        "is_valid_ipv4",
-                        "is_valid_ipv6"
+                        "is_valid_ip",
+                        "is_valid_ipv6",
+                        "is_valid_ipv4"
                     ]
                 },
                 "aliases": {
@@ -8013,13 +8013,13 @@
                 "tests": {
                     "count": 7,
                     "resources": [
-                        "networking_utils_base_test_case.py",
-                        "test_action_aliases.py",
                         "test_action_geoip.py",
                         "test_action_is_valid_asa_nameif.py",
+                        "test_action_aliases.py",
+                        "networking_utils_base_test_case.py",
                         "test_action_is_valid_hostname.py",
-                        "test_action_is_valid_ip.py",
-                        "test_action_is_valid_ip_port.py"
+                        "test_action_is_valid_ip_port.py",
+                        "test_action_is_valid_ip.py"
                     ]
                 }
             },
@@ -8035,7 +8035,7 @@
             "name": "networking_utils",
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "version": "0.4.1"
+            "version": "0.4.2"
         },
         "newrelic": {
             "author": "StackStorm, Inc.",
