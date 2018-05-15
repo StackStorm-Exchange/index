@@ -13,9 +13,9 @@ content:
   actions:
     count: 6
     resources:
-    - lockdown_winrm
+    - winrm_cmd
     - setup_winrm
     - try_winrm
-    - winexe_cmd
-    - winrm_cmd
     - wmi_query
+    - winexe_cmd
+    - lockdown_winrm
