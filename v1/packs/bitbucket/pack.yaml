@@ -18,22 +18,22 @@ content:
   actions:
     count: 16
     resources:
-    - archive_repo
-    - associate_ssh_key
-    - create_issue
-    - create_repo
-    - create_service
-    - delete_issues
     - delete_repo
-    - delete_services
+    - update_service
+    - archive_repo
     - delete_ssh_key
-    - list_branches
-    - list_issues
+    - list_ssh_keys
     - list_repos
     - list_services
-    - list_ssh_keys
+    - list_branches
+    - create_issue
+    - associate_ssh_key
+    - delete_services
+    - create_repo
+    - delete_issues
+    - list_issues
     - update_issue
-    - update_service
+    - create_service
   rules:
     count: 1
     resources:
