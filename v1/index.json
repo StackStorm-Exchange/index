@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526351643,
-        "hash": "44353395a39fb0ac2e4ac4ea41a655e7"
+        "generated_ts": 1526351657,
+        "hash": "230165372b538a3385f0d93660aeeb15"
     },
     "packs": {
         "acos": {
@@ -4672,20 +4672,20 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "get_action",
-                        "get_all_domains",
-                        "get_all_droplets",
-                        "get_all_images",
                         "get_all_regions",
+                        "get_all_droplets",
+                        "get_action",
                         "get_all_sizes",
+                        "get_my_images",
+                        "get_domain",
+                        "get_ssh_key",
+                        "get_all_domains",
+                        "get_global_images",
+                        "get_all_images",
                         "get_all_sshkeys",
                         "get_data",
-                        "get_domain",
-                        "get_droplet",
-                        "get_global_images",
                         "get_image",
-                        "get_my_images",
-                        "get_ssh_key"
+                        "get_droplet"
                     ]
                 },
                 "tests": {

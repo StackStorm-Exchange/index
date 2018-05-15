@@ -8,20 +8,20 @@ content:
   actions:
     count: 14
     resources:
-    - get_action
-    - get_all_domains
-    - get_all_droplets
-    - get_all_images
     - get_all_regions
+    - get_all_droplets
+    - get_action
     - get_all_sizes
+    - get_my_images
+    - get_domain
+    - get_ssh_key
+    - get_all_domains
+    - get_global_images
+    - get_all_images
     - get_all_sshkeys
     - get_data
-    - get_domain
-    - get_droplet
-    - get_global_images
     - get_image
-    - get_my_images
-    - get_ssh_key
+    - get_droplet
   tests:
     count: 2
     resources:
