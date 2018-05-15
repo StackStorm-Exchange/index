@@ -12,27 +12,27 @@ content:
   actions:
     count: 21
     resources:
-    - cluster.cluster_routing
-    - indices.alias
-    - indices.allocation
-    - indices.close
-    - indices.create_index
-    - indices.delete_indices
-    - indices.forcemerge
-    - indices.index_settings
-    - indices.open
-    - indices.optimize
-    - indices.reindex
     - indices.replicas
-    - indices.rollover
+    - indices.allocation
+    - indices.index_settings
+    - indices.reindex
     - indices.show
-    - indices.shrink
-    - indices.snapshot
-    - search.body
-    - search.q
+    - cluster.cluster_routing
     - snapshots.delete_snapshots
-    - snapshots.restore
     - snapshots.show
+    - snapshots.restore
+    - indices.optimize
+    - search.body
+    - indices.shrink
+    - indices.close
+    - search.q
+    - indices.create_index
+    - indices.alias
+    - indices.open
+    - indices.snapshot
+    - indices.delete_indices
+    - indices.rollover
+    - indices.forcemerge
   sensors:
     count: 1
     resources:
