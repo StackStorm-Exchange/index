@@ -9,29 +9,29 @@ content:
   actions:
     count: 26
     resources:
-    - add_node_to_loadbalancer
-    - create_dns_record
-    - create_dns_zone
-    - create_loadbalancer
-    - create_vm
-    - delete_dns_record
-    - delete_dns_zone
-    - delete_loadbalancer
-    - delete_node_from_loadbalancer
-    - delete_vm
-    - find_dns_record_id
-    - find_dns_zone_id
-    - find_loadbalancer_id
-    - find_vm_id
-    - get_vm_by_ip
-    - get_vm_ids
-    - get_vm_info
-    - get_vm_ips
-    - get_vm_names
-    - list_dns_records
-    - list_dns_zones
-    - list_vm_images
-    - list_vm_sizes
-    - list_vms
-    - set_vm_metadata
     - set_vm_metadata_item
+    - find_dns_record_id
+    - delete_dns_zone
+    - delete_vm
+    - create_vm
+    - find_vm_id
+    - list_dns_zones
+    - list_vm_sizes
+    - get_vm_ids
+    - delete_dns_record
+    - find_loadbalancer_id
+    - delete_node_from_loadbalancer
+    - set_vm_metadata
+    - create_dns_zone
+    - get_vm_ips
+    - list_vm_images
+    - get_vm_names
+    - find_dns_zone_id
+    - add_node_to_loadbalancer
+    - list_vms
+    - get_vm_info
+    - delete_loadbalancer
+    - create_loadbalancer
+    - get_vm_by_ip
+    - create_dns_record
+    - list_dns_records
