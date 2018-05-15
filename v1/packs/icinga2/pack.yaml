@@ -1,20 +1,20 @@
 ref: icinga2
 name: icinga2
-description: Icinga2 Integration pack
+description: Icinga2 Monitoring
 keywords:
 - icinga
 - monitoring
 - alerting
-version: 0.3.2
+version: 0.3.3
 author: Igor Cherkaev
 email: emptywee@protonmail.ch
 content:
   actions:
     count: 3
     resources:
-    - get_host
     - get_service
     - get_status
+    - get_host
   rules:
     count: 1
     resources:

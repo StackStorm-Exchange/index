@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526358383,
-        "hash": "18d740b05a07f6e2681e8d7b826fc1a9"
+        "generated_ts": 1526358393,
+        "hash": "bbc8d5bcff90e5cf78d27b62cbb365ca"
     },
     "packs": {
         "acos": {
@@ -6421,9 +6421,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "get_host",
                         "get_service",
-                        "get_status"
+                        "get_status",
+                        "get_host"
                     ]
                 },
                 "rules": {
@@ -6439,7 +6439,7 @@
                     ]
                 }
             },
-            "description": "Icinga2 Integration pack",
+            "description": "Icinga2 Monitoring",
             "email": "emptywee@protonmail.ch",
             "keywords": [
                 "icinga",
@@ -6449,7 +6449,7 @@
             "name": "icinga2",
             "ref": "icinga2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-icinga2",
-            "version": "0.3.2"
+            "version": "0.3.3"
         },
         "ipcam": {
             "author": "StackStorm, Inc.",
