@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526413822,
-        "hash": "3bf959c82478380721b55fa89e9ec0dc"
+        "generated_ts": 1526414066,
+        "hash": "919b8484ab14631b5474330457c5fde3"
     },
     "packs": {
         "acos": {
@@ -9110,13 +9110,13 @@
                 "actions": {
                     "count": 7,
                     "resources": [
-                        "create_master_token",
-                        "destroy_master_token",
-                        "destroy_read_token",
-                        "get_master_token",
                         "list_master_token",
                         "list_packages",
-                        "show_package"
+                        "destroy_master_token",
+                        "get_master_token",
+                        "create_master_token",
+                        "show_package",
+                        "destroy_read_token"
                     ]
                 }
             },
