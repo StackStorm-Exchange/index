@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526358246,
-        "hash": "1069a3f8d504026b0552fd24cad82800"
+        "generated_ts": 1526358269,
+        "hash": "bdd8417de985ed0e55aeff87a9838af3"
     },
     "packs": {
         "acos": {
@@ -8131,12 +8131,12 @@
                     "count": 3,
                     "resources": [
                         "get_status",
-                        "send_command",
-                        "set_state"
+                        "set_state",
+                        "send_command"
                     ]
                 }
             },
-            "description": "Integration with OpenHAB",
+            "description": "OpenHAB",
             "email": "james@stackstorm.com",
             "keywords": [
                 "openhab",
@@ -8147,7 +8147,7 @@
             "name": "openhab",
             "ref": "openhab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openhab",
-            "version": "0.2.1"
+            "version": "0.2.2"
         },
         "openstack": {
             "author": "StackStorm Engineering Team",
