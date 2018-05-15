@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526352362,
-        "hash": "f25bb534ecf929a1d9e50409d1fbc0cc"
+        "generated_ts": 1526352808,
+        "hash": "1748354e6a8279810caa79a50d88b442"
     },
     "packs": {
         "acos": {
@@ -6084,29 +6084,29 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "icsp_buildplan_apply",
-                        "icsp_buildplan_get",
-                        "icsp_ca_get",
-                        "icsp_ids_to_os",
-                        "icsp_job_status_get",
-                        "icsp_mid_get",
                         "icsp_multi_server_attribute_add",
-                        "icsp_server_attribute_add",
-                        "icsp_server_attribute_del",
-                        "icsp_server_attributes_get",
-                        "icsp_server_data_format",
-                        "icsp_server_delete",
+                        "icsp_servers_get",
+                        "icsp_ids_to_os",
+                        "icsp_ca_get",
                         "icsp_server_details_get",
-                        "icsp_servers_get"
+                        "icsp_server_data_format",
+                        "icsp_buildplan_apply",
+                        "icsp_server_attribute_add",
+                        "icsp_mid_get",
+                        "icsp_server_attribute_del",
+                        "icsp_buildplan_get",
+                        "icsp_job_status_get",
+                        "icsp_server_attributes_get",
+                        "icsp_server_delete"
                     ]
                 }
             },
-            "description": "Pack for HP Enterprise Insight Control Server Provisioning Integration",
+            "description": "HP Enterprise Insight Control Server Provisioning Integration",
             "email": "paul.mulvihill@pulsant.com",
             "name": "hpe_icsp",
             "ref": "hpe_icsp",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hpe_icsp",
-            "version": "0.6.2"
+            "version": "0.6.3"
         },
         "hubot": {
             "author": "James Fryman",
