@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526414086,
-        "hash": "21c803a2eec6bb3432eb217b6b9c81d6"
+        "generated_ts": 1526414244,
+        "hash": "aee6a054e5bad0dd30e0a85418a0b984"
     },
     "packs": {
         "acos": {
@@ -8094,19 +8094,19 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "add_machine",
-                        "create_release",
                         "deploy_release",
-                        "list_deployments",
+                        "add_machine",
                         "list_projects",
+                        "list_deployments",
+                        "create_release",
                         "list_releases"
                     ]
                 },
                 "sensors": {
                     "count": 2,
                     "resources": [
-                        "NewDeploymentSensor",
-                        "NewReleaseSensor"
+                        "NewReleaseSensor",
+                        "NewDeploymentSensor"
                     ]
                 }
             },
