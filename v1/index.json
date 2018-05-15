@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526396127,
-        "hash": "c9944270c98f6e64ac3cc84ad3ebf621"
+        "generated_ts": 1526398490,
+        "hash": "a9d054943f865f91c95984e87843df37"
     },
     "packs": {
         "acos": {
@@ -7690,12 +7690,12 @@
                 "rules": {
                     "count": 6,
                     "resources": [
-                        "notify_chat",
-                        "check_load",
-                        "check_load_procd",
                         "check_load_procs",
-                        "send_mail",
-                        "check_proc"
+                        "check_proc",
+                        "check_load_procd",
+                        "check_load",
+                        "notify_chat",
+                        "send_mail"
                     ]
                 },
                 "tests": {
