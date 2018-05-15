@@ -10,8 +10,8 @@ content:
   actions:
     count: 3
     resources:
-    - format_execution_result
     - log_via_syslog
+    - format_execution_result
     - write_syslog
   rules:
     count: 1
