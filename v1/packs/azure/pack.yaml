@@ -17,24 +17,24 @@ content:
   actions:
     count: 16
     resources:
-    - create_container
-    - create_linked_resource_url
-    - create_resource
     - create_vm
-    - delete_container
-    - delete_object
-    - destroy_vm
-    - get_scaleset_size
-    - list_container_objects
-    - list_containers
-    - list_public_ips
-    - list_resource_groups
-    - list_vms
     - put_scaleset_size
+    - delete_container
+    - create_linked_resource_url
+    - delete_object
+    - list_container_objects
+    - destroy_vm
+    - create_resource
+    - list_resource_groups
+    - create_container
+    - get_scaleset_size
     - reboot_vm
+    - list_vms
+    - list_containers
     - upload_file
+    - list_public_ips
   aliases:
     count: 2
     resources:
-    - get_scale_size
     - put_scale_size
+    - get_scale_size
