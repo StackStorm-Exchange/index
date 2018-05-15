@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526352836,
-        "hash": "ea5c3d3f27bc7933047927b845da5c9b"
+        "generated_ts": 1526358230,
+        "hash": "374840830c8a67d011af5719f3a38c66"
     },
     "packs": {
         "acos": {
@@ -10552,72 +10552,72 @@
                 "actions": {
                     "count": 37,
                     "resources": [
-                        "bsd_get_active_vtm",
                         "bsd_get_errors",
-                        "bsd_get_status",
-                        "bsd_get_vtm_bandwidth",
-                        "bsd_license_vtm",
-                        "bsd_list_vtms",
-                        "bsd_set_vtm_bandwidth",
-                        "bsd_unlicense_vtm",
-                        "deploy_chain",
-                        "deploy_workflow",
-                        "remediate_pool_failure",
                         "undeploy_chain",
-                        "vtm_add_backup",
-                        "vtm_add_persistence",
-                        "vtm_add_pool",
-                        "vtm_add_server_cert",
-                        "vtm_add_tip",
-                        "vtm_add_vserver",
-                        "vtm_add_webhook_action",
                         "vtm_create_backup",
-                        "vtm_del_persistence",
-                        "vtm_del_pool",
-                        "vtm_del_server_cert",
-                        "vtm_del_tip",
-                        "vtm_del_vserver",
-                        "vtm_delete_backup",
-                        "vtm_disable_ssl_encryption",
-                        "vtm_disable_ssl_offload",
-                        "vtm_drain_nodes",
-                        "vtm_enable_ssl_encryption",
                         "vtm_enable_ssl_offload",
-                        "vtm_get_backup",
-                        "vtm_get_pool_nodes",
-                        "vtm_list_backups",
+                        "vtm_del_pool",
+                        "bsd_license_vtm",
+                        "bsd_set_vtm_bandwidth",
+                        "vtm_del_vserver",
+                        "vtm_enable_ssl_encryption",
                         "vtm_maintenance_mode",
+                        "vtm_add_server_cert",
+                        "vtm_disable_ssl_offload",
+                        "vtm_get_pool_nodes",
+                        "bsd_get_status",
+                        "vtm_add_pool",
+                        "vtm_list_backups",
+                        "bsd_get_active_vtm",
+                        "vtm_del_persistence",
+                        "vtm_add_persistence",
+                        "bsd_unlicense_vtm",
+                        "vtm_del_tip",
+                        "deploy_workflow",
+                        "bsd_get_vtm_bandwidth",
+                        "remediate_pool_failure",
+                        "vtm_disable_ssl_encryption",
+                        "vtm_delete_backup",
+                        "vtm_add_tip",
                         "vtm_restore_backup",
-                        "vtm_set_pool_nodes"
+                        "bsd_list_vtms",
+                        "vtm_set_pool_nodes",
+                        "vtm_get_backup",
+                        "vtm_add_vserver",
+                        "deploy_chain",
+                        "vtm_add_backup",
+                        "vtm_add_webhook_action",
+                        "vtm_drain_nodes",
+                        "vtm_del_server_cert"
                     ]
                 },
                 "aliases": {
                     "count": 13,
                     "resources": [
                         "bsd_get_errors",
-                        "bsd_get_status",
-                        "bsd_get_vtm_bandwidth",
-                        "bsd_license",
-                        "bsd_list",
                         "bsd_set_vtm_bandwidth",
-                        "bsd_unlicense",
-                        "vtm_add_pool",
-                        "vtm_deploy_service",
-                        "vtm_drain_nodes",
-                        "vtm_maintenance_mode",
                         "vtm_get_pool_nodes",
+                        "bsd_unlicense",
+                        "bsd_get_status",
+                        "vtm_add_pool",
+                        "vtm_maintenance_mode",
+                        "vtm_deploy_service",
+                        "bsd_get_vtm_bandwidth",
+                        "bsd_list",
+                        "bsd_license",
+                        "vtm_drain_nodes",
                         "vtm_undeploy_service"
                     ]
                 },
                 "rules": {
                     "count": 6,
                     "resources": [
-                        "bsd_bandwidth_alert",
+                        "vtm_fail_maintenance",
                         "bsd_bandwidth_modify",
-                        "bsd_bandwidth_notify",
                         "bsd_chatops",
+                        "bsd_bandwidth_alert",
                         "webhook",
-                        "vtm_fail_maintenance"
+                        "bsd_bandwidth_notify"
                     ]
                 },
                 "sensors": {
@@ -10640,7 +10640,7 @@
             "name": "vadc",
             "ref": "vadc",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vadc",
-            "version": "0.2.2"
+            "version": "0.3.1"
         },
         "vault": {
             "author": "steve.neuharth",
