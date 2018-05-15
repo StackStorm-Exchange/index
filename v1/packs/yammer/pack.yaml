@@ -12,22 +12,22 @@ content:
   actions:
     count: 19
     resources:
-    - authenticate
-    - delete_group
-    - delete_message
-    - email_message
-    - get_group_by_id
     - get_user_by_email
-    - get_user_by_id
-    - like_message
-    - list_groups
+    - delete_group
     - list_messages
-    - list_messages_about_topic
-    - list_messages_from_user
-    - list_messages_in_group
-    - list_messages_my_feed
-    - list_private_messages
-    - list_users
-    - list_users_in_group
-    - post_message
     - suspend_user
+    - list_messages_about_topic
+    - list_users
+    - list_messages_my_feed
+    - email_message
+    - post_message
+    - authenticate
+    - like_message
+    - list_users_in_group
+    - list_messages_in_group
+    - list_private_messages
+    - get_group_by_id
+    - get_user_by_id
+    - list_messages_from_user
+    - list_groups
+    - delete_message
