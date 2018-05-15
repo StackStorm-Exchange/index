@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526350494,
-        "hash": "8f643a0cec020f54431fc391dad191f3"
+        "generated_ts": 1526350518,
+        "hash": "cc29102fda19f74ef31e56245290d86d"
     },
     "packs": {
         "acos": {
@@ -10246,29 +10246,29 @@
                 "actions": {
                     "count": 16,
                     "resources": [
-                        "charge_vehicle",
-                        "charge_vehicle_max_range",
-                        "flash_lights",
-                        "get_vehicle",
-                        "honk_horn",
-                        "list_vehicles",
-                        "lock_vehicle",
                         "open_charge_port_door",
-                        "set_vehicle_sun_roof",
                         "set_vehicle_temperature",
-                        "start_vehicle_ac",
                         "start_vehicle_charge",
-                        "stop_vehicle_ac",
-                        "stop_vehicle_charge",
                         "unlock_vehicle",
-                        "wake_vehicle"
+                        "stop_vehicle_ac",
+                        "charge_vehicle",
+                        "start_vehicle_ac",
+                        "set_vehicle_sun_roof",
+                        "wake_vehicle",
+                        "get_vehicle",
+                        "lock_vehicle",
+                        "charge_vehicle_max_range",
+                        "list_vehicles",
+                        "honk_horn",
+                        "flash_lights",
+                        "stop_vehicle_charge"
                     ]
                 },
                 "aliases": {
                     "count": 2,
                     "resources": [
-                        "tesla.honk_horn",
-                        "tesla.set_vehicle_sun_roof"
+                        "tesla.set_vehicle_sun_roof",
+                        "tesla.honk_horn"
                     ]
                 }
             },
