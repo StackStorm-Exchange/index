@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526413449,
-        "hash": "fcd1cfae97f3fdc220794ee0b4f7a04d"
+        "generated_ts": 1526413615,
+        "hash": "4d97af5eb8a08f56c81b6d3a374d2e0f"
     },
     "packs": {
         "acos": {
@@ -9786,24 +9786,24 @@
                 "actions": {
                     "count": 10,
                     "resources": [
-                        "approve_change",
-                        "assign_incident_to",
-                        "delete",
                         "get",
-                        "get_incidents_assigned_to",
-                        "get_non_structured",
-                        "get_user",
-                        "insert",
                         "set_incident_owner",
-                        "update"
+                        "insert",
+                        "delete",
+                        "get_incidents_assigned_to",
+                        "update",
+                        "approve_change",
+                        "get_user",
+                        "get_non_structured",
+                        "assign_incident_to"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
+                        "servicenow.get_incidents_assigned_to",
                         "servicenow.approve_change",
-                        "servicenow.assign_incident_to",
-                        "servicenow.get_incidents_assigned_to"
+                        "servicenow.assign_incident_to"
                     ]
                 }
             },

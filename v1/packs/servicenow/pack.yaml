@@ -11,19 +11,19 @@ content:
   actions:
     count: 10
     resources:
-    - approve_change
-    - assign_incident_to
-    - delete
     - get
-    - get_incidents_assigned_to
-    - get_non_structured
-    - get_user
-    - insert
     - set_incident_owner
+    - insert
+    - delete
+    - get_incidents_assigned_to
     - update
+    - approve_change
+    - get_user
+    - get_non_structured
+    - assign_incident_to
   aliases:
     count: 3
     resources:
+    - servicenow.get_incidents_assigned_to
     - servicenow.approve_change
     - servicenow.assign_incident_to
-    - servicenow.get_incidents_assigned_to
