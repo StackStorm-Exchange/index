@@ -1,21 +1,21 @@
 ref: docker
 name: docker
-description: st2 content pack containing docker integrations
+description: Docker Container integrations
 keywords:
 - docker
 - containers
 - virtualization
 - cgroups
-version: 0.3.1
+version: 0.3.2
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 3
     resources:
-    - build_image
     - pull_image
     - push_image
+    - build_image
   sensors:
     count: 1
     resources:

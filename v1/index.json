@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526350595,
-        "hash": "c2252a64e22955b31dacc23b07f8b87f"
+        "generated_ts": 1526351643,
+        "hash": "44353395a39fb0ac2e4ac4ea41a655e7"
     },
     "packs": {
         "acos": {
@@ -4797,9 +4797,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "build_image",
                         "pull_image",
-                        "push_image"
+                        "push_image",
+                        "build_image"
                     ]
                 },
                 "sensors": {
@@ -4815,7 +4815,7 @@
                     ]
                 }
             },
-            "description": "st2 content pack containing docker integrations",
+            "description": "Docker Container integrations",
             "email": "info@stackstorm.com",
             "keywords": [
                 "docker",
@@ -4826,7 +4826,7 @@
             "name": "docker",
             "ref": "docker",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-docker",
-            "version": "0.3.1"
+            "version": "0.3.2"
         },
         "dripstat": {
             "author": "James Fryman",
