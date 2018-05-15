@@ -13,12 +13,12 @@ content:
   actions:
     count: 9
     resources:
-    - cancel_build
-    - disable_hook
+    - list_builds
     - enable_hook
+    - disable_hook
     - get_repo
     - list_branches
-    - list_builds
-    - list_hooks
+    - cancel_build
     - list_repos
+    - list_hooks
     - restart_build

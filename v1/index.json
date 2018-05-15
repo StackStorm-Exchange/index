@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526412574,
-        "hash": "c46da3122b775f9b3fefece4763fc8b0"
+        "generated_ts": 1526412796,
+        "hash": "37e789fbf62c185be7853bde367ed063"
     },
     "packs": {
         "acos": {
@@ -10317,14 +10317,14 @@
                 "actions": {
                     "count": 9,
                     "resources": [
-                        "cancel_build",
-                        "disable_hook",
+                        "list_builds",
                         "enable_hook",
+                        "disable_hook",
                         "get_repo",
                         "list_branches",
-                        "list_builds",
-                        "list_hooks",
+                        "cancel_build",
                         "list_repos",
+                        "list_hooks",
                         "restart_build"
                     ]
                 }
