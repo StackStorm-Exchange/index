@@ -9,6 +9,6 @@ content:
   actions:
     count: 3
     resources:
-    - pipeline.list
-    - pipeline.trigger
     - project.info
+    - pipeline.trigger
+    - pipeline.list
