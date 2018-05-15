@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526349913,
-        "hash": "9b7609d4fb288b2cdaed7de26004dc95"
+        "generated_ts": 1526349935,
+        "hash": "86df010bae417e4af85f57b65c85907e"
     },
     "packs": {
         "acos": {
@@ -6550,14 +6550,14 @@
                     "count": 9,
                     "resources": [
                         "attach_file_to_issue",
+                        "transition_issue",
                         "attach_files_to_issue",
-                        "comment_issue",
+                        "get_issue_comments",
                         "create_issue",
                         "get_issue",
-                        "get_issue_attachments",
-                        "get_issue_comments",
+                        "comment_issue",
                         "search_issues",
-                        "transition_issue"
+                        "get_issue_attachments"
                     ]
                 },
                 "sensors": {

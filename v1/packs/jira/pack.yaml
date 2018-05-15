@@ -13,14 +13,14 @@ content:
     count: 9
     resources:
     - attach_file_to_issue
+    - transition_issue
     - attach_files_to_issue
-    - comment_issue
+    - get_issue_comments
     - create_issue
     - get_issue
-    - get_issue_attachments
-    - get_issue_comments
+    - comment_issue
     - search_issues
-    - transition_issue
+    - get_issue_attachments
   sensors:
     count: 1
     resources:
