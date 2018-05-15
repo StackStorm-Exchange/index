@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526412069,
-        "hash": "37537b27ca68cfb3ab7d0c8fc63adb00"
+        "generated_ts": 1526412177,
+        "hash": "18c5b26ca6a6327c49a8a46771e0cce6"
     },
     "packs": {
         "acos": {
@@ -10391,13 +10391,13 @@
                     "count": 8,
                     "resources": [
                         "create_artifact",
-                        "create_artifacts",
-                        "create_project",
-                        "get_artifacts",
                         "get_git_repositories",
                         "get_milestones",
+                        "create_project",
+                        "get_artifacts",
+                        "get_projects",
                         "get_plannings",
-                        "get_projects"
+                        "create_artifacts"
                     ]
                 }
             },
