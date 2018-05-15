@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526350044,
-        "hash": "a611a350caa16d400ee5a76e8462419f"
+        "generated_ts": 1526350063,
+        "hash": "4d8361adf212a285cc634daafe8d8271"
     },
     "packs": {
         "acos": {
@@ -7631,12 +7631,12 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "execute.insert",
-                        "execute.non_query",
                         "execute.query",
                         "execute.query_and_email",
                         "execute.row",
-                        "execute.scalar"
+                        "execute.insert",
+                        "execute.scalar",
+                        "execute.non_query"
                     ]
                 },
                 "tests": {
