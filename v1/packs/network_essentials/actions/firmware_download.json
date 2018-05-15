@@ -1,0 +1,70 @@
+{
+    "description": "This downloads Firmware and checks the status.",
+    "enabled": true,
+    "entry_point": "firmware.py",
+    "name": "firmware_download",
+    "pack": "network_essentials",
+    "parameters": {
+        "disruptive_download": {
+            "default": false,
+            "description": "Specifies if download is an ISSU upgrade or a disruptive download.",
+            "position": 8,
+            "type": "boolean"
+        },
+        "firmware_path": {
+            "description": "The full firmware path.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "host_ip": {
+            "description": "The IP address of the firmware download server.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "The login password to connect to the device.",
+            "position": 6,
+            "type": "string"
+        },
+        "proto_password": {
+            "description": "The password to use for firmwaredownload protocol.",
+            "position": 3,
+            "type": "string"
+        },
+        "proto_username": {
+            "description": "The username to use for firmwaredownload protocol.",
+            "position": 2,
+            "type": "string"
+        },
+        "protocol_type": {
+            "default": "scp",
+            "description": "The protocol to use for firmwaredownload.",
+            "enum": [
+                "scp",
+                "sftp",
+                "ftp"
+            ],
+            "position": 7,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 1800,
+            "description": "The action timeout.",
+            "type": "integer"
+        },
+        "username": {
+            "description": "The login user name to connect to the device.",
+            "position": 5,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

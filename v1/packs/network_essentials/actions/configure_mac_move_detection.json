@@ -1,33 +1,31 @@
 {
-    "description": "Configure the switch to enable MAC move detection and set the threshold for number of MAC moves in time-window to trigger the detection.",
+    "description": "This configures the switch to enable MAC move detection and set the threshold for the number of MAC moves in time-window to trigger the detection.",
     "enabled": true,
     "entry_point": "configure_mac_move_detection.py",
     "name": "configure_mac_move_detection",
     "pack": "network_essentials",
     "parameters": {
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "move_threshold": {
             "default": 5,
-            "description": "MAC move threshold <NUMBER:5-500>",
+            "description": "The MAC move threshold <NUMBER:5-500>.",
             "position": 3,
             "required": true,
             "type": "integer"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "THe login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }

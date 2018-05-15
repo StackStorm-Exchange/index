@@ -1,5 +1,5 @@
 {
-    "description": "Ping target IPs from the switch using the specified VRF, uses the default VRF if VRF is not provided",
+    "description": "The PING target IPs from the switch using the specified VRF, uses the default VRF if VRF is not provided.",
     "enabled": true,
     "entry_point": "ping_vrf_targets.py",
     "name": "ping_vrf_targets",
@@ -7,53 +7,49 @@
     "parameters": {
         "count": {
             "default": 4,
-            "description": "Count parameter for the ping command. Specifies the number of transmissions (pings).",
+            "description": "The count parameter for the PING command. This specifies the number of transmissions (PINGs).",
             "position": 6,
             "required": false,
             "type": "integer"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "size": {
-            "default": 56,
-            "description": "Datagram size",
+            "description": "The datagram size. For SLX and NOS the range is 36 to 9100 (default value is 56). For NI the range is 0 to 31954 (default value is 16)",
             "position": 7,
             "required": false,
             "type": "integer"
         },
         "targets": {
-            "description": "One or more comma separated target IP addresses",
+            "description": "One or more comma separated target IP addresses.",
             "position": 3,
             "required": true,
             "type": "array"
         },
         "timeout_value": {
-            "default": 1,
-            "description": "Timeout parameter for the ping command. Specifies the time (in seconds) to wait for a response.",
+            "description": "The timeout parameter for the PING command. This specifies the time (in seconds for SLX/NOS and in msec for NI) to wait for a response. For SLX/NOS range is 1 to 60 (default value is 1). For NI minimun range is 50 msecs.",
             "position": 5,
             "required": false,
             "type": "integer"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
         "vrf": {
             "default": "default-vrf",
-            "description": "VRF name",
+            "description": "The VRF name.",
             "position": 4,
             "required": false,
             "type": "string"

@@ -1,5 +1,5 @@
 {
-    "description": "Enable or disable a single physical port, port-channel, loopback or VE interface on a device.  Optionally set the interface description.",
+    "description": "This enable or disable physical port, port-channel, loopback or VE interfaces on a device.  Optionally, sets the interface description. For MLX, port-channel admin state changes means it changes member port's admin state.",
     "enabled": true,
     "entry_point": "set_intf_admin_state.py",
     "name": "set_intf_admin_state",
@@ -7,24 +7,24 @@
     "parameters": {
         "enabled": {
             "default": true,
-            "description": "Admin setting of the interface(s)",
+            "description": "The admin setting of the interface(s).",
             "position": 5,
             "type": "boolean"
         },
         "intf_desc": {
-            "description": "Interface description without any space",
+            "description": "The interface description without any space.",
             "position": 6,
             "type": "string"
         },
         "intf_name": {
-            "description": "Interface names, port channel numbers or VEs. Examples are 224/0/1, 224/0/2, 52/0/15-16 or 7, 8, 9",
+            "description": "The interface names, port channel numbers or VEs. For example to specify ports, for VDX 24/0/1 or 24/0/1-2  , for SLX/NI  24/1 or 24/1-2 . For port channel or l3 interface , 10 or 1-10",
             "position": 4,
             "required": true,
             "type": "string"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type",
+            "description": "The interface type.",
             "enum": [
                 "ethernet",
                 "gigabitethernet",
@@ -40,26 +40,24 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "RBridge ID of the VDX switch.  This parameter is only applicable for VDX switches.",
+            "description": "The RBridge ID of the VDX switch.  This parameter is only applicable for VDX switches.",
             "position": 7,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }

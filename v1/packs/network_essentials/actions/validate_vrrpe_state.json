@@ -1,42 +1,58 @@
 {
-    "description": "Validate VRRPe state on multiple switches to ensure one VRRPe master is elected and other switches are in backup mode.",
+    "description": "This validates VRRPe state on multiple switches to ensure one VRRPe master. is elected and other switches are in backup mode.",
     "enabled": true,
     "entry_point": "validate_vrrpe_state.py",
     "name": "validate_vrrpe_state",
     "pack": "network_essentials",
     "parameters": {
+        "afi": {
+            "default": "ipv4",
+            "description": "The VRRPE type.",
+            "enum": [
+                "ipv4",
+                "ipv6"
+            ],
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "The name of the interface, for ethernet slot/port, for ve, ve-id like 10,20.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "ve",
+            "description": "The interface type, VDX/SLX supports only ve and MLX supports both ve and ethernet.",
+            "enum": [
+                "ethernet",
+                "ve"
+            ],
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "array"
         },
         "password": {
-            "default": [
-                "password"
-            ],
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "array"
         },
         "username": {
-            "default": [
-                "admin"
-            ],
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "array"
         },
-        "vlan_id": {
-            "description": "VLAN ID. <NUMBER:1-4090/8191>, can be greater than 4090 only if VF is enabled.",
-            "position": 3,
-            "required": true,
-            "type": "string"
-        },
         "vrrpe_group": {
-            "description": "Virtual extender group ID. <NUMBER:1-255>",
-            "position": 4,
+            "description": "The virtual extender group ID. <NUMBER:1-255>",
+            "position": 5,
             "required": true,
             "type": "string"
         }

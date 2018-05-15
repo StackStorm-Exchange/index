@@ -1,0 +1,49 @@
+{
+    "description": "This returns the next lowest available Logical Interface ID on SLX platforms.",
+    "enabled": true,
+    "entry_point": "autopick_lif_id.py",
+    "name": "autopick_lif_id",
+    "pack": "network_essentials",
+    "parameters": {
+        "intf_name": {
+            "description": "The interface Port number or Port channel number. Examples for SLX are 1/13, 1/14.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "ethernet",
+            "description": "The interface type.",
+            "enum": [
+                "ethernet",
+                "port_channel"
+            ],
+            "position": 3,
+            "type": "string"
+        },
+        "length_of_the_range": {
+            "default": "1",
+            "description": "This returns the lowest available Single/Range of Logical Interface values. For example 1/1.1 or 1/1.1,1/1.2 or 1.1 or 1.1,1.2.",
+            "position": 5,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

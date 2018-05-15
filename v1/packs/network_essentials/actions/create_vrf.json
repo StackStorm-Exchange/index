@@ -1,5 +1,5 @@
 {
-    "description": "Create Virtual Routing and Forwarding (VRF) instance on the switch for L3 tenants.",
+    "description": "This creates a Virtual Routing and Forwarding (VRF) instance on a switch for L3 tenants.",
     "enabled": true,
     "entry_point": "create_vrf.py",
     "name": "create_vrf",
@@ -7,7 +7,7 @@
     "parameters": {
         "afi": {
             "default": "ipv4",
-            "description": "IP address type",
+            "description": "The IP address type.",
             "enum": [
                 "ipv4",
                 "ipv6"
@@ -17,32 +17,36 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "RBridge ID of the switch. This parameter is only applicable for VDX switches.",
+            "description": "The RBridge ID of the switch. This parameter is only applicable for VDX switches.",
             "position": 4,
             "required": false,
             "type": "array"
         },
+        "rd": {
+            "description": "The Route Distinguisher <ASN:nn or VPN Route Distinguisher>, and is mandatory for MLX",
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
         "vrf_name": {
-            "description": "VRF name, for example vrf32 or 32",
+            "description": "The VRF name, for example vrf32 or 32.",
             "position": 3,
             "required": true,
             "type": "string"

@@ -1,0 +1,45 @@
+{
+    "description": "This deletes the bridge domain.",
+    "enabled": true,
+    "entry_point": "delete_bridge_domain.py",
+    "name": "delete_bridge_domain",
+    "pack": "network_essentials",
+    "parameters": {
+        "bridge_domain_id": {
+            "description": "A single or list of Bridge-domain IDs. <1-4096> on SLX9140,SLX9850 and <1-3566> on SLX9240.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "bridge_domain_service_type": {
+            "default": "p2mp",
+            "description": "The bridge domain service type. `p2p` is not supported on SLX9140 and SLX9240 platforms.",
+            "enum": [
+                "p2mp",
+                "p2p"
+            ],
+            "position": 4,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

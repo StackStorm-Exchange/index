@@ -1,24 +1,24 @@
 {
-    "description": "Remove switch port trunk allowed vlan from an interface.",
+    "description": "This removes the switch port trunk allowed VLAN from an interface for SLX/NOS or remove a tagged port from a VLAN or list of VLANs for MLX.",
     "enabled": true,
     "entry_point": "remove_switchport_trunk_allowed_vlan.py",
     "name": "remove_switchport_trunk_allowed_vlan",
     "pack": "network_essentials",
     "parameters": {
         "c_tag": {
-            "description": "Ctag Vlan ID.Valid values <1-4090>. Valid only on NOS devices",
+            "description": "This specifies an incoming C-TAG or range of C-TAGs for service or transport VLANs in a Virtual Fabrics context. For service VF only single ID is allowed, for Transport VFs a range of IDs, for example, 100-200, or 10,20,100-200. it is no-op for MLX.",
             "position": 6,
             "type": "string"
         },
         "intf_name": {
-            "description": "Interface name, for VDX in 3-tuple format (24/0/1), SLX in 2-tuple format (24/1) or Port-channel number <1-6144>.",
+            "description": "The interface name, for VDX in 3-tuple format (24/0/1), SLX/MLX in 2-tuple format (24/1) or Port-channel number <1-6144>, for MLX <1-256>.",
             "position": 4,
             "required": true,
             "type": "string"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type",
+            "description": "The interface type.",
             "enum": [
                 "ethernet",
                 "tengigabitethernet",
@@ -32,30 +32,28 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
         "vlan_id": {
-            "description": "Single or range of VLANs to be configured on the interface. NOS - Valid values <1-4090/8191 when VFAB disabled/enabled> SLX - Valid values <1-4090> For example, 5 or 4-7 or 4,6,9-11 or all. Range not supported for VFAB vlans.",
+            "description": "For 802.1Q VLANs, single or range of VLANs, for example, 5 or 4-7 or 4,6,9-11 or all; ID must be below 4096. For service or transport VFs, single ID, range can be from 4096 through 8191. For MLX vlan range <1-4090>.",
             "position": 5,
             "required": true,
             "type": "string"
         }
     },
-    "runner_type": "run-python"
+    "runner_type": "python-script"
 }

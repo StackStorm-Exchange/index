@@ -1,36 +1,40 @@
 {
-    "description": "Delete a VE on multiple switches",
+    "description": "This action deletes a VE along with router interface mappings under a VLAN.",
     "enabled": true,
     "entry_point": "delete_ve.py",
     "name": "delete_ve",
     "pack": "network_essentials",
     "parameters": {
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "RBridge IDs of the VDX switches, for example 51 or 51,52. This parameter is only applicable for VDX switches.",
+            "description": "The RBridge IDs of the VDX switches, for example 51 or 51,52. This parameter is only applicable for VDX switches.",
             "position": 3,
             "type": "array"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
+        "ve_id": {
+            "description": "The VE interface ID. For NOS range is 1-4090, MLX range is 1-255, SLX range is 1-4096. This is mandatory args for MLX devices. If not passed for SLX and VDX devices, `ve_id` will be assumed as `vlan_id`.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
         "vlan_id": {
-            "description": "VLAN ID. Allowed range for SLX <NUMBER:1-4090>, for VDX <NUMBER:1-4090/8191> greater than 4090 only if VF is enabled",
+            "description": "The VLAN ID. Valid values for SLX <NUMBER:1-4090>, for VDX <NUMBER:1-4090/8191> greater than 4090 only if VF is enabled, for MLX, the range is <NUMBER:1-4090>.",
             "position": 4,
             "required": true,
             "type": "string"

@@ -1,19 +1,19 @@
 {
-    "description": "Set L2 MTU size on physical or port channel interfaces",
+    "description": "This sets the L2 MTU size on physical or port channel interfaces.",
     "enabled": true,
     "entry_point": "set_l2_mtu.py",
     "name": "set_l2_mtu",
     "pack": "network_essentials",
     "parameters": {
         "intf_name": {
-            "description": "Interface names, can be comma separated physical ports, port channel numbers. Examples are 224/0/1, 224/0/2 or 7, 8, 9",
+            "description": "The interface names that can be comma separated physical ports, port channel numbers. Examples are 224/0/1, 224/0/2 or 7, 8, 9",
             "position": 4,
             "required": true,
             "type": "array"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type",
+            "description": "The interface type.",
             "enum": [
                 "ethernet",
                 "tengigabitethernet",
@@ -27,27 +27,25 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "mtu_size": {
-            "description": "MTU size in bytes <Number:1522-9216>",
+            "description": "For SLX MTU size in bytes <Number:1548-9216>. For VDX <Number:1522-9216>.",
             "position": 5,
             "required": true,
             "type": "integer"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }

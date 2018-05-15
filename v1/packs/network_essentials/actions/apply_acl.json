@@ -1,5 +1,5 @@
 {
-    "description": "Apply an ACL to a physical port, port channel, VE or management interface.",
+    "description": "This apply an ACL to a physical port, port channel, VE or management interface.",
     "enabled": true,
     "entry_point": "apply_acl.py",
     "name": "apply_acl",
@@ -7,7 +7,7 @@
     "parameters": {
         "acl_direction": {
             "default": "in",
-            "description": "Direction of ACL binding on the specified interface",
+            "description": "The direction of ACL binding on the specified interface.",
             "enum": [
                 "in",
                 "out"
@@ -17,20 +17,20 @@
             "type": "string"
         },
         "acl_name": {
-            "description": "Name of the access list",
+            "description": "The name of the access control list.",
             "position": 6,
             "required": true,
             "type": "string"
         },
         "intf_name": {
-            "description": "Interface names, can be comma separated physical ports, port channel numbers or VEs. Examples are 224/0/1, 224/0/2 or 4, 5, 6 or 80, 81.",
+            "description": "The interface names, can be comma separated physical ports, port channel numbers or VEs. Examples are 224/0/1, 224/0/2 or 4, 5, 6 or 80, 81.",
             "position": 4,
             "required": true,
             "type": "array"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type, can be a physical port, port channel, VE or management interface",
+            "description": "The interface type, can be a physical port, port channel, VE or management interface.",
             "enum": [
                 "gigabitethernet",
                 "tengigabitethernet",
@@ -39,33 +39,34 @@
                 "port_channel",
                 "ve",
                 "loopback",
-                "ethernet"
+                "ethernet",
+                "management",
+                "vlan"
             ],
             "position": 3,
             "required": true,
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "RBridge ID of the VDX switch under which VE will be configured, only needed for VDX device.",
+            "description": "The RBridge ID of the VDX switch under which the VE will be configured, only needed for VDX device. Applicable to NOS devices only.",
             "position": 5,
             "required": false,
             "type": "string"
         },
         "traffic_type": {
-            "description": "Traffic type for the ACL being applied",
+            "description": "The traffic type for the ACL being applied. Applicable to SLX and NOS devices.",
             "enum": [
                 "switched",
                 "routed"
@@ -75,8 +76,7 @@
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }

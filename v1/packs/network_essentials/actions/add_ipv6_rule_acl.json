@@ -1,19 +1,159 @@
 {
-    "description": "Add an L3 IPv6 ACL rule to an existing ACL",
+    "description": "This adds an L3 IPv6 ACL rule to an existing ACL.",
     "enabled": true,
     "entry_point": "add_ipv6_rule_acl.py",
     "name": "add_ipv6_rule_acl",
     "pack": "network_essentials",
     "parameters": {
+        "ack": {
+            "description": "This enables the ACK for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+            "position": 12,
+            "type": "string"
+        },
         "acl_name": {
-            "description": "Name of the access list",
+            "description": "The name of the access control list. accepted-by:- [SLX, NOS, MLX]",
             "position": 3,
             "required": true,
             "type": "string"
         },
+        "acl_rules": {
+            "description": "The bulk operation that is supported to create more than one ACL rule in one action execution. The parameters are passed to create multiple rules that will follow the constraints similar to a single rule creation. NOTE- If rules are specified in the acl_rules, the rule specified outside of the array will be ignored and only rules in the acl_array will be processed. NOTE- On MLX platform, maximum 64 rules can be configured using this parameter. User need to execute this action more than once to configure more than 64 rules.",
+            "items": {
+                "properties": {
+                    "ack": {
+                        "description": "This enables the ACK for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+                        "position": 12,
+                        "type": "string"
+                    },
+                    "action": {
+                        "default": "permit",
+                        "description": "The action performed by the ACL rule.",
+                        "enum": [
+                            "permit",
+                            "deny",
+                            "hard-drop"
+                        ],
+                        "position": 5,
+                        "type": "string"
+                    },
+                    "copy_sflow": {
+                        "description": "This enables the copy-sflow for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by MLX, SLX 9850 and 9540 devices.",
+                        "position": 21,
+                        "type": "string"
+                    },
+                    "count": {
+                        "description": "This enables the statistics for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+                        "position": 18,
+                        "type": "string"
+                    },
+                    "destination": {
+                        "description": "The destination IP address filters { any | S_IPaddress mask | host S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+                        "position": 8,
+                        "type": "string"
+                    },
+                    "drop_precedence": {
+                        "description": "This matches the drop_precedence value of the packet. Only supported by MLX devices. MLX- Allowed range is <0-3>.",
+                        "position": 24,
+                        "type": "string"
+                    },
+                    "drop_precedence_force": {
+                        "description": "This matches the drop_precedence value of the packet. Allowed values are 0 through 2. MLX- Allowed range is <0-3>. Supported by MLX, SLX 9850 and 9540 devices.",
+                        "position": 10,
+                        "type": "string"
+                    },
+                    "dscp": {
+                        "description": "This matches the specified value against the DSCP value of the packet. to filter.  Can be either a numerical value or DSCP name. For SLX - DSCP value between 0 and 63. Format {<dscp>[,<dscp-force>]}. For NOS - DSCP value between 0 and 63. Format {<dscp>}. For MLX - Only numerical value in range of 0-63 is allowed.",
+                        "position": 9,
+                        "type": "string"
+                    },
+                    "dscp_marking": {
+                        "description": "The dscp-marking number used to mark the DSCP value in the incoming packet with the value you specify in the filter.  Only supported by MLX devices. Allowed values are 0 through 63.",
+                        "position": 22,
+                        "required": false,
+                        "type": "string"
+                    },
+                    "fin": {
+                        "description": "This enables the FIN for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+                        "position": 14,
+                        "type": "string"
+                    },
+                    "fragment": {
+                        "default": false,
+                        "description": "The policy applied to fragmented packets that contain a non-zero fragment offset. Only supported by MLX devices.",
+                        "position": 23,
+                        "required": false,
+                        "type": "boolean"
+                    },
+                    "icmp_filter": {
+                        "description": "This specify the ICMP type and ICMP code or ICMP message. Format is [ [ icmp-type <vlaue> ] [ icmp-code <value> ] ] | [ icmp-message <value> ] icmp-type and icmp-code values are between 0-255. Only supported by MLX devices. icmp-message value can be one of these beyond-scope, destination-unreachable, dscp, echo-reply, echo-request, flow-label, fragments, header, hop-limit, mld-query, mld-reduction, mld-report, nd-na, nd-ns, next-header, no-admin, no-route, packet-too-big, parameter-option, parameter-problem, port-unreachable, reassembly-timeout, renum-command, renum-result, renum-seq-number, router-advertisement, router-renumbering, router-solicitation, routing, sequence, time-exceeded, unreachable",
+                        "position": 25,
+                        "type": "string"
+                    },
+                    "log": {
+                        "description": "This enables the logging for the rule (Available for permit or deny only). Use \"True\" or \"False\" to enable or disable respectively.",
+                        "position": 19,
+                        "type": "string"
+                    },
+                    "mirror": {
+                        "description": "This enables the mirror for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by MLX, SLX 9850 and 9540 devices.",
+                        "position": 20,
+                        "type": "string"
+                    },
+                    "protocol_type": {
+                        "description": "The type of IP packets to be filtered based on the protocol. Valid values are 0 through 255 or key words tcp, udp, icmp or ip. MLX supported key words are - ahp, esp, icmp, ipv6, sctp, tcp, udp",
+                        "position": 6,
+                        "type": "string"
+                    },
+                    "push": {
+                        "description": "This enables the push for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+                        "position": 13,
+                        "type": "string"
+                    },
+                    "rst": {
+                        "description": "This enables the RST for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+                        "position": 15,
+                        "type": "string"
+                    },
+                    "seq_id": {
+                        "description": "The sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290.",
+                        "position": 4,
+                        "type": "integer"
+                    },
+                    "source": {
+                        "default": "any",
+                        "description": "The source IP address filters { any | S_IPaddress mask | host S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+                        "position": 7,
+                        "required": true,
+                        "type": "string"
+                    },
+                    "sync": {
+                        "description": "This enables the SYNC for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+                        "position": 16,
+                        "type": "string"
+                    },
+                    "tcp_operator": {
+                        "description": "This specify a comparison operator for the TCP port. This parameter applies only when you specify tcp as the protocol. Allowed values are ['established', 'syn', 'established syn']. Only supported by MLX devices.",
+                        "position": 26,
+                        "type": "string"
+                    },
+                    "urg": {
+                        "description": "This enables the urg for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+                        "position": 11,
+                        "type": "string"
+                    },
+                    "vlan_id": {
+                        "description": "The VLAN interface to which the ACL is bound.",
+                        "position": 17,
+                        "type": "integer"
+                    }
+                }
+            },
+            "position": 27,
+            "type": "array"
+        },
         "action": {
             "default": "permit",
-            "description": "Action performed by ACL rule",
+            "description": "The action performed by the ACL rule.",
             "enum": [
                 "permit",
                 "deny",
@@ -22,74 +162,131 @@
             "position": 5,
             "type": "string"
         },
+        "copy_sflow": {
+            "description": "This enables the copy-sflow for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by MLX, SLX 9850 and 9540 devices.",
+            "position": 21,
+            "type": "string"
+        },
         "count": {
-            "default": "False",
-            "description": "Enables statistics for the rule",
-            "position": 11,
-            "required": false,
+            "description": "This enables the statistics for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+            "position": 18,
             "type": "string"
         },
         "destination": {
-            "description": "Destination address filters { any | S_IPaddress mask | host S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+            "description": "The destination IP address filters { any | S_IPaddress mask | host S_IPaddress } [ source-operator [ S_port-numbers ] ]",
             "position": 8,
-            "required": false,
+            "type": "string"
+        },
+        "drop_precedence": {
+            "description": "This matches the drop_precedence value of the packet. Only supported by MLX devices. MLX- Allowed range is <0-3>.",
+            "position": 24,
+            "type": "string"
+        },
+        "drop_precedence_force": {
+            "description": "This matches the drop_precedence value of the packet. Allowed values are 0 through 2. MLX- Allowed range is <0-3>. Supported by MLX, SLX 9850 and 9540 devices.",
+            "position": 10,
             "type": "string"
         },
         "dscp": {
-            "description": "Matches the specified value against the DSCP value of the packet to filter.  Can be either a numerical value or DSCP name",
+            "description": "This matches the specified value against the DSCP value of the packet. to filter.  Can be either a numerical value or DSCP name. For SLX - DSCP value between 0 and 63. Format {<dscp>[,<dscp-force>]}. For NOS - DSCP value between 0 and 63. Format {<dscp>}. For MLX - Only numerical value in range of 0-63 is allowed.",
             "position": 9,
+            "type": "string"
+        },
+        "dscp_marking": {
+            "description": "The dscp-marking number used to mark the DSCP value in the incoming packet with the value you specify in the filter.  Only supported by MLX devices. Allowed values are 0 through 63.",
+            "position": 22,
             "required": false,
+            "type": "string"
+        },
+        "fin": {
+            "description": "This enables the FIN for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+            "position": 14,
+            "type": "string"
+        },
+        "fragment": {
+            "default": false,
+            "description": "The policy applied to fragmented packets that contain a non-zero fragment offset. Only supported by MLX devices.",
+            "position": 23,
+            "required": false,
+            "type": "boolean"
+        },
+        "icmp_filter": {
+            "description": "This specify the ICMP type and ICMP code or ICMP message. Format is [ [ icmp-type <vlaue> ] [ icmp-code <value> ] ] | [ icmp-message <value> ] icmp-type and icmp-code values are between 0-255. Only supported by MLX devices. icmp-message value can be one of these beyond-scope, destination-unreachable, dscp, echo-reply, echo-request, flow-label, fragments, header, hop-limit, mld-query, mld-reduction, mld-report, nd-na, nd-ns, next-header, no-admin, no-route, packet-too-big, parameter-option, parameter-problem, port-unreachable, reassembly-timeout, renum-command, renum-result, renum-seq-number, router-advertisement, router-renumbering, router-solicitation, routing, sequence, time-exceeded, unreachable",
+            "position": 25,
             "type": "string"
         },
         "log": {
-            "default": "False",
-            "description": "Enables logging for the rule (Available for permit or deny only)",
-            "position": 12,
-            "required": false,
+            "description": "This enables the logging for the rule (Available for permit or deny only). Use \"True\" or \"False\" to enable or disable respectively.",
+            "position": 19,
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
+        "mirror": {
+            "description": "This enables the mirror for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by MLX, SLX 9850 and 9540 devices.",
+            "position": 20,
+            "type": "string"
+        },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "protocol_type": {
-            "description": "Type of IP packets to be filtered based on protocol. Valid values are 0 through 255 or key words tcp, udp, icmp or ip",
+            "description": "The type of IP packets to be filtered based on the protocol. Valid values are 0 through 255 or key words tcp, udp, icmp or ip. MLX supported key words are - ahp, esp, icmp, ipv6, sctp, tcp, udp",
             "position": 6,
-            "required": false,
+            "type": "string"
+        },
+        "push": {
+            "description": "This enables the push for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+            "position": 13,
+            "type": "string"
+        },
+        "rst": {
+            "description": "This enables the RST for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+            "position": 15,
             "type": "string"
         },
         "seq_id": {
-            "description": "Sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290",
+            "description": "The sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290.",
             "position": 4,
-            "required": false,
             "type": "integer"
         },
         "source": {
             "default": "any",
-            "description": "Source address filters { any | S_IPaddress mask | host S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+            "description": "The source IP address filters { any | S_IPaddress mask | host S_IPaddress } [ source-operator [ S_port-numbers ] ]",
             "position": 7,
             "required": true,
             "type": "string"
         },
+        "sync": {
+            "description": "This enables the SYNC for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+            "position": 16,
+            "type": "string"
+        },
+        "tcp_operator": {
+            "description": "This specify a comparison operator for the TCP port. This parameter applies only when you specify tcp as the protocol. Allowed values are ['established', 'syn', 'established syn']. Only supported by MLX devices.",
+            "position": 26,
+            "type": "string"
+        },
+        "urg": {
+            "description": "This enables the urg for the rule. Use \"True\" or \"False\" to enable or disable respectively. Supported by SLX and NOS devices.",
+            "position": 11,
+            "type": "string"
+        },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
         "vlan_id": {
-            "description": "VLAN interface to which the ACL is bound",
-            "position": 10,
-            "required": false,
+            "description": "The VLAN interface to which the ACL is bound.",
+            "position": 17,
             "type": "integer"
         }
     },

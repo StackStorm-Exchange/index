@@ -1,5 +1,5 @@
 {
-    "description": "Set L3 MTU size on physical or port channel interface",
+    "description": "This sets the L3 MTU size on physical, port channel or ve interface.",
     "enabled": true,
     "entry_point": "set_l3_mtu.py",
     "name": "set_l3_mtu",
@@ -7,7 +7,7 @@
     "parameters": {
         "afi": {
             "default": "ipv4",
-            "description": "IP version",
+            "description": "The IP version.",
             "enum": [
                 "ipv4",
                 "ipv6"
@@ -17,14 +17,14 @@
             "type": "string"
         },
         "intf_name": {
-            "description": "Interface names, can be comma separated physical ports, port channel numbers. Examples are 224/0/1, 224/0/2 or 7, 8, 9",
+            "description": "The interface names which can be comma separated physical ports, or port channel numbers. Examples are 224/0/1, 224/0/2 or 7, 8, 9.",
             "position": 4,
             "required": true,
             "type": "array"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type",
+            "description": "The interface type.",
             "enum": [
                 "ethernet",
                 "tengigabitethernet",
@@ -39,27 +39,25 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "mtu_size": {
-            "description": "For SLX IPV4/IPV6 MTU size in bytes <Number:1300-9194>. For VDX IPV4 <Number:1300-9100> or IPV6 <Number:1280-9100> MTU size in bytes.",
+            "description": "For SLX IPV4/IPV6 MTU size in bytes <Number:1300-9194>. For VDX IPV4 <Number:1300-9100> or IPV6 <Number:1280-9100> MTU size in bytes. For MLX you may enter any number within range of IPv4 <576-9198> , IPv6 <1280-9198>. However, this value must be 18 bytes less than the value of l2 system mtu(global maximum frame size).",
             "position": 5,
             "required": true,
             "type": "integer"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }

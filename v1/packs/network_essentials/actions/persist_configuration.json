@@ -1,0 +1,37 @@
+{
+    "description": "This action saves the running/default configurations to startup configurations on the SLX devices. Perform `write memory` operation on MLX devices.",
+    "enabled": true,
+    "entry_point": "persist_configuration.py",
+    "name": "persist_configuration",
+    "pack": "network_essentials",
+    "parameters": {
+        "mgmt_ip": {
+            "description": "A single or list management IP address of the target devices.",
+            "position": 0,
+            "required": true,
+            "type": "array"
+        },
+        "password": {
+            "description": "A single or list of the login passwords to connect to the devices.",
+            "position": 2,
+            "secret": true,
+            "type": "array"
+        },
+        "source_name": {
+            "default": "running-config",
+            "description": "Save the running/default configurations to startup configurations. Applicable to SLX9840, SLX9850, SLX9140, SLX9240.",
+            "enum": [
+                "running-config",
+                "default-config"
+            ],
+            "position": 3,
+            "type": "string"
+        },
+        "username": {
+            "description": "A single or list of login user names to connect to the devices.",
+            "position": 1,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

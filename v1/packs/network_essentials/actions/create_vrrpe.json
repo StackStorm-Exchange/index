@@ -1,50 +1,58 @@
 {
-    "description": "Create a VRRPe session on multiple switches by creating VRRPe group and assigning virtual IP",
+    "description": "This creates a VRRPe session on multiple switches by creating VRRPe group and assigning virtual IP.",
     "enabled": true,
     "entry_point": "create_vrrpe.py",
     "name": "create_vrrpe",
     "pack": "network_essentials",
     "parameters": {
+        "intf_name": {
+            "description": "The name of the interface.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "description": "The interface type. VDX/SLX supports only ve and MLX supports both ve and ethernet.",
+            "enum": [
+                "ethernet",
+                "ve"
+            ],
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "RBridge ID of the VDX switch.  This parameter is only applicable for VDX switches.",
-            "position": 3,
+            "description": "The RBridge ID of the VDX switch. This parameter is only applicable for VDX switches.",
+            "position": 5,
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
-        "ve_name": {
-            "description": "Interface VE name",
-            "position": 4,
-            "required": true,
-            "type": "string"
-        },
         "virtual_ip": {
-            "description": "VRRPe virtual IP address without the netmask",
-            "position": 6,
+            "description": "The VRRPe virtual IP address without the netmask.",
+            "position": 7,
             "required": true,
             "type": "string"
         },
         "vrid": {
             "description": "Virtual group ID",
-            "position": 5,
+            "position": 6,
             "required": true,
             "type": "string"
         }

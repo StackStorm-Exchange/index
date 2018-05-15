@@ -12,13 +12,13 @@
             "type": "boolean"
         },
         "acl_name": {
-            "description": "access list name (max 63)",
+            "description": "The access control list name (max 63).",
             "position": 3,
             "required": true,
             "type": "string"
         },
         "address_type": {
-            "description": "the address type IPv4 IPv6 or MAC used to create the acl.",
+            "description": "The address type IPv4 IPv6 or MAC used to create the acl.",
             "enum": [
                 "ip",
                 "ipv6",
@@ -35,19 +35,19 @@
             "type": "string"
         },
         "dscp": {
-            "description": "DSCP value to match against. Can be either a numerical value or DSCP name",
+            "description": "The DSCP value to match against. This can be either a numerical value or DSCP name.",
             "position": 11,
             "required": false,
             "type": "string"
         },
         "dst_mac_addr_mask": {
-            "description": "the dst_mac_addr_mask - the mask for destination MAC in HHHH.HHHH.HHHH format.",
+            "description": "The dst_mac_addr_mask - the mask for destination MAC in HHHH.HHHH.HHHH format.",
             "position": 10,
             "type": "string"
         },
         "ethertype": {
             "default": "arp",
-            "description": "the ethertype - 'arp', 'fcoe', 'ipv4' or custom value between 1536 and 65535.",
+            "description": "The EtherType, can be 'arp', 'fcoe', 'ipv4' or custom value between 1536 and 65535.",
             "position": 13,
             "required": false,
             "type": "string"
@@ -59,14 +59,14 @@
             "type": "string"
         },
         "intf_name": {
-            "description": "interface name as array (182/0/97)",
+            "description": "The interface name as an array (182/0/97).",
             "position": 5,
             "required": true,
             "type": "array"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type gigabitethernet or tengigabitethernet, etc",
+            "description": "The interface type gigabitethernet or tengigabitethernet, etc.",
             "enum": [
                 "gigabitethernet",
                 "tengigabitethernet",
@@ -79,20 +79,20 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "device ip address",
+            "description": "The device IP address.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
             "default": "password",
-            "description": "login password",
+            "description": "The login password.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "protocol_type": {
-            "description": "Protocol Number Custom value between 0 and 255, tcp, udp, icmp or ip",
+            "description": "The Protocol Number Custom value between 0 and 255, tcp, udp, icmp or ip.",
             "position": 6,
             "required": false,
             "type": "string"
@@ -104,10 +104,10 @@
             "type": "string"
         },
         "seq_id": {
-            "description": "Sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290",
+            "description": "The sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290.",
             "position": 17,
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "source": {
             "default": "any",
@@ -117,21 +117,21 @@
             "type": "string"
         },
         "src_mac_addr_mask": {
-            "description": "the src_mac_addr_mask - the mask for source MAC in HHHH.HHHH.HHHH format.",
+            "description": "The src_mac_addr_mask - the mask for source MAC in HHHH.HHHH.HHHH format.",
             "position": 8,
             "type": "string"
         },
         "username": {
             "default": "admin",
-            "description": "login username",
+            "description": "The login username.",
             "position": 1,
             "type": "string"
         },
         "vlan_id": {
-            "description": "VLAN interface to which the ACL is bound",
+            "description": "The VLAN interface to which the ACL is bound.",
             "position": 12,
             "required": false,
-            "type": "integer"
+            "type": "string"
         }
     },
     "runner_type": "mistral-v2"

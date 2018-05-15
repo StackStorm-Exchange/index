@@ -1,36 +1,34 @@
 {
-    "description": "Create a VLANs and provide VLAN descriptions",
+    "description": "This creates a single or range of VLANs on a switch.",
     "enabled": true,
     "entry_point": "create_vlan.py",
     "name": "create_vlan",
     "pack": "network_essentials",
     "parameters": {
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
         "vlan_desc": {
-            "description": "VLAN description without any space. Same description is used when creating multiple VLANs",
+            "description": "The VLAN description. The same description is used when creating multiple VLANs.",
             "position": 4,
             "type": "string"
         },
         "vlan_id": {
-            "description": "Single VLAN/range of VLANS/batch wise values. For example 21 or 21-26 or 10,13-14,89-91",
+            "description": "A single VLAN ID or a range of VLAN IDs. For example, 21 or 21-26 or 10, 13-14, 89-91. For NI platform a maximum of 512 VLAN's are allowed at a time for e.g. 1-512 or 9, 10-520.",
             "position": 3,
             "required": true,
             "type": "string"

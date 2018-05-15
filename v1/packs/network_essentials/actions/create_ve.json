@@ -1,55 +1,65 @@
 {
-    "description": "Create a VE, assign IP addresses and VRF on multiple switches.",
+    "description": "This creates a VE and assign IP addresses, VRF on one or more switches.",
     "enabled": true,
     "entry_point": "create_ve.py",
     "name": "create_ve",
     "pack": "network_essentials",
     "parameters": {
         "ip_address": {
-            "description": "Single or list of IPv4/IPv6 addresses to be configured on the VE. IPv4/subnet-length or IPv6/prefix-length, for example 10.0.0.10/22, 30.0.0.10/22.",
-            "position": 5,
+            "description": "A single or list of IPv4/IPv6 addresses to be configured on the VE. IPv4/subnet-length or IPv6/prefix-length, for example 10.0.0.10/22, 30.0.0.10/22. List of IP addresses is valid only in VDX Cluster Nodes.",
+            "position": 6,
             "type": "array"
         },
         "ipv6_use_link_local_only": {
             "default": false,
             "description": "IPv6 link local",
-            "position": 7,
+            "position": 8,
             "type": "boolean"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "Single or list of RBridge IDs separated by comma, for example, 1 or 1,2, 4.  This parameter is only applicable for VDX switches.",
+            "description": "A single or list of RBridge IDs separated by comma, for example, 1 or 1,2, 4. This parameter is only applicable for VDX switches.",
             "position": 3,
             "required": false,
             "type": "array"
         },
+        "skip_vlan_config": {
+            "default": false,
+            "description": "Skip Vlan to VE mapping for SLXOS platforms.",
+            "position": 9,
+            "type": "boolean"
+        },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
+        "ve_id": {
+            "description": "The VE interface ID. For NOS range is 1-4090, MLX range is 1-255, SLX range is 1-4096. For MLX, this is a mandatory field.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        },
         "vlan_id": {
-            "description": "Interface VLAN ID. <NUMBER:1-4090/8191>, can be greater than 4090 only if VF is enabled.",
+            "description": "The VLAN ID. The allowed range for SLX <NUMBER:1-4090>, for VDX <NUMBER:1-4090/8191> greater than 4090 only if VF is enabled, and for MLX, the range is <NUMBER:1-4090>.",
             "position": 4,
             "required": true,
             "type": "string"
         },
         "vrf_name": {
             "description": "VRF name. For example vrf32 or 32",
-            "position": 6,
+            "position": 7,
             "type": "string"
         }
     },

@@ -1,0 +1,69 @@
+{
+    "description": "This creates the logical interface under the physical/port-channel interface and untag/tag vlan.",
+    "enabled": true,
+    "entry_point": "configure_logical_interface.py",
+    "name": "configure_logical_interface",
+    "pack": "network_essentials",
+    "parameters": {
+        "inner_vlan_id": {
+            "description": "This configures a single VLAN or a list of Inner VLANs for the logical interface. Valid vlan id range <1-4090>. Valid only if `vlan_type` is `double_tagged`.",
+            "position": 8,
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "The interface Port number or Port channel number. Examples for SLX are 1/13, 1/14.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "ethernet",
+            "description": "The interface type.",
+            "enum": [
+                "ethernet",
+                "port_channel"
+            ],
+            "position": 3,
+            "type": "string"
+        },
+        "logical_interface_number": {
+            "description": "The interface name of the physical port or port channel number. E.g:0/1.1 or 7.1. Format for the logical interfaces is <physical/port-channel number>.<number>.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "A single or a list of VLANIDs. VLAN ID range is 1-4090. If `vlan_type` is `tagged`, `vlan_id` needs to be specified. If `vlan_type` is `double_tagged`, `vlan_id` needs to be specified and is interpreted as outer_vlan_id.. If `vlan_type` is `untagged`, `vlan_id` needs to be specified. Valid only on SLX9850,SLX9540.",
+            "position": 7,
+            "type": "string"
+        },
+        "vlan_type": {
+            "description": "The VLAN tag type.",
+            "enum": [
+                "untagged",
+                "tagged",
+                "double_tagged"
+            ],
+            "position": 6,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,174 @@
+{
+    "description": "This workflow accomplishes the task of limiting the cir on a specified interface by applying a service policy on that interface. This is accomplished by first adding an ip extended ACL to the class map, adding the class map to a policy. The policy is applied to the interface. If the input parameter acl_exists is false, then the ACL is first created and then all else proceeds as before.",
+    "enabled": true,
+    "entry_point": "workflows/cfg_rate_limiting.yaml",
+    "name": "cfg_rate_limiting",
+    "pack": "network_essentials",
+    "parameters": {
+        "acl_exists": {
+            "default": false,
+            "description": "This indicates that the acl already exists.",
+            "position": 14,
+            "type": "boolean"
+        },
+        "acl_name": {
+            "description": "The access control list name (max 63)",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "address_type": {
+            "description": "The Address type - ip or ipv6",
+            "enum": [
+                "ip",
+                "ipv6"
+            ],
+            "position": 17,
+            "type": "string"
+        },
+        "cir": {
+            "description": "The maximum cir that can be allowed through the interface.",
+            "position": 10,
+            "required": true,
+            "type": "integer"
+        },
+        "class_map_name": {
+            "description": "The class map name that will be a part of the service policy.",
+            "position": 6,
+            "required": true,
+            "type": "string"
+        },
+        "class_map_name_exists": {
+            "default": true,
+            "description": "This indicates the class map name that already exists.",
+            "position": 7,
+            "type": "boolean"
+        },
+        "destination": {
+            "description": "The destination IP address filters { any | S_IPaddress/mask(0.0.0.255) | host,S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+            "position": 18,
+            "required": false,
+            "type": "string"
+        },
+        "dscp": {
+            "description": "The DSCP value to match against. This can be either a numerical value or DSCP name",
+            "position": 22,
+            "required": false,
+            "type": "string"
+        },
+        "dst_mac_addr_mask": {
+            "description": "The dst_mac_addr_mask - the mask for the destination MAC in HHHH.HHHH.HHHH format.",
+            "position": 20,
+            "type": "string"
+        },
+        "ethertype": {
+            "default": "arp",
+            "description": "The ethertype - 'arp', 'fcoe', 'ipv4' or a custom value between 1536 and 65535.",
+            "position": 24,
+            "required": false,
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "The nterface name as an array (182/0/97)",
+            "minItems": 1,
+            "position": 5,
+            "required": true,
+            "type": "array"
+        },
+        "intf_type": {
+            "default": "tengigabitethernet",
+            "description": "The interface type, gigabitethernet or tengigabitethernet, etc",
+            "enum": [
+                "gigabitethernet",
+                "tengigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet",
+                "ethernet"
+            ],
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "match_type": {
+            "default": true,
+            "description": "This indicates the class match type.",
+            "position": 15,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "device ip address",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "login password",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "policy_map_name": {
+            "description": "The class map name that will be a part of the service policy.",
+            "minItems": 1,
+            "position": 8,
+            "required": true,
+            "type": "array"
+        },
+        "policy_map_name_exists": {
+            "default": true,
+            "description": "Indicates the policy map name already exists.",
+            "position": 9,
+            "type": "boolean"
+        },
+        "policy_type": {
+            "description": "In, Out or Both.",
+            "position": 11,
+            "required": true,
+            "type": "string"
+        },
+        "protocol_type": {
+            "description": "The Protocol Number Custom value between 0 and 255, tcp, udp, icmp or ip",
+            "position": 12,
+            "required": true,
+            "type": "string"
+        },
+        "rbridge_id": {
+            "description": "The RBridge ID of the VDX switch under which VE will be configured, only needed for VDX device.",
+            "position": 16,
+            "required": false,
+            "type": "string"
+        },
+        "seq_id": {
+            "description": "The sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290",
+            "position": 19,
+            "required": false,
+            "type": "integer"
+        },
+        "source": {
+            "default": "any",
+            "description": "The source MAC in HHHH.HHHH.HHHH format or source IPv4 or IPv6 address, including tcp and udp port numbers. { any | S_IPaddress mask | host S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+            "position": 13,
+            "required": true,
+            "type": "string"
+        },
+        "src_mac_addr_mask": {
+            "description": "The source IP address filters { any | S_IPaddress/mask(0.0.0.255) | host,S_IPaddress } [ source-operator [ S_port-numbers ] ]",
+            "position": 21,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "login username",
+            "position": 1,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "The VLAN interface to which the ACL is bound",
+            "position": 23,
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

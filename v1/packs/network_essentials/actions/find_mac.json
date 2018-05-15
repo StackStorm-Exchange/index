@@ -1,32 +1,30 @@
 {
-    "description": "Find which switch port a host is connected to using host MAC address",
+    "description": "This finds which switch port a host is connected to using host MAC address.",
     "enabled": true,
     "entry_point": "find_mac.py",
     "name": "find_mac",
     "pack": "network_essentials",
     "parameters": {
         "macs": {
-            "description": "Single MAC or comma separated list of MACs to be found",
+            "description": "A single MAC or comma separated list of MACs to be found.",
             "position": 3,
             "required": true,
             "type": "array"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }

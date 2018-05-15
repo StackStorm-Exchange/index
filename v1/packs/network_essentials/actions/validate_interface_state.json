@@ -1,18 +1,18 @@
 {
-    "description": "Validate L1 and L2 state for port channel, physical, ve, loopback interface is UP.",
+    "description": "This validates L1 and L2 state for port channel, physical, ve, loopback interface. is UP.",
     "enabled": true,
     "entry_point": "validate_interface_state.py",
     "name": "validate_interface_state",
     "pack": "network_essentials",
     "parameters": {
         "intf_name": {
-            "description": "Interface name physical port, port channel number, ve, loopback. Examples are 224/0/1 or 7",
+            "description": "The interface name physical port, port channel number, ve, loopback. Examples are 224/0/1 or 7",
             "position": 4,
             "required": true,
             "type": "string"
         },
         "intf_state": {
-            "description": "Interface state (up or down)",
+            "description": "The interface state (up or down).",
             "enum": [
                 "up",
                 "down"
@@ -23,7 +23,7 @@
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type",
+            "description": "The interface type.",
             "enum": [
                 "gigabitethernet",
                 "tengigabitethernet",
@@ -39,26 +39,24 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "Single or list of RBridge IDs separated by comma, for example, 1 or 1,2, 4.  This parameter is only applicable for VDX switches.",
+            "description": "A single or a list of RBridge IDs separated by comma, for example, 1 or 1,2, 4.  This parameter is only applicable for VDX switches.",
             "position": 6,
             "type": "array"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }

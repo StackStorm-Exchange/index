@@ -1,0 +1,37 @@
+{
+    "description": "This expands the range for a given list of VLAN IDs or VE IDs",
+    "enabled": true,
+    "entry_point": "get_vlan_id_list.py",
+    "name": "get_vlan_id_list",
+    "pack": "network_essentials",
+    "parameters": {
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        },
+        "ve_id_list": {
+            "description": "A single or a range of ve_ids. Returns the list of VE IDs in the range. For example 10 or 1-25 or 1-25,26,28. For example, if ve_id_list='400,401,420-425' returns 400,401,420,421,422,423,424,425.",
+            "position": 4,
+            "type": "string"
+        },
+        "vlan_id_list": {
+            "description": "A single or a range of vlans_ids. Returns the list of VLANS IDs in the range. For example 10 or 1-25 or 1-25,26,28. For example, if vlan_id_list='400,401,420-425' returns 400,401,420,421,422,423,424,425.",
+            "position": 3,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

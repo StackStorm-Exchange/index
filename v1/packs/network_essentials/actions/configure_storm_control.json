@@ -1,0 +1,119 @@
+{
+    "description": "This configures Storm/BUM control on an interface.",
+    "enabled": true,
+    "entry_point": "configure_storm_control.py",
+    "name": "configure_storm_control",
+    "pack": "network_essentials",
+    "parameters": {
+        "broadcast_limit_action": {
+            "default": "shutdown",
+            "description": "The Broadcast Action",
+            "enum": [
+                "shutdown",
+                "monitor"
+            ],
+            "position": 7,
+            "type": "string"
+        },
+        "broadcast_limit_type": {
+            "description": "Broadcast rate limit format",
+            "enum": [
+                "limit-bps",
+                "limit-percent"
+            ],
+            "position": 5,
+            "type": "string"
+        },
+        "broadcast_limit_value": {
+            "description": "If broadcast_limit_type=limit-bps, the Valid Values are <0-100000000000>. else <0-100>",
+            "position": 6,
+            "type": "string"
+        },
+        "intf_name": {
+            "description": "The interface name of the physical port or port channel number. E.g:0/1 or 7.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "ethernet",
+            "description": "The interface type.",
+            "enum": [
+                "ethernet",
+                "tengigabitethernet",
+                "gigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet"
+            ],
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "multicast_limit_action": {
+            "default": "shutdown",
+            "description": "The Multicast Action",
+            "enum": [
+                "shutdown",
+                "monitor"
+            ],
+            "position": 10,
+            "type": "string"
+        },
+        "multicast_limit_type": {
+            "description": "The Multicast rate limit format",
+            "enum": [
+                "limit-bps",
+                "limit-percent"
+            ],
+            "position": 8,
+            "type": "string"
+        },
+        "multicast_limit_value": {
+            "description": "If multicast_limit_type=limit-bps, the Valid Values are <0-100000000000>. else <0-100>",
+            "position": 9,
+            "type": "string"
+        },
+        "password": {
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "unknown_unicast_limit_action": {
+            "default": "shutdown",
+            "description": "The Unknown Unicast Action",
+            "enum": [
+                "shutdown",
+                "monitor"
+            ],
+            "position": 13,
+            "type": "string"
+        },
+        "unknown_unicast_limit_type": {
+            "description": "The Unknown Unicast rate limit format.",
+            "enum": [
+                "limit-bps",
+                "limit-percent"
+            ],
+            "position": 11,
+            "type": "string"
+        },
+        "unknown_unicast_limit_value": {
+            "description": "If unknown_unicast_limit_type=limit-bps, the Valid Values are <0-100000000000> else <0-100>",
+            "position": 12,
+            "type": "string"
+        },
+        "username": {
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

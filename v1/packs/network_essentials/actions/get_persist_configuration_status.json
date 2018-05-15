@@ -1,0 +1,35 @@
+{
+    "description": "This action fetches the status of persist configuration operation on the SLX devices.",
+    "enabled": true,
+    "entry_point": "get_persist_configuration_status.py",
+    "name": "get_persist_configuration_status",
+    "pack": "network_essentials",
+    "parameters": {
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "session_id": {
+            "description": "Session id of the persist operation.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,19 +1,156 @@
 {
-    "description": "Add or remove an ACL rule to or from an L2 ACL",
+    "description": "This adds or removes an ACL rule to or from an L2 ACL.",
     "enabled": true,
     "entry_point": "add_or_remove_l2_acl_rule.py",
     "name": "add_or_remove_l2_acl_rule",
     "pack": "network_essentials",
     "parameters": {
         "acl_name": {
-            "description": "Name of the access list",
+            "description": "The name of the access control list.",
             "position": 4,
             "required": true,
             "type": "string"
         },
+        "acl_rules": {
+            "description": "This bulk operation is supported to create more than one ACL rule in one action execution. The parameters are passed to create multiple rules that will follow the constraints similar to a single rule creation. NOTE- if rules are specified in acl_rules, the rule specified outside of the array will be ignored and only the rules in the acl_array will be processed. NOTE- On MLX platform, maximum 64 rules can be configured using this parameter. User need to execute this action more than once to configure more than 64 rules.",
+            "items": {
+                "properties": {
+                    "action": {
+                        "default": "deny",
+                        "description": "The action to apply on the traffic, either to drop (deny), allow (permit) or force drop (hard-drop).",
+                        "enum": [
+                            "deny",
+                            "permit",
+                            "hard-drop"
+                        ],
+                        "position": 6,
+                        "type": "string"
+                    },
+                    "arp_guard": {
+                        "default": "False",
+                        "description": "This enables the arp-guard for the rule.  Only supported by MLXe and SLX 9850, 9540 devices.",
+                        "position": 16,
+                        "type": "string"
+                    },
+                    "copy_sflow": {
+                        "default": "False",
+                        "description": "This enables the copy-sflow for the rule. Only supported by SLX 9850, 9540 devices.",
+                        "position": 22,
+                        "type": "string"
+                    },
+                    "count": {
+                        "default": "False",
+                        "description": "This enables the packet count.",
+                        "position": 19,
+                        "type": "string"
+                    },
+                    "drop_precedence": {
+                        "description": "This matches the specified value against the drop_precedence value of the packet to filter. Allowed values are 0 through 2. For MLX Platform supported range is 0 through 3. Only supported by MLXe and SLX 9850, 9540 devices.",
+                        "position": 23,
+                        "type": "string"
+                    },
+                    "drop_precedence_force": {
+                        "description": "This matches the specified value against the drop_precedence value of the packet to filter. Allowed values are 0 through 2. For MLX Platform supported range is 0 through 3. Only supported by MLX, SLX 9850 and 9540 devices.",
+                        "position": 18,
+                        "type": "string"
+                    },
+                    "dst": {
+                        "default": "any",
+                        "description": "The destination filter, this can be 'any' or 'host', or the actual MAC of the destination in HHHH.HHHH.HHHH format. MLX - Destination filter, can be 'any' or the actual MAC in HHHH.HHHH.HHHH format.",
+                        "position": 10,
+                        "type": "string"
+                    },
+                    "dst_mac_addr_mask": {
+                        "description": "The mask for the destination MAC in HHHH.HHHH.HHHH format.",
+                        "position": 12,
+                        "type": "string"
+                    },
+                    "dsthost": {
+                        "description": "The destination MAC in HHHH.HHHH.HHHH format. The value is required only when the dst is 'host'.",
+                        "position": 11,
+                        "type": "string"
+                    },
+                    "ethertype": {
+                        "description": "The EtherType, this can be 'arp', 'fcoe', 'ipv4' or custom value between 1536 and 65535. For MLX EtherType, can be 'arp', 'fcoe', 'ipv4-l5', 'ipv6' or custom value between integers 1536 and 65535.",
+                        "position": 15,
+                        "type": "string"
+                    },
+                    "log": {
+                        "default": "False",
+                        "description": "This enables logging.",
+                        "position": 20,
+                        "type": "string"
+                    },
+                    "mirror": {
+                        "default": "False",
+                        "description": "This enables the mirror for the rule. Only supported by MLXe and SLX 9850, 9540 devices.",
+                        "position": 21,
+                        "type": "string"
+                    },
+                    "pcp": {
+                        "description": "The PCP value between 0 and 7. Format {<pcp>[,<pcp-force>]}. Only supported by SLX 9850 and 9540 devices.",
+                        "position": 17,
+                        "type": "string"
+                    },
+                    "priority": {
+                        "description": "This matches the specified value against the priority value of the packet to filter. Allowed values are 0 through 7. Only supported by MLX devices.",
+                        "position": 24,
+                        "type": "integer"
+                    },
+                    "priority_force": {
+                        "description": "This matches the specified value against the priority_force value of the packet to filter. Allowed values are 0 through 7. Only supported by MLX devices.",
+                        "position": 25,
+                        "type": "integer"
+                    },
+                    "priority_mapping": {
+                        "description": "This matches the specified value against the priority_mapping value of the packet to filter. Allowed values are 0 through 7. Only supported by MLX devices.",
+                        "position": 26,
+                        "type": "integer"
+                    },
+                    "seq_id": {
+                        "description": "The sequence numbers of rules to be deleted { seq id | all | comman and hyphen separated seq ids } Example:- { 10 | all | 1,2,3-10,20,35-  } Note:- 1. Range operation is only supported for delete operation. 2. \"-\" separated values will look for seq_ids inthe range including the values and 35- is equal to starting from 35 delete all configured sequence ids, including 35.",
+                        "position": 5,
+                        "type": "string"
+                    },
+                    "source": {
+                        "default": "any",
+                        "description": "The source filter, which can be 'any' or 'host', or the actual MAC in HHHH.HHHH.HHHH format MLX - Source filter, can be 'any' or the actual MAC in HHHH.HHHH.HHHH format.",
+                        "position": 7,
+                        "type": "string"
+                    },
+                    "src_mac_addr_mask": {
+                        "description": "The mask for the source MAC in HHHH.HHHH.HHHH format.",
+                        "position": 9,
+                        "type": "string"
+                    },
+                    "srchost": {
+                        "description": "The source MAC in HHHH.HHHH.HHHH format. The value is required only when the source is 'host'.  Only supported by SLX and NOS devices.",
+                        "position": 8,
+                        "type": "string"
+                    },
+                    "vlan": {
+                        "description": "The VLAN IDs - 'any' or 1-4096, Mask 0xHHH. Format{(<VlanID> [<Mask>]) | (<OuterVlan> [<Mask>] <InnerVlan> [<Mask>])}.",
+                        "position": 14,
+                        "type": "string"
+                    },
+                    "vlan_tag_format": {
+                        "description": "The action to apply on the traffic, either to drop (deny), allow (permit) or force drop (hard-drop). Only supported by SLX 9850 and 9540 devices.",
+                        "enum": [
+                            "untagged",
+                            "single-tagged",
+                            "double-tagged"
+                        ],
+                        "position": 13,
+                        "type": "string"
+                    }
+                }
+            },
+            "position": 27,
+            "type": "array"
+        },
         "action": {
             "default": "deny",
-            "description": "Action to apply on the traffic, either to drop (deny), allow (permit) or force drop (hard-drop)",
+            "description": "The action to apply on the traffic, either to drop (deny), allow (permit) or force drop (hard-drop).",
             "enum": [
                 "deny",
                 "permit",
@@ -22,90 +159,147 @@
             "position": 6,
             "type": "string"
         },
+        "arp_guard": {
+            "default": "False",
+            "description": "This enables the arp-guard for the rule.  Only supported by MLXe and SLX 9850, 9540 devices.",
+            "position": 16,
+            "type": "string"
+        },
+        "copy_sflow": {
+            "default": "False",
+            "description": "This enables the copy-sflow for the rule. Only supported by SLX 9850, 9540 devices.",
+            "position": 22,
+            "type": "string"
+        },
         "count": {
             "default": "False",
-            "description": "Enables the packet count",
-            "position": 15,
+            "description": "This enables the packet count.",
+            "position": 19,
             "type": "string"
         },
         "delete": {
             "default": false,
-            "description": "Indicates add or delete operation. TRUE indicates a remove operation.",
+            "description": "This indicates an add or delete operation. If TRUE, this indicates a remove operation.",
             "position": 0,
             "type": "boolean"
         },
+        "drop_precedence": {
+            "description": "This matches the specified value against the drop_precedence value of the packet to filter. Allowed values are 0 through 2. For MLX Platform supported range is 0 through 3. Only supported by MLXe and SLX 9850, 9540 devices.",
+            "position": 23,
+            "type": "string"
+        },
+        "drop_precedence_force": {
+            "description": "This matches the specified value against the drop_precedence value of the packet to filter. Allowed values are 0 through 2. For MLX Platform supported range is 0 through 3. Only supported by MLX, SLX 9850 and 9540 devices.",
+            "position": 18,
+            "type": "string"
+        },
         "dst": {
             "default": "any",
-            "description": "Destination filter, can be 'any' or 'host', or the actual MAC of the destination in HHHH.HHHH.HHHH format.",
+            "description": "The destination filter, this can be 'any' or 'host', or the actual MAC of the destination in HHHH.HHHH.HHHH format. MLX - Destination filter, can be 'any' or the actual MAC in HHHH.HHHH.HHHH format.",
             "position": 10,
             "type": "string"
         },
         "dst_mac_addr_mask": {
-            "description": "Mask for the destination MAC in HHHH.HHHH.HHHH format.",
+            "description": "The mask for the destination MAC in HHHH.HHHH.HHHH format.",
             "position": 12,
             "type": "string"
         },
         "dsthost": {
-            "description": "Destination MAC in HHHH.HHHH.HHHH format. The value is required only when the dst is 'host'",
+            "description": "The destination MAC in HHHH.HHHH.HHHH format. The value is required only when the dst is 'host'.",
             "position": 11,
             "type": "string"
         },
         "ethertype": {
-            "default": "arp",
-            "description": "EtherType, can be 'arp', 'fcoe', 'ipv4' or custom value between 1536 and 65535.",
-            "position": 13,
+            "description": "The EtherType, this can be 'arp', 'fcoe', 'ipv4' or custom value between 1536 and 65535. For MLX EtherType, can be 'arp', 'fcoe', 'ipv4-l5', 'ipv6' or custom value between integers 1536 and 65535.",
+            "position": 15,
             "type": "string"
         },
         "log": {
             "default": "False",
-            "description": "Enables the logging",
-            "position": 16,
+            "description": "This enables logging.",
+            "position": 20,
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 1,
             "required": true,
             "type": "string"
         },
+        "mirror": {
+            "default": "False",
+            "description": "This enables the mirror for the rule. Only supported by MLXe and SLX 9850, 9540 devices.",
+            "position": 21,
+            "type": "string"
+        },
         "password": {
             "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 3,
             "secret": true,
             "type": "string"
         },
-        "seq_id": {
-            "description": "Sequence number of the rule.  For add operation, if not specified, the rule is added at the end of the list.",
-            "position": 5,
+        "pcp": {
+            "description": "The PCP value between 0 and 7. Format {<pcp>[,<pcp-force>]}. Only supported by SLX 9850 and 9540 devices.",
+            "position": 17,
+            "type": "string"
+        },
+        "priority": {
+            "description": "This matches the specified value against the priority value of the packet to filter. Allowed values are 0 through 7. Only supported by MLX devices.",
+            "position": 24,
             "type": "integer"
+        },
+        "priority_force": {
+            "description": "This matches the specified value against the priority_force value of the packet to filter. Allowed values are 0 through 7. Only supported by MLX devices.",
+            "position": 25,
+            "type": "integer"
+        },
+        "priority_mapping": {
+            "description": "This matches the specified value against the priority_mapping value of the packet to filter. Allowed values are 0 through 7. Only supported by MLX devices.",
+            "position": 26,
+            "type": "integer"
+        },
+        "seq_id": {
+            "description": "The sequence numbers of rules to be deleted { seq id | all | comman and hyphen separated seq ids } Example:- { 10 | all | 1,2,3-10,20,35-  } Note:- 1. Range operation is only supported for delete operation. 2. \"-\" separated values will look for seq_ids inthe range including the values and 35- is equal to starting from 35 delete all configured sequence ids, including 35.",
+            "position": 5,
+            "type": "string"
         },
         "source": {
             "default": "any",
-            "description": "Source filter, can be 'any' or 'host', or the actual MAC in HHHH.HHHH.HHHH format.",
+            "description": "The source filter, which can be 'any' or 'host', or the actual MAC in HHHH.HHHH.HHHH format MLX - Source filter, can be 'any' or the actual MAC in HHHH.HHHH.HHHH format.",
             "position": 7,
             "type": "string"
         },
         "src_mac_addr_mask": {
-            "description": "Mask for the source MAC in HHHH.HHHH.HHHH format.",
+            "description": "The mask for the source MAC in HHHH.HHHH.HHHH format.",
             "position": 9,
             "type": "string"
         },
         "srchost": {
-            "description": "The source MAC in HHHH.HHHH.HHHH format. The value is required only when the source is 'host'.",
+            "description": "The source MAC in HHHH.HHHH.HHHH format. The value is required only when the source is 'host'.  Only supported by SLX and NOS devices.",
             "position": 8,
             "type": "string"
         },
         "username": {
             "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 2,
             "type": "string"
         },
         "vlan": {
-            "description": "VLAN ID - custom value between 1 and 4096.",
+            "description": "The VLAN IDs - 'any' or 1-4096, Mask 0xHHH. Format{(<VlanID> [<Mask>]) | (<OuterVlan> [<Mask>] <InnerVlan> [<Mask>])}.",
             "position": 14,
-            "type": "integer"
+            "type": "string"
+        },
+        "vlan_tag_format": {
+            "description": "The action to apply on the traffic, either to drop (deny), allow (permit) or force drop (hard-drop). Only supported by SLX 9850 and 9540 devices.",
+            "enum": [
+                "untagged",
+                "single-tagged",
+                "double-tagged"
+            ],
+            "position": 13,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

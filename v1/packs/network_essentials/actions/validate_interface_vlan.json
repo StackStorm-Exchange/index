@@ -1,5 +1,5 @@
 {
-    "description": "Validate port channel or physical interface belongs to the specified VLAN",
+    "description": "This validates the port channel or physical interface belonging to the specified VLAN.",
     "enabled": true,
     "entry_point": "validate_interface_vlan.py",
     "name": "validate_interface_vlan",
@@ -7,41 +7,53 @@
     "parameters": {
         "intf_mode": {
             "default": "access",
-            "description": "Interface mode",
+            "description": "The interface mode.",
             "enum": [
                 "trunk",
                 "access"
             ],
-            "position": 5,
+            "position": 6,
             "type": "string"
         },
         "intf_name": {
-            "description": "Interface names, can be comma separated physical ports, port channel numbers. Examples are 224/0/1, 224/0/2 or 7, 8, 9",
+            "description": "Interface name, for VDX in 3-tuple format (24/0/1), SLX/NI in 2-tuple format (24/1) or Port-channel number <1-6144>, for NI <1-256>.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "description": "The interface type.",
+            "enum": [
+                "gigabitethernet",
+                "tengigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet",
+                "port_channel",
+                "ethernet"
+            ],
             "position": 4,
             "required": true,
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
         "vlan_id": {
-            "description": "Single VLAN or range of VLANs, for example 2 or 3-9",
+            "description": "A single VLAN or range of VLANs, for example 2 or 3-9.",
             "position": 3,
             "required": true,
             "type": "string"

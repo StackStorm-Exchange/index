@@ -1,19 +1,19 @@
 {
-    "description": "Delete Switchport on an interface.",
+    "description": "This deletes the Switchport on an interface.",
     "enabled": true,
     "entry_point": "delete_switchport.py",
     "name": "delete_switchport",
     "pack": "network_essentials",
     "parameters": {
         "intf_name": {
-            "description": "Interface name, for VDX in 3-tuple format (24/0/1), SLX in 2-tuple format (24/1). Example for interface 235/0/35 or 235/0/35-40 Example for port-channel 10 or 1-10",
+            "description": "The interface name, can be port or port channel. For example to specify ports, 24/0/1 (VDX) or 24/1 (SLX). For port channel, 10 or 1-10",
             "position": 4,
             "required": true,
             "type": "string"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type",
+            "description": "The interface type.",
             "enum": [
                 "ethernet",
                 "tengigabitethernet",
@@ -27,24 +27,22 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }
     },
-    "runner_type": "run-python"
+    "runner_type": "python-script"
 }

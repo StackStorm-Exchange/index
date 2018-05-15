@@ -1,0 +1,73 @@
+{
+    "description": "The attach Input/Output Policy Map.",
+    "enabled": true,
+    "entry_point": "attach_service_policy_to_interface.py",
+    "name": "attach_service_policy_to_interface",
+    "pack": "network_essentials",
+    "parameters": {
+        "intf_name": {
+            "description": "The interface name of the physical port or port channel number. E.g 0/1 or 7.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "tengigabitethernet",
+            "description": "The interface type.",
+            "enum": [
+                "ethernet",
+                "port_channel",
+                "tengigabitethernet",
+                "gigabitethernet",
+                "fortygigabitethernet",
+                "hundredgigabitethernet"
+            ],
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "policy_map_name": {
+            "description": "A Single Policy Map Class Name for configuring In/Out Policy. List of Class Names to configure In & Out Policy. (Max Size -64). For Example. 'Policy_map_in' or 'Policy_map_out' or 'Policy_map_in, Policy_map_out'",
+            "position": 6,
+            "required": true,
+            "type": "array"
+        },
+        "policy_type": {
+            "default": "In",
+            "description": "The In/Out Policy Map  (Max Size -64).",
+            "enum": [
+                "In",
+                "Out",
+                "Both"
+            ],
+            "position": 7,
+            "type": "string"
+        },
+        "rbridge_id": {
+            "description": "The RBridge ID of the VDX switch under which VE will be configured, only needed for VDX device.",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

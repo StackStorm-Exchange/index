@@ -1,0 +1,61 @@
+{
+    "description": "This creates the Policy Map, Class Instance and Police Configurations.",
+    "enabled": true,
+    "entry_point": "configure_policy_map_class.py",
+    "name": "configure_policy_map_class",
+    "pack": "network_essentials",
+    "parameters": {
+        "cbs": {
+            "description": "The Committed Burst Rate. The Valid Range is <1250-37500000000> Bytes.",
+            "position": 6,
+            "type": "integer"
+        },
+        "cir": {
+            "description": "The Committed Information Rate. The Valid Range is <0-300000000000> bits Per Second.",
+            "position": 5,
+            "type": "integer"
+        },
+        "class_name": {
+            "default": "default",
+            "description": "The Policy Map Class Name (Max Size -64).",
+            "position": 4,
+            "type": "string"
+        },
+        "ebs": {
+            "description": "The Extended Burst Rate. The Valid Range is <1250-37500000000> Bytes.",
+            "position": 8,
+            "type": "integer"
+        },
+        "eir": {
+            "description": "The Extended Information Rate. The Valid Range is <0-300000000000> bits Per Second.",
+            "position": 7,
+            "type": "integer"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "policy_map_name": {
+            "description": "The Policy Map Class Name (Max Size -64).",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

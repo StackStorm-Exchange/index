@@ -1,0 +1,50 @@
+{
+    "description": "This creates the Class Map and sets the match criteris.",
+    "enabled": true,
+    "entry_point": "configure_class_map.py",
+    "name": "configure_class_map",
+    "pack": "network_essentials",
+    "parameters": {
+        "class_name": {
+            "description": "The Policy Map Class Name (Max Size -64).",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "match_type": {
+            "description": "The interface type",
+            "enum": [
+                "access-group",
+                "bridge-domain",
+                "vlan"
+            ],
+            "position": 4,
+            "type": "string"
+        },
+        "match_value": {
+            "description": "If match_type=access-group, pass name of MAC/IP Access group, match_type=bridge-domain, pass single Bridge-Domain id, match_type=vlan pass single Vlan Id.",
+            "position": 5,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

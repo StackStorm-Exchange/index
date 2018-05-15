@@ -1,5 +1,5 @@
 {
-    "description": "This workflow accomplishes the task of allowing traffic back on a specified interface by first deleting the deny ACL currently on that interface. If may also delete the acl, if it is empty.",
+    "description": "This workflow accomplishes the task of allowing traffic back on a specified interface by first deleting the deny ACL currently on that interface. It may also delete the acl, if it is empty.",
     "enabled": true,
     "entry_point": "workflows/drop_unprovision.yaml",
     "name": "drop_unprovision",
@@ -24,19 +24,19 @@
         },
         "delete_acl": {
             "default": false,
-            "description": "Indicates whether the acl should be deleted.",
+            "description": "This ndicates whether the ACL should be deleted.",
             "position": 7,
             "type": "boolean"
         },
         "intf_name": {
-            "description": "interface name as array (182/0/97)",
+            "description": "The interface name as an array (182/0/97).",
             "position": 5,
             "required": true,
             "type": "array"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type gigabitethernet or tengigabitethernet, etc",
+            "description": "The interface type gigabitethernet or tengigabitethernet, etc.",
             "enum": [
                 "gigabitethernet",
                 "tengigabitethernet",
@@ -65,7 +65,7 @@
             "description": "Sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290",
             "position": 8,
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "username": {
             "default": "admin",

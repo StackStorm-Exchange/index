@@ -1,0 +1,51 @@
+{
+    "description": "This deletes the logical interface under the physical/port-channel interface.",
+    "enabled": true,
+    "entry_point": "delete_logical_interface_on_interface.py",
+    "name": "delete_logical_interface_on_interface",
+    "pack": "network_essentials",
+    "parameters": {
+        "intf_name": {
+            "description": "The interface Port number or Port channel number. Examples for SLX are 1/13, 1/14.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "ethernet",
+            "description": "The interface type.",
+            "enum": [
+                "ethernet",
+                "port_channel"
+            ],
+            "position": 3,
+            "type": "string"
+        },
+        "logical_interface_number": {
+            "description": "A single or list of Interface name, physical port or port channel number separated by comma. E.g:0/1.1,0/1.2 or 7.1. If 'all', it will delete all the LIFs under the interface.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,33 @@
+{
+    "description": "This returns the next lowest available VF ID (4096-8191) on VDX platform and bridge-domain ID on SLX platforms.",
+    "enabled": true,
+    "entry_point": "get_next_available_network_id.py",
+    "name": "get_next_available_network_id",
+    "pack": "network_essentials",
+    "parameters": {
+        "length_of_the_range": {
+            "default": "1",
+            "description": "This returns the lowest available Single/Range of VF values. Max Length = 4095. For example 10 or 1-25 or 1-25,26,28. For example, if length_of_the_range=2, returns 4096,4097. length_of_the_range=1-3, returns 4096,4097,4098.",
+            "position": 3,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

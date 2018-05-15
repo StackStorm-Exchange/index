@@ -1,38 +1,54 @@
 {
-    "description": "Execute CLI command and return the result",
+    "description": "Executes CLI command and returns the result. The device type should be appropriate to get reliable output.",
     "enabled": true,
     "entry_point": "execute_cli.py",
     "name": "execute_cli",
     "pack": "network_essentials",
     "parameters": {
         "cli_cmd": {
-            "description": "CLI commands to execute on the specified VDX device",
+            "description": "The CLI commands to execute on the device.",
             "position": 3,
             "required": true,
             "type": "array"
         },
         "config_operation": {
             "default": false,
-            "description": "Flag to indicate whether commands are for configuration or show",
+            "description": "The flag to indicate whether commands are for configuration or for show.",
             "position": 4,
             "type": "boolean"
         },
+        "device_type": {
+            "default": "nos",
+            "description": "Specifies the connecting device type.",
+            "enum": [
+                "nos",
+                "slx",
+                "ni"
+            ],
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "enable_passwd": {
+            "description": "The privilege exec mode password. Applicable only to MLX device.",
+            "position": 6,
+            "secret": true,
+            "type": "string"
+        },
         "mgmt_ip": {
-            "description": "Ip address of the VDX device",
+            "description": "The IP address of the device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "login password",
+            "description": "The login password.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "login username",
+            "description": "The login username.",
             "position": 1,
             "type": "string"
         }

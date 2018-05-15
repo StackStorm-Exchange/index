@@ -1,5 +1,5 @@
 {
-    "description": "Remove an ACL from physical port, port channel, VE or mgmt interface.",
+    "description": "This removes an ACL from physical port, port channel, VE or mgmt interface.",
     "enabled": true,
     "entry_point": "remove_acl.py",
     "name": "remove_acl",
@@ -7,7 +7,7 @@
     "parameters": {
         "acl_direction": {
             "default": "in",
-            "description": "ACL direction",
+            "description": "The ACL direction.",
             "enum": [
                 "in",
                 "out"
@@ -17,20 +17,20 @@
             "type": "string"
         },
         "acl_name": {
-            "description": "ACL name",
+            "description": "The ACL name.",
             "position": 6,
             "required": true,
             "type": "string"
         },
         "intf_name": {
-            "description": "Interface names, can be comma separated physical ports, port channel numbers or VEs. Examples are 224/0/1, 224/0/2 or 7, 8, 9",
+            "description": "The interface names, can be comma separated physical ports, port channel numbers or VEs. Examples are 224/0/1, 224/0/2 or 7, 8, 9.",
             "position": 4,
             "required": true,
             "type": "array"
         },
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type",
+            "description": "The interface type.",
             "enum": [
                 "gigabitethernet",
                 "tengigabitethernet",
@@ -39,44 +39,34 @@
                 "port_channel",
                 "ve",
                 "loopback",
-                "ethernet"
+                "ethernet",
+                "management",
+                "vlan"
             ],
             "position": 3,
             "required": true,
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "RBridge ID of the VDX switch.  This parameter is only applicable to VDX switches",
+            "description": "The RBridge ID of the VDX switch under which VE will be configured, only needed for VDX device.  Only applicable to NOS devices.",
             "position": 5,
             "required": false,
             "type": "string"
         },
-        "traffic_type": {
-            "description": "Traffic type for the ACL being removed",
-            "enum": [
-                "switched",
-                "routed"
-            ],
-            "position": 8,
-            "required": false,
-            "type": "string"
-        },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }

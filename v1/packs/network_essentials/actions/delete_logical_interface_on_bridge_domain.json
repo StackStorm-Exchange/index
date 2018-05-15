@@ -1,0 +1,61 @@
+{
+    "description": "This deletes the logical interfaces under a bridge domain.",
+    "enabled": true,
+    "entry_point": "delete_logical_interface_on_bridge_domain.py",
+    "name": "delete_logical_interface_on_bridge_domain",
+    "pack": "network_essentials",
+    "parameters": {
+        "bridge_domain_id": {
+            "description": "The bridge domain IDs. <1-4096> on SLX9140,SLX9850 and <1-3566> on SLX9240.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "bridge_domain_service_type": {
+            "default": "p2mp",
+            "description": "The bridge domain service type. `p2p` is not supported on SLX9140 and SLX9240 platforms.",
+            "enum": [
+                "p2mp",
+                "p2p"
+            ],
+            "position": 4,
+            "type": "string"
+        },
+        "intf_type": {
+            "default": "ethernet",
+            "description": "The interface type to be deleted from the bridge_domain.",
+            "enum": [
+                "ethernet",
+                "port_channel",
+                "both"
+            ],
+            "position": 5,
+            "type": "string"
+        },
+        "logical_interface_number": {
+            "description": "Single/List of logical Interface Number for physical port or port channel separated by comma. E.g:0/1.1,10.1,0/20.1 or 7.1. 1. If intf_type is 'both'  --> all the LIFs {ethernet & port_channel} will be deleted on the BD. 2. If intf_type is 'ethernet' and logical_interface_number is not passed --> all the ethernet LIFs will be deleted on the BD. 3. If intf_type is 'port_channel' and logical_interface_number is not passed --> all the port_channel LIFs will be deleted on the BD. 4. If intf_type is 'port_channel or ethernet' and logical_interface_number is passed --> port_channel/ethernet LIFs passed will be deleted on the BD.",
+            "position": 6,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device..",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "default": "password",
+            "description": "The login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "default": "admin",
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

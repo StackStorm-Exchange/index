@@ -1,0 +1,92 @@
+{
+    "description": "This will create the bridge domain for p2mp/p2p and bind the logical interface.",
+    "enabled": true,
+    "entry_point": "configure_bridge_domain.py",
+    "name": "configure_bridge_domain",
+    "pack": "network_essentials",
+    "parameters": {
+        "bpdu_drop_enable": {
+            "default": false,
+            "description": "Drop BPDU packets. Valid only on SLX9850,SLX9540.",
+            "position": 7,
+            "type": "boolean"
+        },
+        "bridge_domain_id": {
+            "description": "The Bridge-domain ID. Valid values are <1-4096> on SLX9140,SLX9850,SLX9540 and <1-3566> on SLX9240.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "bridge_domain_service_type": {
+            "default": "p2mp",
+            "description": "The bridge domain service type. `p2p` is valid only on SLX9850,SLX9540.",
+            "enum": [
+                "p2mp",
+                "p2p"
+            ],
+            "position": 4,
+            "type": "string"
+        },
+        "intf_type": {
+            "description": "The logical interface type. Valid Types are 'ethernet','port_channel'. For Example. 'ethernet' --> if all the entries in logical_interface_number are of type ethernet 'port_channel' --> if all the entries in logical_interface_number are of type port_channel 'ethernet,port_channel,ethernet,port_channel' --> If the entries in logical_interface_number are of mixed types.",
+            "position": 11,
+            "type": "string"
+        },
+        "local_switching": {
+            "default": false,
+            "description": "Configured local switching. Valid only on SLX9850,SLX9540.",
+            "position": 8,
+            "type": "boolean"
+        },
+        "logical_interface_number": {
+            "description": "The physical port or port channel number list. Format for the logical interfaces is <physical/port-channel number>.<number>. For E.g '0/34.11,21.1,0/35.1,22.1'",
+            "position": 12,
+            "type": "string"
+        },
+        "mgmt_ip": {
+            "description": "The management IP address of the target device.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "THe login password to connect to the device.",
+            "position": 2,
+            "secret": true,
+            "type": "string"
+        },
+        "peer_ip": {
+            "description": "A single or a list of IPv4/IPv6 addresses to be configured on the bridge_domain. IPv4, for example 10.0.0.10. Valid only on SLX9850,SLX9540.",
+            "position": 9,
+            "type": "array"
+        },
+        "pw_profile_name": {
+            "default": "default",
+            "description": "The pw-profile name (Max Size - 64). Valid only on SLX9850,SLX9540.",
+            "position": 10,
+            "type": "string"
+        },
+        "statistics": {
+            "default": true,
+            "description": "Configure Statistics.",
+            "position": 6,
+            "type": "boolean"
+        },
+        "username": {
+            "description": "The login user name to connect to the device.",
+            "position": 1,
+            "type": "string"
+        },
+        "vc_id": {
+            "description": "The VC Id under the VPLS Instance. Range <1-4294967295>. Valid only on SLX9850,SLX9540.",
+            "position": 5,
+            "type": "string"
+        },
+        "vlan_id": {
+            "description": "The VLAN ID to map the broadcast domain to a router interface. Valid range <1-4096>",
+            "position": 13,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,36 +1,34 @@
 {
-    "description": "Delete a VRF",
+    "description": "This deletes a VRF.",
     "enabled": true,
     "entry_point": "delete_vrf.py",
     "name": "delete_vrf",
     "pack": "network_essentials",
     "parameters": {
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "rbridge_id": {
-            "description": "RBridge IDs of the VDX switches, for example 51 or 51,52. This parameter is only applicable for VDX switches.",
+            "description": "The RBridge IDs of the VDX switches, for example 51 or 51,52. This parameter is only applicable for VDX switches.",
             "position": 3,
             "type": "array"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         },
         "vrf_name": {
-            "description": "VRF name, for example vrf32 or 32",
+            "description": "The VRF name, for example vrf32 or 32.",
             "position": 4,
             "required": true,
             "type": "string"

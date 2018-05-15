@@ -1,5 +1,5 @@
 {
-    "description": "Create an L2 port channel (LAG or vLAG) in Static or LACP mode",
+    "description": "This create an L2 port channel (LAG or vLAG) in Static or LACP mode.",
     "enabled": true,
     "entry_point": "create_l2_port_channel.py",
     "name": "create_l2_port_channel",
@@ -7,7 +7,7 @@
     "parameters": {
         "intf_type": {
             "default": "tengigabitethernet",
-            "description": "Interface type ethernet/gigabitethernet/tengigabitethernet/fortygigabitethernet/hundredgigabitethernet",
+            "description": "The interface type - ethernet/gigabitethernet/tengigabitethernet/fortygigabitethernet/hundredgigabitethernet.",
             "enum": [
                 "tengigabitethernet",
                 "gigabitethernet",
@@ -20,59 +20,69 @@
             "type": "string"
         },
         "mgmt_ip": {
-            "description": "Management IP address of the target device",
+            "description": "The management IP address of the target device.",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "mode": {
             "default": "standard",
-            "description": "Port channel type",
+            "description": "The port channel type. SLX and MLX supports standard type only.",
             "enum": [
                 "standard",
                 "brocade"
             ],
-            "position": 6,
+            "position": 7,
             "type": "string"
         },
         "password": {
-            "default": "password",
-            "description": "Login password to connect to the device",
+            "description": "The login password to connect to the device.",
             "position": 2,
             "secret": true,
             "type": "string"
         },
         "port_channel_desc": {
-            "description": "Port channel interface description without any space",
-            "position": 8,
+            "description": "The port channel interface description. For MLX, this is mandatory. field.",
+            "position": 9,
             "type": "string"
         },
         "port_channel_id": {
-            "description": "Port channel interface number.<NUMBER:1-6144>",
-            "position": 5,
+            "description": "Port channel interface number.For VDX range is <NUMBER:1-6144>. For MLX range is <1-256>, CER/CES range is <1-64>, Avalanche range is <1-64>, Fusion range is <1-512> Cedar/Freedom range is <1-1024>",
+            "position": 6,
             "required": true,
             "type": "string"
         },
+        "port_speed": {
+            "description": "The configurable port speed that is supported on SLX and VDX.",
+            "enum": [
+                "1000",
+                "10000",
+                "25000",
+                "40000",
+                "100000"
+            ],
+            "position": 5,
+            "type": "string"
+        },
         "ports": {
-            "description": "Single or list of ports that are members of the port channel. Examples for VDX, SLX are  24/0/1, 24/0/2 or 1/13, 1/14",
+            "description": "A single or a list of ports that are members of the port channel. Examples for VDX, SLX are  24/0/1, 24/0/2 or 1/13, 1/14.",
             "position": 4,
             "required": true,
             "type": "array"
         },
         "protocol": {
             "default": "active",
-            "description": "Port channel mode",
+            "description": "The port channel mode. For MLX, use active for dynamic and modeon for static.",
             "enum": [
                 "active",
                 "passive",
                 "modeon"
             ],
-            "position": 7,
+            "position": 8,
             "type": "string"
         },
         "username": {
-            "default": "admin",
-            "description": "Login user name to connect to the device",
+            "description": "The login user name to connect to the device.",
             "position": 1,
             "type": "string"
         }
