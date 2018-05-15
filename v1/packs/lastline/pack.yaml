@@ -10,11 +10,11 @@ content:
   actions:
     count: 8
     resources:
-    - get_completed
-    - get_progress
-    - get_result
     - get_result_artifact
-    - get_result_summary
     - submit_file
+    - get_result_summary
+    - get_completed
     - submit_file_hash
+    - get_progress
     - submit_url
+    - get_result
