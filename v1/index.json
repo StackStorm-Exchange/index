@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526349716,
-        "hash": "097290dd644056b1f3864cb2e24e2f63"
+        "generated_ts": 1526349744,
+        "hash": "67d6bae229ca4aefceda7eacab740aad"
     },
     "packs": {
         "acos": {
@@ -5769,18 +5769,18 @@
                     "count": 13,
                     "resources": [
                         "create_address_group",
-                        "create_address_object",
-                        "create_firewall_policy",
-                        "delete_address_group",
-                        "delete_address_object",
                         "delete_firewall_policy",
-                        "get_address_group",
-                        "get_address_object",
+                        "create_address_object",
+                        "delete_address_group",
+                        "update_address_object",
                         "get_firewall_policy",
-                        "move_firewall_policy",
+                        "update_firewall_policy",
+                        "delete_address_object",
+                        "create_firewall_policy",
+                        "get_address_object",
                         "update_address_object",
-                        "update_address_object",
-                        "update_firewall_policy"
+                        "get_address_group",
+                        "move_firewall_policy"
                     ]
                 }
             },
