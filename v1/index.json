@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526358230,
-        "hash": "374840830c8a67d011af5719f3a38c66"
+        "generated_ts": 1526358246,
+        "hash": "1069a3f8d504026b0552fd24cad82800"
     },
     "packs": {
         "acos": {
@@ -9392,9 +9392,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "list_exchanges",
+                        "publish_message",
                         "list_queues",
-                        "publish_message"
+                        "list_exchanges"
                     ]
                 },
                 "sensors": {
@@ -9417,7 +9417,7 @@
             "name": "rabbitmq",
             "ref": "rabbitmq",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-rabbitmq",
-            "version": "0.4.1"
+            "version": "0.4.2"
         },
         "rackspace": {
             "author": "jfryman",
