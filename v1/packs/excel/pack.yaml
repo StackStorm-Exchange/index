@@ -7,8 +7,8 @@ content:
   actions:
     count: 5
     resources:
-    - set_variables
-    - get_keys_for_rows
-    - get_sheets
     - get_variables
     - get_keys_for_columns
+    - get_sheets
+    - get_keys_for_rows
+    - set_variables
