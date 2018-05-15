@@ -1,25 +1,25 @@
 ref: cassandra
 name: cassandra
-description: st2 content pack containing cassandra integrations
+description: Apache Cassandra Integrations
 keywords:
 - datastax
 - cassandra
-version: 0.1.0
+version: 0.1.1
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 12
     resources:
-    - append_replace_address_env_file
     - clear_cass_data
-    - get_dse_status
-    - is_seed_node
-    - list_seed_nodes
-    - nodetool
     - remove_gossip_peer_info
-    - remove_replace_address_env_file
-    - replace_host
-    - start_dse
-    - stop_dse
+    - nodetool
+    - is_seed_node
     - wait_for_port_open
+    - append_replace_address_env_file
+    - list_seed_nodes
+    - start_dse
+    - replace_host
+    - stop_dse
+    - get_dse_status
+    - remove_replace_address_env_file
