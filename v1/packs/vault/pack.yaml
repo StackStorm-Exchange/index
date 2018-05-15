@@ -10,12 +10,12 @@ content:
   actions:
     count: 9
     resources:
+    - delete_policy
     - create_token
     - delete
-    - delete_policy
-    - get_policy
     - is_initialized
     - list_policies
+    - get_policy
+    - write
     - read
     - set_policy
-    - write
