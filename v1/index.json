@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526411445,
-        "hash": "46113b83e06e01a8eb8ff5963e80cd96"
+        "generated_ts": 1526411551,
+        "hash": "03e3f4877a1a1090854172a8cb8525c9"
     },
     "packs": {
         "acos": {
@@ -4633,29 +4633,29 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "add_device_lifecycle",
-                        "create_dhcp_lease_reservation",
-                        "create_or_edit_ip",
-                        "device_name_list",
-                        "get_device_by_id",
-                        "get_dns_zone",
-                        "get_lifecycle_event_objects",
                         "get_lifecycle_events",
-                        "networking_lifecycle_automation",
-                        "suggest_and_create_ip",
-                        "suggest_next_ip",
-                        "update_device",
+                        "get_lifecycle_event_objects",
                         "update_object_category_by_lifecycle_id",
-                        "write_pxe_cfg"
+                        "get_dns_zone",
+                        "get_device_by_id",
+                        "update_device",
+                        "create_or_edit_ip",
+                        "write_pxe_cfg",
+                        "suggest_and_create_ip",
+                        "device_name_list",
+                        "create_dhcp_lease_reservation",
+                        "suggest_next_ip",
+                        "add_device_lifecycle",
+                        "networking_lifecycle_automation"
                     ]
                 },
                 "rules": {
                     "count": 4,
                     "resources": [
-                        "d42_webhook_responder",
-                        "device_created_initial_lifecycle",
+                        "networking_lifecycle_automation_rule",
                         "lifecycle_triggered_object_category_change",
-                        "networking_lifecycle_automation_rule"
+                        "d42_webhook_responder",
+                        "device_created_initial_lifecycle"
                     ]
                 }
             },
