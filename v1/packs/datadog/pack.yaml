@@ -12,54 +12,54 @@ content:
   actions:
     count: 51
     resources:
-    - post_check_run
-    - create_comment
-    - delete_comment
-    - edit_comment
-    - schedule_monitor_downtime
     - create_embed
-    - enable_embed
-    - get_all_embeds
-    - get_embed
-    - revoke_embed
-    - delete_event
-    - get_event
-    - post_event
-    - query_event_stream
-    - snapshot
-    - mute_host
-    - unmute_host
-    - post_ts_points
-    - query_ts_points
-    - create_monitor
-    - delete_monitor
-    - edit_monitor
-    - get_all_monitors
-    - get_monitor
-    - mute_all_monitors
-    - mute_monitor
-    - unmute_all_monitors
-    - unmute_monitor
-    - create_screenboard
-    - delete_screenboard
-    - get_all_screenboards
-    - get_screenboard
-    - revoke_shared_screenboard
-    - share_screenboard
-    - update_screenboard
-    - search
-    - add_host_tags
-    - get_host_tags
-    - get_tags
-    - remove_host_tags
-    - update_host_tags
-    - create_timeboard
-    - delete_timeboard
     - get_all_timeboards
-    - get_timeboard
-    - update_timeboard
+    - get_screenboard
+    - unmute_all_monitors
+    - delete_monitor
+    - enable_embed
+    - get_all_screenboards
+    - unmute_host
+    - get_event
+    - create_screenboard
     - create_user
-    - disable_user
+    - create_comment
+    - create_timeboard
+    - get_monitor
+    - add_host_tags
+    - delete_screenboard
+    - mute_host
     - get_all_users
+    - delete_timeboard
+    - query_event_stream
+    - mute_monitor
+    - get_timeboard
+    - update_host_tags
+    - delete_comment
     - get_user
+    - disable_user
+    - edit_comment
+    - delete_event
+    - create_monitor
+    - revoke_embed
+    - post_ts_points
+    - post_check_run
+    - get_embed
+    - get_tags
+    - schedule_monitor_downtime
+    - unmute_monitor
     - update_user
+    - revoke_shared_screenboard
+    - mute_all_monitors
+    - search
+    - remove_host_tags
+    - get_all_embeds
+    - share_screenboard
+    - update_timeboard
+    - edit_monitor
+    - snapshot
+    - get_host_tags
+    - get_all_monitors
+    - update_screenboard
+    - post_event
+    - query_ts_points
