@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526359855,
-        "hash": "e8dfdf12ed0f62fb141f28ba2c39904f"
+        "generated_ts": 1526395907,
+        "hash": "2d1e3c7a7cb433f3d39182dd61c476dc"
     },
     "packs": {
         "acos": {
@@ -8043,8 +8043,8 @@
                 "actions": {
                     "count": 2,
                     "resources": [
-                        "get_alerts",
-                        "get_metric_data"
+                        "get_metric_data",
+                        "get_alerts"
                     ]
                 },
                 "sensors": {
@@ -8055,7 +8055,7 @@
                     ]
                 }
             },
-            "description": "st2 content pack containing newrelic integrations",
+            "description": "newrelic monitoring",
             "email": "info@stackstorm.com",
             "keywords": [
                 "new relic",
@@ -8066,7 +8066,7 @@
             "name": "newrelic",
             "ref": "newrelic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
-            "version": "0.4.1"
+            "version": "0.4.2"
         },
         "nsx_vtep": {
             "author": "GSLAB",
