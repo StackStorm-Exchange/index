@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526419143,
-        "hash": "f16d2dd1606a40f036f3c8df4294c982"
+        "generated_ts": 1526421071,
+        "hash": "eab7e7001fc58faacb79390c0086d57b"
     },
     "packs": {
         "acos": {
@@ -10348,20 +10348,20 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "add_board",
-                        "add_card",
-                        "add_list",
                         "close_board",
-                        "close_card",
-                        "close_list",
-                        "find_board_by_name",
-                        "find_card_by_name",
-                        "find_list_by_name",
-                        "move_card",
-                        "view_boards",
-                        "view_cards",
                         "view_lists",
-                        "view_organizations"
+                        "find_card_by_name",
+                        "move_card",
+                        "view_cards",
+                        "add_list",
+                        "add_card",
+                        "close_card",
+                        "add_board",
+                        "find_board_by_name",
+                        "close_list",
+                        "view_organizations",
+                        "find_list_by_name",
+                        "view_boards"
                     ]
                 },
                 "sensors": {
@@ -10371,7 +10371,7 @@
                     ]
                 }
             },
-            "description": "Integration with Trello, Web based Project Management",
+            "description": "Trello Web-based Project Management",
             "email": "james@stackstorm.com",
             "keywords": [
                 "trello",
@@ -10382,7 +10382,7 @@
             "name": "trello",
             "ref": "trello",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-trello",
-            "version": "0.4.1"
+            "version": "0.4.2"
         },
         "tuleap": {
             "author": "Enalean",
