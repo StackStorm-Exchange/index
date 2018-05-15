@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526412177,
-        "hash": "18c5b26ca6a6327c49a8a46771e0cce6"
+        "generated_ts": 1526412357,
+        "hash": "957cc07be9e94749aac79fc0aa10c3fe"
     },
     "packs": {
         "acos": {
@@ -9727,25 +9727,25 @@
                 "actions": {
                     "count": 19,
                     "resources": [
-                        "check_aggregates",
-                        "check_aggregates_delete",
-                        "aggregate_list",
-                        "check_info",
-                        "check_list",
-                        "check_request",
-                        "client_delete",
-                        "client_history",
-                        "client_info",
-                        "client_list",
-                        "event_client_list",
-                        "event_delete",
                         "event_info",
-                        "event_list",
-                        "event_resolve",
-                        "health",
                         "info",
                         "silence",
-                        "unsilence"
+                        "event_client_list",
+                        "check_aggregates",
+                        "check_info",
+                        "event_list",
+                        "check_request",
+                        "check_aggregates_delete",
+                        "client_list",
+                        "check_list",
+                        "unsilence",
+                        "health",
+                        "event_resolve",
+                        "event_delete",
+                        "client_delete",
+                        "client_history",
+                        "aggregate_list",
+                        "client_info"
                     ]
                 },
                 "rules": {
@@ -9768,7 +9768,7 @@
                     ]
                 }
             },
-            "description": "st2 content pack containing sensu integrations",
+            "description": "Sensu Monitoring",
             "email": "info@stackstorm.com",
             "keywords": [
                 "sensu",
@@ -9778,7 +9778,7 @@
             "name": "sensu",
             "ref": "sensu",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu",
-            "version": "0.5.1"
+            "version": "0.5.2"
         },
         "servicenow": {
             "author": "James Fryman",

@@ -1,36 +1,36 @@
 ref: sensu
 name: sensu
-description: st2 content pack containing sensu integrations
+description: Sensu Monitoring
 keywords:
 - sensu
 - monitoring
 - alerting
-version: 0.5.1
+version: 0.5.2
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 19
     resources:
-    - check_aggregates
-    - check_aggregates_delete
-    - aggregate_list
-    - check_info
-    - check_list
-    - check_request
-    - client_delete
-    - client_history
-    - client_info
-    - client_list
-    - event_client_list
-    - event_delete
     - event_info
-    - event_list
-    - event_resolve
-    - health
     - info
     - silence
+    - event_client_list
+    - check_aggregates
+    - check_info
+    - event_list
+    - check_request
+    - check_aggregates_delete
+    - client_list
+    - check_list
     - unsilence
+    - health
+    - event_resolve
+    - event_delete
+    - client_delete
+    - client_history
+    - aggregate_list
+    - client_info
   rules:
     count: 2
     resources:
