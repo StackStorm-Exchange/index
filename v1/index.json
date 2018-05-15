@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526398490,
-        "hash": "a9d054943f865f91c95984e87843df37"
+        "generated_ts": 1526409939,
+        "hash": "91f191063d531bf847f99e79a4d1b724"
     },
     "packs": {
         "acos": {
@@ -5802,21 +5802,21 @@
                 "actions": {
                     "count": 15,
                     "resources": [
-                        "create_deb_from_deb",
-                        "create_deb_from_dir",
-                        "create_deb_from_empty",
-                        "create_deb_from_gem",
                         "create_deb_from_python",
+                        "create_deb_from_deb",
                         "create_deb_from_rpm",
+                        "load_metadata",
+                        "create_deb_from_gem",
+                        "create_rpm_from_rpm",
+                        "create_rpm_from_gem",
                         "create_deb_from_tar",
-                        "create_rpm_from_deb",
+                        "create_deb_from_empty",
+                        "create_rpm_from_python",
+                        "create_deb_from_dir",
                         "create_rpm_from_dir",
                         "create_rpm_from_empty",
-                        "create_rpm_from_gem",
-                        "create_rpm_from_python",
-                        "create_rpm_from_rpm",
-                        "create_rpm_from_tar",
-                        "load_metadata"
+                        "create_rpm_from_deb",
+                        "create_rpm_from_tar"
                     ]
                 }
             },
