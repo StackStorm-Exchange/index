@@ -9,10 +9,10 @@ content:
   actions:
     count: 7
     resources:
-    - create.source
-    - delete.source
-    - get.collector
-    - get.collectors
-    - get.collectors.id
-    - get.sources
     - update.source
+    - get.sources
+    - delete.source
+    - get.collectors
+    - create.source
+    - get.collector
+    - get.collectors.id
