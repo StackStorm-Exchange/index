@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526413615,
-        "hash": "4d97af5eb8a08f56c81b6d3a374d2e0f"
+        "generated_ts": 1526413822,
+        "hash": "3bf959c82478380721b55fa89e9ec0dc"
     },
     "packs": {
         "acos": {
@@ -9192,37 +9192,37 @@
                 "actions": {
                     "count": 31,
                     "resources": [
-                        "apply_address_group",
-                        "apply_address_object",
-                        "apply_security_rule",
-                        "apply_service_group",
-                        "apply_service_object",
-                        "bulk_apply_address_groups",
-                        "bulk_apply_address_objects",
-                        "bulk_apply_security_rules",
                         "bulk_apply_service_groups",
-                        "bulk_apply_service_objects",
-                        "bulk_delete_address_groups",
-                        "bulk_delete_address_objects",
-                        "bulk_delete_security_rules",
-                        "bulk_delete_service_groups",
-                        "bulk_delete_service_objects",
-                        "bulk_register_ip",
-                        "bulk_unregister_ip",
                         "commit",
-                        "commit_all",
                         "delete_address_group",
                         "delete_address_object",
-                        "delete_security_rule",
-                        "delete_service_group",
+                        "unregister_ip",
                         "delete_service_object",
+                        "apply_service_object",
+                        "bulk_apply_service_objects",
                         "get_address_groups",
-                        "get_address_objects",
+                        "apply_address_object",
+                        "bulk_delete_address_objects",
+                        "commit_all",
+                        "apply_address_group",
+                        "bulk_register_ip",
+                        "delete_service_group",
+                        "bulk_apply_address_objects",
                         "get_security_rules",
+                        "bulk_unregister_ip",
+                        "apply_security_rule",
+                        "bulk_apply_address_groups",
+                        "bulk_delete_service_groups",
+                        "bulk_delete_address_groups",
+                        "get_address_objects",
                         "get_service_groups",
+                        "bulk_apply_security_rules",
+                        "bulk_delete_security_rules",
+                        "delete_security_rule",
+                        "apply_service_group",
+                        "bulk_delete_service_objects",
                         "get_service_objects",
-                        "register_ip",
-                        "unregister_ip"
+                        "register_ip"
                     ]
                 },
                 "rules": {
