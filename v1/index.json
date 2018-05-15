@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526358292,
-        "hash": "96c8371294df127581ad34e3b7adba75"
+        "generated_ts": 1526358320,
+        "hash": "780f8d307822963deb709f61e09a6650"
     },
     "packs": {
         "acos": {
@@ -10804,25 +10804,25 @@
                 "actions": {
                     "count": 19,
                     "resources": [
-                        "attach_vlan_to_gw",
-                        "configure_VXLAN_gateway",
-                        "configure_interface",
+                        "verify_vcs_fabric",
+                        "verify_vcs_ready",
+                        "publish_configs_day1",
+                        "get_nsxcntl_client_cert",
                         "configure_nsx_controller",
-                        "configure_switchport_trunk",
-                        "configure_vcenter",
+                        "create_vcs_fabric",
                         "configure_vcs_vip",
-                        "configure_vdx",
-                        "attach_vlan_to_gw_workflow",
-                        "configure_ve_interface",
                         "configure_vlan",
                         "create_nsxcntl_client_cert",
-                        "create_vcs_fabric",
-                        "get_nsxcntl_client_cert",
-                        "get_principal_node",
+                        "configure_vdx",
+                        "configure_VXLAN_gateway",
                         "publish_configs",
-                        "publish_configs_day1",
-                        "verify_vcs_fabric",
-                        "verify_vcs_ready"
+                        "get_principal_node",
+                        "configure_ve_interface",
+                        "attach_vlan_to_gw_workflow",
+                        "configure_vcenter",
+                        "configure_switchport_trunk",
+                        "configure_interface",
+                        "attach_vlan_to_gw"
                     ]
                 }
             },
@@ -10831,7 +10831,7 @@
             "name": "vdx_vtep",
             "ref": "vdx_vtep",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx_vtep",
-            "version": "0.1.2"
+            "version": "0.1.3"
         },
         "victorops": {
             "author": "Aamir",
