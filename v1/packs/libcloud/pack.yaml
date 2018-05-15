@@ -26,31 +26,31 @@ content:
     count: 29
     resources:
     - balancer_attach_member
-    - balancer_list_members
-    - create_balancer
-    - create_container_cluster
-    - create_dns_record
     - create_vm
-    - delete_dns_record
-    - deploy_container
-    - destroy_container
-    - destroy_vm
-    - enable_cdn_for_container
-    - get_container_cdn_url
-    - get_object_cdn_url
-    - import_public_ssh_key
-    - list_balancers
-    - list_container_clusters
-    - list_containers
-    - list_dns_records
-    - list_dns_zones
-    - list_images
-    - list_sizes
-    - list_vms
     - reboot_vm
-    - restart_container
-    - start_container
-    - start_vm
-    - stop_container
-    - stop_vm
+    - list_dns_zones
     - upload_file
+    - list_sizes
+    - deploy_container
+    - restart_container
+    - list_dns_records
+    - stop_vm
+    - create_balancer
+    - enable_cdn_for_container
+    - destroy_vm
+    - list_container_clusters
+    - list_balancers
+    - list_containers
+    - destroy_container
+    - list_vms
+    - get_container_cdn_url
+    - import_public_ssh_key
+    - delete_dns_record
+    - balancer_list_members
+    - start_vm
+    - get_object_cdn_url
+    - create_dns_record
+    - stop_container
+    - list_images
+    - create_container_cluster
+    - start_container
