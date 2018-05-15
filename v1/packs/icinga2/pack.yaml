@@ -12,9 +12,9 @@ content:
   actions:
     count: 3
     resources:
-    - get_service
     - get_status
     - get_host
+    - get_service
   rules:
     count: 1
     resources:
