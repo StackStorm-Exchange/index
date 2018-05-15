@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526423555,
-        "hash": "26cfb5a76d7eef89995aea0fed995134"
+        "generated_ts": 1526424077,
+        "hash": "886870387dcc3e0d41059a5d7c88c0bd"
     },
     "packs": {
         "acos": {
@@ -4990,19 +4990,19 @@
                 "actions": {
                     "count": 5,
                     "resources": [
-                        "get_variables",
                         "get_keys_for_columns",
-                        "get_sheets",
+                        "get_variables",
+                        "set_variables",
                         "get_keys_for_rows",
-                        "set_variables"
+                        "get_sheets"
                     ]
                 }
             },
-            "description": "excel actions to read and write variables to an excel file",
+            "description": "Read and Write Excel spreadsheets",
             "email": "tbraly@brocade.com",
             "name": "excel",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-excel",
-            "version": "0.2.3"
+            "version": "0.2.4"
         },
         "exos": {
             "author": "Extreme Networks",
