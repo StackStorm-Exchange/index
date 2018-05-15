@@ -11,23 +11,23 @@ content:
   actions:
     count: 6
     resources:
-    - announce_success
-    - auth_auth
+    - auth_wrap_demo
     - auth_chatops
     - auth_check
+    - auth_auth
+    - announce_success
     - auth_ping
-    - auth_wrap_demo
   aliases:
     count: 4
     resources:
-    - auth_auth
-    - auth_check
     - auth_demo
+    - auth_check
+    - auth_auth
     - auth_ping
   tests:
     count: 4
     resources:
+    - test_action_auth_check.py
     - duo_base_test_case.py
     - test_action_auth_auth.py
-    - test_action_auth_check.py
     - test_action_auth_ping.py
