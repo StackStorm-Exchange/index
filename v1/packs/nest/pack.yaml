@@ -11,14 +11,14 @@ content:
   actions:
     count: 11
     resources:
-    - get_humidity
-    - get_mode
-    - get_temperature
-    - set_away
-    - set_fan
-    - set_home
-    - set_humidity
-    - set_mode
     - set_temperature
-    - show
+    - get_mode
+    - set_humidity
+    - get_temperature
+    - get_humidity
     - toggle_away
+    - set_home
+    - set_fan
+    - set_away
+    - set_mode
+    - show
