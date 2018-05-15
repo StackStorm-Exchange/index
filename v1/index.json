@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526412988,
-        "hash": "e781e7888a3b29b4a2cc504e7c3f6e28"
+        "generated_ts": 1526413191,
+        "hash": "49e4676ed8b13b66c6ab12a61f8b77f1"
     },
     "packs": {
         "acos": {
@@ -4243,15 +4243,15 @@
                 "actions": {
                     "count": 5,
                     "resources": [
-                        "apply",
-                        "client",
-                        "install",
                         "ohai",
-                        "solo"
+                        "solo",
+                        "apply",
+                        "install",
+                        "client"
                     ]
                 }
             },
-            "description": "st2 chef integration pack",
+            "description": "Chef Configuration Management",
             "email": "info@stackstorm.com",
             "keywords": [
                 "chef",
@@ -4265,7 +4265,7 @@
             "name": "chef",
             "ref": "chef",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-chef",
-            "version": "0.1.1"
+            "version": "0.1.2"
         },
         "circle_ci": {
             "author": "StackStorm dev",
