@@ -11,25 +11,25 @@ content:
   actions:
     count: 7
     resources:
-    - ack_event
-    - host_delete
     - host_get_id
+    - test_credentials
+    - maintenance_delete
     - host_update_status
     - maintenance_create_or_update
-    - maintenance_delete
-    - test_credentials
+    - host_delete
+    - ack_event
   tests:
     count: 9
     resources:
-    - test_action_base.py
-    - test_host_delete.py
-    - test_host_get_id.py
-    - test_host_update_status.py
-    - test_maintenance_create_or_update.py
     - test_maintenance_delete.py
-    - test_test_credentials.py
-    - test_tool_register_st2_config_to_zabbix.py
     - zabbix_base_action_test_case.py
+    - test_host_delete.py
+    - test_tool_register_st2_config_to_zabbix.py
+    - test_test_credentials.py
+    - test_action_base.py
+    - test_maintenance_create_or_update.py
+    - test_host_update_status.py
+    - test_host_get_id.py
   triggers:
     count: 1
     resources:
