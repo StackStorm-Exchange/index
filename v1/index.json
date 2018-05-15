@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526352145,
-        "hash": "7cc3851c90e31bc5680b6ba674e098c1"
+        "generated_ts": 1526352241,
+        "hash": "e77b6cf4e4c76b143738abc4a775dd3c"
     },
     "packs": {
         "acos": {
@@ -318,18 +318,18 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "scan_get_results",
-                        "scan_get_results_by_title",
                         "scan_list_scan_executions",
+                        "scan_get_results_by_title",
+                        "scan_get_results",
                         "scan_list_scans"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
+                        "list_scans",
                         "list_scan_executions",
-                        "get_scan_results",
-                        "list_scans"
+                        "get_scan_results"
                     ]
                 }
             },
@@ -342,7 +342,7 @@
             "name": "alertlogic",
             "ref": "alertlogic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-alertlogic",
-            "version": "0.2.1"
+            "version": "0.2.2"
         },
         "ansible": {
             "author": "StackStorm, Inc.",
