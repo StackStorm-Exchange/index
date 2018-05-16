@@ -7,19 +7,19 @@ keywords:
 - ipv4
 - ipv6
 - geoip
-version: 0.4.2
+version: 0.4.3
 author: Jon Middleton
-email: jon.middleton@pulsant.com
+email: jjm@geeky-and-blonde.me.uk
 content:
   actions:
     count: 7
     resources:
-    - is_valid_hostname
+    - is_valid_ip_port
     - is_valid_asa_nameif
     - geoip
-    - is_valid_ip_port
-    - is_valid_ip
     - is_valid_ipv6
+    - is_valid_ip
+    - is_valid_hostname
     - is_valid_ipv4
   aliases:
     count: 1
@@ -28,10 +28,10 @@ content:
   tests:
     count: 7
     resources:
-    - test_action_geoip.py
     - test_action_is_valid_asa_nameif.py
     - test_action_aliases.py
+    - test_action_is_valid_ip_port.py
     - networking_utils_base_test_case.py
     - test_action_is_valid_hostname.py
-    - test_action_is_valid_ip_port.py
     - test_action_is_valid_ip.py
+    - test_action_geoip.py

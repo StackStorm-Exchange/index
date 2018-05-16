@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526426750,
-        "hash": "dfc66073410d44f6d5ea9462d50c3b27"
+        "generated_ts": 1526480083,
+        "hash": "f4109fa133afc598a06ef01ca1ecde14"
     },
     "packs": {
         "acos": {
@@ -8021,12 +8021,12 @@
                 "actions": {
                     "count": 7,
                     "resources": [
-                        "is_valid_hostname",
+                        "is_valid_ip_port",
                         "is_valid_asa_nameif",
                         "geoip",
-                        "is_valid_ip_port",
-                        "is_valid_ip",
                         "is_valid_ipv6",
+                        "is_valid_ip",
+                        "is_valid_hostname",
                         "is_valid_ipv4"
                     ]
                 },
@@ -8039,18 +8039,18 @@
                 "tests": {
                     "count": 7,
                     "resources": [
-                        "test_action_geoip.py",
                         "test_action_is_valid_asa_nameif.py",
                         "test_action_aliases.py",
+                        "test_action_is_valid_ip_port.py",
                         "networking_utils_base_test_case.py",
                         "test_action_is_valid_hostname.py",
-                        "test_action_is_valid_ip_port.py",
-                        "test_action_is_valid_ip.py"
+                        "test_action_is_valid_ip.py",
+                        "test_action_geoip.py"
                     ]
                 }
             },
             "description": "Useful networking utils for use in workflows.",
-            "email": "jon.middleton@pulsant.com",
+            "email": "jjm@geeky-and-blonde.me.uk",
             "keywords": [
                 "networking",
                 "utilities",
@@ -8061,7 +8061,7 @@
             "name": "networking_utils",
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "version": "0.4.2"
+            "version": "0.4.3"
         },
         "newrelic": {
             "author": "StackStorm, Inc.",
