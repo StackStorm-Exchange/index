@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526480083,
-        "hash": "f4109fa133afc598a06ef01ca1ecde14"
+        "generated_ts": 1526489112,
+        "hash": "3afb890114bac190bc03fc7ecacadcf4"
     },
     "packs": {
         "acos": {
@@ -9036,88 +9036,88 @@
             "version": "0.2.2"
         },
         "orion": {
-            "author": "Jon Middleton",
+            "author": "Encore Technologies",
             "content": {
                 "actions": {
                     "count": 24,
                     "resources": [
-                        "ncm_config_download",
-                        "list_nodes_by_status",
-                        "node_remanage",
-                        "node_discover_and_add_interfaces",
-                        "node_unmanage",
-                        "update_node_poller",
-                        "ncm_execute_script",
-                        "list_nodes_by_poller",
-                        "start_discovery",
-                        "get_node_software_inventory",
                         "list_sdk_verbs",
-                        "agent_delete",
-                        "get_node_id",
-                        "node_status",
+                        "ncm_execute_script",
+                        "ncm_config_download",
+                        "node_remanage",
                         "update_node_custom_properties",
                         "node_create",
-                        "drain_poller",
                         "nodes_pollnow",
-                        "get_discovery_progress",
-                        "list_sdk_verb_args",
-                        "list_node_custom_properties",
+                        "start_discovery",
+                        "update_node_poller",
                         "get_agent_id",
+                        "get_discovery_progress",
+                        "node_discover_and_add_interfaces",
+                        "list_node_custom_properties",
+                        "drain_poller",
+                        "node_status",
+                        "get_node_software_inventory",
+                        "node_delete",
+                        "node_unmanage",
+                        "agent_delete",
                         "add_node_to_ncm",
-                        "node_delete"
+                        "list_nodes_by_status",
+                        "list_nodes_by_poller",
+                        "get_node_id",
+                        "list_sdk_verb_args"
                     ]
                 },
                 "aliases": {
                     "count": 7,
                     "resources": [
-                        "ncm_config_download",
-                        "start_discovery",
                         "list_sdk_verbs",
-                        "node_status",
+                        "ncm_config_download",
                         "node_create",
-                        "list_sdk_verb_args",
-                        "list_node_custom_properties"
+                        "start_discovery",
+                        "list_node_custom_properties",
+                        "node_status",
+                        "list_sdk_verb_args"
                     ]
                 },
                 "rules": {
                     "count": 2,
                     "resources": [
-                        "start_discovery_webhook",
-                        "node_create_webhook"
+                        "node_create_webhook",
+                        "start_discovery_webhook"
                     ]
                 },
                 "tests": {
                     "count": 24,
                     "resources": [
-                        "test_action_list_node_custom_properties.py",
-                        "test_action_list_sdk_verbs.py",
-                        "test_action_list_sdk_verb_args.py",
-                        "test_action_update_node_poller.py",
-                        "test_action_get_node_software_inventory.py",
-                        "test_action_ncm_config_download.py",
-                        "test_action_agent_delete.py",
-                        "test_action_node_remanage.py",
-                        "test_action_node_discover_and_add_interfaces.py",
                         "test_action_start_discovery.py",
-                        "test_action_aliases.py",
-                        "test_action_node_create.py",
-                        "orion_base_action_test_case.py",
-                        "test_action_get_agent_id.py",
-                        "test_action_orion_health.py",
-                        "test_action_nodes_pollnow.py",
-                        "test_action_add_node_to_ncm.py",
+                        "test_action_list_sdk_verb_args.py",
+                        "test_action_get_node_id.py",
+                        "test_action_ncm_config_download.py",
                         "test_action_get_discovery_progress.py",
-                        "test_action_node_delete.py",
-                        "test_action_node_status.py",
+                        "test_action_get_node_software_inventory.py",
                         "test_action_node_unmanage.py",
                         "test_action_ncm_execute_script.py",
-                        "test_action_get_node_id.py",
-                        "test_action_update_node_custom_properties.py"
+                        "test_action_agent_delete.py",
+                        "test_action_add_node_to_ncm.py",
+                        "test_action_orion_health.py",
+                        "test_action_node_delete.py",
+                        "test_action_node_remanage.py",
+                        "test_action_list_sdk_verbs.py",
+                        "orion_base_action_test_case.py",
+                        "test_action_aliases.py",
+                        "test_action_list_node_custom_properties.py",
+                        "test_action_update_node_poller.py",
+                        "test_action_node_status.py",
+                        "test_action_node_create.py",
+                        "test_action_get_agent_id.py",
+                        "test_action_update_node_custom_properties.py",
+                        "test_action_node_discover_and_add_interfaces.py",
+                        "test_action_nodes_pollnow.py"
                     ]
                 }
             },
             "description": "SolarWinds Orion Monitoring Applications",
-            "email": "jon.middleton@pulsant.com",
+            "email": "code@encore.tech",
             "keywords": [
                 "solarwinds",
                 "orion",
@@ -9128,7 +9128,7 @@
             "name": "orion",
             "ref": "orion",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-orion",
-            "version": "0.7.2"
+            "version": "0.7.3"
         },
         "packagecloud": {
             "author": "StackStorm, Inc.",
