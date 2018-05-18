@@ -1,0 +1,28 @@
+{
+    "description": "Create a new Application Profile",
+    "enabled": true,
+    "entry_point": "create_ap.py",
+    "name": "create_ap",
+    "parameters": {
+        "apic": {
+            "description": "Which ACI APIC would you like to connect to",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Field to provide username and password, eg { \"user\":\"username\", \"passwd\": \"secret\" }",
+            "position": 2,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "data": {
+            "description": "json Data to create",
+            "position": 1,
+            "required": true,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

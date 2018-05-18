@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526489559,
-        "hash": "113f63bfca5ac69179a1c10bc5e59f5b"
+        "generated_ts": 1526658572,
+        "hash": "ce714b14a8ec56eb073e5402ce50f700"
     },
     "packs": {
         "acos": {
@@ -4307,6 +4307,68 @@
             "ref": "circle_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle_ci",
             "version": "0.5.2"
+        },
+        "cisco_aci": {
+            "author": "Paul Mulvihill",
+            "content": {
+                "actions": {
+                    "count": 15,
+                    "resources": [
+                        "get_aps",
+                        "get_epgs",
+                        "setup_epg",
+                        "get_static_bindings",
+                        "test_endpoint",
+                        "get_sessionid",
+                        "create_bd",
+                        "get_bds",
+                        "create_ap",
+                        "get_assigned_ports",
+                        "create_epg",
+                        "get_tenants",
+                        "create_static_binding",
+                        "get_vrfs",
+                        "link_domain"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "Setup ACI EPG"
+                    ]
+                },
+                "tests": {
+                    "count": 15,
+                    "resources": [
+                        "test_action_create_static_binding.py",
+                        "test_action_get_tenants.py",
+                        "test_action_get_aps.py",
+                        "test_action_get_bds.py",
+                        "test_action_get_assigned_ports.py",
+                        "test_action_get_vrfs.py",
+                        "test_action_test_endpoint.py",
+                        "test_action_get_static_bindings.py",
+                        "aci_base_action_test_case.py",
+                        "test_action_get_epgs.py",
+                        "test_action_create_epg.py",
+                        "test_action_create_bd.py",
+                        "test_action_get_sessionid.py",
+                        "test_action_create_ap.py",
+                        "test_action_link_domain.py"
+                    ]
+                }
+            },
+            "description": "Cisco ACI pack",
+            "email": "paul.mulvihill@pulsant.com",
+            "keywords": [
+                "cisco",
+                "aci",
+                "networking"
+            ],
+            "name": "Cisco ACI",
+            "ref": "cisco_aci",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_aci",
+            "version": "0.1.0"
         },
         "cisco_spark": {
             "author": "Anthony Shaw",

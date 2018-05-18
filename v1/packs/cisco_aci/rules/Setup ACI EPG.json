@@ -1,0 +1,34 @@
+{
+    "action": {
+        "parameters": {
+            "apic": "{{trigger.body.apic}}",
+            "credentials": "{{trigger.body.credentials}}",
+            "epg_spec": "{{trigger.body.epg_spec}}"
+        },
+        "ref": "cisco_aci.setup_epg"
+    },
+    "criteria": {
+        "trigger.body.apic": {
+            "pattern": "^value$",
+            "type": "exists"
+        },
+        "trigger.body.credentials": {
+            "pattern": "^value$",
+            "type": "exists"
+        },
+        "trigger.body.epg_spec": {
+            "pattern": "^value$",
+            "type": "exists"
+        }
+    },
+    "description": "Deploy EPG, BD, Domain link and Static Bindings",
+    "enabled": true,
+    "name": "Setup ACI EPG",
+    "pack": "cisco_aci",
+    "trigger": {
+        "parameters": {
+            "url": "aci_setup_epg"
+        },
+        "type": "core.st2.webhook"
+    }
+}

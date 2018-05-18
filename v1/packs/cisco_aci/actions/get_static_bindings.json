@@ -1,0 +1,34 @@
+{
+    "description": "Retrieve list of Tenants",
+    "enabled": true,
+    "entry_point": "get_static_bindings.py",
+    "name": "get_static_bindings",
+    "parameters": {
+        "apic": {
+            "description": "Which ACI APIC would you like to connect to",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "app_profile": {
+            "description": "Which Application Profile within the tenant to retrieve static bindings for",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Field to provide username and password, eg { \"user\":\"username\", \"passwd\": \"secret\" }",
+            "position": 3,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "tenant": {
+            "description": "Which tenant to retrieve static bindings for",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

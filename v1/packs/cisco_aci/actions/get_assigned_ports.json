@@ -1,0 +1,22 @@
+{
+    "description": "Retrieve list of Assigned Ports",
+    "enabled": true,
+    "entry_point": "get_assigned_ports.py",
+    "name": "get_assigned_ports",
+    "parameters": {
+        "apic": {
+            "description": "Which ACI APIC would you like to connect to",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Field to provide username and password, eg { \"user\":\"username\", \"passwd\": \"secret\" }",
+            "position": 1,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

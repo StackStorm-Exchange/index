@@ -1,0 +1,91 @@
+{
+    "apic": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/apics"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "apics": {
+        "additionalProperties": false,
+        "properties": {
+            "address": {
+                "description": "Hostname or IP address of APIC.",
+                "required": true,
+                "type": "string"
+            },
+            "domains": {
+                "patternProperties": {
+                    "^\\w+": {
+                        "$ref": "#/properties/domains"
+                    }
+                },
+                "type": "object"
+            },
+            "leafs": {
+                "patternproperties": {
+                    "^\\w+": {
+                        "$ref": "#/properties/leafs"
+                    }
+                },
+                "type": "object"
+            },
+            "passwd": {
+                "description": "The password of the specified user. Minimum requirement is a read only account.",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "user": {
+                "description": "Authentication user-id for the APIC. Minimum requirement is a read only account.",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "domains": {
+        "additionalProperties": false,
+        "description": "Domain name to be used in as domain",
+        "properties": {
+            "tdn": {
+                "description": "Domain TDN",
+                "required": false,
+                "type": "string"
+            },
+            "type": {
+                "description": "Type of domain",
+                "required": true,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "leafs": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "description": "Name of the Pod",
+                "patternProperties": {
+                    "^\\w+": {
+                        "Properties": {
+                            "path": {
+                                "required": true,
+                                "type": "integer"
+                            }
+                        },
+                        "description": "Leaf Switch identifer",
+                        "required": true,
+                        "type": "object"
+                    }
+                },
+                "required": true,
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}
