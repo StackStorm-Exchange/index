@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526658572,
-        "hash": "ce714b14a8ec56eb073e5402ce50f700"
+        "generated_ts": 1526841091,
+        "hash": "eabc64e325496b438206eabb4d1e929f"
     },
     "packs": {
         "acos": {
@@ -7593,24 +7593,24 @@
                 "actions": {
                     "count": 18,
                     "resources": [
-                        "action_host",
-                        "delete_host",
+                        "test_connection_to_host",
                         "dismiss_event",
-                        "get_event",
+                        "summary_status",
+                        "update_host",
+                        "list_uptime_hosts",
+                        "summary_events",
                         "get_host",
+                        "session_put",
                         "get_status_host",
+                        "session_delete",
+                        "list_hosts",
+                        "session_get",
+                        "get_event",
+                        "action_host",
                         "get_uptime_hosts",
                         "list_events",
-                        "list_hosts",
                         "list_status_hosts",
-                        "list_uptime_hosts",
-                        "session_delete",
-                        "session_get",
-                        "session_put",
-                        "summary_events",
-                        "summary_status",
-                        "test_connection_to_host",
-                        "update_host"
+                        "delete_host"
                     ]
                 },
                 "sensors": {
@@ -7620,7 +7620,7 @@
                     ]
                 }
             },
-            "description": "st2 content pack containing mmonit integrations",
+            "description": "mmonit integrations",
             "email": "itxakaserrano@gmail.com",
             "keywords": [
                 "monitoring",
@@ -7629,7 +7629,7 @@
             "name": "mmonit",
             "ref": "mmonit",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mmonit",
-            "version": "0.4.1"
+            "version": "0.4.2"
         },
         "mqtt": {
             "author": "James Fryman",
