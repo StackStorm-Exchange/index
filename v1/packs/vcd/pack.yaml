@@ -1,0 +1,23 @@
+ref: vcd
+name: VCloud Director
+description: Vcloud Director integrations
+version: 0.1.0
+author: Paul Mulvihill
+email: paul.mulvihill@pulsant.com
+keywords:
+- vmware
+- vcloud
+content:
+  actions:
+    count: 3
+    resources:
+    - get_org
+    - get_pvdcs
+    - get_orgs
+  tests:
+    count: 4
+    resources:
+    - test_action_get_pvdcs.py
+    - test_action_get_orgs.py
+    - vcd_base_action_test_case.py
+    - test_action_get_org.py

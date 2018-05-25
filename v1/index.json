@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1526841091,
-        "hash": "eabc64e325496b438206eabb4d1e929f"
+        "generated_ts": 1527242528,
+        "hash": "ad14fd963e16926e60cdd6dddec3456d"
     },
     "packs": {
         "acos": {
@@ -10757,6 +10757,38 @@
             "ref": "vault",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vault",
             "version": "0.4.2"
+        },
+        "vcd": {
+            "author": "Paul Mulvihill",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "get_org",
+                        "get_pvdcs",
+                        "get_orgs"
+                    ]
+                },
+                "tests": {
+                    "count": 4,
+                    "resources": [
+                        "test_action_get_pvdcs.py",
+                        "test_action_get_orgs.py",
+                        "vcd_base_action_test_case.py",
+                        "test_action_get_org.py"
+                    ]
+                }
+            },
+            "description": "Vcloud Director integrations",
+            "email": "paul.mulvihill@pulsant.com",
+            "keywords": [
+                "vmware",
+                "vcloud"
+            ],
+            "name": "VCloud Director",
+            "ref": "vcd",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vcd",
+            "version": "0.1.0"
         },
         "vdx": {
             "author": "StackStorm, Inc.",
