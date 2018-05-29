@@ -18,39 +18,39 @@ keywords:
 - cloudsigma
 - gce
 - google compute engine
-version: 0.4.2
+version: 0.4.3
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 29
     resources:
-    - balancer_attach_member
-    - create_vm
-    - reboot_vm
-    - list_dns_zones
-    - upload_file
-    - list_sizes
-    - deploy_container
-    - restart_container
-    - list_dns_records
-    - stop_vm
-    - create_balancer
-    - enable_cdn_for_container
-    - destroy_vm
-    - list_container_clusters
-    - list_balancers
-    - list_containers
-    - destroy_container
-    - list_vms
-    - get_container_cdn_url
-    - import_public_ssh_key
-    - delete_dns_record
-    - balancer_list_members
-    - start_vm
     - get_object_cdn_url
+    - restart_container
+    - deploy_container
+    - get_container_cdn_url
     - create_dns_record
-    - stop_container
-    - list_images
+    - balancer_attach_member
+    - destroy_container
+    - list_dns_zones
+    - start_vm
+    - create_vm
     - create_container_cluster
+    - list_images
+    - stop_vm
+    - list_balancers
+    - list_sizes
+    - enable_cdn_for_container
     - start_container
+    - delete_dns_record
+    - list_dns_records
+    - list_container_clusters
+    - stop_container
+    - create_balancer
+    - reboot_vm
+    - upload_file
+    - import_public_ssh_key
+    - list_containers
+    - destroy_vm
+    - balancer_list_members
+    - list_vms

@@ -11,15 +11,47 @@
     },
     "providers": {
         "additionalProperties": false,
+        "anyOf": [
+            {
+                "properties": {
+                    "api_key": {
+                        "required": true
+                    },
+                    "api_secret": {
+                        "required": true
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "api_key": {
+                        "required": true
+                    },
+                    "api_secret": {
+                        "required": false
+                    }
+                }
+            },
+            {
+                "properties": {
+                    "api_key": {
+                        "required": false
+                    },
+                    "api_secret": {
+                        "required": true
+                    }
+                }
+            }
+        ],
         "properties": {
             "api_key": {
                 "description": "Credentials for provider",
-                "required": true,
+                "required": false,
                 "type": "string"
             },
             "api_secret": {
                 "description": "Secret for provider",
-                "required": true,
+                "required": false,
                 "secret": true,
                 "type": "string"
             },

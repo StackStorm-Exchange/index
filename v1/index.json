@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1527609762,
-        "hash": "8db72ae29ed2deab41340f5689d823f1"
+        "generated_ts": 1527609836,
+        "hash": "c1e03b183a6b50815a93cef0936c1c7d"
     },
     "packs": {
         "acos": {
@@ -7231,35 +7231,35 @@
                 "actions": {
                     "count": 29,
                     "resources": [
-                        "balancer_attach_member",
-                        "create_vm",
-                        "reboot_vm",
-                        "list_dns_zones",
-                        "upload_file",
-                        "list_sizes",
-                        "deploy_container",
-                        "restart_container",
-                        "list_dns_records",
-                        "stop_vm",
-                        "create_balancer",
-                        "enable_cdn_for_container",
-                        "destroy_vm",
-                        "list_container_clusters",
-                        "list_balancers",
-                        "list_containers",
-                        "destroy_container",
-                        "list_vms",
-                        "get_container_cdn_url",
-                        "import_public_ssh_key",
-                        "delete_dns_record",
-                        "balancer_list_members",
-                        "start_vm",
                         "get_object_cdn_url",
+                        "restart_container",
+                        "deploy_container",
+                        "get_container_cdn_url",
                         "create_dns_record",
-                        "stop_container",
-                        "list_images",
+                        "balancer_attach_member",
+                        "destroy_container",
+                        "list_dns_zones",
+                        "start_vm",
+                        "create_vm",
                         "create_container_cluster",
-                        "start_container"
+                        "list_images",
+                        "stop_vm",
+                        "list_balancers",
+                        "list_sizes",
+                        "enable_cdn_for_container",
+                        "start_container",
+                        "delete_dns_record",
+                        "list_dns_records",
+                        "list_container_clusters",
+                        "stop_container",
+                        "create_balancer",
+                        "reboot_vm",
+                        "upload_file",
+                        "import_public_ssh_key",
+                        "list_containers",
+                        "destroy_vm",
+                        "balancer_list_members",
+                        "list_vms"
                     ]
                 }
             },
@@ -7286,7 +7286,7 @@
             "name": "libcloud",
             "ref": "libcloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
-            "version": "0.4.2"
+            "version": "0.4.3"
         },
         "librato": {
             "author": "James Fryman",
