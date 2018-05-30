@@ -1,0 +1,20 @@
+{
+    "firewall_ip": {
+        "description": "IP/Endpoint of Checkpoint appliance. (e.g.: 'fqdn.to.device' or '10.10.10.10')",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "Checkpoint password",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "username": {
+        "description": "Checkpoint username",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

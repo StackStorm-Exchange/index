@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1527687861,
-        "hash": "52f9b637a89c821e58955865b3efc88f"
+        "generated_ts": 1527719349,
+        "hash": "0d4463b62cf2d83df2728b18bc882dfa"
     },
     "packs": {
         "acos": {
@@ -4236,6 +4236,36 @@
             "ref": "check_mk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-check_mk",
             "version": "0.2.1"
+        },
+        "checkpoint": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "create_checkpoint_policy",
+                        "delete_checkpoint_policy"
+                    ]
+                },
+                "rules": {
+                    "count": 2,
+                    "resources": [
+                        "create_policy",
+                        "delete_policy"
+                    ]
+                }
+            },
+            "description": "St2 integration with CheckPoint Firewall",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "firewalls",
+                "threat",
+                "security"
+            ],
+            "name": "checkpoint",
+            "ref": "checkpoint",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-checkpoint",
+            "version": "0.0.1"
         },
         "chef": {
             "author": "StackStorm, Inc.",

@@ -1,0 +1,26 @@
+{
+    "action": {
+        "parameters": {
+            "threat_ip": "{{trigger.body.threat_ip}}"
+        },
+        "ref": "checkpoint.delete_policy"
+    },
+    "criteria": {},
+    "description": "Delete thread IP from policy table",
+    "enabled": true,
+    "name": "delete_policy",
+    "pack": "checkpoint",
+    "ref": "checkpoint.delete_policy",
+    "tags": [],
+    "trigger": {
+        "parameters": {
+            "url": "delete_policy"
+        },
+        "ref": "standard",
+        "type": "core.st2.webhook"
+    },
+    "type": {
+        "parameters": null,
+        "ref": "standard"
+    }
+}

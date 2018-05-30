@@ -1,0 +1,15 @@
+{
+    "description": "Delete checkpoint Policy",
+    "enabled": true,
+    "entry_point": "delete_checkpoint_policy.py",
+    "name": "delete_checkpoint_policy",
+    "pack": "checkpoint",
+    "parameters": {
+        "threat_ip": {
+            "description": "Threat IP address that is going to be deleted.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
