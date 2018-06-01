@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1527876731,
-        "hash": "d70c27fc1abd237dc4c5ab2805ab1d06"
+        "generated_ts": 1527894203,
+        "hash": "ac1de87c4f8f64262cfb528137033206"
     },
     "packs": {
         "acos": {
@@ -5894,30 +5894,39 @@
                 "actions": {
                     "count": 15,
                     "resources": [
-                        "create_deb_from_python",
-                        "create_deb_from_deb",
+                        "create_rpm_from_empty",
+                        "create_deb_from_gem",
+                        "create_rpm_from_tar",
+                        "create_rpm_from_rpm",
                         "create_deb_from_rpm",
                         "load_metadata",
-                        "create_deb_from_gem",
-                        "create_rpm_from_rpm",
-                        "create_rpm_from_gem",
-                        "create_deb_from_tar",
-                        "create_deb_from_empty",
-                        "create_rpm_from_python",
                         "create_deb_from_dir",
+                        "create_rpm_from_python",
+                        "create_deb_from_python",
                         "create_rpm_from_dir",
-                        "create_rpm_from_empty",
+                        "create_deb_from_deb",
                         "create_rpm_from_deb",
-                        "create_rpm_from_tar"
+                        "create_deb_from_empty",
+                        "create_deb_from_tar",
+                        "create_rpm_from_gem"
                     ]
                 }
             },
-            "description": "fpm",
+            "description": "StackStorm Integration Pack for use with the fpm package for building system packages (rpm, deb, python, gem, etc.)",
             "email": "jfryman@FryBook-2.local",
+            "keywords": [
+                "fpm",
+                "rpm",
+                "deb",
+                "gem",
+                "python",
+                "egg",
+                "ruby"
+            ],
             "name": "fpm",
             "ref": "fpm",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fpm",
-            "version": "0.1.0"
+            "version": "0.1.1"
         },
         "freight": {
             "author": "James Fryman",

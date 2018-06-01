@@ -1,25 +1,34 @@
 ref: fpm
 name: fpm
-description: fpm
-version: 0.1.0
+description: StackStorm Integration Pack for use with the fpm package for building
+  system packages (rpm, deb, python, gem, etc.)
+keywords:
+- fpm
+- rpm
+- deb
+- gem
+- python
+- egg
+- ruby
+version: 0.1.1
 author: jfryman
 email: jfryman@FryBook-2.local
 content:
   actions:
     count: 15
     resources:
-    - create_deb_from_python
-    - create_deb_from_deb
+    - create_rpm_from_empty
+    - create_deb_from_gem
+    - create_rpm_from_tar
+    - create_rpm_from_rpm
     - create_deb_from_rpm
     - load_metadata
-    - create_deb_from_gem
-    - create_rpm_from_rpm
-    - create_rpm_from_gem
-    - create_deb_from_tar
-    - create_deb_from_empty
-    - create_rpm_from_python
     - create_deb_from_dir
+    - create_rpm_from_python
+    - create_deb_from_python
     - create_rpm_from_dir
-    - create_rpm_from_empty
+    - create_deb_from_deb
     - create_rpm_from_deb
-    - create_rpm_from_tar
+    - create_deb_from_empty
+    - create_deb_from_tar
+    - create_rpm_from_gem
