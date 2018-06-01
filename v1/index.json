@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1527719349,
-        "hash": "0d4463b62cf2d83df2728b18bc882dfa"
+        "generated_ts": 1527876731,
+        "hash": "d70c27fc1abd237dc4c5ab2805ab1d06"
     },
     "packs": {
         "acos": {
@@ -8111,33 +8111,35 @@
             "author": "Jon Middleton",
             "content": {
                 "actions": {
-                    "count": 7,
+                    "count": 8,
                     "resources": [
                         "is_valid_ip_port",
-                        "is_valid_asa_nameif",
-                        "geoip",
-                        "is_valid_ipv6",
-                        "is_valid_ip",
                         "is_valid_hostname",
-                        "is_valid_ipv4"
+                        "is_valid_ip",
+                        "ping",
+                        "is_valid_ipv4",
+                        "is_valid_ipv6",
+                        "is_valid_asa_nameif",
+                        "geoip"
                     ]
                 },
                 "aliases": {
-                    "count": 1,
+                    "count": 2,
                     "resources": [
+                        "ping",
                         "geoip"
                     ]
                 },
                 "tests": {
                     "count": 7,
                     "resources": [
-                        "test_action_is_valid_asa_nameif.py",
                         "test_action_aliases.py",
-                        "test_action_is_valid_ip_port.py",
-                        "networking_utils_base_test_case.py",
-                        "test_action_is_valid_hostname.py",
                         "test_action_is_valid_ip.py",
-                        "test_action_geoip.py"
+                        "test_action_geoip.py",
+                        "test_action_is_valid_hostname.py",
+                        "networking_utils_base_test_case.py",
+                        "test_action_is_valid_asa_nameif.py",
+                        "test_action_is_valid_ip_port.py"
                     ]
                 }
             },
@@ -8148,12 +8150,13 @@
                 "utilities",
                 "ipv4",
                 "ipv6",
-                "geoip"
+                "geoip",
+                "ping"
             ],
             "name": "networking_utils",
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "version": "0.4.3"
+            "version": "0.4.4"
         },
         "newrelic": {
             "author": "StackStorm, Inc.",
