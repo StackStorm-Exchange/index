@@ -1,0 +1,17 @@
+{
+    "description": "Get a detailed object query",
+    "enabled": true,
+    "entry_point": "get_object_detailed.py",
+    "name": "get_object_detailed",
+    "parameters": {
+        "fields": {
+            "required": true,
+            "type": "array"
+        },
+        "object_type": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

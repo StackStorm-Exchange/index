@@ -1,0 +1,14 @@
+{
+    "description": "Get IPv4 addresses",
+    "enabled": true,
+    "entry_point": "get_object.py",
+    "name": "get_ipv4address",
+    "parameters": {
+        "object_type": {
+            "default": "ipv4address",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

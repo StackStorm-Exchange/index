@@ -1,0 +1,29 @@
+{
+    "description": "Get IPv4 fixed addresses",
+    "enabled": true,
+    "entry_point": "get_object.py",
+    "name": "get_fixedaddress_ipv4",
+    "parameters": {
+        "fields": {
+            "default": [
+                null
+            ],
+            "description": "Fields to show in the result",
+            "type": "array"
+        },
+        "ipv4addr": {
+            "description": "filter by ip4 address",
+            "type": "string"
+        },
+        "network_view": {
+            "description": "filter by network view",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "fixedaddress",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

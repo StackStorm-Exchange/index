@@ -1,0 +1,22 @@
+{
+    "description": "Get PTR Records",
+    "enabled": true,
+    "entry_point": "get_object_detailed.py",
+    "name": "get_ptrrecord",
+    "parameters": {
+        "fields": {
+            "default": [
+                "ptrdname",
+                "view"
+            ],
+            "description": "Fields to return",
+            "type": "array"
+        },
+        "object_type": {
+            "default": "record:ptr",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

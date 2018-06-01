@@ -1,0 +1,29 @@
+{
+    "description": "Get network users",
+    "enabled": true,
+    "entry_point": "get_object_detailed.py",
+    "name": "get_networkuser",
+    "parameters": {
+        "fields": {
+            "default": [
+                "address",
+                "domainname",
+                "name",
+                "network_view",
+                "user_status"
+            ],
+            "description": "Fields to return",
+            "type": "array"
+        },
+        "name": {
+            "description": "Filter by name",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "networkuser",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

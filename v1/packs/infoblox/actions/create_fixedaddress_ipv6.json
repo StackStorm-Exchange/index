@@ -1,0 +1,34 @@
+{
+    "description": "Create a fixed IPv6 address",
+    "enabled": true,
+    "entry_point": "create_object.py",
+    "name": "create_fixedaddress_ipv6",
+    "parameters": {
+        "duid": {
+            "description": "The DUID value for this IPv6 fixed address.",
+            "required": true,
+            "type": "string"
+        },
+        "ipv6addr": {
+            "description": "The IPv6 Address of the DHCP IPv6 fixed address. Supports range references",
+            "required": true,
+            "type": "string"
+        },
+        "ipv6prefix": {
+            "description": "The IPv6 Address prefix of the DHCP IPv6 fixed address.",
+            "required": true,
+            "type": "string"
+        },
+        "ipv6prefix_bits": {
+            "description": "Prefix bits of the DHCP IPv6 fixed address.",
+            "required": true,
+            "type": "integer"
+        },
+        "object_type": {
+            "default": "ipv6fixedaddress",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

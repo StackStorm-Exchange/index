@@ -1,0 +1,31 @@
+{
+    "description": "Get IPv6 fixed addresses",
+    "enabled": true,
+    "entry_point": "get_object_detailed.py",
+    "name": "get_fixedaddress_ipv6",
+    "parameters": {
+        "fields": {
+            "default": [
+                "duid",
+                "ipv6addr",
+                "network_view"
+            ],
+            "description": "Fields to show in the result",
+            "type": "array"
+        },
+        "ipv4addr": {
+            "description": "filter by ip4 address",
+            "type": "string"
+        },
+        "network_view": {
+            "description": "filter by network view",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "ipv6fixedaddress",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

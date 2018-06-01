@@ -1,0 +1,27 @@
+{
+    "hostname": {
+        "description": "Hostname of Infloblox",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "password": {
+        "description": "Password for authenticating to Infloblox",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "username": {
+        "default": "alphonse",
+        "description": "Username for authenticating to Infloblox",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "verify_ssl": {
+        "default": true,
+        "description": "Verify SSL of Infoblox API",
+        "required": true,
+        "type": "boolean"
+    }
+}

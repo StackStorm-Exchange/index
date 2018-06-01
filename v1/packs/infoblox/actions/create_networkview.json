@@ -1,0 +1,22 @@
+{
+    "description": "Create a network view",
+    "enabled": true,
+    "entry_point": "create_object.py",
+    "name": "create_networkview",
+    "parameters": {
+        "comment": {
+            "description": "Comment for the network view",
+            "type": "string"
+        },
+        "name": {
+            "required": true,
+            "type": "string"
+        },
+        "object_type": {
+            "default": "networkview",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,22 @@
+{
+    "description": "Create CNAME records",
+    "enabled": true,
+    "entry_point": "create_object.py",
+    "name": "create_cnamerecord",
+    "parameters": {
+        "canonical": {
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "required": true,
+            "type": "string"
+        },
+        "object_type": {
+            "default": "record:cname",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

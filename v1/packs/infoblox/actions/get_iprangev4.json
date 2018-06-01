@@ -1,0 +1,22 @@
+{
+    "description": "Get IPv4 ranges",
+    "enabled": true,
+    "entry_point": "get_object.py",
+    "name": "get_iprangev4",
+    "parameters": {
+        "end_addr": {
+            "description": "end of IP range",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "iprangev4",
+            "immutable": true,
+            "type": "string"
+        },
+        "start_addr": {
+            "description": "start of IP range",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

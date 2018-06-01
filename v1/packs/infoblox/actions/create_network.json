@@ -1,0 +1,22 @@
+{
+    "description": "Create a network",
+    "enabled": true,
+    "entry_point": "create_object.py",
+    "name": "create_network",
+    "parameters": {
+        "comment": {
+            "description": "comment",
+            "type": "string"
+        },
+        "network": {
+            "description": "network",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "network",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

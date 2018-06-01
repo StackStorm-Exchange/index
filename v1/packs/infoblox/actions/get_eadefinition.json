@@ -1,0 +1,14 @@
+{
+    "description": "The structure describes what to do with descendant\u2019s extensible attribute, if the value is different from the parent\u2019s.",
+    "enabled": true,
+    "entry_point": "get_object.py",
+    "name": "get_eadefinition",
+    "parameters": {
+        "object_type": {
+            "default": "extensibleattributedef",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

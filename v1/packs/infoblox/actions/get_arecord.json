@@ -1,0 +1,35 @@
+{
+    "description": "Get A Records",
+    "enabled": true,
+    "entry_point": "get_object_detailed.py",
+    "name": "get_arecord",
+    "parameters": {
+        "fields": {
+            "default": [
+                "ipv4addr",
+                "name",
+                "view"
+            ],
+            "description": "Fields to return",
+            "type": "array"
+        },
+        "ipv4addr": {
+            "description": "Filter by IPv4 address",
+            "type": "string"
+        },
+        "name": {
+            "description": "Filter by record name",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "record:a",
+            "immutable": true,
+            "type": "string"
+        },
+        "view": {
+            "description": "Filter by DNS view",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

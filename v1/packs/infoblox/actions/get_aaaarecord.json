@@ -1,0 +1,35 @@
+{
+    "description": "Get AAAA Records",
+    "enabled": true,
+    "entry_point": "get_object_detailed.py",
+    "name": "get_aaaarecord",
+    "parameters": {
+        "fields": {
+            "default": [
+                "ipv6addr",
+                "name",
+                "view"
+            ],
+            "description": "Fields to return",
+            "type": "array"
+        },
+        "ipv6addr": {
+            "description": "Filter by IPv6 address",
+            "type": "string"
+        },
+        "name": {
+            "description": "Filter by record name",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "record:aaaa",
+            "immutable": true,
+            "type": "string"
+        },
+        "view": {
+            "description": "Filter by DNS view",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

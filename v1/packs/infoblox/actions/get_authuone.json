@@ -1,0 +1,18 @@
+{
+    "description": "Get authoritative zones",
+    "enabled": true,
+    "entry_point": "get_object.py",
+    "name": "get_authuone",
+    "parameters": {
+        "fqdn": {
+            "description": "fully qualified domain name",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "zone_auth",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

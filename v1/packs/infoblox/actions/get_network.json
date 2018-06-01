@@ -1,0 +1,26 @@
+{
+    "description": "Get networks",
+    "enabled": true,
+    "entry_point": "get_object_detailed.py",
+    "name": "get_network",
+    "parameters": {
+        "fields": {
+            "default": [
+                "name",
+                "comment"
+            ],
+            "description": "Fields to return",
+            "type": "array"
+        },
+        "network": {
+            "description": "The network address, in IPv4 Address/CIDR format",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "network",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

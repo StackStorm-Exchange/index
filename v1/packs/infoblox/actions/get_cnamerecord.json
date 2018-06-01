@@ -1,0 +1,31 @@
+{
+    "description": "Get CNAME records",
+    "enabled": true,
+    "entry_point": "get_object_detailed.py",
+    "name": "get_cnamerecord",
+    "parameters": {
+        "fields": {
+            "default": [
+                "canonical",
+                "name",
+                "view"
+            ],
+            "description": "Fields to return",
+            "type": "array"
+        },
+        "name": {
+            "description": "Filter by name",
+            "type": "string"
+        },
+        "object_type": {
+            "default": "record:cname",
+            "immutable": true,
+            "type": "string"
+        },
+        "zone": {
+            "description": "Filter by zone",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

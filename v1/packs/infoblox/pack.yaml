@@ -1,0 +1,46 @@
+ref: infoblox
+name: infoblox
+description: Infoblox IPAM, DNS and DHCP management
+version: 0.1.0
+keywords:
+- IPAM
+- DNS
+- DHCP
+- Infoblox
+author: Dimension Data
+email: noreply@dimensiondata.com
+content:
+  actions:
+    count: 31
+    resources:
+    - get_arecord
+    - get_fixedaddress_ipv6
+    - get_authuone
+    - get_aaaarecord
+    - get_object
+    - get_iprangev4
+    - create_fixedaddress_ipv6
+    - create_aaaarecord
+    - get_ipv4address
+    - get_eadefinition
+    - get_hostrecord
+    - get_networkview
+    - get_ipv6network
+    - create_ipv6ptrrecord
+    - get_dns_view
+    - create_network
+    - delete_object
+    - get_cnamerecord
+    - create_cnamerecord
+    - create_fixedaddress_ipv4
+    - get_object_detailed
+    - get_member
+    - get_network
+    - create_fixedaddress_ipv4_in_network
+    - create_arecord
+    - get_networkuser
+    - create_ipv4ptrrecord
+    - get_ptrrecord
+    - get_ipv6address
+    - get_fixedaddress_ipv4
+    - create_networkview

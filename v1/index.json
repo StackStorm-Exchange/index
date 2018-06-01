@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1527894203,
-        "hash": "ac1de87c4f8f64262cfb528137033206"
+        "generated_ts": 1527895769,
+        "hash": "29247aa7a4c42c42e945e3913d20a87f"
     },
     "packs": {
         "acos": {
@@ -6551,6 +6551,59 @@
             "ref": "icinga2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-icinga2",
             "version": "0.3.3"
+        },
+        "infoblox": {
+            "author": "Dimension Data",
+            "content": {
+                "actions": {
+                    "count": 31,
+                    "resources": [
+                        "get_arecord",
+                        "get_fixedaddress_ipv6",
+                        "get_authuone",
+                        "get_aaaarecord",
+                        "get_object",
+                        "get_iprangev4",
+                        "create_fixedaddress_ipv6",
+                        "create_aaaarecord",
+                        "get_ipv4address",
+                        "get_eadefinition",
+                        "get_hostrecord",
+                        "get_networkview",
+                        "get_ipv6network",
+                        "create_ipv6ptrrecord",
+                        "get_dns_view",
+                        "create_network",
+                        "delete_object",
+                        "get_cnamerecord",
+                        "create_cnamerecord",
+                        "create_fixedaddress_ipv4",
+                        "get_object_detailed",
+                        "get_member",
+                        "get_network",
+                        "create_fixedaddress_ipv4_in_network",
+                        "create_arecord",
+                        "get_networkuser",
+                        "create_ipv4ptrrecord",
+                        "get_ptrrecord",
+                        "get_ipv6address",
+                        "get_fixedaddress_ipv4",
+                        "create_networkview"
+                    ]
+                }
+            },
+            "description": "Infoblox IPAM, DNS and DHCP management",
+            "email": "noreply@dimensiondata.com",
+            "keywords": [
+                "IPAM",
+                "DNS",
+                "DHCP",
+                "Infoblox"
+            ],
+            "name": "infoblox",
+            "ref": "infoblox",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-infoblox",
+            "version": "0.1.0"
         },
         "ipcam": {
             "author": "StackStorm, Inc.",

@@ -1,0 +1,24 @@
+{
+    "description": "Create an AAAA record",
+    "enabled": true,
+    "entry_point": "create_object.py",
+    "name": "create_aaaarecord",
+    "parameters": {
+        "ipv6addr": {
+            "description": "IPv6 address",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The record name, e.g. www",
+            "required": true,
+            "type": "string"
+        },
+        "object_type": {
+            "default": "record:aaaa",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
