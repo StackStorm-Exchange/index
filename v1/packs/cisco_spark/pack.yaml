@@ -6,33 +6,34 @@ keywords:
 - spark
 - video
 - chat
-version: 0.4.0
+- bot
+version: 0.5.0
 author: Anthony Shaw
 email: anthonyshaw@apache.org
 content:
   actions:
     count: 20
     resources:
-    - create_team
-    - create_webhook
-    - delete_webhook
-    - list_rooms
     - delete_room
-    - create_room
+    - update_team
+    - list_rooms
     - get_team
-    - get_room
+    - handle_webhook
     - update_room
+    - get_webhook
+    - delete_webhook
+    - create_room
+    - delete_team
+    - create_team
     - delete_message
     - send_message
-    - delete_team
-    - list_teams
-    - handle_webhook
-    - update_team
-    - get_webhook
+    - create_webhook
     - update_webhook
+    - get_room
+    - list_teams
     - get_message
-    - list_webhooks
     - list_messages
+    - list_webhooks
   rules:
     count: 1
     resources:

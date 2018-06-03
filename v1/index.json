@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1527895769,
-        "hash": "29247aa7a4c42c42e945e3913d20a87f"
+        "generated_ts": 1528040859,
+        "hash": "4e726827618102db3d7de4f34749389c"
     },
     "packs": {
         "acos": {
@@ -4406,26 +4406,26 @@
                 "actions": {
                     "count": 20,
                     "resources": [
-                        "create_team",
-                        "create_webhook",
-                        "delete_webhook",
-                        "list_rooms",
                         "delete_room",
-                        "create_room",
+                        "update_team",
+                        "list_rooms",
                         "get_team",
-                        "get_room",
+                        "handle_webhook",
                         "update_room",
+                        "get_webhook",
+                        "delete_webhook",
+                        "create_room",
+                        "delete_team",
+                        "create_team",
                         "delete_message",
                         "send_message",
-                        "delete_team",
-                        "list_teams",
-                        "handle_webhook",
-                        "update_team",
-                        "get_webhook",
+                        "create_webhook",
                         "update_webhook",
+                        "get_room",
+                        "list_teams",
                         "get_message",
-                        "list_webhooks",
-                        "list_messages"
+                        "list_messages",
+                        "list_webhooks"
                     ]
                 },
                 "rules": {
@@ -4441,12 +4441,13 @@
                 "cisco",
                 "spark",
                 "video",
-                "chat"
+                "chat",
+                "bot"
             ],
             "name": "cisco_spark",
             "ref": "cisco_spark",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_spark",
-            "version": "0.4.0"
+            "version": "0.5.0"
         },
         "clicrud": {
             "author": "davidjohngee",
