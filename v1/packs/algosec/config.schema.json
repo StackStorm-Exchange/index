@@ -1,0 +1,55 @@
+{
+    "algosec": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/connection"
+            }
+        },
+        "required": true,
+        "type": "object"
+    },
+    "connection": {
+        "additionalProperties": false,
+        "properties": {
+            "domain": {
+                "description": "AlgoSec domain to connect with for authentication",
+                "required": false,
+                "type": "string"
+            },
+            "password": {
+                "description": "Password of the specified username",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "port": {
+                "description": "Port number override used for the connection (80, 443) (none means use the default for the transport)",
+                "required": false,
+                "type": "integer"
+            },
+            "server": {
+                "description": "AlgoSec server hostname/ip to connect with",
+                "required": true,
+                "type": "string"
+            },
+            "transport": {
+                "default": "http",
+                "description": "Transport used for the connection (http, https)",
+                "required": false,
+                "type": "string"
+            },
+            "username": {
+                "description": "Username for authentication",
+                "required": true,
+                "type": "string"
+            },
+            "wsdl_endpoint": {
+                "description": "HTTP URI for the WSDL file on the server",
+                "required": false,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "description": "Invokes the AlgoSec SOAP command search_object_by_ip",
+    "enabled": true,
+    "entry_point": "lib/run_operation.py",
+    "name": "afa_search_object_by_ip",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a AlgoSec server.",
+            "required": false,
+            "type": "string"
+        },
+        "domain": {
+            "description": "Optional override of the AlgoSec domain in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "first": {
+            "required": true,
+            "type": "string"
+        },
+        "last": {
+            "required": false,
+            "type": "string"
+        },
+        "match_type": {
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "search_object_by_ip",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the AlgoSec password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Optional override of the AlgoSec port in <connection>.",
+            "required": false,
+            "type": "integer"
+        },
+        "server": {
+            "description": "Optional override of the AlgoSec server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session_id": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "type": "string"
+        },
+        "transport": {
+            "description": "Optional override of the AlgoSec transport in <connection>.",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the AlgoSec username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "wsdl_endpoint": {
+            "default": "AFA/php/ws.php?wsdl",
+            "description": "Optional override of the AlgoSec wsdl_endpoint in <connection>.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
