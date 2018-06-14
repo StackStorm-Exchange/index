@@ -4,32 +4,34 @@ description: StackStorm pack that contains Zabbix integrations
 keywords:
 - zabbix
 - monitoring
-version: 0.1.3
+version: 0.1.4
 author: Hiroyasu OHYAMA
 email: user.localhost2000@gmail.com
 content:
   actions:
-    count: 7
+    count: 8
     resources:
-    - host_get_id
-    - test_credentials
-    - maintenance_delete
     - host_update_status
-    - maintenance_create_or_update
+    - host_get_status
+    - maintenance_delete
+    - test_credentials
     - host_delete
+    - maintenance_create_or_update
     - ack_event
+    - host_get_id
   tests:
-    count: 9
+    count: 10
     resources:
-    - test_maintenance_delete.py
-    - zabbix_base_action_test_case.py
-    - test_host_delete.py
     - test_tool_register_st2_config_to_zabbix.py
     - test_test_credentials.py
-    - test_action_base.py
+    - test_host_get_status.py
+    - test_host_delete.py
     - test_maintenance_create_or_update.py
+    - test_maintenance_delete.py
+    - test_action_base.py
     - test_host_update_status.py
     - test_host_get_id.py
+    - zabbix_base_action_test_case.py
   triggers:
     count: 1
     resources:
