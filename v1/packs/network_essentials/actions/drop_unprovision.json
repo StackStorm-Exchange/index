@@ -65,7 +65,7 @@
             "description": "Sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290",
             "position": 8,
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "username": {
             "default": "admin",

@@ -107,7 +107,7 @@
             "description": "The sequence number of the rule, if not specified, the rule is added at the end of the list. Valid range is 0 to 4294967290.",
             "position": 17,
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "source": {
             "default": "any",
@@ -131,7 +131,7 @@
             "description": "The VLAN interface to which the ACL is bound.",
             "position": 12,
             "required": false,
-            "type": "string"
+            "type": "integer"
         }
     },
     "runner_type": "mistral-v2"
