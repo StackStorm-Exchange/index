@@ -5,7 +5,7 @@ keywords:
 - email
 - messaging
 - imap
-version: 1.0.3
+version: 1.1.0
 author: James Fryman
 email: james@stackstorm.com
 content:
@@ -20,5 +20,5 @@ content:
   sensors:
     count: 2
     resources:
-    - IMAPSensor
     - SMTPSensor
+    - IMAPSensor

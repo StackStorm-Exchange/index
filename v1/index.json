@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1529005529,
-        "hash": "981e0cf52a8ed556013040fc42dbfd5b"
+        "generated_ts": 1529007765,
+        "hash": "d2d5e597efe9ec8f22dfb77f487f0b43"
     },
     "packs": {
         "acos": {
@@ -5146,8 +5146,8 @@
                 "sensors": {
                     "count": 2,
                     "resources": [
-                        "IMAPSensor",
-                        "SMTPSensor"
+                        "SMTPSensor",
+                        "IMAPSensor"
                     ]
                 }
             },
@@ -5161,7 +5161,7 @@
             "name": "email",
             "ref": "email",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-email",
-            "version": "1.0.3"
+            "version": "1.1.0"
         },
         "excel": {
             "author": "Tim Braly",
