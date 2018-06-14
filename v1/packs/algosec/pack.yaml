@@ -6,70 +6,70 @@ keywords:
 - AlgoSec
 - Firewall
 - Networking
-version: 0.1.0
+version: 0.1.1
 author: Encore Technologies
 email: code@encore.tech
 content:
   actions:
     count: 57
     resources:
-    - afa_get_service_by_name_and_device
-    - afa_update_role
-    - fireflow_authenticate
-    - afa_get_report_pdf
-    - afa_risks_summary
-    - afa_update_user
-    - fireflow_update_object_custom_field
-    - afa_add_device_to_group
-    - fireflow_add_object_custom_field
-    - fireflow_create_ticket
     - fireflow_get_template_fields
-    - afa_get_services_by_device
-    - afa_get_groups_list
-    - afa_get_license
-    - afa_get_configuration
-    - fireflow_get_fields
-    - afa_get_entity_id
-    - afa_create_user
-    - afa_get_hostgroup_by_name_and_device
-    - afa_set_configuration
-    - afa_delete_device
-    - afa_search_rule
-    - afa_edit_rule_documentation
-    - afa_get_all_hostgroups
-    - afa_is_session_alive
-    - afa_get_devices_list
-    - afa_get_rule_documentation
-    - afa_get_group_content
-    - afa_create_domain
-    - afa_get_members_by_device
-    - afa_get_hostgroups_by_device
-    - afa_search_object_by_ip
-    - afa_get_device_statistics
-    - afa_delete_scheduler_job
-    - afa_create_role
-    - afa_get_nat_discovery
-    - afa_connect
-    - fireflow_is_session_alive
-    - afa_set_scheduler_job
-    - afa_get_unused_rules
-    - afa_get_entity_name
-    - afa_disconnect
-    - afa_start_analysis
-    - afa_delete_role
-    - afa_delete_user
-    - afa_get_parent_device
-    - afa_import_risks_from_xml
-    - afa_get_containing_objects
-    - fireflow_get_ticket
+    - fireflow_create_ticket
     - afa_import_risks_from_spreadsheet
-    - afa_create_device_group
-    - fireflow_delete_object_custom_field
-    - afa_get_all_services
-    - afa_create_device
-    - afa_get_rules_by_device
+    - afa_delete_user
+    - afa_connect
+    - afa_search_object_by_ip
     - afa_query
+    - fireflow_add_object_custom_field
+    - afa_delete_role
+    - fireflow_authenticate
+    - afa_edit_rule_documentation
+    - afa_create_device
+    - afa_get_all_services
+    - afa_get_hostgroup_by_name_and_device
+    - afa_create_domain
+    - fireflow_update_object_custom_field
+    - afa_get_group_content
+    - afa_get_entity_name
+    - afa_get_services_by_device
+    - fireflow_get_ticket
+    - afa_get_service_by_name_and_device
+    - afa_get_nat_discovery
+    - afa_risks_summary
+    - afa_get_rule_documentation
+    - afa_update_role
+    - fireflow_delete_object_custom_field
+    - afa_get_parent_device
+    - afa_delete_scheduler_job
+    - afa_set_scheduler_job
+    - afa_create_user
+    - afa_get_unused_rules
+    - afa_create_device_group
+    - fireflow_is_session_alive
+    - afa_delete_device
+    - afa_get_configuration
+    - afa_get_license
+    - afa_get_devices_list
+    - afa_get_all_hostgroups
+    - afa_get_entity_id
+    - afa_get_report_pdf
+    - afa_import_risks_from_xml
+    - afa_get_device_statistics
+    - afa_get_containing_objects
+    - afa_add_device_to_group
+    - afa_disconnect
+    - afa_get_hostgroups_by_device
+    - afa_get_members_by_device
+    - afa_is_session_alive
+    - afa_get_rules_by_device
+    - afa_search_rule
+    - afa_update_user
     - afa_device_changes_over_time_report
+    - afa_start_analysis
+    - afa_create_role
+    - afa_set_configuration
+    - fireflow_get_fields
+    - afa_get_groups_list
   tests:
     count: 3
     resources:
