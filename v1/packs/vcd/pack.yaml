@@ -11,13 +11,13 @@ content:
   actions:
     count: 3
     resources:
-    - get_org
-    - get_pvdcs
     - get_orgs
+    - get_pvdcs
+    - get_org
   tests:
     count: 4
     resources:
-    - test_action_get_pvdcs.py
     - test_action_get_orgs.py
+    - test_action_get_pvdcs.py
     - vcd_base_action_test_case.py
     - test_action_get_org.py

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1529054793,
-        "hash": "30c40fe64e30130ecfa3ca4c2ee39d2f"
+        "generated_ts": 1529055146,
+        "hash": "4200cc835deb6a66cf2e0de504f6961d"
     },
     "packs": {
         "acos": {
@@ -10946,16 +10946,16 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "get_org",
+                        "get_orgs",
                         "get_pvdcs",
-                        "get_orgs"
+                        "get_org"
                     ]
                 },
                 "tests": {
                     "count": 4,
                     "resources": [
-                        "test_action_get_pvdcs.py",
                         "test_action_get_orgs.py",
+                        "test_action_get_pvdcs.py",
                         "vcd_base_action_test_case.py",
                         "test_action_get_org.py"
                     ]
