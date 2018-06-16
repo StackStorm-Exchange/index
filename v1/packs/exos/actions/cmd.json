@@ -5,10 +5,10 @@
     "name": "cmd",
     "parameters": {
         "cmd": {
-            "description": "List of EXOS CLI commands.",
+            "description": "List of one or more EXOS CLI commands.",
             "position": 1,
             "required": true,
-            "type": "string"
+            "type": "array"
         },
         "ipaddress": {
             "description": "IP address of the EXOS switch.",
