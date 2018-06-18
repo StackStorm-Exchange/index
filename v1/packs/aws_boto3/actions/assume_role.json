@@ -1,0 +1,41 @@
+{
+    "description": "Assume a role to use with boto3action",
+    "enabled": true,
+    "entry_point": "assume_role.py",
+    "name": "assume_role",
+    "pack": "aws_boto3",
+    "parameters": {
+        "duration": {
+            "default": 3600,
+            "description": "Duration for the session",
+            "type": "integer"
+        },
+        "external_id": {
+            "description": "External Id",
+            "type": "string"
+        },
+        "policy": {
+            "description": "Policy document",
+            "type": "string"
+        },
+        "role_arn": {
+            "description": "ARN of the role",
+            "required": true,
+            "type": "string"
+        },
+        "role_session_name": {
+            "default": "DefaultAssumeSession",
+            "description": "Name for the session",
+            "type": "string"
+        },
+        "serial_number": {
+            "description": "Serial number of the MFA",
+            "type": "string"
+        },
+        "token_code": {
+            "description": "Token code from the MFA",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

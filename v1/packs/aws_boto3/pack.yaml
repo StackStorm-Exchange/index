@@ -1,0 +1,36 @@
+ref: aws_boto3
+name: aws_boto3
+description: st2 content pack containing Amazon Web Services integrations using boto3.
+keywords:
+- aws
+- amazon web services
+- amazon
+- boto3
+- ec2
+- sqs
+- sns
+- route53
+- cloud
+- iam
+- vpc
+- s3
+- CloudFormation
+- RDS
+- SQS
+- lambda
+version: 0.2.0
+author: StackStorm, Inc.
+email: info@stackstorm.com
+contributors:
+- Jon Middleton <jjm@geeky-and-blonde.me.uk>
+content:
+  actions:
+    count: 2
+    resources:
+    - assume_role
+    - boto3action
+  tests:
+    count: 2
+    resources:
+    - test_action_assume_role.py
+    - test_action_boto3action.py

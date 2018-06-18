@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1529121482,
-        "hash": "54afcfc082433278605fd506e8e6365f"
+        "generated_ts": 1529354304,
+        "hash": "c2b9c315d401bd86f99d7f3bebdb54bb"
     },
     "packs": {
         "acos": {
@@ -4129,6 +4129,52 @@
             "ref": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
             "version": "1.0.2"
+        },
+        "aws_boto3": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "assume_role",
+                        "boto3action"
+                    ]
+                },
+                "tests": {
+                    "count": 2,
+                    "resources": [
+                        "test_action_assume_role.py",
+                        "test_action_boto3action.py"
+                    ]
+                }
+            },
+            "contributors": [
+                "Jon Middleton <jjm@geeky-and-blonde.me.uk>"
+            ],
+            "description": "st2 content pack containing Amazon Web Services integrations using boto3.",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "aws",
+                "amazon web services",
+                "amazon",
+                "boto3",
+                "ec2",
+                "sqs",
+                "sns",
+                "route53",
+                "cloud",
+                "iam",
+                "vpc",
+                "s3",
+                "CloudFormation",
+                "RDS",
+                "SQS",
+                "lambda"
+            ],
+            "name": "aws_boto3",
+            "ref": "aws_boto3",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_boto3",
+            "version": "0.2.0"
         },
         "azure": {
             "author": "StackStorm, Inc.",
