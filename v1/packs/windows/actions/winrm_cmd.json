@@ -22,6 +22,7 @@
         "password": {
             "description": "Account password.",
             "required": true,
+            "secret": true,
             "type": "string"
         },
         "port": {

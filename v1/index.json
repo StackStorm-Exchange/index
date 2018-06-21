@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1529544004,
-        "hash": "e3a57e3ff693a5636b3c713e6284b0f3"
+        "generated_ts": 1529544750,
+        "hash": "847243f94a6f0ed3c9f2d916754ef174"
     },
     "packs": {
         "acos": {
@@ -11444,13 +11444,13 @@
                 "actions": {
                     "count": 7,
                     "resources": [
-                        "try_winrm",
-                        "wait_for_winrm",
-                        "winrm_cmd",
-                        "setup_winrm",
                         "winexe_cmd",
                         "lockdown_winrm",
-                        "wmi_query"
+                        "wait_for_winrm",
+                        "try_winrm",
+                        "wmi_query",
+                        "winrm_cmd",
+                        "setup_winrm"
                     ]
                 }
             },
@@ -11465,7 +11465,7 @@
             "name": "windows",
             "ref": "windows",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-windows",
-            "version": "0.5.0"
+            "version": "0.6.0"
         },
         "witai": {
             "author": "James Fryman",
