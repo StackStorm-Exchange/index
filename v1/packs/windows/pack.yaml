@@ -6,16 +6,17 @@ keywords:
 - wmi
 - windows management interface
 - wql
-version: 0.4.1
+version: 0.5.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 6
+    count: 7
     resources:
+    - try_winrm
+    - wait_for_winrm
     - winrm_cmd
     - setup_winrm
-    - try_winrm
-    - wmi_query
     - winexe_cmd
     - lockdown_winrm
+    - wmi_query

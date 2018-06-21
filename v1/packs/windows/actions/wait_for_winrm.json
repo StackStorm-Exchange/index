@@ -1,0 +1,78 @@
+{
+    "description": "Action which waits for a WinRM server to become accessible.",
+    "enabled": true,
+    "entry_point": "lib/wait_for_winrm.py",
+    "name": "wait_for_winrm",
+    "parameters": {
+        "host": {
+            "description": "Remote hostname/ipaddress.",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password used to authenticate.",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "port": {
+            "default": 5986,
+            "description": "Remote SSH port.",
+            "required": true,
+            "type": "integer"
+        },
+        "retries": {
+            "default": 10,
+            "description": "Maximum number of retries.",
+            "type": "integer"
+        },
+        "scheme": {
+            "default": "https",
+            "description": "Scheme to use in the WinRM URL. If using scheme \"http\" port must be 5985",
+            "required": false,
+            "type": "string"
+        },
+        "sleep_delay": {
+            "default": 20,
+            "description": "How long to sleep / wait (in seconds) after each failed connection attempt.",
+            "type": "integer"
+        },
+        "timeout": {
+            "default": 400,
+            "description": "Total timeout for this action. Note: timeout needs to be >= ((winrm_timeout + sleep_delay) * retries) so we override a default Python runner action timeout with a larger value\n",
+            "type": "integer"
+        },
+        "transport": {
+            "default": "ntlm",
+            "description": "The type of transport that WinRM will use to communicate. See https://github.com/diyan/pywinrm#valid-transport-options\n",
+            "enum": [
+                "basic",
+                "certificate",
+                "credssp",
+                "kerberos",
+                "ntlm",
+                "plaintext",
+                "ssl"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "default": "stanley",
+            "description": "Username used to authenticate.",
+            "required": true,
+            "type": "string"
+        },
+        "verify_ssl_cert": {
+            "default": true,
+            "description": "Certificate for HTTPS request is verified by default using requests CA bundle which comes from Mozilla. Verification using a custom CA bundle is not yet supported. Set to False to skip verification.\n",
+            "type": "boolean"
+        },
+        "winrm_timeout": {
+            "default": 5,
+            "description": "WinRM connection connect timeout (in seconds). This is the timeout of a single connection attempt.",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}
