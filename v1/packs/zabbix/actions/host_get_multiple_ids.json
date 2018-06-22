@@ -1,0 +1,15 @@
+{
+    "description": "Get the IDs of a multiple Zabbix Hosts if duplicates exist",
+    "enabled": true,
+    "entry_point": "host_get_multiple_ids.py",
+    "name": "host_get_multiple_ids",
+    "pack": "zabbix",
+    "parameters": {
+        "host": {
+            "description": "Name of the Zabbix Host",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
