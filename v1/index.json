@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1529544750,
-        "hash": "847243f94a6f0ed3c9f2d916754ef174"
+        "generated_ts": 1529682255,
+        "hash": "46980f01e24f08b62d4dff8e2c219ee1"
     },
     "packs": {
         "acos": {
@@ -4224,6 +4224,39 @@
             "ref": "azure",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
             "version": "0.3.1"
+        },
+        "backups": {
+            "author": "Encore Technologies",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "full_backup",
+                        "postgres_backup",
+                        "mongodb_backup"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "full_backup_cron"
+                    ]
+                }
+            },
+            "description": "Pack to backup StackStorm databases",
+            "email": "code@encore.tech",
+            "keywords": [
+                "backup",
+                "database",
+                "postgres",
+                "postgresql",
+                "mongo",
+                "mongodb"
+            ],
+            "name": "backups",
+            "ref": "backups",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-backups",
+            "version": "0.1.0"
         },
         "bitbucket": {
             "author": "Aamir",

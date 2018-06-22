@@ -1,0 +1,19 @@
+{
+    "action": {
+        "ref": "backups.full_backup"
+    },
+    "description": "Executes a full backup on a cron schedule.",
+    "enabled": true,
+    "name": "full_backup_cron",
+    "pack": "backups",
+    "trigger": {
+        "parameters": {
+            "day_of_week": "*",
+            "hour": 1,
+            "minute": 0,
+            "second": 0,
+            "timezone": "UTC"
+        },
+        "type": "core.st2.CronTimer"
+    }
+}

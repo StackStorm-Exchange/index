@@ -1,0 +1,24 @@
+ref: backups
+name: backups
+description: Pack to backup StackStorm databases
+keywords:
+- backup
+- database
+- postgres
+- postgresql
+- mongo
+- mongodb
+version: 0.1.0
+author: Encore Technologies
+email: code@encore.tech
+content:
+  actions:
+    count: 3
+    resources:
+    - full_backup
+    - postgres_backup
+    - mongodb_backup
+  rules:
+    count: 1
+    resources:
+    - full_backup_cron

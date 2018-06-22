@@ -1,0 +1,32 @@
+{
+    "description": "Performs a back of StackStorm MongoDB and Postgres databases",
+    "enabled": true,
+    "entry_point": "workflows/full_backup.yaml",
+    "name": "full_backup",
+    "pack": "backups",
+    "parameters": {
+        "mistral_config": {
+            "default": "/etc/mistral/mistral.conf",
+            "type": "string"
+        },
+        "mongodb_admin_password": {
+            "default": "{% set pw = st2kv.system.mongodb.admin_password | string %}{{ pw | decrypt_kv if pw else '' }}",
+            "secret": true,
+            "type": "string"
+        },
+        "mongodb_admin_username": {
+            "default": "{{ st2kv.system.mongodb.admin_username }}",
+            "type": "string"
+        },
+        "path": {
+            "default": "/opt/stackstorm/backups",
+            "type": "string"
+        },
+        "retention_days": {
+            "default": "{{ st2kv.system.backup.retention_days | string | default('+14', true) }}",
+            "description": "Passed into the find command. Deletes files based on this value. To find files older than n days it should be +n . If you specify just n it will find files that are exactly n days old.",
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}
