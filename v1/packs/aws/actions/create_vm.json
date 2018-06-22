@@ -4,9 +4,24 @@
     "entry_point": "workflows/create_vm.yaml",
     "name": "create_vm",
     "parameters": {
-        "base_user": {
-            "default": "ubuntu",
-            "description": "Username for initial ssh test",
+        "ImageId": {
+            "description": "AWS image id to create instance from",
+            "required": true,
+            "type": "string"
+        },
+        "InstanceType": {
+            "default": "t2.medium",
+            "description": "Flavor to use for instance creation",
+            "type": "string"
+        },
+        "KeyName": {
+            "description": "SSH key to use during intial instance creation",
+            "required": true,
+            "type": "string"
+        },
+        "SubnetId": {
+            "description": "AWS Subnet ID",
+            "required": true,
             "type": "string"
         },
         "dns_zone": {
@@ -19,28 +34,8 @@
             "required": true,
             "type": "string"
         },
-        "image_id": {
-            "description": "AWS image id to create instance from",
-            "required": true,
-            "type": "string"
-        },
-        "instance_type": {
-            "default": "t2.medium",
-            "description": "Flavor to use for instance creation",
-            "type": "string"
-        },
-        "key_name": {
-            "description": "SSH key to use during intial instance creation",
-            "required": true,
-            "type": "string"
-        },
         "keyfile": {
             "description": "Path to local private key that corresponds to {{key_name}}",
-            "required": true,
-            "type": "string"
-        },
-        "subnet_id": {
-            "description": "AWS Subnet ID",
             "required": true,
             "type": "string"
         }
