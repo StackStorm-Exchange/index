@@ -18,19 +18,21 @@ keywords:
 - RDS
 - SQS
 - lambda
-version: 0.2.0
+version: 0.3.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 contributors:
 - Jon Middleton <jjm@geeky-and-blonde.me.uk>
 content:
   actions:
-    count: 2
+    count: 4
     resources:
     - assume_role
     - boto3action
+    - create_vpc
+    - create_vpc_assume_role
   tests:
     count: 2
     resources:
-    - test_action_assume_role.py
     - test_action_boto3action.py
+    - test_action_assume_role.py

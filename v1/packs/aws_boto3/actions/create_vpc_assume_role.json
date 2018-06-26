@@ -1,10 +1,15 @@
 {
-    "description": "Assume a role to use with boto3action",
+    "description": "Create VPC with boto3action using assume_role",
     "enabled": true,
-    "entry_point": "assume_role.py",
-    "name": "assume_role",
+    "entry_point": "workflows/create_vpc_assume_role.yaml",
+    "name": "create_vpc_assume_role",
     "pack": "aws_boto3",
     "parameters": {
+        "availability_zone": {
+            "description": "Availability zone to create subnet",
+            "required": true,
+            "type": "string"
+        },
         "aws_access_key_id": {
             "description": "AWS Access Key",
             "secret": true,
@@ -15,17 +20,14 @@
             "secret": true,
             "type": "string"
         },
-        "duration": {
-            "default": 3600,
-            "description": "Duration (seconds) for the session",
-            "type": "integer"
-        },
-        "external_id": {
-            "description": "External Id",
+        "cidr_block": {
+            "description": "VPC CIDR block",
+            "required": true,
             "type": "string"
         },
-        "policy": {
-            "description": "Policy document",
+        "region": {
+            "description": "Region to create VPC",
+            "required": true,
             "type": "string"
         },
         "role_arn": {
@@ -35,6 +37,11 @@
         },
         "serial_number": {
             "description": "Serial number of the MFA",
+            "type": "string"
+        },
+        "subnet_cidr_block": {
+            "description": "Subnet CIDR block",
+            "required": true,
             "type": "string"
         },
         "token_code": {
@@ -47,5 +54,5 @@
             "type": "boolean"
         }
     },
-    "runner_type": "python-script"
+    "runner_type": "mistral-v2"
 }

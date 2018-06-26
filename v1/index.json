@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1529705882,
-        "hash": "24b8fdd992f9981d5de0642998e59674"
+        "generated_ts": 1530033554,
+        "hash": "e365d26bcaa1cff76a14cdad66725a39"
     },
     "packs": {
         "acos": {
@@ -4134,17 +4134,19 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 2,
+                    "count": 4,
                     "resources": [
                         "assume_role",
-                        "boto3action"
+                        "boto3action",
+                        "create_vpc",
+                        "create_vpc_assume_role"
                     ]
                 },
                 "tests": {
                     "count": 2,
                     "resources": [
-                        "test_action_assume_role.py",
-                        "test_action_boto3action.py"
+                        "test_action_boto3action.py",
+                        "test_action_assume_role.py"
                     ]
                 }
             },
@@ -4174,7 +4176,7 @@
             "name": "aws_boto3",
             "ref": "aws_boto3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_boto3",
-            "version": "0.2.0"
+            "version": "0.3.0"
         },
         "azure": {
             "author": "StackStorm, Inc.",
