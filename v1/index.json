@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1530033554,
-        "hash": "e365d26bcaa1cff76a14cdad66725a39"
+        "generated_ts": 1531075321,
+        "hash": "eb080cb9eba39d47317828931595ecb7"
     },
     "packs": {
         "acos": {
@@ -4136,10 +4136,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "assume_role",
                         "boto3action",
-                        "create_vpc",
-                        "create_vpc_assume_role"
+                        "assume_role",
+                        "create_vpc_assume_role",
+                        "create_vpc"
                     ]
                 },
                 "tests": {

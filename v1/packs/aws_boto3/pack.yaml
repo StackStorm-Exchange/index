@@ -27,10 +27,10 @@ content:
   actions:
     count: 4
     resources:
-    - assume_role
     - boto3action
-    - create_vpc
+    - assume_role
     - create_vpc_assume_role
+    - create_vpc
   tests:
     count: 2
     resources:
