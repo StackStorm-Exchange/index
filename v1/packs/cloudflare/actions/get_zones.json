@@ -1,0 +1,52 @@
+{
+    "description": "Get the list of current Cloudflare DNS Zones. https://api.cloudflare.com/#zone-list-zones",
+    "enabled": true,
+    "entry_point": "get_zones.py",
+    "name": "get_zones",
+    "pack": "cloudflare",
+    "parameters": {
+        "direction": {
+            "description": "Direction to order zones",
+            "enum": [
+                "asc",
+                "desc"
+            ],
+            "type": "string"
+        },
+        "match": {
+            "default": "all",
+            "description": "Whether to match all search requirements or at least one (any)",
+            "enum": [
+                "all",
+                "any"
+            ],
+            "type": "string"
+        },
+        "name": {
+            "description": "A domain name (ex: 'example.com') max length: 253",
+            "type": "string"
+        },
+        "order": {
+            "description": "Field to order zones by",
+            "enum": [
+                "name",
+                "status",
+                "email"
+            ],
+            "type": "string"
+        },
+        "status": {
+            "description": "Status of the zone (ex: 'active')",
+            "enum": [
+                "active",
+                "pending",
+                "initializing",
+                "moved",
+                "deleted",
+                "deactivated"
+            ],
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

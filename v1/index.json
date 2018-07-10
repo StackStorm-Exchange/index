@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1531075321,
-        "hash": "eb080cb9eba39d47317828931595ecb7"
+        "generated_ts": 1531227030,
+        "hash": "e2276d6fa56ebefc7944f3ddee84d157"
     },
     "packs": {
         "acos": {
@@ -4647,15 +4647,21 @@
             "author": "Jon Middleton",
             "content": {
                 "actions": {
-                    "count": 1,
+                    "count": 3,
                     "resources": [
-                        "get_ips"
+                        "get_ips",
+                        "get_zone_dns_records",
+                        "get_zones"
                     ]
                 },
                 "tests": {
-                    "count": 1,
+                    "count": 5,
                     "resources": [
-                        "test_action_get_ips.py"
+                        "test_action_get_zones.py",
+                        "test_action_get_ips.py",
+                        "test_action_get_zone_dns_records.py",
+                        "test_action_base.py",
+                        "cloudflare_base_action_test_case.py"
                     ]
                 }
             },
@@ -4667,7 +4673,7 @@
             "name": "cloudflare",
             "ref": "cloudflare",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
-            "version": "0.3.3"
+            "version": "0.4.0"
         },
         "cloudshark": {
             "author": "StackStorm, Inc.",
