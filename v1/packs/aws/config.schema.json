@@ -11,6 +11,11 @@
         "secret": true,
         "type": "string"
     },
+    "debug": {
+        "default": false,
+        "description": "Set to True to log every boto method / function invocation",
+        "type": "boolean"
+    },
     "region": {
         "default": "us-east-1",
         "description": "AWS region to use.",
