@@ -12,7 +12,27 @@
         },
         "credentials": {
             "description": "Response from assume role",
-            "secret": true,
+            "properties": {
+                "AccessKeyId": {
+                    "secret": true,
+                    "type": "string"
+                },
+                "Credentials": {
+                    "secret": true,
+                    "type": "object"
+                },
+                "Expiration": {
+                    "type": "string"
+                },
+                "SecretAccessKey": {
+                    "secret": true,
+                    "type": "string"
+                },
+                "SessionToken": {
+                    "secret": true,
+                    "type": "string"
+                }
+            },
             "type": "object"
         },
         "params": {

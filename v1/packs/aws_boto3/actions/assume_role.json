@@ -39,6 +39,7 @@
         },
         "token_code": {
             "description": "Token code from the MFA",
+            "secret": true,
             "type": "string"
         },
         "use_mfa": {
