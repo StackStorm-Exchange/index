@@ -18,7 +18,7 @@ keywords:
 - RDS
 - SQS
 - lambda
-version: 0.5.0
+version: 0.6.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 contributors:
@@ -27,14 +27,14 @@ content:
   actions:
     count: 5
     resources:
-    - create_vpc
+    - create_vpc_assume_role
+    - assume_role
     - waiter
     - boto3action
-    - assume_role
-    - create_vpc_assume_role
+    - create_vpc
   tests:
     count: 3
     resources:
     - test_action_boto3action.py
-    - test_action_assume_role.py
     - test_action_waiter.py
+    - test_action_assume_role.py

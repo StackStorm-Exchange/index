@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1531409567,
-        "hash": "5eb721592dc0ed783570692df1a5285b"
+        "generated_ts": 1531410771,
+        "hash": "952aa78c886741aa17caa070b859addc"
     },
     "packs": {
         "acos": {
@@ -4136,19 +4136,19 @@
                 "actions": {
                     "count": 5,
                     "resources": [
-                        "create_vpc",
+                        "create_vpc_assume_role",
+                        "assume_role",
                         "waiter",
                         "boto3action",
-                        "assume_role",
-                        "create_vpc_assume_role"
+                        "create_vpc"
                     ]
                 },
                 "tests": {
                     "count": 3,
                     "resources": [
                         "test_action_boto3action.py",
-                        "test_action_assume_role.py",
-                        "test_action_waiter.py"
+                        "test_action_waiter.py",
+                        "test_action_assume_role.py"
                     ]
                 }
             },
@@ -4178,7 +4178,7 @@
             "name": "aws_boto3",
             "ref": "aws_boto3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_boto3",
-            "version": "0.5.0"
+            "version": "0.6.0"
         },
         "azure": {
             "author": "StackStorm, Inc.",
