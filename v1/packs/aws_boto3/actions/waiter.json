@@ -1,22 +1,23 @@
 {
-    "description": "Run any boto3 action",
+    "description": "Run any boto3 waiter",
     "enabled": true,
-    "entry_point": "boto3action.py",
-    "name": "boto3action",
+    "entry_point": "waiter.py",
+    "name": "waiter",
     "pack": "aws_boto3",
     "parameters": {
-        "action_name": {
-            "description": "Name of the action to run",
-            "required": true,
-            "type": "string"
-        },
         "credentials": {
             "description": "Response from assume role",
             "secret": true,
             "type": "object"
         },
+        "max_attempts": {
+            "default": 20,
+            "description": "Number of wait attempts (default ",
+            "type": "integer"
+        },
         "params": {
             "description": "Parameters for the action",
+            "required": true,
             "type": "object"
         },
         "region": {
@@ -26,6 +27,11 @@
         },
         "service": {
             "description": "Name of the service to create client",
+            "required": true,
+            "type": "string"
+        },
+        "waiter_name": {
+            "description": "Name of the action to run",
             "required": true,
             "type": "string"
         }
