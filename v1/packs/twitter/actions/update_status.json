@@ -4,6 +4,14 @@
     "entry_point": "update_status.py",
     "name": "update_status",
     "parameters": {
+        "media": {
+            "default": [],
+            "description": "Media to post with the status. These can either be local filenames, or http/s URLs. If the item is a URL, the data will be downloaded to a temporary file on the local disk, the uploaded to Twitter. Examples:\n  # path on local filesystem\n  ['/opt/data/image.png']\n\n  # http/s URL that will be downloaded, then uploaded to twitter\n  ['https://imgur.com/abc.png']\n",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
         "status": {
             "description": "New status (tweet message).",
             "required": true,

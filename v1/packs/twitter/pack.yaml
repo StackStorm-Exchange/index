@@ -5,7 +5,7 @@ keywords:
 - twitter
 - social media
 - social networks
-version: 0.3.1
+version: 0.4.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
@@ -13,8 +13,8 @@ content:
     count: 3
     resources:
     - follow
-    - direct_message
     - update_status
+    - direct_message
   rules:
     count: 1
     resources:
@@ -22,5 +22,5 @@ content:
   sensors:
     count: 2
     resources:
-    - TwitterSearchSensor
     - TwitterStreamSensor
+    - TwitterSearchSensor

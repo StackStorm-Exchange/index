@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1531410771,
-        "hash": "952aa78c886741aa17caa070b859addc"
+        "generated_ts": 1531529375,
+        "hash": "2e201f8811886f004f216c12ba142a6d"
     },
     "packs": {
         "acos": {
@@ -10804,8 +10804,8 @@
                     "count": 3,
                     "resources": [
                         "follow",
-                        "direct_message",
-                        "update_status"
+                        "update_status",
+                        "direct_message"
                     ]
                 },
                 "rules": {
@@ -10817,8 +10817,8 @@
                 "sensors": {
                     "count": 2,
                     "resources": [
-                        "TwitterSearchSensor",
-                        "TwitterStreamSensor"
+                        "TwitterStreamSensor",
+                        "TwitterSearchSensor"
                     ]
                 }
             },
@@ -10832,7 +10832,7 @@
             "name": "twitter",
             "ref": "twitter",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-twitter",
-            "version": "0.3.1"
+            "version": "0.4.0"
         },
         "typeform": {
             "author": "StackStorm, Inc.",
