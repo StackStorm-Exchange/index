@@ -3,14 +3,15 @@ description: Mysql integration pack
 keywords:
 - mysql
 - database
-version: 0.5.2
+version: 0.5.3
 author: st2-dev
 email: info@stackstorm.com
 contributors:
 - Joe Topjian <joe@topjian.net>
 content:
   actions:
-    count: 2
+    count: 3
     resources:
-    - insert
     - select
+    - update
+    - insert

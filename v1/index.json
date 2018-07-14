@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1531529375,
-        "hash": "2e201f8811886f004f216c12ba142a6d"
+        "generated_ts": 1531529641,
+        "hash": "05a39fcbf13fd319aaed5058ca172935"
     },
     "packs": {
         "acos": {
@@ -7994,10 +7994,11 @@
             "author": "st2-dev",
             "content": {
                 "actions": {
-                    "count": 2,
+                    "count": 3,
                     "resources": [
-                        "insert",
-                        "select"
+                        "select",
+                        "update",
+                        "insert"
                     ]
                 }
             },
@@ -8012,7 +8013,7 @@
             ],
             "name": "mysql",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mysql",
-            "version": "0.5.2"
+            "version": "0.5.3"
         },
         "nagios": {
             "author": "StackStorm, Inc.",
