@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1531529641,
-        "hash": "05a39fcbf13fd319aaed5058ca172935"
+        "generated_ts": 1531532146,
+        "hash": "116b6b2155564d81eb430201415a6cf3"
     },
     "packs": {
         "acos": {
@@ -10576,22 +10576,22 @@
                 "actions": {
                     "count": 12,
                     "resources": [
-                        "delete_workspace",
-                        "pipeline",
-                        "init",
-                        "select_workspace",
-                        "plan",
-                        "apply",
-                        "output",
-                        "create_workspace",
-                        "list_workspaces",
                         "destroy",
+                        "list_workspaces",
+                        "plan",
+                        "select_workspace",
+                        "delete_workspace",
+                        "get_version",
                         "show",
-                        "get_version"
+                        "create_workspace",
+                        "output",
+                        "apply",
+                        "pipeline",
+                        "init"
                     ]
                 }
             },
-            "description": "st2 content pack containing Terraform integrations",
+            "description": "Terraform integrations",
             "email": "martez.reed@greenreedtech.com",
             "keywords": [
                 "terraform"
@@ -10600,7 +10600,7 @@
             "ref": "terraform",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-terraform",
             "runner_type": "python-script",
-            "version": "0.1.0"
+            "version": "0.2.0"
         },
         "tesla": {
             "author": "Anthony Shaw",
