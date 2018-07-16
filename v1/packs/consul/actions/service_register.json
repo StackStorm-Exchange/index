@@ -38,7 +38,7 @@
         "tags": {
             "description": "Tags.",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "token": {
             "description": "An optional _ACL token_ to apply to this request.",
