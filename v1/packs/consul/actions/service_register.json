@@ -12,7 +12,7 @@
         "check": {
             "description": "An optional health *check* can be created for this service.",
             "required": false,
-            "type": "string"
+            "type": "object"
         },
         "enable_tag_override": {
             "default": false,

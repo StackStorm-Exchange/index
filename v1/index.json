@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1531532624,
-        "hash": "34eb0764cd1a1917221047c913e547b6"
+        "generated_ts": 1531752697,
+        "hash": "9d952d2c2249c92386cb78d0bf37fceb"
     },
     "packs": {
         "acos": {
@@ -4706,43 +4706,43 @@
                 "actions": {
                     "count": 37,
                     "resources": [
-                        "agent_maintenance",
-                        "session_renew",
-                        "catalog_services",
-                        "catalog_nodes",
-                        "agent_force_leave",
-                        "agent_join",
-                        "session_list",
-                        "health_service",
-                        "catalog_register",
-                        "acl_destroy",
-                        "session_create",
-                        "kv_delete",
-                        "catalog_datacenters",
-                        "acl_list",
-                        "health_node",
-                        "health_checks",
                         "service_maintenance",
                         "agent_members",
-                        "catalog_deregister",
                         "catalog_node",
-                        "session_node",
-                        "acl_create",
-                        "kv_put",
-                        "event_list",
-                        "custom_lock",
-                        "service_deregister",
-                        "event_fire",
-                        "custom_unlock",
-                        "catalog_service",
-                        "health_state",
-                        "kv_list",
+                        "agent_join",
+                        "agent_maintenance",
+                        "kv_get",
+                        "catalog_register",
                         "agent_checks",
                         "session_destroy",
-                        "service_register",
-                        "kv_get",
                         "session_info",
-                        "agent_services"
+                        "service_register",
+                        "catalog_services",
+                        "custom_lock",
+                        "health_checks",
+                        "agent_force_leave",
+                        "kv_list",
+                        "event_fire",
+                        "catalog_service",
+                        "custom_unlock",
+                        "kv_delete",
+                        "session_create",
+                        "kv_put",
+                        "acl_list",
+                        "health_service",
+                        "acl_destroy",
+                        "agent_services",
+                        "catalog_nodes",
+                        "event_list",
+                        "service_deregister",
+                        "health_state",
+                        "catalog_deregister",
+                        "health_node",
+                        "session_node",
+                        "acl_create",
+                        "session_renew",
+                        "catalog_datacenters",
+                        "session_list"
                     ]
                 }
             },
@@ -4751,7 +4751,7 @@
             "name": "consul",
             "ref": "consul",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-consul",
-            "version": "0.6.3"
+            "version": "0.6.4"
         },
         "csv": {
             "author": "StackStorm, Inc.",
