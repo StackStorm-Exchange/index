@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1531761555,
-        "hash": "b6610a37ec682c4cf387a33d7830d332"
+        "generated_ts": 1531787843,
+        "hash": "c0801ee5a660c1e1280113f134051cb5"
     },
     "packs": {
         "acos": {
@@ -4646,36 +4646,36 @@
             "version": "0.3.3"
         },
         "cloudflare": {
-            "author": "Jon Middleton",
+            "author": "Encore Technologies",
             "content": {
                 "actions": {
                     "count": 3,
                     "resources": [
+                        "get_zones",
                         "get_ips",
-                        "get_zone_dns_records",
-                        "get_zones"
+                        "get_zone_dns_records"
                     ]
                 },
                 "tests": {
                     "count": 5,
                     "resources": [
+                        "cloudflare_base_action_test_case.py",
                         "test_action_get_zones.py",
-                        "test_action_get_ips.py",
                         "test_action_get_zone_dns_records.py",
-                        "test_action_base.py",
-                        "cloudflare_base_action_test_case.py"
+                        "test_action_get_ips.py",
+                        "test_action_base.py"
                     ]
                 }
             },
             "description": "Cloudflare CDN",
-            "email": "jon.middleton@pulsant.com",
+            "email": "code@encore.tech",
             "keywords": [
                 "cloudflare"
             ],
             "name": "cloudflare",
             "ref": "cloudflare",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
-            "version": "0.4.0"
+            "version": "0.4.1"
         },
         "cloudshark": {
             "author": "StackStorm, Inc.",

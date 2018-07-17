@@ -3,21 +3,21 @@ name: cloudflare
 description: Cloudflare CDN
 keywords:
 - cloudflare
-version: 0.4.0
-author: Jon Middleton
-email: jon.middleton@pulsant.com
+version: 0.4.1
+author: Encore Technologies
+email: code@encore.tech
 content:
   actions:
     count: 3
     resources:
+    - get_zones
     - get_ips
     - get_zone_dns_records
-    - get_zones
   tests:
     count: 5
     resources:
-    - test_action_get_zones.py
-    - test_action_get_ips.py
-    - test_action_get_zone_dns_records.py
-    - test_action_base.py
     - cloudflare_base_action_test_case.py
+    - test_action_get_zones.py
+    - test_action_get_zone_dns_records.py
+    - test_action_get_ips.py
+    - test_action_base.py
