@@ -1,0 +1,15 @@
+{
+    "description": "Get the specified key.",
+    "enabled": true,
+    "entry_point": "get.py",
+    "name": "get",
+    "pack": "redis",
+    "parameters": {
+        "key": {
+            "description": "Show the specified key's value",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

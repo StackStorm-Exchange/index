@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1531787843,
-        "hash": "c0801ee5a660c1e1280113f134051cb5"
+        "generated_ts": 1532035714,
+        "hash": "0429a6b69c93968a5748dbfbbe2ac256"
     },
     "packs": {
         "acos": {
@@ -9849,10 +9849,11 @@
             "author": "Antagonist B.V.",
             "content": {
                 "actions": {
-                    "count": 2,
+                    "count": 3,
                     "resources": [
-                        "del",
-                        "set"
+                        "get",
+                        "set",
+                        "del"
                     ]
                 }
             },
@@ -9865,7 +9866,7 @@
             "name": "redis",
             "ref": "redis",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-redis",
-            "version": "0.0.1"
+            "version": "0.0.2"
         },
         "salt": {
             "author": "jcockhren",

@@ -4,12 +4,13 @@ description: Redis key-value actions
 keywords:
 - database
 - redis
-version: 0.0.1
+version: 0.0.2
 author: Antagonist B.V.
 email: systeembeheer@antagonist.nl
 content:
   actions:
-    count: 2
+    count: 3
     resources:
-    - del
+    - get
     - set
+    - del
