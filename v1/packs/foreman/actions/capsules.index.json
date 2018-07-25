@@ -1,5 +1,5 @@
 {
-    "description": "List all capsules (resource: GET /katello/api/capsules)",
+    "description": "List all capsules that have content (resource: GET /katello/api/capsules)",
     "enabled": true,
     "entry_point": "lib/action.py",
     "name": "capsules.index",
@@ -10,7 +10,7 @@
             "required": false,
             "type": "string"
         },
-        "full_results": {
+        "full_result": {
             "description": "Whether or not to show all results",
             "required": false,
             "type": "string"
@@ -52,7 +52,7 @@
             "type": "string"
         },
         "sort": {
-            "description": "'description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     '",
+            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"",
             "required": false,
             "type": "object"
         },

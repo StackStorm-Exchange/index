@@ -51,7 +51,7 @@
             "type": "string"
         },
         "parameter": {
-            "description": "'description: None\n parameters:\n     name:\n       required: false\n       type: string\n       description:\n     value:\n       required: false\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     name:\n       required: false\n       type: string\n       description: ''\n     value:\n       required: false\n       type: string\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },
@@ -63,6 +63,11 @@
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "subnet_id": {
+            "description": "ID of subnet",
             "required": false,
             "type": "string"
         },

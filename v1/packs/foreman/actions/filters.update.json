@@ -11,7 +11,7 @@
             "type": "string"
         },
         "filter": {
-            "description": "'description: None\n parameters:\n     permission_ids:\n       required: false\n       type: array\n       description:\n     search:\n       required: false\n       type: string\n       description:\n     location_ids:\n       required: false\n       type: array\n       description:\n     organization_ids:\n       required: false\n       type: array\n       description:\n     role_id:\n       required: false\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     search:\n       required: false\n       type: string\n       description: ''\n     permission_ids:\n       required: false\n       type: array\n       description: ''\n     role_id:\n       required: false\n       type: string\n       description: ''\n     override:\n       required: false\n       type: string\n       description: ''\n     location_ids:\n       required: false\n       type: array\n       description: ''\n     organization_ids:\n       required: false\n       type: array\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },

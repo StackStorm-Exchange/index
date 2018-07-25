@@ -11,7 +11,7 @@
             "type": "string"
         },
         "discovered_host": {
-            "description": "'description: None\n parameters:\n     ip:\n       required: true\n       type: string\n       description:\n     mac:\n       required: true\n       type: string\n       description:\n     name:\n       required: true\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     ip:\n       required: true\n       type: string\n       description: ''\n     mac:\n       required: true\n       type: string\n       description: ''\n     pxe_loader:\n       required: false\n       type: string\n       description: DHCP filename option (Grub2 or PXELinux by default)\n     name:\n       required: true\n       type: string\n       description: ''\n     \"",
             "required": false,
             "type": "object"
         },

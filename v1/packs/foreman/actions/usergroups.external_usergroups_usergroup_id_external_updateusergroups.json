@@ -11,7 +11,7 @@
             "type": "string"
         },
         "external_usergroup": {
-            "description": "'description: External user group information\n parameters:\n     auth_source_id:\n       required: false\n       type: number\n       description: ID of linked authentication source\n     name:\n       required: false\n       type: string\n       description: External user group name\n     '",
+            "description": "\"description: External user group information\n parameters:\n     auth_source_id:\n       required: false\n       type: string\n       description: ID of linked authentication source\n     name:\n       required: false\n       type: string\n       description: External user group name\n     \"",
             "required": true,
             "type": "object"
         },

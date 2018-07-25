@@ -1,0 +1,76 @@
+{
+    "description": "Create a package group (resource: POST /katello/api/package_group)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "package_group.package_groups_create",
+    "pack": "foreman",
+    "parameters": {
+        "conditional_package_names": {
+            "description": "conditional package names to include in the package group",
+            "required": false,
+            "type": "array"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "default_package_names": {
+            "description": "default package names to include in the package group",
+            "required": false,
+            "type": "array"
+        },
+        "description": {
+            "description": "package group description. Defaults to params",
+            "required": false,
+            "type": "string"
+        },
+        "mandatory_package_names": {
+            "description": "mandatory package names to include in the package group",
+            "required": false,
+            "type": "array"
+        },
+        "name": {
+            "description": "package group name.",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "package_group.package_groups_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "optional_package_names": {
+            "description": "optional package names to include in the package group",
+            "required": false,
+            "type": "array"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "repository_id": {
+            "description": "repository_id",
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "user_visible": {
+            "description": "set 'user_visible' flag on package group. Defaults to true",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

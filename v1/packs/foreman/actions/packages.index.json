@@ -25,8 +25,13 @@
             "required": false,
             "type": "string"
         },
-        "full_results": {
+        "full_result": {
             "description": "Whether or not to show all results",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "host id to list applicable packages for",
             "required": false,
             "type": "string"
         },
@@ -49,6 +54,16 @@
             "description": "organization identifier",
             "required": false,
             "type": "string"
+        },
+        "packages_restrict_applicable": {
+            "description": "Only show packages that are applicable to hosts (defaults to true ifhost_id is specified)",
+            "required": false,
+            "type": "boolean"
+        },
+        "packages_restrict_upgradable": {
+            "description": "Only show packages that are upgradable in the host(s) Content View.",
+            "required": false,
+            "type": "boolean"
         },
         "page": {
             "description": "Page number, starting at 1",
@@ -82,7 +97,7 @@
             "type": "string"
         },
         "sort": {
-            "description": "'description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     '",
+            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"",
             "required": false,
             "type": "object"
         },

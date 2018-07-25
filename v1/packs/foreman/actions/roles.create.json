@@ -22,7 +22,7 @@
             "type": "string"
         },
         "role": {
-            "description": "'description: None\n parameters:\n     name:\n       required: true\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     name:\n       required: true\n       type: string\n       description: ''\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     description:\n       required: false\n       type: string\n       description: Role description\n     \"",
             "required": true,
             "type": "object"
         },

@@ -1,0 +1,45 @@
+{
+    "description": "Update a Policy (resource: PUT /api/compliance/policies/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "compliance.policies_update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "compliance.policies_update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "policy": {
+            "description": "\"description: \n parameters:\n     name:\n       required: false\n       type: string\n       description: Policy name\n     scap_content_id:\n       required: false\n       type: number\n       description: Policy SCAP content ID\n     tailoring_file_profile_id:\n       required: false\n       type: number\n       description: Tailoring file profile ID\n     period:\n       required: false\n       type: string\n       description: Policy schedule period (weekly, monthly, custom)\n     tailoring_file_id:\n       required: false\n       type: number\n       description: Tailoring file ID\n     day_of_month:\n       required: false\n       type: number\n       description: Policy schedule day of month (only if period == 'monthly')\n     weekday:\n       required: false\n       type: string\n       description: Policy schedule weekday (only if period == 'weekly')\n     cron_line:\n       required: false\n       type: string\n       description: Policy schedule cron line (only if period == 'custom')\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     scap_content_profile_id:\n       required: false\n       type: number\n       description: Policy SCAP content profile ID\n     hostgroup_ids:\n       required: false\n       type: array\n       description: Apply policy to host groups\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     description:\n       required: false\n       type: string\n       description: Policy description\n     \"",
+            "required": true,
+            "type": "object"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

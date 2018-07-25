@@ -50,6 +50,16 @@
             "immutable": true,
             "type": "string"
         },
+        "ostree_upstream_sync_depth": {
+            "description": "if a custom sync policy is chosen for ostree repositories then a'depth' value must be provided.",
+            "required": false,
+            "type": "string"
+        },
+        "ostree_upstream_sync_policy": {
+            "description": "policies for syncing upstream ostree repositories.",
+            "required": false,
+            "type": "string"
+        },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
             "required": false,
@@ -66,6 +76,16 @@
             "required": false,
             "type": "string"
         },
+        "upstream_password": {
+            "description": "Password of the upstream repository user for authentication",
+            "required": false,
+            "type": "string"
+        },
+        "upstream_username": {
+            "description": "Username of the upstream repository user for authentication",
+            "required": false,
+            "type": "string"
+        },
         "url": {
             "description": "the feed url of the original repository",
             "required": false,
@@ -73,6 +93,11 @@
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "verify_ssl_on_sync": {
+            "description": "if true, Katello will verify the upstream url's SSL certifcates aresigned by a trusted CA.",
             "required": false,
             "type": "string"
         }

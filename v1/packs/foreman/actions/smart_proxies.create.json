@@ -27,7 +27,7 @@
             "type": "string"
         },
         "smart_proxy": {
-            "description": "'description: None\n parameters:\n     url:\n       required: true\n       type: string\n       description:\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     name:\n       required: true\n       type: string\n       description:\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     '",
+            "description": "\"description: \n parameters:\n     url:\n       required: true\n       type: string\n       description: ''\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     download_policy:\n       required: false\n       type: string\n       description: Download Policy of the capsule, must be one of immediate, on_demand,background, inherit\n     name:\n       required: true\n       type: string\n       description: ''\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     \"",
             "required": true,
             "type": "object"
         },

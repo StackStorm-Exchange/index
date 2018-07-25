@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "checksum_type": {
-            "description": "checksum of the repository, currently 'sha1' & 'sha256'are supported.'",
+            "description": "checksum of the repository, currently 'sha1' & 'sha256'are supported.",
             "required": false,
             "type": "string"
         },
@@ -35,6 +35,11 @@
             "required": false,
             "type": "string"
         },
+        "ignore_global_proxy": {
+            "description": "if true, will ignore the globally configured Capsule when syncing.",
+            "required": false,
+            "type": "string"
+        },
         "label": {
             "required": false,
             "type": "string"
@@ -51,6 +56,16 @@
         "operation": {
             "default": "repositories.create",
             "immutable": true,
+            "type": "string"
+        },
+        "ostree_upstream_sync_depth": {
+            "description": "if a custom sync policy is chosen for ostree repositories then a'depth' value must be provided.",
+            "required": false,
+            "type": "string"
+        },
+        "ostree_upstream_sync_policy": {
+            "description": "policies for syncing upstream ostree repositories.",
+            "required": false,
             "type": "string"
         },
         "password": {
@@ -74,6 +89,16 @@
             "required": false,
             "type": "string"
         },
+        "upstream_password": {
+            "description": "Password of the upstream repository user used for authentication",
+            "required": false,
+            "type": "string"
+        },
+        "upstream_username": {
+            "description": "Username of the upstream repository user used for authentication",
+            "required": false,
+            "type": "string"
+        },
         "url": {
             "description": "repository source url",
             "required": false,
@@ -81,6 +106,11 @@
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "verify_ssl_on_sync": {
+            "description": "if true, Katello will verify the upstream url's SSL certifcates aresigned by a trusted CA.",
             "required": false,
             "type": "string"
         }

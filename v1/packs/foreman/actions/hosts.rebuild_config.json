@@ -14,6 +14,11 @@
             "required": true,
             "type": "string"
         },
+        "only": {
+            "description": "Limit rebuild steps, valid steps are DHCP, DNS, TFTP",
+            "required": false,
+            "type": "array"
+        },
         "operation": {
             "default": "hosts.rebuild_config",
             "immutable": true,

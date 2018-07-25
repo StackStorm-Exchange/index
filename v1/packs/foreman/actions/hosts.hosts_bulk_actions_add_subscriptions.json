@@ -11,12 +11,12 @@
             "type": "string"
         },
         "excluded": {
-            "description": "'description: None\n parameters:\n     ids:\n       required: false\n       type: array\n       description: List of system ids to exclude and not run an action on\n     '\n",
+            "description": "\"description: \n parameters:\n     ids:\n       required: false\n       type: array\n       description: List of host ids to exclude and not run an action on\n     \"\n",
             "required": true,
             "type": "object"
         },
         "included": {
-            "description": "'description: None\n parameters:\n     search:\n       required: false\n       type: string\n       description: Search string for systems to perform an action on\n     ids:\n       required: false\n       type: array\n       description: List of system ids to perform an action on\n     '\n",
+            "description": "\"description: \n parameters:\n     search:\n       required: false\n       type: string\n       description: Search string for hosts to perform an action on\n     ids:\n       required: false\n       type: array\n       description: List of host ids to perform an action on\n     \"\n",
             "required": true,
             "type": "object"
         },
@@ -42,7 +42,7 @@
             "type": "string"
         },
         "subscriptions": {
-            "description": "'description: Array of subscriptions to add\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool id\n     quantity:\n       required: true\n       type: string\n       description: Quantity of this subscriptions to add\n     '",
+            "description": "\"description: Array of subscriptions to add\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool id\n     quantity:\n       required: true\n       type: string\n       description: Quantity of this subscriptions to add\n     \"",
             "required": true,
             "type": "array"
         },

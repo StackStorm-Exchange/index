@@ -1,0 +1,46 @@
+{
+    "description": "Create an SSH key for a user (resource: POST /api/users/:user_id/ssh_keys)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "users.ssh_keys_create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "users.ssh_keys_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "ssh_key": {
+            "description": "\"description: \n parameters:\n     name:\n       required: true\n       type: string\n       description: ''\n     key:\n       required: true\n       type: string\n       description: Public SSH key\n     \"",
+            "required": true,
+            "type": "object"
+        },
+        "user_id": {
+            "description": "ID of the user",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

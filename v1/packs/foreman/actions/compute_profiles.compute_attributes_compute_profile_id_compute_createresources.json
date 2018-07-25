@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "compute_attribute": {
-            "description": "'description: None\n parameters:\n     vm_attrs:\n       required: true\n       type: object\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     vm_attrs:\n       required: true\n       type: object\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },

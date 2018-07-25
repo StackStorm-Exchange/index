@@ -5,6 +5,11 @@
     "name": "content_view_filters.content_view_filter_rules_create",
     "pack": "foreman",
     "parameters": {
+        "architecture": {
+            "description": "package: architecture",
+            "required": false,
+            "type": "string"
+        },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
             "required": false,
@@ -46,7 +51,7 @@
             "type": "string"
         },
         "name": {
-            "description": "package or package group: name",
+            "description": "package, package group, or docker tag names",
             "required": false,
             "type": "string"
         },
@@ -78,6 +83,11 @@
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "uuid": {
+            "description": "package group: uuid",
             "required": false,
             "type": "string"
         },

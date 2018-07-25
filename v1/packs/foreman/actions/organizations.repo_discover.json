@@ -10,6 +10,11 @@
             "required": false,
             "type": "string"
         },
+        "content_type": {
+            "description": "One of yum or docker",
+            "required": false,
+            "type": "string"
+        },
         "id": {
             "description": "Organization ID",
             "required": true,
@@ -31,8 +36,18 @@
             "required": false,
             "type": "string"
         },
+        "upstream_password": {
+            "description": "Password to access URL",
+            "required": false,
+            "type": "string"
+        },
+        "upstream_username": {
+            "description": "Username to access URL",
+            "required": false,
+            "type": "string"
+        },
         "url": {
-            "description": "base url to perform repo discovery on",
+            "description": "Base URL to perform repo discovery on",
             "required": false,
             "type": "string"
         },

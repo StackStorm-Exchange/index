@@ -27,7 +27,7 @@
             "type": "string"
         },
         "usergroup": {
-            "description": "'description: None\n parameters:\n     admin:\n       required: false\n       type: string\n       description: is an admin user group\n     user_ids:\n       required: false\n       type: array\n       description:\n     role_ids:\n       required: false\n       type: array\n       description:\n     usergroup_ids:\n       required: false\n       type: array\n       description:\n     name:\n       required: true\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     admin:\n       required: false\n       type: string\n       description: is an admin user group\n     user_ids:\n       required: false\n       type: array\n       description: ''\n     role_ids:\n       required: false\n       type: array\n       description: ''\n     usergroup_ids:\n       required: false\n       type: array\n       description: ''\n     name:\n       required: true\n       type: string\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },

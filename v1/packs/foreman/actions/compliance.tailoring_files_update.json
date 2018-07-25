@@ -1,0 +1,45 @@
+{
+    "description": "Update a Tailoring file (resource: PUT /api/compliance/tailoring_files/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "compliance.tailoring_files_update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "compliance.tailoring_files_update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "tailoring_file": {
+            "description": "\"description: \n parameters:\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     scap_file:\n       required: false\n       type: string\n       description: XML containing tailoring file\n     name:\n       required: false\n       type: string\n       description: Tailoring file name\n     original_filename:\n       required: false\n       type: string\n       description: Original file name of the XML file\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     \"",
+            "required": true,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

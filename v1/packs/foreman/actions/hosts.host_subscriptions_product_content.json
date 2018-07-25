@@ -10,6 +10,16 @@
             "required": false,
             "type": "string"
         },
+        "content_access_mode_all": {
+            "description": "Get all content available, not just that provided by subscriptions",
+            "required": false,
+            "type": "string"
+        },
+        "content_access_mode_env": {
+            "description": "Limit content to just that available in the host's content view version",
+            "required": false,
+            "type": "string"
+        },
         "host_id": {
             "description": "Id of the host",
             "required": true,

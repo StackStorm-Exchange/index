@@ -1,5 +1,5 @@
 {
-    "description": "Show a package (resource: GET /katello/api/repositories/:repository_id/packages/:id)",
+    "description": "List :resource_id (resource: GET /katello/api/repositories/:repository_id/:resource_id)",
     "enabled": true,
     "entry_point": "lib/action.py",
     "name": "repositories.packages_epositories",
@@ -10,14 +10,64 @@
             "required": false,
             "type": "string"
         },
-        "id": {
-            "description": "a package identifier",
-            "required": true,
+        "content_view_filter_id": {
+            "description": "content view filter identifier",
+            "required": false,
             "type": "string"
+        },
+        "content_view_version_id": {
+            "description": "content view version identifier",
+            "required": false,
+            "type": "string"
+        },
+        "environment_id": {
+            "description": "environment identifier",
+            "required": false,
+            "type": "string"
+        },
+        "full_result": {
+            "description": "Whether or not to show all results",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "host id to list applicable packages for",
+            "required": false,
+            "type": "string"
+        },
+        "ids": {
+            "description": "ids to filter content by",
+            "required": false,
+            "type": "array"
         },
         "operation": {
             "default": "repositories.packages_epositories",
             "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "Sort field and order, eg. 'name DESC'",
+            "required": false,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "organization identifier",
+            "required": false,
+            "type": "string"
+        },
+        "packages_restrict_applicable": {
+            "description": "Only show packages that are applicable to hosts (defaults to true ifhost_id is specified)",
+            "required": false,
+            "type": "boolean"
+        },
+        "packages_restrict_upgradable": {
+            "description": "Only show packages that are upgradable in the host(s) Content View.",
+            "required": false,
+            "type": "boolean"
+        },
+        "page": {
+            "description": "Page number, starting at 1",
+            "required": false,
             "type": "string"
         },
         "password": {
@@ -26,15 +76,30 @@
             "secret": true,
             "type": "string"
         },
+        "per_page": {
+            "description": "Number of results per page to return",
+            "required": false,
+            "type": "string"
+        },
         "repository_id": {
             "description": "repository identifier",
             "required": true,
+            "type": "string"
+        },
+        "search": {
+            "description": "Search string",
+            "required": false,
             "type": "string"
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
             "required": false,
             "type": "string"
+        },
+        "sort": {
+            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"",
+            "required": false,
+            "type": "object"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

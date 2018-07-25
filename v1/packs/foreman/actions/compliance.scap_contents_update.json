@@ -1,0 +1,45 @@
+{
+    "description": "Update an SCAP content (resource: PUT /api/compliance/scap_contents/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "compliance.scap_contents_update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "compliance.scap_contents_update",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "scap_content": {
+            "description": "\"description: \n parameters:\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     scap_file:\n       required: false\n       type: string\n       description: XML containing SCAP content\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     original_filename:\n       required: false\n       type: string\n       description: Original file name of the XML file\n     title:\n       required: false\n       type: string\n       description: SCAP content name\n     \"",
+            "required": true,
+            "type": "object"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

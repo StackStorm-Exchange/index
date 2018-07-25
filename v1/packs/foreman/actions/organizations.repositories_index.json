@@ -1,0 +1,126 @@
+{
+    "description": "List of repositories in an organization (resource: GET /katello/api/organizations/:organization_id/repositories)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "organizations.repositories_index",
+    "pack": "foreman",
+    "parameters": {
+        "available_for": {
+            "description": "interpret specified object to return only Repositories that can beassociated with specified object.  Only 'content_view' issupported.",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_type": {
+            "description": "limit to only repositories of this type",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_id": {
+            "description": "ID of a content view to show repositories in",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_version_id": {
+            "description": "ID of a content view version to show repositories in",
+            "required": false,
+            "type": "string"
+        },
+        "environment_id": {
+            "description": "ID of an environment to show repositories in",
+            "required": false,
+            "type": "string"
+        },
+        "erratum_id": {
+            "description": "Id of an erratum to find repositories that contain the erratum",
+            "required": false,
+            "type": "string"
+        },
+        "full_result": {
+            "description": "Whether or not to show all results",
+            "required": false,
+            "type": "string"
+        },
+        "library": {
+            "description": "show repositories in Library and the default content view",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of the repository",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "organizations.repositories_index",
+            "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "Sort field and order, eg. 'name DESC'",
+            "required": false,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "ID of an organization to show repositories in",
+            "required": true,
+            "type": "string"
+        },
+        "ostree_branch_id": {
+            "description": "Id of an ostree branch to find repositories that contain that branch",
+            "required": false,
+            "type": "string"
+        },
+        "page": {
+            "description": "Page number, starting at 1",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "Number of results per page to return",
+            "required": false,
+            "type": "string"
+        },
+        "product_id": {
+            "description": "ID of a product to show repositories of",
+            "required": false,
+            "type": "string"
+        },
+        "rpm_id": {
+            "description": "Id of a package to find repositories that contain the rpm",
+            "required": false,
+            "type": "string"
+        },
+        "search": {
+            "description": "Search string",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "sort": {
+            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"",
+            "required": false,
+            "type": "object"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

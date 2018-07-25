@@ -16,7 +16,7 @@
             "type": "string"
         },
         "override_value": {
-            "description": "'description: None\n parameters:\n     use_puppet_default:\n       required: false\n       type: string\n       description:\n     value:\n       required: true\n       type: string\n       description: Override value\n     match:\n       required: true\n       type: string\n       description: Override match\n     '",
+            "description": "\"description: \n parameters:\n     use_puppet_default:\n       required: false\n       type: string\n       description: Deprecated, please use omit\n     omit:\n       required: false\n       type: string\n       description: Satellite will not send this parameter in classification output, replacesuse_puppet_default\n     value:\n       required: false\n       type: string\n       description: Override value, required if omit is false\n     match:\n       required: true\n       type: string\n       description: Override match\n     \"",
             "required": true,
             "type": "object"
         },

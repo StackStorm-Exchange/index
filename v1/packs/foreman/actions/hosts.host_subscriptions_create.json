@@ -26,7 +26,7 @@
             "type": "array"
         },
         "installed_products": {
-            "description": "'description: List of products installed on the host\n parameters:\n     product_id:\n       required: false\n       type: string\n       description: Product id as listed from a host's installed products,         this isnot the same product id as the products api returns\n     product_name:\n       required: false\n       type: string\n       description: Product name as listed from a host's installed products\n     '\n",
+            "description": "\"description: List of products installed on the host\n parameters:\n     version:\n       required: false\n       type: string\n       description: Product version\n     arch:\n       required: false\n       type: string\n       description: Product architecture\n     product_id:\n       required: false\n       type: string\n       description: Product id as listed from a host's installed products,         this isnot the same product id as the products api returns\n     product_name:\n       required: false\n       type: string\n       description: Product name as listed from a host's installed products\n     \"\n",
             "required": false,
             "type": "array"
         },

@@ -56,6 +56,11 @@
             "required": false,
             "type": "string"
         },
+        "subnet_id": {
+            "description": "ID of subnet",
+            "required": false,
+            "type": "string"
+        },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
             "required": false,

@@ -30,6 +30,11 @@
             "required": false,
             "type": "string"
         },
+        "show_hidden": {
+            "description": "Display hidden values",
+            "required": false,
+            "type": "string"
+        },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
             "required": false,

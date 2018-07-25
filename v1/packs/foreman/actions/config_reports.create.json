@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "config_report": {
-            "description": "'description: None\n parameters:\n     reported_at:\n       required: true\n       type: string\n       description: UTC time of report\n     status:\n       required: true\n       type: object\n       description: Hash of status type totals\n     host:\n       required: true\n       type: string\n       description: Hostname or certname\n     metrics:\n       required: true\n       type: object\n       description: Hash of report metrics, can be just {}\n     logs:\n       required: false\n       type: array\n       description: Optional array of log hashes\n     '",
+            "description": "\"description: \n parameters:\n     reported_at:\n       required: true\n       type: string\n       description: UTC time of report\n     status:\n       required: true\n       type: object\n       description: Hash of status type totals\n     host:\n       required: true\n       type: string\n       description: Hostname or certname\n     metrics:\n       required: true\n       type: object\n       description: Hash of report metrics, can be just {}\n     logs:\n       required: false\n       type: array\n       description: Optional array of log hashes\n     \"",
             "required": true,
             "type": "object"
         },

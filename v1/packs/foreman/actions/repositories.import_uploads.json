@@ -5,6 +5,11 @@
     "name": "repositories.import_uploads",
     "pack": "foreman",
     "parameters": {
+        "async": {
+            "description": "Do not wait for the ImportUpload action to finish. Default: false",
+            "required": false,
+            "type": "string"
+        },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
             "required": false,
@@ -36,9 +41,19 @@
             "required": false,
             "type": "string"
         },
+        "sync_capsule": {
+            "description": "Whether or not to sync an external capsule after upload. Default: true",
+            "required": false,
+            "type": "string"
+        },
         "upload_ids": {
             "description": "Array of upload ids to import",
-            "required": true,
+            "required": false,
+            "type": "array"
+        },
+        "uploads": {
+            "description": "\"description: Array of uploads to import\n parameters:\n     checksum:\n       required: false\n       type: string\n       description: ''\n     id:\n       required: true\n       type: string\n       description: ''\n     name:\n       required: false\n       type: string\n       description: Needs to only be set for file repositories\n     size:\n       required: false\n       type: string\n       description: ''\n     \"",
+            "required": false,
             "type": "array"
         },
         "username": {

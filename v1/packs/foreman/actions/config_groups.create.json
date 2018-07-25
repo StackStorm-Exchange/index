@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "config_group": {
-            "description": "'description: None\n parameters:\n     name:\n       required: true\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     puppetclass_ids:\n       required: false\n       type: array\n       description: ''\n     name:\n       required: true\n       type: string\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },

@@ -1,0 +1,45 @@
+{
+    "description": "Clone a role (resource: POST /api/roles/:id/clone)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "roles.clone",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "roles.clone",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "role": {
+            "description": "\"description: \n parameters:\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     name:\n       required: false\n       type: string\n       description: ''\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     description:\n       required: false\n       type: string\n       description: Role description\n     \"",
+            "required": true,
+            "type": "object"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

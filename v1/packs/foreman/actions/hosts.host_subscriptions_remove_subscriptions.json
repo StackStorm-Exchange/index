@@ -32,7 +32,7 @@
             "type": "string"
         },
         "subscriptions": {
-            "description": "'description: Array of subscriptions to remove\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool id\n     quantity:\n       required: false\n       type: number\n       description: If specified, remove the first instance of a subscription with matching idand quantity\n     '",
+            "description": "\"description: Array of subscriptions to remove\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool id\n     quantity:\n       required: false\n       type: number\n       description: If specified, remove the first instance of a subscription with matching idand quantity\n     \"",
             "required": false,
             "type": "array"
         },

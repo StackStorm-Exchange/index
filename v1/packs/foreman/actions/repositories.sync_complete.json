@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "call_report": {
-            "description": "'description: None\n parameters:\n     task_id:\n       required: true\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     task_id:\n       required: true\n       type: string\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },
@@ -27,7 +27,7 @@
             "type": "string"
         },
         "payload": {
-            "description": "'description: None\n parameters:\n     repo_id:\n       required: true\n       type: string\n       description:\n     '\n",
+            "description": "\"description: \n parameters:\n     repo_id:\n       required: true\n       type: string\n       description: ''\n     \"\n",
             "required": true,
             "type": "object"
         },

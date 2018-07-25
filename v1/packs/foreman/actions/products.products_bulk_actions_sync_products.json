@@ -31,8 +31,18 @@
             "required": false,
             "type": "string"
         },
+        "skip_metadata_check": {
+            "description": "Force sync even if no upstream changes are detected. Non-yum repositoriesare skipped.",
+            "required": false,
+            "type": "string"
+        },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "validate_contents": {
+            "description": "Force a sync and validate the checksums of all content. Non-yumrepositories (or those with                                                On Demand download policy) are skipped.",
             "required": false,
             "type": "string"
         }

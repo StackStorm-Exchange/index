@@ -10,6 +10,10 @@
             "required": false,
             "type": "string"
         },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
         "operation": {
             "default": "locations.show",
             "immutable": true,
@@ -23,6 +27,11 @@
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "show_hidden_parameters": {
+            "description": "Display hidden parameter values",
             "required": false,
             "type": "string"
         },

@@ -20,6 +20,11 @@
             "required": false,
             "type": "string"
         },
+        "include": {
+            "description": "Array of extra information types to include",
+            "required": false,
+            "type": "array"
+        },
         "location_id": {
             "description": "ID of location",
             "required": true,
@@ -63,6 +68,11 @@
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "thin": {
+            "description": "Only list ID and name of hosts",
             "required": false,
             "type": "string"
         },

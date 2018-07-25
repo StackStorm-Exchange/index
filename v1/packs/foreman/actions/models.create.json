@@ -11,7 +11,7 @@
             "type": "string"
         },
         "model": {
-            "description": "'description: None\n parameters:\n     info:\n       required: false\n       type: string\n       description:\n     hardware_model:\n       required: false\n       type: string\n       description:\n     vendor_class:\n       required: false\n       type: string\n       description:\n     name:\n       required: true\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     info:\n       required: false\n       type: string\n       description: ''\n     hardware_model:\n       required: false\n       type: string\n       description: ''\n     vendor_class:\n       required: false\n       type: string\n       description: ''\n     name:\n       required: true\n       type: string\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },

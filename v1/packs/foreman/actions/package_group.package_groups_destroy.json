@@ -1,0 +1,46 @@
+{
+    "description": "Delete a package group (resource: DELETE /katello/api/package_group)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "package_group.package_groups_destroy",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "package group name",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "package_group.package_groups_destroy",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "repository_id": {
+            "description": "repository_id",
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

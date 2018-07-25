@@ -36,6 +36,11 @@
             "required": false,
             "type": "string"
         },
+        "sync_capsule": {
+            "description": "Whether or not to sync an external capsule after upload. Default: true",
+            "required": false,
+            "type": "string"
+        },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
             "required": false,

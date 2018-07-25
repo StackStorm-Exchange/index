@@ -10,6 +10,10 @@
             "required": false,
             "type": "string"
         },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
         "operation": {
             "default": "locations.destroy",
             "immutable": true,

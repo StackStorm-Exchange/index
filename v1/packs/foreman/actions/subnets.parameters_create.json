@@ -1,0 +1,76 @@
+{
+    "description": "Create a nested parameter for a subnet (resource: POST /api/subnets/:subnet_id/parameters)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "subnets.parameters_create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "domain_id": {
+            "description": "ID of domain",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "ID of host",
+            "required": false,
+            "type": "string"
+        },
+        "hostgroup_id": {
+            "description": "ID of host group",
+            "required": false,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "ID of location",
+            "required": false,
+            "type": "string"
+        },
+        "operatingsystem_id": {
+            "description": "ID of operating system",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "subnets.parameters_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "ID of organization",
+            "required": false,
+            "type": "string"
+        },
+        "parameter": {
+            "description": "\"description: \n parameters:\n     name:\n       required: true\n       type: string\n       description: ''\n     value:\n       required: true\n       type: string\n       description: ''\n     \"",
+            "required": true,
+            "type": "object"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "subnet_id": {
+            "description": "ID of subnet",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

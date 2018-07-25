@@ -15,7 +15,7 @@
             "type": "string"
         },
         "image": {
-            "description": "'description: None\n parameters:\n     username:\n       required: true\n       type: string\n       description:\n     operatingsystem_id:\n       required: false\n       type: string\n       description: ID of operating system\n     compute_resource_id:\n       required: false\n       type: string\n       description: ID of compute resource\n     uuid:\n       required: true\n       type: string\n       description:\n     user_data:\n       required: false\n       type: string\n       description: Whether or not the image supports user data\n     architecture_id:\n       required: false\n       type: string\n       description: ID of architecture\n     name:\n       required: true\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     username:\n       required: true\n       type: string\n       description: ''\n     operatingsystem_id:\n       required: false\n       type: string\n       description: ID of operating system\n     compute_resource_id:\n       required: false\n       type: string\n       description: ID of compute resource\n     uuid:\n       required: true\n       type: string\n       description: ''\n     user_data:\n       required: false\n       type: string\n       description: Whether or not the image supports user data\n     architecture_id:\n       required: false\n       type: string\n       description: ID of architecture\n     password:\n       required: false\n       type: string\n       description: ''\n     name:\n       required: true\n       type: string\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },

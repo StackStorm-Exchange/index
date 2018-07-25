@@ -15,7 +15,7 @@
             "type": "string"
         },
         "kind": {
-            "description": "Template kinds, available values: Bootdisk, PXELinux, PXEGrub, iPXE,provision, finish, script, user_data, ZTP, POAP, kexec",
+            "description": "Template kinds, available values: Bootdisk, PXELinux, PXEGrub, PXEGrub2,iPXE, provision, finish, script, user_data, ZTP, POAP, kexec",
             "required": true,
             "type": "string"
         },

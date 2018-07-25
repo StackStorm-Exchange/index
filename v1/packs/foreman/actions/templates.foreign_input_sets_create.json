@@ -11,7 +11,7 @@
             "type": "string"
         },
         "foreign_input_set": {
-            "description": "'description: None\n parameters:\n     include:\n       required: false\n       type: string\n       description: A comma separated list of input names to be included from the foreigntemplate.\n     include_all:\n       required: false\n       type: string\n       description: Include all inputs from the foreign template\n     description:\n       required: false\n       type: string\n       description: Input set description\n     target_template_id:\n       required: true\n       type: string\n       description: Target template ID\n     exclude:\n       required: false\n       type: string\n       description: A comma separated list of input names to be included from the foreigntemplate.\n     '",
+            "description": "\"description: \n parameters:\n     include:\n       required: false\n       type: string\n       description: A comma separated list of input names to be included from the foreigntemplate.\n     include_all:\n       required: false\n       type: string\n       description: Include all inputs from the foreign template\n     description:\n       required: false\n       type: string\n       description: Input set description\n     target_template_id:\n       required: true\n       type: string\n       description: Target template ID\n     exclude:\n       required: false\n       type: string\n       description: A comma separated list of input names to be included from the foreigntemplate.\n     \"",
             "required": true,
             "type": "object"
         },

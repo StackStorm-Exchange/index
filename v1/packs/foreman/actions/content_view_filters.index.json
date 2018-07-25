@@ -15,7 +15,7 @@
             "required": true,
             "type": "string"
         },
-        "full_results": {
+        "full_result": {
             "description": "Whether or not to show all results",
             "required": false,
             "type": "string"
@@ -62,9 +62,14 @@
             "type": "string"
         },
         "sort": {
-            "description": "'description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     '\n",
+            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"\n",
             "required": false,
             "type": "object"
+        },
+        "types": {
+            "description": "types of filters",
+            "required": false,
+            "type": "array"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

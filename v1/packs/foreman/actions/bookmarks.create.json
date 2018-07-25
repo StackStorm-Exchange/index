@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "bookmark": {
-            "description": "'description: None\n parameters:\n     query:\n       required: true\n       type: string\n       description:\n     controller:\n       required: true\n       type: string\n       description:\n     name:\n       required: true\n       type: string\n       description:\n     public:\n       required: false\n       type: string\n       description:\n     '",
+            "description": "\"description: \n parameters:\n     query:\n       required: true\n       type: string\n       description: ''\n     controller:\n       required: true\n       type: string\n       description: ''\n     name:\n       required: true\n       type: string\n       description: ''\n     public:\n       required: false\n       type: string\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },
