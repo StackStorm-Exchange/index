@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1532545696,
-        "hash": "9542e83cc58ee7d5ac23030bf4857710"
+        "generated_ts": 1532547203,
+        "hash": "e4562240a95f70e22cd539467089f6c2"
     },
     "packs": {
         "acos": {
@@ -4472,11 +4472,11 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "get_build_number",
-                        "run_build",
                         "retry_build",
-                        "get_build_info",
+                        "get_build_number",
                         "cancel_build",
+                        "get_build_info",
+                        "run_build",
                         "wait_until_build_finishes"
                     ]
                 },
@@ -4489,8 +4489,8 @@
                 "tests": {
                     "count": 2,
                     "resources": [
-                        "test_get_build_number_action.py",
-                        "test_wait_until_build_finishes.py"
+                        "test_wait_until_build_finishes.py",
+                        "test_get_build_number_action.py"
                     ]
                 }
             },
@@ -4505,7 +4505,7 @@
             "name": "Circle CI",
             "ref": "circle_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle_ci",
-            "version": "0.5.2"
+            "version": "0.5.3"
         },
         "cisco_aci": {
             "author": "Paul Mulvihill",
