@@ -1,0 +1,50 @@
+{
+    "description": "Retrieve a thread of messages posted to a conversation",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "conversations.replies",
+    "parameters": {
+        "channel": {
+            "required": true,
+            "type": "string"
+        },
+        "cursor": {
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "conversations.replies",
+            "immutable": true,
+            "type": "string"
+        },
+        "inclusive": {
+            "default": "0",
+            "required": false,
+            "type": "string"
+        },
+        "latest": {
+            "default": "now",
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "default": "10",
+            "required": false,
+            "type": "string"
+        },
+        "oldest": {
+            "default": "0",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        },
+        "ts": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,8 +1,8 @@
 {
-    "description": "Exchanges a temporary OAuth verifier code for an access token.",
+    "description": "Exchanges a temporary OAuth verifier code for a workspace token.",
     "enabled": true,
     "entry_point": "run.py",
-    "name": "oauth.access",
+    "name": "oauth.token",
     "parameters": {
         "client_id": {
             "required": true,
@@ -17,7 +17,7 @@
             "type": "string"
         },
         "end_point": {
-            "default": "oauth.access",
+            "default": "oauth.token",
             "immutable": true,
             "type": "string"
         },

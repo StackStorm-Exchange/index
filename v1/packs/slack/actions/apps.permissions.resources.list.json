@@ -1,0 +1,26 @@
+{
+    "description": "Returns list of resource grants this app has on a team.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "apps.permissions.resources.list",
+    "parameters": {
+        "cursor": {
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "apps.permissions.resources.list",
+            "immutable": true,
+            "type": "string"
+        },
+        "limit": {
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

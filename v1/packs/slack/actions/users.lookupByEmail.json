@@ -1,0 +1,22 @@
+{
+    "description": "Find a user with an email address.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "users.lookupByEmail",
+    "parameters": {
+        "email": {
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "users.lookupByEmail",
+            "immutable": true,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

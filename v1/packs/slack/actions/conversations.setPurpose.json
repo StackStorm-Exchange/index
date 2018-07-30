@@ -1,0 +1,26 @@
+{
+    "description": "Sets the purpose for a conversation.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "conversations.setPurpose",
+    "parameters": {
+        "channel": {
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "conversations.setPurpose",
+            "immutable": true,
+            "type": "string"
+        },
+        "purpose": {
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

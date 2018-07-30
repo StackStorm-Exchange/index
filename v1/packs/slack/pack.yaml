@@ -6,126 +6,156 @@ keywords:
 - chat
 - messaging
 - instant messaging
-version: 0.10.2
+version: 0.10.3
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 113
+    count: 143
     resources:
-    - pins.add
-    - users.deletePhoto
-    - reminders.list
     - chat.unfurl
-    - reminders.complete
+    - reactions.add
+    - channels.unarchive
+    - usergroups.enable
+    - conversations.join
+    - search.messages
+    - reactions.list
+    - users.setActive
+    - pins.remove
+    - migration.exchange
+    - usergroups.create
+    - dnd.setSnooze
+    - files.info
+    - groups.unarchive
+    - oauth.access
+    - team.billableInfo
+    - chat.getPermalink
+    - channels.leave
+    - channels.invite
+    - conversations.invite
+    - api.test
+    - users.setPhoto
+    - team.profile.get
+    - channels.info
+    - groups.info
+    - stars.list
+    - bots.info
+    - conversations.list
+    - conversations.replies
+    - usergroups.users.update
+    - users.getPresence
+    - channels.setPurpose
+    - users.info
+    - users.list
+    - groups.leave
+    - users.profile.get
+    - im.history
+    - auth.revoke
+    - mpim.history
+    - dnd.endDnd
+    - groups.history
+    - conversations.setTopic
+    - conversations.archive
+    - groups.replies
+    - dnd.info
+    - usergroups.disable
+    - files.comments.edit
+    - users.conversations
+    - conversations.close
+    - conversations.kick
+    - im.mark
+    - chat.postMessage
+    - im.replies
+    - mpim.open
+    - stars.add
+    - reminders.add
+    - rtm.connect
+    - dialog.open
+    - channels.mark
+    - users.identity
+    - groups.kick
+    - conversations.info
+    - apps.permissions.users.list
+    - channels.history
+    - usergroups.list
+    - conversations.history
+    - emoji.list
+    - reminders.info
+    - team.info
+    - groups.setPurpose
+    - channels.kick
+    - users.setPresence
+    - im.list
+    - conversations.setPurpose
+    - groups.invite
+    - files.sharedPublicURL
+    - reactions.remove
+    - mpim.replies
+    - channels.join
+    - dnd.endSnooze
+    - usergroups.update
+    - users.profile.set
+    - users.lookupByEmail
+    - users_filter_by
+    - apps.permissions.users.request
+    - post_message
+    - apps.permissions.scopes.list
+    - files.delete
+    - conversations.create
+    - team.integrationLogs
+    - files.list
+    - files.upload
     - pins.list
     - chat.delete
+    - reactions.get
+    - im.open
+    - apps.permissions.info
+    - users.deletePhoto
+    - usergroups.users.list
+    - files.comments.delete
+    - chat.meMessage
+    - rtm.start
+    - channels.rename
+    - channels.replies
+    - channels.archive
     - reminders.delete
     - groups.createChild
-    - reactions.get
-    - reminders.add
-    - oauth.access
-    - channels.leave
-    - dnd.info
-    - groups.replies
-    - usergroups.update
-    - dnd.teamInfo
-    - users_filter_by
-    - team.integrationLogs
     - groups.open
-    - users.setPhoto
-    - groups.list
-    - files.sharedPublicURL
-    - channels.kick
-    - files.list
+    - conversations.rename
+    - reminders.list
+    - apps.permissions.request
     - search.all
-    - groups.kick
-    - mpim.open
-    - im.history
-    - channels.list
-    - chat.meMessage
-    - users.setActive
-    - usergroups.enable
-    - groups.archive
-    - team.accessLogs
-    - emoji.list
+    - conversations.unarchive
+    - files.revokePublicURL
     - channels.setTopic
-    - channels.rename
-    - bots.info
-    - groups.setPurpose
-    - channels.history
-    - rtm.connect
-    - users.admin.invite
-    - team.billableInfo
-    - users.identity
-    - search.messages
-    - channels.invite
-    - mpim.history
-    - chat.postMessage
-    - channels.mark
-    - users.getPresence
+    - groups.list
+    - team.accessLogs
     - stars.remove
-    - dnd.endDnd
     - groups.create
-    - files.comments.add
-    - dnd.setSnooze
-    - im.open
-    - groups.rename
-    - search.files
-    - usergroups.create
-    - reactions.add
-    - users.setPresence
-    - files.info
-    - team.profile.get
-    - im.list
-    - channels.setPurpose
-    - rtm.start
-    - channels.unarchive
-    - files.comments.delete
-    - users.info
-    - channels.replies
-    - mpim.list
-    - im.close
-    - reminders.info
-    - reactions.list
-    - mpim.mark
-    - im.mark
-    - channels.archive
-    - groups.unarchive
+    - oauth.token
     - groups.setTopic
-    - pins.remove
-    - auth.test
-    - groups.history
-    - reactions.remove
-    - mpim.close
-    - stars.add
-    - channels.join
-    - usergroups.users.list
-    - usergroups.users.update
-    - post_message
+    - groups.archive
     - groups.mark
     - channels.create
-    - users.profile.get
-    - channels.info
-    - stars.list
+    - mpim.mark
+    - conversations.open
+    - groups.rename
+    - mpim.list
+    - files.comments.add
+    - dnd.teamInfo
+    - channels.list
+    - reminders.complete
+    - users.admin.invite
+    - pins.add
+    - apps.permissions.resources.list
+    - im.close
+    - conversations.members
+    - mpim.close
+    - search.files
+    - auth.test
     - chat.update
-    - users.list
-    - api.test
-    - usergroups.list
-    - users.profile.set
-    - files.upload
-    - im.replies
-    - auth.revoke
-    - dnd.endSnooze
-    - groups.leave
-    - team.info
-    - groups.info
-    - mpim.replies
-    - groups.invite
-    - usergroups.disable
-    - files.delete
-    - files.revokePublicURL
-    - files.comments.edit
+    - chat.postEphemeral
+    - conversations.leave
   sensors:
     count: 1
     resources:

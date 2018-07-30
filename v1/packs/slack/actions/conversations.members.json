@@ -1,32 +1,28 @@
 {
-    "description": "Exchanges a temporary OAuth verifier code for an access token.",
+    "description": "Retrieve members of a conversation.",
     "enabled": true,
     "entry_point": "run.py",
-    "name": "oauth.access",
+    "name": "conversations.members",
     "parameters": {
-        "client_id": {
+        "channel": {
             "required": true,
             "type": "string"
         },
-        "client_secret": {
-            "required": true,
-            "type": "string"
-        },
-        "code": {
-            "required": true,
-            "type": "string"
-        },
-        "end_point": {
-            "default": "oauth.access",
-            "immutable": true,
-            "type": "string"
-        },
-        "redirect_uri": {
+        "cursor": {
             "required": false,
             "type": "string"
         },
-        "single_channel": {
-            "default": "false",
+        "end_point": {
+            "default": "conversations.members",
+            "immutable": true,
+            "type": "string"
+        },
+        "limit": {
+            "default": "100",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
             "required": false,
             "type": "string"
         }
