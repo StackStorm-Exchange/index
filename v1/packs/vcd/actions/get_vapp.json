@@ -1,15 +1,14 @@
 {
-    "description": "Retrieve list of Provider VDCs",
+    "description": "Retrieve details for a vApp",
     "enabled": true,
-    "entry_point": "get_pvdcs.py",
-    "name": "get_pvdcs",
+    "entry_point": "get_vapp.py",
+    "name": "get_vapp",
     "parameters": {
-        "detailed": {
-            "default": false,
-            "description": "Retrieve detailed PVDC list",
+        "vapp_ref": {
+            "description": "vApp reference",
             "position": 1,
-            "required": false,
-            "type": "boolean"
+            "required": true,
+            "type": "string"
         },
         "vcloud": {
             "description": "Which vcloud to connect to",

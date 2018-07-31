@@ -1,0 +1,15 @@
+{
+    "description": "Retrieve list of Organisations IDs",
+    "enabled": true,
+    "entry_point": "get_org_ids.py",
+    "name": "get_org_ids",
+    "parameters": {
+        "vcloud": {
+            "description": "Which vcloud to connect to",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

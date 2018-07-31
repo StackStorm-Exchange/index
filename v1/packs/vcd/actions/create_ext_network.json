@@ -1,15 +1,14 @@
 {
-    "description": "Retrieve list of Provider VDCs",
+    "description": "Create an External network from VSphere port groups",
     "enabled": true,
-    "entry_point": "get_pvdcs.py",
-    "name": "get_pvdcs",
+    "entry_point": "create_ext_network.py",
+    "name": "create_ext_network",
     "parameters": {
-        "detailed": {
-            "default": false,
-            "description": "Retrieve detailed PVDC list",
+        "data": {
+            "description": "Data structure for new networks",
             "position": 1,
-            "required": false,
-            "type": "boolean"
+            "required": true,
+            "type": "object"
         },
         "vcloud": {
             "description": "Which vcloud to connect to",

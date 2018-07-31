@@ -1,0 +1,29 @@
+{
+    "action": {
+        "parameters": {
+            "data": "{{trigger.body.data}}",
+            "vcloud": "{{trigger.body.vcloud}}"
+        },
+        "ref": "vcd.setup_org_admin_vdc_vdcnetwork"
+    },
+    "criteria": {
+        "trigger.body.data": {
+            "pattern": "^value$",
+            "type": "exists"
+        },
+        "trigger.body.vcloud": {
+            "pattern": "^value$",
+            "type": "exists"
+        }
+    },
+    "description": "Deploy a Organisation, Admin account, VDC and VDC network",
+    "enabled": true,
+    "name": "Setup org, admin, VDC, vdc Network",
+    "pack": "vcd",
+    "trigger": {
+        "parameters": {
+            "url": "setup_oavn"
+        },
+        "type": "core.st2.webhook"
+    }
+}

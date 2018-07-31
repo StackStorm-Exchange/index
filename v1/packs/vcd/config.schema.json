@@ -1,4 +1,181 @@
 {
+    "defaults": {
+        "properties": {
+            "org": {
+                "properties": {
+                    "Settings": {
+                        "properties": {
+                            "OrgGeneralSettings": {
+                                "properties": {
+                                    "CanPublishCatalogs": {
+                                        "required": false,
+                                        "type": "boolean"
+                                    },
+                                    "DelayAfterPowerOnSeconds": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "DeployedVMQuota": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "StoredVmQuota": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "UseServerBootSequence": {
+                                        "required": false,
+                                        "type": "boolean"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "OrgOperationLimitsSettings": {
+                                "properties": {
+                                    "ConsolesPerVmLimit": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "OperationsPerOrg": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "OperationsPerUser": {
+                                        "required": false,
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "OrgPasswordPolicySettings": {
+                                "properties": {
+                                    "AccountLockoutEnabled": {
+                                        "required": false,
+                                        "type": "boolean"
+                                    },
+                                    "AccountLockoutIntervalMinutes": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "InvalidLoginsBeforeLockout": {
+                                        "required": false,
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "VAppLeaseSettings": {
+                                "properties": {
+                                    "DeleteOnStorageLeaseExpiration": {
+                                        "required": false,
+                                        "type": "boolean"
+                                    },
+                                    "DeploymentLeaseSeconds": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "StorageLeaseSeconds": {
+                                        "required": false,
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "VAppTemplateLeaseSettings": {
+                                "properties": {
+                                    "DeleteOnStorageLeaseExpiration": {
+                                        "required": false,
+                                        "type": "boolean"
+                                    },
+                                    "StorageLeaseSeconds": {
+                                        "required": false,
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "vdc": {
+                "properties": {
+                    "AllocationModel": {
+                        "required": false,
+                        "type": "string"
+                    },
+                    "ComputeCapacity": {
+                        "properties": {
+                            "Cpu": {
+                                "properties": {
+                                    "Allocatedpercent": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "Limit": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "Units": {
+                                        "required": false,
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "Memory": {
+                                "properties": {
+                                    "Allocatedpercent": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "Limit": {
+                                        "required": false,
+                                        "type": "integer"
+                                    },
+                                    "Units": {
+                                        "required": false,
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "IsThinProvision": {
+                        "required": false,
+                        "type": "boolean"
+                    },
+                    "NetworkQuota": {
+                        "required": false,
+                        "type": "integer"
+                    },
+                    "Storage": {
+                        "properties": {
+                            "Limit": {
+                                "required": false,
+                                "type": "integer"
+                            },
+                            "Storage_Profile": {
+                                "required": false,
+                                "type": "string"
+                            },
+                            "Units": {
+                                "required": false,
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    },
     "vcloud": {
         "additionalProperties": false,
         "patternProperties": {

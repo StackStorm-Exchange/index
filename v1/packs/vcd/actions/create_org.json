@@ -1,15 +1,14 @@
 {
-    "description": "Retrieve list of Provider VDCs",
+    "description": "Create an Organisation",
     "enabled": true,
-    "entry_point": "get_pvdcs.py",
-    "name": "get_pvdcs",
+    "entry_point": "create_org.py",
+    "name": "create_org",
     "parameters": {
-        "detailed": {
-            "default": false,
-            "description": "Retrieve detailed PVDC list",
+        "data": {
+            "description": "Data structure for new organisation",
             "position": 1,
-            "required": false,
-            "type": "boolean"
+            "required": true,
+            "type": "object"
         },
         "vcloud": {
             "description": "Which vcloud to connect to",

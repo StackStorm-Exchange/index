@@ -1,0 +1,21 @@
+{
+    "description": "Retrieve VSphere networks",
+    "enabled": true,
+    "entry_point": "get_vsnetworks.py",
+    "name": "get_vsnetworks",
+    "parameters": {
+        "vcloud": {
+            "description": "Which vcloud to connect to",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsid": {
+            "description": "ID for targetted vsphere",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

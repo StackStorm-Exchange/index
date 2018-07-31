@@ -1,0 +1,22 @@
+{
+    "description": "Setup Org, Admin Users, VDCs and Org VDC Networks",
+    "enabled": true,
+    "entry_point": "workflows/setup_org_admin_vdc_vdcnetwork.yaml",
+    "name": "setup_org_admin_vdc_vdcnetwork",
+    "pack": "vcd",
+    "parameters": {
+        "data": {
+            "description": "json object showing setup",
+            "position": 1,
+            "required": true,
+            "type": "object"
+        },
+        "vcloud": {
+            "description": "vCloud to connect to",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "mistral-v2"
+}

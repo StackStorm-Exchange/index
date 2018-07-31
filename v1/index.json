@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1532975711,
-        "hash": "ad41cfce21e8eea61b27568ebddea0c4"
+        "generated_ts": 1533033554,
+        "hash": "0a330daef5078728ff2533ced40c8ac1"
     },
     "packs": {
         "acos": {
@@ -11132,20 +11132,49 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 3,
+                    "count": 15,
                     "resources": [
+                        "get_extnet",
                         "get_orgs",
+                        "get_vapp",
+                        "create_vdc_network",
+                        "get_org",
+                        "create_ext_network",
+                        "get_vdc",
+                        "create_org_admin",
+                        "setup_org_admin_vdc_vdcnetwork",
+                        "create_vdc",
+                        "get_vsnetworks",
                         "get_pvdcs",
-                        "get_org"
+                        "get_org_ids",
+                        "get_vsphere",
+                        "create_org"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "Setup org, admin, VDC, vdc Network"
                     ]
                 },
                 "tests": {
-                    "count": 4,
+                    "count": 15,
                     "resources": [
-                        "test_action_get_orgs.py",
-                        "test_action_get_pvdcs.py",
+                        "test_action_get_vsnetworks.py",
+                        "test_action_get_org_ids.py",
+                        "test_action_get_extnet.py",
                         "vcd_base_action_test_case.py",
-                        "test_action_get_org.py"
+                        "test_action_create_vdc_network.py",
+                        "test_action_get_vsphere.py",
+                        "test_action_create_org.py",
+                        "test_action_get_vdc.py",
+                        "test_action_get_orgs.py",
+                        "test_action_create_vdc.py",
+                        "test_action_get_vapp.py",
+                        "test_action_get_pvdcs.py",
+                        "test_action_get_org.py",
+                        "test_action_create_org_admin.py",
+                        "test_action_create_ext_network.py"
                     ]
                 }
             },
@@ -11155,10 +11184,10 @@
                 "vmware",
                 "vcloud"
             ],
-            "name": "VCloud Director",
+            "name": "vcd",
             "ref": "vcd",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vcd",
-            "version": "0.1.0"
+            "version": "0.2.0"
         },
         "vdx": {
             "author": "StackStorm, Inc.",
