@@ -9,12 +9,21 @@
             "required": false,
             "type": "string"
         },
+        "cursor": {
+            "required": false,
+            "type": "string"
+        },
         "end_point": {
             "default": "reactions.list",
             "immutable": true,
             "type": "string"
         },
         "full": {
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "default": "0",
             "required": false,
             "type": "string"
         },

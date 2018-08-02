@@ -4,6 +4,10 @@
     "entry_point": "run.py",
     "name": "groups.list",
     "parameters": {
+        "cursor": {
+            "required": false,
+            "type": "string"
+        },
         "end_point": {
             "default": "groups.list",
             "immutable": true,
@@ -16,6 +20,11 @@
         },
         "exclude_members": {
             "default": "false",
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "default": "0",
             "required": false,
             "type": "string"
         },
