@@ -1,0 +1,15 @@
+{
+    "description": "Get Details of Request in Opsgenie",
+    "enabled": true,
+    "entry_point": "get_request_status.py",
+    "name": "get_request_status",
+    "pack": "opsgenie",
+    "parameters": {
+        "request_id": {
+            "description": "Request id of the questioned request.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

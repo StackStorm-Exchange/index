@@ -1,0 +1,25 @@
+{
+    "description": "List Integrations in OpsGenie",
+    "enabled": true,
+    "entry_point": "list_integrations.py",
+    "name": "list_integrations",
+    "pack": "opsgenie",
+    "parameters": {
+        "Type": {
+            "description": "Type of integration",
+            "required": false,
+            "type": "string"
+        },
+        "teamId": {
+            "description": "The ID of the team.",
+            "required": false,
+            "type": "string"
+        },
+        "teamName": {
+            "description": "The name of the team.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

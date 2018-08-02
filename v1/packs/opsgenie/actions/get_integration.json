@@ -1,0 +1,15 @@
+{
+    "description": "Get an OpsGenie Integration",
+    "enabled": true,
+    "entry_point": "get_integration.py",
+    "name": "get_integration",
+    "pack": "opsgenie",
+    "parameters": {
+        "integration_id": {
+            "description": "Integration ID to get.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

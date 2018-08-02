@@ -1,0 +1,20 @@
+{
+    "description": "Get an OpsGenie Alert",
+    "enabled": true,
+    "entry_point": "get_alert.py",
+    "name": "get_alert",
+    "pack": "opsgenie",
+    "parameters": {
+        "alert_id": {
+            "description": "Alert ID to delete.",
+            "required": false,
+            "type": "string"
+        },
+        "alias": {
+            "default": null,
+            "description": "Alert ID to delete.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

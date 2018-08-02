@@ -1,18 +1,24 @@
 {
-    "description": "Delete an alert in OpsGenie",
+    "description": "Add note to an alert in OpsGenie",
     "enabled": true,
-    "entry_point": "delete_alert.py",
-    "name": "delete_alert",
+    "entry_point": "add_note_to_alert.py",
+    "name": "add_note_to_alert",
     "pack": "opsgenie",
     "parameters": {
         "alert_id": {
-            "description": "Alert ID to delete.",
-            "required": false,
+            "default": null,
+            "description": "Alert ID to close.",
             "type": "string"
         },
         "alias": {
             "default": null,
-            "description": "Alert ID to delete.",
+            "description": "Alert ID to close.",
+            "type": "string"
+        },
+        "note": {
+            "default": null,
+            "description": "Additional alert note",
+            "required": true,
             "type": "string"
         },
         "source": {

@@ -4,5 +4,36 @@
     "entry_point": "list_users.py",
     "name": "list_users",
     "pack": "opsgenie",
+    "parameters": {
+        "limit": {
+            "default": 100,
+            "description": "Number of users to retrieve",
+            "required": false,
+            "type": "integer"
+        },
+        "offset": {
+            "default": 0,
+            "description": "Number of users to skip from start",
+            "required": false,
+            "type": "integer"
+        },
+        "order": {
+            "description": "Direction of sorting. ",
+            "enum": [
+                "asc",
+                "desc"
+            ],
+            "type": "string"
+        },
+        "sort": {
+            "default": "username",
+            "description": "Field to use in sorting.",
+            "enum": [
+                "username",
+                "fullName"
+            ],
+            "type": "string"
+        }
+    },
     "runner_type": "python-script"
 }

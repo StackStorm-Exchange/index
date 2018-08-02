@@ -5,8 +5,18 @@
     "name": "enable_integration.yaml",
     "pack": "opsgenie",
     "parameters": {
-        "name": {
-            "description": "Intergration to Disable",
+        "integrationId": {
+            "description": "Integration to Enable",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "description": "Method for enable request",
+            "enum": [
+                "POST",
+                "PUT",
+                "PATCH"
+            ],
             "required": true,
             "type": "string"
         }

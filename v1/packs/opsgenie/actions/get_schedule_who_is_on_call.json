@@ -4,5 +4,30 @@
     "entry_point": "get_schedule_who_is_on_call.py",
     "name": "get_schedule_who_is_on_call",
     "pack": "opsgenie",
+    "parameters": {
+        "date": {
+            "description": "Starting date of the timeline.",
+            "type": "string"
+        },
+        "flat": {
+            "default": false,
+            "description": "When enabled, retrieves user names of all on call participants.",
+            "type": "boolean"
+        },
+        "scheduleIdentifier": {
+            "default": null,
+            "description": "Identifier of the schedule.",
+            "required": true,
+            "type": "string"
+        },
+        "scheduleIdentifierType": {
+            "description": "Type of the schedule identifier.",
+            "enum": [
+                "id",
+                "name"
+            ],
+            "type": "string"
+        }
+    },
     "runner_type": "python-script"
 }

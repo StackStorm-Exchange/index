@@ -5,9 +5,14 @@
     "name": "disable_policy.yaml",
     "pack": "opsgenie",
     "parameters": {
-        "name": {
+        "policy_id": {
             "description": "Policy to Disable",
             "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "default": null,
+            "description": " The identifier of the team that this policy belongs.",
             "type": "string"
         }
     },

@@ -5,33 +5,57 @@
     "name": "add_heartbeat",
     "pack": "opsgenie",
     "parameters": {
+        "alertMessage": {
+            "default": "HeartbeatName is expired.",
+            "description": "Specifies the alert message for heartbeat expiration alert.",
+            "required": false,
+            "type": "string"
+        },
+        "alertPriority": {
+            "default": "P3",
+            "description": "Specifies the alert priority for heartbeat expiration alert.",
+            "required": false,
+            "type": "string"
+        },
+        "alertTags": {
+            "default": null,
+            "description": "Specifies the alert priority for heartbeat expiration alert.",
+            "required": false,
+            "type": "array"
+        },
         "description": {
             "default": null,
             "description": "An optional description of the heartbeat.",
             "type": "string"
         },
         "enabled": {
-            "default": false,
             "description": "Enable/disable heartbeat monitoring.",
+            "required": true,
             "type": "boolean"
         },
         "interval": {
             "default": null,
             "description": "Specifies how often a heartbeat message should be expected.",
+            "required": true,
             "type": "integer"
         },
         "interval_unit": {
-            "default": "minutes",
             "description": "interval specified as minutes, hours or days.",
             "enum": [
                 "minutes",
                 "hours",
                 "days"
             ],
+            "required": true,
             "type": "string"
         },
         "name": {
             "description": "Name of the heartbeat.",
+            "required": true,
+            "type": "string"
+        },
+        "ownerTeamName": {
+            "description": "Owner team of the heartbeat, consisting id and/or name of the owner team",
             "required": true,
             "type": "string"
         }

@@ -5,13 +5,28 @@
     "name": "create_alert",
     "pack": "opsgenie",
     "parameters": {
+        "actions": {
+            "description": "Custom actions that will be available for the alert.",
+            "required": false,
+            "type": "array"
+        },
         "alias": {
             "default": null,
-            "description": "Alert ID to close.",
+            "description": "Client-defined identifier of the alert.",
+            "type": "string"
+        },
+        "description": {
+            "default": null,
+            "description": "Detailed description of the alert.",
+            "type": "string"
+        },
+        "entity": {
+            "default": null,
+            "description": "Entity field of the alert that is generally used to specify which domain alert is related to.",
             "type": "string"
         },
         "message": {
-            "description": "Alert ID to close.",
+            "description": "Message of the alert.",
             "required": true,
             "type": "string"
         },
@@ -20,19 +35,33 @@
             "description": "Additional alert note",
             "type": "string"
         },
-        "source": {
-            "default": "StackStorm",
-            "description": "User defined field to specify source of close action.",
+        "priority": {
+            "default": "P3",
+            "description": "Priority level of the alert.",
             "type": "string"
         },
-        "teams": {
-            "description": "List of team names which will be responsible for the alert.",
+        "responders": {
+            "description": "Teams, users, escalations and schedules that the alert will be routed to send notifications. Please use 'name of sth'-'type of sth' format for each responder.(ex: Engineering Team A-team)",
+            "type": "array"
+        },
+        "source": {
+            "default": "StackStorm",
+            "description": "User defined field to specify source of create action.",
+            "type": "string"
+        },
+        "tags": {
+            "description": "Tags of the alert.",
+            "required": false,
             "type": "array"
         },
         "user": {
             "default": null,
             "description": "Default owner of the execution.",
             "type": "string"
+        },
+        "visibleTo": {
+            "description": "Teams, users, escalations and schedules that the alert will be routed to send notifications. Please use 'name of sth'-'type of sth' format for each responder.(ex: Engineering Team A-team)",
+            "type": "array"
         }
     },
     "runner_type": "python-script"
