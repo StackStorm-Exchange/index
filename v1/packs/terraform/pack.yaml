@@ -4,22 +4,22 @@ runner_type: python-script
 description: Terraform integrations
 keywords:
 - terraform
-version: 0.2.0
+version: 0.2.1
 author: Martez Reed
 email: martez.reed@greenreedtech.com
 content:
   actions:
     count: 12
     resources:
+    - output
+    - create_workspace
     - destroy
     - list_workspaces
-    - plan
     - select_workspace
+    - apply
+    - show
     - delete_workspace
     - get_version
-    - show
-    - create_workspace
-    - output
-    - apply
+    - plan
     - pipeline
     - init
