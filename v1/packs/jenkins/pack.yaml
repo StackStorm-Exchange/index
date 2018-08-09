@@ -1,16 +1,18 @@
 ref: jenkins
 name: jenkins
 description: Jenkins CI Integration Pack
-version: 0.4.1
+version: 0.5.0
 author: James Fryman
 email: james@stackstorm.com
 content:
   actions:
-    count: 6
+    count: 8
     resources:
     - build_job
     - disable_job
-    - enable_job
-    - get_job_info
+    - list_jobs_regex
+    - rebuild_last_job
     - list_running_jobs
     - install_plugin
+    - get_job_info
+    - enable_job

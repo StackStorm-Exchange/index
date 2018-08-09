@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1533857709,
-        "hash": "bf926e161214838e5a1ac3952ea25a8f"
+        "generated_ts": 1533857724,
+        "hash": "3eddf9ea2b33c3dec13ec196393490f1"
     },
     "packs": {
         "acos": {
@@ -6899,14 +6899,16 @@
             "author": "James Fryman",
             "content": {
                 "actions": {
-                    "count": 6,
+                    "count": 8,
                     "resources": [
                         "build_job",
                         "disable_job",
-                        "enable_job",
-                        "get_job_info",
+                        "list_jobs_regex",
+                        "rebuild_last_job",
                         "list_running_jobs",
-                        "install_plugin"
+                        "install_plugin",
+                        "get_job_info",
+                        "enable_job"
                     ]
                 }
             },
@@ -6915,7 +6917,7 @@
             "name": "jenkins",
             "ref": "jenkins",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jenkins",
-            "version": "0.4.1"
+            "version": "0.5.0"
         },
         "jinja": {
             "author": "StackStorm, inc.",
