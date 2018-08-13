@@ -1,0 +1,14 @@
+{
+    "action_ref": "bolt.task_list",
+    "description": "Show list of available tasks",
+    "enabled": false,
+    "formats": [
+        "bolt task list",
+        "bolt task show"
+    ],
+    "name": "task_list",
+    "pack": "bolt",
+    "result": {
+        "format": "Received the following from bolt task list:\n{{ execution.result.result | to_yaml_string }}\n"
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "boltdir": {
+        "description": "Specify what Boltdir to load config from (default: autodiscovered from current working dir)",
+        "type": "string"
+    },
+    "cmd": {
+        "default": "/usr/local/bin/bolt",
+        "description": "Path to the bolt executable",
+        "type": "string"
+    },
+    "compile_concurrency": {
+        "description": "Maximum number of simultaneous manifest block compiles (default: number of cores)",
+        "type": "integer"
+    },
+    "concurrency": {
+        "description": "Maximum number of simultaneous connections (default: 100)",
+        "type": "integer"
+    },
+    "configfile": {
+        "description": "Specify where to load config from (default: ~/.puppetlabs/bolt/bolt.yaml)",
+        "type": "string"
+    },
+    "connect_timeout": {
+        "description": "Connection timeout (defaults vary)",
+        "type": "integer"
+    },
+    "credentials": {
+        "description": "Mapping of name to an object containing credential information",
+        "properties": {
+            "password": {
+                "description": "Password to authenticate with. Omit the value to prompt for the password.",
+                "secret": true,
+                "type": "string"
+            },
+            "private_key": {
+                "description": "Private ssh key to authenticate with",
+                "type": "string"
+            },
+            "run_as": {
+                "description": "User to run as using privilege escalation",
+                "type": "string"
+            },
+            "sudo_password": {
+                "description": "Password for privilege escalation. Omit the value to prompt for the password.",
+                "secret": true,
+                "type": "string"
+            },
+            "user": {
+                "description": "User to authenticate as",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "cwd": {
+        "description": "Current working directory where bolt will be executed",
+        "type": "string"
+    },
+    "debug_": {
+        "description": "Display debug logging",
+        "type": "boolean"
+    },
+    "env": {
+        "description": "Environment variables to override when executing bolt",
+        "type": "object"
+    },
+    "format": {
+        "default": "json",
+        "description": "Output format to use: human or json",
+        "type": "string"
+    },
+    "host_key_check": {
+        "description": "Check host keys with SSH",
+        "type": "boolean"
+    },
+    "inventoryfile": {
+        "description": "Specify where to load inventory from (default: ~/.puppetlabs/bolt/inventory.yaml)",
+        "type": "string"
+    },
+    "modulepath": {
+        "description": "List of directories containing modules, separated by ':'",
+        "type": "string"
+    },
+    "ssl": {
+        "description": "Use SSL with WinRM",
+        "type": "boolean"
+    },
+    "ssl_verify": {
+        "description": "Verify remote host SSL certificate with WinRM",
+        "type": "boolean"
+    },
+    "tmpdir": {
+        "description": "The directory to upload and execute temporary files on the target",
+        "type": "string"
+    },
+    "trace": {
+        "description": "Display error stack traces",
+        "type": "boolean"
+    },
+    "transport": {
+        "description": "Specify a default transport: ssh, winrm, pcp, local",
+        "type": "string"
+    },
+    "tty": {
+        "description": "Request a pseudo TTY on nodes that support it",
+        "type": "boolean"
+    },
+    "verbose": {
+        "description": "Display verbose logging",
+        "type": "boolean"
+    }
+}

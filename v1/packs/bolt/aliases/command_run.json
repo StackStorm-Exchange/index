@@ -1,0 +1,13 @@
+{
+    "action_ref": "bolt.command_run",
+    "description": "Run a command remotely",
+    "enabled": false,
+    "formats": [
+        "bolt command run {{ command }} nodes {{ nodes }}"
+    ],
+    "name": "command_run",
+    "pack": "bolt",
+    "result": {
+        "format": "Received the following from bolt command run:\n{{ execution.result.result | to_yaml_string }}\n"
+    }
+}
