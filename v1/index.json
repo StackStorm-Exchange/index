@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1533857724,
-        "hash": "3eddf9ea2b33c3dec13ec196393490f1"
+        "generated_ts": 1534180121,
+        "hash": "ffd6a772616a94c24fc6f2c6c7615717"
     },
     "packs": {
         "acos": {
@@ -4134,26 +4134,28 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 5,
+                    "count": 6,
                     "resources": [
-                        "create_vpc_assume_role",
+                        "create_vpc",
                         "assume_role",
-                        "waiter",
+                        "create_instance",
+                        "create_vpc_assume_role",
                         "boto3action",
-                        "create_vpc"
+                        "waiter"
                     ]
                 },
                 "tests": {
                     "count": 3,
                     "resources": [
+                        "test_action_assume_role.py",
                         "test_action_boto3action.py",
-                        "test_action_waiter.py",
-                        "test_action_assume_role.py"
+                        "test_action_waiter.py"
                     ]
                 }
             },
             "contributors": [
-                "Jon Middleton <jjm@geeky-and-blonde.me.uk>"
+                "Jon Middleton <jjm@geeky-and-blonde.me.uk>",
+                "Denys Havrysh <denys.gavrysh@gmail.com>"
             ],
             "description": "st2 content pack containing Amazon Web Services integrations using boto3.",
             "email": "info@stackstorm.com",
@@ -4178,7 +4180,7 @@
             "name": "aws_boto3",
             "ref": "aws_boto3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_boto3",
-            "version": "0.6.0"
+            "version": "0.7.0"
         },
         "azure": {
             "author": "StackStorm, Inc.",
