@@ -18,6 +18,11 @@
             "required": false,
             "type": "string"
         },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
         "limit": {
             "default": "100",
             "required": false,

@@ -15,6 +15,11 @@
             "immutable": true,
             "type": "string"
         },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
         "token": {
             "required": false,
             "type": "string"

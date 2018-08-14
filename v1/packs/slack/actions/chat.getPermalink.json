@@ -13,6 +13,11 @@
             "immutable": true,
             "type": "string"
         },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
         "message_ts": {
             "required": true,
             "type": "string"

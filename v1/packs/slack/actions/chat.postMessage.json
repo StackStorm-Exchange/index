@@ -21,6 +21,11 @@
             "immutable": true,
             "type": "string"
         },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
         "icon_emoji": {
             "required": false,
             "type": "string"

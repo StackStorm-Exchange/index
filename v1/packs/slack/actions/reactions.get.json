@@ -25,6 +25,11 @@
             "required": false,
             "type": "string"
         },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
         "timestamp": {
             "required": false,
             "type": "string"

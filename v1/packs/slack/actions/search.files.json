@@ -18,6 +18,11 @@
             "required": false,
             "type": "string"
         },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
         "page": {
             "default": "1",
             "required": false,

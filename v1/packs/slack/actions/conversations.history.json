@@ -17,6 +17,11 @@
             "immutable": true,
             "type": "string"
         },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
         "inclusive": {
             "default": "0",
             "required": false,

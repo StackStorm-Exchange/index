@@ -13,6 +13,11 @@
             "immutable": true,
             "type": "string"
         },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
         "purpose": {
             "required": true,
             "type": "string"
