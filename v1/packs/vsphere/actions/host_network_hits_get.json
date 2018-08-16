@@ -1,0 +1,28 @@
+{
+    "description": "Retrieve Network Hints for given Hosts (ESXi)",
+    "entry_point": "host_network_hits_get.py",
+    "name": "host_network_hits_get",
+    "pack": "vsphere",
+    "parameters": {
+        "host_ids": {
+            "description": "Comma seperated list of VM IDs",
+            "position": 0,
+            "required": false,
+            "type": "array"
+        },
+        "host_names": {
+            "default": null,
+            "description": "Comma seperated list of VM Names",
+            "position": 1,
+            "required": false,
+            "type": "array"
+        },
+        "vsphere": {
+            "description": "Pre-configured vsphere endpoint",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

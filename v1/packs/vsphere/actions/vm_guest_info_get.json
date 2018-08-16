@@ -1,0 +1,28 @@
+{
+    "description": "Retrieve Guest details of a VM object",
+    "entry_point": "vm_guest_info_get.py",
+    "name": "vm_guest_info_get",
+    "pack": "vsphere",
+    "parameters": {
+        "vm_ids": {
+            "description": "Comma seperated list of VM IDs",
+            "position": 0,
+            "required": false,
+            "type": "array"
+        },
+        "vm_names": {
+            "default": null,
+            "description": "Comma seperated list of VM Names",
+            "position": 1,
+            "required": false,
+            "type": "array"
+        },
+        "vsphere": {
+            "description": "Pre-configured vsphere endpoint",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
