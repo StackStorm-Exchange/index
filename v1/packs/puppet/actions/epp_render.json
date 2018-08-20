@@ -1,0 +1,63 @@
+{
+    "description": "Renders an EPP template on the local host.",
+    "enabled": true,
+    "entry_point": "epp_render.py",
+    "name": "epp_render",
+    "parameters": {
+        "debug_": {
+            "description": "Whether to log debug information.",
+            "type": "boolean"
+        },
+        "expression": {
+            "description": "Render one inline epp template given as input.\n",
+            "type": "string"
+        },
+        "facts": {
+            "description": "A .yaml or .json file containing a hash of facts made available in $facts and $trusted\n",
+            "type": "string"
+        },
+        "header": {
+            "description": "Whether or not to show a file name header between rendered results.\n",
+            "type": "boolean"
+        },
+        "node": {
+            "description": "The name of the node for which facts are obtained. Defaults to facts for the local node.\n",
+            "type": "string"
+        },
+        "puppet_cmd": {
+            "default": "/opt/puppetlabs/bin/puppet",
+            "description": "Command (or full path) to invoke puppet agent\n",
+            "type": "string"
+        },
+        "render_as": {
+            "description": "The format in which to render output. The most common formats are json, s (string), yaml, and console, but other options such as dot are sometimes available.\n",
+            "type": "string"
+        },
+        "settings": {
+            "description": "Dict of Puppet configuraiton settings. Each key/value pair will be translated into a CLI argument and passed into the puppet command. See below for a list of available settings: https://puppet.com/docs/puppet/latest/configuration.html\nExample:\n  settings:\n    confdir: /home/user/custom/puppet\n    modulepath: \"/tmp/modules:/opt/modules\"\n",
+            "type": "object"
+        },
+        "templates": {
+            "description": "This action renders one or more EPP templates.\nThe command accepts one or more templates (.epp files), given the same way as templates are given to the puppet epp function (a full path, or a relative reference on the form 'modulename/template-name.epp'), or as a relative path.args In case the given path matches both a modulename/template and a file, the template from the module is used.\nIf multiple templates are given, the same set of values are given to each template. If both --values and --value_file are used, the --values are merged on top of those given in the file.\nWhen multiple templates are rendered, a separating header is output between the templates showing the name of the template before the output. The header output can be turned off with --no-header. This also concatenates the template results without any added newline separators.\n",
+            "items": {
+                "type": "string"
+            },
+            "position": 0,
+            "type": "array"
+        },
+        "values": {
+            "description": "A Hash in Puppet DSL form given as arguments to the template being rendered.\n",
+            "type": "object"
+        },
+        "values_file": {
+            "description": "A .pp or .yaml file that is processed to produce a hash of values for the template\n",
+            "type": "string"
+        },
+        "verbose": {
+            "default": false,
+            "description": "Whether to log verbosely.\n",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "local-shell-script"
+}

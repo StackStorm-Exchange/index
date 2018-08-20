@@ -5,15 +5,19 @@ keywords:
 - puppet
 - cfg management
 - configuration management
-version: 0.3.1
+version: 0.3.2
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 5
+    count: 9
     resources:
-    - cert_clean
-    - cert_sign
-    - apply
     - cert_revoke
     - run_agent
+    - epp_render
+    - cert_clean
+    - epp_render_remote
+    - cert_sign
+    - apply
+    - lookup
+    - lookup_remote
