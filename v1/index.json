@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1534436606,
-        "hash": "38855be6dd235167c36f4c7c4c089795"
+        "generated_ts": 1534788288,
+        "hash": "2d059e8b60147e3100df9e5417e4164b"
     },
     "packs": {
         "acos": {
@@ -4354,35 +4354,35 @@
                 "actions": {
                     "count": 11,
                     "resources": [
-                        "install",
-                        "plan_list",
-                        "plan_show",
-                        "puppetfile_install",
-                        "task_list",
-                        "script_run",
-                        "plan_run",
                         "task_run",
                         "command_run",
+                        "task_list",
+                        "install",
+                        "puppetfile_install",
+                        "task_show",
+                        "plan_show",
                         "file_upload",
-                        "task_show"
+                        "plan_list",
+                        "plan_run",
+                        "script_run"
                     ]
                 },
                 "aliases": {
                     "count": 6,
                     "resources": [
-                        "plan_list",
-                        "plan_show",
-                        "task_list",
                         "task_run",
                         "command_run",
-                        "task_show"
+                        "task_list",
+                        "task_show",
+                        "plan_show",
+                        "plan_list"
                     ]
                 },
                 "tests": {
                     "count": 2,
                     "resources": [
-                        "test_action_lib_bolt.py",
-                        "bolt_base_action_test_case.py"
+                        "bolt_base_action_test_case.py",
+                        "test_action_lib_bolt.py"
                     ]
                 }
             },
@@ -4398,7 +4398,7 @@
             "name": "bolt",
             "ref": "bolt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bolt",
-            "version": "0.1.0"
+            "version": "0.1.1"
         },
         "cassandra": {
             "author": "StackStorm, Inc.",

@@ -7,35 +7,35 @@ keywords:
 - remote execution
 - configuration management
 - cfg management
-version: 0.1.0
+version: 0.1.1
 author: Encore Technologies
 email: code@encore.tech
 content:
   actions:
     count: 11
     resources:
-    - install
-    - plan_list
-    - plan_show
-    - puppetfile_install
-    - task_list
-    - script_run
-    - plan_run
     - task_run
     - command_run
-    - file_upload
+    - task_list
+    - install
+    - puppetfile_install
     - task_show
+    - plan_show
+    - file_upload
+    - plan_list
+    - plan_run
+    - script_run
   aliases:
     count: 6
     resources:
-    - plan_list
-    - plan_show
-    - task_list
     - task_run
     - command_run
+    - task_list
     - task_show
+    - plan_show
+    - plan_list
   tests:
     count: 2
     resources:
-    - test_action_lib_bolt.py
     - bolt_base_action_test_case.py
+    - test_action_lib_bolt.py
