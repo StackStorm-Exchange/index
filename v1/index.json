@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1534792312,
-        "hash": "0265b7c71f1ea858b4bf911d517f0696"
+        "generated_ts": 1535173554,
+        "hash": "fc5683bf48be74d9a65a28712742236d"
     },
     "packs": {
         "acos": {
@@ -8311,28 +8311,28 @@
                 "actions": {
                     "count": 22,
                     "resources": [
-                        "virtualization_patch_interfaces",
-                        "virtualization_put_interfaces",
-                        "virtualization_post_interfaces",
-                        "virtualization_patch_virtual_machines",
-                        "dcim_get_sites",
-                        "dcim_get_devices",
-                        "ipam_post_available_ips",
                         "ipam_get_vlan_groups",
                         "ipam_get_vlans",
-                        "virtualization_get_interfaces",
-                        "virtualization_get_clusters",
-                        "virtualization_get_cluster_types",
-                        "dcim_get_interface_connections",
-                        "virtualization_post_virtual_machines",
-                        "ipam_get_vrfs",
-                        "virtualization_get_cluster_groups",
                         "virtualization_get_virtual_machines",
+                        "virtualization_post_interfaces",
                         "ipam_get_ip_addresses",
-                        "ipam_get_available_ips",
+                        "virtualization_put_virtual_machines",
+                        "virtualization_get_cluster_groups",
+                        "dcim_get_interface_connections",
+                        "ipam_get_vrfs",
                         "ipam_get_prefixes",
+                        "virtualization_get_cluster_types",
+                        "virtualization_patch_interfaces",
+                        "virtualization_get_interfaces",
+                        "ipam_post_available_ips",
+                        "virtualization_put_interfaces",
+                        "virtualization_get_clusters",
+                        "dcim_get_sites",
+                        "ipam_get_available_ips",
+                        "virtualization_patch_virtual_machines",
+                        "virtualization_post_virtual_machines",
                         "dcim_get_interfaces",
-                        "virtualization_put_virtual_machines"
+                        "dcim_get_devices"
                     ]
                 }
             },
@@ -8346,7 +8346,7 @@
             ],
             "name": "netbox",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-netbox",
-            "version": "0.4.2"
+            "version": "0.5.0"
         },
         "network_essentials": {
             "author": "Extreme Networks",
