@@ -1,0 +1,40 @@
+{
+    "description": "Create an Azure AD user.",
+    "enabled": true,
+    "entry_point": "create_user.py",
+    "name": "create_user",
+    "parameters": {
+        "account_enabled": {
+            "default": true,
+            "description": "Enable the account.",
+            "type": "boolean"
+        },
+        "display_name": {
+            "description": "Display name for user.",
+            "required": true,
+            "type": "string"
+        },
+        "force_password_change": {
+            "default": false,
+            "description": "Force user to change password on next login.",
+            "type": "boolean"
+        },
+        "mail_nickname": {
+            "description": "Mailing nickname.",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for user.",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "user_principal_name": {
+            "description": "User Principal Name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

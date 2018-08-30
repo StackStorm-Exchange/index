@@ -1,0 +1,22 @@
+{
+    "description": "Update name of Azure AD user.",
+    "enabled": true,
+    "entry_point": "update_user_name.py",
+    "name": "update_user_name",
+    "parameters": {
+        "first_name": {
+            "description": "User first name.",
+            "type": "string"
+        },
+        "last_name": {
+            "description": "User last name.",
+            "type": "string"
+        },
+        "user_object_id": {
+            "description": "User Object ID.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

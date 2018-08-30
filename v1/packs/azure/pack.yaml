@@ -10,31 +10,37 @@ keywords:
 - virtual machines
 - azure virtual machines
 - azurerm
-version: 0.3.1
+version: 0.4.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 16
+    count: 22
     resources:
+    - upload_file
     - create_vm
-    - put_scaleset_size
-    - delete_container
-    - create_linked_resource_url
+    - update_user_display_name
+    - get_scaleset_size
+    - update_user_password
+    - list_vms
     - delete_object
-    - list_container_objects
     - destroy_vm
-    - create_resource
     - list_resource_groups
     - create_container
-    - get_scaleset_size
-    - reboot_vm
-    - list_vms
-    - list_containers
-    - upload_file
+    - user_enable
+    - create_user
+    - delete_user
     - list_public_ips
+    - update_user_name
+    - put_scaleset_size
+    - delete_container
+    - list_containers
+    - create_linked_resource_url
+    - reboot_vm
+    - list_container_objects
+    - create_resource
   aliases:
     count: 2
     resources:
-    - put_scale_size
     - get_scale_size
+    - put_scale_size

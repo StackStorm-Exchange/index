@@ -1,0 +1,19 @@
+{
+    "description": "Enable or disable Azure AD user.",
+    "enabled": true,
+    "entry_point": "user_enable.py",
+    "name": "user_enable",
+    "parameters": {
+        "enable": {
+            "default": true,
+            "description": "Enable or disable user.",
+            "type": "boolean"
+        },
+        "user_object_id": {
+            "description": "User Object ID.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

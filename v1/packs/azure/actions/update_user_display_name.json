@@ -1,0 +1,19 @@
+{
+    "description": "Update display name of Azure AD user.",
+    "enabled": true,
+    "entry_point": "update_user_display_name.py",
+    "name": "update_user_display_name",
+    "parameters": {
+        "display_name": {
+            "description": "User display name.",
+            "required": true,
+            "type": "string"
+        },
+        "user_object_id": {
+            "description": "User Object ID.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

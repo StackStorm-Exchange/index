@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1535664203,
-        "hash": "2a26403a9c47716bc8e1e6e3f7fc0861"
+        "generated_ts": 1535664482,
+        "hash": "14a4c288de372591c8140b7023bb1bad"
     },
     "packs": {
         "acos": {
@@ -4186,31 +4186,37 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 16,
+                    "count": 22,
                     "resources": [
+                        "upload_file",
                         "create_vm",
-                        "put_scaleset_size",
-                        "delete_container",
-                        "create_linked_resource_url",
+                        "update_user_display_name",
+                        "get_scaleset_size",
+                        "update_user_password",
+                        "list_vms",
                         "delete_object",
-                        "list_container_objects",
                         "destroy_vm",
-                        "create_resource",
                         "list_resource_groups",
                         "create_container",
-                        "get_scaleset_size",
-                        "reboot_vm",
-                        "list_vms",
+                        "user_enable",
+                        "create_user",
+                        "delete_user",
+                        "list_public_ips",
+                        "update_user_name",
+                        "put_scaleset_size",
+                        "delete_container",
                         "list_containers",
-                        "upload_file",
-                        "list_public_ips"
+                        "create_linked_resource_url",
+                        "reboot_vm",
+                        "list_container_objects",
+                        "create_resource"
                     ]
                 },
                 "aliases": {
                     "count": 2,
                     "resources": [
-                        "put_scale_size",
-                        "get_scale_size"
+                        "get_scale_size",
+                        "put_scale_size"
                     ]
                 }
             },
@@ -4229,7 +4235,7 @@
             "name": "azure",
             "ref": "azure",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
-            "version": "0.3.1"
+            "version": "0.4.0"
         },
         "backups": {
             "author": "Encore Technologies",
