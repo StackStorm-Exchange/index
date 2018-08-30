@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1535173554,
-        "hash": "fc5683bf48be74d9a65a28712742236d"
+        "generated_ts": 1535664203,
+        "hash": "2a26403a9c47716bc8e1e6e3f7fc0861"
     },
     "packs": {
         "acos": {
@@ -10613,34 +10613,34 @@
                 "actions": {
                     "count": 16,
                     "resources": [
-                        "kv.grep",
-                        "executions.get",
-                        "call_home",
-                        "upload_to_s3",
-                        "inquiry.respond",
-                        "sensors.list",
+                        "kv.delete",
                         "check_permissions_anon_data",
-                        "kv.set",
-                        "rules.list",
+                        "inquiry.respond",
                         "actions.list",
                         "kv.set_object",
-                        "executions.list",
+                        "kv.set",
                         "kv.get",
-                        "kv.get_object",
+                        "executions.get",
                         "executions.re_run",
-                        "kv.delete"
+                        "sensors.list",
+                        "executions.list",
+                        "kv.grep",
+                        "kv.get_object",
+                        "call_home",
+                        "upload_to_s3",
+                        "rules.list"
                     ]
                 },
                 "aliases": {
                     "count": 7,
                     "resources": [
-                        "st2_executions_get",
                         "st2_inquiry_respond",
-                        "st2_sensors_list",
-                        "st2_rules_list",
                         "st2_actions_list",
+                        "st2_executions_get",
+                        "st2_executions_re_run",
+                        "st2_sensors_list",
                         "st2_executions_list",
-                        "st2_executions_re_run"
+                        "st2_rules_list"
                     ]
                 }
             },
@@ -10649,7 +10649,7 @@
             "name": "st2",
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
-            "version": "1.0.2"
+            "version": "1.0.3"
         },
         "sumologic": {
             "author": "Igor Cherkaev",

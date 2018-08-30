@@ -1,36 +1,36 @@
 ref: st2
 name: st2
 description: StackStorm utility actions and aliases
-version: 1.0.2
+version: 1.0.3
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 16
     resources:
-    - kv.grep
-    - executions.get
-    - call_home
-    - upload_to_s3
-    - inquiry.respond
-    - sensors.list
+    - kv.delete
     - check_permissions_anon_data
-    - kv.set
-    - rules.list
+    - inquiry.respond
     - actions.list
     - kv.set_object
-    - executions.list
+    - kv.set
     - kv.get
-    - kv.get_object
+    - executions.get
     - executions.re_run
-    - kv.delete
+    - sensors.list
+    - executions.list
+    - kv.grep
+    - kv.get_object
+    - call_home
+    - upload_to_s3
+    - rules.list
   aliases:
     count: 7
     resources:
-    - st2_executions_get
     - st2_inquiry_respond
-    - st2_sensors_list
-    - st2_rules_list
     - st2_actions_list
-    - st2_executions_list
+    - st2_executions_get
     - st2_executions_re_run
+    - st2_sensors_list
+    - st2_executions_list
+    - st2_rules_list
