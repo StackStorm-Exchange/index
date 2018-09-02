@@ -1,5 +1,5 @@
 {
-    "description": "Create a new st2 sensor and load it",
+    "description": "migrate services",
     "enabled": true,
     "entry_point": "workflows/register_tpr.yaml",
     "name": "register_tpr",
@@ -10,5 +10,5 @@
             "type": "object"
         }
     },
-    "runner_type": "action-chain"
+    "runner_type": "mistral-v2"
 }

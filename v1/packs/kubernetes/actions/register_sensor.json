@@ -1,0 +1,13 @@
+{
+    "description": "Register a sensor",
+    "enabled": true,
+    "entry_point": "register_sensor.py",
+    "name": "register_sensor",
+    "pack": "kubernetes",
+    "parameters": {
+        "payload": {
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}
