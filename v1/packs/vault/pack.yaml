@@ -1,21 +1,22 @@
 ref: vault
 name: vault
 description: vault
-version: 0.4.2
+version: 0.5.0
 author: steve.neuharth
 email: steve.neuharth@target.com
 contributors:
 - Andy Moore <andrew.moore@pearson.com>
 content:
   actions:
-    count: 9
+    count: 10
     resources:
-    - delete_policy
-    - create_token
-    - delete
-    - is_initialized
-    - list_policies
-    - get_policy
     - write
-    - read
+    - create_token
     - set_policy
+    - delete
+    - get_policy
+    - list_policies
+    - is_initialized
+    - read_kv
+    - read
+    - delete_policy
