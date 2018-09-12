@@ -7,9 +7,20 @@
     "cred_group": {
         "additionalProperties": false,
         "properties": {
+            "key_file": {
+                "description": "Path to a private key file",
+                "required": false,
+                "type": "string"
+            },
             "password": {
                 "description": "Password for network device",
-                "required": true,
+                "required": false,
+                "secret": true,
+                "type": "string"
+            },
+            "secret": {
+                "description": "Optional password for entering enable mode",
+                "required": false,
                 "secret": true,
                 "type": "string"
             },

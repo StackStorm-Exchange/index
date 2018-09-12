@@ -7,40 +7,40 @@ keywords:
 - juniper
 - arista
 - ibm
-version: 0.2.12
+version: 0.2.14
 author: mierdin, Rob Woodward
 email: info@stackstorm.com
 content:
   actions:
     count: 27
     resources:
-    - loadconfig
-    - get_arp_table
-    - get_bgp_neighbors_detail
-    - get_probes_config
-    - get_bgp_config
-    - get_route_to
-    - get_interfaces
     - bgp_prefix_exceeded_chain
-    - get_probes_results
-    - get_lldp_neighbors
-    - cli
-    - configuration_change_workflow
-    - traceroute
-    - get_mac_address_table
-    - get_config
-    - get_log
-    - get_facts
-    - get_ntp
-    - interface_down_workflow
-    - get_firewall_policies
     - get_environment
-    - ping
+    - get_log
     - get_network_instances
+    - get_bgp_config
     - check_consistency
+    - get_facts
+    - get_arp_table
+    - get_probes_results
+    - get_ntp
+    - get_route_to
+    - get_config
+    - get_probes_config
+    - loadconfig
+    - configuration_change_workflow
+    - interface_down_workflow
+    - get_interfaces
     - get_snmp_information
-    - get_bgp_neighbors
     - get_optics
+    - get_firewall_policies
+    - get_bgp_neighbors
+    - ping
+    - traceroute
+    - cli
+    - get_mac_address_table
+    - get_lldp_neighbors
+    - get_bgp_neighbors_detail
   aliases:
     count: 1
     resources:
@@ -48,9 +48,9 @@ content:
   rules:
     count: 4
     resources:
-    - interface_down
-    - configuration_change
     - lldp_remediate
+    - configuration_change
+    - interface_down
     - bgp_prefix_exceeded
   sensors:
     count: 1
