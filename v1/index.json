@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1537420284,
-        "hash": "4a9a0cda27a31bda2611cee135713282"
+        "generated_ts": 1537437282,
+        "hash": "6b072fcb52e5fcfa0f4ddc72659cd4f7"
     },
     "packs": {
         "acos": {
@@ -8461,19 +8461,6 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-network_essentials",
             "version": "1.2.1"
         },
-        "network_samples": {
-            "author": "Extreme Networks",
-            "content": {},
-            "description": "Example Network Automation Workflows",
-            "email": "info@stackstorm.com",
-            "keywords": [
-                "networking"
-            ],
-            "name": "Network Samples",
-            "ref": "network_samples",
-            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-network_samples",
-            "version": "0.0.1"
-        },
         "networking_utils": {
             "author": "Jon Middleton",
             "content": {
@@ -10884,20 +10871,20 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "close_board",
-                        "view_lists",
-                        "find_card_by_name",
+                        "view_boards",
                         "move_card",
-                        "view_cards",
-                        "add_list",
-                        "add_card",
-                        "close_card",
-                        "add_board",
                         "find_board_by_name",
-                        "close_list",
                         "view_organizations",
+                        "add_list",
+                        "find_card_by_name",
+                        "add_board",
+                        "add_card",
+                        "close_board",
+                        "close_list",
+                        "close_card",
+                        "view_lists",
                         "find_list_by_name",
-                        "view_boards"
+                        "view_cards"
                     ]
                 },
                 "sensors": {
@@ -10918,7 +10905,7 @@
             "name": "trello",
             "ref": "trello",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-trello",
-            "version": "0.4.2"
+            "version": "0.4.3"
         },
         "tuleap": {
             "author": "Enalean",

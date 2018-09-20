@@ -13,6 +13,11 @@
             "required": true,
             "type": "string"
         },
+        "target_board_id": {
+            "description": "Target Board ID of list to move a card to",
+            "required": false,
+            "type": "string"
+        },
         "target_list_id": {
             "description": "Target List ID to move a card to",
             "required": true,

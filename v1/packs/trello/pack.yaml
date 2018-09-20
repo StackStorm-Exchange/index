@@ -1,7 +1,7 @@
 ref: trello
 name: trello
 description: Trello Web-based Project Management
-version: 0.4.2
+version: 0.4.3
 author: James Fryman
 email: james@stackstorm.com
 keywords:
@@ -13,20 +13,20 @@ content:
   actions:
     count: 14
     resources:
-    - close_board
-    - view_lists
-    - find_card_by_name
-    - move_card
-    - view_cards
-    - add_list
-    - add_card
-    - close_card
-    - add_board
-    - find_board_by_name
-    - close_list
-    - view_organizations
-    - find_list_by_name
     - view_boards
+    - move_card
+    - find_board_by_name
+    - view_organizations
+    - add_list
+    - find_card_by_name
+    - add_board
+    - add_card
+    - close_board
+    - close_list
+    - close_card
+    - view_lists
+    - find_list_by_name
+    - view_cards
   sensors:
     count: 1
     resources:
