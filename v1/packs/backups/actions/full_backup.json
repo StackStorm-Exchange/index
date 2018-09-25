@@ -5,6 +5,10 @@
     "name": "full_backup",
     "pack": "backups",
     "parameters": {
+        "backup_timeout": {
+            "default": 600,
+            "type": "integer"
+        },
         "mistral_config": {
             "default": "/etc/mistral/mistral.conf",
             "type": "string"

@@ -5,6 +5,10 @@
     "name": "mongodb_backup",
     "pack": "backups",
     "parameters": {
+        "backup_timeout": {
+            "default": 600,
+            "type": "integer"
+        },
         "date": {
             "type": "string"
         },

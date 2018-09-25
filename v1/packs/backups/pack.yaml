@@ -8,16 +8,16 @@ keywords:
 - postgresql
 - mongo
 - mongodb
-version: 0.1.1
+version: 0.1.2
 author: Encore Technologies
 email: code@encore.tech
 content:
   actions:
     count: 3
     resources:
-    - mongodb_backup
-    - full_backup
     - postgres_backup
+    - full_backup
+    - mongodb_backup
   rules:
     count: 1
     resources:

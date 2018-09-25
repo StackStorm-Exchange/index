@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1537437282,
-        "hash": "6b072fcb52e5fcfa0f4ddc72659cd4f7"
+        "generated_ts": 1537837538,
+        "hash": "515857afbb8f0107a04d58ae93ec0606"
     },
     "packs": {
         "acos": {
@@ -4243,9 +4243,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "mongodb_backup",
+                        "postgres_backup",
                         "full_backup",
-                        "postgres_backup"
+                        "mongodb_backup"
                     ]
                 },
                 "rules": {
@@ -4268,7 +4268,7 @@
             "name": "backups",
             "ref": "backups",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-backups",
-            "version": "0.1.1"
+            "version": "0.1.2"
         },
         "bitbucket": {
             "author": "Aamir",
