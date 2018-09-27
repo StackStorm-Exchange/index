@@ -1,0 +1,36 @@
+{
+    "description": "Removes any snapshots older than the specified age",
+    "enabled": true,
+    "entry_point": "lib/remove_old_snapshots.py",
+    "name": "remove_old_snapshots",
+    "pack": "manageiq",
+    "parameters": {
+        "max_age_days": {
+            "description": "Number of days that a snapshot will exist before getting deleted",
+            "required": true,
+            "type": "integer"
+        },
+        "name_ignore_regexes": {
+            "default": [],
+            "description": "Compares the snapshot name to the regex. If matched, the snapshot will be ignored and NOT deleted",
+            "type": "array"
+        },
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

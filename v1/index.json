@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1537838252,
-        "hash": "ce415463ce91ad1a5e323529a62e91e0"
+        "generated_ts": 1538073835,
+        "hash": "5860f7c55c0b2f07666644eb87820d7a"
     },
     "packs": {
         "acos": {
@@ -7727,6 +7727,76 @@
             "ref": "mailgun",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mailgun",
             "version": "0.3.1"
+        },
+        "manageiq": {
+            "author": "Encore Technologies",
+            "content": {
+                "actions": {
+                    "count": 27,
+                    "resources": [
+                        "vm_custom_attributes_delete",
+                        "tags_get",
+                        "vm_all_get",
+                        "remove_old_snapshots",
+                        "template_get_info",
+                        "vm_custom_attributes_list",
+                        "vm_find_by_name",
+                        "vm_scan",
+                        "vm_custom_attributes_get",
+                        "vm_get_ids",
+                        "tags_list",
+                        "tags_create",
+                        "tags_unassign",
+                        "provision_check_complete",
+                        "tags_assign",
+                        "vm_retire",
+                        "provision_request_create",
+                        "providers_credentials_test",
+                        "hosts_credentials_test",
+                        "bestfit",
+                        "vm_retire_now",
+                        "vm_list",
+                        "tags_delete",
+                        "vm_custom_attributes_set",
+                        "provision_check_success",
+                        "credentials_test",
+                        "vm_check_removed"
+                    ]
+                },
+                "tests": {
+                    "count": 16,
+                    "resources": [
+                        "test_action_hosts.py",
+                        "test_action_vm.py",
+                        "test_action_lib_vm_all_get.py",
+                        "test_action_lib_vm_retire_now.py",
+                        "test_action_base_action.py",
+                        "test_action_lib_provision_request_create.py",
+                        "test_action_lib_remove_old_snapshots.py",
+                        "test_action_lib_provision_check_complete.py",
+                        "test_action_vm_custom_attributes.py",
+                        "test_action_lib_provision_check_success.py",
+                        "manage_iq_base_action_test_case.py",
+                        "test_action_tags.py",
+                        "test_action_lib_template_get_info.py",
+                        "test_action_providers.py",
+                        "test_action_lib_vm_get_ids.py",
+                        "test_action_bestfit.py"
+                    ]
+                }
+            },
+            "description": "StackStorm integration pack for working with ManageIQ/CloudForms",
+            "email": "code@encore.tech",
+            "keywords": [
+                "manageiq",
+                "cloudforms",
+                "provision",
+                "bestfit"
+            ],
+            "name": "manageiq",
+            "ref": "manageiq",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-manageiq",
+            "version": "0.1.0"
         },
         "menandmice": {
             "author": "Encore Technologies",

@@ -1,0 +1,31 @@
+{
+    "description": "List all VMs in the ManageIQ system",
+    "enabled": true,
+    "entry_point": "lib/vm.py",
+    "name": "vm_list",
+    "pack": "manageiq",
+    "parameters": {
+        "operation": {
+            "default": "list",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

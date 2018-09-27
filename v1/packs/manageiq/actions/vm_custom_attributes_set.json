@@ -1,0 +1,44 @@
+{
+    "description": "Sets custom attributes on a VM (use this for both add and update)",
+    "enabled": true,
+    "entry_point": "lib/vm_custom_attributes.py",
+    "name": "vm_custom_attributes_set",
+    "pack": "manageiq",
+    "parameters": {
+        "custom_attributes": {
+            "description": "'Array of custom attributes objects to be set. Each object\n should have the following schema:\n - key: string\n   value: string'\n",
+            "items": {
+                "type": "object"
+            },
+            "required": true,
+            "type": "array"
+        },
+        "id": {
+            "description": "ID of the VM to retrieve custom attributes on for (ex: 100000123)",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "set",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

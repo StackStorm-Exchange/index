@@ -1,0 +1,39 @@
+{
+    "description": "Determine the BestFit for new VM via ManageIQ",
+    "enabled": true,
+    "entry_point": "lib/bestfit.py",
+    "name": "bestfit",
+    "parameters": {
+        "clusterName": {
+            "required": true,
+            "type": "string"
+        },
+        "datastoreFilterRegEx": {
+            "required": false,
+            "type": "string"
+        },
+        "disk_json": {
+            "description": "'{all_disks: [{\n   \"size_gb\": \"string\",\n   \"uuid\": \"string\",\n   \"datastore\": \"string\",\n   \"controller_bus\": \"string\",\n   \"scsi_bus\": \"string\"\n }]}'\n",
+            "required": false,
+            "type": "object"
+        },
+        "operation": {
+            "default": "bestfit",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,31 @@
+{
+    "description": "Use the VMs MIQ ID to get its EMS UUID and MOID from the API",
+    "enabled": true,
+    "entry_point": "lib/vm_get_ids.py",
+    "name": "vm_get_ids",
+    "parameters": {
+        "operation": {
+            "default": "get_ids",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "List of provision tasks from CloudForms that contains the VMs ID",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

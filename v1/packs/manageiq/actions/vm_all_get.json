@@ -1,0 +1,26 @@
+{
+    "description": "Gets all VMs that are not archived or orphaned.",
+    "enabled": true,
+    "entry_point": "lib/vm_all_get.py",
+    "name": "vm_all_get",
+    "pack": "manageiq",
+    "parameters": {
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

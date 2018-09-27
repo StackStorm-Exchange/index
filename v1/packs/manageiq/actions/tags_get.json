@@ -1,0 +1,41 @@
+{
+    "description": "Retrieves tags for an item in a collection",
+    "enabled": true,
+    "entry_point": "lib/tags.py",
+    "name": "tags_get",
+    "pack": "manageiq",
+    "parameters": {
+        "collection": {
+            "description": "'Collection' of the object to tag (ex: vms, hosts, datastores, etc)",
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the item in 'Collection' to retrieve tag for (ex: 100000123)",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "get",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

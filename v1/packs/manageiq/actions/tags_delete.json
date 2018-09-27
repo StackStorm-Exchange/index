@@ -1,0 +1,51 @@
+{
+    "description": "Delets a set of tags (and categories) in ManageIQ",
+    "enabled": true,
+    "entry_point": "lib/tags.py",
+    "name": "tags_delete",
+    "pack": "manageiq",
+    "parameters": {
+        "delete_keys": {
+            "default": false,
+            "description": "Globally sets the 'key_delete' option for all tags. This will delete each tags key/category. The 'delete_value' option is set in the 'tags' array overrides this value.",
+            "required": false,
+            "type": "boolean"
+        },
+        "delete_values": {
+            "default": true,
+            "description": "Globally sets the 'value_delete' option for all tags. This will delete each tag's value. The 'delete_value' option is set in the 'tags' array overrides this value.",
+            "required": false,
+            "type": "boolean"
+        },
+        "operation": {
+            "default": "delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "'Array of tag objects to be created. Each tag object\n should have the following schema:\n - key: string\n   value: string\n   delete_key: boolean (optional, default = false)\n   delete_value: boolean (optional, default = true)'\n",
+            "items": {
+                "type": "object"
+            },
+            "required": true,
+            "type": "array"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

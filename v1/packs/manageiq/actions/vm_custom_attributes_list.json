@@ -1,0 +1,36 @@
+{
+    "description": "Reads all of the custom attributes on the VM",
+    "enabled": true,
+    "entry_point": "lib/vm_custom_attributes.py",
+    "name": "vm_custom_attributes_list",
+    "pack": "manageiq",
+    "parameters": {
+        "id": {
+            "description": "ID of the VM to retrieve custom attributes on for (ex: 100000123)",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "list",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

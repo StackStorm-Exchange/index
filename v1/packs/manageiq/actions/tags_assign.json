@@ -1,0 +1,49 @@
+{
+    "description": "Assigns a set of tags to an item in a collection",
+    "enabled": true,
+    "entry_point": "lib/tags.py",
+    "name": "tags_assign",
+    "pack": "manageiq",
+    "parameters": {
+        "collection": {
+            "description": "'Collection' of the object to tag (ex: vms, hosts, datastores, etc)",
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the item in 'Collection' to tag (ex: 100000123)",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "assign",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "'Array of tag objects to be assigned to the item. Each tag object\n should have the following schema:\n - key: string\n   value: string'\n",
+            "items": {
+                "type": "object"
+            },
+            "required": true,
+            "type": "array"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
