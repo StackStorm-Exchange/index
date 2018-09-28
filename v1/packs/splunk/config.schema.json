@@ -30,5 +30,12 @@
         "required": true,
         "secret": false,
         "type": "string"
+    },
+    "verify": {
+        "default": true,
+        "description": "Check the validity of the SSL certificate returned by Splunk",
+        "required": false,
+        "secret": false,
+        "type": "boolean"
     }
 }
