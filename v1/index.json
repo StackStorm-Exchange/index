@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1538514122,
-        "hash": "970aa785db93d4f64bd97e12ce606172"
+        "generated_ts": 1538523710,
+        "hash": "33895c28ee2abfadbfd1c3182b827b7b"
     },
     "packs": {
         "acos": {
@@ -4360,28 +4360,28 @@
                 "actions": {
                     "count": 11,
                     "resources": [
-                        "task_run",
-                        "command_run",
-                        "task_list",
-                        "install",
-                        "puppetfile_install",
                         "task_show",
-                        "plan_show",
-                        "file_upload",
-                        "plan_list",
+                        "command_run",
                         "plan_run",
-                        "script_run"
+                        "plan_list",
+                        "file_upload",
+                        "task_list",
+                        "plan_show",
+                        "task_run",
+                        "puppetfile_install",
+                        "script_run",
+                        "install"
                     ]
                 },
                 "aliases": {
                     "count": 6,
                     "resources": [
-                        "task_run",
-                        "command_run",
-                        "task_list",
                         "task_show",
+                        "command_run",
+                        "plan_list",
+                        "task_list",
                         "plan_show",
-                        "plan_list"
+                        "task_run"
                     ]
                 },
                 "tests": {
@@ -4404,7 +4404,7 @@
             "name": "bolt",
             "ref": "bolt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bolt",
-            "version": "0.1.1"
+            "version": "0.1.2"
         },
         "cassandra": {
             "author": "StackStorm, Inc.",
