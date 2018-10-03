@@ -4,26 +4,27 @@ description: ServiceNow Integration Pack
 keywords:
 - servicenow
 - incident management
-version: 0.3.5
+version: 0.3.6
 author: James Fryman
 email: james@stackstorm.com
 content:
   actions:
-    count: 10
+    count: 11
     resources:
+    - create_record
     - get
-    - set_incident_owner
-    - insert
+    - approve_change
+    - assign_incident_to
+    - get_non_structured
     - delete
     - get_incidents_assigned_to
-    - update
-    - approve_change
+    - set_incident_owner
     - get_user
-    - get_non_structured
-    - assign_incident_to
+    - insert
+    - update
   aliases:
     count: 3
     resources:
-    - servicenow.get_incidents_assigned_to
     - servicenow.approve_change
     - servicenow.assign_incident_to
+    - servicenow.get_incidents_assigned_to

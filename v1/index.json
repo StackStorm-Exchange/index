@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1538523710,
-        "hash": "33895c28ee2abfadbfd1c3182b827b7b"
+        "generated_ts": 1538597703,
+        "hash": "a1cfe5f0cdb592588a63869462a84362"
     },
     "packs": {
         "acos": {
@@ -10347,26 +10347,27 @@
             "author": "James Fryman",
             "content": {
                 "actions": {
-                    "count": 10,
+                    "count": 11,
                     "resources": [
+                        "create_record",
                         "get",
-                        "set_incident_owner",
-                        "insert",
+                        "approve_change",
+                        "assign_incident_to",
+                        "get_non_structured",
                         "delete",
                         "get_incidents_assigned_to",
-                        "update",
-                        "approve_change",
+                        "set_incident_owner",
                         "get_user",
-                        "get_non_structured",
-                        "assign_incident_to"
+                        "insert",
+                        "update"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
-                        "servicenow.get_incidents_assigned_to",
                         "servicenow.approve_change",
-                        "servicenow.assign_incident_to"
+                        "servicenow.assign_incident_to",
+                        "servicenow.get_incidents_assigned_to"
                     ]
                 }
             },
@@ -10379,7 +10380,7 @@
             "name": "servicenow",
             "ref": "servicenow",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
-            "version": "0.3.5"
+            "version": "0.3.6"
         },
         "signalr": {
             "author": "Anthony Shaw",
