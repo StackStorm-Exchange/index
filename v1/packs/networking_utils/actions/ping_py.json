@@ -1,0 +1,24 @@
+{
+    "description": "Carry out a ping against a host and return the output as a JSON object.",
+    "enabled": true,
+    "entry_point": "ping.py",
+    "name": "ping_py",
+    "pack": "networking_utils",
+    "parameters": {
+        "count": {
+            "default": 5,
+            "description": "How many packets to send",
+            "type": "integer"
+        },
+        "force_success": {
+            "description": "Should the ping always success (e.g. for troubleshooting output)",
+            "type": "boolean"
+        },
+        "host": {
+            "description": "Host to ping",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

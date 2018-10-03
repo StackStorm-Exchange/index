@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1538597703,
-        "hash": "a1cfe5f0cdb592588a63869462a84362"
+        "generated_ts": 1538603426,
+        "hash": "69685fd84816b58638eddbf8e1fb361c"
     },
     "packs": {
         "acos": {
@@ -8535,16 +8535,17 @@
             "author": "Jon Middleton",
             "content": {
                 "actions": {
-                    "count": 8,
+                    "count": 9,
                     "resources": [
-                        "is_valid_ip_port",
-                        "is_valid_hostname",
-                        "is_valid_ip",
                         "ping",
+                        "is_valid_hostname",
+                        "geoip",
                         "is_valid_ipv4",
+                        "is_valid_ip",
                         "is_valid_ipv6",
                         "is_valid_asa_nameif",
-                        "geoip"
+                        "ping_py",
+                        "is_valid_ip_port"
                     ]
                 },
                 "aliases": {
@@ -8555,15 +8556,16 @@
                     ]
                 },
                 "tests": {
-                    "count": 7,
+                    "count": 8,
                     "resources": [
-                        "test_action_aliases.py",
-                        "test_action_is_valid_ip.py",
                         "test_action_geoip.py",
-                        "test_action_is_valid_hostname.py",
+                        "test_action_aliases.py",
+                        "test_action_ping.py",
+                        "test_action_is_valid_ip.py",
                         "networking_utils_base_test_case.py",
                         "test_action_is_valid_asa_nameif.py",
-                        "test_action_is_valid_ip_port.py"
+                        "test_action_is_valid_ip_port.py",
+                        "test_action_is_valid_hostname.py"
                     ]
                 }
             },
@@ -8580,7 +8582,7 @@
             "name": "networking_utils",
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "version": "0.4.4"
+            "version": "0.4.5"
         },
         "newrelic": {
             "author": "StackStorm, Inc.",
