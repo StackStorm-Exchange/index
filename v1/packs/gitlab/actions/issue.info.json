@@ -1,0 +1,30 @@
+{
+    "description": "Get issue metadata",
+    "entry_point": "issue_info.py",
+    "name": "issue.info",
+    "parameters": {
+        "issue_iid": {
+            "description": "the iid of the issue in the project (not global unique id) of the issue",
+            "required": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "the 'path_with_namespace' for the project that the issue lives in (group/group/project)",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Override the configured token for the gitlab api",
+            "type": "string"
+        },
+        "url": {
+            "description": "Override the configured base url for gitlab",
+            "type": "string"
+        },
+        "verify_ssl": {
+            "default": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

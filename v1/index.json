@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1538603426,
-        "hash": "69685fd84816b58638eddbf8e1fb361c"
+        "generated_ts": 1538678637,
+        "hash": "bc0fb8f369940d486d154613bb1fb36b"
     },
     "packs": {
         "acos": {
@@ -6414,11 +6414,12 @@
             "author": "Daniel Chamot",
             "content": {
                 "actions": {
-                    "count": 3,
+                    "count": 4,
                     "resources": [
                         "project.info",
                         "pipeline.trigger",
-                        "pipeline.list"
+                        "pipeline.list",
+                        "issue.info"
                     ]
                 }
             },
@@ -6429,7 +6430,7 @@
             ],
             "name": "gitlab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gitlab",
-            "version": "0.5.1"
+            "version": "0.5.2"
         },
         "google": {
             "author": "StackStorm, Inc.",
