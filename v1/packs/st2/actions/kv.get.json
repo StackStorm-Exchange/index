@@ -10,6 +10,7 @@
             "type": "boolean"
         },
         "decrypt": {
+            "default": false,
             "description": "True if the value is stored as a secret and it should be decrypted before returning it",
             "required": false,
             "type": "boolean"
