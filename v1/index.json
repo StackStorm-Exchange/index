@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1538678637,
-        "hash": "bc0fb8f369940d486d154613bb1fb36b"
+        "generated_ts": 1538757807,
+        "hash": "8c7d4a43372dbda08e54d0224fd61169"
     },
     "packs": {
         "acos": {
@@ -10352,25 +10352,25 @@
                 "actions": {
                     "count": 11,
                     "resources": [
-                        "create_record",
-                        "get",
                         "approve_change",
-                        "assign_incident_to",
-                        "get_non_structured",
-                        "delete",
-                        "get_incidents_assigned_to",
-                        "set_incident_owner",
-                        "get_user",
                         "insert",
-                        "update"
+                        "update",
+                        "set_incident_owner",
+                        "get",
+                        "get_non_structured",
+                        "get_incidents_assigned_to",
+                        "assign_incident_to",
+                        "create_record",
+                        "get_user",
+                        "delete"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
                         "servicenow.approve_change",
-                        "servicenow.assign_incident_to",
-                        "servicenow.get_incidents_assigned_to"
+                        "servicenow.get_incidents_assigned_to",
+                        "servicenow.assign_incident_to"
                     ]
                 }
             },
@@ -10383,7 +10383,7 @@
             "name": "servicenow",
             "ref": "servicenow",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
-            "version": "0.3.6"
+            "version": "0.3.7"
         },
         "signalr": {
             "author": "Anthony Shaw",
