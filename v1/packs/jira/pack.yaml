@@ -5,7 +5,7 @@ keywords:
 - issues
 - ticket management
 - project management
-version: 0.7.1
+version: 0.8.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
@@ -13,14 +13,14 @@ content:
     count: 9
     resources:
     - attach_file_to_issue
-    - transition_issue
     - attach_files_to_issue
-    - get_issue_comments
-    - create_issue
-    - get_issue
-    - comment_issue
-    - search_issues
+    - transition_issue
     - get_issue_attachments
+    - comment_issue
+    - get_issue_comments
+    - get_issue
+    - search_issues
+    - create_issue
   sensors:
     count: 1
     resources:

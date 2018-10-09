@@ -1,19 +1,36 @@
 {
+    "auth_method": {
+        "default": "oauth",
+        "description": "Authentication method to use - oauth or basic",
+        "enum": [
+            "oauth",
+            "basic"
+        ],
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
     "consumer_key": {
         "description": "Consumer key",
-        "required": true,
+        "required": false,
         "secret": true,
         "type": "string"
     },
     "oauth_secret": {
         "description": "OAuth secret",
-        "required": true,
+        "required": false,
         "secret": true,
         "type": "string"
     },
     "oauth_token": {
         "description": "OAuth token",
-        "required": true,
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "password": {
+        "description": "Password if using the basic auth_method",
+        "required": false,
         "secret": true,
         "type": "string"
     },
@@ -32,13 +49,19 @@
     },
     "rsa_cert_file": {
         "description": "Path to a private key file, e.g. /home/vagrant/jira.pem",
-        "required": true,
+        "required": false,
         "secret": false,
         "type": "string"
     },
     "url": {
         "description": "URL of the JIRA instance (e.g. ``https://myproject.atlassian.net``)",
         "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "username": {
+        "description": "Username if using the basic auth_method",
+        "required": false,
         "secret": false,
         "type": "string"
     },
