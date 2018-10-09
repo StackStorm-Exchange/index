@@ -1,0 +1,43 @@
+{
+    "description": "Get key-value pairs from all or specific stream keyval zone(s)",
+    "enabled": true,
+    "entry_point": "",
+    "name": "stream.keyvals.get",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "method": {
+            "default": "GET",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "stream_keyval_zone_name": {
+            "required": false,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/stream/keyvals/{% if stream_keyval_zone_name is not none %}{{ stream_keyval_zone_name }}{% endif %}",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

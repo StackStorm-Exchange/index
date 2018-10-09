@@ -1,0 +1,47 @@
+{
+    "description": "Modify a key-value or delete a key",
+    "enabled": true,
+    "entry_point": "",
+    "name": "http.keyvals.patch",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "body": {
+            "required": true,
+            "type": "object"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "http_keyval_zone_name": {
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "PATCH",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/http/keyvals/{{ http_keyval_zone_name }}",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

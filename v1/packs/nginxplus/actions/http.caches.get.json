@@ -1,0 +1,43 @@
+{
+    "description": "Get status of all or specific cache(s)",
+    "enabled": true,
+    "entry_point": "",
+    "name": "http.caches.get",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "http_cache_zone_name": {
+            "required": false,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/http/caches/{% if http_cache_zone_name is not none %}{{ http_cache_zone_name }}{% endif %}",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

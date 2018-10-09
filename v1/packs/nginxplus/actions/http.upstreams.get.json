@@ -1,0 +1,43 @@
+{
+    "description": "Get status of all or specific HTTP upstream(s)",
+    "enabled": true,
+    "entry_point": "",
+    "name": "http.upstreams.get",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "http_upstream_name": {
+            "required": false,
+            "type": "string"
+        },
+        "method": {
+            "default": "GET",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/http/upstreams/{% if http_upstream_name is not none %}{{ http_upstream_name }}{% endif %}",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

@@ -1,0 +1,43 @@
+{
+    "description": "Reset statistics for an HTTP server zone",
+    "enabled": true,
+    "entry_point": "",
+    "name": "http.server_zones.delete",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "http_server_zone_name": {
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "DELETE",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/http/server_zones/{{ http_server_zone_name }}",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

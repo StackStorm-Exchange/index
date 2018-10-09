@@ -1,0 +1,53 @@
+name: nginxplus
+description: Integration between StackStorm and Nginx Plus
+keywords:
+- nginx
+- nginx-plus
+version: 1.0.0
+author: Copart
+email: igor.cherkaev@copart.com
+stackstorm_version: '>=2.10.0'
+content:
+  actions:
+    count: 40
+    resources:
+    - http.server_zones.get
+    - http.caches.delete
+    - http.upstreams.servers.patch
+    - http.upstreams.delete
+    - processes.delete
+    - http.upstreams.servers.post
+    - stream.upstreams.servers.delete
+    - stream.keyvals.delete
+    - stream.server_zones.get
+    - http.caches.get
+    - ssl.delete
+    - http.server_zones.delete
+    - ssl.get
+    - http.upstreams.servers.get
+    - stream.keyvals.post
+    - stream.keyvals.patch
+    - http.requests.delete
+    - stream.upstreams.servers.patch
+    - stream.upstreams.servers.post
+    - http.keyvals.patch
+    - stream.zone_sync.get
+    - connections.delete
+    - processes.get
+    - slabs.delete
+    - stream.keyvals.get
+    - http.upstreams.get
+    - stream.server_zones.delete
+    - stream.upstreams.servers.get
+    - http.upstreams.servers.delete
+    - slabs.get
+    - http.keyvals.post
+    - http.keyvals.get
+    - http.keyvals.delete
+    - stream.upstreams.delete
+    - connections.get
+    - stream.get
+    - http.requests.get
+    - stream.upstreams.get
+    - nginx.get
+    - http.get

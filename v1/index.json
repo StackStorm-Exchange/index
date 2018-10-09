@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539044259,
-        "hash": "5c5ed275b3e47e8110e39911323bfc5e"
+        "generated_ts": 1539122665,
+        "hash": "d7873b2e17a83b9147bc6343f450b70c"
     },
     "packs": {
         "acos": {
@@ -8615,6 +8615,66 @@
             "ref": "newrelic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
             "version": "0.4.2"
+        },
+        "nginxplus": {
+            "author": "Copart",
+            "content": {
+                "actions": {
+                    "count": 40,
+                    "resources": [
+                        "http.server_zones.get",
+                        "http.caches.delete",
+                        "http.upstreams.servers.patch",
+                        "http.upstreams.delete",
+                        "processes.delete",
+                        "http.upstreams.servers.post",
+                        "stream.upstreams.servers.delete",
+                        "stream.keyvals.delete",
+                        "stream.server_zones.get",
+                        "http.caches.get",
+                        "ssl.delete",
+                        "http.server_zones.delete",
+                        "ssl.get",
+                        "http.upstreams.servers.get",
+                        "stream.keyvals.post",
+                        "stream.keyvals.patch",
+                        "http.requests.delete",
+                        "stream.upstreams.servers.patch",
+                        "stream.upstreams.servers.post",
+                        "http.keyvals.patch",
+                        "stream.zone_sync.get",
+                        "connections.delete",
+                        "processes.get",
+                        "slabs.delete",
+                        "stream.keyvals.get",
+                        "http.upstreams.get",
+                        "stream.server_zones.delete",
+                        "stream.upstreams.servers.get",
+                        "http.upstreams.servers.delete",
+                        "slabs.get",
+                        "http.keyvals.post",
+                        "http.keyvals.get",
+                        "http.keyvals.delete",
+                        "stream.upstreams.delete",
+                        "connections.get",
+                        "stream.get",
+                        "http.requests.get",
+                        "stream.upstreams.get",
+                        "nginx.get",
+                        "http.get"
+                    ]
+                }
+            },
+            "description": "Integration between StackStorm and Nginx Plus",
+            "email": "igor.cherkaev@copart.com",
+            "keywords": [
+                "nginx",
+                "nginx-plus"
+            ],
+            "name": "nginxplus",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nginxplus",
+            "stackstorm_version": ">=2.10.0",
+            "version": "1.0.0"
         },
         "nsx_vtep": {
             "author": "GSLAB",

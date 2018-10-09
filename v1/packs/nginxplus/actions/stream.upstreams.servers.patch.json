@@ -1,0 +1,51 @@
+{
+    "description": "Modify a server in a stream upstream server group",
+    "enabled": true,
+    "entry_point": "",
+    "name": "stream.upstreams.servers.patch",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "body": {
+            "required": true,
+            "type": "object"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "method": {
+            "default": "PATCH",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "stream_upstream_name": {
+            "required": true,
+            "type": "string"
+        },
+        "stream_upstream_server_id": {
+            "required": true,
+            "type": "integer"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/stream/upstreams/{{ stream_upstream_name }}/servers/{{ stream_upstream_server_id }}",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

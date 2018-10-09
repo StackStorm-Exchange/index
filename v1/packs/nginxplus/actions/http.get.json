@@ -1,0 +1,39 @@
+{
+    "description": "Get list of HTTP-related endpoints",
+    "enabled": true,
+    "entry_point": "",
+    "name": "http.get",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "method": {
+            "default": "GET",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/http/",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

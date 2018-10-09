@@ -1,0 +1,43 @@
+{
+    "description": "Empty the stream keyval zone",
+    "enabled": true,
+    "entry_point": "",
+    "name": "stream.keyvals.delete",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "method": {
+            "default": "DELETE",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "stream_keyval_zone_name": {
+            "required": true,
+            "type": "string"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/stream/keyvals/{{ stream_keyval_zone_name }}",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}

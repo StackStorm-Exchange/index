@@ -1,0 +1,47 @@
+{
+    "description": "Remove a server from a stream upstream server group",
+    "enabled": true,
+    "entry_point": "",
+    "name": "stream.upstreams.servers.delete",
+    "parameters": {
+        "auth": {
+            "type": "string"
+        },
+        "headers": {
+            "default": {
+                "content-type": "application/json"
+            },
+            "type": "object"
+        },
+        "method": {
+            "default": "DELETE",
+            "immutable": true,
+            "type": "string"
+        },
+        "params": {
+            "type": "object"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "stream_upstream_name": {
+            "required": true,
+            "type": "string"
+        },
+        "stream_upstream_server_id": {
+            "required": true,
+            "type": "integer"
+        },
+        "timeout": {
+            "default": 10,
+            "type": "integer"
+        },
+        "url": {
+            "default": "http://{{ server }}/api/3/stream/upstreams/{{ stream_upstream_name }}/servers/{{ stream_upstream_server_id }}",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "http-request"
+}
