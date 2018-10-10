@@ -3,51 +3,50 @@ description: Integration between StackStorm and Nginx Plus
 keywords:
 - nginx
 - nginx-plus
-version: 1.0.0
+version: 1.0.1
 author: Copart
 email: igor.cherkaev@copart.com
-stackstorm_version: '>=2.10.0'
 content:
   actions:
     count: 40
     resources:
+    - nginx.get
+    - http.caches.get
+    - slabs.get
+    - slabs.delete
+    - http.upstreams.servers.delete
+    - ssl.delete
+    - stream.upstreams.delete
+    - stream.upstreams.servers.patch
+    - stream.upstreams.servers.get
+    - http.server_zones.delete
+    - connections.delete
+    - stream.keyvals.patch
+    - stream.upstreams.servers.delete
     - http.server_zones.get
-    - http.caches.delete
-    - http.upstreams.servers.patch
+    - stream.upstreams.get
+    - http.requests.get
+    - stream.keyvals.delete
+    - stream.keyvals.post
+    - connections.get
+    - http.keyvals.post
+    - processes.get
     - http.upstreams.delete
     - processes.delete
-    - http.upstreams.servers.post
-    - stream.upstreams.servers.delete
-    - stream.keyvals.delete
-    - stream.server_zones.get
-    - http.caches.get
-    - ssl.delete
-    - http.server_zones.delete
     - ssl.get
-    - http.upstreams.servers.get
-    - stream.keyvals.post
-    - stream.keyvals.patch
+    - http.caches.delete
     - http.requests.delete
-    - stream.upstreams.servers.patch
-    - stream.upstreams.servers.post
-    - http.keyvals.patch
-    - stream.zone_sync.get
-    - connections.delete
-    - processes.get
-    - slabs.delete
-    - stream.keyvals.get
-    - http.upstreams.get
-    - stream.server_zones.delete
-    - stream.upstreams.servers.get
-    - http.upstreams.servers.delete
-    - slabs.get
-    - http.keyvals.post
-    - http.keyvals.get
     - http.keyvals.delete
-    - stream.upstreams.delete
-    - connections.get
-    - stream.get
-    - http.requests.get
-    - stream.upstreams.get
-    - nginx.get
+    - http.keyvals.patch
+    - stream.keyvals.get
+    - http.upstreams.servers.get
+    - http.upstreams.servers.patch
     - http.get
+    - stream.server_zones.get
+    - http.upstreams.servers.post
+    - http.upstreams.get
+    - http.keyvals.get
+    - stream.server_zones.delete
+    - stream.get
+    - stream.zone_sync.get
+    - stream.upstreams.servers.post
