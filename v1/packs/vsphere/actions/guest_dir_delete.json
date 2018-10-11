@@ -1,0 +1,48 @@
+{
+    "description": "Deletes a directory inside the guest.",
+    "enabled": true,
+    "entry_point": "guest_dir_delete.py",
+    "name": "guest_dir_delete",
+    "parameters": {
+        "guest_directory": {
+            "description": "Directory name inside the guest.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for the given username.",
+            "position": 2,
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "recursive": {
+            "default": false,
+            "description": "If true, deletion is recursive.",
+            "position": 4,
+            "required": false,
+            "type": "boolean"
+        },
+        "username": {
+            "description": "Username within the guest to perform the action.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "VM to modify.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vSphere connection details.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

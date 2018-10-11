@@ -1,0 +1,53 @@
+{
+    "description": "Creates a temporary file inside the guest.",
+    "enabled": true,
+    "entry_point": "guest_file_create.py",
+    "name": "guest_file_create",
+    "parameters": {
+        "guest_directory": {
+            "description": "Directory in the guest where the file should go.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for the given username.",
+            "position": 2,
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "prefix": {
+            "description": "Prefix for the file name.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "suffix": {
+            "description": "Suffix for the file name.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username within the guest to perform the action.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "VM to modify.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vSphere connection details.",
+            "position": 6,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

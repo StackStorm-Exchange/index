@@ -1,0 +1,59 @@
+{
+    "description": "Run a script inside the guest.",
+    "enabled": true,
+    "entry_point": "workflows/guest_script_run.yaml",
+    "name": "guest_script_run",
+    "parameters": {
+        "interpreter": {
+            "description": "Full path to script interpreter in the guest.  Interpreter must be able to redirect stdout with 1> and stderr with 2>.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "interpreter_arguments": {
+            "description": "Arguments to pass to the interpreter before the script name.",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for the given username.",
+            "position": 2,
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "script": {
+            "description": "Local path to script.  This can be a full path in StackStorm's runtime context, or if prefixed with 'pack:' then a relative path to the 'packs' directory.  If the current pack is in packs.dev, then 'pack:' will be relative to 'packs.dev'.",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "script_arguments": {
+            "description": "Arguments to pass into the script.",
+            "position": 6,
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username within the guest to perform the action.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "VM to modify.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vSphere connection details.",
+            "position": 7,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

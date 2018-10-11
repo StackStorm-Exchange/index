@@ -1,0 +1,59 @@
+{
+    "description": "Start a process inside the guest.",
+    "enabled": true,
+    "entry_point": "guest_process_start.py",
+    "name": "guest_process_start",
+    "parameters": {
+        "arguments": {
+            "description": "Argument(s) to the command.",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        },
+        "command": {
+            "description": "Command to execute.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "envvar": {
+            "description": "Environment variable(s) (key=value).",
+            "position": 6,
+            "required": false,
+            "type": "array"
+        },
+        "password": {
+            "description": "Password for the given username.",
+            "position": 2,
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username within the guest to perform the action.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "VM to run the process within.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vSphere connection details.",
+            "position": 7,
+            "required": false,
+            "type": "string"
+        },
+        "workdir": {
+            "description": "Working directory for new process.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

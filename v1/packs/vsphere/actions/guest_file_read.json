@@ -1,0 +1,47 @@
+{
+    "description": "Read a file inside the guest.",
+    "enabled": true,
+    "entry_point": "guest_file_read.py",
+    "name": "guest_file_read",
+    "parameters": {
+        "guest_directory": {
+            "description": "Full path in the guest to the directory holding the file.  If defined, guest_file is relative.",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "guest_file": {
+            "description": "Full or relative (to guest_directory) path in the guest to the file.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for the given username.",
+            "position": 2,
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username within the guest to perform the action.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "VM to modify.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vSphere connection details.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

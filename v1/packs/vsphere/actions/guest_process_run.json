@@ -1,0 +1,59 @@
+{
+    "description": "Run a process inside the guest.",
+    "enabled": true,
+    "entry_point": "workflows/guest_process_run.yaml",
+    "name": "guest_process_run",
+    "parameters": {
+        "argument": {
+            "description": "Argument(s) to pass to the command executable.",
+            "position": 4,
+            "required": false,
+            "type": "array"
+        },
+        "command": {
+            "description": "Full path to command executable in the guest.",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "envvar": {
+            "description": "Environment variable(s) for the new process, of the form VARIABLE=VALUE.",
+            "position": 6,
+            "required": false,
+            "type": "array"
+        },
+        "password": {
+            "description": "Password for the given username.",
+            "position": 2,
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username within the guest to perform the action.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "VM to modify.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vSphere connection details.",
+            "position": 7,
+            "required": false,
+            "type": "string"
+        },
+        "workdir": {
+            "description": "Working directory for the new process.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

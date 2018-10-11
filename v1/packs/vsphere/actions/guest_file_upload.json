@@ -1,0 +1,47 @@
+{
+    "description": "Upload a file to the guest.",
+    "enabled": true,
+    "entry_point": "guest_file_upload.py",
+    "name": "guest_file_upload",
+    "parameters": {
+        "guest_directory": {
+            "description": "Directory name in the guest to store the file (for example, the result of guest_dir_create).",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "local_path": {
+            "description": "Local path to file being uploaded.  This can be a full path understood by the StackStorm runtime, or a path relative to the packs directory when prefixed with 'pack:'.",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for the given username.",
+            "position": 2,
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username within the guest to perform the action.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "VM to modify.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vSphere connection details.",
+            "position": 5,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
