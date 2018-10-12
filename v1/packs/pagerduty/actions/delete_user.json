@@ -1,0 +1,14 @@
+{
+    "description": "Create a PagerDuty user",
+    "enabled": true,
+    "entry_point": "delete_user.py",
+    "name": "delete_user",
+    "parameters": {
+        "email": {
+            "description": "The email address for the user.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

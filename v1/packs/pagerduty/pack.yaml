@@ -1,21 +1,38 @@
 ref: pagerduty
 name: pagerduty
 description: Packs which allows integration with PagerDuty services.
-version: 0.4.2
+version: 0.5.0
 author: Aamir
 email: raza.aamir01@gmail.com
+contributors:
+- Aamir <raza.aamir01@gmail.com>
+- Jon Middleton <jjm@geeky-and-blonde.me.uk>
 content:
   actions:
-    count: 4
+    count: 7
     resources:
     - get_open_incidents
-    - launch_incident
-    - resolve_incident
+    - list_users
+    - create_user
+    - delete_user
     - ack_incident
+    - resolve_incident
+    - launch_incident
   aliases:
     count: 4
     resources:
     - get_open_incidents
-    - launch_incident
-    - resolve_incident
     - ack_incident
+    - resolve_incident
+    - launch_incident
+  tests:
+    count: 8
+    resources:
+    - test_action_delete_user.py
+    - test_action_list_users.py
+    - test_action_create_user.py
+    - __init__.py
+    - test_action_resolve_incident.py
+    - test_action_launch_incident.py
+    - test_action_ack_incident.py
+    - test_action_open_incidents.py

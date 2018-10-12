@@ -1,0 +1,44 @@
+{
+    "description": "Create a PagerDuty user",
+    "enabled": true,
+    "entry_point": "create_user.py",
+    "name": "create_user",
+    "parameters": {
+        "color": {
+            "default": "green",
+            "description": "The schedule color for the user.",
+            "type": "string"
+        },
+        "email": {
+            "description": "The email address for the user.",
+            "required": true,
+            "type": "string"
+        },
+        "job_title": {
+            "description": "The job title for the user.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the user",
+            "required": true,
+            "type": "string"
+        },
+        "role": {
+            "default": "user",
+            "description": "The role for the user.",
+            "enum": [
+                "user",
+                "admin",
+                "limited_user",
+                "observer",
+                "owner",
+                "read_only_user",
+                "restricted_access",
+                "team_responder"
+            ],
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

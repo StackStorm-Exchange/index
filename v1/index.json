@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539372405,
-        "hash": "491b7ac154bde1b33f5766e0bac9dab1"
+        "generated_ts": 1539372443,
+        "hash": "cd745211a3d3d778f91b1530a53c9fd4"
     },
     "packs": {
         "acos": {
@@ -9781,30 +9781,50 @@
             "author": "Aamir",
             "content": {
                 "actions": {
-                    "count": 4,
+                    "count": 7,
                     "resources": [
                         "get_open_incidents",
-                        "launch_incident",
+                        "list_users",
+                        "create_user",
+                        "delete_user",
+                        "ack_incident",
                         "resolve_incident",
-                        "ack_incident"
+                        "launch_incident"
                     ]
                 },
                 "aliases": {
                     "count": 4,
                     "resources": [
                         "get_open_incidents",
-                        "launch_incident",
+                        "ack_incident",
                         "resolve_incident",
-                        "ack_incident"
+                        "launch_incident"
+                    ]
+                },
+                "tests": {
+                    "count": 8,
+                    "resources": [
+                        "test_action_delete_user.py",
+                        "test_action_list_users.py",
+                        "test_action_create_user.py",
+                        "__init__.py",
+                        "test_action_resolve_incident.py",
+                        "test_action_launch_incident.py",
+                        "test_action_ack_incident.py",
+                        "test_action_open_incidents.py"
                     ]
                 }
             },
+            "contributors": [
+                "Aamir <raza.aamir01@gmail.com>",
+                "Jon Middleton <jjm@geeky-and-blonde.me.uk>"
+            ],
             "description": "Packs which allows integration with PagerDuty services.",
             "email": "raza.aamir01@gmail.com",
             "name": "pagerduty",
             "ref": "pagerduty",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pagerduty",
-            "version": "0.4.2"
+            "version": "0.5.0"
         },
         "paloalto": {
             "author": "Irek Romaniuk, John Anderson",
