@@ -1,0 +1,21 @@
+{
+    "description": "Initiates a clean shutdown of the guest.  Returns immediately without waiting for the guest to complete shutdown.",
+    "enabled": true,
+    "entry_point": "vm_shutdown.py",
+    "name": "vm_shutdown",
+    "parameters": {
+        "id": {
+            "description": "VM(s) to shutdown.",
+            "position": 0,
+            "required": true,
+            "type": "array"
+        },
+        "vsphere": {
+            "description": "Pre-configured vSphere connection details.",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
