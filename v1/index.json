@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539639474,
-        "hash": "dfcab01b056b03bbbecd363b40930052"
+        "generated_ts": 1539853824,
+        "hash": "9fd14da557c725dbce26cccd86f4559c"
     },
     "packs": {
         "acos": {
@@ -6235,8 +6235,8 @@
                 "actions": {
                     "count": 2,
                     "resources": [
-                        "add_package",
-                        "update_cache"
+                        "update_cache",
+                        "add_package"
                     ]
                 }
             },
@@ -6245,7 +6245,7 @@
             "name": "freight",
             "ref": "freight",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-freight",
-            "version": "0.1.0"
+            "version": "0.1.1"
         },
         "ghost2logger": {
             "author": "davidjohngee",
