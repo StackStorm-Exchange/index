@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539859494,
-        "hash": "506cd0368f369473a6ece5ade8c73c89"
+        "generated_ts": 1539859527,
+        "hash": "ff95a883fe7afd1cab8184c6b94f218e"
     },
     "packs": {
         "acos": {
@@ -9956,15 +9956,15 @@
                 "actions": {
                     "count": 9,
                     "resources": [
-                        "cert_revoke",
                         "run_agent",
-                        "epp_render",
-                        "cert_clean",
+                        "cert_revoke",
                         "epp_render_remote",
-                        "cert_sign",
+                        "epp_render",
                         "apply",
-                        "lookup",
-                        "lookup_remote"
+                        "lookup_remote",
+                        "cert_sign",
+                        "cert_clean",
+                        "lookup"
                     ]
                 }
             },
@@ -9978,7 +9978,7 @@
             "name": "puppet",
             "ref": "puppet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-puppet",
-            "version": "0.3.2"
+            "version": "0.3.3"
         },
         "pushbullet": {
             "author": "Fabio Brito",
