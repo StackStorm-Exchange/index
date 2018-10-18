@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539859382,
-        "hash": "6e77fbffda215a356f3ed45476e70447"
+        "generated_ts": 1539859494,
+        "hash": "506cd0368f369473a6ece5ade8c73c89"
     },
     "packs": {
         "acos": {
@@ -4502,11 +4502,11 @@
                 "actions": {
                     "count": 5,
                     "resources": [
-                        "ohai",
-                        "solo",
                         "apply",
-                        "install",
-                        "client"
+                        "solo",
+                        "client",
+                        "ohai",
+                        "install"
                     ]
                 }
             },
@@ -4524,7 +4524,7 @@
             "name": "chef",
             "ref": "chef",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-chef",
-            "version": "0.1.2"
+            "version": "0.1.3"
         },
         "circle_ci": {
             "author": "StackStorm dev",

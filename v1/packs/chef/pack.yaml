@@ -9,15 +9,15 @@ keywords:
 - cfg management
 - configuration management
 - opscode
-version: 0.1.2
+version: 0.1.3
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 5
     resources:
-    - ohai
-    - solo
     - apply
-    - install
+    - solo
     - client
+    - ohai
+    - install
