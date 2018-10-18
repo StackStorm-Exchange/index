@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539858890,
-        "hash": "74f51ab9bd8612f25d25edba5ed1e5c1"
+        "generated_ts": 1539858967,
+        "hash": "30a60995f1ae544cfa64376c75da063a"
     },
     "packs": {
         "acos": {
@@ -8130,8 +8130,8 @@
                         "send_email",
                         "get_folder",
                         "list_folders",
-                        "get_calendar_items",
-                        "search_items"
+                        "search_items",
+                        "get_calendar_items"
                     ]
                 },
                 "sensors": {
@@ -8152,7 +8152,7 @@
             "name": "Microsoft Exchange",
             "ref": "msexchange",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-msexchange",
-            "version": "0.1.3"
+            "version": "0.1.4"
         },
         "mssql": {
             "author": "codyaray",

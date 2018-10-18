@@ -6,7 +6,7 @@ keywords:
 - calendar
 - exchange
 - office365
-version: 0.1.3
+version: 0.1.4
 author: Anthony Shaw
 email: anthonyshaw@apache.org
 content:
@@ -16,8 +16,8 @@ content:
     - send_email
     - get_folder
     - list_folders
-    - get_calendar_items
     - search_items
+    - get_calendar_items
   sensors:
     count: 1
     resources:
