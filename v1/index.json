@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539856894,
-        "hash": "e9bf22677d1805e61fc449708d373acb"
+        "generated_ts": 1539858624,
+        "hash": "0bfcd02e86b25a1ae0bb46ec85bbbdaa"
     },
     "packs": {
         "acos": {
@@ -4961,29 +4961,29 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "get_lifecycle_events",
-                        "get_lifecycle_event_objects",
-                        "update_object_category_by_lifecycle_id",
-                        "get_dns_zone",
-                        "get_device_by_id",
-                        "update_device",
-                        "create_or_edit_ip",
-                        "write_pxe_cfg",
-                        "suggest_and_create_ip",
-                        "device_name_list",
-                        "create_dhcp_lease_reservation",
-                        "suggest_next_ip",
                         "add_device_lifecycle",
-                        "networking_lifecycle_automation"
+                        "suggest_next_ip",
+                        "device_name_list",
+                        "get_device_by_id",
+                        "suggest_and_create_ip",
+                        "networking_lifecycle_automation",
+                        "get_dns_zone",
+                        "create_or_edit_ip",
+                        "create_dhcp_lease_reservation",
+                        "get_lifecycle_events",
+                        "update_device",
+                        "write_pxe_cfg",
+                        "get_lifecycle_event_objects",
+                        "update_object_category_by_lifecycle_id"
                     ]
                 },
                 "rules": {
                     "count": 4,
                     "resources": [
-                        "networking_lifecycle_automation_rule",
+                        "device_created_initial_lifecycle",
                         "lifecycle_triggered_object_category_change",
-                        "d42_webhook_responder",
-                        "device_created_initial_lifecycle"
+                        "networking_lifecycle_automation_rule",
+                        "d42_webhook_responder"
                     ]
                 }
             },
@@ -4992,7 +4992,7 @@
             "name": "device42",
             "ref": "device42",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
-            "version": "0.7.0"
+            "version": "0.7.1"
         },
         "digitalocean": {
             "author": "StackStorm, Inc.",
