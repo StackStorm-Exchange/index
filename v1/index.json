@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539859527,
-        "hash": "ff95a883fe7afd1cab8184c6b94f218e"
+        "generated_ts": 1539860621,
+        "hash": "ff4a3624e5534fd09fbe61dfdb1fb7cb"
     },
     "packs": {
         "acos": {
@@ -6517,27 +6517,27 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "deploy",
-                        "post_message",
-                        "restart",
-                        "post_result",
                         "branch",
-                        "update_ref"
+                        "post_result",
+                        "restart",
+                        "post_message",
+                        "update_ref",
+                        "deploy"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
-                        "hubot_deploy",
+                        "hubot_branch",
                         "hubot_restart",
-                        "hubot_branch"
+                        "hubot_deploy"
                     ]
                 },
                 "rules": {
                     "count": 2,
                     "resources": [
-                        "notify_hubot",
-                        "restart_hubot"
+                        "restart_hubot",
+                        "notify_hubot"
                     ]
                 }
             },
@@ -6546,7 +6546,7 @@
             "name": "hubot",
             "ref": "hubot",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hubot",
-            "version": "0.3.1"
+            "version": "0.3.2"
         },
         "hue": {
             "author": "James Fryman",
