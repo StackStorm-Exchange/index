@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1539883524,
-        "hash": "c126323ca23e6e98f6e1447703499126"
+        "generated_ts": 1539889540,
+        "hash": "3ad0c1d67fd1fdf62589f4b62d4f5e08"
     },
     "packs": {
         "acos": {
@@ -4136,20 +4136,20 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "create_vpc",
-                        "waiter",
-                        "assume_role",
-                        "create_instance",
                         "boto3action",
-                        "create_vpc_assume_role"
+                        "create_vpc_assume_role",
+                        "create_vpc",
+                        "create_instance",
+                        "waiter",
+                        "assume_role"
                     ]
                 },
                 "tests": {
                     "count": 3,
                     "resources": [
+                        "test_action_assume_role.py",
                         "test_action_boto3action.py",
-                        "test_action_waiter.py",
-                        "test_action_assume_role.py"
+                        "test_action_waiter.py"
                     ]
                 }
             },
