@@ -1,0 +1,26 @@
+ref: influxdb
+name: influxdb
+description: StackStorm integration pack for InfluxDB
+keywords:
+- influxdb
+- influx
+- database
+- timeseries
+version: 0.1.0
+author: Encore Technologies
+email: code@encore.tech
+content:
+  actions:
+    count: 3
+    resources:
+    - write
+    - ping
+    - query
+  tests:
+    count: 5
+    resources:
+    - test_ping.py
+    - test_write.py
+    - test_query.py
+    - test_base_action.py
+    - influxdb_base_action_test_case.py

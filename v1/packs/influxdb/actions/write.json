@@ -1,0 +1,63 @@
+{
+    "description": "Use this endpoint to write data to a pre-existing database. https://docs.influxdata.com/influxdb/latest/tools/api/#write-http-endpoint",
+    "enabled": true,
+    "entry_point": "lib/write.py",
+    "name": "write",
+    "pack": "influxdb",
+    "parameters": {
+        "credentials": {
+            "default": "default",
+            "description": "Name of the credentials object to use from the config",
+            "type": "string"
+        },
+        "database": {
+            "description": "Sets the target database for the write.\n",
+            "type": "string"
+        },
+        "password": {
+            "description": "Password to authenticate with. Overrides the <credentials> parameter",
+            "secret": true,
+            "type": "string"
+        },
+        "points": {
+            "description": "Array of data points to write to the database. Each point should have the following format:\n\n  parameters:\n    measurement:\n      type: string\n      description:\n        Name of the measurement\n    tags:\n      type: object\n      description:\n        Object containing tags where the key is the tag name and the value\n        is the tag value.\n    time:\n      type: string or integer\n      description:\n        Can either be the timestamp string (ISO format) or an integer\n        containing the epoch time.\n    fields:\n      type: object\n      description:\n        Object containing field values where the field name is the key\n        and the value is the data.\n",
+            "items": {
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "points_raw": {
+            "description": "Raw string of data points in the Line Protocol Format: https://docs.influxdata.com/influxdb/latest/concepts/glossary/#line-protocol\nIf specified, then the <points> parameter will be ignored",
+            "type": "string"
+        },
+        "port": {
+            "description": "Port number to connect to InfluxDB on. Overrides the setting in the pack's config.",
+            "type": "integer"
+        },
+        "precision": {
+            "description": "Sets the precision for the supplied Unix time values. [ns,u,ms,s,m,h] InfluxDB assumes that timestamps are in nanoseconds if you do not specify precision.\n",
+            "type": "string"
+        },
+        "retention_policy": {
+            "description": "Sets the target retention policy for the write. InfluxDB writes to the DEFAULT retention policy if you do not specify a retention policy.\n",
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname/IP address of the server. Overrides the setting in the pack's config.",
+            "type": "string"
+        },
+        "ssl": {
+            "description": "Use SSL/HTTPS. Overrides the setting in the pack's config.",
+            "type": "boolean"
+        },
+        "username": {
+            "description": "User to authenticate as. Overrides the <credentials> parameter",
+            "type": "string"
+        },
+        "verify_ssl": {
+            "description": "Verify remote host SSL certificates. Overrides the setting in the pack's config.",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

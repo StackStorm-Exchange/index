@@ -1,0 +1,36 @@
+{
+    "credentials": {
+        "description": "Mapping of name to an object containing credential information",
+        "properties": {
+            "password": {
+                "description": "Password to authenticate with",
+                "secret": true,
+                "type": "string"
+            },
+            "username": {
+                "description": "User to authenticate as",
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "port": {
+        "default": 8086,
+        "description": "Port number to connect to InfluxDB on",
+        "type": "integer"
+    },
+    "server": {
+        "description": "Hostname/IP address of the server",
+        "type": "string"
+    },
+    "ssl": {
+        "default": true,
+        "description": "Use SSL/HTTPS",
+        "type": "boolean"
+    },
+    "verify_ssl": {
+        "default": true,
+        "description": "Verify remote host SSL certificates",
+        "type": "boolean"
+    }
+}
