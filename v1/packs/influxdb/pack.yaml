@@ -13,14 +13,14 @@ content:
   actions:
     count: 3
     resources:
+    - write
     - ping
     - query
-    - write
   tests:
     count: 5
     resources:
-    - test_query.py
-    - test_write.py
-    - test_base_action.py
-    - test_ping.py
     - influxdb_base_action_test_case.py
+    - test_query.py
+    - test_base_action.py
+    - test_write.py
+    - test_ping.py
