@@ -1,0 +1,27 @@
+{
+    "crowd": {
+        "additionalProperties": false,
+        "description": "Crowd application settings.",
+        "properties": {
+            "app_pass": {
+                "description": "Application password",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "app_url": {
+                "description": "URL for the Crowd application",
+                "required": true,
+                "type": "string"
+            },
+            "app_user": {
+                "description": "Application name",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            }
+        },
+        "required": false,
+        "type": "object"
+    }
+}

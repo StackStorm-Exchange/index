@@ -1,0 +1,24 @@
+{
+    "description": "Set an attribute on a user.",
+    "enabled": true,
+    "entry_point": "set_user_attribute.py",
+    "name": "set_user_attribute",
+    "parameters": {
+        "attribute": {
+            "description": "The name of the attribute to set.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "The username on which to set the attribute.",
+            "required": true,
+            "type": "string"
+        },
+        "value": {
+            "description": "The value of the attribute to set.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

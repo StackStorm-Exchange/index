@@ -1,0 +1,19 @@
+{
+    "description": "Add a user to a group.",
+    "enabled": true,
+    "entry_point": "add_user_to_group.py",
+    "name": "add_user_to_group",
+    "parameters": {
+        "groupname": {
+            "description": "The group name into which to assign the user.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "The username to assign to the group.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,25 @@
+{
+    "description": "Add a user to the directory.",
+    "enabled": true,
+    "entry_point": "add_user.py",
+    "name": "add_user",
+    "parameters": {
+        "email": {
+            "description": "User email address.",
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "User password.",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Name of the user.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

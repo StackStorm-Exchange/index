@@ -1,0 +1,14 @@
+{
+    "description": "Retrieves a list of group names that have username as a direct member.",
+    "enabled": true,
+    "entry_point": "get_groups.py",
+    "name": "get_groups",
+    "parameters": {
+        "username": {
+            "description": "Name of the user.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,19 @@
+{
+    "description": "Set the active state of a user.",
+    "enabled": true,
+    "entry_point": "set_active.py",
+    "name": "set_active",
+    "parameters": {
+        "active_state": {
+            "description": "Active state true or false.",
+            "required": true,
+            "type": "boolean"
+        },
+        "username": {
+            "description": "Name of the user.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1540382463,
-        "hash": "6279d5eb1445a404026bbc86ee3b35f5"
+        "generated_ts": 1540543579,
+        "hash": "0a4cb4bba4f579dcec8d7994aa51519c"
     },
     "packs": {
         "acos": {
@@ -4812,6 +4812,34 @@
             "ref": "consul",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-consul",
             "version": "0.6.5"
+        },
+        "crowd": {
+            "author": "Mohan L",
+            "content": {
+                "actions": {
+                    "count": 7,
+                    "resources": [
+                        "add_user",
+                        "set_active",
+                        "add_user_to_group",
+                        "check_user",
+                        "get_user",
+                        "set_user_attribute",
+                        "get_groups"
+                    ]
+                }
+            },
+            "description": "Pack which allows integration with Atlassian Crowd.",
+            "email": "thefossgeek@gmail.com",
+            "keywords": [
+                "crowd",
+                "atlassian",
+                "atlassian-crowd"
+            ],
+            "name": "crowd",
+            "ref": "crowd",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-crowd",
+            "version": "0.1.0"
         },
         "csv": {
             "author": "StackStorm, Inc.",
