@@ -13,7 +13,7 @@
         },
         "emailVerified": {
             "default": false,
-            "description": "is emil verified",
+            "description": "is email verified",
             "type": "boolean"
         },
         "enabled": {
@@ -28,6 +28,15 @@
         "lastName": {
             "description": "lastname",
             "type": "string"
+        },
+        "password": {
+            "description": "User Password (optional)",
+            "type": "string"
+        },
+        "passwordTemp": {
+            "default": true,
+            "description": "is password temporary",
+            "type": "boolean"
         },
         "username": {
             "description": "username",

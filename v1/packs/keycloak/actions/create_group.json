@@ -1,0 +1,39 @@
+{
+    "description": "Create a group",
+    "enabled": true,
+    "entry_point": "create_group.py",
+    "name": "create_group",
+    "pack": "keycloak",
+    "parameters": {
+        "clientRoles": {
+            "description": "Map of client roles to associate with group",
+            "type": "object"
+        },
+        "name": {
+            "description": "group name",
+            "type": "string"
+        },
+        "parent": {
+            "description": "parent group id",
+            "type": "string"
+        },
+        "path": {
+            "description": "group path, an alternative to name",
+            "type": "string"
+        },
+        "realmRoles": {
+            "description": "Array of realm roles to associate with group",
+            "type": "array"
+        },
+        "skip_exists": {
+            "default": true,
+            "description": "Treat create existing resources as valid",
+            "type": "boolean"
+        },
+        "subGroups": {
+            "description": "Array of sub group objects to associate with group",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,12 +1,12 @@
 {
-    "description": "Get a user",
+    "description": "Delete a client role",
     "enabled": true,
-    "entry_point": "get_user.py",
-    "name": "get_user",
+    "entry_point": "delete_client_role.py",
+    "name": "delete_client_role",
     "pack": "keycloak",
     "parameters": {
-        "username": {
-            "description": "user_id",
+        "role_name": {
+            "description": "client role name",
             "position": 0,
             "required": true,
             "type": "string"

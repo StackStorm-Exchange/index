@@ -11,17 +11,11 @@
             "required": true,
             "type": "string"
         },
-        "role_id": {
-            "description": "keycloak internal client role id",
+        "roles": {
+            "description": "client role names",
             "position": 2,
             "required": true,
-            "type": "string"
-        },
-        "role_name": {
-            "description": "client role name",
-            "position": 3,
-            "required": true,
-            "type": "string"
+            "type": "array"
         },
         "user_id": {
             "description": "keycloak internal user id",

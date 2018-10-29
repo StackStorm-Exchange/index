@@ -1,19 +1,13 @@
 {
-    "description": "Create a client role",
+    "description": "Create an authentication flow",
     "enabled": true,
-    "entry_point": "create_client_role.py",
-    "name": "create_client_role",
+    "entry_point": "create_authentication_flow.py",
+    "name": "create_authentication_flow",
     "pack": "keycloak",
     "parameters": {
-        "client_id": {
-            "description": "keycloak internal client id",
+        "payload": {
+            "description": "https://www.keycloak.org/docs-api/4.1/rest-api/index.html#_authenticationflowrepresentation",
             "position": 0,
-            "required": true,
-            "type": "string"
-        },
-        "name": {
-            "description": "client role name",
-            "position": 1,
             "required": true,
             "type": "string"
         },

@@ -1,0 +1,49 @@
+{
+    "description": "Create a client",
+    "enabled": true,
+    "entry_point": "create_client.py",
+    "name": "create_client",
+    "pack": "keycloak",
+    "parameters": {
+        "clientId": {
+            "description": "Oauth2 client-id",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "directAccessGrantsEnabled": {
+            "default": true,
+            "description": "Direct access grants",
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Display name",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "protocol": {
+            "default": "openid-connect",
+            "description": "Protocol",
+            "position": 3,
+            "type": "string"
+        },
+        "publicClient": {
+            "default": true,
+            "description": "Is public client",
+            "type": "boolean"
+        },
+        "redirectUris": {
+            "description": "Valid redirect URLs",
+            "position": 2,
+            "required": true,
+            "type": "array"
+        },
+        "skip_exists": {
+            "default": true,
+            "description": "Treat create existing resources as valid",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

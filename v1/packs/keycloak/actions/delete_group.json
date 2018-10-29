@@ -1,12 +1,12 @@
 {
-    "description": "Get a user",
+    "description": "Delete a group",
     "enabled": true,
-    "entry_point": "get_user.py",
-    "name": "get_user",
+    "entry_point": "delete_group.py",
+    "name": "delete_group",
     "pack": "keycloak",
     "parameters": {
-        "username": {
-            "description": "user_id",
+        "group_id": {
+            "description": "group id",
             "position": 0,
             "required": true,
             "type": "string"

@@ -1,0 +1,22 @@
+{
+    "description": "Remove a user from a group",
+    "enabled": true,
+    "entry_point": "group_remove_user.py",
+    "name": "group_remove_user",
+    "pack": "keycloak",
+    "parameters": {
+        "group_id": {
+            "description": "id of group to remove from",
+            "position": 1,
+            "required": true,
+            "type": "object"
+        },
+        "user_id": {
+            "description": "user id to remove",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

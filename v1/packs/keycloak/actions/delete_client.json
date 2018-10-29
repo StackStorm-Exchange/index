@@ -1,12 +1,12 @@
 {
-    "description": "Get a user",
+    "description": "Delete a client",
     "enabled": true,
-    "entry_point": "get_user.py",
-    "name": "get_user",
+    "entry_point": "delete_client.py",
+    "name": "delete_client",
     "pack": "keycloak",
     "parameters": {
-        "username": {
-            "description": "user_id",
+        "client_id": {
+            "description": "client id",
             "position": 0,
             "required": true,
             "type": "string"
