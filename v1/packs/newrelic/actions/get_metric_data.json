@@ -8,11 +8,6 @@
             "description": "New Relic application id.",
             "type": "string"
         },
-        "from": {
-            "description": "Start time (ISO format, e.g. 2014-03-01T20:59:00+00:00)",
-            "required": true,
-            "type": "string"
-        },
         "metric_base_name": {
             "description": "Base name of the metric.",
             "required": true,
@@ -26,7 +21,12 @@
             "required": true,
             "type": "array"
         },
-        "to": {
+        "time_from": {
+            "description": "Start time (ISO format, e.g. 2014-03-01T20:59:00+00:00)",
+            "required": true,
+            "type": "string"
+        },
+        "time_to": {
             "description": "End time (ISO format, e.g. 2014-03-01T20:59:00+00:00)",
             "required": true,
             "type": "string"

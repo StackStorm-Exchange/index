@@ -6,15 +6,15 @@ keywords:
 - monitoring
 - app monitoring
 - application level monitoring
-version: 0.4.2
+version: 0.4.3
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 2
     resources:
-    - get_metric_data
     - get_alerts
+    - get_metric_data
   sensors:
     count: 2
     resources:

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1540839248,
-        "hash": "8a3a90c91ffcf3ab2e6d5bd84a6a02b5"
+        "generated_ts": 1540857818,
+        "hash": "83799194ee203ebdb5140c1fc4c455ac"
     },
     "packs": {
         "acos": {
@@ -8670,8 +8670,8 @@
                 "actions": {
                     "count": 2,
                     "resources": [
-                        "get_metric_data",
-                        "get_alerts"
+                        "get_alerts",
+                        "get_metric_data"
                     ]
                 },
                 "sensors": {
@@ -8693,7 +8693,7 @@
             "name": "newrelic",
             "ref": "newrelic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
-            "version": "0.4.2"
+            "version": "0.4.3"
         },
         "nginxplus": {
             "author": "Copart",
