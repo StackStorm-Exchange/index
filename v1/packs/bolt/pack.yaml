@@ -7,33 +7,33 @@ keywords:
 - remote execution
 - configuration management
 - cfg management
-version: 0.1.2
+version: 0.1.3
 author: Encore Technologies
 email: code@encore.tech
 content:
   actions:
     count: 11
     resources:
-    - task_show
-    - command_run
-    - plan_run
     - plan_list
-    - file_upload
-    - task_list
     - plan_show
-    - task_run
     - puppetfile_install
-    - script_run
+    - file_upload
+    - plan_run
+    - task_show
     - install
+    - task_run
+    - command_run
+    - task_list
+    - script_run
   aliases:
     count: 6
     resources:
-    - task_show
-    - command_run
     - plan_list
-    - task_list
     - plan_show
+    - task_show
     - task_run
+    - command_run
+    - task_list
   tests:
     count: 2
     resources:
