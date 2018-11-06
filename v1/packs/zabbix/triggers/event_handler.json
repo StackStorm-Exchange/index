@@ -14,7 +14,9 @@
                 "type": "string"
             },
             "extra_args": {
-                "items": "string",
+                "items": {
+                    "type": "string"
+                },
                 "type": "array"
             }
         },
