@@ -6,15 +6,15 @@ keywords:
 - serialization
 - deserialization
 - text processing
-version: 0.4.2
+version: 0.4.3
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 3
     resources:
-    - parse_file
     - format
+    - parse_file
     - parse
   tests:
     count: 1

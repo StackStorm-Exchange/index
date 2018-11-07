@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1541532834,
-        "hash": "0046e7f8f8db1b241754f567c5466b29"
+        "generated_ts": 1541581939,
+        "hash": "ad64ac95fd932d9b75cfca455ac326a9"
     },
     "packs": {
         "acos": {
@@ -4847,8 +4847,8 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "parse_file",
                         "format",
+                        "parse_file",
                         "parse"
                     ]
                 },
@@ -4870,7 +4870,7 @@
             "name": "csv",
             "ref": "csv",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-csv",
-            "version": "0.4.2"
+            "version": "0.4.3"
         },
         "cubesensors": {
             "author": "StackStorm, Inc.",
