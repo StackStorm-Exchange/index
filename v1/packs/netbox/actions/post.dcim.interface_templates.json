@@ -1,0 +1,44 @@
+{
+    "description": "POST Interface Templates",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.dcim.interface_templates",
+    "parameters": {
+        "device_type": {
+            "description": "Device type",
+            "required": true,
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/interface-templates/",
+            "immutable": true,
+            "type": "string"
+        },
+        "form_factor": {
+            "description": "Form factor",
+            "required": false,
+            "type": "integer"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "mgmt_only": {
+            "description": "Management only",
+            "required": false,
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,124 @@
+{
+    "description": "PUT Sites",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.dcim.sites",
+    "parameters": {
+        "asn": {
+            "description": "ASN",
+            "required": false,
+            "type": "integer"
+        },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "contact_email": {
+            "description": "Contact E-mail",
+            "required": false,
+            "type": "string"
+        },
+        "contact_name": {
+            "description": "Contact name",
+            "required": false,
+            "type": "string"
+        },
+        "contact_phone": {
+            "description": "Contact phone",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/sites/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "facility": {
+            "description": "Facility",
+            "required": false,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "integer"
+        },
+        "latitude": {
+            "description": "Latitude",
+            "required": false,
+            "type": "string"
+        },
+        "longitude": {
+            "description": "Longitude",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "physical_address": {
+            "description": "Physical address",
+            "required": false,
+            "type": "string"
+        },
+        "region": {
+            "description": "Parent",
+            "required": false,
+            "type": "integer"
+        },
+        "shipping_address": {
+            "description": "Shipping address",
+            "required": false,
+            "type": "string"
+        },
+        "slug": {
+            "description": "Slug",
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "description": "Status",
+            "required": false,
+            "type": "integer"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
+        },
+        "time_zone": {
+            "description": "Time zone",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

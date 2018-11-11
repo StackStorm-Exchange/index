@@ -1,0 +1,54 @@
+{
+    "description": "PATCH Graphs",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "patch.extras.graphs",
+    "parameters": {
+        "endpoint_uri": {
+            "default": "/extras/graphs/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "patch",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to patch.",
+            "required": true,
+            "type": "integer"
+        },
+        "link": {
+            "description": "Link URL",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "source": {
+            "description": "Source URL",
+            "required": false,
+            "type": "string"
+        },
+        "type": {
+            "description": "Type",
+            "required": false,
+            "type": "integer"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

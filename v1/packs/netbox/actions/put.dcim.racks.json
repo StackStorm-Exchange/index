@@ -1,0 +1,99 @@
+{
+    "description": "PUT Racks",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.dcim.racks",
+    "parameters": {
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "desc_units": {
+            "description": "Descending units",
+            "required": false,
+            "type": "boolean"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/racks/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "facility_id": {
+            "description": "Facility ID",
+            "required": false,
+            "type": "integer"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "group": {
+            "description": "Group",
+            "required": false,
+            "type": "integer"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "role": {
+            "description": "Role",
+            "required": false,
+            "type": "integer"
+        },
+        "serial": {
+            "description": "Serial number",
+            "required": false,
+            "type": "string"
+        },
+        "site": {
+            "description": "Site",
+            "required": true,
+            "type": "integer"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
+        },
+        "type": {
+            "description": "Type",
+            "required": false,
+            "type": "integer"
+        },
+        "u_height": {
+            "description": "Height (U)",
+            "required": false,
+            "type": "integer"
+        },
+        "width": {
+            "description": "Width",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

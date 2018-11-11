@@ -1,0 +1,34 @@
+{
+    "description": "POST Manufacturers",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.dcim.manufacturers",
+    "parameters": {
+        "endpoint_uri": {
+            "default": "/dcim/manufacturers/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "slug": {
+            "description": "Slug",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

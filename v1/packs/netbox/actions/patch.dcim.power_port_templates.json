@@ -1,0 +1,39 @@
+{
+    "description": "PATCH Power Port Templates",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "patch.dcim.power_port_templates",
+    "parameters": {
+        "device_type": {
+            "description": "Device type",
+            "required": false,
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/power-port-templates/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "patch",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to patch.",
+            "required": true,
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

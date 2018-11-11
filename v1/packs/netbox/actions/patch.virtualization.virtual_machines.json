@@ -1,0 +1,114 @@
+{
+    "description": "PATCH Virtual Machines",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "patch.virtualization.virtual_machines",
+    "parameters": {
+        "cluster": {
+            "description": "Cluster",
+            "required": false,
+            "type": "integer"
+        },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "disk": {
+            "description": "Disk (GB)",
+            "required": false,
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/virtualization/virtual-machines/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "patch",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to patch.",
+            "required": true,
+            "type": "integer"
+        },
+        "local_context_data": {
+            "description": "Local context data",
+            "required": false,
+            "type": "string"
+        },
+        "memory": {
+            "description": "Memory (MB)",
+            "required": false,
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "platform": {
+            "description": "Platform",
+            "required": false,
+            "type": "integer"
+        },
+        "primary_ip": {
+            "description": "Primary ip",
+            "required": false,
+            "type": "integer"
+        },
+        "primary_ip4": {
+            "description": "Primary ip",
+            "required": false,
+            "type": "integer"
+        },
+        "primary_ip6": {
+            "description": "Primary ip",
+            "required": false,
+            "type": "integer"
+        },
+        "role": {
+            "description": "Device role",
+            "required": false,
+            "type": "integer"
+        },
+        "site": {
+            "description": "Site",
+            "required": false,
+            "type": "integer"
+        },
+        "status": {
+            "description": "Status",
+            "required": false,
+            "type": "integer"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
+        },
+        "vcpus": {
+            "description": "VCPUs",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

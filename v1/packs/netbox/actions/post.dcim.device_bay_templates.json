@@ -1,0 +1,34 @@
+{
+    "description": "POST Device Bay Templates",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.dcim.device_bay_templates",
+    "parameters": {
+        "device_type": {
+            "description": "Device type",
+            "required": true,
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/device-bay-templates/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

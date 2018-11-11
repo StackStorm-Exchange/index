@@ -1,0 +1,94 @@
+{
+    "description": "POST Interfaces",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.dcim.interfaces",
+    "parameters": {
+        "circuit_termination": {
+            "description": "Circuit termination",
+            "required": false,
+            "type": "integer"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "device": {
+            "description": "Device",
+            "required": true,
+            "type": "integer"
+        },
+        "enabled": {
+            "description": "Enabled",
+            "required": false,
+            "type": "boolean"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/interfaces/",
+            "immutable": true,
+            "type": "string"
+        },
+        "form_factor": {
+            "description": "Form factor",
+            "required": false,
+            "type": "integer"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "lag": {
+            "description": "Interface",
+            "required": false,
+            "type": "integer"
+        },
+        "mac_address": {
+            "description": "MAC Address",
+            "required": false,
+            "type": "string"
+        },
+        "mgmt_only": {
+            "description": "OOB Management",
+            "required": false,
+            "type": "boolean"
+        },
+        "mode": {
+            "description": "Mode",
+            "required": false,
+            "type": "integer"
+        },
+        "mtu": {
+            "description": "MTU",
+            "required": false,
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "tagged_vlans": {
+            "description": "Tagged vlans",
+            "required": false,
+            "type": "array"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "untagged_vlan": {
+            "description": "Untagged vlan",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

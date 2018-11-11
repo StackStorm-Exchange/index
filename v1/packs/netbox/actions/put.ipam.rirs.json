@@ -1,0 +1,44 @@
+{
+    "description": "PUT Rirs",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.ipam.rirs",
+    "parameters": {
+        "endpoint_uri": {
+            "default": "/ipam/rirs/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "integer"
+        },
+        "is_private": {
+            "description": "Private",
+            "required": false,
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "slug": {
+            "description": "Slug",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

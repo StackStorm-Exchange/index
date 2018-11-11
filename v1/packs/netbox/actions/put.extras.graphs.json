@@ -1,0 +1,54 @@
+{
+    "description": "PUT Graphs",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.extras.graphs",
+    "parameters": {
+        "endpoint_uri": {
+            "default": "/extras/graphs/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "integer"
+        },
+        "link": {
+            "description": "Link URL",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "source": {
+            "description": "Source URL",
+            "required": true,
+            "type": "string"
+        },
+        "type": {
+            "description": "Type",
+            "required": true,
+            "type": "integer"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

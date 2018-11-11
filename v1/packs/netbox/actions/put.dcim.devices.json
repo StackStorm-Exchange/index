@@ -1,0 +1,144 @@
+{
+    "description": "PUT Devices",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.dcim.devices",
+    "parameters": {
+        "asset_tag": {
+            "description": "Asset tag",
+            "required": false,
+            "type": "string"
+        },
+        "cluster": {
+            "description": "Cluster",
+            "required": false,
+            "type": "integer"
+        },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "device_role": {
+            "description": "Device role",
+            "required": true,
+            "type": "integer"
+        },
+        "device_type": {
+            "description": "Device type",
+            "required": true,
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/devices/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "face": {
+            "description": "Face",
+            "required": false,
+            "type": "integer"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "integer"
+        },
+        "local_context_data": {
+            "description": "Local context data",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "platform": {
+            "description": "Platform",
+            "required": false,
+            "type": "integer"
+        },
+        "position": {
+            "description": "Position (U)",
+            "required": false,
+            "type": "integer"
+        },
+        "primary_ip": {
+            "description": "Primary ip",
+            "required": false,
+            "type": "integer"
+        },
+        "primary_ip4": {
+            "description": "Primary ip",
+            "required": false,
+            "type": "integer"
+        },
+        "primary_ip6": {
+            "description": "Primary ip",
+            "required": false,
+            "type": "integer"
+        },
+        "rack": {
+            "description": "Rack",
+            "required": false,
+            "type": "integer"
+        },
+        "serial": {
+            "description": "Serial number",
+            "required": false,
+            "type": "string"
+        },
+        "site": {
+            "description": "Site",
+            "required": true,
+            "type": "integer"
+        },
+        "status": {
+            "description": "Status",
+            "required": false,
+            "type": "integer"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
+        },
+        "vc_position": {
+            "description": "Vc position",
+            "required": false,
+            "type": "integer"
+        },
+        "vc_priority": {
+            "description": "Vc priority",
+            "required": false,
+            "type": "integer"
+        },
+        "virtual_chassis": {
+            "description": "Virtual chassis",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}
