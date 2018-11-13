@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1541928680,
-        "hash": "6369c7c7928197227136dcb84e60853b"
+        "generated_ts": 1542120540,
+        "hash": "f0cee6d24623c6bbcb935729f52c4ed2"
     },
     "packs": {
         "acos": {
@@ -7070,21 +7070,27 @@
                 "actions": {
                     "count": 9,
                     "resources": [
-                        "attach_file_to_issue",
-                        "attach_files_to_issue",
-                        "transition_issue",
-                        "get_issue_attachments",
-                        "comment_issue",
                         "get_issue_comments",
-                        "get_issue",
+                        "attach_file_to_issue",
+                        "transition_issue",
                         "search_issues",
-                        "create_issue"
+                        "get_issue",
+                        "get_issue_attachments",
+                        "create_issue",
+                        "attach_files_to_issue",
+                        "comment_issue"
                     ]
                 },
                 "sensors": {
                     "count": 1,
                     "resources": [
                         "JIRASensor"
+                    ]
+                },
+                "tests": {
+                    "count": 1,
+                    "resources": [
+                        "test_sensor_jira_sensor.py"
                     ]
                 }
             },
