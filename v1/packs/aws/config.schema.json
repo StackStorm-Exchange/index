@@ -64,7 +64,7 @@
         "type": "object"
     },
     "st2_user_data": {
-        "description": "The file for all invocations of the 'aws.ec2_run_instances' action",
+        "description": "Raw content or filepath with EC2 user data: automated configuration tasks or scripts executed after the instance starts. Used as default for all 'ec2_run_instances' invocations if no custom user-data provided via action parameters.\n",
         "type": "string"
     }
 }
