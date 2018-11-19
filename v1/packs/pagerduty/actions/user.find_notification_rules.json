@@ -1,0 +1,30 @@
+{
+    "description": "find notification_rules by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.find_notification_rules",
+    "parameters": {
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "method": {
+            "default": "notification_rules",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

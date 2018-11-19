@@ -1,0 +1,73 @@
+{
+    "description": "find incident(s) by criteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "incident.find",
+    "parameters": {
+        "date_range": {
+            "description": "When set to all, the since and until parameters and defaults are ignored.",
+            "enum": [
+                "all"
+            ],
+            "type": "string"
+        },
+        "entity": {
+            "default": "Incident",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "incident_key": {
+            "description": "Returns only the incidents associated with the passed service(s).",
+            "type": "array"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "maximum": {
+            "default": 25,
+            "description": "limit number of entries potentially returned",
+            "type": "integer"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "since": {
+            "description": "The start of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        },
+        "statuses": {
+            "description": "Return only incidents with the given statuses.",
+            "type": "array"
+        },
+        "team_ids": {
+            "description": "An array of team IDs. Only results related to these teams will be returned. Account must have the teams ability to use this parameter.",
+            "type": "array"
+        },
+        "time_zone": {
+            "description": "Time zone in which dates in the result will be rendered.",
+            "type": "string"
+        },
+        "until": {
+            "description": "The end of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        },
+        "urgencies": {
+            "description": "Array of the urgencies of the incidents to be returned. Defaults to all urgencies. Account must have the urgencies ability to do this.",
+            "enum": [
+                "high",
+                "low"
+            ],
+            "type": "string"
+        },
+        "user_ids": {
+            "description": "Returns only the incidents currently assigned to the passed user(s)",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

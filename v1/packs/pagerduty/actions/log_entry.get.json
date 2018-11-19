@@ -1,0 +1,35 @@
+{
+    "description": "get log_entry by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "log_entry.get",
+    "parameters": {
+        "entity": {
+            "default": "LogEntry",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a log_entry object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "method": {
+            "default": "fetch",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "time_zone": {
+            "default": "UTC",
+            "description": "Time zone in which dates in the result will be rendered.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

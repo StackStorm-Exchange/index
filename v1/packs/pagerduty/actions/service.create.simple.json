@@ -1,0 +1,98 @@
+{
+    "description": "create a service (simplified)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "service.create.simple",
+    "parameters": {
+        "acknowledgement_timeout": {
+            "default": 1800,
+            "description": "Time in seconds that an incident changes to the Triggered State after being Acknowledged. (0 or null = disable feature)",
+            "type": "integer"
+        },
+        "alert_creation": {
+            "default": "create_alerts_and_incidents",
+            "description": "Whether a service creates only incidents, or both alerts and incidents.",
+            "enum": [
+                "create_incidents",
+                "create_alerts_and_incidents"
+            ],
+            "type": "string"
+        },
+        "auto_resolve_timeout": {
+            "default": 14400,
+            "description": "Time in seconds that an incident is automatically resolved if left open for that long (0 or null = disable feature)",
+            "type": "integer"
+        },
+        "data": {
+            "default": {
+                "acknowledgement_timeout": "{{ acknowledgement_timeout }}",
+                "alert_creation": "{{ alert_creation }}",
+                "auto_resolve_timeout": "{{ auto_resolve_timeout }}",
+                "description": "{{ description }}",
+                "escalation_policy": {
+                    "id": "{{ escalation_policy_id }}",
+                    "type": "escalation_policy_reference"
+                },
+                "name": "{{ name }}",
+                "status": "{{ status }}",
+                "type": "{{ type }}"
+            },
+            "description": "Full formatting of data the way it needs to be interpreted based on the JSONSchema for the API",
+            "immutable": true,
+            "type": "object"
+        },
+        "description": {
+            "description": "The user-provided description of the service.",
+            "type": "string"
+        },
+        "entity": {
+            "default": "Service",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "escalation_policy_id": {
+            "description": "The ID of the escalation policy for this service",
+            "required": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the service.",
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "default": "active",
+            "description": "The current state of the Service.",
+            "enum": [
+                "active",
+                "warning",
+                "critical",
+                "maintenance",
+                "disabled"
+            ],
+            "type": "string"
+        },
+        "type": {
+            "default": "service",
+            "enum": [
+                "service",
+                "service_reference"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

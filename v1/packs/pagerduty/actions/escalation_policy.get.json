@@ -1,0 +1,26 @@
+{
+    "description": "get escalation_policy by id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "escalation_policy.get",
+    "parameters": {
+        "entity": {
+            "default": "EscalationPolicy",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a escalation_policy object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "fetch",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

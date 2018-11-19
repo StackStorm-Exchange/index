@@ -1,0 +1,43 @@
+{
+    "description": "find log_entry(s) by creiteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "log_entry.find",
+    "parameters": {
+        "entity": {
+            "default": "LogEntry",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "is_overview": {
+            "default": false,
+            "description": "If true, will return a subset of log entries that show only the most important changes to the incident.",
+            "type": "boolean"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "since": {
+            "description": "The start of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        },
+        "time_zone": {
+            "default": "UTC",
+            "description": "Time zone in which dates in the result will be rendered.",
+            "type": "string"
+        },
+        "until": {
+            "description": "The end of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,38 +1,86 @@
 ref: pagerduty
 name: pagerduty
 description: Packs which allows integration with PagerDuty services.
-version: 0.5.0
-author: Aamir
-email: raza.aamir01@gmail.com
+version: 0.6.0
+author: Ian Price
+email: ianmprice@gmail.com
 contributors:
-- Aamir <raza.aamir01@gmail.com>
+- Aamir (original author) <raza.aamir01@gmail.com>
 - Jon Middleton <jjm@geeky-and-blonde.me.uk>
+- Ian Price (rewrite author) <ianmprice@gmail.com>
 content:
   actions:
-    count: 7
+    count: 65
     resources:
-    - get_open_incidents
-    - list_users
-    - create_user
-    - delete_user
-    - ack_incident
-    - resolve_incident
-    - launch_incident
+    - notification.find
+    - service.delete
+    - user.create.simple
+    - team.add_user
+    - incident.find_log_entries
+    - escalation_policy.get
+    - user.create_contact_method
+    - incident.find_notes
+    - service.find_integrations
+    - service.create
+    - schedule.create
+    - incident.create.events_v1
+    - user.find
+    - incident.reassign
+    - schedule.get_on_call
+    - maintenance_window.create
+    - integration.get
+    - user.create_contact_method.simple
+    - team.get
+    - maintenance_window.delete
+    - incident.create_note
+    - user.get_notification_rule
+    - service.get_integrations
+    - maintenance_window.find
+    - user.delete_notification_rule
+    - user.create_notification_rule.simple
+    - schedule.find
+    - team.create
+    - service.get
+    - schedule.delete
+    - service.create.simple
+    - escalation_policy.delete
+    - user.find_notification_rules
+    - team.remove_user
+    - user.create_notification_rule
+    - incident.find
+    - incident.merge
+    - team.find
+    - incident.find_alerts
+    - escalation_policy.create
+    - maintenance_window.get
+    - incident.create.rest_v2
+    - escalation_policy.find
+    - maintenance_window.create.simple
+    - incident.acknowledge
+    - user.get_contact_method
+    - incident.resolve
+    - team.remove_escalation_policy
+    - incident.get
+    - service.find
+    - user.delete
+    - escalation_policy.find_services
+    - team.delete
+    - user.get
+    - user.create
+    - log_entry.find
+    - log_entry.get
+    - incident.create.rest_v2.simple
+    - user.delete_contact_method
+    - user.find_contact_methods
+    - team.create.simple
+    - team.add_escalation_policy
+    - on_call.find
+    - incident.snooze
+    - schedule.get
   aliases:
     count: 4
     resources:
-    - get_open_incidents
-    - ack_incident
+    - find_incidents
     - resolve_incident
+    - acknowledge_incident
     - launch_incident
-  tests:
-    count: 8
-    resources:
-    - test_action_delete_user.py
-    - test_action_list_users.py
-    - test_action_create_user.py
-    - __init__.py
-    - test_action_resolve_incident.py
-    - test_action_launch_incident.py
-    - test_action_ack_incident.py
-    - test_action_open_incidents.py

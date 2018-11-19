@@ -1,0 +1,31 @@
+{
+    "description": "delete a contact_method by id for entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.delete_contact_method",
+    "parameters": {
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "delete_contact_method",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "resource_id": {
+            "description": "translates to the 'id' key for a contact_method object in PagerDuty",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

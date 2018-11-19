@@ -1,0 +1,54 @@
+{
+    "description": "find on_call(s) by criteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "on_call.find",
+    "parameters": {
+        "earliest": {
+            "description": "This will filter on-calls such that only the earliest on-call for each combination of escalation policy, escalation level, and user is returned",
+            "type": "boolean"
+        },
+        "entity": {
+            "default": "OnCall",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "escalation_policy_ids": {
+            "description": "Filters the results, showing only on-calls for the specified escalation policy IDs.",
+            "type": "array"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "schedule_ids": {
+            "description": "Filters the results, showing only on-calls for the specified schedule IDs. If null is provided in the array, it includes permanent on-calls due to direct user escalation targets.",
+            "type": "array"
+        },
+        "since": {
+            "description": "The start of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        },
+        "time_zone": {
+            "default": "UTC",
+            "description": "Time zone in which dates in the result will be rendered.",
+            "type": "string"
+        },
+        "until": {
+            "description": "The end of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        },
+        "user_ids": {
+            "description": "array of user ids to narrow search to",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

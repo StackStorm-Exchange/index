@@ -1,0 +1,34 @@
+{
+    "description": "find users by criteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.find",
+    "parameters": {
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "maximum": {
+            "default": 25,
+            "description": "limit number of entries potentially returned",
+            "type": "integer"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "a substring search of the 'name' and 'email' field",
+            "type": "string"
+        },
+        "team_ids": {
+            "description": "array of team ids to narrow search to",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

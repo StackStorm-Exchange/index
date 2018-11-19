@@ -2,7 +2,7 @@
     "ack": {
         "enabled": false
     },
-    "action_ref": "pagerduty.launch_incident",
+    "action_ref": "pagerduty.incident.create.events_v1",
     "description": "Create a PagerDuty incident",
     "formats": [
         "create incident {{description}}"
@@ -10,6 +10,6 @@
     "name": "launch_incident",
     "pack": "pagerduty",
     "result": {
-        "format": "{% if execution.status == \"succeeded\" %}\nSuccessfully triggered event with incident key: {{ execution.result.result.incident_key }}\n{% else %}\nFailed {% if execution.result.stderr %}*Stderr:* ```{{ execution.result.stderr }}```{% endif %}\n{% endif %}\n"
+        "format": "{% if execution.status == \"succeeded\" %}\nSuccessfully triggered event with inc de-dup key: {{ execution.result.result.incident_key }}\n{% else %}\nFailed {% if execution.result.stderr %}*Stderr:* ```{{ execution.result.stderr }}```{% endif %}\n{% endif %}"
     }
 }

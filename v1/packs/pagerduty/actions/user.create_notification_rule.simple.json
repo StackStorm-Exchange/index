@@ -1,0 +1,60 @@
+{
+    "description": "create a notification_rule for user by entity_id (simplified)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.create_notification_rule.simple",
+    "parameters": {
+        "contact_method_id": {
+            "description": "id of the contact_method to be used",
+            "required": true,
+            "type": "string"
+        },
+        "contact_method_type": {
+            "description": "The type of contact method",
+            "enum": [
+                "email_contact_method",
+                "phone_contact_method",
+                "push_notification_contact_method",
+                "sms_contact_method"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "data": {
+            "default": {
+                "contact_method": {
+                    "id": "{{ contact_method_id }}",
+                    "type": "{{ contact_method_type }}"
+                },
+                "start_delay_in_minutes": "{{ start_delay_in_minutes }}"
+            },
+            "description": "A JSON object with the data that should be sent for notification_rule creation. See action definition for details (JSONSchema).",
+            "immutable": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_notification_rule",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "start_delay_in_minutes": {
+            "default": 0,
+            "description": "The delay before firing the rule, in minutes.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

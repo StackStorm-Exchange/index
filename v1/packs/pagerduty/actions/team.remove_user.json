@@ -1,0 +1,31 @@
+{
+    "description": "remove user by id from a team by entity_id",
+    "enabled": false,
+    "entry_point": "action.py",
+    "name": "team.remove_user",
+    "parameters": {
+        "entity": {
+            "default": "Team",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a team object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "remove_user",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "translates to the 'id' key for an user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,55 @@
+{
+    "description": "create a notification_rule for user by entity_id (raw data input)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.create_notification_rule",
+    "parameters": {
+        "data": {
+            "description": "A JSON object with the data that should be sent for notification_rule creation. See action definition for details (JSONSchema).",
+            "items": {
+                "properties": {
+                    "contact_method": {
+                        "items": {
+                            "properties": {
+                                "id": {
+                                    "description": "id of the contact_method to be used",
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "object"
+                    },
+                    "start_delay_in_minutes": {
+                        "default": 0,
+                        "description": "The delay before firing the rule, in minutes.",
+                        "required": true,
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_notification_rule",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

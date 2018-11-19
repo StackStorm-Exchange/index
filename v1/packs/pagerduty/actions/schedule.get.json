@@ -1,0 +1,39 @@
+{
+    "description": "get schedule by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "schedule.get",
+    "parameters": {
+        "entity": {
+            "default": "Schedule",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "fetch",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "since": {
+            "description": "The start of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        },
+        "time_zone": {
+            "default": "UTC",
+            "description": "Time zone in which dates in the result will be rendered.",
+            "type": "string"
+        },
+        "until": {
+            "description": "The end of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

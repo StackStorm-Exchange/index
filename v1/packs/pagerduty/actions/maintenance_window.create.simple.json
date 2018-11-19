@@ -1,0 +1,62 @@
+{
+    "description": "create an maintenance_window (simplified)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "maintenance_window.create.simple",
+    "parameters": {
+        "data": {
+            "default": {
+                "description": "{{ description }}",
+                "end_time": "{{ end_time }}",
+                "services": [
+                    {
+                        "id": "{{ service_id }}",
+                        "type": "service_reference"
+                    }
+                ],
+                "start_time": "{{ start_time }}",
+                "type": "maintenance_window"
+            },
+            "description": "Full formatting of data the way it needs to be interpreted based on the JSONSchema for the API",
+            "immutable": true,
+            "type": "object"
+        },
+        "description": {
+            "description": "A description for this maintenance window.",
+            "type": "string"
+        },
+        "end_time": {
+            "description": "This maintenance window's end time. This is when the services will start creating incidents again. This date must be in the future and after the `start_time`. (ISO8601 compliant timestamp)",
+            "required": true,
+            "type": "string"
+        },
+        "entity": {
+            "default": "MaintenanceWindow",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "service_id": {
+            "description": "Service id for the maintenance window.",
+            "required": true,
+            "type": "string"
+        },
+        "start_time": {
+            "description": "This maintenance window's start time. This is when the services will stop creating incidents. If this date is in the past, it will be updated to be the current time. (ISO8601 compliant timestamp)",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

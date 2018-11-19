@@ -1,0 +1,48 @@
+{
+    "description": "find notifications by criteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "notification.find",
+    "parameters": {
+        "entity": {
+            "default": "Notification",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Return notification of this type only",
+            "enum": [
+                "sms_notification",
+                "email_notification",
+                "phone_notification",
+                "push_notification"
+            ],
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "since": {
+            "description": "The start of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        },
+        "time_zone": {
+            "default": "UTC",
+            "description": "Time zone in which dates in the result will be rendered.",
+            "type": "string"
+        },
+        "until": {
+            "description": "The end of the date range over which you want to search. (ISO8601 compliant timestamp)",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

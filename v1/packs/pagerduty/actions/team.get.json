@@ -1,0 +1,26 @@
+{
+    "description": "get team by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "team.get",
+    "parameters": {
+        "entity": {
+            "default": "Team",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a team object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "fetch",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

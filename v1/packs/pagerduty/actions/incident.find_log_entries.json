@@ -1,0 +1,40 @@
+{
+    "description": "find log_entries for an incident by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "incident.find_log_entries",
+    "parameters": {
+        "entity": {
+            "default": "Incident",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for an incident object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "is_overview": {
+            "default": false,
+            "description": "If true, will return a subset of log entries that show only the most important changes to the incident.",
+            "type": "boolean"
+        },
+        "method": {
+            "default": "log_entries",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "time_zone": {
+            "default": "UTC",
+            "description": "Time zone in which dates in the result will be rendered.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

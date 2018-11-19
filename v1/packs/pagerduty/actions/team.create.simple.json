@@ -1,0 +1,49 @@
+{
+    "description": "create a team (simplified)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "team.create.simple",
+    "parameters": {
+        "data": {
+            "default": {
+                "description": "{{ description }}",
+                "name": "{{ name }}",
+                "type": "{{ type }}"
+            },
+            "description": "Full formatting of data the way it needs to be interpreted based on the JSONSchema for the API",
+            "immutable": true,
+            "type": "object"
+        },
+        "description": {
+            "description": "The description of the team.",
+            "type": "string"
+        },
+        "entity": {
+            "default": "Team",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the team.",
+            "required": true,
+            "type": "string"
+        },
+        "type": {
+            "default": "team",
+            "enum": [
+                "team",
+                "team_reference"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

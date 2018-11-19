@@ -1,0 +1,36 @@
+{
+    "description": "reassign an incident to users",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "incident.reassign",
+    "parameters": {
+        "entity": {
+            "default": "Incident",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for an incident object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "reassign",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "user_ids": {
+            "description": "an array of user ids to reassign incident to",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

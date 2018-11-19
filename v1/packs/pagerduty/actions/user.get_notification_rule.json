@@ -1,0 +1,35 @@
+{
+    "description": "get a notification_rule by id for entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.get_notification_rule",
+    "parameters": {
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "method": {
+            "default": "get_notification_rule",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "resource_id": {
+            "description": "translates to the 'id' key for a notification_rule object in PagerDuty",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

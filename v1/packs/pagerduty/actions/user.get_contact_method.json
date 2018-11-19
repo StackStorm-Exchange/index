@@ -1,0 +1,31 @@
+{
+    "description": "get contact_methods for user by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.get_contact_method",
+    "parameters": {
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "get_contact_method",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "resource_id": {
+            "description": "translates to the 'id' key for a contact_method object in PagerDuty",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

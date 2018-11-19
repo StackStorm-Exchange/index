@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "enabled": false
+    },
+    "action_ref": "pagerduty.incident.acknowledge",
+    "description": "Acknowledge a PagerDuty incident",
+    "formats": [
+        "ack incident id {{entity_id}} from {{from_email}}"
+    ],
+    "name": "acknowledge_incident",
+    "pack": "pagerduty",
+    "result": {
+        "format": "{% if execution.status == \"succeeded\" %}\nConfirming {{ execution.result.result.incident.id }} is acknowledged\n{% else %}\n  {% if execution.result.stderr %}*Stderr:* ```{{ execution.result.stderr }}```{% endif %}\n{% endif %}\n"
+    }
+}

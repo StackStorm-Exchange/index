@@ -1,0 +1,175 @@
+{
+    "description": "create an incident using the v2 REST API (raw data input)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "incident.create.rest_v2",
+    "parameters": {
+        "data": {
+            "description": "A JSON object with the data that should be sent for incident creation. See action definition for details (JSONSchema).",
+            "items": {
+                "properties": {
+                    "assignments": {
+                        "description": "Assign the incident to these assignees. Cannot be specified if an escalation policy is given.",
+                        "items": {
+                            "properties": {
+                                "id": {
+                                    "description": "user id",
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "description": "the type of the user",
+                                    "enum": [
+                                        "user",
+                                        "user_reference"
+                                    ],
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "body": {
+                        "description": "A JSON object containing data describing the incident.",
+                        "items": {
+                            "properties": {
+                                "details": {
+                                    "description": "Additional incident details.",
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "default": "incident_body",
+                                    "enum": [
+                                        "incident_body"
+                                    ],
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "object"
+                    },
+                    "escalation_policy": {
+                        "description": "Delegate this incident to the specified escalation policy. Cannot be specified if an assignee is given.",
+                        "items": {
+                            "properties": {
+                                "id": {
+                                    "description": "escalation_policy id",
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "description": "the type of the escalation_policy",
+                                    "enum": [
+                                        "escalation_policy",
+                                        "escalation_policy_reference"
+                                    ],
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "object"
+                    },
+                    "incident_key": {
+                        "description": "A string which identifies the incident. Sending subsequent requests referencing the same service and with the same incident_key will result in those requests being rejected if an open incident matches that incident_key.",
+                        "type": "string"
+                    },
+                    "priority": {
+                        "description": "The priority of this incident.",
+                        "items": {
+                            "properties": {
+                                "id": {
+                                    "description": "priority id",
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "description": "the type of the priority",
+                                    "enum": [
+                                        "priority",
+                                        "priority_reference"
+                                    ],
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "object"
+                    },
+                    "service": {
+                        "description": "The incident will be created on this service.",
+                        "items": {
+                            "properties": {
+                                "id": {
+                                    "description": "service id",
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "default": "service_reference",
+                                    "description": "the type of the service",
+                                    "enum": [
+                                        "service",
+                                        "service_reference"
+                                    ],
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "required": true,
+                        "type": "object"
+                    },
+                    "title": {
+                        "description": "A succinct description of the nature, symptoms, cause, or effect of the incident.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "type": {
+                        "default": "incident",
+                        "enum": [
+                            "incident"
+                        ],
+                        "required": true,
+                        "type": "string"
+                    },
+                    "urgency": {
+                        "description": "The urgency of the incident",
+                        "enum": [
+                            "high",
+                            "low"
+                        ],
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "Incident",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

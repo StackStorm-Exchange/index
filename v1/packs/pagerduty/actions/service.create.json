@@ -1,0 +1,266 @@
+{
+    "description": "create a service (raw data input)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "service.create",
+    "parameters": {
+        "data": {
+            "description": "A JSON object with the data that should be sent for service creation. See action definition for details (JSONSchema).",
+            "items": {
+                "properties": {
+                    "acknowledgement_timeout": {
+                        "description": "Time in seconds that an incident changes to the Triggered State after being Acknowledged. (0 or null = disable feature)",
+                        "type": "integer"
+                    },
+                    "alert_creation": {
+                        "description": "Whether a service creates only incidents, or both alerts and incidents.",
+                        "enum": [
+                            "create_incidents",
+                            "create_alerts_and_incidents"
+                        ],
+                        "type": "string"
+                    },
+                    "alert_grouping": {
+                        "description": "Defines how alerts on this service will be automatically grouped into incidents.",
+                        "enum": [
+                            "time",
+                            "intelligent"
+                        ],
+                        "type": "string"
+                    },
+                    "alert_grouping_timeout": {
+                        "description": "The duration in minutes within which to automatically group incoming alerts. (0 = Continue grouping until resolved)",
+                        "type": "integer"
+                    },
+                    "auto_resolve_timeout": {
+                        "description": "Time in seconds that an incident is automatically resolved if left open for that long (0 or null = disable feature)",
+                        "type": "integer"
+                    },
+                    "description": {
+                        "description": "The user-provided description of the service.",
+                        "type": "string"
+                    },
+                    "escalation_policy": {
+                        "description": "The escalation policy used by this service.",
+                        "properties": {
+                            "id": {
+                                "description": "id of the escalation policy",
+                                "required": true,
+                                "type": "string"
+                            },
+                            "type": {
+                                "description": "type of the escalation policy",
+                                "enum": [
+                                    "escalation_policy",
+                                    "escalation_policy_reference"
+                                ],
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "incident_urgency_rule": {
+                        "description": "The default urgency for new incidents. Account must have the `urgencies` ability to assign a incident urgency rule.",
+                        "items": {
+                            "properties": {
+                                "during_support_hours": {
+                                    "description": "Incidents' urgency during support hours",
+                                    "items": {
+                                        "properties": {
+                                            "type": {
+                                                "description": "The type of incident urgency",
+                                                "enum": [
+                                                    "constant"
+                                                ],
+                                                "type": "string"
+                                            },
+                                            "urgency": {
+                                                "description": "The incidents' urgency, if type is constant.",
+                                                "enum": [
+                                                    "low",
+                                                    "high"
+                                                ],
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": "object"
+                                },
+                                "outside_support_hours": {
+                                    "description": "Incidents' urgency during support hours",
+                                    "items": {
+                                        "properties": {
+                                            "type": {
+                                                "description": "The type of incident urgency",
+                                                "enum": [
+                                                    "constant"
+                                                ],
+                                                "type": "string"
+                                            },
+                                            "urgency": {
+                                                "description": "The incidents' urgency, if type is constant.",
+                                                "enum": [
+                                                    "low",
+                                                    "high"
+                                                ],
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": "object"
+                                },
+                                "type": {
+                                    "description": "The type of incident urgency",
+                                    "enum": [
+                                        "constant",
+                                        "use_support_hours"
+                                    ],
+                                    "type": "string"
+                                },
+                                "urgency": {
+                                    "description": "The incidents' urgency, if type is constant.",
+                                    "enum": [
+                                        "low",
+                                        "high"
+                                    ],
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "object"
+                    },
+                    "name": {
+                        "description": "The name of the service.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "scheduled_actions": {
+                        "description": "An array containing scheduled actions for the service.",
+                        "items": {
+                            "properties": {
+                                "at": {
+                                    "description": "Represents when scheduled action will occur.",
+                                    "properties": {
+                                        "name": {
+                                            "description": "Designates either the start or the end of support hours.",
+                                            "enum": [
+                                                "support_hours_start",
+                                                "support_hours_end"
+                                            ],
+                                            "required": true,
+                                            "type": "string"
+                                        },
+                                        "type": {
+                                            "default": "named_time",
+                                            "description": "Must be set to named_time.",
+                                            "enum": [
+                                                "named_time"
+                                            ],
+                                            "required": true,
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": true,
+                                    "type": "object"
+                                },
+                                "to_urgency": {
+                                    "default": "high",
+                                    "description": "Urgency level. Must be set to high.",
+                                    "enum": [
+                                        "high"
+                                    ],
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "default": "urgency_change",
+                                    "description": "The type of schedule action. Must be set to urgency_change.",
+                                    "enum": [
+                                        "urgency_change"
+                                    ],
+                                    "required": true,
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "status": {
+                        "description": "The current state of the Service.",
+                        "enum": [
+                            "active",
+                            "warning",
+                            "critical",
+                            "maintenance",
+                            "disabled"
+                        ],
+                        "type": "string"
+                    },
+                    "support_hours": {
+                        "description": "The support hours for the service.",
+                        "properties": {
+                            "days_of_week": {
+                                "description": "array of days of week support hours apply [ISO 8601 day]",
+                                "type": "array"
+                            },
+                            "end_time": {
+                                "description": "The support hours' ending time of day (date portion is ignored) (HH:mm:ss format)",
+                                "type": "string"
+                            },
+                            "start_time": {
+                                "description": "The support hours' starting time of day (date portion is ignored) (HH:mm:ss format)",
+                                "type": "string"
+                            },
+                            "time_zone": {
+                                "description": "The time zone for the support hours (America/New_York)",
+                                "type": "string"
+                            },
+                            "type": {
+                                "description": "The type of support hours",
+                                "enum": [
+                                    "fixed_time_per_day"
+                                ],
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": {
+                        "default": "user",
+                        "enum": [
+                            "service",
+                            "service_reference"
+                        ],
+                        "required": true,
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "Service",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,57 @@
+{
+    "description": "create an incident using the v2 REST API (simplified)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "incident.create.rest_v2.simple",
+    "parameters": {
+        "data": {
+            "default": {
+                "body": {
+                    "details": "{{ details }}",
+                    "type": "incident_body"
+                },
+                "service": {
+                    "id": "{{ service_id }}",
+                    "type": "service_reference"
+                },
+                "title": "{{ title }}",
+                "type": "incident"
+            },
+            "description": "Full formatting of data the way it needs to be interpreted based on the JSONSchema for the API",
+            "immutable": true,
+            "type": "object"
+        },
+        "details": {
+            "description": "Details for the incident",
+            "type": "string"
+        },
+        "entity": {
+            "default": "Incident",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "service_id": {
+            "description": "The incident will be created on this service.",
+            "required": true,
+            "type": "string"
+        },
+        "title": {
+            "description": "A succinct description of the nature, symptoms, cause, or effect of the incident.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

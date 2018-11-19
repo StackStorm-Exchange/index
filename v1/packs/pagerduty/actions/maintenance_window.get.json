@@ -1,0 +1,30 @@
+{
+    "description": "get maintenance_window by id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "maintenance_window.get",
+    "parameters": {
+        "entity": {
+            "default": "MaintenanceWindow",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a maintenance_window object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "method": {
+            "default": "fetch",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

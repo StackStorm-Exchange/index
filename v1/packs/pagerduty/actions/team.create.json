@@ -1,0 +1,49 @@
+{
+    "description": "create a team (raw data input)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "team.create",
+    "parameters": {
+        "data": {
+            "description": "A JSON object with the data that should be sent for team creation. See action definition for details (JSONSchema).",
+            "items": {
+                "properties": {
+                    "description": {
+                        "description": "The description of the team.",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The name of the team.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "type": {
+                        "default": "team",
+                        "enum": [
+                            "team",
+                            "team_reference"
+                        ],
+                        "required": true,
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "Team",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,31 @@
+{
+    "description": "remove escalation by id from a team by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "team.remove_escalation_policy",
+    "parameters": {
+        "entity": {
+            "default": "Team",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a team object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "escalation_policy": {
+            "description": "translates to the 'id' key for an escalation_policy object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "remove_escalation_policy",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

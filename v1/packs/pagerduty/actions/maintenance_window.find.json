@@ -1,0 +1,48 @@
+{
+    "description": "find maintenance_window by criteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "maintenance_window.find",
+    "parameters": {
+        "entity": {
+            "default": "MaintenanceWindow",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Only return maintenance windows in a given state.",
+            "enum": [
+                "past",
+                "future",
+                "ongoing",
+                "open",
+                "all"
+            ],
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "a substring search of the 'description' field",
+            "type": "string"
+        },
+        "service_ids": {
+            "description": "An array of service IDs. Only results related to these services will be returned.",
+            "type": "array"
+        },
+        "team_ids": {
+            "description": "An array of team IDs. Only results related to these teams will be returned. Account must have the teams ability to use this parameter.",
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

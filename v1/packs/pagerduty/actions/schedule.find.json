@@ -1,0 +1,30 @@
+{
+    "description": "find schedule(s) by criteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "schedule.find",
+    "parameters": {
+        "entity": {
+            "default": "Schedule",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "maximum": {
+            "default": 25,
+            "description": "limit number of entries potentially returned",
+            "type": "integer"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "a substring search of the 'name' field",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

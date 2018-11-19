@@ -1,0 +1,26 @@
+{
+    "description": "get a service's integrations by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "service.find_integrations",
+    "parameters": {
+        "entity": {
+            "default": "Service",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a service object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "integrations",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

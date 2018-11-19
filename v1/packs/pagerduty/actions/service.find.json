@@ -1,0 +1,38 @@
+{
+    "description": "find service by criteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "service.find",
+    "parameters": {
+        "entity": {
+            "default": "Service",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "include": {
+            "description": "Array of additional details to include.",
+            "type": "array"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "a substring search of the 'name' and 'service_key' field",
+            "type": "string"
+        },
+        "team_ids": {
+            "description": "array of team ids to narrow search to",
+            "type": "array"
+        },
+        "time_zone": {
+            "default": "UTC",
+            "description": "Time zone in which dates in the result will be rendered.",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

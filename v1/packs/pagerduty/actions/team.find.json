@@ -1,0 +1,30 @@
+{
+    "description": "find teams by criteria",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "team.find",
+    "parameters": {
+        "entity": {
+            "default": "Team",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "maximum": {
+            "default": 25,
+            "description": "limit number of entries potentially returned",
+            "type": "integer"
+        },
+        "method": {
+            "default": "find",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "query": {
+            "description": "a substring search of the 'name' and 'email' field",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

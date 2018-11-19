@@ -1,0 +1,158 @@
+{
+    "description": "create a schedule",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "schedule.create",
+    "parameters": {
+        "data": {
+            "description": "A JSON object with the data that should be sent for schedule creation. See action definition for details (JSONSchema).",
+            "items": {
+                "properties": {
+                    "description": {
+                        "description": "A description for the schedule",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The name of the schedule",
+                        "type": "string"
+                    },
+                    "schedule_layers": {
+                        "description": "A list of schedule layers.",
+                        "items": {
+                            "properties": {
+                                "end": {
+                                    "description": "The end time of this layer. (ISO8601 compliant timestamp)",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "description": "The name of the schedule layer.",
+                                    "type": "string"
+                                },
+                                "restrictions": {
+                                    "description": "An array of restrictions for the layer. A restriction is a limit on which period of the day or week the schedule layer can accept assignments.",
+                                    "items": {
+                                        "properties": {
+                                            "duration_seconds": {
+                                                "description": "The duration of the restriction in seconds.",
+                                                "required": true,
+                                                "type": "integer"
+                                            },
+                                            "start_day_of_week": {
+                                                "description": "Only required for use with a `weekly_restriction` restriction type. The first day of the weekly rotation schedule as [ISO 8601 day]",
+                                                "type": "integer"
+                                            },
+                                            "start_time_of_day": {
+                                                "description": "The start time in HH:mm:ss format.",
+                                                "required": true,
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "description": "Specify the types of `restriction`.",
+                                                "enum": [
+                                                    "daily_restriction",
+                                                    "weekly_restriction"
+                                                ],
+                                                "required": true,
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "type": "array"
+                                },
+                                "rotation_turn_length_seconds": {
+                                    "default": 604800,
+                                    "description": "The duration of each on-call shift in seconds.",
+                                    "required": true,
+                                    "type": "integer"
+                                },
+                                "rotation_virtual_start": {
+                                    "description": "The effective start time of the layer. This can be before the start time of the schedule. (ISO8601 compliant timestamp)",
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "start": {
+                                    "description": "The start time of this layer. (ISO8601 compliant timestamp)",
+                                    "required": true,
+                                    "type": "string"
+                                },
+                                "users": {
+                                    "description": "The ordered list of users on this layer. The position of the user on the list determines their order in the layer.",
+                                    "items": {
+                                        "properties": {
+                                            "user": {
+                                                "items": {
+                                                    "properties": {
+                                                        "id": {
+                                                            "description": "id of the user",
+                                                            "required": true,
+                                                            "type": "string"
+                                                        },
+                                                        "type": {
+                                                            "description": "user type",
+                                                            "enum": [
+                                                                "user",
+                                                                "user_reference"
+                                                            ],
+                                                            "required": true,
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "object"
+                                                },
+                                                "required": true,
+                                                "type": "object"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "required": true,
+                                    "type": "array"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "required": true,
+                        "type": "array"
+                    },
+                    "time_zone": {
+                        "default": "America/Los_Angeles",
+                        "description": "The time zone of the schedule.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "type": {
+                        "default": "schedule",
+                        "enum": [
+                            "schedule",
+                            "schedule_reference"
+                        ],
+                        "required": true,
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "Schedule",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        },
+        "overflow": {
+            "default": false,
+            "description": "See API PagerDuty API Docs",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

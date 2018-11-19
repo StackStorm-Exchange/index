@@ -2,14 +2,14 @@
     "ack": {
         "enabled": false
     },
-    "action_ref": "pagerduty.resolve_incident",
+    "action_ref": "pagerduty.incident.resolve",
     "description": "Resolve a PagerDuty incident",
     "formats": [
-        "resolve incident ids {{ids}} with {{email}}"
+        "resolve incident id {{entity_id}} from {{from_email}}"
     ],
     "name": "resolve_incident",
     "pack": "pagerduty",
     "result": {
-        "format": "{% if execution.status == \"succeeded\" %}\nConfirming the following incident(s) are resolved -\n  {% for id in execution.result.result %}\n    {{ id }}\n  {% endfor %}\n{% else %}\n  {% if execution.result.stderr %}*Stderr:* ```{{ execution.result.stderr }}```{% endif %}\n{% endif %}\n"
+        "format": "{% if execution.status == \"succeeded\" %}\nConfirming {{ execution.result.result.incident.id }} is resolved\n{% else %}\n  {% if execution.result.stderr %}*Stderr:* ```{{ execution.result.stderr }}```{% endif %}\n{% endif %}\n"
     }
 }

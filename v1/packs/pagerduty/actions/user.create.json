@@ -1,0 +1,117 @@
+{
+    "description": "create a user (raw data input)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.create",
+    "parameters": {
+        "data": {
+            "description": "A JSON object with the data that should be sent for user creation. See action definition for details (JSONSchema).",
+            "items": {
+                "properties": {
+                    "color": {
+                        "description": "The color this user will appear as on schedules.",
+                        "enum": [
+                            "purple",
+                            "red",
+                            "green",
+                            "blue",
+                            "teal",
+                            "orange",
+                            "brown",
+                            "turquoise",
+                            "dark-slate-blue",
+                            "cayenne",
+                            "orange-red",
+                            "dark-orchid",
+                            "dark-slate-grey",
+                            "lime",
+                            "dark-magenta",
+                            "lime-green",
+                            "midnight-blue",
+                            "deep-pink",
+                            "dark-green",
+                            "dark-orange",
+                            "dark-cyan",
+                            "darkolive-green",
+                            "dark-slate-gray",
+                            "grey20",
+                            "firebrick",
+                            "maroon",
+                            "crimson",
+                            "dark-red",
+                            "dark-goldenrod",
+                            "chocolate",
+                            "medium-violet-red",
+                            "sea-green",
+                            "olivedrab",
+                            "forest-green",
+                            "dark-olive-green",
+                            "blue-violet",
+                            "royal-blue",
+                            "indigo",
+                            "slate-blue",
+                            "saddle-brown",
+                            "steel-blue"
+                        ],
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "The user's bio.",
+                        "type": "string"
+                    },
+                    "email": {
+                        "description": "The user's email address.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "job_title": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "The name of the user.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "role": {
+                        "description": "The user's role (as defined in PagerDuty)",
+                        "type": "string"
+                    },
+                    "time_zone": {
+                        "description": "The preferred time zone name. If null, the account's time zone will be used.",
+                        "type": "string"
+                    },
+                    "type": {
+                        "default": "user",
+                        "enum": [
+                            "user",
+                            "user_reference"
+                        ],
+                        "required": true,
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

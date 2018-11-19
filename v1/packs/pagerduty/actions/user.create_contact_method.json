@@ -1,0 +1,57 @@
+{
+    "description": "create a contact_method for user by entity_id  (raw data input)",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "user.create_contact_method",
+    "parameters": {
+        "data": {
+            "description": "A JSON object with the data that should be sent for contact_method creation. See action definition for details (JSONSchema).",
+            "items": {
+                "properties": {
+                    "address": {
+                        "description": "The 'address' to deliver to: email, phone number, etc., depending on the type.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "label": {
+                        "description": "The label (e.g., \"Work\", \"Mobile\", etc.).",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The type of contact method",
+                        "enum": [
+                            "email_contact_method",
+                            "phone_contact_method",
+                            "push_notification_contact_method",
+                            "sms_contact_method"
+                        ],
+                        "required": true,
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "User",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for a user object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_contact_method",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,36 @@
+{
+    "description": "create a note for an incident by entity_id",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "incident.create_note",
+    "parameters": {
+        "content": {
+            "description": "Details of the note",
+            "required": true,
+            "type": "string"
+        },
+        "entity": {
+            "default": "Incident",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "entity_id": {
+            "description": "translates to the 'id' key for an incident object in PagerDuty",
+            "required": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create_note",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,145 @@
+{
+    "description": "create an escalation_policy",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "escalation_policy.create",
+    "parameters": {
+        "data": {
+            "description": "A JSON object with the data that should be sent for escalation_policy creation. See action definition for details (JSONSchema).",
+            "items": {
+                "properties": {
+                    "description": {
+                        "description": "Escalation policy description.",
+                        "type": "string"
+                    },
+                    "escalation_rules": {
+                        "description": "list of escalation rules in this escalation policy",
+                        "items": {
+                            "properties": {
+                                "escalation_delay_in_minutes": {
+                                    "description": "The number of minutes before an unacknowledged incident escalates away from this rule.",
+                                    "required": true,
+                                    "type": "integer"
+                                },
+                                "targets": {
+                                    "description": "The targets an incident should be assigned to upon reaching this rule.",
+                                    "items": {
+                                        "properties": {
+                                            "id": {
+                                                "description": "escalation target id",
+                                                "required": true,
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "description": "the type of the escalation target",
+                                                "enum": [
+                                                    "user",
+                                                    "schedule",
+                                                    "user_reference",
+                                                    "schedule_reference"
+                                                ],
+                                                "required": true,
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "required": true,
+                                    "type": "array"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "required": true,
+                        "type": "array"
+                    },
+                    "name": {
+                        "description": "The name of the escalation_policy.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    "num_loops": {
+                        "description": "The number of times the escalation policy will repeat after reaching the end of its escalation.",
+                        "type": "integer"
+                    },
+                    "repeat_enabled": {
+                        "description": "Whether or not to allow this policy to repeat its escalation rules after the last rule is finished.",
+                        "type": "boolean"
+                    },
+                    "services": {
+                        "description": "Services associated with the policy",
+                        "items": {
+                            "properties": {
+                                "id": {
+                                    "description": "service id",
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "description": "the type of the service",
+                                    "enum": [
+                                        "service",
+                                        "service_reference"
+                                    ],
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "teams": {
+                        "description": "Teams associated with the policy. Account must have the `teams` ability to use this parameter.",
+                        "item": {
+                            "properties": {
+                                "id": {
+                                    "description": "team id",
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "description": "the type of the team",
+                                    "enum": [
+                                        "team",
+                                        "team_reference"
+                                    ],
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "type": {
+                        "default": "escalation_policy",
+                        "enum": [
+                            "escalation_policy",
+                            "escalation_policy_reference"
+                        ],
+                        "required": true,
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "entity": {
+            "default": "EscalationPolicy",
+            "description": "pypd entity",
+            "immutable": true,
+            "type": "string"
+        },
+        "from_email": {
+            "description": "The email address of a valid user associated with the account making the request.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "create",
+            "description": "pypd entity method",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
