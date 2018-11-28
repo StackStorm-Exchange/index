@@ -79,6 +79,12 @@
         "additionalProperties": false,
         "description": "Sensor specific settings.",
         "properties": {
+            "allow_bot_messages": {
+                "default": false,
+                "description": "Allow the sensor to be triggered by bot messages without the as_user attribute. Default false",
+                "required": false,
+                "type": "boolean"
+            },
             "strip_formatting": {
                 "default": false,
                 "description": "Slack automatically parses URLs, images, channels, and usernames by default. This option returns raw data. Default false",
