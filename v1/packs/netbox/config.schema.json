@@ -9,6 +9,21 @@
         "required": true,
         "type": "string"
     },
+    "sensor_address": {
+        "default": "0.0.0.0",
+        "description": "Host address to run the Webhook sensor on.",
+        "type": "string"
+    },
+    "sensor_port": {
+        "default": 6000,
+        "description": "Port to run the Webhook sensor on.",
+        "type": "integer"
+    },
+    "sensor_secret": {
+        "default": "",
+        "description": "When provided, will force request signature verification using the provided secret value.",
+        "type": "string"
+    },
     "ssl_verify": {
         "description": "Verify ssl/tls protocol certs when contacting the API.",
         "required": true,
