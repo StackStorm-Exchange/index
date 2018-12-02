@@ -9,6 +9,9 @@
             "name": "message",
             "payload_schema": {
                 "properties": {
+                    "attachments": {
+                        "type": "object"
+                    },
                     "channel": {
                         "type": "object"
                     },
