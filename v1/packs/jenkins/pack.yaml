@@ -8,11 +8,11 @@ content:
   actions:
     count: 8
     resources:
-    - build_job
-    - disable_job
-    - list_jobs_regex
     - rebuild_last_job
+    - list_jobs_regex
     - list_running_jobs
     - install_plugin
+    - build_job
     - get_job_info
     - enable_job
+    - disable_job
