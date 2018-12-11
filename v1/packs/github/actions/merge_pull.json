@@ -1,0 +1,24 @@
+{
+    "description": "Merge a pull request.",
+    "enabled": true,
+    "entry_point": "merge_pull.py",
+    "name": "merge_pull",
+    "parameters": {
+        "pull_id": {
+            "description": "Pull Request id",
+            "required": true,
+            "type": "integer"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

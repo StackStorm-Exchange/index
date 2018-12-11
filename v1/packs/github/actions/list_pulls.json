@@ -1,0 +1,72 @@
+{
+    "description": "Retrieve a list of pull requests for a particular repository.",
+    "enabled": true,
+    "entry_point": "list_pulls.py",
+    "name": "list_pulls",
+    "parameters": {
+        "base": {
+            "description": "Filter based on the base branch name",
+            "required": false,
+            "type": "string"
+        },
+        "direction": {
+            "description": "Sort direction (e.g. asc / desc).",
+            "required": false,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Filter expression.",
+            "properties": {
+                "key": {
+                    "description": "The key to filter on",
+                    "enum": [
+                        "title",
+                        "author",
+                        "url"
+                    ],
+                    "required": true,
+                    "type": "string"
+                },
+                "pattern": {
+                    "description": "The pattern to filter with",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "required": false,
+            "type": "object"
+        },
+        "head": {
+            "description": "Filter based on the head branch name",
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "default": 20,
+            "description": "Maximum number of PR to return.",
+            "required": false,
+            "type": "number"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "sort": {
+            "description": "Field to sort on.",
+            "required": false,
+            "type": "string"
+        },
+        "state": {
+            "description": "State to filter on.",
+            "required": false,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
