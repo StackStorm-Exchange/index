@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1544652979,
-        "hash": "3106dec3cced786a6010a9120d0040c2"
+        "generated_ts": 1544654783,
+        "hash": "c0bb9c730e2f255e49828a16e33a2213"
     },
     "packs": {
         "acos": {
@@ -11085,18 +11085,18 @@
                 "actions": {
                     "count": 12,
                     "resources": [
-                        "command",
                         "disengage_lock",
-                        "engage_lock",
                         "find_id_by_name",
-                        "get_device_info",
-                        "list_devices",
-                        "set_mode",
                         "set_temperature",
-                        "toggle_lock",
-                        "toggle_switch",
+                        "list_devices",
                         "turn_off_switch",
-                        "turn_on_switch"
+                        "engage_lock",
+                        "toggle_lock",
+                        "turn_on_switch",
+                        "set_mode",
+                        "toggle_switch",
+                        "command",
+                        "get_device_info"
                     ]
                 },
                 "sensors": {
@@ -11106,7 +11106,7 @@
                     ]
                 }
             },
-            "description": "Integration with SmartThings",
+            "description": "SmartThings Home Automation",
             "email": "james@stackstorm.com",
             "keywords": [
                 "smartthings",
@@ -11117,7 +11117,7 @@
             "name": "SmartThings",
             "ref": "smartthings",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-smartthings",
-            "version": "0.3.1"
+            "version": "0.4.0"
         },
         "softlayer": {
             "author": "Itxaka Serrano Garcia",
