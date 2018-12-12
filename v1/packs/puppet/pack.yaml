@@ -1,11 +1,11 @@
 ref: puppet
 name: puppet
-description: st2 content pack containing puppet integrations
+description: Puppet Config Management
 keywords:
 - puppet
 - cfg management
 - configuration management
-version: 0.3.3
+version: 0.4.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
@@ -13,11 +13,11 @@ content:
     count: 9
     resources:
     - run_agent
-    - cert_revoke
-    - epp_render_remote
-    - epp_render
-    - apply
-    - lookup_remote
     - cert_sign
     - cert_clean
+    - epp_render_remote
+    - epp_render
     - lookup
+    - lookup_remote
+    - cert_revoke
+    - apply

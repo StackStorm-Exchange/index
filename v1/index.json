@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1544651261,
-        "hash": "f4a7684ad94078f845ce4db2908dd92f"
+        "generated_ts": 1544652609,
+        "hash": "9dfdff5a705b7029fcbf6baf32398cec"
     },
     "packs": {
         "acos": {
@@ -10369,18 +10369,18 @@
                     "count": 9,
                     "resources": [
                         "run_agent",
-                        "cert_revoke",
-                        "epp_render_remote",
-                        "epp_render",
-                        "apply",
-                        "lookup_remote",
                         "cert_sign",
                         "cert_clean",
-                        "lookup"
+                        "epp_render_remote",
+                        "epp_render",
+                        "lookup",
+                        "lookup_remote",
+                        "cert_revoke",
+                        "apply"
                     ]
                 }
             },
-            "description": "st2 content pack containing puppet integrations",
+            "description": "Puppet Config Management",
             "email": "info@stackstorm.com",
             "keywords": [
                 "puppet",
@@ -10390,7 +10390,7 @@
             "name": "puppet",
             "ref": "puppet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-puppet",
-            "version": "0.3.3"
+            "version": "0.4.0"
         },
         "pushbullet": {
             "author": "Fabio Brito",
