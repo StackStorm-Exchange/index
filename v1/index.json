@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1544649912,
-        "hash": "3bc0ba6e5b57815f7638d35d783bca21"
+        "generated_ts": 1544651261,
+        "hash": "f4a7684ad94078f845ce4db2908dd92f"
     },
     "packs": {
         "acos": {
@@ -10523,21 +10523,26 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "article_update",
-                        "article_create",
-                        "article_search",
                         "article_get",
+                        "article_search",
                         "create_message",
-                        "get_conversations"
+                        "article_create",
+                        "get_conversations",
+                        "article_update"
                     ]
                 }
             },
-            "description": "reamaze Integration Pack",
+            "description": "reamaze CRM",
             "email": "james@stackstorm.com",
+            "keywords": [
+                "customer support",
+                "chat",
+                "CRM"
+            ],
             "name": "reamaze",
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
-            "version": "0.2.1"
+            "version": "0.3.0"
         },
         "redis": {
             "author": "Antagonist B.V.",
