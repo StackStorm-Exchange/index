@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1544648660,
-        "hash": "fce45df4ace0094f115a1d9428ccbad9"
+        "generated_ts": 1544649912,
+        "hash": "3bc0ba6e5b57815f7638d35d783bca21"
     },
     "packs": {
         "acos": {
@@ -12248,13 +12248,13 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "request_test",
+                        "list_locations",
                         "random_test",
-                        "list_locations"
+                        "request_test"
                     ]
                 }
             },
-            "description": "st2 content pack containing webpagetest integrations",
+            "description": "Web page test actions",
             "email": "linuturk@onitato.com",
             "keywords": [
                 "webpagetest",
@@ -12263,7 +12263,7 @@
             "name": "webpagetest",
             "ref": "webpagetest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-webpagetest",
-            "version": "0.3.1"
+            "version": "0.4.0"
         },
         "windows": {
             "author": "StackStorm, Inc.",
