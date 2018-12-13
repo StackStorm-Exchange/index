@@ -13,9 +13,9 @@ content:
   actions:
     count: 3
     resources:
-    - parse
     - format
     - parse_file
+    - parse
   tests:
     count: 1
     resources:
