@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1545104760,
-        "hash": "a7810ca985b87050aff4eb6e5ebd55ab"
+        "generated_ts": 1545158376,
+        "hash": "14e59ad0be6f9f4b6053124ee02bf4d9"
     },
     "packs": {
         "acos": {
@@ -6447,10 +6447,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "project.info",
                         "pipeline.trigger",
                         "pipeline.list",
-                        "issue.info"
+                        "issue.info",
+                        "project.info"
                     ]
                 }
             },
@@ -6461,7 +6461,7 @@
             ],
             "name": "gitlab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gitlab",
-            "version": "0.5.2"
+            "version": "0.5.3"
         },
         "google": {
             "author": "StackStorm, Inc.",
