@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1545158376,
-        "hash": "14e59ad0be6f9f4b6053124ee02bf4d9"
+        "generated_ts": 1545337955,
+        "hash": "b52a9f77abcd2d62105363b4f360cf31"
     },
     "packs": {
         "acos": {
@@ -436,14 +436,14 @@
                 "actions": {
                     "count": 8,
                     "resources": [
-                        "playbook",
-                        "command_local",
-                        "galaxy.list",
-                        "vault.encrypt",
+                        "galaxy.remove",
                         "galaxy.install",
+                        "command_local",
+                        "playbook",
                         "command",
+                        "galaxy.list",
                         "vault.decrypt",
-                        "galaxy.remove"
+                        "vault.encrypt"
                     ]
                 },
                 "tests": {
@@ -463,7 +463,7 @@
             "name": "ansible",
             "ref": "ansible",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ansible",
-            "version": "0.5.4"
+            "version": "0.5.5"
         },
         "astral": {
             "author": "Tim Braly",
