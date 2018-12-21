@@ -1,0 +1,25 @@
+{
+    "description": "Retrieve build information",
+    "enabled": true,
+    "entry_point": "get_build_info.py",
+    "name": "get_build_info",
+    "parameters": {
+        "depth": {
+            "default": 0,
+            "description": "JSON depth",
+            "required": false,
+            "type": "integer"
+        },
+        "number": {
+            "description": "Build number",
+            "required": true,
+            "type": "integer"
+        },
+        "project": {
+            "description": "Name of the Jenkins job",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

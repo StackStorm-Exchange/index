@@ -1,0 +1,18 @@
+{
+    "description": "Kick off Jenkins Build Jobs (return enhanced info)",
+    "enabled": true,
+    "entry_point": "build_job_enh.py",
+    "name": "build_job_enh",
+    "parameters": {
+        "parameters": {
+            "description": "Optional parameters for build in JSON format",
+            "type": "object"
+        },
+        "project": {
+            "description": "Project to build in Jenkins",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
