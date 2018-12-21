@@ -18,8 +18,8 @@
             "type": "string"
         },
         "incident_key": {
-            "description": "Returns only the incidents associated with the passed service(s).",
-            "type": "array"
+            "description": "Returns only the incident associated with this incident_key.",
+            "type": "string"
         },
         "include": {
             "description": "Array of additional details to include.",
