@@ -1,7 +1,7 @@
 ref: pagerduty
 name: pagerduty
 description: Packs which allows integration with PagerDuty services.
-version: 0.6.2
+version: 1.0.1
 author: Ian Price
 email: ianmprice@gmail.com
 contributors:
@@ -12,71 +12,71 @@ content:
   actions:
     count: 65
     resources:
-    - incident.snooze
-    - schedule.find
-    - log_entry.find
-    - escalation_policy.find_services
-    - maintenance_window.delete
-    - user.get_notification_rule
-    - service.create.simple
-    - schedule.create
-    - maintenance_window.create.simple
-    - escalation_policy.find
-    - service.get
-    - schedule.get
-    - user.delete_contact_method
-    - user.create.simple
-    - service.find_integrations
-    - team.get
-    - user.get
-    - user.create_contact_method.simple
-    - team.create
-    - user.create_notification_rule
-    - escalation_policy.get
-    - team.add_user
-    - user.delete_notification_rule
-    - schedule.get_on_call
-    - user.create_contact_method
-    - schedule.delete
-    - incident.get
-    - incident.acknowledge
-    - maintenance_window.get
-    - incident.find_alerts
-    - escalation_policy.create
-    - user.find_contact_methods
-    - user.create
     - maintenance_window.create
-    - incident.merge
-    - incident.find_log_entries
-    - incident.create.events_v1
-    - team.add_escalation_policy
-    - log_entry.get
-    - incident.create_note
-    - user.find
-    - user.find_notification_rules
-    - incident.find
-    - service.delete
-    - team.remove_user
-    - maintenance_window.find
-    - incident.reassign
-    - service.get_integrations
-    - team.remove_escalation_policy
-    - user.create_notification_rule.simple
-    - team.create.simple
-    - incident.create.rest_v2.simple
-    - service.find
-    - user.get_contact_method
-    - incident.create.rest_v2
-    - team.delete
-    - notification.find
-    - integration.get
-    - escalation_policy.delete
+    - service.create.simple
     - incident.resolve
-    - service.create
-    - user.delete
+    - service.find
+    - escalation_policy.get
+    - service.delete
+    - maintenance_window.find
+    - service.get_integrations
     - incident.find_notes
-    - team.find
+    - log_entry.find
+    - incident.snooze
+    - escalation_policy.delete
+    - escalation_policy.find_services
+    - schedule.create
+    - user.create.simple
+    - schedule.get_on_call
+    - incident.find
+    - log_entry.get
+    - team.remove_escalation_policy
+    - maintenance_window.create.simple
+    - user.delete_notification_rule
+    - team.add_escalation_policy
+    - schedule.delete
+    - service.find_integrations
+    - incident.find_log_entries
+    - incident.merge
+    - team.create
+    - notification.find
+    - incident.create.rest_v2.simple
+    - user.create
+    - user.create_contact_method
+    - user.delete
+    - user.find
+    - team.add_user
+    - incident.create.rest_v2
     - on_call.find
+    - maintenance_window.get
+    - user.create_contact_method.simple
+    - team.delete
+    - incident.find_alerts
+    - schedule.get
+    - user.create_notification_rule.simple
+    - user.get_contact_method
+    - escalation_policy.find
+    - user.find_contact_methods
+    - escalation_policy.create
+    - user.delete_contact_method
+    - incident.acknowledge
+    - incident.create.events_v1
+    - schedule.find
+    - team.find
+    - team.get
+    - maintenance_window.delete
+    - incident.get
+    - user.create_notification_rule
+    - incident.create_note
+    - integration.get
+    - user.get_notification_rule
+    - user.find_notification_rules
+    - incident.reassign
+    - user.get
+    - team.create.simple
+    - team.remove_user
+    - service.create
+    - service.get
   aliases:
     count: 4
     resources:
