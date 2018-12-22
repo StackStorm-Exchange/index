@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1545435117,
-        "hash": "c82c10340a37315ed4586f0c114b590d"
+        "generated_ts": 1545438908,
+        "hash": "af555d4171b92b7ee9868d8a7194e6d9"
     },
     "packs": {
         "acos": {
@@ -12458,23 +12458,23 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "search_tickets",
+                        "update_ticket_status",
                         "update_ticket",
-                        "create_ticket",
-                        "update_ticket_status"
+                        "search_tickets",
+                        "create_ticket"
                     ]
                 },
                 "aliases": {
                     "count": 4,
                     "resources": [
-                        "search_tickets",
+                        "update_ticket_status",
                         "update_ticket",
-                        "create_ticket",
-                        "update_ticket_status"
+                        "search_tickets",
+                        "create_ticket"
                     ]
                 }
             },
-            "description": "st2 content pack containing zendesk integrations",
+            "description": "Zendesk ServiceDesk",
             "email": "casey@bluechasm.com",
             "keywords": [
                 "zendesk",
@@ -12484,7 +12484,7 @@
             "name": "zendesk",
             "ref": "zendesk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zendesk",
-            "version": "0.3.1"
+            "version": "0.3.2"
         },
         "zookeeper": {
             "author": "Cody A. Ray",
