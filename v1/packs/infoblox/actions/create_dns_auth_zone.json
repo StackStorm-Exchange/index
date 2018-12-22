@@ -1,0 +1,45 @@
+{
+    "description": "Create an authoritative zone for DNS",
+    "enabled": true,
+    "entry_point": "create_object.py",
+    "name": "create_dns_auth_zone",
+    "parameters": {
+        "external_secondaries": {
+            "description": "The list of external secondary servers",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "array"
+        },
+        "fqdn": {
+            "description": "The name of creating DNS zone",
+            "required": true,
+            "type": "string"
+        },
+        "grid_primary": {
+            "description": "The grid primary servers for creating zone",
+            "properties": {
+                "name": {
+                    "type": "string"
+                }
+            },
+            "type": "array"
+        },
+        "object_type": {
+            "default": "zone_auth",
+            "immutable": true,
+            "type": "string"
+        },
+        "view": {
+            "default": "default",
+            "description": "The name of the DNS view in which the zone resides",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

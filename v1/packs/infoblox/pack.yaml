@@ -1,7 +1,7 @@
 ref: infoblox
 name: infoblox
 description: Infoblox IPAM, DNS and DHCP management
-version: 0.1.0
+version: 0.2.0
 keywords:
 - IPAM
 - DNS
@@ -11,36 +11,43 @@ author: Dimension Data
 email: noreply@dimensiondata.com
 content:
   actions:
-    count: 31
+    count: 33
     resources:
+    - get_fixedaddress_ipv4
+    - get_object
+    - get_arecord
+    - get_hostrecord
+    - create_fixedaddress_ipv6
+    - get_ipv4address
+    - get_iprangev4
+    - get_object_detailed
+    - create_networkview
+    - get_member
+    - restart_services
+    - get_cnamerecord
+    - create_fixedaddress_ipv4
+    - create_aaaarecord
+    - create_network
+    - get_dns_view
+    - get_ipv6network
+    - get_networkuser
+    - create_dns_auth_zone
+    - create_ipv4ptrrecord
+    - get_eadefinition
+    - get_ptrrecord
+    - create_fixedaddress_ipv4_in_network
+    - create_arecord
+    - delete_object
+    - create_cnamerecord
+    - get_authuone
+    - get_ipv6address
+    - create_ipv6ptrrecord
+    - get_fixedaddress_ipv6
+    - get_networkview
     - get_network
     - get_aaaarecord
-    - get_fixedaddress_ipv4
-    - create_ipv4ptrrecord
-    - get_dns_view
-    - get_ipv4address
-    - get_networkuser
-    - get_arecord
-    - create_cnamerecord
-    - delete_object
-    - get_object_detailed
-    - create_ipv6ptrrecord
-    - get_networkview
-    - create_networkview
-    - get_ipv6network
-    - get_cnamerecord
-    - create_aaaarecord
-    - create_arecord
-    - create_fixedaddress_ipv4_in_network
-    - get_ptrrecord
-    - get_authuone
-    - get_hostrecord
-    - create_network
-    - get_object
-    - get_fixedaddress_ipv6
-    - create_fixedaddress_ipv4
-    - get_iprangev4
-    - get_member
-    - create_fixedaddress_ipv6
-    - get_eadefinition
-    - get_ipv6address
+  tests:
+    count: 2
+    resources:
+    - test_action_restart_services.py
+    - __init__.py
