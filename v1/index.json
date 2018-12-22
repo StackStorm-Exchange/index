@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1545440033,
-        "hash": "6b8e85bf7b82ae27f6ec7100f3f9e662"
+        "generated_ts": 1545502058,
+        "hash": "7c5424362b137ea207d579e78d45c0c3"
     },
     "packs": {
         "acos": {
@@ -8323,12 +8323,12 @@
                 "rules": {
                     "count": 6,
                     "resources": [
-                        "check_load_procs",
-                        "check_proc",
                         "check_load_procd",
-                        "check_load",
                         "notify_chat",
-                        "send_mail"
+                        "check_proc",
+                        "check_load_procs",
+                        "send_mail",
+                        "check_load"
                     ]
                 },
                 "tests": {
@@ -8344,7 +8344,7 @@
                     ]
                 }
             },
-            "description": "Nagios integration pack. See README.md for setup instructions.",
+            "description": "Nagios Monitoring integration",
             "email": "info@stackstorm.com",
             "keywords": [
                 "nagios",
@@ -8354,7 +8354,7 @@
             "name": "nagios",
             "ref": "nagios",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nagios",
-            "version": "0.2.0"
+            "version": "0.2.2"
         },
         "napalm": {
             "author": "mierdin, Rob Woodward",

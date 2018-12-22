@@ -1,23 +1,23 @@
 ref: nagios
 name: nagios
-description: Nagios integration pack. See README.md for setup instructions.
+description: Nagios Monitoring integration
 keywords:
 - nagios
 - monitoring
 - alerting
-version: 0.2.0
+version: 0.2.2
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   rules:
     count: 6
     resources:
-    - check_load_procs
-    - check_proc
     - check_load_procd
-    - check_load
     - notify_chat
+    - check_proc
+    - check_load_procs
     - send_mail
+    - check_load
   tests:
     count: 1
     resources:
