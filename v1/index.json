@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1545439874,
-        "hash": "22bf21f6af3c39eca97e45259ee3c631"
+        "generated_ts": 1545439972,
+        "hash": "8b001d0367a8f377ea09251ea9a14ad6"
     },
     "packs": {
         "acos": {
@@ -6308,8 +6308,8 @@
                     "count": 3,
                     "resources": [
                         "get_remote_repo_latest_commit",
-                        "clone",
-                        "get_local_repo_latest_commit"
+                        "get_local_repo_latest_commit",
+                        "clone"
                     ]
                 },
                 "rules": {
@@ -6331,7 +6331,7 @@
                     ]
                 }
             },
-            "description": "st2 content pack containing git integrations",
+            "description": "Git SCM",
             "email": "info@stackstorm.com",
             "keywords": [
                 "git",
@@ -6340,7 +6340,7 @@
             "name": "git",
             "ref": "git",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
-            "version": "0.4.1"
+            "version": "0.4.2"
         },
         "github": {
             "author": "StackStorm, Inc.",

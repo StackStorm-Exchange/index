@@ -1,10 +1,10 @@
 ref: git
 name: git
-description: st2 content pack containing git integrations
+description: Git SCM
 keywords:
 - git
 - scm
-version: 0.4.1
+version: 0.4.2
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
@@ -12,8 +12,8 @@ content:
     count: 3
     resources:
     - get_remote_repo_latest_commit
-    - clone
     - get_local_repo_latest_commit
+    - clone
   rules:
     count: 1
     resources:
