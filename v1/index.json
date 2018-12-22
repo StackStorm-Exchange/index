@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1545438908,
-        "hash": "af555d4171b92b7ee9868d8a7194e6d9"
+        "generated_ts": 1545439112,
+        "hash": "d079cef74aa7c3a296f9c7054e331d49"
     },
     "packs": {
         "acos": {
@@ -12403,35 +12403,35 @@
                 "actions": {
                     "count": 11,
                     "resources": [
-                        "host_delete_by_id",
-                        "host_get_multiple_ids",
-                        "maintenance_create_or_update",
-                        "ack_event",
-                        "host_delete",
-                        "host_get_inventory",
-                        "host_get_status",
                         "maintenance_delete",
-                        "test_credentials",
+                        "ack_event",
+                        "host_delete_by_id",
                         "host_get_id",
-                        "host_update_status"
+                        "test_credentials",
+                        "host_get_inventory",
+                        "host_update_status",
+                        "maintenance_create_or_update",
+                        "host_get_multiple_ids",
+                        "host_get_status",
+                        "host_delete"
                     ]
                 },
                 "tests": {
                     "count": 13,
                     "resources": [
-                        "test_host_get_id.py",
-                        "test_test_credentials.py",
-                        "test_host_get_multiple_ids.py",
-                        "zabbix_base_action_test_case.py",
-                        "test_host_delete.py",
                         "test_action_base.py",
                         "test_tool_register_st2_config_to_zabbix.py",
+                        "test_maintenance_create_or_update.py",
                         "test_host_get_inventory.py",
                         "test_host_update_status.py",
-                        "test_maintenance_create_or_update.py",
+                        "test_host_delete.py",
+                        "test_host_get_id.py",
                         "test_tool_st2_dispatch.py",
+                        "test_test_credentials.py",
+                        "test_host_get_status.py",
                         "test_maintenance_delete.py",
-                        "test_host_get_status.py"
+                        "zabbix_base_action_test_case.py",
+                        "test_host_get_multiple_ids.py"
                     ]
                 },
                 "triggers": {
@@ -12441,7 +12441,7 @@
                     ]
                 }
             },
-            "description": "StackStorm pack that contains Zabbix integrations",
+            "description": "Zabbix Monitoring System",
             "email": "user.localhost2000@gmail.com",
             "keywords": [
                 "zabbix",
@@ -12450,7 +12450,7 @@
             "name": "zabbix",
             "ref": "zabbix",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zabbix",
-            "version": "0.1.8"
+            "version": "0.1.9"
         },
         "zendesk": {
             "author": "Casey Richardson",
