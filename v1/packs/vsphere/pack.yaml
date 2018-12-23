@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.7.7
+version: 0.8.0
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -13,43 +13,43 @@ content:
   actions:
     count: 37
     resources:
-    - vm_check_tools
-    - vm_hw_hdd_add
-    - vm_create_from_template
-    - get_vmconsole_urls
-    - vm_hw_detail_get
-    - vm_guest_info_get
-    - guest_process_wait
-    - vm_hw_remove
-    - vm_hw_uuid_get
-    - guest_file_upload
-    - host_network_hits_get
-    - wait_task
-    - host_get
-    - guest_dir_create
-    - vm_runtime_info_get
-    - vm_hw_basic_build
-    - guest_script_run
-    - vm_hw_power_off
-    - vm_hw_barebones_create
-    - hello_vsphere
-    - get_vms
-    - vm_hw_power_on
-    - get_moid
-    - set_vm
     - guest_dir_delete
-    - vm_hw_cpu_mem_edit
-    - guest_file_read
-    - guest_process_start
-    - guest_file_create
-    - vm_hw_nic_add
     - vm_env_items_get
-    - guest_file_delete
-    - vm_shutdown
-    - guest_process_run
-    - vm_hw_scsi_controller_add
-    - vm_hw_moid_get
+    - vm_hw_nic_add
     - vm_hw_nic_edit
+    - host_network_hits_get
+    - guest_file_upload
+    - get_moid
+    - vm_hw_power_on
+    - guest_file_read
+    - guest_file_create
+    - vm_hw_scsi_controller_add
+    - guest_script_run
+    - guest_process_wait
+    - hello_vsphere
+    - vm_shutdown
+    - vm_hw_basic_build
+    - guest_process_run
+    - vm_hw_barebones_create
+    - vm_hw_moid_get
+    - vm_hw_uuid_get
+    - vm_create_from_template
+    - wait_task
+    - guest_file_delete
+    - vm_runtime_info_get
+    - vm_hw_detail_get
+    - vm_check_tools
+    - vm_hw_cpu_mem_edit
+    - get_vms
+    - host_get
+    - guest_process_start
+    - vm_hw_remove
+    - vm_guest_info_get
+    - set_vm
+    - vm_hw_power_off
+    - guest_dir_create
+    - vm_hw_hdd_add
+    - get_vmconsole_urls
   sensors:
     count: 1
     resources:
@@ -57,29 +57,29 @@ content:
   tests:
     count: 26
     resources:
-    - test_action_guest_info_get.py
-    - test_action_vm_shutdown.py
+    - test_action_hw_details_get.py
     - test_action_hw_moid_get.py
-    - test_action_hw_hdd_add.py
-    - test_action_hw_cpu_mem_edit.py
-    - test_sensor_taskinfo.py
-    - test_action_guest_dir_delete.py
-    - test_action_guest_process_start.py
-    - test_action_guest_file_read.py
-    - test_action_hw_power.py
     - test_action_guest_dir_create.py
     - test_action_guest_file_create.py
-    - test_action_hw_uuid_get.py
-    - test_action_hw_scsi_controller_add.py
-    - test_action_hw_details_get.py
-    - test_action_guest_file_upload.py
-    - test_action_create_from_template.py
-    - test_action_guest_process_wait.py
-    - vsphere_base_action_test_case.py
+    - test_action_guest_dir_delete.py
     - test_action_get_moid.py
-    - test_action_guest_file_delete.py
-    - test_action_hw_nic_edit.py
-    - test_action_hw_barebones_create.py
+    - test_action_vm_shutdown.py
+    - test_action_guest_file_read.py
+    - test_action_guest_process_start.py
+    - test_sensor_taskinfo.py
+    - test_action_hw_power.py
+    - test_action_hw_uuid_get.py
+    - test_action_hw_hdd_add.py
+    - vsphere_base_action_test_case.py
     - test_action_hw_nic_add.py
+    - test_action_guest_file_upload.py
+    - test_action_hw_nic_edit.py
     - test_action_hw_remove.py
+    - test_action_guest_process_wait.py
+    - test_action_hw_barebones_create.py
+    - test_action_hw_cpu_mem_edit.py
+    - test_action_guest_info_get.py
     - test_config_schema.py
+    - test_action_hw_scsi_controller_add.py
+    - test_action_create_from_template.py
+    - test_action_guest_file_delete.py
