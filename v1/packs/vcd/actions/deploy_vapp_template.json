@@ -1,0 +1,21 @@
+{
+    "description": "Deploy VAPP template.",
+    "enabled": true,
+    "entry_point": "deploy_vapp_template.py",
+    "name": "deploy_vapp_template",
+    "parameters": {
+        "data": {
+            "description": "Data structure for new vms",
+            "position": 1,
+            "required": true,
+            "type": "object"
+        },
+        "vcloud": {
+            "description": "Which vcloud to connect to",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
