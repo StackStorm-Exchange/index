@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1545532993,
-        "hash": "e2d339d191c7c45f87eeee32ed9cc23e"
+        "generated_ts": 1546469159,
+        "hash": "c13987d109896ef51d8b478839d46f73"
     },
     "packs": {
         "acos": {
@@ -11322,18 +11322,18 @@
                 "actions": {
                     "count": 12,
                     "resources": [
-                        "output",
-                        "create_workspace",
-                        "destroy",
-                        "list_workspaces",
                         "select_workspace",
-                        "apply",
+                        "init",
+                        "output",
                         "show",
                         "delete_workspace",
-                        "get_version",
-                        "plan",
+                        "list_workspaces",
                         "pipeline",
-                        "init"
+                        "create_workspace",
+                        "apply",
+                        "destroy",
+                        "plan",
+                        "get_version"
                     ]
                 }
             },
@@ -11346,7 +11346,7 @@
             "ref": "terraform",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-terraform",
             "runner_type": "python-script",
-            "version": "0.2.1"
+            "version": "0.2.2"
         },
         "tesla": {
             "author": "Anthony Shaw",

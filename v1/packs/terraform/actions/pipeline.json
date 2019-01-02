@@ -5,9 +5,14 @@
     "name": "pipeline",
     "parameters": {
         "backend": {
-            "description": "backend configuration variable file",
+            "description": "Key-Value pairs of backend configuration options.",
             "required": false,
-            "type": "string"
+            "type": "object"
+        },
+        "destroy": {
+            "description": "Used if we want to run a destroy operation",
+            "required": false,
+            "type": "boolean"
         },
         "plan_path": {
             "description": "path of the Terraform files",

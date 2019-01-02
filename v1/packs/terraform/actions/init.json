@@ -5,9 +5,9 @@
     "name": "init",
     "parameters": {
         "backend": {
-            "description": "Backend configuration file",
+            "description": "Key-Value pairs of backend configuration options.",
             "required": false,
-            "type": "string"
+            "type": "object"
         },
         "plan_path": {
             "description": "Path of the terraform plan",
