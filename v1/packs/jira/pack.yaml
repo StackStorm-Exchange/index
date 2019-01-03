@@ -1,11 +1,11 @@
 ref: jira
 name: jira
-description: st2 content pack containing jira integrations
+description: Jira integrations
 keywords:
 - issues
 - ticket management
 - project management
-version: 0.8.0
+version: 0.8.1
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
@@ -13,14 +13,14 @@ content:
     count: 9
     resources:
     - get_issue_comments
-    - attach_file_to_issue
+    - create_issue
     - transition_issue
     - search_issues
-    - get_issue
     - get_issue_attachments
-    - create_issue
-    - attach_files_to_issue
     - comment_issue
+    - attach_file_to_issue
+    - get_issue
+    - attach_files_to_issue
   sensors:
     count: 1
     resources:
