@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546546660,
-        "hash": "5ad3ac3d1ca9dc64917ac37e2c996cc0"
+        "generated_ts": 1546549159,
+        "hash": "a828a8daa58b19a1e7ff098a8317a9be"
     },
     "packs": {
         "acos": {
@@ -318,18 +318,18 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "scan_list_scan_executions",
                         "scan_get_results_by_title",
+                        "scan_list_scans",
                         "scan_get_results",
-                        "scan_list_scans"
+                        "scan_list_scan_executions"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
-                        "list_scans",
                         "list_scan_executions",
-                        "get_scan_results"
+                        "get_scan_results",
+                        "list_scans"
                     ]
                 }
             },
@@ -342,7 +342,7 @@
             "name": "alertlogic",
             "ref": "alertlogic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-alertlogic",
-            "version": "0.2.2"
+            "version": "0.2.3"
         },
         "algosec": {
             "author": "Encore Technologies",
