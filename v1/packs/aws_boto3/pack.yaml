@@ -1,6 +1,6 @@
 ref: aws_boto3
 name: aws_boto3
-description: st2 content pack containing Amazon Web Services integrations using boto3.
+description: AWS actions using boto3
 keywords:
 - aws
 - amazon web services
@@ -18,7 +18,7 @@ keywords:
 - RDS
 - SQS
 - lambda
-version: 0.7.0
+version: 0.7.2
 author: StackStorm, Inc.
 email: info@stackstorm.com
 contributors:
@@ -28,12 +28,12 @@ content:
   actions:
     count: 6
     resources:
+    - create_instance
     - boto3action
     - create_vpc_assume_role
-    - create_vpc
-    - create_instance
     - waiter
     - assume_role
+    - create_vpc
   tests:
     count: 3
     resources:

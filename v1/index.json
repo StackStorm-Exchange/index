@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546549159,
-        "hash": "a828a8daa58b19a1e7ff098a8317a9be"
+        "generated_ts": 1546558617,
+        "hash": "d83e23bfea82d55415afed34e5083b82"
     },
     "packs": {
         "acos": {
@@ -4136,12 +4136,12 @@
                 "actions": {
                     "count": 6,
                     "resources": [
+                        "create_instance",
                         "boto3action",
                         "create_vpc_assume_role",
-                        "create_vpc",
-                        "create_instance",
                         "waiter",
-                        "assume_role"
+                        "assume_role",
+                        "create_vpc"
                     ]
                 },
                 "tests": {
@@ -4157,7 +4157,7 @@
                 "Jon Middleton <jjm@geeky-and-blonde.me.uk>",
                 "Denys Havrysh <denys.gavrysh@gmail.com>"
             ],
-            "description": "st2 content pack containing Amazon Web Services integrations using boto3.",
+            "description": "AWS actions using boto3",
             "email": "info@stackstorm.com",
             "keywords": [
                 "aws",
@@ -4180,7 +4180,7 @@
             "name": "aws_boto3",
             "ref": "aws_boto3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_boto3",
-            "version": "0.7.0"
+            "version": "0.7.2"
         },
         "azure": {
             "author": "StackStorm, Inc.",
