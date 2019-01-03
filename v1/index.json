@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546469159,
-        "hash": "c13987d109896ef51d8b478839d46f73"
+        "generated_ts": 1546546660,
+        "hash": "5ad3ac3d1ca9dc64917ac37e2c996cc0"
     },
     "packs": {
         "acos": {
@@ -10,37 +10,37 @@
                 "actions": {
                     "count": 19,
                     "resources": [
-                        "get_slb_service_group_members",
-                        "add_slb_service_group_member",
-                        "del_slb_virtual_server",
-                        "del_slb_server_port",
-                        "add_slb_virtual_server_port",
-                        "del_slb_service_group_member",
-                        "add_slb_server_port",
-                        "list_slb_servers",
-                        "get_slb_server",
-                        "get_slb_virtual_server",
-                        "del_slb_virtual_server_port",
-                        "add_slb_service_group",
                         "del_slb_service_group",
-                        "add_slb_virtual_server",
-                        "list_slb_service_groups",
-                        "list_slb_virtual_servers",
+                        "get_slb_server",
                         "get_slb_service_group",
+                        "del_slb_server",
                         "add_slb_server",
-                        "del_slb_server"
+                        "add_slb_service_group_member",
+                        "add_slb_server_port",
+                        "del_slb_service_group_member",
+                        "list_slb_service_groups",
+                        "add_slb_service_group",
+                        "list_slb_virtual_servers",
+                        "add_slb_virtual_server_port",
+                        "get_slb_virtual_server",
+                        "list_slb_servers",
+                        "get_slb_service_group_members",
+                        "del_slb_virtual_server",
+                        "del_slb_virtual_server_port",
+                        "del_slb_server_port",
+                        "add_slb_virtual_server"
                     ]
                 },
                 "tests": {
                     "count": 3,
                     "resources": [
+                        "test_list_slb_servers.py",
                         "test_get_slb_server.py",
-                        "acos_base_action_test_case.py",
-                        "test_list_slb_servers.py"
+                        "acos_base_action_test_case.py"
                     ]
                 }
             },
-            "description": "StackStorm pack for ACOS-based appliances of A10 Networks.",
+            "description": "Manage ACOS-based appliances of A10 Networks.",
             "email": "user.localhost2000@gmail.com",
             "keywords": [
                 "acos",
@@ -51,7 +51,7 @@
             "name": "acos",
             "ref": "acos",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-acos",
-            "version": "0.2.4"
+            "version": "0.2.5"
         },
         "activecampaign": {
             "author": "DoriftoShoes",
