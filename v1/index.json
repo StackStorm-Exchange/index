@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546558701,
-        "hash": "4861e36d9298967f7ceb47c2bf59d0e6"
+        "generated_ts": 1546559363,
+        "hash": "1335524c21b3b58951aeac5fe2157273"
     },
     "packs": {
         "acos": {
@@ -8362,33 +8362,33 @@
                 "actions": {
                     "count": 27,
                     "resources": [
-                        "bgp_prefix_exceeded_chain",
-                        "get_environment",
-                        "get_log",
-                        "get_network_instances",
-                        "get_bgp_config",
-                        "check_consistency",
-                        "get_facts",
-                        "get_arp_table",
-                        "get_probes_results",
-                        "get_ntp",
-                        "get_route_to",
-                        "get_config",
                         "get_probes_config",
-                        "loadconfig",
-                        "configuration_change_workflow",
-                        "interface_down_workflow",
-                        "get_interfaces",
-                        "get_snmp_information",
-                        "get_optics",
-                        "get_firewall_policies",
+                        "get_network_instances",
                         "get_bgp_neighbors",
-                        "ping",
-                        "traceroute",
                         "cli",
+                        "get_arp_table",
+                        "get_facts",
+                        "get_route_to",
+                        "loadconfig",
+                        "get_snmp_information",
+                        "bgp_prefix_exceeded_chain",
+                        "traceroute",
+                        "get_probes_results",
+                        "configuration_change_workflow",
+                        "get_environment",
+                        "get_bgp_neighbors_detail",
+                        "get_config",
+                        "get_ntp",
                         "get_mac_address_table",
+                        "get_interfaces",
+                        "interface_down_workflow",
+                        "ping",
+                        "get_optics",
                         "get_lldp_neighbors",
-                        "get_bgp_neighbors_detail"
+                        "get_bgp_config",
+                        "get_firewall_policies",
+                        "check_consistency",
+                        "get_log"
                     ]
                 },
                 "aliases": {
@@ -8400,10 +8400,10 @@
                 "rules": {
                     "count": 4,
                     "resources": [
-                        "lldp_remediate",
-                        "configuration_change",
+                        "bgp_prefix_exceeded",
                         "interface_down",
-                        "bgp_prefix_exceeded"
+                        "lldp_remediate",
+                        "configuration_change"
                     ]
                 },
                 "sensors": {
@@ -8431,7 +8431,7 @@
             ],
             "name": "napalm",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm",
-            "version": "0.2.14"
+            "version": "0.2.15"
         },
         "napalm_logs": {
             "author": "John Anderson",
