@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546558617,
-        "hash": "d83e23bfea82d55415afed34e5083b82"
+        "generated_ts": 1546558701,
+        "hash": "4861e36d9298967f7ceb47c2bf59d0e6"
     },
     "packs": {
         "acos": {
@@ -4188,39 +4188,39 @@
                 "actions": {
                     "count": 22,
                     "resources": [
-                        "upload_file",
-                        "create_vm",
-                        "update_user_display_name",
-                        "get_scaleset_size",
                         "update_user_password",
-                        "list_vms",
-                        "delete_object",
-                        "destroy_vm",
-                        "list_resource_groups",
-                        "create_container",
-                        "user_enable",
+                        "create_resource",
+                        "delete_container",
                         "create_user",
                         "delete_user",
-                        "list_public_ips",
-                        "update_user_name",
-                        "put_scaleset_size",
-                        "delete_container",
-                        "list_containers",
-                        "create_linked_resource_url",
-                        "reboot_vm",
                         "list_container_objects",
-                        "create_resource"
+                        "create_linked_resource_url",
+                        "delete_object",
+                        "user_enable",
+                        "list_resource_groups",
+                        "list_containers",
+                        "upload_file",
+                        "put_scaleset_size",
+                        "destroy_vm",
+                        "list_vms",
+                        "update_user_name",
+                        "list_public_ips",
+                        "update_user_display_name",
+                        "get_scaleset_size",
+                        "reboot_vm",
+                        "create_vm",
+                        "create_container"
                     ]
                 },
                 "aliases": {
                     "count": 2,
                     "resources": [
-                        "get_scale_size",
-                        "put_scale_size"
+                        "put_scale_size",
+                        "get_scale_size"
                     ]
                 }
             },
-            "description": "st2 content pack containing Microsoft Azure integrations.",
+            "description": "Microsoft Azure integrations.",
             "email": "info@stackstorm.com",
             "keywords": [
                 "microsoft",
@@ -4235,7 +4235,7 @@
             "name": "azure",
             "ref": "azure",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
-            "version": "0.4.0"
+            "version": "0.4.1"
         },
         "backups": {
             "author": "Encore Technologies",
