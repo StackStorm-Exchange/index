@@ -5,19 +5,19 @@ keywords:
 - vra7
 - vrealize automation
 - vmware
-version: 0.1.1
+version: 0.1.2
 author: Martez Reed
 email: martez.reed@greenreedtech.com
 content:
   actions:
     count: 3
     resources:
-    - get_all_requests
     - get_number_of_vms
     - get_resource_by_name
+    - get_all_requests
   aliases:
     count: 3
     resources:
+    - get_resource_by_name
     - get_all_requests
     - get_number_of_vms
-    - get_resource_by_name

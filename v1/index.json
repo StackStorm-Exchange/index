@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546563719,
-        "hash": "293dfbd8f60e6c51f3a96c3c54723279"
+        "generated_ts": 1546563743,
+        "hash": "315460b2a6e11115bb636bc5f9d4f61f"
     },
     "packs": {
         "acos": {
@@ -12033,17 +12033,17 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "get_all_requests",
                         "get_number_of_vms",
-                        "get_resource_by_name"
+                        "get_resource_by_name",
+                        "get_all_requests"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
+                        "get_resource_by_name",
                         "get_all_requests",
-                        "get_number_of_vms",
-                        "get_resource_by_name"
+                        "get_number_of_vms"
                     ]
                 }
             },
@@ -12057,7 +12057,7 @@
             "name": "vra7",
             "ref": "vra7",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vra7",
-            "version": "0.1.1"
+            "version": "0.1.2"
         },
         "vsphere": {
             "author": "Paul Mulvihill",
