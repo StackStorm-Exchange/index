@@ -3,13 +3,13 @@ ref: prometheus
 description: Interact with Prometheus HTTP API
 keywords:
 - prometheus
-version: 0.1.2
+version: 0.1.4
 author: Daniel Chamot
 email: daniel@nullkarma.com
 content:
   actions:
     count: 3
     resources:
-    - query
     - alert.aggregation
     - series
+    - query
