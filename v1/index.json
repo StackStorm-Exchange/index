@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546563743,
-        "hash": "315460b2a6e11115bb636bc5f9d4f61f"
+        "generated_ts": 1546563755,
+        "hash": "60ee9c4aa06fb77c2686baa5f53350c0"
     },
     "packs": {
         "acos": {
@@ -10259,37 +10259,37 @@
                 "actions": {
                     "count": 31,
                     "resources": [
-                        "bulk_apply_service_groups",
-                        "commit",
                         "delete_address_group",
-                        "delete_address_object",
-                        "unregister_ip",
-                        "delete_service_object",
-                        "apply_service_object",
-                        "bulk_apply_service_objects",
-                        "get_address_groups",
-                        "apply_address_object",
-                        "bulk_delete_address_objects",
-                        "commit_all",
-                        "apply_address_group",
-                        "bulk_register_ip",
-                        "delete_service_group",
                         "bulk_apply_address_objects",
-                        "get_security_rules",
+                        "register_ip",
+                        "commit",
                         "bulk_unregister_ip",
-                        "apply_security_rule",
-                        "bulk_apply_address_groups",
-                        "bulk_delete_service_groups",
+                        "apply_address_object",
                         "bulk_delete_address_groups",
-                        "get_address_objects",
-                        "get_service_groups",
-                        "bulk_apply_security_rules",
-                        "bulk_delete_security_rules",
+                        "delete_address_object",
+                        "bulk_apply_service_objects",
                         "delete_security_rule",
-                        "apply_service_group",
-                        "bulk_delete_service_objects",
+                        "bulk_delete_address_objects",
+                        "get_security_rules",
+                        "bulk_apply_address_groups",
+                        "apply_service_object",
+                        "get_service_groups",
+                        "commit_all",
                         "get_service_objects",
-                        "register_ip"
+                        "delete_service_object",
+                        "bulk_apply_security_rules",
+                        "unregister_ip",
+                        "bulk_delete_service_objects",
+                        "delete_service_group",
+                        "get_address_objects",
+                        "bulk_delete_security_rules",
+                        "bulk_apply_service_groups",
+                        "apply_address_group",
+                        "get_address_groups",
+                        "bulk_register_ip",
+                        "apply_security_rule",
+                        "apply_service_group",
+                        "bulk_delete_service_groups"
                     ]
                 },
                 "rules": {
@@ -10308,7 +10308,7 @@
             "name": "paloalto",
             "ref": "paloalto",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-paloalto",
-            "version": "0.3.1"
+            "version": "0.3.2"
         },
         "phantomjs": {
             "author": "Tomaz Muraus",

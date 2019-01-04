@@ -4,44 +4,44 @@ description: Interact with Palo Alto firewalls
 keywords:
 - firewalls
 - threats
-version: 0.3.1
+version: 0.3.2
 author: Irek Romaniuk, John Anderson
 email: irek.romaniuk@gmail.com
 content:
   actions:
     count: 31
     resources:
-    - bulk_apply_service_groups
-    - commit
     - delete_address_group
-    - delete_address_object
-    - unregister_ip
-    - delete_service_object
-    - apply_service_object
-    - bulk_apply_service_objects
-    - get_address_groups
-    - apply_address_object
-    - bulk_delete_address_objects
-    - commit_all
-    - apply_address_group
-    - bulk_register_ip
-    - delete_service_group
     - bulk_apply_address_objects
-    - get_security_rules
-    - bulk_unregister_ip
-    - apply_security_rule
-    - bulk_apply_address_groups
-    - bulk_delete_service_groups
-    - bulk_delete_address_groups
-    - get_address_objects
-    - get_service_groups
-    - bulk_apply_security_rules
-    - bulk_delete_security_rules
-    - delete_security_rule
-    - apply_service_group
-    - bulk_delete_service_objects
-    - get_service_objects
     - register_ip
+    - commit
+    - bulk_unregister_ip
+    - apply_address_object
+    - bulk_delete_address_groups
+    - delete_address_object
+    - bulk_apply_service_objects
+    - delete_security_rule
+    - bulk_delete_address_objects
+    - get_security_rules
+    - bulk_apply_address_groups
+    - apply_service_object
+    - get_service_groups
+    - commit_all
+    - get_service_objects
+    - delete_service_object
+    - bulk_apply_security_rules
+    - unregister_ip
+    - bulk_delete_service_objects
+    - delete_service_group
+    - get_address_objects
+    - bulk_delete_security_rules
+    - bulk_apply_service_groups
+    - apply_address_group
+    - get_address_groups
+    - bulk_register_ip
+    - apply_security_rule
+    - apply_service_group
+    - bulk_delete_service_groups
   rules:
     count: 1
     resources:
