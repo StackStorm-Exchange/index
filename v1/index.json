@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546563127,
-        "hash": "04f074cbb2c2bf9a5cad723992c766cc"
+        "generated_ts": 1546563719,
+        "hash": "293dfbd8f60e6c51f3a96c3c54723279"
     },
     "packs": {
         "acos": {
@@ -10565,9 +10565,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
+                        "del",
                         "get",
-                        "set",
-                        "del"
+                        "set"
                     ]
                 }
             },
@@ -10580,7 +10580,7 @@
             "name": "redis",
             "ref": "redis",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-redis",
-            "version": "0.0.2"
+            "version": "0.0.3"
         },
         "salt": {
             "author": "jcockhren",
