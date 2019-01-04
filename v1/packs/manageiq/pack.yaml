@@ -1,61 +1,61 @@
 ref: manageiq
 name: manageiq
-description: StackStorm integration pack for working with ManageIQ/CloudForms
+description: ManageIQ/CloudForms
 keywords:
 - manageiq
 - cloudforms
 - provision
 - bestfit
-version: 0.1.0
+version: 0.1.1
 author: Encore Technologies
 email: code@encore.tech
 content:
   actions:
     count: 27
     resources:
-    - vm_custom_attributes_delete
-    - tags_get
-    - vm_all_get
+    - vm_retire
+    - tags_create
+    - tags_list
+    - hosts_credentials_test
+    - provision_request_create
     - remove_old_snapshots
-    - template_get_info
+    - provision_check_success
+    - tags_unassign
     - vm_custom_attributes_list
+    - vm_get_ids
+    - tags_delete
+    - bestfit
+    - credentials_test
+    - template_get_info
     - vm_find_by_name
     - vm_scan
-    - vm_custom_attributes_get
-    - vm_get_ids
-    - tags_list
-    - tags_create
-    - tags_unassign
+    - tags_get
     - provision_check_complete
-    - tags_assign
-    - vm_retire
-    - provision_request_create
-    - providers_credentials_test
-    - hosts_credentials_test
-    - bestfit
-    - vm_retire_now
-    - vm_list
-    - tags_delete
     - vm_custom_attributes_set
-    - provision_check_success
-    - credentials_test
+    - vm_custom_attributes_get
+    - tags_assign
     - vm_check_removed
+    - vm_list
+    - vm_custom_attributes_delete
+    - vm_all_get
+    - providers_credentials_test
+    - vm_retire_now
   tests:
     count: 16
     resources:
-    - test_action_hosts.py
-    - test_action_vm.py
-    - test_action_lib_vm_all_get.py
-    - test_action_lib_vm_retire_now.py
     - test_action_base_action.py
-    - test_action_lib_provision_request_create.py
     - test_action_lib_remove_old_snapshots.py
-    - test_action_lib_provision_check_complete.py
-    - test_action_vm_custom_attributes.py
-    - test_action_lib_provision_check_success.py
-    - manage_iq_base_action_test_case.py
-    - test_action_tags.py
+    - test_action_lib_vm_retire_now.py
     - test_action_lib_template_get_info.py
+    - manage_iq_base_action_test_case.py
     - test_action_providers.py
-    - test_action_lib_vm_get_ids.py
+    - test_action_lib_provision_request_create.py
+    - test_action_lib_provision_check_success.py
     - test_action_bestfit.py
+    - test_action_vm.py
+    - test_action_lib_vm_get_ids.py
+    - test_action_tags.py
+    - test_action_lib_vm_all_get.py
+    - test_action_vm_custom_attributes.py
+    - test_action_lib_provision_check_complete.py
+    - test_action_hosts.py
