@@ -1,14 +1,14 @@
 ref: nsx_vtep
 name: nsx_vtep
 description: NSX automation pack.
-version: 0.1.1
+version: 0.1.2
 author: GSLAB
 email: yugendra.khonde@gslab.com
 content:
   actions:
     count: 4
     resources:
-    - publish_configs_day1
     - add_hw_gw
+    - publish_configs_day1
     - configure_logical_switch
     - publish_configs

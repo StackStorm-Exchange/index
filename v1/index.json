@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546565838,
-        "hash": "7d3f98517e31038160efb9b6ac5bdcdf"
+        "generated_ts": 1546566341,
+        "hash": "0342cba6c953ec9047113811c8a4fcc3"
     },
     "packs": {
         "acos": {
@@ -9062,8 +9062,8 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "publish_configs_day1",
                         "add_hw_gw",
+                        "publish_configs_day1",
                         "configure_logical_switch",
                         "publish_configs"
                     ]
@@ -9074,7 +9074,7 @@
             "name": "nsx_vtep",
             "ref": "nsx_vtep",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nsx_vtep",
-            "version": "0.1.1"
+            "version": "0.1.2"
         },
         "octopusdeploy": {
             "author": "Anthony Shaw",
