@@ -1,24 +1,24 @@
 ref: hubot
 name: hubot
 description: Hubot integration pack
-version: 0.4.0
+version: 0.5.0
 author: James Fryman
 email: james@stackstorm.com
 content:
   actions:
     count: 6
     resources:
-    - post_message
-    - deploy
-    - update_ref
-    - branch
     - post_result
+    - branch
+    - deploy
+    - post_message
+    - update_ref
     - restart
   aliases:
     count: 3
     resources:
-    - hubot_deploy
     - hubot_branch
+    - hubot_deploy
     - hubot_restart
   rules:
     count: 2
