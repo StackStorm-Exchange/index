@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546559688,
-        "hash": "034f30259b590317a359dc3daff079b9"
+        "generated_ts": 1546560421,
+        "hash": "214b73e4115876dd6680cdbfa06ce7b0"
     },
     "packs": {
         "acos": {
@@ -6223,26 +6223,26 @@
                 "actions": {
                     "count": 15,
                     "resources": [
-                        "create_rpm_from_tar",
-                        "create_rpm_from_python",
-                        "create_rpm_from_dir",
-                        "create_rpm_from_gem",
-                        "create_deb_from_deb",
                         "create_deb_from_empty",
-                        "load_metadata",
-                        "create_rpm_from_empty",
-                        "create_deb_from_python",
-                        "create_deb_from_rpm",
-                        "create_deb_from_gem",
-                        "create_deb_from_tar",
-                        "create_deb_from_dir",
                         "create_rpm_from_deb",
-                        "create_rpm_from_rpm"
+                        "create_deb_from_python",
+                        "create_deb_from_dir",
+                        "create_rpm_from_dir",
+                        "create_deb_from_gem",
+                        "create_rpm_from_tar",
+                        "create_deb_from_rpm",
+                        "create_rpm_from_empty",
+                        "create_rpm_from_rpm",
+                        "create_rpm_from_python",
+                        "create_deb_from_deb",
+                        "load_metadata",
+                        "create_deb_from_tar",
+                        "create_rpm_from_gem"
                     ]
                 }
             },
-            "description": "StackStorm Integration Pack for use with the fpm package for building system packages (rpm, deb, python, gem, etc.)",
-            "email": "jfryman@FryBook-2.local",
+            "description": "fpm package for building system packages (rpm, deb, python, gem, etc.)",
+            "email": "support@stackstorm.com",
             "keywords": [
                 "fpm",
                 "rpm",
@@ -6255,7 +6255,7 @@
             "name": "fpm",
             "ref": "fpm",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fpm",
-            "version": "0.1.1"
+            "version": "0.1.2"
         },
         "freight": {
             "author": "James Fryman",
