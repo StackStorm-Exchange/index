@@ -4,22 +4,22 @@ description: Apache Cassandra Integrations
 keywords:
 - datastax
 - cassandra
-version: 0.1.1
+version: 0.1.2
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 12
     resources:
-    - clear_cass_data
-    - remove_gossip_peer_info
     - nodetool
-    - is_seed_node
+    - remove_gossip_peer_info
+    - remove_replace_address_env_file
+    - get_dse_status
     - wait_for_port_open
-    - append_replace_address_env_file
-    - list_seed_nodes
-    - start_dse
+    - is_seed_node
     - replace_host
     - stop_dse
-    - get_dse_status
-    - remove_replace_address_env_file
+    - append_replace_address_env_file
+    - start_dse
+    - list_seed_nodes
+    - clear_cass_data
