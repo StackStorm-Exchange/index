@@ -8,7 +8,7 @@ keywords:
 - ipv6
 - geoip
 - ping
-version: 0.4.5
+version: 0.4.6
 author: Jon Middleton
 email: jjm@geeky-and-blonde.me.uk
 content:
@@ -17,11 +17,11 @@ content:
     resources:
     - ping
     - is_valid_hostname
-    - geoip
-    - is_valid_ipv4
-    - is_valid_ip
     - is_valid_ipv6
+    - is_valid_ip
     - is_valid_asa_nameif
+    - is_valid_ipv4
+    - geoip
     - ping_py
     - is_valid_ip_port
   aliases:
@@ -35,8 +35,8 @@ content:
     - test_action_geoip.py
     - test_action_aliases.py
     - test_action_ping.py
-    - test_action_is_valid_ip.py
-    - networking_utils_base_test_case.py
     - test_action_is_valid_asa_nameif.py
     - test_action_is_valid_ip_port.py
+    - networking_utils_base_test_case.py
     - test_action_is_valid_hostname.py
+    - test_action_is_valid_ip.py
