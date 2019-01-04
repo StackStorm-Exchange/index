@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546562208,
-        "hash": "d60f14ca6f054564d1ffd7397625652f"
+        "generated_ts": 1546562306,
+        "hash": "47173dda0ef7523339c17e5c28db852b"
     },
     "packs": {
         "acos": {
@@ -4847,9 +4847,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
+                        "parse_file",
                         "parse",
-                        "format",
-                        "parse_file"
+                        "format"
                     ]
                 },
                 "tests": {
@@ -4859,7 +4859,7 @@
                     ]
                 }
             },
-            "description": "st2 content pack containing CSV integrations",
+            "description": "CSV utilities",
             "email": "info@stackstorm.com",
             "keywords": [
                 "csv",
@@ -4870,7 +4870,7 @@
             "name": "csv",
             "ref": "csv",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-csv",
-            "version": "0.4.3"
+            "version": "0.4.4"
         },
         "cubesensors": {
             "author": "StackStorm, Inc.",
