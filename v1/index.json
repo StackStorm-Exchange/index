@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546560484,
-        "hash": "fb307c4fc887a9283e8cc41111778d01"
+        "generated_ts": 1546560590,
+        "hash": "a66e1dcb0a0de36f6abdbcebfceb6897"
     },
     "packs": {
         "acos": {
@@ -4573,20 +4573,20 @@
                 "actions": {
                     "count": 15,
                     "resources": [
-                        "get_static_bindings",
+                        "get_bds",
+                        "get_epgs",
+                        "create_epg",
+                        "get_assigned_ports",
                         "create_static_binding",
-                        "get_aps",
+                        "get_tenants",
+                        "create_bd",
                         "create_ap",
+                        "link_domain",
+                        "get_aps",
                         "get_sessionid",
                         "test_endpoint",
-                        "create_epg",
-                        "link_domain",
-                        "create_bd",
-                        "get_assigned_ports",
-                        "get_bds",
-                        "get_tenants",
+                        "get_static_bindings",
                         "get_vrfs",
-                        "get_epgs",
                         "setup_epg"
                     ]
                 },
@@ -4599,21 +4599,21 @@
                 "tests": {
                     "count": 15,
                     "resources": [
-                        "test_action_get_epgs.py",
-                        "test_action_get_assigned_ports.py",
-                        "test_action_create_ap.py",
-                        "test_action_get_aps.py",
-                        "aci_base_action_test_case.py",
-                        "test_action_get_bds.py",
-                        "test_action_create_epg.py",
-                        "test_action_get_tenants.py",
-                        "test_action_get_vrfs.py",
-                        "test_action_get_static_bindings.py",
                         "test_action_create_bd.py",
-                        "test_action_link_domain.py",
-                        "test_action_create_static_binding.py",
+                        "test_action_get_assigned_ports.py",
+                        "test_action_get_static_bindings.py",
+                        "test_action_get_vrfs.py",
+                        "test_action_get_epgs.py",
+                        "test_action_create_ap.py",
                         "test_action_get_sessionid.py",
-                        "test_action_test_endpoint.py"
+                        "test_action_get_bds.py",
+                        "test_action_get_tenants.py",
+                        "test_action_create_static_binding.py",
+                        "test_action_test_endpoint.py",
+                        "test_action_create_epg.py",
+                        "aci_base_action_test_case.py",
+                        "test_action_link_domain.py",
+                        "test_action_get_aps.py"
                     ]
                 }
             },
@@ -4627,7 +4627,7 @@
             "name": "cisco_aci",
             "ref": "cisco_aci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_aci",
-            "version": "0.1.3"
+            "version": "0.1.4"
         },
         "cisco_spark": {
             "author": "Anthony Shaw",
