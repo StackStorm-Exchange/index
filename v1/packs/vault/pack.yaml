@@ -1,7 +1,7 @@
 ref: vault
 name: vault
-description: vault
-version: 0.5.0
+description: HashiCorp Vault
+version: 0.5.1
 author: steve.neuharth
 email: steve.neuharth@target.com
 contributors:
@@ -10,13 +10,13 @@ content:
   actions:
     count: 10
     resources:
-    - write
-    - create_token
-    - set_policy
-    - delete
-    - get_policy
     - list_policies
+    - create_token
+    - delete
+    - set_policy
     - is_initialized
-    - read_kv
     - read
+    - read_kv
+    - write
+    - get_policy
     - delete_policy

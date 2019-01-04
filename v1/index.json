@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546561758,
-        "hash": "b59c275bfe968d1c8ddca395e13c9e03"
+        "generated_ts": 1546562208,
+        "hash": "d60f14ca6f054564d1ffd7397625652f"
     },
     "packs": {
         "acos": {
@@ -11756,15 +11756,15 @@
                 "actions": {
                     "count": 10,
                     "resources": [
-                        "write",
-                        "create_token",
-                        "set_policy",
-                        "delete",
-                        "get_policy",
                         "list_policies",
+                        "create_token",
+                        "delete",
+                        "set_policy",
                         "is_initialized",
-                        "read_kv",
                         "read",
+                        "read_kv",
+                        "write",
+                        "get_policy",
                         "delete_policy"
                     ]
                 }
@@ -11772,12 +11772,12 @@
             "contributors": [
                 "Andy Moore <andrew.moore@pearson.com>"
             ],
-            "description": "vault",
+            "description": "HashiCorp Vault",
             "email": "steve.neuharth@target.com",
             "name": "vault",
             "ref": "vault",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vault",
-            "version": "0.5.0"
+            "version": "0.5.1"
         },
         "vcd": {
             "author": "Paul Mulvihill",
