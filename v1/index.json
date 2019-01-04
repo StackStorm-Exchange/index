@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546561171,
-        "hash": "7d8b0dcc1c052611b62a8176214df37c"
+        "generated_ts": 1546561525,
+        "hash": "7792f45e3d85fa2bf4f89d840e0260de"
     },
     "packs": {
         "acos": {
@@ -6891,23 +6891,23 @@
                 "actions": {
                     "count": 3,
                     "resources": [
+                        "query",
                         "write",
-                        "ping",
-                        "query"
+                        "ping"
                     ]
                 },
                 "tests": {
                     "count": 5,
                     "resources": [
-                        "influxdb_base_action_test_case.py",
+                        "test_ping.py",
                         "test_query.py",
                         "test_base_action.py",
                         "test_write.py",
-                        "test_ping.py"
+                        "influxdb_base_action_test_case.py"
                     ]
                 }
             },
-            "description": "StackStorm integration pack for InfluxDB",
+            "description": "InfluxDB TSDB",
             "email": "code@encore.tech",
             "keywords": [
                 "influxdb",
@@ -6918,7 +6918,7 @@
             "name": "influxdb",
             "ref": "influxdb",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-influxdb",
-            "version": "0.1.0"
+            "version": "0.1.1"
         },
         "infoblox": {
             "author": "Dimension Data",
