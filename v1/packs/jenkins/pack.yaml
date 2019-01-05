@@ -1,23 +1,28 @@
 ref: jenkins
 name: jenkins
 description: Jenkins CI Integration Pack
-version: 0.6.0
+keywords:
+- jenkins
+- continuous deployment
+- CICD
+version: 0.7.0
 author: James Fryman
 email: james@stackstorm.com
 contributors:
 - Igor Cherkaev <emptywee@gmail.com>
 content:
   actions:
-    count: 11
+    count: 12
     resources:
-    - list_running_jobs
-    - disable_job
-    - rebuild_last_job
-    - enable_job
-    - build_job
-    - list_jobs_regex
-    - get_build_info
     - stop_build
-    - get_job_info
+    - list_jobs_regex
+    - build_job
+    - enable_job
     - install_plugin
+    - get_job_info
     - build_job_enh
+    - get_running_builds
+    - list_jobs
+    - get_build_info
+    - rebuild_last_job
+    - disable_job

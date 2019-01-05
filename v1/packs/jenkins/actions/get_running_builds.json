@@ -1,0 +1,14 @@
+{
+    "description": "Return list of running builds",
+    "enabled": true,
+    "entry_point": "get_running_builds.py",
+    "name": "get_running_builds",
+    "parameters": {
+        "name_pattern": {
+            "description": "regex pattern to filter by name",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

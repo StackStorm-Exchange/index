@@ -4,6 +4,11 @@
     "entry_point": "build_job_enh.py",
     "name": "build_job_enh",
     "parameters": {
+        "max_wait": {
+            "default": 30,
+            "description": "Seconds to wait for executor, default 30s",
+            "type": "integer"
+        },
         "parameters": {
             "description": "Optional parameters for build in JSON format",
             "type": "object"
