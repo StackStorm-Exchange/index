@@ -13,19 +13,19 @@ content:
   actions:
     count: 14
     resources:
-    - view_boards
-    - move_card
-    - find_board_by_name
-    - view_organizations
-    - add_list
-    - find_card_by_name
-    - add_board
-    - add_card
     - close_board
+    - add_board
+    - move_card
     - close_list
+    - find_list_by_name
+    - find_card_by_name
     - close_card
     - view_lists
-    - find_list_by_name
+    - view_organizations
+    - add_list
+    - find_board_by_name
+    - add_card
+    - view_boards
     - view_cards
   sensors:
     count: 1
