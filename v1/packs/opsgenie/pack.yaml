@@ -12,33 +12,33 @@ content:
   actions:
     count: 27
     resources:
-    - acknowledge_alert
-    - add_note_to_alert
-    - list_alert_policies
-    - disable_integration.yaml
-    - delete_alert
-    - disable_heartbeat
-    - get_schedule_who_is_on_call
+    - list_alerts
     - get_account_info
+    - delete_heartbeat
+    - list_integrations
+    - disable_integration.yaml
+    - get_integration
+    - add_note_to_alert
+    - get_alert
+    - close_alert
+    - add_heartbeat
+    - get_heartbeat
+    - ping_heartbeat
+    - disable_heartbeat
+    - delete_alert
+    - enable_policy.yaml
     - enable_integration.yaml
-    - list_users
     - get_alert_count
+    - disable_policy.yaml
+    - get_request_status
+    - acknowledge_alert
+    - get_schedule_who_is_on_call
     - create_alert
     - list_teams
-    - get_alert
-    - add_heartbeat
     - update_heartbeat
-    - delete_heartbeat
-    - close_alert
-    - get_heartbeat
-    - list_alerts
-    - enable_policy.yaml
+    - list_alert_policies
+    - list_users
     - enable_heartbeat
-    - ping_heartbeat
-    - get_request_status
-    - disable_policy.yaml
-    - get_integration
-    - list_integrations
   aliases:
     count: 2
     resources:
@@ -51,31 +51,31 @@ content:
   tests:
     count: 28
     resources:
-    - test_action_disable_integration.py
-    - test_action_disable_heartbeat.py
-    - test_action_get_schedule_who_is_on_call.py
-    - test_action_get_account_info.py
-    - test_action_add_heartbeat.py
-    - test_action_list_alerts.py
-    - test_action_get_heartbeat.py
-    - test_action_get_request_status.py
     - test_action_list_teams.py
-    - test_action_get_integration.py
-    - test_action_get_alert.py
-    - test_action_disable_policy.py
-    - test_action_close_alert.py
-    - test_action_enable_heartbeat.py
-    - test_action_get_alert_count.py
+    - test_action_add_heartbeat.py
     - test_action_delete_alert.py
-    - opsgenie_base_test_case.py
-    - test_action_list_integrations.py
-    - test_action_ping_heartbeat.py
-    - test_action_add_note_to_alert.py
-    - test_action_update_heartbeat.py
     - test_action_list_alert_policies.py
-    - test_action_create_alert.py
+    - test_action_get_integration.py
+    - test_action_get_account_info.py
+    - test_action_get_request_status.py
+    - test_action_get_alert_count.py
+    - test_action_get_alert.py
+    - test_action_update_heartbeat.py
+    - test_action_get_schedule_who_is_on_call.py
     - test_action_enable_policy.py
-    - test_action_list_users.py
-    - test_action_enable_integration.py
     - test_action_delete_heartbeat.py
+    - opsgenie_base_test_case.py
+    - test_action_get_heartbeat.py
     - test_action_acknowledge_alert.py
+    - test_action_disable_integration.py
+    - test_action_create_alert.py
+    - test_action_list_alerts.py
+    - test_action_list_integrations.py
+    - test_action_add_note_to_alert.py
+    - test_action_ping_heartbeat.py
+    - test_action_disable_policy.py
+    - test_action_list_users.py
+    - test_action_enable_heartbeat.py
+    - test_action_disable_heartbeat.py
+    - test_action_enable_integration.py
+    - test_action_close_alert.py
