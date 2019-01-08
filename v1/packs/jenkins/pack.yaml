@@ -14,15 +14,15 @@ content:
   actions:
     count: 12
     resources:
-    - stop_build
-    - list_jobs_regex
-    - build_job
-    - enable_job
-    - install_plugin
-    - get_job_info
-    - build_job_enh
     - get_running_builds
-    - list_jobs
     - get_build_info
-    - rebuild_last_job
     - disable_job
+    - build_job_enh
+    - build_job
+    - stop_build
+    - rebuild_last_job
+    - list_jobs
+    - list_jobs_regex
+    - enable_job
+    - get_job_info
+    - install_plugin
