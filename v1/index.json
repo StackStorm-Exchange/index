@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953269,
-        "hash": "6bc3a38379b051227a4ce77ff0b96a4c"
+        "generated_ts": 1546953279,
+        "hash": "b0b739c189d2e81c2387a5b37bf052a8"
     },
     "packs": {
         "acos": {
@@ -7737,35 +7737,35 @@
                 "actions": {
                     "count": 29,
                     "resources": [
-                        "get_object_cdn_url",
-                        "restart_container",
-                        "deploy_container",
-                        "get_container_cdn_url",
                         "create_dns_record",
-                        "balancer_attach_member",
                         "destroy_container",
-                        "list_dns_zones",
-                        "start_vm",
-                        "create_vm",
-                        "create_container_cluster",
-                        "list_images",
-                        "stop_vm",
-                        "list_balancers",
-                        "list_sizes",
+                        "balancer_attach_member",
+                        "balancer_list_members",
+                        "list_containers",
                         "enable_cdn_for_container",
+                        "list_sizes",
+                        "get_object_cdn_url",
                         "start_container",
+                        "create_container_cluster",
+                        "list_vms",
+                        "restart_container",
                         "delete_dns_record",
                         "list_dns_records",
-                        "list_container_clusters",
-                        "stop_container",
-                        "create_balancer",
-                        "reboot_vm",
-                        "upload_file",
-                        "import_public_ssh_key",
-                        "list_containers",
                         "destroy_vm",
-                        "balancer_list_members",
-                        "list_vms"
+                        "start_vm",
+                        "create_vm",
+                        "upload_file",
+                        "list_dns_zones",
+                        "list_images",
+                        "stop_container",
+                        "stop_vm",
+                        "list_balancers",
+                        "list_container_clusters",
+                        "create_balancer",
+                        "import_public_ssh_key",
+                        "deploy_container",
+                        "get_container_cdn_url",
+                        "reboot_vm"
                     ]
                 }
             },
