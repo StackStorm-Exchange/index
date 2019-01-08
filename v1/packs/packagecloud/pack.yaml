@@ -10,10 +10,10 @@ content:
   actions:
     count: 7
     resources:
+    - destroy_read_token
+    - create_master_token
+    - get_master_token
     - list_master_token
+    - show_package
     - list_packages
     - destroy_master_token
-    - get_master_token
-    - create_master_token
-    - show_package
-    - destroy_read_token
