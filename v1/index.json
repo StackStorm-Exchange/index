@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953201,
-        "hash": "c5d1776a7f9df18554e024b2aa74d1a3"
+        "generated_ts": 1546953209,
+        "hash": "4e1cdea8cf804818b43d18fd063f8643"
     },
     "packs": {
         "acos": {
@@ -6899,11 +6899,11 @@
                 "tests": {
                     "count": 5,
                     "resources": [
-                        "test_ping.py",
                         "test_query.py",
-                        "test_base_action.py",
                         "test_write.py",
-                        "influxdb_base_action_test_case.py"
+                        "test_ping.py",
+                        "influxdb_base_action_test_case.py",
+                        "test_base_action.py"
                     ]
                 }
             },
