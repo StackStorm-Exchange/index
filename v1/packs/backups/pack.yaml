@@ -15,9 +15,9 @@ content:
   actions:
     count: 3
     resources:
-    - postgres_backup
     - full_backup
     - mongodb_backup
+    - postgres_backup
   rules:
     count: 1
     resources:

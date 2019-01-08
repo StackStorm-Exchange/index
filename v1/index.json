@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546952888,
-        "hash": "5ea5ebbb7a6b85c10bc3d2849529ddac"
+        "generated_ts": 1546952918,
+        "hash": "300cd7e10f20fee80d60c6e7ad8a300d"
     },
     "packs": {
         "acos": {
@@ -4243,9 +4243,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "postgres_backup",
                         "full_backup",
-                        "mongodb_backup"
+                        "mongodb_backup",
+                        "postgres_backup"
                     ]
                 },
                 "rules": {
