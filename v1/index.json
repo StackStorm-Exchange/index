@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953446,
-        "hash": "990349ef110af3e6c76326f39286683d"
+        "generated_ts": 1546953456,
+        "hash": "ae054686844ade4f558222fe99652fbf"
     },
     "packs": {
         "acos": {
@@ -10367,9 +10367,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
+                        "query",
                         "alert.aggregation",
-                        "series",
-                        "query"
+                        "series"
                     ]
                 }
             },
