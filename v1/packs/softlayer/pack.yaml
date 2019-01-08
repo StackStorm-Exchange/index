@@ -11,7 +11,7 @@ content:
   actions:
     count: 4
     resources:
-    - create_instance
-    - destroy_instance
-    - delete_keypair
     - create_keypair
+    - destroy_instance
+    - create_instance
+    - delete_keypair
