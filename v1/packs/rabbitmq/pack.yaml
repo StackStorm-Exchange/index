@@ -15,9 +15,9 @@ content:
   actions:
     count: 3
     resources:
-    - list_queues
-    - publish_message
     - list_exchanges
+    - publish_message
+    - list_queues
   sensors:
     count: 1
     resources:
