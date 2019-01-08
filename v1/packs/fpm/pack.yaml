@@ -16,18 +16,18 @@ content:
   actions:
     count: 15
     resources:
-    - create_deb_from_empty
-    - create_rpm_from_deb
-    - create_deb_from_python
-    - create_deb_from_dir
-    - create_rpm_from_dir
+    - create_rpm_from_empty
+    - load_metadata
+    - create_rpm_from_rpm
+    - create_rpm_from_gem
+    - create_rpm_from_python
     - create_deb_from_gem
     - create_rpm_from_tar
     - create_deb_from_rpm
-    - create_rpm_from_empty
-    - create_rpm_from_rpm
-    - create_rpm_from_python
-    - create_deb_from_deb
-    - load_metadata
     - create_deb_from_tar
-    - create_rpm_from_gem
+    - create_deb_from_python
+    - create_deb_from_dir
+    - create_rpm_from_dir
+    - create_deb_from_deb
+    - create_deb_from_empty
+    - create_rpm_from_deb
