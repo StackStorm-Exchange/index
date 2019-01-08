@@ -15,11 +15,11 @@ content:
     count: 6
     resources:
     - deploy_release
-    - add_machine
-    - list_projects
-    - list_deployments
-    - create_release
     - list_releases
+    - list_projects
+    - add_machine
+    - create_release
+    - list_deployments
   sensors:
     count: 2
     resources:
