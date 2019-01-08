@@ -8,29 +8,29 @@ content:
   actions:
     count: 16
     resources:
-    - inquiry.respond
-    - kv.get_object
-    - upload_to_s3
-    - kv.delete
-    - kv.set_object
-    - executions.get
-    - kv.set
-    - kv.get
-    - executions.list
-    - call_home
-    - sensors.list
     - rules.list
-    - check_permissions_anon_data
-    - kv.grep
+    - kv.delete
+    - inquiry.respond
+    - kv.get
     - executions.re_run
+    - kv.set
+    - executions.list
+    - sensors.list
+    - call_home
     - actions.list
+    - upload_to_s3
+    - kv.set_object
+    - kv.grep
+    - check_permissions_anon_data
+    - executions.get
+    - kv.get_object
   aliases:
     count: 7
     resources:
+    - st2_rules_list
     - st2_inquiry_respond
-    - st2_executions_get
+    - st2_executions_re_run
     - st2_executions_list
     - st2_sensors_list
-    - st2_rules_list
-    - st2_executions_re_run
     - st2_actions_list
+    - st2_executions_get
