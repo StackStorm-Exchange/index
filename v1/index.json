@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953556,
-        "hash": "b5116fa2bba5b5cd6df36d522e189481"
+        "generated_ts": 1546953566,
+        "hash": "3554ff10818d365c0fc583f4066a0d33"
     },
     "packs": {
         "acos": {
@@ -11242,11 +11242,11 @@
                 "actions": {
                     "count": 7,
                     "resources": [
+                        "delete.source",
                         "update.source",
                         "get.sources",
-                        "delete.source",
-                        "get.collectors",
                         "create.source",
+                        "get.collectors",
                         "get.collector",
                         "get.collectors.id"
                     ]
