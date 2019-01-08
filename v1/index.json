@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953474,
-        "hash": "e751cbebf02e30bba7fabefec0c7e9c3"
+        "generated_ts": 1546953488,
+        "hash": "0223b7b2e64acf09d058121d727a7710"
     },
     "packs": {
         "acos": {
@@ -10502,32 +10502,32 @@
                 "actions": {
                     "count": 26,
                     "resources": [
-                        "set_vm_metadata_item",
-                        "find_dns_record_id",
-                        "delete_dns_zone",
                         "delete_vm",
-                        "create_vm",
-                        "find_vm_id",
-                        "list_dns_zones",
-                        "list_vm_sizes",
-                        "get_vm_ids",
-                        "delete_dns_record",
-                        "find_loadbalancer_id",
-                        "delete_node_from_loadbalancer",
-                        "set_vm_metadata",
-                        "create_dns_zone",
-                        "get_vm_ips",
                         "list_vm_images",
-                        "get_vm_names",
-                        "find_dns_zone_id",
-                        "add_node_to_loadbalancer",
+                        "get_vm_ids",
                         "list_vms",
-                        "get_vm_info",
-                        "delete_loadbalancer",
-                        "create_loadbalancer",
+                        "delete_dns_record",
+                        "find_dns_record_id",
+                        "set_vm_metadata_item",
+                        "get_vm_ips",
+                        "delete_node_from_loadbalancer",
+                        "create_vm",
                         "get_vm_by_ip",
+                        "list_dns_zones",
+                        "add_node_to_loadbalancer",
+                        "get_vm_info",
+                        "set_vm_metadata",
                         "create_dns_record",
-                        "list_dns_records"
+                        "find_dns_zone_id",
+                        "create_loadbalancer",
+                        "get_vm_names",
+                        "list_vm_sizes",
+                        "create_dns_zone",
+                        "list_dns_records",
+                        "find_loadbalancer_id",
+                        "delete_dns_zone",
+                        "find_vm_id",
+                        "delete_loadbalancer"
                     ]
                 }
             },
