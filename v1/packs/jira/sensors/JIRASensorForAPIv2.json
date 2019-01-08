@@ -1,0 +1,38 @@
+{
+    "class_name": "JIRASensorForAPIv2",
+    "description": "Sensor which monitors JIRA for new tickets",
+    "entry_point": "jira_sensor_for_apiv2.py",
+    "poll_interval": 30,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new issue has been created",
+            "name": "issues_tracker_for_apiv2",
+            "payload_schema": {
+                "properties": {
+                    "expand": {
+                        "type": "string"
+                    },
+                    "fields": {
+                        "type": "object"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "issue_browse_url": {
+                        "type": "string"
+                    },
+                    "issue_key": {
+                        "type": "string"
+                    },
+                    "issue_url": {
+                        "type": "string"
+                    },
+                    "project": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

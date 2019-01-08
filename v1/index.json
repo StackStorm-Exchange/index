@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953705,
-        "hash": "b6e9076352c3e6f43563b27610faded4"
+        "generated_ts": 1546963495,
+        "hash": "fdc5592d41e16e028025542442002423"
     },
     "packs": {
         "acos": {
@@ -7094,26 +7094,28 @@
                 "actions": {
                     "count": 9,
                     "resources": [
+                        "create_issue",
+                        "get_issue_attachments",
+                        "attach_file_to_issue",
                         "search_issues",
                         "get_issue_comments",
-                        "attach_file_to_issue",
-                        "create_issue",
                         "get_issue",
-                        "attach_files_to_issue",
-                        "get_issue_attachments",
+                        "comment_issue",
                         "transition_issue",
-                        "comment_issue"
+                        "attach_files_to_issue"
                     ]
                 },
                 "sensors": {
-                    "count": 1,
+                    "count": 2,
                     "resources": [
-                        "JIRASensor"
+                        "JIRASensor",
+                        "JIRASensorForAPIv2"
                     ]
                 },
                 "tests": {
-                    "count": 1,
+                    "count": 2,
                     "resources": [
+                        "test_sensor_jira_sensor_for_apiv2.py",
                         "test_sensor_jira_sensor.py"
                     ]
                 }
@@ -7128,7 +7130,7 @@
             "name": "jira",
             "ref": "jira",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira",
-            "version": "0.8.1"
+            "version": "0.9.0"
         },
         "jmx": {
             "author": "StackStorm, Inc.",
