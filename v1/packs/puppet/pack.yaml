@@ -12,12 +12,12 @@ content:
   actions:
     count: 9
     resources:
-    - run_agent
-    - cert_sign
-    - cert_clean
-    - epp_render_remote
-    - epp_render
     - lookup
-    - lookup_remote
     - cert_revoke
     - apply
+    - run_agent
+    - epp_render_remote
+    - cert_sign
+    - lookup_remote
+    - cert_clean
+    - epp_render
