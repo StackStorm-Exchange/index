@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953029,
-        "hash": "84ba951918d177f21949f9e7040a1b21"
+        "generated_ts": 1546953039,
+        "hash": "41e89e96180284138460e8fbed47df9a"
     },
     "packs": {
         "acos": {
@@ -4878,9 +4878,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "get_device",
                         "list_devices",
-                        "get_measurements"
+                        "get_measurements",
+                        "get_device"
                     ]
                 },
                 "rules": {
