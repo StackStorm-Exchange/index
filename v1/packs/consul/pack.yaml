@@ -8,40 +8,40 @@ content:
   actions:
     count: 37
     resources:
-    - agent_checks
-    - session_create
     - kv_put
-    - agent_join
-    - catalog_service
-    - acl_list
-    - service_maintenance
-    - health_state
-    - agent_services
-    - session_list
-    - agent_force_leave
-    - event_fire
-    - health_checks
-    - health_service
-    - service_register
-    - catalog_datacenters
-    - session_node
-    - custom_lock
-    - catalog_register
-    - session_renew
-    - acl_destroy
-    - health_node
-    - session_info
-    - kv_delete
-    - kv_list
-    - catalog_node
-    - catalog_deregister
-    - agent_members
     - catalog_nodes
     - custom_unlock
-    - session_destroy
-    - service_deregister
-    - kv_get
-    - catalog_services
+    - health_checks
+    - health_service
+    - agent_members
+    - service_register
     - acl_create
-    - agent_maintenance
+    - session_info
     - event_list
+    - agent_services
+    - session_node
+    - agent_force_leave
+    - acl_list
+    - catalog_register
+    - agent_join
+    - agent_maintenance
+    - health_node
+    - service_deregister
+    - service_maintenance
+    - catalog_node
+    - agent_checks
+    - custom_lock
+    - acl_destroy
+    - session_renew
+    - catalog_services
+    - session_create
+    - health_state
+    - kv_delete
+    - catalog_datacenters
+    - kv_list
+    - session_destroy
+    - kv_get
+    - event_fire
+    - session_list
+    - catalog_service
+    - catalog_deregister
