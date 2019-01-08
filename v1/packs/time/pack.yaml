@@ -11,10 +11,10 @@ content:
   actions:
     count: 2
     resources:
-    - parse_date_string
     - get_week_boundaries
+    - parse_date_string
   tests:
     count: 2
     resources:
-    - test_action_parse_date_string.py
     - test_action_get_week_boundaries.py
+    - test_action_parse_date_string.py

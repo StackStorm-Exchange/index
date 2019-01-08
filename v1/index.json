@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953574,
-        "hash": "47a7876ef66137fc1bd87e0308c23991"
+        "generated_ts": 1546953584,
+        "hash": "1aad5577d183fdd768e7f501f5fd9799"
     },
     "packs": {
         "acos": {
@@ -11402,15 +11402,15 @@
                 "actions": {
                     "count": 2,
                     "resources": [
-                        "parse_date_string",
-                        "get_week_boundaries"
+                        "get_week_boundaries",
+                        "parse_date_string"
                     ]
                 },
                 "tests": {
                     "count": 2,
                     "resources": [
-                        "test_action_parse_date_string.py",
-                        "test_action_get_week_boundaries.py"
+                        "test_action_get_week_boundaries.py",
+                        "test_action_parse_date_string.py"
                     ]
                 }
             },
