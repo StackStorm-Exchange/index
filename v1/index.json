@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953079,
-        "hash": "77ab64e9c33c61a18578f9e7303c8d39"
+        "generated_ts": 1546953086,
+        "hash": "2a8f7bd7058ea31c771ce8f09d1833cd"
     },
     "packs": {
         "acos": {
@@ -5220,29 +5220,29 @@
                     "count": 6,
                     "resources": [
                         "auth_wrap_demo",
-                        "auth_chatops",
-                        "auth_check",
                         "auth_auth",
                         "announce_success",
-                        "auth_ping"
+                        "auth_ping",
+                        "auth_chatops",
+                        "auth_check"
                     ]
                 },
                 "aliases": {
                     "count": 4,
                     "resources": [
                         "auth_demo",
-                        "auth_check",
                         "auth_auth",
-                        "auth_ping"
+                        "auth_ping",
+                        "auth_check"
                     ]
                 },
                 "tests": {
                     "count": 4,
                     "resources": [
+                        "test_action_auth_ping.py",
                         "test_action_auth_check.py",
-                        "duo_base_test_case.py",
                         "test_action_auth_auth.py",
-                        "test_action_auth_ping.py"
+                        "duo_base_test_case.py"
                     ]
                 }
             },
