@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953086,
-        "hash": "2a8f7bd7058ea31c771ce8f09d1833cd"
+        "generated_ts": 1546953099,
+        "hash": "484ec14e11b630e092e9056dd63234a9"
     },
     "packs": {
         "acos": {
@@ -5263,27 +5263,27 @@
                 "actions": {
                     "count": 21,
                     "resources": [
-                        "indices.replicas",
-                        "indices.allocation",
-                        "indices.index_settings",
+                        "search.q",
+                        "indices.snapshot",
                         "indices.reindex",
-                        "indices.show",
-                        "cluster.cluster_routing",
-                        "snapshots.delete_snapshots",
-                        "snapshots.show",
-                        "snapshots.restore",
-                        "indices.optimize",
+                        "indices.index_settings",
                         "search.body",
                         "indices.shrink",
                         "indices.close",
-                        "search.q",
-                        "indices.create_index",
-                        "indices.alias",
+                        "indices.forcemerge",
+                        "snapshots.delete_snapshots",
+                        "cluster.cluster_routing",
+                        "indices.show",
+                        "snapshots.show",
+                        "indices.optimize",
+                        "indices.allocation",
                         "indices.open",
-                        "indices.snapshot",
-                        "indices.delete_indices",
+                        "indices.create_index",
                         "indices.rollover",
-                        "indices.forcemerge"
+                        "snapshots.restore",
+                        "indices.replicas",
+                        "indices.alias",
+                        "indices.delete_indices"
                     ]
                 },
                 "sensors": {
