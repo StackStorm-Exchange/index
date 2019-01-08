@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953341,
-        "hash": "21e71af630894e32eba1c416e89743e8"
+        "generated_ts": 1546953346,
+        "hash": "45b49d36e101afb46acc95b66290a5cd"
     },
     "packs": {
         "acos": {
@@ -8467,16 +8467,16 @@
                 "actions": {
                     "count": 11,
                     "resources": [
-                        "set_temperature",
                         "get_mode",
-                        "set_humidity",
-                        "get_temperature",
-                        "get_humidity",
-                        "toggle_away",
-                        "set_home",
+                        "set_mode",
                         "set_fan",
                         "set_away",
-                        "set_mode",
+                        "toggle_away",
+                        "get_humidity",
+                        "set_humidity",
+                        "get_temperature",
+                        "set_temperature",
+                        "set_home",
                         "show"
                     ]
                 }
