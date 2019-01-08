@@ -10,8 +10,8 @@ content:
   actions:
     count: 5
     resources:
-    - view_ax_config
-    - get_submission_results
-    - submit_malware
     - get_submission_status
+    - submit_malware
+    - view_ax_config
     - get_alert_query
+    - get_submission_results
