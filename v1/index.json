@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546952989,
-        "hash": "e5403aa502755dd01d33f5d27702f6d8"
+        "generated_ts": 1546952994,
+        "hash": "7f35291c970636dfad9562fe36d822a3"
     },
     "packs": {
         "acos": {
@@ -4635,26 +4635,26 @@
                 "actions": {
                     "count": 20,
                     "resources": [
-                        "delete_room",
-                        "update_team",
-                        "list_rooms",
-                        "get_team",
-                        "handle_webhook",
-                        "update_room",
                         "get_webhook",
-                        "delete_webhook",
                         "create_room",
+                        "handle_webhook",
+                        "delete_webhook",
+                        "list_messages",
+                        "send_message",
+                        "get_message",
+                        "update_webhook",
+                        "update_team",
+                        "get_room",
+                        "create_webhook",
+                        "list_webhooks",
                         "delete_team",
+                        "delete_room",
+                        "list_teams",
+                        "get_team",
+                        "update_room",
                         "create_team",
                         "delete_message",
-                        "send_message",
-                        "create_webhook",
-                        "update_webhook",
-                        "get_room",
-                        "list_teams",
-                        "get_message",
-                        "list_messages",
-                        "list_webhooks"
+                        "list_rooms"
                     ]
                 },
                 "rules": {

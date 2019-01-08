@@ -14,26 +14,26 @@ content:
   actions:
     count: 20
     resources:
-    - delete_room
-    - update_team
-    - list_rooms
-    - get_team
-    - handle_webhook
-    - update_room
     - get_webhook
-    - delete_webhook
     - create_room
+    - handle_webhook
+    - delete_webhook
+    - list_messages
+    - send_message
+    - get_message
+    - update_webhook
+    - update_team
+    - get_room
+    - create_webhook
+    - list_webhooks
     - delete_team
+    - delete_room
+    - list_teams
+    - get_team
+    - update_room
     - create_team
     - delete_message
-    - send_message
-    - create_webhook
-    - update_webhook
-    - get_room
-    - list_teams
-    - get_message
-    - list_messages
-    - list_webhooks
+    - list_rooms
   rules:
     count: 1
     resources:
