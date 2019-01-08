@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953048,
-        "hash": "b8f3f23cd5512b8d983e3aedd584c24d"
+        "generated_ts": 1546953054,
+        "hash": "4eac3ce69349c4b801b1765853c3d8a6"
     },
     "packs": {
         "acos": {
@@ -4989,29 +4989,29 @@
                 "actions": {
                     "count": 14,
                     "resources": [
+                        "networking_lifecycle_automation",
+                        "device_name_list",
+                        "write_pxe_cfg",
+                        "get_dns_zone",
+                        "suggest_and_create_ip",
+                        "get_lifecycle_events",
+                        "create_dhcp_lease_reservation",
+                        "create_or_edit_ip",
+                        "get_device_by_id",
                         "add_device_lifecycle",
                         "suggest_next_ip",
-                        "device_name_list",
-                        "get_device_by_id",
-                        "suggest_and_create_ip",
-                        "networking_lifecycle_automation",
-                        "get_dns_zone",
-                        "create_or_edit_ip",
-                        "create_dhcp_lease_reservation",
-                        "get_lifecycle_events",
+                        "update_object_category_by_lifecycle_id",
                         "update_device",
-                        "write_pxe_cfg",
-                        "get_lifecycle_event_objects",
-                        "update_object_category_by_lifecycle_id"
+                        "get_lifecycle_event_objects"
                     ]
                 },
                 "rules": {
                     "count": 4,
                     "resources": [
-                        "device_created_initial_lifecycle",
-                        "lifecycle_triggered_object_category_change",
                         "networking_lifecycle_automation_rule",
-                        "d42_webhook_responder"
+                        "device_created_initial_lifecycle",
+                        "d42_webhook_responder",
+                        "lifecycle_triggered_object_category_change"
                     ]
                 }
             },
