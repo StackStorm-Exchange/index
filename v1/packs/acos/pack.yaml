@@ -13,28 +13,28 @@ content:
   actions:
     count: 19
     resources:
-    - add_slb_server_port
-    - add_slb_virtual_server
-    - get_slb_virtual_server
-    - del_slb_service_group
-    - add_slb_server
-    - get_slb_server
-    - list_slb_servers
+    - add_slb_service_group
+    - del_slb_server_port
     - del_slb_virtual_server_port
-    - del_slb_virtual_server
+    - add_slb_virtual_server_port
+    - add_slb_server_port
     - get_slb_service_group_members
     - del_slb_server
-    - list_slb_service_groups
-    - del_slb_server_port
-    - add_slb_service_group
-    - add_slb_service_group_member
-    - del_slb_service_group_member
-    - add_slb_virtual_server_port
-    - list_slb_virtual_servers
+    - add_slb_virtual_server
     - get_slb_service_group
+    - list_slb_virtual_servers
+    - add_slb_server
+    - list_slb_service_groups
+    - del_slb_service_group
+    - list_slb_servers
+    - get_slb_virtual_server
+    - get_slb_server
+    - del_slb_service_group_member
+    - del_slb_virtual_server
+    - add_slb_service_group_member
   tests:
     count: 3
     resources:
+    - acos_base_action_test_case.py
     - test_list_slb_servers.py
     - test_get_slb_server.py
-    - acos_base_action_test_case.py
