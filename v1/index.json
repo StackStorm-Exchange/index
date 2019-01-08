@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546952966,
-        "hash": "ce2f859eee205e140f7d3f386256a391"
+        "generated_ts": 1546952971,
+        "hash": "870c4be072025a772c4b8e6b4d0881fb"
     },
     "packs": {
         "acos": {
@@ -4502,11 +4502,11 @@
                 "actions": {
                     "count": 5,
                     "resources": [
-                        "apply",
                         "solo",
+                        "install",
                         "client",
-                        "ohai",
-                        "install"
+                        "apply",
+                        "ohai"
                     ]
                 }
             },

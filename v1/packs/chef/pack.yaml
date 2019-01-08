@@ -16,8 +16,8 @@ content:
   actions:
     count: 5
     resources:
-    - apply
     - solo
-    - client
-    - ohai
     - install
+    - client
+    - apply
+    - ohai
