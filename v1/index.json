@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953566,
-        "hash": "3554ff10818d365c0fc583f4066a0d33"
+        "generated_ts": 1546953574,
+        "hash": "47a7876ef66137fc1bd87e0308c23991"
     },
     "packs": {
         "acos": {
@@ -11328,18 +11328,18 @@
                 "actions": {
                     "count": 12,
                     "resources": [
-                        "select_workspace",
-                        "init",
-                        "output",
-                        "show",
-                        "delete_workspace",
-                        "list_workspaces",
+                        "get_version",
                         "pipeline",
-                        "create_workspace",
-                        "apply",
-                        "destroy",
+                        "init",
                         "plan",
-                        "get_version"
+                        "create_workspace",
+                        "show",
+                        "output",
+                        "list_workspaces",
+                        "destroy",
+                        "select_workspace",
+                        "apply",
+                        "delete_workspace"
                     ]
                 }
             },
