@@ -8,18 +8,18 @@ content:
   actions:
     count: 6
     resources:
-    - post_result
-    - branch
-    - deploy
-    - post_message
     - update_ref
+    - post_result
+    - deploy
     - restart
+    - branch
+    - post_message
   aliases:
     count: 3
     resources:
-    - hubot_branch
     - hubot_deploy
     - hubot_restart
+    - hubot_branch
   rules:
     count: 2
     resources:

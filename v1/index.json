@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953187,
-        "hash": "9d36abbf8743338cc1e88473b970ab65"
+        "generated_ts": 1546953201,
+        "hash": "c5d1776a7f9df18554e024b2aa74d1a3"
     },
     "packs": {
         "acos": {
@@ -6548,20 +6548,20 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "post_result",
-                        "branch",
-                        "deploy",
-                        "post_message",
                         "update_ref",
-                        "restart"
+                        "post_result",
+                        "deploy",
+                        "restart",
+                        "branch",
+                        "post_message"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
-                        "hubot_branch",
                         "hubot_deploy",
-                        "hubot_restart"
+                        "hubot_restart",
+                        "hubot_branch"
                     ]
                 },
                 "rules": {
