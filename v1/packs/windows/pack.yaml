@@ -13,10 +13,10 @@ content:
   actions:
     count: 7
     resources:
-    - winexe_cmd
-    - lockdown_winrm
-    - wait_for_winrm
-    - try_winrm
     - wmi_query
-    - winrm_cmd
+    - try_winrm
+    - winexe_cmd
+    - wait_for_winrm
     - setup_winrm
+    - winrm_cmd
+    - lockdown_winrm

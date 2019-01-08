@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953662,
-        "hash": "3ecf95b9d0a58032bee48a406baffb49"
+        "generated_ts": 1546953677,
+        "hash": "c996007aee13aebb04723f10eb606f6f"
     },
     "packs": {
         "acos": {
@@ -12298,13 +12298,13 @@
                 "actions": {
                     "count": 7,
                     "resources": [
-                        "winexe_cmd",
-                        "lockdown_winrm",
-                        "wait_for_winrm",
-                        "try_winrm",
                         "wmi_query",
+                        "try_winrm",
+                        "winexe_cmd",
+                        "wait_for_winrm",
+                        "setup_winrm",
                         "winrm_cmd",
-                        "setup_winrm"
+                        "lockdown_winrm"
                     ]
                 }
             },
