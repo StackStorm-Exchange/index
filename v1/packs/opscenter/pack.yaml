@@ -12,26 +12,26 @@ content:
   actions:
     count: 20
     resources:
-    - restart_node
+    - get_storage_capacity
+    - stop_node
     - get_nodes_info
-    - cancel_request
-    - stop_cluster_repair
-    - decommission_node
-    - get_cluster_repair_progress
-    - start_node
     - restart_cluster
-    - get_node_info
+    - set_node_conf
+    - get_cluster_configs
+    - get_cluster_info
+    - cancel_request
+    - start_node
+    - get_cluster_repair_progress
+    - list_requests
+    - drain_node
+    - decommission_node
+    - start_cluster_repair
+    - stop_cluster_repair
+    - get_node_conf
     - get_request_status
     - get_repair_status
-    - stop_node
-    - drain_node
-    - get_node_conf
-    - get_cluster_info
-    - get_cluster_configs
-    - list_requests
-    - set_node_conf
-    - start_cluster_repair
-    - get_storage_capacity
+    - get_node_info
+    - restart_node
   sensors:
     count: 1
     resources:
