@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953138,
-        "hash": "88a322c9d0d5a0ac25c41b017a00de69"
+        "generated_ts": 1546953158,
+        "hash": "510e261635a2f45e91d0893d120403af"
     },
     "packs": {
         "acos": {
@@ -6307,9 +6307,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "get_remote_repo_latest_commit",
                         "get_local_repo_latest_commit",
-                        "clone"
+                        "clone",
+                        "get_remote_repo_latest_commit"
                     ]
                 },
                 "rules": {
