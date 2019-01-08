@@ -13,49 +13,49 @@ content:
   actions:
     count: 27
     resources:
-    - vm_retire
-    - tags_create
-    - tags_list
-    - hosts_credentials_test
-    - provision_request_create
-    - remove_old_snapshots
-    - provision_check_success
-    - tags_unassign
-    - vm_custom_attributes_list
-    - vm_get_ids
-    - tags_delete
-    - bestfit
     - credentials_test
-    - template_get_info
-    - vm_find_by_name
-    - vm_scan
-    - tags_get
-    - provision_check_complete
-    - vm_custom_attributes_set
-    - vm_custom_attributes_get
-    - tags_assign
-    - vm_check_removed
-    - vm_list
+    - provision_check_success
     - vm_custom_attributes_delete
+    - tags_assign
+    - tags_delete
+    - tags_create
+    - provision_request_create
+    - vm_custom_attributes_list
+    - vm_list
+    - tags_list
+    - tags_get
+    - vm_check_removed
+    - bestfit
+    - vm_scan
+    - remove_old_snapshots
     - vm_all_get
-    - providers_credentials_test
+    - vm_custom_attributes_set
+    - tags_unassign
+    - hosts_credentials_test
+    - template_get_info
     - vm_retire_now
+    - vm_custom_attributes_get
+    - provision_check_complete
+    - vm_find_by_name
+    - vm_get_ids
+    - vm_retire
+    - providers_credentials_test
   tests:
     count: 16
     resources:
-    - test_action_base_action.py
-    - test_action_lib_remove_old_snapshots.py
-    - test_action_lib_vm_retire_now.py
-    - test_action_lib_template_get_info.py
-    - manage_iq_base_action_test_case.py
-    - test_action_providers.py
-    - test_action_lib_provision_request_create.py
-    - test_action_lib_provision_check_success.py
-    - test_action_bestfit.py
-    - test_action_vm.py
     - test_action_lib_vm_get_ids.py
-    - test_action_tags.py
+    - test_action_base_action.py
     - test_action_lib_vm_all_get.py
+    - test_action_lib_provision_check_success.py
+    - test_action_vm.py
     - test_action_vm_custom_attributes.py
+    - test_action_bestfit.py
+    - manage_iq_base_action_test_case.py
     - test_action_lib_provision_check_complete.py
     - test_action_hosts.py
+    - test_action_lib_remove_old_snapshots.py
+    - test_action_providers.py
+    - test_action_lib_provision_request_create.py
+    - test_action_lib_template_get_info.py
+    - test_action_lib_vm_retire_now.py
+    - test_action_tags.py
