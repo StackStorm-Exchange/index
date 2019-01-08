@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953625,
-        "hash": "912a118b9ea8fa6f869daa05e87887be"
+        "generated_ts": 1546953636,
+        "hash": "b0009aa02675eda5c9afafa19e1913b4"
     },
     "packs": {
         "acos": {
@@ -11981,25 +11981,25 @@
                 "actions": {
                     "count": 19,
                     "resources": [
-                        "get_principal_node",
-                        "attach_vlan_to_gw",
-                        "configure_switchport_trunk",
-                        "verify_vcs_fabric",
-                        "configure_vlan",
-                        "configure_interface",
                         "configure_vcenter",
-                        "create_vcs_fabric",
-                        "configure_ve_interface",
                         "configure_VXLAN_gateway",
-                        "configure_nsx_controller",
                         "get_nsxcntl_client_cert",
+                        "create_vcs_fabric",
+                        "get_principal_node",
                         "publish_configs",
-                        "attach_vlan_to_gw_workflow",
-                        "create_nsxcntl_client_cert",
-                        "configure_vcs_vip",
-                        "publish_configs_day1",
+                        "attach_vlan_to_gw",
+                        "configure_ve_interface",
                         "configure_vdx",
-                        "verify_vcs_ready"
+                        "create_nsxcntl_client_cert",
+                        "publish_configs_day1",
+                        "configure_vlan",
+                        "verify_vcs_fabric",
+                        "attach_vlan_to_gw_workflow",
+                        "verify_vcs_ready",
+                        "configure_vcs_vip",
+                        "configure_interface",
+                        "configure_nsx_controller",
+                        "configure_switchport_trunk"
                     ]
                 }
             },
