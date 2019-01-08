@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546941286,
-        "hash": "3e10e507968af6dffaea9435bb3a5eda"
+        "generated_ts": 1546941873,
+        "hash": "9b8a384f9a8c31969d89863861cfb007"
     },
     "packs": {
         "acos": {
@@ -10,25 +10,25 @@
                 "actions": {
                     "count": 19,
                     "resources": [
-                        "add_slb_service_group",
-                        "del_slb_server_port",
-                        "del_slb_virtual_server_port",
-                        "add_slb_virtual_server_port",
-                        "add_slb_server_port",
-                        "get_slb_service_group_members",
                         "del_slb_server",
                         "add_slb_virtual_server",
-                        "get_slb_service_group",
-                        "list_slb_virtual_servers",
-                        "add_slb_server",
-                        "list_slb_service_groups",
-                        "del_slb_service_group",
-                        "list_slb_servers",
-                        "get_slb_virtual_server",
-                        "get_slb_server",
-                        "del_slb_service_group_member",
                         "del_slb_virtual_server",
-                        "add_slb_service_group_member"
+                        "get_slb_service_group_members",
+                        "get_slb_server",
+                        "del_slb_virtual_server_port",
+                        "list_slb_servers",
+                        "add_slb_service_group_member",
+                        "del_slb_service_group",
+                        "add_slb_service_group",
+                        "del_slb_server_port",
+                        "get_slb_service_group",
+                        "add_slb_server",
+                        "add_slb_virtual_server_port",
+                        "list_slb_virtual_servers",
+                        "add_slb_server_port",
+                        "list_slb_service_groups",
+                        "del_slb_service_group_member",
+                        "get_slb_virtual_server"
                     ]
                 },
                 "tests": {
