@@ -12,9 +12,9 @@ content:
   actions:
     count: 6
     resources:
-    - article_get
-    - article_search
-    - create_message
     - article_create
-    - get_conversations
     - article_update
+    - article_search
+    - get_conversations
+    - article_get
+    - create_message
