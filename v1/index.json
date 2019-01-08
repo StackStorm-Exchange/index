@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1546953517,
-        "hash": "b6662527db85d9ce2012a638c64aef5e"
+        "generated_ts": 1546953535,
+        "hash": "2dd6d0d60f2c4dd2bf2c6ad6f399b6b8"
     },
     "packs": {
         "acos": {
@@ -11106,18 +11106,18 @@
                 "actions": {
                     "count": 12,
                     "resources": [
-                        "disengage_lock",
-                        "find_id_by_name",
-                        "set_temperature",
-                        "list_devices",
-                        "turn_off_switch",
                         "engage_lock",
-                        "toggle_lock",
-                        "turn_on_switch",
-                        "set_mode",
+                        "set_temperature",
                         "toggle_switch",
+                        "turn_on_switch",
+                        "get_device_info",
                         "command",
-                        "get_device_info"
+                        "list_devices",
+                        "disengage_lock",
+                        "set_mode",
+                        "find_id_by_name",
+                        "turn_off_switch",
+                        "toggle_lock"
                     ]
                 },
                 "sensors": {
