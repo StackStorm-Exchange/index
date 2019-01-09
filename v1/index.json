@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547024663,
-        "hash": "409fff814d6b5d359b0d471c07bbc467"
+        "generated_ts": 1547024739,
+        "hash": "cd1eefa2580ec012dec2095ff91f2061"
     },
     "packs": {
         "acos": {
@@ -10371,18 +10371,24 @@
                 "actions": {
                     "count": 3,
                     "resources": [
+                        "series",
                         "query",
-                        "alert.aggregation",
-                        "series"
+                        "alert.aggregation"
                     ]
                 }
             },
             "description": "Interact with Prometheus HTTP API",
             "email": "daniel@nullkarma.com",
             "keywords": [
-                "prometheus"
+                "prometheus",
+                "monitoring",
+                "metrics"
             ],
             "name": "prometheus",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "prometheus",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-prometheus",
             "version": "0.1.4"
