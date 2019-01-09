@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547070673,
-        "hash": "148bbf3886ca3e04797c1731eb46cc54"
+        "generated_ts": 1547071270,
+        "hash": "6b54edb4a86ebe9d1c38e683ff34084e"
     },
     "packs": {
         "acos": {
@@ -4688,8 +4688,8 @@
                 "actions": {
                     "count": 2,
                     "resources": [
-                        "ops_command",
-                        "config_command"
+                        "config_command",
+                        "ops_command"
                     ]
                 }
             },
@@ -4705,6 +4705,9 @@
                 "vyatta"
             ],
             "name": "clicrud",
+            "python_versions": [
+                "2"
+            ],
             "ref": "clicrud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-clicrud",
             "version": "0.3.3"

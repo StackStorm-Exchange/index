@@ -10,11 +10,13 @@ keywords:
 - vrouter
 - vyatta
 version: 0.3.3
+python_versions:
+- '2'
 author: davidjohngee
 email: david.gee@ipengineer.net
 content:
   actions:
     count: 2
     resources:
-    - ops_command
     - config_command
+    - ops_command
