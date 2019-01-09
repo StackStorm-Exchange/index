@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547070396,
-        "hash": "976613ba8828224e385bdff30b33ee64"
+        "generated_ts": 1547070673,
+        "hash": "148bbf3886ca3e04797c1731eb46cc54"
     },
     "packs": {
         "acos": {
@@ -5196,6 +5196,10 @@
                 "cgroups"
             ],
             "name": "docker",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "docker",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-docker",
             "version": "0.3.2"
