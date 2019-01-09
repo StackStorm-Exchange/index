@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547064963,
-        "hash": "84f716aa6aee939ed97d93a5cf902b1f"
+        "generated_ts": 1547065056,
+        "hash": "2f79ab819beb3d990fac72932bccc79b"
     },
     "packs": {
         "acos": {
@@ -11591,6 +11591,10 @@
             "description": "st2 content pack containing twilio integrations",
             "email": "info@stackstorm.com",
             "name": "twilio",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "twilio",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-twilio",
             "version": "0.3.1"
