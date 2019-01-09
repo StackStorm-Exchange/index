@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547030743,
-        "hash": "ee2dbc0495f51a73382269071ce211dd"
+        "generated_ts": 1547030838,
+        "hash": "9b6be60fe16bfa11db9b4a13dcfd8473"
     },
     "packs": {
         "acos": {
@@ -11427,8 +11427,8 @@
                 "tests": {
                     "count": 2,
                     "resources": [
-                        "test_action_get_week_boundaries.py",
-                        "test_action_parse_date_string.py"
+                        "test_action_parse_date_string.py",
+                        "test_action_get_week_boundaries.py"
                     ]
                 }
             },
@@ -11439,6 +11439,10 @@
                 "time"
             ],
             "name": "time",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "time",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-time",
             "version": "0.2.1"
