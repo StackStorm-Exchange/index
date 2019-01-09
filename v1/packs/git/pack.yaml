@@ -11,9 +11,9 @@ content:
   actions:
     count: 3
     resources:
-    - get_local_repo_latest_commit
     - clone
     - get_remote_repo_latest_commit
+    - get_local_repo_latest_commit
   rules:
     count: 1
     resources:
