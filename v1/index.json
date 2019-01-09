@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547030402,
-        "hash": "dc2da46ba4e94dfcc13dd5a94dac95b8"
+        "generated_ts": 1547030644,
+        "hash": "1b748a4344fd4264c568840c780759d7"
     },
     "packs": {
         "acos": {
@@ -7840,6 +7840,10 @@
                 "mailgun"
             ],
             "name": "mailgun",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "mailgun",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mailgun",
             "version": "0.4.0"
