@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547033491,
-        "hash": "9077d62c629d1d7d60d7cffe5f5950e2"
+        "generated_ts": 1547033499,
+        "hash": "1d135186088f576d6fdc2165518af9a5"
     },
     "packs": {
         "acos": {
@@ -4711,8 +4711,8 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "get_zones",
                         "get_zone_dns_records",
+                        "get_zones",
                         "get_ips"
                     ]
                 },
@@ -4720,10 +4720,10 @@
                     "count": 5,
                     "resources": [
                         "test_action_get_zone_dns_records.py",
-                        "cloudflare_base_action_test_case.py",
-                        "test_action_base.py",
+                        "test_action_get_ips.py",
                         "test_action_get_zones.py",
-                        "test_action_get_ips.py"
+                        "cloudflare_base_action_test_case.py",
+                        "test_action_base.py"
                     ]
                 }
             },
@@ -4733,6 +4733,10 @@
                 "cloudflare"
             ],
             "name": "cloudflare",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "cloudflare",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
             "version": "0.4.1"
