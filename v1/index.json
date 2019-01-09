@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547035347,
-        "hash": "cda9e6a988979e64b20711c51a56fa34"
+        "generated_ts": 1547053855,
+        "hash": "a27c4543b62eb00857a27d22fa80cc26"
     },
     "packs": {
         "acos": {
@@ -6498,9 +6498,9 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "encrypt_file",
                         "import_keys",
                         "decrypt_file",
+                        "encrypt_file",
                         "list_keys"
                     ]
                 }
@@ -6516,6 +6516,10 @@
                 "crypto"
             ],
             "name": "gpg",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "gpg",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gpg",
             "version": "0.3.1"

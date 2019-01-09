@@ -9,13 +9,16 @@ keywords:
 - encryption
 - crypto
 version: 0.3.1
+python_versions:
+- '2'
+- '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 4
     resources:
-    - encrypt_file
     - import_keys
     - decrypt_file
+    - encrypt_file
     - list_keys
