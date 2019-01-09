@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547024739,
-        "hash": "cd1eefa2580ec012dec2095ff91f2061"
+        "generated_ts": 1547028943,
+        "hash": "df99b45e9b4d3e78de86af87cb22db59"
     },
     "packs": {
         "acos": {
@@ -6480,6 +6480,10 @@
                 "search"
             ],
             "name": "google",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "google",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-google",
             "version": "0.2.1"
