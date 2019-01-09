@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547033142,
-        "hash": "4a1678051c65021d6d79bac609b24653"
+        "generated_ts": 1547033491,
+        "hash": "9077d62c629d1d7d60d7cffe5f5950e2"
     },
     "packs": {
         "acos": {
@@ -11378,29 +11378,29 @@
                 "actions": {
                     "count": 16,
                     "resources": [
-                        "lock_vehicle",
-                        "charge_vehicle",
+                        "wake_vehicle",
+                        "open_charge_port_door",
                         "list_vehicles",
                         "honk_horn",
-                        "set_vehicle_sun_roof",
-                        "start_vehicle_charge",
-                        "get_vehicle",
-                        "stop_vehicle_charge",
-                        "start_vehicle_ac",
                         "charge_vehicle_max_range",
-                        "set_vehicle_temperature",
-                        "open_charge_port_door",
-                        "flash_lights",
+                        "set_vehicle_sun_roof",
                         "unlock_vehicle",
+                        "set_vehicle_temperature",
+                        "lock_vehicle",
+                        "charge_vehicle",
                         "stop_vehicle_ac",
-                        "wake_vehicle"
+                        "flash_lights",
+                        "start_vehicle_ac",
+                        "stop_vehicle_charge",
+                        "get_vehicle",
+                        "start_vehicle_charge"
                     ]
                 },
                 "aliases": {
                     "count": 2,
                     "resources": [
-                        "tesla.set_vehicle_sun_roof",
-                        "tesla.honk_horn"
+                        "tesla.honk_horn",
+                        "tesla.set_vehicle_sun_roof"
                     ]
                 }
             },
@@ -11410,6 +11410,9 @@
                 "tesla"
             ],
             "name": "tesla",
+            "python_versions": [
+                "2"
+            ],
             "ref": "tesla",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-tesla",
             "version": "0.2.2"

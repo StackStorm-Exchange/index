@@ -4,30 +4,32 @@ description: car horn automation
 keywords:
 - tesla
 version: 0.2.2
+python_versions:
+- '2'
 author: Anthony Shaw
 email: anthony.shaw@dimensiondata.com
 content:
   actions:
     count: 16
     resources:
-    - lock_vehicle
-    - charge_vehicle
+    - wake_vehicle
+    - open_charge_port_door
     - list_vehicles
     - honk_horn
-    - set_vehicle_sun_roof
-    - start_vehicle_charge
-    - get_vehicle
-    - stop_vehicle_charge
-    - start_vehicle_ac
     - charge_vehicle_max_range
-    - set_vehicle_temperature
-    - open_charge_port_door
-    - flash_lights
+    - set_vehicle_sun_roof
     - unlock_vehicle
+    - set_vehicle_temperature
+    - lock_vehicle
+    - charge_vehicle
     - stop_vehicle_ac
-    - wake_vehicle
+    - flash_lights
+    - start_vehicle_ac
+    - stop_vehicle_charge
+    - get_vehicle
+    - start_vehicle_charge
   aliases:
     count: 2
     resources:
-    - tesla.set_vehicle_sun_roof
     - tesla.honk_horn
+    - tesla.set_vehicle_sun_roof
