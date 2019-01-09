@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547069496,
-        "hash": "6e892791f72fce71e8a3bf0b7337b07b"
+        "generated_ts": 1547069663,
+        "hash": "1b28e685b7a9d5c1839012ef6aa08003"
     },
     "packs": {
         "acos": {
@@ -5036,20 +5036,20 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "get_action",
-                        "get_all_sshkeys",
-                        "get_ssh_key",
-                        "get_all_sizes",
-                        "get_image",
+                        "get_all_regions",
                         "get_domain",
                         "get_all_droplets",
+                        "get_all_sizes",
+                        "get_image",
+                        "get_droplet",
                         "get_global_images",
-                        "get_all_regions",
-                        "get_my_images",
-                        "get_all_images",
-                        "get_data",
+                        "get_ssh_key",
+                        "get_all_sshkeys",
                         "get_all_domains",
-                        "get_droplet"
+                        "get_all_images",
+                        "get_my_images",
+                        "get_data",
+                        "get_action"
                     ]
                 },
                 "tests": {
@@ -5063,6 +5063,10 @@
             "description": "Digital Ocean integration.",
             "email": "info@stackstorm.com",
             "name": "Digital Ocean",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "digitalocean",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-digitalocean",
             "version": "0.3.2"

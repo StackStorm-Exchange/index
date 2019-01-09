@@ -2,26 +2,29 @@ ref: digitalocean
 name: Digital Ocean
 description: Digital Ocean integration.
 version: 0.3.2
+python_versions:
+- '2'
+- '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 14
     resources:
-    - get_action
-    - get_all_sshkeys
-    - get_ssh_key
-    - get_all_sizes
-    - get_image
+    - get_all_regions
     - get_domain
     - get_all_droplets
-    - get_global_images
-    - get_all_regions
-    - get_my_images
-    - get_all_images
-    - get_data
-    - get_all_domains
+    - get_all_sizes
+    - get_image
     - get_droplet
+    - get_global_images
+    - get_ssh_key
+    - get_all_sshkeys
+    - get_all_domains
+    - get_all_images
+    - get_my_images
+    - get_data
+    - get_action
   tests:
     count: 2
     resources:
