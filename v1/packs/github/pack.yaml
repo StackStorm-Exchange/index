@@ -16,39 +16,39 @@ content:
   actions:
     count: 23
     resources:
-    - get_issue
-    - deployment_event
-    - get_clone_stats
-    - create_deployment_status
-    - latest_release
     - get_deployment_statuses
-    - list_pulls
-    - add_status
-    - check_deployment_env
+    - list_issues
+    - list_deployments
+    - create_deployment_status
+    - review_pull
+    - create_deployment
     - list_teams
-    - list_releases
     - get_traffic_stats
     - merge_pull
-    - list_issues
     - create_issue
-    - create_release
-    - get_user
-    - create_deployment
     - store_oauth_token
-    - list_deployments
-    - review_pull
+    - check_deployment_env
+    - get_user
+    - get_issue
     - add_team_membership
+    - list_releases
+    - latest_release
+    - add_status
+    - get_clone_stats
+    - deployment_event
+    - create_release
+    - list_pulls
     - add_comment
   aliases:
     count: 7
     resources:
-    - deployment_statuses
-    - latest_release
-    - list_releases
-    - create_release
-    - get_user
     - create_deployment
     - store_oauth_token
+    - get_user
+    - deployment_statuses
+    - list_releases
+    - latest_release
+    - create_release
   rules:
     count: 1
     resources:
@@ -60,24 +60,24 @@ content:
   tests:
     count: 21
     resources:
-    - test_action_get_traffic_stats.py
-    - test_action_add_comment.py
-    - test_action_list_issues.py
-    - test_action_latest_release.py
-    - test_action_list_deployments.py
-    - test_action_check_deployment_env.py
-    - test_action_list_teams.py
-    - test_action_create_issue.py
-    - test_action_create_release.py
-    - test_action_add_status.py
-    - test_action_list_releases.py
-    - test_action_create_deployment_status.py
-    - test_action_get_deployment_statuses.py
-    - test_action_get_issue.py
-    - test_action_store_oauth_token.py
-    - test_action_get_user.py
-    - test_action_add_team_membership.py
-    - test_action_get_clone_stats.py
     - test_action_create_deployment.py
+    - test_action_create_release.py
+    - test_action_get_traffic_stats.py
+    - test_action_list_teams.py
+    - test_action_list_releases.py
+    - test_action_create_issue.py
+    - test_action_store_oauth_token.py
     - github_base_action_test_case.py
+    - test_action_list_issues.py
+    - test_action_list_deployments.py
+    - test_action_get_user.py
+    - test_action_get_clone_stats.py
+    - test_action_create_deployment_status.py
+    - test_action_check_deployment_env.py
+    - test_action_get_issue.py
     - test_action_aliases.py
+    - test_action_add_team_membership.py
+    - test_action_add_comment.py
+    - test_action_add_status.py
+    - test_action_get_deployment_statuses.py
+    - test_action_latest_release.py
