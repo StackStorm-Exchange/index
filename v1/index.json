@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547033626,
-        "hash": "02674f1f7972eb8b17a7a908aaab013e"
+        "generated_ts": 1547034411,
+        "hash": "79d949bf576b89ccec6461117341eba0"
     },
     "packs": {
         "acos": {
@@ -10593,9 +10593,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "del",
+                        "set",
                         "get",
-                        "set"
+                        "del"
                     ]
                 }
             },
@@ -10606,6 +10606,10 @@
                 "redis"
             ],
             "name": "redis",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "redis",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-redis",
             "version": "0.0.3"

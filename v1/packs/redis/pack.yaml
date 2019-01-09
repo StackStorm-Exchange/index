@@ -5,12 +5,15 @@ keywords:
 - database
 - redis
 version: 0.0.3
+python_versions:
+- '2'
+- '3'
 author: Antagonist B.V.
 email: systeembeheer@antagonist.nl
 content:
   actions:
     count: 3
     resources:
-    - del
-    - get
     - set
+    - get
+    - del
