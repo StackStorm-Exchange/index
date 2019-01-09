@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547070343,
-        "hash": "68066d11f13f6e10e3cc5444137141d6"
+        "generated_ts": 1547070396,
+        "hash": "976613ba8828224e385bdff30b33ee64"
     },
     "packs": {
         "acos": {
@@ -4856,8 +4856,8 @@
                     "count": 3,
                     "resources": [
                         "parse",
-                        "format",
-                        "parse_file"
+                        "parse_file",
+                        "format"
                     ]
                 },
                 "tests": {
@@ -4876,6 +4876,10 @@
                 "text processing"
             ],
             "name": "csv",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "csv",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-csv",
             "version": "0.4.4"
