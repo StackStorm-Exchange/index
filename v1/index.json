@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547032912,
-        "hash": "2d37f4a6c6df7897f56f0643c265b6b0"
+        "generated_ts": 1547033142,
+        "hash": "4a1678051c65021d6d79bac609b24653"
     },
     "packs": {
         "acos": {
@@ -11378,22 +11378,22 @@
                 "actions": {
                     "count": 16,
                     "resources": [
-                        "stop_vehicle_ac",
+                        "lock_vehicle",
+                        "charge_vehicle",
+                        "list_vehicles",
+                        "honk_horn",
+                        "set_vehicle_sun_roof",
+                        "start_vehicle_charge",
+                        "get_vehicle",
+                        "stop_vehicle_charge",
+                        "start_vehicle_ac",
+                        "charge_vehicle_max_range",
                         "set_vehicle_temperature",
                         "open_charge_port_door",
-                        "start_vehicle_ac",
                         "flash_lights",
-                        "set_vehicle_sun_roof",
-                        "honk_horn",
-                        "wake_vehicle",
-                        "charge_vehicle_max_range",
-                        "charge_vehicle",
-                        "start_vehicle_charge",
-                        "list_vehicles",
-                        "stop_vehicle_charge",
                         "unlock_vehicle",
-                        "get_vehicle",
-                        "lock_vehicle"
+                        "stop_vehicle_ac",
+                        "wake_vehicle"
                     ]
                 },
                 "aliases": {
