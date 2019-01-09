@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547053983,
-        "hash": "3f3b60c0f75f187f8b68d9ca94d3388b"
+        "generated_ts": 1547060203,
+        "hash": "a4d726c387a5c6e071b5fb8ce47d72e6"
     },
     "packs": {
         "acos": {
@@ -10381,6 +10381,10 @@
             "description": "Microsoft Powerpoint integration",
             "email": "anthonyshaw@apache.org",
             "name": "powerpoint",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "powerpoint",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerpoint",
             "version": "0.2.2"
