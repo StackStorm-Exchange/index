@@ -2,6 +2,9 @@ ref: vault
 name: vault
 description: HashiCorp Vault
 version: 0.5.1
+python_versions:
+- '2'
+- '3'
 author: steve.neuharth
 email: steve.neuharth@target.com
 contributors:
@@ -10,13 +13,13 @@ content:
   actions:
     count: 10
     resources:
-    - get_policy
-    - delete
     - set_policy
-    - read
-    - write
-    - delete_policy
     - is_initialized
+    - get_policy
+    - delete_policy
+    - delete
+    - read
     - create_token
     - read_kv
     - list_policies
+    - write

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547053855,
-        "hash": "a27c4543b62eb00857a27d22fa80cc26"
+        "generated_ts": 1547053983,
+        "hash": "3f3b60c0f75f187f8b68d9ca94d3388b"
     },
     "packs": {
         "acos": {
@@ -11803,16 +11803,16 @@
                 "actions": {
                     "count": 10,
                     "resources": [
-                        "get_policy",
-                        "delete",
                         "set_policy",
-                        "read",
-                        "write",
-                        "delete_policy",
                         "is_initialized",
+                        "get_policy",
+                        "delete_policy",
+                        "delete",
+                        "read",
                         "create_token",
                         "read_kv",
-                        "list_policies"
+                        "list_policies",
+                        "write"
                     ]
                 }
             },
@@ -11822,6 +11822,10 @@
             "description": "HashiCorp Vault",
             "email": "steve.neuharth@target.com",
             "name": "vault",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "vault",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vault",
             "version": "0.5.1"
