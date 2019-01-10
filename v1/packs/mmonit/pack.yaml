@@ -5,30 +5,33 @@ keywords:
 - monitoring
 - mmonit
 version: 0.4.2
+python_versions:
+- '2'
+- '3'
 author: Itxaka Serrano Garcia
 email: itxakaserrano@gmail.com
 content:
   actions:
     count: 18
     resources:
-    - test_connection_to_host
     - dismiss_event
-    - summary_status
-    - update_host
-    - list_uptime_hosts
-    - summary_events
     - get_host
-    - session_put
     - get_status_host
-    - session_delete
-    - list_hosts
-    - session_get
-    - get_event
-    - action_host
-    - get_uptime_hosts
-    - list_events
     - list_status_hosts
+    - list_events
+    - get_uptime_hosts
+    - test_connection_to_host
+    - summary_events
+    - summary_status
     - delete_host
+    - session_get
+    - list_hosts
+    - update_host
+    - session_delete
+    - action_host
+    - get_event
+    - list_uptime_hosts
+    - session_put
   sensors:
     count: 1
     resources:
