@@ -12,54 +12,54 @@ content:
   actions:
     count: 51
     resources:
-    - get_all_users
-    - get_all_screenboards
-    - share_screenboard
-    - mute_host
-    - get_tags
-    - get_monitor
-    - query_event_stream
-    - create_embed
-    - edit_comment
-    - get_user
-    - create_screenboard
-    - update_user
-    - get_all_monitors
-    - query_ts_points
-    - add_host_tags
-    - mute_monitor
-    - update_screenboard
-    - delete_comment
-    - create_timeboard
-    - post_event
-    - delete_screenboard
-    - revoke_shared_screenboard
-    - enable_embed
-    - snapshot
-    - mute_all_monitors
     - schedule_monitor_downtime
+    - get_all_monitors
     - remove_host_tags
-    - update_host_tags
-    - delete_timeboard
-    - get_screenboard
+    - mute_host
     - unmute_monitor
-    - post_check_run
+    - create_timeboard
     - revoke_embed
-    - delete_event
-    - get_timeboard
-    - create_monitor
-    - create_comment
-    - post_ts_points
-    - create_user
-    - search
-    - get_all_timeboards
-    - get_event
-    - update_timeboard
-    - get_host_tags
-    - delete_monitor
-    - unmute_host
-    - edit_monitor
+    - post_check_run
     - get_embed
-    - get_all_embeds
+    - add_host_tags
+    - delete_event
+    - create_embed
+    - create_user
     - disable_user
+    - post_event
+    - share_screenboard
+    - update_screenboard
+    - get_host_tags
+    - create_screenboard
+    - get_timeboard
+    - delete_monitor
+    - mute_monitor
+    - delete_screenboard
+    - update_user
+    - get_screenboard
+    - query_event_stream
+    - query_ts_points
+    - edit_monitor
+    - post_ts_points
+    - get_all_timeboards
+    - get_all_embeds
+    - get_monitor
+    - update_timeboard
+    - enable_embed
+    - get_all_screenboards
+    - get_user
+    - edit_comment
+    - delete_timeboard
+    - get_event
+    - get_all_users
+    - get_tags
+    - mute_all_monitors
+    - search
+    - snapshot
+    - update_host_tags
+    - create_monitor
+    - delete_comment
+    - create_comment
+    - revoke_shared_screenboard
     - unmute_all_monitors
+    - unmute_host
