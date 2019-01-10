@@ -12,24 +12,24 @@ content:
   actions:
     count: 16
     resources:
-    - honk_horn
-    - list_vehicles
-    - charge_vehicle
-    - stop_vehicle_ac
-    - set_vehicle_sun_roof
-    - get_vehicle
     - flash_lights
+    - list_vehicles
     - lock_vehicle
-    - start_vehicle_ac
     - stop_vehicle_charge
-    - start_vehicle_charge
-    - open_charge_port_door
-    - unlock_vehicle
-    - wake_vehicle
-    - charge_vehicle_max_range
     - set_vehicle_temperature
+    - start_vehicle_ac
+    - unlock_vehicle
+    - stop_vehicle_ac
+    - honk_horn
+    - get_vehicle
+    - wake_vehicle
+    - open_charge_port_door
+    - charge_vehicle
+    - start_vehicle_charge
+    - charge_vehicle_max_range
+    - set_vehicle_sun_roof
   aliases:
     count: 2
     resources:
-    - tesla.honk_horn
     - tesla.set_vehicle_sun_roof
+    - tesla.honk_horn
