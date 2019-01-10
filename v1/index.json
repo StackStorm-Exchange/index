@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547128662,
-        "hash": "e9e1f58a99984e6b7bbd608e148b6895"
+        "generated_ts": 1547128964,
+        "hash": "9d5e6774d3566d5cb78036f6567acd04"
     },
     "packs": {
         "acos": {
@@ -10907,32 +10907,32 @@
                 "actions": {
                     "count": 19,
                     "resources": [
-                        "check_aggregates_delete",
-                        "silence",
-                        "info",
-                        "event_resolve",
-                        "unsilence",
-                        "check_list",
-                        "check_info",
-                        "health",
-                        "client_delete",
-                        "event_client_list",
                         "client_info",
-                        "check_aggregates",
-                        "event_list",
+                        "check_list",
+                        "event_client_list",
+                        "info",
+                        "check_info",
                         "client_list",
-                        "aggregate_list",
                         "check_request",
+                        "check_aggregates",
+                        "event_delete",
+                        "event_list",
+                        "event_resolve",
+                        "client_delete",
+                        "health",
+                        "silence",
                         "event_info",
+                        "unsilence",
                         "client_history",
-                        "event_delete"
+                        "aggregate_list",
+                        "check_aggregates_delete"
                     ]
                 },
                 "rules": {
                     "count": 2,
                     "resources": [
-                        "on_action_runner_check",
-                        "loadavg_check"
+                        "loadavg_check",
+                        "on_action_runner_check"
                     ]
                 },
                 "tests": {
