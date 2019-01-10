@@ -5,6 +5,9 @@ keywords:
 - servicenow
 - incident management
 version: 0.3.7
+python_versions:
+- '2'
+- '3'
 author: James Fryman
 email: james@stackstorm.com
 content:
@@ -12,19 +15,19 @@ content:
     count: 11
     resources:
     - approve_change
-    - insert
+    - assign_incident_to
+    - delete
     - update
+    - get_user
+    - insert
+    - get_incidents_assigned_to
+    - create_record
+    - get_non_structured
     - set_incident_owner
     - get
-    - get_non_structured
-    - get_incidents_assigned_to
-    - assign_incident_to
-    - create_record
-    - get_user
-    - delete
   aliases:
     count: 3
     resources:
     - servicenow.approve_change
-    - servicenow.get_incidents_assigned_to
     - servicenow.assign_incident_to
+    - servicenow.get_incidents_assigned_to

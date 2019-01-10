@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547133816,
-        "hash": "b3d1e795569582e3abbcebda04cba3c1"
+        "generated_ts": 1547133888,
+        "hash": "52739dd3108bfa155d6e305d207b5b4c"
     },
     "packs": {
         "acos": {
@@ -10971,24 +10971,24 @@
                     "count": 11,
                     "resources": [
                         "approve_change",
-                        "insert",
-                        "update",
-                        "set_incident_owner",
-                        "get",
-                        "get_non_structured",
-                        "get_incidents_assigned_to",
                         "assign_incident_to",
-                        "create_record",
+                        "delete",
+                        "update",
                         "get_user",
-                        "delete"
+                        "insert",
+                        "get_incidents_assigned_to",
+                        "create_record",
+                        "get_non_structured",
+                        "set_incident_owner",
+                        "get"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
                         "servicenow.approve_change",
-                        "servicenow.get_incidents_assigned_to",
-                        "servicenow.assign_incident_to"
+                        "servicenow.assign_incident_to",
+                        "servicenow.get_incidents_assigned_to"
                     ]
                 }
             },
@@ -10999,6 +10999,10 @@
                 "incident management"
             ],
             "name": "servicenow",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "servicenow",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
             "version": "0.3.7"
