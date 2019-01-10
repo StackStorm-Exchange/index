@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547113106,
-        "hash": "c29483907d81a00004f9850381fb4d74"
+        "generated_ts": 1547113329,
+        "hash": "9ce07b86f9d31a37d3b09364862fb668"
     },
     "packs": {
         "acos": {
@@ -8204,6 +8204,10 @@
                 "workflows"
             ],
             "name": "mistral",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "mistral",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mistral",
             "version": "0.3.1"
