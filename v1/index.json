@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547151333,
-        "hash": "853c971fe44658f1987e66797657a251"
+        "generated_ts": 1547151351,
+        "hash": "dddb0a6570be9c5ea556b33b49cc1d9b"
     },
     "packs": {
         "acos": {
@@ -11586,20 +11586,20 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "close_board",
-                        "add_board",
-                        "move_card",
-                        "close_list",
                         "find_list_by_name",
-                        "find_card_by_name",
                         "close_card",
-                        "view_lists",
+                        "add_board",
+                        "view_cards",
                         "view_organizations",
-                        "add_list",
-                        "find_board_by_name",
                         "add_card",
+                        "find_board_by_name",
+                        "add_list",
+                        "move_card",
+                        "view_lists",
                         "view_boards",
-                        "view_cards"
+                        "close_board",
+                        "close_list",
+                        "find_card_by_name"
                     ]
                 },
                 "sensors": {
