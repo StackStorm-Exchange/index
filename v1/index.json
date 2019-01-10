@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547111460,
-        "hash": "a490e4630dbdacbb726117218521ce91"
+        "generated_ts": 1547111543,
+        "hash": "2fdca8757fa65e9861d8d61e9bf10982"
     },
     "packs": {
         "acos": {
@@ -4688,8 +4688,8 @@
                 "actions": {
                     "count": 2,
                     "resources": [
-                        "ops_command",
-                        "config_command"
+                        "config_command",
+                        "ops_command"
                     ]
                 }
             },
@@ -4706,7 +4706,8 @@
             ],
             "name": "clicrud",
             "python_versions": [
-                "2"
+                "2",
+                "3"
             ],
             "ref": "clicrud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-clicrud",
