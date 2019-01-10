@@ -12,9 +12,9 @@ content:
   actions:
     count: 3
     resources:
+    - direct_message
     - update_status
     - follow
-    - direct_message
   rules:
     count: 1
     resources:
