@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547144243,
-        "hash": "46e666b9411fbec4b99fa5507fe15f4c"
+        "generated_ts": 1547144698,
+        "hash": "79e544747956ef83a5e82ace8d8334dd"
     },
     "packs": {
         "acos": {
@@ -10,32 +10,32 @@
                 "actions": {
                     "count": 19,
                     "resources": [
-                        "get_slb_virtual_server",
-                        "add_slb_service_group",
-                        "del_slb_server_port",
-                        "get_slb_service_group",
-                        "del_slb_virtual_server_port",
-                        "add_slb_server",
                         "list_slb_servers",
-                        "del_slb_server",
-                        "del_slb_service_group_member",
+                        "get_slb_virtual_server",
                         "add_slb_virtual_server_port",
+                        "del_slb_server_port",
                         "get_slb_server",
-                        "list_slb_virtual_servers",
-                        "add_slb_service_group_member",
-                        "del_slb_service_group",
-                        "add_slb_server_port",
-                        "del_slb_virtual_server",
-                        "get_slb_service_group_members",
+                        "add_slb_service_group",
                         "list_slb_service_groups",
-                        "add_slb_virtual_server"
+                        "get_slb_service_group_members",
+                        "add_slb_virtual_server",
+                        "del_slb_virtual_server",
+                        "get_slb_service_group",
+                        "add_slb_server",
+                        "add_slb_server_port",
+                        "add_slb_service_group_member",
+                        "del_slb_virtual_server_port",
+                        "list_slb_virtual_servers",
+                        "del_slb_service_group",
+                        "del_slb_service_group_member",
+                        "del_slb_server"
                     ]
                 },
                 "tests": {
                     "count": 3,
                     "resources": [
-                        "test_list_slb_servers.py",
                         "test_get_slb_server.py",
+                        "test_list_slb_servers.py",
                         "acos_base_action_test_case.py"
                     ]
                 }
