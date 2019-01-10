@@ -13,41 +13,41 @@ content:
   actions:
     count: 33
     resources:
-    - get_ipv4address
-    - get_member
-    - get_dns_view
     - get_fixedaddress_ipv6
-    - create_network
-    - restart_services
-    - get_cnamerecord
-    - create_ipv4ptrrecord
     - get_iprangev4
-    - get_ipv6address
-    - get_aaaarecord
-    - create_networkview
-    - get_object_detailed
-    - delete_object
-    - create_fixedaddress_ipv4
-    - create_fixedaddress_ipv4_in_network
-    - create_cnamerecord
-    - create_ipv6ptrrecord
-    - get_network
     - get_arecord
-    - get_ptrrecord
-    - get_ipv6network
-    - get_networkuser
-    - create_arecord
-    - create_fixedaddress_ipv6
     - get_fixedaddress_ipv4
-    - get_hostrecord
-    - get_networkview
-    - get_object
-    - get_eadefinition
-    - create_aaaarecord
+    - create_networkview
+    - get_dns_view
     - create_dns_auth_zone
+    - get_member
+    - get_ipv6network
+    - get_cnamerecord
+    - get_networkview
+    - get_aaaarecord
+    - get_network
+    - get_ipv6address
+    - create_fixedaddress_ipv4
+    - get_eadefinition
+    - create_ipv6ptrrecord
+    - create_fixedaddress_ipv6
+    - get_hostrecord
+    - get_networkuser
+    - delete_object
+    - create_ipv4ptrrecord
+    - restart_services
+    - get_object
+    - create_cnamerecord
+    - get_ipv4address
+    - create_arecord
+    - get_object_detailed
+    - create_aaaarecord
     - get_authuone
+    - create_network
+    - create_fixedaddress_ipv4_in_network
+    - get_ptrrecord
   tests:
     count: 2
     resources:
-    - test_action_restart_services.py
     - __init__.py
+    - test_action_restart_services.py
