@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547139893,
-        "hash": "f018fbc57cae75fa67d26d1aacaa2e69"
+        "generated_ts": 1547140490,
+        "hash": "25a79d294faa74c02356a457584db700"
     },
     "packs": {
         "acos": {
@@ -11551,15 +11551,15 @@
                 "actions": {
                     "count": 9,
                     "resources": [
-                        "list_builds",
-                        "enable_hook",
-                        "disable_hook",
-                        "get_repo",
                         "list_branches",
-                        "cancel_build",
+                        "restart_build",
+                        "disable_hook",
+                        "enable_hook",
                         "list_repos",
                         "list_hooks",
-                        "restart_build"
+                        "get_repo",
+                        "list_builds",
+                        "cancel_build"
                     ]
                 }
             },
@@ -11572,6 +11572,10 @@
                 "ci"
             ],
             "name": "Travis CI",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "travis_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-travis_ci",
             "version": "0.3.2"

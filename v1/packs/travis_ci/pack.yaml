@@ -7,18 +7,21 @@ keywords:
 - continuous integration
 - ci
 version: 0.3.2
+python_versions:
+- '2'
+- '3'
 author: Aamir
 email: raza.aamir01@gmail.com
 content:
   actions:
     count: 9
     resources:
-    - list_builds
-    - enable_hook
-    - disable_hook
-    - get_repo
     - list_branches
-    - cancel_build
+    - restart_build
+    - disable_hook
+    - enable_hook
     - list_repos
     - list_hooks
-    - restart_build
+    - get_repo
+    - list_builds
+    - cancel_build
