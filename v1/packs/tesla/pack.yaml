@@ -12,22 +12,22 @@ content:
   actions:
     count: 16
     resources:
-    - wake_vehicle
-    - open_charge_port_door
-    - list_vehicles
     - honk_horn
-    - charge_vehicle_max_range
-    - set_vehicle_sun_roof
-    - unlock_vehicle
-    - set_vehicle_temperature
-    - lock_vehicle
+    - list_vehicles
     - charge_vehicle
     - stop_vehicle_ac
+    - set_vehicle_sun_roof
+    - get_vehicle
     - flash_lights
+    - lock_vehicle
     - start_vehicle_ac
     - stop_vehicle_charge
-    - get_vehicle
     - start_vehicle_charge
+    - open_charge_port_door
+    - unlock_vehicle
+    - wake_vehicle
+    - charge_vehicle_max_range
+    - set_vehicle_temperature
   aliases:
     count: 2
     resources:
