@@ -17,28 +17,28 @@ content:
   actions:
     count: 22
     resources:
-    - create_user
-    - list_containers
-    - destroy_vm
-    - update_user_name
-    - delete_object
-    - list_container_objects
     - update_user_display_name
-    - reboot_vm
     - put_scaleset_size
-    - upload_file
-    - create_container
+    - update_user_password
+    - delete_object
+    - reboot_vm
     - list_resource_groups
     - list_public_ips
-    - delete_user
-    - get_scaleset_size
-    - create_resource
-    - user_enable
-    - create_vm
-    - create_linked_resource_url
-    - update_user_password
-    - list_vms
     - delete_container
+    - get_scaleset_size
+    - update_user_name
+    - create_user
+    - create_vm
+    - user_enable
+    - list_container_objects
+    - list_containers
+    - upload_file
+    - delete_user
+    - create_container
+    - list_vms
+    - create_resource
+    - destroy_vm
+    - create_linked_resource_url
   aliases:
     count: 2
     resources:

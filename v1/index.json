@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547157772,
-        "hash": "7a2563b51d8b1e534880d76d0613fd81"
+        "generated_ts": 1547159183,
+        "hash": "8d75a25f7f0e00f476c06451ea4170c4"
     },
     "packs": {
         "acos": {
@@ -4192,28 +4192,28 @@
                 "actions": {
                     "count": 22,
                     "resources": [
-                        "create_user",
-                        "list_containers",
-                        "destroy_vm",
-                        "update_user_name",
-                        "delete_object",
-                        "list_container_objects",
                         "update_user_display_name",
-                        "reboot_vm",
                         "put_scaleset_size",
-                        "upload_file",
-                        "create_container",
+                        "update_user_password",
+                        "delete_object",
+                        "reboot_vm",
                         "list_resource_groups",
                         "list_public_ips",
-                        "delete_user",
+                        "delete_container",
                         "get_scaleset_size",
-                        "create_resource",
-                        "user_enable",
+                        "update_user_name",
+                        "create_user",
                         "create_vm",
-                        "create_linked_resource_url",
-                        "update_user_password",
+                        "user_enable",
+                        "list_container_objects",
+                        "list_containers",
+                        "upload_file",
+                        "delete_user",
+                        "create_container",
                         "list_vms",
-                        "delete_container"
+                        "create_resource",
+                        "destroy_vm",
+                        "create_linked_resource_url"
                     ]
                 },
                 "aliases": {
