@@ -16,15 +16,15 @@ content:
     resources:
     - approve_change
     - assign_incident_to
+    - create_record
     - delete
-    - update
+    - get
+    - get_incidents_assigned_to
+    - get_non_structured
     - get_user
     - insert
-    - get_incidents_assigned_to
-    - create_record
-    - get_non_structured
     - set_incident_owner
-    - get
+    - update
   aliases:
     count: 3
     resources:

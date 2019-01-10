@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547160720,
-        "hash": "d8fb19c9da3744d15c566bb116232520"
+        "generated_ts": 1547160736,
+        "hash": "7ab893bdc6f50bdd755ba0cc859321b0"
     },
     "packs": {
         "acos": {
@@ -10979,15 +10979,15 @@
                     "resources": [
                         "approve_change",
                         "assign_incident_to",
+                        "create_record",
                         "delete",
-                        "update",
+                        "get",
+                        "get_incidents_assigned_to",
+                        "get_non_structured",
                         "get_user",
                         "insert",
-                        "get_incidents_assigned_to",
-                        "create_record",
-                        "get_non_structured",
                         "set_incident_owner",
-                        "get"
+                        "update"
                     ]
                 },
                 "aliases": {
