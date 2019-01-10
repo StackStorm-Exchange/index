@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547160420,
-        "hash": "0aa5d0a369a9e909513fe2a73e52ffd4"
+        "generated_ts": 1547160429,
+        "hash": "297e91fdd2ccd2d86e08c5fe8103b674"
     },
     "packs": {
         "acos": {
@@ -6524,10 +6524,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
+                        "import_keys",
                         "encrypt_file",
                         "list_keys",
-                        "decrypt_file",
-                        "import_keys"
+                        "decrypt_file"
                     ]
                 }
             },
