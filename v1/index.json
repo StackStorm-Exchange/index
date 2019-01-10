@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150828,
-        "hash": "0f68dd2ce1e7dd0a184ee7fa1dbf8c19"
+        "generated_ts": 1547150838,
+        "hash": "5ac3b99ec46e6379a0ba408872afa63e"
     },
     "packs": {
         "acos": {
@@ -6553,20 +6553,20 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "icsp_server_attribute_add",
-                        "icsp_servers_get",
-                        "icsp_server_delete",
-                        "icsp_ids_to_os",
-                        "icsp_multi_server_attribute_add",
-                        "icsp_ca_get",
-                        "icsp_job_status_get",
                         "icsp_server_details_get",
-                        "icsp_server_attributes_get",
-                        "icsp_server_data_format",
-                        "icsp_mid_get",
+                        "icsp_server_delete",
+                        "icsp_ca_get",
+                        "icsp_multi_server_attribute_add",
+                        "icsp_servers_get",
                         "icsp_server_attribute_del",
+                        "icsp_server_data_format",
                         "icsp_buildplan_apply",
-                        "icsp_buildplan_get"
+                        "icsp_ids_to_os",
+                        "icsp_server_attribute_add",
+                        "icsp_server_attributes_get",
+                        "icsp_buildplan_get",
+                        "icsp_mid_get",
+                        "icsp_job_status_get"
                     ]
                 }
             },
