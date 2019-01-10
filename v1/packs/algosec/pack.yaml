@@ -16,66 +16,66 @@ content:
   actions:
     count: 57
     resources:
-    - afa_get_members_by_device
-    - fireflow_get_ticket
-    - afa_delete_user
-    - afa_connect
-    - afa_get_configuration
-    - afa_get_containing_objects
-    - afa_create_domain
-    - afa_edit_rule_documentation
-    - afa_get_groups_list
-    - afa_get_devices_list
-    - afa_get_device_statistics
-    - afa_get_parent_device
-    - fireflow_add_object_custom_field
-    - afa_query
-    - afa_is_session_alive
-    - afa_create_user
-    - afa_get_rule_documentation
-    - afa_delete_scheduler_job
-    - afa_get_nat_discovery
-    - afa_get_hostgroups_by_device
-    - fireflow_get_fields
-    - fireflow_delete_object_custom_field
-    - afa_search_rule
-    - afa_delete_device
-    - fireflow_is_session_alive
-    - afa_get_service_by_name_and_device
-    - afa_get_rules_by_device
-    - afa_get_entity_id
-    - afa_set_configuration
-    - afa_get_all_hostgroups
-    - afa_get_services_by_device
-    - fireflow_authenticate
-    - fireflow_get_template_fields
-    - afa_create_device_group
-    - afa_update_role
-    - afa_get_all_services
-    - afa_device_changes_over_time_report
-    - afa_set_scheduler_job
-    - afa_get_unused_rules
-    - afa_start_analysis
-    - afa_disconnect
     - afa_create_role
-    - afa_import_risks_from_spreadsheet
-    - afa_get_report_pdf
-    - afa_get_hostgroup_by_name_and_device
-    - afa_search_object_by_ip
+    - afa_search_rule
     - afa_add_device_to_group
-    - afa_risks_summary
+    - afa_search_object_by_ip
     - afa_update_user
-    - afa_create_device
     - afa_get_group_content
+    - fireflow_authenticate
+    - afa_get_members_by_device
+    - afa_delete_user
+    - afa_device_changes_over_time_report
+    - afa_get_services_by_device
+    - afa_get_rule_documentation
+    - afa_update_role
+    - afa_get_devices_list
+    - afa_get_unused_rules
+    - afa_create_device_group
+    - afa_get_device_statistics
+    - fireflow_get_fields
+    - afa_is_session_alive
+    - afa_disconnect
+    - fireflow_is_session_alive
     - afa_get_license
-    - fireflow_update_object_custom_field
-    - afa_delete_role
-    - afa_get_entity_name
-    - afa_import_risks_from_xml
+    - afa_set_scheduler_job
+    - afa_create_domain
+    - afa_query
     - fireflow_create_ticket
+    - afa_get_hostgroups_by_device
+    - fireflow_get_template_fields
+    - afa_get_configuration
+    - afa_edit_rule_documentation
+    - afa_import_risks_from_xml
+    - afa_get_hostgroup_by_name_and_device
+    - afa_get_groups_list
+    - afa_get_all_services
+    - afa_import_risks_from_spreadsheet
+    - afa_get_all_hostgroups
+    - afa_delete_role
+    - afa_create_user
+    - fireflow_update_object_custom_field
+    - afa_get_nat_discovery
+    - afa_get_rules_by_device
+    - afa_get_entity_name
+    - afa_delete_scheduler_job
+    - afa_start_analysis
+    - afa_set_configuration
+    - afa_get_containing_objects
+    - afa_get_report_pdf
+    - afa_get_entity_id
+    - fireflow_get_ticket
+    - fireflow_delete_object_custom_field
+    - afa_connect
+    - afa_get_service_by_name_and_device
+    - afa_risks_summary
+    - afa_delete_device
+    - fireflow_add_object_custom_field
+    - afa_get_parent_device
+    - afa_create_device
   tests:
     count: 3
     resources:
-    - test_action_lib_run_operation.py
-    - algosec_base_action_test_case.py
     - test_action_lib_run_login.py
+    - algosec_base_action_test_case.py
+    - test_action_lib_run_operation.py
