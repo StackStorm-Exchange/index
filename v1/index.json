@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150720,
-        "hash": "a92807e88e3b30059adbf736cef0b2d0"
+        "generated_ts": 1547150727,
+        "hash": "d1c9f42bc29773adf4932a89d59af262"
     },
     "packs": {
         "acos": {
@@ -5172,9 +5172,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "pull_image",
+                        "build_image",
                         "push_image",
-                        "build_image"
+                        "pull_image"
                     ]
                 },
                 "sensors": {
