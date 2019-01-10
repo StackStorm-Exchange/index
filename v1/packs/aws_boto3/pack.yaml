@@ -28,15 +28,15 @@ content:
   actions:
     count: 6
     resources:
-    - create_vpc
-    - waiter
     - assume_role
-    - create_instance
+    - create_vpc
     - create_vpc_assume_role
+    - waiter
     - boto3action
+    - create_instance
   tests:
     count: 3
     resources:
-    - test_action_boto3action.py
-    - test_action_waiter.py
     - test_action_assume_role.py
+    - test_action_waiter.py
+    - test_action_boto3action.py
