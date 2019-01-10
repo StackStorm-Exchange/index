@@ -12,11 +12,11 @@ content:
   rules:
     count: 6
     resources:
+    - check_load_procs
     - check_load_procd
+    - send_mail
     - notify_chat
     - check_proc
-    - check_load_procs
-    - send_mail
     - check_load
   tests:
     count: 1
