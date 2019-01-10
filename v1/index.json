@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547160678,
-        "hash": "7c2d3e4a3a728570566ff8cf1fe9b072"
+        "generated_ts": 1547160698,
+        "hash": "b2699dc0e6e6fc69a287217d4550b76e"
     },
     "packs": {
         "acos": {
@@ -10485,15 +10485,15 @@
                 "actions": {
                     "count": 9,
                     "resources": [
+                        "apply",
                         "cert_clean",
-                        "epp_render_remote",
-                        "lookup_remote",
-                        "run_agent",
-                        "cert_sign",
-                        "lookup",
                         "cert_revoke",
+                        "cert_sign",
                         "epp_render",
-                        "apply"
+                        "epp_render_remote",
+                        "lookup",
+                        "lookup_remote",
+                        "run_agent"
                     ]
                 }
             },
