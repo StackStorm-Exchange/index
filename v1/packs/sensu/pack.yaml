@@ -6,31 +6,34 @@ keywords:
 - monitoring
 - alerting
 version: 0.5.2
+python_versions:
+- '2'
+- '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 19
     resources:
-    - check_info
-    - unsilence
     - client_delete
-    - check_list
-    - check_request
-    - event_info
+    - client_list
+    - client_info
+    - event_list
+    - unsilence
     - aggregate_list
+    - check_list
+    - silence
+    - event_resolve
+    - event_info
     - event_delete
+    - check_aggregates
+    - info
+    - health
+    - check_request
+    - event_client_list
     - check_aggregates_delete
     - client_history
-    - silence
-    - check_aggregates
-    - client_info
-    - client_list
-    - health
-    - info
-    - event_list
-    - event_resolve
-    - event_client_list
+    - check_info
   rules:
     count: 2
     resources:
