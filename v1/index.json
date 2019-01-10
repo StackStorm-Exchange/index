@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547160237,
-        "hash": "c7d8d9a9a85d3a0d51353974189af42c"
+        "generated_ts": 1547160268,
+        "hash": "6c5404da8bd7b73b04a0c3556af44863"
     },
     "packs": {
         "acos": {
@@ -4580,21 +4580,21 @@
                 "actions": {
                     "count": 15,
                     "resources": [
-                        "create_static_binding",
-                        "get_bds",
-                        "get_static_bindings",
-                        "link_domain",
-                        "get_aps",
-                        "create_bd",
-                        "get_sessionid",
-                        "setup_epg",
-                        "create_ap",
-                        "create_epg",
-                        "get_epgs",
-                        "get_assigned_ports",
                         "get_vrfs",
-                        "test_endpoint",
-                        "get_tenants"
+                        "get_assigned_ports",
+                        "setup_epg",
+                        "get_bds",
+                        "create_bd",
+                        "create_epg",
+                        "get_static_bindings",
+                        "get_sessionid",
+                        "create_static_binding",
+                        "get_tenants",
+                        "create_ap",
+                        "get_epgs",
+                        "get_aps",
+                        "link_domain",
+                        "test_endpoint"
                     ]
                 },
                 "rules": {
@@ -4606,21 +4606,21 @@
                 "tests": {
                     "count": 15,
                     "resources": [
-                        "test_action_create_epg.py",
-                        "test_action_test_endpoint.py",
-                        "test_action_get_epgs.py",
-                        "test_action_create_static_binding.py",
-                        "test_action_get_aps.py",
-                        "test_action_link_domain.py",
-                        "test_action_get_bds.py",
-                        "test_action_get_assigned_ports.py",
-                        "test_action_get_static_bindings.py",
-                        "test_action_get_tenants.py",
-                        "test_action_create_bd.py",
                         "test_action_get_vrfs.py",
-                        "test_action_get_sessionid.py",
+                        "test_action_create_bd.py",
+                        "test_action_get_assigned_ports.py",
+                        "test_action_get_tenants.py",
+                        "aci_base_action_test_case.py",
+                        "test_action_get_static_bindings.py",
+                        "test_action_link_domain.py",
+                        "test_action_create_static_binding.py",
+                        "test_action_get_epgs.py",
                         "test_action_create_ap.py",
-                        "aci_base_action_test_case.py"
+                        "test_action_get_sessionid.py",
+                        "test_action_get_bds.py",
+                        "test_action_get_aps.py",
+                        "test_action_create_epg.py",
+                        "test_action_test_endpoint.py"
                     ]
                 }
             },
