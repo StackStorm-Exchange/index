@@ -7,9 +7,9 @@ content:
   actions:
     count: 4
     resources:
-    - get_sunset
-    - get_dusk
     - get_dawn
+    - get_dusk
+    - get_sunset
     - get_sunrise
   sensors:
     count: 1
