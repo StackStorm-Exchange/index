@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547149409,
-        "hash": "dadc7afa2784bce422b1bec3ed624368"
+        "generated_ts": 1547150567,
+        "hash": "cdd6938a280b62a96028b3b4a95f2d8b"
     },
     "packs": {
         "acos": {
@@ -4192,35 +4192,35 @@
                 "actions": {
                     "count": 22,
                     "resources": [
-                        "user_enable",
-                        "destroy_vm",
-                        "list_resource_groups",
                         "create_user",
-                        "delete_user",
-                        "list_public_ips",
-                        "list_container_objects",
-                        "get_scaleset_size",
-                        "update_user_display_name",
-                        "create_container",
-                        "reboot_vm",
-                        "delete_object",
                         "list_containers",
+                        "destroy_vm",
+                        "update_user_name",
+                        "delete_object",
+                        "list_container_objects",
+                        "update_user_display_name",
+                        "reboot_vm",
+                        "put_scaleset_size",
+                        "upload_file",
+                        "create_container",
+                        "list_resource_groups",
+                        "list_public_ips",
+                        "delete_user",
+                        "get_scaleset_size",
+                        "create_resource",
+                        "user_enable",
+                        "create_vm",
+                        "create_linked_resource_url",
                         "update_user_password",
                         "list_vms",
-                        "delete_container",
-                        "create_vm",
-                        "create_resource",
-                        "create_linked_resource_url",
-                        "upload_file",
-                        "update_user_name",
-                        "put_scaleset_size"
+                        "delete_container"
                     ]
                 },
                 "aliases": {
                     "count": 2,
                     "resources": [
-                        "get_scale_size",
-                        "put_scale_size"
+                        "put_scale_size",
+                        "get_scale_size"
                     ]
                 }
             },
