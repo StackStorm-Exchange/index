@@ -12,10 +12,10 @@ content:
   actions:
     count: 7
     resources:
+    - set_active
     - add_user_to_group
     - set_user_attribute
-    - get_user
     - check_user
-    - add_user
-    - set_active
+    - get_user
     - get_groups
+    - add_user
