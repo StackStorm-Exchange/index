@@ -15,8 +15,8 @@ content:
   actions:
     count: 3
     resources:
-    - list_devices
     - get_measurements
+    - list_devices
     - get_device
   rules:
     count: 1
