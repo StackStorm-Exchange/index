@@ -8,18 +8,21 @@ keywords:
 - sql server
 - database
 version: 0.2.1
+python_versions:
+- '2'
+- '3'
 author: codyaray
 email: talktome@codyaray.com
 content:
   actions:
     count: 6
     resources:
-    - execute.row
-    - execute.query
-    - execute.insert
-    - execute.non_query
-    - execute.scalar
     - execute.query_and_email
+    - execute.insert
+    - execute.row
+    - execute.non_query
+    - execute.query
+    - execute.scalar
   tests:
     count: 1
     resources:

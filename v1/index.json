@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547114413,
-        "hash": "9642b578f339542ac667b8d5ea861ea6"
+        "generated_ts": 1547114615,
+        "hash": "6d51a4dd07ad3cf486e0afa37cba59b4"
     },
     "packs": {
         "acos": {
@@ -8322,12 +8322,12 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "execute.row",
-                        "execute.query",
+                        "execute.query_and_email",
                         "execute.insert",
+                        "execute.row",
                         "execute.non_query",
-                        "execute.scalar",
-                        "execute.query_and_email"
+                        "execute.query",
+                        "execute.scalar"
                     ]
                 },
                 "tests": {
@@ -8347,6 +8347,10 @@
                 "database"
             ],
             "name": "mssql",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "mssql",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mssql",
             "version": "0.2.1"
