@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547120610,
-        "hash": "24e430776d868d5d3437866b33eb8362"
+        "generated_ts": 1547120839,
+        "hash": "b943eb7374227a85dfba3d5488d262bf"
     },
     "packs": {
         "acos": {
@@ -10529,15 +10529,15 @@
                 "actions": {
                     "count": 9,
                     "resources": [
-                        "get_host",
-                        "get_host_range",
                         "list_scans",
-                        "launch_scan",
-                        "list_hosts_not_scanned_since",
                         "get_report",
+                        "get_host",
                         "add_host",
+                        "get_host_range",
+                        "launch_scan",
+                        "add_hosts",
                         "list_reports",
-                        "add_hosts"
+                        "list_hosts_not_scanned_since"
                     ]
                 }
             },
@@ -10548,6 +10548,10 @@
                 "qualys"
             ],
             "name": "qualys",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "qualys",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-qualys",
             "version": "1.0.2"
