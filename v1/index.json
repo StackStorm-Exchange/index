@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547147208,
-        "hash": "cb520a6416a7e175d3f22833939f0c74"
+        "generated_ts": 1547147444,
+        "hash": "3e083e0c2d037058598593058683e3c2"
     },
     "packs": {
         "acos": {
@@ -475,10 +475,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
+                        "get_sunset",
                         "get_dusk",
                         "get_dawn",
-                        "get_sunrise",
-                        "get_sunset"
+                        "get_sunrise"
                     ]
                 },
                 "sensors": {
