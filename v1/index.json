@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547116658,
-        "hash": "f281f2367ef4250ee7ef44bd7a2a3edb"
+        "generated_ts": 1547116915,
+        "hash": "6cb2aa01dc24e1f99c06f942e2eec0cf"
     },
     "packs": {
         "acos": {
@@ -8982,34 +8982,34 @@
                 "actions": {
                     "count": 9,
                     "resources": [
-                        "ping",
-                        "is_valid_ipv4",
-                        "geoip",
-                        "is_valid_asa_nameif",
-                        "is_valid_ip",
-                        "is_valid_hostname",
                         "is_valid_ipv6",
+                        "geoip",
+                        "is_valid_ipv4",
+                        "ping",
+                        "is_valid_ip",
                         "ping_py",
+                        "is_valid_asa_nameif",
+                        "is_valid_hostname",
                         "is_valid_ip_port"
                     ]
                 },
                 "aliases": {
                     "count": 2,
                     "resources": [
-                        "ping",
-                        "geoip"
+                        "geoip",
+                        "ping"
                     ]
                 },
                 "tests": {
                     "count": 8,
                     "resources": [
-                        "networking_utils_base_test_case.py",
-                        "test_action_is_valid_asa_nameif.py",
-                        "test_action_is_valid_ip_port.py",
                         "test_action_is_valid_hostname.py",
+                        "networking_utils_base_test_case.py",
                         "test_action_geoip.py",
                         "test_action_is_valid_ip.py",
                         "test_action_aliases.py",
+                        "test_action_is_valid_asa_nameif.py",
+                        "test_action_is_valid_ip_port.py",
                         "test_action_ping.py"
                     ]
                 }
@@ -9025,6 +9025,10 @@
                 "ping"
             ],
             "name": "networking_utils",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
             "version": "0.4.6"
