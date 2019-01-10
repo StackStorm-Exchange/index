@@ -7,12 +7,15 @@ keywords:
 - smart home
 - home automation
 version: 0.2.2
+python_versions:
+- '2'
+- '3'
 author: James Fryman
 email: james@stackstorm.com
 content:
   actions:
     count: 3
     resources:
+    - send_command
     - get_status
     - set_state
-    - send_command

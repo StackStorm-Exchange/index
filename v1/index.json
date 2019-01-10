@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547116915,
-        "hash": "6cb2aa01dc24e1f99c06f942e2eec0cf"
+        "generated_ts": 1547117349,
+        "hash": "49bfb54a849ead3e3c7e74cd4d0e0a0d"
     },
     "packs": {
         "acos": {
@@ -9189,9 +9189,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
+                        "send_command",
                         "get_status",
-                        "set_state",
-                        "send_command"
+                        "set_state"
                     ]
                 }
             },
@@ -9204,6 +9204,10 @@
                 "home automation"
             ],
             "name": "openhab",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "openhab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openhab",
             "version": "0.2.2"
