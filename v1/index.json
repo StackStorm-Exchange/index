@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547151269,
-        "hash": "86dbb2151112beb694567c48da01c0b0"
+        "generated_ts": 1547151288,
+        "hash": "f97df4613923b149747fc0248f014b56"
     },
     "packs": {
         "acos": {
@@ -11259,10 +11259,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "create_keypair",
-                        "destroy_instance",
                         "create_instance",
-                        "delete_keypair"
+                        "delete_keypair",
+                        "create_keypair",
+                        "destroy_instance"
                     ]
                 }
             },
