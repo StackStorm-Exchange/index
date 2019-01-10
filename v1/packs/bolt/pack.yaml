@@ -14,26 +14,26 @@ content:
   actions:
     count: 11
     resources:
-    - plan_list
-    - plan_show
-    - puppetfile_install
     - file_upload
     - plan_run
-    - task_show
-    - install
-    - task_run
-    - command_run
+    - puppetfile_install
     - task_list
     - script_run
+    - install
+    - task_show
+    - task_run
+    - plan_list
+    - command_run
+    - plan_show
   aliases:
     count: 6
     resources:
-    - plan_list
-    - plan_show
+    - task_list
     - task_show
     - task_run
+    - plan_list
     - command_run
-    - task_list
+    - plan_show
   tests:
     count: 2
     resources:
