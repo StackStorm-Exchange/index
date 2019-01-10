@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150930,
-        "hash": "5f4e7ecc498c0d0a6dde78f2d3893817"
+        "generated_ts": 1547150943,
+        "hash": "3b8a40f249131b05364e546a9636187d"
     },
     "packs": {
         "acos": {
@@ -8190,10 +8190,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "get_task_results",
                         "get_workbook_definition",
                         "kill_workflow",
-                        "get_workflow_results"
+                        "get_workflow_results",
+                        "get_task_results"
                     ]
                 }
             },
