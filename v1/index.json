@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547160484,
-        "hash": "80aeca952149b49ca24d2c4bab0234be"
+        "generated_ts": 1547160509,
+        "hash": "3a093217ec22fab6e7539c351225d3a6"
     },
     "packs": {
         "acos": {
@@ -7269,36 +7269,36 @@
                 "actions": {
                     "count": 30,
                     "resources": [
-                        "get_groups",
-                        "group_remove_user",
-                        "create_authentication_flow",
-                        "delete_user",
-                        "delete_client",
-                        "get_client_roles",
-                        "get_server_info",
-                        "create_user",
-                        "assign_client_role",
-                        "get_client",
-                        "create_client_role",
-                        "get_client_role_id",
-                        "get_idps",
-                        "get_user_id",
                         "get_clients",
+                        "create_authentication_flow",
                         "get_roles",
-                        "delete_client_role",
                         "update_authentication_flow_executions",
-                        "create_group",
-                        "get_group",
-                        "get_authentication_flow_executions",
-                        "get_client_id",
-                        "get_authentication_flows",
-                        "delete_group",
-                        "update_user",
-                        "set_group_permisssions",
-                        "get_user",
+                        "delete_user",
+                        "get_idps",
+                        "create_user",
+                        "get_server_info",
                         "create_client",
+                        "create_client_role",
                         "group_add_user",
-                        "get_group_by_path"
+                        "delete_client",
+                        "get_groups",
+                        "delete_group",
+                        "get_group_by_path",
+                        "get_authentication_flow_executions",
+                        "get_client_roles",
+                        "get_group",
+                        "group_remove_user",
+                        "set_group_permisssions",
+                        "delete_client_role",
+                        "get_client",
+                        "get_user_id",
+                        "create_group",
+                        "get_authentication_flows",
+                        "update_user",
+                        "get_client_id",
+                        "assign_client_role",
+                        "get_client_role_id",
+                        "get_user"
                     ]
                 }
             },
