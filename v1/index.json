@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547160873,
-        "hash": "696c4a1033ab94711ff1ecd2349b334d"
+        "generated_ts": 1547160883,
+        "hash": "02ea229a07dd3c25b07f88517a7f115c"
     },
     "packs": {
         "acos": {
@@ -12566,35 +12566,35 @@
                 "actions": {
                     "count": 11,
                     "resources": [
-                        "test_credentials",
+                        "ack_event",
                         "host_delete",
                         "host_delete_by_id",
-                        "host_update_status",
                         "host_get_id",
+                        "host_get_inventory",
                         "host_get_multiple_ids",
-                        "maintenance_create_or_update",
                         "host_get_status",
+                        "host_update_status",
+                        "maintenance_create_or_update",
                         "maintenance_delete",
-                        "ack_event",
-                        "host_get_inventory"
+                        "test_credentials"
                     ]
                 },
                 "tests": {
                     "count": 13,
                     "resources": [
-                        "zabbix_base_action_test_case.py",
-                        "test_host_delete.py",
-                        "test_host_update_status.py",
-                        "test_host_get_multiple_ids.py",
                         "test_action_base.py",
-                        "test_host_get_status.py",
-                        "test_test_credentials.py",
-                        "test_host_get_inventory.py",
-                        "test_tool_register_st2_config_to_zabbix.py",
+                        "test_host_delete.py",
                         "test_host_get_id.py",
-                        "test_maintenance_delete.py",
+                        "test_host_get_inventory.py",
+                        "test_host_get_multiple_ids.py",
+                        "test_host_get_status.py",
+                        "test_host_update_status.py",
                         "test_maintenance_create_or_update.py",
-                        "test_tool_st2_dispatch.py"
+                        "test_maintenance_delete.py",
+                        "test_test_credentials.py",
+                        "test_tool_register_st2_config_to_zabbix.py",
+                        "test_tool_st2_dispatch.py",
+                        "zabbix_base_action_test_case.py"
                     ]
                 },
                 "triggers": {
