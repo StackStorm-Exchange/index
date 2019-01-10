@@ -12,16 +12,16 @@ content:
   actions:
     count: 13
     resources:
-    - brightness
-    - 'on'
-    - current_state
-    - list_bulbs
-    - xy
-    - color_temp_kelvin
-    - toggle
-    - rgb
     - color_temp_mired
     - set_state
-    - 'off'
-    - find_id_by_name
     - alert
+    - find_id_by_name
+    - list_bulbs
+    - 'off'
+    - brightness
+    - xy
+    - rgb
+    - color_temp_kelvin
+    - 'on'
+    - current_state
+    - toggle
