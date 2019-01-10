@@ -11,10 +11,10 @@ content:
   actions:
     count: 4
     resources:
-    - scan_get_results
-    - scan_list_scans
     - scan_list_scan_executions
     - scan_get_results_by_title
+    - scan_get_results
+    - scan_list_scans
   aliases:
     count: 3
     resources:
