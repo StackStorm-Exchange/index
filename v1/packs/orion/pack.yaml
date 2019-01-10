@@ -14,73 +14,73 @@ content:
   actions:
     count: 26
     resources:
+    - start_discovery
+    - nodes_pollnow
+    - get_agent_id
+    - get_node_custom_property
     - update_node_custom_properties
-    - get_discovery_progress
-    - ncm_execute_script
-    - list_sdk_verbs
-    - ncm_config_download
-    - add_node_to_ncm
-    - node_remanage
-    - list_nodes_by_poller
+    - agent_delete
     - list_sdk_verb_args
-    - update_node_poller
-    - list_node_custom_properties
+    - get_node_software_inventory
+    - node_unmanage
+    - ncm_execute_script
+    - query
+    - get_node_id
     - node_status
     - node_create
-    - get_agent_id
-    - get_node_id
-    - drain_poller
-    - start_discovery
-    - get_node_custom_property
-    - node_delete
-    - agent_delete
-    - node_unmanage
-    - get_node_software_inventory
-    - nodes_pollnow
-    - list_nodes_by_status
-    - query
+    - add_node_to_ncm
     - node_discover_and_add_interfaces
+    - get_discovery_progress
+    - node_delete
+    - list_nodes_by_poller
+    - list_node_custom_properties
+    - list_nodes_by_status
+    - node_remanage
+    - update_node_poller
+    - drain_poller
+    - ncm_config_download
+    - list_sdk_verbs
   aliases:
     count: 7
     resources:
-    - list_sdk_verbs
-    - ncm_config_download
+    - start_discovery
     - list_sdk_verb_args
-    - list_node_custom_properties
     - node_status
     - node_create
-    - start_discovery
+    - list_node_custom_properties
+    - ncm_config_download
+    - list_sdk_verbs
   rules:
     count: 2
     resources:
-    - start_discovery_webhook
     - node_create_webhook
+    - start_discovery_webhook
   tests:
     count: 26
     resources:
-    - test_action_node_unmanage.py
-    - test_action_start_discovery.py
-    - test_action_node_discover_and_add_interfaces.py
-    - test_action_get_agent_id.py
+    - test_action_query.py
+    - test_action_get_discovery_progress.py
+    - test_action_update_node_poller.py
+    - test_action_get_node_software_inventory.py
+    - test_action_orion_health.py
     - test_action_list_node_custom_properties.py
     - test_action_node_status.py
-    - test_action_node_delete.py
-    - test_action_orion_health.py
-    - test_action_update_node_custom_properties.py
-    - test_action_node_create.py
-    - test_action_aliases.py
-    - orion_base_action_test_case.py
-    - test_action_ncm_execute_script.py
-    - test_action_add_node_to_ncm.py
-    - test_action_list_sdk_verb_args.py
-    - test_action_nodes_pollnow.py
-    - test_action_query.py
-    - test_action_update_node_poller.py
-    - test_action_get_discovery_progress.py
-    - test_action_list_sdk_verbs.py
-    - test_action_get_node_software_inventory.py
-    - test_action_node_remanage.py
-    - test_action_ncm_config_download.py
-    - test_action_get_node_custom_property.py
-    - test_action_get_node_id.py
     - test_action_agent_delete.py
+    - test_action_node_create.py
+    - test_action_list_sdk_verb_args.py
+    - test_action_node_unmanage.py
+    - test_action_get_node_custom_property.py
+    - test_action_start_discovery.py
+    - test_action_get_agent_id.py
+    - test_action_nodes_pollnow.py
+    - test_action_list_sdk_verbs.py
+    - test_action_node_discover_and_add_interfaces.py
+    - test_action_node_delete.py
+    - orion_base_action_test_case.py
+    - test_action_add_node_to_ncm.py
+    - test_action_ncm_config_download.py
+    - test_action_get_node_id.py
+    - test_action_update_node_custom_properties.py
+    - test_action_node_remanage.py
+    - test_action_ncm_execute_script.py
+    - test_action_aliases.py
