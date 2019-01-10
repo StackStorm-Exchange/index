@@ -13,24 +13,24 @@ content:
   actions:
     count: 19
     resources:
-    - list_slb_servers
-    - get_slb_virtual_server
+    - get_slb_service_group
     - add_slb_virtual_server_port
-    - del_slb_server_port
-    - get_slb_server
-    - add_slb_service_group
     - list_slb_service_groups
+    - del_slb_server_port
+    - list_slb_servers
+    - del_slb_virtual_server_port
+    - add_slb_server_port
+    - del_slb_virtual_server
+    - del_slb_service_group_member
+    - get_slb_server
+    - add_slb_service_group_member
+    - del_slb_service_group
+    - add_slb_service_group
+    - list_slb_virtual_servers
     - get_slb_service_group_members
     - add_slb_virtual_server
-    - del_slb_virtual_server
-    - get_slb_service_group
     - add_slb_server
-    - add_slb_server_port
-    - add_slb_service_group_member
-    - del_slb_virtual_server_port
-    - list_slb_virtual_servers
-    - del_slb_service_group
-    - del_slb_service_group_member
+    - get_slb_virtual_server
     - del_slb_server
   tests:
     count: 3
