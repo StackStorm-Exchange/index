@@ -8,9 +8,9 @@ content:
   actions:
     count: 6
     resources:
+    - list_metrics
+    - submit_counter
+    - add_annotation
     - get_metric
     - submit_gauge
     - delete_metric
-    - submit_counter
-    - list_metrics
-    - add_annotation

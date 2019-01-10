@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150910,
-        "hash": "1666b0f574032f83501f78a9621fdcef"
+        "generated_ts": 1547150922,
+        "hash": "e8c01083f383ceac9807ccf879646215"
     },
     "packs": {
         "acos": {
@@ -7841,12 +7841,12 @@
                 "actions": {
                     "count": 6,
                     "resources": [
+                        "list_metrics",
+                        "submit_counter",
+                        "add_annotation",
                         "get_metric",
                         "submit_gauge",
-                        "delete_metric",
-                        "submit_counter",
-                        "list_metrics",
-                        "add_annotation"
+                        "delete_metric"
                     ]
                 }
             },
