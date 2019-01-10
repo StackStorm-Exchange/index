@@ -9,7 +9,7 @@ content:
   actions:
     count: 4
     resources:
-    - pipeline.trigger
-    - pipeline.list
     - issue.info
     - project.info
+    - pipeline.trigger
+    - pipeline.list

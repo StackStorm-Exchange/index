@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150804,
-        "hash": "ca70e2f8795aecf4ac4766bd7df99994"
+        "generated_ts": 1547150817,
+        "hash": "0143e4f54543867eed0a730f8ec01c4b"
     },
     "packs": {
         "acos": {
@@ -6474,10 +6474,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "pipeline.trigger",
-                        "pipeline.list",
                         "issue.info",
-                        "project.info"
+                        "project.info",
+                        "pipeline.trigger",
+                        "pipeline.list"
                     ]
                 }
             },
