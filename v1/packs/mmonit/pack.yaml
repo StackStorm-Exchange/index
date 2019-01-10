@@ -14,24 +14,24 @@ content:
   actions:
     count: 18
     resources:
-    - dismiss_event
-    - get_host
-    - get_status_host
-    - list_status_hosts
     - list_events
+    - session_delete
+    - delete_host
+    - get_event
+    - summary_status
+    - session_get
+    - action_host
+    - dismiss_event
     - get_uptime_hosts
     - test_connection_to_host
-    - summary_events
-    - summary_status
-    - delete_host
-    - session_get
-    - list_hosts
     - update_host
-    - session_delete
-    - action_host
-    - get_event
+    - get_host
     - list_uptime_hosts
+    - list_status_hosts
+    - list_hosts
+    - summary_events
     - session_put
+    - get_status_host
   sensors:
     count: 1
     resources:
