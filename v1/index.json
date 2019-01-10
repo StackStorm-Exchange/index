@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547151385,
-        "hash": "1b8e1f8f90f45c970be3695e281122b6"
+        "generated_ts": 1547151397,
+        "hash": "1c9e420b052fb7c34778089de537a871"
     },
     "packs": {
         "acos": {
@@ -11923,22 +11923,22 @@
                 "actions": {
                     "count": 16,
                     "resources": [
-                        "setup_org_admin_vdc_vdcnetwork",
+                        "deploy_vapp_template",
                         "get_vsphere",
+                        "get_orgs",
+                        "setup_org_admin_vdc_vdcnetwork",
+                        "create_org_admin",
+                        "get_extnet",
+                        "create_vdc_network",
+                        "get_vapp",
                         "get_org_ids",
                         "get_vdc",
-                        "get_orgs",
-                        "deploy_vapp_template",
-                        "create_org",
-                        "create_org_admin",
-                        "create_ext_network",
-                        "get_org",
                         "get_vsnetworks",
-                        "get_extnet",
-                        "create_vdc",
-                        "create_vdc_network",
+                        "create_org",
+                        "get_org",
                         "get_pvdcs",
-                        "get_vapp"
+                        "create_ext_network",
+                        "create_vdc"
                     ]
                 },
                 "rules": {
@@ -11950,21 +11950,21 @@
                 "tests": {
                     "count": 15,
                     "resources": [
-                        "test_action_get_org_ids.py",
-                        "test_action_create_vdc.py",
                         "test_action_create_ext_network.py",
-                        "test_action_get_extnet.py",
-                        "test_action_create_org.py",
-                        "test_action_get_orgs.py",
-                        "test_action_get_pvdcs.py",
-                        "test_action_get_vapp.py",
-                        "test_action_create_org_admin.py",
-                        "vcd_base_action_test_case.py",
+                        "test_action_create_vdc.py",
                         "test_action_get_vdc.py",
-                        "test_action_create_vdc_network.py",
+                        "test_action_create_org.py",
+                        "vcd_base_action_test_case.py",
                         "test_action_get_vsnetworks.py",
+                        "test_action_get_vapp.py",
+                        "test_action_get_org_ids.py",
+                        "test_action_create_org_admin.py",
+                        "test_action_get_vsphere.py",
                         "test_action_get_org.py",
-                        "test_action_get_vsphere.py"
+                        "test_action_get_extnet.py",
+                        "test_action_get_orgs.py",
+                        "test_action_create_vdc_network.py",
+                        "test_action_get_pvdcs.py"
                     ]
                 }
             },
