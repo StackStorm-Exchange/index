@@ -13,10 +13,10 @@ content:
   actions:
     count: 6
     resources:
-    - run_build
     - get_build_number
-    - get_build_info
     - retry_build
+    - get_build_info
+    - run_build
     - wait_until_build_finishes
     - cancel_build
   sensors:
@@ -26,5 +26,5 @@ content:
   tests:
     count: 2
     resources:
-    - test_wait_until_build_finishes.py
     - test_get_build_number_action.py
+    - test_wait_until_build_finishes.py

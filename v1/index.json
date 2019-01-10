@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150622,
-        "hash": "e07a364e32d6c1875520f86b2af617f3"
+        "generated_ts": 1547150632,
+        "hash": "3dac4e03607e011329063ec8bfa71949"
     },
     "packs": {
         "acos": {
@@ -4536,10 +4536,10 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "run_build",
                         "get_build_number",
-                        "get_build_info",
                         "retry_build",
+                        "get_build_info",
+                        "run_build",
                         "wait_until_build_finishes",
                         "cancel_build"
                     ]
@@ -4553,8 +4553,8 @@
                 "tests": {
                     "count": 2,
                     "resources": [
-                        "test_wait_until_build_finishes.py",
-                        "test_get_build_number_action.py"
+                        "test_get_build_number_action.py",
+                        "test_wait_until_build_finishes.py"
                     ]
                 }
             },
