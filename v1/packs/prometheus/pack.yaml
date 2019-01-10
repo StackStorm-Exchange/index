@@ -15,6 +15,6 @@ content:
   actions:
     count: 3
     resources:
-    - series
-    - query
     - alert.aggregation
+    - query
+    - series
