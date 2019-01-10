@@ -13,18 +13,18 @@ content:
   actions:
     count: 12
     resources:
-    - engage_lock
-    - set_temperature
-    - toggle_switch
-    - turn_on_switch
-    - get_device_info
     - command
-    - list_devices
     - disengage_lock
-    - set_mode
+    - engage_lock
     - find_id_by_name
-    - turn_off_switch
+    - get_device_info
+    - list_devices
+    - set_mode
+    - set_temperature
     - toggle_lock
+    - toggle_switch
+    - turn_off_switch
+    - turn_on_switch
   sensors:
     count: 1
     resources:
