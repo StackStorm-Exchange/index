@@ -13,11 +13,11 @@ content:
   actions:
     count: 5
     resources:
-    - send_email
     - get_calendar_items
-    - list_folders
-    - get_folder
     - search_items
+    - get_folder
+    - send_email
+    - list_folders
   sensors:
     count: 1
     resources:

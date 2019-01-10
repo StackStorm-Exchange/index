@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150955,
-        "hash": "8b679ca19e479deb82009f2b3033fd83"
+        "generated_ts": 1547150963,
+        "hash": "ef69320e6b44c2a3c4325768aebdfe1d"
     },
     "packs": {
         "acos": {
@@ -8289,11 +8289,11 @@
                 "actions": {
                     "count": 5,
                     "resources": [
-                        "send_email",
                         "get_calendar_items",
-                        "list_folders",
+                        "search_items",
                         "get_folder",
-                        "search_items"
+                        "send_email",
+                        "list_folders"
                     ]
                 },
                 "sensors": {
