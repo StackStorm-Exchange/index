@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547151472,
-        "hash": "54ddd390709f92798d140e1980c86492"
+        "generated_ts": 1547152714,
+        "hash": "1736fa494a25bb22da7855e479e1cf8a"
     },
     "packs": {
         "acos": {
@@ -12489,8 +12489,8 @@
                 "actions": {
                     "count": 2,
                     "resources": [
-                        "parse",
-                        "parse_file"
+                        "parse_file",
+                        "parse"
                     ]
                 },
                 "tests": {
@@ -12509,6 +12509,10 @@
                 "text processing"
             ],
             "name": "xml",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "xml",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-xml",
             "version": "0.3.1"

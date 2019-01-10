@@ -7,14 +7,17 @@ keywords:
 - deserialization
 - text processing
 version: 0.3.1
+python_versions:
+- '2'
+- '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 2
     resources:
-    - parse
     - parse_file
+    - parse
   tests:
     count: 1
     resources:
