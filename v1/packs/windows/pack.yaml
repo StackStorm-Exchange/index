@@ -14,9 +14,9 @@ content:
     count: 7
     resources:
     - wmi_query
+    - winrm_cmd
+    - wait_for_winrm
     - try_winrm
     - winexe_cmd
-    - wait_for_winrm
     - setup_winrm
-    - winrm_cmd
     - lockdown_winrm
