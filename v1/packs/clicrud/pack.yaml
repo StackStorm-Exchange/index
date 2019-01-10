@@ -12,12 +12,11 @@ keywords:
 version: 0.3.3
 python_versions:
 - '2'
-- '3'
 author: davidjohngee
 email: david.gee@ipengineer.net
 content:
   actions:
     count: 2
     resources:
-    - config_command
     - ops_command
+    - config_command
