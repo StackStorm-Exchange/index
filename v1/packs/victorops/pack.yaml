@@ -5,12 +5,15 @@ keywords:
 - victorops integration
 - open, ack and resolve incidents
 version: 0.3.1
+python_versions:
+- '2'
+- '3'
 author: Aamir
 email: raza.aamir01@gmail.com
 content:
   actions:
     count: 3
     resources:
-    - open_incident
     - recover_incident
+    - open_incident
     - ack_incident

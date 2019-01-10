@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547140490,
-        "hash": "25a79d294faa74c02356a457584db700"
+        "generated_ts": 1547140791,
+        "hash": "cd750d7db16a09cc4a5ffd6a821616b5"
     },
     "packs": {
         "acos": {
@@ -12148,8 +12148,8 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "open_incident",
                         "recover_incident",
+                        "open_incident",
                         "ack_incident"
                     ]
                 }
@@ -12161,6 +12161,10 @@
                 "open, ack and resolve incidents"
             ],
             "name": "victorops",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "victorops",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-victorops",
             "version": "0.3.1"
