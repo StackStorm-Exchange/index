@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150650,
-        "hash": "3e5da1b32dc774a44d15005cf95aab6b"
+        "generated_ts": 1547150662,
+        "hash": "427957a557132d827fcdb4b0d0d93c3d"
     },
     "packs": {
         "acos": {
@@ -4726,11 +4726,11 @@
                 "tests": {
                     "count": 5,
                     "resources": [
-                        "test_action_get_zone_dns_records.py",
                         "test_action_get_ips.py",
                         "test_action_get_zones.py",
+                        "test_action_base.py",
                         "cloudflare_base_action_test_case.py",
-                        "test_action_base.py"
+                        "test_action_get_zone_dns_records.py"
                     ]
                 }
             },
