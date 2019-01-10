@@ -18,7 +18,7 @@ content:
   actions:
     count: 4
     resources:
-    - import_keys
-    - decrypt_file
     - encrypt_file
     - list_keys
+    - decrypt_file
+    - import_keys
