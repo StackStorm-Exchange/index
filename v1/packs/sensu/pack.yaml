@@ -13,29 +13,29 @@ content:
     count: 19
     resources:
     - event_delete
-    - health
-    - silence
-    - client_list
-    - client_info
-    - info
-    - check_aggregates_delete
-    - client_history
-    - event_list
-    - event_resolve
-    - event_info
-    - check_aggregates
-    - event_client_list
-    - aggregate_list
-    - client_delete
     - unsilence
-    - check_list
-    - check_request
+    - event_list
+    - client_history
+    - client_list
+    - event_info
+    - event_client_list
+    - check_aggregates_delete
+    - event_resolve
+    - health
     - check_info
+    - silence
+    - client_delete
+    - info
+    - check_request
+    - client_info
+    - check_aggregates
+    - aggregate_list
+    - check_list
   rules:
     count: 2
     resources:
-    - loadavg_check
     - on_action_runner_check
+    - loadavg_check
   tests:
     count: 1
     resources:
