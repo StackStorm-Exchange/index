@@ -12,54 +12,54 @@ content:
   actions:
     count: 51
     resources:
-    - create_user
-    - delete_timeboard
-    - create_embed
-    - get_tags
-    - edit_monitor
-    - revoke_embed
-    - unmute_monitor
-    - revoke_shared_screenboard
     - get_all_users
-    - get_screenboard
+    - get_all_screenboards
+    - share_screenboard
+    - mute_host
+    - get_tags
     - get_monitor
     - query_event_stream
-    - snapshot
-    - disable_user
-    - get_host_tags
+    - create_embed
     - edit_comment
-    - get_event
-    - delete_event
-    - get_all_embeds
-    - mute_host
-    - unmute_all_monitors
-    - create_timeboard
-    - get_timeboard
-    - update_timeboard
-    - post_event
-    - update_user
-    - get_embed
-    - create_screenboard
-    - remove_host_tags
-    - get_all_monitors
-    - update_screenboard
-    - add_host_tags
     - get_user
-    - unmute_host
-    - mute_monitor
-    - search
+    - create_screenboard
+    - update_user
+    - get_all_monitors
     - query_ts_points
-    - get_all_screenboards
-    - get_all_timeboards
+    - add_host_tags
+    - mute_monitor
+    - update_screenboard
+    - delete_comment
+    - create_timeboard
+    - post_event
     - delete_screenboard
-    - post_ts_points
-    - create_comment
-    - share_screenboard
+    - revoke_shared_screenboard
+    - enable_embed
+    - snapshot
     - mute_all_monitors
     - schedule_monitor_downtime
-    - delete_monitor
+    - remove_host_tags
     - update_host_tags
+    - delete_timeboard
+    - get_screenboard
+    - unmute_monitor
     - post_check_run
-    - delete_comment
-    - enable_embed
+    - revoke_embed
+    - delete_event
+    - get_timeboard
     - create_monitor
+    - create_comment
+    - post_ts_points
+    - create_user
+    - search
+    - get_all_timeboards
+    - get_event
+    - update_timeboard
+    - get_host_tags
+    - delete_monitor
+    - unmute_host
+    - edit_monitor
+    - get_embed
+    - get_all_embeds
+    - disable_user
+    - unmute_all_monitors
