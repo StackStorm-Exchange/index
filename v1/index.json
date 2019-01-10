@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547128306,
-        "hash": "04074de9862e04885713f0268f1e4734"
+        "generated_ts": 1547128662,
+        "hash": "e9e1f58a99984e6b7bbd608e148b6895"
     },
     "packs": {
         "acos": {
@@ -10907,24 +10907,24 @@
                 "actions": {
                     "count": 19,
                     "resources": [
+                        "check_aggregates_delete",
+                        "silence",
+                        "info",
+                        "event_resolve",
+                        "unsilence",
+                        "check_list",
+                        "check_info",
+                        "health",
+                        "client_delete",
+                        "event_client_list",
+                        "client_info",
+                        "check_aggregates",
+                        "event_list",
+                        "client_list",
+                        "aggregate_list",
+                        "check_request",
                         "event_info",
                         "client_history",
-                        "check_request",
-                        "health",
-                        "check_info",
-                        "event_list",
-                        "unsilence",
-                        "client_info",
-                        "event_client_list",
-                        "check_list",
-                        "aggregate_list",
-                        "check_aggregates",
-                        "info",
-                        "client_delete",
-                        "silence",
-                        "client_list",
-                        "check_aggregates_delete",
-                        "event_resolve",
                         "event_delete"
                     ]
                 },
