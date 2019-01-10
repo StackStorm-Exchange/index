@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547151019,
-        "hash": "6a8e673bfa17d60af9a412eacb7fd391"
+        "generated_ts": 1547151032,
+        "hash": "9886d314f1219d0ed981c6cd044fa9c1"
     },
     "packs": {
         "acos": {
@@ -9133,10 +9133,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "add_hw_gw",
                         "publish_configs_day1",
+                        "publish_configs",
                         "configure_logical_switch",
-                        "publish_configs"
+                        "add_hw_gw"
                     ]
                 }
             },
