@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547151032,
-        "hash": "9886d314f1219d0ed981c6cd044fa9c1"
+        "generated_ts": 1547151040,
+        "hash": "de3decd29a408dc84f301dc99dbbc112"
     },
     "packs": {
         "acos": {
@@ -9948,26 +9948,26 @@
                 "actions": {
                     "count": 20,
                     "resources": [
-                        "get_storage_capacity",
                         "stop_node",
-                        "get_nodes_info",
-                        "restart_cluster",
-                        "set_node_conf",
-                        "get_cluster_configs",
-                        "get_cluster_info",
-                        "cancel_request",
-                        "start_node",
-                        "get_cluster_repair_progress",
-                        "list_requests",
-                        "drain_node",
-                        "decommission_node",
                         "start_cluster_repair",
+                        "get_cluster_configs",
+                        "list_requests",
+                        "get_node_info",
+                        "get_cluster_repair_progress",
+                        "get_nodes_info",
+                        "drain_node",
+                        "get_repair_status",
+                        "restart_cluster",
+                        "get_cluster_info",
                         "stop_cluster_repair",
                         "get_node_conf",
+                        "start_node",
+                        "restart_node",
+                        "get_storage_capacity",
+                        "decommission_node",
                         "get_request_status",
-                        "get_repair_status",
-                        "get_node_info",
-                        "restart_node"
+                        "set_node_conf",
+                        "cancel_request"
                     ]
                 },
                 "sensors": {
