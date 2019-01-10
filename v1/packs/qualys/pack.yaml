@@ -11,12 +11,12 @@ content:
   actions:
     count: 9
     resources:
+    - get_report
+    - add_host
+    - launch_scan
+    - list_reports
+    - list_scans
+    - list_hosts_not_scanned_since
+    - add_hosts
     - get_host
     - get_host_range
-    - add_hosts
-    - list_scans
-    - launch_scan
-    - add_host
-    - get_report
-    - list_reports
-    - list_hosts_not_scanned_since

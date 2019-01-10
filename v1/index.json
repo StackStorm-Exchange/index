@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547118211,
-        "hash": "aad93dc751196b43f382b023f750d884"
+        "generated_ts": 1547119346,
+        "hash": "99e06aff652022fa0f8a7cf4a80fd728"
     },
     "packs": {
         "acos": {
@@ -10529,15 +10529,15 @@
                 "actions": {
                     "count": 9,
                     "resources": [
-                        "get_host",
-                        "get_host_range",
-                        "add_hosts",
-                        "list_scans",
-                        "launch_scan",
-                        "add_host",
                         "get_report",
+                        "add_host",
+                        "launch_scan",
                         "list_reports",
-                        "list_hosts_not_scanned_since"
+                        "list_scans",
+                        "list_hosts_not_scanned_since",
+                        "add_hosts",
+                        "get_host",
+                        "get_host_range"
                     ]
                 }
             },
