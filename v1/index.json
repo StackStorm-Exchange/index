@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150922,
-        "hash": "e8c01083f383ceac9807ccf879646215"
+        "generated_ts": 1547150930,
+        "hash": "5f4e7ecc498c0d0a6dde78f2d3893817"
     },
     "packs": {
         "acos": {
@@ -7889,54 +7889,54 @@
                 "actions": {
                     "count": 27,
                     "resources": [
-                        "credentials_test",
                         "provision_check_success",
-                        "vm_custom_attributes_delete",
                         "tags_assign",
-                        "tags_delete",
-                        "tags_create",
-                        "provision_request_create",
-                        "vm_custom_attributes_list",
-                        "vm_list",
-                        "tags_list",
-                        "tags_get",
-                        "vm_check_removed",
-                        "bestfit",
-                        "vm_scan",
-                        "remove_old_snapshots",
-                        "vm_all_get",
-                        "vm_custom_attributes_set",
-                        "tags_unassign",
-                        "hosts_credentials_test",
+                        "providers_credentials_test",
                         "template_get_info",
+                        "remove_old_snapshots",
+                        "vm_scan",
+                        "vm_find_by_name",
+                        "vm_custom_attributes_set",
+                        "credentials_test",
+                        "vm_list",
+                        "vm_retire",
+                        "tags_create",
+                        "tags_list",
+                        "vm_all_get",
+                        "vm_check_removed",
+                        "tags_get",
+                        "provision_check_complete",
+                        "provision_request_create",
+                        "bestfit",
+                        "hosts_credentials_test",
+                        "vm_custom_attributes_list",
+                        "tags_delete",
+                        "vm_get_ids",
+                        "vm_custom_attributes_delete",
                         "vm_retire_now",
                         "vm_custom_attributes_get",
-                        "provision_check_complete",
-                        "vm_find_by_name",
-                        "vm_get_ids",
-                        "vm_retire",
-                        "providers_credentials_test"
+                        "tags_unassign"
                     ]
                 },
                 "tests": {
                     "count": 16,
                     "resources": [
-                        "test_action_lib_vm_get_ids.py",
-                        "test_action_base_action.py",
-                        "test_action_lib_vm_all_get.py",
-                        "test_action_lib_provision_check_success.py",
-                        "test_action_vm.py",
-                        "test_action_vm_custom_attributes.py",
-                        "test_action_bestfit.py",
                         "manage_iq_base_action_test_case.py",
+                        "test_action_base_action.py",
+                        "test_action_lib_vm_get_ids.py",
+                        "test_action_vm_custom_attributes.py",
+                        "test_action_lib_vm_all_get.py",
                         "test_action_lib_provision_check_complete.py",
-                        "test_action_hosts.py",
-                        "test_action_lib_remove_old_snapshots.py",
                         "test_action_providers.py",
-                        "test_action_lib_provision_request_create.py",
-                        "test_action_lib_template_get_info.py",
+                        "test_action_vm.py",
                         "test_action_lib_vm_retire_now.py",
-                        "test_action_tags.py"
+                        "test_action_bestfit.py",
+                        "test_action_lib_provision_check_success.py",
+                        "test_action_hosts.py",
+                        "test_action_lib_template_get_info.py",
+                        "test_action_tags.py",
+                        "test_action_lib_remove_old_snapshots.py",
+                        "test_action_lib_provision_request_create.py"
                     ]
                 }
             },
