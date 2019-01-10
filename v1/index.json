@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547140791,
-        "hash": "cd750d7db16a09cc4a5ffd6a821616b5"
+        "generated_ts": 1547141144,
+        "hash": "1bccfe8603fbc5364e301bbfe7fa10e6"
     },
     "packs": {
         "acos": {
@@ -12412,8 +12412,8 @@
                     "count": 3,
                     "resources": [
                         "list_locations",
-                        "random_test",
-                        "request_test"
+                        "request_test",
+                        "random_test"
                     ]
                 }
             },
@@ -12424,6 +12424,10 @@
                 "benchmarking"
             ],
             "name": "webpagetest",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "webpagetest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-webpagetest",
             "version": "0.4.0"
