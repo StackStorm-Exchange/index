@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547150727,
-        "hash": "d1c9f42bc29773adf4932a89d59af262"
+        "generated_ts": 1547150738,
+        "hash": "d7b8cd0262c9bbf17d38c263f0723a59"
     },
     "packs": {
         "acos": {
@@ -5286,26 +5286,26 @@
                 "actions": {
                     "count": 21,
                     "resources": [
-                        "search.q",
-                        "indices.snapshot",
-                        "indices.reindex",
-                        "indices.index_settings",
-                        "search.body",
-                        "indices.shrink",
-                        "indices.close",
                         "indices.forcemerge",
-                        "snapshots.delete_snapshots",
+                        "indices.reindex",
                         "cluster.cluster_routing",
                         "indices.show",
-                        "snapshots.show",
-                        "indices.optimize",
-                        "indices.allocation",
                         "indices.open",
-                        "indices.create_index",
                         "indices.rollover",
+                        "indices.close",
+                        "search.q",
+                        "indices.alias",
+                        "indices.create_index",
                         "snapshots.restore",
                         "indices.replicas",
-                        "indices.alias",
+                        "indices.allocation",
+                        "snapshots.delete_snapshots",
+                        "indices.optimize",
+                        "snapshots.show",
+                        "indices.index_settings",
+                        "indices.snapshot",
+                        "indices.shrink",
+                        "search.body",
                         "indices.delete_indices"
                     ]
                 },
