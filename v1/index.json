@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547160601,
-        "hash": "53789d11325b94c275f9b552d0774108"
+        "generated_ts": 1547160623,
+        "hash": "41dace5353f80649253e15b3ff2d183b"
     },
     "packs": {
         "acos": {
@@ -9156,11 +9156,11 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "deploy_release",
-                        "list_releases",
                         "list_projects",
-                        "add_machine",
+                        "list_releases",
                         "create_release",
+                        "add_machine",
+                        "deploy_release",
                         "list_deployments"
                     ]
                 },
