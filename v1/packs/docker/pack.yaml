@@ -16,8 +16,8 @@ content:
   actions:
     count: 3
     resources:
-    - build_image
     - push_image
+    - build_image
     - pull_image
   sensors:
     count: 1
