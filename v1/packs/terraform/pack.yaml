@@ -11,15 +11,15 @@ content:
   actions:
     count: 12
     resources:
+    - delete_workspace
+    - list_workspaces
     - get_version
+    - output
+    - show
+    - destroy
+    - apply
+    - select_workspace
+    - create_workspace
+    - plan
     - pipeline
     - init
-    - plan
-    - create_workspace
-    - show
-    - output
-    - list_workspaces
-    - destroy
-    - select_workspace
-    - apply
-    - delete_workspace
