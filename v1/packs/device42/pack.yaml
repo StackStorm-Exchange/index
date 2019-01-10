@@ -8,24 +8,24 @@ content:
   actions:
     count: 14
     resources:
-    - networking_lifecycle_automation
-    - device_name_list
-    - write_pxe_cfg
-    - get_dns_zone
-    - suggest_and_create_ip
-    - get_lifecycle_events
-    - create_dhcp_lease_reservation
     - create_or_edit_ip
-    - get_device_by_id
-    - add_device_lifecycle
-    - suggest_next_ip
     - update_object_category_by_lifecycle_id
-    - update_device
     - get_lifecycle_event_objects
+    - update_device
+    - create_dhcp_lease_reservation
+    - get_dns_zone
+    - write_pxe_cfg
+    - device_name_list
+    - get_lifecycle_events
+    - networking_lifecycle_automation
+    - get_device_by_id
+    - suggest_and_create_ip
+    - suggest_next_ip
+    - add_device_lifecycle
   rules:
     count: 4
     resources:
+    - lifecycle_triggered_object_category_change
+    - d42_webhook_responder
     - networking_lifecycle_automation_rule
     - device_created_initial_lifecycle
-    - d42_webhook_responder
-    - lifecycle_triggered_object_category_change
