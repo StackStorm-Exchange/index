@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547159675,
-        "hash": "8581b3e70355df6875e260ef2586c2fb"
+        "generated_ts": 1547159971,
+        "hash": "205cf2571c1eec5bc761eaf9128c38ac"
     },
     "packs": {
         "acos": {
@@ -4283,22 +4283,22 @@
                 "actions": {
                     "count": 16,
                     "resources": [
-                        "update_service",
                         "create_issue",
-                        "create_service",
-                        "delete_issues",
-                        "list_issues",
-                        "list_repos",
-                        "delete_repo",
-                        "delete_ssh_key",
-                        "archive_repo",
-                        "create_repo",
-                        "list_ssh_keys",
-                        "associate_ssh_key",
                         "list_services",
-                        "update_issue",
+                        "delete_services",
+                        "create_service",
                         "list_branches",
-                        "delete_services"
+                        "archive_repo",
+                        "update_issue",
+                        "create_repo",
+                        "update_service",
+                        "associate_ssh_key",
+                        "list_issues",
+                        "list_ssh_keys",
+                        "delete_issues",
+                        "delete_repo",
+                        "list_repos",
+                        "delete_ssh_key"
                     ]
                 },
                 "rules": {
