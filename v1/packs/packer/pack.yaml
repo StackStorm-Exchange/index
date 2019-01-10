@@ -2,6 +2,9 @@ ref: packer
 name: packer
 description: Hashicorp Packer builder integration
 version: 0.3.1
+python_versions:
+- '2'
+- '3'
 author: James Fryman
 email: james@stackstorm.com
 keywords:
@@ -13,8 +16,8 @@ content:
   actions:
     count: 5
     resources:
-    - inspect
-    - push
-    - fix
-    - build
     - validate
+    - build
+    - fix
+    - push
+    - inspect

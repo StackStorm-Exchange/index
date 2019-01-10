@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547135612,
-        "hash": "4a9a05e251ec89e6f3dd29d93ba60ae3"
+        "generated_ts": 1547139483,
+        "hash": "4db62f0949de8bed3686d9d9a711f78b"
     },
     "packs": {
         "acos": {
@@ -10218,11 +10218,11 @@
                 "actions": {
                     "count": 5,
                     "resources": [
-                        "inspect",
-                        "push",
-                        "fix",
+                        "validate",
                         "build",
-                        "validate"
+                        "fix",
+                        "push",
+                        "inspect"
                     ]
                 }
             },
@@ -10235,6 +10235,10 @@
                 "hashicorp"
             ],
             "name": "packer",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "packer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packer",
             "version": "0.3.1"
