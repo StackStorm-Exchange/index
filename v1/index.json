@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547498758,
-        "hash": "1dc172717a32826dbb61f85a92a4b13d"
+        "generated_ts": 1547499220,
+        "hash": "82699d2130f73fc655655c0c97d20f54"
     },
     "packs": {
         "acos": {
@@ -6279,6 +6279,10 @@
                 "ruby"
             ],
             "name": "fpm",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "fpm",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fpm",
             "version": "0.1.2"
