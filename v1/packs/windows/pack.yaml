@@ -7,16 +7,19 @@ keywords:
 - windows management interface
 - wql
 version: 0.6.0
+python_versions:
+- '2'
+- '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 7
     resources:
-    - wmi_query
-    - winrm_cmd
-    - wait_for_winrm
-    - try_winrm
-    - winexe_cmd
-    - setup_winrm
     - lockdown_winrm
+    - setup_winrm
+    - try_winrm
+    - wait_for_winrm
+    - winexe_cmd
+    - winrm_cmd
+    - wmi_query

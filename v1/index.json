@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547490311,
-        "hash": "c26bd2d7cc00fb89c4be6e34ea321cc0"
+        "generated_ts": 1547490588,
+        "hash": "911053bf7ca2892b159ba7ce57326437"
     },
     "packs": {
         "acos": {
@@ -12442,13 +12442,13 @@
                 "actions": {
                     "count": 7,
                     "resources": [
-                        "wmi_query",
-                        "winrm_cmd",
-                        "wait_for_winrm",
-                        "try_winrm",
-                        "winexe_cmd",
+                        "lockdown_winrm",
                         "setup_winrm",
-                        "lockdown_winrm"
+                        "try_winrm",
+                        "wait_for_winrm",
+                        "winexe_cmd",
+                        "winrm_cmd",
+                        "wmi_query"
                     ]
                 }
             },
@@ -12461,6 +12461,10 @@
                 "wql"
             ],
             "name": "windows",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "windows",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-windows",
             "version": "0.6.0"
