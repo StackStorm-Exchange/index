@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547499446,
-        "hash": "9a4ee0059834283bf8de0c25a4f14d5b"
+        "generated_ts": 1547499702,
+        "hash": "3522604bf4875c544322958465e96a33"
     },
     "packs": {
         "acos": {
@@ -10600,6 +10600,10 @@
                 "message broker"
             ],
             "name": "rabbitmq",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "rabbitmq",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-rabbitmq",
             "version": "0.5.1"
