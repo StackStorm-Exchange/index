@@ -13,13 +13,13 @@ content:
   actions:
     count: 10
     resources:
-    - set_policy
-    - is_initialized
-    - get_policy
-    - delete_policy
-    - delete
-    - read
     - create_token
-    - read_kv
+    - delete
+    - delete_policy
+    - get_policy
+    - is_initialized
     - list_policies
+    - read
+    - read_kv
+    - set_policy
     - write
