@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547501185,
-        "hash": "902080f2d39bd397111fffdeba92eb2d"
+        "generated_ts": 1547501767,
+        "hash": "6011dc539ff478d99ffacfb2c2858863"
     },
     "packs": {
         "acos": {
@@ -5046,27 +5046,27 @@
                 "actions": {
                     "count": 14,
                     "resources": [
-                        "get_all_droplets",
-                        "get_domain",
                         "get_action",
-                        "get_my_images",
-                        "get_ssh_key",
-                        "get_all_sshkeys",
+                        "get_all_domains",
+                        "get_all_droplets",
+                        "get_all_images",
                         "get_all_regions",
                         "get_all_sizes",
+                        "get_all_sshkeys",
                         "get_data",
-                        "get_image",
-                        "get_all_images",
-                        "get_global_images",
+                        "get_domain",
                         "get_droplet",
-                        "get_all_domains"
+                        "get_global_images",
+                        "get_image",
+                        "get_my_images",
+                        "get_ssh_key"
                     ]
                 },
                 "tests": {
                     "count": 2,
                     "resources": [
-                        "test_do.py",
-                        "digitalocean_base_action_test_case.py"
+                        "digitalocean_base_action_test_case.py",
+                        "test_do.py"
                     ]
                 }
             },
