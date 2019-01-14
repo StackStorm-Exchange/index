@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547490802,
-        "hash": "a6493c3fd5052009f5d44c2bfd9fd32a"
+        "generated_ts": 1547491179,
+        "hash": "eeedf3825f223aee4becacd5e0bf0435"
     },
     "packs": {
         "acos": {
@@ -11689,8 +11689,8 @@
                     "count": 3,
                     "resources": [
                         "direct_message",
-                        "update_status",
-                        "follow"
+                        "follow",
+                        "update_status"
                     ]
                 },
                 "rules": {
@@ -11702,8 +11702,8 @@
                 "sensors": {
                     "count": 2,
                     "resources": [
-                        "TwitterStreamSensor",
-                        "TwitterSearchSensor"
+                        "TwitterSearchSensor",
+                        "TwitterStreamSensor"
                     ]
                 }
             },

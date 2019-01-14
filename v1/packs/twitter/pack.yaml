@@ -13,8 +13,8 @@ content:
     count: 3
     resources:
     - direct_message
-    - update_status
     - follow
+    - update_status
   rules:
     count: 1
     resources:
@@ -22,5 +22,5 @@ content:
   sensors:
     count: 2
     resources:
-    - TwitterStreamSensor
     - TwitterSearchSensor
+    - TwitterStreamSensor
