@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547489531,
-        "hash": "ba1cc47dbf87df882bbb2024b0e80973"
+        "generated_ts": 1547490311,
+        "hash": "c26bd2d7cc00fb89c4be6e34ea321cc0"
     },
     "packs": {
         "acos": {
@@ -12623,8 +12623,8 @@
                     "count": 4,
                     "resources": [
                         "create_ticket",
-                        "update_ticket",
                         "search_tickets",
+                        "update_ticket",
                         "update_ticket_status"
                     ]
                 },
@@ -12632,8 +12632,8 @@
                     "count": 4,
                     "resources": [
                         "create_ticket",
-                        "update_ticket",
                         "search_tickets",
+                        "update_ticket",
                         "update_ticket_status"
                     ]
                 }
@@ -12646,6 +12646,10 @@
                 "ticketing"
             ],
             "name": "zendesk",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "zendesk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zendesk",
             "version": "0.3.2"
