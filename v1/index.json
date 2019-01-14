@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547500260,
-        "hash": "48da86c497608b676621870d6bb1d9ba"
+        "generated_ts": 1547500526,
+        "hash": "6ab4c3ca0f1ef3d4ea22240b7f4a5893"
     },
     "packs": {
         "acos": {
@@ -7848,18 +7848,22 @@
                 "actions": {
                     "count": 6,
                     "resources": [
+                        "add_annotation",
+                        "delete_metric",
+                        "get_metric",
                         "list_metrics",
                         "submit_counter",
-                        "add_annotation",
-                        "get_metric",
-                        "submit_gauge",
-                        "delete_metric"
+                        "submit_gauge"
                     ]
                 }
             },
             "description": "Send and manage metrics with Librato",
             "email": "james@fryman.io",
             "name": "librato",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "librato",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-librato",
             "version": "0.3.1"
