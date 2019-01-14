@@ -2,46 +2,49 @@ ref: consul
 name: consul
 description: consul
 version: 0.6.5
+python_versions:
+- '2'
+- '3'
 author: jfryman
 email: james@fryman.io
 content:
   actions:
     count: 37
     resources:
-    - agent_checks
-    - custom_lock
-    - session_info
-    - health_state
-    - health_checks
-    - agent_members
-    - session_destroy
-    - kv_delete
-    - catalog_nodes
-    - agent_force_leave
-    - session_renew
-    - event_fire
-    - catalog_services
-    - service_register
-    - agent_join
-    - catalog_datacenters
-    - acl_list
-    - kv_list
-    - session_list
-    - catalog_register
-    - custom_unlock
-    - service_deregister
-    - session_create
+    - acl_create
     - acl_destroy
-    - agent_services
-    - catalog_node
-    - event_list
-    - kv_put
+    - acl_list
+    - agent_checks
+    - agent_force_leave
+    - agent_join
     - agent_maintenance
+    - agent_members
+    - agent_services
+    - catalog_datacenters
+    - catalog_deregister
+    - catalog_node
+    - catalog_nodes
+    - catalog_register
+    - catalog_service
+    - catalog_services
+    - custom_lock
+    - custom_unlock
+    - event_fire
+    - event_list
+    - health_checks
     - health_node
     - health_service
+    - health_state
+    - kv_delete
     - kv_get
-    - acl_create
-    - catalog_service
-    - catalog_deregister
+    - kv_list
+    - kv_put
+    - service_deregister
     - service_maintenance
+    - service_register
+    - session_create
+    - session_destroy
+    - session_info
+    - session_list
     - session_node
+    - session_renew
