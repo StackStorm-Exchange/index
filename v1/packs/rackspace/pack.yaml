@@ -3,35 +3,38 @@ name: rackspace
 description: Packs which allows integration with Rackspace services such as servers,
   load balancers and DNS.
 version: 0.3.1
+python_versions:
+- '2'
+- '3'
 author: jfryman
 email: james@stackstorm.com
 content:
   actions:
     count: 26
     resources:
-    - delete_loadbalancer
-    - get_vm_ips
-    - find_loadbalancer_id
-    - get_vm_ids
-    - list_vms
-    - find_dns_zone_id
-    - list_dns_zones
-    - set_vm_metadata_item
     - add_node_to_loadbalancer
-    - list_vm_images
-    - get_vm_names
+    - create_dns_record
+    - create_dns_zone
+    - create_loadbalancer
+    - create_vm
+    - delete_dns_record
+    - delete_dns_zone
+    - delete_loadbalancer
+    - delete_node_from_loadbalancer
+    - delete_vm
+    - find_dns_record_id
+    - find_dns_zone_id
+    - find_loadbalancer_id
     - find_vm_id
     - get_vm_by_ip
-    - list_dns_records
-    - set_vm_metadata
-    - list_vm_sizes
-    - create_vm
-    - create_dns_zone
-    - create_dns_record
-    - delete_dns_record
+    - get_vm_ids
     - get_vm_info
-    - create_loadbalancer
-    - delete_dns_zone
-    - delete_node_from_loadbalancer
-    - find_dns_record_id
-    - delete_vm
+    - get_vm_ips
+    - get_vm_names
+    - list_dns_records
+    - list_dns_zones
+    - list_vm_images
+    - list_vm_sizes
+    - list_vms
+    - set_vm_metadata
+    - set_vm_metadata_item
