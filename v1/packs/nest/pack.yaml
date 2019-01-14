@@ -5,20 +5,23 @@ keywords:
 - nest
 - home automation
 version: 0.3.2
+python_versions:
+- '2'
+- '3'
 author: James Fryman
 email: james@stackstorm.com
 content:
   actions:
     count: 11
     resources:
-    - set_fan
     - get_humidity
-    - set_humidity
-    - show
-    - set_home
-    - set_mode
     - get_mode
-    - set_away
     - get_temperature
-    - toggle_away
+    - set_away
+    - set_fan
+    - set_home
+    - set_humidity
+    - set_mode
     - set_temperature
+    - show
+    - toggle_away

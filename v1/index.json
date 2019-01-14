@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547500526,
-        "hash": "6ab4c3ca0f1ef3d4ea22240b7f4a5893"
+        "generated_ts": 1547500636,
+        "hash": "97198af0e73152162fd820695f4d5843"
     },
     "packs": {
         "acos": {
@@ -8535,17 +8535,17 @@
                 "actions": {
                     "count": 11,
                     "resources": [
-                        "set_fan",
                         "get_humidity",
-                        "set_humidity",
-                        "show",
-                        "set_home",
-                        "set_mode",
                         "get_mode",
-                        "set_away",
                         "get_temperature",
-                        "toggle_away",
-                        "set_temperature"
+                        "set_away",
+                        "set_fan",
+                        "set_home",
+                        "set_humidity",
+                        "set_mode",
+                        "set_temperature",
+                        "show",
+                        "toggle_away"
                     ]
                 }
             },
@@ -8556,6 +8556,10 @@
                 "home automation"
             ],
             "name": "nest",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "nest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
             "version": "0.3.2"
