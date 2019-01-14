@@ -9,15 +9,18 @@ keywords:
 - probes
 - home automation
 version: 0.3.1
+python_versions:
+- '2'
+- '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 3
     resources:
+    - get_device
     - get_measurements
     - list_devices
-    - get_device
   rules:
     count: 1
     resources:

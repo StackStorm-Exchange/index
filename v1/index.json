@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547501767,
-        "hash": "6011dc539ff478d99ffacfb2c2858863"
+        "generated_ts": 1547502012,
+        "hash": "aa3cad9bf087874dbda88ea3a03e809d"
     },
     "packs": {
         "acos": {
@@ -4896,9 +4896,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
+                        "get_device",
                         "get_measurements",
-                        "list_devices",
-                        "get_device"
+                        "list_devices"
                     ]
                 },
                 "rules": {
@@ -4925,6 +4925,10 @@
                 "home automation"
             ],
             "name": "cubesensors",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "cubesensors",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cubesensors",
             "version": "0.3.1"
