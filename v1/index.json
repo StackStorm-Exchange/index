@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547493628,
-        "hash": "eae516050d30ce7bbaae704d12a36249"
+        "generated_ts": 1547494281,
+        "hash": "6477c5e06a54b0c558ff4c3095efff62"
     },
     "packs": {
         "acos": {
@@ -9951,26 +9951,26 @@
                 "actions": {
                     "count": 20,
                     "resources": [
-                        "stop_node",
-                        "start_cluster_repair",
-                        "get_cluster_configs",
-                        "list_requests",
-                        "get_node_info",
-                        "get_cluster_repair_progress",
-                        "get_nodes_info",
-                        "drain_node",
-                        "get_repair_status",
-                        "restart_cluster",
-                        "get_cluster_info",
-                        "stop_cluster_repair",
-                        "get_node_conf",
-                        "start_node",
-                        "restart_node",
-                        "get_storage_capacity",
+                        "cancel_request",
                         "decommission_node",
+                        "drain_node",
+                        "get_cluster_configs",
+                        "get_cluster_info",
+                        "get_cluster_repair_progress",
+                        "get_node_conf",
+                        "get_node_info",
+                        "get_nodes_info",
+                        "get_repair_status",
                         "get_request_status",
+                        "get_storage_capacity",
+                        "list_requests",
+                        "restart_cluster",
+                        "restart_node",
                         "set_node_conf",
-                        "cancel_request"
+                        "start_cluster_repair",
+                        "start_node",
+                        "stop_cluster_repair",
+                        "stop_node"
                     ]
                 },
                 "sensors": {
