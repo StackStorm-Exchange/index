@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547502248,
-        "hash": "86c00e4a2cb61760cd731d5e787006e0"
+        "generated_ts": 1547502476,
+        "hash": "188140d46a25933f55f9177e83d5edb6"
     },
     "packs": {
         "acos": {
@@ -4642,26 +4642,26 @@
                 "actions": {
                     "count": 20,
                     "resources": [
-                        "get_webhook",
                         "create_room",
-                        "handle_webhook",
-                        "delete_webhook",
-                        "list_messages",
-                        "send_message",
-                        "get_message",
-                        "update_webhook",
-                        "update_team",
-                        "get_room",
-                        "create_webhook",
-                        "list_webhooks",
-                        "delete_team",
-                        "delete_room",
-                        "list_teams",
-                        "get_team",
-                        "update_room",
                         "create_team",
+                        "create_webhook",
                         "delete_message",
-                        "list_rooms"
+                        "delete_room",
+                        "delete_team",
+                        "delete_webhook",
+                        "get_message",
+                        "get_room",
+                        "get_team",
+                        "get_webhook",
+                        "handle_webhook",
+                        "list_messages",
+                        "list_rooms",
+                        "list_teams",
+                        "list_webhooks",
+                        "send_message",
+                        "update_room",
+                        "update_team",
+                        "update_webhook"
                     ]
                 },
                 "rules": {
@@ -4681,6 +4681,10 @@
                 "bot"
             ],
             "name": "cisco_spark",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "cisco_spark",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_spark",
             "version": "0.5.0"
