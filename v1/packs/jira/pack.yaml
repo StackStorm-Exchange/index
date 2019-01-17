@@ -6,21 +6,24 @@ keywords:
 - ticket management
 - project management
 version: 0.9.0
+python_versions:
+- '2'
+- '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
     count: 9
     resources:
-    - create_issue
-    - get_issue_attachments
     - attach_file_to_issue
-    - search_issues
-    - get_issue_comments
-    - get_issue
-    - comment_issue
-    - transition_issue
     - attach_files_to_issue
+    - comment_issue
+    - create_issue
+    - get_issue
+    - get_issue_attachments
+    - get_issue_comments
+    - search_issues
+    - transition_issue
   sensors:
     count: 2
     resources:
@@ -29,5 +32,5 @@ content:
   tests:
     count: 2
     resources:
-    - test_sensor_jira_sensor_for_apiv2.py
     - test_sensor_jira_sensor.py
+    - test_sensor_jira_sensor_for_apiv2.py

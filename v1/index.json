@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1547741127,
-        "hash": "140f50573816fa3f2bdead071752e9df"
+        "generated_ts": 1547751632,
+        "hash": "cf8ff1586bb838010068a09341bbca54"
     },
     "packs": {
         "acos": {
@@ -7156,15 +7156,15 @@
                 "actions": {
                     "count": 9,
                     "resources": [
-                        "create_issue",
-                        "get_issue_attachments",
                         "attach_file_to_issue",
-                        "search_issues",
-                        "get_issue_comments",
-                        "get_issue",
+                        "attach_files_to_issue",
                         "comment_issue",
-                        "transition_issue",
-                        "attach_files_to_issue"
+                        "create_issue",
+                        "get_issue",
+                        "get_issue_attachments",
+                        "get_issue_comments",
+                        "search_issues",
+                        "transition_issue"
                     ]
                 },
                 "sensors": {
@@ -7177,8 +7177,8 @@
                 "tests": {
                     "count": 2,
                     "resources": [
-                        "test_sensor_jira_sensor_for_apiv2.py",
-                        "test_sensor_jira_sensor.py"
+                        "test_sensor_jira_sensor.py",
+                        "test_sensor_jira_sensor_for_apiv2.py"
                     ]
                 }
             },
@@ -7190,6 +7190,10 @@
                 "project management"
             ],
             "name": "jira",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "jira",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira",
             "version": "0.9.0"
