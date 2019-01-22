@@ -1,0 +1,24 @@
+{
+    "description": "Deletes an affinity rule and the groups associated with it",
+    "enabled": true,
+    "entry_point": "affinity_rule_delete.py",
+    "name": "affinity_rule_delete",
+    "parameters": {
+        "cluster_name": {
+            "description": "Name of the Cluster that a VM is on in VMWare",
+            "type": "string"
+        },
+        "rule_name": {
+            "description": "Name of the rule as it appears in VMWare",
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details\n",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

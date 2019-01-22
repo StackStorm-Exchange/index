@@ -1,0 +1,25 @@
+{
+    "description": "Retrieves list of tags that are present on a given object",
+    "enabled": true,
+    "entry_point": "get_tags_on_object.py",
+    "name": "get_tags_on_object",
+    "parameters": {
+        "object_id": {
+            "description": "ID of the object to return tags from",
+            "required": true,
+            "type": "string"
+        },
+        "object_type": {
+            "description": "Type of he object to return tags from (e.g. VirtualMachine)",
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

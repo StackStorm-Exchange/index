@@ -2,84 +2,94 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.8.0
+version: 0.8.1
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
 - Igor Cherkaev <emptywee@gmail.com>
 - Hiroyasu OHYAMA <user.localhost2000@gmail.com>
 - Nick Maludy <nmaludy@gmail.com>
+- Bradley Bishop <bishopbm1@gmail.com>
 content:
   actions:
-    count: 37
+    count: 41
     resources:
-    - vm_hw_power_off
-    - host_get
-    - vm_hw_hdd_add
-    - host_network_hits_get
-    - guest_file_read
-    - vm_hw_nic_add
-    - guest_script_run
-    - guest_dir_create
-    - get_vms
+    - affinity_rule_create
+    - affinity_rule_delete
+    - get_moid
+    - get_objects_with_tag
+    - get_tags_on_object
     - get_vmconsole_urls
-    - guest_process_wait
-    - vm_guest_info_get
-    - set_vm
-    - vm_hw_remove
-    - vm_hw_detail_get
-    - vm_hw_cpu_mem_edit
+    - get_vms
+    - guest_dir_create
+    - guest_dir_delete
     - guest_file_create
-    - hello_vsphere
-    - vm_hw_power_on
-    - vm_hw_moid_get
-    - vm_hw_barebones_create
-    - vm_create_from_template
-    - vm_check_tools
-    - vm_shutdown
+    - guest_file_delete
+    - guest_file_read
     - guest_file_upload
     - guest_process_run
+    - guest_process_start
+    - guest_process_wait
+    - guest_script_run
+    - hello_vsphere
+    - host_get
+    - host_network_hits_get
+    - set_vm
+    - vm_check_tools
+    - vm_create_from_template
+    - vm_env_items_get
+    - vm_guest_info_get
+    - vm_hw_barebones_create
+    - vm_hw_basic_build
+    - vm_hw_cpu_mem_edit
+    - vm_hw_detail_get
+    - vm_hw_hdd_add
+    - vm_hw_moid_get
+    - vm_hw_nic_add
+    - vm_hw_nic_edit
+    - vm_hw_power_off
+    - vm_hw_power_on
+    - vm_hw_remove
     - vm_hw_scsi_controller_add
     - vm_hw_uuid_get
     - vm_runtime_info_get
-    - vm_hw_nic_edit
-    - vm_hw_basic_build
-    - guest_file_delete
+    - vm_shutdown
     - wait_task
-    - guest_process_start
-    - get_moid
-    - guest_dir_delete
-    - vm_env_items_get
   sensors:
     count: 1
     resources:
     - TaskInfoSensor
   tests:
-    count: 26
+    count: 31
     resources:
-    - test_action_hw_remove.py
-    - vsphere_base_action_test_case.py
+    - test_action_affinity_rule_create.py
+    - test_action_affinity_rule_delete.py
+    - test_action_create_from_template.py
+    - test_action_get_moid.py
+    - test_action_get_objects_with_tag.py
+    - test_action_get_tags_on_object.py
     - test_action_guest_dir_create.py
-    - test_action_hw_uuid_get.py
+    - test_action_guest_dir_delete.py
+    - test_action_guest_file_create.py
+    - test_action_guest_file_delete.py
+    - test_action_guest_file_read.py
     - test_action_guest_file_upload.py
-    - test_action_hw_nic_add.py
+    - test_action_guest_info_get.py
+    - test_action_guest_process_start.py
     - test_action_guest_process_wait.py
     - test_action_hw_barebones_create.py
-    - test_action_hw_hdd_add.py
-    - test_action_get_moid.py
-    - test_action_create_from_template.py
-    - test_action_hw_moid_get.py
-    - test_action_guest_process_start.py
-    - test_action_hw_power.py
-    - test_config_schema.py
-    - test_action_guest_file_delete.py
-    - test_action_hw_details_get.py
-    - test_action_hw_scsi_controller_add.py
     - test_action_hw_cpu_mem_edit.py
-    - test_action_guest_dir_delete.py
-    - test_action_vm_shutdown.py
-    - test_action_guest_file_create.py
-    - test_action_guest_file_read.py
-    - test_action_guest_info_get.py
+    - test_action_hw_details_get.py
+    - test_action_hw_hdd_add.py
+    - test_action_hw_moid_get.py
+    - test_action_hw_nic_add.py
     - test_action_hw_nic_edit.py
+    - test_action_hw_power.py
+    - test_action_hw_remove.py
+    - test_action_hw_scsi_controller_add.py
+    - test_action_hw_uuid_get.py
+    - test_action_vm_shutdown.py
+    - test_action_vmwarelib_actions.py
+    - test_config_schema.py
     - test_sensor_taskinfo.py
+    - vsphere_base_action_test_case.py
