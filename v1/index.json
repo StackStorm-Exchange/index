@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548235229,
-        "hash": "0951cea7fee023a38b47cc54ac8b360d"
+        "generated_ts": 1548235249,
+        "hash": "cc8a1fbb224d59f0cc9d2af5dc504b7e"
     },
     "packs": {
         "acos": {
@@ -4543,12 +4543,12 @@
                 "actions": {
                     "count": 6,
                     "resources": [
+                        "cancel_build",
+                        "get_build_info",
                         "get_build_number",
                         "retry_build",
-                        "get_build_info",
                         "run_build",
-                        "wait_until_build_finishes",
-                        "cancel_build"
+                        "wait_until_build_finishes"
                     ]
                 },
                 "sensors": {

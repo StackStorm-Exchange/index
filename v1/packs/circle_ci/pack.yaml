@@ -13,12 +13,12 @@ content:
   actions:
     count: 6
     resources:
+    - cancel_build
+    - get_build_info
     - get_build_number
     - retry_build
-    - get_build_info
     - run_build
     - wait_until_build_finishes
-    - cancel_build
   sensors:
     count: 1
     resources:
