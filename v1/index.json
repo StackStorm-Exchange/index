@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548235470,
-        "hash": "2c010af7d5ee7a470937578e09a72def"
+        "generated_ts": 1548235492,
+        "hash": "249676dd9e6b18c81c06349427c54ce8"
     },
     "packs": {
         "acos": {
@@ -7099,18 +7099,18 @@
                 "actions": {
                     "count": 12,
                     "resources": [
-                        "list_jobs_regex",
-                        "enable_job",
                         "build_job",
-                        "list_jobs",
-                        "get_running_builds",
-                        "rebuild_last_job",
-                        "install_plugin",
-                        "get_build_info",
-                        "stop_build",
-                        "get_job_info",
                         "build_job_enh",
-                        "disable_job"
+                        "disable_job",
+                        "enable_job",
+                        "get_build_info",
+                        "get_job_info",
+                        "get_running_builds",
+                        "install_plugin",
+                        "list_jobs",
+                        "list_jobs_regex",
+                        "rebuild_last_job",
+                        "stop_build"
                     ]
                 }
             },
