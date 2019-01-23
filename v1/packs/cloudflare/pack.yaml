@@ -19,8 +19,8 @@ content:
   tests:
     count: 5
     resources:
-    - test_action_get_zone_dns_records.py
-    - test_action_get_zones.py
     - cloudflare_base_action_test_case.py
     - test_action_base.py
     - test_action_get_ips.py
+    - test_action_get_zone_dns_records.py
+    - test_action_get_zones.py
