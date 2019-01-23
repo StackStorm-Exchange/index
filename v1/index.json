@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548232877,
-        "hash": "1925158a7509aebe65b87959d76d9c29"
+        "generated_ts": 1548233546,
+        "hash": "6dcefe6d5206dbe084a1042a0aed7871"
     },
     "packs": {
         "acos": {
@@ -318,17 +318,17 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "scan_list_scan_executions",
+                        "scan_get_results",
                         "scan_get_results_by_title",
-                        "scan_list_scans",
-                        "scan_get_results"
+                        "scan_list_scan_executions",
+                        "scan_list_scans"
                     ]
                 },
                 "aliases": {
                     "count": 3,
                     "resources": [
-                        "list_scan_executions",
                         "get_scan_results",
+                        "list_scan_executions",
                         "list_scans"
                     ]
                 }
