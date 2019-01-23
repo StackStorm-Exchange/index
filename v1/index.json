@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548235189,
-        "hash": "ba9c1e74269f2885ab7bf32cac5611ac"
+        "generated_ts": 1548235197,
+        "hash": "063dc6c83712b08713711775d0582df7"
     },
     "packs": {
         "acos": {
@@ -4368,27 +4368,27 @@
                     "count": 11,
                     "resources": [
                         "command_run",
+                        "file_upload",
                         "install",
+                        "plan_list",
+                        "plan_run",
+                        "plan_show",
                         "puppetfile_install",
                         "script_run",
-                        "task_show",
                         "task_list",
                         "task_run",
-                        "file_upload",
-                        "plan_show",
-                        "plan_list",
-                        "plan_run"
+                        "task_show"
                     ]
                 },
                 "aliases": {
                     "count": 6,
                     "resources": [
                         "command_run",
-                        "task_show",
+                        "plan_list",
+                        "plan_show",
                         "task_list",
                         "task_run",
-                        "plan_show",
-                        "plan_list"
+                        "task_show"
                     ]
                 },
                 "tests": {

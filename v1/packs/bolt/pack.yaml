@@ -15,25 +15,25 @@ content:
     count: 11
     resources:
     - command_run
-    - install
-    - puppetfile_install
-    - script_run
-    - task_show
-    - task_list
-    - task_run
     - file_upload
-    - plan_show
+    - install
     - plan_list
     - plan_run
+    - plan_show
+    - puppetfile_install
+    - script_run
+    - task_list
+    - task_run
+    - task_show
   aliases:
     count: 6
     resources:
     - command_run
-    - task_show
+    - plan_list
+    - plan_show
     - task_list
     - task_run
-    - plan_show
-    - plan_list
+    - task_show
   tests:
     count: 2
     resources:
