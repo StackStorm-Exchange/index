@@ -12,14 +12,14 @@ content:
   actions:
     count: 8
     resources:
+    - command
     - command_local
+    - galaxy.install
     - galaxy.list
+    - galaxy.remove
     - playbook
     - vault.decrypt
     - vault.encrypt
-    - galaxy.install
-    - command
-    - galaxy.remove
   tests:
     count: 1
     resources:

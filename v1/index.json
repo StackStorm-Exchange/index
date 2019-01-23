@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548234342,
-        "hash": "96290b3753f7bcc975ad5a9bbd012ec7"
+        "generated_ts": 1548234444,
+        "hash": "e692aab5759c23a12a2174a980a4a136"
     },
     "packs": {
         "acos": {
@@ -440,14 +440,14 @@
                 "actions": {
                     "count": 8,
                     "resources": [
+                        "command",
                         "command_local",
+                        "galaxy.install",
                         "galaxy.list",
+                        "galaxy.remove",
                         "playbook",
                         "vault.decrypt",
-                        "vault.encrypt",
-                        "galaxy.install",
-                        "command",
-                        "galaxy.remove"
+                        "vault.encrypt"
                     ]
                 },
                 "tests": {
