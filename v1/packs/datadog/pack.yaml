@@ -12,54 +12,54 @@ content:
   actions:
     count: 51
     resources:
-    - schedule_monitor_downtime
-    - get_all_monitors
-    - remove_host_tags
-    - mute_host
-    - unmute_monitor
-    - create_timeboard
-    - revoke_embed
-    - post_check_run
-    - get_embed
     - add_host_tags
-    - delete_event
+    - create_comment
     - create_embed
-    - create_user
-    - disable_user
-    - post_event
-    - share_screenboard
-    - update_screenboard
-    - get_host_tags
+    - create_monitor
     - create_screenboard
-    - get_timeboard
+    - create_timeboard
+    - create_user
+    - delete_comment
+    - delete_event
     - delete_monitor
-    - mute_monitor
     - delete_screenboard
-    - update_user
+    - delete_timeboard
+    - disable_user
+    - edit_comment
+    - edit_monitor
+    - enable_embed
+    - get_all_embeds
+    - get_all_monitors
+    - get_all_screenboards
+    - get_all_timeboards
+    - get_all_users
+    - get_embed
+    - get_event
+    - get_host_tags
+    - get_monitor
     - get_screenboard
+    - get_tags
+    - get_timeboard
+    - get_user
+    - mute_all_monitors
+    - mute_host
+    - mute_monitor
+    - post_check_run
+    - post_event
+    - post_ts_points
     - query_event_stream
     - query_ts_points
-    - edit_monitor
-    - post_ts_points
-    - get_all_timeboards
-    - get_all_embeds
-    - get_monitor
-    - update_timeboard
-    - enable_embed
-    - get_all_screenboards
-    - get_user
-    - edit_comment
-    - delete_timeboard
-    - get_event
-    - get_all_users
-    - get_tags
-    - mute_all_monitors
-    - search
-    - snapshot
-    - update_host_tags
-    - create_monitor
-    - delete_comment
-    - create_comment
+    - remove_host_tags
+    - revoke_embed
     - revoke_shared_screenboard
+    - schedule_monitor_downtime
+    - search
+    - share_screenboard
+    - snapshot
     - unmute_all_monitors
     - unmute_host
+    - unmute_monitor
+    - update_host_tags
+    - update_screenboard
+    - update_timeboard
+    - update_user
