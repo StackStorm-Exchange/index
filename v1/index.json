@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548332362,
-        "hash": "d34ce6a9d874b225994d71377f6f91dd"
+        "generated_ts": 1548332380,
+        "hash": "293fa757efa89abe7fe52eefd653b5eb"
     },
     "packs": {
         "acos": {
@@ -8261,24 +8261,24 @@
                 "actions": {
                     "count": 18,
                     "resources": [
-                        "list_events",
-                        "session_delete",
-                        "delete_host",
-                        "get_event",
-                        "summary_status",
-                        "session_get",
                         "action_host",
+                        "delete_host",
                         "dismiss_event",
-                        "get_uptime_hosts",
-                        "test_connection_to_host",
-                        "update_host",
+                        "get_event",
                         "get_host",
-                        "list_uptime_hosts",
-                        "list_status_hosts",
+                        "get_status_host",
+                        "get_uptime_hosts",
+                        "list_events",
                         "list_hosts",
-                        "summary_events",
+                        "list_status_hosts",
+                        "list_uptime_hosts",
+                        "session_delete",
+                        "session_get",
                         "session_put",
-                        "get_status_host"
+                        "summary_events",
+                        "summary_status",
+                        "test_connection_to_host",
+                        "update_host"
                     ]
                 },
                 "sensors": {
