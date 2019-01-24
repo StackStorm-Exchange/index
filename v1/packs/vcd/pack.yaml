@@ -11,22 +11,22 @@ content:
   actions:
     count: 16
     resources:
-    - deploy_vapp_template
-    - get_vsphere
-    - get_orgs
-    - setup_org_admin_vdc_vdcnetwork
+    - create_ext_network
+    - create_org
     - create_org_admin
-    - get_extnet
+    - create_vdc
     - create_vdc_network
-    - get_vapp
+    - deploy_vapp_template
+    - get_extnet
+    - get_org
     - get_org_ids
+    - get_orgs
+    - get_pvdcs
+    - get_vapp
     - get_vdc
     - get_vsnetworks
-    - create_org
-    - get_org
-    - get_pvdcs
-    - create_ext_network
-    - create_vdc
+    - get_vsphere
+    - setup_org_admin_vdc_vdcnetwork
   rules:
     count: 1
     resources:
@@ -35,17 +35,17 @@ content:
     count: 15
     resources:
     - test_action_create_ext_network.py
-    - test_action_create_vdc.py
-    - test_action_get_vdc.py
     - test_action_create_org.py
-    - vcd_base_action_test_case.py
-    - test_action_get_vsnetworks.py
-    - test_action_get_vapp.py
-    - test_action_get_org_ids.py
     - test_action_create_org_admin.py
-    - test_action_get_vsphere.py
-    - test_action_get_org.py
-    - test_action_get_extnet.py
-    - test_action_get_orgs.py
+    - test_action_create_vdc.py
     - test_action_create_vdc_network.py
+    - test_action_get_extnet.py
+    - test_action_get_org.py
+    - test_action_get_org_ids.py
+    - test_action_get_orgs.py
     - test_action_get_pvdcs.py
+    - test_action_get_vapp.py
+    - test_action_get_vdc.py
+    - test_action_get_vsnetworks.py
+    - test_action_get_vsphere.py
+    - vcd_base_action_test_case.py
