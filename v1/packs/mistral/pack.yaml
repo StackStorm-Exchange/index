@@ -14,7 +14,7 @@ content:
   actions:
     count: 4
     resources:
-    - kill_workflow
     - get_task_results
     - get_workbook_definition
     - get_workflow_results
+    - kill_workflow
