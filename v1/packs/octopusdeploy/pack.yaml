@@ -14,14 +14,14 @@ content:
   actions:
     count: 6
     resources:
-    - list_projects
-    - list_releases
-    - create_release
     - add_machine
+    - create_release
     - deploy_release
     - list_deployments
+    - list_projects
+    - list_releases
   sensors:
     count: 2
     resources:
-    - NewReleaseSensor
     - NewDeploymentSensor
+    - NewReleaseSensor
