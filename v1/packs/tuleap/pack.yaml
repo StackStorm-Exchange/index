@@ -18,10 +18,10 @@ content:
     count: 8
     resources:
     - create_artifact
-    - get_git_repositories
-    - get_milestones
+    - create_artifacts
     - create_project
     - get_artifacts
-    - get_projects
+    - get_git_repositories
+    - get_milestones
     - get_plannings
-    - create_artifacts
+    - get_projects
