@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548332431,
-        "hash": "4baa2491952a720c0735d1bd039289e8"
+        "generated_ts": 1548332445,
+        "hash": "c3f557fc8ab839950922a3d8397c00f5"
     },
     "packs": {
         "acos": {
@@ -8468,33 +8468,33 @@
                 "actions": {
                     "count": 27,
                     "resources": [
+                        "bgp_prefix_exceeded_chain",
+                        "check_consistency",
+                        "cli",
+                        "configuration_change_workflow",
+                        "get_arp_table",
+                        "get_bgp_config",
+                        "get_bgp_neighbors",
                         "get_bgp_neighbors_detail",
                         "get_config",
-                        "interface_down_workflow",
-                        "get_bgp_config",
-                        "get_interfaces",
-                        "loadconfig",
-                        "get_optics",
-                        "get_network_instances",
-                        "get_lldp_neighbors",
-                        "get_arp_table",
+                        "get_environment",
                         "get_facts",
-                        "get_snmp_information",
-                        "cli",
                         "get_firewall_policies",
-                        "get_bgp_neighbors",
-                        "configuration_change_workflow",
-                        "ping",
+                        "get_interfaces",
+                        "get_lldp_neighbors",
                         "get_log",
-                        "get_probes_config",
-                        "check_consistency",
-                        "traceroute",
-                        "get_route_to",
-                        "get_probes_results",
                         "get_mac_address_table",
+                        "get_network_instances",
                         "get_ntp",
-                        "bgp_prefix_exceeded_chain",
-                        "get_environment"
+                        "get_optics",
+                        "get_probes_config",
+                        "get_probes_results",
+                        "get_route_to",
+                        "get_snmp_information",
+                        "interface_down_workflow",
+                        "loadconfig",
+                        "ping",
+                        "traceroute"
                     ]
                 },
                 "aliases": {
@@ -8506,10 +8506,10 @@
                 "rules": {
                     "count": 4,
                     "resources": [
-                        "interface_down",
-                        "lldp_remediate",
                         "bgp_prefix_exceeded",
-                        "configuration_change"
+                        "configuration_change",
+                        "interface_down",
+                        "lldp_remediate"
                     ]
                 },
                 "sensors": {
