@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548366730,
-        "hash": "426c8a352abc805dd535ab7678970933"
+        "generated_ts": 1548367211,
+        "hash": "1c7dc59c26c269c2c716a9ae2030fdf9"
     },
     "packs": {
         "acos": {
@@ -11443,8 +11443,8 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "log_via_syslog",
                         "format_execution_result",
+                        "log_via_syslog",
                         "write_syslog"
                     ]
                 },
