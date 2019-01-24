@@ -19,9 +19,9 @@ content:
     resources:
     - execute.insert
     - execute.non_query
-    - execute.row
     - execute.query
     - execute.query_and_email
+    - execute.row
     - execute.scalar
   tests:
     count: 1
