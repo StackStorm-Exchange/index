@@ -1,12 +1,16 @@
+ref: csv
 name: csv
-description: st2 content pack containing CSV integrations
+description: CSV utilities
 keywords:
 - csv
 - serialization
 - deserialization
 - text processing
-version: 0.1.0
-author: st2-dev
+version: 0.4.4
+python_versions:
+- '2'
+- '3'
+author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
