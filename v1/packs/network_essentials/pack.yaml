@@ -15,82 +15,82 @@ keywords:
 - MLXe
 - MLX
 - Net Iron
-version: 1.2.1
+version: 1.2.2
 author: Extreme Networks
 email: support@extremenetworks.com
 content:
   actions:
     count: 69
     resources:
-    - configure_mac_group
-    - delete_acl
+    - add_ipv4_rule_acl
+    - add_ipv6_rule_acl
+    - add_or_remove_l2_acl_rule
+    - apply_acl
+    - attach_service_policy_to_interface
+    - autopick_lif_id
+    - autopick_port_channel_id
+    - cfg_rate_limiting
+    - clear_cfg_rate_limiting
+    - configure_bridge_domain
     - configure_class_map
-    - set_l2_mtu
+    - configure_logical_interface
+    - configure_mac_group
+    - configure_mac_move_detection
+    - configure_mgmt_virtual_ip
+    - configure_policy_map_class
+    - configure_storm_control
+    - create_acl
+    - create_l2_port_channel
+    - create_switchport_access
+    - create_switchport_trunk
+    - create_ve
+    - create_vlan
+    - create_vrf
+    - create_vrrpe
+    - delete_acl
+    - delete_bridge_domain
+    - delete_device_credentials
+    - delete_ipv4_rule_acl
+    - delete_ipv6_rule_acl
+    - delete_l2_port_channel
+    - delete_logical_interface_on_bridge_domain
+    - delete_logical_interface_on_interface
     - delete_mac_group
+    - delete_service_policy_to_interface
+    - delete_switchport
+    - delete_ve
+    - delete_vlan
+    - delete_vrf
+    - delete_vrrpe
+    - drop_provision
+    - drop_unprovision
     - enable_vf
+    - execute_cli
+    - find_host_ip
+    - find_mac
+    - find_my_host_vcs
     - firmware_download
+    - get_next_available_network_id
+    - get_os_version
+    - get_persist_configuration_status
+    - get_registered_device_credential_list
+    - get_switch_details
+    - get_vlan_id_list
+    - persist_configuration
+    - ping_vrf_targets
+    - register_device_credentials
+    - remove_acl
+    - remove_switchport_access_vlan
+    - remove_switchport_trunk_allowed_vlan
+    - set_intf_admin_state
+    - set_l2_mtu
+    - set_l2_system_mtu
+    - set_l3_mtu
+    - set_l3_system_mtu
+    - validate_L2_port_channel_state
     - validate_interface_state
     - validate_interface_vlan
-    - execute_cli
-    - delete_logical_interface_on_bridge_domain
-    - delete_vrrpe
-    - configure_mac_move_detection
-    - create_vrf
-    - drop_unprovision
-    - delete_vlan
-    - remove_switchport_trunk_allowed_vlan
-    - get_os_version
-    - apply_acl
-    - find_host_ip
-    - delete_ipv4_rule_acl
-    - drop_provision
-    - create_vlan
-    - delete_bridge_domain
-    - remove_switchport_access_vlan
-    - delete_vrf
-    - ping_vrf_targets
-    - get_persist_configuration_status
-    - remove_acl
-    - create_ve
-    - get_next_available_network_id
-    - get_registered_device_credential_list
-    - configure_bridge_domain
-    - clear_cfg_rate_limiting
-    - find_my_host_vcs
-    - delete_service_policy_to_interface
-    - delete_ipv6_rule_acl
-    - delete_device_credentials
-    - persist_configuration
-    - set_intf_admin_state
-    - configure_mgmt_virtual_ip
-    - add_ipv4_rule_acl
-    - autopick_lif_id
-    - set_l2_system_mtu
-    - delete_l2_port_channel
-    - register_device_credentials
-    - create_l2_port_channel
-    - attach_service_policy_to_interface
-    - set_l3_mtu
-    - delete_logical_interface_on_interface
-    - get_vlan_id_list
-    - cfg_rate_limiting
-    - delete_ve
-    - find_mac
-    - create_switchport_access
-    - configure_storm_control
-    - add_or_remove_l2_acl_rule
-    - validate_L2_port_channel_state
-    - create_switchport_trunk
-    - delete_switchport
-    - configure_logical_interface
-    - get_switch_details
-    - add_ipv6_rule_acl
     - validate_vrrpe_state
-    - create_acl
-    - set_l3_system_mtu
-    - autopick_port_channel_id
-    - configure_policy_map_class
-    - create_vrrpe
   aliases:
     count: 1
     resources:
