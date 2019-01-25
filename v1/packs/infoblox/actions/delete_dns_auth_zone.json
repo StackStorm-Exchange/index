@@ -1,0 +1,15 @@
+{
+    "description": "Delete an authoritative zone for DNS",
+    "enabled": true,
+    "entry_point": "workflows/delete_dns_auth_zone.yaml",
+    "name": "delete_dns_auth_zone",
+    "pack": "infoblox",
+    "parameters": {
+        "fqdn": {
+            "description": "The name of deleting DNS zone",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

@@ -1,7 +1,7 @@
 ref: infoblox
 name: infoblox
 description: Infoblox IPAM, DNS and DHCP management
-version: 0.2.0
+version: 0.3.0
 keywords:
 - IPAM
 - DNS
@@ -11,7 +11,7 @@ author: Dimension Data
 email: noreply@dimensiondata.com
 content:
   actions:
-    count: 33
+    count: 39
     resources:
     - create_aaaarecord
     - create_arecord
@@ -24,10 +24,13 @@ content:
     - create_ipv6ptrrecord
     - create_network
     - create_networkview
+    - delete_arecord
+    - delete_cnamerecord
+    - delete_dns_auth_zone
     - delete_object
     - get_aaaarecord
     - get_arecord
-    - get_authuone
+    - get_authzone
     - get_cnamerecord
     - get_dns_view
     - get_eadefinition
@@ -46,8 +49,13 @@ content:
     - get_object_detailed
     - get_ptrrecord
     - restart_services
+    - update_arecord
+    - update_cnamerecord
+    - update_object
   tests:
-    count: 2
+    count: 4
     resources:
     - __init__.py
+    - test_action_get_object.py
     - test_action_restart_services.py
+    - test_action_update_object.py

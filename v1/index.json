@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548418370,
-        "hash": "d63b38c22d9e74eb3148d1a8439b9826"
+        "generated_ts": 1548431837,
+        "hash": "8b2aa54971e8b88ae66bdedb1d10d31e"
     },
     "packs": {
         "acos": {
@@ -6981,7 +6981,7 @@
             "author": "Dimension Data",
             "content": {
                 "actions": {
-                    "count": 33,
+                    "count": 39,
                     "resources": [
                         "create_aaaarecord",
                         "create_arecord",
@@ -6994,10 +6994,13 @@
                         "create_ipv6ptrrecord",
                         "create_network",
                         "create_networkview",
+                        "delete_arecord",
+                        "delete_cnamerecord",
+                        "delete_dns_auth_zone",
                         "delete_object",
                         "get_aaaarecord",
                         "get_arecord",
-                        "get_authuone",
+                        "get_authzone",
                         "get_cnamerecord",
                         "get_dns_view",
                         "get_eadefinition",
@@ -7015,14 +7018,19 @@
                         "get_object",
                         "get_object_detailed",
                         "get_ptrrecord",
-                        "restart_services"
+                        "restart_services",
+                        "update_arecord",
+                        "update_cnamerecord",
+                        "update_object"
                     ]
                 },
                 "tests": {
-                    "count": 2,
+                    "count": 4,
                     "resources": [
                         "__init__.py",
-                        "test_action_restart_services.py"
+                        "test_action_get_object.py",
+                        "test_action_restart_services.py",
+                        "test_action_update_object.py"
                     ]
                 }
             },
@@ -7037,7 +7045,7 @@
             "name": "infoblox",
             "ref": "infoblox",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-infoblox",
-            "version": "0.2.0"
+            "version": "0.3.0"
         },
         "ipcam": {
             "author": "StackStorm, Inc.",

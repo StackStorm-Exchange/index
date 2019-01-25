@@ -1,0 +1,31 @@
+{
+    "description": "Update A Records",
+    "enabled": true,
+    "entry_point": "workflows/update_arecord.yaml",
+    "name": "update_arecord",
+    "pack": "infoblox",
+    "parameters": {
+        "ipv4addr": {
+            "description": "Filter by IPv4 address",
+            "type": "string"
+        },
+        "name": {
+            "description": "Filter by record name to be updated",
+            "required": true,
+            "type": "string"
+        },
+        "updating_ipv4addr": {
+            "description": "IPv4 address after updating",
+            "type": "string"
+        },
+        "updating_name": {
+            "description": "Record name after updating",
+            "type": "string"
+        },
+        "view": {
+            "description": "Filter by DNS view",
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}
