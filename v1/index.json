@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548431837,
-        "hash": "8b2aa54971e8b88ae66bdedb1d10d31e"
+        "generated_ts": 1548621519,
+        "hash": "0c631b66f7cd5f2d89cda9d1a4761836"
     },
     "packs": {
         "acos": {
@@ -6539,10 +6539,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "import_keys",
+                        "decrypt_file",
                         "encrypt_file",
-                        "list_keys",
-                        "decrypt_file"
+                        "import_keys",
+                        "list_keys"
                     ]
                 }
             },
@@ -6563,7 +6563,7 @@
             ],
             "ref": "gpg",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gpg",
-            "version": "0.3.1"
+            "version": "0.3.2"
         },
         "hpe_icsp": {
             "author": "Paul Mulvihill",
