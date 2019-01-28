@@ -3,5 +3,13 @@
     "enabled": true,
     "entry_point": "list_jobs.py",
     "name": "list_jobs",
+    "parameters": {
+        "config_override": {
+            "description": "Override pack configuration by providing an object with url, username and password keys and appropriate values",
+            "required": false,
+            "secret": true,
+            "type": "object"
+        }
+    },
     "runner_type": "python-script"
 }

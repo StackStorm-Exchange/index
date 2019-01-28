@@ -1,8 +1,8 @@
 {
-    "description": "Retrieve build information",
+    "description": "Retrieve job's params",
     "enabled": true,
-    "entry_point": "get_build_info.py",
-    "name": "get_build_info",
+    "entry_point": "get_job_params.py",
+    "name": "get_job_params",
     "parameters": {
         "config_override": {
             "description": "Override pack configuration by providing an object with url, username and password keys and appropriate values",
@@ -10,16 +10,11 @@
             "secret": true,
             "type": "object"
         },
-        "depth": {
-            "default": 0,
-            "description": "JSON depth",
+        "params": {
+            "default": {},
+            "description": "Params to merge with default values",
             "required": false,
-            "type": "integer"
-        },
-        "number": {
-            "description": "Build number",
-            "required": true,
-            "type": "integer"
+            "type": "object"
         },
         "project": {
             "description": "Name of the Jenkins job",

@@ -4,6 +4,12 @@
     "entry_point": "enable_job.py",
     "name": "enable_job",
     "parameters": {
+        "config_override": {
+            "description": "Override pack configuration by providing an object with url, username and password keys and appropriate values",
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
         "name": {
             "description": "Name of the job to enable.",
             "required": true,

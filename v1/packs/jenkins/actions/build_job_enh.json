@@ -4,6 +4,12 @@
     "entry_point": "build_job_enh.py",
     "name": "build_job_enh",
     "parameters": {
+        "config_override": {
+            "description": "Override pack configuration by providing an object with url, username and password keys and appropriate values",
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
         "max_wait": {
             "default": 30,
             "description": "Seconds to wait for executor, default 30s",

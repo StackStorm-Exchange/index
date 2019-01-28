@@ -1,8 +1,8 @@
 {
-    "description": "Install Jenkins plugin.",
+    "description": "Cancel a queued build",
     "enabled": true,
-    "entry_point": "install_plugin.py",
-    "name": "install_plugin",
+    "entry_point": "cancel_queued_build.py",
+    "name": "cancel_queued_build",
     "parameters": {
         "config_override": {
             "description": "Override pack configuration by providing an object with url, username and password keys and appropriate values",
@@ -10,10 +10,10 @@
             "secret": true,
             "type": "object"
         },
-        "plugin": {
-            "description": "Name of the plugin to install",
+        "job_id": {
+            "description": "Jenkins job id for the queued build.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

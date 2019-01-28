@@ -1,8 +1,8 @@
 {
-    "description": "Install Jenkins plugin.",
+    "description": "Get Queue Info",
     "enabled": true,
-    "entry_point": "install_plugin.py",
-    "name": "install_plugin",
+    "entry_point": "get_queue_info.py",
+    "name": "get_queue_info",
     "parameters": {
         "config_override": {
             "description": "Override pack configuration by providing an object with url, username and password keys and appropriate values",
@@ -10,9 +10,9 @@
             "secret": true,
             "type": "object"
         },
-        "plugin": {
-            "description": "Name of the plugin to install",
-            "required": true,
+        "name_pattern": {
+            "description": "regex pattern to filter by name",
+            "required": false,
             "type": "string"
         }
     },

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548621519,
-        "hash": "0c631b66f7cd5f2d89cda9d1a4761836"
+        "generated_ts": 1548699641,
+        "hash": "2e707eb4cddc908cdd1d7b923e124ae8"
     },
     "packs": {
         "acos": {
@@ -7100,14 +7100,17 @@
             "author": "James Fryman",
             "content": {
                 "actions": {
-                    "count": 12,
+                    "count": 15,
                     "resources": [
                         "build_job",
                         "build_job_enh",
+                        "cancel_queued_build",
                         "disable_job",
                         "enable_job",
                         "get_build_info",
                         "get_job_info",
+                        "get_job_params",
+                        "get_queue_info",
                         "get_running_builds",
                         "install_plugin",
                         "list_jobs",
@@ -7121,7 +7124,7 @@
                 "Igor Cherkaev <emptywee@gmail.com>"
             ],
             "description": "Jenkins CI Integration Pack",
-            "email": "james@stackstorm.com",
+            "email": "info@stackstorm.com",
             "keywords": [
                 "jenkins",
                 "continuous deployment",
@@ -7130,7 +7133,7 @@
             "name": "jenkins",
             "ref": "jenkins",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jenkins",
-            "version": "0.7.0"
+            "version": "0.7.6"
         },
         "jinja": {
             "author": "StackStorm, inc.",
