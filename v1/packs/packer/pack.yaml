@@ -1,7 +1,7 @@
 ref: packer
 name: packer
 description: Hashicorp Packer builder integration
-version: 0.3.1
+version: 0.3.2
 python_versions:
 - '2'
 - '3'
@@ -21,3 +21,13 @@ content:
     - inspect
     - push
     - validate
+  tests:
+    count: 7
+    resources:
+    - packer_base_action_test_case.py
+    - test_action_build.py
+    - test_action_fix.py
+    - test_action_inspect_action.py
+    - test_action_lib_actions.py
+    - test_action_push.py
+    - test_action_validate.py

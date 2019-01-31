@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1548699641,
-        "hash": "2e707eb4cddc908cdd1d7b923e124ae8"
+        "generated_ts": 1548965243,
+        "hash": "0f085e4a92c1a6c1804d4f53a9c105ed"
     },
     "packs": {
         "acos": {
@@ -10281,6 +10281,18 @@
                         "push",
                         "validate"
                     ]
+                },
+                "tests": {
+                    "count": 7,
+                    "resources": [
+                        "packer_base_action_test_case.py",
+                        "test_action_build.py",
+                        "test_action_fix.py",
+                        "test_action_inspect_action.py",
+                        "test_action_lib_actions.py",
+                        "test_action_push.py",
+                        "test_action_validate.py"
+                    ]
                 }
             },
             "description": "Hashicorp Packer builder integration",
@@ -10298,7 +10310,7 @@
             ],
             "ref": "packer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packer",
-            "version": "0.3.1"
+            "version": "0.3.2"
         },
         "pagerduty": {
             "author": "Ian Price",
