@@ -1,0 +1,24 @@
+{
+    "description": "Assigning an issue to a user.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "assign_issue",
+    "parameters": {
+        "action": {
+            "default": "assign_issue",
+            "immutable": true,
+            "type": "string"
+        },
+        "assignee": {
+            "description": "Name of user (e.g. charlie).",
+            "required": true,
+            "type": "string"
+        },
+        "issue": {
+            "description": "Issue key (e.g. PROJECT-1000).",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

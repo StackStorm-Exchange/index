@@ -5,7 +5,7 @@ keywords:
 - issues
 - ticket management
 - project management
-version: 0.9.0
+version: 0.10.0
 python_versions:
 - '2'
 - '3'
@@ -13,8 +13,9 @@ author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 9
+    count: 10
     resources:
+    - assign_issue
     - attach_file_to_issue
     - attach_files_to_issue
     - comment_issue
@@ -30,7 +31,9 @@ content:
     - JIRASensor
     - JIRASensorForAPIv2
   tests:
-    count: 2
+    count: 4
     resources:
+    - __init__.py
+    - test_action_run.py
     - test_sensor_jira_sensor.py
     - test_sensor_jira_sensor_for_apiv2.py
