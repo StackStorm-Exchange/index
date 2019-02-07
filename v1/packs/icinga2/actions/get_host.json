@@ -1,13 +1,14 @@
 {
-    "description": "Get Icinga2 host object",
+    "description": "Get all Icinga2 host objects, or individual host",
     "enabled": true,
     "entry_point": "get_host.py",
     "name": "get_host",
     "parameters": {
-        "hosts": {
-            "default": [],
+        "host": {
+            "default": "",
+            "description": "Specific host object to return. If not specified, all hosts are returned.",
             "required": false,
-            "type": "array"
+            "type": "string"
         }
     },
     "runner_type": "python-script"

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1549328097,
-        "hash": "65bb91fff08b76a08951c1eaa9b334c3"
+        "generated_ts": 1549524021,
+        "hash": "87a1413001cb1cbb8be8c3d75145e5b8"
     },
     "packs": {
         "acos": {
@@ -6912,9 +6912,9 @@
                 "actions": {
                     "count": 3,
                     "resources": [
-                        "get_status",
                         "get_host",
-                        "get_service"
+                        "get_service",
+                        "get_status"
                     ]
                 },
                 "rules": {
@@ -6930,6 +6930,9 @@
                     ]
                 }
             },
+            "contributors": [
+                "Lindsay Hill <lindsay@stackstorm.com>"
+            ],
             "description": "Icinga2 Monitoring",
             "email": "emptywee@protonmail.ch",
             "keywords": [
@@ -6938,9 +6941,13 @@
                 "alerting"
             ],
             "name": "icinga2",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "icinga2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-icinga2",
-            "version": "0.3.3"
+            "version": "0.4.1"
         },
         "influxdb": {
             "author": "Encore Technologies",

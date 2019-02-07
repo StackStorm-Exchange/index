@@ -3,5 +3,13 @@
     "enabled": true,
     "entry_point": "get_status.py",
     "name": "get_status",
+    "parameters": {
+        "component": {
+            "default": "",
+            "description": "Specific component to get status for. If not specified, complete status is returned.",
+            "required": false,
+            "type": "string"
+        }
+    },
     "runner_type": "python-script"
 }

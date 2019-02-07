@@ -4,10 +4,11 @@
     "entry_point": "get_service.py",
     "name": "get_service",
     "parameters": {
-        "services": {
-            "default": [],
+        "service": {
+            "default": "",
+            "description": "Specific service object to return. If not specified, all services are returned.",
             "required": false,
-            "type": "array"
+            "type": "string"
         }
     },
     "runner_type": "python-script"

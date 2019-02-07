@@ -1,20 +1,8 @@
 {
     "api_password": {
         "description": "API password for querying Icinga2 for objects",
-        "required": true,
+        "required": false,
         "secret": true,
-        "type": "string"
-    },
-    "api_state_change_password": {
-        "description": "API password for querying API state changes",
-        "required": true,
-        "secret": true,
-        "type": "string"
-    },
-    "api_state_change_user": {
-        "description": "API user name for querying API state changes",
-        "required": true,
-        "secret": false,
         "type": "string"
     },
     "api_url": {
@@ -25,7 +13,25 @@
     },
     "api_user": {
         "description": "API user name to query Icinga2 host for objects",
-        "required": true,
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "ca_file": {
+        "description": "Optional path to CA bundle for validating server-side certificate",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "certificate": {
+        "description": "Path to client certificate if using certificate authentication instead of username/password",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "key": {
+        "description": "Path to client private key if using certificate authentication instead of username/password",
+        "required": false,
         "secret": false,
         "type": "string"
     }

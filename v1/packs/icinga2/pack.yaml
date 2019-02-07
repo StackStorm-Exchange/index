@@ -5,16 +5,21 @@ keywords:
 - icinga
 - monitoring
 - alerting
-version: 0.3.3
+version: 0.4.1
+python_versions:
+- '2'
+- '3'
 author: Igor Cherkaev
 email: emptywee@protonmail.ch
+contributors:
+- Lindsay Hill <lindsay@stackstorm.com>
 content:
   actions:
     count: 3
     resources:
-    - get_status
     - get_host
     - get_service
+    - get_status
   rules:
     count: 1
     resources:
