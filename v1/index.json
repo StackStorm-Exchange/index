@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1549588833,
-        "hash": "16477ed775224efdfb5d170aa0f09bce"
+        "generated_ts": 1549647696,
+        "hash": "81ae091d71855a2965db16a450907582"
     },
     "packs": {
         "acos": {
@@ -10253,9 +10253,10 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 7,
+                    "count": 8,
                     "resources": [
                         "create_master_token",
+                        "create_read_token",
                         "destroy_master_token",
                         "destroy_read_token",
                         "get_master_token",
@@ -10277,7 +10278,7 @@
             ],
             "ref": "packagecloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packagecloud",
-            "version": "0.4.1"
+            "version": "1.0.0"
         },
         "packer": {
             "author": "James Fryman",

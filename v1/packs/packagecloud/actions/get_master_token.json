@@ -1,32 +1,44 @@
 {
     "description": "Get master token for user!",
     "enabled": true,
-    "entry_point": "get_master_token.sh",
+    "entry_point": "entrypoint.py",
     "name": "get_master_token",
     "pack": "packagecloud",
     "parameters": {
-        "repository": {
-            "position": 2,
+        "api_token": {
+            "default": "{{st2kv.system.pkg_cloud_token}}",
+            "description": "Token to access the packagecloud API",
+            "type": "string"
+        },
+        "concise": {
+            "default": false,
+            "type": "boolean"
+        },
+        "debug": {
+            "default": false,
+            "type": "boolean"
+        },
+        "function": {
+            "default": "get_master_token",
+            "immutable": true,
             "required": true,
             "type": "string"
         },
-        "sudo": {
-            "default": true,
-            "immutable": true
+        "repository": {
+            "required": true,
+            "type": "string"
         },
         "timeout": {
             "default": 300
         },
         "token_name": {
-            "position": 3,
             "required": true,
             "type": "string"
         },
         "user": {
-            "position": 1,
             "required": true,
             "type": "string"
         }
     },
-    "runner_type": "local-shell-script"
+    "runner_type": "python-script"
 }

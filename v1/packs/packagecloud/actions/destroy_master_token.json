@@ -1,20 +1,32 @@
 {
     "description": "destroy master token for a repository",
     "enabled": true,
+    "entry_point": "entrypoint.py",
     "name": "destroy_master_token",
     "pack": "packagecloud",
     "parameters": {
-        "cmd": {
-            "default": "echo y | package_cloud master_token destroy {{user}}/{{repository}} {{token_name}}",
-            "immutable": true
+        "api_token": {
+            "default": "{{st2kv.system.pkg_cloud_token}}",
+            "description": "Token to access the packagecloud API",
+            "type": "string"
+        },
+        "concise": {
+            "default": false,
+            "type": "boolean"
+        },
+        "debug": {
+            "default": false,
+            "type": "boolean"
+        },
+        "function": {
+            "default": "destroy_master_token",
+            "immutable": true,
+            "required": true,
+            "type": "string"
         },
         "repository": {
             "required": true,
             "type": "string"
-        },
-        "sudo": {
-            "default": true,
-            "immutable": true
         },
         "token_name": {
             "description": "Not the token value but the name used. See https://packagecloud.io/docs#revocation.",
@@ -26,5 +38,5 @@
             "type": "string"
         }
     },
-    "runner_type": "local-shell-cmd"
+    "runner_type": "python-script"
 }

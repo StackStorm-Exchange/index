@@ -1,12 +1,28 @@
 {
     "description": "destroy read token for a repository",
     "enabled": true,
+    "entry_point": "entrypoint.py",
     "name": "destroy_read_token",
     "pack": "packagecloud",
     "parameters": {
-        "cmd": {
-            "default": "package_cloud read_token destroy {{user}}/{{repository}} {{master_token_name}}/{{read_token_name}}",
-            "immutable": true
+        "api_token": {
+            "default": "{{st2kv.system.pkg_cloud_token}}",
+            "description": "Token to access the packagecloud API",
+            "type": "string"
+        },
+        "concise": {
+            "default": false,
+            "type": "boolean"
+        },
+        "debug": {
+            "default": false,
+            "type": "boolean"
+        },
+        "function": {
+            "default": "destroy_read_token",
+            "immutable": true,
+            "required": true,
+            "type": "string"
         },
         "master_token_name": {
             "description": "Not the token value but the name used. See https://packagecloud.io/docs#revocation.",
@@ -22,14 +38,10 @@
             "required": true,
             "type": "string"
         },
-        "sudo": {
-            "default": true,
-            "immutable": true
-        },
         "user": {
             "required": true,
             "type": "string"
         }
     },
-    "runner_type": "local-shell-cmd"
+    "runner_type": "python-script"
 }

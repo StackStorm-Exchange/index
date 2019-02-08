@@ -1,25 +1,37 @@
 {
     "description": "List master tokens for a repository",
     "enabled": true,
+    "entry_point": "entrypoint.py",
     "name": "list_master_token",
     "pack": "packagecloud",
     "parameters": {
-        "cmd": {
-            "default": "package_cloud master_token list {{user}}/{{repository}}",
-            "immutable": true
+        "api_token": {
+            "default": "{{st2kv.system.pkg_cloud_token}}",
+            "description": "Token to access the packagecloud API",
+            "type": "string"
+        },
+        "concise": {
+            "default": false,
+            "type": "boolean"
+        },
+        "debug": {
+            "default": false,
+            "type": "boolean"
+        },
+        "function": {
+            "default": "list_master_token",
+            "immutable": true,
+            "required": true,
+            "type": "string"
         },
         "repository": {
             "required": true,
             "type": "string"
-        },
-        "sudo": {
-            "default": true,
-            "immutable": true
         },
         "user": {
             "required": true,
             "type": "string"
         }
     },
-    "runner_type": "local-shell-cmd"
+    "runner_type": "python-script"
 }

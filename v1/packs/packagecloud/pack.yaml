@@ -3,7 +3,7 @@ name: packagecloud
 description: packagecloud integration pack
 keywords:
 - packagecloud
-version: 0.4.1
+version: 1.0.0
 python_versions:
 - '2'
 - '3'
@@ -11,9 +11,10 @@ author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 7
+    count: 8
     resources:
     - create_master_token
+    - create_read_token
     - destroy_master_token
     - destroy_read_token
     - get_master_token

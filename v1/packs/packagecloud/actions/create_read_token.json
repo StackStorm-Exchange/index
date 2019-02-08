@@ -1,8 +1,8 @@
 {
-    "description": "Create master token",
+    "description": "create read token for a repository",
     "enabled": true,
     "entry_point": "entrypoint.py",
-    "name": "create_master_token",
+    "name": "create_read_token",
     "pack": "packagecloud",
     "parameters": {
         "api_token": {
@@ -19,16 +19,22 @@
             "type": "boolean"
         },
         "function": {
-            "default": "create_master_token",
+            "default": "create_read_token",
             "immutable": true,
             "required": true,
             "type": "string"
         },
-        "repository": {
+        "master_token_name": {
+            "description": "Not the token value but the name used.",
             "required": true,
             "type": "string"
         },
-        "token_name": {
+        "read_token_name": {
+            "description": "Not the token value but the name used.",
+            "required": true,
+            "type": "string"
+        },
+        "repository": {
             "required": true,
             "type": "string"
         },
