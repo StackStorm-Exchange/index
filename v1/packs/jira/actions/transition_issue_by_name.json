@@ -1,16 +1,21 @@
 {
     "description": "Do a transition on a JIRA issue / ticket.",
     "enabled": true,
-    "entry_point": "transition_issue.py",
-    "name": "transition_issue",
+    "entry_point": "run.py",
+    "name": "transition_issue_by_name",
     "parameters": {
-        "issue_key": {
+        "action": {
+            "default": "transition_issue_by_name",
+            "immutable": true,
+            "type": "string"
+        },
+        "issue": {
             "description": "Issue key (e.g. PROJECT-1000).",
             "required": true,
             "type": "string"
         },
-        "transition": {
-            "description": "ID of transition (e.g. 11, 21, etc).",
+        "transition_name": {
+            "description": "Name of transition (e.g. Close, Start Progress, etc).",
             "required": true,
             "type": "string"
         }
