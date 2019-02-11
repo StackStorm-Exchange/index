@@ -1,0 +1,24 @@
+{
+    "description": "Add a field to a particular JIRA issue.",
+    "enabled": true,
+    "entry_point": "add_field_value.py",
+    "name": "add_field_value",
+    "parameters": {
+        "field": {
+            "description": "the field name.",
+            "required": true,
+            "type": "string"
+        },
+        "issue_key": {
+            "description": "Issue key (e.g. PROJECT-1000).",
+            "required": true,
+            "type": "string"
+        },
+        "value": {
+            "description": "the field text itself.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
