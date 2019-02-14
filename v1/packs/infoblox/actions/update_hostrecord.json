@@ -1,0 +1,44 @@
+{
+    "description": "Update HOST records",
+    "enabled": true,
+    "entry_point": "workflows/update_hostrecord.yaml",
+    "name": "update_hostrecord",
+    "pack": "infoblox",
+    "parameters": {
+        "ipv4addrs": {
+            "description": "IPv4 address informations to update",
+            "properties": {
+                "ipv4addr": {
+                    "description": "IPv4 address to register",
+                    "required": true,
+                    "type": "string"
+                },
+                "mac": {
+                    "default": "",
+                    "description": "MAC address to register",
+                    "type": "string"
+                }
+            },
+            "type": "array"
+        },
+        "name": {
+            "description": "The name of HOST record to update",
+            "required": true,
+            "type": "string"
+        },
+        "ttl": {
+            "default": 28800,
+            "description": "TTL of updating record",
+            "type": "integer"
+        },
+        "updating_name": {
+            "description": "The name of HOST record after update",
+            "type": "string"
+        },
+        "view": {
+            "description": "Filter by DNS view",
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

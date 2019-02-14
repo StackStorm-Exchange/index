@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1549908865,
-        "hash": "15753436c020f4b74315c44c5cc8a46d"
+        "generated_ts": 1550169619,
+        "hash": "94acd123d317d543ca6e761fd4c10113"
     },
     "packs": {
         "acos": {
@@ -6988,7 +6988,7 @@
             "author": "Dimension Data",
             "content": {
                 "actions": {
-                    "count": 39,
+                    "count": 42,
                     "resources": [
                         "create_aaaarecord",
                         "create_arecord",
@@ -6997,6 +6997,7 @@
                         "create_fixedaddress_ipv4",
                         "create_fixedaddress_ipv4_in_network",
                         "create_fixedaddress_ipv6",
+                        "create_hostrecord",
                         "create_ipv4ptrrecord",
                         "create_ipv6ptrrecord",
                         "create_network",
@@ -7004,6 +7005,7 @@
                         "delete_arecord",
                         "delete_cnamerecord",
                         "delete_dns_auth_zone",
+                        "delete_hostrecord",
                         "delete_object",
                         "get_aaaarecord",
                         "get_arecord",
@@ -7028,13 +7030,15 @@
                         "restart_services",
                         "update_arecord",
                         "update_cnamerecord",
+                        "update_hostrecord",
                         "update_object"
                     ]
                 },
                 "tests": {
-                    "count": 4,
+                    "count": 5,
                     "resources": [
                         "__init__.py",
+                        "test_action_create_object.py",
                         "test_action_get_object.py",
                         "test_action_restart_services.py",
                         "test_action_update_object.py"
@@ -7052,7 +7056,7 @@
             "name": "infoblox",
             "ref": "infoblox",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-infoblox",
-            "version": "0.3.0"
+            "version": "0.4.0"
         },
         "ipcam": {
             "author": "StackStorm, Inc.",

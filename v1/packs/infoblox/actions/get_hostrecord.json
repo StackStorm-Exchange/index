@@ -1,16 +1,25 @@
 {
-    "description": "Get host records",
+    "description": "Get HOST records",
     "enabled": true,
     "entry_point": "get_object.py",
     "name": "get_hostrecord",
+    "pack": "infoblox",
     "parameters": {
         "ea": {
             "description": "Example: ['IN_Country=FR','IN_DeviceType=AGGREG']",
             "type": "array"
         },
+        "name": {
+            "description": "Filter by name of HOST record",
+            "type": "string"
+        },
         "object_type": {
             "default": "record:host",
             "immutable": true,
+            "type": "string"
+        },
+        "view": {
+            "description": "Filter by DNS view",
             "type": "string"
         }
     },
