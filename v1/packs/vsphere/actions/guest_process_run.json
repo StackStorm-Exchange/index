@@ -4,11 +4,11 @@
     "entry_point": "workflows/guest_process_run.yaml",
     "name": "guest_process_run",
     "parameters": {
-        "argument": {
-            "description": "Argument(s) to pass to the command executable.",
+        "arguments": {
+            "description": "Arguments to pass to the command executable.",
             "position": 4,
             "required": false,
-            "type": "array"
+            "type": "string"
         },
         "command": {
             "description": "Full path to command executable in the guest.",
