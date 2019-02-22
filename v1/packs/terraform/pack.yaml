@@ -4,7 +4,7 @@ runner_type: python-script
 description: Terraform integrations
 keywords:
 - terraform
-version: 0.2.2
+version: 0.2.3
 author: Martez Reed
 email: martez.reed@greenreedtech.com
 content:
@@ -23,3 +23,19 @@ content:
     - plan
     - select_workspace
     - show
+  tests:
+    count: 13
+    resources:
+    - terraform_base_action_test_case.py
+    - test_action_apply.py
+    - test_action_create_workspace.py
+    - test_action_delete_workspace.py
+    - test_action_destroy.py
+    - test_action_get_version.py
+    - test_action_init.py
+    - test_action_lib_action.py
+    - test_action_list_workspaces.py
+    - test_action_output.py
+    - test_action_plan.py
+    - test_action_select_workspace.py
+    - test_action_show.py

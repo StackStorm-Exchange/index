@@ -9,11 +9,26 @@
             "required": true,
             "type": "string"
         },
+        "state_file_path": {
+            "description": "Path of terraform state file",
+            "required": false,
+            "type": "string"
+        },
+        "target_resources": {
+            "description": "List of resource addresses to target",
+            "required": false,
+            "type": "array"
+        },
         "terraform_exec": {
             "default": "terraform",
             "description": "Terraform executable path (default: terraform in the $PATH)",
             "required": false,
             "type": "string"
+        },
+        "variable_dict": {
+            "description": "Terraform variable object (variables in here will overwrite any that are in files)",
+            "required": false,
+            "type": "object"
         },
         "variable_files": {
             "description": "Terraform variable files",

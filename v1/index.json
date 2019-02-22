@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1550512474,
-        "hash": "f14f55be9eb007ea62d6e4554c326c6f"
+        "generated_ts": 1550861957,
+        "hash": "a8a4e4fa7ff881f2d29fb88fa71e38ec"
     },
     "packs": {
         "acos": {
@@ -11552,6 +11552,24 @@
                         "select_workspace",
                         "show"
                     ]
+                },
+                "tests": {
+                    "count": 13,
+                    "resources": [
+                        "terraform_base_action_test_case.py",
+                        "test_action_apply.py",
+                        "test_action_create_workspace.py",
+                        "test_action_delete_workspace.py",
+                        "test_action_destroy.py",
+                        "test_action_get_version.py",
+                        "test_action_init.py",
+                        "test_action_lib_action.py",
+                        "test_action_list_workspaces.py",
+                        "test_action_output.py",
+                        "test_action_plan.py",
+                        "test_action_select_workspace.py",
+                        "test_action_show.py"
+                    ]
                 }
             },
             "description": "Terraform integrations",
@@ -11563,7 +11581,7 @@
             "ref": "terraform",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-terraform",
             "runner_type": "python-script",
-            "version": "0.2.2"
+            "version": "0.2.3"
         },
         "tesla": {
             "author": "Anthony Shaw",
