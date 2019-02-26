@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1550861957,
-        "hash": "a8a4e4fa7ff881f2d29fb88fa71e38ec"
+        "generated_ts": 1551217198,
+        "hash": "6280681a3a13fcf173e5925ead1740c1"
     },
     "packs": {
         "acos": {
@@ -12326,7 +12326,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 41,
+                    "count": 42,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
@@ -12352,6 +12352,7 @@
                         "vm_check_tools",
                         "vm_create_from_template",
                         "vm_env_items_get",
+                        "vm_folder_get",
                         "vm_guest_info_get",
                         "vm_hw_barebones_create",
                         "vm_hw_basic_build",
@@ -12378,7 +12379,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 31,
+                    "count": 32,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -12406,6 +12407,7 @@
                         "test_action_hw_remove.py",
                         "test_action_hw_scsi_controller_add.py",
                         "test_action_hw_uuid_get.py",
+                        "test_action_vm_folder_get.py",
                         "test_action_vm_shutdown.py",
                         "test_action_vmwarelib_actions.py",
                         "test_config_schema.py",

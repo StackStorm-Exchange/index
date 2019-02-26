@@ -1,0 +1,27 @@
+{
+    "description": "Retrieve the containing folder of a VM object",
+    "entry_point": "vm_folder_get.py",
+    "name": "vm_folder_get",
+    "parameters": {
+        "vm_id": {
+            "description": "VM ID to get the containing folder for",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "default": null,
+            "description": "VM Name to get the containing folder for",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "description": "Pre-configured vsphere endpoint",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
