@@ -1,0 +1,24 @@
+{
+    "description": "create a script",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "create_scripts",
+    "parameters": {
+        "action": {
+            "default": "create_scripts",
+            "immutable": true,
+            "type": "string"
+        },
+        "config_profile": {
+            "description": "Select which nexus config profile to use.",
+            "required": false,
+            "type": "string"
+        },
+        "data": {
+            "description": "instance of script to be created.",
+            "required": false,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

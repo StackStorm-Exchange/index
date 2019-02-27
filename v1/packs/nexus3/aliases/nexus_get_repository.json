@@ -1,0 +1,10 @@
+{
+    "action_ref": "nexus3.get_repositories",
+    "description": "alias to nexus3.get_repositories",
+    "formats": [
+        "get repository from {{name}}",
+        "retrieve comments for {{issue_key}}"
+    ],
+    "name": "nexus_get_repository",
+    "pack": "nexus3"
+}

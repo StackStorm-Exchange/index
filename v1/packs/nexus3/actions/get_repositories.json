@@ -1,0 +1,24 @@
+{
+    "description": "get repository identified by a unique identifier",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_repositories",
+    "parameters": {
+        "action": {
+            "default": "get_repositories",
+            "immutable": true,
+            "type": "string"
+        },
+        "config_profile": {
+            "description": "Select which nexus config profile to use.",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "A unique identifier of the repository to fetch",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

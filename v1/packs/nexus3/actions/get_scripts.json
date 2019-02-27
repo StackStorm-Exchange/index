@@ -1,0 +1,24 @@
+{
+    "description": "Fetch script specified by name",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_scripts",
+    "parameters": {
+        "action": {
+            "default": "get_scripts",
+            "immutable": true,
+            "type": "string"
+        },
+        "config_profile": {
+            "description": "Select which nexus config profile to use.",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of script to be fetched.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

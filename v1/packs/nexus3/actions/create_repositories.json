@@ -1,0 +1,94 @@
+{
+    "description": "Create a repository",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "create_repositories",
+    "parameters": {
+        "action": {
+            "default": "create_repositories",
+            "immutable": true,
+            "type": "string"
+        },
+        "blob_store_name": {
+            "default": "default",
+            "description": "Blob store used to store asset contents",
+            "required": true,
+            "type": "string"
+        },
+        "config_profile": {
+            "description": "Select which nexus config profile to use.",
+            "required": false,
+            "type": "string"
+        },
+        "format": {
+            "description": "The format of the repository (i.e. maven2, docker, raw, nuget...)",
+            "enum": [
+                "bower",
+                "docker",
+                "gitlfs",
+                "maven",
+                "npm",
+                "nuget",
+                "pypi",
+                "raw",
+                "rubygems",
+                "yum"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "layout_policy": {
+            "default": "STRICT",
+            "description": "Validate that all paths are maven artifact or metadata paths",
+            "enum": [
+                "STRICT",
+                "PERMISSIVE"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "A unique identifier for this repository",
+            "required": true,
+            "type": "string"
+        },
+        "strict_content_type_validation": {
+            "default": false,
+            "description": "Validate that all content uploaded to this repository is of a MIME type appropriate for the repository format",
+            "required": true,
+            "type": "boolean"
+        },
+        "type": {
+            "description": "The type of repository (i.e. group, hosted, or proxy)",
+            "enum": [
+                "hosted",
+                "proxy"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "version_policy": {
+            "default": "RELEASE",
+            "description": "What type of artifacts does this repository store?",
+            "enum": [
+                "RELEASE",
+                "SNAPSHOT",
+                "MIXED"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "write_policy": {
+            "default": "ALLOW",
+            "description": "Controls if deployments of and updates to artifacts are allowed",
+            "enum": [
+                "ALLOW_ONCE",
+                "ALLOW",
+                "DENY"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

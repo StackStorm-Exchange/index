@@ -1,0 +1,12 @@
+{
+    "description": "Retry core.http action on timeout.",
+    "enabled": true,
+    "name": "http.retry",
+    "parameters": {
+        "delay": 2,
+        "max_retry_count": 2,
+        "retry_on": "timeout"
+    },
+    "policy_type": "action.retry",
+    "resource_ref": "core.http"
+}

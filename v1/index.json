@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1551217198,
-        "hash": "6280681a3a13fcf173e5925ead1740c1"
+        "generated_ts": 1551299466,
+        "hash": "bbdfdc40e60053d6aeaeebb4e2139384"
     },
     "packs": {
         "acos": {
@@ -9132,6 +9132,62 @@
             "ref": "newrelic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
             "version": "0.4.3"
+        },
+        "nexus3": {
+            "author": "Sonu Meena",
+            "content": {
+                "actions": {
+                    "count": 9,
+                    "resources": [
+                        "create_repositories",
+                        "create_scripts",
+                        "delete_repositories",
+                        "delete_scripts",
+                        "get_repositories",
+                        "get_scripts",
+                        "list_repositories",
+                        "list_scripts",
+                        "run_scripts"
+                    ]
+                },
+                "aliases": {
+                    "count": 1,
+                    "resources": [
+                        "nexus_get_repository"
+                    ]
+                },
+                "policies": {
+                    "count": 1,
+                    "resources": [
+                        "http.retry"
+                    ]
+                },
+                "tests": {
+                    "count": 5,
+                    "resources": [
+                        "nexus_base_test_case.py",
+                        "test_resource_repositories.py",
+                        "test_resource_scripts.py",
+                        "test_resource_unsupported.py",
+                        "test_run.py"
+                    ]
+                }
+            },
+            "description": "Sontatype nexus3 stackstorm pack",
+            "email": "sonukr666@gmail.com",
+            "keywords": [
+                "nexus",
+                "nexus3",
+                "sonatype"
+            ],
+            "name": "Sontatype nexus3",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "nexus3",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nexus3",
+            "version": "0.1.0"
         },
         "nginxplus": {
             "author": "Copart",

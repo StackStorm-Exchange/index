@@ -1,0 +1,42 @@
+ref: nexus3
+name: Sontatype nexus3
+description: Sontatype nexus3 stackstorm pack
+keywords:
+- nexus
+- nexus3
+- sonatype
+version: 0.1.0
+python_versions:
+- '2'
+- '3'
+author: Sonu Meena
+email: sonukr666@gmail.com
+content:
+  actions:
+    count: 9
+    resources:
+    - create_repositories
+    - create_scripts
+    - delete_repositories
+    - delete_scripts
+    - get_repositories
+    - get_scripts
+    - list_repositories
+    - list_scripts
+    - run_scripts
+  aliases:
+    count: 1
+    resources:
+    - nexus_get_repository
+  policies:
+    count: 1
+    resources:
+    - http.retry
+  tests:
+    count: 5
+    resources:
+    - nexus_base_test_case.py
+    - test_resource_repositories.py
+    - test_resource_scripts.py
+    - test_resource_unsupported.py
+    - test_run.py

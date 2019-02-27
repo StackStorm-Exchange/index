@@ -1,0 +1,64 @@
+{
+    "password": {
+        "description": "Password",
+        "position": 3,
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "profiles": {
+        "additionalProperties": {
+            "additionalProperties": false,
+            "properties": {
+                "password": {
+                    "description": "Password",
+                    "required": false,
+                    "secret": true,
+                    "type": "string"
+                },
+                "url": {
+                    "description": "URL of the JIRA instance (e.g. ``https://myproject.atlassian.net``)",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "user": {
+                    "description": "Username",
+                    "required": false,
+                    "secret": false,
+                    "type": "string"
+                },
+                "verify": {
+                    "default": true,
+                    "description": "verify TLS, only used if the ``url`` option specifies an ``HTTPS`` connection",
+                    "type": "boolean"
+                }
+            },
+            "type": "object"
+        },
+        "description": "Nexus3 Connection profile name. This will use above options as default values.",
+        "properties": {},
+        "required": false,
+        "type": "object"
+    },
+    "url": {
+        "description": "URL of the nexus3 instance (e.g. ``http://localhost:8081``)",
+        "position": 0,
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "user": {
+        "description": "Username",
+        "position": 2,
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "verify": {
+        "default": true,
+        "description": "verify TLS, only used if the ``url`` option specifies an ``HTTPS`` connection",
+        "position": 1,
+        "type": "boolean"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "description": "delete all repositories of nexus3",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete_repositories",
+    "parameters": {
+        "action": {
+            "default": "delete_repositories",
+            "immutable": true,
+            "type": "string"
+        },
+        "config_profile": {
+            "description": "Select which nexus config profile to use.",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "A unique identifier of the repository to delete",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

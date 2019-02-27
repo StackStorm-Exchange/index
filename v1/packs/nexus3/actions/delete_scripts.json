@@ -1,0 +1,24 @@
+{
+    "description": "delete a script",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete_scripts",
+    "parameters": {
+        "action": {
+            "default": "delete_scripts",
+            "immutable": true,
+            "type": "string"
+        },
+        "config_profile": {
+            "description": "Select which nexus config profile to use.",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "name of script to be deleted",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
