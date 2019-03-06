@@ -39,21 +39,40 @@
                 "description": "OpenStack Authentication URL",
                 "type": "string"
             },
+            "OS_IDENTITY_API_VERSION": {
+                "default": "3",
+                "description": "OpenStack identity service api version",
+                "type": "string"
+            },
             "OS_PASSWORD": {
                 "description": "OpenStack Password",
                 "secret": true,
                 "type": "string"
             },
-            "OS_TENANT_ID": {
-                "description": "OpenStack Tenant ID",
+            "OS_PROJECT_DOMAIN_ID": {
+                "default": "default",
+                "description": "OpenStack Project Domain ID",
                 "type": "string"
             },
-            "OS_TENANT_NAME": {
-                "description": "OpenStack Tenant Name",
+            "OS_PROJECT_ID": {
+                "description": "OpenStack Project ID",
+                "type": "string"
+            },
+            "OS_PROJECT_NAME": {
+                "description": "OpenStack Project Name",
+                "type": "string"
+            },
+            "OS_REGION_NAME": {
+                "description": "OpenStack Region Name",
                 "type": "string"
             },
             "OS_USERNAME": {
                 "description": "OpenStack Username",
+                "type": "string"
+            },
+            "OS_USER_DOMAIN_ID": {
+                "default": "default",
+                "description": "OpenStack User Domain ID",
                 "type": "string"
             }
         },
