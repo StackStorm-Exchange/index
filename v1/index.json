@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1552320896,
-        "hash": "d7e879075489a94e1c2fcc0f02c1fd38"
+        "generated_ts": 1552336392,
+        "hash": "6b0d44d230f668b93c9fbcbc3139104f"
     },
     "packs": {
         "acos": {
@@ -11593,13 +11593,14 @@
             "author": "Martez Reed",
             "content": {
                 "actions": {
-                    "count": 12,
+                    "count": 13,
                     "resources": [
                         "apply",
                         "create_workspace",
                         "delete_workspace",
                         "destroy",
                         "get_version",
+                        "import_object",
                         "init",
                         "list_workspaces",
                         "output",
@@ -11610,7 +11611,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 13,
+                    "count": 14,
                     "resources": [
                         "terraform_base_action_test_case.py",
                         "test_action_apply.py",
@@ -11618,6 +11619,7 @@
                         "test_action_delete_workspace.py",
                         "test_action_destroy.py",
                         "test_action_get_version.py",
+                        "test_action_import_object.py",
                         "test_action_init.py",
                         "test_action_lib_action.py",
                         "test_action_list_workspaces.py",
@@ -11637,7 +11639,7 @@
             "ref": "terraform",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-terraform",
             "runner_type": "python-script",
-            "version": "0.2.3"
+            "version": "0.2.4"
         },
         "tesla": {
             "author": "Anthony Shaw",
