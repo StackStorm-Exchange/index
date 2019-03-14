@@ -1,0 +1,31 @@
+{
+    "description": "Check if a given task is complete and return the results",
+    "enabled": true,
+    "entry_point": "lib/task_check_complete.py",
+    "name": "task_check_complete",
+    "parameters": {
+        "operation": {
+            "default": "task_check_complete",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "required": true,
+            "type": "string"
+        },
+        "server": {
+            "required": true,
+            "type": "string"
+        },
+        "task_id": {
+            "description": "The Task ID from ManageIQ",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

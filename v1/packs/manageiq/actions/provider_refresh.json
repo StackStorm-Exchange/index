@@ -1,0 +1,36 @@
+{
+    "description": "Refresh the specified provider in ManageIQ. If no ID is given then all providers will be refreshed.",
+    "enabled": true,
+    "entry_point": "lib/providers.py",
+    "name": "provider_refresh",
+    "pack": "manageiq",
+    "parameters": {
+        "operation": {
+            "default": "refresh",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Password for username on the ManageIQ Server",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "provider_id": {
+            "description": "ManageIQ ID of the provider to refresh",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Hostname or IP address of the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username to login as on the ManageIQ Server",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
