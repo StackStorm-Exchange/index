@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1553619354,
-        "hash": "760872c6521a0b779f9c52beddfbb4d9"
+        "generated_ts": 1553624213,
+        "hash": "5ffafcfb6b0f67ffe2b73ab0882756df"
     },
     "packs": {
         "acos": {
@@ -12394,10 +12394,11 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 42,
+                    "count": 45,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
+                        "custom_attr_assign",
                         "get_moid",
                         "get_objects_with_tag",
                         "get_tags_on_object",
@@ -12417,6 +12418,7 @@
                         "host_get",
                         "host_network_hits_get",
                         "set_vm",
+                        "tags_attach_to_object",
                         "vm_check_tools",
                         "vm_create_from_template",
                         "vm_env_items_get",
@@ -12437,6 +12439,7 @@
                         "vm_hw_uuid_get",
                         "vm_runtime_info_get",
                         "vm_shutdown",
+                        "vm_tools_options_update",
                         "wait_task"
                     ]
                 },
@@ -12447,11 +12450,12 @@
                     ]
                 },
                 "tests": {
-                    "count": 32,
+                    "count": 36,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
                         "test_action_create_from_template.py",
+                        "test_action_custom_attr_assign.py",
                         "test_action_get_moid.py",
                         "test_action_get_objects_with_tag.py",
                         "test_action_get_tags_on_object.py",
@@ -12475,8 +12479,11 @@
                         "test_action_hw_remove.py",
                         "test_action_hw_scsi_controller_add.py",
                         "test_action_hw_uuid_get.py",
+                        "test_action_tags_attach_to_object.py",
+                        "test_action_vm_check_tools.py",
                         "test_action_vm_folder_get.py",
                         "test_action_vm_shutdown.py",
+                        "test_action_vm_tools_options_update.py",
                         "test_action_vmwarelib_actions.py",
                         "test_config_schema.py",
                         "test_sensor_taskinfo.py",
@@ -12497,7 +12504,7 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.8.2"
+            "version": "0.8.4"
         },
         "vyatta": {
             "author": "Mehdi Abdelouahab",

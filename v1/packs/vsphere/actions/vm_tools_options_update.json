@@ -1,0 +1,64 @@
+{
+    "description": "Changes configuration of a Virtual Machine tools options.",
+    "enabled": true,
+    "entry_point": "vm_tools_options_update.py",
+    "name": "vm_tools_options_update",
+    "parameters": {
+        "script_after_power_on": {
+            "description": "Flag to specify whether or not scripts should run after the virtual machine powers on.",
+            "required": false,
+            "type": "boolean"
+        },
+        "script_after_resume": {
+            "description": "Flag to specify whether or not scripts should run after the virtual machine resumes.",
+            "required": false,
+            "type": "boolean"
+        },
+        "script_before_guest_reboot": {
+            "description": "Flag to specify whether or not scripts should run before the virtual machine suspends.",
+            "required": false,
+            "type": "boolean"
+        },
+        "script_before_guest_shutdown": {
+            "description": "Flag to specify whether or not scripts should run before the virtual machine powers off.",
+            "required": false,
+            "type": "boolean"
+        },
+        "script_before_guest_standby": {
+            "description": "Flag to specify whether or not scripts should run before the virtual machine reboots.",
+            "required": false,
+            "type": "boolean"
+        },
+        "sync_time_with_host": {
+            "description": "Indicates whether or not the tools program will sync time with the host time.",
+            "required": false,
+            "type": "boolean"
+        },
+        "tools_upgrade_policy": {
+            "description": "Tools upgrade policy setting for the virtual machine.",
+            "enum": [
+                "manual",
+                "upgradeAtPowerCycle"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "moId of a Virtual Machine. e.g. \"vm-1\".",
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "Name of a Virtual Machine.",
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
