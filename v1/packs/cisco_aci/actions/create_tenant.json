@@ -1,0 +1,28 @@
+{
+    "description": "Create a new Tenant",
+    "enabled": true,
+    "entry_point": "create_tenant.py",
+    "name": "create_tenant",
+    "parameters": {
+        "apic": {
+            "description": "Which ACI APIC would you like to connect to",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Field to provide username and password, eg { \"user\":\"username\", \"passwd\": \"secret\" }",
+            "position": 2,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "tenant_name": {
+            "description": "Enter tenant name e.g. my_tenant",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

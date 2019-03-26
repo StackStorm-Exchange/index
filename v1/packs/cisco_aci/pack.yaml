@@ -1,31 +1,37 @@
 ref: cisco_aci
 name: cisco_aci
 description: Cisco ACI pack
-version: 0.1.4
+version: 0.1.5
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
+contributors:
+- Kamlesh Koladiya <koladiya_111@yahoo.com>
 keywords:
 - cisco
 - aci
 - networking
 content:
   actions:
-    count: 15
+    count: 19
     resources:
-    - get_vrfs
-    - get_assigned_ports
-    - setup_epg
-    - get_bds
+    - create_ap
     - create_bd
     - create_epg
-    - get_static_bindings
-    - get_sessionid
+    - create_interface_leaf_policy_group
+    - create_snapshot
     - create_static_binding
-    - get_tenants
-    - create_ap
-    - get_epgs
+    - create_tenant
     - get_aps
+    - get_assigned_ports
+    - get_bds
+    - get_epgs
+    - get_sessionid
+    - get_snapshots
+    - get_static_bindings
+    - get_tenants
+    - get_vrfs
     - link_domain
+    - setup_epg
     - test_endpoint
   rules:
     count: 1
@@ -34,18 +40,18 @@ content:
   tests:
     count: 15
     resources:
-    - test_action_get_vrfs.py
-    - test_action_create_bd.py
-    - test_action_get_assigned_ports.py
-    - test_action_get_tenants.py
     - aci_base_action_test_case.py
-    - test_action_get_static_bindings.py
-    - test_action_link_domain.py
-    - test_action_create_static_binding.py
-    - test_action_get_epgs.py
     - test_action_create_ap.py
-    - test_action_get_sessionid.py
-    - test_action_get_bds.py
-    - test_action_get_aps.py
+    - test_action_create_bd.py
     - test_action_create_epg.py
+    - test_action_create_static_binding.py
+    - test_action_get_aps.py
+    - test_action_get_assigned_ports.py
+    - test_action_get_bds.py
+    - test_action_get_epgs.py
+    - test_action_get_sessionid.py
+    - test_action_get_static_bindings.py
+    - test_action_get_tenants.py
+    - test_action_get_vrfs.py
+    - test_action_link_domain.py
     - test_action_test_endpoint.py

@@ -1,0 +1,22 @@
+{
+    "description": "Retrieve list of snapshots",
+    "enabled": true,
+    "entry_point": "get_snapshots.py",
+    "name": "get_snapshots",
+    "parameters": {
+        "apic": {
+            "description": "Which ACI APIC would you like to connect to",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Field to provide username and password, eg { \"user\":\"username\", \"passwd\": \"secret\" }",
+            "position": 1,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

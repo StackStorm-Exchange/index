@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1552916185,
-        "hash": "e2a085d0eb60ec0ee7a4b4e5994117f3"
+        "generated_ts": 1553619354,
+        "hash": "760872c6521a0b779f9c52beddfbb4d9"
     },
     "packs": {
         "acos": {
@@ -4582,22 +4582,26 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 15,
+                    "count": 19,
                     "resources": [
-                        "get_vrfs",
-                        "get_assigned_ports",
-                        "setup_epg",
-                        "get_bds",
+                        "create_ap",
                         "create_bd",
                         "create_epg",
-                        "get_static_bindings",
-                        "get_sessionid",
+                        "create_interface_leaf_policy_group",
+                        "create_snapshot",
                         "create_static_binding",
-                        "get_tenants",
-                        "create_ap",
-                        "get_epgs",
+                        "create_tenant",
                         "get_aps",
+                        "get_assigned_ports",
+                        "get_bds",
+                        "get_epgs",
+                        "get_sessionid",
+                        "get_snapshots",
+                        "get_static_bindings",
+                        "get_tenants",
+                        "get_vrfs",
                         "link_domain",
+                        "setup_epg",
                         "test_endpoint"
                     ]
                 },
@@ -4610,24 +4614,27 @@
                 "tests": {
                     "count": 15,
                     "resources": [
-                        "test_action_get_vrfs.py",
-                        "test_action_create_bd.py",
-                        "test_action_get_assigned_ports.py",
-                        "test_action_get_tenants.py",
                         "aci_base_action_test_case.py",
-                        "test_action_get_static_bindings.py",
-                        "test_action_link_domain.py",
-                        "test_action_create_static_binding.py",
-                        "test_action_get_epgs.py",
                         "test_action_create_ap.py",
-                        "test_action_get_sessionid.py",
-                        "test_action_get_bds.py",
-                        "test_action_get_aps.py",
+                        "test_action_create_bd.py",
                         "test_action_create_epg.py",
+                        "test_action_create_static_binding.py",
+                        "test_action_get_aps.py",
+                        "test_action_get_assigned_ports.py",
+                        "test_action_get_bds.py",
+                        "test_action_get_epgs.py",
+                        "test_action_get_sessionid.py",
+                        "test_action_get_static_bindings.py",
+                        "test_action_get_tenants.py",
+                        "test_action_get_vrfs.py",
+                        "test_action_link_domain.py",
                         "test_action_test_endpoint.py"
                     ]
                 }
             },
+            "contributors": [
+                "Kamlesh Koladiya <koladiya_111@yahoo.com>"
+            ],
             "description": "Cisco ACI pack",
             "email": "paul.mulvihill@pulsant.com",
             "keywords": [
@@ -4638,7 +4645,7 @@
             "name": "cisco_aci",
             "ref": "cisco_aci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_aci",
-            "version": "0.1.4"
+            "version": "0.1.5"
         },
         "cisco_spark": {
             "author": "Anthony Shaw",

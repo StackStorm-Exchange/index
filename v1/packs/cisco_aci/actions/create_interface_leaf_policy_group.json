@@ -1,0 +1,124 @@
+{
+    "description": "Create an interface leaf policy group",
+    "enabled": true,
+    "entry_point": "create_interface_leaf_policy_group.py",
+    "name": "create_interface_leaf_policy_group",
+    "parameters": {
+        "CDP_Policy": {
+            "description": "Enter the cdp policy ",
+            "position": 10,
+            "required": true,
+            "type": "string"
+        },
+        "CoPP_Policy": {
+            "description": "Enter the copp policy",
+            "position": 12,
+            "required": true,
+            "type": "string"
+        },
+        "Egress_Data_Plane_Policing_Policy": {
+            "description": "Enter the Egress control interface policy",
+            "position": 6,
+            "required": true,
+            "type": "string"
+        },
+        "Fibre_Channel_Interface_Policy": {
+            "description": "Enter the fibre channel interface policy",
+            "position": 14,
+            "required": true,
+            "type": "string"
+        },
+        "Group_Policy_Name": {
+            "description": "Enter the interface leaf policy group name",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "Ingress_Data_Plane_Policing_Policy": {
+            "description": "Enter the Ingress data plane policing policy",
+            "position": 4,
+            "required": true,
+            "type": "string"
+        },
+        "L2_Interface_Policy": {
+            "description": "Enter the L2 interface policy ",
+            "position": 11,
+            "required": true,
+            "type": "string"
+        },
+        "LLDP_Policy": {
+            "description": "Enter the lldp policy",
+            "position": 13,
+            "required": true,
+            "type": "string"
+        },
+        "Link_Level_Policy": {
+            "description": "Enter the link level policy",
+            "position": 16,
+            "required": true,
+            "type": "string"
+        },
+        "MCP_Policy": {
+            "description": "Enter the mcp policy",
+            "position": 9,
+            "required": true,
+            "type": "string"
+        },
+        "Monitoring_Policy": {
+            "description": "Enter the monitoring policy",
+            "position": 8,
+            "required": true,
+            "type": "string"
+        },
+        "Port_Security_Policy": {
+            "description": "Enter the port security policy",
+            "position": 17,
+            "required": true,
+            "type": "string"
+        },
+        "Priority_Flow_Control_Policy": {
+            "description": "Enter the priority flow contrl policy",
+            "position": 15,
+            "required": true,
+            "type": "string"
+        },
+        "STP_Interface_Policy": {
+            "description": "Enter the STP interface policy",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "Slow_Drain_Policy": {
+            "description": "Enter the slow drain policy",
+            "position": 7,
+            "required": true,
+            "type": "string"
+        },
+        "Storm_Control_Interface_Policy": {
+            "description": "Enter the storm control interface policy",
+            "position": 5,
+            "required": true,
+            "type": "string"
+        },
+        "apic": {
+            "description": "Which ACI APIC would you like to connect to",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "credentials": {
+            "description": "Field to provide username and password, eg { \"user\":\"username\", \"passwd\": \"secret\" }",
+            "position": 1,
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "dot1x_Port_Authentication_Policy": {
+            "description": "Enter the dot1X port authentication policy",
+            "position": 18,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
