@@ -13,6 +13,10 @@
             "description": "Path to the bolt executable",
             "type": "string"
         },
+        "color": {
+            "description": "Whether to show output in color",
+            "type": "boolean"
+        },
         "command": {
             "description": "The command to run",
             "required": true,

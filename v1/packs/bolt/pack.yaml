@@ -7,13 +7,14 @@ keywords:
 - remote execution
 - configuration management
 - cfg management
-version: 0.1.3
+version: 0.2.0
 author: Encore Technologies
 email: code@encore.tech
 content:
   actions:
-    count: 11
+    count: 14
     resources:
+    - apply
     - command_run
     - file_upload
     - install
@@ -21,10 +22,12 @@ content:
     - plan_run
     - plan_show
     - puppetfile_install
+    - puppetfile_show_modules
     - script_run
     - task_list
     - task_run
     - task_show
+    - version
   aliases:
     count: 6
     resources:

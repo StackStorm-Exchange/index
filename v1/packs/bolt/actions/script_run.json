@@ -13,6 +13,10 @@
             "description": "Path to the bolt executable",
             "type": "string"
         },
+        "color": {
+            "description": "Whether to show output in color",
+            "type": "boolean"
+        },
         "compile_concurrency": {
             "description": "Maximum number of simultaneous manifest block compiles (default: number of cores)",
             "type": "integer"
@@ -99,7 +103,7 @@
             "type": "string"
         },
         "script": {
-            "description": "The script to upload and run",
+            "description": "Path to the script to upload and run on a set of nodes",
             "required": true,
             "type": "string"
         },

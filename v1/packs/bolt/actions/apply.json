@@ -1,8 +1,8 @@
 {
-    "description": "Install modules from a Puppetfile into a Boltdir",
+    "description": "Apply Puppet manifest code.",
     "enabled": true,
     "entry_point": "lib/bolt.py",
-    "name": "puppetfile_install",
+    "name": "apply",
     "pack": "bolt",
     "parameters": {
         "boltdir": {
@@ -65,6 +65,11 @@
             "description": "Specify where to load inventory from (default: ~/.puppetlabs/bolt/inventory.yaml)",
             "type": "string"
         },
+        "manifest": {
+            "description": "Path to a manifest file (.pp) to upload and apply on a set of nodes",
+            "required": true,
+            "type": "string"
+        },
         "modulepath": {
             "description": "List of directories containing modules, separated by ':'",
             "type": "string"
@@ -111,7 +116,7 @@
             "type": "boolean"
         },
         "sub_command": {
-            "default": "puppetfile install",
+            "default": "apply",
             "immutable": true,
             "type": "string"
         },

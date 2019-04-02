@@ -1,8 +1,8 @@
 {
-    "description": "Install modules from a Puppetfile into a Boltdir",
+    "description": "List the version of Bolt installed.",
     "enabled": true,
     "entry_point": "lib/bolt.py",
-    "name": "puppetfile_install",
+    "name": "version",
     "pack": "bolt",
     "parameters": {
         "boltdir": {
@@ -54,6 +54,7 @@
             "type": "object"
         },
         "format": {
+            "default": "human",
             "description": "Output format to use: human or json",
             "type": "string"
         },
@@ -111,7 +112,7 @@
             "type": "boolean"
         },
         "sub_command": {
-            "default": "puppetfile install",
+            "default": "--version",
             "immutable": true,
             "type": "string"
         },

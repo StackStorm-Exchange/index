@@ -1,8 +1,8 @@
 {
-    "description": "Install modules from a Puppetfile into a Boltdir",
+    "description": "List modules available to Bolt",
     "enabled": true,
     "entry_point": "lib/bolt.py",
-    "name": "puppetfile_install",
+    "name": "puppetfile_show_modules",
     "pack": "bolt",
     "parameters": {
         "boltdir": {
@@ -111,7 +111,7 @@
             "type": "boolean"
         },
         "sub_command": {
-            "default": "puppetfile install",
+            "default": "puppetfile show-modules",
             "immutable": true,
             "type": "string"
         },

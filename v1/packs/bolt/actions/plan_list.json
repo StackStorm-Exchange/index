@@ -13,6 +13,10 @@
             "description": "Path to the bolt executable",
             "type": "string"
         },
+        "color": {
+            "description": "Whether to show output in color",
+            "type": "boolean"
+        },
         "compile_concurrency": {
             "description": "Maximum number of simultaneous manifest block compiles (default: number of cores)",
             "type": "integer"
