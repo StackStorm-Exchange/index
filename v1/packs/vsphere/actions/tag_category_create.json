@@ -1,0 +1,41 @@
+{
+    "description": "Create a vsphere tag category",
+    "enabled": true,
+    "entry_point": "tag_category_create.py",
+    "name": "tag_category_create",
+    "parameters": {
+        "category_cardinality": {
+            "default": "SINGLE",
+            "description": "Cardinality of the tag category",
+            "enum": [
+                "SINGLE",
+                "MULTIPLE"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "category_description": {
+            "description": "Description of the tag category",
+            "required": false,
+            "type": "string"
+        },
+        "category_name": {
+            "description": "Name of the category to create",
+            "required": true,
+            "type": "string"
+        },
+        "category_types": {
+            "default": [],
+            "description": "Associable types for the tag category (Empty array means all types)",
+            "required": true,
+            "type": "array"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

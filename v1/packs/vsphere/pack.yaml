@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.8.4
+version: 0.8.5
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -13,11 +13,13 @@ contributors:
 - James E. King III <jking@apache.org>
 content:
   actions:
-    count: 45
+    count: 54
     resources:
     - affinity_rule_create
     - affinity_rule_delete
     - custom_attr_assign
+    - custom_attr_assign_or_create
+    - custom_attr_create
     - get_moid
     - get_objects_with_tag
     - get_tags_on_object
@@ -37,7 +39,14 @@ content:
     - host_get
     - host_network_hits_get
     - set_vm
-    - tags_attach_to_object
+    - tag_attach_or_create
+    - tag_category_create
+    - tag_category_delete
+    - tag_category_list
+    - tag_create
+    - tag_delete
+    - tag_list
+    - tags_attach_by_id
     - vm_check_tools
     - vm_create_from_template
     - vm_env_items_get
@@ -65,12 +74,14 @@ content:
     resources:
     - TaskInfoSensor
   tests:
-    count: 36
+    count: 46
     resources:
     - test_action_affinity_rule_create.py
     - test_action_affinity_rule_delete.py
     - test_action_create_from_template.py
     - test_action_custom_attr_assign.py
+    - test_action_custom_attr_assign_or_create.py
+    - test_action_custom_attr_create.py
     - test_action_get_moid.py
     - test_action_get_objects_with_tag.py
     - test_action_get_tags_on_object.py
@@ -94,12 +105,20 @@ content:
     - test_action_hw_remove.py
     - test_action_hw_scsi_controller_add.py
     - test_action_hw_uuid_get.py
-    - test_action_tags_attach_to_object.py
+    - test_action_tag_attach_or_create.py
+    - test_action_tag_category_create.py
+    - test_action_tag_category_delete.py
+    - test_action_tag_category_list.py
+    - test_action_tag_create.py
+    - test_action_tag_delete.py
+    - test_action_tag_list.py
+    - test_action_tags_attach_by_id.py
     - test_action_vm_check_tools.py
     - test_action_vm_folder_get.py
     - test_action_vm_shutdown.py
     - test_action_vm_tools_options_update.py
     - test_action_vmwarelib_actions.py
+    - test_action_vmwarelib_tagging.py
     - test_config_schema.py
     - test_sensor_taskinfo.py
     - vsphere_base_action_test_case.py
