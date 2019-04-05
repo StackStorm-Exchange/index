@@ -1,0 +1,33 @@
+{
+    "description": "Create a new local branch for a repository",
+    "enabled": true,
+    "entry_point": "",
+    "name": "new_local_branch",
+    "parameters": {
+        "cmd": {
+            "default": "cd {{ local_repo_directory }} && git checkout -b {{ new_branch }} {{ source_branch }}",
+            "immutable": true
+        },
+        "local_repo_directory": {
+            "description": "Local path to repo directory",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "new_branch": {
+            "default": "patch_1",
+            "description": "Name of new branch",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "source_branch": {
+            "default": "master",
+            "description": "Source branch to create new branch from",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "remote-shell-cmd"
+}
