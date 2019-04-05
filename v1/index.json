@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1554476147,
-        "hash": "7038216155161bc4687bbe48522ad63e"
+        "generated_ts": 1554492150,
+        "hash": "bcaa89404016877004bfaf68b72f96b0"
     },
     "packs": {
         "acos": {
@@ -6356,11 +6356,15 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 3,
+                    "count": 7,
                     "resources": [
-                        "get_remote_repo_latest_commit",
+                        "checkout_remote_branch",
+                        "clone",
+                        "commit_and_push",
                         "get_local_repo_latest_commit",
-                        "clone"
+                        "get_remote_repo_latest_commit",
+                        "new__local_branch",
+                        "remote_branch_exists"
                     ]
                 },
                 "rules": {
@@ -6391,7 +6395,7 @@
             "name": "git",
             "ref": "git",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
-            "version": "0.4.2"
+            "version": "0.5.0"
         },
         "github": {
             "author": "StackStorm, Inc.",

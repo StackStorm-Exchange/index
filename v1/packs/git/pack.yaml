@@ -4,16 +4,20 @@ description: Git SCM
 keywords:
 - git
 - scm
-version: 0.4.2
+version: 0.5.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 3
+    count: 7
     resources:
-    - get_remote_repo_latest_commit
-    - get_local_repo_latest_commit
+    - checkout_remote_branch
     - clone
+    - commit_and_push
+    - get_local_repo_latest_commit
+    - get_remote_repo_latest_commit
+    - new__local_branch
+    - remote_branch_exists
   rules:
     count: 1
     resources:
