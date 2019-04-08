@@ -1,5 +1,5 @@
 {
-    "description": "Destroy an acl token",
+    "description": "Destroys the ACL token 'acl_id'",
     "enabled": true,
     "entry_point": "acl_destroy.py",
     "name": "acl_destroy",
@@ -9,6 +9,18 @@
             "description": "Token to destroy",
             "position": 0,
             "required": true,
+            "type": "string"
+        },
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "default": "",
+            "description": "An ACL token to use instead of the agent token.",
+            "required": false,
+            "secret": true,
             "type": "string"
         }
     },

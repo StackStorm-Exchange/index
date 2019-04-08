@@ -4,6 +4,16 @@
     "entry_point": "catalog_deregister.py",
     "name": "catalog_deregister",
     "parameters": {
+        "check_id": {
+            "description": "Check Name/ID",
+            "required": false,
+            "type": "string"
+        },
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "dc": {
             "description": "Optional Data Center ID",
             "type": "string"
@@ -16,6 +26,13 @@
         "service": {
             "description": "Service Name/ID",
             "required": false,
+            "type": "string"
+        },
+        "token": {
+            "default": "",
+            "description": "An ACL token to use instead of the agent token.",
+            "required": false,
+            "secret": true,
             "type": "string"
         }
     },

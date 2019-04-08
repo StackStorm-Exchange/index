@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1554752368,
-        "hash": "42f5f5c300a25d047678bd45f66d2fe0"
+        "generated_ts": 1554755675,
+        "hash": "9e07542e7888fc0105d92c2ecf8c006a"
     },
     "packs": {
         "acos": {
@@ -4796,11 +4796,14 @@
             "author": "jfryman",
             "content": {
                 "actions": {
-                    "count": 37,
+                    "count": 41,
                     "resources": [
+                        "acl_clone",
                         "acl_create",
                         "acl_destroy",
+                        "acl_info",
                         "acl_list",
+                        "acl_update",
                         "agent_checks",
                         "agent_force_leave",
                         "agent_join",
@@ -4834,7 +4837,8 @@
                         "session_info",
                         "session_list",
                         "session_node",
-                        "session_renew"
+                        "session_renew",
+                        "test_pack_actions"
                     ]
                 }
             },

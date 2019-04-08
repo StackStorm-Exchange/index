@@ -5,6 +5,11 @@
     "name": "session_destroy",
     "pack": "consul",
     "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "dc": {
             "description": "dc is the datacenter that this agent will communicate with.",
             "position": 1,

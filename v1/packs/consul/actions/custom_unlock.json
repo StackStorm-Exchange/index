@@ -4,6 +4,11 @@
     "entry_point": "custom_unlock.py",
     "name": "custom_unlock",
     "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "dc": {
             "description": "Optional datacenter that you wish to communicate with.",
             "required": false,
@@ -30,6 +35,7 @@
             "type": "string"
         },
         "token": {
+            "default": "",
             "description": "An optional ACL token to apply to this request.",
             "required": false,
             "type": "string"

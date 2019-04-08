@@ -1,10 +1,15 @@
 {
-    "description": "Lists all the active ACL tokens.",
+    "description": "Returns the token information for 'acl_id'.",
     "enabled": true,
-    "entry_point": "acl_list.py",
-    "name": "acl_list",
+    "entry_point": "acl_info.py",
+    "name": "acl_info",
     "pack": "consul",
     "parameters": {
+        "acl_id": {
+            "description": "Fetch information for 'acl_id'.",
+            "required": true,
+            "type": "string"
+        },
         "consul_profile": {
             "description": "Consul profile to use to run the action.",
             "required": false,

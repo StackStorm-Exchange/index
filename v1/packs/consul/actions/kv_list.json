@@ -4,6 +4,11 @@
     "entry_point": "kv_get.py",
     "name": "kv_list",
     "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "key": {
             "description": "Root Key for listing from Consul",
             "required": true,

@@ -4,6 +4,11 @@
     "entry_point": "health_state.py",
     "name": "health_state",
     "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "dc": {
             "description": "The datacenter of the node and defaults to this agents datacenter.",
             "required": false,
@@ -32,7 +37,14 @@
             "required": false,
             "type": "string"
         },
+        "node_meta": {
+            "default": {},
+            "description": "An optional meta data used for filtering.",
+            "required": false,
+            "type": "object"
+        },
         "token": {
+            "default": "",
             "description": "An optional ACL token to apply to this request.",
             "required": false,
             "secret": true,

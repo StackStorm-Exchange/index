@@ -1,9 +1,14 @@
 {
-    "description": "Place the agent into _maintenance mode_.",
+    "description": "Place the agent into 'maintenance mode'.",
     "enabled": true,
     "entry_point": "agent_maintenance.py",
     "name": "agent_maintenance",
     "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "enable": {
             "default": true,
             "description": "True: enables maintenance mode.  False: disables maintenance mode.",

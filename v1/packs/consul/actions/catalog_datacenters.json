@@ -3,6 +3,12 @@
     "enabled": true,
     "entry_point": "catalog_datacenters.py",
     "name": "catalog_datacenters",
-    "parameters": {},
+    "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        }
+    },
     "runner_type": "python-script"
 }

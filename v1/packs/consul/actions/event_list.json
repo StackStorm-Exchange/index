@@ -4,6 +4,11 @@
     "entry_point": "event_list.py",
     "name": "event_list",
     "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "index": {
             "description": "The current event Consul index",
             "required": false,

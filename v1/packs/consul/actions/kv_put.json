@@ -14,6 +14,11 @@
             "required": false,
             "type": "integer"
         },
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "dc": {
             "description": "Optional datacenter that you wish to communicate with.",
             "required": false,
@@ -41,8 +46,10 @@
             "type": "boolean"
         },
         "token": {
-            "description": "An optional ACL token to apply to this request.",
+            "default": "",
+            "description": "An ACL token to use instead of the agent token.",
             "required": false,
+            "secret": true,
             "type": "string"
         },
         "value": {

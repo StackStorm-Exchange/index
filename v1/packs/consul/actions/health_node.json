@@ -4,6 +4,11 @@
     "entry_point": "health_node.py",
     "name": "health_node",
     "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "dc": {
             "description": "The datacenter of the node and defaults to this agents datacenter.",
             "required": false,
@@ -20,7 +25,8 @@
             "type": "string"
         },
         "token": {
-            "description": "An optional ACL token to apply to this request.",
+            "default": "",
+            "description": "An ACL token to use instead of the agent token.",
             "required": false,
             "secret": true,
             "type": "string"

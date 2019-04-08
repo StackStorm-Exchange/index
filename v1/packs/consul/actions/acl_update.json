@@ -1,13 +1,13 @@
 {
-    "description": "Creates a new ACL token.",
+    "description": "Updates the ACL token 'acl_id'.",
     "enabled": true,
-    "entry_point": "acl_create.py",
-    "name": "acl_create",
+    "entry_point": "acl_update.py",
+    "name": "acl_update",
     "pack": "consul",
     "parameters": {
         "acl_id": {
-            "description": "Consul Policy ID to apply to the token",
-            "required": false,
+            "description": "Consul Policy ID to update.",
+            "required": true,
             "type": "string"
         },
         "acl_type": {
@@ -17,7 +17,7 @@
                 "client",
                 "management"
             ],
-            "position": 1,
+            "position": 0,
             "required": true,
             "type": "string"
         },
@@ -28,7 +28,7 @@
         },
         "name": {
             "description": "Name of token",
-            "position": 0,
+            "position": 1,
             "required": true,
             "type": "string"
         },

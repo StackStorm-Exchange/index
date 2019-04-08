@@ -1,45 +1,90 @@
 {
-    "consistency": {
-        "default": "default",
-        "description": "The consistency mode to use by default for all reads that support the consistency option.",
-        "enum": [
-            "default",
-            "consistent",
-            "stale"
-        ],
-        "required": false,
-        "type": "string"
-    },
-    "host": {
-        "default": "127.0.0.1",
-        "description": "Consul server IP/name.  Default 127.0.0.1",
+    "consul_profiles": {
+        "description": "Consul cluster profiles",
+        "items": {
+            "additionalProperties": false,
+            "properties": {
+                "ca_cert_path": {
+                    "default": "",
+                    "description": "CA Certificate path. Defaults to empty string. When path is provided, SSL certificates are verified.",
+                    "required": false,
+                    "type": "string"
+                },
+                "client_cert_path": {
+                    "description": "Client side certificates for HTTPS request",
+                    "required": false,
+                    "type": "string"
+                },
+                "client_key_path": {
+                    "description": "Client private key for HTTPS request",
+                    "required": false,
+                    "type": "string"
+                },
+                "consistency": {
+                    "default": "default",
+                    "description": "The consistency mode to use by default for all reads that support the consistency option.",
+                    "enum": [
+                        "default",
+                        "consistent",
+                        "stale"
+                    ],
+                    "required": false,
+                    "type": "string"
+                },
+                "host": {
+                    "default": "127.0.0.1",
+                    "description": "Consul server IP/name.  Default 127.0.0.1",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name of the consul profile.",
+                    "required": true,
+                    "type": "string"
+                },
+                "port": {
+                    "default": 8500,
+                    "description": "Consul server port. Default 8500",
+                    "required": true,
+                    "secret": false,
+                    "type": "integer"
+                },
+                "preserve_varenv": {
+                    "default": true,
+                    "description": "Enable preservation of environment variables.  If disable, all CONSUL_* environment variables are deleted from the action execution.",
+                    "requried": false,
+                    "type": "boolean"
+                },
+                "scheme": {
+                    "default": "http",
+                    "description": "Consul scheme to use. Default http",
+                    "required": false,
+                    "type": "string"
+                },
+                "token": {
+                    "default": "",
+                    "description": "Consul API token",
+                    "required": true,
+                    "secret": true,
+                    "type": "string"
+                },
+                "verify": {
+                    "default": false,
+                    "description": "Verify the SSL certificate for HTTPS requests. Default false (this option is ignored if ca_cert_path is supplied).",
+                    "required": false,
+                    "type": "boolean"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
         "required": true,
-        "secret": false,
-        "type": "string"
+        "type": "array"
     },
-    "port": {
-        "default": 8500,
-        "description": "Consul server port. Default 8500",
+    "default_profile": {
+        "description": "The default consul profile to use in actions when none is given.",
         "required": true,
-        "secret": false,
-        "type": "integer"
-    },
-    "scheme": {
-        "default": "http",
-        "description": "Consul scheme to use. Default http",
-        "required": false,
         "type": "string"
-    },
-    "token": {
-        "description": "Consul API token",
-        "required": true,
-        "secret": true,
-        "type": "string"
-    },
-    "verify": {
-        "default": false,
-        "description": "Verify the SSL certificate for HTTPS requests. Default false",
-        "required": false,
-        "type": "boolean"
     }
 }

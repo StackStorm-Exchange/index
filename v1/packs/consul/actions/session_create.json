@@ -25,6 +25,11 @@
             "required": false,
             "type": "array"
         },
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "dc": {
             "description": "The datacenter that this agent will communicate with.",
             "position": 6,

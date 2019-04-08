@@ -9,11 +9,14 @@ author: jfryman
 email: james@fryman.io
 content:
   actions:
-    count: 37
+    count: 41
     resources:
+    - acl_clone
     - acl_create
     - acl_destroy
+    - acl_info
     - acl_list
+    - acl_update
     - agent_checks
     - agent_force_leave
     - agent_join
@@ -48,3 +51,4 @@ content:
     - session_list
     - session_node
     - session_renew
+    - test_pack_actions

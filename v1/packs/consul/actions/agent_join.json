@@ -9,6 +9,11 @@
             "required": true,
             "type": "string"
         },
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "wan": {
             "description": "True: causes the agent to attempt to join using the WAN pool.",
             "required": false,

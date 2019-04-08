@@ -4,6 +4,11 @@
     "entry_point": "agent_service_maintenance.py",
     "name": "service_maintenance",
     "parameters": {
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "enable": {
             "description": "True: enable maintenance mode.  False; disable maintenance mode.",
             "required": true,

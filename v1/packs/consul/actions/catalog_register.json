@@ -9,6 +9,17 @@
             "required": true,
             "type": "string"
         },
+        "check": {
+            "default": {},
+            "description": "An optional check to register.",
+            "required": false,
+            "type": "object"
+        },
+        "consul_profile": {
+            "description": "Consul profile to use to run the action.",
+            "required": false,
+            "type": "string"
+        },
         "dc": {
             "description": "Optional Data Center ID",
             "required": false,
@@ -19,20 +30,18 @@
             "required": true,
             "type": "string"
         },
-        "port": {
-            "description": "The Service Port",
-            "required": true,
-            "type": "integer"
-        },
         "service": {
-            "description": "Service Name/ID",
-            "required": true,
-            "type": "string"
-        },
-        "tags": {
-            "description": "Optional Array of Tags",
+            "default": {},
+            "description": "An option service Service Name/ID",
             "required": false,
-            "type": "array"
+            "type": "object"
+        },
+        "token": {
+            "default": "",
+            "description": "An ACL token to use instead of the agent token.",
+            "required": false,
+            "secret": true,
+            "type": "string"
         }
     },
     "runner_type": "python-script"
