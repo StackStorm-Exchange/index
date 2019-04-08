@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1554727811,
-        "hash": "b6f26244db95df702f59eb9665fe7062"
+        "generated_ts": 1554752368,
+        "hash": "42f5f5c300a25d047678bd45f66d2fe0"
     },
     "packs": {
         "acos": {
@@ -11471,6 +11471,43 @@
             "ref": "splunk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-splunk",
             "version": "0.6.0"
+        },
+        "sql": {
+            "author": "Encore Technologies",
+            "content": {
+                "actions": {
+                    "count": 5,
+                    "resources": [
+                        "delete",
+                        "insert",
+                        "insert_bulk",
+                        "query",
+                        "update"
+                    ]
+                },
+                "tests": {
+                    "count": 6,
+                    "resources": [
+                        "sql_base_action_test_case.py",
+                        "test_action_delete.py",
+                        "test_action_insert.py",
+                        "test_action_lib_base_action.py",
+                        "test_action_query.py",
+                        "test_action_update.py"
+                    ]
+                }
+            },
+            "description": "StackStorm Integration Pack for SQL Databases (Postgres, MySQL, etc)",
+            "email": "code@encore.tech",
+            "keywords": [
+                "Postgres",
+                "MySQL",
+                "MsSQL"
+            ],
+            "name": "sql",
+            "ref": "sql",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sql",
+            "version": "0.1.0"
         },
         "st2": {
             "author": "StackStorm, Inc.",

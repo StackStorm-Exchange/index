@@ -1,0 +1,49 @@
+{
+    "connection": {
+        "additionalProperties": false,
+        "properties": {
+            "database": {
+                "description": "Database to connect to, to run queries against.",
+                "required": true,
+                "type": "string"
+            },
+            "drivername": {
+                "description": "The type of database that is being connected to.",
+                "required": true,
+                "type": "string"
+            },
+            "host": {
+                "description": "Database server to connect to. e.g. host.domain.tld",
+                "required": false,
+                "type": "string"
+            },
+            "password": {
+                "description": "Password of the specified username",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            },
+            "port": {
+                "description": "Port to connect to database on. If Default leave blank",
+                "required": false,
+                "type": "integer"
+            },
+            "username": {
+                "description": "Username for authentication",
+                "required": false,
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "connections": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/connection"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

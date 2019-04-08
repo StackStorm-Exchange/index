@@ -1,0 +1,55 @@
+{
+    "description": "Insert data into a SQL database",
+    "enabled": true,
+    "entry_point": "insert.py",
+    "name": "insert",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a database server.",
+            "required": false,
+            "type": "string"
+        },
+        "data": {
+            "description": "Dictionary of data to be inserted where the key corresponds to the column of the table {\n  'column_1': 'data_to_insert_1',\n  'column_2': 'data_to_insert_2',\n  'column_3': 'data_to_insert_3',\n  'column_4': 'data_to_insert_4',\n}\n",
+            "required": true,
+            "type": "object"
+        },
+        "database": {
+            "description": "Optional override of the database in <connection> (required if <connection> is not specified). Database to connect to, to run querys against.",
+            "required": false,
+            "type": "string"
+        },
+        "drivername": {
+            "description": "Optional override of the database_type in <connection> (required if <connection> is not specified). The type of database that is being connected to.",
+            "required": false,
+            "type": "string"
+        },
+        "host": {
+            "description": "Optional override of the database host in <connection> (required if <connection> is not specified). Database server to connect to. If not using a default port add that here. ex. host.domain.tld or host.domain.tld:1234\n",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection> (required if <connection> is not specified). Password of the specified username",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Port to connect to database on. If Default leave blank",
+            "required": false,
+            "type": "integer"
+        },
+        "table": {
+            "description": "Database table to insert data into.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (required if <connection> is not specified). Username for authentication",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

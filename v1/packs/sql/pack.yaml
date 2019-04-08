@@ -1,0 +1,28 @@
+ref: sql
+name: sql
+description: StackStorm Integration Pack for SQL Databases (Postgres, MySQL, etc)
+keywords:
+- Postgres
+- MySQL
+- MsSQL
+version: 0.1.0
+author: Encore Technologies
+email: code@encore.tech
+content:
+  actions:
+    count: 5
+    resources:
+    - delete
+    - insert
+    - insert_bulk
+    - query
+    - update
+  tests:
+    count: 6
+    resources:
+    - sql_base_action_test_case.py
+    - test_action_delete.py
+    - test_action_insert.py
+    - test_action_lib_base_action.py
+    - test_action_query.py
+    - test_action_update.py

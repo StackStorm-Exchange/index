@@ -1,0 +1,50 @@
+{
+    "description": "Query data from a SQL database",
+    "enabled": true,
+    "entry_point": "generic_query.py",
+    "name": "query",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a database server.",
+            "required": false,
+            "type": "string"
+        },
+        "database": {
+            "description": "Optional override of the database in <connection> (required if <connection> is not specified). Database to connect to, to run querys against.",
+            "required": false,
+            "type": "string"
+        },
+        "drivername": {
+            "description": "Optional override of the database_type in <connection> (required if <connection> is not specified). The type of database that is being connected to.",
+            "required": false,
+            "type": "string"
+        },
+        "host": {
+            "description": "Optional override of the database host in <connection> (required if <connection> is not specified). Database server to connect to. If not using a default port add that here. ex. host.domain.tld or host.domain.tld:1234\n",
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection> (required if <connection> is not specified). Password of the specified username",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "port": {
+            "description": "Port to connect to database on. If Default leave blank",
+            "required": false,
+            "type": "integer"
+        },
+        "query": {
+            "description": "Query to execute",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (required if <connection> is not specified). Username for authentication",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
