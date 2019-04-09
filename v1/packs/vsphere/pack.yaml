@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.8.5
+version: 0.8.6
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -11,9 +11,10 @@ contributors:
 - Nick Maludy <nmaludy@gmail.com>
 - Bradley Bishop <bishopbm1@gmail.com>
 - James E. King III <jking@apache.org>
+- John Schoewe <jschoewe@gmail.com>
 content:
   actions:
-    count: 54
+    count: 56
     resources:
     - affinity_rule_create
     - affinity_rule_delete
@@ -22,6 +23,7 @@ content:
     - custom_attr_create
     - get_moid
     - get_objects_with_tag
+    - get_tag_value_from_object
     - get_tags_on_object
     - get_vmconsole_urls
     - get_vms
@@ -65,6 +67,7 @@ content:
     - vm_hw_remove
     - vm_hw_scsi_controller_add
     - vm_hw_uuid_get
+    - vm_resource_pool_get
     - vm_runtime_info_get
     - vm_shutdown
     - vm_tools_options_update
@@ -74,7 +77,7 @@ content:
     resources:
     - TaskInfoSensor
   tests:
-    count: 46
+    count: 48
     resources:
     - test_action_affinity_rule_create.py
     - test_action_affinity_rule_delete.py
@@ -84,6 +87,7 @@ content:
     - test_action_custom_attr_create.py
     - test_action_get_moid.py
     - test_action_get_objects_with_tag.py
+    - test_action_get_tag_value_from_object.py
     - test_action_get_tags_on_object.py
     - test_action_guest_dir_create.py
     - test_action_guest_dir_delete.py
@@ -115,6 +119,7 @@ content:
     - test_action_tags_attach_by_id.py
     - test_action_vm_check_tools.py
     - test_action_vm_folder_get.py
+    - test_action_vm_resource_pool_get.py
     - test_action_vm_shutdown.py
     - test_action_vm_tools_options_update.py
     - test_action_vmwarelib_actions.py

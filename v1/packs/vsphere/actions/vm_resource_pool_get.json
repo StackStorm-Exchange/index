@@ -1,0 +1,24 @@
+{
+    "description": "Retrieve the MOID of the of the given VM's containing resource pool",
+    "entry_point": "vm_resource_pool_get.py",
+    "name": "vm_resource_pool_get",
+    "parameters": {
+        "vm_id": {
+            "description": "VM ID to get the containing resource pool for",
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "VM Name to get the containing resource pool for",
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vsphere endpoint",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

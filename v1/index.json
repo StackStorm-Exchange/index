@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1554755675,
-        "hash": "9e07542e7888fc0105d92c2ecf8c006a"
+        "generated_ts": 1554823703,
+        "hash": "186d563b546ce3e7b6b692d15f31292c"
     },
     "packs": {
         "acos": {
@@ -12442,7 +12442,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 54,
+                    "count": 56,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
@@ -12451,6 +12451,7 @@
                         "custom_attr_create",
                         "get_moid",
                         "get_objects_with_tag",
+                        "get_tag_value_from_object",
                         "get_tags_on_object",
                         "get_vmconsole_urls",
                         "get_vms",
@@ -12494,6 +12495,7 @@
                         "vm_hw_remove",
                         "vm_hw_scsi_controller_add",
                         "vm_hw_uuid_get",
+                        "vm_resource_pool_get",
                         "vm_runtime_info_get",
                         "vm_shutdown",
                         "vm_tools_options_update",
@@ -12507,7 +12509,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 46,
+                    "count": 48,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -12517,6 +12519,7 @@
                         "test_action_custom_attr_create.py",
                         "test_action_get_moid.py",
                         "test_action_get_objects_with_tag.py",
+                        "test_action_get_tag_value_from_object.py",
                         "test_action_get_tags_on_object.py",
                         "test_action_guest_dir_create.py",
                         "test_action_guest_dir_delete.py",
@@ -12548,6 +12551,7 @@
                         "test_action_tags_attach_by_id.py",
                         "test_action_vm_check_tools.py",
                         "test_action_vm_folder_get.py",
+                        "test_action_vm_resource_pool_get.py",
                         "test_action_vm_shutdown.py",
                         "test_action_vm_tools_options_update.py",
                         "test_action_vmwarelib_actions.py",
@@ -12563,7 +12567,8 @@
                 "Hiroyasu OHYAMA <user.localhost2000@gmail.com>",
                 "Nick Maludy <nmaludy@gmail.com>",
                 "Bradley Bishop <bishopbm1@gmail.com>",
-                "James E. King III <jking@apache.org>"
+                "James E. King III <jking@apache.org>",
+                "John Schoewe <jschoewe@gmail.com>"
             ],
             "description": "VMware vSphere",
             "email": "paul.mulvihill@pulsant.com",
@@ -12571,7 +12576,7 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.8.5"
+            "version": "0.8.6"
         },
         "vyatta": {
             "author": "Mehdi Abdelouahab",
