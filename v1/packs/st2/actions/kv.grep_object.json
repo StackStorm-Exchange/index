@@ -1,8 +1,8 @@
 {
-    "description": "Grep for keys in datastore",
+    "description": "Grep for keys in datastore and deserialize JSON serialized values. This will perform JSON serialization on all values that match the query.",
     "enabled": true,
-    "entry_point": "kv_grep.py",
-    "name": "kv.grep",
+    "entry_point": "kv_grep_object.py",
+    "name": "kv.grep_object",
     "parameters": {
         "prefix": {
             "default": false,
