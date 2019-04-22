@@ -9,12 +9,13 @@ author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 17
+    count: 18
     resources:
     - actions.list
     - call_home
     - check_permissions_anon_data
     - executions.get
+    - executions.get_root
     - executions.list
     - executions.re_run
     - inquiry.respond
@@ -38,3 +39,8 @@ content:
     - st2_inquiry_respond
     - st2_rules_list
     - st2_sensors_list
+  tests:
+    count: 2
+    resources:
+    - base.py
+    - test_executions_get_root.py

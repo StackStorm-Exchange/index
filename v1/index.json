@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1555612015,
-        "hash": "446ef672b08403a44039e185c7fcc4b6"
+        "generated_ts": 1555972523,
+        "hash": "50a9f5e75dd5254b107090b672cea965"
     },
     "packs": {
         "acos": {
@@ -11520,12 +11520,13 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 17,
+                    "count": 18,
                     "resources": [
                         "actions.list",
                         "call_home",
                         "check_permissions_anon_data",
                         "executions.get",
+                        "executions.get_root",
                         "executions.list",
                         "executions.re_run",
                         "inquiry.respond",
@@ -11551,6 +11552,13 @@
                         "st2_inquiry_respond",
                         "st2_rules_list",
                         "st2_sensors_list"
+                    ]
+                },
+                "tests": {
+                    "count": 2,
+                    "resources": [
+                        "base.py",
+                        "test_executions_get_root.py"
                     ]
                 }
             },
