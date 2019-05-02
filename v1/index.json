@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1556040425,
-        "hash": "bc64e51bb478886dfe8171f505adfa5d"
+        "generated_ts": 1556807195,
+        "hash": "288c8a98abccf216a765d9c874384056"
     },
     "packs": {
         "acos": {
@@ -8043,7 +8043,7 @@
             "author": "Encore Technologies",
             "content": {
                 "actions": {
-                    "count": 198,
+                    "count": 202,
                     "resources": [
                         "add_ad_forest",
                         "add_ad_site",
@@ -8208,6 +8208,7 @@
                         "remove_dhcp_option_definition",
                         "remove_dhcp_policy",
                         "remove_dhcp_scopes_from_dhcp_failover_relationship",
+                        "remove_dns_record",
                         "remove_from_ad_site",
                         "remove_from_cloud_network",
                         "remove_from_folder",
@@ -8224,6 +8225,7 @@
                         "report_ip_from_client_identifier",
                         "report_merge_address_spaces",
                         "report_multilabel_hosts",
+                        "resolve_fqdn",
                         "run_command",
                         "send_mail",
                         "set_current_address_space",
@@ -8242,6 +8244,8 @@
                         "set_service_status",
                         "set_system_settings",
                         "split_range",
+                        "test_credentials",
+                        "test_hostname",
                         "wf_add_dns_zone"
                     ]
                 },
@@ -8268,7 +8272,7 @@
             "name": "menandmice",
             "ref": "menandmice",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-menandmice",
-            "version": "0.1.2"
+            "version": "0.1.3"
         },
         "mistral": {
             "author": "StackStorm",

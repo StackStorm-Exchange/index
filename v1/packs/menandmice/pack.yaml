@@ -7,12 +7,12 @@ keywords:
 - mice
 - ipam
 - dns
-version: 0.1.2
+version: 0.1.3
 author: Encore Technologies
 email: code@encore.tech
 content:
   actions:
-    count: 198
+    count: 202
     resources:
     - add_ad_forest
     - add_ad_site
@@ -177,6 +177,7 @@ content:
     - remove_dhcp_option_definition
     - remove_dhcp_policy
     - remove_dhcp_scopes_from_dhcp_failover_relationship
+    - remove_dns_record
     - remove_from_ad_site
     - remove_from_cloud_network
     - remove_from_folder
@@ -193,6 +194,7 @@ content:
     - report_ip_from_client_identifier
     - report_merge_address_spaces
     - report_multilabel_hosts
+    - resolve_fqdn
     - run_command
     - send_mail
     - set_current_address_space
@@ -211,6 +213,8 @@ content:
     - set_service_status
     - set_system_settings
     - split_range
+    - test_credentials
+    - test_hostname
     - wf_add_dns_zone
   tests:
     count: 5
