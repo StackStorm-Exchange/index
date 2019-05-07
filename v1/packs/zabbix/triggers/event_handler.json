@@ -5,7 +5,17 @@
     "payload_schema": {
         "properties": {
             "alert_message": {
-                "type": "string"
+                "anyOf": [
+                    {
+                        "type": "array"
+                    },
+                    {
+                        "type": "object"
+                    },
+                    {
+                        "type": "string"
+                    }
+                ]
             },
             "alert_sendto": {
                 "type": "string"

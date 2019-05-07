@@ -1,5 +1,5 @@
 {
-    "description": "Send acknowledgement message for an event to Zabbix and may close it",
+    "description": "Send acknowledgement message for an event to Zabbix and if Zabbix may close it",
     "enabled": true,
     "entry_point": "event_action_runner.py",
     "name": "ack_event",
@@ -20,10 +20,6 @@
         },
         "will_close": {
             "default": true,
-            "enum": [
-                true,
-                false
-            ],
             "required": false,
             "type": "boolean"
         }
