@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1557414324,
-        "hash": "68fa439db6eebf7bb7122585208fc5e9"
+        "generated_ts": 1557653243,
+        "hash": "ba82ec182253cf3ffd199662cdf1b082"
     },
     "packs": {
         "acos": {
@@ -10695,6 +10695,31 @@
             "name": "pushbullet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pushbullet",
             "version": "0.2.1"
+        },
+        "python3_test": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "test_stdlib_import"
+                    ]
+                }
+            },
+            "description": "StackStorm pack for testing various Python 3 functionality",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "python3",
+                "test"
+            ],
+            "name": "python3_test",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "python3_test",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-python3_test",
+            "version": "0.1.0"
         },
         "qualys": {
             "author": "Anthony Shaw",
