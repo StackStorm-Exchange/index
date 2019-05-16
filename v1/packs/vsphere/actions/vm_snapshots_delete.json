@@ -1,0 +1,40 @@
+{
+    "description": "Removes any snapshots older than the specified age. Ignores any snapshots with names that match the given rexex patterns",
+    "entry_point": "vm_snapshots_delete.py",
+    "name": "vm_snapshots_delete",
+    "parameters": {
+        "max_age_days": {
+            "description": "Number of days that a snapshot will exist before getting deleted",
+            "position": 0,
+            "required": true,
+            "type": "integer"
+        },
+        "name_ignore_regexes": {
+            "default": [],
+            "description": "Compares the snapshot name to the regex. If matched, the snapshot will be ignored and NOT deleted",
+            "position": 1,
+            "required": false,
+            "type": "array"
+        },
+        "vm_id": {
+            "description": "VM ID to get the containing folder for",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "default": null,
+            "description": "VM Name to get the containing folder for",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "description": "Pre-configured vsphere endpoint",
+            "position": 4,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
