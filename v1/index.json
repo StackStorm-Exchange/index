@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1559073749,
-        "hash": "b2cfd0db1919f66c53d8a8061c63740a"
+        "generated_ts": 1559092977,
+        "hash": "a4d1b238f8a3ae20d3fa7ca11c960157"
     },
     "packs": {
         "acos": {
@@ -9275,6 +9275,60 @@
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nginxplus",
             "version": "1.0.1"
+        },
+        "nsone": {
+            "author": "Ian Price",
+            "content": {
+                "actions": {
+                    "count": 28,
+                    "resources": [
+                        "account.get",
+                        "feed.create",
+                        "feed.delete",
+                        "feed.get",
+                        "feed.list",
+                        "feed.update",
+                        "monitor.get",
+                        "monitor.list",
+                        "notify_list.get",
+                        "notify_list.list",
+                        "record.create",
+                        "record.delete",
+                        "record.get",
+                        "record.update",
+                        "source.create",
+                        "source.delete",
+                        "source.get",
+                        "source.list",
+                        "source.publish",
+                        "source.update",
+                        "stats.qps",
+                        "stats.usage",
+                        "zone.create",
+                        "zone.delete",
+                        "zone.get",
+                        "zone.list",
+                        "zone.search",
+                        "zone.update"
+                    ]
+                }
+            },
+            "contributors": [
+                "Ian Price <ianmprice@gmail.com>",
+                "Matt Miller <mattmiller87@gmail.com>"
+            ],
+            "description": "Integration to NS1 using ns1-python rest endpoints",
+            "email": "ianmprice@gmail.com",
+            "keywords": [
+                "nsone",
+                "ns1",
+                "ns-one",
+                "dns"
+            ],
+            "name": "nsone",
+            "ref": "nsone",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nsone",
+            "version": "0.1.0"
         },
         "nsx_vtep": {
             "author": "GSLAB",

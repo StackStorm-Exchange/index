@@ -1,0 +1,42 @@
+{
+    "description": "Get QPS for Global, a Zone, or a Domain",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "stats.qps",
+    "parameters": {
+        "domain": {
+            "description": "Returns the QPS for this domain. Requires Zone and Type to be defined.",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "method": {
+            "default": "qps",
+            "description": "The method to be called within the package",
+            "immutable": true
+        },
+        "module": {
+            "default": "stats",
+            "description": "The 'ns1-python' rest module name (ns1.rest.<module>)",
+            "immutable": true
+        },
+        "package": {
+            "default": "Stats",
+            "description": "The name of the class in the module to load",
+            "immutable": true
+        },
+        "type": {
+            "description": "The record type of the domain",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "zone": {
+            "description": "If no domain is defined, returns Zone's QPS. If left empty, returns global QPS",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

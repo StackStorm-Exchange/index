@@ -1,0 +1,14 @@
+{
+    "api_key": {
+        "description": "The API key for NS1 that has desired permissions",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "debug": {
+        "default": false,
+        "description": "Set to True to enable additional logging",
+        "secret": false,
+        "type": "boolean"
+    }
+}

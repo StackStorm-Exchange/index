@@ -1,0 +1,71 @@
+{
+    "description": "Get usage stats for Global, a Zone, or a Domain",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "stats.usage",
+    "parameters": {
+        "aggregate": {
+            "default": true,
+            "description": "if True, returns aggregated stats across all zones and billing tiers (even if expand and by_tier are true)",
+            "required": false,
+            "type": "boolean"
+        },
+        "by_tier": {
+            "default": true,
+            "description": "if True, returns stats and graphs for each billing tier",
+            "required": false,
+            "type": "boolean"
+        },
+        "domain": {
+            "description": "Returns the usage for this domain. Requires Zone and Type to be defined.",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        },
+        "expand": {
+            "default": false,
+            "description": "if True, breaks down stats by zone, and if False, shows aggregate stats for the entire account.",
+            "required": false,
+            "type": "boolean"
+        },
+        "method": {
+            "default": "usage",
+            "description": "The method to be called within the package",
+            "immutable": true
+        },
+        "module": {
+            "default": "stats",
+            "description": "The 'ns1-python' rest module name (ns1.rest.<module>)",
+            "immutable": true
+        },
+        "package": {
+            "default": "Stats",
+            "description": "The name of the class in the module to load",
+            "immutable": true
+        },
+        "period": {
+            "default": "24h",
+            "description": "Time period for statistics",
+            "enum": [
+                "1h",
+                "24h",
+                "30d"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "type": {
+            "description": "The record type of the domain",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        },
+        "zone": {
+            "description": "If no domain is defined, returns Zone's usage. If left empty, returns global usage",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

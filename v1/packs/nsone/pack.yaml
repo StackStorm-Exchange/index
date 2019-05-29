@@ -1,0 +1,46 @@
+ref: nsone
+name: nsone
+description: Integration to NS1 using ns1-python rest endpoints
+keywords:
+- nsone
+- ns1
+- ns-one
+- dns
+version: 0.1.0
+author: Ian Price
+email: ianmprice@gmail.com
+contributors:
+- Ian Price <ianmprice@gmail.com>
+- Matt Miller <mattmiller87@gmail.com>
+content:
+  actions:
+    count: 28
+    resources:
+    - account.get
+    - feed.create
+    - feed.delete
+    - feed.get
+    - feed.list
+    - feed.update
+    - monitor.get
+    - monitor.list
+    - notify_list.get
+    - notify_list.list
+    - record.create
+    - record.delete
+    - record.get
+    - record.update
+    - source.create
+    - source.delete
+    - source.get
+    - source.list
+    - source.publish
+    - source.update
+    - stats.qps
+    - stats.usage
+    - zone.create
+    - zone.delete
+    - zone.get
+    - zone.list
+    - zone.search
+    - zone.update

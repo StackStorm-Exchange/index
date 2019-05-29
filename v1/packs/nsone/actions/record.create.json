@@ -1,0 +1,101 @@
+{
+    "description": "Create a Record in NS1",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "record.create",
+    "parameters": {
+        "answers": {
+            "description": "Array of 'Answers' data. Can be a single string, array of single strings, array of arrays, array of dicts. See API Documentation for details.",
+            "required": true,
+            "type": "array"
+        },
+        "domain": {
+            "description": "The FQDN (full hostname and domain name) of the record",
+            "required": true,
+            "type": "string"
+        },
+        "filters": {
+            "description": "Array of 'Filters' data. Can be a Array of Dicts with either single Key/Value, or dict following full rest model. See API Documentation for details.",
+            "required": false,
+            "type": "array"
+        },
+        "link": {
+            "description": "The domain to link this record to",
+            "required": false,
+            "type": "string"
+        },
+        "meta": {
+            "required": false,
+            "type": "object"
+        },
+        "method": {
+            "default": "create",
+            "description": "The method to be called within the package",
+            "immutable": true
+        },
+        "module": {
+            "default": "records",
+            "description": "The 'ns1-python' rest module name (ns1.rest.<module>)",
+            "immutable": true
+        },
+        "networks": {
+            "required": false,
+            "type": "string"
+        },
+        "override_ttl": {
+            "default": false,
+            "required": false,
+            "type": "boolean"
+        },
+        "package": {
+            "default": "Records",
+            "description": "The name of the class in the module to load",
+            "immutable": true
+        },
+        "regions": {
+            "required": false,
+            "type": "string"
+        },
+        "ttl": {
+            "description": "The TTL of the record",
+            "required": false,
+            "type": "integer"
+        },
+        "type": {
+            "default": "CNAME",
+            "description": "type of record you want to add",
+            "enum": [
+                "A",
+                "CNAME",
+                "NS",
+                "PTR",
+                "TXT",
+                "SRV",
+                "MX",
+                "SPF",
+                "AAAA",
+                "ALIAS",
+                "AFSDB",
+                "CERT",
+                "DNAME",
+                "HINFO",
+                "NAPTR",
+                "RP"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "use_csubnet": {
+            "default": false,
+            "description": "Use client subnet?",
+            "required": false,
+            "type": "boolean"
+        },
+        "zone": {
+            "description": "The name of the zone the record resides in.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
