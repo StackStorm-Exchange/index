@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1559439436,
-        "hash": "b855ce297fe1642ebb8114ca0cd9e81a"
+        "generated_ts": 1559598260,
+        "hash": "f9ea639691389f1abec42894d067fd33"
     },
     "packs": {
         "acos": {
@@ -11838,6 +11838,44 @@
             "ref": "tesla",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-tesla",
             "version": "0.2.2"
+        },
+        "thehive": {
+            "author": "agix",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "promote_alert_to_case",
+                        "run_analyzer",
+                        "take_task"
+                    ]
+                },
+                "rules": {
+                    "count": 1,
+                    "resources": [
+                        "thehive_webhook"
+                    ]
+                },
+                "sensors": {
+                    "count": 2,
+                    "resources": [
+                        "TheHiveAlertsSearchSensor",
+                        "TheHiveTasksSearchSensor"
+                    ]
+                }
+            },
+            "description": "Connect to TheHive to automate alert qualification and tasks",
+            "email": "florian.gaultier@gmail.com",
+            "keywords": [
+                "thehive"
+            ],
+            "name": "TheHive",
+            "python_versions": [
+                "3"
+            ],
+            "ref": "thehive",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-thehive",
+            "version": "0.1.0"
         },
         "time": {
             "author": "StackStorm, Inc.",

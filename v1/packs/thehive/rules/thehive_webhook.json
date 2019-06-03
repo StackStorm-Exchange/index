@@ -1,0 +1,18 @@
+{
+    "action": {
+        "parameters": {
+            "action": "{{ trigger.body }}"
+        },
+        "ref": "thehive.new_action"
+    },
+    "description": "Receive TheHive information from https://github.com/TheHive-Project/TheHiveDocs/blob/master/admin/webhooks.md",
+    "enabled": false,
+    "name": "thehive_webhook",
+    "pack": "thehive",
+    "trigger": {
+        "parameters": {
+            "url": "thehive"
+        },
+        "type": "core.st2.webhook"
+    }
+}

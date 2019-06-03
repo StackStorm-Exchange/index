@@ -1,0 +1,21 @@
+{
+    "description": "This promote TheHive alert to TheHive case",
+    "enabled": true,
+    "entry_point": "promote_alert_to_case.py",
+    "name": "promote_alert_to_case",
+    "parameters": {
+        "alert_id": {
+            "description": "Alert Id to promote",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "case_template": {
+            "description": "Case Template Name to use",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

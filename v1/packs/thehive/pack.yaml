@@ -1,0 +1,26 @@
+ref: thehive
+name: TheHive
+description: Connect to TheHive to automate alert qualification and tasks
+keywords:
+- thehive
+version: 0.1.0
+python_versions:
+- '3'
+author: agix
+email: florian.gaultier@gmail.com
+content:
+  actions:
+    count: 3
+    resources:
+    - promote_alert_to_case
+    - run_analyzer
+    - take_task
+  rules:
+    count: 1
+    resources:
+    - thehive_webhook
+  sensors:
+    count: 2
+    resources:
+    - TheHiveAlertsSearchSensor
+    - TheHiveTasksSearchSensor

@@ -1,0 +1,15 @@
+{
+    "description": "This switch status task to InProgress",
+    "enabled": true,
+    "entry_point": "take_task.py",
+    "name": "take_task",
+    "parameters": {
+        "task_id": {
+            "description": "Task id to take",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

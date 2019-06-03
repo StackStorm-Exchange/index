@@ -1,0 +1,27 @@
+{
+    "description": "This run analyzer on every data type for the case",
+    "enabled": true,
+    "entry_point": "run_analyzer.py",
+    "name": "run_analyzer",
+    "parameters": {
+        "analyzer_name": {
+            "description": "Name of the analyzer",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "case_id": {
+            "description": "Case id to retrieve observables",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "data_type": {
+            "description": "Observable type to run analyzer on",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

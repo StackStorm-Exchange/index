@@ -1,0 +1,38 @@
+{
+    "class_name": "TheHiveAlertsSearchSensor",
+    "description": "Sensor which monitors new TheHive alerts",
+    "enabled": true,
+    "entry_point": "thehive_alerts_search_sensor.py",
+    "poll_interval": 60,
+    "trigger_types": [
+        {
+            "description": "Trigger which represents an alert",
+            "name": "new_alert",
+            "payload_info": [
+                "_id",
+                "_parent",
+                "_routing",
+                "_type",
+                "_version",
+                "artifacts",
+                "caseTemplate",
+                "createdAt",
+                "createdBy",
+                "customFields",
+                "date",
+                "description",
+                "follow",
+                "id",
+                "lastSyncDate",
+                "severity",
+                "source",
+                "sourceRef",
+                "status",
+                "tags",
+                "title",
+                "tlp",
+                "type"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "thehive_api_key": {
+        "description": "API Key for authenticating to TheHive",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "thehive_bot_username": {
+        "description": "Bot username to follow tasks",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "thehive_url": {
+        "description": "URL of TheHive",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

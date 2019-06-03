@@ -1,0 +1,29 @@
+{
+    "class_name": "TheHiveTasksSearchSensor",
+    "description": "Sensor which monitors new TheHive tasks for bot user",
+    "enabled": true,
+    "entry_point": "thehive_tasks_search_sensor.py",
+    "poll_interval": 60,
+    "trigger_types": [
+        {
+            "description": "Trigger which represents a task",
+            "name": "new_task",
+            "payload_info": [
+                "owner",
+                "_routing",
+                "flag",
+                "_type",
+                "title",
+                "createdAt",
+                "_parent",
+                "createdBy",
+                "_id",
+                "id",
+                "_version",
+                "status",
+                "group",
+                "order"
+            ]
+        }
+    ]
+}
