@@ -1,0 +1,15 @@
+{
+    "description": "Find all owners who owe the recipient (you) a beer",
+    "enabled": true,
+    "entry_point": "workflows/find.yaml",
+    "name": "find",
+    "pack": "beertab",
+    "parameters": {
+        "recipient": {
+            "default": "@{{ action_context.api_user }}",
+            "description": "Person who is owed a bunch of beer on many different tabs.",
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

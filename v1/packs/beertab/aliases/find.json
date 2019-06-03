@@ -1,0 +1,18 @@
+{
+    "ack": {
+        "format": "Standby, going through everyones tab to find the drinks that are rightfully yours."
+    },
+    "action_ref": "beertab.find",
+    "description": "Find all people who owe you beer",
+    "formats": [
+        "who owes me beer",
+        "who owes {{ recipient }} beer",
+        "find who owes me beer",
+        "find who owes {{ recipient }} beer"
+    ],
+    "name": "find",
+    "pack": "beertab",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nHere are all if the people who owe you a beer:\n```\n{{ execution.result.output.beer_debt | to_yaml_string }}```\n{% else %}\nFailed to find any beers owed to {{ execution.parameters.recipient | default('you') }}\n{% endif %}\n"
+    }
+}

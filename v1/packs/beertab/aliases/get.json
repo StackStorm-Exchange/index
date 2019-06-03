@@ -1,0 +1,19 @@
+{
+    "ack": {
+        "format": "One sec while I find their tab!"
+    },
+    "action_ref": "beertab.get",
+    "description": "Gets an owners beer tab",
+    "formats": [
+        "get my beer tab",
+        "get {{ owner }} beer tab",
+        "get beer tab",
+        "get beer tab for me",
+        "get beer tab for {{ owner }}"
+    ],
+    "name": "get",
+    "pack": "beertab",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nHere is the tab for {{ execution.result.output.owner }} that you asked for:\n```\n{{ execution.result.output.beertab | to_yaml_string }}```\n{% else %}\nFailed to get the beer tab for {{ execution.parameters.owner | default('you') }}\n{% endif %}\n"
+    }
+}

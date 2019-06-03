@@ -1,0 +1,15 @@
+{
+    "description": "Get a beer tab for a particular owner",
+    "enabled": true,
+    "entry_point": "workflows/get.yaml",
+    "name": "get",
+    "pack": "beertab",
+    "parameters": {
+        "owner": {
+            "default": "@{{ action_context.api_user }}",
+            "description": "Owner of the beer tab, person who owes you beer",
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

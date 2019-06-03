@@ -1,0 +1,16 @@
+{
+    "ack": {
+        "format": "Adding a beer to their tab!"
+    },
+    "action_ref": "beertab.add",
+    "description": "Adds a beer to a tab",
+    "formats": [
+        "add a beer for {{ recipient }} to my tab",
+        "add a beer for {{ recipient }} to {{ owner }} tab"
+    ],
+    "name": "add",
+    "pack": "beertab",
+    "result": {
+        "format": "{% if execution.status == 'succeeded' %}\nSuccessfully added a beer for {{ execution.result.output.recipient }} to {{ execution.result.output.owner }}'s tab!\nHere's what {{ execution.result.output.owner }}'s beer tab looks like now:\n```\n{{ execution.result.output.beertab | to_yaml_string}}```\n{% else %}\nFailed to add a beer for {{ execution.result.output.recipient }} to {{ execution.result.output.owner }}'s tab!\n{% endif %}\n"
+    }
+}

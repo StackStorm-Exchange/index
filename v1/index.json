@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1559598260,
-        "hash": "f9ea639691389f1abec42894d067fd33"
+        "generated_ts": 1559600221,
+        "hash": "407bb130d0061e81a1dc8341a0f37bac"
     },
     "packs": {
         "acos": {
@@ -4276,6 +4276,42 @@
             "ref": "backups",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-backups",
             "version": "0.1.2"
+        },
+        "beertab": {
+            "author": "Encore Technologies",
+            "content": {
+                "actions": {
+                    "count": 6,
+                    "resources": [
+                        "add",
+                        "aggregate",
+                        "find",
+                        "get",
+                        "modify",
+                        "remove"
+                    ]
+                },
+                "aliases": {
+                    "count": 4,
+                    "resources": [
+                        "add",
+                        "find",
+                        "get",
+                        "remove"
+                    ]
+                }
+            },
+            "description": "StackStorm pack for keeping track of people who owe you beer.",
+            "email": "code@encore.tech",
+            "keywords": [
+                "beer",
+                "tab",
+                "fun"
+            ],
+            "name": "beertab",
+            "ref": "beertab",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-beertab",
+            "version": "0.1.0"
         },
         "bitbucket": {
             "author": "Aamir",
