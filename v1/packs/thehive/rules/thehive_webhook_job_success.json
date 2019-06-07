@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "job_id": "{{ trigger.body.object._id }}"
+        },
+        "ref": "thehive.complete_task_by_job_id"
+    },
+    "criteria": {
+        "trigger.body.object.status": {
+            "pattern": "Success",
+            "type": "eq"
+        },
+        "trigger.body.objectType": {
+            "pattern": "case_artifact_job",
+            "type": "eq"
+        },
+        "trigger.body.operation": {
+            "pattern": "Update",
+            "type": "eq"
+        }
+    },
+    "description": "Receive TheHive information from https://github.com/TheHive-Project/TheHiveDocs/blob/master/admin/webhooks.md",
+    "enabled": false,
+    "name": "thehive_webhook_job_success",
+    "pack": "thehive",
+    "trigger": {
+        "parameters": {
+            "url": "thehive"
+        },
+        "type": "core.st2.webhook"
+    }
+}

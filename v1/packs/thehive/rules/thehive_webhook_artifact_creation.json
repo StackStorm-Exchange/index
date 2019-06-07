@@ -1,0 +1,35 @@
+{
+    "action": {
+        "parameters": {
+            "analyzer_name": "Abuse_Finder_2_0",
+            "artifact_id": "{{ trigger.body.object._id }}",
+            "case_id": "{{ trigger.body.object._parent }}",
+            "linked_task_name": "abuse finder on ip"
+        },
+        "ref": "thehive.run_analyzer"
+    },
+    "criteria": {
+        "trigger.body.object.dataType": {
+            "pattern": "ip",
+            "type": "eq"
+        },
+        "trigger.body.objectType": {
+            "pattern": "case_artifact",
+            "type": "eq"
+        },
+        "trigger.body.operation": {
+            "pattern": "Creation",
+            "type": "eq"
+        }
+    },
+    "description": "Receive TheHive information from https://github.com/TheHive-Project/TheHiveDocs/blob/master/admin/webhooks.md",
+    "enabled": false,
+    "name": "thehive_webhook_artifact_creation",
+    "pack": "thehive",
+    "trigger": {
+        "parameters": {
+            "url": "thehive"
+        },
+        "type": "core.st2.webhook"
+    }
+}

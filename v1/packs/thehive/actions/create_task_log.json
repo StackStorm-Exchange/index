@@ -1,17 +1,17 @@
 {
-    "description": "This switch status task to InProgress",
+    "description": "This create log in task",
     "enabled": true,
-    "entry_point": "change_status_task.py",
-    "name": "take_task",
+    "entry_point": "create_task_log.py",
+    "name": "create_task_log",
     "parameters": {
-        "status": {
-            "default": "InProgress",
-            "immutable": true,
+        "log": {
+            "description": "Log message",
             "position": 1,
+            "required": true,
             "type": "string"
         },
         "task_id": {
-            "description": "Task id to take",
+            "description": "Task id to create log on",
             "position": 0,
             "required": true,
             "type": "string"

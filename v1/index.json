@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1559821585,
-        "hash": "2c608443beb8d714fa9a109935c3657e"
+        "generated_ts": 1559930342,
+        "hash": "5db62d846129809e8a2377d2fcd34fbd"
     },
     "packs": {
         "acos": {
@@ -11879,24 +11879,29 @@
             "author": "agix",
             "content": {
                 "actions": {
-                    "count": 3,
+                    "count": 10,
                     "resources": [
+                        "complete_task",
+                        "complete_task_by_job_id",
+                        "complete_task_by_name",
+                        "create_task_log",
+                        "create_task_log_by_job_id",
                         "promote_alert_to_case",
                         "run_analyzer",
-                        "take_task"
+                        "run_analyzer_on_data_type",
+                        "take_task",
+                        "take_task_by_name"
                     ]
                 },
                 "rules": {
-                    "count": 1,
+                    "count": 6,
                     "resources": [
-                        "thehive_webhook"
-                    ]
-                },
-                "sensors": {
-                    "count": 2,
-                    "resources": [
-                        "TheHiveAlertsSearchSensor",
-                        "TheHiveTasksSearchSensor"
+                        "thehive_webhook_alert_creation",
+                        "thehive_webhook_artifact_creation",
+                        "thehive_webhook_debug",
+                        "thehive_webhook_job_failure",
+                        "thehive_webhook_job_success",
+                        "thehive_webhook_task_creation"
                     ]
                 }
             },
@@ -11907,11 +11912,12 @@
             ],
             "name": "TheHive",
             "python_versions": [
-                "3"
+                "3",
+                "2"
             ],
             "ref": "thehive",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-thehive",
-            "version": "0.1.0"
+            "version": "1.0.0"
         },
         "time": {
             "author": "StackStorm, Inc.",

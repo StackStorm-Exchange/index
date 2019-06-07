@@ -1,0 +1,21 @@
+{
+    "description": "This switch status task to Completed",
+    "enabled": true,
+    "entry_point": "change_status_task_by_job_id.py",
+    "name": "complete_task_by_job_id",
+    "parameters": {
+        "job_id": {
+            "description": "Job id to complete linked task id",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "default": "Completed",
+            "immutable": true,
+            "position": 1,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

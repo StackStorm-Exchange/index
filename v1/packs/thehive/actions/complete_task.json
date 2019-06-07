@@ -1,17 +1,17 @@
 {
-    "description": "This switch status task to InProgress",
+    "description": "This switch status task to Completed",
     "enabled": true,
     "entry_point": "change_status_task.py",
-    "name": "take_task",
+    "name": "complete_task",
     "parameters": {
         "status": {
-            "default": "InProgress",
+            "default": "Completed",
             "immutable": true,
             "position": 1,
             "type": "string"
         },
         "task_id": {
-            "description": "Task id to take",
+            "description": "Task id to complete",
             "position": 0,
             "required": true,
             "type": "string"

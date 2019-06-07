@@ -1,8 +1,8 @@
 {
     "description": "This run analyzer on artifact for the case",
     "enabled": true,
-    "entry_point": "run_analyzer.py",
-    "name": "run_analyzer",
+    "entry_point": "run_analyzer_on_data_type.py",
+    "name": "run_analyzer_on_data_type",
     "parameters": {
         "analyzer_name": {
             "description": "Name of the analyzer to run",
@@ -10,15 +10,15 @@
             "required": true,
             "type": "string"
         },
-        "artifact_id": {
-            "description": "Artifact id to run analyzer on",
-            "position": 1,
-            "required": true,
-            "type": "string"
-        },
         "case_id": {
             "description": "Case id to retrieve artifact",
             "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "data_type": {
+            "description": "Artifact data_type to run analyzer on",
+            "position": 1,
             "required": true,
             "type": "string"
         },

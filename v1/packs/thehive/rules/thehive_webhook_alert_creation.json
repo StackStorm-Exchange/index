@@ -1,0 +1,29 @@
+{
+    "action": {
+        "parameters": {
+            "alert_id": "{{ trigger.body.object._id }}",
+            "case_template": "{{ trigger.body.object.caseTemplate }}"
+        },
+        "ref": "thehive.promote_alert_to_case"
+    },
+    "criteria": {
+        "trigger.body.objectType": {
+            "pattern": "alert",
+            "type": "eq"
+        },
+        "trigger.body.operation": {
+            "pattern": "Creation",
+            "type": "eq"
+        }
+    },
+    "description": "Receive TheHive information from https://github.com/TheHive-Project/TheHiveDocs/blob/master/admin/webhooks.md",
+    "enabled": false,
+    "name": "thehive_webhook_alert_creation",
+    "pack": "thehive",
+    "trigger": {
+        "parameters": {
+            "url": "thehive"
+        },
+        "type": "core.st2.webhook"
+    }
+}

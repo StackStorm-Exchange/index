@@ -1,0 +1,32 @@
+{
+    "action": {
+        "parameters": {
+            "task_id": "{{ trigger.body.object._id }}"
+        },
+        "ref": "thehive.take_task"
+    },
+    "criteria": {
+        "trigger.body.object.owner": {
+            "pattern": "bot",
+            "type": "eq"
+        },
+        "trigger.body.objectType": {
+            "pattern": "case_task",
+            "type": "eq"
+        },
+        "trigger.body.operation": {
+            "pattern": "Creation",
+            "type": "eq"
+        }
+    },
+    "description": "Receive TheHive information from https://github.com/TheHive-Project/TheHiveDocs/blob/master/admin/webhooks.md",
+    "enabled": false,
+    "name": "thehive_webhook_task_creation",
+    "pack": "thehive",
+    "trigger": {
+        "parameters": {
+            "url": "thehive"
+        },
+        "type": "core.st2.webhook"
+    }
+}
