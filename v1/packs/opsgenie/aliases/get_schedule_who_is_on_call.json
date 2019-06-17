@@ -6,9 +6,9 @@
     "description": "List who is on call.",
     "formats": [
         {
-            "display": "opsgenie oncall",
+            "display": "name the person on call for #scheduleIdentifier ",
             "representation": [
-                "opsgenie oncall"
+                "{{scheduleIdentifierType}} the person on call for {{scheduleIdentifier}}"
             ]
         }
     ],
