@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1560796261,
-        "hash": "ef8d4ea70af53b74eba33eed5ee4941b"
+        "generated_ts": 1560797447,
+        "hash": "6402cec704257226571a52899214a1a3"
     },
     "packs": {
         "acos": {
@@ -12617,7 +12617,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 59,
+                    "count": 60,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
@@ -12672,6 +12672,7 @@
                         "vm_hw_remove",
                         "vm_hw_scsi_controller_add",
                         "vm_hw_uuid_get",
+                        "vm_networks_get",
                         "vm_resource_pool_get",
                         "vm_runtime_info_get",
                         "vm_shutdown",
@@ -12687,7 +12688,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 51,
+                    "count": 52,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -12731,6 +12732,7 @@
                         "test_action_vm_check_tools.py",
                         "test_action_vm_config_info_get.py",
                         "test_action_vm_folder_get.py",
+                        "test_action_vm_networks_get.py",
                         "test_action_vm_resource_pool_get.py",
                         "test_action_vm_shutdown.py",
                         "test_action_vm_snapshots_delete.py",
@@ -12757,7 +12759,7 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.8.9"
+            "version": "0.8.11"
         },
         "vyatta": {
             "author": "Mehdi Abdelouahab",
