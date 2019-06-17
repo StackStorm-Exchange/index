@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1560803026,
-        "hash": "5e6bda291f6a0b79dfab3ac749ae490d"
+        "generated_ts": 1560803111,
+        "hash": "e50a7fe69a885a58be305e0b82bee9e5"
     },
     "packs": {
         "acos": {
@@ -11640,11 +11640,12 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 18,
+                    "count": 19,
                     "resources": [
                         "actions.list",
                         "call_home",
                         "check_permissions_anon_data",
+                        "executions.create",
                         "executions.get",
                         "executions.get_root",
                         "executions.list",
@@ -11691,7 +11692,7 @@
             ],
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
-            "version": "1.0.6"
+            "version": "1.0.7"
         },
         "sumologic": {
             "author": "Igor Cherkaev",

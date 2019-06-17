@@ -1,7 +1,7 @@
 ref: st2
 name: st2
 description: StackStorm utility actions and aliases
-version: 1.0.6
+version: 1.0.7
 python_versions:
 - '2'
 - '3'
@@ -9,11 +9,12 @@ author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 18
+    count: 19
     resources:
     - actions.list
     - call_home
     - check_permissions_anon_data
+    - executions.create
     - executions.get
     - executions.get_root
     - executions.list

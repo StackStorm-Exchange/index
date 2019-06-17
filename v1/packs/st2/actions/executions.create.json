@@ -1,0 +1,39 @@
+{
+    "description": "Create an action execution.",
+    "enabled": true,
+    "entry_point": "executions_create.py",
+    "name": "executions.create",
+    "parameters": {
+        "action": {
+            "description": "ref or id of the action to run",
+            "required": true,
+            "type": "string"
+        },
+        "delay": {
+            "description": "How long (in milliseconds) to delay the execution before scheduling.",
+            "required": false,
+            "type": "string"
+        },
+        "parameters": {
+            "description": "Parameters",
+            "required": false,
+            "type": "object"
+        },
+        "trace_id": {
+            "description": "Existing trace id for this execution.",
+            "required": false,
+            "type": "string"
+        },
+        "trace_tag": {
+            "description": "A trace tag string to track execution later.",
+            "required": false,
+            "type": "string"
+        },
+        "user": {
+            "description": "User under which to run the action (admins only).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
