@@ -8,11 +8,6 @@
             "required": false,
             "type": "array"
         },
-        "expr_form": {
-            "default": "glob",
-            "required": false,
-            "type": "string"
-        },
         "kwargs": {
             "required": false,
             "type": "object"
@@ -24,6 +19,11 @@
         },
         "target": {
             "default": "*",
+            "required": false,
+            "type": "string"
+        },
+        "tgt_type": {
+            "default": "glob",
             "required": false,
             "type": "string"
         }

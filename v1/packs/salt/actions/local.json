@@ -10,12 +10,6 @@
             "required": false,
             "type": "array"
         },
-        "expr_form": {
-            "default": "glob",
-            "description": "Criteria used for matching minions",
-            "required": false,
-            "type": "string"
-        },
         "kwargs": {
             "description": "Key Pair arguments to pass to the module",
             "required": false,
@@ -29,6 +23,12 @@
         "target": {
             "default": "*",
             "description": "Pattern used to match minons",
+            "required": false,
+            "type": "string"
+        },
+        "tgt_type": {
+            "default": "glob",
+            "description": "Criteria used for matching minions",
             "required": false,
             "type": "string"
         }
