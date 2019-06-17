@@ -5,6 +5,19 @@
     "name": "create_instance",
     "pack": "aws_boto3",
     "parameters": {
+        "BlockDeviceMappings": {
+            "default": [],
+            "description": "The block device mapping entries",
+            "items": {
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "IamInstanceProfile": {
+            "default": {},
+            "description": "The IAM instance profile",
+            "type": "object"
+        },
         "ImageId": {
             "description": "AWS image ID to create instance from",
             "required": true,
