@@ -24,6 +24,11 @@
             "required": false,
             "type": "string"
         },
+        "variable_dict": {
+            "description": "Terraform variable object (variables in here will overwrite any that are in files)",
+            "required": false,
+            "type": "object"
+        },
         "variable_files": {
             "description": "Terraform variable files",
             "required": false,
