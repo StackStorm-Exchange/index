@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1560797447,
-        "hash": "6402cec704257226571a52899214a1a3"
+        "generated_ts": 1560798144,
+        "hash": "6589889023a50977f16cce383d940a29"
     },
     "packs": {
         "acos": {
@@ -4482,7 +4482,8 @@
             "name": "cassandra",
             "ref": "cassandra",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cassandra",
-            "version": "0.1.2"
+            "stackstorm_version": ">=3.0.0",
+            "version": "0.2.0"
         },
         "check_mk": {
             "author": "codyaray",
