@@ -1,18 +1,14 @@
 {
     "base_url": {
-        "default": "https://api.github.com",
-        "description": "The GitHub URL, for GitHub Enterprise please set enterprise_url.",
-        "required": true,
+        "default": "https://github.example.com/api/v3",
+        "description": "GitHub API url, include /api/v3 for GitHub Enterprise. exp: ",
+        "required": false,
         "type": "string"
     },
     "deployment_environment": {
         "default": "production",
         "description": "The environment for this StackStorm server.",
         "required": true,
-        "type": "string"
-    },
-    "enterprise_url": {
-        "description": "GitHub API url (including /api/v3) of your GitHub Enterprise hostname.",
         "type": "string"
     },
     "github_type": {
@@ -31,7 +27,7 @@
     },
     "repository_sensor": {
         "additionalProperties": false,
-        "description": "Sensor specific settings.",
+        "description": "Sensor specific settings, with default github type.",
         "properties": {
             "count": {
                 "default": 30,
@@ -88,6 +84,12 @@
     },
     "user": {
         "description": "GitHub Username",
+        "type": "string"
+    },
+    "web_url": {
+        "default": "https://github.example.com",
+        "description": "The GitHub URL.",
+        "required": false,
         "type": "string"
     }
 }
