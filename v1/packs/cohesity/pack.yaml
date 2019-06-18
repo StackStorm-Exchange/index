@@ -1,0 +1,31 @@
+ref: cohesity
+name: cohesity
+description: Cohesity actions for StackStorm
+keywords:
+- cohesity
+- dataplatform
+version: 0.1.0
+python_versions:
+- '2'
+- '3'
+author: Cohesity, Inc.
+email: cohesity-api-sdks@cohesity.com
+content:
+  actions:
+    count: 2
+    resources:
+    - cluster_info
+    - resolve_alert
+  aliases:
+    count: 2
+    resources:
+    - cluster_info
+    - resolve_alert
+  policies:
+    count: 1
+    resources:
+    - http.retry
+  sensors:
+    count: 1
+    resources:
+    - CohesityAlertSensor

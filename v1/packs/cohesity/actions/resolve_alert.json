@@ -1,0 +1,27 @@
+{
+    "description": "Resolves the specified Cohesity alert.",
+    "enabled": true,
+    "entry_point": "resolve_alert.py",
+    "name": "resolve_alert",
+    "parameters": {
+        "alert_id": {
+            "description": "Alert id to resolve.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "description": {
+            "description": "Alert resolution description.",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "summary": {
+            "description": "Alert resolution summary.",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

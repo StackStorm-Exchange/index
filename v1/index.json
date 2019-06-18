@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1560827792,
-        "hash": "a70a13607876500a54723d14d2c518d1"
+        "generated_ts": 1560866480,
+        "hash": "9dad57d4b1b66309a614dba5cd4a9585"
     },
     "packs": {
         "acos": {
@@ -4828,6 +4828,51 @@
             "name": "CloudShark",
             "ref": "cloudshark",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudshark",
+            "version": "0.1.0"
+        },
+        "cohesity": {
+            "author": "Cohesity, Inc.",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "cluster_info",
+                        "resolve_alert"
+                    ]
+                },
+                "aliases": {
+                    "count": 2,
+                    "resources": [
+                        "cluster_info",
+                        "resolve_alert"
+                    ]
+                },
+                "policies": {
+                    "count": 1,
+                    "resources": [
+                        "http.retry"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "CohesityAlertSensor"
+                    ]
+                }
+            },
+            "description": "Cohesity actions for StackStorm",
+            "email": "cohesity-api-sdks@cohesity.com",
+            "keywords": [
+                "cohesity",
+                "dataplatform"
+            ],
+            "name": "cohesity",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "cohesity",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cohesity",
             "version": "0.1.0"
         },
         "consul": {

@@ -1,0 +1,25 @@
+{
+    "ack": {
+        "append_url": true,
+        "enabled": false
+    },
+    "action_ref": "cohesity.resolve_alert",
+    "description": "Resolve a Cohesity alert",
+    "formats": [
+        "cohesity resolve alert {{ alert_id }} {{ summary }} {{description}}"
+    ],
+    "name": "resolve_alert",
+    "pack": "cohesity",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "{% if execution.result.result.error is not defined%}good{% else %}danger{% endif %}",
+                "fallback": "Resolved Cohesity Alert",
+                "footer": "Cohesity",
+                "footer_icon": "https://i.imgur.com/ZbvCiaC.png",
+                "title": "{% if execution.result.result.error is not defined %}Cohesity alert {{execution.parameters.alert_id}} has been resolved!{% else %}Error!{% endif %}"
+            }
+        },
+        "format": "{% if execution.result.result.error is not defined %}\nThe following alert was resolved: ```{{execution.parameters.alert_id}}```\n{% else %}\nThe following alert was not resolved: ```{{execution.parameters.alert_id}}```\n{% endif %}"
+    }
+}

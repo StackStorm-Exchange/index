@@ -1,0 +1,44 @@
+{
+    "class_name": "CohesityAlertSensor",
+    "description": "This sensor emits triggers for new alerts.",
+    "entry_point": "cohesity_alert_sensor.py",
+    "poll_interval": 10,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates that a new Cohesity alert is generated.",
+            "name": "new_alert",
+            "payload_schema": {
+                "properties": {
+                    "alert_type": {
+                        "type": "integer"
+                    },
+                    "category": {
+                        "type": "string"
+                    },
+                    "cause": {
+                        "type": "string"
+                    },
+                    "code": {
+                        "type": "string"
+                    },
+                    "decription": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "severity": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}
