@@ -1,18 +1,18 @@
 {
-    "description": "Update Address Object Details",
+    "description": "Update Address Group Details",
     "enabled": true,
-    "entry_point": "update_address_object.py",
+    "entry_point": "update_address_group.py",
     "name": "update_address_object",
     "pack": "fortinet",
     "parameters": {
         "name": {
-            "description": "name of the address object",
+            "description": "Name of the Address Group",
             "position": 0,
             "required": true,
             "type": "string"
         },
         "payload": {
-            "description": "Address Object configuration",
+            "description": "Address Group configuration",
             "required": true,
             "type": "string"
         }
