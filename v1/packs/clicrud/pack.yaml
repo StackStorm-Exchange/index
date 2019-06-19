@@ -9,7 +9,7 @@ keywords:
 - clicrud
 - vrouter
 - vyatta
-version: 0.3.3
+version: 0.3.4
 python_versions:
 - '2'
 author: davidjohngee
@@ -18,5 +18,5 @@ content:
   actions:
     count: 2
     resources:
-    - ops_command
     - config_command
+    - ops_command
