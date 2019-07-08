@@ -4,14 +4,15 @@ description: Zabbix Monitoring System
 keywords:
 - zabbix
 - monitoring
-version: 0.1.11
+version: 0.2.0
 author: Hiroyasu OHYAMA
 email: user.localhost2000@gmail.com
 content:
   actions:
-    count: 11
+    count: 12
     resources:
     - ack_event
+    - create_host
     - host_delete
     - host_delete_by_id
     - host_get_id
@@ -23,9 +24,10 @@ content:
     - maintenance_delete
     - test_credentials
   tests:
-    count: 13
+    count: 14
     resources:
     - test_action_base.py
+    - test_create_host.py
     - test_host_delete.py
     - test_host_get_id.py
     - test_host_get_inventory.py

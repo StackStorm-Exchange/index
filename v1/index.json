@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1561956591,
-        "hash": "45e8da710cddfb4a7c4dd0f7870bc26b"
+        "generated_ts": 1562545866,
+        "hash": "0c17f72cc37926c74f18a6ac85c5e110"
     },
     "packs": {
         "acos": {
@@ -13076,9 +13076,10 @@
             "author": "Hiroyasu OHYAMA",
             "content": {
                 "actions": {
-                    "count": 11,
+                    "count": 12,
                     "resources": [
                         "ack_event",
+                        "create_host",
                         "host_delete",
                         "host_delete_by_id",
                         "host_get_id",
@@ -13092,9 +13093,10 @@
                     ]
                 },
                 "tests": {
-                    "count": 13,
+                    "count": 14,
                     "resources": [
                         "test_action_base.py",
+                        "test_create_host.py",
                         "test_host_delete.py",
                         "test_host_get_id.py",
                         "test_host_get_inventory.py",
@@ -13125,7 +13127,7 @@
             "name": "zabbix",
             "ref": "zabbix",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zabbix",
-            "version": "0.1.11"
+            "version": "0.2.0"
         },
         "zendesk": {
             "author": "Casey Richardson",

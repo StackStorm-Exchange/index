@@ -1,0 +1,44 @@
+{
+    "description": "Create a new host to Zabbix Server",
+    "enabled": true,
+    "entry_point": "create_host.py",
+    "name": "create_host",
+    "pack": "zabbix",
+    "parameters": {
+        "domains": {
+            "default": [],
+            "description": "Domain names of the host in which ZabbixAgent is installed",
+            "type": "array"
+        },
+        "groups": {
+            "description": "HostGroups to be registered to creating host",
+            "required": true,
+            "type": "array"
+        },
+        "ipaddrs": {
+            "default": [],
+            "description": "IP addresses of the host in which ZabbixAgent is installed",
+            "type": "array"
+        },
+        "main_if": {
+            "description": "Default ZabbixAgent interface of IP address or domain-name",
+            "type": "string"
+        },
+        "name": {
+            "description": "Hostname to be created",
+            "required": true,
+            "type": "string"
+        },
+        "proxy_host": {
+            "description": "Proxy host's name which is registered in ZabbixServer",
+            "type": "string"
+        },
+        "token": {
+            "default": "{% if st2kv.user.zabbix.secret_token|string != '' %}{{ st2kv.user.zabbix.secret_token | decrypt_kv }}{% endif %}\n",
+            "description": "Encrypted access token to authenticate to ZabbixServer",
+            "secret": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
