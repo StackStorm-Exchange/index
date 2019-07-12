@@ -1,0 +1,60 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "ipa_action.py",
+    "name": "group_del",
+    "pack": "freeipa",
+    "parameters": {
+        "cn": {
+            "required": true,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a IPA server.",
+            "required": false,
+            "type": "string"
+        },
+        "continue": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "method": {
+            "default": "group_del",
+            "description": "Name of IPA command to be executed.",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the IPA password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the IPA server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "verify_ssl": {
+            "description": "Verify SSL certificates on the server",
+            "required": false,
+            "type": "boolean"
+        },
+        "version": {
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

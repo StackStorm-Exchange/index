@@ -1,0 +1,166 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "ipa_action.py",
+    "name": "permission_add",
+    "pack": "freeipa",
+    "parameters": {
+        "addattr": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "all": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "attrs": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "cn": {
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a IPA server.",
+            "required": false,
+            "type": "string"
+        },
+        "extratargetfilter": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "filter": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ipapermbindruletype": {
+            "default": "permission",
+            "enum": [
+                "permission",
+                "all",
+                "anonymous"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "ipapermlocation": {
+            "type": "string"
+        },
+        "ipapermright": {
+            "enum": [
+                "read",
+                "search",
+                "compare",
+                "write",
+                "add",
+                "delete",
+                "all"
+            ],
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ipapermtarget": {
+            "type": "string"
+        },
+        "ipapermtargetfilter": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ipapermtargetfrom": {
+            "type": "string"
+        },
+        "ipapermtargetto": {
+            "type": "string"
+        },
+        "memberof": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "method": {
+            "default": "permission_add",
+            "description": "Name of IPA command to be executed.",
+            "immutable": true,
+            "type": "string"
+        },
+        "no_members": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "password": {
+            "description": "Optional override of the IPA password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "permissions": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "raw": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "server": {
+            "description": "Optional override of the IPA server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "setattr": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "subtree": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "targetgroup": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "verify_ssl": {
+            "description": "Verify SSL certificates on the server",
+            "required": false,
+            "type": "boolean"
+        },
+        "version": {
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

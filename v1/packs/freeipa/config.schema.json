@@ -1,0 +1,39 @@
+{
+    "connection": {
+        "additionalProperties": false,
+        "properties": {
+            "password": {
+                "description": "Password to login to the FreeIPA server",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "server": {
+                "description": "IP/Hostname of the FreeIPA server",
+                "required": true,
+                "type": "string"
+            },
+            "username": {
+                "description": "Username to login to the FreeIPA server",
+                "required": true,
+                "type": "string"
+            },
+            "verify_ssl": {
+                "default": true,
+                "description": "Verify SSL certificates on the server",
+                "type": "boolean"
+            }
+        },
+        "type": "object"
+    },
+    "connections": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/connection"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

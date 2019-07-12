@@ -1,0 +1,166 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "ipa_action.py",
+    "name": "cert_find",
+    "pack": "freeipa",
+    "parameters": {
+        "all": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "cacn": {
+            "type": "string"
+        },
+        "certificate": {
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a IPA server.",
+            "required": false,
+            "type": "string"
+        },
+        "criteria": {
+            "type": "string"
+        },
+        "exactly": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "host": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "issuedon_from": {
+            "type": "string"
+        },
+        "issuedon_to": {
+            "type": "string"
+        },
+        "issuer": {
+            "type": "string"
+        },
+        "max_serial_number": {
+            "type": "integer"
+        },
+        "method": {
+            "default": "cert_find",
+            "description": "Name of IPA command to be executed.",
+            "immutable": true,
+            "type": "string"
+        },
+        "min_serial_number": {
+            "type": "integer"
+        },
+        "no_host": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "no_members": {
+            "default": true,
+            "required": true,
+            "type": "boolean"
+        },
+        "no_service": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "no_user": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "password": {
+            "description": "Optional override of the IPA password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "pkey_only": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "raw": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "revocation_reason": {
+            "type": "integer"
+        },
+        "revokedon_from": {
+            "type": "string"
+        },
+        "revokedon_to": {
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the IPA server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "service": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "sizelimit": {
+            "type": "integer"
+        },
+        "subject": {
+            "type": "string"
+        },
+        "timelimit": {
+            "type": "integer"
+        },
+        "user": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "validnotafter_from": {
+            "type": "string"
+        },
+        "validnotafter_to": {
+            "type": "string"
+        },
+        "validnotbefore_from": {
+            "type": "string"
+        },
+        "validnotbefore_to": {
+            "type": "string"
+        },
+        "verify_ssl": {
+            "description": "Verify SSL certificates on the server",
+            "required": false,
+            "type": "boolean"
+        },
+        "version": {
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

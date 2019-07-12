@@ -1,0 +1,303 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "ipa_action.py",
+    "name": "user_find",
+    "pack": "freeipa",
+    "parameters": {
+        "all": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "carlicense": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "cn": {
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a IPA server.",
+            "required": false,
+            "type": "string"
+        },
+        "criteria": {
+            "type": "string"
+        },
+        "departmentnumber": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "displayname": {
+            "type": "string"
+        },
+        "employeenumber": {
+            "type": "string"
+        },
+        "employeetype": {
+            "type": "string"
+        },
+        "facsimiletelephonenumber": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "gecos": {
+            "type": "string"
+        },
+        "gidnumber": {
+            "type": "integer"
+        },
+        "givenname": {
+            "type": "string"
+        },
+        "homedirectory": {
+            "type": "string"
+        },
+        "in_group": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "in_hbacrule": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "in_netgroup": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "in_role": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "in_sudorule": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "initials": {
+            "type": "string"
+        },
+        "ipatokenradiusconfiglink": {
+            "type": "string"
+        },
+        "ipatokenradiususername": {
+            "type": "string"
+        },
+        "ipauserauthtype": {
+            "enum": [
+                "password",
+                "radius",
+                "otp"
+            ],
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "krbpasswordexpiration": {
+            "type": "string"
+        },
+        "krbprincipalexpiration": {
+            "type": "string"
+        },
+        "krbprincipalname": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "l": {
+            "type": "string"
+        },
+        "loginshell": {
+            "type": "string"
+        },
+        "mail": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "manager": {
+            "type": "string"
+        },
+        "method": {
+            "default": "user_find",
+            "description": "Name of IPA command to be executed.",
+            "immutable": true,
+            "type": "string"
+        },
+        "mobile": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "no_members": {
+            "default": true,
+            "required": true,
+            "type": "boolean"
+        },
+        "not_in_group": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "not_in_hbacrule": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "not_in_netgroup": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "not_in_role": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "not_in_sudorule": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "nsaccountlock": {
+            "default": false,
+            "type": "boolean"
+        },
+        "ou": {
+            "type": "string"
+        },
+        "pager": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "password": {
+            "description": "Optional override of the IPA password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "pkey_only": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "postalcode": {
+            "type": "string"
+        },
+        "preferredlanguage": {
+            "type": "string"
+        },
+        "preserved": {
+            "default": false,
+            "type": "boolean"
+        },
+        "raw": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "server": {
+            "description": "Optional override of the IPA server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "sizelimit": {
+            "type": "integer"
+        },
+        "sn": {
+            "type": "string"
+        },
+        "st": {
+            "type": "string"
+        },
+        "street": {
+            "type": "string"
+        },
+        "telephonenumber": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "timelimit": {
+            "type": "integer"
+        },
+        "title": {
+            "type": "string"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "uidnumber": {
+            "type": "integer"
+        },
+        "usercertificate": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "userclass": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "userpassword": {
+            "secret": true,
+            "type": "string"
+        },
+        "verify_ssl": {
+            "description": "Verify SSL certificates on the server",
+            "required": false,
+            "type": "boolean"
+        },
+        "version": {
+            "type": "string"
+        },
+        "whoami": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

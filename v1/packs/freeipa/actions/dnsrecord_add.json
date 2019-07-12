@@ -1,0 +1,473 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "ipa_action.py",
+    "name": "dnsrecord_add",
+    "pack": "freeipa",
+    "parameters": {
+        "a6_part_data": {
+            "type": "string"
+        },
+        "a6record": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "a_extra_create_reverse": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "a_part_ip_address": {
+            "type": "string"
+        },
+        "aaaa_extra_create_reverse": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "aaaa_part_ip_address": {
+            "type": "string"
+        },
+        "aaaarecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "addattr": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "afsdb_part_hostname": {
+            "type": "string"
+        },
+        "afsdb_part_subtype": {
+            "type": "integer"
+        },
+        "afsdbrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "all": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "aplrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "arecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "cert_part_algorithm": {
+            "type": "integer"
+        },
+        "cert_part_certificate_or_crl": {
+            "type": "string"
+        },
+        "cert_part_key_tag": {
+            "type": "integer"
+        },
+        "cert_part_type": {
+            "type": "integer"
+        },
+        "certrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "cname_part_hostname": {
+            "type": "string"
+        },
+        "cnamerecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a IPA server.",
+            "required": false,
+            "type": "string"
+        },
+        "dhcidrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "dlv_part_algorithm": {
+            "type": "integer"
+        },
+        "dlv_part_digest": {
+            "type": "string"
+        },
+        "dlv_part_digest_type": {
+            "type": "integer"
+        },
+        "dlv_part_key_tag": {
+            "type": "integer"
+        },
+        "dlvrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "dname_part_target": {
+            "type": "string"
+        },
+        "dnamerecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "dnsclass": {
+            "enum": [
+                "IN",
+                "CS",
+                "CH",
+                "HS"
+            ],
+            "type": "string"
+        },
+        "dnsttl": {
+            "type": "integer"
+        },
+        "dnszoneidnsname": {
+            "type": "string"
+        },
+        "ds_part_algorithm": {
+            "type": "integer"
+        },
+        "ds_part_digest": {
+            "type": "string"
+        },
+        "ds_part_digest_type": {
+            "type": "integer"
+        },
+        "ds_part_key_tag": {
+            "type": "integer"
+        },
+        "dsrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "force": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "hiprecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "idnsname": {
+            "type": "string"
+        },
+        "ipseckeyrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "keyrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "kx_part_exchanger": {
+            "type": "string"
+        },
+        "kx_part_preference": {
+            "type": "integer"
+        },
+        "kxrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "loc_part_altitude": {
+            "type": "number"
+        },
+        "loc_part_h_precision": {
+            "type": "number"
+        },
+        "loc_part_lat_deg": {
+            "type": "integer"
+        },
+        "loc_part_lat_dir": {
+            "enum": [
+                "N",
+                "S"
+            ],
+            "type": "string"
+        },
+        "loc_part_lat_min": {
+            "type": "integer"
+        },
+        "loc_part_lat_sec": {
+            "type": "number"
+        },
+        "loc_part_lon_deg": {
+            "type": "integer"
+        },
+        "loc_part_lon_dir": {
+            "enum": [
+                "E",
+                "W"
+            ],
+            "type": "string"
+        },
+        "loc_part_lon_min": {
+            "type": "integer"
+        },
+        "loc_part_lon_sec": {
+            "type": "number"
+        },
+        "loc_part_size": {
+            "type": "number"
+        },
+        "loc_part_v_precision": {
+            "type": "number"
+        },
+        "locrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "method": {
+            "default": "dnsrecord_add",
+            "description": "Name of IPA command to be executed.",
+            "immutable": true,
+            "type": "string"
+        },
+        "mx_part_exchanger": {
+            "type": "string"
+        },
+        "mx_part_preference": {
+            "type": "integer"
+        },
+        "mxrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "naptr_part_flags": {
+            "type": "string"
+        },
+        "naptr_part_order": {
+            "type": "integer"
+        },
+        "naptr_part_preference": {
+            "type": "integer"
+        },
+        "naptr_part_regexp": {
+            "type": "string"
+        },
+        "naptr_part_replacement": {
+            "type": "string"
+        },
+        "naptr_part_service": {
+            "type": "string"
+        },
+        "naptrrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ns_part_hostname": {
+            "type": "string"
+        },
+        "nsecrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "nsrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "password": {
+            "description": "Optional override of the IPA password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "ptr_part_hostname": {
+            "type": "string"
+        },
+        "ptrrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "raw": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "rprecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "rrsigrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "server": {
+            "description": "Optional override of the IPA server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "setattr": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "sigrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "spfrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "srv_part_port": {
+            "type": "integer"
+        },
+        "srv_part_priority": {
+            "type": "integer"
+        },
+        "srv_part_target": {
+            "type": "string"
+        },
+        "srv_part_weight": {
+            "type": "integer"
+        },
+        "srvrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "sshfp_part_algorithm": {
+            "type": "integer"
+        },
+        "sshfp_part_fingerprint": {
+            "type": "string"
+        },
+        "sshfp_part_fp_type": {
+            "type": "integer"
+        },
+        "sshfprecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "structured": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "tlsa_part_cert_association_data": {
+            "type": "string"
+        },
+        "tlsa_part_cert_usage": {
+            "type": "integer"
+        },
+        "tlsa_part_matching_type": {
+            "type": "integer"
+        },
+        "tlsa_part_selector": {
+            "type": "integer"
+        },
+        "tlsarecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "txt_part_data": {
+            "type": "string"
+        },
+        "txtrecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "uri_part_priority": {
+            "type": "integer"
+        },
+        "uri_part_target": {
+            "type": "string"
+        },
+        "uri_part_weight": {
+            "type": "integer"
+        },
+        "urirecord": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "verify_ssl": {
+            "description": "Verify SSL certificates on the server",
+            "required": false,
+            "type": "boolean"
+        },
+        "version": {
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

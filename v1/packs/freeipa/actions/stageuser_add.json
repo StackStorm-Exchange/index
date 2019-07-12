@@ -1,0 +1,247 @@
+{
+    "description": "",
+    "enabled": true,
+    "entry_point": "ipa_action.py",
+    "name": "stageuser_add",
+    "pack": "freeipa",
+    "parameters": {
+        "addattr": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "all": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "carlicense": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "cn": {
+            "required": true,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a IPA server.",
+            "required": false,
+            "type": "string"
+        },
+        "departmentnumber": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "displayname": {
+            "required": true,
+            "type": "string"
+        },
+        "employeenumber": {
+            "type": "string"
+        },
+        "employeetype": {
+            "type": "string"
+        },
+        "facsimiletelephonenumber": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "from_delete": {
+            "type": "boolean"
+        },
+        "gecos": {
+            "required": true,
+            "type": "string"
+        },
+        "gidnumber": {
+            "type": "integer"
+        },
+        "givenname": {
+            "type": "string"
+        },
+        "homedirectory": {
+            "type": "string"
+        },
+        "initials": {
+            "required": true,
+            "type": "string"
+        },
+        "ipasshpubkey": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "ipatokenradiusconfiglink": {
+            "type": "string"
+        },
+        "ipatokenradiususername": {
+            "type": "string"
+        },
+        "ipauserauthtype": {
+            "enum": [
+                "password",
+                "radius",
+                "otp"
+            ],
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "krbpasswordexpiration": {
+            "type": "string"
+        },
+        "krbprincipalexpiration": {
+            "type": "string"
+        },
+        "krbprincipalname": {
+            "items": {
+                "type": "string"
+            },
+            "required": true,
+            "type": "array"
+        },
+        "l": {
+            "type": "string"
+        },
+        "loginshell": {
+            "type": "string"
+        },
+        "mail": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "manager": {
+            "type": "string"
+        },
+        "method": {
+            "default": "stageuser_add",
+            "description": "Name of IPA command to be executed.",
+            "immutable": true,
+            "type": "string"
+        },
+        "mobile": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "no_members": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "ou": {
+            "type": "string"
+        },
+        "pager": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "password": {
+            "description": "Optional override of the IPA password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "postalcode": {
+            "type": "string"
+        },
+        "preferredlanguage": {
+            "type": "string"
+        },
+        "random": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "raw": {
+            "default": false,
+            "required": true,
+            "type": "boolean"
+        },
+        "server": {
+            "description": "Optional override of the IPA server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "session": {
+            "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "setattr": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "sn": {
+            "type": "string"
+        },
+        "st": {
+            "type": "string"
+        },
+        "street": {
+            "type": "string"
+        },
+        "telephonenumber": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "title": {
+            "type": "string"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "uidnumber": {
+            "type": "integer"
+        },
+        "usercertificate": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "userclass": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "username": {
+            "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "userpassword": {
+            "secret": true,
+            "type": "string"
+        },
+        "verify_ssl": {
+            "description": "Verify SSL certificates on the server",
+            "required": false,
+            "type": "boolean"
+        },
+        "version": {
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
