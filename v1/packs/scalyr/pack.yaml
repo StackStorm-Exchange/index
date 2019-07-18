@@ -1,0 +1,16 @@
+name: scalyr
+description: Scalyr integration pack
+keywords:
+- monitoring
+- observability
+- logs
+version: 0.0.1
+author: Scalyr, Inc.
+email: info@stackstorm.com
+contributors:
+- Dmitri Zimine <>
+content:
+  actions:
+    count: 1
+    resources:
+    - query

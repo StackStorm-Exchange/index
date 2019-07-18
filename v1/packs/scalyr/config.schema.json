@@ -1,0 +1,15 @@
+{
+    "token": {
+        "description": "Scalyr API token. Find one at https://www.scalyr.com/keys",
+        "required": true,
+        "secret": true,
+        "type": "string"
+    },
+    "url": {
+        "default": "https://www.scalyr.com/api",
+        "description": "Scalyr base base URL",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    }
+}

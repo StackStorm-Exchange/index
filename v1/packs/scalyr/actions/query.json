@@ -1,0 +1,33 @@
+{
+    "description": "Query Scalyr to get logs. See https://www.scalyr.com/help/api#query",
+    "entry_point": "query.py",
+    "name": "query",
+    "pack": "scalyr",
+    "parameters": {
+        "filter": {
+            "default": "",
+            "description": "Filter matching events using Scalyr expressions. None or emptry string match all events.",
+            "required": true,
+            "type": "string"
+        },
+        "fromTime": {
+            "description": "Start of time interval, in variety of formats, e.g. 10:30, see https://www.scalyr.com/help/time-reference",
+            "type": "string"
+        },
+        "maxCount": {
+            "default": 100,
+            "description": "Maximum number of records to return.",
+            "type": "integer"
+        },
+        "toTime": {
+            "description": "End of time interval, in variety of formats, e.g. 11:30, see https://www.scalyr.com/help/time-reference",
+            "type": "string"
+        },
+        "token": {
+            "description": "API token, that overrides the one provided by the config.yaml",
+            "secret": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

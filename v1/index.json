@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1563396093,
-        "hash": "dc0fc540f417e0ae9f1b91da83d8cb80"
+        "generated_ts": 1563492084,
+        "hash": "38c040f013089ac7fc13056609e88706"
     },
     "packs": {
         "acos": {
@@ -11744,6 +11744,30 @@
             "ref": "save_kittens",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-save_kittens",
             "version": "0.2.1"
+        },
+        "scalyr": {
+            "author": "Scalyr, Inc.",
+            "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "query"
+                    ]
+                }
+            },
+            "contributors": [
+                "Dmitri Zimine <>"
+            ],
+            "description": "Scalyr integration pack",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "monitoring",
+                "observability",
+                "logs"
+            ],
+            "name": "scalyr",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-scalyr",
+            "version": "0.0.1"
         },
         "sensu": {
             "author": "StackStorm, Inc.",
