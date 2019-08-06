@@ -16,6 +16,11 @@
             },
             "type": "array"
         },
+        "email_cc": {
+            "description": "Email addresses to send Cc.",
+            "required": false,
+            "type": "array"
+        },
         "email_from": {
             "description": "Email address to use as FROM.",
             "required": true,
