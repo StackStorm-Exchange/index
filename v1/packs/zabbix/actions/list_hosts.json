@@ -1,0 +1,24 @@
+{
+    "description": "List all host objects which are registered in Zabbix",
+    "enabled": true,
+    "entry_point": "call_api.py",
+    "name": "list_hosts",
+    "pack": "zabbix",
+    "parameters": {
+        "api_method": {
+            "default": "host.get",
+            "immutable": true
+        },
+        "filter": {
+            "description": "Condition to filter the result",
+            "type": "object"
+        },
+        "token": {
+            "default": "{% if st2kv.user.zabbix.secret_token|string != '' %}{{ st2kv.user.zabbix.secret_token | decrypt_kv }}{% endif %}\n",
+            "description": "Encrypted access token to authenticate to ZabbixServer",
+            "secret": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

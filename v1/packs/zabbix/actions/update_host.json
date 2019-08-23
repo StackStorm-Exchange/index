@@ -1,0 +1,44 @@
+{
+    "description": "A primitive action to update host information",
+    "enabled": true,
+    "entry_point": "call_api.py",
+    "name": "update_host",
+    "pack": "zabbix",
+    "parameters": {
+        "api_method": {
+            "default": "host.update",
+            "immutable": true
+        },
+        "groups": {
+            "description": "Host groups to replace the current host groups the host belongs to.",
+            "type": "array"
+        },
+        "hostid": {
+            "description": "ID of Host to be updated",
+            "type": "string"
+        },
+        "interfaces": {
+            "description": "Host interfaces to replace the current host interfaces.",
+            "type": "array"
+        },
+        "inventory": {
+            "description": "Host inventory properties.",
+            "type": "object"
+        },
+        "macros": {
+            "description": "User macros to replace the current user macros.",
+            "type": "array"
+        },
+        "templates": {
+            "description": "Templates to replace the currently linked templates.",
+            "type": "array"
+        },
+        "token": {
+            "default": "{% if st2kv.user.zabbix.secret_token|string != '' %}{{ st2kv.user.zabbix.secret_token | decrypt_kv }}{% endif %}\n",
+            "description": "Encrypted access token to authenticate to ZabbixServer",
+            "secret": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
