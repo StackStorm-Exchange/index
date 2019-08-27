@@ -65,6 +65,12 @@
         "secret": false,
         "type": "string"
     },
+    "validate": {
+        "default": false,
+        "description": "If true it will validate your credentials first.",
+        "required": false,
+        "type": "boolean"
+    },
     "verify": {
         "default": true,
         "description": "Verify SSL certificate. Set to False to disable verification. Default True",
