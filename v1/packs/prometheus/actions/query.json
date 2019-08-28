@@ -5,6 +5,10 @@
     "parameters": {
         "query": {
             "type": "string"
+        },
+        "url": {
+            "description": "Prometheus Url",
+            "type": "string"
         }
     },
     "runner_type": "python-script"
