@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1567019316,
-        "hash": "0acb7b456f874d9597fcc16ecd2b796d"
+        "generated_ts": 1567521312,
+        "hash": "ad3a1a903dffc1adaf8ba7b855f6dd1c"
     },
     "packs": {
         "acos": {
@@ -13189,7 +13189,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 60,
+                    "count": 61,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
@@ -13222,6 +13222,7 @@
                         "tag_category_list",
                         "tag_create",
                         "tag_delete",
+                        "tag_id_get",
                         "tag_list",
                         "tags_attach_by_id",
                         "vm_bestfit",
@@ -13260,7 +13261,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 52,
+                    "count": 53,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -13298,6 +13299,7 @@
                         "test_action_tag_category_list.py",
                         "test_action_tag_create.py",
                         "test_action_tag_delete.py",
+                        "test_action_tag_id_get.py",
                         "test_action_tag_list.py",
                         "test_action_tags_attach_by_id.py",
                         "test_action_vm_bestfit.py",
@@ -13331,7 +13333,7 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.8.12"
+            "version": "0.9.0"
         },
         "vyatta": {
             "author": "Mehdi Abdelouahab",

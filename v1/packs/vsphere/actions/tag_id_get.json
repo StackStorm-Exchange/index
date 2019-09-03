@@ -1,0 +1,25 @@
+{
+    "description": "Retrieves the ID of a tag with the given category and name",
+    "enabled": true,
+    "entry_point": "tag_id_get.py",
+    "name": "tag_id_get",
+    "parameters": {
+        "category_name": {
+            "description": "Name of the tag category",
+            "required": true,
+            "type": "string"
+        },
+        "tag_name": {
+            "description": "name of the tag",
+            "required": true,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-Configured vsphere connection details",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
