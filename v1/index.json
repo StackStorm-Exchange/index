@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568108578,
-        "hash": "1adfe0a75a182efaaa68037b834170fb"
+        "generated_ts": 1568130990,
+        "hash": "e4257a7b2a6f46c63c67365e8fa067b1"
     },
     "packs": {
         "acos": {
@@ -51,7 +51,8 @@
             "name": "acos",
             "ref": "acos",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-acos",
-            "tags": [
+            "version": "0.2.5",
+            "versions": [
                 "0.2.5",
                 "0.2.4",
                 "0.2.3",
@@ -59,8 +60,7 @@
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.5"
+            ]
         },
         "activecampaign": {
             "author": "DoriftoShoes",
@@ -210,15 +210,15 @@
             "name": "activecampaign",
             "ref": "activecampaign",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activecampaign",
-            "tags": [
+            "version": "0.3.3",
+            "versions": [
                 "0.3.3",
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.3"
+            ]
         },
         "activedirectory": {
             "author": "Encore Technologies",
@@ -327,14 +327,14 @@
             "name": "activedirectory",
             "ref": "activedirectory",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activedirectory",
-            "tags": [
+            "version": "0.1.4",
+            "versions": [
                 "0.1.4",
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.4"
+            ]
         },
         "alertlogic": {
             "author": "Jon Middleton",
@@ -366,14 +366,14 @@
             "name": "alertlogic",
             "ref": "alertlogic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-alertlogic",
-            "tags": [
+            "version": "0.2.3",
+            "versions": [
                 "0.2.3",
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.3"
+            ]
         },
         "algosec": {
             "author": "Encore Technologies",
@@ -463,11 +463,11 @@
             ],
             "ref": "algosec",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-algosec",
-            "tags": [
+            "version": "0.1.1",
+            "versions": [
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.1"
+            ]
         },
         "ansible": {
             "author": "StackStorm, Inc.",
@@ -502,7 +502,8 @@
             "name": "ansible",
             "ref": "ansible",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ansible",
-            "tags": [
+            "version": "0.5.9",
+            "versions": [
                 "0.5.9",
                 "0.5.8",
                 "0.5.7",
@@ -517,8 +518,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.5.9"
+            ]
         },
         "astral": {
             "author": "Tim Braly",
@@ -543,14 +543,14 @@
             "email": "tbraly@brocade.com",
             "name": "astral",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-astral",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "1.0.0",
                 "0.2.1",
                 "0.2.0",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "aws": {
             "author": "StackStorm, Inc.",
@@ -4193,7 +4193,8 @@
             ],
             "ref": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
-            "tags": [
+            "version": "1.2.1",
+            "versions": [
                 "1.2.1",
                 "1.2.0",
                 "1.1.1",
@@ -4224,8 +4225,7 @@
                 "0.10.2",
                 "0.10.1",
                 "0.10.0"
-            ],
-            "version": "1.2.1"
+            ]
         },
         "aws_boto3": {
             "author": "StackStorm, Inc.",
@@ -4277,7 +4277,8 @@
             "name": "aws_boto3",
             "ref": "aws_boto3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_boto3",
-            "tags": [
+            "version": "0.7.3",
+            "versions": [
                 "0.7.3",
                 "0.7.2",
                 "0.7.0",
@@ -4286,8 +4287,7 @@
                 "0.4.0",
                 "0.3.0",
                 "0.2.0"
-            ],
-            "version": "0.7.3"
+            ]
         },
         "azure": {
             "author": "StackStorm, Inc.",
@@ -4342,7 +4342,8 @@
             "name": "azure",
             "ref": "azure",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
-            "tags": [
+            "version": "0.4.1",
+            "versions": [
                 "0.4.1",
                 "0.4.0",
                 "0.3.1",
@@ -4350,8 +4351,7 @@
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.1"
+            ]
         },
         "backups": {
             "author": "Encore Technologies",
@@ -4384,13 +4384,13 @@
             "name": "backups",
             "ref": "backups",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-backups",
-            "tags": [
+            "version": "1.0.0",
+            "versions": [
                 "1.0.0",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "1.0.0"
+            ]
         },
         "beertab": {
             "author": "Encore Technologies",
@@ -4426,10 +4426,10 @@
             "name": "beertab",
             "ref": "beertab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-beertab",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "bitbucket": {
             "author": "Aamir",
@@ -4491,7 +4491,8 @@
             "ref": "bitbucket",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitbucket",
             "stackstorm_version": ">=2.1.0",
-            "tags": [
+            "version": "0.5.4",
+            "versions": [
                 "0.5.4",
                 "0.5.3",
                 "0.5.2",
@@ -4501,8 +4502,7 @@
                 "0.3.0",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.5.4"
+            ]
         },
         "bitcoin": {
             "author": "StackStorm, Inc.",
@@ -4524,10 +4524,10 @@
             "name": "bitcoin",
             "ref": "bitcoin",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitcoin",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "bolt": {
             "author": "Encore Technologies",
@@ -4582,7 +4582,8 @@
             "name": "bolt",
             "ref": "bolt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bolt",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
@@ -4591,8 +4592,7 @@
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "cassandra": {
             "author": "StackStorm, Inc.",
@@ -4625,13 +4625,13 @@
             "ref": "cassandra",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cassandra",
             "stackstorm_version": ">=3.0.0",
-            "tags": [
+            "version": "0.2.0",
+            "versions": [
                 "0.2.0",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.2.0"
+            ]
         },
         "check_mk": {
             "author": "codyaray",
@@ -4659,13 +4659,13 @@
             "name": "check_mk",
             "ref": "check_mk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-check_mk",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.2.1",
                 "0.2.0",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "checkpoint": {
             "author": "StackStorm, Inc.",
@@ -4695,11 +4695,11 @@
             "name": "checkpoint",
             "ref": "checkpoint",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-checkpoint",
-            "tags": [
+            "version": "0.0.2",
+            "versions": [
                 "0.0.2",
                 "0.0.1"
-            ],
-            "version": "0.0.2"
+            ]
         },
         "chef": {
             "author": "StackStorm, Inc.",
@@ -4733,13 +4733,13 @@
             ],
             "ref": "chef",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-chef",
-            "tags": [
+            "version": "0.1.3",
+            "versions": [
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.3"
+            ]
         },
         "circle_ci": {
             "author": "StackStorm dev",
@@ -4780,7 +4780,8 @@
             "name": "Circle CI",
             "ref": "circle_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle_ci",
-            "tags": [
+            "version": "0.5.3",
+            "versions": [
                 "0.5.3",
                 "0.5.2",
                 "0.5.1",
@@ -4789,8 +4790,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.5.3"
+            ]
         },
         "cisco_aci": {
             "author": "Paul Mulvihill",
@@ -4859,15 +4859,15 @@
             "name": "cisco_aci",
             "ref": "cisco_aci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_aci",
-            "tags": [
+            "version": "0.1.6",
+            "versions": [
                 "0.1.6",
                 "0.1.5",
                 "0.1.4",
                 "0.1.3",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.6"
+            ]
         },
         "cisco_spark": {
             "author": "Anthony Shaw",
@@ -4921,7 +4921,8 @@
             "ref": "cisco_spark",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_spark",
             "stackstorm_version": ">=3.0.0",
-            "tags": [
+            "version": "0.6.0",
+            "versions": [
                 "0.6.0",
                 "0.5.0",
                 "0.4.0",
@@ -4929,8 +4930,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.6.0"
+            ]
         },
         "clicrud": {
             "author": "davidjohngee",
@@ -4960,7 +4960,8 @@
             ],
             "ref": "clicrud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-clicrud",
-            "tags": [
+            "version": "0.3.4",
+            "versions": [
                 "0.3.4",
                 "0.3.3",
                 "0.3.2",
@@ -4968,8 +4969,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.4"
+            ]
         },
         "cloudflare": {
             "author": "Encore Technologies",
@@ -5005,7 +5005,8 @@
             ],
             "ref": "cloudflare",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
-            "tags": [
+            "version": "0.4.1",
+            "versions": [
                 "0.4.1",
                 "0.4.0",
                 "0.3.3",
@@ -5014,8 +5015,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.1"
+            ]
         },
         "cloudshark": {
             "author": "StackStorm, Inc.",
@@ -5038,10 +5038,10 @@
             "name": "CloudShark",
             "ref": "cloudshark",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudshark",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "cohesity": {
             "author": "Cohesity, Inc.",
@@ -5086,11 +5086,11 @@
             ],
             "ref": "cohesity",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cohesity",
-            "tags": [
+            "version": "0.1.1",
+            "versions": [
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.1"
+            ]
         },
         "consul": {
             "author": "jfryman",
@@ -5151,7 +5151,8 @@
             ],
             "ref": "consul",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-consul",
-            "tags": [
+            "version": "0.6.7",
+            "versions": [
                 "0.6.7",
                 "0.6.5",
                 "0.6.4",
@@ -5166,8 +5167,7 @@
                 "0.2.0",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.6.7"
+            ]
         },
         "crowd": {
             "author": "Mohan L",
@@ -5195,10 +5195,10 @@
             "name": "crowd",
             "ref": "crowd",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-crowd",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "csv": {
             "author": "StackStorm, Inc.",
@@ -5233,7 +5233,8 @@
             ],
             "ref": "csv",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-csv",
-            "tags": [
+            "version": "0.4.5",
+            "versions": [
                 "0.4.5",
                 "0.4.4",
                 "0.4.3",
@@ -5243,8 +5244,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.5"
+            ]
         },
         "cubesensors": {
             "author": "StackStorm, Inc.",
@@ -5287,13 +5287,13 @@
             ],
             "ref": "cubesensors",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cubesensors",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "datadog": {
             "author": "Lisa Bekdache",
@@ -5365,15 +5365,15 @@
             "name": "datadog",
             "ref": "datadog",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-datadog",
-            "tags": [
+            "version": "0.1.3",
+            "versions": [
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0",
                 "0.0.2",
                 "0.0.1"
-            ],
-            "version": "0.1.3"
+            ]
         },
         "device42": {
             "author": "Device42 Inc.",
@@ -5412,7 +5412,8 @@
             "name": "device42",
             "ref": "device42",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
-            "tags": [
+            "version": "0.7.1",
+            "versions": [
                 "0.7.1",
                 "0.7.0",
                 "0.6.0",
@@ -5424,8 +5425,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.7.1"
+            ]
         },
         "digitalocean": {
             "author": "StackStorm, Inc.",
@@ -5466,14 +5466,14 @@
             ],
             "ref": "digitalocean",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-digitalocean",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "dimensiondata": {
             "author": "Anthony Shaw",
@@ -5561,12 +5561,12 @@
             "name": "dimensiondata",
             "ref": "dimensiondata",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-dimensiondata",
-            "tags": [
+            "version": "0.1.2",
+            "versions": [
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.2"
+            ]
         },
         "docker": {
             "author": "StackStorm, Inc.",
@@ -5607,14 +5607,14 @@
             ],
             "ref": "docker",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-docker",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "dripstat": {
             "author": "James Fryman",
@@ -5643,12 +5643,12 @@
             "name": "dripstat",
             "ref": "dripstat",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-dripstat",
-            "tags": [
+            "version": "0.2.0",
+            "versions": [
                 "0.2.0",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.2.0"
+            ]
         },
         "duo": {
             "author": "Jon Middleton",
@@ -5692,15 +5692,15 @@
             "name": "duo",
             "ref": "duo",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-duo",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "elasticsearch": {
             "author": "StackStorm, Inc.",
@@ -5748,7 +5748,8 @@
             "name": "elasticsearch",
             "ref": "elasticsearch",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-elasticsearch",
-            "tags": [
+            "version": "1.1.0",
+            "versions": [
                 "1.1.0",
                 "1.0.1",
                 "1.0.0",
@@ -5761,8 +5762,7 @@
                 "0.2.0",
                 "0.1.2",
                 "0.1.1"
-            ],
-            "version": "1.1.0"
+            ]
         },
         "email": {
             "author": "James Fryman",
@@ -5797,7 +5797,8 @@
             "name": "email",
             "ref": "email",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-email",
-            "tags": [
+            "version": "1.1.3",
+            "versions": [
                 "1.1.3",
                 "1.1.2",
                 "1.1.1",
@@ -5811,8 +5812,7 @@
                 "0.2.0",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "1.1.3"
+            ]
         },
         "excel": {
             "author": "Tim Braly",
@@ -5832,15 +5832,15 @@
             "email": "tbraly@brocade.com",
             "name": "excel",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-excel",
-            "tags": [
+            "version": "0.2.4",
+            "versions": [
                 "0.2.4",
                 "0.2.3",
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.4"
+            ]
         },
         "exos": {
             "author": "Extreme Networks",
@@ -5862,13 +5862,13 @@
             "name": "EXOS",
             "ref": "exos",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-exos",
-            "tags": [
+            "version": "0.2.0",
+            "versions": [
                 "0.2.0",
                 "0.1.0",
                 "0.0.2",
                 "0.0.1"
-            ],
-            "version": "0.2.0"
+            ]
         },
         "fireeye": {
             "author": "James Fryman",
@@ -5892,13 +5892,13 @@
             "name": "fireeye",
             "ref": "fireeye",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fireeye",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "foreman": {
             "author": "Daniel Chamot",
@@ -6675,14 +6675,14 @@
             "name": "foreman",
             "ref": "foreman",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-foreman",
-            "tags": [
+            "version": "1.1.0",
+            "versions": [
                 "1.1.0",
                 "1.0.1",
                 "1.0.0",
                 "0.3.0",
                 "0.2.1"
-            ],
-            "version": "1.1.0"
+            ]
         },
         "fortinet": {
             "author": "StackStorm, Inc.",
@@ -6716,11 +6716,11 @@
             "name": "fortinet",
             "ref": "fortinet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fortinet",
-            "tags": [
+            "version": "0.0.2",
+            "versions": [
                 "0.0.2",
                 "0.0.1"
-            ],
-            "version": "0.0.2"
+            ]
         },
         "fpm": {
             "author": "jfryman",
@@ -6764,13 +6764,13 @@
             ],
             "ref": "fpm",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fpm",
-            "tags": [
+            "version": "0.1.2",
+            "versions": [
                 "0.1.2",
                 "0.1.1",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.1.2"
+            ]
         },
         "freeipa": {
             "author": "Encore Technologies",
@@ -7266,10 +7266,10 @@
             "name": "freeipa",
             "ref": "freeipa",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-freeipa",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "freight": {
             "author": "James Fryman",
@@ -7287,13 +7287,13 @@
             "name": "freight",
             "ref": "freight",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-freight",
-            "tags": [
+            "version": "0.1.2",
+            "versions": [
                 "0.1.2",
                 "0.1.1",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.1.2"
+            ]
         },
         "ghost2logger": {
             "author": "davidjohngee",
@@ -7319,7 +7319,8 @@
             "name": "ghost2logger",
             "ref": "ghost2logger",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ghost2logger",
-            "tags": [
+            "version": "1.1.1",
+            "versions": [
                 "1.1.1",
                 "1.1.0",
                 "1.0.2",
@@ -7327,8 +7328,7 @@
                 "1.0.0",
                 "0.1.0",
                 "0.0.2"
-            ],
-            "version": "1.1.1"
+            ]
         },
         "git": {
             "author": "StackStorm, Inc.",
@@ -7373,7 +7373,8 @@
             "name": "git",
             "ref": "git",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
-            "tags": [
+            "version": "0.5.0",
+            "versions": [
                 "0.5.1",
                 "0.5.0",
                 "0.4.2",
@@ -7383,8 +7384,7 @@
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.5.0"
+            ]
         },
         "github": {
             "author": "StackStorm, Inc.",
@@ -7487,7 +7487,8 @@
             ],
             "ref": "github",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-github",
-            "tags": [
+            "version": "1.0.0",
+            "versions": [
                 "1.0.0",
                 "0.9.0",
                 "0.8.4",
@@ -7506,8 +7507,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "1.0.0"
+            ]
         },
         "gitlab": {
             "author": "Daniel Chamot",
@@ -7529,14 +7529,14 @@
             ],
             "name": "gitlab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gitlab",
-            "tags": [
+            "version": "0.5.4",
+            "versions": [
                 "0.5.4",
                 "0.5.3",
                 "0.5.2",
                 "0.5.1",
                 "0.5.0"
-            ],
-            "version": "0.5.4"
+            ]
         },
         "google": {
             "author": "StackStorm, Inc.",
@@ -7561,13 +7561,13 @@
             ],
             "ref": "google",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-google",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.2.1",
                 "0.2.0",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "gpg": {
             "author": "StackStorm, Inc.",
@@ -7599,14 +7599,14 @@
             ],
             "ref": "gpg",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-gpg",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "hpe_icsp": {
             "author": "Paul Mulvihill",
@@ -7640,7 +7640,8 @@
             ],
             "ref": "hpe_icsp",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hpe_icsp",
-            "tags": [
+            "version": "0.6.4",
+            "versions": [
                 "0.6.4",
                 "0.6.3",
                 "0.6.2",
@@ -7649,8 +7650,7 @@
                 "0.5.0",
                 "0.4.0",
                 "0.3.1"
-            ],
-            "version": "0.6.4"
+            ]
         },
         "hubot": {
             "author": "James Fryman",
@@ -7687,7 +7687,8 @@
             "name": "hubot",
             "ref": "hubot",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hubot",
-            "tags": [
+            "version": "0.5.0",
+            "versions": [
                 "0.5.0",
                 "0.4.0",
                 "0.3.2",
@@ -7695,8 +7696,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.5.0"
+            ]
         },
         "hue": {
             "author": "James Fryman",
@@ -7730,13 +7730,13 @@
             "name": "hue",
             "ref": "hue",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hue",
-            "tags": [
+            "version": "0.1.1",
+            "versions": [
                 "0.1.1",
                 "0.1.0",
                 "0.0.2",
                 "0.0.1"
-            ],
-            "version": "0.1.1"
+            ]
         },
         "hyperv": {
             "author": "Encore Technologies",
@@ -7972,11 +7972,11 @@
             "name": "hyperv",
             "ref": "hyperv",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hyperv",
-            "tags": [
+            "version": "0.1.4",
+            "versions": [
                 "0.1.4",
                 "0.1.3"
-            ],
-            "version": "0.1.4"
+            ]
         },
         "icinga2": {
             "author": "Igor Cherkaev",
@@ -8019,7 +8019,8 @@
             ],
             "ref": "icinga2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-icinga2",
-            "tags": [
+            "version": "0.4.1",
+            "versions": [
                 "0.4.1",
                 "0.4.0",
                 "0.3.3",
@@ -8027,8 +8028,7 @@
                 "0.3.1",
                 "0.3.0",
                 "0.2.0"
-            ],
-            "version": "0.4.1"
+            ]
         },
         "influxdb": {
             "author": "Encore Technologies",
@@ -8063,11 +8063,11 @@
             "name": "influxdb",
             "ref": "influxdb",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-influxdb",
-            "tags": [
+            "version": "0.1.1",
+            "versions": [
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.1"
+            ]
         },
         "infoblox": {
             "author": "Dimension Data",
@@ -8141,13 +8141,13 @@
             "name": "infoblox",
             "ref": "infoblox",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-infoblox",
-            "tags": [
+            "version": "0.4.0",
+            "versions": [
                 "0.4.0",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.0"
+            ]
         },
         "ipcam": {
             "author": "StackStorm, Inc.",
@@ -8172,13 +8172,13 @@
             "name": "ipcam",
             "ref": "ipcam",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ipcam",
-            "tags": [
+            "version": "0.3.0",
+            "versions": [
                 "0.3.0",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.0"
+            ]
         },
         "irc": {
             "author": "StackStorm, Inc.",
@@ -8202,13 +8202,13 @@
             "name": "irc",
             "ref": "irc",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-irc",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "jenkins": {
             "author": "James Fryman",
@@ -8247,7 +8247,8 @@
             "name": "jenkins",
             "ref": "jenkins",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jenkins",
-            "tags": [
+            "version": "0.7.6",
+            "versions": [
                 "0.7.6",
                 "0.7.5",
                 "0.7.4",
@@ -8263,8 +8264,7 @@
                 "0.2.0",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.7.6"
+            ]
         },
         "jinja": {
             "author": "StackStorm, inc.",
@@ -8285,11 +8285,11 @@
             ],
             "name": "jinja",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jinja",
-            "tags": [
+            "version": "0.1.1",
+            "versions": [
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.1"
+            ]
         },
         "jira": {
             "author": "StackStorm, Inc.",
@@ -8342,7 +8342,8 @@
             ],
             "ref": "jira",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira",
-            "tags": [
+            "version": "0.13.0",
+            "versions": [
                 "0.9.0",
                 "0.8.1",
                 "0.8.0",
@@ -8364,8 +8365,7 @@
                 "0.10.1",
                 "0.10.0",
                 "0.1.0"
-            ],
-            "version": "0.13.0"
+            ]
         },
         "jmx": {
             "author": "StackStorm, Inc.",
@@ -8394,13 +8394,13 @@
             "name": "jmx",
             "ref": "jmx",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jmx",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "kafka": {
             "Contributors": [
@@ -8442,12 +8442,12 @@
             ],
             "name": "kafka",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kafka",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "kayako": {
             "author": "Antagonist B.V.",
@@ -8469,10 +8469,10 @@
             "name": "Kayako",
             "ref": "kayako",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kayako",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "keycloak": {
             "author": "devlinmr",
@@ -8518,14 +8518,14 @@
             "name": "keycloak",
             "ref": "keycloak",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-keycloak",
-            "tags": [
+            "version": "0.1.4",
+            "versions": [
                 "0.1.4",
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.4"
+            ]
         },
         "kubernetes": {
             "author": "Andrew Moore",
@@ -8964,7 +8964,8 @@
             ],
             "ref": "kubernetes",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kubernetes",
-            "tags": [
+            "version": "0.9.13",
+            "versions": [
                 "1.8.0",
                 "0.9.9",
                 "0.9.8",
@@ -8987,8 +8988,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.9.13"
+            ]
         },
         "lastline": {
             "author": "James Fryman",
@@ -9015,12 +9015,12 @@
             "name": "lastline",
             "ref": "lastline",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-lastline",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "libcloud": {
             "author": "StackStorm, Inc.",
@@ -9087,15 +9087,15 @@
             ],
             "ref": "libcloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
-            "tags": [
+            "version": "0.4.3",
+            "versions": [
                 "0.4.3",
                 "0.4.2",
                 "0.4.1",
                 "0.4.0",
                 "0.3.0",
                 "0.1.0"
-            ],
-            "version": "0.4.3"
+            ]
         },
         "librato": {
             "author": "James Fryman",
@@ -9121,14 +9121,14 @@
             ],
             "ref": "librato",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-librato",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "mailgun": {
             "author": "StackStorm, Inc.",
@@ -9154,14 +9154,14 @@
             ],
             "ref": "mailgun",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mailgun",
-            "tags": [
+            "version": "0.4.0",
+            "versions": [
                 "0.4.0",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.0"
+            ]
         },
         "manageiq": {
             "author": "Encore Technologies",
@@ -9238,15 +9238,15 @@
             ],
             "ref": "manageiq",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-manageiq",
-            "tags": [
+            "version": "0.1.5",
+            "versions": [
                 "0.1.5",
                 "0.1.4",
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.5"
+            ]
         },
         "menandmice": {
             "author": "Encore Technologies",
@@ -9481,13 +9481,13 @@
             "name": "menandmice",
             "ref": "menandmice",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-menandmice",
-            "tags": [
+            "version": "0.1.3",
+            "versions": [
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.3"
+            ]
         },
         "mistral": {
             "author": "StackStorm",
@@ -9515,14 +9515,14 @@
             ],
             "ref": "mistral",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mistral",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "mmonit": {
             "author": "Itxaka Serrano Garcia",
@@ -9570,7 +9570,8 @@
             ],
             "ref": "mmonit",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mmonit",
-            "tags": [
+            "version": "0.4.3",
+            "versions": [
                 "0.4.3",
                 "0.4.2",
                 "0.4.1",
@@ -9578,8 +9579,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.3"
+            ]
         },
         "mqtt": {
             "author": "James Fryman",
@@ -9602,12 +9602,12 @@
             "name": "mqtt",
             "ref": "mqtt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mqtt",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "msexchange": {
             "author": "Anthony Shaw",
@@ -9640,14 +9640,14 @@
             "name": "Microsoft Exchange",
             "ref": "msexchange",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-msexchange",
-            "tags": [
+            "version": "0.1.4",
+            "versions": [
                 "0.1.4",
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.4"
+            ]
         },
         "mssql": {
             "author": "codyaray",
@@ -9686,13 +9686,13 @@
             ],
             "ref": "mssql",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mssql",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.3.0",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "mysql": {
             "author": "st2-dev",
@@ -9717,7 +9717,8 @@
             ],
             "name": "mysql",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mysql",
-            "tags": [
+            "version": "0.5.3",
+            "versions": [
                 "0.5.3",
                 "0.5.2",
                 "0.5.1",
@@ -9727,8 +9728,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.5.3"
+            ]
         },
         "nagios": {
             "author": "StackStorm, Inc.",
@@ -9767,13 +9767,13 @@
             "name": "nagios",
             "ref": "nagios",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nagios",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "napalm": {
             "author": "mierdin, Rob Woodward",
@@ -9849,7 +9849,8 @@
             ],
             "name": "napalm",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm",
-            "tags": [
+            "version": "0.4.0",
+            "versions": [
                 "0.4.0",
                 "0.3.0",
                 "0.2.9",
@@ -9870,8 +9871,7 @@
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.0"
+            ]
         },
         "napalm_logs": {
             "author": "John Anderson",
@@ -9893,12 +9893,12 @@
             ],
             "name": "napalm_logs",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm_logs",
-            "tags": [
+            "version": "0.1.1",
+            "versions": [
                 "0.1.1",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.1.1"
+            ]
         },
         "nest": {
             "author": "James Fryman",
@@ -9933,15 +9933,15 @@
             ],
             "ref": "nest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nest",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "netbox": {
             "author": "John Anderson, Jefferson White",
@@ -10262,7 +10262,8 @@
             ],
             "name": "netbox",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-netbox",
-            "tags": [
+            "version": "1.1.1",
+            "versions": [
                 "1.1.1",
                 "1.1.0",
                 "1.0.0",
@@ -10277,8 +10278,7 @@
                 "0.2.0",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "1.1.1"
+            ]
         },
         "network_essentials": {
             "author": "Extreme Networks",
@@ -10384,7 +10384,8 @@
             "name": "Network Essentials",
             "ref": "network_essentials",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-network_essentials",
-            "tags": [
+            "version": "1.2.3",
+            "versions": [
                 "1.2.3",
                 "1.2.2",
                 "1.2.1",
@@ -10396,8 +10397,7 @@
                 "1.0.1",
                 "1.0.0",
                 "0.1.0"
-            ],
-            "version": "1.2.3"
+            ]
         },
         "networking_utils": {
             "author": "Jon Middleton",
@@ -10454,7 +10454,8 @@
             ],
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "tags": [
+            "version": "0.4.6",
+            "versions": [
                 "0.4.6",
                 "0.4.5",
                 "0.4.4",
@@ -10466,8 +10467,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.6"
+            ]
         },
         "newrelic": {
             "author": "StackStorm, Inc.",
@@ -10498,7 +10498,8 @@
             "name": "newrelic",
             "ref": "newrelic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
-            "tags": [
+            "version": "0.4.3",
+            "versions": [
                 "0.4.3",
                 "0.4.2",
                 "0.4.1",
@@ -10506,8 +10507,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.3"
+            ]
         },
         "nexus3": {
             "author": "Sonu Meena",
@@ -10563,11 +10563,11 @@
             ],
             "ref": "nexus3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nexus3",
-            "tags": [
+            "version": "0.1.1",
+            "versions": [
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.1"
+            ]
         },
         "nginxplus": {
             "author": "Copart",
@@ -10630,11 +10630,11 @@
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nginxplus",
-            "tags": [
+            "version": "1.0.1",
+            "versions": [
                 "1.0.1",
                 "1.0.0"
-            ],
-            "version": "1.0.1"
+            ]
         },
         "nsone": {
             "author": "Ian Price",
@@ -10688,10 +10688,10 @@
             "name": "nsone",
             "ref": "nsone",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nsone",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "nsx_vtep": {
             "author": "GSLAB",
@@ -10711,12 +10711,12 @@
             "name": "nsx_vtep",
             "ref": "nsx_vtep",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nsx_vtep",
-            "tags": [
+            "version": "0.1.2",
+            "versions": [
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.2"
+            ]
         },
         "octopusdeploy": {
             "author": "Anthony Shaw",
@@ -10752,13 +10752,13 @@
             "name": "octopusdeploy",
             "ref": "octopusdeploy",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-octopusdeploy",
-            "tags": [
+            "version": "0.1.3",
+            "versions": [
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.3"
+            ]
         },
         "openhab": {
             "author": "James Fryman",
@@ -10787,13 +10787,13 @@
             ],
             "ref": "openhab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openhab",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "openstack": {
             "author": "StackStorm Engineering Team",
@@ -11523,7 +11523,8 @@
             ],
             "name": "openstack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openstack",
-            "tags": [
+            "version": "0.7.2",
+            "versions": [
                 "0.7.2",
                 "0.7.1",
                 "0.7.0",
@@ -11535,8 +11536,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.7.2"
+            ]
         },
         "opscenter": {
             "author": "StackStorm, Inc.",
@@ -11583,13 +11583,13 @@
             "name": "opscenter",
             "ref": "opscenter",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opscenter",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "opsgenie": {
             "author": "Jon Middleton",
@@ -11686,7 +11686,8 @@
             "name": "opsgenie",
             "ref": "opsgenie",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opsgenie",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
@@ -11694,8 +11695,7 @@
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "orion": {
             "author": "Encore Technologies",
@@ -11798,7 +11798,8 @@
             ],
             "ref": "orion",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-orion",
-            "tags": [
+            "version": "0.7.10",
+            "versions": [
                 "0.7.9",
                 "0.7.8",
                 "0.7.7",
@@ -11818,8 +11819,7 @@
                 "0.3.1",
                 "0.3.0",
                 "0.2.0"
-            ],
-            "version": "0.7.10"
+            ]
         },
         "packagecloud": {
             "author": "StackStorm, Inc.",
@@ -11850,7 +11850,8 @@
             ],
             "ref": "packagecloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packagecloud",
-            "tags": [
+            "version": "1.0.1",
+            "versions": [
                 "1.0.1",
                 "1.0.0",
                 "0.4.1",
@@ -11858,8 +11859,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "1.0.1"
+            ]
         },
         "packer": {
             "author": "James Fryman",
@@ -11902,14 +11902,14 @@
             ],
             "ref": "packer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-packer",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "pagerduty": {
             "author": "Ian Price",
@@ -12008,7 +12008,8 @@
             ],
             "ref": "pagerduty",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pagerduty",
-            "tags": [
+            "version": "1.0.1",
+            "versions": [
                 "1.0.1",
                 "1.0.0",
                 "0.6.2",
@@ -12022,8 +12023,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "1.0.1"
+            ]
         },
         "paloalto": {
             "author": "Irek Romaniuk, John Anderson",
@@ -12080,15 +12080,15 @@
             "name": "paloalto",
             "ref": "paloalto",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-paloalto",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "phantomjs": {
             "author": "Tomaz Muraus",
@@ -12116,12 +12116,12 @@
             "name": "phantomjs",
             "ref": "phantomjs",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-phantomjs",
-            "tags": [
+            "version": "0.1.2",
+            "versions": [
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.2"
+            ]
         },
         "powerpoint": {
             "author": "Anthony Shaw",
@@ -12142,13 +12142,13 @@
             ],
             "ref": "powerpoint",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerpoint",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "prometheus": {
             "author": "Daniel Chamot",
@@ -12176,14 +12176,14 @@
             ],
             "ref": "prometheus",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-prometheus",
-            "tags": [
+            "version": "0.2.0",
+            "versions": [
                 "0.2.0",
                 "0.1.4",
                 "0.1.3",
                 "0.1.2",
                 "0.1.1"
-            ],
-            "version": "0.2.0"
+            ]
         },
         "puppet": {
             "author": "StackStorm, Inc.",
@@ -12213,7 +12213,8 @@
             "name": "puppet",
             "ref": "puppet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-puppet",
-            "tags": [
+            "version": "0.4.0",
+            "versions": [
                 "0.4.0",
                 "0.3.3",
                 "0.3.2",
@@ -12221,8 +12222,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.0"
+            ]
         },
         "pushbullet": {
             "author": "Fabio Brito",
@@ -12243,12 +12243,12 @@
             ],
             "name": "pushbullet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pushbullet",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "python3_test": {
             "author": "StackStorm, Inc.",
@@ -12273,10 +12273,10 @@
             ],
             "ref": "python3_test",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-python3_test",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "qualys": {
             "author": "Anthony Shaw",
@@ -12309,12 +12309,12 @@
             ],
             "ref": "qualys",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-qualys",
-            "tags": [
+            "version": "1.0.2",
+            "versions": [
                 "1.0.2",
                 "1.0.1",
                 "1.0.0"
-            ],
-            "version": "1.0.2"
+            ]
         },
         "rabbitmq": {
             "author": "StackStorm, Inc.",
@@ -12351,7 +12351,8 @@
             ],
             "ref": "rabbitmq",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-rabbitmq",
-            "tags": [
+            "version": "0.5.2",
+            "versions": [
                 "0.5.2",
                 "0.5.1",
                 "0.5.0",
@@ -12361,8 +12362,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.5.2"
+            ]
         },
         "rackspace": {
             "author": "jfryman",
@@ -12408,14 +12408,14 @@
             ],
             "ref": "rackspace",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-rackspace",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "reamaze": {
             "author": "James Fryman",
@@ -12442,15 +12442,15 @@
             "name": "reamaze",
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
-            "tags": [
+            "version": "0.3.0",
+            "versions": [
                 "0.3.0",
                 "0.2.1",
                 "0.2.0",
                 "0.1.1",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.3.0"
+            ]
         },
         "redis": {
             "author": "Antagonist B.V.",
@@ -12477,12 +12477,12 @@
             ],
             "ref": "redis",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-redis",
-            "tags": [
+            "version": "0.0.3",
+            "versions": [
                 "0.0.3",
                 "0.0.2",
                 "0.0.1"
-            ],
-            "version": "0.0.3"
+            ]
         },
         "salt": {
             "author": "jcockhren",
@@ -12678,7 +12678,8 @@
             "name": "salt",
             "ref": "salt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-salt",
-            "tags": [
+            "version": "0.8.0",
+            "versions": [
                 "0.8.0",
                 "0.7.2",
                 "0.7.1",
@@ -12694,8 +12695,7 @@
                 "0.3.1",
                 "0.3.0",
                 "0.1.0"
-            ],
-            "version": "0.8.0"
+            ]
         },
         "save_kittens": {
             "author": "StackStorm, Inc.",
@@ -12715,12 +12715,12 @@
             "name": "save_kittens",
             "ref": "save_kittens",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-save_kittens",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "scalyr": {
             "author": "Scalyr, Inc.",
@@ -12744,10 +12744,10 @@
             ],
             "name": "scalyr",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-scalyr",
-            "tags": [
+            "version": "0.0.1",
+            "versions": [
                 "0.0.1"
-            ],
-            "version": "0.0.1"
+            ]
         },
         "sensu": {
             "author": "StackStorm, Inc.",
@@ -12810,7 +12810,8 @@
             ],
             "ref": "sensu",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu",
-            "tags": [
+            "version": "0.5.2",
+            "versions": [
                 "0.5.2",
                 "0.5.1",
                 "0.5.0",
@@ -12818,8 +12819,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.5.2"
+            ]
         },
         "servicenow": {
             "author": "James Fryman",
@@ -12862,7 +12862,8 @@
             ],
             "ref": "servicenow",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
-            "tags": [
+            "version": "0.3.7",
+            "versions": [
                 "0.3.7",
                 "0.3.6",
                 "0.3.5",
@@ -12873,8 +12874,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.7"
+            ]
         },
         "signalr": {
             "author": "Anthony Shaw",
@@ -12901,12 +12901,12 @@
             "name": "signalr",
             "ref": "signalr",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-signalr",
-            "tags": [
+            "version": "0.1.2",
+            "versions": [
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.2"
+            ]
         },
         "slack": {
             "author": "st2-dev",
@@ -13070,7 +13070,8 @@
             "email": "info@stackstorm.com",
             "name": "slack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.9.0",
                 "0.8.0",
                 "0.7.0",
@@ -13101,8 +13102,7 @@
                 "0.10.1",
                 "0.10.0",
                 "0.1.1"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "smartthings": {
             "author": "James Fryman",
@@ -13142,14 +13142,14 @@
             "name": "SmartThings",
             "ref": "smartthings",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-smartthings",
-            "tags": [
+            "version": "0.4.0",
+            "versions": [
                 "0.4.0",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.0"
+            ]
         },
         "softlayer": {
             "author": "Itxaka Serrano Garcia",
@@ -13173,13 +13173,13 @@
             "name": "softlayer",
             "ref": "softlayer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-softlayer",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "splunk": {
             "author": "StackStorm, Inc.",
@@ -13207,7 +13207,8 @@
             "name": "splunk",
             "ref": "splunk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-splunk",
-            "tags": [
+            "version": "0.6.0",
+            "versions": [
                 "0.6.0",
                 "0.5.2",
                 "0.5.1",
@@ -13216,8 +13217,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.6.0"
+            ]
         },
         "sql": {
             "author": "Encore Technologies",
@@ -13254,10 +13254,10 @@
             "name": "sql",
             "ref": "sql",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sql",
-            "tags": [
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
-            ],
-            "version": "0.1.0"
+            ]
         },
         "st2": {
             "author": "StackStorm, Inc.",
@@ -13315,7 +13315,8 @@
             ],
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
-            "tags": [
+            "version": "1.0.7",
+            "versions": [
                 "1.0.7",
                 "1.0.6",
                 "1.0.5",
@@ -13330,8 +13331,7 @@
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "1.0.7"
+            ]
         },
         "sumologic": {
             "author": "Igor Cherkaev",
@@ -13356,7 +13356,8 @@
             ],
             "name": "sumologic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sumologic",
-            "tags": [
+            "version": "0.9.7",
+            "versions": [
                 "0.9.7",
                 "0.9.6",
                 "0.9.5",
@@ -13365,8 +13366,7 @@
                 "0.9.2",
                 "0.9.1",
                 "0.0.1"
-            ],
-            "version": "0.9.7"
+            ]
         },
         "syslog_client": {
             "author": "Carlos",
@@ -13401,10 +13401,10 @@
             ],
             "name": "syslog_client",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-syslog_client",
-            "tags": [
+            "version": "0.0.1",
+            "versions": [
                 "0.0.1"
-            ],
-            "version": "0.0.1"
+            ]
         },
         "telegram": {
             "author": "Fabio Brito",
@@ -13430,15 +13430,15 @@
             ],
             "name": "telegram",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-telegram",
-            "tags": [
+            "version": "0.2.4",
+            "versions": [
                 "0.2.4",
                 "0.2.3",
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.4"
+            ]
         },
         "terraform": {
             "author": "Martez Reed",
@@ -13490,7 +13490,8 @@
             "ref": "terraform",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-terraform",
             "runner_type": "python-script",
-            "tags": [
+            "version": "0.3.0",
+            "versions": [
                 "0.3.0",
                 "0.2.7",
                 "0.2.6",
@@ -13502,8 +13503,7 @@
                 "0.2.0",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.3.0"
+            ]
         },
         "tesla": {
             "author": "Anthony Shaw",
@@ -13549,14 +13549,14 @@
             ],
             "ref": "tesla",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-tesla",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "thehive": {
             "author": "agix",
@@ -13600,12 +13600,12 @@
             ],
             "ref": "thehive",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-thehive",
-            "tags": [
+            "version": "1.0.1",
+            "versions": [
                 "1.0.1",
                 "1.0.0",
                 "0.1.0"
-            ],
-            "version": "1.0.1"
+            ]
         },
         "time": {
             "author": "StackStorm, Inc.",
@@ -13638,12 +13638,12 @@
             ],
             "ref": "time",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-time",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "travis_ci": {
             "author": "Aamir",
@@ -13678,15 +13678,15 @@
             ],
             "ref": "travis_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-travis_ci",
-            "tags": [
+            "version": "0.3.3",
+            "versions": [
                 "0.3.3",
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.3"
+            ]
         },
         "trello": {
             "author": "James Fryman",
@@ -13728,7 +13728,8 @@
             "name": "trello",
             "ref": "trello",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-trello",
-            "tags": [
+            "version": "0.4.4",
+            "versions": [
                 "0.4.4",
                 "0.4.3",
                 "0.4.2",
@@ -13738,8 +13739,7 @@
                 "0.2.0",
                 "0.1.1",
                 "0.0.1"
-            ],
-            "version": "0.4.4"
+            ]
         },
         "tuleap": {
             "author": "Enalean",
@@ -13774,12 +13774,12 @@
             "name": "tuleap",
             "ref": "tuleap",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-tuleap",
-            "tags": [
+            "version": "0.1.2",
+            "versions": [
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.2"
+            ]
         },
         "twilio": {
             "author": "StackStorm, Inc.",
@@ -13800,13 +13800,13 @@
             ],
             "ref": "twilio",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-twilio",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "twitter": {
             "author": "StackStorm, Inc.",
@@ -13847,7 +13847,8 @@
             ],
             "ref": "twitter",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-twitter",
-            "tags": [
+            "version": "0.4.2",
+            "versions": [
                 "0.4.2",
                 "0.4.1",
                 "0.4.0",
@@ -13855,8 +13856,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.2"
+            ]
         },
         "typeform": {
             "author": "StackStorm, Inc.",
@@ -13889,14 +13889,14 @@
             "name": "typeform",
             "ref": "typeform",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-typeform",
-            "tags": [
+            "version": "0.5.0",
+            "versions": [
                 "0.5.0",
                 "0.4.1",
                 "0.4.0",
                 "0.3.0",
                 "0.2.0"
-            ],
-            "version": "0.5.0"
+            ]
         },
         "ubersmith": {
             "author": "James Cornman",
@@ -13914,13 +13914,13 @@
             "name": "ubersmith",
             "ref": "ubersmith",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ubersmith",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "urbandict": {
             "author": "StackStorm, Inc.",
@@ -13942,13 +13942,13 @@
             "name": "urbandict",
             "ref": "urbandict",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-urbandict",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         },
         "vadc": {
             "author": "Mark Boddington",
@@ -14044,14 +14044,14 @@
             "name": "vadc",
             "ref": "vadc",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vadc",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "vault": {
             "author": "steve.neuharth",
@@ -14084,7 +14084,8 @@
             ],
             "ref": "vault",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vault",
-            "tags": [
+            "version": "0.5.1",
+            "versions": [
                 "0.5.1",
                 "0.5.0",
                 "0.4.2",
@@ -14094,8 +14095,7 @@
                 "0.2.0",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.5.1"
+            ]
         },
         "vcd": {
             "author": "Paul Mulvihill",
@@ -14157,7 +14157,8 @@
             "name": "vcd",
             "ref": "vcd",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vcd",
-            "tags": [
+            "version": "0.2.5",
+            "versions": [
                 "0.2.5",
                 "0.2.4",
                 "0.2.3",
@@ -14165,8 +14166,7 @@
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.5"
+            ]
         },
         "vdx": {
             "author": "StackStorm, Inc.",
@@ -14294,14 +14294,14 @@
             "name": "vdx",
             "ref": "vdx",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx",
-            "tags": [
+            "version": "0.1.3",
+            "versions": [
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0",
                 "0.0.1"
-            ],
-            "version": "0.1.3"
+            ]
         },
         "vdx_vtep": {
             "author": "GSLAB",
@@ -14336,14 +14336,14 @@
             "name": "vdx_vtep",
             "ref": "vdx_vtep",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx_vtep",
-            "tags": [
+            "version": "0.1.4",
+            "versions": [
                 "0.1.4",
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.4"
+            ]
         },
         "victorops": {
             "author": "Aamir",
@@ -14370,13 +14370,13 @@
             ],
             "ref": "victorops",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-victorops",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "vra7": {
             "author": "Martez Reed",
@@ -14408,12 +14408,12 @@
             "name": "vra7",
             "ref": "vra7",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vra7",
-            "tags": [
+            "version": "0.1.2",
+            "versions": [
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.2"
+            ]
         },
         "vsphere": {
             "author": "Paul Mulvihill",
@@ -14563,7 +14563,8 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "tags": [
+            "version": "0.9.0",
+            "versions": [
                 "0.9.0",
                 "0.8.9",
                 "0.8.8",
@@ -14594,8 +14595,7 @@
                 "0.5.1",
                 "0.5.0",
                 "0.4.8"
-            ],
-            "version": "0.9.0"
+            ]
         },
         "vyatta": {
             "author": "Mehdi Abdelouahab",
@@ -14703,13 +14703,13 @@
             ],
             "name": "vyatta",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vyatta",
-            "tags": [
+            "version": "0.1.3",
+            "versions": [
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.1.3"
+            ]
         },
         "webpagetest": {
             "author": "Linuturk",
@@ -14736,14 +14736,14 @@
             ],
             "ref": "webpagetest",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-webpagetest",
-            "tags": [
+            "version": "0.4.0",
+            "versions": [
                 "0.4.0",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.4.0"
+            ]
         },
         "windows": {
             "author": "StackStorm, Inc.",
@@ -14776,7 +14776,8 @@
             ],
             "ref": "windows",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-windows",
-            "tags": [
+            "version": "0.6.0",
+            "versions": [
                 "0.6.0",
                 "0.5.0",
                 "0.4.1",
@@ -14784,8 +14785,7 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.6.0"
+            ]
         },
         "witai": {
             "author": "James Fryman",
@@ -14807,12 +14807,12 @@
             "name": "witai",
             "ref": "witai",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-witai",
-            "tags": [
+            "version": "0.2.1",
+            "versions": [
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.1"
+            ]
         },
         "xml": {
             "author": "StackStorm, Inc.",
@@ -14846,13 +14846,13 @@
             ],
             "ref": "xml",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-xml",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "yammer": {
             "author": "Anthony Shaw",
@@ -14892,13 +14892,13 @@
             "name": "yammer",
             "ref": "yammer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-yammer",
-            "tags": [
+            "version": "0.3.1",
+            "versions": [
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.1"
+            ]
         },
         "zabbix": {
             "author": "Hiroyasu OHYAMA",
@@ -14961,7 +14961,8 @@
             "name": "zabbix",
             "ref": "zabbix",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zabbix",
-            "tags": [
+            "version": "0.3.0",
+            "versions": [
                 "0.3.0",
                 "0.2.0",
                 "0.1.9",
@@ -14977,8 +14978,7 @@
                 "0.1.10",
                 "0.1.1",
                 "0.1.0"
-            ],
-            "version": "0.3.0"
+            ]
         },
         "zendesk": {
             "author": "Casey Richardson",
@@ -15016,14 +15016,14 @@
             ],
             "ref": "zendesk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zendesk",
-            "tags": [
+            "version": "0.3.2",
+            "versions": [
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.3.2"
+            ]
         },
         "zookeeper": {
             "author": "Cody A. Ray",
@@ -15040,13 +15040,13 @@
             "name": "zookeeper",
             "ref": "zookeeper",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zookeeper",
-            "tags": [
+            "version": "0.2.2",
+            "versions": [
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
-            ],
-            "version": "0.2.2"
+            ]
         }
     }
 }
