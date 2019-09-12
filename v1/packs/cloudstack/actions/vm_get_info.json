@@ -1,0 +1,36 @@
+{
+    "description": "Get VM information from ACS. API command listVirtualMachines",
+    "enabled": true,
+    "entry_point": "vm_get_info.py",
+    "name": "vm_get_info",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "List objects by project.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "ID of a VM to get information.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

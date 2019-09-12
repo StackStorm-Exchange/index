@@ -1,0 +1,42 @@
+{
+    "description": "Creates a project. API command createProject",
+    "enabled": true,
+    "entry_point": "project_create.py",
+    "name": "project_create",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "display_text": {
+            "description": "Display text of the project.",
+            "required": true,
+            "type": "string"
+        },
+        "extra_parameters": {
+            "default": {},
+            "description": "Extra parameters to the project.",
+            "required": false,
+            "type": "object"
+        },
+        "name": {
+            "description": "Name of the project.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

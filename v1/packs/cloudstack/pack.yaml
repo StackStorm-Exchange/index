@@ -1,0 +1,37 @@
+ref: cloudstack
+name: CloudStack
+description: CloudStack integration
+keywords:
+- acs
+- cloudstack
+- apache-cloudstack
+- apache-acs
+- cloud
+version: 0.5.14
+python_versions:
+- '2'
+- '3'
+author: Globo.com
+email: a-team@corp.globo.com
+content:
+  actions:
+    count: 18
+    resources:
+    - lb_list_members
+    - network_create_globo
+    - network_delete_globo
+    - network_restart
+    - network_update
+    - project_create
+    - project_delete
+    - sshkeypair_create
+    - sshkeypair_delete
+    - sshkeypair_list
+    - sshkeypair_register
+    - vm_deploy
+    - vm_destroy
+    - vm_force_destroy
+    - vm_get_info
+    - vm_reboot
+    - vm_start
+    - vm_stop

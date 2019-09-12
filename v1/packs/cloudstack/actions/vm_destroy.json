@@ -1,0 +1,37 @@
+{
+    "description": "Destroys a virtual machine. API command destroyVirtualMachine",
+    "enabled": true,
+    "entry_point": "vm_destroy.py",
+    "name": "vm_destroy",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "expunge": {
+            "default": false,
+            "description": "If true is passed, the vm is expunged immediately.",
+            "required": false,
+            "type": "boolean"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "The ID of the virtual machine.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

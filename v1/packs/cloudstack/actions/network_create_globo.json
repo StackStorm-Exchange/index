@@ -1,0 +1,77 @@
+{
+    "description": "Adds a vlan/network in Cloudstack and GloboNetwork. API command addNetworkViaGloboNetwork",
+    "enabled": true,
+    "entry_point": "network_create_globo.py",
+    "name": "network_create_globo",
+    "parameters": {
+        "acl_type": {
+            "default": "account",
+            "description": "Access control type; supported values are account and domain.",
+            "enum": [
+                "account",
+                "domain"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "display_text": {
+            "description": "The display text of the network.",
+            "required": true,
+            "type": "string"
+        },
+        "is_ipv6": {
+            "description": "If true defines de network IP type as IPV6.",
+            "required": false,
+            "type": "boolean"
+        },
+        "name": {
+            "description": "The name of the network.",
+            "required": true,
+            "type": "string"
+        },
+        "napi_environment_id": {
+            "description": "GloboNetwork environment ID.",
+            "required": true,
+            "type": "string"
+        },
+        "network_offering_id": {
+            "description": "The network offering id.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "An optional project for the ssh key.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "subnet": {
+            "default": 27,
+            "description": "Subnet mask in bits.",
+            "required": false,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        },
+        "zone_id": {
+            "description": "The Zone ID for the network.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

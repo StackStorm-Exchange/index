@@ -1,0 +1,41 @@
+{
+    "description": "Register a public key in a keypair under a certain name. API command registerSSHKeyPair",
+    "enabled": true,
+    "entry_point": "sshkeypair_register.py",
+    "name": "sshkeypair_register",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the keypair.",
+            "required": true,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "An optional project for the ssh key.",
+            "required": false,
+            "type": "string"
+        },
+        "public_key": {
+            "description": "Public key material of the keypair",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,36 @@
+{
+    "description": "List registered keypairs. API command listSSHKeyPairs",
+    "enabled": true,
+    "entry_point": "sshkeypair_list.py",
+    "name": "sshkeypair_list",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "A key pair name to look for.",
+            "required": false,
+            "type": "string"
+        },
+        "project_id": {
+            "description": "List objects by project.",
+            "required": false,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

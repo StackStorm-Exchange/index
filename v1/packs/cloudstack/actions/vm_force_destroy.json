@@ -1,0 +1,31 @@
+{
+    "description": "Force destroy a ACS VM. API command stopVirtualMachine and destroyVirtualMachine",
+    "enabled": true,
+    "entry_point": "vm_force_destroy.py",
+    "name": "vm_force_destroy",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        },
+        "vm_id": {
+            "description": "ID of a VM to destroy.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

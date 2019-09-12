@@ -1,0 +1,41 @@
+{
+    "description": "Updates a network. API command updateNetwork",
+    "enabled": true,
+    "entry_point": "network_update.py",
+    "name": "network_update",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "display_text": {
+            "description": "The new display text for the network.",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "The new name for the network.",
+            "required": false,
+            "type": "string"
+        },
+        "network_id": {
+            "description": "The ID of the network to restart.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

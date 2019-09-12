@@ -1,0 +1,67 @@
+{
+    "description": "Creates and automatically starts a virtual machine based on a service offering, disk offering, and template. API command deployVirtualMachine",
+    "enabled": true,
+    "entry_point": "vm_deploy.py",
+    "name": "vm_deploy",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "hyper_visor": {
+            "default": "XenServer",
+            "description": "The hypervisor on which to deploy the virtual machine.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Host name for the virtual machine.",
+            "required": false,
+            "type": "string"
+        },
+        "network_ids": {
+            "description": "List of network ids used by virtual machine.",
+            "required": true,
+            "type": "array"
+        },
+        "project_id": {
+            "description": "Deploy vm for the project.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "service_offering_id": {
+            "description": "The ID of the service offering for the virtual machine.",
+            "required": true,
+            "type": "string"
+        },
+        "template_id": {
+            "description": "The ID of the template for the virtual machine.",
+            "required": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        },
+        "userdata": {
+            "description": "Binary data that can be sent to the virtual machine upon a successful deployment.",
+            "required": false,
+            "type": "string"
+        },
+        "zone_id": {
+            "description": "Availability zone for the virtual machine.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

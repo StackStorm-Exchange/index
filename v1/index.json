@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568224307,
-        "hash": "120f8a09966e9c8caff891b42f86baa8"
+        "generated_ts": 1568321132,
+        "hash": "42ea4e68246d6648177b3c5a23f4a8fd"
     },
     "packs": {
         "acos": {
@@ -5040,6 +5040,72 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudshark",
             "version": "0.1.0",
             "versions": [
+                "0.1.0"
+            ]
+        },
+        "cloudstack": {
+            "author": "Globo.com",
+            "content": {
+                "actions": {
+                    "count": 18,
+                    "resources": [
+                        "lb_list_members",
+                        "network_create_globo",
+                        "network_delete_globo",
+                        "network_restart",
+                        "network_update",
+                        "project_create",
+                        "project_delete",
+                        "sshkeypair_create",
+                        "sshkeypair_delete",
+                        "sshkeypair_list",
+                        "sshkeypair_register",
+                        "vm_deploy",
+                        "vm_destroy",
+                        "vm_force_destroy",
+                        "vm_get_info",
+                        "vm_reboot",
+                        "vm_start",
+                        "vm_stop"
+                    ]
+                }
+            },
+            "description": "CloudStack integration",
+            "email": "a-team@corp.globo.com",
+            "keywords": [
+                "acs",
+                "cloudstack",
+                "apache-cloudstack",
+                "apache-acs",
+                "cloud"
+            ],
+            "name": "CloudStack",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "cloudstack",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudstack",
+            "version": "0.5.14",
+            "versions": [
+                "0.5.9",
+                "0.5.8",
+                "0.5.7",
+                "0.5.6",
+                "0.5.5",
+                "0.5.4",
+                "0.5.3",
+                "0.5.2",
+                "0.5.14",
+                "0.5.13",
+                "0.5.12",
+                "0.5.11",
+                "0.5.10",
+                "0.5.1",
+                "0.5.0",
+                "0.4.0",
+                "0.3.0",
+                "0.2.0",
                 "0.1.0"
             ]
         },

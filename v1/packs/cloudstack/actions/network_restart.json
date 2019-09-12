@@ -1,0 +1,41 @@
+{
+    "description": "Restarts the network. API command restartNetwork",
+    "enabled": true,
+    "entry_point": "network_restart.py",
+    "name": "network_restart",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "cleanup": {
+            "description": "If cleanup old network elements.",
+            "required": false,
+            "type": "boolean"
+        },
+        "make_redundant": {
+            "description": "Turn the network into a network with redundant routers.",
+            "required": false,
+            "type": "boolean"
+        },
+        "network_id": {
+            "description": "The ID of the network to restart.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
