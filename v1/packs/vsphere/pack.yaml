@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.9.0
+version: 0.9.1
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -14,13 +14,14 @@ contributors:
 - John Schoewe <jschoewe@gmail.com>
 content:
   actions:
-    count: 61
+    count: 62
     resources:
     - affinity_rule_create
     - affinity_rule_delete
     - custom_attr_assign
     - custom_attr_assign_or_create
     - custom_attr_create
+    - custom_attr_get
     - get_moid
     - get_objects_with_tag
     - get_tag_value_from_object
@@ -82,7 +83,7 @@ content:
     resources:
     - TaskInfoSensor
   tests:
-    count: 53
+    count: 54
     resources:
     - test_action_affinity_rule_create.py
     - test_action_affinity_rule_delete.py
@@ -90,6 +91,7 @@ content:
     - test_action_custom_attr_assign.py
     - test_action_custom_attr_assign_or_create.py
     - test_action_custom_attr_create.py
+    - test_action_custom_attr_get.py
     - test_action_get_moid.py
     - test_action_get_objects_with_tag.py
     - test_action_get_tag_value_from_object.py

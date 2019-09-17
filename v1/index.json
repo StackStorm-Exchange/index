@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1568591112,
-        "hash": "35229cd1b62ff7dc570dd8f077866515"
+        "generated_ts": 1568740474,
+        "hash": "d855d0fdae1ea4bd59617a3954cbe2ce"
     },
     "packs": {
         "acos": {
@@ -14500,13 +14500,14 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 61,
+                    "count": 62,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
                         "custom_attr_assign",
                         "custom_attr_assign_or_create",
                         "custom_attr_create",
+                        "custom_attr_get",
                         "get_moid",
                         "get_objects_with_tag",
                         "get_tag_value_from_object",
@@ -14572,7 +14573,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 53,
+                    "count": 54,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -14580,6 +14581,7 @@
                         "test_action_custom_attr_assign.py",
                         "test_action_custom_attr_assign_or_create.py",
                         "test_action_custom_attr_create.py",
+                        "test_action_custom_attr_get.py",
                         "test_action_get_moid.py",
                         "test_action_get_objects_with_tag.py",
                         "test_action_get_tag_value_from_object.py",
@@ -14644,8 +14646,9 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.9.0",
+            "version": "0.9.1",
             "versions": [
+                "0.9.1",
                 "0.9.0",
                 "0.8.9",
                 "0.8.8",
@@ -14674,8 +14677,7 @@
                 "0.6.1",
                 "0.6.0",
                 "0.5.1",
-                "0.5.0",
-                "0.4.8"
+                "0.5.0"
             ]
         },
         "vyatta": {
