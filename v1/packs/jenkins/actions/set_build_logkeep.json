@@ -1,0 +1,31 @@
+{
+    "description": "Set build's logkeep flag",
+    "enabled": true,
+    "entry_point": "set_build_logkeep.py",
+    "name": "set_build_logkeep",
+    "parameters": {
+        "config_override": {
+            "description": "Override pack configuration by providing an object with url, username and password keys and appropriate values",
+            "required": false,
+            "secret": true,
+            "type": "object"
+        },
+        "logkeep": {
+            "default": true,
+            "description": "Set build's LogKeep flag to this",
+            "required": false,
+            "type": "boolean"
+        },
+        "number": {
+            "description": "Build number",
+            "required": true,
+            "type": "integer"
+        },
+        "project": {
+            "description": "Name of the Jenkins job",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

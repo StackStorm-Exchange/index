@@ -5,14 +5,14 @@ keywords:
 - jenkins
 - continuous deployment
 - CICD
-version: 0.7.6
+version: 0.7.7
 author: James Fryman
 email: info@stackstorm.com
 contributors:
 - Igor Cherkaev <emptywee@gmail.com>
 content:
   actions:
-    count: 15
+    count: 16
     resources:
     - build_job
     - build_job_enh
@@ -28,4 +28,5 @@ content:
     - list_jobs
     - list_jobs_regex
     - rebuild_last_job
+    - set_build_logkeep
     - stop_build
