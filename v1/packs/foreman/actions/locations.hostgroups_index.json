@@ -10,6 +10,11 @@
             "required": false,
             "type": "string"
         },
+        "include": {
+            "description": "Array of extra information types to include",
+            "required": false,
+            "type": "array"
+        },
         "location_id": {
             "description": "Scope by locations",
             "required": true,
@@ -21,7 +26,7 @@
             "type": "string"
         },
         "order": {
-            "description": "sort results",
+            "description": "Sort field and order, eg. id DESC",
             "required": false,
             "type": "string"
         },

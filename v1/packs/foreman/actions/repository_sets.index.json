@@ -1,0 +1,96 @@
+{
+    "description": "List repository sets. (resource: GET /katello/api/repository_sets)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repository_sets.index",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "enabled": {
+            "description": "If true, only return repository sets that have been enabled. Defaults tofalse",
+            "required": false,
+            "type": "boolean"
+        },
+        "full_result": {
+            "description": "Whether or not to show all results",
+            "required": false,
+            "type": "boolean"
+        },
+        "name": {
+            "description": "Repository set name to search on",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "repository_sets.index",
+            "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "Sort field and order, eg. 'id DESC'",
+            "required": false,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "organization identifier",
+            "required": false,
+            "type": "number"
+        },
+        "page": {
+            "description": "Page number, starting at 1",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "Number of results per page to return",
+            "required": false,
+            "type": "number"
+        },
+        "product_id": {
+            "description": "ID of a product to list repository sets from",
+            "required": false,
+            "type": "number"
+        },
+        "search": {
+            "description": "Search string",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "sort_by": {
+            "description": "Field to sort the results on",
+            "required": false,
+            "type": "string"
+        },
+        "sort_order": {
+            "description": "How to order the sorted results (e.g. ASC for ascending)",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "with_active_subscription": {
+            "description": "If true, only return repository sets that are associated with an activesubscriptions",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

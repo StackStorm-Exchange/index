@@ -18,12 +18,12 @@
         "content_view_id": {
             "description": "content view identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "id": {
             "description": "puppet module ID",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "name": {
             "description": "name of the puppet module",

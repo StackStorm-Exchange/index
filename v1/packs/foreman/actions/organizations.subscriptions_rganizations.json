@@ -13,7 +13,7 @@
         "id": {
             "description": "Subscription identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "organizations.subscriptions_rganizations",
@@ -23,7 +23,7 @@
         "organization_id": {
             "description": "Organization identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

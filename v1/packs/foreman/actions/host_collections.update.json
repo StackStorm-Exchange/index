@@ -22,7 +22,7 @@
         "id": {
             "description": "Id of the host collection",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "max_hosts": {
             "description": "Maximum number of hosts in the host collection",
@@ -53,7 +53,7 @@
         "unlimited_hosts": {
             "description": "Whether or not the host collection may have unlimited hosts",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

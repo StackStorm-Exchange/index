@@ -31,7 +31,7 @@
             "type": "array"
         },
         "name": {
-            "description": "package group name.",
+            "description": "package group name",
             "required": true,
             "type": "string"
         },
@@ -64,7 +64,7 @@
         "user_visible": {
             "description": "set 'user_visible' flag on package group. Defaults to true",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

@@ -5,6 +5,11 @@
     "name": "content_views.create",
     "pack": "foreman",
     "parameters": {
+        "auto_publish": {
+            "description": "Enable/Disable auto publish of composite view",
+            "required": false,
+            "type": "boolean"
+        },
         "component_ids": {
             "description": "List of component content view version ids for composite views",
             "required": false,
@@ -13,7 +18,7 @@
         "composite": {
             "description": "Composite content view",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
@@ -43,7 +48,7 @@
         "organization_id": {
             "description": "Organization identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

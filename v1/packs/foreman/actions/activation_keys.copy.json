@@ -13,7 +13,7 @@
         "id": {
             "description": "ID of the activation key",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "new_name": {
             "description": "Name of new activation key",
@@ -28,7 +28,7 @@
         "organization_id": {
             "description": "organization identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

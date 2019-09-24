@@ -8,7 +8,7 @@
         "composite_content_view_id": {
             "description": "composite content view numeric identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
@@ -18,7 +18,7 @@
         "id": {
             "description": "content view component ID. Identifier of the component association",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "content_views.content_view_components_ontent_showviews",

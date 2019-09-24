@@ -15,10 +15,20 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "config_groups.create",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

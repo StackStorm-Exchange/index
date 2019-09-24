@@ -1,0 +1,46 @@
+{
+    "description": "Add subscriptions consumed by a manifest from Red Hat Subscription Management (resource: POST /katello/api/organizations/:organization_id/upstream_subscriptions)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "organizations.upstream_subscriptions_create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "organizations.upstream_subscriptions_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Organization ID",
+            "required": true,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "pools": {
+            "description": "\"description: Array of pools to add\n parameters:\n     id:\n       required: true\n       type: string\n       description: Candlepin ID of pool to add\n     quantity:\n       required: true\n       type: number\n       description: Quantity of entitlements to bind\n     \"\n",
+            "required": true,
+            "type": "array"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

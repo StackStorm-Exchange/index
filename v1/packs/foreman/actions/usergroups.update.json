@@ -14,10 +14,20 @@
             "required": true,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "usergroups.update",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -31,7 +41,7 @@
             "type": "string"
         },
         "usergroup": {
-            "description": "\"description: \n parameters:\n     admin:\n       required: false\n       type: string\n       description: is an admin user group\n     user_ids:\n       required: false\n       type: array\n       description: ''\n     role_ids:\n       required: false\n       type: array\n       description: ''\n     usergroup_ids:\n       required: false\n       type: array\n       description: ''\n     name:\n       required: false\n       type: string\n       description: ''\n     \"",
+            "description": "\"description: \n parameters:\n     admin:\n       required: false\n       type: boolean\n       description: is an admin user group\n     user_ids:\n       required: false\n       type: array\n       description: ''\n     role_ids:\n       required: false\n       type: array\n       description: ''\n     usergroup_ids:\n       required: false\n       type: array\n       description: ''\n     name:\n       required: false\n       type: string\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },

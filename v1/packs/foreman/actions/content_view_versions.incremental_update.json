@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "add_content": {
-            "description": "\"description: \n parameters:\n     package_ids:\n       required: false\n       type: array\n       description: Package ids or uuids to copy into the new versions.\n     errata_ids:\n       required: false\n       type: array\n       description: Errata ids or uuids to copy into the new versions.\n     puppet_module_ids:\n       required: false\n       type: array\n       description: Puppet Module ids or uuids to copy into the new versions.\n     \"\n",
+            "description": "\"description: \n parameters:\n     package_ids:\n       required: false\n       type: array\n       description: Package ids or uuids to copy into the new versions\n     deb_ids:\n       required: false\n       type: array\n       description: Deb Package ids or uuids to copy into the new versions\n     errata_ids:\n       required: false\n       type: array\n       description: Errata ids or uuids to copy into the new versions\n     puppet_module_ids:\n       required: false\n       type: array\n       description: Puppet Module ids or uuids to copy into the new versions\n     \"\n",
             "required": false,
             "type": "object"
         },
@@ -16,7 +16,7 @@
             "type": "string"
         },
         "content_view_version_environments": {
-            "description": "\"description: \n parameters:\n     content_view_version_id:\n       required: false\n       type: string\n       description: Content View Version Ids to perform an incremental update on.  May containcomposites as well as one or more components to update.\n     environment_ids:\n       required: false\n       type: array\n       description: The list of environments to promote the specified Content View Version to(replacing the older version).\n     \"\n",
+            "description": "\"description: \n parameters:\n     content_view_version_id:\n       required: false\n       type: number\n       description: Content View Version Ids to perform an incremental update on.  May containcomposites as well as one or more components to update.\n     environment_ids:\n       required: false\n       type: array\n       description: The list of environments to promote the specified Content View Version to(replacing the older version)\n     \"\n",
             "required": false,
             "type": "array"
         },
@@ -37,14 +37,14 @@
             "type": "string"
         },
         "propagate_all_composites": {
-            "description": "If true, will publish a new composite version using any specifiedcontent_view_version_id that has been promoted to a lifecycle environment.",
+            "description": "If true, will publish a new composite version using any specifiedcontent_view_version_id that has been promoted to a lifecycle environment",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "resolve_dependencies": {
-            "description": "If true, when adding the specified errata or packages, any neededdependencies will be copied as well.",
+            "description": "If true, when adding the specified errata or packages, any neededdependencies will be copied as well",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",

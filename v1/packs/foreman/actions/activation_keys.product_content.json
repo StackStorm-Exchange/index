@@ -13,12 +13,12 @@
         "content_access_mode_all": {
             "description": "Get all content available, not just that provided by subscriptions",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "content_access_mode_env": {
             "description": "Limit content to just that available in the activation key's contentview version",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "id": {
             "description": "ID of the activation key",

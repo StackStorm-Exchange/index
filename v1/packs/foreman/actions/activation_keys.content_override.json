@@ -16,14 +16,14 @@
             "type": "object"
         },
         "content_overrides": {
-            "description": "\"description: Array of Content override parameters\n parameters:\n     content_label:\n       required: true\n       type: string\n       description: Label of the content\n     name:\n       required: false\n       type: string\n       description: Override parameter key or name. Note if name is not provided the defaultname will be 'enabled'\n     value:\n       required: false\n       type: string\n       description: Override value. Provide a boolean value if name is 'enabled'\n     remove:\n       required: false\n       type: string\n       description: Set true to remove an override and reset it to 'default'\n     \"",
+            "description": "\"description: Array of Content override parameters\n parameters:\n     content_label:\n       required: true\n       type: string\n       description: Label of the content\n     name:\n       required: false\n       type: string\n       description: Override parameter key or name. Note if name is not provided the defaultname will be 'enabled'\n     value:\n       required: false\n       type: string\n       description: Override value. Provide a boolean value if name is 'enabled'\n     remove:\n       required: false\n       type: boolean\n       description: Set true to remove an override and reset it to 'default'\n     \"",
             "required": false,
             "type": "array"
         },
         "id": {
             "description": "ID of the activation key",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "activation_keys.content_override",

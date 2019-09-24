@@ -1,5 +1,5 @@
 {
-    "description": "Forces a republish of the version's repositories' metadata. (resource: PUT /katello/api/content_view_versions/:id/republish_repositories)",
+    "description": "Forces a republish of the version's repositories' metadata (resource: PUT /katello/api/content_view_versions/:id/republish_repositories)",
     "enabled": true,
     "entry_point": "lib/action.py",
     "name": "content_view_versions.republish_repositories",
@@ -13,7 +13,7 @@
         "id": {
             "description": "Content view version identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "content_view_versions.republish_repositories",

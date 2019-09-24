@@ -1,0 +1,51 @@
+{
+    "description": "Plays Ansible roles on hostgroups (resource: POST /api/hostgroups/multiple_play_roles)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hostgroups.multiple_play_roles",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "hostgroup_ids": {
+            "description": "IDs of hostgroups to play roles on",
+            "required": true,
+            "type": "array"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
+        "operation": {
+            "default": "hostgroups.multiple_play_roles",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

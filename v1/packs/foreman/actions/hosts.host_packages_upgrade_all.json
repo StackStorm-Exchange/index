@@ -13,7 +13,7 @@
         "host_id": {
             "description": "ID of the host",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "hosts.host_packages_upgrade_all",

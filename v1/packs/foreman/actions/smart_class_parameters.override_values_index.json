@@ -10,10 +10,20 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "smart_class_parameters.override_values_index",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "page": {
             "description": "paginate results",
@@ -39,7 +49,7 @@
         "show_hidden": {
             "description": "Display hidden values",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "smart_class_parameter_id": {
             "required": true,

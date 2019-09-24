@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "bookmark": {
-            "description": "\"description: \n parameters:\n     query:\n       required: true\n       type: string\n       description: ''\n     controller:\n       required: true\n       type: string\n       description: ''\n     name:\n       required: true\n       type: string\n       description: ''\n     public:\n       required: false\n       type: string\n       description: ''\n     \"",
+            "description": "\"description: \n parameters:\n     query:\n       required: true\n       type: string\n       description: ''\n     controller:\n       required: true\n       type: string\n       description: ''\n     name:\n       required: true\n       type: string\n       description: ''\n     public:\n       required: false\n       type: boolean\n       description: ''\n     \"",
             "required": true,
             "type": "object"
         },
@@ -15,10 +15,20 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "bookmarks.create",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

@@ -8,7 +8,7 @@
         "composite_version_id": {
             "description": "Filter versions that are components in the specified composite version",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
@@ -18,17 +18,17 @@
         "content_view_id": {
             "description": "Content view identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "environment_id": {
             "description": "Filter versions by environment",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "full_result": {
             "description": "Whether or not to show all results",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "operation": {
             "default": "content_view_versions.index",
@@ -36,19 +36,19 @@
             "type": "string"
         },
         "order": {
-            "description": "Sort field and order, eg. 'name DESC'",
+            "description": "Sort field and order, eg. 'id DESC'",
             "required": false,
             "type": "string"
         },
         "organization_id": {
             "description": "Organization identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "page": {
             "description": "Page number, starting at 1",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -59,12 +59,12 @@
         "per_page": {
             "description": "Number of results per page to return",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "puppet_module_id": {
             "description": "Filter versions by puppet module",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "search": {
             "description": "Search string",
@@ -76,10 +76,20 @@
             "required": false,
             "type": "string"
         },
-        "sort": {
-            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"",
+        "sort_by": {
+            "description": "Field to sort the results on",
             "required": false,
-            "type": "object"
+            "type": "string"
+        },
+        "sort_order": {
+            "description": "How to order the sorted results (e.g. ASC for ascending)",
+            "required": false,
+            "type": "string"
+        },
+        "triggered_by_id": {
+            "description": "Filter composite versions whose publish was triggered by the specifiedcomponent version",
+            "required": false,
+            "type": "number"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

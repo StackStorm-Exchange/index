@@ -18,7 +18,7 @@
         "content_view_filter_id": {
             "description": "filter identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "end_date": {
             "description": "erratum: end date (YYYY-MM-DD)",
@@ -33,7 +33,7 @@
         "id": {
             "description": "rule identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "max_version": {
             "description": "package: maximum version",

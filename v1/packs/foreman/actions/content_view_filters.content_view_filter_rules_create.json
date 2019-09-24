@@ -18,7 +18,7 @@
         "content_view_filter_id": {
             "description": "filter identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "date_type": {
             "description": "erratum: search using the 'Issued On' or 'Updated On'column of the errata. Values are 'issued'/'updated'",
@@ -53,7 +53,7 @@
         "name": {
             "description": "package, package group, or docker tag names",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "operation": {
             "default": "content_view_filters.content_view_filter_rules_create",

@@ -33,7 +33,7 @@
         "organization_id": {
             "description": "name of organization",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -45,6 +45,16 @@
             "description": "ID of an environment that is prior to the new environment in the chain. Ithas to be either the ID of Library or the ID of an environment at the endof a chain.",
             "required": true,
             "type": "number"
+        },
+        "registry_name_pattern": {
+            "description": "pattern for container image names",
+            "required": false,
+            "type": "string"
+        },
+        "registry_unauthenticated_pull": {
+            "description": "allow unauthenticed pull of container images",
+            "required": false,
+            "type": "boolean"
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",

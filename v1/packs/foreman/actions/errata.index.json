@@ -5,20 +5,25 @@
     "name": "errata.index",
     "pack": "foreman",
     "parameters": {
+        "available_for": {
+            "description": "Return errata that can be added to the specified object.  The values'content_view_version' and 'content_view_filter are supported.",
+            "required": false,
+            "type": "string"
+        },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
             "required": false,
             "type": "string"
         },
         "content_view_filter_id": {
-            "description": "content view filter identifier",
+            "description": "Content View Filter identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "content_view_version_id": {
-            "description": "content view version identifier",
+            "description": "Content View Version identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "cve": {
             "description": "CVE identifier",
@@ -26,24 +31,29 @@
             "type": "string"
         },
         "environment_id": {
-            "description": "environment identifier",
+            "description": "Environment identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "errata_restrict_applicable": {
-            "description": "show only errata with one or more applicable hosts",
+            "description": "Return errata that are applicable to one or more hosts (defaults to true ifhost_id is specified)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "errata_restrict_installable": {
-            "description": "show only errata with one or more installable hosts",
+            "description": "Return errata that are upgradable on one or more hosts",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "full_result": {
             "description": "Whether or not to show all results",
             "required": false,
-            "type": "string"
+            "type": "boolean"
+        },
+        "host_id": {
+            "description": "Host id to list applicable errata for",
+            "required": false,
+            "type": "number"
         },
         "operation": {
             "default": "errata.index",
@@ -51,19 +61,19 @@
             "type": "string"
         },
         "order": {
-            "description": "Sort field and order, eg. 'name DESC'",
+            "description": "Sort field and order, eg. 'id DESC'",
             "required": false,
             "type": "string"
         },
         "organization_id": {
-            "description": "organization identifier",
+            "description": "Organization identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "page": {
             "description": "Page number, starting at 1",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -74,12 +84,12 @@
         "per_page": {
             "description": "Number of results per page to return",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "repository_id": {
-            "description": "repository identifier",
+            "description": "Repository identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "search": {
             "description": "Search string",
@@ -91,10 +101,15 @@
             "required": false,
             "type": "string"
         },
-        "sort": {
-            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"",
+        "sort_by": {
+            "description": "Field to sort the results on",
             "required": false,
-            "type": "object"
+            "type": "string"
+        },
+        "sort_order": {
+            "description": "How to order the sorted results (e.g. ASC for ascending)",
+            "required": false,
+            "type": "string"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

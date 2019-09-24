@@ -41,7 +41,7 @@
             "type": "string"
         },
         "order": {
-            "description": "sort results",
+            "description": "Sort field and order, eg. id DESC",
             "required": false,
             "type": "string"
         },
@@ -79,7 +79,7 @@
         "show_hidden": {
             "description": "Display hidden values",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "subnet_id": {
             "description": "ID of subnet",

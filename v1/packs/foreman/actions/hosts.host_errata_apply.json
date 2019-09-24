@@ -18,7 +18,7 @@
         "host_id": {
             "description": "Host ID",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "hosts.host_errata_apply",

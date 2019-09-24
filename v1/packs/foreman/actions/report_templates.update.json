@@ -1,0 +1,55 @@
+{
+    "description": "Update a report template (resource: PUT /api/report_templates/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "report_templates.update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
+        "operation": {
+            "default": "report_templates.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "report_template": {
+            "description": "\"description: \n parameters:\n     locked:\n       required: false\n       type: boolean\n       description: Whether or not the template is locked for editing\n     name:\n       required: false\n       type: string\n       description: ''\n     default:\n       required: false\n       type: boolean\n       description: Whether or not the template is added automatically to new organizations andlocations\n     snippet:\n       required: false\n       type: boolean\n       description: ''\n     template:\n       required: false\n       type: string\n       description: ''\n     audit_comment:\n       required: false\n       type: string\n       description: ''\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     \"",
+            "required": true,
+            "type": "object"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -12,7 +12,12 @@
         },
         "id": {
             "required": true,
-            "type": "string"
+            "type": "number"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
         },
         "operatingsystem_id": {
             "description": "ID of operating system",
@@ -23,6 +28,11 @@
             "default": "operatingsystems.os_default_templates_operatingsystem_id_os_default_showtemplates",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

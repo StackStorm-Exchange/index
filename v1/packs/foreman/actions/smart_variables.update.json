@@ -14,10 +14,20 @@
             "required": true,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "smart_variables.update",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -31,7 +41,7 @@
             "type": "string"
         },
         "smart_variable": {
-            "description": "\"description: \n parameters:\n     default_value:\n       required: false\n       type: string\n       description: Default value of variable\n     validator_rule:\n       required: false\n       type: string\n       description: Used to enforce certain values for the parameter values\n     avoid_duplicates:\n       required: false\n       type: string\n       description: Remove duplicate values (only array type)\n     description:\n       required: false\n       type: string\n       description: Description of variable\n     override_value_order:\n       required: false\n       type: string\n       description: The order in which values are resolved\n     puppetclass_id:\n       required: false\n       type: string\n       description: Puppet class ID\n     merge_default:\n       required: false\n       type: string\n       description: Include default value when merging all matching values\n     hidden_value:\n       required: false\n       type: string\n       description: When enabled the parameter is hidden in the UI\n     validator_type:\n       required: false\n       type: string\n       description: Types of validation values\n     variable:\n       required: false\n       type: string\n       description: Name of variable\n     variable_type:\n       required: false\n       type: string\n       description: Types of variable values\n     merge_overrides:\n       required: false\n       type: string\n       description: Merge all matching values (only array/hash type)\n     \"",
+            "description": "\"description: \n parameters:\n     default_value:\n       required: false\n       type: any_type\n       description: Default value of variable\n     validator_rule:\n       required: false\n       type: string\n       description: Used to enforce certain values for the parameter values\n     avoid_duplicates:\n       required: false\n       type: boolean\n       description: Remove duplicate values (only array type)\n     description:\n       required: false\n       type: string\n       description: Description of variable\n     override_value_order:\n       required: false\n       type: string\n       description: The order in which values are resolved\n     puppetclass_id:\n       required: false\n       type: number\n       description: Puppet class ID\n     merge_default:\n       required: false\n       type: boolean\n       description: Include default value when merging all matching values\n     hidden_value:\n       required: false\n       type: boolean\n       description: When enabled the parameter is hidden in the UI\n     validator_type:\n       required: false\n       type: string\n       description: Types of validation values\n     variable:\n       required: false\n       type: string\n       description: Name of variable\n     variable_type:\n       required: false\n       type: string\n       description: Types of variable values\n     merge_overrides:\n       required: false\n       type: boolean\n       description: Merge all matching values (only array/hash type)\n     \"",
             "required": true,
             "type": "object"
         },

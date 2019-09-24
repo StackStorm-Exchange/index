@@ -39,7 +39,7 @@
         "skip_metadata_check": {
             "description": "Skip metadata check on each repository on the capsule",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

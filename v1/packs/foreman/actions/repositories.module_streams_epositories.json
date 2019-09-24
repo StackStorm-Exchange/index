@@ -1,0 +1,46 @@
+{
+    "description": "Show a module stream (resource: GET /katello/api/repositories/:repository_id/module_streams/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repositories.module_streams_epositories",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "a module stream identifier",
+            "required": true,
+            "type": "string"
+        },
+        "operation": {
+            "default": "repositories.module_streams_epositories",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "repository_id": {
+            "description": "repository identifier",
+            "required": true,
+            "type": "number"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

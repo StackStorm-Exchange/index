@@ -11,14 +11,24 @@
             "type": "string"
         },
         "location": {
-            "description": "\"description: \n parameters:\n     realm_ids:\n       required: false\n       type: array\n       description: Realm IDs\n     subnet_ids:\n       required: false\n       type: array\n       description: Subnet IDs\n     name:\n       required: true\n       type: string\n       description: ''\n     config_template_ids:\n       required: false\n       type: array\n       description: Provisioning template IDs\n     description:\n       required: false\n       type: string\n       description: ''\n     domain_ids:\n       required: false\n       type: array\n       description: Domain IDs\n     hostgroup_ids:\n       required: false\n       type: array\n       description: Host group IDs\n     ignore_types:\n       required: false\n       type: array\n       description: List of resources types that will be automatically associated\n     parent_id:\n       required: false\n       type: string\n       description: Parent ID\n     user_ids:\n       required: false\n       type: array\n       description: User IDs\n     medium_ids:\n       required: false\n       type: array\n       description: Medium IDs\n     smart_proxy_ids:\n       required: false\n       type: array\n       description: Capsule IDs\n     environment_ids:\n       required: false\n       type: array\n       description: Environment IDs\n     ptable_ids:\n       required: false\n       type: array\n       description: Partition template IDs\n     provisioning_template_ids:\n       required: false\n       type: array\n       description: Provisioning template IDs\n     compute_resource_ids:\n       required: false\n       type: array\n       description: Compute resource IDs\n     \"",
+            "description": "\"description: \n parameters:\n     realm_ids:\n       required: false\n       type: array\n       description: Realm IDs\n     subnet_ids:\n       required: false\n       type: array\n       description: Subnet IDs\n     name:\n       required: true\n       type: string\n       description: ''\n     config_template_ids:\n       required: false\n       type: array\n       description: Provisioning template IDs\n     description:\n       required: false\n       type: string\n       description: ''\n     domain_ids:\n       required: false\n       type: array\n       description: Domain IDs\n     hostgroup_ids:\n       required: false\n       type: array\n       description: Host group IDs\n     ignore_types:\n       required: false\n       type: array\n       description: List of resources types that will be automatically associated\n     parent_id:\n       required: false\n       type: number\n       description: Parent ID\n     user_ids:\n       required: false\n       type: array\n       description: User IDs\n     medium_ids:\n       required: false\n       type: array\n       description: Medium IDs\n     smart_proxy_ids:\n       required: false\n       type: array\n       description: Capsule IDs\n     environment_ids:\n       required: false\n       type: array\n       description: Environment IDs\n     ptable_ids:\n       required: false\n       type: array\n       description: Partition template IDs\n     provisioning_template_ids:\n       required: false\n       type: array\n       description: Provisioning template IDs\n     compute_resource_ids:\n       required: false\n       type: array\n       description: Compute resource IDs\n     \"",
             "required": true,
             "type": "object"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
         },
         "operation": {
             "default": "locations.create",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

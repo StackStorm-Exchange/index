@@ -15,15 +15,20 @@
             "required": false,
             "type": "string"
         },
-        "force_yum_metadata_regeneration": {
-            "description": "Force yum metadata regeneration on the repositories in the content viewversion",
-            "required": false,
-            "type": "string"
-        },
         "id": {
             "description": "Content view identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
+        },
+        "major": {
+            "description": "Override the major version number",
+            "required": false,
+            "type": "number"
+        },
+        "minor": {
+            "description": "Override the minor version number",
+            "required": false,
+            "type": "number"
         },
         "operation": {
             "default": "content_views.publish",
@@ -35,6 +40,11 @@
             "required": false,
             "secret": true,
             "type": "string"
+        },
+        "repos_units": {
+            "description": "\"description: Specify the list of units in each repo\n parameters:\n     rpm_filenames:\n       required: true\n       type: array\n       description: list of rpm filename strings to include in published version\n     label:\n       required: true\n       type: string\n       description: repo label\n     \"",
+            "required": false,
+            "type": "array"
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",

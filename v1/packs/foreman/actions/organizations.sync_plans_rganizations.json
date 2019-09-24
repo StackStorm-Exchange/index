@@ -13,7 +13,7 @@
         "id": {
             "description": "sync plan numeric identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "organizations.sync_plans_rganizations",
@@ -23,7 +23,7 @@
         "organization_id": {
             "description": "Filter sync plans by organization name or label",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

@@ -1,0 +1,55 @@
+{
+    "description": "Show a Personal Access Token for a user (resource: GET /api/users/:user_id/personal_access_tokens/:id)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "users.personal_access_tokens_user_id_personal_access_showtokens",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
+        "operation": {
+            "default": "users.personal_access_tokens_user_id_personal_access_showtokens",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "ID of the user",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

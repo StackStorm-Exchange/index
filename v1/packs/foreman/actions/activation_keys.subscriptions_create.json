@@ -34,7 +34,7 @@
         "quantity": {
             "description": "Quantity of this subscriptions to add",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
@@ -42,7 +42,7 @@
             "type": "string"
         },
         "subscriptions": {
-            "description": "\"description: Array of subscriptions to add\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool uuid\n     quantity:\n       required: true\n       type: string\n       description: Quantity of this subscriptions to add\n     \"",
+            "description": "\"description: Array of subscriptions to add\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool uuid\n     quantity:\n       required: true\n       type: number\n       description: Quantity of this subscriptions to add\n     \"",
             "required": false,
             "type": "array"
         },

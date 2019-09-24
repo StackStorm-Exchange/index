@@ -13,12 +13,17 @@
         "id": {
             "description": "ID of the repository set",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "products.repository_sets_roducts",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "organization identifier",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -29,7 +34,7 @@
         "product_id": {
             "description": "ID of a product to list repository sets from",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",

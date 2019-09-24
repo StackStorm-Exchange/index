@@ -13,7 +13,7 @@
         "creatable": {
             "description": "When set to 'True' repository types that are creatable will bereturned",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "operation": {
             "default": "repositories.repository_types",

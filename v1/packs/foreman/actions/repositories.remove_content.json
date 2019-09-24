@@ -13,7 +13,7 @@
         "id": {
             "description": "repository ID",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "ids": {
             "description": "Array of content ids to remove",
@@ -39,7 +39,7 @@
         "sync_capsule": {
             "description": "Whether or not to sync an external capsule after upload. Default: true",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

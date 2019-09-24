@@ -1,5 +1,5 @@
 {
-    "description": "Add subscriptions to one or more hosts (resource: PUT /api/hosts/bulk/subscriptions/add_subscriptions)",
+    "description": "Add subscriptions to one or more hosts (resource: PUT /api/hosts/bulk/add_subscriptions)",
     "enabled": true,
     "entry_point": "lib/action.py",
     "name": "hosts.hosts_bulk_actions_add_subscriptions",
@@ -28,7 +28,7 @@
         "organization_id": {
             "description": "ID of the organization",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -42,7 +42,7 @@
             "type": "string"
         },
         "subscriptions": {
-            "description": "\"description: Array of subscriptions to add\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool id\n     quantity:\n       required: true\n       type: string\n       description: Quantity of this subscriptions to add\n     \"",
+            "description": "\"description: Array of subscriptions to add\n parameters:\n     id:\n       required: true\n       type: string\n       description: Subscription Pool id\n     quantity:\n       required: true\n       type: number\n       description: Quantity of this subscriptions to add\n     \"",
             "required": true,
             "type": "array"
         },

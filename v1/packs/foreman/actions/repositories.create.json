@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "checksum_type": {
-            "description": "checksum of the repository, currently 'sha1' & 'sha256'are supported.",
+            "description": "Checksum of the repository, currently 'sha1' & 'sha256'are supported",
             "required": false,
             "type": "string"
         },
@@ -16,12 +16,32 @@
             "type": "string"
         },
         "content_type": {
-            "description": "type of repo (either 'yum', 'puppet', 'docker', or'ostree')",
+            "description": "type of repo (either 'yum', 'deb', 'puppet','docker', or 'ostree')",
             "required": true,
             "type": "string"
         },
+        "deb_architectures": {
+            "description": "comma separated list of architectures to be synched from deb-archive",
+            "required": false,
+            "type": "string"
+        },
+        "deb_components": {
+            "description": "comma separated list of repo components to be synched from deb-archive",
+            "required": false,
+            "type": "string"
+        },
+        "deb_releases": {
+            "description": "comma separated list of releases to be synched from deb-archive",
+            "required": false,
+            "type": "string"
+        },
+        "docker_tags_whitelist": {
+            "description": "Comma separated list of tags to sync for Container Image repository",
+            "required": false,
+            "type": "array"
+        },
         "docker_upstream_name": {
-            "description": "name of the upstream docker repository",
+            "description": "Name of the upstream docker repository",
             "required": false,
             "type": "string"
         },
@@ -33,21 +53,26 @@
         "gpg_key_id": {
             "description": "id of the gpg key that will be assigned to the new repository",
             "required": false,
-            "type": "string"
+            "type": "number"
+        },
+        "ignorable_content": {
+            "description": "List of content units to ignore while syncing a yum repository. Must besubset of rpm,drpm,srpm,distribution,erratum",
+            "required": false,
+            "type": "array"
         },
         "ignore_global_proxy": {
-            "description": "if true, will ignore the globally configured Capsule when syncing.",
+            "description": "if true, will ignore the globally configured Capsule when syncing",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "label": {
             "required": false,
             "type": "string"
         },
         "mirror_on_sync": {
-            "description": "true if this repository when synced has to be mirrored from the source andstale rpms removed.",
+            "description": "true if this repository when synced has to be mirrored from the source andstale rpms removed",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "name": {
             "required": true,
@@ -59,12 +84,12 @@
             "type": "string"
         },
         "ostree_upstream_sync_depth": {
-            "description": "if a custom sync policy is chosen for ostree repositories then a'depth' value must be provided.",
+            "description": "if a custom sync policy is chosen for ostree repositories then a'depth' value must be provided",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "ostree_upstream_sync_policy": {
-            "description": "policies for syncing upstream ostree repositories.",
+            "description": "policies for syncing upstream ostree repositories",
             "required": false,
             "type": "string"
         },
@@ -77,17 +102,32 @@
         "product_id": {
             "description": "Product the repository belongs to",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
             "required": false,
             "type": "string"
         },
+        "ssl_ca_cert_id": {
+            "description": "Idenifier of the SSL CA Cert",
+            "required": false,
+            "type": "number"
+        },
+        "ssl_client_cert_id": {
+            "description": "Identifier of the SSL Client Cert",
+            "required": false,
+            "type": "number"
+        },
+        "ssl_client_key_id": {
+            "description": "Identifier of the SSL Client Key",
+            "required": false,
+            "type": "number"
+        },
         "unprotected": {
             "description": "true if this repository can be published via HTTP",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "upstream_password": {
             "description": "Password of the upstream repository user used for authentication",
@@ -110,9 +150,9 @@
             "type": "string"
         },
         "verify_ssl_on_sync": {
-            "description": "if true, Katello will verify the upstream url's SSL certifcates aresigned by a trusted CA.",
+            "description": "if true, Katello will verify the upstream url's SSL certifcates aresigned by a trusted CA",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"

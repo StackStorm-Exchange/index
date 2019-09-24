@@ -5,6 +5,11 @@
     "name": "content_views.update",
     "pack": "foreman",
     "parameters": {
+        "auto_publish": {
+            "description": "Enable/Disable auto publish of composite view",
+            "required": false,
+            "type": "boolean"
+        },
         "component_ids": {
             "description": "List of component content view version ids for composite views",
             "required": false,
@@ -23,7 +28,7 @@
         "id": {
             "description": "Content view identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "name": {
             "description": "New name for the content view",

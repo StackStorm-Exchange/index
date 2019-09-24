@@ -10,10 +10,15 @@
             "required": false,
             "type": "string"
         },
+        "enabled": {
+            "description": "If true, only return repository sets that have been enabled. Defaults tofalse",
+            "required": false,
+            "type": "boolean"
+        },
         "full_result": {
             "description": "Whether or not to show all results",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "name": {
             "description": "Repository set name to search on",
@@ -26,14 +31,19 @@
             "type": "string"
         },
         "order": {
-            "description": "Sort field and order, eg. 'name DESC'",
+            "description": "Sort field and order, eg. 'id DESC'",
             "required": false,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "organization identifier",
+            "required": false,
+            "type": "number"
         },
         "page": {
             "description": "Page number, starting at 1",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -44,12 +54,12 @@
         "per_page": {
             "description": "Number of results per page to return",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "product_id": {
             "description": "ID of a product to list repository sets from",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "search": {
             "description": "Search string",
@@ -61,15 +71,25 @@
             "required": false,
             "type": "string"
         },
-        "sort": {
-            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"",
+        "sort_by": {
+            "description": "Field to sort the results on",
             "required": false,
-            "type": "object"
+            "type": "string"
+        },
+        "sort_order": {
+            "description": "How to order the sorted results (e.g. ASC for ascending)",
+            "required": false,
+            "type": "string"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
             "required": false,
             "type": "string"
+        },
+        "with_active_subscription": {
+            "description": "If true, only return repository sets that are associated with an activesubscriptions",
+            "required": false,
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"

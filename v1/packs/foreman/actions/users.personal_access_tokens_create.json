@@ -1,0 +1,56 @@
+{
+    "description": "Create a Personal Access Token for a user (resource: POST /api/users/:user_id/personal_access_tokens)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "users.personal_access_tokens_create",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
+        "operation": {
+            "default": "users.personal_access_tokens_create",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "personal_access_token": {
+            "description": "\"description: \n parameters:\n     name:\n       required: true\n       type: string\n       description: ''\n     expires_at:\n       required: false\n       type: string\n       description: Expiry Date\n     \"",
+            "required": true,
+            "type": "object"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "ID of the user",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

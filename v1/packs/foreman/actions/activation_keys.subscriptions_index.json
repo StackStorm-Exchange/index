@@ -23,7 +23,7 @@
         "full_result": {
             "description": "Whether or not to show all results",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "host_id": {
             "description": "id of a host",
@@ -33,17 +33,17 @@
         "match_host": {
             "description": "Ignore subscriptions that are unavailable to the specified host",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "match_installed": {
             "description": "Return subscriptions that match installed products of the specified host",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "no_overlap": {
             "description": "Return subscriptions which do not overlap with a currently-attachedsubscription",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "operation": {
             "default": "activation_keys.subscriptions_index",
@@ -51,19 +51,19 @@
             "type": "string"
         },
         "order": {
-            "description": "Sort field and order, eg. 'name DESC'",
+            "description": "Sort field and order, eg. 'id DESC'",
             "required": false,
             "type": "string"
         },
         "organization_id": {
             "description": "Organization ID",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "page": {
             "description": "Page number, starting at 1",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -74,7 +74,7 @@
         "per_page": {
             "description": "Number of results per page to return",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "search": {
             "description": "Search string",
@@ -86,10 +86,15 @@
             "required": false,
             "type": "string"
         },
-        "sort": {
-            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"\n",
+        "sort_by": {
+            "description": "Field to sort the results on",
             "required": false,
-            "type": "object"
+            "type": "string"
+        },
+        "sort_order": {
+            "description": "How to order the sorted results (e.g. ASC for ascending)",
+            "required": false,
+            "type": "string"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

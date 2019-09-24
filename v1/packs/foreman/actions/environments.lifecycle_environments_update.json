@@ -5,6 +5,11 @@
     "name": "environments.lifecycle_environments_update",
     "pack": "foreman",
     "parameters": {
+        "async": {
+            "description": "Do not wait for the update action to finish. Default: true",
+            "required": false,
+            "type": "boolean"
+        },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
             "required": false,
@@ -18,7 +23,7 @@
         "id": {
             "description": "ID of the environment",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "new_name": {
             "description": "new name to be given to the environment",
@@ -33,13 +38,23 @@
         "organization_id": {
             "description": "name of the organization",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
             "required": false,
             "secret": true,
             "type": "string"
+        },
+        "registry_name_pattern": {
+            "description": "pattern for container image names",
+            "required": false,
+            "type": "string"
+        },
+        "registry_unauthenticated_pull": {
+            "description": "allow unauthenticed pull of container images",
+            "required": false,
+            "type": "boolean"
         },
         "server": {
             "description": "Optional override of the server in <connection> (required if <connection> is not specified).",

@@ -1,0 +1,116 @@
+{
+    "description": "Return errata that can be added to the Content View Version via an Incremental Update (resource: GET /katello/api/content_view_versions/:id/available_errata)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "content_view_versions.errata_available_errata",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_filter_id": {
+            "description": "Content View Filter identifier",
+            "required": false,
+            "type": "number"
+        },
+        "cve": {
+            "description": "CVE identifier",
+            "required": false,
+            "type": "string"
+        },
+        "environment_id": {
+            "description": "Environment identifier",
+            "required": false,
+            "type": "number"
+        },
+        "errata_restrict_applicable": {
+            "description": "Return errata that are applicable to one or more hosts (defaults to true ifhost_id is specified)",
+            "required": false,
+            "type": "boolean"
+        },
+        "errata_restrict_installable": {
+            "description": "Return errata that are upgradable on one or more hosts",
+            "required": false,
+            "type": "boolean"
+        },
+        "full_result": {
+            "description": "Whether or not to show all results",
+            "required": false,
+            "type": "boolean"
+        },
+        "host_id": {
+            "description": "Host id to list applicable errata for",
+            "required": false,
+            "type": "number"
+        },
+        "id": {
+            "description": "Content View Version identifier",
+            "required": true,
+            "type": "number"
+        },
+        "operation": {
+            "default": "content_view_versions.errata_available_errata",
+            "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "Sort field and order, eg. 'id DESC'",
+            "required": false,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Organization identifier",
+            "required": false,
+            "type": "number"
+        },
+        "page": {
+            "description": "Page number, starting at 1",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "Number of results per page to return",
+            "required": false,
+            "type": "number"
+        },
+        "repository_id": {
+            "description": "Repository identifier",
+            "required": false,
+            "type": "number"
+        },
+        "search": {
+            "description": "Search string",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "sort_by": {
+            "description": "Field to sort the results on",
+            "required": false,
+            "type": "string"
+        },
+        "sort_order": {
+            "description": "How to order the sorted results (e.g. ASC for ascending)",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

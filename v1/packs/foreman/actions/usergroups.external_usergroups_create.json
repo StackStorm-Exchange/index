@@ -11,14 +11,24 @@
             "type": "string"
         },
         "external_usergroup": {
-            "description": "\"description: External user group information\n parameters:\n     auth_source_id:\n       required: true\n       type: string\n       description: ID of linked authentication source\n     name:\n       required: true\n       type: string\n       description: External user group name\n     \"",
+            "description": "\"description: External user group information\n parameters:\n     auth_source_id:\n       required: true\n       type: number\n       description: ID of linked authentication source\n     name:\n       required: true\n       type: string\n       description: External user group name\n     \"",
             "required": true,
             "type": "object"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
         },
         "operation": {
             "default": "usergroups.external_usergroups_create",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

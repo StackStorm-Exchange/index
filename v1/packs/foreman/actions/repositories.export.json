@@ -13,17 +13,17 @@
         "export_to_iso": {
             "description": "Export to ISO format",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "id": {
             "description": "Repository identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "iso_mb_size": {
             "description": "maximum size of each ISO in MB",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "repositories.export",

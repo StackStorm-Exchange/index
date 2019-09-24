@@ -10,13 +10,23 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "smart_variables.override_values_smart_variable_id_override_updatevalues",
             "immutable": true,
             "type": "string"
         },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
+        },
         "override_value": {
-            "description": "\"description: \n parameters:\n     use_puppet_default:\n       required: false\n       type: string\n       description: Deprecated, please use omit\n     omit:\n       required: false\n       type: string\n       description: Satellite will not send this parameter in classification output, replacesuse_puppet_default\n     value:\n       required: false\n       type: string\n       description: Override value, required if omit is false\n     match:\n       required: false\n       type: string\n       description: Override match\n     \"",
+            "description": "\"description: \n parameters:\n     use_puppet_default:\n       required: false\n       type: boolean\n       description: Deprecated, please use omit\n     omit:\n       required: false\n       type: boolean\n       description: Satellite will not send this parameter in classification output, replacesuse_puppet_default\n     value:\n       required: false\n       type: any_type\n       description: Override value, required if omit is false\n     match:\n       required: false\n       type: string\n       description: Override match\n     \"",
             "required": true,
             "type": "object"
         },

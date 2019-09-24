@@ -22,15 +22,25 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "hosts.smart_class_parameters_index",
             "immutable": true,
             "type": "string"
         },
         "order": {
-            "description": "sort results",
+            "description": "Sort field and order, eg. id DESC",
             "required": false,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "page": {
             "description": "paginate results",
@@ -65,7 +75,7 @@
         "show_hidden": {
             "description": "Display hidden values",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

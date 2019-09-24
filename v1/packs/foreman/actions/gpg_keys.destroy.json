@@ -13,7 +13,7 @@
         "id": {
             "description": "gpg key numeric identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "gpg_keys.destroy",

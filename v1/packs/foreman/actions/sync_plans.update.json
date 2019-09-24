@@ -10,6 +10,11 @@
             "required": false,
             "type": "string"
         },
+        "cron_expression": {
+            "description": "Add custom cron logic for sync plan",
+            "required": false,
+            "type": "string"
+        },
         "description": {
             "description": "sync plan description",
             "required": false,
@@ -18,12 +23,12 @@
         "enabled": {
             "description": "enables or disables synchronization",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "id": {
             "description": "sync plan numeric identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "interval": {
             "description": "how often synchronization should run",
@@ -43,7 +48,7 @@
         "organization_id": {
             "description": "Filter sync plans by organization name or label",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

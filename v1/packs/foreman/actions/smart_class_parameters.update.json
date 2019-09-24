@@ -14,10 +14,20 @@
             "required": true,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "smart_class_parameters.update",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -31,7 +41,7 @@
             "type": "string"
         },
         "smart_class_parameter": {
-            "description": "\"description: \n parameters:\n     default_value:\n       required: false\n       type: string\n       description: Value to use when there is no match\n     validator_rule:\n       required: false\n       type: string\n       description: Used to enforce certain values for the parameter values\n     use_puppet_default:\n       required: false\n       type: string\n       description: Deprecated, please use omit\n     required:\n       required: false\n       type: string\n       description: If true, will raise an error if there is no default value and no matcherprovide a value\n     avoid_duplicates:\n       required: false\n       type: string\n       description: Remove duplicate values (only array type)\n     description:\n       required: false\n       type: string\n       description: Description of smart class\n     override_value_order:\n       required: false\n       type: string\n       description: The order in which values are resolved\n     omit:\n       required: false\n       type: string\n       description: Satellite will not send this parameter in classification output. Puppetwill use the value defined in the Puppet manifest for this parameter\n     parameter_type:\n       required: false\n       type: string\n       description: Types of variable values\n     hidden_value:\n       required: false\n       type: string\n       description: When enabled the parameter is hidden in the UI\n     validator_type:\n       required: false\n       type: string\n       description: Types of validation values\n     override:\n       required: false\n       type: string\n       description: Whether the smart class parameter value is managed by Satellite\n     path:\n       required: false\n       type: string\n       description: The order in which values are resolved\n     merge_default:\n       required: false\n       type: string\n       description: Include default value when merging all matching values\n     merge_overrides:\n       required: false\n       type: string\n       description: Merge all matching values (only array/hash type)\n     \"",
+            "description": "\"description: \n parameters:\n     default_value:\n       required: false\n       type: any_type\n       description: Value to use when there is no match\n     validator_rule:\n       required: false\n       type: string\n       description: Used to enforce certain values for the parameter values\n     use_puppet_default:\n       required: false\n       type: boolean\n       description: Deprecated, please use omit\n     required:\n       required: false\n       type: boolean\n       description: If true, will raise an error if there is no default value and no matcherprovide a value\n     avoid_duplicates:\n       required: false\n       type: boolean\n       description: Remove duplicate values (only array type)\n     description:\n       required: false\n       type: string\n       description: Description of smart class\n     override_value_order:\n       required: false\n       type: string\n       description: The order in which values are resolved\n     omit:\n       required: false\n       type: boolean\n       description: Satellite will not send this parameter in classification output. Puppetwill use the value defined in the Puppet manifest for this parameter\n     parameter_type:\n       required: false\n       type: string\n       description: Types of variable values\n     hidden_value:\n       required: false\n       type: boolean\n       description: When enabled the parameter is hidden in the UI\n     validator_type:\n       required: false\n       type: string\n       description: Types of validation values\n     override:\n       required: false\n       type: boolean\n       description: Whether the smart class parameter value is managed by Satellite\n     path:\n       required: false\n       type: string\n       description: The order in which values are resolved\n     merge_default:\n       required: false\n       type: boolean\n       description: Include default value when merging all matching values\n     merge_overrides:\n       required: false\n       type: boolean\n       description: Merge all matching values (only array/hash type)\n     \"",
             "required": true,
             "type": "object"
         },

@@ -18,7 +18,7 @@
         "environment_id": {
             "description": "LifeCycle Environment identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "environment_ids": {
             "description": "Identifiers for Lifecycle Environment",
@@ -28,17 +28,12 @@
         "force": {
             "description": "force content view promotion and bypass lifecycle environment restriction",
             "required": false,
-            "type": "string"
-        },
-        "force_yum_metadata_regeneration": {
-            "description": "Force metadata regeneration on the repositories in the content view version",
-            "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "id": {
             "description": "Content view version identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "content_view_versions.promote",

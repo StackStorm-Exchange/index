@@ -13,7 +13,7 @@
         "id": {
             "description": "Content view version identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "content_view_versions.destroy",

@@ -20,6 +20,11 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "medium_id": {
             "description": "ID of medium",
             "required": true,
@@ -31,9 +36,14 @@
             "type": "string"
         },
         "order": {
-            "description": "sort results",
+            "description": "Sort field and order, eg. id DESC",
             "required": false,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "os_parameters_attributes": {
             "description": "\"description: Array of parameters\n parameters:\n     name:\n       required: true\n       type: string\n       description: Name of the parameter\n     value:\n       required: true\n       type: string\n       description: Parameter value\n     \"\n",

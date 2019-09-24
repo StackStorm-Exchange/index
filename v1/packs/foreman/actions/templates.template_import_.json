@@ -1,0 +1,106 @@
+{
+    "description": "Initiate Import (resource: POST /api/templates/import)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "templates.template_import_",
+    "pack": "foreman",
+    "parameters": {
+        "associate": {
+            "description": "Associate to OS's, Locations & Organizations. Options are: always,new or never.",
+            "required": false,
+            "type": "string"
+        },
+        "branch": {
+            "description": "Branch in Git repo.",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "dirname": {
+            "description": "The directory within Git repo containing the templates",
+            "required": false,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Export templates with names matching this regex (case-insensitive; snippetsare not filtered).",
+            "required": false,
+            "type": "string"
+        },
+        "force": {
+            "description": "Update templates that are locked",
+            "required": false,
+            "type": "boolean"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
+        "location_ids": {
+            "description": "REPLACE locations with given ids",
+            "required": false,
+            "type": "array"
+        },
+        "lock": {
+            "description": "Lock imported templates",
+            "required": false,
+            "type": "boolean"
+        },
+        "negate": {
+            "description": "Negate the prefix (for purging).",
+            "required": false,
+            "type": "boolean"
+        },
+        "operation": {
+            "default": "templates.template_import_",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
+        },
+        "organization_ids": {
+            "description": "REPLACE organizations with given ids.",
+            "required": false,
+            "type": "array"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "prefix": {
+            "description": "The string all imported templates should begin with.",
+            "required": false,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Override the default repo from settings.",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "verbose": {
+            "description": "Show template diff in response",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

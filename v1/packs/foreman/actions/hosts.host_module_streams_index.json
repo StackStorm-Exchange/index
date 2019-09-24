@@ -1,0 +1,81 @@
+{
+    "description": "List module streams available to the host (resource: GET /api/hosts/:host_id/module_streams)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "hosts.host_module_streams_index",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "full_result": {
+            "description": "Whether or not to show all results",
+            "required": false,
+            "type": "boolean"
+        },
+        "host_id": {
+            "description": "ID of the host",
+            "required": true,
+            "type": "number"
+        },
+        "operation": {
+            "default": "hosts.host_module_streams_index",
+            "immutable": true,
+            "type": "string"
+        },
+        "order": {
+            "description": "Sort field and order, eg. 'id DESC'",
+            "required": false,
+            "type": "string"
+        },
+        "page": {
+            "description": "Page number, starting at 1",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "per_page": {
+            "description": "Number of results per page to return",
+            "required": false,
+            "type": "number"
+        },
+        "search": {
+            "description": "Search string",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "sort_by": {
+            "description": "Field to sort the results on",
+            "required": false,
+            "type": "string"
+        },
+        "sort_order": {
+            "description": "How to order the sorted results (e.g. ASC for ascending)",
+            "required": false,
+            "type": "string"
+        },
+        "status": {
+            "description": "Streams based on the host based on their status",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

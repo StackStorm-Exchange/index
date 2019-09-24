@@ -6,7 +6,7 @@
     "pack": "foreman",
     "parameters": {
         "available_for": {
-            "description": "interpret specified object to return only Repositories that can beassociated with specified object.  Only 'content_view' issupported.",
+            "description": "interpret specified object to return only Repositories that can beassociated with specified object.  Only 'content_view' &'content_view_version' are supported.",
             "required": false,
             "type": "string"
         },
@@ -23,32 +23,52 @@
         "content_view_id": {
             "description": "ID of a content view to show repositories in",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "content_view_version_id": {
             "description": "ID of a content view version to show repositories in",
+            "required": false,
+            "type": "number"
+        },
+        "deb_id": {
+            "description": "Id of a deb package to find repositories that contain the deb",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "description of the repository",
             "required": false,
             "type": "string"
         },
         "environment_id": {
             "description": "ID of an environment to show repositories in",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "erratum_id": {
             "description": "Id of an erratum to find repositories that contain the erratum",
             "required": false,
             "type": "string"
         },
+        "file_id": {
+            "description": "Id of a file to find repositories that contain the file",
+            "required": false,
+            "type": "string"
+        },
         "full_result": {
             "description": "Whether or not to show all results",
+            "required": false,
+            "type": "boolean"
+        },
+        "label": {
+            "description": "label of the repository",
             "required": false,
             "type": "string"
         },
         "library": {
             "description": "show repositories in Library and the default content view",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "name": {
             "description": "name of the repository",
@@ -61,14 +81,14 @@
             "type": "string"
         },
         "order": {
-            "description": "Sort field and order, eg. 'name DESC'",
+            "description": "Sort field and order, eg. 'id DESC'",
             "required": false,
             "type": "string"
         },
         "organization_id": {
             "description": "ID of an organization to show repositories in",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "ostree_branch_id": {
             "description": "Id of an ostree branch to find repositories that contain that branch",
@@ -78,7 +98,7 @@
         "page": {
             "description": "Page number, starting at 1",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -89,15 +109,15 @@
         "per_page": {
             "description": "Number of results per page to return",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "product_id": {
             "description": "ID of a product to show repositories of",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "rpm_id": {
-            "description": "Id of a package to find repositories that contain the rpm",
+            "description": "Id of a rpm package to find repositories that contain the rpm",
             "required": false,
             "type": "string"
         },
@@ -111,10 +131,15 @@
             "required": false,
             "type": "string"
         },
-        "sort": {
-            "description": "\"description: Hash version of 'order' param\n parameters:\n     by:\n       required: false\n       type: string\n       description: Field to sort the results on\n     order:\n       required: false\n       type: string\n       description: How to order the sorted results (e.g. ASC for ascending)\n     \"",
+        "sort_by": {
+            "description": "Field to sort the results on",
             "required": false,
-            "type": "object"
+            "type": "string"
+        },
+        "sort_order": {
+            "description": "How to order the sorted results (e.g. ASC for ascending)",
+            "required": false,
+            "type": "string"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

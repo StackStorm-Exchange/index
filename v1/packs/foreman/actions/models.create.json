@@ -10,6 +10,11 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "model": {
             "description": "\"description: \n parameters:\n     info:\n       required: false\n       type: string\n       description: ''\n     hardware_model:\n       required: false\n       type: string\n       description: ''\n     vendor_class:\n       required: false\n       type: string\n       description: ''\n     name:\n       required: true\n       type: string\n       description: ''\n     \"",
             "required": true,
@@ -19,6 +24,11 @@
             "default": "models.create",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

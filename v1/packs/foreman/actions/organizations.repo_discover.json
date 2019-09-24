@@ -18,17 +18,32 @@
         "id": {
             "description": "Organization ID",
             "required": true,
-            "type": "string"
+            "type": "number"
+        },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
         },
         "operation": {
             "default": "organizations.repo_discover",
             "immutable": true,
             "type": "string"
         },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
+        },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
             "required": false,
             "secret": true,
+            "type": "string"
+        },
+        "search": {
+            "description": "Search pattern (defaults to '*')",
+            "required": false,
             "type": "string"
         },
         "server": {

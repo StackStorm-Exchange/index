@@ -1,5 +1,5 @@
 {
-    "description": "List servises that need restarting on the host (resource: GET /api/hosts/:host_id/tracer)",
+    "description": "List services that need restarting on the host (resource: GET /api/hosts/:host_id/traces)",
     "enabled": true,
     "entry_point": "lib/action.py",
     "name": "hosts.host_tracer_index",
@@ -13,7 +13,7 @@
         "host_id": {
             "description": "ID of the host",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "hosts.host_tracer_index",

@@ -13,12 +13,12 @@
         "content_view_id": {
             "description": "content view identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "id": {
             "description": "puppet module ID",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "content_views.content_view_puppet_modules_ontent_destroyviews",

@@ -1,0 +1,46 @@
+{
+    "description": "Update the quantity of one or more subscriptions on an upstream allocation (resource: PUT /katello/api/organizations/:organization_id/upstream_subscriptions)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "organizations.upstream_subscriptions_update",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "operation": {
+            "default": "organizations.upstream_subscriptions_update",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Organization ID",
+            "required": true,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "pools": {
+            "description": "\"description: Array of Pools to be updated. Only pools originating upstream are accepted.\n parameters:\n     id:\n       required: true\n       type: string\n       description: Katello ID of local pool to update\n     quantity:\n       required: true\n       type: number\n       description: Desired quantity of the pool\n     \"",
+            "required": true,
+            "type": "array"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

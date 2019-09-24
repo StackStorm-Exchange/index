@@ -1,5 +1,5 @@
 {
-    "description": "Upload gpg key contents (resource: POST /katello/api/gpg_keys/:id/content)",
+    "description": "Return the content of a gpg key, used directly by yum (resource: GET /katello/api/gpg_keys/:id/content)",
     "enabled": true,
     "entry_point": "lib/action.py",
     "name": "gpg_keys.content",
@@ -10,15 +10,9 @@
             "required": false,
             "type": "string"
         },
-        "content": {
-            "description": "file contents",
-            "required": true,
-            "type": "string"
-        },
         "id": {
-            "description": "gpg key numeric identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "gpg_keys.content",

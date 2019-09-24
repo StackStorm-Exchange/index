@@ -10,6 +10,11 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "name": {
             "required": false,
             "type": "string"
@@ -20,9 +25,14 @@
             "type": "string"
         },
         "order": {
-            "description": "sort results",
+            "description": "Sort field and order, eg. id DESC",
             "required": false,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "page": {
             "description": "paginate results",

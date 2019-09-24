@@ -14,8 +14,13 @@
             "required": true,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "medium": {
-            "description": "\"description: \n parameters:\n     name:\n       required: false\n       type: string\n       description: Name of media\n     os_family:\n       required: false\n       type: string\n       description: 'Operating system family, available values: AIX, Altlinux, Archlinux,Coreos, Debian, Freebsd, Gentoo, Junos, NXOS, Redhat, Solaris, Suse,Windows, Xenserver'\n     operatingsystem_ids:\n       required: false\n       type: array\n       description: ''\n     path:\n       required: false\n       type: string\n       description: The path to the medium, can be a URL or a valid NFS server (exclusive ofthe architecture).for example mirror.centos.org/centos/$version/os/$archwhere $arch will be substituted for the host's actual OS architectureand $version, $major and $minor will be substituted for the version of theoperating system.Solaris and Debian media may also use $release.\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     \"",
+            "description": "\"description: \n parameters:\n     name:\n       required: false\n       type: string\n       description: Name of media\n     os_family:\n       required: false\n       type: string\n       description: 'Operating system family, available values: AIX, Altlinux, Archlinux,Coreos, Debian, Freebsd, Gentoo, Junos, NXOS, Rancheros, Redhat, Solaris,Suse, Windows, Xenserver'\n     operatingsystem_ids:\n       required: false\n       type: array\n       description: ''\n     path:\n       required: false\n       type: string\n       description: The path to the medium, can be a URL or a valid NFS server (exclusive ofthe architecture).for example mirror.centos.org/centos/$version/os/$archwhere $arch will be substituted for the host's actual OS architectureand $version, $major and $minor will be substituted for the version of theoperating system.Solaris and Debian media may also use $release.\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     \"",
             "required": true,
             "type": "object"
         },
@@ -23,6 +28,11 @@
             "default": "media.update",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

@@ -1,0 +1,46 @@
+{
+    "description": "List files (resource: GET /katello/api/files/compare)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "files.file_units_compare",
+    "pack": "foreman",
+    "parameters": {
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "content_view_version_ids": {
+            "description": "content view versions to compare",
+            "required": false,
+            "type": "array"
+        },
+        "operation": {
+            "default": "files.file_units_compare",
+            "immutable": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "repository_id": {
+            "description": "Library repository id to restrict comparisons to",
+            "required": false,
+            "type": "number"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

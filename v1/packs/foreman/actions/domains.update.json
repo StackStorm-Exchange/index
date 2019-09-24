@@ -11,7 +11,7 @@
             "type": "string"
         },
         "domain": {
-            "description": "\"description: \n parameters:\n     name:\n       required: false\n       type: string\n       description: The full DNS domain name\n     domain_parameters_attributes:\n       required: false\n       type: array\n       description: Array of parameters (name, value)\n     dns_id:\n       required: false\n       type: string\n       description: DNS Capsule ID to use within this domain\n     fullname:\n       required: false\n       type: string\n       description: Description of the domain\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     \"",
+            "description": "\"description: \n parameters:\n     name:\n       required: false\n       type: string\n       description: The full DNS domain name\n     domain_parameters_attributes:\n       required: false\n       type: array\n       description: Array of parameters (name, value)\n     dns_id:\n       required: false\n       type: number\n       description: DNS Capsule ID to use within this domain\n     fullname:\n       required: false\n       type: string\n       description: Description of the domain\n     location_ids:\n       required: false\n       type: array\n       description: REPLACE locations with given ids\n     organization_ids:\n       required: false\n       type: array\n       description: REPLACE organizations with given ids.\n     \"",
             "required": true,
             "type": "object"
         },
@@ -19,10 +19,20 @@
             "required": true,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "domains.update",
             "immutable": true,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

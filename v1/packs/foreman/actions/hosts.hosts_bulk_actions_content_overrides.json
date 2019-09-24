@@ -11,7 +11,7 @@
             "type": "string"
         },
         "content_overrides": {
-            "description": "\"description: Array of Content override parameters\n parameters:\n     content_label:\n       required: true\n       type: string\n       description: Label of the content\n     name:\n       required: false\n       type: string\n       description: Override key or name. Note if name is not provided the default name will be'enabled'\n     value:\n       required: false\n       type: string\n       description: Override value. Provide a boolean value if name is 'enabled'\n     remove:\n       required: false\n       type: string\n       description: Set true to remove an override and reset it to 'default'\n     \"",
+            "description": "\"description: Array of Content override parameters\n parameters:\n     content_label:\n       required: true\n       type: string\n       description: Label of the content\n     name:\n       required: false\n       type: string\n       description: Override key or name. Note if name is not provided the default name will be'enabled'\n     value:\n       required: false\n       type: string\n       description: Override value. Provide a boolean value if name is 'enabled'\n     remove:\n       required: false\n       type: boolean\n       description: Set true to remove an override and reset it to 'default'\n     \"",
             "required": false,
             "type": "array"
         },
@@ -33,7 +33,7 @@
         "organization_id": {
             "description": "ID of the organization",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

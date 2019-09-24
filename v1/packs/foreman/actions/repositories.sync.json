@@ -13,12 +13,12 @@
         "id": {
             "description": "repository ID",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "incremental": {
             "description": "perform an incremental import",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "operation": {
             "default": "repositories.sync",
@@ -39,7 +39,7 @@
         "skip_metadata_check": {
             "description": "Force sync even if no upstream changes are detected. Only used with yumrepositories.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "source_url": {
             "description": "temporarily override feed URL for sync",
@@ -54,7 +54,7 @@
         "validate_contents": {
             "description": "Force a sync and validate the checksums of all content. Only used with yumrepositories.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"

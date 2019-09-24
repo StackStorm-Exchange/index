@@ -18,7 +18,7 @@
         "id": {
             "description": "ID of the activation key",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "activation_keys.remove_host_collections",

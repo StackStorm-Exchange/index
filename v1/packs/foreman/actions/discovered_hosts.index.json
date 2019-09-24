@@ -10,6 +10,11 @@
             "required": false,
             "type": "string"
         },
+        "location_id": {
+            "description": "Scope by locations",
+            "required": false,
+            "type": "number"
+        },
         "operation": {
             "default": "discovered_hosts.index",
             "immutable": true,
@@ -19,6 +24,11 @@
             "description": "sort results",
             "required": false,
             "type": "string"
+        },
+        "organization_id": {
+            "description": "Scope by organizations",
+            "required": false,
+            "type": "number"
         },
         "page": {
             "description": "paginate results",

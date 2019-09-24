@@ -18,7 +18,7 @@
         "gpg_key_id": {
             "description": "Identifier of the GPG key",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "label": {
             "required": false,
@@ -37,7 +37,7 @@
         "organization_id": {
             "description": "ID of the organization",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -50,10 +50,25 @@
             "required": false,
             "type": "string"
         },
+        "ssl_ca_cert_id": {
+            "description": "Idenifier of the SSL CA Cert",
+            "required": false,
+            "type": "number"
+        },
+        "ssl_client_cert_id": {
+            "description": "Identifier of the SSL Client Cert",
+            "required": false,
+            "type": "number"
+        },
+        "ssl_client_key_id": {
+            "description": "Identifier of the SSL Client Key",
+            "required": false,
+            "type": "number"
+        },
         "sync_plan_id": {
             "description": "Plan numeric identifier",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

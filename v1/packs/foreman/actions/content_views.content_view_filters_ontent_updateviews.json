@@ -13,17 +13,17 @@
         "content_view_id": {
             "description": "content view identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "id": {
             "description": "filter identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "inclusion": {
             "description": "specifies if content should be included or excluded, default:inclusion=false",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "name": {
             "description": "new name for the filter",
@@ -38,7 +38,7 @@
         "original_packages": {
             "description": "add all packages without errata to the included/excluded list. (packagefilter only)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

@@ -8,7 +8,7 @@
         "auto_attach": {
             "description": "auto attach subscriptions upon registration",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
@@ -18,7 +18,7 @@
         "content_view_id": {
             "description": "content view id",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "description": {
             "description": "description",
@@ -28,17 +28,17 @@
         "environment_id": {
             "description": "environment id",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "id": {
             "description": "ID of the activation key",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "max_hosts": {
             "description": "maximum number of registered content hosts",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "name": {
             "description": "name",
@@ -53,7 +53,7 @@
         "organization_id": {
             "description": "organization identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
@@ -79,7 +79,7 @@
         "unlimited_hosts": {
             "description": "can the activation key have unlimited hosts",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

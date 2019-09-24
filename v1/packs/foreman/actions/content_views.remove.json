@@ -13,27 +13,27 @@
         "content_view_version_ids": {
             "description": "content view version identifiers to be deleted",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "environment_ids": {
             "description": "environment numeric identifiers to be removed",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "id": {
             "description": "content view numeric identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "key_content_view_id": {
             "description": "content view to reassign orphaned activation keys to",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "key_environment_id": {
             "description": "environment to reassign orphaned activation keys to",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "content_views.remove",
@@ -54,12 +54,12 @@
         "system_content_view_id": {
             "description": "content view to reassign orphaned systems to",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "system_environment_id": {
             "description": "environment to reassign orphaned systems to",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "username": {
             "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

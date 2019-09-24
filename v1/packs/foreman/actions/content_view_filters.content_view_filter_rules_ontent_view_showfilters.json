@@ -13,12 +13,12 @@
         "content_view_filter_id": {
             "description": "filter identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "id": {
             "description": "rule identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "content_view_filters.content_view_filter_rules_ontent_view_showfilters",

@@ -13,12 +13,12 @@
         "environment_id": {
             "description": "environment numeric identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "id": {
             "description": "content view numeric identifier",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "operation": {
             "default": "content_views.ontent_remove_from_environmentviews",

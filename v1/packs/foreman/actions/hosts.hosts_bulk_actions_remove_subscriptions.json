@@ -1,5 +1,5 @@
 {
-    "description": "Remove subscriptions from one or more hosts (resource: PUT /api/hosts/bulk/subscriptions/remove_subscriptions)",
+    "description": "Remove subscriptions from one or more hosts (resource: PUT /api/hosts/bulk/remove_subscriptions)",
     "enabled": true,
     "entry_point": "lib/action.py",
     "name": "hosts.hosts_bulk_actions_remove_subscriptions",
@@ -28,7 +28,7 @@
         "organization_id": {
             "description": "ID of the organization",
             "required": true,
-            "type": "string"
+            "type": "number"
         },
         "password": {
             "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",

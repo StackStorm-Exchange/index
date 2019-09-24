@@ -1,0 +1,61 @@
+{
+    "description": "Disable a repository from the set (resource: PUT /katello/api/repository_sets/:id/disable)",
+    "enabled": true,
+    "entry_point": "lib/action.py",
+    "name": "repository_sets.disable",
+    "pack": "foreman",
+    "parameters": {
+        "basearch": {
+            "description": "Basearch to disable",
+            "required": false,
+            "type": "string"
+        },
+        "connection": {
+            "description": "Name of <connection> from this pack's configuration that specifies how to connect to a server.",
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the repository set to disable",
+            "required": true,
+            "type": "number"
+        },
+        "operation": {
+            "default": "repository_sets.disable",
+            "immutable": true,
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "organization identifier",
+            "required": false,
+            "type": "number"
+        },
+        "password": {
+            "description": "Optional override of the password in <connection>. (required if <connection> is not specified)",
+            "required": false,
+            "secret": true,
+            "type": "string"
+        },
+        "product_id": {
+            "description": "ID of the product containing the repository set",
+            "required": false,
+            "type": "number"
+        },
+        "releasever": {
+            "description": "Releasever to disable",
+            "required": false,
+            "type": "string"
+        },
+        "server": {
+            "description": "Optional override of the server in <connection> (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Optional override of the username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
