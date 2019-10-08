@@ -1,0 +1,36 @@
+{
+    "description": "Assigns virtual machine or a list of virtual machines to a load balancer rule.",
+    "enabled": true,
+    "entry_point": "lb_attach_member.py",
+    "name": "lb_attach_member",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "lb_id": {
+            "description": "ID of a LoadBalancer to retrieve members.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        },
+        "vm_ids": {
+            "description": "Array of ID members atach LoadBalancer to retrieve members.",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}
