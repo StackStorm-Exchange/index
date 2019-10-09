@@ -4,5 +4,11 @@
         "required": true,
         "secret": true,
         "type": "string"
+    },
+    "region": {
+        "default": null,
+        "description": "The service region for your OpsGenie account - check the OpsGenie documentation for the complete list of API regions",
+        "required": false,
+        "type": "string"
     }
 }
