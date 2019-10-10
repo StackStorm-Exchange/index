@@ -1,0 +1,36 @@
+{
+    "description": "Lists autoscale vm groups.",
+    "enabled": true,
+    "entry_point": "list_auto_scale_vm_groups.py",
+    "name": "list_auto_scale_vm_groups",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "lb_id": {
+            "description": "ID of a LoadBalancer to retrieve members.",
+            "required": true,
+            "type": "string"
+        },
+        "projectid": {
+            "description": "ID of a project.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
