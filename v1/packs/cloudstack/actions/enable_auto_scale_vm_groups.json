@@ -1,0 +1,31 @@
+{
+    "description": "Enables an AutoScale Vm Group.",
+    "enabled": true,
+    "entry_point": "enable_auto_scale_vm_groups.py",
+    "name": "enable_auto_scale_vm_groups",
+    "parameters": {
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "the ID of the autoscale group.",
+            "required": true,
+            "type": "string"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

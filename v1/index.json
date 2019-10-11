@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1570727664,
-        "hash": "0ad81ca0ae3bfc3e72928d4d645538e2"
+        "generated_ts": 1570821004,
+        "hash": "7108e520e3913e99c9006bc28220a03f"
     },
     "packs": {
         "acos": {
@@ -5047,8 +5047,10 @@
             "author": "Globo.com",
             "content": {
                 "actions": {
-                    "count": 21,
+                    "count": 23,
                     "resources": [
+                        "disable_auto_scale_vm_groups",
+                        "enable_auto_scale_vm_groups",
                         "lb_attach_member",
                         "lb_dettach_member",
                         "lb_list_members",
@@ -5089,8 +5091,9 @@
             ],
             "ref": "cloudstack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudstack",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "versions": [
+                "0.7.0",
                 "0.6.0",
                 "0.5.9",
                 "0.5.8",

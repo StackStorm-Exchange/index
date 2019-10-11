@@ -7,7 +7,7 @@ keywords:
 - apache-cloudstack
 - apache-acs
 - cloud
-version: 0.6.0
+version: 0.7.0
 python_versions:
 - '2'
 - '3'
@@ -15,8 +15,10 @@ author: Globo.com
 email: a-team@corp.globo.com
 content:
   actions:
-    count: 21
+    count: 23
     resources:
+    - disable_auto_scale_vm_groups
+    - enable_auto_scale_vm_groups
     - lb_attach_member
     - lb_dettach_member
     - lb_list_members
