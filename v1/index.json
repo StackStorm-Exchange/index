@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1571056644,
-        "hash": "4ea1c27d9f211b2097983844908a33b0"
+        "generated_ts": 1571082849,
+        "hash": "ca4d22a39024b9cf7b44bfa8008ee99c"
     },
     "packs": {
         "acos": {
@@ -6849,7 +6849,7 @@
                         "get_address_object",
                         "get_firewall_policy",
                         "move_firewall_policy",
-                        "update_address_object",
+                        "update_address_group_object",
                         "update_address_object",
                         "update_firewall_policy"
                     ]
@@ -6865,8 +6865,9 @@
             "name": "fortinet",
             "ref": "fortinet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fortinet",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "versions": [
+                "0.0.3",
                 "0.0.2",
                 "0.0.1"
             ]
