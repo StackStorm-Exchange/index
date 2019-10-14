@@ -9,6 +9,11 @@
             "required": true,
             "type": "string"
         },
+        "extra_kwargs": {
+            "description": "Additional keyword arguments which will be passed to the underlying Libcloud method.",
+            "required": false,
+            "type": "object"
+        },
         "vm_id": {
             "description": "ID of a VM to reboot.",
             "required": true,
