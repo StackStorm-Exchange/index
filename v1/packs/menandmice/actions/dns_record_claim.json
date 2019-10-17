@@ -1,8 +1,8 @@
 {
-    "description": "Create master DNS zone",
+    "description": "This is a workflow to claim a dns record in Men and Mice. We will get the next available ip address in the given range if not given.",
     "enabled": true,
-    "entry_point": "workflows/wf_add_dns_zone.yaml",
-    "name": "wf_add_dns_zone",
+    "entry_point": "workflows/dns_record_claim.yaml",
+    "name": "dns_record_claim",
     "pack": "menandmice",
     "parameters": {
         "connection": {
@@ -10,9 +10,19 @@
             "required": false,
             "type": "string"
         },
-        "master_server": {
-            "description": "Hostname of the master DNS server for this new zone.",
+        "dns_domain": {
+            "description": "DNS name of the record eg. 'domain.tld'",
             "required": true,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "Name of the DNS record",
+            "required": true,
+            "type": "string"
+        },
+        "ip_address": {
+            "default": "",
+            "description": "IP address of the DNS Record",
             "type": "string"
         },
         "password": {
@@ -26,14 +36,34 @@
             "required": false,
             "type": "integer"
         },
+        "range_name": {
+            "description": "Name of the range to get the next available ip address from.",
+            "required": false,
+            "type": "string"
+        },
+        "record_enabled": {
+            "default": true,
+            "description": "If the record should be enabled.",
+            "type": "boolean"
+        },
+        "record_type": {
+            "default": "A",
+            "description": "The type of record that is being created. eg. A, CNAME",
+            "type": "string"
+        },
+        "related_record_name": {
+            "description": "Name of the record that is being referenced. eg for CNAMEs. ex. test.domain.tld",
+            "required": false,
+            "type": "string"
+        },
         "server": {
             "description": "Optional override of the Men&Mice server in <connection> (required if <connection> is not specified).",
             "required": false,
             "type": "string"
         },
         "session": {
+            "default": "",
             "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
-            "required": true,
             "type": "string"
         },
         "transport": {
@@ -44,11 +74,6 @@
         "username": {
             "description": "Optional override of the Men&Mice username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
             "required": false,
-            "type": "string"
-        },
-        "zone_name": {
-            "description": "Name of thoe zone with the trailing '.' (example: sub.domain.tld.)",
-            "required": true,
             "type": "string"
         }
     },

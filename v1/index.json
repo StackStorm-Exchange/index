@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1571082849,
-        "hash": "ca4d22a39024b9cf7b44bfa8008ee99c"
+        "generated_ts": 1571327740,
+        "hash": "7765bb9f109c04b11ac847cce7432bb7"
     },
     "packs": {
         "acos": {
@@ -9407,7 +9407,7 @@
             "author": "Encore Technologies",
             "content": {
                 "actions": {
-                    "count": 202,
+                    "count": 204,
                     "resources": [
                         "add_ad_forest",
                         "add_ad_site",
@@ -9447,6 +9447,7 @@
                         "add_user_to_group",
                         "approve_changes",
                         "approve_dns_record_changes",
+                        "dns_record_claim",
                         "flush_from_cache_on_dns_servers",
                         "generate_reverse_records",
                         "get_ad_forest",
@@ -9547,6 +9548,7 @@
                         "get_system_settings",
                         "get_user",
                         "get_users",
+                        "get_zone_dns_records",
                         "has_access",
                         "join_ranges",
                         "login",
@@ -9614,9 +9616,10 @@
                     ]
                 },
                 "tests": {
-                    "count": 5,
+                    "count": 6,
                     "resources": [
                         "men_and_mice_base_action_test_case.py",
+                        "test_action_lib_get_zone_dns_records.py",
                         "test_action_lib_run_get_history.py",
                         "test_action_lib_run_login.py",
                         "test_action_lib_run_logout.py",
@@ -9636,8 +9639,10 @@
             "name": "menandmice",
             "ref": "menandmice",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-menandmice",
-            "version": "0.1.3",
+            "version": "1.0.0",
             "versions": [
+                "1.0.0",
+                "0.1.4",
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
