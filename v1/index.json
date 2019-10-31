@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1572529077,
-        "hash": "ab55a18c7c5806e5b23b397f65200625"
+        "generated_ts": 1572529294,
+        "hash": "826f5a95ab69c7e0cafc3d476eb52ae3"
     },
     "packs": {
         "acos": {
@@ -7855,19 +7855,19 @@
                 "actions": {
                     "count": 13,
                     "resources": [
-                        "rgb",
-                        "color_temp_kelvin",
-                        "off",
                         "alert",
-                        "current_state",
+                        "brightness",
+                        "color_temp_kelvin",
                         "color_temp_mired",
+                        "current_state",
+                        "find_id_by_name",
                         "list_bulbs",
+                        "off",
+                        "on",
+                        "rgb",
                         "set_state",
                         "toggle",
-                        "on",
-                        "find_id_by_name",
-                        "xy",
-                        "brightness"
+                        "xy"
                     ]
                 }
             },
