@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1572529294,
-        "hash": "826f5a95ab69c7e0cafc3d476eb52ae3"
+        "generated_ts": 1572529944,
+        "hash": "d706e1ffdf69bcf629bb9fac3d68df0e"
     },
     "packs": {
         "acos": {
@@ -8597,6 +8597,8 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kafka",
             "version": "0.2.2",
             "versions": [
+                "0.2.4",
+                "0.2.3",
                 "0.2.2",
                 "0.2.1",
                 "0.2.0"
@@ -12650,7 +12652,7 @@
             ]
         },
         "salt": {
-            "author": "gtmanfred",
+            "author": "jcockhren",
             "content": {
                 "actions": {
                     "count": 162,
@@ -12833,16 +12835,17 @@
                     ]
                 }
             },
-            "description": "st2 salt integration pack",
-            "email": "danielwallace@gtmanfred.com",
+            "description": "salt integration pack",
+            "email": "jurnell@sophicware.com",
             "keywords": [
                 "salt",
                 "cfg management",
                 "configuration management"
             ],
             "name": "salt",
+            "ref": "salt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-salt",
-            "version": "0.1.0",
+            "version": "0.8.1",
             "versions": [
                 "0.8.1",
                 "0.8.0",
