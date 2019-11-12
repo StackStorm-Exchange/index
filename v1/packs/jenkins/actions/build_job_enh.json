@@ -23,6 +23,12 @@
             "description": "Project to build in Jenkins",
             "required": true,
             "type": "string"
+        },
+        "wait_for_results": {
+            "default": false,
+            "description": "Wait for the project job to complete. Make sure you override timeout if you expect the job to run longer than the default value of 600 seconds.",
+            "required": false,
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"
