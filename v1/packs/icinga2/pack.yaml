@@ -5,7 +5,7 @@ keywords:
 - icinga
 - monitoring
 - alerting
-version: 0.4.1
+version: 0.5.0
 python_versions:
 - '2'
 - '3'
@@ -15,8 +15,9 @@ contributors:
 - Lindsay Hill <lindsay@stackstorm.com>
 content:
   actions:
-    count: 3
+    count: 4
     resources:
+    - get_filtered_component
     - get_host
     - get_service
     - get_status

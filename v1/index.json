@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1573694299,
-        "hash": "69166e9aa5b1fb73aae0af66b09793df"
+        "generated_ts": 1573751757,
+        "hash": "360b8a40441b5dcdbee6fdd65d6c6b7e"
     },
     "packs": {
         "acos": {
@@ -8133,8 +8133,9 @@
             "author": "Igor Cherkaev",
             "content": {
                 "actions": {
-                    "count": 3,
+                    "count": 4,
                     "resources": [
+                        "get_filtered_component",
                         "get_host",
                         "get_service",
                         "get_status"
@@ -8170,8 +8171,9 @@
             ],
             "ref": "icinga2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-icinga2",
-            "version": "0.4.1",
+            "version": "0.5.0",
             "versions": [
+                "0.5.0",
                 "0.4.1",
                 "0.4.0",
                 "0.3.3",
