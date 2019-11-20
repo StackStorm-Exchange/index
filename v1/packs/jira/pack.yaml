@@ -13,7 +13,7 @@ author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 12
+    count: 13
     resources:
     - add_field_value
     - assign_issue
@@ -27,6 +27,7 @@ content:
     - search_issues
     - transition_issue
     - transition_issue_by_name
+    - update_field_value
   sensors:
     count: 2
     resources:

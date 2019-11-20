@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1574238607,
-        "hash": "1e410a917e5d7337d79f76f3d87809d7"
+        "generated_ts": 1574274615,
+        "hash": "e1bc752becac4439c295361ec3521310"
     },
     "packs": {
         "acos": {
@@ -8452,7 +8452,7 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 12,
+                    "count": 13,
                     "resources": [
                         "add_field_value",
                         "assign_issue",
@@ -8465,7 +8465,8 @@
                         "get_issue_comments",
                         "search_issues",
                         "transition_issue",
-                        "transition_issue_by_name"
+                        "transition_issue_by_name",
+                        "update_field_value"
                     ]
                 },
                 "sensors": {

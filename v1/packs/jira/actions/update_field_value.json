@@ -1,0 +1,30 @@
+{
+    "description": "Update a field in a particular JIRA issue.",
+    "enabled": true,
+    "entry_point": "update_field_value.py",
+    "name": "update_field_value",
+    "parameters": {
+        "field": {
+            "description": "the field name.",
+            "required": true,
+            "type": "string"
+        },
+        "issue_key": {
+            "description": "Issue key (e.g. PROJECT-1000).",
+            "required": true,
+            "type": "string"
+        },
+        "notify": {
+            "default": true,
+            "description": "jira will send notifications (default is true)",
+            "required": false,
+            "type": "boolean"
+        },
+        "value": {
+            "description": "the field text itself.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
