@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1575572337,
-        "hash": "c442a2a901b88d0a74f6a2ad559a7a0f"
+        "generated_ts": 1575579442,
+        "hash": "171eb677393fd10fc62c62069a90e857"
     },
     "packs": {
         "acos": {
@@ -12293,6 +12293,25 @@
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
+            ]
+        },
+        "powerdns": {
+            "author": "Carlos",
+            "content": {
+                "actions": {
+                    "count": 1,
+                    "resources": [
+                        "create_zone"
+                    ]
+                }
+            },
+            "description": "Interactive with PowerDNS API.",
+            "email": "nzlosh@yahoo.com",
+            "name": "powerdns",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerdns",
+            "version": "0.0.1",
+            "versions": [
+                "0.0.1"
             ]
         },
         "powerpoint": {

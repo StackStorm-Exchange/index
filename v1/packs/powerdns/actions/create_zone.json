@@ -1,0 +1,14 @@
+{
+    "description": "Create a new zone",
+    "enabled": true,
+    "entry_point": "create_zone.py",
+    "name": "create_zone",
+    "parameters": {
+        "name": {
+            "description": "Subject of the appointment.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
