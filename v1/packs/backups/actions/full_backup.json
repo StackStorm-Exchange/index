@@ -6,7 +6,7 @@
     "pack": "backups",
     "parameters": {
         "backup_timeout": {
-            "default": 600,
+            "default": "{{ st2kv.system.backup.timeout | int | default(600, true) }}",
             "type": "integer"
         },
         "mistral_config": {
