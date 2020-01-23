@@ -4,6 +4,13 @@
     "name": "host_get",
     "pack": "vsphere",
     "parameters": {
+        "get_all_hosts": {
+            "default": false,
+            "description": "Gets all hosts from the environment",
+            "position": 2,
+            "required": false,
+            "type": "boolean"
+        },
         "host_ids": {
             "description": "Comma seperated list of Host IDs",
             "position": 0,
@@ -19,7 +26,7 @@
         },
         "vsphere": {
             "description": "Pre-configured vsphere endpoint",
-            "position": 2,
+            "position": 3,
             "required": false,
             "type": "string"
         }

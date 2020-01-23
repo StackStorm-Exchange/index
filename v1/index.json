@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1578012655,
-        "hash": "fea1c2e53cc7d77ac4cd94c632c75fa6"
+        "generated_ts": 1579813526,
+        "hash": "f2e53a605ae6dc44dab14354c101e98d"
     },
     "packs": {
         "acos": {
@@ -14703,7 +14703,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 55,
+                    "count": 56,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -14725,6 +14725,7 @@
                         "test_action_guest_info_get.py",
                         "test_action_guest_process_start.py",
                         "test_action_guest_process_wait.py",
+                        "test_action_host_get.py",
                         "test_action_hw_barebones_create.py",
                         "test_action_hw_cpu_mem_edit.py",
                         "test_action_hw_details_get.py",
@@ -14777,8 +14778,9 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.9.4",
+            "version": "0.9.5",
             "versions": [
+                "0.9.5",
                 "0.9.4",
                 "0.9.3",
                 "0.9.2",
@@ -14807,8 +14809,7 @@
                 "0.7.3",
                 "0.7.2",
                 "0.7.1",
-                "0.7.0",
-                "0.6.1"
+                "0.7.0"
             ]
         },
         "vyatta": {
