@@ -1,0 +1,15 @@
+{
+    "description": "Lists available PowerDNS servers",
+    "enabled": true,
+    "entry_point": "servers_list.py",
+    "name": "servers_list",
+    "parameters": {
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for response to be received.",
+            "required": false,
+            "type": "number"
+        }
+    },
+    "runner_type": "python-script"
+}

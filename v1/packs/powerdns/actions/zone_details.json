@@ -1,0 +1,26 @@
+{
+    "description": "Get zone details.",
+    "enabled": true,
+    "entry_point": "zone_details.py",
+    "name": "zone_details",
+    "parameters": {
+        "name": {
+            "description": "Zone name to get details.",
+            "required": true,
+            "type": "string"
+        },
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for a response from PowerDNS.",
+            "required": true,
+            "type": "integer"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

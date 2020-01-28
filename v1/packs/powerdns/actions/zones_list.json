@@ -1,0 +1,21 @@
+{
+    "description": "Lists available zones",
+    "enabled": true,
+    "entry_point": "zones_list.py",
+    "name": "zones_list",
+    "parameters": {
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for response to be received.",
+            "required": false,
+            "type": "number"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "The id of the server to retrieve",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

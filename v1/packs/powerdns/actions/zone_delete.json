@@ -1,0 +1,26 @@
+{
+    "description": "Delete a zone by name",
+    "enabled": true,
+    "entry_point": "zone_delete.py",
+    "name": "zone_delete",
+    "parameters": {
+        "name": {
+            "description": "Zone name to delete.",
+            "required": true,
+            "type": "string"
+        },
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for a response from PowerDNS.",
+            "required": true,
+            "type": "integer"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

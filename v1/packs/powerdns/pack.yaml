@@ -1,10 +1,19 @@
 name: powerdns
-description: Interactive with PowerDNS API.
-version: 0.0.1
+description: StackStorm intergratation for the PowerDNS API.
+version: 0.0.3
 author: Carlos
 email: nzlosh@yahoo.com
+python_versions:
+- '2'
+- '3'
 content:
   actions:
-    count: 1
+    count: 7
     resources:
-    - create_zone
+    - servers_list
+    - zone_create
+    - zone_delete
+    - zone_details
+    - zone_get
+    - zones_list
+    - zones_search

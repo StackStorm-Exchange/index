@@ -1,0 +1,32 @@
+{
+    "description": "Search for terms in all zones on the server.",
+    "enabled": true,
+    "entry_point": "zones_search.py",
+    "name": "zones_search",
+    "parameters": {
+        "max_results": {
+            "default": 50,
+            "description": "Limit the number of results returned in the search.",
+            "required": true,
+            "type": "string"
+        },
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for a response from PowerDNS.",
+            "required": true,
+            "type": "integer"
+        },
+        "search_term": {
+            "description": "The term to search for.",
+            "required": true,
+            "type": "string"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

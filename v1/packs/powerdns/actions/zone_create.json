@@ -1,0 +1,47 @@
+{
+    "description": "Create a new zone",
+    "enabled": true,
+    "entry_point": "zone_create.py",
+    "name": "zone_create",
+    "parameters": {
+        "kind": {
+            "description": "Type of zone",
+            "type": "string"
+        },
+        "masters": {
+            "description": "Zone masters",
+            "type": "array"
+        },
+        "name": {
+            "description": "Name of zone",
+            "type": "string"
+        },
+        "nameservers": {
+            "description": "Name servers",
+            "type": "array"
+        },
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for response from API.",
+            "type": "integer"
+        },
+        "rrsets": {
+            "description": "Resource records sets",
+            "type": "array"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "PowerDNS server to use",
+            "type": "string"
+        },
+        "servers": {
+            "description": "List of forwarded-to servers (recursor only)",
+            "type": "array"
+        },
+        "update": {
+            "description": "If the zone need to be updated or created",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}
