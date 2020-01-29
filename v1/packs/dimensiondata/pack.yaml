@@ -5,77 +5,77 @@ keywords:
 - cloud
 - load balancers
 - dimension data
-version: 0.1.2
+version: 0.1.3
 author: Anthony Shaw
 email: anthony.shaw@dimensiondata.com
 content:
   actions:
     count: 67
     resources:
-    - reboot_vm
-    - get_balancer
-    - create_balancer
-    - get_vm
-    - get_balancer_by_name
-    - list_vms
-    - get_public_ip_block
-    - create_public_ip_block
-    - list_balancers
-    - update_vm
-    - shutdown_vm
-    - configure
-    - get_vm_by_name
-    - get_network_by_name
-    - get_image
-    - create_network_domain
-    - create_vip_node
-    - create_pool_member
-    - create_firewall_rule
-    - balancer_detach_member
-    - list_pool_members
-    - delete_network_domain
-    - remove_storage_from_vm
-    - delete_network
-    - balancer_list_members
-    - list_default_health_monitors
-    - delete_vlan
-    - delete_vlan
     - add_storage_to_vm
-    - balancer_attach_member
-    - wait_for_server_operation
     - attach_node_to_vlan
-    - list_customer_images
-    - start_vm
-    - power_off_vm
-    - update_disk_size
-    - destroy_vm
-    - create_vlan
-    - list_network_domains
-    - list_firewall_rules
-    - list_balancer_nodes
-    - create_network
-    - disable_monitoring
-    - list_networks
-    - get_vlan_by_name
-    - get_image_by_name
-    - reset_vm
-    - get_network_domain
-    - create_nat_rule
-    - get_location_by_id
-    - destroy_nic
-    - list_locations
-    - update_vm_tools
-    - update_disk_speed
-    - create_vm_mcp2
-    - get_ipv6_address_of_vm
-    - get_network_domain_by_name
-    - list_images
-    - enable_monitoring
-    - clone_vm_to_image
-    - create_vm_mcp1
-    - list_nat_rules
-    - list_public_ip_blocks
+    - balancer_attach_member
     - balancer_delete_node
+    - balancer_detach_member
+    - balancer_list_members
+    - clone_vm_to_image
+    - configure
+    - create_balancer
+    - create_firewall_rule
+    - create_nat_rule
+    - create_network
+    - create_network_domain
+    - create_pool_member
+    - create_public_ip_block
+    - create_vip_node
+    - create_vlan
+    - create_vm_mcp1
+    - create_vm_mcp2
+    - delete_network
+    - delete_network_domain
+    - delete_vlan
+    - delete_vlan
+    - destroy_nic
+    - destroy_vm
+    - disable_monitoring
+    - enable_monitoring
+    - get_balancer
+    - get_balancer_by_name
+    - get_image
+    - get_image_by_name
+    - get_ipv6_address_of_vm
+    - get_location_by_id
+    - get_network_by_name
+    - get_network_domain
+    - get_network_domain_by_name
+    - get_public_ip_block
+    - get_vlan_by_name
+    - get_vm
+    - get_vm_by_name
+    - list_balancer_nodes
+    - list_balancers
+    - list_customer_images
+    - list_default_health_monitors
+    - list_firewall_rules
+    - list_images
+    - list_locations
+    - list_nat_rules
+    - list_network_domains
+    - list_networks
+    - list_pool_members
+    - list_public_ip_blocks
     - list_vlans
+    - list_vms
+    - power_off_vm
+    - reboot_vm
     - reconfigure_vm
+    - remove_storage_from_vm
+    - reset_vm
+    - shutdown_vm
+    - start_vm
+    - update_disk_size
+    - update_disk_speed
     - update_monitoring_plan
+    - update_vm
+    - update_vm_tools
+    - wait_for_server_operation
