@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580261449,
-        "hash": "2859b383b20c504f8a12929bee4ea696"
+        "generated_ts": 1580429166,
+        "hash": "eb0159a08597d438aa52610f0bc9e1b7"
     },
     "packs": {
         "acos": {
@@ -4189,12 +4189,14 @@
             ],
             "name": "aws",
             "python_versions": [
-                "2"
+                "2",
+                "3"
             ],
             "ref": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "versions": [
+                "1.2.3",
                 "1.2.2",
                 "1.2.1",
                 "1.2.0",
@@ -4219,7 +4221,6 @@
                 "0.7.2",
                 "0.7.1",
                 "0.7.0",
-                "0.6.6",
                 "0.12.0",
                 "0.11.0",
                 "0.10.2",
