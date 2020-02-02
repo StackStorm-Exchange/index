@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580633842,
-        "hash": "d352e57864ff9e85f3d277af46d7b7e9"
+        "generated_ts": 1580634345,
+        "hash": "ab64312bdcdb549b6edf9ac970c87f28"
     },
     "packs": {
         "acos": {
@@ -9864,6 +9864,10 @@
                 "office365"
             ],
             "name": "Microsoft Exchange",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "msexchange",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-msexchange",
             "version": "0.1.4",
