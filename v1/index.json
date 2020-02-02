@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580627007,
-        "hash": "34dd86e4895e560b20cc6cab0a5a2bd7"
+        "generated_ts": 1580627063,
+        "hash": "510cd7700ee02ee347ac005de7e19a71"
     },
     "packs": {
         "acos": {
@@ -13516,6 +13516,10 @@
                 "MsSQL"
             ],
             "name": "sql",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "sql",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sql",
             "version": "0.1.2",
