@@ -7,27 +7,30 @@ keywords:
 version: 0.3.2
 author: Jon Middleton
 email: jon.middleton@pulsant.com
+python_versions:
+- '2'
+- '3'
 content:
   actions:
     count: 6
     resources:
-    - auth_check
-    - auth_wrap_demo
-    - auth_ping
     - announce_success
     - auth_auth
     - auth_chatops
+    - auth_check
+    - auth_ping
+    - auth_wrap_demo
   aliases:
     count: 4
     resources:
+    - auth_auth
     - auth_check
     - auth_demo
     - auth_ping
-    - auth_auth
   tests:
     count: 4
     resources:
-    - test_action_auth_check.py
-    - test_action_auth_ping.py
     - duo_base_test_case.py
     - test_action_auth_auth.py
+    - test_action_auth_check.py
+    - test_action_auth_ping.py

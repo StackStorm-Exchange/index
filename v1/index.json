@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580626751,
-        "hash": "02169567eef3f40044d559a0ace31dde"
+        "generated_ts": 1580626785,
+        "hash": "a83f4ebf666f0c3e1d5c229394e30e40"
     },
     "packs": {
         "acos": {
@@ -5755,30 +5755,30 @@
                 "actions": {
                     "count": 6,
                     "resources": [
-                        "auth_check",
-                        "auth_wrap_demo",
-                        "auth_ping",
                         "announce_success",
                         "auth_auth",
-                        "auth_chatops"
+                        "auth_chatops",
+                        "auth_check",
+                        "auth_ping",
+                        "auth_wrap_demo"
                     ]
                 },
                 "aliases": {
                     "count": 4,
                     "resources": [
+                        "auth_auth",
                         "auth_check",
                         "auth_demo",
-                        "auth_ping",
-                        "auth_auth"
+                        "auth_ping"
                     ]
                 },
                 "tests": {
                     "count": 4,
                     "resources": [
-                        "test_action_auth_check.py",
-                        "test_action_auth_ping.py",
                         "duo_base_test_case.py",
-                        "test_action_auth_auth.py"
+                        "test_action_auth_auth.py",
+                        "test_action_auth_check.py",
+                        "test_action_auth_ping.py"
                     ]
                 }
             },
@@ -5789,6 +5789,10 @@
                 "Duo"
             ],
             "name": "duo",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "duo",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-duo",
             "version": "0.3.2",
