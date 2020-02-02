@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580626339,
-        "hash": "99bf8e3260c77a83d3733e0f143f6fc5"
+        "generated_ts": 1580626609,
+        "hash": "1f2aecdc5b7b641736a479cec34dce18"
     },
     "packs": {
         "acos": {
@@ -4388,6 +4388,10 @@
                 "mongodb"
             ],
             "name": "backups",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "backups",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-backups",
             "version": "1.0.1",
