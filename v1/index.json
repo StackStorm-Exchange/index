@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580630532,
-        "hash": "b4858a5ce386c8ec5e495ffbb0554cc9"
+        "generated_ts": 1580631914,
+        "hash": "2366d50e60f82f57479d4b0a6770481d"
     },
     "packs": {
         "acos": {
@@ -8260,6 +8260,10 @@
                 "timeseries"
             ],
             "name": "influxdb",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "influxdb",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-influxdb",
             "version": "0.1.1",
