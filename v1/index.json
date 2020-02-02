@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580627132,
-        "hash": "541721ec0f4e3106f6766910d30dc4d5"
+        "generated_ts": 1580627180,
+        "hash": "a7b32ae72e0505cc1984bd2f2c6c209e"
     },
     "packs": {
         "acos": {
@@ -14429,6 +14429,10 @@
                 "vcloud"
             ],
             "name": "vcd",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "vcd",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vcd",
             "version": "0.2.5",
