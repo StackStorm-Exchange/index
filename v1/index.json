@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580626677,
-        "hash": "7ee30b35ad60c9d9658b841074ce7832"
+        "generated_ts": 1580626751,
+        "hash": "02169567eef3f40044d559a0ace31dde"
     },
     "packs": {
         "acos": {
@@ -4876,6 +4876,10 @@
                 "networking"
             ],
             "name": "cisco_aci",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "cisco_aci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_aci",
             "version": "0.1.6",
