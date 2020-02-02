@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580627180,
-        "hash": "a7b32ae72e0505cc1984bd2f2c6c209e"
+        "generated_ts": 1580629622,
+        "hash": "d0b0b18d144bf36cd41bfef96d5f7520"
     },
     "packs": {
         "acos": {
@@ -4797,6 +4797,10 @@
                 "ci"
             ],
             "name": "Circle CI",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "circle_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle_ci",
             "version": "0.5.3",
