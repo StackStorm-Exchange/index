@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580429166,
-        "hash": "eb0159a08597d438aa52610f0bc9e1b7"
+        "generated_ts": 1580626153,
+        "hash": "df4c018935ca47a2efaeea7ff48df604"
     },
     "packs": {
         "acos": {
@@ -325,6 +325,10 @@
                 "ad"
             ],
             "name": "activedirectory",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "activedirectory",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activedirectory",
             "version": "0.1.4",
