@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580634345,
-        "hash": "ab64312bdcdb549b6edf9ac970c87f28"
+        "generated_ts": 1580635047,
+        "hash": "b45d756965c887f49f7651c979fff904"
     },
     "packs": {
         "acos": {
@@ -12316,6 +12316,10 @@
                 "threats"
             ],
             "name": "paloalto",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "paloalto",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-paloalto",
             "version": "0.3.2",
