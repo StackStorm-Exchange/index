@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580626609,
-        "hash": "1f2aecdc5b7b641736a479cec34dce18"
+        "generated_ts": 1580626648,
+        "hash": "e3446b4f542383258eca2be350707cea"
     },
     "packs": {
         "acos": {
@@ -4591,6 +4591,10 @@
                 "cfg management"
             ],
             "name": "bolt",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "bolt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bolt",
             "version": "0.2.2",
