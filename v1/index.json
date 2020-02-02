@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580627063,
-        "hash": "510cd7700ee02ee347ac005de7e19a71"
+        "generated_ts": 1580627132,
+        "hash": "541721ec0f4e3106f6766910d30dc4d5"
     },
     "packs": {
         "acos": {
@@ -13757,6 +13757,10 @@
                 "terraform"
             ],
             "name": "terraform",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "terraform",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-terraform",
             "runner_type": "python-script",
