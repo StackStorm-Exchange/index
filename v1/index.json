@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580626785,
-        "hash": "a83f4ebf666f0c3e1d5c229394e30e40"
+        "generated_ts": 1580626848,
+        "hash": "65924b1c358fb8f05f82b459764c9a73"
     },
     "packs": {
         "acos": {
@@ -7443,10 +7443,15 @@
                 "authentication"
             ],
             "name": "freeipa",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "freeipa",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-freeipa",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "versions": [
+                "0.1.1",
                 "0.1.0"
             ]
         },
