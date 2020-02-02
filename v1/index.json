@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1580629622,
-        "hash": "d0b0b18d144bf36cd41bfef96d5f7520"
+        "generated_ts": 1580630532,
+        "hash": "b4858a5ce386c8ec5e495ffbb0554cc9"
     },
     "packs": {
         "acos": {
@@ -5968,6 +5968,10 @@
                 "networking"
             ],
             "name": "EXOS",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "exos",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-exos",
             "version": "0.2.0",
