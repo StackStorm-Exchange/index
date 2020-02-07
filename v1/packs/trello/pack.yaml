@@ -1,7 +1,7 @@
 ref: trello
 name: trello
 description: Trello Web-based Project Management
-version: 0.4.4
+version: 0.4.5
 author: James Fryman
 email: james@stackstorm.com
 keywords:
@@ -9,6 +9,9 @@ keywords:
 - kanban
 - productivity
 - collaboration
+python_versions:
+- '2'
+- '3'
 content:
   actions:
     count: 14
