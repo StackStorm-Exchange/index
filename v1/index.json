@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581113455,
-        "hash": "7422723dd474df38dfbd7597cdbe8449"
+        "generated_ts": 1581113553,
+        "hash": "61f0d7b6c8c1bd6b1e54201fa93b14b0"
     },
     "packs": {
         "acos": {
@@ -5213,6 +5213,10 @@
                 "tcpdump"
             ],
             "name": "CloudShark",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "cloudshark",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudshark",
             "version": "0.1.0",
