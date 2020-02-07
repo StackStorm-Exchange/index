@@ -8,6 +8,9 @@ version: 0.2.0
 author: StackStorm, Inc.
 email: info@stackstorm.com
 stackstorm_version: '>=3.0.0'
+python_versions:
+- '2'
+- '3'
 content:
   actions:
     count: 12

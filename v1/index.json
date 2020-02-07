@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581050714,
-        "hash": "4f30470032b0d8c2f1c81f92e58c7f86"
+        "generated_ts": 1581067287,
+        "hash": "64c4a76768c4001a92b2116a4dcc825b"
     },
     "packs": {
         "acos": {
@@ -4649,6 +4649,10 @@
                 "cassandra"
             ],
             "name": "cassandra",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "cassandra",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cassandra",
             "stackstorm_version": ">=3.0.0",
