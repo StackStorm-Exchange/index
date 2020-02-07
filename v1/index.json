@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581113170,
-        "hash": "01c846e8befb9a4fcd15c735f44e4f02"
+        "generated_ts": 1581113287,
+        "hash": "e819a06cc1d0b1a724772a9d63d6e49a"
     },
     "packs": {
         "acos": {
@@ -378,6 +378,10 @@
                 "security"
             ],
             "name": "alertlogic",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "alertlogic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-alertlogic",
             "version": "0.2.3",
