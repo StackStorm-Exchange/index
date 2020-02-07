@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581117274,
-        "hash": "6468957b04578c9a188d388240bf786e"
+        "generated_ts": 1581117482,
+        "hash": "573d689d4ea734d1f1cc9226ac469ca5"
     },
     "packs": {
         "acos": {
@@ -15378,8 +15378,12 @@
                 "vyatta"
             ],
             "name": "vyatta",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vyatta",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "versions": [
                 "0.1.4",
                 "0.1.3",
