@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581115695,
-        "hash": "0bbfbf475e27c4a68dd3c3e42676c6b1"
+        "generated_ts": 1581115937,
+        "hash": "155d21d583fa7422b37a0f294924f389"
     },
     "packs": {
         "acos": {
@@ -10998,9 +10998,13 @@
                 "application level monitoring"
             ],
             "name": "newrelic",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "newrelic",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
-            "version": "0.4.3",
+            "version": "0.4.4",
             "versions": [
                 "0.4.4",
                 "0.4.3",
