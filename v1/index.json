@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581113669,
-        "hash": "a545e26b2cef302463e53a69e3d1aae7"
+        "generated_ts": 1581113752,
+        "hash": "aba0b37f139da7ca8161d42399c2a9a3"
     },
     "packs": {
         "acos": {
@@ -5910,6 +5910,10 @@
                 "performance monitoring"
             ],
             "name": "dripstat",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "dripstat",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-dripstat",
             "version": "0.2.0",
