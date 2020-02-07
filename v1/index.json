@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581038402,
-        "hash": "b4a6ca337bf331d4f07190ff3299f4cc"
+        "generated_ts": 1581041831,
+        "hash": "78c38aad650c50efae02a32ba2d6e030"
     },
     "packs": {
         "acos": {
@@ -6862,6 +6862,10 @@
                 "redhat"
             ],
             "name": "foreman",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "foreman",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-foreman",
             "version": "1.2.0",
