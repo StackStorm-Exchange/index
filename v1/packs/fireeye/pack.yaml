@@ -1,11 +1,14 @@
 ref: fireeye
 name: fireeye
 description: FireEye CM Series Integration
-version: 0.3.1
+version: 0.3.2
 keywords:
 - security
 author: James Fryman
 email: james@stackstorm.com
+python_versions:
+- '2'
+- '3'
 content:
   actions:
     count: 5
