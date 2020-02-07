@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581116811,
-        "hash": "d9568c4c23f924a1a31c4cccb0eb12ee"
+        "generated_ts": 1581117052,
+        "hash": "7c2ab2a217282bde74512b01930feaf9"
     },
     "packs": {
         "acos": {
@@ -13829,9 +13829,13 @@
                 "alerting"
             ],
             "name": "splunk",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "splunk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-splunk",
-            "version": "0.6.0",
+            "version": "0.6.1",
             "versions": [
                 "0.6.1",
                 "0.6.0",
