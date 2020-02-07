@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581071997,
-        "hash": "561104ba114897ba9abe6fa229cdb363"
+        "generated_ts": 1581072465,
+        "hash": "fad6ec41193bdc4fc6bda4cbfa7546d3"
     },
     "packs": {
         "acos": {
@@ -8405,10 +8405,15 @@
                 "Infoblox"
             ],
             "name": "infoblox",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "infoblox",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-infoblox",
-            "version": "0.4.0",
+            "version": "0.4.1",
             "versions": [
+                "0.4.1",
                 "0.4.0",
                 "0.3.0",
                 "0.2.0",
@@ -8793,6 +8798,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-keycloak",
             "version": "0.1.4",
             "versions": [
+                "0.1.5",
                 "0.1.4",
                 "0.1.3",
                 "0.1.2",

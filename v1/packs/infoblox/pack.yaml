@@ -1,7 +1,7 @@
 ref: infoblox
 name: infoblox
 description: Infoblox IPAM, DNS and DHCP management
-version: 0.4.0
+version: 0.4.1
 keywords:
 - IPAM
 - DNS
@@ -9,6 +9,9 @@ keywords:
 - Infoblox
 author: Dimension Data
 email: noreply@dimensiondata.com
+python_versions:
+- '2'
+- '3'
 content:
   actions:
     count: 42
