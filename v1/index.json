@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581115937,
-        "hash": "155d21d583fa7422b37a0f294924f389"
+        "generated_ts": 1581116186,
+        "hash": "c0d874cd12010cc16e65900b736d254c"
     },
     "packs": {
         "acos": {
@@ -12098,9 +12098,13 @@
                 "opscenter"
             ],
             "name": "opscenter",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "opscenter",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opscenter",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "versions": [
                 "0.2.3",
                 "0.2.2",
