@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581116238,
-        "hash": "c9dd63dd2e6fe8cf8d43f1f7068402a6"
+        "generated_ts": 1581116317,
+        "hash": "b7caba8427a426e8e98fe7352a0f51ad"
     },
     "packs": {
         "acos": {
@@ -12780,9 +12780,13 @@
                 "configuration management"
             ],
             "name": "puppet",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "puppet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-puppet",
-            "version": "0.4.0",
+            "version": "0.4.1",
             "versions": [
                 "0.4.1",
                 "0.4.0",
