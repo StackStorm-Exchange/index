@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581116317,
-        "hash": "b7caba8427a426e8e98fe7352a0f51ad"
+        "generated_ts": 1581116387,
+        "hash": "13b7089282745ec146f14be9353cadde"
     },
     "packs": {
         "acos": {
@@ -12816,8 +12816,12 @@
                 "SMS"
             ],
             "name": "pushbullet",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-pushbullet",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "versions": [
                 "0.2.2",
                 "0.2.1",
