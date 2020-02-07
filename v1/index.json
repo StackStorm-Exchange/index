@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581114049,
-        "hash": "62fead89deed65c0f35d3bdf79b3ce37"
+        "generated_ts": 1581114130,
+        "hash": "0f95ddcbdb39289f8df2201d5dadc683"
     },
     "packs": {
         "acos": {
@@ -7711,9 +7711,13 @@
                 "useful"
             ],
             "name": "ghost2logger",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "ghost2logger",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ghost2logger",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "versions": [
                 "1.1.2",
                 "1.1.1",
