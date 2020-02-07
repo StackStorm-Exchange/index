@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581117482,
-        "hash": "573d689d4ea734d1f1cc9226ac469ca5"
+        "generated_ts": 1581117574,
+        "hash": "eac1554385be1eec1a75af881700fc0b"
     },
     "packs": {
         "acos": {
@@ -15486,9 +15486,13 @@
                 "voice"
             ],
             "name": "witai",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "witai",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-witai",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "versions": [
                 "0.2.2",
                 "0.2.1",
