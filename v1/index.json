@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581114315,
-        "hash": "e4eaa89f280398f660acf1715455470e"
+        "generated_ts": 1581114437,
+        "hash": "f04f9a5e219111cc9e4d169793d007ac"
     },
     "packs": {
         "acos": {
@@ -8604,9 +8604,13 @@
                 "home automation"
             ],
             "name": "ipcam",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "ipcam",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ipcam",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "versions": [
                 "0.3.1",
                 "0.3.0",
