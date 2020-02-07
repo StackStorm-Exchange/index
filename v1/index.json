@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581116492,
-        "hash": "0a42ac003f6ee6bae4bc26d3c7c85a75"
+        "generated_ts": 1581116556,
+        "hash": "c8a99df32eea70f5e0bbbd8c1ddb21b5"
     },
     "packs": {
         "acos": {
@@ -13306,9 +13306,13 @@
             "description": "Save the world. One puzzle at a time.",
             "email": "info@stackstorm.com",
             "name": "save_kittens",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "save_kittens",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-save_kittens",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "versions": [
                 "0.2.2",
                 "0.2.1",
