@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581112945,
-        "hash": "fb8c6afcd650d7555f43aa67e7bc78dc"
+        "generated_ts": 1581113170,
+        "hash": "01c846e8befb9a4fcd15c735f44e4f02"
     },
     "packs": {
         "acos": {
@@ -4311,6 +4311,117 @@
                 "0.4.0",
                 "0.3.0",
                 "0.2.0"
+            ]
+        },
+        "aws_s3": {
+            "author": "StackStorm, Inc.",
+            "content": {
+                "actions": {
+                    "count": 76,
+                    "resources": [
+                        "abort_multipart_upload",
+                        "complete_multipart_upload",
+                        "copy_object",
+                        "create_bucket",
+                        "create_multipart_upload",
+                        "delete_bucket",
+                        "delete_bucket_analytics_configuration",
+                        "delete_bucket_cors",
+                        "delete_bucket_encryption",
+                        "delete_bucket_inventory_configuration",
+                        "delete_bucket_lifecycle",
+                        "delete_bucket_metrics_configuration",
+                        "delete_bucket_policy",
+                        "delete_bucket_replication",
+                        "delete_bucket_tagging",
+                        "delete_bucket_website",
+                        "delete_object",
+                        "delete_object_tagging",
+                        "delete_objects",
+                        "get_bucket_accelerate_configuration",
+                        "get_bucket_acl",
+                        "get_bucket_analytics_configuration",
+                        "get_bucket_cors",
+                        "get_bucket_encryption",
+                        "get_bucket_inventory_configuration",
+                        "get_bucket_lifecycle",
+                        "get_bucket_lifecycle_configuration",
+                        "get_bucket_location",
+                        "get_bucket_logging",
+                        "get_bucket_metrics_configuration",
+                        "get_bucket_notification",
+                        "get_bucket_notification_configuration",
+                        "get_bucket_policy",
+                        "get_bucket_replication",
+                        "get_bucket_request_payment",
+                        "get_bucket_tagging",
+                        "get_bucket_versioning",
+                        "get_bucket_website",
+                        "get_object",
+                        "get_object_acl",
+                        "get_object_tagging",
+                        "get_object_torrent",
+                        "head_bucket",
+                        "head_object",
+                        "list_bucket_analytics_configurations",
+                        "list_bucket_inventory_configurations",
+                        "list_bucket_metrics_configurations",
+                        "list_multipart_uploads",
+                        "list_object_versions",
+                        "list_objects",
+                        "list_objects_v2",
+                        "list_parts",
+                        "put_bucket_accelerate_configuration",
+                        "put_bucket_acl",
+                        "put_bucket_analytics_configuration",
+                        "put_bucket_cors",
+                        "put_bucket_encryption",
+                        "put_bucket_inventory_configuration",
+                        "put_bucket_lifecycle",
+                        "put_bucket_lifecycle_configuration",
+                        "put_bucket_logging",
+                        "put_bucket_metrics_configuration",
+                        "put_bucket_notification",
+                        "put_bucket_notification_configuration",
+                        "put_bucket_policy",
+                        "put_bucket_replication",
+                        "put_bucket_request_payment",
+                        "put_bucket_tagging",
+                        "put_bucket_versioning",
+                        "put_bucket_website",
+                        "put_object",
+                        "put_object_acl",
+                        "put_object_tagging",
+                        "restore_object",
+                        "upload_part",
+                        "upload_part_copy"
+                    ]
+                }
+            },
+            "contributors": [
+                "Andy Moore <andrew.moore@pearson.com>"
+            ],
+            "description": "AWS S3-specific actions",
+            "email": "info@stackstorm.com",
+            "keywords": [
+                "aws",
+                "amazon web services",
+                "amazon",
+                "s3"
+            ],
+            "name": "aws_s3",
+            "python_versions": [
+                "2",
+                "3"
+            ],
+            "ref": "aws_s3",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_s3",
+            "version": "2.0.3",
+            "versions": [
+                "2.0.3",
+                "2.0.2",
+                "2.0.1",
+                "2.0.0"
             ]
         },
         "azure": {

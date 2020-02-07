@@ -1,0 +1,56 @@
+{
+    "description": null,
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "list_multipart_uploads",
+    "pack": "aws_s3",
+    "parameters": {
+        "Bucket": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "Delimiter": {
+            "description": "Character you use to group keys.",
+            "type": "string"
+        },
+        "EncodingType": {
+            "description": "",
+            "type": "string"
+        },
+        "KeyMarker": {
+            "description": "Together with upload-id-marker, this parameter specifies the multipart upload after which listing should begin.",
+            "type": "string"
+        },
+        "MaxUploads": {
+            "description": "Sets the maximum number of multipart uploads, from 1 to 1,000, to return in the response body. 1,000 is the maximum number of uploads that can be returned in a response.",
+            "type": "integer"
+        },
+        "Prefix": {
+            "description": "Lists in-progress uploads only for those keys that begin with the specified prefix.",
+            "type": "string"
+        },
+        "UploadIdMarker": {
+            "description": "Together with key-marker, specifies the multipart upload after which listing should begin. If key-marker is not specified, the upload-id-marker parameter is ignored.",
+            "type": "string"
+        },
+        "action": {
+            "default": "list_multipart_uploads",
+            "immutable": true,
+            "type": "string"
+        },
+        "cls": {
+            "default": "s3",
+            "type": "string"
+        },
+        "headers": {
+            "type": "string"
+        },
+        "module_path": {
+            "default": "boto3",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
