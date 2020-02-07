@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581076989,
-        "hash": "1921a060b9ad41a3c455761ca9d7c8e0"
+        "generated_ts": 1581078619,
+        "hash": "7c60cc8d1df6aaabd8d7ea1153d6a361"
     },
     "packs": {
         "acos": {
@@ -11907,6 +11907,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opscenter",
             "version": "0.2.2",
             "versions": [
+                "0.2.3",
                 "0.2.2",
                 "0.2.1",
                 "0.2.0",
@@ -12006,10 +12007,15 @@
                 "monitoring"
             ],
             "name": "opsgenie",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "opsgenie",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-opsgenie",
-            "version": "0.4.0",
+            "version": "0.4.1",
             "versions": [
+                "0.4.1",
                 "0.4.0",
                 "0.3.2",
                 "0.3.1",
