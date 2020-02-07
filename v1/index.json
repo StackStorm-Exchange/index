@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581074905,
-        "hash": "d92df9304a1cf37f70779cc7f0f5b8dd"
+        "generated_ts": 1581076745,
+        "hash": "178fbac97cc3b12664d6150db0cc6848"
     },
     "packs": {
         "acos": {
@@ -9900,6 +9900,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mqtt",
             "version": "0.2.1",
             "versions": [
+                "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
@@ -10810,6 +10811,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-newrelic",
             "version": "0.4.3",
             "versions": [
+                "0.4.4",
                 "0.4.3",
                 "0.4.2",
                 "0.4.1",
@@ -10996,10 +10998,15 @@
                 "dns"
             ],
             "name": "nsone",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "nsone",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nsone",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "versions": [
+                "0.1.1",
                 "0.1.0"
             ]
         },
