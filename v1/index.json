@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581071057,
-        "hash": "badc4c92d97fe574ebbccacc1870f255"
+        "generated_ts": 1581071576,
+        "hash": "92a899c25bbd55451483f598abb4aac3"
     },
     "packs": {
         "acos": {
@@ -7559,6 +7559,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ghost2logger",
             "version": "1.1.1",
             "versions": [
+                "1.1.2",
                 "1.1.1",
                 "1.1.0",
                 "1.0.2",
@@ -7609,10 +7610,15 @@
                 "scm"
             ],
             "name": "git",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "git",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-git",
-            "version": "0.6.0",
+            "version": "0.6.1",
             "versions": [
+                "0.6.1",
                 "0.6.0",
                 "0.5.1",
                 "0.5.0",
