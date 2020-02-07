@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581116629,
-        "hash": "f1711a3d75efd6c695a6a826d12226be"
+        "generated_ts": 1581116811,
+        "hash": "d9568c4c23f924a1a31c4cccb0eb12ee"
     },
     "packs": {
         "acos": {
@@ -13790,9 +13790,13 @@
                 "cloud"
             ],
             "name": "softlayer",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "softlayer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-softlayer",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "versions": [
                 "0.3.2",
                 "0.3.1",
