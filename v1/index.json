@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581102708,
-        "hash": "accad6a3b1e6adf17729e7428147682c"
+        "generated_ts": 1581103211,
+        "hash": "79e03160a8596a201ff14fba067140fa"
     },
     "packs": {
         "acos": {
@@ -13095,6 +13095,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-save_kittens",
             "version": "0.2.1",
             "versions": [
+                "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
@@ -13121,9 +13122,14 @@
                 "logs"
             ],
             "name": "scalyr",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-scalyr",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "versions": [
+                "0.0.2",
                 "0.0.1"
             ]
         },
