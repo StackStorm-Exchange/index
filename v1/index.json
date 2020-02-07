@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581114654,
-        "hash": "ab150326a39772cd014748549f183b1b"
+        "generated_ts": 1581115300,
+        "hash": "e988a047b0482dbbeebc525dfc401da3"
     },
     "packs": {
         "acos": {
@@ -8846,9 +8846,13 @@
                 "mbean"
             ],
             "name": "jmx",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "jmx",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jmx",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "versions": [
                 "0.3.2",
                 "0.3.1",
