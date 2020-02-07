@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581113365,
-        "hash": "2d0aca672a4c26728d3e470faa47f2b7"
+        "generated_ts": 1581113455,
+        "hash": "7422723dd474df38dfbd7597cdbe8449"
     },
     "packs": {
         "acos": {
@@ -4483,6 +4483,10 @@
                 "azurerm"
             ],
             "name": "azure",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "azure",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-azure",
             "version": "0.4.2",
