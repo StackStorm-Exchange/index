@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581114584,
-        "hash": "87140b5f370b1fd1206b90f80c5f0a38"
+        "generated_ts": 1581114654,
+        "hash": "ab150326a39772cd014748549f183b1b"
     },
     "packs": {
         "acos": {
@@ -8732,8 +8732,12 @@
                 "templating"
             ],
             "name": "jinja",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jinja",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "versions": [
                 "0.1.2",
                 "0.1.1",
