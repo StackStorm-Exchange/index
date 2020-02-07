@@ -14,7 +14,10 @@
                     },
                     "message": {
                         "description": "Captured message. JSON-serialized messages are automatically parsed. payload.message is base64 decoded",
-                        "type": "object"
+                        "type": [
+                            "string",
+                            "object"
+                        ]
                     },
                     "offset": {
                         "description": "Consumer offset for current topic. Position of what has been consumed",

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581115300,
-        "hash": "e988a047b0482dbbeebc525dfc401da3"
+        "generated_ts": 1581115452,
+        "hash": "07156407d7daf164439787c55d1b5178"
     },
     "packs": {
         "acos": {
@@ -8900,8 +8900,12 @@
                 "google cloud"
             ],
             "name": "kafka",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kafka",
-            "version": "0.2.2",
+            "version": "0.2.5",
             "versions": [
                 "0.2.5",
                 "0.2.4",
