@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581114437,
-        "hash": "f04f9a5e219111cc9e4d169793d007ac"
+        "generated_ts": 1581114584,
+        "hash": "87140b5f370b1fd1206b90f80c5f0a38"
     },
     "packs": {
         "acos": {
@@ -8639,9 +8639,13 @@
                 "instant messaging"
             ],
             "name": "irc",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "irc",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-irc",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "versions": [
                 "0.3.2",
                 "0.3.1",
