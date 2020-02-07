@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581029745,
-        "hash": "d1ca2207e3a82a1d8c79730fc4392983"
+        "generated_ts": 1581038402,
+        "hash": "b4a6ca337bf331d4f07190ff3299f4cc"
     },
     "packs": {
         "acos": {
@@ -504,6 +504,10 @@
                 "configuration management"
             ],
             "name": "ansible",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "ansible",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ansible",
             "version": "0.5.9",
