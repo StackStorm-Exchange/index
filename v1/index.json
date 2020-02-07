@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581071576,
-        "hash": "92a899c25bbd55451483f598abb4aac3"
+        "generated_ts": 1581071997,
+        "hash": "561104ba114897ba9abe6fa229cdb363"
     },
     "packs": {
         "acos": {
@@ -53,6 +53,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-acos",
             "version": "0.2.5",
             "versions": [
+                "0.2.6",
                 "0.2.5",
                 "0.2.4",
                 "0.2.3",
@@ -7938,6 +7939,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hubot",
             "version": "0.5.0",
             "versions": [
+                "0.5.1",
                 "0.5.0",
                 "0.4.0",
                 "0.3.2",
@@ -7977,10 +7979,15 @@
                 "iot"
             ],
             "name": "hue",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "hue",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hue",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "versions": [
+                "0.1.2",
                 "0.1.1",
                 "0.1.0",
                 "0.0.2",
