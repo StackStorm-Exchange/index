@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581067287,
-        "hash": "64c4a76768c4001a92b2116a4dcc825b"
+        "generated_ts": 1581068786,
+        "hash": "d150b5d6c2412d6db9c6008b75a4b2ab"
     },
     "packs": {
         "acos": {
@@ -4284,10 +4284,15 @@
                 "lambda"
             ],
             "name": "aws_boto3",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "aws_boto3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_boto3",
-            "version": "0.7.3",
+            "version": "0.7.4",
             "versions": [
+                "0.7.4",
                 "0.7.3",
                 "0.7.2",
                 "0.7.0",
