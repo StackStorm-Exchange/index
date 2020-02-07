@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581117894,
-        "hash": "346e3d03a895cba0a338b679f010822a"
+        "generated_ts": 1581117999,
+        "hash": "4288b92438e395c285bdf4ab1c390ea7"
     },
     "packs": {
         "acos": {
@@ -15729,9 +15729,13 @@
             "description": "Zookeeper Coordination Server",
             "email": "talktome@codyaray.com",
             "name": "zookeeper",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "zookeeper",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zookeeper",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "versions": [
                 "0.2.3",
                 "0.2.2",
