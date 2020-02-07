@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581113612,
-        "hash": "7940d006b38d4ec1346715269448e2a4"
+        "generated_ts": 1581113669,
+        "hash": "a545e26b2cef302463e53a69e3d1aae7"
     },
     "packs": {
         "acos": {
@@ -5623,6 +5623,10 @@
                 "saas"
             ],
             "name": "datadog",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "datadog",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-datadog",
             "version": "0.1.3",
