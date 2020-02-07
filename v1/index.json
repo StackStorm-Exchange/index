@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581113752,
-        "hash": "aba0b37f139da7ca8161d42399c2a9a3"
+        "generated_ts": 1581113848,
+        "hash": "82fd72cebf7c6e9d7d1bb4c7348535f3"
     },
     "packs": {
         "acos": {
@@ -6115,8 +6115,12 @@
             "description": "Read and Write Excel spreadsheets",
             "email": "tbraly@brocade.com",
             "name": "excel",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-excel",
-            "version": "0.2.4",
+            "version": "0.2.5",
             "versions": [
                 "0.2.5",
                 "0.2.4",
