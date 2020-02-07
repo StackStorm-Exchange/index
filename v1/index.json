@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581113984,
-        "hash": "53e9fd0fc231bdd4f26d99f7bc4e07a4"
+        "generated_ts": 1581114049,
+        "hash": "62fead89deed65c0f35d3bdf79b3ce37"
     },
     "packs": {
         "acos": {
@@ -6023,9 +6023,13 @@
                 "databases"
             ],
             "name": "elasticsearch",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "elasticsearch",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-elasticsearch",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "versions": [
                 "1.1.1",
                 "1.1.0",
