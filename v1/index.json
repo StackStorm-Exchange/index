@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581068786,
-        "hash": "d150b5d6c2412d6db9c6008b75a4b2ab"
+        "generated_ts": 1581069909,
+        "hash": "9fd87a0a29a567c446118280e663d878"
     },
     "packs": {
         "acos": {
@@ -208,10 +208,15 @@
             "description": "Integration with ActiveCampaign",
             "email": "patrick@stackstorm.com",
             "name": "activecampaign",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "activecampaign",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activecampaign",
-            "version": "0.3.3",
+            "version": "0.3.4",
             "versions": [
+                "0.3.4",
                 "0.3.3",
                 "0.3.2",
                 "0.3.1",
