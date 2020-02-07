@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581080279,
-        "hash": "22ec2f7d04b5e5dcea1fa814845abad0"
+        "generated_ts": 1581102708,
+        "hash": "accad6a3b1e6adf17729e7428147682c"
     },
     "packs": {
         "acos": {
@@ -12814,6 +12814,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
             "version": "0.3.0",
             "versions": [
+                "0.3.1",
                 "0.3.0",
                 "0.2.1",
                 "0.2.0",
@@ -13046,10 +13047,15 @@
                 "configuration management"
             ],
             "name": "salt",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "salt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-salt",
-            "version": "0.8.2",
+            "version": "0.8.3",
             "versions": [
+                "0.8.3",
                 "0.8.2",
                 "0.8.1",
                 "0.8.0",
