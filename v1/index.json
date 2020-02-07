@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581117205,
-        "hash": "02aa4c58349efc493deb95442ca377a7"
+        "generated_ts": 1581117274,
+        "hash": "6468957b04578c9a188d388240bf786e"
     },
     "packs": {
         "acos": {
@@ -14704,9 +14704,13 @@
                 "loadbalancer"
             ],
             "name": "vadc",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "vadc",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vadc",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "versions": [
                 "0.3.2",
                 "0.3.1",
