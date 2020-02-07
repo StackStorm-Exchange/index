@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581113287,
-        "hash": "e819a06cc1d0b1a724772a9d63d6e49a"
+        "generated_ts": 1581113365,
+        "hash": "2d0aca672a4c26728d3e470faa47f2b7"
     },
     "packs": {
         "acos": {
@@ -564,6 +564,10 @@
             "description": "triggers for sunrise/sunset information",
             "email": "tbraly@brocade.com",
             "name": "astral",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-astral",
             "version": "0.2.1",
             "versions": [
