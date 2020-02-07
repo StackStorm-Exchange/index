@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581116556,
-        "hash": "c8a99df32eea70f5e0bbbd8c1ddb21b5"
+        "generated_ts": 1581116629,
+        "hash": "f1711a3d75efd6c695a6a826d12226be"
     },
     "packs": {
         "acos": {
@@ -13754,9 +13754,13 @@
                 "home automation"
             ],
             "name": "SmartThings",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "smartthings",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-smartthings",
-            "version": "0.4.0",
+            "version": "0.4.1",
             "versions": [
                 "0.4.1",
                 "0.4.0",
