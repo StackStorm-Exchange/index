@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581115633,
-        "hash": "fa9a2ae351b6a27f2f5c430cc9bbec00"
+        "generated_ts": 1581115695,
+        "hash": "0bbfbf475e27c4a68dd3c3e42676c6b1"
     },
     "packs": {
         "acos": {
@@ -10083,9 +10083,13 @@
             "description": "MQTT Integration for StackStorm",
             "email": "james@stackstorm.com",
             "name": "mqtt",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "mqtt",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-mqtt",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "versions": [
                 "0.2.2",
                 "0.2.1",
