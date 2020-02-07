@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581114130,
-        "hash": "0f95ddcbdb39289f8df2201d5dadc683"
+        "generated_ts": 1581114315,
+        "hash": "e4eaa89f280398f660acf1715455470e"
     },
     "packs": {
         "acos": {
@@ -8094,9 +8094,13 @@
             "description": "Hubot integration pack",
             "email": "james@stackstorm.com",
             "name": "hubot",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "hubot",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hubot",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "versions": [
                 "0.5.1",
                 "0.5.0",

@@ -1,9 +1,12 @@
 ref: hubot
 name: hubot
 description: Hubot integration pack
-version: 0.5.0
+version: 0.5.1
 author: James Fryman
 email: james@stackstorm.com
+python_versions:
+- '2'
+- '3'
 content:
   actions:
     count: 6
