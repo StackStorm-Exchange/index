@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1581041831,
-        "hash": "78c38aad650c50efae02a32ba2d6e030"
+        "generated_ts": 1581043079,
+        "hash": "0292749faa8e7b00628b5bb7ba2d9dd5"
     },
     "packs": {
         "acos": {
@@ -4541,6 +4541,10 @@
                 "bitcoin"
             ],
             "name": "bitcoin",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "bitcoin",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitcoin",
             "version": "0.1.0",
