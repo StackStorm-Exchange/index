@@ -27,6 +27,7 @@
         "passwd": {
             "default": null,
             "description": "Database password if not specified in config",
+            "secret": true,
             "type": "string"
         },
         "table": {
