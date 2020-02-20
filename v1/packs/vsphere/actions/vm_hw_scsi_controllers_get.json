@@ -1,0 +1,28 @@
+{
+    "description": "Retrieve a list of SCSI controllers on the given VM",
+    "enabled": true,
+    "entry_point": "vm_hw_scsi_controllers_get.py",
+    "name": "vm_hw_scsi_controllers_get",
+    "parameters": {
+        "vm_id": {
+            "description": "Virtual Machine ID",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "description": "Virtual Machine Name",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "default": null,
+            "description": "Pre-configured vsphere connection details",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

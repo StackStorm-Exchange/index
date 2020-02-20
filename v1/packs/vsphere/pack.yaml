@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.10.0
+version: 0.11.0
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -14,7 +14,7 @@ contributors:
 - John Schoewe <jschoewe@gmail.com>
 content:
   actions:
-    count: 64
+    count: 66
     resources:
     - affinity_rule_create
     - affinity_rule_delete
@@ -63,6 +63,7 @@ content:
     - vm_hw_cpu_mem_edit
     - vm_hw_detail_get
     - vm_hw_hdd_add
+    - vm_hw_hdds_get
     - vm_hw_moid_get
     - vm_hw_nic_add
     - vm_hw_nic_edit
@@ -70,6 +71,7 @@ content:
     - vm_hw_power_on
     - vm_hw_remove
     - vm_hw_scsi_controller_add
+    - vm_hw_scsi_controllers_get
     - vm_hw_uuid_get
     - vm_networks_get
     - vm_rename
@@ -85,7 +87,7 @@ content:
     resources:
     - TaskInfoSensor
   tests:
-    count: 57
+    count: 59
     resources:
     - test_action_affinity_rule_create.py
     - test_action_affinity_rule_delete.py
@@ -132,6 +134,8 @@ content:
     - test_action_vm_check_tools.py
     - test_action_vm_config_info_get.py
     - test_action_vm_folder_get.py
+    - test_action_vm_hw_hdds_get.py
+    - test_action_vm_hw_scsi_controllers_get.py
     - test_action_vm_networks_get.py
     - test_action_vm_rename.py
     - test_action_vm_resource_pool_get.py

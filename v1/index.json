@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1582203701,
-        "hash": "b57cd09da3adb5f9b15524582f3184a6"
+        "generated_ts": 1582204549,
+        "hash": "21b2c17229751954f48a0fd80010c079"
     },
     "packs": {
         "acos": {
@@ -15092,7 +15092,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 64,
+                    "count": 66,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
@@ -15141,6 +15141,7 @@
                         "vm_hw_cpu_mem_edit",
                         "vm_hw_detail_get",
                         "vm_hw_hdd_add",
+                        "vm_hw_hdds_get",
                         "vm_hw_moid_get",
                         "vm_hw_nic_add",
                         "vm_hw_nic_edit",
@@ -15148,6 +15149,7 @@
                         "vm_hw_power_on",
                         "vm_hw_remove",
                         "vm_hw_scsi_controller_add",
+                        "vm_hw_scsi_controllers_get",
                         "vm_hw_uuid_get",
                         "vm_networks_get",
                         "vm_rename",
@@ -15167,7 +15169,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 57,
+                    "count": 59,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -15214,6 +15216,8 @@
                         "test_action_vm_check_tools.py",
                         "test_action_vm_config_info_get.py",
                         "test_action_vm_folder_get.py",
+                        "test_action_vm_hw_hdds_get.py",
+                        "test_action_vm_hw_scsi_controllers_get.py",
                         "test_action_vm_networks_get.py",
                         "test_action_vm_rename.py",
                         "test_action_vm_resource_pool_get.py",
@@ -15243,7 +15247,7 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.10.0",
+            "version": "0.11.0",
             "versions": [
                 "0.9.6",
                 "0.9.5",
@@ -15273,7 +15277,7 @@
                 "0.7.5",
                 "0.7.4",
                 "0.7.3",
-                "0.7.2",
+                "0.11.0",
                 "0.10.0"
             ]
         },
