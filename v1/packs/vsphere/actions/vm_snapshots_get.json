@@ -1,0 +1,34 @@
+{
+    "description": "Return the list of snapshots",
+    "entry_point": "vm_snapshots_get.py",
+    "name": "vm_snapshots_get",
+    "parameters": {
+        "flat": {
+            "default": true,
+            "description": "When checked, returns a flattened list of snapshots. When unchecked, returns the snapshots tree",
+            "position": 2,
+            "required": true,
+            "type": "boolean"
+        },
+        "vm_id": {
+            "description": "VM ID to get the containing folder for",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "vm_name": {
+            "default": null,
+            "description": "VM Name to get the containing folder for",
+            "position": 1,
+            "required": false,
+            "type": "string"
+        },
+        "vsphere": {
+            "description": "Pre-configured vsphere endpoint",
+            "position": 3,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

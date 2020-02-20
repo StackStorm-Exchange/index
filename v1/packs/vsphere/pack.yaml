@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.9.5
+version: 0.10.0
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -14,7 +14,7 @@ contributors:
 - John Schoewe <jschoewe@gmail.com>
 content:
   actions:
-    count: 63
+    count: 64
     resources:
     - affinity_rule_create
     - affinity_rule_delete
@@ -77,6 +77,7 @@ content:
     - vm_runtime_info_get
     - vm_shutdown
     - vm_snapshots_delete
+    - vm_snapshots_get
     - vm_tools_options_update
     - wait_task
   sensors:
@@ -84,7 +85,7 @@ content:
     resources:
     - TaskInfoSensor
   tests:
-    count: 56
+    count: 57
     resources:
     - test_action_affinity_rule_create.py
     - test_action_affinity_rule_delete.py
@@ -136,6 +137,7 @@ content:
     - test_action_vm_resource_pool_get.py
     - test_action_vm_shutdown.py
     - test_action_vm_snapshots_delete.py
+    - test_action_vm_snapshots_get.py
     - test_action_vm_tools_options_update.py
     - test_action_vmwarelib_actions.py
     - test_action_vmwarelib_tagging.py

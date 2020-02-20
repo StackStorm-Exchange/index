@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1582099272,
-        "hash": "8e602819fbc6ea6084744fafc8d3b0e8"
+        "generated_ts": 1582203701,
+        "hash": "b57cd09da3adb5f9b15524582f3184a6"
     },
     "packs": {
         "acos": {
@@ -15092,7 +15092,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 63,
+                    "count": 64,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
@@ -15155,6 +15155,7 @@
                         "vm_runtime_info_get",
                         "vm_shutdown",
                         "vm_snapshots_delete",
+                        "vm_snapshots_get",
                         "vm_tools_options_update",
                         "wait_task"
                     ]
@@ -15166,7 +15167,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 56,
+                    "count": 57,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -15218,6 +15219,7 @@
                         "test_action_vm_resource_pool_get.py",
                         "test_action_vm_shutdown.py",
                         "test_action_vm_snapshots_delete.py",
+                        "test_action_vm_snapshots_get.py",
                         "test_action_vm_tools_options_update.py",
                         "test_action_vmwarelib_actions.py",
                         "test_action_vmwarelib_tagging.py",
@@ -15241,8 +15243,9 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.9.5",
+            "version": "0.10.0",
             "versions": [
+                "0.9.6",
                 "0.9.5",
                 "0.9.4",
                 "0.9.3",
@@ -15271,8 +15274,7 @@
                 "0.7.4",
                 "0.7.3",
                 "0.7.2",
-                "0.7.1",
-                "0.7.0"
+                "0.10.0"
             ]
         },
         "vyatta": {
