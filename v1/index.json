@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1582316916,
-        "hash": "0428da5d534c7371d7f745439984548a"
+        "generated_ts": 1582317265,
+        "hash": "371814fc72d26e990f02dfe6b6772d30"
     },
     "packs": {
         "acos": {
@@ -8698,10 +8698,15 @@
                 "CICD"
             ],
             "name": "jenkins",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "jenkins",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jenkins",
-            "version": "0.8.0",
+            "version": "0.8.1",
             "versions": [
+                "0.8.1",
                 "0.8.0",
                 "0.7.8",
                 "0.7.7",
