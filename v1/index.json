@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1582314891,
-        "hash": "6be4dfd1aa73965c9ee6734d36a7747e"
+        "generated_ts": 1582316916,
+        "hash": "0428da5d534c7371d7f745439984548a"
     },
     "packs": {
         "acos": {
@@ -4831,6 +4831,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-check_mk",
             "version": "0.2.1",
             "versions": [
+                "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.1",
@@ -4863,10 +4864,15 @@
                 "security"
             ],
             "name": "checkpoint",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "checkpoint",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-checkpoint",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "versions": [
+                "0.0.3",
                 "0.0.2",
                 "0.0.1"
             ]
@@ -13996,6 +14002,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sumologic",
             "version": "0.9.7",
             "versions": [
+                "0.9.8",
                 "0.9.7",
                 "0.9.6",
                 "0.9.5",
