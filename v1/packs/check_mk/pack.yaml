@@ -5,9 +5,12 @@ keywords:
 - check_mk
 - monitoring
 - alerting
-version: 0.2.1
+version: 0.2.2
 author: codyaray
 email: talktome@codyaray.com
+python_versions:
+- '2'
+- '3'
 content:
   rules:
     count: 1

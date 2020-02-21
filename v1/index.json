@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1582317265,
-        "hash": "371814fc72d26e990f02dfe6b6772d30"
+        "generated_ts": 1582317341,
+        "hash": "26fc9820dff35f7befd1f71c5c086d03"
     },
     "packs": {
         "acos": {
@@ -4827,9 +4827,13 @@
                 "alerting"
             ],
             "name": "check_mk",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "check_mk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-check_mk",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "versions": [
                 "0.2.2",
                 "0.2.1",
