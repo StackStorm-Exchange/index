@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1582319425,
-        "hash": "2b97a88fb3b86e49e3791f6efd38e46a"
+        "generated_ts": 1582319990,
+        "hash": "9da3e20986523856a16270b9af59bb98"
     },
     "packs": {
         "acos": {
@@ -9501,10 +9501,15 @@
                 "security"
             ],
             "name": "lastline",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "lastline",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-lastline",
-            "version": "0.2.1",
+            "version": "0.2.2",
             "versions": [
+                "0.2.2",
                 "0.2.1",
                 "0.2.0",
                 "0.1.0"
