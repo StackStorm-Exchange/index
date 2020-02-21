@@ -66,16 +66,12 @@
             "type": "string"
         },
         "manifest": {
-            "description": "Path to a manifest file (.pp) to upload and apply on a set of nodes",
+            "description": "Path to a manifest file (.pp) to upload and apply on a set of targets",
             "required": true,
             "type": "string"
         },
         "modulepath": {
             "description": "List of directories containing modules, separated by ':'",
-            "type": "string"
-        },
-        "nodes": {
-            "description": "Identifies the nodes to target. Enter a comma-separated list of node URIs or group names. Or read a node list from an input file '@<file>' or stdin '-'. Example: --nodes localhost,node_group,ssh://nix.com:23,winrm://windows.puppet.com URI format is [protocol://]host[:port] SSH is the default protocol; may be ssh, winrm, pcp, local For Windows nodes, specify the winrm:// protocol if it has not be configured For SSH, port defaults to '22' For WinRM, port defaults to '5985' or '5986' based on the --[no-]ssl setting For local, use 'local://localhost'\n",
             "type": "string"
         },
         "noop": {
@@ -125,6 +121,10 @@
             "secret": true,
             "type": "string"
         },
+        "targets": {
+            "description": "Identifies the targets to target. Enter a comma-separated list of node URIs or group names. Or read a node list from an input file '@<file>' or stdin '-'. Example: --targets localhost,node_group,ssh://nix.com:23,winrm://windows.puppet.com URI format is [protocol://]host[:port] SSH is the default protocol; may be ssh, winrm, pcp, local For Windows targets, specify the winrm:// protocol if it has not be configured For SSH, port defaults to '22' For WinRM, port defaults to '5985' or '5986' based on the --[no-]ssl setting For local, use 'local://localhost'\n",
+            "type": "string"
+        },
         "tmpdir": {
             "description": "The directory to upload and execute temporary files on the target",
             "type": "string"
@@ -138,7 +138,7 @@
             "type": "string"
         },
         "tty": {
-            "description": "Request a pseudo TTY on nodes that support it",
+            "description": "Request a pseudo TTY on targets that support it",
             "type": "boolean"
         },
         "user": {
