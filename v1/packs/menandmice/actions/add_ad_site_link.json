@@ -5,7 +5,7 @@
     "name": "add_ad_site_link",
     "parameters": {
         "ad_site_link": {
-            "description": "'type: ADSiteLink\n reference: http://api.menandmice.com/8.1.0/#ADSiteLink\n json_schema: {\n   \"adForestRef\": \"string\", \n   \"name\": \"string\", \n   \"cost\": \"unsignedInt\", \n   \"replInterval\": \"unsignedInt\", \n   \"siteList\": {\n     \"string\": [\n       \"string\"\n     ]\n   }, \n   \"ref\": \"string\", \n   \"description\": \"string\"\n }'\n",
+            "description": "'type: ADSiteLink\n reference: http://api.menandmice.com/8.1.0/#ADSiteLink\n json_schema: {\n   \"adForestRef\": \"string\",\n   \"cost\": \"unsignedInt\",\n   \"description\": \"string\",\n   \"name\": \"string\",\n   \"ref\": \"string\",\n   \"replInterval\": \"unsignedInt\",\n   \"siteList\": {\n     \"string\": [\n       \"string\"\n     ]\n   }\n }'\n",
             "required": true,
             "type": "object"
         },

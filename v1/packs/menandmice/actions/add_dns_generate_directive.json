@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dns_generate_directive": {
-            "description": "'type: DNSGenerateDirective\n reference: http://api.menandmice.com/8.1.0/#DNSGenerateDirective\n json_schema: {\n   \"rangeEnd\": \"unsignedInt\", \n   \"type\": \"string\", \n   \"rhs\": \"string\", \n   \"rangeStep\": \"unsignedInt\", \n   \"rangeStart\": \"unsignedInt\", \n   \"lhs\": \"string\", \n   \"ttl\": \"string\", \n   \"ref\": \"string\", \n   \"class\": \"string\"\n }'\n",
+            "description": "'type: DNSGenerateDirective\n reference: http://api.menandmice.com/8.1.0/#DNSGenerateDirective\n json_schema: {\n   \"class\": \"string\",\n   \"lhs\": \"string\",\n   \"rangeEnd\": \"unsignedInt\",\n   \"rangeStart\": \"unsignedInt\",\n   \"rangeStep\": \"unsignedInt\",\n   \"ref\": \"string\",\n   \"rhs\": \"string\",\n   \"ttl\": \"string\",\n   \"type\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

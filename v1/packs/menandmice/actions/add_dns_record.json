@@ -14,7 +14,7 @@
             "type": "string"
         },
         "dns_record": {
-            "description": "'type: DNSRecord\n reference: http://api.menandmice.com/8.1.0/#DNSRecord\n json_schema: {\n   \"comment\": \"string\", \n   \"aging\": \"unsignedInt\", \n   \"dnsZoneRef\": \"string\", \n   \"name\": \"string\", \n   \"ref\": \"string\", \n   \"enabled\": \"boolean\", \n   \"data\": \"string\", \n   \"ttl\": \"string\", \n   \"type\": \"string\"\n }'\n",
+            "description": "'type: DNSRecord\n reference: http://api.menandmice.com/8.1.0/#DNSRecord\n json_schema: {\n   \"aging\": \"unsignedInt\",\n   \"comment\": \"string\",\n   \"data\": \"string\",\n   \"dnsZoneRef\": \"string\",\n   \"enabled\": \"boolean\",\n   \"name\": \"string\",\n   \"ref\": \"string\",\n   \"ttl\": \"string\",\n   \"type\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

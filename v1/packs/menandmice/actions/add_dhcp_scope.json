@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_scope": {
-            "description": "'type: DHCPScope\n reference: http://api.menandmice.com/8.1.0/#DHCPScope\n json_schema: {\n   \"available\": \"unsignedInt\", \n   \"superscope\": \"string\", \n   \"name\": \"string\", \n   \"dhcpServerRef\": \"string\", \n   \"enabled\": \"boolean\", \n   \"rangeRef\": \"string\", \n   \"ref\": \"string\", \n   \"description\": \"string\"\n }'\n",
+            "description": "'type: DHCPScope\n reference: http://api.menandmice.com/8.1.0/#DHCPScope\n json_schema: {\n   \"available\": \"unsignedInt\",\n   \"description\": \"string\",\n   \"dhcpServerRef\": \"string\",\n   \"enabled\": \"boolean\",\n   \"name\": \"string\",\n   \"rangeRef\": \"string\",\n   \"ref\": \"string\",\n   \"superscope\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

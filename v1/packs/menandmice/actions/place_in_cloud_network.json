@@ -9,7 +9,7 @@
             "type": "string"
         },
         "cloud_subnets": {
-            "description": "'type: ArrayOfCloudSubnet\n reference: http://api.menandmice.com/8.1.0/#ArrayOfCloudSubnet\n json_schema: {\n   \"cloudSubnet\": [\n     {\n       \"allocationPools\": {\n         \"addressBlock\": [\n           {\n             \"to\": \"string\", \n             \"from\": \"string\"\n           }\n         ]\n       }, \n       \"rangeRef\": \"string\"\n     }\n   ]\n }'\n",
+            "description": "'type: ArrayOfCloudSubnet\n reference: http://api.menandmice.com/8.1.0/#ArrayOfCloudSubnet\n json_schema: {\n   \"cloudSubnet\": [\n     {\n       \"allocationPools\": {\n         \"addressBlock\": [\n           {\n             \"from\": \"string\",\n             \"to\": \"string\"\n           }\n         ]\n       },\n       \"rangeRef\": \"string\"\n     }\n   ]\n }'\n",
             "required": true,
             "type": "object"
         },

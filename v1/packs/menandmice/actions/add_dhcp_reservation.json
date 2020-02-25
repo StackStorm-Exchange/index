@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_reservation": {
-            "description": "'type: DHCPReservation\n reference: http://api.menandmice.com/8.1.0/#DHCPReservation\n json_schema: {\n   \"ref\": \"string\", \n   \"name\": \"string\", \n   \"reservationMethod\": \"string\", \n   \"type\": \"string\", \n   \"description\": \"string\", \n   \"filename\": \"string\", \n   \"ownerRef\": \"string\", \n   \"ddnsHostName\": \"string\", \n   \"nextServer\": \"string\", \n   \"clientIdentifier\": \"string\", \n   \"serverName\": \"string\", \n   \"addresses\": {\n     \"address\": [\n       \"string\"\n     ]\n   }\n }'\n",
+            "description": "'type: DHCPReservation\n reference: http://api.menandmice.com/8.1.0/#DHCPReservation\n json_schema: {\n   \"addresses\": {\n     \"address\": [\n       \"string\"\n     ]\n   },\n   \"clientIdentifier\": \"string\",\n   \"ddnsHostName\": \"string\",\n   \"description\": \"string\",\n   \"filename\": \"string\",\n   \"name\": \"string\",\n   \"nextServer\": \"string\",\n   \"ownerRef\": \"string\",\n   \"ref\": \"string\",\n   \"reservationMethod\": \"string\",\n   \"serverName\": \"string\",\n   \"type\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

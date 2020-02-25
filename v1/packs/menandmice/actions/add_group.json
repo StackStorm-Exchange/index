@@ -10,7 +10,7 @@
             "type": "string"
         },
         "group": {
-            "description": "'type: Group\n reference: http://api.menandmice.com/8.1.0/#Group\n json_schema: {\n   \"name\": \"string\", \n   \"roles\": {\n     \"object\": [\n       {\n         \"objType\": \"string\", \n         \"ref\": \"string\", \n         \"name\": \"string\"\n       }\n     ]\n   }, \n   \"adIntegrated\": \"boolean\", \n   \"groupMembers\": {\n     \"object\": [\n       {\n         \"objType\": \"string\", \n         \"ref\": \"string\", \n         \"name\": \"string\"\n       }\n     ]\n   }, \n   \"ref\": \"string\", \n   \"description\": \"string\"\n }'\n",
+            "description": "'type: Group\n reference: http://api.menandmice.com/8.1.0/#Group\n json_schema: {\n   \"adIntegrated\": \"boolean\",\n   \"description\": \"string\",\n   \"groupMembers\": {\n     \"object\": [\n       {\n         \"name\": \"string\",\n         \"objType\": \"string\",\n         \"ref\": \"string\"\n       }\n     ]\n   },\n   \"name\": \"string\",\n   \"ref\": \"string\",\n   \"roles\": {\n     \"object\": [\n       {\n         \"name\": \"string\",\n         \"objType\": \"string\",\n         \"ref\": \"string\"\n       }\n     ]\n   }\n }'\n",
             "required": true,
             "type": "object"
         },

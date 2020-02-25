@@ -10,7 +10,7 @@
             "type": "string"
         },
         "interface": {
-            "description": "'type: Interface\n reference: http://api.menandmice.com/8.1.0/#Interface\n json_schema: {\n   \"name\": \"string\", \n   \"ref\": \"string\", \n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\", \n         \"value\": \"string\"\n       }\n     ]\n   }, \n   \"deviceRef\": \"string\", \n   \"clientIdentifier\": \"string\", \n   \"addresses\": {\n     \"address\": [\n       \"string\"\n     ]\n   }\n }'\n",
+            "description": "'type: Interface\n reference: http://api.menandmice.com/8.1.0/#Interface\n json_schema: {\n   \"addresses\": {\n     \"address\": [\n       \"string\"\n     ]\n   },\n   \"clientIdentifier\": \"string\",\n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\",\n         \"value\": \"string\"\n       }\n     ]\n   },\n   \"deviceRef\": \"string\",\n   \"name\": \"string\",\n   \"ref\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

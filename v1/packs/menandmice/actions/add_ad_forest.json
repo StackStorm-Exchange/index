@@ -5,7 +5,7 @@
     "name": "add_ad_forest",
     "parameters": {
         "ad_forest": {
-            "description": "'type: ADForest\n reference: http://api.menandmice.com/8.1.0/#ADForest\n json_schema: {\n   \"userName\": \"string\", \n   \"catalogServer\": \"string\", \n   \"name\": \"string\", \n   \"readOnly\": \"boolean\", \n   \"password\": \"string\", \n   \"ref\": \"string\"\n }'\n",
+            "description": "'type: ADForest\n reference: http://api.menandmice.com/8.1.0/#ADForest\n json_schema: {\n   \"catalogServer\": \"string\",\n   \"name\": \"string\",\n   \"password\": \"string\",\n   \"readOnly\": \"boolean\",\n   \"ref\": \"string\",\n   \"userName\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

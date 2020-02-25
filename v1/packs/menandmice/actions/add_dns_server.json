@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dns_server": {
-            "description": "'type: DNSServer\n reference: http://api.menandmice.com/8.1.0/#DNSServer\n json_schema: {\n   \"name\": \"string\", \n   \"resolvedAddress\": \"string\", \n   \"type\": \"string\", \n   \"enabled\": \"boolean\", \n   \"subtype\": \"string\", \n   \"state\": \"string\", \n   \"proxy\": \"string\", \n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\", \n         \"value\": \"string\"\n       }\n     ]\n   }, \n   \"address\": \"string\", \n   \"adForest\": \"string\", \n   \"ref\": \"string\", \n   \"port\": \"unsignedInt\"\n }'\n",
+            "description": "'type: DNSServer\n reference: http://api.menandmice.com/8.1.0/#DNSServer\n json_schema: {\n   \"adForest\": \"string\",\n   \"address\": \"string\",\n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\",\n         \"value\": \"string\"\n       }\n     ]\n   },\n   \"enabled\": \"boolean\",\n   \"name\": \"string\",\n   \"port\": \"unsignedInt\",\n   \"proxy\": \"string\",\n   \"ref\": \"string\",\n   \"resolvedAddress\": \"string\",\n   \"state\": \"string\",\n   \"subtype\": \"string\",\n   \"type\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

@@ -10,12 +10,12 @@
             "type": "string"
         },
         "custom_properties": {
-            "description": "'type: ArrayOfProperty\n reference: http://api.menandmice.com/8.1.0/#ArrayOfProperty\n json_schema: {\n   \"property\": [\n     {\n       \"name\": \"string\", \n       \"value\": \"string\"\n     }\n   ]\n }'\n",
+            "description": "'type: ArrayOfProperty\n reference: http://api.menandmice.com/8.1.0/#ArrayOfProperty\n json_schema: {\n   \"property\": [\n     {\n       \"name\": \"string\",\n       \"value\": \"string\"\n     }\n   ]\n }'\n",
             "required": false,
             "type": "object"
         },
         "dns_record_changes": {
-            "description": "'type: ArrayOfDNSRecordChange\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDNSRecordChange\n json_schema: {\n   \"dnsRecordChange\": [\n     {\n       \"hasAccess\": \"boolean\", \n       \"dnsRecordAfter\": {\n         \"comment\": \"string\", \n         \"aging\": \"unsignedInt\", \n         \"dnsZoneRef\": \"string\", \n         \"name\": \"string\", \n         \"ref\": \"string\", \n         \"enabled\": \"boolean\", \n         \"data\": \"string\", \n         \"ttl\": \"string\", \n         \"type\": \"string\"\n       }, \n       \"state\": \"string\", \n       \"dnsRecordBefore\": {\n         \"comment\": \"string\", \n         \"aging\": \"unsignedInt\", \n         \"dnsZoneRef\": \"string\", \n         \"name\": \"string\", \n         \"ref\": \"string\", \n         \"enabled\": \"boolean\", \n         \"data\": \"string\", \n         \"ttl\": \"string\", \n         \"type\": \"string\"\n       }, \n       \"changeIndex\": \"unsignedInt\", \n       \"type\": \"string\"\n     }\n   ]\n }'\n",
+            "description": "'type: ArrayOfDNSRecordChange\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDNSRecordChange\n json_schema: {\n   \"dnsRecordChange\": [\n     {\n       \"changeIndex\": \"unsignedInt\",\n       \"dnsRecordAfter\": {\n         \"aging\": \"unsignedInt\",\n         \"comment\": \"string\",\n         \"data\": \"string\",\n         \"dnsZoneRef\": \"string\",\n         \"enabled\": \"boolean\",\n         \"name\": \"string\",\n         \"ref\": \"string\",\n         \"ttl\": \"string\",\n         \"type\": \"string\"\n       },\n       \"dnsRecordBefore\": {\n         \"aging\": \"unsignedInt\",\n         \"comment\": \"string\",\n         \"data\": \"string\",\n         \"dnsZoneRef\": \"string\",\n         \"enabled\": \"boolean\",\n         \"name\": \"string\",\n         \"ref\": \"string\",\n         \"ttl\": \"string\",\n         \"type\": \"string\"\n       },\n       \"hasAccess\": \"boolean\",\n       \"state\": \"string\",\n       \"type\": \"string\"\n     }\n   ]\n }'\n",
             "required": true,
             "type": "object"
         },

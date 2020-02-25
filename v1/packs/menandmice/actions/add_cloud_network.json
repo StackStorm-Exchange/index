@@ -5,7 +5,7 @@
     "name": "add_cloud_network",
     "parameters": {
         "cloud_network": {
-            "description": "'type: CloudNetwork\n reference: http://api.menandmice.com/8.1.0/#CloudNetwork\n json_schema: {\n   \"cloudRef\": \"string\", \n   \"ref\": \"string\", \n   \"name\": \"string\", \n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\", \n         \"value\": \"string\"\n       }\n     ]\n   }\n }'\n",
+            "description": "'type: CloudNetwork\n reference: http://api.menandmice.com/8.1.0/#CloudNetwork\n json_schema: {\n   \"cloudRef\": \"string\",\n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\",\n         \"value\": \"string\"\n       }\n     ]\n   },\n   \"name\": \"string\",\n   \"ref\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

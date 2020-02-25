@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_ref_and_failover_relationship_names": {
-            "description": "'type: ArrayOfDHCPRefAndFailoverRelationshipName\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDHCPRefAndFailoverRelationshipName\n json_schema: {\n   \"dhcpRefAndFailoverRelationshipName\": [\n     {\n       \"dhcpFailoverRelationshipName\": \"string\", \n       \"dhcpServerRef\": \"string\"\n     }\n   ]\n }'\n",
+            "description": "'type: ArrayOfDHCPRefAndFailoverRelationshipName\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDHCPRefAndFailoverRelationshipName\n json_schema: {\n   \"dhcpRefAndFailoverRelationshipName\": [\n     {\n       \"dhcpFailoverRelationshipName\": \"string\",\n       \"dhcpServerRef\": \"string\"\n     }\n   ]\n }'\n",
             "required": true,
             "type": "object"
         },

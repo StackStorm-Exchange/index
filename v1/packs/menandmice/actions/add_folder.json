@@ -10,7 +10,7 @@
             "type": "string"
         },
         "folder": {
-            "description": "'type: Folder\n reference: http://api.menandmice.com/8.1.0/#Folder\n json_schema: {\n   \"contentType\": \"string\", \n   \"ref\": \"string\", \n   \"name\": \"string\", \n   \"parentRef\": \"string\"\n }'\n",
+            "description": "'type: Folder\n reference: http://api.menandmice.com/8.1.0/#Folder\n json_schema: {\n   \"contentType\": \"string\",\n   \"name\": \"string\",\n   \"parentRef\": \"string\",\n   \"ref\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

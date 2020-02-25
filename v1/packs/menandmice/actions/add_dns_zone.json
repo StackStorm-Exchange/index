@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dns_zone": {
-            "description": "'type: DNSZone\n reference: http://api.menandmice.com/8.1.0/#DNSZone\n json_schema: {\n   \"dnssecSigned\": \"boolean\", \n   \"name\": \"string\", \n   \"dnsScopeName\": \"string\", \n   \"adIntegrated\": \"boolean\", \n   \"type\": \"string\", \n   \"adReplicationType\": \"string\", \n   \"dnsViewRef\": \"string\", \n   \"dynamic\": \"boolean\", \n   \"authority\": \"string\", \n   \"kskIDs\": \"string\", \n   \"adPartition\": \"string\", \n   \"zskIDs\": \"string\", \n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\", \n         \"value\": \"string\"\n       }\n     ]\n   }, \n   \"dnsViewRefs\": {\n     \"ref\": [\n       \"string\"\n     ]\n   }, \n   \"ref\": \"string\"\n }'\n",
+            "description": "'type: DNSZone\n reference: http://api.menandmice.com/8.1.0/#DNSZone\n json_schema: {\n   \"adIntegrated\": \"boolean\",\n   \"adPartition\": \"string\",\n   \"adReplicationType\": \"string\",\n   \"authority\": \"string\",\n   \"customProperties\": {\n     \"property\": [\n       {\n         \"name\": \"string\",\n         \"value\": \"string\"\n       }\n     ]\n   },\n   \"dnsScopeName\": \"string\",\n   \"dnsViewRef\": \"string\",\n   \"dnsViewRefs\": {\n     \"ref\": [\n       \"string\"\n     ]\n   },\n   \"dnssecSigned\": \"boolean\",\n   \"dynamic\": \"boolean\",\n   \"kskIDs\": \"string\",\n   \"name\": \"string\",\n   \"ref\": \"string\",\n   \"type\": \"string\",\n   \"zskIDs\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

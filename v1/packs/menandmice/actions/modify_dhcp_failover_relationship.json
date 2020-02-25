@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_failover_relationship": {
-            "description": "'type: DHCPFailoverRelationship\n reference: http://api.menandmice.com/8.1.0/#DHCPFailoverRelationship\n json_schema: {\n   \"failoverServerType\": \"string\", \n   \"failoverMode\": \"string\", \n   \"name\": \"string\", \n   \"dhcpServerRef\": \"string\", \n   \"primaryServer\": \"string\", \n   \"mclt\": \"unsignedInt\", \n   \"safePeriod\": \"unsignedInt\", \n   \"secondaryServer\": \"string\", \n   \"percentage\": \"unsignedInt\", \n   \"dhcpScopeRefs\": {\n     \"ref\": [\n       \"string\"\n     ]\n   }, \n   \"sharedSecret\": \"string\"\n }'\n",
+            "description": "'type: DHCPFailoverRelationship\n reference: http://api.menandmice.com/8.1.0/#DHCPFailoverRelationship\n json_schema: {\n   \"dhcpScopeRefs\": {\n     \"ref\": [\n       \"string\"\n     ]\n   },\n   \"dhcpServerRef\": \"string\",\n   \"failoverMode\": \"string\",\n   \"failoverServerType\": \"string\",\n   \"mclt\": \"unsignedInt\",\n   \"name\": \"string\",\n   \"percentage\": \"unsignedInt\",\n   \"primaryServer\": \"string\",\n   \"safePeriod\": \"unsignedInt\",\n   \"secondaryServer\": \"string\",\n   \"sharedSecret\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

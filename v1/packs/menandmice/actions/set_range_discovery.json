@@ -10,7 +10,7 @@
             "type": "string"
         },
         "discovery": {
-            "description": "'type: Discovery\n reference: http://api.menandmice.com/8.1.0/#Discovery\n json_schema: {\n   \"interval\": \"unsignedInt\", \n   \"enabled\": \"boolean\", \n   \"startTime\": \"string\", \n   \"unit\": \"string\"\n }'\n",
+            "description": "'type: Discovery\n reference: http://api.menandmice.com/8.1.0/#Discovery\n json_schema: {\n   \"enabled\": \"boolean\",\n   \"interval\": \"unsignedInt\",\n   \"startTime\": \"string\",\n   \"unit\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

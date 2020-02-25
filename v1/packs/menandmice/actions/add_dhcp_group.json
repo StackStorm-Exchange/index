@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_group": {
-            "description": "'type: DHCPGroup\n reference: http://api.menandmice.com/8.1.0/#DHCPGroup\n json_schema: {\n   \"ownerRef\": \"string\", \n   \"ref\": \"string\", \n   \"name\": \"string\", \n   \"parentRef\": \"string\"\n }'\n",
+            "description": "'type: DHCPGroup\n reference: http://api.menandmice.com/8.1.0/#DHCPGroup\n json_schema: {\n   \"name\": \"string\",\n   \"ownerRef\": \"string\",\n   \"parentRef\": \"string\",\n   \"ref\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_lease_ref": {
-            "description": "'type: ArrayOfDHCPLeaseReference\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDHCPLeaseReference\n json_schema: {\n   \"dhcpLeaseReference\": [\n     {\n       \"dhcpScopeRef\": \"string\", \n       \"lease\": \"string\"\n     }\n   ]\n }'\n",
+            "description": "'type: ArrayOfDHCPLeaseReference\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDHCPLeaseReference\n json_schema: {\n   \"dhcpLeaseReference\": [\n     {\n       \"dhcpScopeRef\": \"string\",\n       \"lease\": \"string\"\n     }\n   ]\n }'\n",
             "required": true,
             "type": "object"
         },

@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_option_definition": {
-            "description": "'type: DHCPOptionDefinition\n reference: http://api.menandmice.com/8.1.0/#DHCPOptionDefinition\n json_schema: {\n   \"array\": \"boolean\", \n   \"type\": \"string\", \n   \"option\": \"string\", \n   \"name\": \"string\"\n }'\n",
+            "description": "'type: DHCPOptionDefinition\n reference: http://api.menandmice.com/8.1.0/#DHCPOptionDefinition\n json_schema: {\n   \"array\": \"boolean\",\n   \"name\": \"string\",\n   \"option\": \"string\",\n   \"type\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

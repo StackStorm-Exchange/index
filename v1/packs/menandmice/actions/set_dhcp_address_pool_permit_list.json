@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_address_pool_permits": {
-            "description": "'type: ArrayOfDHCPAddressPoolPermit\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDHCPAddressPoolPermit\n json_schema: {\n   \"dhcpAddressPoolPermit\": [\n     {\n       \"access\": \"string\", \n       \"className\": \"string\", \n       \"permit\": \"string\"\n     }\n   ]\n }'\n",
+            "description": "'type: ArrayOfDHCPAddressPoolPermit\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDHCPAddressPoolPermit\n json_schema: {\n   \"dhcpAddressPoolPermit\": [\n     {\n       \"access\": \"string\",\n       \"className\": \"string\",\n       \"permit\": \"string\"\n     }\n   ]\n }'\n",
             "required": true,
             "type": "object"
         },

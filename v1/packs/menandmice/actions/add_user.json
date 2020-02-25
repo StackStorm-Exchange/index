@@ -45,7 +45,7 @@
             "type": "string"
         },
         "user": {
-            "description": "'type: User\n reference: http://api.menandmice.com/8.1.0/#User\n json_schema: {\n   \"name\": \"string\", \n   \"authenticationType\": \"string\", \n   \"roles\": {\n     \"object\": [\n       {\n         \"objType\": \"string\", \n         \"ref\": \"string\", \n         \"name\": \"string\"\n       }\n     ]\n   }, \n   \"groups\": {\n     \"object\": [\n       {\n         \"objType\": \"string\", \n         \"ref\": \"string\", \n         \"name\": \"string\"\n       }\n     ]\n   }, \n   \"fullName\": \"string\", \n   \"password\": \"string\", \n   \"ref\": \"string\", \n   \"email\": \"string\", \n   \"description\": \"string\"\n }'\n",
+            "description": "'type: User\n reference: http://api.menandmice.com/8.1.0/#User\n json_schema: {\n   \"authenticationType\": \"string\",\n   \"description\": \"string\",\n   \"email\": \"string\",\n   \"fullName\": \"string\",\n   \"groups\": {\n     \"object\": [\n       {\n         \"name\": \"string\",\n         \"objType\": \"string\",\n         \"ref\": \"string\"\n       }\n     ]\n   },\n   \"name\": \"string\",\n   \"password\": \"string\",\n   \"ref\": \"string\",\n   \"roles\": {\n     \"object\": [\n       {\n         \"name\": \"string\",\n         \"objType\": \"string\",\n         \"ref\": \"string\"\n       }\n     ]\n   }\n }'\n",
             "required": true,
             "type": "object"
         },

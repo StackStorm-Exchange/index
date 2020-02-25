@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_options": {
-            "description": "'type: ArrayOfDHCPOption\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDHCPOption\n json_schema: {\n   \"dhcpOption\": [\n     {\n       \"option\": \"string\", \n       \"value\": \"string\"\n     }\n   ]\n }'\n",
+            "description": "'type: ArrayOfDHCPOption\n reference: http://api.menandmice.com/8.1.0/#ArrayOfDHCPOption\n json_schema: {\n   \"dhcpOption\": [\n     {\n       \"option\": \"string\",\n       \"value\": \"string\"\n     }\n   ]\n }'\n",
             "required": true,
             "type": "object"
         },

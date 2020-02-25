@@ -34,7 +34,7 @@
             "type": "string"
         },
         "property_definition": {
-            "description": "'type: PropertyDefinition\n reference: http://api.menandmice.com/8.1.0/#PropertyDefinition\n json_schema: {\n   \"mandatory\": \"boolean\", \n   \"name\": \"string\", \n   \"defaultValue\": \"string\", \n   \"system\": \"boolean\", \n   \"listItems\": {\n     \"string\": [\n       \"string\"\n     ]\n   }, \n   \"readOnly\": \"boolean\", \n   \"multiLine\": \"boolean\", \n   \"type\": \"string\", \n   \"parentProperty\": \"string\"\n }'\n",
+            "description": "'type: PropertyDefinition\n reference: http://api.menandmice.com/8.1.0/#PropertyDefinition\n json_schema: {\n   \"defaultValue\": \"string\",\n   \"listItems\": {\n     \"string\": [\n       \"string\"\n     ]\n   },\n   \"mandatory\": \"boolean\",\n   \"multiLine\": \"boolean\",\n   \"name\": \"string\",\n   \"parentProperty\": \"string\",\n   \"readOnly\": \"boolean\",\n   \"system\": \"boolean\",\n   \"type\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

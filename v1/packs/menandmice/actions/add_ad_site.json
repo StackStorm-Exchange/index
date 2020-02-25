@@ -5,7 +5,7 @@
     "name": "add_ad_site",
     "parameters": {
         "ad_site": {
-            "description": "'type: ADSite\n reference: http://api.menandmice.com/8.1.0/#ADSite\n json_schema: {\n   \"adForestRef\": \"string\", \n   \"location\": \"string\", \n   \"ref\": \"string\", \n   \"name\": \"string\", \n   \"description\": \"string\"\n }'\n",
+            "description": "'type: ADSite\n reference: http://api.menandmice.com/8.1.0/#ADSite\n json_schema: {\n   \"adForestRef\": \"string\",\n   \"description\": \"string\",\n   \"location\": \"string\",\n   \"name\": \"string\",\n   \"ref\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

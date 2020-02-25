@@ -10,7 +10,7 @@
             "type": "string"
         },
         "identity_access": {
-            "description": "'type: ArrayOfIdentityAccess\n reference: http://api.menandmice.com/8.1.0/#ArrayOfIdentityAccess\n json_schema: {\n   \"identityAccess\": [\n     {\n       \"identityRef\": \"string\", \n       \"accessEntries\": {\n         \"accessEntry\": [\n           {\n             \"access\": \"string\", \n             \"name\": \"string\"\n           }\n         ]\n       }, \n       \"identityName\": \"string\"\n     }\n   ]\n }'\n",
+            "description": "'type: ArrayOfIdentityAccess\n reference: http://api.menandmice.com/8.1.0/#ArrayOfIdentityAccess\n json_schema: {\n   \"identityAccess\": [\n     {\n       \"accessEntries\": {\n         \"accessEntry\": [\n           {\n             \"access\": \"string\",\n             \"name\": \"string\"\n           }\n         ]\n       },\n       \"identityName\": \"string\",\n       \"identityRef\": \"string\"\n     }\n   ]\n }'\n",
             "required": true,
             "type": "object"
         },

@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_exclusion": {
-            "description": "'type: DHCPExclusion\n reference: http://api.menandmice.com/8.1.0/#DHCPExclusion\n json_schema: {\n   \"from\": \"string\", \n   \"dhcpScopeRef\": \"string\", \n   \"ref\": \"string\", \n   \"name\": \"string\", \n   \"to\": \"string\"\n }'\n",
+            "description": "'type: DHCPExclusion\n reference: http://api.menandmice.com/8.1.0/#DHCPExclusion\n json_schema: {\n   \"dhcpScopeRef\": \"string\",\n   \"from\": \"string\",\n   \"name\": \"string\",\n   \"ref\": \"string\",\n   \"to\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

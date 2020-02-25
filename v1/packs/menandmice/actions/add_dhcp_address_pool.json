@@ -10,7 +10,7 @@
             "type": "string"
         },
         "dhcp_address_pool": {
-            "description": "'type: DHCPAddressPool\n reference: http://api.menandmice.com/8.1.0/#DHCPAddressPool\n json_schema: {\n   \"from\": \"string\", \n   \"name\": \"string\", \n   \"failoverPeer\": \"string\", \n   \"to\": \"string\", \n   \"failoverRelationship\": \"string\", \n   \"dhcpScopeRef\": \"string\", \n   \"ref\": \"string\"\n }'\n",
+            "description": "'type: DHCPAddressPool\n reference: http://api.menandmice.com/8.1.0/#DHCPAddressPool\n json_schema: {\n   \"dhcpScopeRef\": \"string\",\n   \"failoverPeer\": \"string\",\n   \"failoverRelationship\": \"string\",\n   \"from\": \"string\",\n   \"name\": \"string\",\n   \"ref\": \"string\",\n   \"to\": \"string\"\n }'\n",
             "required": true,
             "type": "object"
         },

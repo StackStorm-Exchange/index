@@ -26,7 +26,7 @@
             "type": "integer"
         },
         "role": {
-            "description": "'type: Role\n reference: http://api.menandmice.com/8.1.0/#Role\n json_schema: {\n   \"users\": {\n     \"object\": [\n       {\n         \"objType\": \"string\", \n         \"ref\": \"string\", \n         \"name\": \"string\"\n       }\n     ]\n   }, \n   \"ref\": \"string\", \n   \"name\": \"string\", \n   \"groups\": {\n     \"object\": [\n       {\n         \"objType\": \"string\", \n         \"ref\": \"string\", \n         \"name\": \"string\"\n       }\n     ]\n   }, \n   \"description\": \"string\"\n }'\n",
+            "description": "'type: Role\n reference: http://api.menandmice.com/8.1.0/#Role\n json_schema: {\n   \"description\": \"string\",\n   \"groups\": {\n     \"object\": [\n       {\n         \"name\": \"string\",\n         \"objType\": \"string\",\n         \"ref\": \"string\"\n       }\n     ]\n   },\n   \"name\": \"string\",\n   \"ref\": \"string\",\n   \"users\": {\n     \"object\": [\n       {\n         \"name\": \"string\",\n         \"objType\": \"string\",\n         \"ref\": \"string\"\n       }\n     ]\n   }\n }'\n",
             "required": true,
             "type": "object"
         },
