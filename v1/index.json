@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1582658161,
-        "hash": "cddf43a381c1fc1b2ed8f24a68ab6fa2"
+        "generated_ts": 1582660185,
+        "hash": "a676a9e9a8e062364a331695a42ae29f"
     },
     "packs": {
         "acos": {
@@ -5685,10 +5685,15 @@
             "description": "Device42 Actions and Rules for StackStorm",
             "email": "support@device42.com",
             "name": "device42",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "device42",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
-            "version": "0.7.1",
+            "version": "0.7.2",
             "versions": [
+                "0.7.2",
                 "0.7.1",
                 "0.7.0",
                 "0.6.0",
