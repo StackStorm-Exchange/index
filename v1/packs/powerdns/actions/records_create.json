@@ -1,0 +1,51 @@
+{
+    "description": "Create resource record sets.  Replaces an existing record in its entirety.",
+    "enabled": true,
+    "entry_point": "records_create.py",
+    "name": "records_create",
+    "parameters": {
+        "change_type": {
+            "description": "Required when updating the RRSet. Value either REPLACE or DELETE.  See PowerDNS documentation for more details.",
+            "required": true,
+            "type": "string"
+        },
+        "record_name": {
+            "description": "Name for record set (e.g. \"www.powerdns.com.\")",
+            "required": true,
+            "type": "string"
+        },
+        "record_ttl": {
+            "description": "DNS TTL of the records, in seconds. MUST NOT be included when changetype is set to \"DELETE\".",
+            "required": true,
+            "type": "integer"
+        },
+        "record_type": {
+            "description": "Type of this record (e.g. \"A\", \"PTR\", \"MX\")",
+            "required": true,
+            "type": "string"
+        },
+        "records": {
+            "description": "An array of strings used as the value of the resource record.",
+            "required": true,
+            "type": "array"
+        },
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for a response from PowerDNS.",
+            "required": true,
+            "type": "integer"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        },
+        "zone_name": {
+            "description": "Zone name to create records in.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

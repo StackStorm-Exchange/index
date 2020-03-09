@@ -4,11 +4,6 @@
     "entry_point": "zone_details.py",
     "name": "zone_details",
     "parameters": {
-        "name": {
-            "description": "Zone name to get details.",
-            "required": true,
-            "type": "string"
-        },
         "response_timeout": {
             "default": 5,
             "description": "Time to wait for a response from PowerDNS.",
@@ -18,6 +13,11 @@
         "server_id": {
             "default": "localhost",
             "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        },
+        "zone_name": {
+            "description": "Zone's canonical name to get details.",
             "required": true,
             "type": "string"
         }

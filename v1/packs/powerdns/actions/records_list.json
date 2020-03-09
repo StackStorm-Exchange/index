@@ -1,14 +1,14 @@
 {
-    "description": "Delete a zone by name",
+    "description": "Lists records in zone.",
     "enabled": true,
-    "entry_point": "zone_delete.py",
-    "name": "zone_delete",
+    "entry_point": "records_list.py",
+    "name": "records_list",
     "parameters": {
         "response_timeout": {
             "default": 5,
-            "description": "Time to wait for a response from PowerDNS.",
-            "required": true,
-            "type": "integer"
+            "description": "Time to wait for response to be received.",
+            "required": false,
+            "type": "number"
         },
         "server_id": {
             "default": "localhost",
@@ -17,7 +17,7 @@
             "type": "string"
         },
         "zone_name": {
-            "description": "Zone name to delete.",
+            "description": "Zone name to create records in.",
             "required": true,
             "type": "string"
         }

@@ -1,9 +1,19 @@
 {
-    "description": "Delete a zone by name",
+    "description": "Delete resource record sets from a zone.",
     "enabled": true,
-    "entry_point": "zone_delete.py",
-    "name": "zone_delete",
+    "entry_point": "records_delete.py",
+    "name": "records_delete",
     "parameters": {
+        "record_name": {
+            "description": "The name of the resource record to be deleted.",
+            "required": true,
+            "type": "string"
+        },
+        "record_type": {
+            "description": "The type of resource records to be deleted. (A, TXT ...)",
+            "required": true,
+            "type": "string"
+        },
         "response_timeout": {
             "default": 5,
             "description": "Time to wait for a response from PowerDNS.",
@@ -17,7 +27,7 @@
             "type": "string"
         },
         "zone_name": {
-            "description": "Zone name to delete.",
+            "description": "Zone name to create records in.",
             "required": true,
             "type": "string"
         }

@@ -5,16 +5,12 @@
     "name": "zone_create",
     "parameters": {
         "kind": {
-            "description": "Type of zone",
+            "description": "Type of zone (master, slave, native)",
             "type": "string"
         },
         "masters": {
             "description": "Zone masters",
             "type": "array"
-        },
-        "name": {
-            "description": "Name of zone",
-            "type": "string"
         },
         "nameservers": {
             "description": "Name servers",
@@ -41,6 +37,10 @@
         "update": {
             "description": "If the zone need to be updated or created",
             "type": "boolean"
+        },
+        "zone_name": {
+            "description": "Name of zone",
+            "type": "string"
         }
     },
     "runner_type": "python-script"

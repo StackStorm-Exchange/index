@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1583396906,
-        "hash": "24839dfe2b216181c77e363d0bf9d007"
+        "generated_ts": 1583766657,
+        "hash": "88f0802277b297e02e839a251898e965"
     },
     "packs": {
         "acos": {
@@ -12698,22 +12698,35 @@
             ]
         },
         "powerdns": {
+            "Contributors": [
+                "blag <blag@users.noreply.github.com>"
+            ],
             "author": "Carlos",
             "content": {
                 "actions": {
-                    "count": 7,
+                    "count": 11,
                     "resources": [
+                        "record_get",
+                        "records_create",
+                        "records_delete",
+                        "records_list",
+                        "run_all_actions",
                         "servers_list",
                         "zone_create",
                         "zone_delete",
                         "zone_details",
-                        "zone_get",
                         "zones_list",
                         "zones_search"
                     ]
+                },
+                "aliases": {
+                    "count": 1,
+                    "resources": [
+                        "powrdns"
+                    ]
                 }
             },
-            "description": "StackStorm intergratation for the PowerDNS API.",
+            "description": "StackStorm intergratation for the PowerDNS API. https://powerdns.com/",
             "email": "nzlosh@yahoo.com",
             "name": "powerdns",
             "python_versions": [
@@ -12721,8 +12734,9 @@
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-powerdns",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "versions": [
+                "0.0.4",
                 "0.0.3",
                 "0.0.2",
                 "0.0.1"
