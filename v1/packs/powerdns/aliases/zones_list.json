@@ -1,0 +1,16 @@
+{
+    "ack": {
+        "enabled": true,
+        "format": "Submitting request to PowerDNS ..."
+    },
+    "action_ref": "powerdns.zones_list",
+    "description": "List avaiable zones.",
+    "enabled": true,
+    "formats": [
+        "pdns list zones"
+    ],
+    "name": "zones_list",
+    "result": {
+        "format": "{% if execution.result.get(\"result\", false) != false %}\n**Zones**\n{% for zone in execution.result.result %}\n  - `{{ zone }}`\n{% endfor %}\n{% else %}\nError - No results found\n{% endif %}\n"
+    }
+}

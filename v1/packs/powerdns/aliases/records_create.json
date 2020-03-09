@@ -1,0 +1,16 @@
+{
+    "ack": {
+        "enabled": true,
+        "format": "Submitting request to PowerDNS ..."
+    },
+    "action_ref": "powerdns.records_create",
+    "description": "Create an A record.",
+    "enabled": true,
+    "formats": [
+        "pdns create {{ name }} {{ zone }} [Aa] "
+    ],
+    "name": "records_create",
+    "result": {
+        "format": "{{ execution.result }}\n"
+    }
+}

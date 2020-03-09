@@ -24,6 +24,7 @@ content:
     - zones_list
     - zones_search
   aliases:
-    count: 1
+    count: 2
     resources:
-    - powrdns
+    - records_create
+    - zones_list
