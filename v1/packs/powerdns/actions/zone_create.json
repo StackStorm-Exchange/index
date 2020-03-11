@@ -5,15 +5,15 @@
     "name": "zone_create",
     "parameters": {
         "kind": {
-            "description": "Type of zone (master, slave, native)",
+            "description": "Type of zone (master, slave, native).",
             "type": "string"
         },
         "masters": {
-            "description": "Zone masters",
+            "description": "Zone masters.",
             "type": "array"
         },
         "nameservers": {
-            "description": "Name servers",
+            "description": "Name servers.",
             "type": "array"
         },
         "response_timeout": {
@@ -22,7 +22,7 @@
             "type": "integer"
         },
         "rrsets": {
-            "description": "Resource records sets",
+            "description": "Resource records sets.",
             "type": "array"
         },
         "server_id": {
@@ -31,15 +31,15 @@
             "type": "string"
         },
         "servers": {
-            "description": "List of forwarded-to servers (recursor only)",
+            "description": "List of forwarded-to servers (recursor only).",
             "type": "array"
         },
         "update": {
-            "description": "If the zone need to be updated or created",
+            "description": "If the zone needs to be updated or created.",
             "type": "boolean"
         },
         "zone_name": {
-            "description": "Name of zone",
+            "description": "Name of zone.",
             "type": "string"
         }
     },
