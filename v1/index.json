@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1583936097,
-        "hash": "a0266e6eb6bb3bacc2ff2f5517183285"
+        "generated_ts": 1584447773,
+        "hash": "b4cbdcb372983365131c7354bb2f151d"
     },
     "packs": {
         "acos": {
@@ -15719,10 +15719,15 @@
                 "monitoring"
             ],
             "name": "zabbix",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "zabbix",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zabbix",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "versions": [
+                "0.3.1",
                 "0.3.0",
                 "0.2.0",
                 "0.1.9",
