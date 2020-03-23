@@ -21,6 +21,11 @@
             "default": "{{ st2kv.system.mongodb.admin_username }}",
             "type": "string"
         },
+        "mongodb_host": {
+            "default": "{{ st2kv.system.mongodb.mongodb_host }}",
+            "description": "The hostname of the MongoDB system to backup",
+            "type": "string"
+        },
         "path": {
             "default": "/opt/stackstorm/backups",
             "type": "string"
