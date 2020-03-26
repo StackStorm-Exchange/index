@@ -1,0 +1,96 @@
+{
+    "description": "Create Globo LoadBalancer",
+    "enabled": true,
+    "entry_point": "lb_globo_create.py",
+    "name": "lb_globo_create",
+    "parameters": {
+        "additionalportmap": {
+            "description": "Addional port map (pattern sample: 80:80)",
+            "required": false,
+            "type": "string"
+        },
+        "algorithm": {
+            "description": "load balancer algorithm (source, roundrobin, leastconn)",
+            "required": true,
+            "type": "string"
+        },
+        "apikey": {
+            "description": "API KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "expectedhealthcheck": {
+            "default": "200 OK",
+            "description": "Expected health check (example: 200 ok)",
+            "required": false,
+            "type": "string"
+        },
+        "healthcheckrequest": {
+            "default": "/",
+            "description": "Path health check request (example: /healthcheck.html)",
+            "required": false,
+            "type": "string"
+        },
+        "healthchecktype": {
+            "default": "HTTP",
+            "description": "Heath check protocol (example: HTTP, TCP)",
+            "required": false,
+            "type": "string"
+        },
+        "lbenvironmentid": {
+            "description": "Load balancer environment id",
+            "required": true,
+            "type": "integer"
+        },
+        "name": {
+            "description": "name of the load balancer",
+            "required": true,
+            "type": "string"
+        },
+        "networkid": {
+            "description": "The guest network this rule will be created for. Required when public Ip address is not associated with any Guest network yet (VPC case)",
+            "required": true,
+            "type": "string"
+        },
+        "openfirewall": {
+            "default": false,
+            "description": "id of the project to which the loadbalancer belongs",
+            "required": false,
+            "type": "boolean"
+        },
+        "privateport": {
+            "description": "the private port of the private IP address/virtual machine where the network traffic will be load balanced to",
+            "required": true,
+            "type": "integer"
+        },
+        "projectid": {
+            "description": "id of the project to which the loadbalancer belongs",
+            "required": true,
+            "type": "string"
+        },
+        "publicport": {
+            "description": "the public port from where the network traffic will be load balanced from",
+            "required": true,
+            "type": "integer"
+        },
+        "secretkey": {
+            "description": "Secret KEY to use at ACS request",
+            "required": true,
+            "secret": true,
+            "type": "string"
+        },
+        "timeoutrequest": {
+            "default": 35,
+            "description": "Timeout request in seconds",
+            "required": false,
+            "type": "integer"
+        },
+        "url": {
+            "description": "URL to use at ACS request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

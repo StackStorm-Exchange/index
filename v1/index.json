@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1584996832,
-        "hash": "fe9c62eddb24ae8fe3ecdd0a001b1c90"
+        "generated_ts": 1585242607,
+        "hash": "f02ab7f91b9a1e4e54dff6bd3a0e840c"
     },
     "packs": {
         "acos": {
@@ -5243,12 +5243,13 @@
             "author": "Globo.com",
             "content": {
                 "actions": {
-                    "count": 23,
+                    "count": 24,
                     "resources": [
                         "disable_auto_scale_vm_groups",
                         "enable_auto_scale_vm_groups",
                         "lb_attach_member",
                         "lb_dettach_member",
+                        "lb_globo_create",
                         "lb_list_members",
                         "list_auto_scale_vm_groups",
                         "network_create_globo",

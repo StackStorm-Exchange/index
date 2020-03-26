@@ -15,12 +15,13 @@ author: Globo.com
 email: a-team@corp.globo.com
 content:
   actions:
-    count: 23
+    count: 24
     resources:
     - disable_auto_scale_vm_groups
     - enable_auto_scale_vm_groups
     - lb_attach_member
     - lb_dettach_member
+    - lb_globo_create
     - lb_list_members
     - list_auto_scale_vm_groups
     - network_create_globo
