@@ -9,10 +9,16 @@
             "name": "sqs_new_message",
             "payload_schema": {
                 "properties": {
+                    "account_id": {
+                        "type": "string"
+                    },
                     "body": {
                         "type": "object"
                     },
                     "queue": {
+                        "type": "string"
+                    },
+                    "region": {
                         "type": "string"
                     }
                 },

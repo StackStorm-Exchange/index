@@ -54,9 +54,16 @@
     "sqs_sensor": {
         "properties": {
             "input_queues": {
-                "description": "Names of queue to fetch messages from Amazon SQS",
+                "description": "Names or URLs of queues to fetch messages from Amazon SQS",
                 "items": {
                     "type": "string"
+                },
+                "roles": {
+                    "description": "ARNs of the roles which allow queues to be fetched for messages",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "type": "array"
             }
