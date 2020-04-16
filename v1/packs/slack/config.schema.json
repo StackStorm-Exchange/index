@@ -55,7 +55,6 @@
                 "type": "string"
             },
             "icon_emoji": {
-                "default": ":panda_face:",
                 "description": "Default icon of user under which messages will be posted",
                 "required": false,
                 "type": "string"
@@ -67,7 +66,7 @@
             },
             "webhook_url": {
                 "description": "Webhook URL, e.g. https://hooks.slack.com/services/<replace me>",
-                "required": true,
+                "required": false,
                 "secret": true,
                 "type": "string"
             }

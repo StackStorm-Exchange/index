@@ -16,7 +16,12 @@
             "type": "boolean"
         },
         "icon_emoji": {
-            "description": "Bot icon",
+            "description": "Bot icon emoji",
+            "required": false,
+            "type": "string"
+        },
+        "icon_url": {
+            "description": "Bot icon URL",
             "required": false,
             "type": "string"
         },
