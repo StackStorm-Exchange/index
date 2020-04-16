@@ -1,0 +1,24 @@
+{
+    "description": "Retrieve information about a particular Github pull request.",
+    "enabled": true,
+    "entry_point": "get_pull.py",
+    "name": "get_pull",
+    "parameters": {
+        "pull_id": {
+            "description": "Pull request id",
+            "required": true,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

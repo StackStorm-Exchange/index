@@ -7,7 +7,7 @@ keywords:
 - git
 - scm
 - serverless
-version: 1.0.0
+version: 1.1.0
 python_versions:
 - '2'
 - '3'
@@ -17,7 +17,7 @@ contributors:
 - Jon Middleton <jon.middleton@pulsant.com>
 content:
   actions:
-    count: 23
+    count: 24
     resources:
     - add_comment
     - add_status
@@ -31,6 +31,7 @@ content:
     - get_clone_stats
     - get_deployment_statuses
     - get_issue
+    - get_pull
     - get_traffic_stats
     - get_user
     - latest_release
