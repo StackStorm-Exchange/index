@@ -30,6 +30,9 @@
             "description": "The contents of your zip file containing your deployment package. If you are using the web API directly, the contents of the zip file must be base64-encoded. If you are using the AWS SDKs or the AWS CLI, the SDKs or CLI will do the encoding for you. For more information about creating a .zip file, see Execution Permissions in the AWS Lambda Developer Guide. ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_function_code",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

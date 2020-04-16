@@ -52,6 +52,9 @@
             "description": "This parameter is no longer used. Instead, specify a server launch path using the RuntimeConfiguration parameter. (Requests that specify a server launch path and launch parameters instead of a runtime configuration will continue to work.)",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_fleet",
             "immutable": true,
@@ -67,6 +70,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

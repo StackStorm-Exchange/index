@@ -17,6 +17,9 @@
             "description": "For templates that include transforms, the stage of the template that AWS CloudFormation returns. To get the user-submitted template, specify Original. To get the template after AWS CloudFormation has processed all transforms, specify Processed.  If the template doesn't include transforms, Original and Processed return the same template. By default, AWS CloudFormation specifies Original. ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_template",
             "immutable": true,
@@ -32,6 +35,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

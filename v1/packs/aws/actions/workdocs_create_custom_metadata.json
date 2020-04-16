@@ -23,6 +23,9 @@
             "description": "The ID of the version, if the custom metadata is being added to a document version.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_custom_metadata",
             "immutable": true,
@@ -38,6 +41,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -29,6 +29,9 @@
             "description": "Instructions on how to sort the search results. If no sort expression is included, the request returns results in random order. A sort expression consists of the following elements:    Operand -- Name of a game session attribute. Valid values are gameSessionName, gameSessionId, creationTimeMillis, playerSessionCount, maximumSessions, hasAvailablePlayerSessions.    Order -- Valid sort orders are ASC (ascending) and DESC (descending).   For example, this sort expression returns the oldest active sessions first: 'SortExpression': 'creationTimeMillis ASC'. Results with a null value for the sort operand are returned at the end of the list.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "search_game_sessions",
             "immutable": true,
@@ -44,6 +47,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

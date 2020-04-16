@@ -18,6 +18,9 @@
             "description": "Set to TRUE to include custom metadata in the response.",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_folder",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

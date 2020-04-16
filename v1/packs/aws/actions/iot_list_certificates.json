@@ -5,6 +5,9 @@
     "name": "iot_list_certificates",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_certificates",
             "immutable": true,
@@ -33,6 +36,9 @@
         "pageSize": {
             "description": "The result page size.",
             "type": "integer"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

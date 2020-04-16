@@ -9,6 +9,9 @@
             "description": "The pagination token that indicates the set of results to retrieve.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_security_configurations",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

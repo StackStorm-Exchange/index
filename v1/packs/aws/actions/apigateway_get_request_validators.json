@@ -5,6 +5,9 @@
     "name": "apigateway_get_request_validators",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_request_validators",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "position": {
             "description": "The current pagination position in the paged result set.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "restApiId": {

@@ -5,6 +5,9 @@
     "name": "apigateway_get_documentation_parts",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_documentation_parts",
             "immutable": true,
@@ -36,6 +39,9 @@
         },
         "position": {
             "description": "The position of the to-be-retrieved documentation part in the DocumentationParts collection.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "restApiId": {

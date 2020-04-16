@@ -21,6 +21,9 @@
             "description": "The ARN of a resource to return pending maintenance actions for.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_pending_maintenance_actions",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -21,6 +21,9 @@
             "description": "(Optional) Specifies the maximum number of file systems to return in the response (integer). This parameter value must be greater than 0. The number of items that Amazon EFS returns is the minimum of the MaxItems parameter specified in the request and the service's internal maximum number of items per page. ",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_file_systems",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

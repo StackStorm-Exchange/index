@@ -38,6 +38,9 @@
             "description": "The type of items.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_folder_contents",
             "immutable": true,
@@ -53,6 +56,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

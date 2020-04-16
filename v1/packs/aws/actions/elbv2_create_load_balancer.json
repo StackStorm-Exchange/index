@@ -27,6 +27,9 @@
             "description": "One or more tags to assign to the load balancer.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_load_balancer",
             "immutable": true,
@@ -42,6 +45,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

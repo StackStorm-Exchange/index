@@ -17,6 +17,9 @@
             "description": "One or more virtual private gateway IDs. Default: Describes all your virtual private gateways.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_vpn_gateways",
             "immutable": true,
@@ -32,6 +35,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

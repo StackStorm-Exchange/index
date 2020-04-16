@@ -5,6 +5,9 @@
     "name": "datapipeline_set_status",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "set_status",
             "immutable": true,
@@ -30,6 +33,9 @@
         "pipelineId": {
             "description": "The ID of the pipeline that contains the objects.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "status": {

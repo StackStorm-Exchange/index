@@ -5,6 +5,9 @@
     "name": "codestar_update_team_member",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_team_member",
             "immutable": true,
@@ -29,6 +32,9 @@
         },
         "projectRole": {
             "description": "The role assigned to the user in the project. Project roles have different levels of access. For more information, see Working with Teams in the AWS CodeStar User Guide.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "remoteAccessAllowed": {

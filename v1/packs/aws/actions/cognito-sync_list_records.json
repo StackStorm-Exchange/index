@@ -36,6 +36,9 @@
             "description": "A token containing a session ID, identity ID, and expiration.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_records",
             "immutable": true,
@@ -51,6 +54,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

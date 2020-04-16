@@ -45,6 +45,9 @@
             "description": "A list of tags to use as provisioning options.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "provision_product",
             "immutable": true,
@@ -60,6 +63,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -18,6 +18,9 @@
             "description": "Zero or more IAM roles in ARN format to disassociate from the cluster. You can disassociate up to 10 IAM roles from a single cluster in a single request.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "modify_cluster_iam_roles",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

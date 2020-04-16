@@ -5,6 +5,9 @@
     "name": "apigateway_get_authorizers",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_authorizers",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "position": {
             "description": "If not all Authorizer resources in the response were present, the position will specify where to start the next page of results.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "restApiId": {

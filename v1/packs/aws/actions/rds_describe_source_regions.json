@@ -21,6 +21,9 @@
             "description": "The source region name. For example, us-east-1. Constraints:   Must specify a valid AWS Region name.  ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_source_regions",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

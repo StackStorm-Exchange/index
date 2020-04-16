@@ -74,6 +74,9 @@
             "description": "The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your cache cluster. ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "modify_cache_cluster",
             "immutable": true,
@@ -89,6 +92,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

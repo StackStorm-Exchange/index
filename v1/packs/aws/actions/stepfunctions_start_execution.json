@@ -5,6 +5,9 @@
     "name": "stepfunctions_start_execution",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "start_execution",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "name": {
             "description": "The name of the execution. This name must be unique for your AWS account and region.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "stateMachineArn": {

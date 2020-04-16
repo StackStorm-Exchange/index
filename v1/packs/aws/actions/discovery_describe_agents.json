@@ -5,6 +5,9 @@
     "name": "discovery_describe_agents",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_agents",
             "immutable": true,
@@ -36,6 +39,9 @@
         },
         "nextToken": {
             "description": "Token to retrieve the next set of results. For example, if you previously specified 100 IDs for DescribeAgentsRequest$agentIds but set DescribeAgentsRequest$maxResults to 10, you received a set of 10 results along with a token. Use that token in this query to get the next set of 10.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

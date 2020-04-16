@@ -18,6 +18,9 @@
             "description": "The source/destination checking attribute. Resets the value to true.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "reset_network_interface_attribute",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

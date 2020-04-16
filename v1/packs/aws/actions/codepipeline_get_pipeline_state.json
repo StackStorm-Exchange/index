@@ -5,6 +5,9 @@
     "name": "codepipeline_get_pipeline_state",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_pipeline_state",
             "immutable": true,
@@ -25,6 +28,9 @@
         "name": {
             "description": "The name of the pipeline about which you want to get information.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

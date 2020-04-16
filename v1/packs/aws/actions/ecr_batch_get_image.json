@@ -9,6 +9,9 @@
             "description": "The accepted media types for the request. Valid values: application/vnd.docker.distribution.manifest.v1+json | application/vnd.docker.distribution.manifest.v2+json | application/vnd.oci.image.manifest.v1+json ",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "batch_get_image",
             "immutable": true,
@@ -29,6 +32,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "registryId": {

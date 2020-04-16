@@ -34,6 +34,9 @@
             "description": "Confirms that the requester knows that she or he will be charged for the list objects request. Bucket owners need not specify this parameter in their requests.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_objects",
             "immutable": true,
@@ -49,6 +52,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

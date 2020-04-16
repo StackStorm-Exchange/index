@@ -5,6 +5,9 @@
     "name": "ecr_describe_images",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_images",
             "immutable": true,
@@ -36,6 +39,9 @@
         },
         "nextToken": {
             "description": "The nextToken value returned from a previous paginated DescribeImages request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "registryId": {

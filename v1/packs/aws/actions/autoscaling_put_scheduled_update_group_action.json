@@ -43,6 +43,9 @@
             "description": "This parameter is deprecated.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_scheduled_update_group_action",
             "immutable": true,
@@ -58,6 +61,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

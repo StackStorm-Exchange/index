@@ -17,6 +17,9 @@
             "description": "name of the logger definition",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_logger_definition",
             "immutable": true,
@@ -32,6 +35,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "codepipeline_poll_for_third_party_jobs",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "poll_for_third_party_jobs",
             "immutable": true,
@@ -29,6 +32,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

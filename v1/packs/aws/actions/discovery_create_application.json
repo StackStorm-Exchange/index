@@ -5,6 +5,9 @@
     "name": "discovery_create_application",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_application",
             "immutable": true,
@@ -29,6 +32,9 @@
         "name": {
             "description": "Name of the application to be created.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

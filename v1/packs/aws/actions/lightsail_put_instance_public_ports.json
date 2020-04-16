@@ -5,6 +5,9 @@
     "name": "lightsail_put_instance_public_ports",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_instance_public_ports",
             "immutable": true,
@@ -31,6 +34,9 @@
             "description": "Specifies information about the public port(s).",
             "required": true,
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

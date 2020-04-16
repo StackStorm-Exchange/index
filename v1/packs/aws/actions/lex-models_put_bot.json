@@ -9,6 +9,9 @@
             "description": "When Amazon Lex can't understand the user's input in context, it tries to elicit the information a few times. After that, Amazon Lex sends the message defined in abortStatement to the user, and then aborts the conversation. To set the number of retries, use the valueElicitationPrompt field for the slot type.  For example, in a pizza ordering bot, Amazon Lex might ask a user 'What type of crust would you like?' If the user's response is not one of the expected responses (for example, 'thin crust, 'deep dish,' etc.), Amazon Lex tries to elicit a correct response a few more times.  For example, in a pizza ordering application, OrderPizza might be one of the intents. This intent might require the CrustType slot. You specify the valueElicitationPrompt field when you create the CrustType slot.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_bot",
             "immutable": true,
@@ -63,6 +66,9 @@
         },
         "processBehavior": {
             "description": "If you set the processBehavior element to Build, Amazon Lex builds the bot so that it can be run. If you set the element to SaveAmazon Lex saves the bot, but doesn't build it.  If you don't specify this value, the default value is Save.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "voiceId": {

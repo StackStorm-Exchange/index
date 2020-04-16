@@ -5,6 +5,9 @@
     "name": "apigateway_update_stage",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_stage",
             "immutable": true,
@@ -25,6 +28,9 @@
         "patchOperations": {
             "description": "A list of update operations to be applied to the specified resource and in the order specified in this list.",
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         },
         "restApiId": {
             "description": "The identifier of the RestApi resource for the Stage resource to change information about.",

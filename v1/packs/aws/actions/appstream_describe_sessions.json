@@ -27,6 +27,9 @@
             "description": "The user for whom to list sessions. Use null to describe all the sessions for the stack and fleet.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_sessions",
             "immutable": true,
@@ -42,6 +45,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

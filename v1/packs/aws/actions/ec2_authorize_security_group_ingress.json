@@ -45,6 +45,9 @@
             "description": "The end of port range for the TCP and UDP protocols, or an ICMP/ICMPv6 code number. For the ICMP/ICMPv6 code number, use -1 to specify all codes.",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "authorize_security_group_ingress",
             "immutable": true,
@@ -60,6 +63,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

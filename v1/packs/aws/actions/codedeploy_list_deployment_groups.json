@@ -5,6 +5,9 @@
     "name": "codedeploy_list_deployment_groups",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_deployment_groups",
             "immutable": true,
@@ -29,6 +32,9 @@
         },
         "nextToken": {
             "description": "An identifier returned from the previous list deployment groups call. It can be used to return the next set of deployment groups in the list.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

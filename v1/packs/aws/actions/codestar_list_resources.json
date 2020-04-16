@@ -5,6 +5,9 @@
     "name": "codestar_list_resources",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_resources",
             "immutable": true,
@@ -33,6 +36,9 @@
         "projectId": {
             "description": "The ID of the project.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

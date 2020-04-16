@@ -5,6 +5,9 @@
     "name": "apigateway_import_documentation_parts",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "import_documentation_parts",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "restApiId": {

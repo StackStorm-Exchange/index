@@ -18,6 +18,9 @@
             "description": "Specifies the pagination token used when iterating through a paginated request",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_core_definition_versions",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

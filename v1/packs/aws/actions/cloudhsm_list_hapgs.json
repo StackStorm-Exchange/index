@@ -9,6 +9,9 @@
             "description": "The NextToken value from a previous call to ListHapgs. Pass null if this is the first call.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_hapgs",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

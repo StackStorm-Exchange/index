@@ -5,6 +5,9 @@
     "name": "apigateway_import_rest_api",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "import_rest_api",
             "immutable": true,
@@ -34,6 +37,9 @@
         "parameters": {
             "description": "Custom header parameters as part of the request.",
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

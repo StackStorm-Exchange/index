@@ -5,6 +5,9 @@
     "name": "apigateway_get_documentation_versions",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_documentation_versions",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "position": {
             "description": "The position of the returned DocumentationVersion in the DocumentationVersions collection.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "restApiId": {

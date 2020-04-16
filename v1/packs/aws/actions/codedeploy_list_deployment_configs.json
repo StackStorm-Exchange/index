@@ -5,6 +5,9 @@
     "name": "codedeploy_list_deployment_configs",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_deployment_configs",
             "immutable": true,
@@ -24,6 +27,9 @@
         },
         "nextToken": {
             "description": "An identifier returned from the previous list deployment configurations call. It can be used to return the next set of deployment configurations in the list. ",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

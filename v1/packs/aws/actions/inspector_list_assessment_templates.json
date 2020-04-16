@@ -5,6 +5,9 @@
     "name": "inspector_list_assessment_templates",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_assessment_templates",
             "immutable": true,
@@ -36,6 +39,9 @@
         },
         "nextToken": {
             "description": "You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the ListAssessmentTemplates action. Subsequent calls to the action fill nextToken in the request with the value of NextToken from the previous response to continue listing data.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -18,6 +18,9 @@
             "description": "When set to true, acts as keystroke input and wakes up an instance that's in standby or 'sleep' mode.",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_console_screenshot",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

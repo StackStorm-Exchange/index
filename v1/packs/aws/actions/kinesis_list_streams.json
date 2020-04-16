@@ -13,6 +13,9 @@
             "description": "The maximum number of streams to list.",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_streams",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

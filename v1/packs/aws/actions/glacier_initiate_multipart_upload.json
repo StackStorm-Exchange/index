@@ -10,6 +10,9 @@
             "required": true,
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "initiate_multipart_upload",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "partSize": {
             "description": "The size of each part except the last, in bytes. The last part can be smaller than this part size.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "vaultName": {

@@ -18,6 +18,9 @@
             "description": "A list of the index fields you want to describe. If not specified, information is returned for all configured index fields.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_index_fields",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

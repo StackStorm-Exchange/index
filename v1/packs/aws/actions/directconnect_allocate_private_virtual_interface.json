@@ -5,6 +5,9 @@
     "name": "directconnect_allocate_private_virtual_interface",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "allocate_private_virtual_interface",
             "immutable": true,
@@ -35,6 +38,9 @@
         "ownerAccount": {
             "description": "The AWS account that will own the new private virtual interface. Default: None",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

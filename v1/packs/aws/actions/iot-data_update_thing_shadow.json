@@ -5,6 +5,9 @@
     "name": "iot-data_update_thing_shadow",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_thing_shadow",
             "immutable": true,
@@ -25,6 +28,9 @@
         "payload": {
             "description": "The state information, in JSON format.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "thingName": {

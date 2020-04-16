@@ -9,6 +9,9 @@
             "description": "The prefix to match. If you don't specify a value, no prefix filter is applied.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_destinations",
             "immutable": true,
@@ -32,6 +35,9 @@
         },
         "nextToken": {
             "description": "The token for the next set of items to return. (You received this token from a previous call.)",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

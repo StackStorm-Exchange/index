@@ -18,6 +18,9 @@
             "description": "A key-value map of execution parameters, which match the declared parameters in the Automation document.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "start_automation_execution",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

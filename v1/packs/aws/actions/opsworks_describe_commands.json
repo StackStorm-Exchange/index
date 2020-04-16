@@ -17,6 +17,9 @@
             "description": "The instance ID. If you include this parameter, DescribeCommands returns a description of the commands associated with the specified instance.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_commands",
             "immutable": true,
@@ -32,6 +35,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

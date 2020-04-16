@@ -25,6 +25,9 @@
             "description": "Specifies that only events that occur after or at the specified time are returned. If the specified start time is after the specified end time, an error is returned.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "lookup_events",
             "immutable": true,
@@ -40,6 +43,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

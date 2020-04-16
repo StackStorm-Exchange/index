@@ -13,6 +13,9 @@
             "description": "A stack ID. The action describes the stack's Elastic Load Balancing instances.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_elastic_load_balancers",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "apigateway_create_api_key",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_api_key",
             "immutable": true,
@@ -40,6 +43,9 @@
         },
         "name": {
             "description": "The name of the ApiKey.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "stageKeys": {

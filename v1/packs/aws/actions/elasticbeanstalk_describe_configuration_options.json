@@ -25,6 +25,9 @@
             "description": "The name of the configuration template whose configuration options you want to describe.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_configuration_options",
             "immutable": true,
@@ -40,6 +43,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

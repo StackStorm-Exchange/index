@@ -99,6 +99,9 @@
             "description": " Specifies whether (true) or not (false) the DB instance is restored from the latest backup time.  Default: false  Constraints: Cannot be specified if RestoreTime parameter is provided.",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "restore_db_instance_to_point_in_time",
             "immutable": true,
@@ -114,6 +117,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

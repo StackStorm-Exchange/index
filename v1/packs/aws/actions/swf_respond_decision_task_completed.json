@@ -5,6 +5,9 @@
     "name": "swf_respond_decision_task_completed",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "respond_decision_task_completed",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "taskToken": {

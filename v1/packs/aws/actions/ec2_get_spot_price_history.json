@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "ec2_get_spot_price_history",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_spot_price_history",
             "immutable": true,
@@ -42,6 +45,9 @@
             "type": "string"
         },
         "product_description": {
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "start_time": {

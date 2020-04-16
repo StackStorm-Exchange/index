@@ -25,6 +25,9 @@
             "required": true,
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "delete_subscriber",
             "immutable": true,
@@ -40,6 +43,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

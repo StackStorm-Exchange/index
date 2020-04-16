@@ -5,6 +5,9 @@
     "name": "codedeploy_create_deployment",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_deployment",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "revision": {

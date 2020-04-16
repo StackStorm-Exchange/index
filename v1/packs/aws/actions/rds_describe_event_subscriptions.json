@@ -21,6 +21,9 @@
             "description": "The name of the RDS event notification subscription you want to describe.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_event_subscriptions",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

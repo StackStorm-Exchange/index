@@ -5,6 +5,9 @@
     "name": "ecr_delete_repository",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "delete_repository",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "registryId": {

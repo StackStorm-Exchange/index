@@ -13,6 +13,9 @@
             "description": "The token that specifies where to start pagination if a previous request was truncated.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_named_queries",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

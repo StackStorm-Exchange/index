@@ -5,6 +5,9 @@
     "name": "lightsail_close_instance_public_ports",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "close_instance_public_ports",
             "immutable": true,
@@ -31,6 +34,9 @@
             "description": "Information about the public port you are trying to close.",
             "required": true,
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

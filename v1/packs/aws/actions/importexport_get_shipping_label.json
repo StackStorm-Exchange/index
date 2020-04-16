@@ -9,6 +9,9 @@
             "description": "",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_shipping_label",
             "immutable": true,
@@ -53,6 +56,9 @@
         },
         "postalCode": {
             "description": "",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "stateOrProvince": {

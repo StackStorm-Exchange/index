@@ -5,6 +5,9 @@
     "name": "codestar_list_projects",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_projects",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "nextToken": {
             "description": "The continuation token to be used to return the next set of results, if the results cannot be returned in one response.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

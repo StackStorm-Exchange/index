@@ -5,6 +5,9 @@
     "name": "iot_delete_thing",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "delete_thing",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "thingName": {

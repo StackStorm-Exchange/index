@@ -13,6 +13,9 @@
             "description": "An enumeration token that when provided in a request, returns the next batch of the results.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_differences",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "repositoryName": {

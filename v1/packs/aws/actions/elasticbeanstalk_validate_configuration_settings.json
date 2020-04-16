@@ -23,6 +23,9 @@
             "description": "The name of the configuration template to validate the settings against. Condition: You cannot specify both this and an environment name.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "validate_configuration_settings",
             "immutable": true,
@@ -38,6 +41,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

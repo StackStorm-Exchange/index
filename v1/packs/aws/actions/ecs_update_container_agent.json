@@ -5,6 +5,9 @@
     "name": "ecs_update_container_agent",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_container_agent",
             "immutable": true,
@@ -29,6 +32,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

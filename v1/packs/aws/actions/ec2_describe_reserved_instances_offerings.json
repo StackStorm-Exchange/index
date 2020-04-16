@@ -65,6 +65,9 @@
             "description": "One or more Reserved Instances offering IDs.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_reserved_instances_offerings",
             "immutable": true,
@@ -80,6 +83,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

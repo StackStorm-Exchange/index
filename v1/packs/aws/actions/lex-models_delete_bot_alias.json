@@ -5,6 +5,9 @@
     "name": "lex-models_delete_bot_alias",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "delete_bot_alias",
             "immutable": true,
@@ -30,6 +33,9 @@
         "name": {
             "description": "The name of the alias to delete. The name is case sensitive. ",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

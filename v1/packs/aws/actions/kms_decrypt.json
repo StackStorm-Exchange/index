@@ -18,6 +18,9 @@
             "description": "A list of grant tokens. For more information, see Grant Tokens in the AWS Key Management Service Developer Guide.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "decrypt",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

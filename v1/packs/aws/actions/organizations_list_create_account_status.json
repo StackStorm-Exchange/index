@@ -17,6 +17,9 @@
             "description": "A list of one or more states that you want included in the response. If this parameter is not present, then all requests are included in the response.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_create_account_status",
             "immutable": true,
@@ -32,6 +35,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "iam_build_base_http_request",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "build_base_http_request",
             "immutable": true,
@@ -42,6 +45,9 @@
         },
         "path": {
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

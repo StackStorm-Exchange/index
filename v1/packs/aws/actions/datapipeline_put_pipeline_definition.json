@@ -5,6 +5,9 @@
     "name": "datapipeline_put_pipeline_definition",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_pipeline_definition",
             "immutable": true,
@@ -39,6 +42,9 @@
             "description": "The objects that define the pipeline. These objects overwrite the existing pipeline definition.",
             "required": true,
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

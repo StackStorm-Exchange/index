@@ -18,6 +18,9 @@
             "description": " Specifies whether (true) or not (false) to reset all parameters in the DB parameter group to default values.  Default: true ",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "reset_db_parameter_group",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

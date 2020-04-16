@@ -5,6 +5,9 @@
     "name": "codepipeline_create_custom_action_type",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_custom_action_type",
             "immutable": true,
@@ -44,6 +47,9 @@
         "provider": {
             "description": "The provider of the service used in the custom action, such as AWS CodeDeploy.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "settings": {

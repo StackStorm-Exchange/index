@@ -14,6 +14,9 @@
             "description": "The length of time (in minutes) that the grant is valid. When the grant expires at the end of this period, the user will no longer be able to use the credentials to log in. If the user is logged in at the time, he or she automatically will be logged out.",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "grant_access",
             "immutable": true,
@@ -29,6 +32,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

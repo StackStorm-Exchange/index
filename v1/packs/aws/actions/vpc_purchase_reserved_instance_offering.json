@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_purchase_reserved_instance_offering",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "purchase_reserved_instance_offering",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto.vpc",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "reserved_instances_offering_id": {

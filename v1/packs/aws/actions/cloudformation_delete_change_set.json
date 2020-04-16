@@ -14,6 +14,9 @@
             "description": "If you specified the name of a change set to delete, specify the stack name or ID (ARN) that is associated with it.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "delete_change_set",
             "immutable": true,
@@ -29,6 +32,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

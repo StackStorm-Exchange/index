@@ -9,6 +9,9 @@
             "description": "NextToken string is used when calling ListPlatformApplications action to retrieve additional records that are available after the first page results.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_platform_applications",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

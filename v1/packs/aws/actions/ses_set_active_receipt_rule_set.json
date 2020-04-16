@@ -9,6 +9,9 @@
             "description": "The name of the receipt rule set to make active. Setting this value to null disables all email receiving.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "set_active_receipt_rule_set",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "apigateway_get_domain_names",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_domain_names",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "position": {
             "description": "The position of the current domain names to get information about.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

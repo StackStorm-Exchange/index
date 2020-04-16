@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_create_spot_datafeed_subscription",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_spot_datafeed_subscription",
             "immutable": true,
@@ -29,6 +32,9 @@
         },
         "prefix": {
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

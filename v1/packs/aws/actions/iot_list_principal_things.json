@@ -5,6 +5,9 @@
     "name": "iot_list_principal_things",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_principal_things",
             "immutable": true,
@@ -33,6 +36,9 @@
         "principal": {
             "description": "The principal.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

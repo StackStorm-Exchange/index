@@ -5,6 +5,9 @@
     "name": "lex-models_get_bot_versions",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_bot_versions",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "nextToken": {
             "description": "A pagination token for fetching the next page of bot versions. If the response to this call is truncated, Amazon Lex returns a pagination token in the response. To fetch the next page of versions, specify the pagination token in the next request. ",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

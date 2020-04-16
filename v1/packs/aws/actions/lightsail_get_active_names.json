@@ -5,6 +5,9 @@
     "name": "lightsail_get_active_names",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_active_names",
             "immutable": true,
@@ -24,6 +27,9 @@
         },
         "pageToken": {
             "description": "A token used for paginating results from your get active names request.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

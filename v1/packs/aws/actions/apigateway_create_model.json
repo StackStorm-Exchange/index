@@ -5,6 +5,9 @@
     "name": "apigateway_create_model",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_model",
             "immutable": true,
@@ -34,6 +37,9 @@
         "name": {
             "description": "The name of the model.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "restApiId": {

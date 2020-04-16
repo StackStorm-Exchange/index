@@ -5,6 +5,9 @@
     "name": "logs_put_subscription_filter",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_subscription_filter",
             "immutable": true,
@@ -44,6 +47,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "roleArn": {

@@ -30,6 +30,9 @@
             "required": true,
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "meter_usage",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

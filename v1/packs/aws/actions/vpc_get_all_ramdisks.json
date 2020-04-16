@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_get_all_ramdisks",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_all_ramdisks",
             "immutable": true,
@@ -27,6 +30,9 @@
             "type": "string"
         },
         "ramdisk_ids": {
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

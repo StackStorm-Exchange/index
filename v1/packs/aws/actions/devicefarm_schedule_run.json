@@ -5,6 +5,9 @@
     "name": "devicefarm_schedule_run",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "schedule_run",
             "immutable": true,
@@ -42,6 +45,9 @@
         "projectArn": {
             "description": "The ARN of the project for the run to be scheduled.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "test": {

@@ -5,6 +5,9 @@
     "name": "lex-models_put_slot_type",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_slot_type",
             "immutable": true,
@@ -37,6 +40,9 @@
         "name": {
             "description": "The name of the slot type. The name is not case sensitive.  The name can't match a built-in slot type name, or a built-in slot type name with 'AMAZON.' removed. For example, because there is a built-in slot type called AMAZON.DATE, you can't create a custom slot type called DATE. For a list of built-in slot types, see Slot Type Reference in the Alexa Skills Kit.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -24,6 +24,9 @@
             "required": true,
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "dns_zone": {
             "description": "Route53 DNS Zone to add host to",
             "required": true,
@@ -37,6 +40,9 @@
         "keyfile": {
             "description": "Path to local private key that corresponds to {{key_name}}",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

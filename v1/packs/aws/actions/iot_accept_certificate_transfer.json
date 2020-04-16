@@ -5,6 +5,9 @@
     "name": "iot_accept_certificate_transfer",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "accept_certificate_transfer",
             "immutable": true,
@@ -25,6 +28,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "setAsActive": {

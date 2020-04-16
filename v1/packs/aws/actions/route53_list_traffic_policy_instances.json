@@ -21,6 +21,9 @@
             "description": "For the first request to ListTrafficPolicyInstances, omit this value. If the value of IsTruncated in the previous response was true, TrafficPolicyInstanceTypeMarker is the DNS type of the first traffic policy instance in the next group of MaxItems traffic policy instances. If the value of IsTruncated in the previous response was false, there are no more traffic policy instances to get.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_traffic_policy_instances",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

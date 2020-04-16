@@ -5,6 +5,9 @@
     "name": "datapipeline_create_pipeline",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_pipeline",
             "immutable": true,
@@ -29,6 +32,9 @@
         "name": {
             "description": "The name for the pipeline. You can use the same name for multiple pipelines associated with your AWS account, because AWS Data Pipeline assigns each pipeline a unique pipeline identifier.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "tags": {

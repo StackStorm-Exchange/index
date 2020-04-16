@@ -5,6 +5,9 @@
     "name": "codestar_list_user_profiles",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_user_profiles",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "nextToken": {
             "description": "The continuation token for the next set of results, if the results cannot be returned in one response.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

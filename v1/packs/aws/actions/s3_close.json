@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "s3_close",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "close",
             "immutable": true,
@@ -17,6 +20,9 @@
         "module_path": {
             "default": "boto.s3.connection",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

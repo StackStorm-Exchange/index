@@ -21,6 +21,9 @@
             "description": "Version associated with this build. Version strings do not need to be unique to a build. A build version can be changed later using UpdateBuild .",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_build",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -4,6 +4,9 @@
     "entry_point": "workflows/destroy_vm.yaml",
     "name": "destroy_vm",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "dns_zone": {
             "description": "Route53 DNS Zone to add host to",
             "required": true,
@@ -12,6 +15,9 @@
         "hostname": {
             "description": "Short hostname",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

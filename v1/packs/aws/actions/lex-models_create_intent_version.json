@@ -5,6 +5,9 @@
     "name": "lex-models_create_intent_version",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_intent_version",
             "immutable": true,
@@ -29,6 +32,9 @@
         "name": {
             "description": "The name of the intent that you want to create a new version of. The name is case sensitive. ",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

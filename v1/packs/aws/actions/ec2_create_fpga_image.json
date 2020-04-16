@@ -30,6 +30,9 @@
             "description": "A name for the AFI.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_fpga_image",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

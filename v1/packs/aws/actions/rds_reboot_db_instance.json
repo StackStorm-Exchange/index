@@ -14,6 +14,9 @@
             "description": " When true, the reboot will be conducted through a MultiAZ failover.  Constraint: You cannot specify true if the instance is not configured for MultiAZ.",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "reboot_db_instance",
             "immutable": true,
@@ -29,6 +32,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

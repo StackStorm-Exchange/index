@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "rds_get_log_file",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_log_file",
             "immutable": true,
@@ -34,6 +37,9 @@
             "type": "string"
         },
         "number_of_lines": {
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

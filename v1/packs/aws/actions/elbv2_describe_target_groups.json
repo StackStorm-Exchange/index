@@ -25,6 +25,9 @@
             "description": "The Amazon Resource Names (ARN) of the target groups.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_target_groups",
             "immutable": true,
@@ -40,6 +43,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

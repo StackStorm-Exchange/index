@@ -22,6 +22,9 @@
             "description": "Provides detailed contact information. Type: Complex Children: FirstName, MiddleName, LastName, ContactType, OrganizationName, AddressLine1, AddressLine2, City, State, CountryCode, ZipCode, PhoneNumber, Email, Fax, ExtraParams Required: Yes",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_domain_contact",
             "immutable": true,
@@ -37,6 +40,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

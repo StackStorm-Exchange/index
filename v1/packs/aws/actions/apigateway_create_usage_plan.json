@@ -5,6 +5,9 @@
     "name": "apigateway_create_usage_plan",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_usage_plan",
             "immutable": true,
@@ -38,6 +41,9 @@
         "quota": {
             "description": "The quota of the usage plan.",
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         },
         "throttle": {
             "description": "The throttling limits of the usage plan.",

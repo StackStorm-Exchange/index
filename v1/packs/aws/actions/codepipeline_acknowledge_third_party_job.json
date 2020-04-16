@@ -5,6 +5,9 @@
     "name": "codepipeline_acknowledge_third_party_job",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "acknowledge_third_party_job",
             "immutable": true,
@@ -35,6 +38,9 @@
         "nonce": {
             "description": "A system-generated random number that AWS CodePipeline uses to ensure that the job is being worked on by only one job worker. Get this number from the response to a GetThirdPartyJobDetails request.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

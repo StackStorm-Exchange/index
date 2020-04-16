@@ -5,6 +5,9 @@
     "name": "batch_create_job_queue",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_job_queue",
             "immutable": true,
@@ -36,6 +39,9 @@
             "description": "The priority of the job queue. Job queues with a higher priority (or a lower integer value for the priority parameter) are evaluated first when associated with same compute environment. Priority is determined in ascending order, for example, a job queue with a priority value of 1 is given scheduling preference over a job queue with a priority value of 10.",
             "required": true,
             "type": "integer"
+        },
+        "region": {
+            "type": "string"
         },
         "state": {
             "description": "The state of the job queue. If the job queue state is ENABLED, it is able to accept jobs.",

@@ -5,6 +5,9 @@
     "name": "support_describe_cases",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_cases",
             "immutable": true,
@@ -56,6 +59,9 @@
         },
         "nextToken": {
             "description": "A resumption point for pagination.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

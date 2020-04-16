@@ -5,6 +5,9 @@
     "name": "sms_get_servers",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_servers",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "nextToken": {
             "description": "",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

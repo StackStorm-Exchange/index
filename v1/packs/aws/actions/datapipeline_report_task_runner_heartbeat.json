@@ -5,6 +5,9 @@
     "name": "datapipeline_report_task_runner_heartbeat",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "report_task_runner_heartbeat",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "taskrunnerId": {

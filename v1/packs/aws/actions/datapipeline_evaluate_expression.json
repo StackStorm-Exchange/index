@@ -5,6 +5,9 @@
     "name": "datapipeline_evaluate_expression",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "evaluate_expression",
             "immutable": true,
@@ -35,6 +38,9 @@
         "pipelineId": {
             "description": "The ID of the pipeline.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

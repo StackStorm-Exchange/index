@@ -5,6 +5,9 @@
     "name": "sms_get_replication_runs",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_replication_runs",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "nextToken": {
             "description": "",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "replicationJobId": {

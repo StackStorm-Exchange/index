@@ -13,6 +13,9 @@
             "description": "The ARN of the client.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_luna_client",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

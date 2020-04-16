@@ -5,6 +5,9 @@
     "name": "iot_list_policy_versions",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_policy_versions",
             "immutable": true,
@@ -25,6 +28,9 @@
         "policyName": {
             "description": "The policy name.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

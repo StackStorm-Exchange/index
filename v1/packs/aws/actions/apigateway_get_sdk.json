@@ -5,6 +5,9 @@
     "name": "apigateway_get_sdk",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_sdk",
             "immutable": true,
@@ -25,6 +28,9 @@
         "parameters": {
             "description": "A key-value map of query string parameters that specify properties of the SDK, depending on the requested sdkType. For sdkType of objectivec, a parameter named classPrefix is required. For sdkType of android, parameters named groupId, artifactId, artifactVersion, and invokerPackage are required.",
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         },
         "restApiId": {
             "description": "The identifier of the RestApi that the SDK will use.",

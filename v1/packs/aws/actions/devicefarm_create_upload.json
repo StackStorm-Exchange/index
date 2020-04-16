@@ -5,6 +5,9 @@
     "name": "devicefarm_create_upload",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_upload",
             "immutable": true,
@@ -34,6 +37,9 @@
         "projectArn": {
             "description": "The ARN of the project for the upload.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "type": {

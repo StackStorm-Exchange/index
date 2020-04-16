@@ -5,6 +5,9 @@
     "name": "codecommit_update_repository_name",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_repository_name",
             "immutable": true,
@@ -30,6 +33,9 @@
         "oldName": {
             "description": "The existing name of the repository.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -27,6 +27,9 @@
             "description": "Encryption context used to encrypt and decrypt the data specified in the CiphertextBlob parameter.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "re_encrypt",
             "immutable": true,
@@ -42,6 +45,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

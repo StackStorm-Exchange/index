@@ -5,6 +5,9 @@
     "name": "sns_opt_in_phone_number",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "opt_in_phone_number",
             "immutable": true,
@@ -25,6 +28,9 @@
         "phoneNumber": {
             "description": "The phone number to opt in.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

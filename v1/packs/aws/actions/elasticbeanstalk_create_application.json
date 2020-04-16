@@ -18,6 +18,9 @@
             "description": "Specify an application resource lifecycle configuration to prevent your application from accumulating too many versions.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_application",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

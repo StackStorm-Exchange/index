@@ -22,6 +22,9 @@
             "description": "Object specifying the fleet and routing type to use for the alias.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_alias",
             "immutable": true,
@@ -37,6 +40,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

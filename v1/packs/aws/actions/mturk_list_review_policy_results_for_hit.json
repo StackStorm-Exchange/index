@@ -30,6 +30,9 @@
             "description": " Specify if the operation should retrieve a list of the results computed by the Review Policies. ",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_review_policy_results_for_hit",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

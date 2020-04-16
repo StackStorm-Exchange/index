@@ -5,6 +5,9 @@
     "name": "support_add_communication_to_case",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "add_communication_to_case",
             "immutable": true,
@@ -37,6 +40,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "iot_list_certificates_by_ca",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_certificates_by_ca",
             "immutable": true,
@@ -38,6 +41,9 @@
         "pageSize": {
             "description": "The result page size.",
             "type": "integer"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

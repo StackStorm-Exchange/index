@@ -5,6 +5,9 @@
     "name": "shield_delete_subscription",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "delete_subscription",
             "immutable": true,
@@ -20,6 +23,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

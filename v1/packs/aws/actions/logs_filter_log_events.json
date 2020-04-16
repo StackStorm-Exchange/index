@@ -5,6 +5,9 @@
     "name": "logs_filter_log_events",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "filter_log_events",
             "immutable": true,
@@ -49,6 +52,9 @@
         },
         "nextToken": {
             "description": "The token for the next set of events to return. (You received this token from a previous call.)",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "startTime": {

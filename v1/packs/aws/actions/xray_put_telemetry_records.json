@@ -22,6 +22,9 @@
             "required": true,
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_telemetry_records",
             "immutable": true,
@@ -37,6 +40,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

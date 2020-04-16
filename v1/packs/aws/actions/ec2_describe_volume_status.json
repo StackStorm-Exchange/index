@@ -25,6 +25,9 @@
             "description": "One or more volume IDs. Default: Describes all your volumes.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_volume_status",
             "immutable": true,
@@ -40,6 +43,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

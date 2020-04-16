@@ -5,6 +5,9 @@
     "name": "codedeploy_list_applications",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_applications",
             "immutable": true,
@@ -24,6 +27,9 @@
         },
         "nextToken": {
             "description": "An identifier returned from the previous list applications call. It can be used to return the next set of applications in the list.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

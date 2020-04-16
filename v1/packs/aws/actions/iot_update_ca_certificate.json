@@ -5,6 +5,9 @@
     "name": "iot_update_ca_certificate",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_ca_certificate",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "newStatus": {
             "description": "The updated status of the CA certificate. Note: The status value REGISTER_INACTIVE is deprecated and should not be used.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

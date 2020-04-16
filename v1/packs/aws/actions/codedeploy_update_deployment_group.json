@@ -5,6 +5,9 @@
     "name": "codedeploy_update_deployment_group",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_deployment_group",
             "immutable": true,
@@ -59,6 +62,9 @@
         "onPremisesInstanceTagFilters": {
             "description": "The replacement set of on-premises instance tags on which to filter, if you want to change them. To keep the existing tags, enter their names. To remove tags, do not enter any tag names.",
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         },
         "serviceRoleArn": {
             "description": "A replacement ARN for the service role, if you want to change it.",

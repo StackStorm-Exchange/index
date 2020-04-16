@@ -5,6 +5,9 @@
     "name": "swf_register_activity_type",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "register_activity_type",
             "immutable": true,
@@ -58,6 +61,9 @@
         "name": {
             "description": "The name of the activity type within the domain. The specified string must not start or end with whitespace. It must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f - \\u009f). Also, it must not contain the literal string quotarnquot.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "version": {

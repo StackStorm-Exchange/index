@@ -22,6 +22,9 @@
             "description": "Scaling policy status to filter results on. A scaling policy is only in force when in an ACTIVE status.    ACTIVE \u2013 The scaling policy is currently in force.    UPDATEREQUESTED \u2013 A request to update the scaling policy has been received.    UPDATING \u2013 A change is being made to the scaling policy.    DELETEREQUESTED \u2013 A request to delete the scaling policy has been received.    DELETING \u2013 The scaling policy is being deleted.    DELETED \u2013 The scaling policy has been deleted.    ERROR \u2013 An error occurred in creating the policy. It should be removed and recreated.  ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_scaling_policies",
             "immutable": true,
@@ -37,6 +40,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

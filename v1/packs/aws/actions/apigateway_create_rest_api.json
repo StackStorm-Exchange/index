@@ -5,6 +5,9 @@
     "name": "apigateway_create_rest_api",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_rest_api",
             "immutable": true,
@@ -37,6 +40,9 @@
         "name": {
             "description": "The name of the RestApi.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "version": {

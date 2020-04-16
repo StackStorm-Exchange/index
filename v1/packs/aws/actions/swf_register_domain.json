@@ -5,6 +5,9 @@
     "name": "swf_register_domain",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "register_domain",
             "immutable": true,
@@ -29,6 +32,9 @@
         "name": {
             "description": "Name of the domain to register. The name must be unique in the region that the domain is registered in. The specified string must not start or end with whitespace. It must not contain a : (colon), / (slash), | (vertical bar), or any control characters (\\u0000-\\u001f | \\u007f - \\u009f). Also, it must not contain the literal string quotarnquot.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "workflowExecutionRetentionPeriodInDays": {

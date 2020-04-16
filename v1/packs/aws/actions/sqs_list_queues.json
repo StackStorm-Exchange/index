@@ -9,6 +9,9 @@
             "description": "A string to use for filtering the list results. Only those queues whose name begins with the specified string are returned. Queue names are case-sensitive.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_queues",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

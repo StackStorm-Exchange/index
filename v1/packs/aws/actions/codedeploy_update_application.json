@@ -5,6 +5,9 @@
     "name": "codedeploy_update_application",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_application",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "newApplicationName": {
             "description": "The new name to give the application.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

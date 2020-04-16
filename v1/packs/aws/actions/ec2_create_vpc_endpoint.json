@@ -31,6 +31,9 @@
             "required": true,
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_vpc_endpoint",
             "immutable": true,
@@ -46,6 +49,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

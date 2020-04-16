@@ -5,6 +5,9 @@
     "name": "logs_describe_subscription_filters",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_subscription_filters",
             "immutable": true,
@@ -37,6 +40,9 @@
         },
         "nextToken": {
             "description": "The token for the next set of items to return. (You received this token from a previous call.)",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

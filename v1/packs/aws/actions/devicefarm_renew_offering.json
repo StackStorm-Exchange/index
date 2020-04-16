@@ -5,6 +5,9 @@
     "name": "devicefarm_renew_offering",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "renew_offering",
             "immutable": true,
@@ -29,6 +32,9 @@
         "quantity": {
             "description": "The quantity requested in an offering renewal.",
             "type": "integer"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

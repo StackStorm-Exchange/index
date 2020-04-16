@@ -91,6 +91,9 @@
             "description": "The password for the given ARN from the Key Store in order to access the device.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "restore_db_instance_from_db_snapshot",
             "immutable": true,
@@ -106,6 +109,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

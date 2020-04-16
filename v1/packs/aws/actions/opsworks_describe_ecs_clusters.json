@@ -21,6 +21,9 @@
             "description": "A stack ID. DescribeEcsClusters returns a description of the cluster that is registered with the stack.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_ecs_clusters",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

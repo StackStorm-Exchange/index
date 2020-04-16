@@ -5,6 +5,9 @@
     "name": "codebuild_start_build",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "start_build",
             "immutable": true,
@@ -37,6 +40,9 @@
         "projectName": {
             "description": "The name of the build project to start running a build.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "sourceVersion": {

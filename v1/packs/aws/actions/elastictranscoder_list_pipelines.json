@@ -13,6 +13,9 @@
             "description": "When Elastic Transcoder returns more than one page of results, use pageToken in subsequent GET requests to get each successive page of results. ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_pipelines",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

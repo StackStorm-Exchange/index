@@ -45,6 +45,9 @@
             "description": "The IDs of the users.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_users",
             "immutable": true,
@@ -60,6 +63,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

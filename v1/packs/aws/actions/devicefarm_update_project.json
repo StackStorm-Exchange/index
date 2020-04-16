@@ -5,6 +5,9 @@
     "name": "devicefarm_update_project",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_project",
             "immutable": true,
@@ -29,6 +32,9 @@
         },
         "name": {
             "description": "A string representing the new name of the project that you are updating.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

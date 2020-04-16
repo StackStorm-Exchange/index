@@ -13,6 +13,9 @@
             "description": "Number of domains to be returned. Type: Integer Default: 20 Constraints: A numeral between 1 and 100. Required: No",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_domains",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

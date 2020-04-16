@@ -5,6 +5,9 @@
     "name": "iot_list_topic_rules",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_topic_rules",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "nextToken": {
             "description": "A token used to retrieve the next value.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "ruleDisabled": {

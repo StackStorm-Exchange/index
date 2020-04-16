@@ -5,6 +5,9 @@
     "name": "codedeploy_list_application_revisions",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_application_revisions",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "nextToken": {
             "description": "An identifier returned from the previous list application revisions call. It can be used to return the next set of applications in the list.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "s3Bucket": {

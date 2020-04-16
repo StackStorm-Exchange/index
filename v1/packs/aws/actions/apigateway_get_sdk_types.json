@@ -5,6 +5,9 @@
     "name": "apigateway_get_sdk_types",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_sdk_types",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "position": {
             "description": "The position of the last fetched element in the SdkTypes collection.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

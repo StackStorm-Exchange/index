@@ -26,6 +26,9 @@
             "description": "[Deprecated] The destination in Amazon S3. You can specify only one destination.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_delivery_stream",
             "immutable": true,
@@ -41,6 +44,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

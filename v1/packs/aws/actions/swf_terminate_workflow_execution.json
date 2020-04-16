@@ -5,6 +5,9 @@
     "name": "swf_terminate_workflow_execution",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "terminate_workflow_execution",
             "immutable": true,
@@ -37,6 +40,9 @@
         },
         "reason": {
             "description": "Optional. A descriptive reason for terminating the workflow execution.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "runId": {

@@ -5,6 +5,9 @@
     "name": "apigateway_create_documentation_part",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_documentation_part",
             "immutable": true,
@@ -30,6 +33,9 @@
         "properties": {
             "description": "[Required] The new documentation content map of the targeted API entity. Enclosed key-value pairs are API-specific, but only Swagger-compliant key-value pairs can be exported and, hence, published.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "restApiId": {

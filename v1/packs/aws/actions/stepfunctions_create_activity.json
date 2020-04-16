@@ -5,6 +5,9 @@
     "name": "stepfunctions_create_activity",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_activity",
             "immutable": true,
@@ -25,6 +28,9 @@
         "name": {
             "description": "The name of the activity to create. This name must be unique for your AWS account and region.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

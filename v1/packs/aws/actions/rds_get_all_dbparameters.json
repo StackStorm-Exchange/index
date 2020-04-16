@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "rds_get_all_dbparameters",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_all_dbparameters",
             "immutable": true,
@@ -27,6 +30,9 @@
         "module_path": {
             "default": "boto.rds",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "source": {

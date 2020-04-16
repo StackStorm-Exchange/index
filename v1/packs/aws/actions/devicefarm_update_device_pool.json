@@ -5,6 +5,9 @@
     "name": "devicefarm_update_device_pool",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_device_pool",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "name": {
             "description": "A string representing the name of the device pool you wish to update.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "rules": {

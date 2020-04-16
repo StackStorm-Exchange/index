@@ -13,6 +13,9 @@
             "description": "(Conditional) For your first request to ListTrafficPolicies, do not include the TrafficPolicyIdMarker parameter. If you have more traffic policies than the value of MaxItems, ListTrafficPolicies returns only the first MaxItems traffic policies. To get the next group of MaxItems policies, submit another request to ListTrafficPolicies. For the value of TrafficPolicyIdMarker, specify the value of the TrafficPolicyIdMarker element that was returned in the previous response. Policies are listed in the order in which they were created.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_traffic_policies",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

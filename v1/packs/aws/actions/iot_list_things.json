@@ -5,6 +5,9 @@
     "name": "iot_list_things",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_things",
             "immutable": true,
@@ -36,6 +39,9 @@
         },
         "nextToken": {
             "description": "The token for the next set of results, or null if there are no additional results.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "thingTypeName": {

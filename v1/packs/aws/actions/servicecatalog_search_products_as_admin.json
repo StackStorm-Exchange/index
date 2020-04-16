@@ -37,6 +37,9 @@
             "description": "The sort order specifier. If no value is specified, results are not sorted.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "search_products_as_admin",
             "immutable": true,
@@ -52,6 +55,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

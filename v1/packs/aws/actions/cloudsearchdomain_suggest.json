@@ -5,6 +5,9 @@
     "name": "cloudsearchdomain_suggest",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "suggest",
             "immutable": true,
@@ -25,6 +28,9 @@
         "query": {
             "description": "Specifies the string for which you want to get suggestions.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "size": {

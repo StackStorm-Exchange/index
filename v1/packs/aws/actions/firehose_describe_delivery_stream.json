@@ -18,6 +18,9 @@
             "description": "The limit on the number of destinations to return. Currently, you can have one destination per delivery stream.",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_delivery_stream",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

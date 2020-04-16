@@ -29,6 +29,9 @@
             "description": "The earliest scheduled start time to return. If scheduled action names are provided, this parameter is ignored.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_scheduled_actions",
             "immutable": true,
@@ -44,6 +47,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

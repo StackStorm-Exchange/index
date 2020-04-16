@@ -5,6 +5,9 @@
     "name": "lightsail_get_instance_metric_data",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_instance_metric_data",
             "immutable": true,
@@ -41,6 +44,9 @@
             "description": "The time period for which you are requesting data.",
             "required": true,
             "type": "integer"
+        },
+        "region": {
+            "type": "string"
         },
         "startTime": {
             "description": "The start time of the time period.",

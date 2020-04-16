@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "ec2_trim_snapshots",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "trim_snapshots",
             "immutable": true,
@@ -30,6 +33,9 @@
         "monthly_backups": {
             "default": true,
             "type": "boolean"
+        },
+        "region": {
+            "type": "string"
         },
         "weekly_backups": {
             "default": 4,

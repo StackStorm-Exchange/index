@@ -5,6 +5,9 @@
     "name": "directconnect_create_lag",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_lag",
             "immutable": true,
@@ -45,6 +48,9 @@
             "description": "The number of physical connections initially provisioned and bundled by the LAG. Default: None",
             "required": true,
             "type": "integer"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

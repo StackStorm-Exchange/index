@@ -30,6 +30,9 @@
             "description": "Option to set the time, in UTC format, for the daily automated snapshot. Default value is 0 hours. ",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_elasticsearch_domain_config",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

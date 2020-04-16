@@ -5,6 +5,9 @@
     "name": "codedeploy_list_on_premises_instances",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_on_premises_instances",
             "immutable": true,
@@ -24,6 +27,9 @@
         },
         "nextToken": {
             "description": "An identifier returned from the previous list on-premises instances call. It can be used to return the next set of on-premises instances in the list.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "registrationStatus": {

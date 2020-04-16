@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_stop_instances",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "stop_instances",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto.vpc",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

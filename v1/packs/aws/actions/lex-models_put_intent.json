@@ -5,6 +5,9 @@
     "name": "lex-models_put_intent",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_intent",
             "immutable": true,
@@ -57,6 +60,9 @@
         },
         "parentIntentSignature": {
             "description": "A unique identifier for the built-in intent to base this intent on. To find the signature for an intent, see Standard Built-in Intents in the Alexa Skills Kit.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "rejectionStatement": {

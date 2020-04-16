@@ -5,6 +5,9 @@
     "name": "codepipeline_put_action_revision",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_action_revision",
             "immutable": true,
@@ -35,6 +38,9 @@
         "pipelineName": {
             "description": "The name of the pipeline that will start processing the revision to the source.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "stageName": {

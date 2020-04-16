@@ -40,6 +40,9 @@
             "description": "Optional key:value pairs mapping provider names to provider app IDs.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_identity_pool",
             "immutable": true,
@@ -55,6 +58,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

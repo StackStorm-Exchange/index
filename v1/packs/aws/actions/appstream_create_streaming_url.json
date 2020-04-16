@@ -32,6 +32,9 @@
             "description": "The validity duration of the URL in seconds. After this duration, the URL returned by this operation becomes invalid.",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_streaming_url",
             "immutable": true,
@@ -47,6 +50,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

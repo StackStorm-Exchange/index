@@ -5,6 +5,9 @@
     "name": "swf_respond_activity_task_failed",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "respond_activity_task_failed",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "reason": {
             "description": "Description of the error that may assist in diagnostics.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "taskToken": {

@@ -23,6 +23,9 @@
             "description": "The unique identifiers of the nodes to be removed from the cluster.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "decrease_replication_factor",
             "immutable": true,
@@ -38,6 +41,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

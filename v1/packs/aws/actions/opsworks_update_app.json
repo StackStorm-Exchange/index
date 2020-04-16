@@ -50,6 +50,9 @@
             "description": "The app type.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_app",
             "immutable": true,
@@ -65,6 +68,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

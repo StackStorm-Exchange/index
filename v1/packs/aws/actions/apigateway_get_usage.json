@@ -5,6 +5,9 @@
     "name": "apigateway_get_usage",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_usage",
             "immutable": true,
@@ -37,6 +40,9 @@
         },
         "position": {
             "description": "Position",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "startDate": {

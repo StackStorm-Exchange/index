@@ -5,6 +5,9 @@
     "name": "datapipeline_get_pipeline_definition",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_pipeline_definition",
             "immutable": true,
@@ -25,6 +28,9 @@
         "pipelineId": {
             "description": "The ID of the pipeline.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "version": {

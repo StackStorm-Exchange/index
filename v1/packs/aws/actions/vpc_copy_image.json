@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_copy_image",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "copy_image",
             "immutable": true,
@@ -30,6 +33,9 @@
             "type": "string"
         },
         "name": {
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "source_image_id": {

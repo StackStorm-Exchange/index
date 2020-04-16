@@ -5,6 +5,9 @@
     "name": "apigateway_get_usage_plans",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_usage_plans",
             "immutable": true,
@@ -32,6 +35,9 @@
         },
         "position": {
             "description": "The zero-based array index specifying the position of the to-be-retrieved UsagePlan resource.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "codedeploy_list_deployment_instances",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_deployment_instances",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "nextToken": {
             "description": "An identifier returned from the previous list deployment instances call. It can be used to return the next set of deployment instances in the list.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

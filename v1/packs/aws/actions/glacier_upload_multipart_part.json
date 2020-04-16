@@ -10,6 +10,9 @@
             "required": true,
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "upload_multipart_part",
             "immutable": true,
@@ -37,6 +40,9 @@
         },
         "range": {
             "description": "Identifies the range of bytes in the assembled archive that will be uploaded in this part. Amazon Glacier uses this information to assemble the archive in the proper sequence. The format of this header follows RFC 2616. An example header is Content-Range:bytes 0-4194303/*.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "uploadId": {

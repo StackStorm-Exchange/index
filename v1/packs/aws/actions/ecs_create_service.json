@@ -5,6 +5,9 @@
     "name": "ecs_create_service",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_service",
             "immutable": true,
@@ -50,6 +53,9 @@
         "placementStrategy": {
             "description": "The placement strategy objects to use for tasks in your service. You can specify a maximum of 5 strategy rules per service.",
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         },
         "role": {
             "description": "The name or full Amazon Resource Name (ARN) of the IAM role that allows Amazon ECS to make calls to your load balancer on your behalf. This parameter is required if you are using a load balancer with your service. If you specify the role parameter, you must also specify a load balancer object with the loadBalancers parameter. If your specified role has a path other than /, then you must either specify the full role ARN (this is recommended) or prefix the role name with the path. For example, if a role with the name bar has a path of /foo/ then you would specify /foo/bar as the role name. For more information, see Friendly Names and Paths in the IAM User Guide.",

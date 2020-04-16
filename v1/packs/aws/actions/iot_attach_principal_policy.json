@@ -5,6 +5,9 @@
     "name": "iot_attach_principal_policy",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "attach_principal_policy",
             "immutable": true,
@@ -30,6 +33,9 @@
         "principal": {
             "description": "The principal, which can be a certificate ARN (as returned from the CreateCertificate operation) or an Amazon Cognito ID.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

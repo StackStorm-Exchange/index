@@ -35,6 +35,9 @@
             "required": true,
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_outgoing_typed_links",
             "immutable": true,
@@ -50,6 +53,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

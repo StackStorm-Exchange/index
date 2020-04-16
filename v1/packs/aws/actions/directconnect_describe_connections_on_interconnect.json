@@ -5,6 +5,9 @@
     "name": "directconnect_describe_connections_on_interconnect",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_connections_on_interconnect",
             "immutable": true,
@@ -25,6 +28,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

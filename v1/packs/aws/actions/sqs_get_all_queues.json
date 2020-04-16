@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "sqs_get_all_queues",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_all_queues",
             "immutable": true,
@@ -21,6 +24,9 @@
         },
         "prefix": {
             "default": "",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

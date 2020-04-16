@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_get_all_route_tables",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_all_route_tables",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto.vpc",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "route_table_ids": {

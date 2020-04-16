@@ -5,6 +5,9 @@
     "name": "datapipeline_describe_objects",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_objects",
             "immutable": true,
@@ -38,6 +41,9 @@
         "pipelineId": {
             "description": "The ID of the pipeline that contains the object definitions.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

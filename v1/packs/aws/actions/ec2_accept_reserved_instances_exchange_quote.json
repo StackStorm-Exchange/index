@@ -18,6 +18,9 @@
             "description": "The configurations of the Convertible Reserved Instance offerings that you are purchasing in this exchange.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "accept_reserved_instances_exchange_quote",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

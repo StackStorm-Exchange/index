@@ -15,6 +15,9 @@
             "required": true,
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "set_visible_to_all_users",
             "immutable": true,
@@ -30,6 +33,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

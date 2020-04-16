@@ -5,6 +5,9 @@
     "name": "sms_update_replication_job",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_replication_job",
             "immutable": true,
@@ -36,6 +39,9 @@
         },
         "nextReplicationRunStartTime": {
             "description": "",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "replicationJobId": {

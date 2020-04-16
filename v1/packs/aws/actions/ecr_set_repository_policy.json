@@ -5,6 +5,9 @@
     "name": "ecr_set_repository_policy",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "set_repository_policy",
             "immutable": true,
@@ -29,6 +32,9 @@
         "policyText": {
             "description": "The JSON repository policy text to apply to the repository.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "registryId": {

@@ -5,6 +5,9 @@
     "name": "apigateway_test_invoke_method",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "test_invoke_method",
             "immutable": true,
@@ -38,6 +41,9 @@
         },
         "pathWithQueryString": {
             "description": "The URI path, including query string, of the simulated invocation request. Use this to specify path parameters and query string parameters.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "resourceId": {

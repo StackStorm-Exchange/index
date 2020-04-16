@@ -58,6 +58,9 @@
             "description": "Tags to associate with the new product.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_product",
             "immutable": true,
@@ -73,6 +76,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

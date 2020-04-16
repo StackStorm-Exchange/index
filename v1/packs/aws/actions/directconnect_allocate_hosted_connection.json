@@ -5,6 +5,9 @@
     "name": "directconnect_allocate_hosted_connection",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "allocate_hosted_connection",
             "immutable": true,
@@ -40,6 +43,9 @@
         "ownerAccount": {
             "description": "The numeric account ID of the customer for whom the connection will be provisioned. Example: 123443215678 Default: None",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "vlan": {

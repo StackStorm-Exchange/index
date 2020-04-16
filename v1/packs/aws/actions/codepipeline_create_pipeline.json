@@ -5,6 +5,9 @@
     "name": "codepipeline_create_pipeline",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_pipeline",
             "immutable": true,
@@ -26,6 +29,9 @@
             "description": "",
             "required": true,
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

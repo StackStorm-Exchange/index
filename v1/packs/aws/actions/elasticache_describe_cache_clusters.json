@@ -21,6 +21,9 @@
             "description": "An optional flag that can be included in the DescribeCacheCluster request to retrieve information about the individual cache nodes.",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_cache_clusters",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

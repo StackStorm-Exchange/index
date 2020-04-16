@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_create_image",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_image",
             "immutable": true,
@@ -40,6 +43,9 @@
         "no_reboot": {
             "default": false,
             "type": "boolean"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

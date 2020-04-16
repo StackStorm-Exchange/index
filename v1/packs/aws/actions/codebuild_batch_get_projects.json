@@ -5,6 +5,9 @@
     "name": "codebuild_batch_get_projects",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "batch_get_projects",
             "immutable": true,
@@ -26,6 +29,9 @@
             "description": "The names of the build projects to get information about.",
             "required": true,
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

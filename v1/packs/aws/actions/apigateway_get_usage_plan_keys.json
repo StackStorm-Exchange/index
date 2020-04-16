@@ -5,6 +5,9 @@
     "name": "apigateway_get_usage_plan_keys",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_usage_plan_keys",
             "immutable": true,
@@ -32,6 +35,9 @@
         },
         "position": {
             "description": "A query parameter specifying the zero-based index specifying the position of a usage plan key.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "usagePlanId": {

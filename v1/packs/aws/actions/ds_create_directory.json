@@ -32,6 +32,9 @@
             "description": "A DirectoryVpcSettings object that contains additional information for the operation.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_directory",
             "immutable": true,
@@ -47,6 +50,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

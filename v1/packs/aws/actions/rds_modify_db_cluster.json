@@ -50,6 +50,9 @@
             "description": "A lst of VPC security groups that the DB cluster will belong to.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "modify_db_cluster",
             "immutable": true,
@@ -65,6 +68,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

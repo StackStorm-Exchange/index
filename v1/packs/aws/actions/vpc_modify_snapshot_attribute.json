@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_modify_snapshot_attribute",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "modify_snapshot_attribute",
             "immutable": true,
@@ -32,6 +35,9 @@
         },
         "operation": {
             "default": "add",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "snapshot_id": {

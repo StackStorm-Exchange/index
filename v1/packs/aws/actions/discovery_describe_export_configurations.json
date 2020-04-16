@@ -5,6 +5,9 @@
     "name": "discovery_describe_export_configurations",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_export_configurations",
             "immutable": true,
@@ -32,6 +35,9 @@
         },
         "nextToken": {
             "description": "A token to get the next set of results. For example, if you specified 100 IDs for DescribeExportConfigurationsRequest$exportIds but set DescribeExportConfigurationsRequest$maxResults to 10, you will get results in a set of 10. Use the token in the query to get the next set of 10.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -56,6 +56,9 @@
             "description": "A list of VPC security groups that the new DB cluster will belong to.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "restore_db_cluster_from_snapshot",
             "immutable": true,
@@ -71,6 +74,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -54,6 +54,9 @@
             "description": "The instance's Amazon EC2 key name.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_instance",
             "immutable": true,
@@ -69,6 +72,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

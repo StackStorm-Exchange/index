@@ -5,6 +5,9 @@
     "name": "lightsail_import_key_pair",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "import_key_pair",
             "immutable": true,
@@ -30,6 +33,9 @@
         "publicKeyBase64": {
             "description": "A base64-encoded public key of the ssh-rsa type.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

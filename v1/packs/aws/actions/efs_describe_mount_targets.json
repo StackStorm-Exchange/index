@@ -21,6 +21,9 @@
             "description": "(Optional) ID of the mount target that you want to have described (String). It must be included in your request if FileSystemId is not included.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_mount_targets",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

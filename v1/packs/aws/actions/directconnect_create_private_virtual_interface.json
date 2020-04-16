@@ -5,6 +5,9 @@
     "name": "directconnect_create_private_virtual_interface",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_private_virtual_interface",
             "immutable": true,
@@ -31,6 +34,9 @@
             "description": "Detailed information for the private virtual interface to be created. Default: None",
             "required": true,
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

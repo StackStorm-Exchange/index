@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_get_all_vpn_connections",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_all_vpn_connections",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto.vpc",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "vpn_connection_ids": {

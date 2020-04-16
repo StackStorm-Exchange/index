@@ -18,6 +18,9 @@
             "description": "The configuration requirements of the Convertible Reserved Instances to exchange for your current Convertible Reserved Instances.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_reserved_instances_exchange_quote",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

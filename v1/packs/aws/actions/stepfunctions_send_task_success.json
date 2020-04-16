@@ -5,6 +5,9 @@
     "name": "stepfunctions_send_task_success",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "send_task_success",
             "immutable": true,
@@ -25,6 +28,9 @@
         "output": {
             "description": "The JSON output of the task.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "taskToken": {

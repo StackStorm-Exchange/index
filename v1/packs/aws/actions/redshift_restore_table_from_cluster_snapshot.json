@@ -42,6 +42,9 @@
             "description": "The name of the schema to restore the table to.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "restore_table_from_cluster_snapshot",
             "immutable": true,
@@ -57,6 +60,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

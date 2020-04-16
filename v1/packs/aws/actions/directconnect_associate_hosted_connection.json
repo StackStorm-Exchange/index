@@ -5,6 +5,9 @@
     "name": "directconnect_associate_hosted_connection",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "associate_hosted_connection",
             "immutable": true,
@@ -30,6 +33,9 @@
         "parentConnectionId": {
             "description": "The ID of the interconnect or the LAG. Example: dxcon-abc123 or dxlag-abc123 Default: None",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

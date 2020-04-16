@@ -5,6 +5,9 @@
     "name": "ecs_register_task_definition",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "register_task_definition",
             "immutable": true,
@@ -39,6 +42,9 @@
         "placementConstraints": {
             "description": "An array of placement constraint objects to use for the task. You can specify a maximum of 10 constraints per task (this limit includes constraints in the task definition and those specified at run time).",
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         },
         "taskRoleArn": {
             "description": "The short name or full Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role. For more information, see IAM Roles for Tasks in the Amazon EC2 Container Service Developer Guide.",

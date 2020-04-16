@@ -30,6 +30,9 @@
             "description": "The path of the JSON file that contains the table mappings. Preceed the path with 'file://'. For example, --table-mappings file://mappingfile.json",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "modify_replication_task",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "discovery_describe_tags",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_tags",
             "immutable": true,
@@ -32,6 +35,9 @@
         },
         "nextToken": {
             "description": "A token to start the list. Use this token to get the next set of results.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

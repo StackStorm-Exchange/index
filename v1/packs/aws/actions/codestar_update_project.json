@@ -5,6 +5,9 @@
     "name": "codestar_update_project",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_project",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "name": {
             "description": "The name of the project you want to update.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

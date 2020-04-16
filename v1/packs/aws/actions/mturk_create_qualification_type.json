@@ -48,6 +48,9 @@
             "description": "The number of seconds the Worker has to complete the Qualification test, starting from the time the Worker requests the Qualification.",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_qualification_type",
             "immutable": true,
@@ -63,6 +66,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "apigateway_put_rest_api",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_rest_api",
             "immutable": true,
@@ -38,6 +41,9 @@
         "parameters": {
             "description": "Custom headers supplied as part of the request. ",
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         },
         "restApiId": {
             "description": "The identifier of the RestApi to be updated. ",

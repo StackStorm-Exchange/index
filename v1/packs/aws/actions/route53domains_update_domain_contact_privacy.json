@@ -22,6 +22,9 @@
             "description": "Whether you want to conceal contact information from WHOIS queries. If you specify true, WHOIS ('who is') queries will return contact information for our registrar partner, Gandi, instead of the contact information that you enter. Type: Boolean Default: None Valid values: true | false Required: No",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_domain_contact_privacy",
             "immutable": true,
@@ -37,6 +40,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "iot_attach_thing_principal",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "attach_thing_principal",
             "immutable": true,
@@ -25,6 +28,9 @@
         "principal": {
             "description": "The principal, such as a certificate or other credential.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "thingName": {

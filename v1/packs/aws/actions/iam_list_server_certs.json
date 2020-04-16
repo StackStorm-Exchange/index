@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "iam_list_server_certs",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_server_certs",
             "immutable": true,
@@ -27,6 +30,9 @@
         },
         "path_prefix": {
             "default": "/",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

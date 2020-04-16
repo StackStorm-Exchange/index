@@ -5,6 +5,9 @@
     "name": "codepipeline_get_pipeline_execution",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_pipeline_execution",
             "immutable": true,
@@ -30,6 +33,9 @@
         "pipelineName": {
             "description": "The name of the pipeline about which you want to get execution details.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

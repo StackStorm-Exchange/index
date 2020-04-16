@@ -5,6 +5,9 @@
     "name": "devicefarm_create_device_pool",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_device_pool",
             "immutable": true,
@@ -34,6 +37,9 @@
         "projectArn": {
             "description": "The ARN of the project for the device pool.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "rules": {

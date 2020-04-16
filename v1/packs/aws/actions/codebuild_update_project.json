@@ -5,6 +5,9 @@
     "name": "codebuild_update_project",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_project",
             "immutable": true,
@@ -41,6 +44,9 @@
         "name": {
             "description": "The name of the existing build project to change settings.  You cannot change an existing build project's name. ",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "serviceRole": {

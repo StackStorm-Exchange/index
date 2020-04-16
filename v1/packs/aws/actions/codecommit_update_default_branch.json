@@ -5,6 +5,9 @@
     "name": "codecommit_update_default_branch",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_default_branch",
             "immutable": true,
@@ -25,6 +28,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "repositoryName": {

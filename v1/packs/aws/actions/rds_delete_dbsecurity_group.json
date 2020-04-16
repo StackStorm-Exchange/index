@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "rds_delete_dbsecurity_group",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "delete_dbsecurity_group",
             "immutable": true,
@@ -21,6 +24,9 @@
         },
         "name": {
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

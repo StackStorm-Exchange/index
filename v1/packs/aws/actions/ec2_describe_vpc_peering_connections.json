@@ -17,6 +17,9 @@
             "description": "One or more VPC peering connection IDs. Default: Describes all your VPC peering connections.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_vpc_peering_connections",
             "immutable": true,
@@ -32,6 +35,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

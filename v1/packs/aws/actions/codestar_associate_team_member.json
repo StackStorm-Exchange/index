@@ -5,6 +5,9 @@
     "name": "codestar_associate_team_member",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "associate_team_member",
             "immutable": true,
@@ -34,6 +37,9 @@
         "projectRole": {
             "description": "The AWS CodeStar project role that will apply to this user. This role determines what actions a user can take in an AWS CodeStar project.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "remoteAccessAllowed": {

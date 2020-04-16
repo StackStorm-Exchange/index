@@ -17,6 +17,9 @@
             "description": "The stack ID. If you use this parameter, DescribeServiceErrors returns descriptions of the errors associated with the specified stack.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_service_errors",
             "immutable": true,
@@ -32,6 +35,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

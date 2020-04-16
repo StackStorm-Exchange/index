@@ -19,6 +19,9 @@
             "description": "A list of tag instances.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_cluster_security_group",
             "immutable": true,
@@ -34,6 +37,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -70,6 +70,9 @@
             "description": "The cost allocation tags for the user pool. For more information, see Adding Cost Allocation Tags to Your User Pool ",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_user_pool",
             "immutable": true,
@@ -85,6 +88,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -37,6 +37,9 @@
             "description": "The value that indicates the type of tape drive to use for gateway-VTL. This field is optional.  Valid Values: 'IBM-ULT3580-TD5' ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "activate_gateway",
             "immutable": true,
@@ -52,6 +55,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

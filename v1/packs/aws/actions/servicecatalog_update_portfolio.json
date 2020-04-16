@@ -34,6 +34,9 @@
             "description": "Tags to remove from the existing list of tags associated with the portfolio.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_portfolio",
             "immutable": true,
@@ -49,6 +52,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

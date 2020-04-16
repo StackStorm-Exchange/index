@@ -26,6 +26,9 @@
             "description": " A value that indicates to return only parameters for a specific source. Parameter sources can be engine, service, or customer. ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_db_cluster_parameters",
             "immutable": true,
@@ -41,6 +44,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

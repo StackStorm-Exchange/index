@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_describe_reserved_instances_modifications",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_reserved_instances_modifications",
             "immutable": true,
@@ -23,6 +26,9 @@
             "type": "string"
         },
         "next_token": {
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "reserved_instances_modification_ids": {

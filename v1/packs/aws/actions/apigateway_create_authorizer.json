@@ -5,6 +5,9 @@
     "name": "apigateway_create_authorizer",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_authorizer",
             "immutable": true,
@@ -55,6 +58,9 @@
         "providerARNs": {
             "description": "A list of the Cognito Your User Pool authorizer's provider ARNs.",
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         },
         "restApiId": {
             "description": "The RestApi identifier under which the Authorizer will be created.",

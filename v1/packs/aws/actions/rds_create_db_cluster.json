@@ -87,6 +87,9 @@
             "description": "A list of EC2 VPC security groups to associate with this DB cluster.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_db_cluster",
             "immutable": true,
@@ -102,6 +105,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

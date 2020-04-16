@@ -13,6 +13,9 @@
             "description": "The serial number of the HSM. Either the HsmArn or the HsmSerialNumber parameter must be specified.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_hsm",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

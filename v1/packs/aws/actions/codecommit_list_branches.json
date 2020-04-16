@@ -5,6 +5,9 @@
     "name": "codecommit_list_branches",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_branches",
             "immutable": true,
@@ -24,6 +27,9 @@
         },
         "nextToken": {
             "description": "An enumeration token that allows the operation to batch the results. ",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "repositoryName": {

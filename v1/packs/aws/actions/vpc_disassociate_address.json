@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_disassociate_address",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "disassociate_address",
             "immutable": true,
@@ -27,6 +30,9 @@
             "type": "string"
         },
         "public_ip": {
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

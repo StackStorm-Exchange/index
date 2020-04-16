@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "s3_generate_url_sigv4",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "generate_url_sigv4",
             "immutable": true,
@@ -43,6 +46,9 @@
         "module_path": {
             "default": "boto.s3.connection",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "response_headers": {

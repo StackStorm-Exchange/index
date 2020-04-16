@@ -5,6 +5,9 @@
     "name": "discovery_list_configurations",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_configurations",
             "immutable": true,
@@ -42,6 +45,9 @@
         "orderBy": {
             "description": "Certain filter criteria return output that can be sorted in ascending or descending order. For a list of output characteristics for each filter, see Querying Discovered Configuration Items.",
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

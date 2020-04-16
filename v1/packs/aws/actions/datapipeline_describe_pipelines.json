@@ -5,6 +5,9 @@
     "name": "datapipeline_describe_pipelines",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_pipelines",
             "immutable": true,
@@ -26,6 +29,9 @@
             "description": "The IDs of the pipelines to describe. You can pass as many as 25 identifiers in a single call. To obtain pipeline IDs, call ListPipelines.",
             "required": true,
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

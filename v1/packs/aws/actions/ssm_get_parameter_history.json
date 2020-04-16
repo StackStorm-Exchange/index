@@ -22,6 +22,9 @@
             "description": "Return decrypted values for secure string parameters. This flag is ignored for String and StringList parameter types.",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_parameter_history",
             "immutable": true,
@@ -37,6 +40,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

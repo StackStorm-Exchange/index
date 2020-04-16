@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "s3_generate_url",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "generate_url",
             "immutable": true,
@@ -49,6 +52,9 @@
         "query_auth": {
             "default": true,
             "type": "boolean"
+        },
+        "region": {
+            "type": "string"
         },
         "response_headers": {
             "type": "string"

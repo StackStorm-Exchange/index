@@ -46,6 +46,9 @@
             "description": "The ID of a VPC peering connection.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_route",
             "immutable": true,
@@ -61,6 +64,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

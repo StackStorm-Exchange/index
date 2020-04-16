@@ -5,6 +5,9 @@
     "name": "devicefarm_purchase_offering",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "purchase_offering",
             "immutable": true,
@@ -29,6 +32,9 @@
         "quantity": {
             "description": "The number of device slots you wish to purchase in an offering request.",
             "type": "integer"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

@@ -5,6 +5,9 @@
     "name": "devicefarm_create_remote_access_session",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_remote_access_session",
             "immutable": true,
@@ -38,6 +41,9 @@
         "projectArn": {
             "description": "The Amazon Resource Name (ARN) of the project for which you want to create a remote access session.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

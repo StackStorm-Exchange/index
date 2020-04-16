@@ -5,6 +5,9 @@
     "name": "directconnect_describe_loa",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_loa",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "providerName": {
             "description": "The name of the service provider who establishes connectivity on your behalf. If you supply this parameter, the LOA-CFA lists the provider name alongside your company name as the requester of the cross connect. Default: None",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -63,6 +63,9 @@
             "description": "Whether to reuse the template that is associated with the stack to create the change set.",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_change_set",
             "immutable": true,
@@ -78,6 +81,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -18,6 +18,9 @@
             "description": "For your first request to ListTrafficPolicyVersions, do not include the TrafficPolicyVersionMarker parameter. If you have more traffic policy versions than the value of MaxItems, ListTrafficPolicyVersions returns only the first group of MaxItems versions. To get the next group of MaxItems traffic policy versions, submit another request to ListTrafficPolicyVersions. For the value of TrafficPolicyVersionMarker, specify the value of the TrafficPolicyVersionMarker element that was returned in the previous response. Traffic policy versions are listed in sequential order.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_traffic_policy_versions",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

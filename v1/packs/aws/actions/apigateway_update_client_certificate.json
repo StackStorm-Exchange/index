@@ -5,6 +5,9 @@
     "name": "apigateway_update_client_certificate",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_client_certificate",
             "immutable": true,
@@ -30,6 +33,9 @@
         "patchOperations": {
             "description": "A list of update operations to be applied to the specified resource and in the order specified in this list.",
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

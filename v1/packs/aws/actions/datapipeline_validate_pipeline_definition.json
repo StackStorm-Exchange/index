@@ -5,6 +5,9 @@
     "name": "datapipeline_validate_pipeline_definition",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "validate_pipeline_definition",
             "immutable": true,
@@ -39,6 +42,9 @@
             "description": "The objects that define the pipeline changes to validate against the pipeline.",
             "required": true,
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

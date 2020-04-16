@@ -5,6 +5,9 @@
     "name": "codepipeline_poll_for_jobs",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "poll_for_jobs",
             "immutable": true,
@@ -34,6 +37,9 @@
         "queryParam": {
             "description": "A map of property names and values. For an action type with no queryable properties, this value must be null or an empty map. For an action type with a queryable property, you must supply that property as a key in the map. Only jobs whose action configuration matches the mapped value will be returned.",
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

@@ -38,6 +38,9 @@
             "description": "Allows grantee to write the ACL for the applicable bucket.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_bucket",
             "immutable": true,
@@ -53,6 +56,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

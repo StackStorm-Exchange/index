@@ -5,6 +5,9 @@
     "name": "codepipeline_enable_stage_transition",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "enable_stage_transition",
             "immutable": true,
@@ -25,6 +28,9 @@
         "pipelineName": {
             "description": "The name of the pipeline in which you want to enable the flow of artifacts from one stage to another.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "stageName": {

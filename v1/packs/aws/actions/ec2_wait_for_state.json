@@ -4,8 +4,14 @@
     "entry_point": "ec2_wait_for_state.py",
     "name": "ec2_wait_for_state",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "instance_id": {
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "state": {

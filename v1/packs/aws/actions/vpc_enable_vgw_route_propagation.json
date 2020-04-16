@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_enable_vgw_route_propagation",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "enable_vgw_route_propagation",
             "immutable": true,
@@ -25,6 +28,9 @@
         "module_path": {
             "default": "boto.vpc",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "route_table_id": {

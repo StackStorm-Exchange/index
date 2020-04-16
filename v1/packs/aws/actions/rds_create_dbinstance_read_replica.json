@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "rds_create_dbinstance_read_replica",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_dbinstance_read_replica",
             "immutable": true,
@@ -34,6 +37,9 @@
         },
         "port": {
             "default": 3306,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "source_id": {

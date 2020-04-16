@@ -4,6 +4,9 @@
     "entry_point": "",
     "name": "set_hostname_cloud",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "cmd": {
             "default": "sed -i -e \"s/\\(preserve_hostname: \\)false/\\1true/\" /etc/cloud/cloud.cfg && echo \"{{hostname}}\" > /etc/hostname && hostname {{hostname}} && echo \"127.0.0.1 {{hostname}}\" >> /etc/hosts",
             "immutable": false
@@ -16,6 +19,9 @@
         "kwarg_op": {
             "default": "--",
             "immutable": true
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "remote-shell-cmd"

@@ -13,6 +13,9 @@
             "description": "HTTP requests are stateless. To identify what object comes 'next' in the list of ADDRESS objects, you have the option of specifying a value for NextToken as the starting point for your list of returned addresses.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_addresses",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

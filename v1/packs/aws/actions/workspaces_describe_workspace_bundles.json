@@ -17,6 +17,9 @@
             "description": "The owner of the bundles to retrieve. This parameter cannot be combined with any other filter parameter. This contains one of the following values:   null- Retrieves the bundles that belong to the account making the call.    AMAZON- Retrieves the bundles that are provided by AWS.  ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_workspace_bundles",
             "immutable": true,
@@ -32,6 +35,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

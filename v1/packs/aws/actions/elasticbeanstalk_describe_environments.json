@@ -29,6 +29,9 @@
             "description": "If specified, AWS Elastic Beanstalk restricts the returned descriptions to include only those that are associated with this application version.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_environments",
             "immutable": true,
@@ -44,6 +47,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

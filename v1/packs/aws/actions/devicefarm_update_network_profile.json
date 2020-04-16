@@ -5,6 +5,9 @@
     "name": "devicefarm_update_network_profile",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_network_profile",
             "immutable": true,
@@ -49,6 +52,9 @@
         },
         "name": {
             "description": "The name of the network profile about which you are returning information.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "type": {

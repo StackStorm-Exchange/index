@@ -5,6 +5,9 @@
     "name": "datapipeline_deactivate_pipeline",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "deactivate_pipeline",
             "immutable": true,
@@ -29,6 +32,9 @@
         "pipelineId": {
             "description": "The ID of the pipeline.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

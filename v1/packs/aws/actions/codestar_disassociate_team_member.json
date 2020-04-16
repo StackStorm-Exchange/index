@@ -5,6 +5,9 @@
     "name": "codestar_disassociate_team_member",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "disassociate_team_member",
             "immutable": true,
@@ -25,6 +28,9 @@
         "projectId": {
             "description": "The ID of the AWS CodeStar project from which you want to remove a team member.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "userArn": {

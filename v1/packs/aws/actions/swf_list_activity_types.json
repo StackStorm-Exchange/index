@@ -5,6 +5,9 @@
     "name": "swf_list_activity_types",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_activity_types",
             "immutable": true,
@@ -37,6 +40,9 @@
         },
         "nextPageToken": {
             "description": "If a NextPageToken was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextPageToken. Keep all other arguments unchanged. The configured maximumPageSize determines how many results can be returned in a single call.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "registrationStatus": {

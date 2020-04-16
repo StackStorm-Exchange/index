@@ -5,6 +5,9 @@
     "name": "codebuild_list_builds_for_project",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_builds_for_project",
             "immutable": true,
@@ -29,6 +32,9 @@
         "projectName": {
             "description": "The name of the build project to get a list of build IDs for.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "sortOrder": {

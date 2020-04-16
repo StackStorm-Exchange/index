@@ -13,6 +13,9 @@
             "description": "Optional integer. Specifies the maximum number of AWS Lambda functions to return in response. This parameter value must be greater than 0.",
             "type": "integer"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_functions",
             "immutable": true,
@@ -28,6 +31,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

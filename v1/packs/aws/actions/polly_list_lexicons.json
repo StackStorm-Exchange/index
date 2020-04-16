@@ -9,6 +9,9 @@
             "description": "An opaque pagination token returned from previous ListLexicons operation. If present, indicates where to continue the list of lexicons.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_lexicons",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

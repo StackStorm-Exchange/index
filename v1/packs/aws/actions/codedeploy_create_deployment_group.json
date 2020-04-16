@@ -5,6 +5,9 @@
     "name": "codedeploy_create_deployment_group",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_deployment_group",
             "immutable": true,
@@ -55,6 +58,9 @@
         "onPremisesInstanceTagFilters": {
             "description": "The on-premises instance tags on which to filter.",
             "type": "array"
+        },
+        "region": {
+            "type": "string"
         },
         "serviceRoleArn": {
             "description": "A service role ARN that allows AWS CodeDeploy to act on the user's behalf when interacting with AWS services.",

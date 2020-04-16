@@ -10,6 +10,9 @@
             "required": true,
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "initiate_vault_lock",
             "immutable": true,
@@ -30,6 +33,9 @@
         "policy": {
             "description": "The vault lock policy as a JSON string, which uses '\\' as an escape character.",
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         },
         "vaultName": {
             "description": "The name of the vault.",

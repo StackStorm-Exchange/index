@@ -5,6 +5,9 @@
     "name": "batch_cancel_job",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "cancel_job",
             "immutable": true,
@@ -30,6 +33,9 @@
         "reason": {
             "description": "A message to attach to the job that explains the reason for cancelling it. This message is returned by future DescribeJobs operations on the job. This message is also recorded in the AWS Batch activity logs. ",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

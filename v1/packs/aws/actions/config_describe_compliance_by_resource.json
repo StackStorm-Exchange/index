@@ -25,6 +25,9 @@
             "description": "The types of AWS resources for which you want compliance information; for example, AWS::EC2::Instance. For this action, you can specify that the resource type is an AWS account by specifying AWS::::Account.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_compliance_by_resource",
             "immutable": true,
@@ -40,6 +43,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

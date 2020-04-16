@@ -5,6 +5,9 @@
     "name": "apigateway_put_method",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_method",
             "immutable": true,
@@ -42,6 +45,9 @@
         },
         "operationName": {
             "description": "A human-friendly operation identifier for the method. For example, you can assign the operationName of ListPets for the GET /pets method in PetStore example.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "requestModels": {

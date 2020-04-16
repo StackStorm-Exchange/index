@@ -5,6 +5,9 @@
     "name": "iot_set_default_policy_version",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "set_default_policy_version",
             "immutable": true,
@@ -30,6 +33,9 @@
         "policyVersionId": {
             "description": "The policy version ID.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

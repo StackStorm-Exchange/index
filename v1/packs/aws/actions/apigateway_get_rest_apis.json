@@ -5,6 +5,9 @@
     "name": "apigateway_get_rest_apis",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_rest_apis",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "position": {
             "description": "The position of the current RestApis resource in the collection to get information about.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

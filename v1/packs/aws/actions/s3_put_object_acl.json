@@ -55,6 +55,9 @@
             "description": "VersionId used to reference a specific version of the object.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_object_acl",
             "immutable": true,
@@ -70,6 +73,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

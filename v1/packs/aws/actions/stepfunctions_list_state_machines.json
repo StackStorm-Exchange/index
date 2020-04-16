@@ -5,6 +5,9 @@
     "name": "stepfunctions_list_state_machines",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_state_machines",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "nextToken": {
             "description": "If a nextToken was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

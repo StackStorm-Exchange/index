@@ -21,6 +21,9 @@
             "description": "[EC2-Classic] One or more Elastic IP addresses. Default: Describes all your Elastic IP addresses.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_addresses",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

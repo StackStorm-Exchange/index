@@ -54,6 +54,9 @@
             "description": "The type of virtualization. Default: paravirtual ",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "register_image",
             "immutable": true,
@@ -69,6 +72,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "datapipeline_query_objects",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "query_objects",
             "immutable": true,
@@ -38,6 +41,9 @@
         "query": {
             "description": "The query that defines the objects to be returned. The Query object can contain a maximum of ten selectors. The conditions in the query are limited to top-level String fields in the object. These filters can be applied to components, instances, and attempts.",
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         },
         "sphere": {
             "description": "Indicates whether the query applies to components or instances. The possible values are: COMPONENT, INSTANCE, and ATTEMPT.",

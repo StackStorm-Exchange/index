@@ -46,6 +46,9 @@
             "description": "The value of the attribute being modified. This is only valid when modifying the description attribute.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "modify_image_attribute",
             "immutable": true,
@@ -61,6 +64,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

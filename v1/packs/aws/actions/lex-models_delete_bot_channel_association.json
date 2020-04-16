@@ -5,6 +5,9 @@
     "name": "lex-models_delete_bot_channel_association",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "delete_bot_channel_association",
             "immutable": true,
@@ -35,6 +38,9 @@
         "name": {
             "description": "The name of the association. The name is case sensitive. ",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

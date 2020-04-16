@@ -5,6 +5,9 @@
     "name": "codecommit_list_repositories",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_repositories",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "order": {
             "description": "The order in which to sort the results of a list repositories operation.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "sortBy": {

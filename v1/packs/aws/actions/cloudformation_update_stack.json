@@ -62,6 +62,9 @@
             "description": "Reuse the existing template that is associated with the stack that you are updating.",
             "type": "boolean"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_stack",
             "immutable": true,
@@ -77,6 +80,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

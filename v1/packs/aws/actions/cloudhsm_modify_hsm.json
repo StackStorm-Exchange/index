@@ -30,6 +30,9 @@
             "description": "The new IP address for the syslog monitoring server. The AWS CloudHSM service only supports one syslog monitoring server.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "modify_hsm",
             "immutable": true,
@@ -45,6 +48,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

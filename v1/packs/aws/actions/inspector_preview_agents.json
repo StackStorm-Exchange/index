@@ -5,6 +5,9 @@
     "name": "inspector_preview_agents",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "preview_agents",
             "immutable": true,
@@ -33,6 +36,9 @@
         "previewAgentsArn": {
             "description": "The ARN of the assessment target whose agents you want to preview.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

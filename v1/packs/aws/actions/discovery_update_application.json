@@ -5,6 +5,9 @@
     "name": "discovery_update_application",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "update_application",
             "immutable": true,
@@ -33,6 +36,9 @@
         },
         "name": {
             "description": "New name of the application to be updated.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

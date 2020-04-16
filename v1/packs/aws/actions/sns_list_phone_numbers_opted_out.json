@@ -5,6 +5,9 @@
     "name": "sns_list_phone_numbers_opted_out",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_phone_numbers_opted_out",
             "immutable": true,
@@ -24,6 +27,9 @@
         },
         "nextToken": {
             "description": "A NextToken string is used when you call the ListPhoneNumbersOptedOut action to retrieve additional records that are available after the first page of results.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "r53_create_hosted_zone",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_hosted_zone",
             "immutable": true,
@@ -33,6 +36,9 @@
         "private_zone": {
             "default": false,
             "type": "boolean"
+        },
+        "region": {
+            "type": "string"
         },
         "vpc_id": {
             "type": "string"

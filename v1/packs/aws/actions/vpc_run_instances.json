@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_run_instances",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "run_instances",
             "immutable": true,
@@ -91,6 +94,9 @@
             "type": "string"
         },
         "ramdisk_id": {
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "security_group_ids": {

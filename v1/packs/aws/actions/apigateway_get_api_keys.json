@@ -5,6 +5,9 @@
     "name": "apigateway_get_api_keys",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_api_keys",
             "immutable": true,
@@ -40,6 +43,9 @@
         },
         "position": {
             "description": "The position of the current ApiKeys resource to get information about.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "discovery_list_server_neighbors",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_server_neighbors",
             "immutable": true,
@@ -42,6 +45,9 @@
         "portInformationNeeded": {
             "description": "Flag to indicate if port and protocol information is needed as part of the response.",
             "type": "boolean"
+        },
+        "region": {
+            "type": "string"
         }
     },
     "runner_type": "python-script"

@@ -37,6 +37,9 @@
             "description": "The offering identifier filter value. Use this parameter to show only purchased reservations matching the specified offering identifier.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_reserved_cache_nodes",
             "immutable": true,
@@ -52,6 +55,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

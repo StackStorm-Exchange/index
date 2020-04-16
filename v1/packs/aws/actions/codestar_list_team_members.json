@@ -5,6 +5,9 @@
     "name": "codestar_list_team_members",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_team_members",
             "immutable": true,
@@ -33,6 +36,9 @@
         "projectId": {
             "description": "The ID of the project for which you want to list team members.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "directconnect_create_bgp_peer",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_bgp_peer",
             "immutable": true,
@@ -25,6 +28,9 @@
         "newBGPPeer": {
             "description": "Detailed information for the BGP peer to be created. Default: None",
             "type": "object"
+        },
+        "region": {
+            "type": "string"
         },
         "virtualInterfaceId": {
             "description": "The ID of the virtual interface on which the BGP peer will be provisioned. Example: dxvif-456abc78 Default: None",

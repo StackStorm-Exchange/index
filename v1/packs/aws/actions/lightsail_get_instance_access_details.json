@@ -5,6 +5,9 @@
     "name": "lightsail_get_instance_access_details",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_instance_access_details",
             "immutable": true,
@@ -29,6 +32,9 @@
         },
         "protocol": {
             "description": "The protocol to use to connect to your instance. Defaults to ssh.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

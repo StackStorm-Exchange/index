@@ -21,6 +21,9 @@
             "description": "The page token of the first page retrieved. If null, this retrieves the first page of size PageSize.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "scan_provisioned_products",
             "immutable": true,
@@ -36,6 +39,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

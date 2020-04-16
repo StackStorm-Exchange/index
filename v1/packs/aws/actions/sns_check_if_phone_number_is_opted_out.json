@@ -5,6 +5,9 @@
     "name": "sns_check_if_phone_number_is_opted_out",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "check_if_phone_number_is_opted_out",
             "immutable": true,
@@ -25,6 +28,9 @@
         "phoneNumber": {
             "description": "The phone number for which you want to check the opt out status.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

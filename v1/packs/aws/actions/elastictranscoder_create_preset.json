@@ -31,6 +31,9 @@
             "description": "A section of the request body that specifies the video parameters.",
             "type": "object"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_preset",
             "immutable": true,
@@ -46,6 +49,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

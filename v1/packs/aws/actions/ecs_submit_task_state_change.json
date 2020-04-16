@@ -5,6 +5,9 @@
     "name": "ecs_submit_task_state_change",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "submit_task_state_change",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "reason": {
             "description": "The reason for the state change request.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "status": {

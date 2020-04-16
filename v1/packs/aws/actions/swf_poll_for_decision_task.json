@@ -5,6 +5,9 @@
     "name": "swf_poll_for_decision_task",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "poll_for_decision_task",
             "immutable": true,
@@ -37,6 +40,9 @@
         },
         "nextPageToken": {
             "description": "If a NextPageToken was returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextPageToken. Keep all other arguments unchanged. The configured maximumPageSize determines how many results can be returned in a single call. The nextPageToken returned by this action cannot be used with GetWorkflowExecutionHistory to get the next page. You must call PollForDecisionTask again (with the nextPageToken) to retrieve the next page of history records. Calling PollForDecisionTask with a nextPageToken will not return a new decision task..",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "reverseOrder": {

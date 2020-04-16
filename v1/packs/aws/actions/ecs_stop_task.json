@@ -5,6 +5,9 @@
     "name": "ecs_stop_task",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "stop_task",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "reason": {
             "description": "An optional message specified when a task is stopped. For example, if you are using a custom scheduler, you can use this parameter to specify the reason for stopping the task here, and the message will appear in subsequent DescribeTasks API operations on this task. Up to 255 characters are allowed in this message.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "task": {

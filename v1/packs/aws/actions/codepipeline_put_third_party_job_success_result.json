@@ -5,6 +5,9 @@
     "name": "codepipeline_put_third_party_job_success_result",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "put_third_party_job_success_result",
             "immutable": true,
@@ -42,6 +45,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

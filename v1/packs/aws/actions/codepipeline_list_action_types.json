@@ -5,6 +5,9 @@
     "name": "codepipeline_list_action_types",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_action_types",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "nextToken": {
             "description": "An identifier that was returned from the previous list action types call, which can be used to return the next set of action types in the list.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "lex-models_get_slot_types",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_slot_types",
             "immutable": true,
@@ -32,6 +35,9 @@
         },
         "nextToken": {
             "description": "A pagination token that fetches the next page of slot types. If the response to this API call is truncated, Amazon Lex returns a pagination token in the response. To fetch next page of slot types, specify the pagination token in the next request.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

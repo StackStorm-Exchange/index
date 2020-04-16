@@ -109,6 +109,9 @@
             "description": "A list of EC2 VPC security groups to associate with the restored DB cluster.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "restore_db_cluster_from_s3",
             "immutable": true,
@@ -124,6 +127,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

@@ -5,6 +5,9 @@
     "name": "apigateway_get_models",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "get_models",
             "immutable": true,
@@ -28,6 +31,9 @@
         },
         "position": {
             "description": "The position of the next set of results in the Models resource to get information about.",
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "restApiId": {

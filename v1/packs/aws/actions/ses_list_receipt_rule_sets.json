@@ -9,6 +9,9 @@
             "description": "A token returned from a previous call to ListReceiptRuleSets to indicate the position in the receipt rule set list.",
             "type": "string"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "list_receipt_rule_sets",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

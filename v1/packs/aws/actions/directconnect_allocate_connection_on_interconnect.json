@@ -5,6 +5,9 @@
     "name": "directconnect_allocate_connection_on_interconnect",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "allocate_connection_on_interconnect",
             "immutable": true,
@@ -40,6 +43,9 @@
         "ownerAccount": {
             "description": "Numeric account Id of the customer for whom the connection will be provisioned. Example: 123443215678 Default: None",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "vlan": {

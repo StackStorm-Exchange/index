@@ -4,6 +4,9 @@
     "entry_point": "run.py",
     "name": "vpc_detach_volume",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "detach_volume",
             "immutable": true,
@@ -31,6 +34,9 @@
         "module_path": {
             "default": "boto.vpc",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "volume_id": {

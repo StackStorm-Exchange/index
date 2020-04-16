@@ -5,6 +5,9 @@
     "name": "devicefarm_create_project",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_project",
             "immutable": true,
@@ -25,6 +28,9 @@
         "name": {
             "description": "The project's name.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

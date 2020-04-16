@@ -18,6 +18,9 @@
             "description": "Specifies the minimum confidence level for the labels to return. Amazon Rekognition doesn't return any labels with confidence lower than this specified value. If minConfidence is not specified, the operation returns labels with a confidence values greater than or equal to 50 percent.",
             "type": "number"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "detect_labels",
             "immutable": true,
@@ -33,6 +36,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },

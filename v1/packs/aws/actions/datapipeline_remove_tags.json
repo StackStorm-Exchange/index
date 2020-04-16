@@ -5,6 +5,9 @@
     "name": "datapipeline_remove_tags",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "remove_tags",
             "immutable": true,
@@ -25,6 +28,9 @@
         "pipelineId": {
             "description": "The ID of the pipeline.",
             "required": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "tagKeys": {

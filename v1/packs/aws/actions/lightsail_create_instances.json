@@ -5,6 +5,9 @@
     "name": "lightsail_create_instances",
     "pack": "aws",
     "parameters": {
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "create_instances",
             "immutable": true,
@@ -48,6 +51,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         },
         "userData": {

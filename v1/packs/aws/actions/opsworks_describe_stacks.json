@@ -9,6 +9,9 @@
             "description": "An array of stack IDs that specify the stacks to be described. If you omit this parameter, DescribeStacks returns a description of every stack.",
             "type": "array"
         },
+        "account_id": {
+            "type": "string"
+        },
         "action": {
             "default": "describe_stacks",
             "immutable": true,
@@ -24,6 +27,9 @@
         "module_path": {
             "default": "boto3",
             "immutable": true,
+            "type": "string"
+        },
+        "region": {
             "type": "string"
         }
     },
