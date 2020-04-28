@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1587776341,
-        "hash": "0acbe33fd7bf5a7ac01fe5186c2ead39"
+        "generated_ts": 1588032544,
+        "hash": "77ed049076699870e99954fe659332f4"
     },
     "packs": {
         "acos": {
@@ -15150,10 +15150,15 @@
                 "vmware"
             ],
             "name": "vra7",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "ref": "vra7",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vra7",
             "version": "0.1.2",
             "versions": [
+                "0.1.3",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
