@@ -1,0 +1,33 @@
+{
+    "description": "Check if the IP/network is in the network",
+    "enabled": true,
+    "entry_point": "contains.py",
+    "name": "contains",
+    "pack": "networking_utils",
+    "parameters": {
+        "container": {
+            "description": "Network",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "item": {
+            "description": "Contained item",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "item_type": {
+            "default": "address",
+            "description": "Type of the contained item",
+            "enum": [
+                "address",
+                "network"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1588249982,
-        "hash": "8ec9687277f264848f01969a51fd249e"
+        "generated_ts": 1588271912,
+        "hash": "78c063afd04b1740917fb1e2061a2dd7"
     },
     "packs": {
         "acos": {
@@ -10962,8 +10962,10 @@
             "author": "Jon Middleton",
             "content": {
                 "actions": {
-                    "count": 9,
+                    "count": 13,
                     "resources": [
+                        "contains",
+                        "fping",
                         "geoip",
                         "is_valid_asa_nameif",
                         "is_valid_hostname",
@@ -10972,7 +10974,9 @@
                         "is_valid_ipv4",
                         "is_valid_ipv6",
                         "ping",
-                        "ping_py"
+                        "ping_py",
+                        "resolve",
+                        "traceroute_mtr"
                     ]
                 },
                 "aliases": {
@@ -10983,16 +10987,20 @@
                     ]
                 },
                 "tests": {
-                    "count": 8,
+                    "count": 12,
                     "resources": [
                         "networking_utils_base_test_case.py",
                         "test_action_aliases.py",
+                        "test_action_contains.py",
+                        "test_action_fping.py",
                         "test_action_geoip.py",
                         "test_action_is_valid_asa_nameif.py",
                         "test_action_is_valid_hostname.py",
                         "test_action_is_valid_ip.py",
                         "test_action_is_valid_ip_port.py",
-                        "test_action_ping.py"
+                        "test_action_ping.py",
+                        "test_action_resolve.py",
+                        "test_action_traceroute_mtr.py"
                     ]
                 }
             },
@@ -11013,7 +11021,7 @@
             ],
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "version": "0.4.6",
+            "version": "0.5.0",
             "versions": [
                 "0.5.0",
                 "0.4.6",

@@ -1,0 +1,42 @@
+{
+    "description": "Runs a ping using fping command",
+    "enabled": true,
+    "entry_point": "fping.py",
+    "name": "fping",
+    "pack": "networking_utils",
+    "parameters": {
+        "count": {
+            "default": 10,
+            "description": "How many ICMP requests should be sent",
+            "position": 3,
+            "required": true,
+            "type": "integer"
+        },
+        "family": {
+            "default": "any",
+            "description": "Protocol family to use for the fping",
+            "enum": [
+                "any",
+                "ipv4",
+                "ipv6"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Host to ping",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "interval": {
+            "default": 1,
+            "description": "Interval between ICMP requests in seconds",
+            "position": 2,
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

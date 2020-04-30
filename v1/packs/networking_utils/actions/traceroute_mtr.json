@@ -1,0 +1,81 @@
+{
+    "description": "Runs a traceroute using mtr command",
+    "enabled": true,
+    "entry_point": "traceroute_mtr.py",
+    "name": "traceroute_mtr",
+    "pack": "networking_utils",
+    "parameters": {
+        "asn": {
+            "default": false,
+            "description": "Should AS numbers be resolved",
+            "position": 6,
+            "required": true,
+            "type": "boolean"
+        },
+        "dns": {
+            "default": true,
+            "description": "Should reverse DNS be resolved",
+            "position": 4,
+            "required": true,
+            "type": "boolean"
+        },
+        "family": {
+            "default": "any",
+            "description": "Protocol family to use for the traceroute",
+            "enum": [
+                "any",
+                "ipv4",
+                "ipv6"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "host": {
+            "description": "Host to trace the route to",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "interval": {
+            "default": 1,
+            "description": "Interval between ICMP requests in seconds",
+            "position": 8,
+            "required": true,
+            "type": "integer"
+        },
+        "max_ttl": {
+            "default": 30,
+            "description": "Max TTL",
+            "position": 7,
+            "required": true,
+            "type": "integer"
+        },
+        "port": {
+            "description": "Port to use for TCP/UDP traceroute",
+            "position": 3,
+            "required": false,
+            "type": "integer"
+        },
+        "show_ips": {
+            "default": false,
+            "description": "Get both IPs and reverse DNS",
+            "position": 5,
+            "required": true,
+            "type": "boolean"
+        },
+        "traceroute_type": {
+            "default": "icmp",
+            "description": "Type of traceroute to do",
+            "enum": [
+                "icmp",
+                "udp",
+                "tcp"
+            ],
+            "position": 2,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

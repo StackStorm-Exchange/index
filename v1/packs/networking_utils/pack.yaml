@@ -8,7 +8,7 @@ keywords:
 - ipv6
 - geoip
 - ping
-version: 0.4.6
+version: 0.5.0
 python_versions:
 - '2'
 - '3'
@@ -16,8 +16,10 @@ author: Jon Middleton
 email: jjm@geeky-and-blonde.me.uk
 content:
   actions:
-    count: 9
+    count: 13
     resources:
+    - contains
+    - fping
     - geoip
     - is_valid_asa_nameif
     - is_valid_hostname
@@ -27,19 +29,25 @@ content:
     - is_valid_ipv6
     - ping
     - ping_py
+    - resolve
+    - traceroute_mtr
   aliases:
     count: 2
     resources:
     - geoip
     - ping
   tests:
-    count: 8
+    count: 12
     resources:
     - networking_utils_base_test_case.py
     - test_action_aliases.py
+    - test_action_contains.py
+    - test_action_fping.py
     - test_action_geoip.py
     - test_action_is_valid_asa_nameif.py
     - test_action_is_valid_hostname.py
     - test_action_is_valid_ip.py
     - test_action_is_valid_ip_port.py
     - test_action_ping.py
+    - test_action_resolve.py
+    - test_action_traceroute_mtr.py
