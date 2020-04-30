@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "format": "Working..."
+    },
+    "action_ref": "cisco_aci.find_mac",
+    "description": "Find a MAC address in the ACI fabric",
+    "formats": [
+        "aci find mac {{ mac }} on {{ apic }}"
+    ],
+    "name": "find_mac",
+    "pack": "cisco_aci",
+    "result": {
+        "format": "Action completed!\n{% if execution.result.result.totalCount == '0' %}\nNo entry found!\n{% else %}\n{% for entry in execution.result.result.imdata %}\nmac : {{ entry.fvCEp.attributes.mac }}\n{% if entry['fvCEp'].attributes.ip %}\nip : {{ entry.fvCEp.attributes.ip }}\n{% endif %}\n{% if entry['fvCEp'].children[0].fvRsToVm -%}\nnode-rn : {{ entry.fvCEp.children[0].fvRsToVm.children[0].fvReportingNode.attributes.rn }}\n{% endif %}\n{% if entry['fvCEp'].children[0].fvRsToVm -%}\nnode-id : {{ entry.fvCEp.children[0].fvRsToVm.children[0].fvReportingNode.attributes.id }}\n{% endif %}\n{% if entry['fvCEp'].children[3] %}\nep : {{ entry.fvCEp.children[3].fvRsCEpToPathEp.attributes.tDn }}\n{% endif %}\n{% if entry['fvCEp'].attributes.dn %}\ndn : {{ entry.fvCEp.attributes.dn }}\n{% endif %}\n{% endfor %}\n{% endif %}\n"
+    }
+}

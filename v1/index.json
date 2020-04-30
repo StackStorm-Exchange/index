@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1588249506,
-        "hash": "feba11b02f82c64064b72793c0ac8a64"
+        "generated_ts": 1588249982,
+        "hash": "8ec9687277f264848f01969a51fd249e"
     },
     "packs": {
         "acos": {
@@ -4989,7 +4989,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 19,
+                    "count": 21,
                     "resources": [
                         "create_ap",
                         "create_bd",
@@ -4998,6 +4998,8 @@
                         "create_snapshot",
                         "create_static_binding",
                         "create_tenant",
+                        "find_ip",
+                        "find_mac",
                         "get_aps",
                         "get_assigned_ports",
                         "get_bds",
@@ -5012,6 +5014,13 @@
                         "test_endpoint"
                     ]
                 },
+                "aliases": {
+                    "count": 2,
+                    "resources": [
+                        "find_ip",
+                        "find_mac"
+                    ]
+                },
                 "rules": {
                     "count": 1,
                     "resources": [
@@ -5019,13 +5028,15 @@
                     ]
                 },
                 "tests": {
-                    "count": 15,
+                    "count": 17,
                     "resources": [
                         "aci_base_action_test_case.py",
                         "test_action_create_ap.py",
                         "test_action_create_bd.py",
                         "test_action_create_epg.py",
                         "test_action_create_static_binding.py",
+                        "test_action_find_ip.py",
+                        "test_action_find_mac.py",
                         "test_action_get_aps.py",
                         "test_action_get_assigned_ports.py",
                         "test_action_get_bds.py",
@@ -5040,7 +5051,8 @@
                 }
             },
             "contributors": [
-                "Kamlesh Koladiya <koladiya_111@yahoo.com>"
+                "Kamlesh Koladiya <koladiya_111@yahoo.com>",
+                "Justin Oeder <justin.oeder@encore.tech>"
             ],
             "description": "Cisco ACI pack",
             "email": "paul.mulvihill@pulsant.com",
@@ -5056,8 +5068,10 @@
             ],
             "ref": "cisco_aci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_aci",
-            "version": "0.1.6",
+            "version": "0.2.0",
             "versions": [
+                "0.2.0",
+                "0.1.7",
                 "0.1.6",
                 "0.1.5",
                 "0.1.4",
@@ -11001,6 +11015,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
             "version": "0.4.6",
             "versions": [
+                "0.5.0",
                 "0.4.6",
                 "0.4.5",
                 "0.4.4",

@@ -1,11 +1,12 @@
 ref: cisco_aci
 name: cisco_aci
 description: Cisco ACI pack
-version: 0.1.6
+version: 0.2.0
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
 - Kamlesh Koladiya <koladiya_111@yahoo.com>
+- Justin Oeder <justin.oeder@encore.tech>
 keywords:
 - cisco
 - aci
@@ -15,7 +16,7 @@ python_versions:
 - '3'
 content:
   actions:
-    count: 19
+    count: 21
     resources:
     - create_ap
     - create_bd
@@ -24,6 +25,8 @@ content:
     - create_snapshot
     - create_static_binding
     - create_tenant
+    - find_ip
+    - find_mac
     - get_aps
     - get_assigned_ports
     - get_bds
@@ -36,18 +39,25 @@ content:
     - link_domain
     - setup_epg
     - test_endpoint
+  aliases:
+    count: 2
+    resources:
+    - find_ip
+    - find_mac
   rules:
     count: 1
     resources:
     - Setup ACI EPG
   tests:
-    count: 15
+    count: 17
     resources:
     - aci_base_action_test_case.py
     - test_action_create_ap.py
     - test_action_create_bd.py
     - test_action_create_epg.py
     - test_action_create_static_binding.py
+    - test_action_find_ip.py
+    - test_action_find_mac.py
     - test_action_get_aps.py
     - test_action_get_assigned_ports.py
     - test_action_get_bds.py

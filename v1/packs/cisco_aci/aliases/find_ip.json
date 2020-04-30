@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "format": "Working..."
+    },
+    "action_ref": "cisco_aci.find_ip",
+    "description": "Find an IP address in the ACI fabric",
+    "formats": [
+        "aci find ip {{ ip }} on {{ apic }}"
+    ],
+    "name": "find_ip",
+    "pack": "cisco_aci",
+    "result": {
+        "format": "Action completed!\n{% if execution.result.result.totalCount == '0' %}\nNo entry found!\n{% else %}\n{% for entry in execution.result.result.imdata %}\nmac : {{ entry.fvCEp.attributes.mac }}\nip : {{ entry.fvCEp.attributes.ip }}\nnode-rn : {{ entry.fvCEp.children[0].fvIp.children[0].fvReportingNode.attributes.rn }}\nnode-id : {{ entry.fvCEp.children[0].fvIp.children[0].fvReportingNode.attributes.id }}\ndn : {{ entry.fvCEp.attributes.dn }}\n{% endfor %}\n{% endif %}\n"
+    }
+}
