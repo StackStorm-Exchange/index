@@ -10,6 +10,7 @@
         "type": "array"
     },
     "host": {
+        "default": "circleci.com",
         "description": "Circle CI server host.",
         "required": true,
         "secret": false,

@@ -1,0 +1,40 @@
+{
+    "description": "Wait until a Circle CI pipeline (aka all the workflows in the pipeline) finish (API v2).",
+    "enabled": true,
+    "entry_point": "wait_until_pipeline_finishes.py",
+    "name": "wait_until_pipeline_finishes",
+    "parameters": {
+        "pipeline_num": {
+            "description": "Circle CI pipeline number.",
+            "required": true,
+            "type": "string"
+        },
+        "project": {
+            "description": "Name of project in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "vcs_type": {
+            "default": "github",
+            "description": "Name of version control system.",
+            "enum": [
+                "github",
+                "bitbucket"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "wait_timeout": {
+            "default": 600,
+            "description": "How long to wait before timing out (in seconds).",
+            "required": false,
+            "type": "number"
+        }
+    },
+    "runner_type": "python-script"
+}

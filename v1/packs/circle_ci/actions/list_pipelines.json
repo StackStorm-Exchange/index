@@ -1,0 +1,35 @@
+{
+    "description": "List all the available pipelines (API v2).",
+    "enabled": true,
+    "entry_point": "list_pipelines.py",
+    "name": "list_pipelines",
+    "pack": "circle_ci",
+    "parameters": {
+        "branch": {
+            "description": "Optional branch name to filter the pipelines.",
+            "required": false,
+            "type": "string"
+        },
+        "project": {
+            "description": "Name of project in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Username in circle ci.",
+            "required": true,
+            "type": "string"
+        },
+        "vcs_type": {
+            "default": "github",
+            "description": "Name of version control system.",
+            "enum": [
+                "github",
+                "bitbucket"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

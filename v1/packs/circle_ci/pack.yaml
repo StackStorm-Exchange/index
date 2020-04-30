@@ -6,7 +6,7 @@ keywords:
 - circle ci
 - continous integration
 - ci
-version: 0.5.3
+version: 0.6.0
 author: StackStorm dev
 email: support@stackstorm.com
 python_versions:
@@ -14,14 +14,17 @@ python_versions:
 - '3'
 content:
   actions:
-    count: 6
+    count: 9
     resources:
     - cancel_build
     - get_build_info
     - get_build_number
+    - list_pipelines
     - retry_build
     - run_build
+    - run_project_build
     - wait_until_build_finishes
+    - wait_until_pipeline_finishes
   sensors:
     count: 1
     resources:

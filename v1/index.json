@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1588032544,
-        "hash": "77ed049076699870e99954fe659332f4"
+        "generated_ts": 1588249506,
+        "hash": "feba11b02f82c64064b72793c0ac8a64"
     },
     "packs": {
         "acos": {
@@ -4930,14 +4930,17 @@
             "author": "StackStorm dev",
             "content": {
                 "actions": {
-                    "count": 6,
+                    "count": 9,
                     "resources": [
                         "cancel_build",
                         "get_build_info",
                         "get_build_number",
+                        "list_pipelines",
                         "retry_build",
                         "run_build",
-                        "wait_until_build_finishes"
+                        "run_project_build",
+                        "wait_until_build_finishes",
+                        "wait_until_pipeline_finishes"
                     ]
                 },
                 "sensors": {
@@ -4969,7 +4972,7 @@
             ],
             "ref": "circle_ci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-circle_ci",
-            "version": "0.5.3",
+            "version": "0.6.0",
             "versions": [
                 "0.6.0",
                 "0.5.3",
