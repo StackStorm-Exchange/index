@@ -3,7 +3,7 @@ description: OpenStack integration pack
 keywords:
 - openstack
 - private cloud
-version: 0.7.3
+version: 0.8.0
 author: StackStorm Engineering Team
 email: support@stackstorm.com
 contributors:
@@ -13,7 +13,7 @@ python_versions:
 - '3'
 content:
   actions:
-    count: 702
+    count: 710
     resources:
     - address.scope.create
     - address.scope.delete
@@ -129,6 +129,14 @@ content:
     - flavor.unset
     - floating.ip.set
     - floating.ip.unset
+    - group.add.user
+    - group.contains.user
+    - group.create
+    - group.delete
+    - group.list
+    - group.remove.user
+    - group.set
+    - group.show
     - help
     - host.list
     - host.set

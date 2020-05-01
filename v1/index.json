@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1588271912,
-        "hash": "78c063afd04b1740917fb1e2061a2dd7"
+        "generated_ts": 1588343189,
+        "hash": "8a6d9773ecb8b0b511cef94549147826"
     },
     "packs": {
         "acos": {
@@ -11382,7 +11382,7 @@
             "author": "StackStorm Engineering Team",
             "content": {
                 "actions": {
-                    "count": 702,
+                    "count": 710,
                     "resources": [
                         "address.scope.create",
                         "address.scope.delete",
@@ -11498,6 +11498,14 @@
                         "flavor.unset",
                         "floating.ip.set",
                         "floating.ip.unset",
+                        "group.add.user",
+                        "group.contains.user",
+                        "group.create",
+                        "group.delete",
+                        "group.list",
+                        "group.remove.user",
+                        "group.set",
+                        "group.show",
                         "help",
                         "host.list",
                         "host.set",
@@ -12110,8 +12118,9 @@
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openstack",
-            "version": "0.7.3",
+            "version": "0.8.0",
             "versions": [
+                "0.8.0",
                 "0.7.3",
                 "0.7.2",
                 "0.7.1",
