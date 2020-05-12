@@ -1,6 +1,7 @@
 {
     "class_name": "GithubRepositorySensor",
     "description": "Sensor which monitors Github repository for activity",
+    "enabled": true,
     "entry_point": "github_repository_sensor.py",
     "poll_interval": 30,
     "trigger_types": [

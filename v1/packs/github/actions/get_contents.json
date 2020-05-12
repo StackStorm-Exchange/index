@@ -1,0 +1,36 @@
+{
+    "description": "Gets the contents of a file or directory in a repository.",
+    "enabled": true,
+    "entry_point": "get_contents.py",
+    "name": "get_contents",
+    "parameters": {
+        "decode": {
+            "default": false,
+            "description": "Decode content.",
+            "required": false,
+            "type": "boolean"
+        },
+        "path": {
+            "description": "Path to file.",
+            "required": true,
+            "type": "string"
+        },
+        "ref": {
+            "default": "HEAD",
+            "description": "Git ref.",
+            "required": false,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -7,7 +7,7 @@ keywords:
 - git
 - scm
 - serverless
-version: 1.1.0
+version: 1.2.0
 python_versions:
 - '2'
 - '3'
@@ -15,9 +15,10 @@ author: StackStorm, Inc.
 email: info@stackstorm.com
 contributors:
 - Jon Middleton <jon.middleton@pulsant.com>
+- Igor Cherkaev <igor.cherkaev@copart.com>
 content:
   actions:
-    count: 24
+    count: 27
     resources:
     - add_comment
     - add_status
@@ -25,10 +26,12 @@ content:
     - check_deployment_env
     - create_deployment
     - create_deployment_status
+    - create_file
     - create_issue
     - create_release
     - deployment_event
     - get_clone_stats
+    - get_contents
     - get_deployment_statuses
     - get_issue
     - get_pull
@@ -43,6 +46,7 @@ content:
     - merge_pull
     - review_pull
     - store_oauth_token
+    - update_file
   aliases:
     count: 7
     resources:

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1589286072,
-        "hash": "53a76ac4a79200ce844419d0a64602e4"
+        "generated_ts": 1589309871,
+        "hash": "04cd162f777139bdd6b06cfdb16f042b"
     },
     "packs": {
         "acos": {
@@ -7837,7 +7837,7 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 24,
+                    "count": 27,
                     "resources": [
                         "add_comment",
                         "add_status",
@@ -7845,10 +7845,12 @@
                         "check_deployment_env",
                         "create_deployment",
                         "create_deployment_status",
+                        "create_file",
                         "create_issue",
                         "create_release",
                         "deployment_event",
                         "get_clone_stats",
+                        "get_contents",
                         "get_deployment_statuses",
                         "get_issue",
                         "get_pull",
@@ -7862,7 +7864,8 @@
                         "list_teams",
                         "merge_pull",
                         "review_pull",
-                        "store_oauth_token"
+                        "store_oauth_token",
+                        "update_file"
                     ]
                 },
                 "aliases": {
@@ -7917,7 +7920,8 @@
                 }
             },
             "contributors": [
-                "Jon Middleton <jon.middleton@pulsant.com>"
+                "Jon Middleton <jon.middleton@pulsant.com>",
+                "Igor Cherkaev <igor.cherkaev@copart.com>"
             ],
             "description": "GitHub integration",
             "email": "info@stackstorm.com",
@@ -7935,8 +7939,11 @@
             ],
             "ref": "github",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-github",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "versions": [
+                "1.2.2",
+                "1.2.1",
+                "1.2.0",
                 "1.1.0",
                 "1.0.0",
                 "0.9.0",

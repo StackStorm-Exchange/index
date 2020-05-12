@@ -23,6 +23,7 @@
     },
     "password": {
         "description": "GitHub Password",
+        "secret": true,
         "type": "string"
     },
     "repository_sensor": {
@@ -77,9 +78,10 @@
         "type": "object"
     },
     "token": {
-        "default": "{{system.github_oauth_token}}",
+        "default": "{{ st2kv.system.github_oauth_token }}",
         "description": "GitHub oAuth Token",
         "required": true,
+        "secret": true,
         "type": "string"
     },
     "user": {

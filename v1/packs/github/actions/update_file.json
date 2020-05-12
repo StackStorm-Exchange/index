@@ -1,0 +1,64 @@
+{
+    "description": "Update a file in this repository.",
+    "enabled": true,
+    "entry_point": "update_file.py",
+    "name": "update_file",
+    "parameters": {
+        "author": {
+            "description": "If omitted this will be filled in with committer information. If passed, you must specify both a name and email. Expected format: FirstName LastName <email@address>",
+            "required": false,
+            "type": "string"
+        },
+        "branch": {
+            "description": "Branch to create the commit on. Defaults to the default branch of the repository",
+            "required": false,
+            "type": "string"
+        },
+        "committer": {
+            "description": "If no information is given the authenticated user's information will be used. You must specify both a name and email. Expected format: FirstName LastName <email@address>",
+            "required": false,
+            "type": "string"
+        },
+        "content": {
+            "description": "The actual data in the file.",
+            "required": true,
+            "type": "string"
+        },
+        "encoding": {
+            "default": "none",
+            "description": "Specify if the input content is encoded.",
+            "enum": [
+                "none",
+                "base64"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "message": {
+            "description": "Commit message.",
+            "required": true,
+            "type": "string"
+        },
+        "path": {
+            "description": "Path of the file in the repository.",
+            "required": true,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "sha": {
+            "description": "The blob SHA of the file being replaced.",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
