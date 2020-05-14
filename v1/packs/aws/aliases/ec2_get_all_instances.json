@@ -6,7 +6,12 @@
     "action_ref": "aws.ec2_get_all_instances",
     "description": "get all instances",
     "formats": [
-        "aws ec2 get"
+        {
+            "display": "aws ec2 get",
+            "representation": [
+                "aws ec2 get"
+            ]
+        }
     ],
     "name": "ec2_get_all_instances",
     "pack": "aws",

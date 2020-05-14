@@ -6,7 +6,12 @@
     "action_ref": "aws.ec2_stop_instances",
     "description": "stop instance",
     "formats": [
-        "aws ec2 stop {{instance_ids}}"
+        {
+            "display": "aws ec2 stop <InstanceIds>",
+            "representation": [
+                "aws ec2 stop {{InstanceIds}}"
+            ]
+        }
     ],
     "name": "ec2_stop_instances",
     "pack": "aws",
@@ -17,6 +22,6 @@
                 "footer": "AWS Pack"
             }
         },
-        "format": "{% for ec2 in execution.result.result -%}\n \u2022 {{ ec2.id }}  - {{ ec2.state }}\n{%+ endfor %}\n"
+        "format": "{% for line in execution.result.result -%}\n    {% for ec2 in line.StoppingInstances -%}\n    \u2022 {{ ec2.InstanceId }}  - {{ ec2.CurrentState.Name }}\n    {% endfor %}\n{%+ endfor %}\n"
     }
 }

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1589403675,
-        "hash": "5c2f7eac527b45e87972267eb21f74a9"
+        "generated_ts": 1589457439,
+        "hash": "f442fb724b8be4ef5ded9cddfac851aa"
     },
     "packs": {
         "acos": {
@@ -4184,9 +4184,10 @@
                     ]
                 },
                 "tests": {
-                    "count": 5,
+                    "count": 6,
                     "resources": [
                         "aws_base_action_test_case.py",
+                        "test_action_aliases.py",
                         "test_action_cloudformation.py",
                         "test_action_get_bucket.py",
                         "test_action_vpc_get_all_subnets.py",
@@ -4221,8 +4222,9 @@
             ],
             "ref": "aws",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "versions": [
+                "1.3.3",
                 "1.3.2",
                 "1.3.1",
                 "1.3.0",
@@ -4247,7 +4249,6 @@
                 "0.7.6",
                 "0.7.5",
                 "0.7.4",
-                "0.7.3",
                 "0.12.0",
                 "0.11.0",
                 "0.10.2",
