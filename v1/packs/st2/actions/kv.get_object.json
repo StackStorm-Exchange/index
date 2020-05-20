@@ -4,6 +4,17 @@
     "entry_point": "kv_get_object.py",
     "name": "kv.get_object",
     "parameters": {
+        "decompress": {
+            "description": "True if the value is compressed using bzip2 and should be decompressed before returning it",
+            "required": false,
+            "type": "boolean"
+        },
+        "decrypt": {
+            "default": false,
+            "description": "True if the value is stored as a secret and it should be decrypted before returning it",
+            "required": false,
+            "type": "boolean"
+        },
         "key": {
             "required": true,
             "type": "string"
