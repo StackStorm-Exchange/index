@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1590020939,
-        "hash": "dd730732dc0d57c4dcb22e81ed678ac4"
+        "generated_ts": 1590042785,
+        "hash": "30fb26b32911707c8f528cc6488c1681"
     },
     "packs": {
         "acos": {
@@ -14109,8 +14109,12 @@
                 "sumologic"
             ],
             "name": "sumologic",
+            "python_versions": [
+                "2",
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sumologic",
-            "version": "0.9.7",
+            "version": "0.9.8",
             "versions": [
                 "0.9.8",
                 "0.9.7",

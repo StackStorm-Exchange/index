@@ -2,9 +2,12 @@ name: sumologic
 description: SumoLogic Integration
 keywords:
 - sumologic
-version: 0.9.7
+version: 0.9.8
 author: Igor Cherkaev
 email: igor.cherkaev@copart.com
+python_versions:
+- '2'
+- '3'
 content:
   actions:
     count: 7
