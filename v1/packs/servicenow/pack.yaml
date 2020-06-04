@@ -4,7 +4,7 @@ description: ServiceNow Integration Pack
 keywords:
 - servicenow
 - incident management
-version: 0.3.7
+version: 0.3.8
 python_versions:
 - '2'
 - '3'
@@ -31,3 +31,7 @@ content:
     - servicenow.approve_change
     - servicenow.assign_incident_to
     - servicenow.get_incidents_assigned_to
+  tests:
+    count: 1
+    resources:
+    - test_action.py
