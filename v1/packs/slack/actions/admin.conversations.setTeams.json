@@ -1,0 +1,45 @@
+{
+    "description": "Set the workspaces in an Enterprise grid org that connect to a channel.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.conversations.setTeams",
+    "parameters": {
+        "channel_id": {
+            "description": "The encoded `channel_id` to add or remove to workspaces.",
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "admin.conversations.setTeams",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "org_channel": {
+            "default": false,
+            "description": "True if channel has to be converted to an org channel",
+            "required": false,
+            "type": "boolean"
+        },
+        "target_team_ids": {
+            "description": "The list of workspaces to which the channel should be shared. Not required if the channel is being shared orgwide. Example: `['T1234', 'T5678']`",
+            "required": false,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "The workspace to which the channel belongs. Omit this argument if the channel is a cross-workspace shared channel.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.conversations:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

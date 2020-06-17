@@ -5,20 +5,13 @@
     "name": "reactions.add",
     "parameters": {
         "channel": {
-            "required": false,
+            "description": "Channel where the message to add reaction to was posted.",
+            "required": true,
             "type": "string"
         },
         "end_point": {
             "default": "reactions.add",
             "immutable": true,
-            "type": "string"
-        },
-        "file": {
-            "required": false,
-            "type": "string"
-        },
-        "file_comment": {
-            "required": false,
             "type": "string"
         },
         "http_method": {
@@ -27,15 +20,18 @@
             "type": "string"
         },
         "name": {
+            "description": "Reaction (emoji) name.",
             "required": true,
             "type": "string"
         },
         "timestamp": {
-            "required": false,
+            "description": "Timestamp of the message to add reaction to.",
+            "required": true,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `reactions:write`",
+            "required": true,
             "type": "string"
         }
     },

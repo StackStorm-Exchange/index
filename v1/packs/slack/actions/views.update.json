@@ -1,0 +1,44 @@
+{
+    "description": "Update an existing view.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "views.update",
+    "parameters": {
+        "end_point": {
+            "default": "views.update",
+            "immutable": true,
+            "type": "string"
+        },
+        "external_id": {
+            "description": "A unique identifier of the view set by the developer. Must be unique for all views on a team. Max length of 255 characters. Either `view_id` or `external_id` is required.",
+            "required": false,
+            "type": "string"
+        },
+        "hash": {
+            "description": "A string that represents view state to protect against possible race conditions.",
+            "required": false,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `none`",
+            "required": true,
+            "type": "string"
+        },
+        "view": {
+            "description": "A [view payload](/reference/surfaces/views) This must be a JSON-encoded string.",
+            "required": false,
+            "type": "string"
+        },
+        "view_id": {
+            "description": "A unique identifier of the view to be updated. Either `view_id` or `external_id` is required.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -5,20 +5,13 @@
     "name": "pins.add",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Channel to pin the item in.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
             "default": "pins.add",
             "immutable": true,
-            "type": "string"
-        },
-        "file": {
-            "required": false,
-            "type": "string"
-        },
-        "file_comment": {
-            "required": false,
             "type": "string"
         },
         "http_method": {
@@ -27,10 +20,12 @@
             "type": "string"
         },
         "timestamp": {
+            "description": "Timestamp of the message to pin.",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `pins:write`",
             "required": false,
             "type": "string"
         }

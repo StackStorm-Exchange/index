@@ -15,10 +15,12 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `users.profile:read`",
+            "required": true,
             "type": "string"
         },
         "visibility": {
+            "description": "Filter by visibility.",
             "required": false,
             "type": "string"
         }

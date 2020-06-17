@@ -5,7 +5,8 @@
     "name": "groups.rename",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Private channel to rename",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,16 +20,19 @@
             "type": "string"
         },
         "name": {
-            "required": true,
+            "description": "New name for private channel.",
+            "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `groups:write`",
             "required": false,
             "type": "string"
         },
         "validate": {
+            "description": "Whether to return errors on invalid channel name instead of modifying it to meet the specified criteria.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"

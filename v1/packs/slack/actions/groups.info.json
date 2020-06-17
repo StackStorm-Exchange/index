@@ -5,7 +5,8 @@
     "name": "groups.info",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Private channel to get info on",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "include_locale": {
+            "description": "Set this to `true` to receive the locale for this group. Defaults to `false`",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `groups:read`",
             "required": false,
             "type": "string"
         }

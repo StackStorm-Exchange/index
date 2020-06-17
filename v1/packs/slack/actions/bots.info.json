@@ -5,6 +5,7 @@
     "name": "bots.info",
     "parameters": {
         "bot": {
+            "description": "Bot user to get info on",
             "required": false,
             "type": "string"
         },
@@ -19,7 +20,8 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `users:read`",
+            "required": true,
             "type": "string"
         }
     },

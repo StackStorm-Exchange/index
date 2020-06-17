@@ -1,0 +1,34 @@
+{
+    "description": "Sets the icon of a workspace.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.teams.settings.setIcon",
+    "parameters": {
+        "end_point": {
+            "default": "admin.teams.settings.setIcon",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
+        "image_url": {
+            "description": "Image URL for the icon",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "ID for the workspace to set the icon for.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

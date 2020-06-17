@@ -5,9 +5,10 @@
     "name": "rtm.connect",
     "parameters": {
         "batch_presence_aware": {
-            "default": "false",
+            "default": "",
+            "description": "Batch presence deliveries via subscription. Enabling changes the shape of `presence_change` events. See [batch presence](/docs/presence-and-status#batching).",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "end_point": {
             "default": "rtm.connect",
@@ -20,12 +21,14 @@
             "type": "string"
         },
         "presence_sub": {
-            "default": "true",
+            "default": 1,
+            "description": "Only deliver presence events when requested by subscription. See [presence subscriptions](/docs/presence-and-status#subscriptions).",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `rtm:stream`",
+            "required": true,
             "type": "string"
         }
     },

@@ -15,11 +15,13 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `users:read`",
+            "required": true,
             "type": "string"
         },
         "user": {
-            "required": true,
+            "description": "User to get presence info on. Defaults to the authed user.",
+            "required": false,
             "type": "string"
         }
     },

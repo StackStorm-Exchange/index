@@ -1,0 +1,34 @@
+{
+    "description": "Open a view for a user.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "views.open",
+    "parameters": {
+        "end_point": {
+            "default": "views.open",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `none`",
+            "required": true,
+            "type": "string"
+        },
+        "trigger_id": {
+            "description": "Exchange a trigger to post to the user.",
+            "required": true,
+            "type": "string"
+        },
+        "view": {
+            "description": "A [view payload](/reference/surfaces/views). This must be a JSON-encoded string.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

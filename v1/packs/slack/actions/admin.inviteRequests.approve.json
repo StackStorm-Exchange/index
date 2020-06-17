@@ -1,0 +1,34 @@
+{
+    "description": "Approve a workspace invite request.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.inviteRequests.approve",
+    "parameters": {
+        "end_point": {
+            "default": "admin.inviteRequests.approve",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "invite_request_id": {
+            "description": "ID of the request to invite.",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "ID for the workspace where the invite request was made.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.invites:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

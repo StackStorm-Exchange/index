@@ -5,6 +5,7 @@
     "name": "channels.list",
     "parameters": {
         "cursor": {
+            "description": "Paginate through collections of data by setting the `cursor` parameter to a `next_cursor` attribute returned by a previous request's `response_metadata`. Default value fetches the first \"page\" of the collection. See [pagination](/docs/pagination) for more detail.",
             "required": false,
             "type": "string"
         },
@@ -14,14 +15,16 @@
             "type": "string"
         },
         "exclude_archived": {
-            "default": "false",
+            "default": false,
+            "description": "Exclude archived channels from the list",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "exclude_members": {
-            "default": "false",
+            "default": false,
+            "description": "Exclude the `members` collection from each `channel`",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "http_method": {
             "default": "GET",
@@ -29,11 +32,13 @@
             "type": "string"
         },
         "limit": {
-            "default": "0",
+            "default": 0,
+            "description": "The maximum number of items to return. Fewer than the requested number of items may be returned, even if the end of the users list hasn't been reached.",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `channels:read`",
             "required": false,
             "type": "string"
         }

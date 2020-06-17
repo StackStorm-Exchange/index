@@ -5,6 +5,7 @@
     "name": "files.list",
     "parameters": {
         "channel": {
+            "description": "Filter files appearing in a specific channel, indicated by its ID.",
             "required": false,
             "type": "string"
         },
@@ -28,26 +29,36 @@
             "required": false,
             "type": "string"
         },
+        "show_files_hidden_by_limit": {
+            "description": "Show truncated file info for files hidden due to being too old, and the team who owns the file being over the file limit.",
+            "required": false,
+            "type": "boolean"
+        },
         "token": {
+            "description": "Authentication token. Requires scope: `files:read`",
             "required": false,
             "type": "string"
         },
         "ts_from": {
-            "default": "0",
+            "default": 0,
+            "description": "Filter files created after this timestamp (inclusive).",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "ts_to": {
             "default": "now",
+            "description": "Filter files created before this timestamp (inclusive).",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "types": {
             "default": "all",
+            "description": "Filter files by type ([see below](#file_types)). You can pass multiple values in the types argument, like `types=spaces,snippets`.The default value is `all`, which does not filter the list.",
             "required": false,
             "type": "string"
         },
         "user": {
+            "description": "Filter files created by a single user.",
             "required": false,
             "type": "string"
         }

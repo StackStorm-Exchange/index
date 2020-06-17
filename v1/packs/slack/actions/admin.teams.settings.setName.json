@@ -1,0 +1,34 @@
+{
+    "description": "Set the name of a given workspace.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.teams.settings.setName",
+    "parameters": {
+        "end_point": {
+            "default": "admin.teams.settings.setName",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The new name of the workspace.",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "ID for the workspace to set the name for.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

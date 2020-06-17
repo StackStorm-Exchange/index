@@ -1,0 +1,38 @@
+{
+    "description": "List all of the admins on a given workspace.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.teams.admins.list",
+    "parameters": {
+        "cursor": {
+            "description": "Set `cursor` to `next_cursor` returned by the previous call to list items in the next page.",
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "admin.teams.admins.list",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
+        "limit": {
+            "description": "The maximum number of items to return.",
+            "required": false,
+            "type": "integer"
+        },
+        "team_id": {
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:read`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

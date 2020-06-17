@@ -5,6 +5,7 @@
     "name": "channels.setPurpose",
     "parameters": {
         "channel": {
+            "description": "Channel to set the purpose of",
             "required": true,
             "type": "string"
         },
@@ -18,12 +19,19 @@
             "required": true,
             "type": "string"
         },
+        "name_tagging": {
+            "description": "if it is true, treat this like a message and not an unescaped thing",
+            "required": false,
+            "type": "boolean"
+        },
         "purpose": {
+            "description": "The new purpose",
             "required": true,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `channels:write`",
+            "required": true,
             "type": "string"
         }
     },

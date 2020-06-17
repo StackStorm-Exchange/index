@@ -5,7 +5,8 @@
     "name": "mpim.mark",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "multiparty direct message channel to set reading cursor in.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,12 +20,14 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `mpim:write`",
             "required": false,
             "type": "string"
         },
         "ts": {
-            "required": true,
-            "type": "string"
+            "description": "Timestamp of the most recently seen message.",
+            "required": false,
+            "type": "number"
         }
     },
     "runner_type": "python-script"

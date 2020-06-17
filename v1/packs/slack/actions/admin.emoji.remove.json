@@ -1,0 +1,29 @@
+{
+    "description": "Remove an emoji across an Enterprise Grid organization",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.emoji.remove",
+    "parameters": {
+        "end_point": {
+            "default": "admin.emoji.remove",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the emoji to be removed. Colons (`:myemoji:`) around the value are not required, although they may be included.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -5,7 +5,8 @@
     "name": "im.replies",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Direct message channel to fetch thread from",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "thread_ts": {
-            "required": true,
-            "type": "string"
+            "description": "Unique identifier of a thread's parent message",
+            "required": false,
+            "type": "number"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `im:history`",
             "required": false,
             "type": "string"
         }

@@ -15,11 +15,13 @@
             "type": "string"
         },
         "num_minutes": {
+            "description": "Number of minutes, from now, to snooze until.",
             "required": true,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `dnd:write`",
+            "required": true,
             "type": "string"
         }
     },

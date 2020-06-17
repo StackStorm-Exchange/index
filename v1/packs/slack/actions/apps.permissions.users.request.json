@@ -15,18 +15,22 @@
             "type": "string"
         },
         "scopes": {
+            "description": "A comma separated list of user scopes to request for",
             "required": true,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `none`",
+            "required": true,
             "type": "string"
         },
         "trigger_id": {
+            "description": "Token used to trigger the request",
             "required": true,
             "type": "string"
         },
         "user": {
+            "description": "The user this scope is being requested for",
             "required": true,
             "type": "string"
         }

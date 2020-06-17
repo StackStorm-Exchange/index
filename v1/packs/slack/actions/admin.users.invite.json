@@ -1,0 +1,69 @@
+{
+    "description": "Invite a user to a workspace.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.users.invite",
+    "parameters": {
+        "channel_ids": {
+            "description": "A comma-separated list of `channel_id`s for this user to join. At least one channel is required.",
+            "required": true,
+            "type": "string"
+        },
+        "custom_message": {
+            "description": "An optional message to send to the user in the invite email.",
+            "required": false,
+            "type": "string"
+        },
+        "email": {
+            "description": "The email address of the person to invite.",
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "admin.users.invite",
+            "immutable": true,
+            "type": "string"
+        },
+        "guest_expiration_ts": {
+            "description": "Timestamp when guest account should be disabled. Only include this timestamp if you are inviting a guest user and you want their account to expire on a certain date.",
+            "required": false,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "is_restricted": {
+            "description": "Is this user a multi-channel guest user? (default: false)",
+            "required": false,
+            "type": "boolean"
+        },
+        "is_ultra_restricted": {
+            "description": "Is this user a single channel guest user? (default: false)",
+            "required": false,
+            "type": "boolean"
+        },
+        "real_name": {
+            "description": "Full name of the user.",
+            "required": false,
+            "type": "string"
+        },
+        "resend": {
+            "description": "Allow this invite to be resent in the future if a user has not signed up yet. (default: false)",
+            "required": false,
+            "type": "boolean"
+        },
+        "team_id": {
+            "description": "The ID (`T1234`) of the workspace.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.users:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

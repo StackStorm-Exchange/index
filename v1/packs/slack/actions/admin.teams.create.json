@@ -1,0 +1,44 @@
+{
+    "description": "Create an Enterprise team.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.teams.create",
+    "parameters": {
+        "end_point": {
+            "default": "admin.teams.create",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "team_description": {
+            "description": "Description for the team.",
+            "required": false,
+            "type": "string"
+        },
+        "team_discoverability": {
+            "description": "Who can join the team. A team's discoverability can be `open`, `closed`, `invite_only`, or `unlisted`.",
+            "required": false,
+            "type": "string"
+        },
+        "team_domain": {
+            "description": "Team domain (for example, slacksoftballteam).",
+            "required": true,
+            "type": "string"
+        },
+        "team_name": {
+            "description": "Team name (for example, Slack Softball Team).",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

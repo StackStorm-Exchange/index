@@ -10,7 +10,8 @@
             "type": "string"
         },
         "file": {
-            "required": true,
+            "description": "File to delete a comment from.",
+            "required": false,
             "type": "string"
         },
         "http_method": {
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "id": {
-            "required": true,
+            "description": "The comment to delete.",
+            "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `files:write:user`",
             "required": false,
             "type": "string"
         }

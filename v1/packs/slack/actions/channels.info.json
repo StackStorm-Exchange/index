@@ -5,7 +5,8 @@
     "name": "channels.info",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Channel to get info on",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "include_locale": {
+            "description": "Set this to `true` to receive the locale for this channel. Defaults to `false`",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `channels:read`",
             "required": false,
             "type": "string"
         }

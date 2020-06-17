@@ -1,0 +1,34 @@
+{
+    "description": "Set an existing guest, regular user, or owner to be an admin user.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.users.setAdmin",
+    "parameters": {
+        "end_point": {
+            "default": "admin.users.setAdmin",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "The ID (`T1234`) of the workspace.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.users:write`",
+            "required": true,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "The ID of the user to designate as an admin.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

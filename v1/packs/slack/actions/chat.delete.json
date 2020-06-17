@@ -5,11 +5,13 @@
     "name": "chat.delete",
     "parameters": {
         "as_user": {
+            "description": "Pass true to delete the message as the authed user with `chat:write:user` scope. [Bot users](/bot-users) in this context are considered authed users. If unused or false, the message will be deleted with `chat:write:bot` scope.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "channel": {
-            "required": true,
+            "description": "Channel containing the message to be deleted.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -23,12 +25,14 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `chat:write`",
             "required": false,
             "type": "string"
         },
         "ts": {
-            "required": true,
-            "type": "string"
+            "description": "Timestamp of the message to be deleted.",
+            "required": false,
+            "type": "number"
         }
     },
     "runner_type": "python-script"

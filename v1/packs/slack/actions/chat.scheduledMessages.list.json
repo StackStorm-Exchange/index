@@ -1,0 +1,49 @@
+{
+    "description": "Returns a list of scheduled messages.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "chat.scheduledMessages.list",
+    "parameters": {
+        "channel": {
+            "description": "The channel of the scheduled messages",
+            "required": false,
+            "type": "string"
+        },
+        "cursor": {
+            "description": "For pagination purposes, this is the `cursor` value returned from a previous call to `chat.scheduledmessages.list` indicating where you want to start this call from.",
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "chat.scheduledMessages.list",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "latest": {
+            "description": "A UNIX timestamp of the latest value in the time range",
+            "required": false,
+            "type": "number"
+        },
+        "limit": {
+            "description": "Maximum number of original entries to return.",
+            "required": false,
+            "type": "integer"
+        },
+        "oldest": {
+            "description": "A UNIX timestamp of the oldest value in the time range",
+            "required": false,
+            "type": "number"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `none`",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

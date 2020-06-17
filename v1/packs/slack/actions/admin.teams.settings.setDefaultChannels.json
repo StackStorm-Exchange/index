@@ -1,0 +1,34 @@
+{
+    "description": "Set the default channels of a workspace.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.teams.settings.setDefaultChannels",
+    "parameters": {
+        "channel_ids": {
+            "description": "An array of channel IDs.",
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "admin.teams.settings.setDefaultChannels",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "ID for the workspace to set the default channel for.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

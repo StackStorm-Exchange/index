@@ -5,7 +5,8 @@
     "name": "groups.setTopic",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Private channel to set the topic of",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,11 +20,13 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `groups:write`",
             "required": false,
             "type": "string"
         },
         "topic": {
-            "required": true,
+            "description": "The new topic",
+            "required": false,
             "type": "string"
         }
     },

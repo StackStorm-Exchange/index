@@ -5,6 +5,7 @@
     "name": "im.close",
     "parameters": {
         "channel": {
+            "description": "Direct message channel to close.",
             "required": true,
             "type": "string"
         },
@@ -19,7 +20,8 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `im:write`",
+            "required": true,
             "type": "string"
         }
     },

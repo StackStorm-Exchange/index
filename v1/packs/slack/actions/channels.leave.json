@@ -5,7 +5,8 @@
     "name": "channels.leave",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Channel to leave",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,6 +20,7 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `channels:write`",
             "required": false,
             "type": "string"
         }

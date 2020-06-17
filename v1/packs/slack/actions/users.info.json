@@ -15,15 +15,18 @@
             "type": "string"
         },
         "include_locale": {
+            "description": "Set this to `true` to receive the locale for this user. Defaults to `false`",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `users:read`",
+            "required": true,
             "type": "string"
         },
         "user": {
-            "required": true,
+            "description": "User to get info on",
+            "required": false,
             "type": "string"
         }
     },

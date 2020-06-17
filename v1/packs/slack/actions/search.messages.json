@@ -5,9 +5,10 @@
     "name": "search.messages",
     "parameters": {
         "count": {
-            "default": "20",
+            "default": 20,
+            "description": "Pass the number of results you want per \"page\". Maximum of `100`.",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "end_point": {
             "default": "search.messages",
@@ -15,8 +16,9 @@
             "type": "string"
         },
         "highlight": {
+            "description": "Pass a value of `true` to enable query highlight markers (see below).",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "http_method": {
             "default": "GET",
@@ -24,26 +26,30 @@
             "type": "string"
         },
         "page": {
-            "default": "1",
+            "default": 1,
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "query": {
+            "description": "Search query.",
             "required": true,
             "type": "string"
         },
         "sort": {
             "default": "score",
+            "description": "Return matches sorted by either `score` or `timestamp`.",
             "required": false,
             "type": "string"
         },
         "sort_dir": {
             "default": "desc",
+            "description": "Change sort direction to ascending (`asc`) or descending (`desc`).",
             "required": false,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `search:read`",
+            "required": true,
             "type": "string"
         }
     },

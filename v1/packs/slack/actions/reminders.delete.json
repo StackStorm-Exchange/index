@@ -15,10 +15,12 @@
             "type": "string"
         },
         "reminder": {
-            "required": true,
+            "description": "The ID of the reminder",
+            "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `reminders:write`",
             "required": false,
             "type": "string"
         }

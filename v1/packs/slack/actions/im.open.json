@@ -15,19 +15,23 @@
             "type": "string"
         },
         "include_locale": {
+            "description": "Set this to `true` to receive the locale for this im. Defaults to `false`",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "return_im": {
+            "description": "Boolean, indicates you want the full IM channel definition in the response.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `im:write`",
             "required": false,
             "type": "string"
         },
         "user": {
-            "required": true,
+            "description": "User to open a direct message channel with.",
+            "required": false,
             "type": "string"
         }
     },

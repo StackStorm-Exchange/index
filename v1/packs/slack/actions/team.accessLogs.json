@@ -6,13 +6,14 @@
     "parameters": {
         "before": {
             "default": "now",
+            "description": "End of time range of logs to include in results (inclusive).",
             "required": false,
             "type": "string"
         },
         "count": {
-            "default": "100",
+            "default": 100,
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "end_point": {
             "default": "team.accessLogs",
@@ -25,12 +26,13 @@
             "type": "string"
         },
         "page": {
-            "default": "1",
+            "default": 1,
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `admin`",
+            "required": true,
             "type": "string"
         }
     },

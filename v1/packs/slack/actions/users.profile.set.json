@@ -15,22 +15,27 @@
             "type": "string"
         },
         "name": {
+            "description": "Name of a single key to set. Usable only if `profile` is not passed.",
             "required": false,
             "type": "string"
         },
         "profile": {
+            "description": "Collection of key:value pairs presented as a URL-encoded JSON hash. At most 50 fields may be set. Each field name is limited to 255 characters.",
             "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `users.profile:write`",
             "required": false,
             "type": "string"
         },
         "user": {
+            "description": "ID of user to change. This argument may only be specified by team admins on paid teams.",
             "required": false,
             "type": "string"
         },
         "value": {
+            "description": "Value to set a single key to. Usable only if `profile` is not passed.",
             "required": false,
             "type": "string"
         }

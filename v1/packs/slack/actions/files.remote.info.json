@@ -1,0 +1,34 @@
+{
+    "description": "Retrieve information about a remote file added to Slack",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "files.remote.info",
+    "parameters": {
+        "end_point": {
+            "default": "files.remote.info",
+            "immutable": true,
+            "type": "string"
+        },
+        "external_id": {
+            "description": "Creator defined GUID for the file.",
+            "required": false,
+            "type": "string"
+        },
+        "file": {
+            "description": "Specify a file by providing its ID.",
+            "required": false,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `remote_files:read`",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

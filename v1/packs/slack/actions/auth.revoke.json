@@ -15,11 +15,13 @@
             "type": "string"
         },
         "test": {
+            "description": "Setting this parameter to `1` triggers a _testing mode_ where the specified token will not actually be revoked.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `none`",
+            "required": true,
             "type": "string"
         }
     },

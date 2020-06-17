@@ -5,6 +5,7 @@
     "name": "stars.add",
     "parameters": {
         "channel": {
+            "description": "Channel to add star to, or channel where the message to add star to was posted (used with `timestamp`).",
             "required": false,
             "type": "string"
         },
@@ -14,10 +15,12 @@
             "type": "string"
         },
         "file": {
+            "description": "File to add star to.",
             "required": false,
             "type": "string"
         },
         "file_comment": {
+            "description": "File comment to add star to.",
             "required": false,
             "type": "string"
         },
@@ -27,11 +30,13 @@
             "type": "string"
         },
         "timestamp": {
+            "description": "Timestamp of the message to add star to.",
             "required": false,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `stars:write`",
+            "required": true,
             "type": "string"
         }
     },

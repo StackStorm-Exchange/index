@@ -15,19 +15,23 @@
             "type": "string"
         },
         "include_count": {
+            "description": "Include the number of users in each User Group.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "include_disabled": {
+            "description": "Include disabled User Groups.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "include_users": {
+            "description": "Include the list of users for each User Group.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `usergroups:read`",
+            "required": true,
             "type": "string"
         }
     },

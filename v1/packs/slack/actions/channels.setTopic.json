@@ -5,6 +5,7 @@
     "name": "channels.setTopic",
     "parameters": {
         "channel": {
+            "description": "Channel to set the topic of",
             "required": true,
             "type": "string"
         },
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `channels:write`",
+            "required": true,
             "type": "string"
         },
         "topic": {
+            "description": "The new topic",
             "required": true,
             "type": "string"
         }

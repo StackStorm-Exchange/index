@@ -15,10 +15,12 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `admin`",
+            "required": true,
             "type": "string"
         },
         "user": {
+            "description": "A user to retrieve the billable information for. Defaults to all users.",
             "required": false,
             "type": "string"
         }

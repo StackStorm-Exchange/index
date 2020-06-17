@@ -15,7 +15,8 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `users.profile:write`",
+            "required": true,
             "type": "string"
         }
     },

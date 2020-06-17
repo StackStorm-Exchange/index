@@ -1,0 +1,38 @@
+{
+    "description": "Restrict an app for installation on a workspace.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.apps.restrict",
+    "parameters": {
+        "app_id": {
+            "description": "The id of the app to restrict.",
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "admin.apps.restrict",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "request_id": {
+            "description": "The id of the request to restrict.",
+            "required": false,
+            "type": "string"
+        },
+        "team_id": {
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.apps:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

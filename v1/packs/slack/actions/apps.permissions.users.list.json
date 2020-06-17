@@ -5,6 +5,7 @@
     "name": "apps.permissions.users.list",
     "parameters": {
         "cursor": {
+            "description": "Paginate through collections of data by setting the `cursor` parameter to a `next_cursor` attribute returned by a previous request's `response_metadata`. Default value fetches the first \"page\" of the collection. See [pagination](/docs/pagination) for more detail.",
             "required": false,
             "type": "string"
         },
@@ -19,11 +20,13 @@
             "type": "string"
         },
         "limit": {
+            "description": "The maximum number of items to return.",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `none`",
+            "required": true,
             "type": "string"
         }
     },

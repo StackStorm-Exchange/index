@@ -15,15 +15,18 @@
             "type": "string"
         },
         "include_labels": {
-            "default": "false",
+            "default": false,
+            "description": "Include labels for each ID in custom profile fields",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `users.profile:read`",
             "required": false,
             "type": "string"
         },
         "user": {
+            "description": "User to retrieve profile info for",
             "required": false,
             "type": "string"
         }

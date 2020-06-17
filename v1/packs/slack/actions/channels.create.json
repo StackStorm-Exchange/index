@@ -15,16 +15,19 @@
             "type": "string"
         },
         "name": {
-            "required": true,
+            "description": "Name of channel to create",
+            "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `channels:write`",
             "required": false,
             "type": "string"
         },
         "validate": {
+            "description": "Whether to return errors on invalid channel name instead of modifying it to meet the specified criteria.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"

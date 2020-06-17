@@ -15,10 +15,12 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `dnd:read`",
             "required": false,
             "type": "string"
         },
         "user": {
+            "description": "User to fetch status for (defaults to current user)",
             "required": false,
             "type": "string"
         }

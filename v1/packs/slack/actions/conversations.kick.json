@@ -5,7 +5,8 @@
     "name": "conversations.kick",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "ID of conversation to remove user from.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,11 +20,13 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `conversations:write`",
             "required": false,
             "type": "string"
         },
         "user": {
-            "required": true,
+            "description": "User ID to be removed.",
+            "required": false,
             "type": "string"
         }
     },

@@ -1,0 +1,39 @@
+{
+    "description": "Share a remote file into a channel.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "files.remote.share",
+    "parameters": {
+        "channels": {
+            "description": "Comma-separated list of channel IDs where the file will be shared.",
+            "required": false,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "files.remote.share",
+            "immutable": true,
+            "type": "string"
+        },
+        "external_id": {
+            "description": "Creator defined GUID for the file.",
+            "required": false,
+            "type": "string"
+        },
+        "file": {
+            "description": "Specify a file by providing its ID.",
+            "required": false,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `remote_files:share`",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

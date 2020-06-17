@@ -1,0 +1,34 @@
+{
+    "description": "An API method that allows admins to set the discoverability of a given workspace",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.teams.settings.setDiscoverability",
+    "parameters": {
+        "discoverability": {
+            "description": "This workspace's discovery setting. It must be set to one of `open`, `invite_only`, `closed`, or `unlisted`.",
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "admin.teams.settings.setDiscoverability",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "The ID of the workspace to set discoverability on.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

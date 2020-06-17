@@ -5,7 +5,8 @@
     "name": "conversations.close",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Conversation to close.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,6 +20,7 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `conversations:write`",
             "required": false,
             "type": "string"
         }

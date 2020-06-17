@@ -15,7 +15,8 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `dnd:write`",
+            "required": true,
             "type": "string"
         }
     },

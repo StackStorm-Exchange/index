@@ -5,6 +5,7 @@
     "name": "groups.leave",
     "parameters": {
         "channel": {
+            "description": "Private channel to leave",
             "required": true,
             "type": "string"
         },
@@ -19,7 +20,8 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `groups:write`",
+            "required": true,
             "type": "string"
         }
     },

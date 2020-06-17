@@ -1,0 +1,39 @@
+{
+    "description": "Deletes a pending scheduled message from the queue.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "chat.deleteScheduledMessage",
+    "parameters": {
+        "as_user": {
+            "description": "Pass true to delete the message as the authed user with `chat:write:user` scope. [Bot users](/bot-users) in this context are considered authed users. If unused or false, the message will be deleted with `chat:write:bot` scope.",
+            "required": false,
+            "type": "boolean"
+        },
+        "channel": {
+            "description": "The channel the scheduled_message is posting to",
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "chat.deleteScheduledMessage",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "scheduled_message_id": {
+            "description": "`scheduled_message_id` returned from call to chat.scheduleMessage",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `chat:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

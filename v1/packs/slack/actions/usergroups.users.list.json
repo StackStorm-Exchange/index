@@ -15,14 +15,17 @@
             "type": "string"
         },
         "include_disabled": {
+            "description": "Allow results that involve disabled User Groups.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `usergroups:read`",
+            "required": true,
             "type": "string"
         },
         "usergroup": {
+            "description": "The encoded ID of the User Group to update.",
             "required": true,
             "type": "string"
         }

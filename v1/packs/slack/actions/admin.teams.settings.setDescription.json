@@ -1,0 +1,34 @@
+{
+    "description": "Set the description of a given workspace.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.teams.settings.setDescription",
+    "parameters": {
+        "description": {
+            "description": "The new description for the workspace.",
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "admin.teams.settings.setDescription",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "ID for the workspace to set the description for.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

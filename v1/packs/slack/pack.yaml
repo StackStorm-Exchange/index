@@ -6,7 +6,7 @@ keywords:
 - chat
 - messaging
 - instant messaging
-version: 0.13.0
+version: 1.0.0
 python_versions:
 - '2'
 - '3'
@@ -14,8 +14,43 @@ author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 143
+    count: 193
     resources:
+    - admin.apps.approve
+    - admin.apps.approved.list
+    - admin.apps.requests.list
+    - admin.apps.restrict
+    - admin.apps.restricted.list
+    - admin.conversations.setTeams
+    - admin.emoji.add
+    - admin.emoji.addAlias
+    - admin.emoji.list
+    - admin.emoji.remove
+    - admin.emoji.rename
+    - admin.inviteRequests.approve
+    - admin.inviteRequests.approved.list
+    - admin.inviteRequests.denied.list
+    - admin.inviteRequests.deny
+    - admin.inviteRequests.list
+    - admin.teams.admins.list
+    - admin.teams.create
+    - admin.teams.list
+    - admin.teams.owners.list
+    - admin.teams.settings.info
+    - admin.teams.settings.setDefaultChannels
+    - admin.teams.settings.setDescription
+    - admin.teams.settings.setDiscoverability
+    - admin.teams.settings.setIcon
+    - admin.teams.settings.setName
+    - admin.users.assign
+    - admin.users.invite
+    - admin.users.list
+    - admin.users.remove
+    - admin.users.session.reset
+    - admin.users.setAdmin
+    - admin.users.setExpiration
+    - admin.users.setOwner
+    - admin.users.setRegular
     - api.test
     - apps.permissions.info
     - apps.permissions.request
@@ -23,6 +58,7 @@ content:
     - apps.permissions.scopes.list
     - apps.permissions.users.list
     - apps.permissions.users.request
+    - apps.uninstall
     - auth.revoke
     - auth.test
     - bots.info
@@ -42,10 +78,13 @@ content:
     - channels.setTopic
     - channels.unarchive
     - chat.delete
+    - chat.deleteScheduledMessage
     - chat.getPermalink
     - chat.meMessage
     - chat.postEphemeral
     - chat.postMessage
+    - chat.scheduleMessage
+    - chat.scheduledMessages.list
     - chat.unfurl
     - chat.update
     - conversations.archive
@@ -78,6 +117,12 @@ content:
     - files.delete
     - files.info
     - files.list
+    - files.remote.add
+    - files.remote.info
+    - files.remote.list
+    - files.remote.remove
+    - files.remote.share
+    - files.remote.update
     - files.revokePublicURL
     - files.sharedPublicURL
     - files.upload
@@ -112,6 +157,7 @@ content:
     - mpim.replies
     - oauth.access
     - oauth.token
+    - oauth.v2.access
     - pins.add
     - pins.list
     - pins.remove
@@ -159,6 +205,10 @@ content:
     - users.setPhoto
     - users.setPresence
     - users_filter_by
+    - views.open
+    - views.publish
+    - views.push
+    - views.update
   sensors:
     count: 1
     resources:

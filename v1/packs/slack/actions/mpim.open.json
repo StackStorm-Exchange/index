@@ -15,11 +15,13 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `mpim:write`",
             "required": false,
             "type": "string"
         },
         "users": {
-            "required": true,
+            "description": "Comma separated lists of users.  The ordering of the users is preserved whenever a MPIM group is returned.",
+            "required": false,
             "type": "string"
         }
     },

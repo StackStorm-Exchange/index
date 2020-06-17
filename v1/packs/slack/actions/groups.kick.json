@@ -5,6 +5,7 @@
     "name": "groups.kick",
     "parameters": {
         "channel": {
+            "description": "Private channel to remove user from.",
             "required": true,
             "type": "string"
         },
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `groups:write`",
+            "required": true,
             "type": "string"
         },
         "user": {
+            "description": "User to remove from private channel.",
             "required": true,
             "type": "string"
         }

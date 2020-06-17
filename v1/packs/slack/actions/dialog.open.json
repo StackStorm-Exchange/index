@@ -5,6 +5,7 @@
     "name": "dialog.open",
     "parameters": {
         "dialog": {
+            "description": "The dialog definition. This must be a JSON-encoded string.",
             "required": true,
             "type": "string"
         },
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `none`",
+            "required": true,
             "type": "string"
         },
         "trigger_id": {
+            "description": "Exchange a trigger to post to the user.",
             "required": true,
             "type": "string"
         }

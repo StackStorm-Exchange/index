@@ -5,7 +5,8 @@
     "name": "chat.meMessage",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Channel to send message to. Can be a public channel, private group or IM channel. Can be an encoded ID, or a name.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "text": {
-            "required": true,
+            "description": "Text of the message to send.",
+            "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `chat:write:user`",
             "required": false,
             "type": "string"
         }

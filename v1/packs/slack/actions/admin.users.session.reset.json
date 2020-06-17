@@ -1,0 +1,39 @@
+{
+    "description": "Wipes all valid sessions on all devices for a given user",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.users.session.reset",
+    "parameters": {
+        "end_point": {
+            "default": "admin.users.session.reset",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "mobile_only": {
+            "description": "Only expire mobile sessions (default: false)",
+            "required": false,
+            "type": "boolean"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.users:write`",
+            "required": true,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "The ID of the user to wipe sessions for",
+            "required": true,
+            "type": "string"
+        },
+        "web_only": {
+            "description": "Only expire web sessions (default: false)",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

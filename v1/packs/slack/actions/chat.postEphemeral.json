@@ -5,14 +5,22 @@
     "name": "chat.postEphemeral",
     "parameters": {
         "as_user": {
+            "description": "Pass true to post the message as the authed user. Defaults to true if the chat:write:bot scope is not included. Otherwise, defaults to false.",
+            "required": false,
+            "type": "boolean"
+        },
+        "attachments": {
+            "description": "A JSON-based array of structured attachments, presented as a URL-encoded string.",
             "required": false,
             "type": "string"
         },
-        "attachments": {
+        "blocks": {
+            "description": "A JSON-based array of structured blocks, presented as a URL-encoded string.",
             "required": false,
             "type": "string"
         },
         "channel": {
+            "description": "Channel, private group, or IM channel to send message to. Can be an encoded ID, or a name.",
             "required": true,
             "type": "string"
         },
@@ -26,24 +34,49 @@
             "required": true,
             "type": "string"
         },
-        "link_names": {
+        "icon_emoji": {
+            "description": "Emoji to use as the icon for this message. Overrides `icon_url`. Must be used in conjunction with `as_user` set to `false`, otherwise ignored. See [authorship](#authorship) below.",
             "required": false,
             "type": "string"
         },
+        "icon_url": {
+            "description": "URL to an image to use as the icon for this message. Must be used in conjunction with `as_user` set to false, otherwise ignored. See [authorship](#authorship) below.",
+            "required": false,
+            "type": "string"
+        },
+        "link_names": {
+            "description": "Find and link channel names and usernames.",
+            "required": false,
+            "type": "boolean"
+        },
         "parse": {
+            "description": "Change how messages are treated. Defaults to `none`. See [below](#formatting).",
             "required": false,
             "type": "string"
         },
         "text": {
-            "required": true,
-            "type": "string"
-        },
-        "token": {
+            "description": "How this field works and whether it is required depends on other fields you use in your API call. [See below](#text_usage) for more detail.",
             "required": false,
             "type": "string"
         },
-        "user": {
+        "thread_ts": {
+            "description": "Provide another message's `ts` value to post this message in a thread. Avoid using a reply's `ts` value; use its parent's value instead. Ephemeral messages in threads are only shown if there is already an active thread.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `chat:write`",
             "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "`id` of the user who will receive the ephemeral message. The user should be in the channel specified by the `channel` argument.",
+            "required": true,
+            "type": "string"
+        },
+        "username": {
+            "description": "Set your bot's user name. Must be used in conjunction with `as_user` set to false, otherwise ignored. See [authorship](#authorship) below.",
+            "required": false,
             "type": "string"
         }
     },

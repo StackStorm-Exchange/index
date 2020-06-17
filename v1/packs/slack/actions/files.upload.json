@@ -5,10 +5,12 @@
     "name": "files.upload",
     "parameters": {
         "channels": {
+            "description": "Comma-separated list of channel names or IDs where the file will be shared.",
             "required": false,
             "type": "string"
         },
         "content": {
+            "description": "File contents via a POST variable. If omitting this parameter, you must provide a `file`.",
             "required": false,
             "type": "string"
         },
@@ -18,14 +20,17 @@
             "type": "string"
         },
         "file": {
+            "description": "File contents via `multipart/form-data`. If omitting this parameter, you must submit `content`.",
             "required": false,
             "type": "string"
         },
         "filename": {
+            "description": "Filename of file.",
             "required": false,
             "type": "string"
         },
         "filetype": {
+            "description": "A [file type](/types/file#file_types) identifier.",
             "required": false,
             "type": "string"
         },
@@ -35,18 +40,22 @@
             "type": "string"
         },
         "initial_comment": {
+            "description": "The message text introducing the file in specified `channels`.",
             "required": false,
             "type": "string"
         },
         "thread_ts": {
+            "description": "Provide another message's `ts` value to upload this file as a reply. Never use a reply's `ts` value; use its parent instead.",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "title": {
+            "description": "Title of file.",
             "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `files:write:user`",
             "required": false,
             "type": "string"
         }

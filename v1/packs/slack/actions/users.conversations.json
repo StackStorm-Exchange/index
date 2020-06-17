@@ -5,6 +5,7 @@
     "name": "users.conversations",
     "parameters": {
         "cursor": {
+            "description": "Paginate through collections of data by setting the `cursor` parameter to a `next_cursor` attribute returned by a previous request's `response_metadata`. Default value fetches the first \"page\" of the collection. See [pagination](/docs/pagination) for more detail.",
             "required": false,
             "type": "string"
         },
@@ -14,9 +15,10 @@
             "type": "string"
         },
         "exclude_archived": {
-            "default": "false",
+            "default": false,
+            "description": "Set to `true` to exclude archived channels from the list",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "http_method": {
             "default": "GET",
@@ -24,20 +26,24 @@
             "type": "string"
         },
         "limit": {
-            "default": "100",
+            "default": 100,
+            "description": "The maximum number of items to return. Fewer than the requested number of items may be returned, even if the end of the list hasn't been reached. Must be an integer no larger than 1000.",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `conversations:read`",
             "required": false,
             "type": "string"
         },
         "types": {
             "default": "public_channel",
+            "description": "Mix and match channel types by providing a comma-separated list of any combination of `public_channel`, `private_channel`, `mpim`, `im`",
             "required": false,
             "type": "string"
         },
         "user": {
+            "description": "Browse conversations by a specific user ID's membership. Non-public channels are restricted to those where the calling user shares membership.",
             "required": false,
             "type": "string"
         }

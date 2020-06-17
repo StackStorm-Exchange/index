@@ -15,18 +15,22 @@
             "type": "string"
         },
         "include_count": {
+            "description": "Include the number of users in the User Group.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `usergroups:write`",
+            "required": true,
             "type": "string"
         },
         "usergroup": {
+            "description": "The encoded ID of the User Group to update.",
             "required": true,
             "type": "string"
         },
         "users": {
+            "description": "A comma separated string of encoded user IDs that represent the entire list of users for the User Group.",
             "required": true,
             "type": "string"
         }

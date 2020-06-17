@@ -5,6 +5,7 @@
     "name": "im.mark",
     "parameters": {
         "channel": {
+            "description": "Direct message channel to set reading cursor in.",
             "required": true,
             "type": "string"
         },
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `im:write`",
+            "required": true,
             "type": "string"
         },
         "ts": {
+            "description": "Timestamp of the most recently seen message.",
             "required": true,
             "type": "string"
         }

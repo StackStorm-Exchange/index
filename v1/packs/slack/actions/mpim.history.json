@@ -5,13 +5,15 @@
     "name": "mpim.history",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Multiparty direct message to fetch history for.",
+            "required": false,
             "type": "string"
         },
         "count": {
-            "default": "100",
+            "default": 100,
+            "description": "Number of messages to return, between 1 and 1000.",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "end_point": {
             "default": "mpim.history",
@@ -24,28 +26,33 @@
             "type": "string"
         },
         "inclusive": {
-            "default": "0",
+            "default": 0,
+            "description": "Include messages with latest or oldest timestamp in results.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "latest": {
             "default": "now",
+            "description": "End of time range of messages to include in results.",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "oldest": {
-            "default": "0",
+            "default": 0,
+            "description": "Start of time range of messages to include in results.",
             "required": false,
-            "type": "string"
+            "type": "number"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `mpim:history`",
             "required": false,
             "type": "string"
         },
         "unreads": {
-            "default": "0",
+            "default": 0,
+            "description": "Include `unread_count_display` in the output?",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"

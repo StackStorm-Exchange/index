@@ -5,7 +5,8 @@
     "name": "channels.kick",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Channel to remove user from.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,11 +20,13 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `channels:write`",
             "required": false,
             "type": "string"
         },
         "user": {
-            "required": true,
+            "description": "User to remove from channel.",
+            "required": false,
             "type": "string"
         }
     },

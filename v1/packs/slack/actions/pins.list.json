@@ -5,7 +5,8 @@
     "name": "pins.list",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Channel to get pinned items for.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,6 +20,7 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `pins:read`",
             "required": false,
             "type": "string"
         }

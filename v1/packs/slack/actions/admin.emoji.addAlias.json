@@ -1,0 +1,34 @@
+{
+    "description": "Add an emoji alias.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.emoji.addAlias",
+    "parameters": {
+        "alias_for": {
+            "description": "The alias of the emoji.",
+            "required": true,
+            "type": "string"
+        },
+        "end_point": {
+            "default": "admin.emoji.addAlias",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the emoji to be aliased. Colons (`:myemoji:`) around the value are not required, although they may be included.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.teams:write`",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

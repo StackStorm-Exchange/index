@@ -1,0 +1,34 @@
+{
+    "description": "Remove a remote file.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "files.remote.remove",
+    "parameters": {
+        "end_point": {
+            "default": "files.remote.remove",
+            "immutable": true,
+            "type": "string"
+        },
+        "external_id": {
+            "description": "Creator defined GUID for the file.",
+            "required": false,
+            "type": "string"
+        },
+        "file": {
+            "description": "Specify a file by providing its ID.",
+            "required": false,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "GET",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `remote_files:write`",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

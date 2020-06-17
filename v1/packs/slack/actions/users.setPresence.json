@@ -15,11 +15,13 @@
             "type": "string"
         },
         "presence": {
+            "description": "Either `auto` or `away`",
             "required": true,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `users:write`",
+            "required": true,
             "type": "string"
         }
     },

@@ -5,7 +5,8 @@
     "name": "conversations.info",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Conversation ID to learn more about",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,10 +20,18 @@
             "type": "string"
         },
         "include_locale": {
+            "description": "Set this to `true` to receive the locale for this conversation. Defaults to `false`",
             "required": false,
-            "type": "string"
+            "type": "boolean"
+        },
+        "include_num_members": {
+            "default": false,
+            "description": "Set to `true` to include the member count for the specified conversation. Defaults to `false`",
+            "required": false,
+            "type": "boolean"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `conversations:read`",
             "required": false,
             "type": "string"
         }

@@ -5,6 +5,7 @@
     "name": "reactions.get",
     "parameters": {
         "channel": {
+            "description": "Channel where the message to get reactions for was posted.",
             "required": false,
             "type": "string"
         },
@@ -14,16 +15,19 @@
             "type": "string"
         },
         "file": {
+            "description": "File to get reactions for.",
             "required": false,
             "type": "string"
         },
         "file_comment": {
+            "description": "File comment to get reactions for.",
             "required": false,
             "type": "string"
         },
         "full": {
+            "description": "If true always return the complete reaction list.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "http_method": {
             "default": "GET",
@@ -31,11 +35,13 @@
             "type": "string"
         },
         "timestamp": {
+            "description": "Timestamp of the message to get reactions for.",
             "required": false,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `reactions:read`",
+            "required": true,
             "type": "string"
         }
     },

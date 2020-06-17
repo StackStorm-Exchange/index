@@ -5,6 +5,7 @@
     "name": "channels.unarchive",
     "parameters": {
         "channel": {
+            "description": "Channel to unarchive",
             "required": true,
             "type": "string"
         },
@@ -19,7 +20,8 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `channels:write`",
+            "required": true,
             "type": "string"
         }
     },

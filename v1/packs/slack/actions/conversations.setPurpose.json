@@ -5,7 +5,8 @@
     "name": "conversations.setPurpose",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Conversation to set the purpose of",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "purpose": {
-            "required": true,
+            "description": "A new, specialer purpose",
+            "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `conversations:write`",
             "required": false,
             "type": "string"
         }

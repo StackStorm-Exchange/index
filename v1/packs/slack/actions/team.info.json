@@ -14,8 +14,14 @@
             "required": true,
             "type": "string"
         },
-        "token": {
+        "team": {
+            "description": "Team to get info on, if omitted, will return information about the current team. Will only return team that the authenticated token is allowed to see through external shared channels",
             "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `team:read`",
+            "required": true,
             "type": "string"
         }
     },

@@ -5,7 +5,8 @@
     "name": "channels.invite",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Channel to invite user to.",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,11 +20,13 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `channels:write`",
             "required": false,
             "type": "string"
         },
         "user": {
-            "required": true,
+            "description": "User to invite to channel.",
+            "required": false,
             "type": "string"
         }
     },

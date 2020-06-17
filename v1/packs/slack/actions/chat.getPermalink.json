@@ -5,6 +5,7 @@
     "name": "chat.getPermalink",
     "parameters": {
         "channel": {
+            "description": "The ID of the conversation or channel containing the message",
             "required": true,
             "type": "string"
         },
@@ -19,11 +20,13 @@
             "type": "string"
         },
         "message_ts": {
+            "description": "A message's `ts` value, uniquely identifying it within a channel",
             "required": true,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `none`",
+            "required": true,
             "type": "string"
         }
     },

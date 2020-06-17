@@ -15,6 +15,7 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `none`",
             "required": false,
             "type": "string"
         }

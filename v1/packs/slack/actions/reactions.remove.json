@@ -5,6 +5,7 @@
     "name": "reactions.remove",
     "parameters": {
         "channel": {
+            "description": "Channel where the message to remove reaction from was posted.",
             "required": false,
             "type": "string"
         },
@@ -14,10 +15,12 @@
             "type": "string"
         },
         "file": {
+            "description": "File to remove reaction from.",
             "required": false,
             "type": "string"
         },
         "file_comment": {
+            "description": "File comment to remove reaction from.",
             "required": false,
             "type": "string"
         },
@@ -27,15 +30,18 @@
             "type": "string"
         },
         "name": {
+            "description": "Reaction (emoji) name.",
             "required": true,
             "type": "string"
         },
         "timestamp": {
+            "description": "Timestamp of the message to remove reaction from.",
             "required": false,
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `reactions:write`",
+            "required": true,
             "type": "string"
         }
     },

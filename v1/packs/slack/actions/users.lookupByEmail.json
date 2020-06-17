@@ -5,7 +5,8 @@
     "name": "users.lookupByEmail",
     "parameters": {
         "email": {
-            "required": true,
+            "description": "An email address belonging to a user in the workspace",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,6 +20,7 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `users:read.email`",
             "required": false,
             "type": "string"
         }

@@ -5,6 +5,7 @@
     "name": "mpim.close",
     "parameters": {
         "channel": {
+            "description": "MPIM to close.",
             "required": true,
             "type": "string"
         },
@@ -19,7 +20,8 @@
             "type": "string"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `mpim:write`",
+            "required": true,
             "type": "string"
         }
     },

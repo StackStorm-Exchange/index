@@ -5,7 +5,8 @@
     "name": "conversations.setTopic",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Conversation to set the topic of",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,11 +20,13 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `conversations:write`",
             "required": false,
             "type": "string"
         },
         "topic": {
-            "required": true,
+            "description": "The new topic string. Does not support formatting or linkification.",
+            "required": false,
             "type": "string"
         }
     },

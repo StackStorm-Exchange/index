@@ -5,7 +5,8 @@
     "name": "groups.unarchive",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Private channel to unarchive",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,6 +20,7 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `groups:write`",
             "required": false,
             "type": "string"
         }

@@ -5,7 +5,8 @@
     "name": "groups.setPurpose",
     "parameters": {
         "channel": {
-            "required": true,
+            "description": "Private channel to set the purpose of",
+            "required": false,
             "type": "string"
         },
         "end_point": {
@@ -19,10 +20,12 @@
             "type": "string"
         },
         "purpose": {
-            "required": true,
+            "description": "The new purpose",
+            "required": false,
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `groups:write`",
             "required": false,
             "type": "string"
         }

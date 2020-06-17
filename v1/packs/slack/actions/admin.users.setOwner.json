@@ -1,0 +1,34 @@
+{
+    "description": "Set an existing guest, regular user, or admin user to be a workspace owner.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "admin.users.setOwner",
+    "parameters": {
+        "end_point": {
+            "default": "admin.users.setOwner",
+            "immutable": true,
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "required": true,
+            "type": "string"
+        },
+        "team_id": {
+            "description": "The ID (`T1234`) of the workspace.",
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "description": "Authentication token. Requires scope: `admin.users:write`",
+            "required": true,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "Id of the user to promote to owner.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

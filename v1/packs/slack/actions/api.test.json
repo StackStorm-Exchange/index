@@ -10,10 +10,12 @@
             "type": "string"
         },
         "error": {
+            "description": "Error response to return",
             "required": false,
             "type": "string"
         },
         "foo": {
+            "description": "example property to return",
             "required": false,
             "type": "string"
         },

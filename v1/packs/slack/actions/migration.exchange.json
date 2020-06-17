@@ -16,14 +16,17 @@
         },
         "to_old": {
             "default": "",
+            "description": "Specify `true` to convert `W` global user IDs to workspace-specific `U` IDs. Defaults to `false`.",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "token": {
-            "required": false,
+            "description": "Authentication token. Requires scope: `tokens.basic`",
+            "required": true,
             "type": "string"
         },
         "users": {
+            "description": "A comma-separated list of user ids, up to 400 per request",
             "required": true,
             "type": "string"
         }

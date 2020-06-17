@@ -15,6 +15,7 @@
             "type": "string"
         },
         "token": {
+            "description": "Authentication token. Requires scope: `identity.basic`",
             "required": false,
             "type": "string"
         }
