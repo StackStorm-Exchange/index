@@ -7,7 +7,7 @@ keywords:
 - ncm
 - npm
 - monitoring
-version: 0.7.10
+version: 0.7.11
 python_versions:
 - '2'
 - '3'
@@ -15,7 +15,7 @@ author: Encore Technologies
 email: code@encore.tech
 content:
   actions:
-    count: 26
+    count: 27
     resources:
     - add_node_to_ncm
     - agent_delete
@@ -35,6 +35,7 @@ content:
     - node_create
     - node_delete
     - node_discover_and_add_interfaces
+    - node_maintenance_mode_change
     - node_remanage
     - node_status
     - node_unmanage
@@ -59,7 +60,7 @@ content:
     - node_create_webhook
     - start_discovery_webhook
   tests:
-    count: 26
+    count: 27
     resources:
     - orion_base_action_test_case.py
     - test_action_add_node_to_ncm.py
@@ -78,6 +79,7 @@ content:
     - test_action_node_create.py
     - test_action_node_delete.py
     - test_action_node_discover_and_add_interfaces.py
+    - test_action_node_maintenance_mode_change.py
     - test_action_node_remanage.py
     - test_action_node_status.py
     - test_action_node_unmanage.py
