@@ -1,0 +1,28 @@
+{
+    "description": "Retrieve summary information for given Datastores or All Datastores if none are given",
+    "entry_point": "datastore_get.py",
+    "name": "datastore_get",
+    "pack": "vsphere",
+    "parameters": {
+        "datastore_ids": {
+            "description": "Comma seperated list of Datastore IDs",
+            "position": 0,
+            "required": false,
+            "type": "array"
+        },
+        "datastore_names": {
+            "default": null,
+            "description": "Comma seperated list of Datastore Names",
+            "position": 1,
+            "required": false,
+            "type": "array"
+        },
+        "vsphere": {
+            "description": "Pre-configured vsphere endpoint",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
