@@ -1,0 +1,42 @@
+{
+    "description": "deletes a row with matching key for a given sheet in the excel file",
+    "enabled": true,
+    "entry_point": "delete_row.py",
+    "name": "delete_row",
+    "parameters": {
+        "excel_file": {
+            "description": "Excel file name",
+            "required": false,
+            "type": "string"
+        },
+        "key": {
+            "description": "Key field for row",
+            "required": true,
+            "type": "string"
+        },
+        "key_column": {
+            "default": 1,
+            "description": "Starting column for keys",
+            "required": false,
+            "type": "integer"
+        },
+        "sheet": {
+            "description": "Name of sheet",
+            "required": true,
+            "type": "string"
+        },
+        "strict": {
+            "default": true,
+            "description": "When enabled, Sheet must exist & Row must exist",
+            "required": true,
+            "type": "boolean"
+        },
+        "variable_name_row": {
+            "default": 1,
+            "description": "Starting row for variable names",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

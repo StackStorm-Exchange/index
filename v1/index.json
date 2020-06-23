@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1592848907,
-        "hash": "a48484116c2c5ca78ec8649dabc49efe"
+        "generated_ts": 1592920719,
+        "hash": "8c618bd45b42387022d722683c291df9"
     },
     "packs": {
         "acos": {
@@ -6151,13 +6151,23 @@
             "author": "Tim Braly",
             "content": {
                 "actions": {
-                    "count": 5,
+                    "count": 6,
                     "resources": [
+                        "delete_row",
                         "get_keys_for_columns",
                         "get_keys_for_rows",
                         "get_sheets",
                         "get_variables",
                         "set_variables"
+                    ]
+                },
+                "tests": {
+                    "count": 4,
+                    "resources": [
+                        "excel_base_action_test_case.py",
+                        "test_action_delete_rows.py",
+                        "test_action_get_keys_for_rows.py",
+                        "test_action_get_variables.py"
                     ]
                 }
             },
@@ -6169,8 +6179,10 @@
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-excel",
-            "version": "0.2.5",
+            "version": "0.3.0",
             "versions": [
+                "0.3.0",
+                "0.2.6",
                 "0.2.5",
                 "0.2.4",
                 "0.2.3",
