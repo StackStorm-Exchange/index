@@ -20,6 +20,12 @@
             "required": true,
             "type": "string"
         },
+        "strict": {
+            "default": true,
+            "description": "When enabled, Sheet must exist & Variable Names must exist",
+            "required": false,
+            "type": "boolean"
+        },
         "variable_name_row": {
             "default": 1,
             "description": "Starting row for variable names",
