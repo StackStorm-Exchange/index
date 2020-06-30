@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.12.0
+version: 0.13.0
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -14,7 +14,7 @@ contributors:
 - John Schoewe <jschoewe@gmail.com>
 content:
   actions:
-    count: 68
+    count: 69
     resources:
     - affinity_rule_create
     - affinity_rule_delete
@@ -27,6 +27,7 @@ content:
     - get_objects_with_tag
     - get_tag_value_from_object
     - get_tag_value_from_objects
+    - get_tags_from_objects
     - get_tags_on_object
     - get_vmconsole_urls
     - get_vms
@@ -89,7 +90,7 @@ content:
     resources:
     - TaskInfoSensor
   tests:
-    count: 61
+    count: 62
     resources:
     - test_action_affinity_rule_create.py
     - test_action_affinity_rule_delete.py
@@ -103,6 +104,7 @@ content:
     - test_action_get_objects_with_tag.py
     - test_action_get_tag_value_from_object.py
     - test_action_get_tag_value_from_objects.py
+    - test_action_get_tags_from_objects.py
     - test_action_get_tags_on_object.py
     - test_action_guest_dir_create.py
     - test_action_guest_dir_delete.py

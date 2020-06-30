@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1593434429,
-        "hash": "1a157c8716637ff048dce4a2d41bd0dd"
+        "generated_ts": 1593543187,
+        "hash": "6e503be9c298021c5f99ef1735eb3260"
     },
     "packs": {
         "acos": {
@@ -15304,7 +15304,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 68,
+                    "count": 69,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
@@ -15317,6 +15317,7 @@
                         "get_objects_with_tag",
                         "get_tag_value_from_object",
                         "get_tag_value_from_objects",
+                        "get_tags_from_objects",
                         "get_tags_on_object",
                         "get_vmconsole_urls",
                         "get_vms",
@@ -15383,7 +15384,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 61,
+                    "count": 62,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -15397,6 +15398,7 @@
                         "test_action_get_objects_with_tag.py",
                         "test_action_get_tag_value_from_object.py",
                         "test_action_get_tag_value_from_objects.py",
+                        "test_action_get_tags_from_objects.py",
                         "test_action_get_tags_on_object.py",
                         "test_action_guest_dir_create.py",
                         "test_action_guest_dir_delete.py",
@@ -15463,7 +15465,7 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.12.0",
+            "version": "0.13.0",
             "versions": [
                 "0.9.6",
                 "0.9.5",
@@ -15489,7 +15491,7 @@
                 "0.7.9",
                 "0.7.8",
                 "0.7.7",
-                "0.7.6",
+                "0.13.0",
                 "0.12.0",
                 "0.11.2",
                 "0.11.1",

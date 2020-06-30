@@ -17,6 +17,15 @@
             "required": false,
             "type": "array"
         },
+        "datastore_filter_strategy": {
+            "default": "exclude_matches",
+            "description": "Filter strategy for if you want to exclude or include the datastore matches found.",
+            "enum": [
+                "exclude_matches",
+                "include_matches"
+            ],
+            "type": "string"
+        },
         "disks": {
             "description": "'List of disks to attach to a new VM. If a disk isn't given or if it's datastore key is \"automatic\" then this action will return the name and ID of the datastore with the most free space on it. If the first disk has a datastore that isn't \"automatic\" then that datastore name and ID will be returned. example: [{\n    \"size_gb\": \"string\",\n    \"uuid\": \"string\",\n    \"datastore\": \"string\",\n    \"controller_bus\": \"string\",\n    \"scsi_bus\": \"string\"\n }]'\n",
             "required": false,
