@@ -1,0 +1,25 @@
+{
+    "description": "Deletes branch protection.",
+    "enabled": true,
+    "entry_point": "delete_branch_protection.py",
+    "name": "delete_branch_protection",
+    "parameters": {
+        "branch": {
+            "default": "master",
+            "description": "Branch name.",
+            "required": false,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

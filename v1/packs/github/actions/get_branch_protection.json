@@ -1,0 +1,25 @@
+{
+    "description": "Gets branch protection details for given repo and branch.",
+    "enabled": true,
+    "entry_point": "get_branch_protection.py",
+    "name": "get_branch_protection",
+    "parameters": {
+        "branch": {
+            "default": "master",
+            "description": "Branch name.",
+            "required": false,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
