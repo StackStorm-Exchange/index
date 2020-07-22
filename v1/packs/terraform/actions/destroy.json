@@ -1,5 +1,5 @@
 {
-    "description": "Destroy the Terraform managed infrastructure",
+    "description": "Destroy the Terraform managed infrastructure. Reminder, if you do NOT specify target_resources this will delete your entire managed infrastructure.",
     "enabled": true,
     "entry_point": "destroy.py",
     "name": "destroy",
@@ -13,6 +13,11 @@
             "description": "Path of terraform state file",
             "required": false,
             "type": "string"
+        },
+        "target_resources": {
+            "description": "List of resource addresses to target",
+            "required": false,
+            "type": "array"
         },
         "terraform_exec": {
             "default": "terraform",
