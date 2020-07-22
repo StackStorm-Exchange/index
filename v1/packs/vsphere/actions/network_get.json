@@ -1,0 +1,28 @@
+{
+    "description": "Retrieve summary information for given Networks or All Networks if none are given",
+    "entry_point": "network_get.py",
+    "name": "network_get",
+    "pack": "vsphere",
+    "parameters": {
+        "network_ids": {
+            "description": "Comma seperated list of network IDs",
+            "position": 0,
+            "required": false,
+            "type": "array"
+        },
+        "network_names": {
+            "default": null,
+            "description": "Comma seperated list of network Names",
+            "position": 1,
+            "required": false,
+            "type": "array"
+        },
+        "vsphere": {
+            "description": "Pre-configured vsphere endpoint",
+            "position": 2,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
