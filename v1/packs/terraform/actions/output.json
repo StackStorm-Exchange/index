@@ -9,6 +9,11 @@
             "required": true,
             "type": "string"
         },
+        "state_file_path": {
+            "description": "Path of terraform state file",
+            "required": false,
+            "type": "string"
+        },
         "terraform_exec": {
             "default": "terraform",
             "description": "Terraform executable path (default: terraform in the $PATH)",
