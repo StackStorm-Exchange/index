@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1595533977,
-        "hash": "d25337c73edcafed6ee19e148b9b34c7"
+        "generated_ts": 1596230087,
+        "hash": "d671f264358a1a3196f627a1f6d8e899"
     },
     "packs": {
         "acos": {
@@ -5721,6 +5721,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-device42",
             "version": "0.7.2",
             "versions": [
+                "0.7.3",
                 "0.7.2",
                 "0.7.1",
                 "0.7.0",
@@ -9809,7 +9810,7 @@
             "author": "Encore Technologies",
             "content": {
                 "actions": {
-                    "count": 204,
+                    "count": 206,
                     "resources": [
                         "add_ad_forest",
                         "add_ad_site",
@@ -10014,6 +10015,8 @@
                         "split_range",
                         "test_credentials",
                         "test_hostname",
+                        "test_ip_address",
+                        "test_range",
                         "wf_add_dns_zone"
                     ]
                 },
@@ -10045,8 +10048,12 @@
             ],
             "ref": "menandmice",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-menandmice",
-            "version": "1.0.1",
+            "version": "1.1.1",
             "versions": [
+                "1.1.1",
+                "1.1.0",
+                "1.0.3",
+                "1.0.2",
                 "1.0.1",
                 "1.0.0",
                 "0.1.4",

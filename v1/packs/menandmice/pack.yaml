@@ -7,7 +7,7 @@ keywords:
 - mice
 - ipam
 - dns
-version: 1.0.1
+version: 1.1.1
 author: Encore Technologies
 email: code@encore.tech
 python_versions:
@@ -15,7 +15,7 @@ python_versions:
 - '3'
 content:
   actions:
-    count: 204
+    count: 206
     resources:
     - add_ad_forest
     - add_ad_site
@@ -220,6 +220,8 @@ content:
     - split_range
     - test_credentials
     - test_hostname
+    - test_ip_address
+    - test_range
     - wf_add_dns_zone
   tests:
     count: 6
