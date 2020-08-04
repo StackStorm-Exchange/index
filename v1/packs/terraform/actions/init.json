@@ -19,6 +19,11 @@
             "description": "Terraform executable path (default: terraform in the $PATH)",
             "required": false,
             "type": "string"
+        },
+        "upgrade": {
+            "description": "Run init with -upgrade option",
+            "required": false,
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"
