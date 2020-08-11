@@ -10,8 +10,16 @@
             "immutable": true
         },
         "filter": {
-            "description": "Condition to filter the result",
+            "description": "Condition to filter the result. Example - {\"hostid\": \"12345\"}",
             "type": "object"
+        },
+        "groupids": {
+            "description": "list of groupids to limit the results to. Example - [\"123\", \"456\"]",
+            "type": "array"
+        },
+        "output": {
+            "description": "A list of key names that limit the response data. 'hostid' is always present. Example - [\"maintenance_status\", \"name\"]",
+            "type": "array"
         },
         "token": {
             "default": "{% if st2kv.user.zabbix.secret_token|string != '' %}{{ st2kv.user.zabbix.secret_token | decrypt_kv }}{% endif %}\n",
