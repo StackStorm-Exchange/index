@@ -2,7 +2,7 @@
     "class_name": "ItemSensor",
     "description": "Sensor that detects items.",
     "entry_point": "item_sensor.py",
-    "polling_interval": 60,
+    "poll_interval": 60,
     "trigger_types": [
         {
             "description": "New item in folder",
