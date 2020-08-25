@@ -1,0 +1,17 @@
+{
+    "action_ref": "st2.executions.cancel",
+    "description": "Cancel action executions.",
+    "formats": [
+        "st2 cancel execution {{ ids }}",
+        "st2 executions cancel {{ ids }}"
+    ],
+    "name": "st2_executions_cancel",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "{% if execution.status == 'succeeded' %}#219939{% else %}#d80015{% endif %}"
+            }
+        },
+        "format": "{% for key,value in execution.result.result.items() %}\n  {{ key }} - {% if value is string %}{{ value }}\n  {% else %}{% if value[\"faultstring\"] %}{{ value[\"faultstring\"] }}{% else %}{{ value[\"status\"] }}{% endif %}\n  {% endif %}\n{% endfor %}\n"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "action_ref": "st2.executions.resume",
+    "description": "Resume an action execution (workflows only).",
+    "formats": [
+        "st2 resume execution {{ ids }}",
+        "st2 executions resume {{ ids }}"
+    ],
+    "name": "st2_executions_resume",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "{% if execution.status == 'succeeded' %}#219939{% else %}#d80015{% endif %}"
+            }
+        },
+        "format": "{% for key,value in execution.result.result.items() %}\n  {{ key }} - {% if value is string %}{{ value }}\n  {% else %}{{ value[\"status\"] }}\n  {% endif %}\n{% endfor %}\n"
+    }
+}

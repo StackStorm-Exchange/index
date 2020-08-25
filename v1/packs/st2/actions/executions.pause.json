@@ -1,0 +1,14 @@
+{
+    "description": "Pause action executions (workflow executions only).",
+    "enabled": true,
+    "entry_point": "executions_pause.py",
+    "name": "executions.pause",
+    "parameters": {
+        "ids": {
+            "description": "IDs of action executions to pause.",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

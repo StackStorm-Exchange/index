@@ -1,7 +1,7 @@
 ref: st2
 name: st2
 description: StackStorm utility actions and aliases
-version: 1.1.0
+version: 1.2.0
 python_versions:
 - '2'
 - '3'
@@ -11,16 +11,19 @@ contributors:
 - Igor Cherkaev <igor.cherkaev@copart.com>
 content:
   actions:
-    count: 19
+    count: 22
     resources:
     - actions.list
     - call_home
     - check_permissions_anon_data
+    - executions.cancel
     - executions.create
     - executions.get
     - executions.get_root
     - executions.list
+    - executions.pause
     - executions.re_run
+    - executions.resume
     - inquiry.respond
     - kv.delete
     - kv.get
@@ -33,12 +36,15 @@ content:
     - sensors.list
     - upload_to_s3
   aliases:
-    count: 7
+    count: 10
     resources:
     - st2_actions_list
+    - st2_executions_cancel
     - st2_executions_get
     - st2_executions_list
+    - st2_executions_pause
     - st2_executions_re_run
+    - st2_executions_resume
     - st2_inquiry_respond
     - st2_rules_list
     - st2_sensors_list

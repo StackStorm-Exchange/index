@@ -1,0 +1,14 @@
+{
+    "description": "Resume action executions (workflow executions only).",
+    "enabled": true,
+    "entry_point": "executions_resume.py",
+    "name": "executions.resume",
+    "parameters": {
+        "ids": {
+            "description": "IDs of action executions to resume.",
+            "required": true,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}
