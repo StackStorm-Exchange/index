@@ -1,0 +1,24 @@
+{
+    "description": "Link one JIRA issue to another JIRA issue.",
+    "enabled": true,
+    "entry_point": "link_issue.py",
+    "name": "link_issue",
+    "parameters": {
+        "inward_issue_key": {
+            "description": "The issue key to link FROM (e.g. PROJECT-1000).",
+            "required": true,
+            "type": "string"
+        },
+        "link_type": {
+            "description": "The type of link to create.",
+            "required": true,
+            "type": "string"
+        },
+        "outward_issue_key": {
+            "description": "The issue key to link TO (e.g. PROJECT-999).",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
