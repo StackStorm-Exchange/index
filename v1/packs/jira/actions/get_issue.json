@@ -16,7 +16,19 @@
             "required": true,
             "type": "boolean"
         },
+        "include_components": {
+            "default": false,
+            "description": "True to include custom fields.",
+            "required": true,
+            "type": "boolean"
+        },
         "include_customfields": {
+            "default": false,
+            "description": "True to include custom fields.",
+            "required": true,
+            "type": "boolean"
+        },
+        "include_subtasks": {
             "default": false,
             "description": "True to include custom fields.",
             "required": true,
