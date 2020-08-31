@@ -1,19 +1,19 @@
 {
-    "description": "Retrieve summary information for given Networks or All Networks if none are given",
-    "entry_point": "network_get.py",
-    "name": "network_get",
+    "description": "Retrieve summary information for given Clusters or All Clusters if none are given",
+    "entry_point": "cluster_get.py",
+    "name": "cluster_get",
     "pack": "vsphere",
     "parameters": {
-        "network_ids": {
+        "cluster_ids": {
             "default": [],
-            "description": "Comma seperated list of network IDs",
+            "description": "Comma seperated list of Cluster IDs",
             "position": 0,
             "required": false,
             "type": "array"
         },
-        "network_names": {
+        "cluster_names": {
             "default": [],
-            "description": "Comma seperated list of network Names",
+            "description": "Comma seperated list of Cluster Names",
             "position": 1,
             "required": false,
             "type": "array"

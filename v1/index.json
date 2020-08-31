@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1598883649,
-        "hash": "768fd127219932c619cf0505dc92a183"
+        "generated_ts": 1598887775,
+        "hash": "52ea69f6cf05a9cf5c25463fe3c353e7"
     },
     "packs": {
         "acos": {
@@ -15339,14 +15339,16 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 70,
+                    "count": 73,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
+                        "cluster_get",
                         "custom_attr_assign",
                         "custom_attr_assign_or_create",
                         "custom_attr_create",
                         "custom_attr_get",
+                        "datacenter_get",
                         "datastore_get",
                         "get_moid",
                         "get_objects_with_tag",
@@ -15380,6 +15382,7 @@
                         "tag_id_get",
                         "tag_list",
                         "tags_attach_by_id",
+                        "template_get",
                         "vm_bestfit",
                         "vm_check_tools",
                         "vm_config_info_get",
@@ -15420,15 +15423,17 @@
                     ]
                 },
                 "tests": {
-                    "count": 63,
+                    "count": 66,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
+                        "test_action_cluster_get.py",
                         "test_action_create_from_template.py",
                         "test_action_custom_attr_assign.py",
                         "test_action_custom_attr_assign_or_create.py",
                         "test_action_custom_attr_create.py",
                         "test_action_custom_attr_get.py",
+                        "test_action_datacenter_get.py",
                         "test_action_datastore_get.py",
                         "test_action_get_moid.py",
                         "test_action_get_objects_with_tag.py",
@@ -15467,6 +15472,7 @@
                         "test_action_tag_id_get.py",
                         "test_action_tag_list.py",
                         "test_action_tags_attach_by_id.py",
+                        "test_action_template_get.py",
                         "test_action_vm_bestfit.py",
                         "test_action_vm_check_tools.py",
                         "test_action_vm_config_info_get.py",
@@ -15502,7 +15508,7 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.14.0",
+            "version": "0.15.0",
             "versions": [
                 "0.9.6",
                 "0.9.5",
@@ -15524,8 +15530,8 @@
                 "0.8.11",
                 "0.8.10",
                 "0.8.1",
-                "0.8.0",
-                "0.7.9",
+                "0.15.1",
+                "0.15.0",
                 "0.14.0",
                 "0.13.1",
                 "0.13.0",

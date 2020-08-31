@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.14.0
+version: 0.15.0
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -14,14 +14,16 @@ contributors:
 - John Schoewe <jschoewe@gmail.com>
 content:
   actions:
-    count: 70
+    count: 73
     resources:
     - affinity_rule_create
     - affinity_rule_delete
+    - cluster_get
     - custom_attr_assign
     - custom_attr_assign_or_create
     - custom_attr_create
     - custom_attr_get
+    - datacenter_get
     - datastore_get
     - get_moid
     - get_objects_with_tag
@@ -55,6 +57,7 @@ content:
     - tag_id_get
     - tag_list
     - tags_attach_by_id
+    - template_get
     - vm_bestfit
     - vm_check_tools
     - vm_config_info_get
@@ -91,15 +94,17 @@ content:
     resources:
     - TaskInfoSensor
   tests:
-    count: 63
+    count: 66
     resources:
     - test_action_affinity_rule_create.py
     - test_action_affinity_rule_delete.py
+    - test_action_cluster_get.py
     - test_action_create_from_template.py
     - test_action_custom_attr_assign.py
     - test_action_custom_attr_assign_or_create.py
     - test_action_custom_attr_create.py
     - test_action_custom_attr_get.py
+    - test_action_datacenter_get.py
     - test_action_datastore_get.py
     - test_action_get_moid.py
     - test_action_get_objects_with_tag.py
@@ -138,6 +143,7 @@ content:
     - test_action_tag_id_get.py
     - test_action_tag_list.py
     - test_action_tags_attach_by_id.py
+    - test_action_template_get.py
     - test_action_vm_bestfit.py
     - test_action_vm_check_tools.py
     - test_action_vm_config_info_get.py

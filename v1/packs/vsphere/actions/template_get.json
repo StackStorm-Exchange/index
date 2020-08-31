@@ -1,19 +1,19 @@
 {
-    "description": "Retrieve summary information for given Networks or All Networks if none are given",
-    "entry_point": "network_get.py",
-    "name": "network_get",
+    "description": "Retrieve summary information for given Templates or All Templates if none are given",
+    "entry_point": "template_get.py",
+    "name": "template_get",
     "pack": "vsphere",
     "parameters": {
-        "network_ids": {
+        "template_ids": {
             "default": [],
-            "description": "Comma seperated list of network IDs",
+            "description": "Comma seperated list of Template IDs",
             "position": 0,
             "required": false,
             "type": "array"
         },
-        "network_names": {
+        "template_names": {
             "default": [],
-            "description": "Comma seperated list of network Names",
+            "description": "Comma seperated list of Template Names",
             "position": 1,
             "required": false,
             "type": "array"

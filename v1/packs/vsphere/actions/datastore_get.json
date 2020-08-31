@@ -5,13 +5,14 @@
     "pack": "vsphere",
     "parameters": {
         "datastore_ids": {
+            "default": [],
             "description": "Comma seperated list of Datastore IDs",
             "position": 0,
             "required": false,
             "type": "array"
         },
         "datastore_names": {
-            "default": null,
+            "default": [],
             "description": "Comma seperated list of Datastore Names",
             "position": 1,
             "required": false,
