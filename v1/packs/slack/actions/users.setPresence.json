@@ -21,7 +21,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `users:write`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

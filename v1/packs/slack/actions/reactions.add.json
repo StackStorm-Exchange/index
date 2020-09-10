@@ -31,7 +31,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `reactions:write`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

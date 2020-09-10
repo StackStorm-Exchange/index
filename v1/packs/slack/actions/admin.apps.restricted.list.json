@@ -35,7 +35,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `admin.apps:read`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

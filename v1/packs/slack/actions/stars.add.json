@@ -36,7 +36,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `stars:write`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

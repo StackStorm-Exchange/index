@@ -30,7 +30,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `admin.apps:write`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

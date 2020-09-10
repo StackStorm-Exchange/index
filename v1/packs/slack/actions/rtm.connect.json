@@ -28,7 +28,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `rtm:stream`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

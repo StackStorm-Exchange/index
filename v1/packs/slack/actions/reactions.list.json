@@ -42,7 +42,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `reactions:read`",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "user": {

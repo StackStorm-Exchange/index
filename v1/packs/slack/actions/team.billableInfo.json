@@ -16,7 +16,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `admin`",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "user": {

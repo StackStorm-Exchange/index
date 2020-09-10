@@ -6,7 +6,7 @@ keywords:
 - chat
 - messaging
 - instant messaging
-version: 1.1.0
+version: 1.1.1
 python_versions:
 - '2'
 - '3'
@@ -213,3 +213,12 @@ content:
     count: 1
     resources:
     - SlackSensor
+  tests:
+    count: 6
+    resources:
+    - slack_base_action_test_case.py
+    - test_action_files_upload.py
+    - test_action_post_message.py
+    - test_action_run.py
+    - test_action_send_invite.py
+    - test_action_users_filter_by.py

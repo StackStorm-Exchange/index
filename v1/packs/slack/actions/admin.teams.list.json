@@ -27,7 +27,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `admin.teams:read`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

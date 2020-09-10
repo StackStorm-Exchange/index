@@ -49,7 +49,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `search:read`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

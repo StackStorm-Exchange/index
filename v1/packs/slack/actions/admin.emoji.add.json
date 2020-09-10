@@ -21,7 +21,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `admin.teams:write`",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "url": {

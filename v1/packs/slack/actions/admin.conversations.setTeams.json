@@ -37,7 +37,7 @@
         },
         "token": {
             "description": "Authentication token. Requires scope: `admin.conversations:write`",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },
