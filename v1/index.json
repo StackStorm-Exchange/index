@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1600733758,
-        "hash": "3ebcd3ec5a6759e3fa66f9c8f2ca1529"
+        "generated_ts": 1601035599,
+        "hash": "523f34a091813e83002bb4e504bb1642"
     },
     "packs": {
         "acos": {
@@ -14125,7 +14125,7 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 22,
+                    "count": 24,
                     "resources": [
                         "actions.list",
                         "call_home",
@@ -14146,13 +14146,15 @@
                         "kv.grep_object",
                         "kv.set",
                         "kv.set_object",
+                        "rules.disable",
+                        "rules.enable",
                         "rules.list",
                         "sensors.list",
                         "upload_to_s3"
                     ]
                 },
                 "aliases": {
-                    "count": 10,
+                    "count": 12,
                     "resources": [
                         "st2_actions_list",
                         "st2_executions_cancel",
@@ -14162,6 +14164,8 @@
                         "st2_executions_re_run",
                         "st2_executions_resume",
                         "st2_inquiry_respond",
+                        "st2_rules_disable",
+                        "st2_rules_enable",
                         "st2_rules_list",
                         "st2_sensors_list"
                     ]
@@ -14186,8 +14190,9 @@
             ],
             "ref": "st2",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-st2",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "versions": [
+                "1.3.0",
                 "1.2.0",
                 "1.1.0",
                 "1.0.7",

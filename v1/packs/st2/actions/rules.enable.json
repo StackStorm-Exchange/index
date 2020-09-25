@@ -1,0 +1,24 @@
+{
+    "description": "Enable an existing rule",
+    "enabled": true,
+    "entry_point": "rules_enable.py",
+    "name": "rules.enable",
+    "parameters": {
+        "exclude": {
+            "default": [],
+            "description": "List of attributes to exclude from results",
+            "type": "array"
+        },
+        "name": {
+            "description": "Rule name",
+            "required": true,
+            "type": "string"
+        },
+        "pack": {
+            "description": "Pack where the rule is in",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

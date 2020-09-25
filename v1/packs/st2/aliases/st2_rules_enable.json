@@ -1,0 +1,19 @@
+{
+    "ack": {
+        "format": "Give me just a moment to enable the rule for you..."
+    },
+    "action_ref": "st2.rules.enable",
+    "description": "Enable an existing rule.",
+    "formats": [
+        "st2 enable rule {{ name }} from pack {{ pack }}"
+    ],
+    "name": "st2_rules_enable",
+    "result": {
+        "extra": {
+            "slack": {
+                "color": "{% if execution.status == 'succeeded' %}#219939{% else %}#d80015{% endif %}"
+            }
+        },
+        "format": "{% set res = execution.result.result %}\n{% if res is string %}\n{{ res }}\n{% else %}\nEnabled: {{ res.ref }} ({{ res.trigger.ref }} -> {{ res.action.ref }}){{ res.description and ' - ' + res.description }}\n{% endif %}\n"
+    }
+}
