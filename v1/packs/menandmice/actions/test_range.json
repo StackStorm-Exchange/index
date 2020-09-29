@@ -10,6 +10,16 @@
             "required": false,
             "type": "string"
         },
+        "excluded_ranges": {
+            "default": [],
+            "description": "Optional list of ranges to be excluded from test",
+            "type": "array"
+        },
+        "num_reserved_addresses": {
+            "description": "Number of addresses to test for within specified range",
+            "required": false,
+            "type": "integer"
+        },
         "password": {
             "description": "Optional override of the Men&Mice password in <connection>. (required if <connection> is not specified)",
             "required": false,
