@@ -21,6 +21,11 @@
             "secret": true,
             "type": "string"
         },
+        "ping_address": {
+            "default": false,
+            "description": "Should the address be pingged to make sure its not in use.",
+            "type": "boolean"
+        },
         "port": {
             "description": "Optional override of the Men&Mice port in <connection>.",
             "required": false,
