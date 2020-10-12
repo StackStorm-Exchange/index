@@ -70,8 +70,8 @@
         },
         "groupobjectclass": {
             "default": [
-                "groupOfUniqueNames",
-                "groupOfNames"
+                "u'groupOfUniqueNames'",
+                "u'groupOfNames'"
             ],
             "required": true,
             "type": "string"
@@ -157,7 +157,7 @@
         },
         "userobjectclass": {
             "default": [
-                "person"
+                "u'person'"
             ],
             "required": true,
             "type": "string"

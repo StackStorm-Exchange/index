@@ -9,7 +9,7 @@ keywords:
 - red
 - hat
 - authentication
-version: 0.1.1
+version: 0.2.0
 author: Encore Technologies
 email: code@encore.tech
 python_versions:
@@ -17,7 +17,7 @@ python_versions:
 - '3'
 content:
   actions:
-    count: 464
+    count: 471
     resources:
     - aci_add
     - aci_del
@@ -159,11 +159,13 @@ content:
     - env
     - group_add
     - group_add_member
+    - group_add_member_manager
     - group_del
     - group_detach
     - group_find
     - group_mod
     - group_remove_member
+    - group_remove_member_manager
     - group_show
     - hbacrule_add
     - hbacrule_add_host
@@ -211,10 +213,12 @@ content:
     - host_show
     - hostgroup_add
     - hostgroup_add_member
+    - hostgroup_add_member_manager
     - hostgroup_del
     - hostgroup_find
     - hostgroup_mod
     - hostgroup_remove_member
+    - hostgroup_remove_member_manager
     - hostgroup_show
     - i18n_messages
     - idoverridegroup_add
@@ -340,10 +344,12 @@ content:
     - server_role_find
     - server_role_show
     - server_show
+    - server_state
     - service_add
     - service_add_cert
     - service_add_host
     - service_add_principal
+    - service_add_smb
     - service_allow_create_keytab
     - service_allow_retrieve_keytab
     - service_del
@@ -435,6 +441,7 @@ content:
     - topologysuffix_verify
     - trust_add
     - trust_del
+    - trust_enable_agent
     - trust_fetch_domains
     - trust_find
     - trust_mod

@@ -64,6 +64,12 @@
             "type": "string"
         },
         "krbprincipalauthind": {
+            "enum": [
+                "radius",
+                "otp",
+                "pkinit",
+                "hardened"
+            ],
             "items": {
                 "type": "string"
             },
@@ -206,9 +212,6 @@
         "username": {
             "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
             "required": false,
-            "type": "string"
-        },
-        "userpassword": {
             "type": "string"
         },
         "verify_ssl": {

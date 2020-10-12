@@ -60,6 +60,18 @@
             },
             "type": "array"
         },
+        "membermanager_group": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "membermanager_user": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
         "method": {
             "default": "hostgroup_find",
             "description": "Name of IPA command to be executed.",
@@ -102,6 +114,18 @@
             "type": "array"
         },
         "not_in_sudorule": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "not_membermanager_group": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "not_membermanager_user": {
             "items": {
                 "type": "string"
             },

@@ -89,7 +89,9 @@
             "enum": [
                 "password",
                 "radius",
-                "otp"
+                "otp",
+                "pkinit",
+                "hardened"
             ],
             "items": {
                 "type": "string"

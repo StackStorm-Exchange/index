@@ -36,6 +36,12 @@
             },
             "type": "array"
         },
+        "idoverrideuser": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
         "method": {
             "default": "role_remove_member",
             "description": "Name of IPA command to be executed.",

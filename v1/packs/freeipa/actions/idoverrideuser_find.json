@@ -53,6 +53,11 @@
             "immutable": true,
             "type": "string"
         },
+        "no_members": {
+            "default": true,
+            "required": true,
+            "type": "boolean"
+        },
         "password": {
             "description": "Optional override of the IPA password in <connection>. (required if <connection> is not specified)",
             "required": false,

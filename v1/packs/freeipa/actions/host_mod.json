@@ -52,6 +52,12 @@
             "type": "array"
         },
         "krbprincipalauthind": {
+            "enum": [
+                "radius",
+                "otp",
+                "pkinit",
+                "hardened"
+            ],
             "items": {
                 "type": "string"
             },

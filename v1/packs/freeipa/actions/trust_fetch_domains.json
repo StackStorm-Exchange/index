@@ -35,6 +35,13 @@
             "required": true,
             "type": "boolean"
         },
+        "realm_admin": {
+            "type": "string"
+        },
+        "realm_passwd": {
+            "secret": true,
+            "type": "string"
+        },
         "realm_server": {
             "type": "string"
         },

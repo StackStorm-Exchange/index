@@ -27,6 +27,30 @@
             },
             "type": "array"
         },
+        "krbauthindmaxrenewableage_hardened": {
+            "type": "integer"
+        },
+        "krbauthindmaxrenewableage_otp": {
+            "type": "integer"
+        },
+        "krbauthindmaxrenewableage_pkinit": {
+            "type": "integer"
+        },
+        "krbauthindmaxrenewableage_radius": {
+            "type": "integer"
+        },
+        "krbauthindmaxticketlife_hardened": {
+            "type": "integer"
+        },
+        "krbauthindmaxticketlife_otp": {
+            "type": "integer"
+        },
+        "krbauthindmaxticketlife_pkinit": {
+            "type": "integer"
+        },
+        "krbauthindmaxticketlife_radius": {
+            "type": "integer"
+        },
         "krbmaxrenewableage": {
             "type": "integer"
         },

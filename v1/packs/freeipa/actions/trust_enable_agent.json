@@ -2,50 +2,24 @@
     "description": "",
     "enabled": true,
     "entry_point": "ipa_action.py",
-    "name": "group_add_member",
+    "name": "trust_enable_agent",
     "pack": "freeipa",
     "parameters": {
-        "all": {
-            "default": false,
-            "required": true,
-            "type": "boolean"
-        },
-        "cn": {
-            "type": "string"
-        },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a IPA server.",
             "required": false,
             "type": "string"
         },
-        "group": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "idoverrideuser": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "ipaexternalmember": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "method": {
-            "default": "group_add_member",
-            "description": "Name of IPA command to be executed.",
-            "immutable": true,
-            "type": "string"
-        },
-        "no_members": {
+        "enable_compat": {
             "default": false,
             "required": true,
             "type": "boolean"
+        },
+        "method": {
+            "default": "trust_enable_agent",
+            "description": "Name of IPA command to be executed.",
+            "immutable": true,
+            "type": "string"
         },
         "password": {
             "description": "Optional override of the IPA password in <connection>. (required if <connection> is not specified)",
@@ -53,33 +27,19 @@
             "secret": true,
             "type": "string"
         },
-        "raw": {
-            "default": false,
-            "required": true,
-            "type": "boolean"
+        "remote_cn": {
+            "type": "string"
         },
         "server": {
             "description": "Optional override of the IPA server in <connection> (required if <connection> is not specified).",
             "required": false,
             "type": "string"
         },
-        "service": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
         "session": {
             "description": "Login session cookie. If empty then username/password will be used to login prior to running this operation",
             "required": false,
             "secret": true,
             "type": "string"
-        },
-        "user": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
         },
         "username": {
             "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",

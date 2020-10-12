@@ -72,6 +72,46 @@
         "initials": {
             "type": "string"
         },
+        "ipanthomedirectory": {
+            "type": "string"
+        },
+        "ipanthomedirectorydrive": {
+            "enum": [
+                "A:",
+                "B:",
+                "C:",
+                "D:",
+                "E:",
+                "F:",
+                "G:",
+                "H:",
+                "I:",
+                "J:",
+                "K:",
+                "L:",
+                "M:",
+                "N:",
+                "O:",
+                "P:",
+                "Q:",
+                "R:",
+                "S:",
+                "T:",
+                "U:",
+                "V:",
+                "W:",
+                "X:",
+                "Y:",
+                "Z:"
+            ],
+            "type": "string"
+        },
+        "ipantlogonscript": {
+            "type": "string"
+        },
+        "ipantprofilepath": {
+            "type": "string"
+        },
         "ipasshpubkey": {
             "items": {
                 "type": "string"
@@ -88,7 +128,9 @@
             "enum": [
                 "password",
                 "radius",
-                "otp"
+                "otp",
+                "pkinit",
+                "hardened"
             ],
             "items": {
                 "type": "string"

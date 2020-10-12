@@ -2,7 +2,7 @@
     "description": "",
     "enabled": true,
     "entry_point": "ipa_action.py",
-    "name": "permission_mod",
+    "name": "service_add_smb",
     "pack": "freeipa",
     "parameters": {
         "addattr": {
@@ -16,101 +16,25 @@
             "required": true,
             "type": "boolean"
         },
-        "attrs": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "cn": {
-            "type": "string"
-        },
         "connection": {
             "description": "Name of <connection> from this pack's configuration that specifies how to connect to a IPA server.",
             "required": false,
             "type": "string"
         },
-        "delattr": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "extratargetfilter": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "filter": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "ipapermbindruletype": {
-            "default": "permission",
-            "enum": [
-                "permission",
-                "all",
-                "anonymous",
-                "self"
-            ],
+        "fqdn": {
             "type": "string"
         },
-        "ipapermexcludedattr": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
+        "ipakrbokasdelegate": {
+            "type": "boolean"
         },
-        "ipapermincludedattr": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
+        "ipakrboktoauthasdelegate": {
+            "type": "boolean"
         },
-        "ipapermlocation": {
+        "ipantflatname": {
             "type": "string"
-        },
-        "ipapermright": {
-            "enum": [
-                "read",
-                "search",
-                "compare",
-                "write",
-                "add",
-                "delete",
-                "all"
-            ],
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "ipapermtarget": {
-            "type": "string"
-        },
-        "ipapermtargetfilter": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
-        "ipapermtargetfrom": {
-            "type": "string"
-        },
-        "ipapermtargetto": {
-            "type": "string"
-        },
-        "memberof": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
         },
         "method": {
-            "default": "permission_mod",
+            "default": "service_add_smb",
             "description": "Name of IPA command to be executed.",
             "immutable": true,
             "type": "string"
@@ -126,21 +50,7 @@
             "secret": true,
             "type": "string"
         },
-        "permissions": {
-            "items": {
-                "type": "string"
-            },
-            "type": "array"
-        },
         "raw": {
-            "default": false,
-            "required": true,
-            "type": "boolean"
-        },
-        "rename": {
-            "type": "string"
-        },
-        "rights": {
             "default": false,
             "required": true,
             "type": "boolean"
@@ -162,17 +72,11 @@
             },
             "type": "array"
         },
-        "subtree": {
+        "usercertificate": {
             "items": {
                 "type": "string"
             },
             "type": "array"
-        },
-        "targetgroup": {
-            "type": "string"
-        },
-        "type": {
-            "type": "string"
         },
         "username": {
             "description": "Optional override of the IPA username in <connection> (example: username@domain.tld) (required if <connection> is not specified).",
