@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1603305385,
-        "hash": "4dcc4ab1d16f5c01ce266bdfe2b10823"
+        "generated_ts": 1603453099,
+        "hash": "7458a6f787521ce009555ea992b6e638"
     },
     "packs": {
         "acos": {
@@ -13602,19 +13602,22 @@
             "author": "James Fryman",
             "content": {
                 "actions": {
-                    "count": 11,
+                    "count": 14,
                     "resources": [
                         "approve_change",
                         "assign_incident_to",
                         "create_record",
                         "delete",
                         "get",
+                        "get_attachment",
+                        "get_attachments",
                         "get_incidents_assigned_to",
                         "get_non_structured",
                         "get_user",
                         "insert",
                         "set_incident_owner",
-                        "update"
+                        "update",
+                        "upload_attachment"
                     ]
                 },
                 "aliases": {
@@ -13626,9 +13629,11 @@
                     ]
                 },
                 "tests": {
-                    "count": 1,
+                    "count": 3,
                     "resources": [
-                        "test_action.py"
+                        "servicenow_base_action_test_case.py",
+                        "test_action.py",
+                        "test_upload_attachment.py"
                     ]
                 }
             },
@@ -13645,8 +13650,9 @@
             ],
             "ref": "servicenow",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-servicenow",
-            "version": "0.3.8",
+            "version": "0.4.0",
             "versions": [
+                "0.4.0",
                 "0.3.8",
                 "0.3.7",
                 "0.3.6",

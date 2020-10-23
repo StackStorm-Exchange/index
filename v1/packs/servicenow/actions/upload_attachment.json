@@ -1,0 +1,24 @@
+{
+    "description": "Uploads an attachment to a record in a ServiceNow Table",
+    "enabled": true,
+    "entry_point": "upload_attachment.py",
+    "name": "upload_attachment",
+    "parameters": {
+        "file": {
+            "description": "Path to local file to attach",
+            "required": true,
+            "type": "string"
+        },
+        "sysid": {
+            "description": "ID of record",
+            "required": true,
+            "type": "string"
+        },
+        "table": {
+            "description": "Table to take action on",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

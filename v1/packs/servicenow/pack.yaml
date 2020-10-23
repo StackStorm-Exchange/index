@@ -4,7 +4,7 @@ description: ServiceNow Integration Pack
 keywords:
 - servicenow
 - incident management
-version: 0.3.8
+version: 0.4.0
 python_versions:
 - '2'
 - '3'
@@ -12,19 +12,22 @@ author: James Fryman
 email: james@stackstorm.com
 content:
   actions:
-    count: 11
+    count: 14
     resources:
     - approve_change
     - assign_incident_to
     - create_record
     - delete
     - get
+    - get_attachment
+    - get_attachments
     - get_incidents_assigned_to
     - get_non_structured
     - get_user
     - insert
     - set_incident_owner
     - update
+    - upload_attachment
   aliases:
     count: 3
     resources:
@@ -32,6 +35,8 @@ content:
     - servicenow.assign_incident_to
     - servicenow.get_incidents_assigned_to
   tests:
-    count: 1
+    count: 3
     resources:
+    - servicenow_base_action_test_case.py
     - test_action.py
+    - test_upload_attachment.py
