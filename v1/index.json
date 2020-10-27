@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1603752905,
-        "hash": "29ea92f9c09a091c56b50d7b1f2b0afd"
+        "generated_ts": 1603825319,
+        "hash": "7db47aa18b667e5549f66865647332b4"
     },
     "packs": {
         "acos": {
@@ -15387,7 +15387,7 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 73,
+                    "count": 75,
                     "resources": [
                         "affinity_rule_create",
                         "affinity_rule_delete",
@@ -15421,12 +15421,14 @@
                         "host_network_hits_get",
                         "network_get",
                         "set_vm",
+                        "tag_attach_bulk",
                         "tag_attach_or_create",
                         "tag_category_create",
                         "tag_category_delete",
                         "tag_category_list",
                         "tag_create",
                         "tag_delete",
+                        "tag_detach_bulk",
                         "tag_id_get",
                         "tag_list",
                         "tags_attach_by_id",
@@ -15471,7 +15473,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 66,
+                    "count": 68,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -15511,12 +15513,14 @@
                         "test_action_hw_scsi_controller_add.py",
                         "test_action_hw_uuid_get.py",
                         "test_action_network_get.py",
+                        "test_action_tag_attach_bulk.py",
                         "test_action_tag_attach_or_create.py",
                         "test_action_tag_category_create.py",
                         "test_action_tag_category_delete.py",
                         "test_action_tag_category_list.py",
                         "test_action_tag_create.py",
                         "test_action_tag_delete.py",
+                        "test_action_tag_detach_bulk.py",
                         "test_action_tag_id_get.py",
                         "test_action_tag_list.py",
                         "test_action_tags_attach_by_id.py",
@@ -15556,7 +15560,7 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "0.15.1",
+            "version": "0.16.0",
             "versions": [
                 "0.9.6",
                 "0.9.5",
@@ -15577,7 +15581,7 @@
                 "0.8.12",
                 "0.8.11",
                 "0.8.10",
-                "0.8.1",
+                "0.16.0",
                 "0.15.1",
                 "0.15.0",
                 "0.14.0",

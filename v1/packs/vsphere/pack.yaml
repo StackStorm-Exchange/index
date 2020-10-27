@@ -2,7 +2,7 @@ ref: vsphere
 name: vsphere
 description: VMware vSphere
 stackstorm_version: '>=2.9.0'
-version: 0.15.1
+version: 0.16.0
 author: Paul Mulvihill
 email: paul.mulvihill@pulsant.com
 contributors:
@@ -14,7 +14,7 @@ contributors:
 - John Schoewe <jschoewe@gmail.com>
 content:
   actions:
-    count: 73
+    count: 75
     resources:
     - affinity_rule_create
     - affinity_rule_delete
@@ -48,12 +48,14 @@ content:
     - host_network_hits_get
     - network_get
     - set_vm
+    - tag_attach_bulk
     - tag_attach_or_create
     - tag_category_create
     - tag_category_delete
     - tag_category_list
     - tag_create
     - tag_delete
+    - tag_detach_bulk
     - tag_id_get
     - tag_list
     - tags_attach_by_id
@@ -94,7 +96,7 @@ content:
     resources:
     - TaskInfoSensor
   tests:
-    count: 66
+    count: 68
     resources:
     - test_action_affinity_rule_create.py
     - test_action_affinity_rule_delete.py
@@ -134,12 +136,14 @@ content:
     - test_action_hw_scsi_controller_add.py
     - test_action_hw_uuid_get.py
     - test_action_network_get.py
+    - test_action_tag_attach_bulk.py
     - test_action_tag_attach_or_create.py
     - test_action_tag_category_create.py
     - test_action_tag_category_delete.py
     - test_action_tag_category_list.py
     - test_action_tag_create.py
     - test_action_tag_delete.py
+    - test_action_tag_detach_bulk.py
     - test_action_tag_id_get.py
     - test_action_tag_list.py
     - test_action_tags_attach_by_id.py
