@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1604408331,
-        "hash": "1bc93687da421fc30fd867b5c0a39de9"
+        "generated_ts": 1604691704,
+        "hash": "849eaa02efbf505c122d3d573b5e4ef8"
     },
     "packs": {
         "acos": {
@@ -540,6 +540,52 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
+            ]
+        },
+        "aoscx": {
+            "author": "Aruba Networks, a Hewlett-Packard Enterprise company",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "get_aoscx_interface_tower_info",
+                        "get_link_status",
+                        "ztp_ansible_tower_workflow"
+                    ]
+                },
+                "rules": {
+                    "count": 2,
+                    "resources": [
+                        "port_sensor_rule",
+                        "ztp_ansible_tower_workflow_rule"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "PortSensor"
+                    ]
+                }
+            },
+            "dependencies": [
+                "core"
+            ],
+            "description": "Integration pack for Aruba's AOS-CX switch.",
+            "email": "tcwong@hpe.com",
+            "keywords": [
+                "aoscx",
+                "aruba"
+            ],
+            "name": "Stackstorm AOSCX Pack",
+            "python_versions": [
+                "3"
+            ],
+            "ref": "aoscx",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aoscx",
+            "version": "1.0.1",
+            "versions": [
+                "1.0.1",
+                "1.0.0"
             ]
         },
         "astral": {
@@ -8137,6 +8183,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hpe_icsp",
             "version": "0.6.4",
             "versions": [
+                "0.7.0",
                 "0.6.4",
                 "0.6.3",
                 "0.6.2",

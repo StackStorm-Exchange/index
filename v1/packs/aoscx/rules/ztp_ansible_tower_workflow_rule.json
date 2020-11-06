@@ -1,0 +1,33 @@
+{
+    "action": {
+        "parameters": {
+            "hostname": "{{ trigger.line.split()[1] }}",
+            "line": "{{ trigger.line.split('|')[5] }}",
+            "proxy": {
+                "http": "None",
+                "https": "None"
+            },
+            "tower_ip": "10.100.31.126",
+            "tower_job_template": "\"Generate Config and Configure Switch\"",
+            "tower_pass": "password",
+            "tower_user": "admin"
+        },
+        "ref": "aoscx.ztp_ansible_tower_workflow"
+    },
+    "criteria": {
+        "trigger.line": {
+            "pattern": "intfd.*Link.*interface\\s\\d+\\/\\d+\\/\\d+\\sis\\sup",
+            "type": "iregex"
+        }
+    },
+    "description": "Starts the ztp_ansible_tower_worfklow when an interface link on AOS-CX comes up.",
+    "enabled": true,
+    "name": "ztp_ansible_tower_workflow_rule",
+    "pack": "aoscx",
+    "trigger": {
+        "parameters": {
+            "file_path": "/var/log/switch-log.log"
+        },
+        "type": "linux.file_watch.line"
+    }
+}

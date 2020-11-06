@@ -1,0 +1,46 @@
+{
+    "description": "A workflow that runs an Ansible Tower Job Template after retrieving device LLDP information on an AOS-CX switch.",
+    "enabled": true,
+    "entry_point": "workflows/ztp_ansible_tower_workflow.yaml",
+    "name": "ztp_ansible_tower_workflow",
+    "pack": "aoscx",
+    "parameters": {
+        "hostname": {
+            "required": true,
+            "type": "string"
+        },
+        "line": {
+            "required": true,
+            "type": "string"
+        },
+        "proxy": {
+            "properties": {
+                "http": {
+                    "type": "string"
+                },
+                "https": {
+                    "type": "string"
+                }
+            },
+            "required": false,
+            "type": "object"
+        },
+        "tower_ip": {
+            "required": true,
+            "type": "string"
+        },
+        "tower_job_template": {
+            "required": true,
+            "type": "string"
+        },
+        "tower_pass": {
+            "required": true,
+            "type": "string"
+        },
+        "tower_user": {
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "orquesta"
+}

@@ -1,0 +1,29 @@
+ref: aoscx
+name: Stackstorm AOSCX Pack
+description: Integration pack for Aruba's AOS-CX switch.
+keywords:
+- aoscx
+- aruba
+version: 1.0.1
+python_versions:
+- '3'
+dependencies:
+- core
+author: Aruba Networks, a Hewlett-Packard Enterprise company
+email: tcwong@hpe.com
+content:
+  actions:
+    count: 3
+    resources:
+    - get_aoscx_interface_tower_info
+    - get_link_status
+    - ztp_ansible_tower_workflow
+  rules:
+    count: 2
+    resources:
+    - port_sensor_rule
+    - ztp_ansible_tower_workflow_rule
+  sensors:
+    count: 1
+    resources:
+    - PortSensor

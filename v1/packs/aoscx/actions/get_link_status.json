@@ -1,0 +1,42 @@
+{
+    "description": "Gets the link status of all interfaces on an AOS-CX switch with the specified IP address",
+    "enabled": true,
+    "entry_point": "get_link_status.py",
+    "name": "get_link_status",
+    "pack": "aoscx",
+    "parameters": {
+        "ip": {
+            "description": "A switch IP address",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "password": {
+            "description": "The switch's password",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "proxy": {
+            "description": "Proxy dictionary for REST API connections",
+            "position": 3,
+            "properties": {
+                "http": {
+                    "type": "string"
+                },
+                "https": {
+                    "type": "string"
+                }
+            },
+            "required": false,
+            "type": "object"
+        },
+        "username": {
+            "description": "The switch's username",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
