@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1607365296,
-        "hash": "cb4940b8e2a7b0970b06b2f428a05794"
+        "generated_ts": 1609864453,
+        "hash": "4562fa27986ad46631d9253e5395cb78"
     },
     "packs": {
         "acos": {
@@ -15976,13 +15976,14 @@
             "author": "Hiroyasu OHYAMA",
             "content": {
                 "actions": {
-                    "count": 17,
+                    "count": 18,
                     "resources": [
                         "ack_event",
                         "create_host",
                         "host_delete",
                         "host_delete_by_id",
                         "host_get_id",
+                        "host_get_interfaces",
                         "host_get_inventory",
                         "host_get_multiple_ids",
                         "host_get_status",
@@ -15998,13 +15999,14 @@
                     ]
                 },
                 "tests": {
-                    "count": 15,
+                    "count": 16,
                     "resources": [
                         "test_action_base.py",
                         "test_call_api.py",
                         "test_create_host.py",
                         "test_host_delete.py",
                         "test_host_get_id.py",
+                        "test_host_get_interfaces.py",
                         "test_host_get_inventory.py",
                         "test_host_get_multiple_ids.py",
                         "test_host_get_status.py",
@@ -16037,8 +16039,9 @@
             ],
             "ref": "zabbix",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zabbix",
-            "version": "0.3.2",
+            "version": "0.4.0",
             "versions": [
+                "0.4.0",
                 "0.3.2",
                 "0.3.1",
                 "0.3.0",

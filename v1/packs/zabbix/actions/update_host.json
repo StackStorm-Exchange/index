@@ -9,9 +9,17 @@
             "default": "host.update",
             "immutable": true
         },
+        "description": {
+            "description": "Description of the host.",
+            "type": "string"
+        },
         "groups": {
             "description": "Host groups to replace the current host groups the host belongs to.",
             "type": "array"
+        },
+        "host": {
+            "description": "Technical name of the host.",
+            "type": "string"
         },
         "hostid": {
             "description": "ID of Host to be updated",
@@ -28,6 +36,10 @@
         "macros": {
             "description": "User macros to replace the current user macros.",
             "type": "array"
+        },
+        "name": {
+            "description": "Visible name of the host.",
+            "type": "string"
         },
         "templates": {
             "description": "Templates to replace the currently linked templates.",
