@@ -1,12 +1,34 @@
 {
+    "auth_method": {
+        "default": "token",
+        "description": "Authentication method",
+        "enum": [
+            "approle",
+            "token"
+        ],
+        "required": false,
+        "type": "string"
+    },
     "cert": {
         "description": "Path to client-side certificate",
         "required": false,
         "secret": false,
         "type": "string"
     },
+    "role_id": {
+        "description": "Authentication approle role-id (method=approle)",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "secret_id": {
+        "description": "Authentication approle secret-id (method=approle)",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
     "token": {
-        "description": "Authentication token",
+        "description": "Authentication token (method=token)",
         "required": false,
         "secret": true,
         "type": "string"
