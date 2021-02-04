@@ -24,3 +24,18 @@ content:
     - read_kv
     - set_policy
     - write
+  tests:
+    count: 12
+    resources:
+    - __init__.py
+    - test_action_create_token.py
+    - test_action_delete.py
+    - test_action_delete_policy.py
+    - test_action_get_policy.py
+    - test_action_is_initialized.py
+    - test_action_list_policies.py
+    - test_action_read.py
+    - test_action_read_kv.py
+    - test_action_set_policy.py
+    - test_action_write.py
+    - vault_action_tests_base.py
