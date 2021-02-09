@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1612899792,
-        "hash": "8ce67d729a4925edcb27f479b990e6d5"
+        "generated_ts": 1612899838,
+        "hash": "a547340dc105ca41bd85e7ec889f648c"
     },
     "packs": {
         "acos": {
@@ -10490,9 +10490,12 @@
                 "alerting"
             ],
             "name": "nagios",
+            "python_versions": [
+                "3"
+            ],
             "ref": "nagios",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nagios",
-            "version": "0.2.2",
+            "version": "1.0.0",
             "versions": [
                 "1.0.0",
                 "0.2.3",
