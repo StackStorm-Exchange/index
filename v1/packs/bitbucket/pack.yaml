@@ -7,13 +7,15 @@ keywords:
 - mercurial
 - git
 - source control
-version: 0.5.4
+version: 1.0.1
 stackstorm_version: '>=2.1.0'
 author: Aamir
 email: raza.aamir01@gmail.com
 contributors:
 - Edward Medvedev <edward.medvedev@gmail.com>
 - Hiroyasu OHYAMA <user.localhost2000@gmail.com>
+python_versions:
+- '3'
 content:
   actions:
     count: 16

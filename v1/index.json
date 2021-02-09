@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1612865393,
-        "hash": "64bfde1eb679dea01b656300e2a5c6a3"
+        "generated_ts": 1612899792,
+        "hash": "8ce67d729a4925edcb27f479b990e6d5"
     },
     "packs": {
         "acos": {
@@ -4721,11 +4721,17 @@
                 "source control"
             ],
             "name": "bitbucket",
+            "python_versions": [
+                "3"
+            ],
             "ref": "bitbucket",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitbucket",
             "stackstorm_version": ">=2.1.0",
-            "version": "0.5.4",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
+                "1.0.0",
+                "0.6.0",
                 "0.5.5",
                 "0.5.4",
                 "0.5.3",
@@ -10488,6 +10494,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nagios",
             "version": "0.2.2",
             "versions": [
+                "1.0.0",
                 "0.2.3",
                 "0.2.2",
                 "0.2.1",
@@ -11476,6 +11483,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nsx_vtep",
             "version": "0.1.2",
             "versions": [
+                "1.0.0",
                 "0.1.2",
                 "0.1.1",
                 "0.1.0"
