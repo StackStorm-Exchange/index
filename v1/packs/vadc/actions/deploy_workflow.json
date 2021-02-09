@@ -1,7 +1,7 @@
 {
     "description": "A Mistral Workflow to deploy a vTM service",
     "enabled": true,
-    "entry_point": "workflows/deploy_workflows.yaml",
+    "entry_point": "workflows/deploy_workflow.yaml",
     "name": "deploy_workflow",
     "parameters": {
         "addresses": {
@@ -30,5 +30,5 @@
             "type": "array"
         }
     },
-    "runner_type": "mistral-v2"
+    "runner_type": "orquesta"
 }
