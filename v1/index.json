@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1612910478,
-        "hash": "d069efef9708a1071ef5ecd67994e9b6"
+        "generated_ts": 1612910494,
+        "hash": "cb136eaa8c7da09aece8953a729befd7"
     },
     "packs": {
         "acos": {
@@ -10610,8 +10610,11 @@
                 "networking"
             ],
             "name": "napalm_logs",
+            "python_versions": [
+                "3"
+            ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm_logs",
-            "version": "0.1.1",
+            "version": "1.0.0",
             "versions": [
                 "1.0.0",
                 "0.1.2",
