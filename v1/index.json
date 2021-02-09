@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1612899838,
-        "hash": "a547340dc105ca41bd85e7ec889f648c"
+        "generated_ts": 1612900050,
+        "hash": "7022fd5a251ee9781e09bade4ac6b1b0"
     },
     "packs": {
         "acos": {
@@ -11482,9 +11482,12 @@
             "description": "NSX automation pack.",
             "email": "yugendra.khonde@gslab.com",
             "name": "nsx_vtep",
+            "python_versions": [
+                "3"
+            ],
             "ref": "nsx_vtep",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nsx_vtep",
-            "version": "0.1.2",
+            "version": "1.0.0",
             "versions": [
                 "1.0.0",
                 "0.1.2",
