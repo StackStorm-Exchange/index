@@ -1,0 +1,12 @@
+{
+    "description": "Prometheus Targets API",
+    "entry_point": "targets.py",
+    "name": "Targets",
+    "parameters": {
+        "url": {
+            "description": "Prometheus Url",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

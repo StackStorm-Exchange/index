@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1612911968,
-        "hash": "236bef591dc1cb6e036a7755479f286d"
+        "generated_ts": 1612911986,
+        "hash": "3521295cc6bfc8db70ee964487dd5380"
     },
     "packs": {
         "acos": {
@@ -13003,8 +13003,9 @@
             "author": "Daniel Chamot",
             "content": {
                 "actions": {
-                    "count": 3,
+                    "count": 4,
                     "resources": [
+                        "Targets",
                         "alert.aggregation",
                         "query",
                         "series"
@@ -13020,12 +13021,11 @@
             ],
             "name": "prometheus",
             "python_versions": [
-                "2",
                 "3"
             ],
             "ref": "prometheus",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-prometheus",
-            "version": "0.2.0",
+            "version": "1.0.0",
             "versions": [
                 "1.0.0",
                 "0.2.1",
