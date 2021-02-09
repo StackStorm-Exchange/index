@@ -1,0 +1,63 @@
+{
+    "description": "Apply Attribute with server unique values for a single server.",
+    "enabled": true,
+    "entry_point": "workflows/icsp_single_server_attribute_add.yaml",
+    "name": "icsp_single_server_attribute_add",
+    "pack": "hpe_icsp",
+    "parameters": {
+        "connection_details": {
+            "description": "Overriding connection details for ICSP server",
+            "position": 4,
+            "required": false,
+            "type": "object"
+        },
+        "id_type": {
+            "default": "serialnumber",
+            "enum": [
+                "serialnumber",
+                "uuid"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "identifier": {
+            "description": "Serial Number or UUID of the target Server.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        },
+        "key": {
+            "description": "Attribute Key to be added.",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        },
+        "value": {
+            "description": "The value to set against the server.",
+            "oneOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "boolean"
+                },
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "integer"
+                },
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "object"
+                }
+            ],
+            "position": 3,
+            "required": true
+        }
+    },
+    "runner_type": "orquesta"
+}

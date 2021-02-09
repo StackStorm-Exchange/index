@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1612910200,
-        "hash": "7db0bbf649af9d5251fbf80c3347b9eb"
+        "generated_ts": 1612910234,
+        "hash": "769be7021994ecd31380b73e7c11265a"
     },
     "packs": {
         "acos": {
@@ -8182,11 +8182,12 @@
             "author": "Paul Mulvihill",
             "content": {
                 "actions": {
-                    "count": 14,
+                    "count": 16,
                     "resources": [
                         "icsp_buildplan_apply",
                         "icsp_buildplan_get",
                         "icsp_ca_get",
+                        "icsp_id_to_os",
                         "icsp_ids_to_os",
                         "icsp_job_status_get",
                         "icsp_mid_get",
@@ -8197,7 +8198,8 @@
                         "icsp_server_data_format",
                         "icsp_server_delete",
                         "icsp_server_details_get",
-                        "icsp_servers_get"
+                        "icsp_servers_get",
+                        "icsp_single_server_attribute_add"
                     ]
                 }
             },
@@ -8205,12 +8207,11 @@
             "email": "paul.mulvihill@pulsant.com",
             "name": "hpe_icsp",
             "python_versions": [
-                "2",
                 "3"
             ],
             "ref": "hpe_icsp",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-hpe_icsp",
-            "version": "0.6.4",
+            "version": "1.0.0",
             "versions": [
                 "1.0.0",
                 "0.7.0",
