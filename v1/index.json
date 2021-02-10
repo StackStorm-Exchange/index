@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1612952089,
-        "hash": "c2d8c3b2ef1a3743977c09b34b27879a"
+        "generated_ts": 1612952336,
+        "hash": "217a1e8fca1d9c51820fb7dfe7f625c5"
     },
     "packs": {
         "acos": {
@@ -14175,9 +14175,10 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 1,
+                    "count": 2,
                     "resources": [
-                        "search"
+                        "search",
+                        "sendlog"
                     ]
                 },
                 "aliases": {
@@ -14196,13 +14197,14 @@
             ],
             "name": "splunk",
             "python_versions": [
-                "2",
                 "3"
             ],
             "ref": "splunk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-splunk",
-            "version": "0.6.1",
+            "version": "1.0.0",
             "versions": [
+                "1.0.0",
+                "0.6.2",
                 "0.6.1",
                 "0.6.0",
                 "0.5.2",
