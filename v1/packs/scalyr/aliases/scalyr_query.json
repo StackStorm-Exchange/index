@@ -1,0 +1,16 @@
+{
+    "action_ref": "scalyr.query",
+    "description": "Run Scalyr search query.",
+    "formats": [
+        "scalyr query {{ filter }}",
+        "scalyr search {{ filter }}"
+    ],
+    "immutable_parameters": {
+        "maxCount": 10
+    },
+    "name": "scalyr_query",
+    "pack": "scalyr",
+    "result": {
+        "format": "Results for query *{{execution.parameters.filter}}*:\n\n{% if execution.status != \"succeeded\" -%}\n  Execution failed: {{ execution.result.result.message }}\n{% else -%}\n  {% if execution.result.result.matches|length == 0 -%}\n    No results found.\n  {% else -%}\n  {% for match in execution.result.result.matches -%}\n    Message: {{ match.message }}\n  {%+ endfor %}\n  {% endif %}\n{% endif %}\n"
+    }
+}

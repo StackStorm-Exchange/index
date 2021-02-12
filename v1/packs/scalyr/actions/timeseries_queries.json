@@ -1,0 +1,55 @@
+{
+    "description": "Run multiple Scalyr timeseries queries",
+    "entry_point": "timeseries_queries.py",
+    "name": "timeseries_queries",
+    "pack": "scalyr",
+    "parameters": {
+        "api_url": {
+            "description": "API url, that overrides the one provided by the config.yaml",
+            "type": "string"
+        },
+        "queries": {
+            "description": "Timeseries query objects to execute",
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "buckets": {
+                        "default": 1,
+                        "type": "integer"
+                    },
+                    "endTime": {
+                        "type": "string"
+                    },
+                    "filter": {
+                        "required": true,
+                        "type": "string"
+                    },
+                    "function": {
+                        "type": "string"
+                    },
+                    "priority": {
+                        "default": "low",
+                        "enum": [
+                            "low",
+                            "high"
+                        ],
+                        "type": "string"
+                    },
+                    "startTime": {
+                        "default": "10 minutes",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "array"
+        },
+        "token": {
+            "description": "API token, that overrides the one provided by the config.yaml",
+            "secret": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

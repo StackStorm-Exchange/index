@@ -1,0 +1,13 @@
+{
+    "action_ref": "scalyr.timeseries_query",
+    "description": "Run Scalyr timeseries query.",
+    "formats": [
+        "scalyr ts {{ filter }}",
+        "scalyr ts {{ filter }}"
+    ],
+    "name": "scalyr_timeseries_query",
+    "pack": "scalyr",
+    "result": {
+        "format": "Results for query *{{execution.parameters.filter}}*:\n\n{% if execution.status != \"succeeded\" -%}\n  Execution failed: {{ execution.result.result.message }}\n{% else -%}\n  {% if execution.result.result.results|length == 0 -%}\n    No results found.\n  {% else -%}\n  {% for match in execution.result.result.results -%}\n    Values: {{ match.values.join(\",\") }}\n  {%+ endfor %}\n  {% endif -%}\n{% endif %}\n"
+    }
+}

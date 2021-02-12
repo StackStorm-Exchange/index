@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1613125392,
-        "hash": "6c84a0f1eff38a9a9469638aa4d26c1e"
+        "generated_ts": 1613127506,
+        "hash": "9615d4367066c32cad3a245c5f204e12"
     },
     "packs": {
         "acos": {
@@ -13604,9 +13604,19 @@
             "author": "Scalyr, Inc.",
             "content": {
                 "actions": {
-                    "count": 1,
+                    "count": 4,
                     "resources": [
-                        "query"
+                        "power_query",
+                        "query",
+                        "timeseries_queries",
+                        "timeseries_query"
+                    ]
+                },
+                "aliases": {
+                    "count": 2,
+                    "resources": [
+                        "scalyr_query",
+                        "scalyr_timeseries_query"
                     ]
                 }
             },
@@ -13625,7 +13635,7 @@
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-scalyr",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "versions": [
                 "1.1.0",
                 "1.0.0",

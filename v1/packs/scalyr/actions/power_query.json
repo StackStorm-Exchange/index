@@ -1,27 +1,16 @@
 {
-    "description": "Query Scalyr to get logs. See https://www.scalyr.com/help/api#query",
-    "entry_point": "query.py",
-    "name": "query",
+    "description": "Run Scalyr PowerQuery",
+    "entry_point": "power_query.py",
+    "name": "power_query",
     "pack": "scalyr",
     "parameters": {
-        "columns": {
-            "description": " specifies which fields to return for each log message, as a comma-delimited list. Omit this parameter (or pass an empty string) to return all fields.",
+        "api_url": {
+            "description": "API url, that overrides the one provided by the config.yaml",
             "type": "string"
         },
         "endTime": {
             "description": "End of time interval, in variety of formats, e.g. 11:30, see https://www.scalyr.com/help/time-reference",
             "type": "string"
-        },
-        "filter": {
-            "default": "",
-            "description": "Filter matching events using Scalyr expressions. None or empty string match all events.",
-            "required": true,
-            "type": "string"
-        },
-        "maxCount": {
-            "default": 100,
-            "description": "Maximum number of records to return.",
-            "type": "integer"
         },
         "priority": {
             "default": "low",
@@ -30,6 +19,11 @@
                 "low",
                 "high"
             ],
+            "type": "string"
+        },
+        "query": {
+            "description": "Query to execute in PowerQuery language",
+            "required": true,
             "type": "string"
         },
         "startTime": {
