@@ -1,0 +1,20 @@
+{
+    "description": "Action Chain to pre process CSV metrics data and ingest it to monitor via mqtt.",
+    "enabled": true,
+    "entry_point": "chains/clean_data_mqtt_ingest_chain.yaml",
+    "name": "clean_data_mqtt_ingest_chain",
+    "notify": {
+        "on-complete": {
+            "message": " Action succeeded."
+        }
+    },
+    "pack": "monitor_mqtt",
+    "parameters": {
+        "topic": {
+            "description": "Mqtt topic to publish ",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "action-chain"
+}

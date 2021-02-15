@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1613127506,
-        "hash": "9615d4367066c32cad3a245c5f204e12"
+        "generated_ts": 1613401715,
+        "hash": "6dbc2506a3de44f2c3502744d638a6fd"
     },
     "packs": {
         "acos": {
@@ -10261,6 +10261,38 @@
                 "0.4.0",
                 "0.3.0",
                 "0.2.0",
+                "0.1.0"
+            ]
+        },
+        "monitor_mqtt": {
+            "author": "IBM",
+            "content": {
+                "actions": {
+                    "count": 4,
+                    "resources": [
+                        "clean_data",
+                        "clean_data_mqtt_ingest_chain",
+                        "publish",
+                        "publishcsvdata"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "MQTTSensor"
+                    ]
+                }
+            },
+            "description": "IBM MQTT Integration for StackStorm",
+            "email": "abharast@in.ibm.com",
+            "name": "monitor_mqtt",
+            "python_versions": [
+                "3"
+            ],
+            "ref": "monitor_mqtt",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-monitor_mqtt",
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
             ]
         },

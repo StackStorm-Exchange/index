@@ -1,0 +1,91 @@
+{
+    "client_id": {
+        "description": "Client ID to register on MQTT broker",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "data_file_path": {
+        "description": "input data file path.",
+        "type": "string"
+    },
+    "hostname": {
+        "description": "MQTT Broker to connect to",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "json_schema_path": {
+        "description": "json Schema is must to validate CSV",
+        "type": "string"
+    },
+    "password": {
+        "description": "Password to connect to MQTT Broker",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "port": {
+        "description": "MQTT port to connect to. Default 1883",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "protocol": {
+        "description": "MQTT protocol version. Default MQTTv311",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "ssl": {
+        "default": false,
+        "description": "Enable SSL support. Default: False",
+        "required": false,
+        "secret": false,
+        "type": "boolean"
+    },
+    "ssl_cacert": {
+        "description": "Path to SSL CA Certificate",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "ssl_cert": {
+        "description": "Path to SSL Certificate",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "ssl_key": {
+        "description": "Path to SSL Key",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "subscribe": {
+        "description": "List of MQTT topics to subscribe to",
+        "items": {
+            "type": "string"
+        },
+        "required": true,
+        "type": "array"
+    },
+    "tenant_id": {
+        "description": "Tenant Id",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "userdata": {
+        "description": "Custom userdata to include with each MQTT message payload",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "username": {
+        "description": "Username to connect to MQTT Broker",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    }
+}
