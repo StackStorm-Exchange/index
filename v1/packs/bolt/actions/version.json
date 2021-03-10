@@ -6,7 +6,7 @@
     "pack": "bolt",
     "parameters": {
         "boltdir": {
-            "description": "Specify what Boltdir to load config from (default: autodiscovered from current working dir)",
+            "description": "Deprecated, switch to 'project'. Specify what project to load config from (default: autodiscovered from current working dir)",
             "type": "string"
         },
         "cmd": {
@@ -89,6 +89,10 @@
         },
         "private_key": {
             "description": "Private ssh key to authenticate with",
+            "type": "string"
+        },
+        "project": {
+            "description": "Path to load the Bolt project from (default: autodiscovered from current dir)",
             "type": "string"
         },
         "query": {

@@ -1,6 +1,6 @@
 {
     "boltdir": {
-        "description": "Specify what Boltdir to load config from (default: autodiscovered from current working dir)",
+        "description": "Deprecated, switch to 'project'. Specify what project to load config from (default: autodiscovered from current working dir)",
         "type": "string"
     },
     "cmd": {
@@ -84,6 +84,10 @@
     },
     "modulepath": {
         "description": "List of directories containing modules, separated by ':'",
+        "type": "string"
+    },
+    "project": {
+        "description": "Path to load the Bolt project from (default: autodiscovered from current dir)",
         "type": "string"
     },
     "ssl": {
