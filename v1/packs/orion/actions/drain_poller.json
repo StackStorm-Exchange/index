@@ -1,6 +1,6 @@
 {
     "description": "Drain nodes from one Orion poller to another.",
-    "enabled": true,
+    "enabled": false,
     "entry_point": "workflows/drain_poller.yaml",
     "name": "drain_poller",
     "pack": "orion",
@@ -31,10 +31,10 @@
             "type": "string"
         },
         "whitelist": {
-            "default": null,
+            "default": false,
             "description": "Limit nodes to the following",
             "type": "array"
         }
     },
-    "runner_type": "mistral-v2"
+    "runner_type": "orquesta"
 }

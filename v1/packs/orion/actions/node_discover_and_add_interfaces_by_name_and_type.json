@@ -1,0 +1,31 @@
+{
+    "description": "Discover and add a list of Named Interfaces on a Node in Solarwinds Orion of a specific type and admin status.",
+    "enabled": true,
+    "entry_point": "node_discover_and_add_interfaces_by_name_and_type.py",
+    "name": "node_discover_and_add_interfaces_by_name_and_type",
+    "pack": "orion",
+    "parameters": {
+        "admin_up_required": {
+            "default": true,
+            "description": "Require the interface to be admin status (ifAdminStatus) to be up (1) in order to be added",
+            "required": true,
+            "type": "boolean"
+        },
+        "interface_names": {
+            "description": "List of interface names (ifName) to be added to monitoring",
+            "required": true,
+            "type": "array"
+        },
+        "interface_type": {
+            "description": "List of interface types (ifType) to be added to monitoring",
+            "required": true,
+            "type": "array"
+        },
+        "node": {
+            "description": "The node to add the interfaces to in Orion.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

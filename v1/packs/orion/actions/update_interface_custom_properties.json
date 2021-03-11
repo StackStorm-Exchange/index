@@ -1,12 +1,17 @@
 {
-    "description": "Update Custom Properties on a Node in Solarwinds",
+    "description": "Update the custom properties of an Interface on a specific Node",
     "enabled": true,
-    "entry_point": "update_node_custom_properties.py",
-    "name": "update_node_custom_properties",
+    "entry_point": "update_interface_custom_properties.py",
+    "name": "update_interface_custom_properties",
     "pack": "orion",
     "parameters": {
         "custom_property": {
             "description": "Name of the custom property to update",
+            "required": true,
+            "type": "string"
+        },
+        "interface": {
+            "description": "The Name (IfName) of the NPM interface to be updated.",
             "required": true,
             "type": "string"
         },

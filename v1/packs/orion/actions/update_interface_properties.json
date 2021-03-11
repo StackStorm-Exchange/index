@@ -1,0 +1,30 @@
+{
+    "description": "Update the property of an Interface in the Orion.NPM.Interfaces table on a specific Node",
+    "enabled": true,
+    "entry_point": "update_interface_properties.py",
+    "name": "update_interface_properties",
+    "pack": "orion",
+    "parameters": {
+        "interface": {
+            "description": "The Name (IfName) of the NPM interface to be updated.",
+            "required": true,
+            "type": "string"
+        },
+        "node": {
+            "description": "The node to poll in Orion.",
+            "required": true,
+            "type": "string"
+        },
+        "property": {
+            "description": "Name of the Interface property to update",
+            "required": true,
+            "type": "string"
+        },
+        "value": {
+            "description": "The value to apply to the Interface property",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

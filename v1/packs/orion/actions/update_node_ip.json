@@ -1,0 +1,20 @@
+{
+    "description": "Update the IP address assigned to a Node",
+    "enabled": true,
+    "entry_point": "update_node_ip.py",
+    "name": "update_node_ip",
+    "pack": "orion",
+    "parameters": {
+        "ipaddress": {
+            "description": "The IP address to configure on the site.",
+            "required": true,
+            "type": "string"
+        },
+        "node": {
+            "description": "The node to update in Orion.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

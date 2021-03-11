@@ -1,0 +1,69 @@
+{
+    "description": "Create an node using SNMPv3 in Solarwinds Orion.",
+    "enabled": true,
+    "entry_point": "node_create_snmpv3.py",
+    "name": "node_create_snmpv3",
+    "pack": "orion",
+    "parameters": {
+        "auth_password": {
+            "description": "The SNMPv3 Authentication password used to poll SNMP from remote device.",
+            "required": true,
+            "type": "string"
+        },
+        "auth_protocol": {
+            "default": "SHA1",
+            "description": "The SNMPv3 Authentication protocol used for SNMP polling.",
+            "enum": [
+                "MD5",
+                "SHA1"
+            ],
+            "type": "string"
+        },
+        "ip_address": {
+            "description": "The IP address to use for polling.",
+            "required": true,
+            "type": "string"
+        },
+        "node": {
+            "description": "The Caption for the node to add to Orion.",
+            "required": true,
+            "type": "string"
+        },
+        "poller": {
+            "default": "primary",
+            "description": "The name of the additional polling engine to use (defaults to primary).",
+            "type": "string"
+        },
+        "privacy_password": {
+            "description": "The SNMPv3 Privacy password used to poll SNMP from remote device.",
+            "required": true,
+            "type": "string"
+        },
+        "privacy_protocol": {
+            "default": "AES128",
+            "description": "The SNMPv3 Privacy protocol used for SNMP polling.",
+            "enum": [
+                "DES56",
+                "AES128",
+                "AES192",
+                "AES256"
+            ],
+            "type": "string"
+        },
+        "snmpv3_username": {
+            "description": "The SNMPv3 Username used to poll SNMP from remote device.",
+            "required": true,
+            "type": "string"
+        },
+        "status": {
+            "default": "snmp",
+            "description": "Protocol to use for Status and Response Time checks.",
+            "enum": [
+                "snmp",
+                "icmp"
+            ],
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

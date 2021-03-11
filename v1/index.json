@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1615381288,
-        "hash": "93dd9ad084b08b1b0e16b12f6de69494"
+        "generated_ts": 1615488382,
+        "hash": "7dcba457d05a83e1233d94025311752f"
     },
     "packs": {
         "acos": {
@@ -12522,7 +12522,7 @@
             "author": "Encore Technologies",
             "content": {
                 "actions": {
-                    "count": 27,
+                    "count": 32,
                     "resources": [
                         "add_node_to_ncm",
                         "agent_delete",
@@ -12540,8 +12540,10 @@
                         "ncm_config_download",
                         "ncm_execute_script",
                         "node_create",
+                        "node_create_snmpv3",
                         "node_delete",
                         "node_discover_and_add_interfaces",
+                        "node_discover_and_add_interfaces_by_name_and_type",
                         "node_maintenance_mode_change",
                         "node_remanage",
                         "node_status",
@@ -12549,7 +12551,10 @@
                         "nodes_pollnow",
                         "query",
                         "start_discovery",
+                        "update_interface_custom_properties",
+                        "update_interface_properties",
                         "update_node_custom_properties",
+                        "update_node_ip",
                         "update_node_poller"
                     ]
                 },
@@ -12616,13 +12621,18 @@
             ],
             "name": "orion",
             "python_versions": [
-                "2",
                 "3"
             ],
             "ref": "orion",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-orion",
-            "version": "0.7.11",
+            "version": "1.0.2",
             "versions": [
+                "1.0.2",
+                "1.0.1",
+                "0.8.4",
+                "0.8.2",
+                "0.8.1",
+                "0.8.0",
                 "0.7.9",
                 "0.7.8",
                 "0.7.7",
