@@ -1,11 +1,8 @@
 {
-    "description": "Query Prometheus Series API",
-    "entry_point": "series.py",
-    "name": "series",
+    "description": "Prometheus Targets API",
+    "entry_point": "targets.py",
+    "name": "targets",
     "parameters": {
-        "queries": {
-            "type": "object"
-        },
         "url": {
             "description": "Prometheus URL",
             "required": false,

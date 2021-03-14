@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1615589439,
-        "hash": "338a75fe118276b0a75364885c5d6f3b"
+        "generated_ts": 1615727705,
+        "hash": "42462e7962f2c49ac6966797b5237146"
     },
     "packs": {
         "acos": {
@@ -13047,10 +13047,10 @@
                 "actions": {
                     "count": 4,
                     "resources": [
-                        "Targets",
                         "alert.aggregation",
                         "query",
-                        "series"
+                        "series",
+                        "targets"
                     ]
                 }
             },
@@ -13067,9 +13067,11 @@
             ],
             "ref": "prometheus",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-prometheus",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "versions": [
+                "2.0.0",
                 "1.0.0",
+                "0.3.0",
                 "0.2.1",
                 "0.2.0",
                 "0.1.4",
