@@ -25,7 +25,6 @@
             "type": "string"
         },
         "file_path": {
-            "default": "",
             "description": "Path to the file on the local filesystem that will be opened, read and uploaded to Slack. If omitting this parameter, you must provide either `file` or `content`.",
             "required": false,
             "type": "string"
