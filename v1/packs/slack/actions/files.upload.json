@@ -41,7 +41,11 @@
         },
         "http_method": {
             "default": "POST",
-            "required": true,
+            "enum": [
+                "POST",
+                "GET"
+            ],
+            "required": false,
             "type": "string"
         },
         "initial_comment": {
