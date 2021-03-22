@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1616037285,
-        "hash": "5154dcf518aef7d923d6c5c82743931a"
+        "generated_ts": 1616387679,
+        "hash": "f729fca61e7fc350a66ff137ae72eae6"
     },
     "packs": {
         "acos": {
@@ -8180,6 +8180,41 @@
                 "0.3.0",
                 "0.2.0",
                 "0.1.0"
+            ]
+        },
+        "greynoise": {
+            "author": "GreyNoise",
+            "content": {
+                "actions": {
+                    "count": 5,
+                    "resources": [
+                        "context_ip",
+                        "ip_lookup",
+                        "query",
+                        "quick_ip",
+                        "riot_ip"
+                    ]
+                }
+            },
+            "contributors": [
+                "Brad C <brad@greynoise.io>"
+            ],
+            "description": "GreyNoise provides information on devices observed mass-scanning the internet. This pack provides a set of actions to lookup IPs or query the GreyNoise API.",
+            "email": "hello@greynoise.io",
+            "keywords": [
+                "threat intelligence",
+                "mass-internet scanning",
+                "greynoise"
+            ],
+            "name": "GreyNoise",
+            "python_versions": [
+                "3"
+            ],
+            "ref": "greynoise",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-greynoise",
+            "version": "1.0.0",
+            "versions": [
+                "1.0.0"
             ]
         },
         "hpe_icsp": {

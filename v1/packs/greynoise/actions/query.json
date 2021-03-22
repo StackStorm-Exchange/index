@@ -1,0 +1,15 @@
+{
+    "description": "Perform a GNQL query in GreyNoise",
+    "enabled": true,
+    "entry_point": "query.py",
+    "name": "query",
+    "pack": "greynoise",
+    "parameters": {
+        "query": {
+            "description": "GNQL Query",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

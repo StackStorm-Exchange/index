@@ -1,0 +1,15 @@
+{
+    "description": "Perform a Quick IP lookup in GreyNoise",
+    "enabled": true,
+    "entry_point": "quick_ip.py",
+    "name": "quick_ip",
+    "pack": "greynoise",
+    "parameters": {
+        "ip": {
+            "description": "IP Address to Lookup",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
