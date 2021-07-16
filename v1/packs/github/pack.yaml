@@ -7,7 +7,7 @@ keywords:
 - git
 - scm
 - serverless
-version: 2.0.1
+version: 2.1.0
 python_versions:
 - '3'
 author: StackStorm, Inc.
@@ -17,7 +17,7 @@ contributors:
 - Igor Cherkaev <igor.cherkaev@copart.com>
 content:
   actions:
-    count: 30
+    count: 31
     resources:
     - add_comment
     - add_status
@@ -27,6 +27,7 @@ content:
     - create_deployment_status
     - create_file
     - create_issue
+    - create_pull
     - create_release
     - delete_branch_protection
     - deployment_event

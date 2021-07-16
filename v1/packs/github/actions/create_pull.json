@@ -1,0 +1,39 @@
+{
+    "description": "Creates a Github pull request. Example:\n  st2 run github.create_pull user=user_or_org repo=myreponame title=\"test github.create_pull\" body=\"test\" head=feature/xyz base=master\n",
+    "enabled": true,
+    "entry_point": "create_pull.py",
+    "name": "create_pull",
+    "parameters": {
+        "base": {
+            "description": "The name of the branch you want the changes pulled into. This should be an existing branch on the current repository. You cannot submit a pull request to one repository that requests a merge to a base of another repository.",
+            "required": true,
+            "type": "string"
+        },
+        "body": {
+            "description": "The contents of the pull request.",
+            "required": true,
+            "type": "string"
+        },
+        "head": {
+            "description": "The name of the branch where your changes are implemented. For cross-repository pull requests in the same network, namespace head with a user like this: username:branch.",
+            "required": true,
+            "type": "string"
+        },
+        "repo": {
+            "description": "Repository name.",
+            "required": true,
+            "type": "string"
+        },
+        "title": {
+            "description": "Title of the Pull Request",
+            "required": true,
+            "type": "string"
+        },
+        "user": {
+            "description": "User / organization name.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
