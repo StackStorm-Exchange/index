@@ -6,7 +6,7 @@
     "trigger_types": [
         {
             "description": "Trigger which occurs when a device's LLDP neighbors increase",
-            "name": "LLDPNeighborDecrease",
+            "name": "LLDPNeighborIncrease",
             "payload_schema": {
                 "properties": {
                     "device": {
