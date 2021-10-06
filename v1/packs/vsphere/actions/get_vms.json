@@ -35,7 +35,7 @@
             "type": "array"
         },
         "ids": {
-            "description": "Comma-separated ids of Virtual Machines to retrieve.",
+            "description": "Comma-separated moids of Virtual Machines to retrieve.",
             "required": false,
             "type": "array"
         },
@@ -52,6 +52,11 @@
         },
         "resource_pools": {
             "description": "Comma-separated moId's of the vSphere ResourcePool objects, where VMs are going to be searched.\n",
+            "required": false,
+            "type": "array"
+        },
+        "uuids": {
+            "description": "Comma-separated uuids of Virtual Machines to retrieve.",
             "required": false,
             "type": "array"
         },
