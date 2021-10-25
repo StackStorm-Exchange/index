@@ -1,0 +1,37 @@
+{
+    "description": "Lists all the IP addresses in a given network",
+    "enabled": true,
+    "entry_point": "hosts.py",
+    "name": "hosts",
+    "output_schema": {
+        "hosts": {
+            "items": {
+                "type": "string"
+            },
+            "required": true,
+            "type": "array"
+        }
+    },
+    "pack": "networking_utils",
+    "parameters": {
+        "family": {
+            "default": "any",
+            "description": "The network family",
+            "enum": [
+                "any",
+                "ipv4",
+                "ipv6"
+            ],
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "network": {
+            "description": "Network",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
