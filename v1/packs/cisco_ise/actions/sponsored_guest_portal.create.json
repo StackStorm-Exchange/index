@@ -1,0 +1,350 @@
+{
+    "description": "Create a sponsored guest portal",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "sponsored_guest_portal.create",
+    "parameters": {
+        "api_pass": {
+            "description": "The password for the purpose created user",
+            "secret": true,
+            "type": "string"
+        },
+        "api_user": {
+            "description": "The purpose created user to interact with the ISE api",
+            "type": "string"
+        },
+        "base_api_resource": {
+            "default": "sponsoredguestportal",
+            "description": "The base resource used for this API Request (https://ise-pan.domain.com:9060/ers/config/{base_api_endpoint})",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "connection_name": {
+            "description": "The name of the connection in the pack config that should be used. Specifying fields such as 'api_user' or 'api_pass' will override that value in 'config.connections.connection_name' if configured.",
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The base fqdn for the Policy Administration Node (PAN)",
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "description": "the HTTP Method to be used for this action",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "A JSON object with the data that should be used for payload. See action definition for details (JSONSchema). https://developer.cisco.com/docs/identity-services-engine/#!sponsored-guest-portal/create",
+            "items": {
+                "properties": {
+                    "SponsoredGuestPortal": {
+                        "properties": {
+                            "customizations": {
+                                "properties": {
+                                    "globalCustomizations": {
+                                        "properties": {
+                                            "bannerImage": {
+                                                "properties": {
+                                                    "data": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "bannerTitle": {
+                                                "type": "string"
+                                            },
+                                            "contactText": {
+                                                "type": "string"
+                                            },
+                                            "desktopLogoImage": {
+                                                "properties": {
+                                                    "data": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "footerElement": {
+                                                "type": "string"
+                                            },
+                                            "mobileLogoImage": {
+                                                "properties": {
+                                                    "data": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "language": {
+                                        "properties": {
+                                            "viewLanguage": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "pageCustomizations": {
+                                        "properties": {
+                                            "data": {
+                                                "items": [
+                                                    {
+                                                        "properties": {
+                                                            "key": {
+                                                                "type": "string"
+                                                            },
+                                                            "value": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                ],
+                                                "type": "array"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "portalTheme": {
+                                        "properties": {
+                                            "id": {
+                                                "type": "string"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "themeData": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "portalTweakSettings": {
+                                        "properties": {
+                                            "bannerColor": {
+                                                "type": "string"
+                                            },
+                                            "bannerTextColor": {
+                                                "type": "string"
+                                            },
+                                            "pageBackgroundColor": {
+                                                "type": "string"
+                                            },
+                                            "pageLabelAndTextColor": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "portalType": {
+                                "type": "string"
+                            },
+                            "settings": {
+                                "properties": {
+                                    "aupSettings": {
+                                        "properties": {
+                                            "displayFrequency": {
+                                                "type": "string"
+                                            },
+                                            "includeAup": {
+                                                "type": "boolean"
+                                            },
+                                            "requireAccessCode": {
+                                                "type": "boolean"
+                                            },
+                                            "requireScrolling": {
+                                                "type": "boolean"
+                                            },
+                                            "skipAupForEmployees": {
+                                                "type": "boolean"
+                                            },
+                                            "useDiffAupForEmployees": {
+                                                "type": "boolean"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "authSuccessSettings": {
+                                        "properties": {
+                                            "redirectUrl": {
+                                                "type": "string"
+                                            },
+                                            "successRedirect": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "guestChangePasswordSettings": {
+                                        "properties": {
+                                            "allowChangePasswdAtFirstLogin": {
+                                                "type": "boolean"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "guestDeviceRegistrationSettings": {
+                                        "properties": {
+                                            "allowGuestsToRegisterDevices": {
+                                                "type": "boolean"
+                                            },
+                                            "autoRegisterGuestDevices": {
+                                                "type": "boolean"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "loginPageSettings": {
+                                        "properties": {
+                                            "accessCode": {
+                                                "type": "string"
+                                            },
+                                            "allowAlternateGuestPortal": {
+                                                "type": "boolean"
+                                            },
+                                            "allowGuestToChangePassword": {
+                                                "type": "boolean"
+                                            },
+                                            "allowGuestToCreateAccounts": {
+                                                "type": "boolean"
+                                            },
+                                            "allowGuestToUseSocialAccounts": {
+                                                "type": "boolean"
+                                            },
+                                            "allowShowGuestForm": {
+                                                "type": "boolean"
+                                            },
+                                            "aupDisplay": {
+                                                "type": "string"
+                                            },
+                                            "includeAup": {
+                                                "type": "boolean"
+                                            },
+                                            "maxFailedAttemptsBeforeRateLimit": {
+                                                "type": "integer"
+                                            },
+                                            "requireAccessCode": {
+                                                "type": "boolean"
+                                            },
+                                            "requireAupAcceptance": {
+                                                "type": "boolean"
+                                            },
+                                            "requireAupScrolling": {
+                                                "type": "boolean"
+                                            },
+                                            "socialConfigs": {
+                                                "type": "array"
+                                            },
+                                            "timeBetweenLoginsDuringRateLimit": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "portalSettings": {
+                                        "properties": {
+                                            "allowedInterfaces": {
+                                                "type": "array"
+                                            },
+                                            "alwaysUsedLanguage": {
+                                                "type": "string"
+                                            },
+                                            "assignedGuestTypeForEmployee": {
+                                                "type": "string"
+                                            },
+                                            "authenticationMethod": {
+                                                "type": "string"
+                                            },
+                                            "availableSsids": {
+                                                "type": "array"
+                                            },
+                                            "certificateGroupTag": {
+                                                "type": "string"
+                                            },
+                                            "displayLang": {
+                                                "type": "string"
+                                            },
+                                            "fallbackLanguage": {
+                                                "type": "string"
+                                            },
+                                            "httpsPort": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "postLoginBannerSettings": {
+                                        "properties": {
+                                            "includePostAccessBanner": {
+                                                "type": "boolean"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "supportInfoSettings": {
+                                        "properties": {
+                                            "emptyFieldDisplay": {
+                                                "type": "string"
+                                            },
+                                            "includeBrowserUserAgent": {
+                                                "type": "boolean"
+                                            },
+                                            "includeFailureCode": {
+                                                "type": "boolean"
+                                            },
+                                            "includeIpAddress": {
+                                                "type": "boolean"
+                                            },
+                                            "includeMacAddr": {
+                                                "type": "boolean"
+                                            },
+                                            "includePolicyServer": {
+                                                "type": "boolean"
+                                            },
+                                            "includeSupportInfoPage": {
+                                                "type": "boolean"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "use_http": {
+            "description": "Connect to ISE using HTTP (Very insecure, should only be used for testing!)",
+            "type": "boolean"
+        },
+        "verify_ssl": {
+            "description": "SSL verification for the ISE server, set to 'false' to skip SSL verification",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,0 +1,40 @@
+{
+    "connection_name": {
+        "additionalProperties": false,
+        "properties": {
+            "api_pass": {
+                "description": "The password for the purpose created user",
+                "secret": true,
+                "type": "string"
+            },
+            "api_user": {
+                "description": "The purpose created user to interact with the ISE api",
+                "type": "string"
+            },
+            "hostname": {
+                "default": "ise-pan.domain.com",
+                "description": "The base fqdn for the Policy Administration Node (PAN)",
+                "type": "string"
+            },
+            "use_http": {
+                "description": "Connect to ISE using HTTP (Very insecure, should only be used for testing!)",
+                "type": "boolean"
+            },
+            "verify_ssl": {
+                "description": "SSL verification for the ISE server, set to 'false' to skip SSL verification",
+                "type": "boolean"
+            }
+        },
+        "type": "object"
+    },
+    "connections": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/connection_name"
+            }
+        },
+        "required": true,
+        "type": "object"
+    }
+}

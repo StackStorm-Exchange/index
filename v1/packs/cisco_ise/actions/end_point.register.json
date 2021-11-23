@@ -1,0 +1,144 @@
+{
+    "description": "Register an Endpoint",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "end_point.register",
+    "parameters": {
+        "api_pass": {
+            "description": "The password for the purpose created user",
+            "secret": true,
+            "type": "string"
+        },
+        "api_user": {
+            "description": "The purpose created user to interact with the ISE api",
+            "type": "string"
+        },
+        "base_api_resource": {
+            "default": "endpoint/register",
+            "description": "The base resource used for this API Request (https://ise-pan.domain.com:9060/ers/config/{base_api_resource}/register)",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "connection_name": {
+            "description": "The name of the connection in the pack config that should be used. Specifying fields such as 'api_user' or 'api_pass' will override that value in 'config.connections.connection_name' if configured.",
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The base fqdn for the Policy Administration Node (PAN)",
+            "type": "string"
+        },
+        "http_method": {
+            "default": "PUT",
+            "description": "the HTTP Method to be used for this action",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "A JSON object with the data that should be used for payload. See action definition for details (JSONSchema). https://developer.cisco.com/docs/identity-services-engine/#!end-point/register",
+            "items": {
+                "properties": {
+                    "ERSEndPoint": {
+                        "properties": {
+                            "customAttributes": {
+                                "type": "object"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "groupId": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "identityStore": {
+                                "type": "string"
+                            },
+                            "identityStoreId": {
+                                "type": "string"
+                            },
+                            "mac": {
+                                "type": "string"
+                            },
+                            "mdmAttributes": {
+                                "properties": {
+                                    "mdmComplianceStatus": {
+                                        "type": "boolean"
+                                    },
+                                    "mdmEncrypted": {
+                                        "type": "boolean"
+                                    },
+                                    "mdmEnrolled": {
+                                        "type": "boolean"
+                                    },
+                                    "mdmIMEI": {
+                                        "type": "string"
+                                    },
+                                    "mdmJailBroken": {
+                                        "type": "boolean"
+                                    },
+                                    "mdmManufacturer": {
+                                        "type": "string"
+                                    },
+                                    "mdmModel": {
+                                        "type": "string"
+                                    },
+                                    "mdmOS": {
+                                        "type": "string"
+                                    },
+                                    "mdmPhoneNumber": {
+                                        "type": "string"
+                                    },
+                                    "mdmPinlock": {
+                                        "type": "boolean"
+                                    },
+                                    "mdmReachable": {
+                                        "type": "boolean"
+                                    },
+                                    "mdmSerial": {
+                                        "type": "string"
+                                    },
+                                    "mdmServerName": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "portalUser": {
+                                "type": "string"
+                            },
+                            "profileId": {
+                                "type": "string"
+                            },
+                            "staticGroupAssignment": {
+                                "type": "boolean"
+                            },
+                            "staticProfileAssignment": {
+                                "type": "boolean"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "use_http": {
+            "description": "Connect to ISE using HTTP (Very insecure, should only be used for testing!)",
+            "type": "boolean"
+        },
+        "verify_ssl": {
+            "description": "SSL verification for the ISE server, set to 'false' to skip SSL verification",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

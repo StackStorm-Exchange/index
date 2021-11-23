@@ -1,0 +1,275 @@
+{
+    "description": "Creates action for allowed protocols",
+    "enabled": true,
+    "entry_point": "action.py",
+    "name": "allowed_protocols.create",
+    "parameters": {
+        "api_pass": {
+            "description": "The password for the purpose created user",
+            "secret": true,
+            "type": "string"
+        },
+        "api_user": {
+            "description": "The purpose created user to interact with the ISE api",
+            "type": "string"
+        },
+        "base_api_resource": {
+            "default": "allowedprotocols",
+            "description": "The base resource used for this API Request (https://ise-pan.domain.com:9060/ers/config/{base_api_endpoint})",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "connection_name": {
+            "description": "The name of the connection in the pack config that should be used. Specifying fields such as 'api_user' or 'api_pass' will override that value in 'config.connections.connection_name' if configured.",
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The base fqdn for the Policy Administration Node (PAN)",
+            "type": "string"
+        },
+        "http_method": {
+            "default": "POST",
+            "description": "the HTTP Method to be used for this action",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "A JSON object with the data that should be used for payload. See action definition for details (JSONSchema). https://developer.cisco.com/docs/identity-services-engine/2.6/#!allowed-protocols/create",
+            "items": {
+                "properties": {
+                    "AllowedProtocols": {
+                        "properties": {
+                            "allowChap": {
+                                "type": "boolean"
+                            },
+                            "allowEapFast": {
+                                "type": "boolean"
+                            },
+                            "allowEapMd5": {
+                                "type": "boolean"
+                            },
+                            "allowEapTls": {
+                                "type": "boolean"
+                            },
+                            "allowEapTtls": {
+                                "type": "boolean"
+                            },
+                            "allowLeap": {
+                                "type": "boolean"
+                            },
+                            "allowMsChapV1": {
+                                "type": "boolean"
+                            },
+                            "allowMsChapV2": {
+                                "type": "boolean"
+                            },
+                            "allowPapAscii": {
+                                "type": "boolean"
+                            },
+                            "allowPeap": {
+                                "type": "boolean"
+                            },
+                            "allowPreferredEapProtocol": {
+                                "type": "boolean"
+                            },
+                            "allowTeap": {
+                                "type": "boolean"
+                            },
+                            "allowWeakCiphersForEap": {
+                                "type": "boolean"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "eapFast": {
+                                "properties": {
+                                    "allowEapFastEapGtc": {
+                                        "type": "boolean"
+                                    },
+                                    "allowEapFastEapGtcPwdChange": {
+                                        "type": "boolean"
+                                    },
+                                    "allowEapFastEapGtcPwdChangeRetries": {
+                                        "type": "integer"
+                                    },
+                                    "allowEapFastEapMsChapV2": {
+                                        "type": "boolean"
+                                    },
+                                    "allowEapFastEapMsChapV2PwdChange": {
+                                        "type": "boolean"
+                                    },
+                                    "allowEapFastEapMsChapV2PwdChangeRetries": {
+                                        "type": "integer"
+                                    },
+                                    "allowEapFastEapTls": {
+                                        "type": "boolean"
+                                    },
+                                    "allowEapFastEapTlsAuthOfExpiredCerts": {
+                                        "type": "boolean"
+                                    },
+                                    "eapFastEnableEAPChaining": {
+                                        "type": "boolean"
+                                    },
+                                    "eapFastUsePacs": {
+                                        "type": "boolean"
+                                    },
+                                    "eapFastUsePacsAllowAnonymProvisioning": {
+                                        "type": "boolean"
+                                    },
+                                    "eapFastUsePacsAllowAuthenProvisioning": {
+                                        "type": "boolean"
+                                    },
+                                    "eapFastUsePacsAllowMachineAuthentication": {
+                                        "type": "boolean"
+                                    },
+                                    "eapFastUsePacsStatelessSessionResume": {
+                                        "type": "boolean"
+                                    },
+                                    "eapFastUsePacsTunnelPacTtl": {
+                                        "type": "integer"
+                                    },
+                                    "eapFastUsePacsTunnelPacTtlUnits": {
+                                        "type": "string"
+                                    },
+                                    "eapFastUsePacsUseProactivePacUpdatePrecentage": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "eapTls": {
+                                "properties": {
+                                    "allowEapTlsAuthOfExpiredCerts": {
+                                        "type": "boolean"
+                                    },
+                                    "eapTlsEnableStatelessSessionResume": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "eapTlsLBit": {
+                                "type": "boolean"
+                            },
+                            "eapTtls": {
+                                "properties": {
+                                    "eapTtlsChap": {
+                                        "type": "boolean"
+                                    },
+                                    "eapTtlsEapMd5": {
+                                        "type": "boolean"
+                                    },
+                                    "eapTtlsEapMsChapV2": {
+                                        "type": "boolean"
+                                    },
+                                    "eapTtlsEapMsChapV2PwdChange": {
+                                        "type": "boolean"
+                                    },
+                                    "eapTtlsEapMsChapV2PwdChangeRetries": {
+                                        "type": "integer"
+                                    },
+                                    "eapTtlsMsChapV1": {
+                                        "type": "boolean"
+                                    },
+                                    "eapTtlsMsChapV2": {
+                                        "type": "boolean"
+                                    },
+                                    "eapTtlsPapAscii": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "peap": {
+                                "properties": {
+                                    "allowPeapEapGtc": {
+                                        "type": "boolean"
+                                    },
+                                    "allowPeapEapMsChapV2": {
+                                        "type": "boolean"
+                                    },
+                                    "allowPeapEapMsChapV2PwdChange": {
+                                        "type": "boolean"
+                                    },
+                                    "allowPeapEapMsChapV2PwdChangeRetries": {
+                                        "type": "integer"
+                                    },
+                                    "allowPeapEapTls": {
+                                        "type": "boolean"
+                                    },
+                                    "allowPeapEapTlsAuthOfExpiredCerts": {
+                                        "type": "boolean"
+                                    },
+                                    "allowPeapV0": {
+                                        "type": "boolean"
+                                    },
+                                    "requireCryptobinding": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "preferredEapProtocol": {
+                                "type": "string"
+                            },
+                            "processHostLookup": {
+                                "type": "boolean"
+                            },
+                            "requireMessageAuth": {
+                                "type": "boolean"
+                            },
+                            "teap": {
+                                "properties": {
+                                    "acceptClientCertDuringTunnelEst": {
+                                        "type": "boolean"
+                                    },
+                                    "allowTeapEapMsChapV2": {
+                                        "type": "boolean"
+                                    },
+                                    "allowTeapEapMsChapV2PwdChange": {
+                                        "type": "boolean"
+                                    },
+                                    "allowTeapEapMsChapV2PwdChangeRetries": {
+                                        "type": "integer"
+                                    },
+                                    "allowTeapEapTls": {
+                                        "type": "boolean"
+                                    },
+                                    "allowTeapEapTlsAuthOfExpiredCerts": {
+                                        "type": "boolean"
+                                    },
+                                    "enableEapChaining": {
+                                        "type": "boolean"
+                                    },
+                                    "requestBasicPwdAuth": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "use_http": {
+            "description": "Connect to ISE using HTTP (Very insecure, should only be used for testing!)",
+            "type": "boolean"
+        },
+        "verify_ssl": {
+            "description": "SSL verification for the ISE server, set to 'false' to skip SSL verification",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

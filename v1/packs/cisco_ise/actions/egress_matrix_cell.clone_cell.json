@@ -1,0 +1,95 @@
+{
+    "description": "Clone a Egress Matrix Cell for Security Group Tags",
+    "enabled": true,
+    "entry_point": "action_clone_cell.py",
+    "name": "egress_matrix_cell.clone_cell",
+    "parameters": {
+        "api_pass": {
+            "description": "The password for the purpose created user",
+            "secret": true,
+            "type": "string"
+        },
+        "api_user": {
+            "description": "The purpose created user to interact with the ISE api",
+            "type": "string"
+        },
+        "base_api_resource": {
+            "default": "egressmatrixcell/clonecell",
+            "description": "The base resource used for this API Request (https://ise-pan.domain.com:9060/ers/config/{base_api_endpoint})",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "cell_id": {
+            "description": "The id of the Matrix Cell",
+            "required": true,
+            "type": "string"
+        },
+        "connection_name": {
+            "description": "The name of the connection in the pack config that should be used. Specifying fields such as 'api_user' or 'api_pass' will override that value in 'config.connections.connection_name' if configured.",
+            "type": "string"
+        },
+        "destination_sgt_id": {
+            "description": "Where the destination for the copied source cell",
+            "required": true,
+            "type": "string"
+        },
+        "hostname": {
+            "description": "The base FQDN for the Policy Administration Node (PAN)",
+            "type": "string"
+        },
+        "http_method": {
+            "default": "PUT",
+            "description": "The HTTP Method used for this action",
+            "immutable": true,
+            "required": true,
+            "type": "string"
+        },
+        "payload": {
+            "description": "A JSON object with the data that should be used for payload. See action definition for details (JSONSchema). https://developer.cisco.com/docs/identity-services-engine/#!internal-user/update",
+            "items": {
+                "properties": {
+                    "OperationResult": {
+                        "properties": {
+                            "resultValue": {
+                                "items": [
+                                    {
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "value": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                ],
+                                "type": "array"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
+            "required": true,
+            "type": "object"
+        },
+        "source_sgt_id": {
+            "description": "The id of the Matrix Cell to copy",
+            "required": true,
+            "type": "string"
+        },
+        "use_http": {
+            "description": "Connect to ISE using HTTP (Very insecure, should only be used for testing!)",
+            "type": "boolean"
+        },
+        "verify_ssl": {
+            "description": "SSL verification for the ISE server, set to 'false' to skip SSL verification",
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}
