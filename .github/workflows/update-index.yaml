@@ -1,0 +1,14 @@
+name: Update Index
+
+on:
+  # every 5 minutes
+  #schedule:
+  #  - cron:  '*/5 * * * *'
+  # manual rebuilds
+  workflow_dispatch:
+
+jobs:
+  update_index:
+    name: 'Update Index'
+    uses: StackStorm-Exchange/ci/.github/workflows/index-update.yaml@gha
+    #with:
