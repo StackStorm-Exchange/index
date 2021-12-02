@@ -1,0 +1,12 @@
+{
+    "class_name": "AttachmentDirectoryMaintenanceSensor",
+    "description": "Sensor for maintaining storage requirements for server directory in which attachments are saved.",
+    "entry_point": "attachment_directory_maintenance_sensor.py",
+    "poll_interval": 86400,
+    "trigger_types": [
+        {
+            "description": "Attachment directory maintenance",
+            "name": "attachment_directory_maintenance"
+        }
+    ]
+}

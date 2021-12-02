@@ -16,6 +16,11 @@
             "required": false,
             "type": "boolean"
         },
+        "search_start_date": {
+            "description": "[Optional] Date in valid ISO 8601 format to start search or for which to save attachments.\n",
+            "required": false,
+            "type": "string"
+        },
         "subject": {
             "description": "Subject of the email",
             "required": false,

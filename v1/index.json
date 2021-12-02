@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1637685654,
-        "hash": "969145d6f5c8ae6941f4811c5ce5d350"
+        "generated_ts": 1638450212,
+        "hash": "49469832e924e6dfee03de4936215bbe"
     },
     "packs": {
         "acos": {
@@ -10686,22 +10686,34 @@
             "author": "Anthony Shaw",
             "content": {
                 "actions": {
-                    "count": 5,
+                    "count": 7,
                     "resources": [
+                        "do_attachment_directory_maintenance",
                         "get_calendar_items",
                         "get_folder",
                         "list_folders",
+                        "save_attachments",
                         "search_items",
                         "send_email"
                     ]
                 },
-                "sensors": {
+                "rules": {
                     "count": 1,
                     "resources": [
+                        "Run maintenance on directory in which attachments are saved."
+                    ]
+                },
+                "sensors": {
+                    "count": 2,
+                    "resources": [
+                        "AttachmentDirectoryMaintenanceSensor",
                         "ItemSensor"
                     ]
                 }
             },
+            "contributors": [
+                "Tim Jones <tdjones74021@yahoo.com>"
+            ],
             "description": "A pack for interfacing with a Microsoft Exchange server",
             "email": "anthonyshaw@apache.org",
             "keywords": [
@@ -10716,8 +10728,10 @@
             ],
             "ref": "msexchange",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-msexchange",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "versions": [
+                "1.1.0",
+                "1.0.1",
                 "1.0.0",
                 "0.1.5",
                 "0.1.4",

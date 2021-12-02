@@ -1,0 +1,55 @@
+{
+    "description": "Save file attachments from e-mail. Returns a list/array of fully-qualified filenames (path and filename) of saved attachments.\n",
+    "enabled": true,
+    "entry_point": "save_attachments.py",
+    "name": "save_attachments",
+    "pack": "msexchange",
+    "parameters": {
+        "attachment_format": {
+            "default": "BINARY",
+            "description": "Format in which to save attachments.",
+            "enum": [
+                "BINARY",
+                "TEXT"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "change_key": {
+            "required": false,
+            "type": "string"
+        },
+        "folder": {
+            "default": "Inbox",
+            "description": "Folder to look within",
+            "type": "string"
+        },
+        "message_id": {
+            "required": false,
+            "type": "string"
+        },
+        "replace_spaces_in_filename": {
+            "default": "NONE",
+            "description": "Character with which to replace spaces in attachment file names.\n",
+            "enum": [
+                "NONE",
+                "UNDERSCORE",
+                "OCTOTHORPE/HASH",
+                "PIPE"
+            ],
+            "required": true,
+            "type": "string"
+        },
+        "search_start_date": {
+            "description": "[Optional] Date in valid ISO 8601 format to start search or for which to save attachments.\n",
+            "required": false,
+            "type": "string"
+        },
+        "subject": {
+            "description": "Subject of the email",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

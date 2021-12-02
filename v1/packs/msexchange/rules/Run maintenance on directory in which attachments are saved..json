@@ -1,0 +1,12 @@
+{
+    "action": {
+        "ref": "msexchange.do_attachment_directory_maintenance"
+    },
+    "description": "Rule to run maintenance using pack configuration parameters to maintain file system directory where email attachments are saved.\n",
+    "enabled": false,
+    "name": "Run maintenance on directory in which attachments are saved.",
+    "pack": "msexchange",
+    "trigger": {
+        "type": "msexchange.attachment_directory_maintenance"
+    }
+}

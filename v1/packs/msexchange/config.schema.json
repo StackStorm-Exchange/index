@@ -1,4 +1,22 @@
 {
+    "attachment_days_to_keep": {
+        "default": 7,
+        "description": "Length of time to keep attachments in days.",
+        "required": true,
+        "type": "integer"
+    },
+    "attachment_directory": {
+        "default": "/opt/stackstorm/packs/msexchange/attachments",
+        "description": "Fully-qualified server directory to save e-mail attachments to.",
+        "required": true,
+        "type": "string"
+    },
+    "attachment_directory_maximum_size": {
+        "default": 50,
+        "description": "Maximum amount of storage space in MB that attachments can use.\n",
+        "required": true,
+        "type": "integer"
+    },
     "password": {
         "description": "Logon password",
         "required": true,

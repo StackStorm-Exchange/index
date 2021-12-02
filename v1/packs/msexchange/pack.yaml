@@ -6,21 +6,30 @@ keywords:
 - calendar
 - exchange
 - office365
-version: 1.0.0
+version: 1.1.0
 author: Anthony Shaw
 email: anthonyshaw@apache.org
+contributors:
+- Tim Jones <tdjones74021@yahoo.com>
 python_versions:
 - '3'
 content:
   actions:
-    count: 5
+    count: 7
     resources:
+    - do_attachment_directory_maintenance
     - get_calendar_items
     - get_folder
     - list_folders
+    - save_attachments
     - search_items
     - send_email
-  sensors:
+  rules:
     count: 1
     resources:
+    - Run maintenance on directory in which attachments are saved.
+  sensors:
+    count: 2
+    resources:
+    - AttachmentDirectoryMaintenanceSensor
     - ItemSensor
