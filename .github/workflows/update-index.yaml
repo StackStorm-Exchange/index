@@ -1,5 +1,12 @@
 name: Update Index
 
+# Only allow one workflow run per branch at a time.
+# When one is already running, new runs will be pending.
+# https://github.blog/changelog/2021-04-19-github-actions-limit-workflow-run-or-job-concurrency/
+concurrency:
+  group: index-update-${{ github.ref }}
+  # Do not use cancel-in-progress! Or we might create a scenario where all workflows get canceled before they complete.
+
 on:
   # every 5 minutes
   #schedule:
