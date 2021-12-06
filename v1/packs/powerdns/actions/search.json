@@ -1,0 +1,30 @@
+{
+    "description": "Search term using API search endpoint",
+    "entry_point": "search.py",
+    "name": "search",
+    "parameters": {
+        "max_result": {
+            "description": "",
+            "required": false,
+            "type": "number"
+        },
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for a response from PowerDNS",
+            "required": false,
+            "type": "number"
+        },
+        "search_term": {
+            "description": "",
+            "required": true,
+            "type": "string"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

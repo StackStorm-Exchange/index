@@ -1,0 +1,20 @@
+{
+    "description": "Server configuration from PowerDNS API",
+    "entry_point": "get_config.py",
+    "name": "get_config",
+    "parameters": {
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for a response from PowerDNS",
+            "required": false,
+            "type": "number"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

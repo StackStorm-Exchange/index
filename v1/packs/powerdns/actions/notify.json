@@ -1,0 +1,25 @@
+{
+    "description": "Trigger notification for zone updates",
+    "entry_point": "notify.py",
+    "name": "notify",
+    "parameters": {
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for a response from PowerDNS",
+            "required": false,
+            "type": "number"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        },
+        "zone_name": {
+            "description": "Zone's canonical name to get details.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

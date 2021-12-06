@@ -1,0 +1,40 @@
+{
+    "description": "Backup zone data to json file",
+    "entry_point": "backup.py",
+    "name": "backup",
+    "parameters": {
+        "directory": {
+            "description": "Directory to store json file",
+            "required": true,
+            "type": "string"
+        },
+        "filename": {
+            "description": "Json file name",
+            "required": false,
+            "type": "string"
+        },
+        "pretty_json": {
+            "description": "Enable pretty json display",
+            "required": false,
+            "type": "boolean"
+        },
+        "response_timeout": {
+            "default": 5,
+            "description": "Time to wait for a response from PowerDNS",
+            "required": false,
+            "type": "number"
+        },
+        "server_id": {
+            "default": "localhost",
+            "description": "Server name to query.",
+            "required": true,
+            "type": "string"
+        },
+        "zone_name": {
+            "description": "Zone's canonical name to get details.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
