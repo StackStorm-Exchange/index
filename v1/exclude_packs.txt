@@ -1,0 +1,16 @@
+# Any packs in this file are excluded from the index.
+#
+# Each line is a pack name and should be part of the pack's repo name:
+#   StackStorm-Exchange/stackstorm-<pack name here>
+# So, the "foo_bar" pack would be in this repo:
+#   StackStorm-Exchange/stackstorm-foo_bar
+#
+# Comment lines begin with "#"
+
+# utility packs
+test
+test-content-version
+
+# These packs are NOT excluded. CI uses them to test using the index.
+#test2
+#python3_test
