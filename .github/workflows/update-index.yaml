@@ -8,14 +8,13 @@ concurrency:
   # Do not use cancel-in-progress! Or we might create a scenario where all workflows get canceled before they complete.
 
 on:
-  # every 5 minutes
-  #schedule:
-  #  - cron:  '*/5 * * * *'
-  # manual rebuilds
+  # every 5 minutes. Increase time if workflows are overlapping.
+  schedule:
+    - cron:  '*/5 * * * *'
+  # manual rebuilds by TSC members
   workflow_dispatch:
 
 jobs:
   update_index:
     name: 'Update Index'
     uses: StackStorm-Exchange/ci/.github/workflows/index-update.yaml@master
-    #with:
