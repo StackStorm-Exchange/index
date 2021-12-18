@@ -1,5 +1,5 @@
 {
-    "description": "Gets all the Native Supplicant Profiles",
+    "description": "Delete a single Native Supplicant Profile",
     "enabled": true,
     "entry_point": "action.py",
     "name": "native_supplicant_profile.get_all",
@@ -15,7 +15,7 @@
         },
         "base_api_resource": {
             "default": "nspprofile",
-            "description": "The base resource used for this API Request (https://ise-pan.domain.com:9060/ers/config/{base_api_resource})",
+            "description": "The base resource used for this API Request (https://ise-pan.domain.com:9060/ers/config/{base_api_resource}/{id})",
             "immutable": true,
             "required": true,
             "type": "string"
@@ -24,39 +24,20 @@
             "description": "The name of the connection in the pack config that should be used. Specifying fields such as 'api_user' or 'api_pass' will override that value in 'config.connections.connection_name' if configured.",
             "type": "string"
         },
-        "filter_list": {
-            "description": "Array of strings to be used as Filters. Example: [name.STARTW.a, identityGroup.EQ.Finance] See https://developer.cisco.com/docs/identity-services-engine/#!searching-a-resource/adding-filter",
-            "type": "array"
-        },
-        "filter_type": {
-            "description": "Multiple filters are treated as using the AND operator by default",
-            "enum": [
-                "AND",
-                "OR"
-            ],
-            "type": "string"
-        },
         "hostname": {
             "description": "The base fqdn for the Policy Administration Node (PAN)",
             "type": "string"
         },
         "http_method": {
-            "default": "GET",
+            "default": "DELETE",
             "description": "the HTTP Method to be used for this action",
             "immutable": true,
             "required": true,
             "type": "string"
         },
-        "sort_field": {
-            "description": "The name of the field that results should be sorted by",
-            "type": "string"
-        },
-        "sort_order": {
-            "description": "The order that results should be sorted in",
-            "enum": [
-                "Ascending",
-                "Descending"
-            ],
+        "resource_id": {
+            "description": "The ID of the specific resource to retrieve",
+            "required": true,
             "type": "string"
         },
         "use_http": {

@@ -1,5 +1,5 @@
 {
-    "description": "Create an existing Identity Sequence",
+    "description": "Create a new Identity Sequence",
     "enabled": true,
     "entry_point": "action.py",
     "name": "identity_sequence.create",
@@ -15,7 +15,7 @@
         },
         "base_api_resource": {
             "default": "idstoresequence",
-            "description": "The base resource used for this API Request (https://ise-pan.domain.com:9060/ers/config/{base_api_resource}/{id})",
+            "description": "The base resource used for this API Request (https://ise-pan.domain.com:9060/ers/config/{base_api_endpoint})",
             "immutable": true,
             "required": true,
             "type": "string"
@@ -29,16 +29,69 @@
             "type": "string"
         },
         "http_method": {
-            "default": "DELETE",
+            "default": "POST",
             "description": "The HTTP Method used for this action",
             "immutable": true,
             "required": true,
             "type": "string"
         },
-        "resource_id": {
-            "description": "The ID of the identity sequence",
+        "payload": {
+            "description": "A JSON object with the data that should be used for payload. See action definition for details (JSONSchema). https://developer.cisco.com/docs/identity-services-engine/#!identity-sequence/create",
+            "items": {
+                "properties": {
+                    "IdStoreSequence": {
+                        "properties": {
+                            "breakOnStoreFail": {
+                                "type": "boolean"
+                            },
+                            "certificateAuthenticationProfile": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "idSeqItem": {
+                                "items": [
+                                    {
+                                        "properties": {
+                                            "idstore": {
+                                                "type": "string"
+                                            },
+                                            "order": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    {
+                                        "properties": {
+                                            "idstore": {
+                                                "type": "string"
+                                            },
+                                            "order": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                ],
+                                "type": "array"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        },
+                        "required": true,
+                        "type": "object"
+                    }
+                },
+                "type": "object"
+            },
             "required": true,
-            "type": "string"
+            "type": "object"
         },
         "use_http": {
             "description": "Connect to ISE using HTTP (Very insecure, should only be used for testing!)",

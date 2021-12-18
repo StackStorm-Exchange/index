@@ -4,10 +4,6 @@
     "name": "timeseries_queries",
     "pack": "scalyr",
     "parameters": {
-        "api_url": {
-            "description": "API url, that overrides the one provided by the config.yaml",
-            "type": "string"
-        },
         "queries": {
             "description": "Timeseries query objects to execute",
             "items": {

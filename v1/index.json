@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1638790364,
-        "hash": "10737e3100c4ade70d1001b57e72ff05"
+        "generated_ts": 1639866596,
+        "hash": "72ef91564affe9722f96a512784ef12e"
     },
     "packs": {
         "acos": {
@@ -613,10 +613,11 @@
             "email": "tbraly@brocade.com",
             "name": "astral",
             "python_versions": [
+                "2",
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-astral",
-            "version": "1.0.0",
+            "version": "0.2.2",
             "versions": [
                 "1.0.0",
                 "0.2.2",
@@ -4489,9 +4490,6 @@
                 "s3"
             ],
             "name": "aws_s3",
-            "python_versions": [
-                "3"
-            ],
             "ref": "aws_s3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_s3",
             "version": "2.0.3",
@@ -7545,9 +7543,6 @@
                 "security"
             ],
             "name": "fortinet",
-            "python_versions": [
-                "3"
-            ],
             "ref": "fortinet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fortinet",
             "version": "0.0.3",
@@ -9464,9 +9459,6 @@
                 "ticket management"
             ],
             "name": "Kayako",
-            "python_versions": [
-                "2"
-            ],
             "ref": "kayako",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kayako",
             "version": "0.1.0",
@@ -10246,6 +10238,7 @@
             ],
             "name": "manageiq",
             "python_versions": [
+                "2",
                 "3"
             ],
             "ref": "manageiq",
@@ -13556,7 +13549,7 @@
             ],
             "ref": "python3_test",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-python3_test",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "versions": [
                 "0.1.1",
                 "0.1.0"
@@ -15840,9 +15833,6 @@
             "description": "Extreme VDX integration pack.",
             "email": "info@stackstorm.com",
             "name": "vdx",
-            "python_versions": [
-                "2"
-            ],
             "ref": "vdx",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx",
             "version": "0.1.3",
@@ -15885,9 +15875,6 @@
             "description": "VDX automation pack.",
             "email": "yugendra.khonde@gslab.com",
             "name": "vdx_vtep",
-            "python_versions": [
-                "2"
-            ],
             "ref": "vdx_vtep",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx_vtep",
             "version": "0.1.4",
