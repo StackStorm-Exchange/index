@@ -7,6 +7,9 @@ concurrency:
   group: index-update-${{ github.ref }}
   # Do not use cancel-in-progress! Or we might create a scenario where all workflows get canceled before they complete.
 
+permissions:
+  contents: write
+
 on:
   # every 5 minutes. Increase time if workflows are overlapping.
   schedule:
