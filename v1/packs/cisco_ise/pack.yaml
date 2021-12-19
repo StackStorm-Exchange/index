@@ -5,7 +5,7 @@ keywords:
 - cisco
 - ise
 - security
-version: 0.1.0
+version: 0.1.1
 author: Ian Price
 email: ianmprice@gmail.com
 contributors:
@@ -153,7 +153,7 @@ content:
     - identity_group.get_by_name
     - identity_group.update
     - identity_sequence.create
-    - identity_sequence.create
+    - identity_sequence.delete
     - identity_sequence.get_all
     - identity_sequence.get_by_id
     - identity_sequence.get_by_name
@@ -185,7 +185,7 @@ content:
     - my_device_portal.get_all
     - my_device_portal.get_by_id
     - my_device_portal.update_by_id
-    - native_supplicant_profile.get_all
+    - native_supplicant_profile.delete
     - native_supplicant_profile.get_all
     - native_supplicant_profile.get_by_id
     - native_supplicant_profile.update

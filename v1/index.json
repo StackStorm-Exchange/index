@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1639950130,
-        "hash": "1d6b8a3f02e7a03d16e89775365ca823"
+        "generated_ts": 1639952802,
+        "hash": "283d975e39f366e045d0722c210eef14"
     },
     "packs": {
         "acos": {
@@ -613,12 +613,12 @@
             "email": "tbraly@brocade.com",
             "name": "astral",
             "python_versions": [
-                "2",
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-astral",
-            "version": "0.2.2",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.2.2",
                 "0.2.1",
@@ -4490,10 +4490,14 @@
                 "s3"
             ],
             "name": "aws_s3",
+            "python_versions": [
+                "3"
+            ],
             "ref": "aws_s3",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-aws_s3",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "versions": [
+                "2.0.4",
                 "2.0.3",
                 "2.0.2",
                 "2.0.1",
@@ -5146,8 +5150,9 @@
             ],
             "ref": "cisco_aci",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_aci",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.2.0",
                 "0.1.7",
@@ -5302,7 +5307,7 @@
                         "identity_group.get_by_name",
                         "identity_group.update",
                         "identity_sequence.create",
-                        "identity_sequence.create",
+                        "identity_sequence.delete",
                         "identity_sequence.get_all",
                         "identity_sequence.get_by_id",
                         "identity_sequence.get_by_name",
@@ -5334,7 +5339,7 @@
                         "my_device_portal.get_all",
                         "my_device_portal.get_by_id",
                         "my_device_portal.update_by_id",
-                        "native_supplicant_profile.get_all",
+                        "native_supplicant_profile.delete",
                         "native_supplicant_profile.get_all",
                         "native_supplicant_profile.get_by_id",
                         "native_supplicant_profile.update",
@@ -5460,8 +5465,9 @@
             ],
             "ref": "cisco_ise",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cisco_ise",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "versions": [
+                "0.1.1",
                 "0.1.0"
             ]
         },
@@ -7547,6 +7553,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fortinet",
             "version": "0.0.3",
             "versions": [
+                "0.0.4",
                 "0.0.3",
                 "0.0.2",
                 "0.0.1"
@@ -10092,6 +10099,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
             "version": "0.6.0",
             "versions": [
+                "1.0.0",
                 "0.6.0",
                 "0.5.0",
                 "0.4.3",
@@ -10245,6 +10253,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-manageiq",
             "version": "0.2.0",
             "versions": [
+                "0.2.1",
                 "0.2.0",
                 "0.1.6",
                 "0.1.5",
@@ -10723,6 +10732,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-msexchange",
             "version": "1.1.0",
             "versions": [
+                "1.1.1",
                 "1.1.0",
                 "1.0.1",
                 "1.0.0",
@@ -13553,6 +13563,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-python3_test",
             "version": "0.1.1",
             "versions": [
+                "1.0.0",
                 "0.1.1",
                 "0.1.0"
             ]
@@ -14059,6 +14070,7 @@
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-scalyr",
             "version": "1.1.0",
             "versions": [
+                "1.1.1",
                 "1.1.0",
                 "1.0.0",
                 "0.1.0",
