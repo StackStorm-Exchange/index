@@ -4,6 +4,10 @@
     "name": "power_query",
     "pack": "scalyr",
     "parameters": {
+        "api_url": {
+            "description": "API url, that overrides the one provided by the config.yaml",
+            "type": "string"
+        },
         "endTime": {
             "description": "End of time interval, in variety of formats, e.g. 11:30, see https://www.scalyr.com/help/time-reference",
             "type": "string"

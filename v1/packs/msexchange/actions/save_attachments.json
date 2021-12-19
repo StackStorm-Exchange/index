@@ -7,7 +7,7 @@
     "parameters": {
         "attachment_format": {
             "default": "BINARY",
-            "description": "Format to save attachments in.",
+            "description": "Format in which to save attachments.",
             "enum": [
                 "BINARY",
                 "TEXT"
@@ -15,9 +15,29 @@
             "required": true,
             "type": "string"
         },
+        "change_key": {
+            "required": false,
+            "type": "string"
+        },
         "folder": {
             "default": "Inbox",
             "description": "Folder to look within",
+            "type": "string"
+        },
+        "message_id": {
+            "required": false,
+            "type": "string"
+        },
+        "replace_spaces_in_filename": {
+            "default": "NONE",
+            "description": "Character with which to replace spaces in attachment file names.\n",
+            "enum": [
+                "NONE",
+                "UNDERSCORE",
+                "OCTOTHORPE/HASH",
+                "PIPE"
+            ],
+            "required": true,
             "type": "string"
         },
         "search_start_date": {

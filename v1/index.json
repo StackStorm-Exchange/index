@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1639952802,
-        "hash": "283d975e39f366e045d0722c210eef14"
+        "generated_ts": 1639953267,
+        "hash": "80af93c27920e081541c168ecb332c6f"
     },
     "packs": {
         "acos": {
@@ -7549,9 +7549,12 @@
                 "security"
             ],
             "name": "fortinet",
+            "python_versions": [
+                "3"
+            ],
             "ref": "fortinet",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-fortinet",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "versions": [
                 "0.0.4",
                 "0.0.3",
@@ -10092,12 +10095,11 @@
             ],
             "name": "libcloud",
             "python_versions": [
-                "2",
                 "3"
             ],
             "ref": "libcloud",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-libcloud",
-            "version": "0.6.0",
+            "version": "1.0.0",
             "versions": [
                 "1.0.0",
                 "0.6.0",
@@ -10246,12 +10248,11 @@
             ],
             "name": "manageiq",
             "python_versions": [
-                "2",
                 "3"
             ],
             "ref": "manageiq",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-manageiq",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "versions": [
                 "0.2.1",
                 "0.2.0",
@@ -10730,7 +10731,7 @@
             ],
             "ref": "msexchange",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-msexchange",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "versions": [
                 "1.1.1",
                 "1.1.0",
@@ -13556,12 +13557,11 @@
             ],
             "name": "python3_test",
             "python_versions": [
-                "2",
                 "3"
             ],
             "ref": "python3_test",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-python3_test",
-            "version": "0.1.1",
+            "version": "1.0.0",
             "versions": [
                 "1.0.0",
                 "0.1.1",
@@ -14068,7 +14068,7 @@
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-scalyr",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "versions": [
                 "1.1.1",
                 "1.1.0",
@@ -15711,8 +15711,9 @@
             ],
             "ref": "vcd",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vcd",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.2.5",
                 "0.2.4",

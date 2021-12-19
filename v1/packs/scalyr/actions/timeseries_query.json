@@ -4,6 +4,10 @@
     "name": "timeseries_query",
     "pack": "scalyr",
     "parameters": {
+        "api_url": {
+            "description": "API url, that overrides the one provided by the config.yaml",
+            "type": "string"
+        },
         "buckets": {
             "description": "Number of result buckets.",
             "type": "integer"
