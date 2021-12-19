@@ -31,32 +31,32 @@
         },
         "rrset_changetype": {
             "description": "API keyword DELETE or REPLACE",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "rrset_comments": {
             "description": "list of Comments instances for this RRSet",
-            "required": true,
+            "required": false,
             "type": "array"
         },
         "rrset_name": {
             "description": "Record name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "rrset_records": {
             "description": "List of Str or Tuple(content_str, disabled_bool) or Dict with the keys \u201ccontent\u201d and optionally \u201cdisabled\u201d.",
-            "required": true,
+            "required": false,
             "type": "array"
         },
         "rrset_rtype": {
             "description": "Record type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "rrset_ttl": {
             "description": "Record time to live",
-            "required": true,
+            "required": false,
             "type": "number"
         },
         "server_id": {
