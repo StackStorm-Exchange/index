@@ -9,7 +9,7 @@ python_versions:
 - '3'
 content:
   actions:
-    count: 16
+    count: 17
     resources:
     - backup
     - create_records
@@ -25,6 +25,7 @@ content:
     - get_zones
     - notify
     - restore_zone
+    - run_all_actions
     - search
     - suggest_zone
   aliases:

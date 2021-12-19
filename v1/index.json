@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1639866596,
-        "hash": "72ef91564affe9722f96a512784ef12e"
+        "generated_ts": 1639921974,
+        "hash": "cbb5b65852675bfcca43a396c1c65618"
     },
     "packs": {
         "acos": {
@@ -13339,7 +13339,7 @@
             "author": "Carlos",
             "content": {
                 "actions": {
-                    "count": 16,
+                    "count": 17,
                     "resources": [
                         "backup",
                         "create_records",
@@ -13355,6 +13355,7 @@
                         "get_zones",
                         "notify",
                         "restore_zone",
+                        "run_all_actions",
                         "search",
                         "suggest_zone"
                     ]
