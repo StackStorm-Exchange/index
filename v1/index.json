@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1639964985,
-        "hash": "4ded3f66945a308cfebcd7bb5941d2b5"
+        "generated_ts": 1640046560,
+        "hash": "bc0d637f584df3b3774b8bb64a4c657e"
     },
     "packs": {
         "acos": {
@@ -15853,10 +15853,14 @@
             "description": "Extreme VDX integration pack.",
             "email": "info@stackstorm.com",
             "name": "vdx",
+            "python_versions": [
+                "2"
+            ],
             "ref": "vdx",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "versions": [
+                "0.1.4",
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
@@ -15895,10 +15899,14 @@
             "description": "VDX automation pack.",
             "email": "yugendra.khonde@gslab.com",
             "name": "vdx_vtep",
+            "python_versions": [
+                "2"
+            ],
             "ref": "vdx_vtep",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vdx_vtep",
-            "version": "0.1.4",
+            "version": "0.1.5",
             "versions": [
+                "0.1.5",
                 "0.1.4",
                 "0.1.3",
                 "0.1.2",
