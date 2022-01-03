@@ -37,7 +37,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "ipaddresses": {
             "description": "Ipaddresses",
@@ -46,18 +46,23 @@
         },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
         },
-        "port": {
-            "description": "Port number",
-            "required": false,
-            "type": "integer"
+        "ports": {
+            "description": "Ports",
+            "required": true,
+            "type": "array"
         },
         "protocol": {
             "description": "Protocol",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
             "required": false,
-            "type": "integer"
+            "type": "array"
         },
         "virtual_machine": {
             "description": "Virtual machine",

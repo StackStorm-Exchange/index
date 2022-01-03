@@ -1,0 +1,64 @@
+{
+    "description": "POST Front Port Templates",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.dcim.front_port_templates",
+    "parameters": {
+        "color": {
+            "description": "Color",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "device_type": {
+            "description": "Device type",
+            "required": true,
+            "type": "integer"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/front-port-templates/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "rear_port": {
+            "description": "Rear port",
+            "required": true,
+            "type": "integer"
+        },
+        "rear_port_position": {
+            "description": "Rear port position",
+            "required": false,
+            "type": "integer"
+        },
+        "type": {
+            "description": "Type",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

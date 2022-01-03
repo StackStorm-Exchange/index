@@ -4,9 +4,14 @@
     "entry_point": "run.py",
     "name": "patch.dcim.device_bay_templates",
     "parameters": {
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "device_type": {
             "description": "Device type",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -27,11 +32,16 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
+        },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
         },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
         }
     },

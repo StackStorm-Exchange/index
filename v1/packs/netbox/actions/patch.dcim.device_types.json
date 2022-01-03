@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "patch.dcim.device_types",
     "parameters": {
+        "airflow": {
+            "description": "Airflow",
+            "required": false,
+            "type": "string"
+        },
         "comments": {
             "description": "Comments",
             "required": false,
@@ -32,41 +37,21 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
-        },
-        "interface_ordering": {
-            "description": "Interface ordering",
-            "required": false,
-            "type": "integer"
-        },
-        "is_console_server": {
-            "description": "Is a console server",
-            "required": false,
-            "type": "boolean"
+            "type": "string"
         },
         "is_full_depth": {
             "description": "Is full depth",
             "required": false,
             "type": "boolean"
         },
-        "is_network_device": {
-            "description": "Is a network device",
-            "required": false,
-            "type": "boolean"
-        },
-        "is_pdu": {
-            "description": "Is a PDU",
-            "required": false,
-            "type": "boolean"
-        },
         "manufacturer": {
             "description": "Manufacturer",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "model": {
             "description": "Model",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "part_number": {
@@ -76,13 +61,13 @@
         },
         "slug": {
             "description": "Slug",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "subdevice_role": {
-            "description": "Subdevice role",
+            "description": "Parent/child status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",

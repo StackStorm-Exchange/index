@@ -1,0 +1,59 @@
+{
+    "description": "PUT Site Groups",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.dcim.site_groups",
+    "parameters": {
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/site-groups/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "parent": {
+            "description": "Parent",
+            "required": false,
+            "type": "integer"
+        },
+        "slug": {
+            "description": "Slug",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

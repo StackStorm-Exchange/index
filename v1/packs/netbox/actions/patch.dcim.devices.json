@@ -26,12 +26,12 @@
         },
         "device_role": {
             "description": "Device role",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "device_type": {
             "description": "Device type",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -40,9 +40,9 @@
             "type": "string"
         },
         "face": {
-            "description": "Face",
-            "required": false,
-            "type": "integer"
+            "description": "Rack face",
+            "required": true,
+            "type": "string"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -57,17 +57,27 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "local_context_data": {
             "description": "Local context data",
             "required": false,
             "type": "string"
         },
+        "location": {
+            "description": "Location",
+            "required": false,
+            "type": "integer"
+        },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
+        },
+        "parent_device": {
+            "description": "Id of parent_device",
+            "required": false,
+            "type": "integer"
         },
         "platform": {
             "description": "Platform",
@@ -79,24 +89,19 @@
             "required": false,
             "type": "integer"
         },
-        "primary_ip": {
-            "description": "Primary ip",
-            "required": false,
-            "type": "integer"
-        },
         "primary_ip4": {
-            "description": "Primary ip",
+            "description": "Primary IPv4",
             "required": false,
             "type": "integer"
         },
         "primary_ip6": {
-            "description": "Primary ip",
+            "description": "Primary IPv6",
             "required": false,
             "type": "integer"
         },
         "rack": {
             "description": "Rack",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "serial": {
@@ -106,13 +111,13 @@
         },
         "site": {
             "description": "Site",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",
@@ -121,7 +126,7 @@
         },
         "tenant": {
             "description": "Tenant",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "vc_position": {
@@ -136,7 +141,7 @@
         },
         "virtual_chassis": {
             "description": "Virtual chassis",
-            "required": false,
+            "required": true,
             "type": "integer"
         }
     },

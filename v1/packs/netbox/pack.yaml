@@ -5,19 +5,21 @@ keywords:
 - networking
 - ipam
 - dcim
-version: 2.0.0
+version: 3.0.0
 author: John Anderson, Jefferson White
 email: lampwins@gmail.com
 python_versions:
 - '3'
 content:
   actions:
-    count: 294
+    count: 413
     resources:
     - delete.circuits.circuit_terminations
     - delete.circuits.circuit_types
     - delete.circuits.circuits
+    - delete.circuits.provider_networks
     - delete.circuits.providers
+    - delete.dcim.cables
     - delete.dcim.console_port_templates
     - delete.dcim.console_ports
     - delete.dcim.console_server_port_templates
@@ -27,126 +29,175 @@ content:
     - delete.dcim.device_roles
     - delete.dcim.device_types
     - delete.dcim.devices
-    - delete.dcim.interface_connections
+    - delete.dcim.front_port_templates
+    - delete.dcim.front_ports
     - delete.dcim.interface_templates
     - delete.dcim.interfaces
     - delete.dcim.inventory_items
+    - delete.dcim.locations
     - delete.dcim.manufacturers
     - delete.dcim.platforms
+    - delete.dcim.power_feeds
     - delete.dcim.power_outlet_templates
     - delete.dcim.power_outlets
+    - delete.dcim.power_panels
     - delete.dcim.power_port_templates
     - delete.dcim.power_ports
-    - delete.dcim.rack_groups
     - delete.dcim.rack_reservations
     - delete.dcim.rack_roles
     - delete.dcim.racks
+    - delete.dcim.rear_port_templates
+    - delete.dcim.rear_ports
     - delete.dcim.regions
+    - delete.dcim.site_groups
     - delete.dcim.sites
     - delete.dcim.virtual_chassis
     - delete.extras.config_contexts
+    - delete.extras.custom_fields
+    - delete.extras.custom_links
     - delete.extras.export_templates
-    - delete.extras.graphs
     - delete.extras.image_attachments
+    - delete.extras.journal_entries
     - delete.extras.tags
-    - delete.extras.topology_maps
+    - delete.extras.webhooks
     - delete.ipam.aggregates
+    - delete.ipam.asns
+    - delete.ipam.fhrp_group_assignments
+    - delete.ipam.fhrp_groups
     - delete.ipam.ip_addresses
+    - delete.ipam.ip_ranges
     - delete.ipam.prefixes
     - delete.ipam.rirs
     - delete.ipam.roles
+    - delete.ipam.route_targets
     - delete.ipam.services
     - delete.ipam.vlan_groups
     - delete.ipam.vlans
     - delete.ipam.vrfs
-    - delete.secrets.secret_roles
-    - delete.secrets.secrets
+    - delete.tenancy.contact_assignments
+    - delete.tenancy.contact_groups
+    - delete.tenancy.contact_roles
+    - delete.tenancy.contacts
     - delete.tenancy.tenant_groups
     - delete.tenancy.tenants
+    - delete.users.groups
+    - delete.users.permissions
+    - delete.users.tokens
+    - delete.users.users
     - delete.virtualization.cluster_groups
     - delete.virtualization.cluster_types
     - delete.virtualization.clusters
     - delete.virtualization.interfaces
     - delete.virtualization.virtual_machines
-    - get.circuits._choices
+    - delete.wireless.wireless_lan_groups
+    - delete.wireless.wireless_lans
+    - delete.wireless.wireless_links
     - get.circuits.circuit_terminations
+    - get.circuits.circuit_terminations.paths
     - get.circuits.circuit_types
     - get.circuits.circuits
+    - get.circuits.provider_networks
     - get.circuits.providers
-    - get.circuits.providers.graphs
-    - get.dcim._choices
+    - get.dcim.cables
     - get.dcim.connected_device
-    - get.dcim.console_connections
     - get.dcim.console_port_templates
     - get.dcim.console_ports
+    - get.dcim.console_ports.trace
     - get.dcim.console_server_port_templates
     - get.dcim.console_server_ports
+    - get.dcim.console_server_ports.trace
     - get.dcim.device_bay_templates
     - get.dcim.device_bays
     - get.dcim.device_roles
     - get.dcim.device_types
     - get.dcim.devices
     - get.dcim.devices.napalm
-    - get.dcim.interface_connections
+    - get.dcim.front_port_templates
+    - get.dcim.front_ports
+    - get.dcim.front_ports.paths
     - get.dcim.interface_templates
     - get.dcim.interfaces
-    - get.dcim.interfaces.graphs
+    - get.dcim.interfaces.trace
     - get.dcim.inventory_items
+    - get.dcim.locations
     - get.dcim.manufacturers
     - get.dcim.platforms
-    - get.dcim.power_connections
+    - get.dcim.power_feeds
+    - get.dcim.power_feeds.trace
     - get.dcim.power_outlet_templates
     - get.dcim.power_outlets
+    - get.dcim.power_outlets.trace
+    - get.dcim.power_panels
     - get.dcim.power_port_templates
     - get.dcim.power_ports
-    - get.dcim.rack_groups
+    - get.dcim.power_ports.trace
     - get.dcim.rack_reservations
     - get.dcim.rack_roles
     - get.dcim.racks
-    - get.dcim.racks.units
+    - get.dcim.racks.elevation
+    - get.dcim.rear_port_templates
+    - get.dcim.rear_ports
+    - get.dcim.rear_ports.paths
     - get.dcim.regions
+    - get.dcim.site_groups
     - get.dcim.sites
-    - get.dcim.sites.graphs
     - get.dcim.virtual_chassis
-    - get.extras._choices
     - get.extras.config_contexts
+    - get.extras.content_types
+    - get.extras.custom_fields
+    - get.extras.custom_links
     - get.extras.export_templates
-    - get.extras.graphs
     - get.extras.image_attachments
+    - get.extras.job_results
+    - get.extras.journal_entries
     - get.extras.object_changes
-    - get.extras.recent_activity
+    - get.extras.reports
+    - get.extras.scripts
     - get.extras.tags
-    - get.extras.topology_maps
-    - get.extras.topology_maps.render
-    - get.ipam._choices
+    - get.extras.webhooks
     - get.ipam.aggregates
+    - get.ipam.asns
+    - get.ipam.fhrp_group_assignments
+    - get.ipam.fhrp_groups
     - get.ipam.ip_addresses
+    - get.ipam.ip_ranges
+    - get.ipam.ip_ranges.available_ips
     - get.ipam.prefixes
     - get.ipam.prefixes.available_ips
     - get.ipam.prefixes.available_prefixes
     - get.ipam.rirs
     - get.ipam.roles
+    - get.ipam.route_targets
     - get.ipam.services
     - get.ipam.vlan_groups
     - get.ipam.vlans
     - get.ipam.vrfs
-    - get.secrets._choices
-    - get.secrets.generate_rsa_key_pair
-    - get.secrets.secret_roles
-    - get.secrets.secrets
-    - get.tenancy._choices
+    - get.status
+    - get.tenancy.contact_assignments
+    - get.tenancy.contact_groups
+    - get.tenancy.contact_roles
+    - get.tenancy.contacts
     - get.tenancy.tenant_groups
     - get.tenancy.tenants
-    - get.virtualization._choices
+    - get.users.config
+    - get.users.groups
+    - get.users.permissions
+    - get.users.tokens
+    - get.users.users
     - get.virtualization.cluster_groups
     - get.virtualization.cluster_types
     - get.virtualization.clusters
     - get.virtualization.interfaces
     - get.virtualization.virtual_machines
+    - get.wireless.wireless_lan_groups
+    - get.wireless.wireless_lans
+    - get.wireless.wireless_links
     - patch.circuits.circuit_terminations
     - patch.circuits.circuit_types
     - patch.circuits.circuits
+    - patch.circuits.provider_networks
     - patch.circuits.providers
+    - patch.dcim.cables
     - patch.dcim.console_port_templates
     - patch.dcim.console_ports
     - patch.dcim.console_server_port_templates
@@ -156,51 +207,75 @@ content:
     - patch.dcim.device_roles
     - patch.dcim.device_types
     - patch.dcim.devices
-    - patch.dcim.interface_connections
+    - patch.dcim.front_port_templates
+    - patch.dcim.front_ports
     - patch.dcim.interface_templates
     - patch.dcim.interfaces
     - patch.dcim.inventory_items
+    - patch.dcim.locations
     - patch.dcim.manufacturers
     - patch.dcim.platforms
+    - patch.dcim.power_feeds
     - patch.dcim.power_outlet_templates
     - patch.dcim.power_outlets
+    - patch.dcim.power_panels
     - patch.dcim.power_port_templates
     - patch.dcim.power_ports
-    - patch.dcim.rack_groups
     - patch.dcim.rack_reservations
     - patch.dcim.rack_roles
     - patch.dcim.racks
+    - patch.dcim.rear_port_templates
+    - patch.dcim.rear_ports
     - patch.dcim.regions
+    - patch.dcim.site_groups
     - patch.dcim.sites
     - patch.dcim.virtual_chassis
     - patch.extras.config_contexts
+    - patch.extras.custom_fields
+    - patch.extras.custom_links
     - patch.extras.export_templates
-    - patch.extras.graphs
     - patch.extras.image_attachments
+    - patch.extras.journal_entries
     - patch.extras.tags
-    - patch.extras.topology_maps
+    - patch.extras.webhooks
     - patch.ipam.aggregates
+    - patch.ipam.asns
+    - patch.ipam.fhrp_group_assignments
+    - patch.ipam.fhrp_groups
     - patch.ipam.ip_addresses
+    - patch.ipam.ip_ranges
     - patch.ipam.prefixes
     - patch.ipam.rirs
     - patch.ipam.roles
+    - patch.ipam.route_targets
     - patch.ipam.services
     - patch.ipam.vlan_groups
     - patch.ipam.vlans
     - patch.ipam.vrfs
-    - patch.secrets.secret_roles
-    - patch.secrets.secrets
+    - patch.tenancy.contact_assignments
+    - patch.tenancy.contact_groups
+    - patch.tenancy.contact_roles
+    - patch.tenancy.contacts
     - patch.tenancy.tenant_groups
     - patch.tenancy.tenants
+    - patch.users.groups
+    - patch.users.permissions
+    - patch.users.tokens
+    - patch.users.users
     - patch.virtualization.cluster_groups
     - patch.virtualization.cluster_types
     - patch.virtualization.clusters
     - patch.virtualization.interfaces
     - patch.virtualization.virtual_machines
+    - patch.wireless.wireless_lan_groups
+    - patch.wireless.wireless_lans
+    - patch.wireless.wireless_links
     - post.circuits.circuit_terminations
     - post.circuits.circuit_types
     - post.circuits.circuits
+    - post.circuits.provider_networks
     - post.circuits.providers
+    - post.dcim.cables
     - post.dcim.console_port_templates
     - post.dcim.console_ports
     - post.dcim.console_server_port_templates
@@ -210,54 +285,76 @@ content:
     - post.dcim.device_roles
     - post.dcim.device_types
     - post.dcim.devices
-    - post.dcim.interface_connections
+    - post.dcim.front_port_templates
+    - post.dcim.front_ports
     - post.dcim.interface_templates
     - post.dcim.interfaces
     - post.dcim.inventory_items
+    - post.dcim.locations
     - post.dcim.manufacturers
     - post.dcim.platforms
+    - post.dcim.power_feeds
     - post.dcim.power_outlet_templates
     - post.dcim.power_outlets
+    - post.dcim.power_panels
     - post.dcim.power_port_templates
     - post.dcim.power_ports
-    - post.dcim.rack_groups
     - post.dcim.rack_reservations
     - post.dcim.rack_roles
     - post.dcim.racks
+    - post.dcim.rear_port_templates
+    - post.dcim.rear_ports
     - post.dcim.regions
+    - post.dcim.site_groups
     - post.dcim.sites
     - post.dcim.virtual_chassis
     - post.extras.config_contexts
+    - post.extras.custom_fields
+    - post.extras.custom_links
     - post.extras.export_templates
-    - post.extras.graphs
     - post.extras.image_attachments
+    - post.extras.journal_entries
     - post.extras.tags
-    - post.extras.topology_maps
+    - post.extras.webhooks
     - post.ipam.aggregates
+    - post.ipam.asns
+    - post.ipam.fhrp_group_assignments
+    - post.ipam.fhrp_groups
     - post.ipam.ip_addresses
+    - post.ipam.ip_ranges
     - post.ipam.prefixes
-    - post.ipam.prefixes.available_ips
-    - post.ipam.prefixes.available_prefixes
     - post.ipam.rirs
     - post.ipam.roles
+    - post.ipam.route_targets
     - post.ipam.services
     - post.ipam.vlan_groups
     - post.ipam.vlans
     - post.ipam.vrfs
-    - post.secrets.get_session_key
-    - post.secrets.secret_roles
-    - post.secrets.secrets
+    - post.tenancy.contact_assignments
+    - post.tenancy.contact_groups
+    - post.tenancy.contact_roles
+    - post.tenancy.contacts
     - post.tenancy.tenant_groups
     - post.tenancy.tenants
+    - post.users.groups
+    - post.users.permissions
+    - post.users.tokens
+    - post.users.tokens.provision
+    - post.users.users
     - post.virtualization.cluster_groups
     - post.virtualization.cluster_types
     - post.virtualization.clusters
     - post.virtualization.interfaces
     - post.virtualization.virtual_machines
+    - post.wireless.wireless_lan_groups
+    - post.wireless.wireless_lans
+    - post.wireless.wireless_links
     - put.circuits.circuit_terminations
     - put.circuits.circuit_types
     - put.circuits.circuits
+    - put.circuits.provider_networks
     - put.circuits.providers
+    - put.dcim.cables
     - put.dcim.console_port_templates
     - put.dcim.console_ports
     - put.dcim.console_server_port_templates
@@ -267,47 +364,69 @@ content:
     - put.dcim.device_roles
     - put.dcim.device_types
     - put.dcim.devices
-    - put.dcim.interface_connections
+    - put.dcim.front_port_templates
+    - put.dcim.front_ports
     - put.dcim.interface_templates
     - put.dcim.interfaces
     - put.dcim.inventory_items
+    - put.dcim.locations
     - put.dcim.manufacturers
     - put.dcim.platforms
+    - put.dcim.power_feeds
     - put.dcim.power_outlet_templates
     - put.dcim.power_outlets
+    - put.dcim.power_panels
     - put.dcim.power_port_templates
     - put.dcim.power_ports
-    - put.dcim.rack_groups
     - put.dcim.rack_reservations
     - put.dcim.rack_roles
     - put.dcim.racks
+    - put.dcim.rear_port_templates
+    - put.dcim.rear_ports
     - put.dcim.regions
+    - put.dcim.site_groups
     - put.dcim.sites
     - put.dcim.virtual_chassis
     - put.extras.config_contexts
+    - put.extras.custom_fields
+    - put.extras.custom_links
     - put.extras.export_templates
-    - put.extras.graphs
     - put.extras.image_attachments
+    - put.extras.journal_entries
     - put.extras.tags
-    - put.extras.topology_maps
+    - put.extras.webhooks
     - put.ipam.aggregates
+    - put.ipam.asns
+    - put.ipam.fhrp_group_assignments
+    - put.ipam.fhrp_groups
     - put.ipam.ip_addresses
+    - put.ipam.ip_ranges
     - put.ipam.prefixes
     - put.ipam.rirs
     - put.ipam.roles
+    - put.ipam.route_targets
     - put.ipam.services
     - put.ipam.vlan_groups
     - put.ipam.vlans
     - put.ipam.vrfs
-    - put.secrets.secret_roles
-    - put.secrets.secrets
+    - put.tenancy.contact_assignments
+    - put.tenancy.contact_groups
+    - put.tenancy.contact_roles
+    - put.tenancy.contacts
     - put.tenancy.tenant_groups
     - put.tenancy.tenants
+    - put.users.groups
+    - put.users.permissions
+    - put.users.tokens
+    - put.users.users
     - put.virtualization.cluster_groups
     - put.virtualization.cluster_types
     - put.virtualization.clusters
     - put.virtualization.interfaces
     - put.virtualization.virtual_machines
+    - put.wireless.wireless_lan_groups
+    - put.wireless.wireless_lans
+    - put.wireless.wireless_links
   sensors:
     count: 1
     resources:

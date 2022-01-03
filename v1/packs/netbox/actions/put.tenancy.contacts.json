@@ -1,0 +1,74 @@
+{
+    "description": "PUT Contacts",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.tenancy.contacts",
+    "parameters": {
+        "address": {
+            "description": "Address",
+            "required": false,
+            "type": "string"
+        },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "email": {
+            "description": "Email",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/tenancy/contacts/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "group": {
+            "description": "Group",
+            "required": true,
+            "type": "integer"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "phone": {
+            "description": "Phone",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "title": {
+            "description": "Title",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

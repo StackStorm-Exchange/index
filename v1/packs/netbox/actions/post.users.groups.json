@@ -1,0 +1,29 @@
+{
+    "description": "POST Groups",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.users.groups",
+    "parameters": {
+        "endpoint_uri": {
+            "default": "/users/groups/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,15 +1,50 @@
 {
-    "description": "GET Vrfs",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.ipam.vrfs",
     "parameters": {
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/ipam/vrfs/",
             "immutable": true,
             "type": "string"
         },
         "enforce_unique": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "export_target": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "export_target__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "export_target_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "export_target_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -25,14 +60,69 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
-        "id__in": {
-            "description": "Array of IDs",
+        "id__gt": {
+            "description": "",
             "required": false,
-            "type": "array"
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "import_target": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "import_target__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "import_target_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "import_target_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -40,6 +130,56 @@
             "type": "integer"
         },
         "name": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nisw": {
             "description": "",
             "required": false,
             "type": "string"
@@ -55,6 +195,56 @@
             "type": "string"
         },
         "rd": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rd__nisw": {
             "description": "",
             "required": false,
             "type": "string"
@@ -78,7 +268,37 @@
             "required": false,
             "type": "string"
         },
+        "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "tenant": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -86,7 +306,12 @@
         "tenant_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "tenant_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

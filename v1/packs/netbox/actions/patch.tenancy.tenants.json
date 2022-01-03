@@ -42,16 +42,16 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "slug": {
             "description": "Slug",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "tags": {

@@ -1,5 +1,5 @@
 {
-    "description": "GET Inventory Items",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.inventory_items",
@@ -9,7 +9,77 @@
             "required": false,
             "type": "string"
         },
+        "asset_tag__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "device": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "device__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -17,7 +87,12 @@
         "device_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "device_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "discovered": {
             "description": "",
@@ -40,16 +115,136 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "label__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
         },
+        "location": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "location__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "location_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "manufacturer": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "manufacturer__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -57,9 +252,64 @@
         "manufacturer_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "manufacturer_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "name": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nisw": {
             "description": "",
             "required": false,
             "type": "string"
@@ -72,14 +322,89 @@
         "parent_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "parent_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "part_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "part_id__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "part_id__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "q": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -103,7 +428,72 @@
             "required": false,
             "type": "string"
         },
+        "site": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "tag": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "virtual_chassis": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "virtual_chassis__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "virtual_chassis_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "virtual_chassis_id__n": {
             "description": "",
             "required": false,
             "type": "string"

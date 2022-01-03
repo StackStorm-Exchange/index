@@ -6,7 +6,7 @@
     "parameters": {
         "endpoint_uri": {
             "default": "/dcim/devices/{{ id }}/napalm/",
-            "immutable": true,
+            "immutable": false,
             "type": "string"
         },
         "get_detail_route_eligible": {
@@ -22,7 +22,7 @@
         "id": {
             "description": "ID of the object.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "save_in_key_store": {
             "default": false,

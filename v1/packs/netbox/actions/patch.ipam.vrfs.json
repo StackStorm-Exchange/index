@@ -24,6 +24,11 @@
             "required": false,
             "type": "boolean"
         },
+        "export_targets": {
+            "description": "Export targets",
+            "required": false,
+            "type": "array"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -37,11 +42,16 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
+        },
+        "import_targets": {
+            "description": "Import targets",
+            "required": false,
+            "type": "array"
         },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "rd": {

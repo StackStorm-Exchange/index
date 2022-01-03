@@ -47,7 +47,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "install_date": {
             "description": "Date installed",
@@ -62,7 +62,7 @@
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",

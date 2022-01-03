@@ -4,20 +4,20 @@
     "entry_point": "run.py",
     "name": "post.virtualization.interfaces",
     "parameters": {
-        "circuit_termination": {
-            "description": "Circuit termination",
+        "bridge": {
+            "description": "Bridge interface",
             "required": false,
             "type": "integer"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
         },
         "description": {
             "description": "Description",
             "required": false,
             "type": "string"
-        },
-        "device": {
-            "description": "Device",
-            "required": true,
-            "type": "integer"
         },
         "enabled": {
             "description": "Enabled",
@@ -29,11 +29,6 @@
             "immutable": true,
             "type": "string"
         },
-        "form_factor": {
-            "description": "Form factor",
-            "required": false,
-            "type": "integer"
-        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -44,25 +39,15 @@
             "immutable": true,
             "type": "string"
         },
-        "lag": {
-            "description": "Interface",
-            "required": false,
-            "type": "integer"
-        },
         "mac_address": {
             "description": "MAC Address",
             "required": false,
             "type": "string"
         },
-        "mgmt_only": {
-            "description": "OOB Management",
-            "required": false,
-            "type": "boolean"
-        },
         "mode": {
             "description": "Mode",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "mtu": {
             "description": "MTU",
@@ -73,6 +58,11 @@
             "description": "Name",
             "required": true,
             "type": "string"
+        },
+        "parent": {
+            "description": "Parent interface",
+            "required": false,
+            "type": "integer"
         },
         "tagged_vlans": {
             "description": "Tagged vlans",
@@ -85,8 +75,13 @@
             "type": "array"
         },
         "untagged_vlan": {
-            "description": "Untagged vlan",
+            "description": "Untagged VLAN",
             "required": false,
+            "type": "integer"
+        },
+        "virtual_machine": {
+            "description": "Virtual machine",
+            "required": true,
             "type": "integer"
         }
     },

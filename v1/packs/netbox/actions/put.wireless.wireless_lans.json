@@ -1,0 +1,74 @@
+{
+    "description": "PUT Wireless Lans",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.wireless.wireless_lans",
+    "parameters": {
+        "auth_cipher": {
+            "description": "Auth cipher",
+            "required": false,
+            "type": "string"
+        },
+        "auth_psk": {
+            "description": "Pre-shared key",
+            "required": false,
+            "type": "string"
+        },
+        "auth_type": {
+            "description": "Auth type",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/wireless/wireless-lans/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "group": {
+            "description": "Group",
+            "required": false,
+            "type": "integer"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "string"
+        },
+        "ssid": {
+            "description": "SSID",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "vlan": {
+            "description": "VLAN",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

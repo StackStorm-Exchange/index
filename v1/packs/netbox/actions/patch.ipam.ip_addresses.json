@@ -6,6 +6,16 @@
     "parameters": {
         "address": {
             "description": "Address",
+            "required": true,
+            "type": "string"
+        },
+        "assigned_object_id": {
+            "description": "Assigned object id",
+            "required": false,
+            "type": "integer"
+        },
+        "assigned_object_type": {
+            "description": "Assigned object type",
             "required": false,
             "type": "string"
         },
@@ -16,6 +26,11 @@
         },
         "description": {
             "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "dns_name": {
+            "description": "DNS Name",
             "required": false,
             "type": "string"
         },
@@ -37,32 +52,22 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
-        },
-        "interface": {
-            "description": "Interface",
-            "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "nat_inside": {
-            "description": "Nat inside",
-            "required": false,
-            "type": "integer"
-        },
-        "nat_outside": {
-            "description": "Nat inside",
+            "description": "NAT (Inside)",
             "required": false,
             "type": "integer"
         },
         "role": {
             "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",
@@ -75,7 +80,7 @@
             "type": "integer"
         },
         "vrf": {
-            "description": "Vrf",
+            "description": "VRF",
             "required": false,
             "type": "integer"
         }

@@ -1,0 +1,64 @@
+{
+    "description": "POST Permissions",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.users.permissions",
+    "parameters": {
+        "actions": {
+            "description": "Actions",
+            "required": true,
+            "type": "array"
+        },
+        "constraints": {
+            "description": "Constraints",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "enabled": {
+            "description": "Enabled",
+            "required": false,
+            "type": "boolean"
+        },
+        "endpoint_uri": {
+            "default": "/users/permissions/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "groups": {
+            "description": "Groups",
+            "required": false,
+            "type": "array"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "object_types": {
+            "description": "Object types",
+            "required": true,
+            "type": "array"
+        },
+        "users": {
+            "description": "Users",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,9 +1,24 @@
 {
-    "description": "GET Clusters",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.virtualization.clusters",
     "parameters": {
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/virtualization/clusters/",
             "immutable": true,
@@ -19,10 +34,20 @@
             "required": false,
             "type": "string"
         },
+        "group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "group_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "group_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "http_verb": {
             "default": "get",
@@ -30,14 +55,49 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
-        "id__in": {
-            "description": "Array of IDs",
+        "id__gt": {
+            "description": "",
             "required": false,
-            "type": "array"
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -49,12 +109,82 @@
             "required": false,
             "type": "string"
         },
+        "name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "offset": {
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
         },
         "q": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -78,12 +208,87 @@
             "required": false,
             "type": "string"
         },
+        "site__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "site_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "site_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "tag": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -93,10 +298,20 @@
             "required": false,
             "type": "string"
         },
+        "type__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "type_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "type_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

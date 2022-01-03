@@ -24,6 +24,11 @@
             "required": false,
             "type": "boolean"
         },
+        "export_targets": {
+            "description": "Export targets",
+            "required": false,
+            "type": "array"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -34,6 +39,11 @@
             "immutable": true,
             "type": "string"
         },
+        "import_targets": {
+            "description": "Import targets",
+            "required": false,
+            "type": "array"
+        },
         "name": {
             "description": "Name",
             "required": true,
@@ -41,7 +51,7 @@
         },
         "rd": {
             "description": "Route distinguisher",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

@@ -4,10 +4,20 @@
     "entry_point": "run.py",
     "name": "put.circuits.circuit_terminations",
     "parameters": {
+        "cable": {
+            "description": "Id of cable",
+            "required": false,
+            "type": "integer"
+        },
         "circuit": {
             "description": "Circuit",
             "required": true,
             "type": "integer"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
         },
         "endpoint_uri": {
             "default": "/circuits/circuit-terminations/{{ id }}/",
@@ -27,16 +37,16 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
-        "interface": {
-            "description": "Interface",
+        "mark_connected": {
+            "description": "Mark connected",
             "required": false,
-            "type": "integer"
+            "type": "boolean"
         },
         "port_speed": {
             "description": "Port speed (Kbps)",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "pp_info": {
@@ -44,9 +54,14 @@
             "required": false,
             "type": "string"
         },
+        "provider_network": {
+            "description": "Provider network",
+            "required": false,
+            "type": "integer"
+        },
         "site": {
             "description": "Site",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "term_side": {
@@ -62,7 +77,7 @@
         "xconnect_id": {
             "description": "Cross-connect ID",
             "required": false,
-            "type": "integer"
+            "type": "string"
         }
     },
     "runner_type": "python-script"

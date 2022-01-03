@@ -1,10 +1,70 @@
 {
-    "description": "GET Devices",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.devices",
     "parameters": {
+        "airflow": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "airflow__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "asset_tag": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag__nisw": {
             "description": "",
             "required": false,
             "type": "string"
@@ -12,16 +72,66 @@
         "cluster_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "cluster_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "console_ports": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "console_server_ports": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "device_bays": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "device_type_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "device_type_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "endpoint_uri": {
             "default": "/dcim/devices/",
             "immutable": true,
+            "type": "string"
+        },
+        "face": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "face__n": {
+            "description": "",
+            "required": false,
             "type": "string"
         },
         "get_detail_route_eligible": {
@@ -40,16 +150,36 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
-        "id__in": {
-            "description": "Array of IDs",
+        "id__gt": {
+            "description": "",
             "required": false,
-            "type": "array"
+            "type": "string"
         },
-        "is_console_server": {
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interfaces": {
             "description": "",
             "required": false,
             "type": "string"
@@ -59,12 +189,17 @@
             "required": false,
             "type": "string"
         },
-        "is_network_device": {
+        "last_updated": {
             "description": "",
             "required": false,
             "type": "string"
         },
-        "is_pdu": {
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
             "description": "",
             "required": false,
             "type": "string"
@@ -74,7 +209,67 @@
             "required": false,
             "type": "integer"
         },
+        "local_context_data": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "location_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "mac_address": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mac_address__nisw": {
             "description": "",
             "required": false,
             "type": "string"
@@ -84,12 +279,27 @@
             "required": false,
             "type": "string"
         },
+        "manufacturer__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "manufacturer_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "manufacturer_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "model": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "model__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -99,12 +309,72 @@
             "required": false,
             "type": "string"
         },
+        "name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "offset": {
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
         },
+        "pass_through_ports": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "platform": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "platform__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -112,29 +382,94 @@
         "platform_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "platform_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "position": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "position__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "position__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "position__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "position__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "position__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "power_outlets": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "power_ports": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "q": {
             "description": "",
             "required": false,
             "type": "string"
         },
-        "rack_group_id": {
-            "description": "",
-            "required": false,
-            "type": "integer"
-        },
         "rack_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "rack_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "role": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "role__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -142,7 +477,12 @@
         "role_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "role_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "save_in_key_store": {
             "default": false,
@@ -168,12 +508,47 @@
             "required": false,
             "type": "string"
         },
+        "site__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "site_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "site_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "status": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "status__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -183,7 +558,37 @@
             "required": false,
             "type": "string"
         },
+        "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "tenant": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -191,12 +596,87 @@
         "tenant_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "tenant_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_position": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_position__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_position__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_position__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_position__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_position__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_priority": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_priority__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_priority__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_priority__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_priority__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vc_priority__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "virtual_chassis_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "virtual_chassis_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "virtual_chassis_member": {
+            "description": "",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

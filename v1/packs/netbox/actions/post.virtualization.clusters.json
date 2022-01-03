@@ -26,7 +26,7 @@
         },
         "group": {
             "description": "Group",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "http_verb": {
@@ -41,13 +41,18 @@
         },
         "site": {
             "description": "Site",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "tags": {
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
         },
         "type": {
             "description": "Type",

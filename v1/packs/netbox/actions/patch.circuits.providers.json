@@ -47,11 +47,11 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "noc_contact": {
@@ -60,13 +60,13 @@
             "type": "string"
         },
         "portal_url": {
-            "description": "Portal",
+            "description": "Portal URL",
             "required": false,
             "type": "string"
         },
         "slug": {
             "description": "Slug",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "tags": {

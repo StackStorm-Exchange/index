@@ -1,0 +1,99 @@
+{
+    "description": "POST Webhooks",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.extras.webhooks",
+    "parameters": {
+        "additional_headers": {
+            "description": "Additional headers",
+            "required": false,
+            "type": "string"
+        },
+        "body_template": {
+            "description": "Body template",
+            "required": false,
+            "type": "string"
+        },
+        "ca_file_path": {
+            "description": "CA File Path",
+            "required": false,
+            "type": "string"
+        },
+        "conditions": {
+            "description": "Conditions",
+            "required": false,
+            "type": "string"
+        },
+        "content_types": {
+            "description": "Content types",
+            "required": true,
+            "type": "array"
+        },
+        "enabled": {
+            "description": "Enabled",
+            "required": false,
+            "type": "boolean"
+        },
+        "endpoint_uri": {
+            "default": "/extras/webhooks/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_content_type": {
+            "description": "HTTP content type",
+            "required": false,
+            "type": "string"
+        },
+        "http_method": {
+            "description": "HTTP method",
+            "required": false,
+            "type": "string"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "payload_url": {
+            "description": "URL",
+            "required": true,
+            "type": "string"
+        },
+        "secret": {
+            "description": "Secret",
+            "required": false,
+            "type": "string"
+        },
+        "ssl_verification": {
+            "description": "SSL verification",
+            "required": false,
+            "type": "boolean"
+        },
+        "type_create": {
+            "description": "Type create",
+            "required": false,
+            "type": "boolean"
+        },
+        "type_delete": {
+            "description": "Type delete",
+            "required": false,
+            "type": "boolean"
+        },
+        "type_update": {
+            "description": "Type update",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

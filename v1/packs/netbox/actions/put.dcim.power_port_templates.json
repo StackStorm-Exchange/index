@@ -4,6 +4,16 @@
     "entry_point": "run.py",
     "name": "put.dcim.power_port_templates",
     "parameters": {
+        "allocated_draw": {
+            "description": "Allocated draw",
+            "required": false,
+            "type": "integer"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "device_type": {
             "description": "Device type",
             "required": true,
@@ -27,11 +37,26 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
+            "type": "string"
+        },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
+        },
+        "maximum_draw": {
+            "description": "Maximum draw",
+            "required": false,
             "type": "integer"
         },
         "name": {
             "description": "Name",
             "required": true,
+            "type": "string"
+        },
+        "type": {
+            "description": "Type",
+            "required": false,
             "type": "string"
         }
     },

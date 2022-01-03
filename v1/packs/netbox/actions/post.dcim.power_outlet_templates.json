@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "post.dcim.power_outlet_templates",
     "parameters": {
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "device_type": {
             "description": "Device type",
             "required": true,
@@ -12,6 +17,11 @@
         "endpoint_uri": {
             "default": "/dcim/power-outlet-templates/",
             "immutable": true,
+            "type": "string"
+        },
+        "feed_leg": {
+            "description": "Feed leg",
+            "required": false,
             "type": "string"
         },
         "get_detail_route_eligible": {
@@ -24,9 +34,24 @@
             "immutable": true,
             "type": "string"
         },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
+        },
         "name": {
             "description": "Name",
             "required": true,
+            "type": "string"
+        },
+        "power_port": {
+            "description": "Power port",
+            "required": false,
+            "type": "integer"
+        },
+        "type": {
+            "description": "Type",
+            "required": false,
             "type": "string"
         }
     },

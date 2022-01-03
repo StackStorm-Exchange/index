@@ -1,13 +1,38 @@
 {
-    "description": "GET Circuit Terminations",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.circuits.circuit_terminations",
     "parameters": {
+        "cabled": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "circuit_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "circuit_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "endpoint_uri": {
             "default": "/circuits/circuit-terminations/",
@@ -25,9 +50,49 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -42,7 +107,42 @@
         "port_speed": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "port_speed__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "port_speed__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "port_speed__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "port_speed__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "port_speed__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "provider_network_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "provider_network_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "q": {
             "description": "",
@@ -68,12 +168,27 @@
             "required": false,
             "type": "string"
         },
+        "site__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "site_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "site_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "term_side": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "term_side__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -81,12 +196,87 @@
         "upstream_speed": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "upstream_speed__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "upstream_speed__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "upstream_speed__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "upstream_speed__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "upstream_speed__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "xconnect_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "xconnect_id__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "xconnect_id__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

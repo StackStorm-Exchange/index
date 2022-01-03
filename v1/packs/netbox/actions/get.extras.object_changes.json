@@ -9,7 +9,57 @@
             "required": false,
             "type": "string"
         },
+        "action__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "changed_object_type": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_type__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_type_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "changed_object_type_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -30,9 +80,34 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -40,6 +115,56 @@
             "type": "integer"
         },
         "object_repr": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_repr__nisw": {
             "description": "",
             "required": false,
             "type": "string"
@@ -57,7 +182,7 @@
         "request_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "save_in_key_store": {
             "default": false,
@@ -83,7 +208,72 @@
             "required": false,
             "type": "string"
         },
+        "user__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "user_name": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user_name__nisw": {
             "description": "",
             "required": false,
             "type": "string"

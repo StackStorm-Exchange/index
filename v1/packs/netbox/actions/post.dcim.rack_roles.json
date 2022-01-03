@@ -6,7 +6,17 @@
     "parameters": {
         "color": {
             "description": "Color",
-            "required": true,
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
             "type": "string"
         },
         "endpoint_uri": {
@@ -33,6 +43,11 @@
             "description": "Slug",
             "required": true,
             "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"

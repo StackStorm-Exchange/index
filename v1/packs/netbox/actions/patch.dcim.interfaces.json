@@ -4,10 +4,20 @@
     "entry_point": "run.py",
     "name": "patch.dcim.interfaces",
     "parameters": {
-        "circuit_termination": {
-            "description": "Circuit termination",
+        "bridge": {
+            "description": "Bridge interface",
             "required": false,
             "type": "integer"
+        },
+        "cable": {
+            "description": "Id of cable",
+            "required": false,
+            "type": "integer"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
         },
         "description": {
             "description": "Description",
@@ -16,7 +26,7 @@
         },
         "device": {
             "description": "Device",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "enabled": {
@@ -28,11 +38,6 @@
             "default": "/dcim/interfaces/{{ id }}/",
             "immutable": true,
             "type": "string"
-        },
-        "form_factor": {
-            "description": "Form factor",
-            "required": false,
-            "type": "integer"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -47,10 +52,15 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
+        },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
         },
         "lag": {
-            "description": "Interface",
+            "description": "Parent LAG",
             "required": false,
             "type": "integer"
         },
@@ -59,15 +69,20 @@
             "required": false,
             "type": "string"
         },
+        "mark_connected": {
+            "description": "Mark connected",
+            "required": false,
+            "type": "boolean"
+        },
         "mgmt_only": {
-            "description": "OOB Management",
+            "description": "Management only",
             "required": false,
             "type": "boolean"
         },
         "mode": {
             "description": "Mode",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "mtu": {
             "description": "MTU",
@@ -76,6 +91,31 @@
         },
         "name": {
             "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "parent": {
+            "description": "Parent interface",
+            "required": false,
+            "type": "integer"
+        },
+        "rf_channel": {
+            "description": "Wireless channel",
+            "required": false,
+            "type": "string"
+        },
+        "rf_channel_frequency": {
+            "description": "Channel frequency (MHz)",
+            "required": false,
+            "type": "integer"
+        },
+        "rf_channel_width": {
+            "description": "Channel width (MHz)",
+            "required": false,
+            "type": "integer"
+        },
+        "rf_role": {
+            "description": "Wireless role",
             "required": false,
             "type": "string"
         },
@@ -89,10 +129,35 @@
             "required": false,
             "type": "array"
         },
-        "untagged_vlan": {
-            "description": "Untagged vlan",
+        "tx_power": {
+            "description": "Transmit power (dBm)",
             "required": false,
             "type": "integer"
+        },
+        "type": {
+            "description": "Type",
+            "required": true,
+            "type": "string"
+        },
+        "untagged_vlan": {
+            "description": "Untagged VLAN",
+            "required": false,
+            "type": "integer"
+        },
+        "wireless_lans": {
+            "description": "Wireless lans",
+            "required": false,
+            "type": "array"
+        },
+        "wireless_link": {
+            "description": "Wireless link",
+            "required": false,
+            "type": "integer"
+        },
+        "wwn": {
+            "description": "WWN",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

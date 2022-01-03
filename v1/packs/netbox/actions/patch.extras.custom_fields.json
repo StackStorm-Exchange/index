@@ -1,0 +1,94 @@
+{
+    "description": "PATCH Custom Fields",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "patch.extras.custom_fields",
+    "parameters": {
+        "choices": {
+            "description": "Choices",
+            "required": false,
+            "type": "array"
+        },
+        "content_types": {
+            "description": "Content types",
+            "required": true,
+            "type": "array"
+        },
+        "default": {
+            "description": "Default",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/extras/custom-fields/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "filter_logic": {
+            "description": "Filter logic",
+            "required": false,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "patch",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to patch.",
+            "required": true,
+            "type": "string"
+        },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "required": {
+            "description": "Required",
+            "required": false,
+            "type": "boolean"
+        },
+        "type": {
+            "description": "Type",
+            "required": false,
+            "type": "string"
+        },
+        "validation_maximum": {
+            "description": "Maximum value",
+            "required": false,
+            "type": "integer"
+        },
+        "validation_minimum": {
+            "description": "Minimum value",
+            "required": false,
+            "type": "integer"
+        },
+        "validation_regex": {
+            "description": "Validation regex",
+            "required": false,
+            "type": "string"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

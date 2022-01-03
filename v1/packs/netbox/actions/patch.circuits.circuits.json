@@ -6,7 +6,7 @@
     "parameters": {
         "cid": {
             "description": "Circuit ID",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "comments": {
@@ -47,7 +47,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "install_date": {
             "description": "Date installed",
@@ -56,13 +56,13 @@
         },
         "provider": {
             "description": "Provider",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",
@@ -76,7 +76,7 @@
         },
         "type": {
             "description": "Type",
-            "required": false,
+            "required": true,
             "type": "integer"
         }
     },

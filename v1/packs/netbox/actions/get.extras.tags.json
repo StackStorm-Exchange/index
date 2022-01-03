@@ -1,9 +1,89 @@
 {
-    "description": "GET Tags",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.extras.tags",
     "parameters": {
+        "color": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "color__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/extras/tags/",
             "immutable": true,
@@ -20,9 +100,49 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -30,6 +150,56 @@
             "type": "integer"
         },
         "name": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nisw": {
             "description": "",
             "required": false,
             "type": "string"
@@ -59,6 +229,56 @@
             "type": "integer"
         },
         "slug": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__nisw": {
             "description": "",
             "required": false,
             "type": "string"

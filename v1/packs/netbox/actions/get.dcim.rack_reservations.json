@@ -1,10 +1,20 @@
 {
-    "description": "GET Rack Reservations",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.rack_reservations",
     "parameters": {
         "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
             "description": "",
             "required": false,
             "type": "string"
@@ -19,35 +29,80 @@
             "immutable": true,
             "type": "boolean"
         },
-        "group": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "group_id": {
-            "description": "",
-            "required": false,
-            "type": "integer"
-        },
         "http_verb": {
             "default": "get",
             "immutable": true,
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
-        "id__in": {
-            "description": "Array of IDs",
+        "id__gt": {
+            "description": "",
             "required": false,
-            "type": "array"
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "location": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "location__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "location_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "location_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "offset": {
             "description": "The initial index from which to return the results.",
@@ -62,7 +117,12 @@
         "rack_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "rack_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "save_in_key_store": {
             "default": false,
@@ -83,12 +143,57 @@
             "required": false,
             "type": "string"
         },
+        "site__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "site_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "site_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tag": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "tenant": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -96,9 +201,19 @@
         "tenant_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "tenant_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "user": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "user__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -106,7 +221,12 @@
         "user_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "user_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

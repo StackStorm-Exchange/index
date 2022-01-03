@@ -37,7 +37,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "prefix": {
             "description": "Prefix",
@@ -45,7 +45,7 @@
             "type": "string"
         },
         "rir": {
-            "description": "Rir",
+            "description": "RIR",
             "required": true,
             "type": "integer"
         },
@@ -53,6 +53,11 @@
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

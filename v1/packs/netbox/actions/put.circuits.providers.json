@@ -47,7 +47,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "name": {
             "description": "Name",
@@ -60,7 +60,7 @@
             "type": "string"
         },
         "portal_url": {
-            "description": "Portal",
+            "description": "Portal URL",
             "required": false,
             "type": "string"
         },

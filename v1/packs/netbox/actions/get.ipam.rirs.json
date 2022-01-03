@@ -1,9 +1,79 @@
 {
-    "description": "GET Rirs",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.ipam.rirs",
     "parameters": {
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/ipam/rirs/",
             "immutable": true,
@@ -20,16 +90,51 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
-        "id__in": {
-            "description": "Array of IDs",
+        "id__gt": {
+            "description": "",
             "required": false,
-            "type": "array"
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "is_private": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
             "description": "",
             "required": false,
             "type": "string"
@@ -44,10 +149,65 @@
             "required": false,
             "type": "string"
         },
+        "name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "offset": {
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "q": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "save_in_key_store": {
             "default": false,
@@ -64,6 +224,66 @@
             "type": "integer"
         },
         "slug": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "slug__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tag": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tag__n": {
             "description": "",
             "required": false,
             "type": "string"

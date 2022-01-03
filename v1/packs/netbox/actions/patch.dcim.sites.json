@@ -9,6 +9,11 @@
             "required": false,
             "type": "integer"
         },
+        "asns": {
+            "description": "Asns",
+            "required": false,
+            "type": "array"
+        },
         "comments": {
             "description": "Comments",
             "required": false,
@@ -54,6 +59,11 @@
             "immutable": true,
             "type": "boolean"
         },
+        "group": {
+            "description": "Group",
+            "required": false,
+            "type": "integer"
+        },
         "http_verb": {
             "default": "patch",
             "immutable": true,
@@ -62,21 +72,21 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "latitude": {
             "description": "Latitude",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "longitude": {
             "description": "Longitude",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "physical_address": {
@@ -85,7 +95,7 @@
             "type": "string"
         },
         "region": {
-            "description": "Parent",
+            "description": "Region",
             "required": false,
             "type": "integer"
         },
@@ -96,13 +106,13 @@
         },
         "slug": {
             "description": "Slug",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",

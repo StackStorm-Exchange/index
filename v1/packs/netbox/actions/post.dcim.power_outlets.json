@@ -4,6 +4,21 @@
     "entry_point": "run.py",
     "name": "post.dcim.power_outlets",
     "parameters": {
+        "cable": {
+            "description": "Id of cable",
+            "required": false,
+            "type": "integer"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "device": {
             "description": "Device",
             "required": true,
@@ -12,6 +27,11 @@
         "endpoint_uri": {
             "default": "/dcim/power-outlets/",
             "immutable": true,
+            "type": "string"
+        },
+        "feed_leg": {
+            "description": "Feed leg",
+            "required": false,
             "type": "string"
         },
         "get_detail_route_eligible": {
@@ -24,15 +44,35 @@
             "immutable": true,
             "type": "string"
         },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
+        },
+        "mark_connected": {
+            "description": "Mark connected",
+            "required": false,
+            "type": "boolean"
+        },
         "name": {
             "description": "Name",
             "required": true,
             "type": "string"
         },
+        "power_port": {
+            "description": "Power port",
+            "required": false,
+            "type": "integer"
+        },
         "tags": {
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
+        },
+        "type": {
+            "description": "Type",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

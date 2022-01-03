@@ -1,9 +1,34 @@
 {
-    "description": "GET Image Attachments",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.extras.image_attachments",
     "parameters": {
+        "content_type": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/extras/image-attachments/",
             "immutable": true,
@@ -20,19 +45,134 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
         },
+        "name": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "object_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "offset": {
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "q": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "save_in_key_store": {
             "default": false,

@@ -1,0 +1,188 @@
+{
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get.ipam.fhrp_group_assignments",
+    "parameters": {
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/ipam/fhrp-group-assignments/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "http_verb": {
+            "default": "get",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interface_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interface_id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interface_id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interface_id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interface_id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interface_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interface_type": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "interface_type__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+        },
+        "offset": {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+        },
+        "priority": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "priority__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "priority__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "priority__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "priority__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "priority__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "save_in_key_store": {
+            "default": false,
+            "description": "Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.",
+            "type": "boolean"
+        },
+        "save_in_key_store_key_name": {
+            "description": "Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.",
+            "type": "string"
+        },
+        "save_in_key_store_ttl": {
+            "default": 60,
+            "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -9,6 +9,11 @@
             "required": false,
             "type": "integer"
         },
+        "asns": {
+            "description": "Asns",
+            "required": false,
+            "type": "array"
+        },
         "comments": {
             "description": "Comments",
             "required": false,
@@ -54,6 +59,11 @@
             "immutable": true,
             "type": "boolean"
         },
+        "group": {
+            "description": "Group",
+            "required": false,
+            "type": "integer"
+        },
         "http_verb": {
             "default": "put",
             "immutable": true,
@@ -62,17 +72,17 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "latitude": {
             "description": "Latitude",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "longitude": {
             "description": "Longitude",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
@@ -85,7 +95,7 @@
             "type": "string"
         },
         "region": {
-            "description": "Parent",
+            "description": "Region",
             "required": false,
             "type": "integer"
         },
@@ -102,7 +112,7 @@
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",

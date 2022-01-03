@@ -32,16 +32,21 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "is_pool": {
             "description": "Is a pool",
             "required": false,
             "type": "boolean"
         },
+        "mark_utilized": {
+            "description": "Mark utilized",
+            "required": false,
+            "type": "boolean"
+        },
         "prefix": {
             "description": "Prefix",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "role": {
@@ -57,7 +62,7 @@
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",
@@ -70,12 +75,12 @@
             "type": "integer"
         },
         "vlan": {
-            "description": "Vlan",
+            "description": "VLAN",
             "required": false,
             "type": "integer"
         },
         "vrf": {
-            "description": "Vrf",
+            "description": "VRF",
             "required": false,
             "type": "integer"
         }

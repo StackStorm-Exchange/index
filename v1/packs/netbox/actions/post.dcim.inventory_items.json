@@ -9,6 +9,11 @@
             "required": false,
             "type": "string"
         },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
         "description": {
             "description": "Description",
             "required": false,
@@ -39,6 +44,11 @@
             "immutable": true,
             "type": "string"
         },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
+        },
         "manufacturer": {
             "description": "Manufacturer",
             "required": false,
@@ -57,7 +67,7 @@
         "part_id": {
             "description": "Part ID",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "serial": {
             "description": "Serial number",

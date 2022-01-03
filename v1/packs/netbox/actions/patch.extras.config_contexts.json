@@ -4,15 +4,30 @@
     "entry_point": "run.py",
     "name": "patch.extras.config_contexts",
     "parameters": {
+        "cluster_groups": {
+            "description": "Cluster groups",
+            "required": false,
+            "type": "array"
+        },
+        "clusters": {
+            "description": "Clusters",
+            "required": false,
+            "type": "array"
+        },
         "data": {
             "description": "Data",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "description": {
             "description": "Description",
             "required": false,
             "type": "string"
+        },
+        "device_types": {
+            "description": "Device types",
+            "required": false,
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/extras/config-contexts/{{ id }}/",
@@ -32,7 +47,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "is_active": {
             "description": "Is active",
@@ -41,7 +56,7 @@
         },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "platforms": {
@@ -59,8 +74,18 @@
             "required": false,
             "type": "array"
         },
+        "site_groups": {
+            "description": "Site groups",
+            "required": false,
+            "type": "array"
+        },
         "sites": {
             "description": "Sites",
+            "required": false,
+            "type": "array"
+        },
+        "tags": {
+            "description": "Array of tag strings",
             "required": false,
             "type": "array"
         },

@@ -9,6 +9,11 @@
             "required": false,
             "type": "string"
         },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
         "description": {
             "description": "Description",
             "required": false,
@@ -16,7 +21,7 @@
         },
         "device": {
             "description": "Device",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "discovered": {
@@ -42,7 +47,12 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
+        },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "string"
         },
         "manufacturer": {
             "description": "Manufacturer",
@@ -51,7 +61,7 @@
         },
         "name": {
             "description": "Name",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "parent": {
@@ -62,7 +72,7 @@
         "part_id": {
             "description": "Part ID",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "serial": {
             "description": "Serial number",

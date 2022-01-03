@@ -6,7 +6,7 @@
     "parameters": {
         "cluster": {
             "description": "Cluster",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "comments": {
@@ -59,35 +59,25 @@
             "required": false,
             "type": "integer"
         },
-        "primary_ip": {
-            "description": "Primary ip",
-            "required": false,
-            "type": "integer"
-        },
         "primary_ip4": {
-            "description": "Primary ip",
+            "description": "Primary IPv4",
             "required": false,
             "type": "integer"
         },
         "primary_ip6": {
-            "description": "Primary ip",
+            "description": "Primary IPv6",
             "required": false,
             "type": "integer"
         },
         "role": {
-            "description": "Device role",
-            "required": false,
-            "type": "integer"
-        },
-        "site": {
-            "description": "Site",
+            "description": "Role",
             "required": false,
             "type": "integer"
         },
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",

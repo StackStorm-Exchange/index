@@ -26,7 +26,7 @@
         },
         "group": {
             "description": "Group",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "http_verb": {
@@ -37,7 +37,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "name": {
             "description": "Name",
@@ -57,7 +57,7 @@
         "status": {
             "description": "Status",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",

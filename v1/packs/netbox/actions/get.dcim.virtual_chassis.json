@@ -1,9 +1,79 @@
 {
-    "description": "GET Virtual Chassis",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.virtual_chassis",
     "parameters": {
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "domain__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/dcim/virtual-chassis/",
             "immutable": true,
@@ -20,19 +90,159 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
         },
+        "master": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "master__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "master_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "master_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "name__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "offset": {
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "q": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "save_in_key_store": {
             "default": false,
@@ -47,6 +257,76 @@
             "default": 60,
             "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
             "type": "integer"
+        },
+        "site": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tag": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

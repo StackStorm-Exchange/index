@@ -1,0 +1,69 @@
+{
+    "description": "PUT Custom Links",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.extras.custom_links",
+    "parameters": {
+        "button_class": {
+            "description": "Button class",
+            "required": false,
+            "type": "string"
+        },
+        "content_type": {
+            "description": "Content type",
+            "required": true,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/extras/custom-links/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "group_name": {
+            "description": "Group name",
+            "required": false,
+            "type": "string"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "string"
+        },
+        "link_text": {
+            "description": "Link text",
+            "required": true,
+            "type": "string"
+        },
+        "link_url": {
+            "description": "Link URL",
+            "required": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "new_window": {
+            "description": "New window",
+            "required": false,
+            "type": "boolean"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

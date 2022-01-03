@@ -44,15 +44,20 @@
             "required": true,
             "type": "string"
         },
-        "port": {
-            "description": "Port number",
+        "ports": {
+            "description": "Ports",
             "required": true,
-            "type": "integer"
+            "type": "array"
         },
         "protocol": {
             "description": "Protocol",
             "required": true,
-            "type": "integer"
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
         },
         "virtual_machine": {
             "description": "Virtual machine",

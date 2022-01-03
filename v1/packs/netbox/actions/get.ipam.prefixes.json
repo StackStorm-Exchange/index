@@ -1,10 +1,85 @@
 {
-    "description": "GET Prefixes",
+    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.ipam.prefixes",
     "parameters": {
+        "children": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "children__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "children__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "children__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "children__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "children__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "contains": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "depth": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "depth__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "depth__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "depth__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "depth__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "depth__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -17,7 +92,7 @@
         "family": {
             "description": "",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -30,16 +105,51 @@
             "type": "string"
         },
         "id": {
-            "description": "If provided, will convert to using the detail route. I.e., <endpoint_uri>/<id>/, meaning a max of one entity will be returned and all other entity query parameters will be ignored.",
+            "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
-        "id__in": {
-            "description": "Array of IDs",
+        "id__gt": {
+            "description": "",
             "required": false,
-            "type": "array"
+            "type": "string"
+        },
+        "id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "is_pool": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lte": {
             "description": "",
             "required": false,
             "type": "string"
@@ -49,7 +159,22 @@
             "required": false,
             "type": "integer"
         },
+        "mark_utilized": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "mask_length": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mask_length__gte": {
+            "description": "",
+            "required": false,
+            "type": "integer"
+        },
+        "mask_length__lte": {
             "description": "",
             "required": false,
             "type": "integer"
@@ -59,7 +184,42 @@
             "required": false,
             "type": "integer"
         },
+        "prefix": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "present_in_vrf": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "present_in_vrf_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "q": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "region_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -69,10 +229,20 @@
             "required": false,
             "type": "string"
         },
+        "role__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "role_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "role_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "save_in_key_store": {
             "default": false,
@@ -93,12 +263,47 @@
             "required": false,
             "type": "string"
         },
+        "site__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "site_group_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "site_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "site_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "status": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "status__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -108,7 +313,37 @@
             "required": false,
             "type": "string"
         },
+        "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "tenant": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "tenant_group_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -116,14 +351,49 @@
         "tenant_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "tenant_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "vlan_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "vlan_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "vlan_vid": {
+            "description": "",
+            "required": false,
+            "type": "integer"
+        },
+        "vlan_vid__gt": {
+            "description": "",
+            "required": false,
+            "type": "integer"
+        },
+        "vlan_vid__gte": {
+            "description": "",
+            "required": false,
+            "type": "integer"
+        },
+        "vlan_vid__lt": {
+            "description": "",
+            "required": false,
+            "type": "integer"
+        },
+        "vlan_vid__lte": {
+            "description": "",
+            "required": false,
+            "type": "integer"
+        },
+        "vlan_vid__n": {
             "description": "",
             "required": false,
             "type": "integer"
@@ -133,10 +403,20 @@
             "required": false,
             "type": "string"
         },
+        "vrf__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "vrf_id": {
             "description": "",
             "required": false,
-            "type": "integer"
+            "type": "string"
+        },
+        "vrf_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "within": {
             "description": "",

@@ -37,22 +37,27 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "prefix": {
             "description": "Prefix",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "rir": {
-            "description": "Rir",
-            "required": false,
+            "description": "RIR",
+            "required": true,
             "type": "integer"
         },
         "tags": {
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

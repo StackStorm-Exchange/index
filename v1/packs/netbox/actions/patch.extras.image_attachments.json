@@ -6,7 +6,7 @@
     "parameters": {
         "content_type": {
             "description": "Content type",
-            "required": false,
+            "required": true,
             "type": "string"
         },
         "endpoint_uri": {
@@ -27,16 +27,16 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "integer"
+            "type": "string"
         },
         "image_height": {
             "description": "Image height",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "image_width": {
             "description": "Image width",
-            "required": false,
+            "required": true,
             "type": "integer"
         },
         "name": {
@@ -46,7 +46,7 @@
         },
         "object_id": {
             "description": "Object id",
-            "required": false,
+            "required": true,
             "type": "integer"
         }
     },
