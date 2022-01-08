@@ -1,0 +1,21 @@
+{
+    "description": "Delete an escalation chain by it's id.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete_escalation_chain_by_id",
+    "pack": "logicmonitor",
+    "parameters": {
+        "id": {
+            "description": "The id of the escalation chain to be deleted.",
+            "required": true,
+            "type": "integer"
+        },
+        "method": {
+            "default": "delete_escalation_chain_by_id",
+            "description": "The name of the method called by the LogicMonitor Python SDK.",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

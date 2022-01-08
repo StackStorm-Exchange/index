@@ -1,0 +1,33 @@
+{
+    "description": "Update an SDT (Scheduled Down Time) by it's id.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "patch_sdt_by_id",
+    "pack": "logicmonitor",
+    "parameters": {
+        "body": {
+            "description": "The body object with required fields - type.",
+            "properties": {
+                "type": {
+                    "description": "The type of resource the SDT is for - see documentation for  details.",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "id": {
+            "description": "The id of the SDT to be updated.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "patch_sdt_by_id",
+            "description": "The name of the method called by the LogicMonitor Python SDK.",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

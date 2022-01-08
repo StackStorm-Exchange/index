@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "payload": "{{trigger}}"
+        },
+        "ref": "logicmonitor.get_alert_list"
+    },
+    "criteria": {
+        "trigger.type": {
+            "pattern": "agentDownAlert",
+            "type": "equals"
+        }
+    },
+    "description": "Maps Collector Unreachable Alerts (LMA) to an action",
+    "enabled": false,
+    "name": "collector_unreachable_alert_rule",
+    "pack": "logicmonitor",
+    "trigger": {
+        "type": "logicmonitor.alert_trigger"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "payload": "{{trigger}}"
+        },
+        "ref": "logicmonitor.get_alert_list"
+    },
+    "criteria": {
+        "trigger.alertId": {
+            "pattern": "LML",
+            "type": "contains"
+        }
+    },
+    "description": "Maps LM Log Alerts (LML) to an action",
+    "enabled": false,
+    "name": "lmlogs_alert_rule",
+    "pack": "logicmonitor",
+    "trigger": {
+        "type": "logicmonitor.alert_trigger"
+    }
+}

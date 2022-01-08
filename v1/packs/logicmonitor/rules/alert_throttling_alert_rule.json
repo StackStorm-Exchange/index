@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "payload": "{{trigger}}"
+        },
+        "ref": "logicmonitor.get_alert_list"
+    },
+    "criteria": {
+        "trigger.type": {
+            "pattern": "alertThrottledAlert",
+            "type": "equals"
+        }
+    },
+    "description": "Maps Alert Throttling Alerts (LMT) to an action",
+    "enabled": false,
+    "name": "alert_throttling_alert_rule",
+    "pack": "logicmonitor",
+    "trigger": {
+        "type": "logicmonitor.alert_trigger"
+    }
+}

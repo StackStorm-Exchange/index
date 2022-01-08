@@ -1,0 +1,15 @@
+{
+    "class_name": "LogicMonitorSensor",
+    "description": "Sensor that uses Flask to receive requests.",
+    "enabled": true,
+    "entry_point": "logicmonitor_sensor.py",
+    "trigger_types": [
+        {
+            "description": "",
+            "name": "alert_trigger",
+            "payload_schema": {
+                "type": "object"
+            }
+        }
+    ]
+}

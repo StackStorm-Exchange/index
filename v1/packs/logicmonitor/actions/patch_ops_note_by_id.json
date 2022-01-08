@@ -1,0 +1,33 @@
+{
+    "description": "Update an ops-note by it's id.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "patch_ops_note_by_id",
+    "pack": "logicmonitor",
+    "parameters": {
+        "body": {
+            "description": "The body object with required fields - note.",
+            "properties": {
+                "note": {
+                    "description": "The note message.",
+                    "required": true,
+                    "type": "string"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "id": {
+            "description": "The id of the ops-note to be updated.",
+            "required": true,
+            "type": "string"
+        },
+        "method": {
+            "default": "patch_ops_note_by_id",
+            "description": "The name of the method called by the LogicMonitor Python SDK.",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

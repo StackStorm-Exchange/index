@@ -1,0 +1,35 @@
+{
+    "description": "Add an alert rule.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "add_alert_rule",
+    "pack": "logicmonitor",
+    "parameters": {
+        "body": {
+            "description": "The body object with required fields - escalatingChainId, name, and priority.",
+            "properties": {
+                "escalatingChainId": {
+                    "required": true,
+                    "type": "integer"
+                },
+                "name": {
+                    "required": true,
+                    "type": "string"
+                },
+                "priority": {
+                    "required": true,
+                    "type": "integer"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "method": {
+            "default": "add_alert_rule",
+            "description": "The name of the method called by the LogicMonitor Python SDK.",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

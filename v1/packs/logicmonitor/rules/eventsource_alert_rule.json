@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "payload": "{{trigger}}"
+        },
+        "ref": "logicmonitor.get_alert_list"
+    },
+    "criteria": {
+        "trigger.type": {
+            "pattern": "eventAlert",
+            "type": "equals"
+        }
+    },
+    "description": "Maps EventSource Alerts (LME) to an action",
+    "enabled": false,
+    "name": "eventsource_alert_rule",
+    "pack": "logicmonitor",
+    "trigger": {
+        "type": "logicmonitor.alert_trigger"
+    }
+}

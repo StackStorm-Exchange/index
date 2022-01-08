@@ -1,0 +1,21 @@
+{
+    "description": "Get an alert rule by it's id.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get_alert_rule_by_id",
+    "pack": "logicmonitor",
+    "parameters": {
+        "id": {
+            "description": "The id of the alert rule.",
+            "required": true,
+            "type": "integer"
+        },
+        "method": {
+            "default": "get_alert_rule_by_id",
+            "description": "The name of the method called by the LogicMonitor Python SDK.",
+            "immutable": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
