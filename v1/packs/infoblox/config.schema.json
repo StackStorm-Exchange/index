@@ -23,5 +23,12 @@
         "description": "Verify SSL of Infoblox API",
         "required": true,
         "type": "boolean"
+    },
+    "wapi_version": {
+        "default": "v2.9",
+        "description": "Wapi version of Infoblox",
+        "required": false,
+        "secret": false,
+        "type": "string"
     }
 }
