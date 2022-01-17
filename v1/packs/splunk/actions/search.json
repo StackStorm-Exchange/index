@@ -3,8 +3,15 @@
     "entry_point": "search.py",
     "name": "search",
     "parameters": {
+        "instance": {
+            "description": "Splunk instance if not default to search (must be in config.yaml)",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
         "query": {
             "description": "Search query (e.g. 'search * | head 10')",
+            "position": 1,
             "required": true,
             "type": "string"
         }

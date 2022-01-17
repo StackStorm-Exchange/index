@@ -1,41 +1,71 @@
 {
-    "host": {
-        "description": "Splunk server",
+    "splunk_instance": {
+        "additionalProperties": false,
+        "properties": {
+            "hec_endpoint": {
+                "default": "/services/collector",
+                "description": "HEC URL endpoint (default: /services/collector)",
+                "required": false,
+                "secret": false,
+                "type": "string"
+            },
+            "hec_port": {
+                "default": "8088",
+                "description": "Port to send HEC data too (default: 8088)",
+                "required": false,
+                "secret": false,
+                "type": "integer"
+            },
+            "host": {
+                "description": "Splunk server",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            },
+            "password": {
+                "description": "Splunk password",
+                "required": true,
+                "secret": true,
+                "type": "string"
+            },
+            "port": {
+                "default": 8089,
+                "description": "Splunk port (default: 8089)",
+                "required": true,
+                "secret": false,
+                "type": "integer"
+            },
+            "scheme": {
+                "default": "https",
+                "description": "Protocol used for Splunk API - http or https (default: https)",
+                "required": false,
+                "secret": false,
+                "type": "string"
+            },
+            "username": {
+                "description": "Splunk username",
+                "required": true,
+                "secret": false,
+                "type": "string"
+            },
+            "verify": {
+                "default": true,
+                "description": "Check the validity of the SSL certificate returned by Splunk (default: true)",
+                "required": false,
+                "secret": false,
+                "type": "boolean"
+            }
+        },
+        "type": "object"
+    },
+    "splunk_instances": {
+        "additionalProperties": false,
+        "patternProperties": {
+            "^\\w+": {
+                "$ref": "#/properties/splunk_instance"
+            }
+        },
         "required": true,
-        "secret": false,
-        "type": "string"
-    },
-    "password": {
-        "description": "Splunk password",
-        "required": true,
-        "secret": true,
-        "type": "string"
-    },
-    "port": {
-        "default": 8089,
-        "description": "Splunk port (default 8089)",
-        "required": true,
-        "secret": false,
-        "type": "integer"
-    },
-    "scheme": {
-        "default": "https",
-        "description": "Protocol used for Splunk API - http or https",
-        "required": false,
-        "secret": false,
-        "type": "string"
-    },
-    "username": {
-        "description": "Splunk username",
-        "required": true,
-        "secret": false,
-        "type": "string"
-    },
-    "verify": {
-        "default": true,
-        "description": "Check the validity of the SSL certificate returned by Splunk",
-        "required": false,
-        "secret": false,
-        "type": "boolean"
+        "type": "object"
     }
 }
