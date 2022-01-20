@@ -24,7 +24,7 @@
             },
             "password": {
                 "description": "Splunk password",
-                "required": true,
+                "required": false,
                 "secret": true,
                 "type": "string"
             },
@@ -42,9 +42,15 @@
                 "secret": false,
                 "type": "string"
             },
+            "splunkToken": {
+                "description": "HEC URL endpoint (default: /services/collector)",
+                "required": false,
+                "secret": true,
+                "type": "string"
+            },
             "username": {
                 "description": "Splunk username",
-                "required": true,
+                "required": false,
                 "secret": false,
                 "type": "string"
             },
