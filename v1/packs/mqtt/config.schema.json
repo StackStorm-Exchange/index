@@ -24,7 +24,13 @@
         "type": "integer"
     },
     "protocol": {
+        "default": "MQTTv311",
         "description": "MQTT protocol version. Default MQTTv311",
+        "enum": [
+            "MQTTv3",
+            "MQTTv311",
+            "MQTTv5"
+        ],
         "required": false,
         "secret": false,
         "type": "string"
