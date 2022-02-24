@@ -6,7 +6,7 @@ keywords:
 - load balancer
 - ADC
 - network
-version: 1.0.0
+version: 1.1.0
 author: Hiroyasu OHYAMA
 email: user.localhost2000@gmail.com
 python_versions:
@@ -35,8 +35,9 @@ content:
     - list_slb_service_groups
     - list_slb_virtual_servers
   tests:
-    count: 3
+    count: 4
     resources:
     - acos_base_action_test_case.py
     - test_get_slb_server.py
     - test_list_slb_servers.py
+    - test_slb_service_group.py

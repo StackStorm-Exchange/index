@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1645273793,
-        "hash": "2d457dfb13e75e7375c6fea6e0e4d58f"
+        "generated_ts": 1645746603,
+        "hash": "9e7de5a46c93eb926db736e41d2dd7a3"
     },
     "packs": {
         "acos": {
@@ -32,11 +32,12 @@
                     ]
                 },
                 "tests": {
-                    "count": 3,
+                    "count": 4,
                     "resources": [
                         "acos_base_action_test_case.py",
                         "test_get_slb_server.py",
-                        "test_list_slb_servers.py"
+                        "test_list_slb_servers.py",
+                        "test_slb_service_group.py"
                     ]
                 }
             },
@@ -54,8 +55,9 @@
             ],
             "ref": "acos",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-acos",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "versions": [
+                "1.1.0",
                 "1.0.0",
                 "0.2.6",
                 "0.2.5",
