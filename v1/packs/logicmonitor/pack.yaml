@@ -5,7 +5,7 @@ keywords:
 - LogicMonitor
 - monitoring
 - alerting
-version: 1.0.0
+version: 1.1.0
 python_versions:
 - '3'
 author: LogicMonitor
@@ -13,10 +13,11 @@ email: null
 contributors:
 - Devansh Goel
 - Jason Fan
+- elmobp
 - Yuri Dubler <yuri.dubler@logicmonitor.com>
 content:
   actions:
-    count: 44
+    count: 45
     resources:
     - ack_alert_by_id
     - ack_collector_down_alert_by_id
@@ -36,6 +37,7 @@ content:
     - delete_escalation_chain_by_id
     - delete_ops_note_by_id
     - delete_sdt_by_id
+    - example_orquesta_restart_collector_down
     - get_admin_by_id
     - get_admin_list
     - get_alert_by_id
@@ -63,7 +65,7 @@ content:
     - patch_ops_note_by_id
     - patch_sdt_by_id
   rules:
-    count: 11
+    count: 12
     resources:
     - alert_throttling_alert_rule
     - collector_failover_alert_rule
@@ -73,6 +75,7 @@ content:
     - datasource_alert_rule
     - devicegroup_alert_rule
     - eventsource_alert_rule
+    - example_orquesta_restart_collector_down_rule
     - jobmonitor_alert_rule
     - lmlogs_alert_rule
     - service_alert_rule

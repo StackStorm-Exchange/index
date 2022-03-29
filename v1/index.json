@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1646949378,
-        "hash": "9e7de5a46c93eb926db736e41d2dd7a3"
+        "generated_ts": 1648575237,
+        "hash": "bcb91800e4721e104d5c06606ca91979"
     },
     "packs": {
         "acos": {
@@ -10158,7 +10158,7 @@
             "author": "LogicMonitor",
             "content": {
                 "actions": {
-                    "count": 44,
+                    "count": 45,
                     "resources": [
                         "ack_alert_by_id",
                         "ack_collector_down_alert_by_id",
@@ -10178,6 +10178,7 @@
                         "delete_escalation_chain_by_id",
                         "delete_ops_note_by_id",
                         "delete_sdt_by_id",
+                        "example_orquesta_restart_collector_down",
                         "get_admin_by_id",
                         "get_admin_list",
                         "get_alert_by_id",
@@ -10207,7 +10208,7 @@
                     ]
                 },
                 "rules": {
-                    "count": 11,
+                    "count": 12,
                     "resources": [
                         "alert_throttling_alert_rule",
                         "collector_failover_alert_rule",
@@ -10217,6 +10218,7 @@
                         "datasource_alert_rule",
                         "devicegroup_alert_rule",
                         "eventsource_alert_rule",
+                        "example_orquesta_restart_collector_down_rule",
                         "jobmonitor_alert_rule",
                         "lmlogs_alert_rule",
                         "service_alert_rule"
@@ -10232,6 +10234,7 @@
             "contributors": [
                 "Devansh Goel",
                 "Jason Fan",
+                "elmobp",
                 "Yuri Dubler <yuri.dubler@logicmonitor.com>"
             ],
             "description": "This is the official LogicMonitor pack.",
@@ -10247,8 +10250,9 @@
             ],
             "ref": "logicmonitor",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-logicmonitor",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "versions": [
+                "1.1.0",
                 "1.0.0"
             ]
         },

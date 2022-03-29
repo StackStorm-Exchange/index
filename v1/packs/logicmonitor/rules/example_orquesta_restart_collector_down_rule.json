@@ -1,0 +1,21 @@
+{
+    "action": {
+        "parameters": {
+            "agent_id": "{{trigger.agentId}}"
+        },
+        "ref": "logicmonitor.example_orquesta_restart_collector_down"
+    },
+    "criteria": {
+        "trigger.type": {
+            "pattern": "agentDownAlert",
+            "type": "equals"
+        }
+    },
+    "description": "Receives a Collector Down Alert which triggers an Orquesta workflow that restarts the Collector",
+    "enabled": false,
+    "name": "example_orquesta_restart_collector_down_rule",
+    "pack": "logicmonitor",
+    "trigger": {
+        "type": "logicmonitor.alert_trigger"
+    }
+}
