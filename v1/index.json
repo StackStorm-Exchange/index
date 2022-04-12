@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1649339203,
-        "hash": "d44bf3ef101b710fac51cce28e3e4c95"
+        "generated_ts": 1649792227,
+        "hash": "a7432ecd9b896a86dc77bd09cae7c7e9"
     },
     "packs": {
         "acos": {
@@ -16406,12 +16406,15 @@
             "description": "VMware vSphere",
             "email": "paul.mulvihill@pulsant.com",
             "name": "vsphere",
-            "python_versions": null,
+            "python_versions": [
+                "3"
+            ],
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "1.2.0",
+            "version": "1.3.2",
             "versions": [
+                "1.3.2",
                 "1.2.0",
                 "1.1.0",
                 "1.0.2",
