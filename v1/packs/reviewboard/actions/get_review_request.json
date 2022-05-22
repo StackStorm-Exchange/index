@@ -1,0 +1,14 @@
+{
+    "description": "Get a ReviewBoard review request.",
+    "enabled": true,
+    "entry_point": "get_review_request.py",
+    "name": "get_review_request",
+    "parameters": {
+        "review": {
+            "description": "The ReviewBoard Review id (e.g. 12345).",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

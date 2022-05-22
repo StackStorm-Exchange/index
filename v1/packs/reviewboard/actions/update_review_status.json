@@ -1,0 +1,29 @@
+{
+    "description": "Update Status on a particular ReviewBoard review .",
+    "enabled": true,
+    "entry_point": "update_review_status.py",
+    "name": "update_review_status",
+    "parameters": {
+        "reason": {
+            "description": "Reason why the Reviewboard Review is being closed.",
+            "required": true,
+            "type": "string"
+        },
+        "review": {
+            "description": "The ReviewBoard Review id (e.g. 12345).",
+            "required": true,
+            "type": "integer"
+        },
+        "status": {
+            "description": "Status type to which Review should be transitioned to.",
+            "enum": [
+                "pending",
+                "submitted",
+                "discarded"
+            ],
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

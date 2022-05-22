@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1652945693,
-        "hash": "17fbb1da349cf6bb8b9b2758b4647b9c"
+        "generated_ts": 1653259692,
+        "hash": "0cc0cd884bb6e79b4e726c2124e5d60e"
     },
     "packs": {
         "acos": {
@@ -14022,6 +14022,46 @@
                 "0.0.3",
                 "0.0.2",
                 "0.0.1"
+            ]
+        },
+        "reviewboard": {
+            "author": "Sekhar Sankaramanchi",
+            "content": {
+                "actions": {
+                    "count": 3,
+                    "resources": [
+                        "get_review_request",
+                        "update_review",
+                        "update_review_status"
+                    ]
+                },
+                "sensors": {
+                    "count": 1,
+                    "resources": [
+                        "ReviewboardSensor"
+                    ]
+                }
+            },
+            "contributors": [
+                "Sekhar Sankaramanchi <murthysrd@gmail.com>"
+            ],
+            "dependencies": [
+                "core"
+            ],
+            "description": "Reviewboard Integrations.",
+            "email": "murthysrd@gmail.com",
+            "keywords": [
+                "Reviewboard"
+            ],
+            "name": "reviewboard",
+            "python_versions": [
+                "3"
+            ],
+            "ref": "reviewboard",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reviewboard",
+            "version": "0.1.0",
+            "versions": [
+                "0.1.0"
             ]
         },
         "salt": {

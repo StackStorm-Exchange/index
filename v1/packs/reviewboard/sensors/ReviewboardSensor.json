@@ -1,0 +1,44 @@
+{
+    "class_name": "ReviewboardSensor",
+    "description": "Sensor which monitors Reviewboard for activity",
+    "entry_point": "rbt_sensor.py",
+    "poll_interval": 15,
+    "trigger_types": [
+        {
+            "description": "Trigger which indicates a new review has been posted to a reviewboard server",
+            "name": "review_tracker",
+            "payload_schema": {
+                "properties": {
+                    "bugs_closed": {
+                        "type": "array"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "integer"
+                    },
+                    "issue_open_count": {
+                        "type": "integer"
+                    },
+                    "ship_it_count": {
+                        "type": "integer"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "submitter": {
+                        "type": "string"
+                    },
+                    "summary": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    ]
+}

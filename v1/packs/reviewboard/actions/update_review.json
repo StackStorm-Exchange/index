@@ -1,0 +1,36 @@
+{
+    "description": "Update a field on a particular ReviewBoard review .",
+    "enabled": true,
+    "entry_point": "update_review.py",
+    "name": "update_review",
+    "parameters": {
+        "field": {
+            "description": "the field name.",
+            "required": true,
+            "type": "string"
+        },
+        "publish": {
+            "default": false,
+            "description": "the field text itself.",
+            "required": false,
+            "type": "boolean"
+        },
+        "review": {
+            "description": "The ReviewBoard Review id (e.g. 12345).",
+            "required": true,
+            "type": "integer"
+        },
+        "trivial": {
+            "default": false,
+            "description": "reviewboard will send notifications (default is false)",
+            "required": false,
+            "type": "boolean"
+        },
+        "value": {
+            "description": "the field text itself.",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

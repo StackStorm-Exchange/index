@@ -1,0 +1,64 @@
+{
+    "allow_caching": {
+        "default": true,
+        "description": "Allow RBClient to do caching of the requests (Default: True).",
+        "type": "boolean"
+    },
+    "api_token": {
+        "description": "API token if using the token auth_method",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "auth_method": {
+        "default": "token",
+        "description": "Authentication method to use - token or basic",
+        "enum": [
+            "token",
+            "basic"
+        ],
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "in_memory_cache": {
+        "default": false,
+        "description": "Allow the cache to be maintained in memory (Default: False).",
+        "type": "boolean"
+    },
+    "password": {
+        "description": "Password if using the basic auth_method",
+        "required": false,
+        "secret": true,
+        "type": "string"
+    },
+    "poll_interval": {
+        "default": 30,
+        "description": "Polling interval - default 30s",
+        "required": false,
+        "secret": false,
+        "type": "integer"
+    },
+    "save_cookies": {
+        "default": true,
+        "description": "Save Cookies generated using password and username in a file (Default: True).",
+        "type": "boolean"
+    },
+    "url": {
+        "description": "URL of the ReviewBoard instance (e.g. ``https://reviewboard.domain.tld``)",
+        "required": true,
+        "secret": false,
+        "type": "string"
+    },
+    "username": {
+        "description": "Username if using the basic auth_method",
+        "required": false,
+        "secret": false,
+        "type": "string"
+    },
+    "verify": {
+        "default": true,
+        "description": "Verify SSL certificate. Set to False to disable verification (Default: True).",
+        "type": "boolean"
+    }
+}
