@@ -5,18 +5,19 @@ keywords:
 - splunk
 - monitoring
 - alerting
-version: 2.1.1
+version: 2.1.2
 author: StackStorm, Inc.
 email: info@stackstorm.com
 python_versions:
 - '3'
 content:
   actions:
-    count: 3
+    count: 4
     resources:
+    - get_hec_token
     - get_user
     - search
-    - sendlog
+    - send_log
   aliases:
     count: 1
     resources:

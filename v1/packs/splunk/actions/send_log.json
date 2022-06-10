@@ -1,0 +1,33 @@
+{
+    "description": "Action to send log to Splunk via API.",
+    "enabled": true,
+    "entry_point": "send_log.py",
+    "name": "send_log",
+    "parameters": {
+        "event": {
+            "description": "Event message to be sent to Splunk",
+            "position": 3,
+            "required": true,
+            "type": "string"
+        },
+        "index": {
+            "description": "Index name to receive logs",
+            "position": 1,
+            "required": true,
+            "type": "string"
+        },
+        "instance": {
+            "description": "Splunk instance if not default to send too (must be in config.yaml)",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "Splunk token for authentication",
+            "position": 2,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

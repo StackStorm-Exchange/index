@@ -1,0 +1,14 @@
+{
+    "description": "Splunk get HEC token",
+    "entry_point": "get_hec_token.py",
+    "name": "get_hec_token",
+    "parameters": {
+        "instance": {
+            "description": "Splunk instance if not default to search (must be in config.yaml)",
+            "position": 0,
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
