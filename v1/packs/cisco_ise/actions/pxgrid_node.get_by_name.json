@@ -1,5 +1,5 @@
 {
-    "description": "Retrieve Pxgrid Node by name",
+    "description": "Delete the Pxgrid Node by name",
     "enabled": true,
     "entry_point": "action.py",
     "name": "pxgrid_node.get_by_name",
@@ -29,8 +29,8 @@
             "type": "string"
         },
         "http_method": {
-            "default": "GET",
-            "description": "the HTTP Method to be used for this action",
+            "default": "DELETE",
+            "description": "The HTTP Method used for this action",
             "immutable": true,
             "required": true,
             "type": "string"
