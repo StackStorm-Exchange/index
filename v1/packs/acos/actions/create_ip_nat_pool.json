@@ -1,0 +1,57 @@
+{
+    "description": "create configuration of IP address of NAT pool",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "create_ip_nat_pool",
+    "parameters": {
+        "action": {
+            "default": "create",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "type": "string"
+        },
+        "end_address": {
+            "description": "End IP address of NAT pool",
+            "required": true,
+            "type": "string"
+        },
+        "ip_rr": {
+            "default": false,
+            "description": "IP address round-robin behavior",
+            "type": "boolean"
+        },
+        "netmask": {
+            "description": "Netmask for NAT pool",
+            "required": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "nat.pool",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": false,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "pool_name": {
+            "description": "Pool name or pool group",
+            "required": true,
+            "type": "string"
+        },
+        "start_address": {
+            "description": "Start IP address of NAT pool",
+            "required": true,
+            "type": "string"
+        },
+        "vrid": {
+            "description": "VRRP-A vrid (Specify ha VRRP-A vrid)",
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

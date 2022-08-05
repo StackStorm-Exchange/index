@@ -1,0 +1,33 @@
+{
+    "description": "get configuration of IP address of NAT pool",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "get_ip_nat_pool",
+    "parameters": {
+        "action": {
+            "default": "get",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "type": "string"
+        },
+        "name": {
+            "description": "pool-name to get IP address of NAT pool",
+            "required": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "nat.pool",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": false,
+            "immutable": true,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}
