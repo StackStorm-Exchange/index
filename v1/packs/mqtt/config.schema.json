@@ -65,8 +65,19 @@
         "items": {
             "type": "string"
         },
-        "required": true,
+        "required": false,
         "type": "array"
+    },
+    "transport": {
+        "default": "tcp",
+        "description": "MQTT transport mechanism. Default: tcp",
+        "enum": [
+            "tcp",
+            "websockets"
+        ],
+        "required": false,
+        "secret": false,
+        "type": "string"
     },
     "userdata": {
         "description": "Custom userdata to include with each MQTT message payload",
