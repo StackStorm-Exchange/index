@@ -1,31 +1,31 @@
 {
-    "description": "get a ServiceGroup information which is registered in SLB",
+    "description": "list VirtualServers which are registered in the SLB",
     "enabled": true,
     "entry_point": "ax_action_runner.py",
-    "name": "get_slb_service_group",
+    "name": "list_slb_virtual_servers_v21",
+    "pack": "acos",
     "parameters": {
         "action": {
-            "default": "get",
+            "default": "all",
             "immutable": true,
             "type": "string"
         },
         "appliance": {
             "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
-            "required": true,
             "type": "string"
         },
         "name": {
-            "description": "name of ServiceGroup to get",
-            "required": true,
+            "default": "",
+            "immutable": true,
             "type": "string"
         },
         "object_path": {
-            "default": "slb.service_group",
+            "default": "slb.virtual_server",
             "immutable": true,
             "type": "string"
         },
         "one_target": {
-            "default": true,
+            "default": false,
             "immutable": true,
             "type": "boolean"
         },

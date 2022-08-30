@@ -43,6 +43,10 @@
             "required": true,
             "type": "string"
         },
+        "specified_target": {
+            "description": "Specify the target dynamically, (key: 'target', 'api_version', 'userid', 'passwd')",
+            "type": "object"
+        },
         "start_address": {
             "description": "Start IP address of NAT pool",
             "required": true,

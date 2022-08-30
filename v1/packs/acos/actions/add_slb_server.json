@@ -34,6 +34,10 @@
             "immutable": true,
             "type": "boolean"
         },
+        "specified_target": {
+            "description": "Specify the target dynamically, (key: 'target', 'api_version', 'userid', 'passwd')",
+            "type": "object"
+        },
         "status": {
             "default": false,
             "description": "When it is set to True, the 'Action' parameter of registering server will be 'Enable'",

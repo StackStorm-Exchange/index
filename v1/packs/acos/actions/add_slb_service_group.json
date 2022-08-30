@@ -62,6 +62,10 @@
                 "udp"
             ],
             "type": "string"
+        },
+        "specified_target": {
+            "description": "Specify the target dynamically, (key: 'target', 'api_version', 'userid', 'passwd')",
+            "type": "object"
         }
     },
     "runner_type": "python-script"

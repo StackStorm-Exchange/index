@@ -1,22 +1,21 @@
 {
-    "description": "get a ServiceGroup information which is registered in SLB",
+    "description": "lists ServiceGroup entries which are registered in SLB",
     "enabled": true,
     "entry_point": "ax_action_runner.py",
-    "name": "get_slb_service_group",
+    "name": "list_slb_service_groups_v21",
     "parameters": {
         "action": {
-            "default": "get",
+            "default": "all",
             "immutable": true,
             "type": "string"
         },
         "appliance": {
             "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
-            "required": true,
             "type": "string"
         },
         "name": {
-            "description": "name of ServiceGroup to get",
-            "required": true,
+            "default": "",
+            "immutable": true,
             "type": "string"
         },
         "object_path": {
@@ -25,7 +24,7 @@
             "type": "string"
         },
         "one_target": {
-            "default": true,
+            "default": false,
             "immutable": true,
             "type": "boolean"
         },
