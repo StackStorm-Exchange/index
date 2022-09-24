@@ -33,6 +33,14 @@
                             "type": "string"
                         },
                         "type": "array"
+                    },
+                    "quorum_queues": {
+                        "description": "List of queues with quorum type",
+                        "items": {
+                            "required": false,
+                            "type": "string"
+                        },
+                        "type": "array"
                     }
                 },
                 "required": true,
