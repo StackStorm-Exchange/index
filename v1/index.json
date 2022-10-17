@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1666026432,
-        "hash": "6cc8d5ffa87b61bbdda73dd4988fa77e"
+        "generated_ts": 1666032680,
+        "hash": "3b634257f310f1ef487462875d117715"
     },
     "packs": {
         "acos": {
@@ -11788,12 +11788,13 @@
             "author": "Jon Middleton",
             "content": {
                 "actions": {
-                    "count": 15,
+                    "count": 16,
                     "resources": [
                         "contains",
                         "fping",
                         "geoip",
                         "hosts",
+                        "ip_calc",
                         "is_valid_asa_nameif",
                         "is_valid_hostname",
                         "is_valid_ip",
@@ -11850,8 +11851,9 @@
             ],
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "versions": [
+                "1.2.0",
                 "1.1.0",
                 "1.0.0",
                 "0.6.0",

@@ -1,0 +1,15 @@
+{
+    "description": "IP calculator",
+    "enabled": true,
+    "entry_point": "ip_calc.py",
+    "name": "ip_calc",
+    "pack": "networking_utils",
+    "parameters": {
+        "subnet": {
+            "description": "IPv4 Subnet",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
