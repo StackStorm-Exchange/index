@@ -1,7 +1,7 @@
 {
-    "description": "Delete a VLAN",
+    "description": "Get a VLAN",
     "enabled": true,
-    "entry_point": "run_compute.py",
+    "entry_point": "delete_vlan.py",
     "name": "delete_vlan",
     "parameters": {
         "action": {
