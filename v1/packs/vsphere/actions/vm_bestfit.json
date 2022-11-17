@@ -9,6 +9,11 @@
             "required": true,
             "type": "string"
         },
+        "datacenter_name": {
+            "description": "Name of the datacenter in vSphere",
+            "required": true,
+            "type": "string"
+        },
         "datastore_filter_regex_list": {
             "description": "'Regular expressions to filter the list of available datastores. If a datastore name matches any one of these expressions then it will not be returned by this action. example: [\"(?i)(backup)\", \"ds_name\"] this will filter out any datastores called \"ds_name\" as well as any with \"backup\" in their name'\n",
             "items": {
