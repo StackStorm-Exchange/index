@@ -1,10 +1,11 @@
 {
     "auth_method": {
         "default": "oauth",
-        "description": "Authentication method to use - oauth or basic",
+        "description": "Authentication method to use - oauth, basic or pat",
         "enum": [
             "oauth",
             "basic",
+            "pat",
             "cookie"
         ],
         "required": true,
@@ -52,6 +53,12 @@
         "description": "Path to a private key file, e.g. /home/vagrant/jira.pem",
         "required": false,
         "secret": false,
+        "type": "string"
+    },
+    "token": {
+        "description": "PAT token",
+        "required": false,
+        "secret": true,
         "type": "string"
     },
     "url": {
