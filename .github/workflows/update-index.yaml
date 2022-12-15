@@ -18,6 +18,11 @@ on:
   workflow_dispatch:
 
 jobs:
+
+  enable_pack_release_workflow:
+    name: 'Enable Pack Release Workflow'
+    uses: StackStorm-Exchange/ci/.github/workflows/pack-enable_release_workflow.yaml@master
+
   update_index:
     name: 'Update Index'
     uses: StackStorm-Exchange/ci/.github/workflows/index-update.yaml@master
