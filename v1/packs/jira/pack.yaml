@@ -5,19 +5,20 @@ keywords:
 - issues
 - ticket management
 - project management
-version: 2.0.0
+version: 2.1.0
 python_versions:
 - '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 14
+    count: 15
     resources:
     - add_field_value
     - assign_issue
     - attach_file_to_issue
     - attach_files_to_issue
+    - bulk_link_issue
     - comment_issue
     - create_issue
     - get_issue

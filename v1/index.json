@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1675013950,
-        "hash": "f4428cfd9ccbc2f99a8c9501f3cf062d"
+        "generated_ts": 1675179485,
+        "hash": "cf25e556307ecde395e5261d3c47c363"
     },
     "packs": {
         "acos": {
@@ -9298,12 +9298,13 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 14,
+                    "count": 15,
                     "resources": [
                         "add_field_value",
                         "assign_issue",
                         "attach_file_to_issue",
                         "attach_files_to_issue",
+                        "bulk_link_issue",
                         "comment_issue",
                         "create_issue",
                         "get_issue",
@@ -9346,8 +9347,9 @@
             ],
             "ref": "jira",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "versions": [
+                "2.1.0",
                 "2.0.0",
                 "1.1.0",
                 "1.0.0",
