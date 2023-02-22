@@ -3,6 +3,13 @@
     "entry_point": "search.py",
     "name": "search",
     "parameters": {
+        "count": {
+            "default": 100,
+            "description": "The maximum number of items to return",
+            "position": 2,
+            "required": true,
+            "type": "integer"
+        },
         "instance": {
             "description": "Splunk instance if not default to search (must be in config.yaml)",
             "position": 0,
