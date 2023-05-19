@@ -6,14 +6,14 @@ keywords:
 - load balancer
 - ADC
 - network
-version: 1.3.0
+version: 1.4.0
 author: Hiroyasu OHYAMA
 email: user.localhost2000@gmail.com
 python_versions:
 - '3'
 content:
   actions:
-    count: 26
+    count: 28
     resources:
     - add_slb_server
     - add_slb_server_port
@@ -35,10 +35,12 @@ content:
     - get_slb_service_group_members
     - get_slb_virtual_server
     - list_ip_nat_pool
+    - list_slb_policy_templates_v21
     - list_slb_servers
     - list_slb_servers_v21
     - list_slb_service_groups
     - list_slb_service_groups_v21
+    - list_slb_templates
     - list_slb_virtual_servers
     - list_slb_virtual_servers_v21
   tests:

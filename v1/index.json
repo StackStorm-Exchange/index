@@ -1,14 +1,14 @@
 {
     "metadata": {
-        "generated_ts": 1683786608,
-        "hash": "6dede73a2b455231171ae5026c0645ba"
+        "generated_ts": 1684464868,
+        "hash": "173cee6b8a0758b54c96710b9da354dd"
     },
     "packs": {
         "acos": {
             "author": "Hiroyasu OHYAMA",
             "content": {
                 "actions": {
-                    "count": 26,
+                    "count": 28,
                     "resources": [
                         "add_slb_server",
                         "add_slb_server_port",
@@ -30,10 +30,12 @@
                         "get_slb_service_group_members",
                         "get_slb_virtual_server",
                         "list_ip_nat_pool",
+                        "list_slb_policy_templates_v21",
                         "list_slb_servers",
                         "list_slb_servers_v21",
                         "list_slb_service_groups",
                         "list_slb_service_groups_v21",
+                        "list_slb_templates",
                         "list_slb_virtual_servers",
                         "list_slb_virtual_servers_v21"
                     ]
@@ -63,8 +65,9 @@
             ],
             "ref": "acos",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-acos",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "versions": [
+                "1.4.0",
                 "1.3.0",
                 "1.2.0",
                 "1.1.0",
