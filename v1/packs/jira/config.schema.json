@@ -6,7 +6,8 @@
             "oauth",
             "basic",
             "pat",
-            "cookie"
+            "cookie",
+            "api_token"
         ],
         "required": true,
         "secret": false,
@@ -56,7 +57,7 @@
         "type": "string"
     },
     "token": {
-        "description": "PAT token",
+        "description": "PAT or API token",
         "required": false,
         "secret": true,
         "type": "string"
@@ -68,7 +69,7 @@
         "type": "string"
     },
     "username": {
-        "description": "Username if using the basic or cookie auth_method",
+        "description": "Username if using the basic, api_token, or cookie auth_method",
         "required": false,
         "secret": false,
         "type": "string"
