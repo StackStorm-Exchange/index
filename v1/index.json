@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1694083812,
-        "hash": "d11dd7b477bec01322f2eb5ff7eeaa63"
+        "generated_ts": 1694093721,
+        "hash": "bf754a584cfceac0007c0ba495d88668"
     },
     "packs": {
         "acos": {
@@ -15924,18 +15924,21 @@
             "author": "steve.neuharth",
             "content": {
                 "actions": {
-                    "count": 10,
+                    "count": 13,
                     "resources": [
                         "create_token",
                         "delete",
                         "delete_policy",
+                        "generate_secret",
                         "get_policy",
                         "is_initialized",
                         "list_policies",
                         "read",
                         "read_kv",
+                        "revoke_token",
                         "set_policy",
-                        "write"
+                        "write",
+                        "write_secret"
                     ]
                 },
                 "tests": {
@@ -15958,9 +15961,10 @@
             },
             "contributors": [
                 "Andy Moore <andrew.moore@pearson.com>",
-                "Jacob Floyd <cognifloyd@gmail.com>"
+                "Jacob Floyd <cognifloyd@gmail.com>",
+                "Carlos <nzlosh@yahoo.com>"
             ],
-            "description": "HashiCorp Vault",
+            "description": "StackStorm pack integration with HashiCorp Vault",
             "email": "steve.neuharth@target.com",
             "name": "vault",
             "python_versions": [
@@ -15968,8 +15972,9 @@
             ],
             "ref": "vault",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vault",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "versions": [
+                "2.0.0",
                 "1.0.0",
                 "0.6.0",
                 "0.5.2",

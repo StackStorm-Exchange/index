@@ -6,55 +6,93 @@
     "pack": "vault",
     "parameters": {
         "display_name": {
-            "description": "",
+            "description": "Name to associate with this token. This is a non-sensitive value that can be used to help identify created secrets (e.g. prefixes).",
+            "required": false,
+            "type": "string"
+        },
+        "entity_alias": {
+            "description": "Name of the entity alias to associate with during token creation.",
+            "type": "string"
+        },
+        "explicit_max_ttl": {
+            "description": "If set, the token will never be able to be renewed or used past the value set at issue time.",
             "required": false,
             "type": "string"
         },
         "meta": {
-            "description": "",
+            "description": "Metadata to associate with the token. This metadata will show in the audit log when the token is used.",
+            "required": false,
+            "type": "string"
+        },
+        "mount_point": {
+            "default": "token",
+            "description": "The 'path' the method/backend was mounted on.",
             "required": false,
             "type": "string"
         },
         "no_default_policy": {
             "default": false,
-            "description": "",
+            "description": "Detach the 'default' policy from the policy set for this token.",
             "required": false,
             "type": "boolean"
         },
         "no_parent": {
             "default": false,
-            "description": "",
+            "description": "This argument only has effect if used by a root or sudo caller.",
             "required": false,
             "type": "boolean"
         },
         "num_uses": {
-            "description": "",
+            "description": "Number of times this token can be used. After the last use, the token is automatically revoked.",
             "required": false,
             "type": "string"
         },
-        "orphan": {
-            "default": false,
-            "description": "",
+        "period": {
+            "description": "If specified, the token will be periodic; it will have no maximum TTL (unless an 'explicit-max-ttl' is also set) but every renewal will use the given period. Requires a root token or one with the sudo capability.",
             "required": false,
-            "type": "boolean"
+            "type": "string"
         },
         "policies": {
-            "description": "",
+            "description": "List of policy names to associate with this token.",
+            "items": {
+                "required": true,
+                "type": "string"
+            },
             "required": false,
             "type": "array"
         },
+        "profile_name": {
+            "description": "The profile to use to run this action.",
+            "required": false,
+            "type": "string"
+        },
+        "renewable": {
+            "description": "True: Permit the token to be renewable up to the system/mount maximum TTL. False: Token can't be renewed past its initial TTL.",
+            "required": false,
+            "type": "boolean"
+        },
+        "role_name": {
+            "description": "The name of the token role.",
+            "required": false,
+            "type": "string"
+        },
         "token_id": {
-            "description": "",
+            "description": "The ID of the client token.  By default, this is an auto-generated value.",
+            "required": false,
+            "type": "string"
+        },
+        "token_type": {
+            "description": "The token type. Can be 'batch' or 'service'. Defaults to the type specified by the role configuration named by role_name.",
             "required": false,
             "type": "string"
         },
         "ttl": {
-            "description": "",
+            "description": "Initial TTL to associate with the token, provided as '1h', where hour is the largest suffix. (default unit: seconds)",
             "required": false,
-            "type": "integer"
+            "type": "string"
         },
         "wrap_ttl": {
-            "description": "",
+            "description": "Specifies response wrapping token creation with duration. IE: '15s', '20m', '25h'.",
             "required": false,
             "type": "string"
         }

@@ -1,7 +1,7 @@
 ref: vault
 name: vault
-description: HashiCorp Vault
-version: 1.0.0
+description: StackStorm pack integration with HashiCorp Vault
+version: 2.0.0
 python_versions:
 - '3'
 author: steve.neuharth
@@ -9,20 +9,24 @@ email: steve.neuharth@target.com
 contributors:
 - Andy Moore <andrew.moore@pearson.com>
 - Jacob Floyd <cognifloyd@gmail.com>
+- Carlos <nzlosh@yahoo.com>
 content:
   actions:
-    count: 10
+    count: 13
     resources:
     - create_token
     - delete
     - delete_policy
+    - generate_secret
     - get_policy
     - is_initialized
     - list_policies
     - read
     - read_kv
+    - revoke_token
     - set_policy
     - write
+    - write_secret
   tests:
     count: 12
     resources:

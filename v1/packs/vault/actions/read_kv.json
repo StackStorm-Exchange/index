@@ -6,12 +6,14 @@
     "parameters": {
         "kv_version": {
             "description": "The version of the KV store in vault.  Use 1 for legacy kv stores, 2 for newer kv stores",
+            "position": 1,
             "required": true,
             "type": "number"
         },
         "mount_point": {
             "default": "secret",
             "description": "The mount point of the kv store",
+            "position": 2,
             "required": true,
             "type": "string"
         },
@@ -21,9 +23,15 @@
             "required": true,
             "type": "string"
         },
+        "profile_name": {
+            "description": "The profile to use to run this action.",
+            "required": false,
+            "type": "string"
+        },
         "version": {
             "default": "1",
             "description": "The version of the kv *data*",
+            "position": 3,
             "required": true,
             "type": "string"
         }

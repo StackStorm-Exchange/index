@@ -3,5 +3,12 @@
     "enabled": true,
     "entry_point": "list_policies.py",
     "name": "list_policies",
+    "parameters": {
+        "profile_name": {
+            "description": "The profile to use to run this action.",
+            "required": false,
+            "type": "string"
+        }
+    },
     "runner_type": "python-script"
 }

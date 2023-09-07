@@ -1,0 +1,27 @@
+{
+    "description": "Revoke a token and all its child tokens.",
+    "enabled": true,
+    "entry_point": "revoke_token.py",
+    "name": "revoke_token",
+    "pack": "vault",
+    "parameters": {
+        "mount_point": {
+            "default": "token",
+            "description": "The 'path' the method/backend was mounted on.",
+            "required": false,
+            "type": "string"
+        },
+        "profile_name": {
+            "description": "The profile to use to run this action.",
+            "required": false,
+            "type": "string"
+        },
+        "token": {
+            "description": "Token to revoke.",
+            "position": 0,
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

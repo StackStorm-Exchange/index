@@ -1,48 +1,80 @@
 {
-    "auth_method": {
-        "default": "token",
-        "description": "Authentication method",
-        "enum": [
-            "approle",
-            "token"
-        ],
-        "required": false,
-        "type": "string"
-    },
-    "cert": {
-        "description": "Path to client-side certificate",
-        "required": false,
-        "secret": false,
-        "type": "string"
-    },
-    "role_id": {
-        "description": "Authentication approle role-id (method=approle)",
-        "required": false,
-        "secret": true,
-        "type": "string"
-    },
-    "secret_id": {
-        "description": "Authentication approle secret-id (method=approle)",
-        "required": false,
-        "secret": true,
-        "type": "string"
-    },
-    "token": {
-        "description": "Authentication token (method=token)",
-        "required": false,
-        "secret": true,
-        "type": "string"
-    },
-    "url": {
-        "description": "URL for the Vault server",
+    "default_profile": {
+        "description": "The default profile to use in an action when none is given.",
         "required": true,
-        "secret": false,
         "type": "string"
     },
-    "verify": {
-        "default": true,
-        "description": "Whether to verify the SSL certificate or not",
-        "secret": false,
-        "type": "boolean"
+    "profiles": {
+        "description": "Profiles definitions",
+        "items": {
+            "additionalProperties": false,
+            "properties": {
+                "auth_method": {
+                    "default": "token",
+                    "description": "Authentication method",
+                    "enum": [
+                        "approle",
+                        "token"
+                    ],
+                    "required": false,
+                    "type": "string"
+                },
+                "ca_cert_path": {
+                    "default": "",
+                    "description": "CA Certificate path. Defaults to empty string. When path is provided, TLS certificates are verified.",
+                    "required": false,
+                    "type": "string"
+                },
+                "client_cert_path": {
+                    "description": "Client side certificates for HTTPS request",
+                    "required": false,
+                    "type": "string"
+                },
+                "client_key_path": {
+                    "description": "Client private key for HTTPS request",
+                    "required": false,
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Name of the profile.",
+                    "required": true,
+                    "type": "string"
+                },
+                "role_id": {
+                    "description": "Authentication approle role-id (method=approle)",
+                    "required": false,
+                    "secret": true,
+                    "type": "string"
+                },
+                "secret_id": {
+                    "description": "Authentication approle secret-id (method=approle)",
+                    "required": false,
+                    "secret": true,
+                    "type": "string"
+                },
+                "token": {
+                    "description": "Authentication token (method=token)",
+                    "required": false,
+                    "secret": true,
+                    "type": "string"
+                },
+                "url": {
+                    "description": "URL for the Vault server",
+                    "required": true,
+                    "secret": false,
+                    "type": "string"
+                },
+                "verify": {
+                    "default": false,
+                    "description": "Verify the TLS certificate for HTTPS requests. Default false (this option is ignored if ca_cert_path is supplied).",
+                    "required": false,
+                    "type": "boolean"
+                }
+            },
+            "required": true,
+            "type": "object"
+        },
+        "required": true,
+        "type": "array"
     }
 }
