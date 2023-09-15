@@ -1,0 +1,15 @@
+{
+    "ack": {
+        "format": "Sending your ChatGPT chat completion query now, please wait..."
+    },
+    "action_ref": "openai.chat_completion",
+    "description": "Make a chat completion query to the OpenAI API",
+    "enabled": true,
+    "formats": [
+        "ask chatgpt {{query}}"
+    ],
+    "name": "openai_chat_completion",
+    "result": {
+        "format": "Response from OpenAI for the ChatGPT chat completion query {{execution.parameters.question}}:\n\n{% if execution.status == 'succeeded' %}\n  {% for choice in execution.result.result.choices %}\n    -----\n    {{ choice.message.content }}\n  {% endfor %}        \n{% else %}\nQuery to OpenAI failed: {{execution}}\n{% endif %}\n"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "description": "Action to query the OpenAI image API.",
+    "enabled": true,
+    "entry_point": "image_generation.py",
+    "name": "image_generation",
+    "pack": "openai",
+    "parameters": {
+        "query": {
+            "required": true,
+            "secret": false,
+            "type": "string"
+        },
+        "size": {
+            "default": "512x512",
+            "required": false,
+            "secret": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

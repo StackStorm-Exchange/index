@@ -1,0 +1,21 @@
+{
+    "description": "Action to query the OpenAI chat completion API.",
+    "enabled": true,
+    "entry_point": "chat_completion.py",
+    "name": "chat_completion",
+    "pack": "openai",
+    "parameters": {
+        "model": {
+            "default": "gpt-4",
+            "required": false,
+            "secret": false,
+            "type": "string"
+        },
+        "query": {
+            "required": true,
+            "secret": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1694789677,
-        "hash": "3d4a3a9185728230134e32a5b9d13c2b"
+        "generated_ts": 1694806969,
+        "hash": "b5b8588fa3046b98bae5fcefb396e4da"
     },
     "packs": {
         "acos": {
@@ -12201,6 +12201,48 @@
                 "0.1.3",
                 "0.1.2",
                 "0.1.1",
+                "0.1.0"
+            ]
+        },
+        "openai": {
+            "author": "David Larsen",
+            "content": {
+                "actions": {
+                    "count": 2,
+                    "resources": [
+                        "chat_completion",
+                        "image_generation"
+                    ]
+                },
+                "aliases": {
+                    "count": 2,
+                    "resources": [
+                        "openai_chat_completion",
+                        "openai_image_generation"
+                    ]
+                },
+                "tests": {
+                    "count": 2,
+                    "resources": [
+                        "test_action_chat_completion.py",
+                        "test_action_image_generation.py"
+                    ]
+                }
+            },
+            "description": "Pack to query OpenAI API",
+            "email": "dalarsen@expediagroup.com",
+            "keywords": [
+                "openai",
+                "ai"
+            ],
+            "name": "OpenAI Query Pack",
+            "python_versions": [
+                "3"
+            ],
+            "ref": "openai",
+            "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openai",
+            "version": "0.1.0",
+            "versions": [
                 "0.1.0"
             ]
         },
