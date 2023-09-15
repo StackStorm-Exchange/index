@@ -10,7 +10,7 @@
             "type": "string"
         },
         "token_user": {
-            "default": "{{action_context.api_user|default(None)}}",
+            "default": "{{action_context.api_user|default()}}",
             "description": "The",
             "type": "string"
         },
