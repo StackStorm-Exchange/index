@@ -1,0 +1,14 @@
+{
+    "description": "Retrieve links for a particular JIRA issue.",
+    "enabled": true,
+    "entry_point": "get_issue_links.py",
+    "name": "get_issue_links",
+    "parameters": {
+        "issue_key": {
+            "description": "Issue key (e.g. PROJECT-1000).",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

@@ -28,6 +28,12 @@
             "required": true,
             "type": "boolean"
         },
+        "include_links": {
+            "default": false,
+            "description": "True to include linked issues.",
+            "required": true,
+            "type": "boolean"
+        },
         "include_subtasks": {
             "default": false,
             "description": "True to include custom fields.",
