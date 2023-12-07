@@ -16,6 +16,13 @@
             "required": false,
             "type": "string"
         },
+        "offset": {
+            "default": 0,
+            "description": "A number that specifies the index of the first entity to return",
+            "position": 3,
+            "required": true,
+            "type": "integer"
+        },
         "query": {
             "description": "Search query (e.g. 'search * | head 10')",
             "position": 1,
