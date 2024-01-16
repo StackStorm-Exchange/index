@@ -10,6 +10,12 @@
             "secret": true,
             "type": "object"
         },
+        "folder_depth": {
+            "default": 0,
+            "description": "Folder level depth to search",
+            "required": false,
+            "type": "integer"
+        },
         "pattern": {
             "description": "regex pattern",
             "required": true,

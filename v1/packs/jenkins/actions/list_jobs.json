@@ -9,6 +9,11 @@
             "required": false,
             "secret": true,
             "type": "object"
+        },
+        "folder_depth": {
+            "description": "Number of levels to search, int. By default 0, which will limit search to toplevel. None disables the limit.",
+            "required": false,
+            "type": "integer"
         }
     },
     "runner_type": "python-script"
