@@ -49,6 +49,11 @@
             "required": true,
             "type": "integer"
         },
+        "service_id": {
+            "description": "Service ID",
+            "required": false,
+            "type": "string"
+        },
         "tags": {
             "description": "Array of tag strings",
             "required": false,

@@ -10,7 +10,7 @@
             "type": "integer"
         },
         "cable": {
-            "description": "Id of cable",
+            "description": "ID of cable",
             "required": false,
             "type": "integer"
         },
@@ -23,6 +23,11 @@
             "description": "Custom fields",
             "required": false,
             "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
         },
         "endpoint_uri": {
             "default": "/dcim/power-feeds/",

@@ -16,7 +16,7 @@
         },
         "group": {
             "description": "Group",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "http_verb": {
@@ -31,17 +31,17 @@
         },
         "interface_id": {
             "description": "Interface id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "interface_type": {
             "description": "Interface type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "priority": {
             "description": "Priority",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

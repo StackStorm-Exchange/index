@@ -5,7 +5,7 @@
     "name": "put.dcim.power_outlets",
     "parameters": {
         "cable": {
-            "description": "Id of cable",
+            "description": "ID of cable",
             "required": false,
             "type": "integer"
         },
@@ -58,6 +58,11 @@
             "description": "Mark connected",
             "required": false,
             "type": "boolean"
+        },
+        "module": {
+            "description": "Module",
+            "required": false,
+            "type": "integer"
         },
         "name": {
             "description": "Name",

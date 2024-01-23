@@ -45,7 +45,7 @@
             "type": "string"
         },
         "install_date": {
-            "description": "Date installed",
+            "description": "Installed",
             "required": false,
             "type": "string"
         },
@@ -68,6 +68,11 @@
             "description": "Tenant",
             "required": false,
             "type": "integer"
+        },
+        "termination_date": {
+            "description": "Terminates",
+            "required": false,
+            "type": "string"
         },
         "type": {
             "description": "Type",

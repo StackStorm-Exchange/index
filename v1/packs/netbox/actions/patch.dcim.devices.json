@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "patch.dcim.devices",
     "parameters": {
+        "airflow": {
+            "description": "Airflow",
+            "required": false,
+            "type": "string"
+        },
         "asset_tag": {
             "description": "Asset tag",
             "required": false,
@@ -24,14 +29,19 @@
             "required": false,
             "type": "object"
         },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "device_role": {
             "description": "Device role",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "device_type": {
             "description": "Device type",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -41,7 +51,7 @@
         },
         "face": {
             "description": "Rack face",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "get_detail_route_eligible": {
@@ -62,7 +72,7 @@
         "local_context_data": {
             "description": "Local context data",
             "required": false,
-            "type": "string"
+            "type": "object"
         },
         "location": {
             "description": "Location",
@@ -71,11 +81,11 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parent_device": {
-            "description": "Id of parent_device",
+            "description": "ID of parent_device",
             "required": false,
             "type": "integer"
         },
@@ -101,7 +111,7 @@
         },
         "rack": {
             "description": "Rack",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "serial": {
@@ -111,7 +121,7 @@
         },
         "site": {
             "description": "Site",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "status": {
@@ -126,7 +136,7 @@
         },
         "tenant": {
             "description": "Tenant",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "vc_position": {
@@ -141,7 +151,7 @@
         },
         "virtual_chassis": {
             "description": "Virtual chassis",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

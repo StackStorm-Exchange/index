@@ -9,10 +9,10 @@
             "required": false,
             "type": "boolean"
         },
-        "content_type": {
-            "description": "Content type",
+        "content_types": {
+            "description": "Content types",
             "required": true,
-            "type": "string"
+            "type": "array"
         },
         "description": {
             "description": "Description",

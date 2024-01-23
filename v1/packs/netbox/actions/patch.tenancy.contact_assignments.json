@@ -6,12 +6,12 @@
     "parameters": {
         "contact": {
             "description": "Contact",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "content_type": {
             "description": "Content type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "endpoint_uri": {
@@ -36,17 +36,17 @@
         },
         "object_id": {
             "description": "Object id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "priority": {
             "description": "Priority",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "role": {
             "description": "Role",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

@@ -16,7 +16,7 @@
         },
         "device_type": {
             "description": "Device type",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -41,6 +41,11 @@
         },
         "maximum_draw": {
             "description": "Maximum draw",
+            "required": false,
+            "type": "integer"
+        },
+        "module_type": {
+            "description": "Module type",
             "required": false,
             "type": "integer"
         },

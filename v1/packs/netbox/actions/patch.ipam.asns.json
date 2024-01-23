@@ -6,8 +6,13 @@
     "parameters": {
         "asn": {
             "description": "ASN",
-            "required": true,
+            "required": false,
             "type": "integer"
+        },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
         },
         "custom_fields": {
             "description": "Custom fields",
@@ -41,7 +46,7 @@
         },
         "rir": {
             "description": "RIR",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "tags": {

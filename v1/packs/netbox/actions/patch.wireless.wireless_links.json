@@ -15,7 +15,12 @@
             "type": "string"
         },
         "auth_type": {
-            "description": "Auth type",
+            "description": "Auth Type",
+            "required": false,
+            "type": "string"
+        },
+        "comments": {
+            "description": "Comments",
             "required": false,
             "type": "string"
         },
@@ -50,13 +55,13 @@
             "type": "string"
         },
         "interface_a": {
-            "description": "Interface a",
-            "required": true,
+            "description": "Interface A",
+            "required": false,
             "type": "integer"
         },
         "interface_b": {
-            "description": "Interface b",
-            "required": true,
+            "description": "Interface B",
+            "required": false,
             "type": "integer"
         },
         "ssid": {
@@ -73,6 +78,11 @@
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

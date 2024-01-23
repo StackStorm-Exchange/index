@@ -47,7 +47,7 @@
         "napalm_args": {
             "description": "NAPALM arguments",
             "required": false,
-            "type": "string"
+            "type": "object"
         },
         "napalm_driver": {
             "description": "NAPALM driver",

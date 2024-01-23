@@ -5,7 +5,7 @@
     "name": "put.circuits.circuit_terminations",
     "parameters": {
         "cable": {
-            "description": "Id of cable",
+            "description": "ID of cable",
             "required": false,
             "type": "integer"
         },
@@ -13,6 +13,11 @@
             "description": "Circuit",
             "required": true,
             "type": "integer"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
         },
         "description": {
             "description": "Description",
@@ -63,6 +68,11 @@
             "description": "Site",
             "required": false,
             "type": "integer"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
         },
         "term_side": {
             "description": "Termination",

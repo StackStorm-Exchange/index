@@ -4,11 +4,6 @@
     "entry_point": "run.py",
     "name": "patch.dcim.sites",
     "parameters": {
-        "asn": {
-            "description": "ASN",
-            "required": false,
-            "type": "integer"
-        },
         "asns": {
             "description": "Asns",
             "required": false,
@@ -16,21 +11,6 @@
         },
         "comments": {
             "description": "Comments",
-            "required": false,
-            "type": "string"
-        },
-        "contact_email": {
-            "description": "Contact E-mail",
-            "required": false,
-            "type": "string"
-        },
-        "contact_name": {
-            "description": "Contact name",
-            "required": false,
-            "type": "string"
-        },
-        "contact_phone": {
-            "description": "Contact phone",
             "required": false,
             "type": "string"
         },
@@ -86,7 +66,7 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "physical_address": {
@@ -106,7 +86,7 @@
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "status": {

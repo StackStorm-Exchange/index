@@ -10,7 +10,7 @@
             "type": "integer"
         },
         "cable": {
-            "description": "Id of cable",
+            "description": "ID of cable",
             "required": false,
             "type": "integer"
         },
@@ -56,6 +56,11 @@
         },
         "maximum_draw": {
             "description": "Maximum draw",
+            "required": false,
+            "type": "integer"
+        },
+        "module": {
+            "description": "Module",
             "required": false,
             "type": "integer"
         },

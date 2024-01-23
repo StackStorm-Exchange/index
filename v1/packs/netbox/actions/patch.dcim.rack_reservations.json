@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "patch.dcim.rack_reservations",
     "parameters": {
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
@@ -11,7 +16,7 @@
         },
         "description": {
             "description": "Description",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "endpoint_uri": {
@@ -36,7 +41,7 @@
         },
         "rack": {
             "description": "Rack",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "tags": {
@@ -51,12 +56,12 @@
         },
         "units": {
             "description": "Units",
-            "required": true,
+            "required": false,
             "type": "array"
         },
         "user": {
             "description": "User",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

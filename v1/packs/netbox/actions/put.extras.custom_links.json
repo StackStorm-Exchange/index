@@ -9,10 +9,15 @@
             "required": false,
             "type": "string"
         },
-        "content_type": {
-            "description": "Content type",
+        "content_types": {
+            "description": "Content types",
             "required": true,
-            "type": "string"
+            "type": "array"
+        },
+        "enabled": {
+            "description": "Enabled",
+            "required": false,
+            "type": "boolean"
         },
         "endpoint_uri": {
             "default": "/extras/custom-links/{{ id }}/",

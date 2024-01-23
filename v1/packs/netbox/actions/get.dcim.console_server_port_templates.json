@@ -1,5 +1,5 @@
 {
-    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
+    "description": "GET Console Server Port Templates",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.console_server_port_templates",
@@ -9,12 +9,27 @@
             "required": false,
             "type": "string"
         },
+        "created__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__gte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "created__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -79,7 +94,17 @@
             "required": false,
             "type": "string"
         },
+        "last_updated__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__lt": {
             "description": "",
             "required": false,
             "type": "string"
@@ -89,10 +114,25 @@
             "required": false,
             "type": "string"
         },
+        "last_updated__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "moduletype_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "moduletype_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "name": {
             "description": "",
@@ -153,6 +193,11 @@
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
         },
         "q": {
             "description": "",

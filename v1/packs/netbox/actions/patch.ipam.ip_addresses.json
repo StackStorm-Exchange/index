@@ -6,7 +6,7 @@
     "parameters": {
         "address": {
             "description": "Address",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "assigned_object_id": {
@@ -16,6 +16,11 @@
         },
         "assigned_object_type": {
             "description": "Assigned object type",
+            "required": false,
+            "type": "string"
+        },
+        "comments": {
+            "description": "Comments",
             "required": false,
             "type": "string"
         },

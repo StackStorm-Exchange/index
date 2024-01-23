@@ -88,6 +88,11 @@
             "description": "Virtual machine",
             "required": true,
             "type": "integer"
+        },
+        "vrf": {
+            "description": "VRF",
+            "required": false,
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

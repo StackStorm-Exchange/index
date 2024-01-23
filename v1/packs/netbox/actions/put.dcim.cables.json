@@ -4,8 +4,23 @@
     "entry_point": "run.py",
     "name": "put.dcim.cables",
     "parameters": {
+        "a_terminations": {
+            "description": "A terminations",
+            "required": false,
+            "type": "array"
+        },
+        "b_terminations": {
+            "description": "B terminations",
+            "required": false,
+            "type": "array"
+        },
         "color": {
             "description": "Color",
+            "required": false,
+            "type": "string"
+        },
+        "comments": {
+            "description": "Comments",
             "required": false,
             "type": "string"
         },
@@ -13,6 +28,11 @@
             "description": "Custom fields",
             "required": false,
             "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
         },
         "endpoint_uri": {
             "default": "/dcim/cables/{{ id }}/",
@@ -63,26 +83,6 @@
             "description": "Tenant",
             "required": false,
             "type": "integer"
-        },
-        "termination_a_id": {
-            "description": "Termination a id",
-            "required": true,
-            "type": "integer"
-        },
-        "termination_a_type": {
-            "description": "Termination a type",
-            "required": true,
-            "type": "string"
-        },
-        "termination_b_id": {
-            "description": "Termination b id",
-            "required": true,
-            "type": "integer"
-        },
-        "termination_b_type": {
-            "description": "Termination b type",
-            "required": true,
-            "type": "string"
         },
         "type": {
             "description": "Type",

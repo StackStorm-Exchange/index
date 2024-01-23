@@ -16,7 +16,7 @@
         },
         "device_type": {
             "description": "Device type",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -38,6 +38,11 @@
             "description": "Label",
             "required": false,
             "type": "string"
+        },
+        "module_type": {
+            "description": "Module type",
+            "required": false,
+            "type": "integer"
         },
         "name": {
             "description": "Name",

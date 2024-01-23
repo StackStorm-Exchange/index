@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "post.users.tokens",
     "parameters": {
+        "allowed_ips": {
+            "description": "Allowed ips",
+            "required": false,
+            "type": "array"
+        },
         "description": {
             "description": "Description",
             "required": false,
@@ -31,6 +36,11 @@
         },
         "key": {
             "description": "Key",
+            "required": false,
+            "type": "string"
+        },
+        "last_used": {
+            "description": "Last used",
             "required": false,
             "type": "string"
         },

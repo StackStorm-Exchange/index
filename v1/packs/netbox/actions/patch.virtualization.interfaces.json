@@ -61,7 +61,7 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parent": {
@@ -86,7 +86,12 @@
         },
         "virtual_machine": {
             "description": "Virtual machine",
-            "required": true,
+            "required": false,
+            "type": "integer"
+        },
+        "vrf": {
+            "description": "VRF",
+            "required": false,
             "type": "integer"
         }
     },

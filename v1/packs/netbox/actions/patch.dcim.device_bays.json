@@ -16,7 +16,7 @@
         },
         "device": {
             "description": "Device",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -51,7 +51,7 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

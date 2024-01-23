@@ -6,7 +6,7 @@
     "parameters": {
         "cid": {
             "description": "Circuit ID",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "comments": {
@@ -50,13 +50,13 @@
             "type": "string"
         },
         "install_date": {
-            "description": "Date installed",
+            "description": "Installed",
             "required": false,
             "type": "string"
         },
         "provider": {
             "description": "Provider",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "status": {
@@ -74,9 +74,14 @@
             "required": false,
             "type": "integer"
         },
+        "termination_date": {
+            "description": "Terminates",
+            "required": false,
+            "type": "string"
+        },
         "type": {
             "description": "Type",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

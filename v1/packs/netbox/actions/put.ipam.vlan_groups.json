@@ -34,6 +34,16 @@
             "required": true,
             "type": "string"
         },
+        "max_vid": {
+            "description": "Maximum VLAN ID",
+            "required": false,
+            "type": "integer"
+        },
+        "min_vid": {
+            "description": "Minimum VLAN ID",
+            "required": false,
+            "type": "integer"
+        },
         "name": {
             "description": "Name",
             "required": true,

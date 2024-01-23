@@ -1,5 +1,5 @@
 {
-    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
+    "description": "GET Racks",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.racks",
@@ -59,7 +59,42 @@
             "required": false,
             "type": "string"
         },
+        "contact": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_role": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_role__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gt": {
             "description": "",
             "required": false,
             "type": "string"
@@ -69,7 +104,17 @@
             "required": false,
             "type": "string"
         },
+        "created__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -184,12 +229,27 @@
             "required": false,
             "type": "string"
         },
+        "last_updated__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__gte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "last_updated__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -215,6 +275,66 @@
             "type": "string"
         },
         "location_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "max_weight": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "max_weight__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "max_weight__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "max_weight__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "max_weight__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "max_weight__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mounting_depth": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mounting_depth__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mounting_depth__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mounting_depth__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mounting_depth__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "mounting_depth__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -278,6 +398,11 @@
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
         },
         "outer_depth": {
             "description": "",
@@ -409,6 +534,56 @@
             "type": "integer"
         },
         "serial": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__nisw": {
             "description": "",
             "required": false,
             "type": "string"
@@ -549,6 +724,46 @@
             "type": "string"
         },
         "u_height__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "weight": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "weight__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "weight__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "weight__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "weight__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "weight__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "weight_unit": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "weight_unit__n": {
             "description": "",
             "required": false,
             "type": "string"

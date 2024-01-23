@@ -1,9 +1,39 @@
 {
-    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
+    "description": "GET Custom Fields",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.extras.custom_fields",
     "parameters": {
+        "content_type_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type_id__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type_id__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type_id__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type_id__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "content_type_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "content_types": {
             "description": "",
             "required": false,
@@ -54,6 +84,61 @@
             "required": false,
             "type": "string"
         },
+        "description": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "description__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/extras/custom-fields/",
             "immutable": true,
@@ -73,6 +158,61 @@
             "default": true,
             "immutable": true,
             "type": "boolean"
+        },
+        "group_name": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "group_name__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "http_verb": {
             "default": "get",
@@ -174,6 +314,11 @@
             "required": false,
             "type": "integer"
         },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+        },
         "q": {
             "description": "",
             "required": false,
@@ -197,6 +342,56 @@
             "default": 60,
             "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
             "type": "integer"
+        },
+        "search_weight": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "search_weight__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "search_weight__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "search_weight__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "search_weight__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "search_weight__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "type": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "type__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "ui_visibility": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "ui_visibility__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "weight": {
             "description": "",

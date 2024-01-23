@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "post.ipam.vlans",
     "parameters": {
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
@@ -26,7 +31,7 @@
         },
         "group": {
             "description": "Group",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "http_verb": {

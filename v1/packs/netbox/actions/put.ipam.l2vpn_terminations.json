@@ -1,0 +1,54 @@
+{
+    "description": "PUT L2Vpn Terminations",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.ipam.l2vpn_terminations",
+    "parameters": {
+        "assigned_object_id": {
+            "description": "Assigned object id",
+            "required": true,
+            "type": "integer"
+        },
+        "assigned_object_type": {
+            "description": "Assigned object type",
+            "required": true,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "endpoint_uri": {
+            "default": "/ipam/l2vpn-terminations/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "string"
+        },
+        "l2vpn": {
+            "description": "L2vpn",
+            "required": true,
+            "type": "integer"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

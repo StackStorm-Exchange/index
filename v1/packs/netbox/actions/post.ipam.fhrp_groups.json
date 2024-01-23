@@ -14,6 +14,11 @@
             "required": false,
             "type": "string"
         },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
@@ -42,6 +47,11 @@
         "http_verb": {
             "default": "post",
             "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
             "type": "string"
         },
         "protocol": {

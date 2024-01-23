@@ -9,6 +9,16 @@
             "required": false,
             "type": "string"
         },
+        "component_id": {
+            "description": "Component id",
+            "required": false,
+            "type": "integer"
+        },
+        "component_type": {
+            "description": "Component type",
+            "required": false,
+            "type": "string"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
@@ -68,6 +78,11 @@
             "description": "Part ID",
             "required": false,
             "type": "string"
+        },
+        "role": {
+            "description": "Role",
+            "required": false,
+            "type": "integer"
         },
         "serial": {
             "description": "Serial number",

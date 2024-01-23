@@ -1,10 +1,45 @@
 {
-    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
+    "description": "GET Locations",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.locations",
     "parameters": {
+        "contact": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_role": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_role__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gt": {
             "description": "",
             "required": false,
             "type": "string"
@@ -14,7 +49,17 @@
             "required": false,
             "type": "string"
         },
+        "created__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -124,12 +169,27 @@
             "required": false,
             "type": "string"
         },
+        "last_updated__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__gte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "last_updated__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -198,6 +258,11 @@
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
         },
         "parent": {
             "description": "",
@@ -349,6 +414,16 @@
             "type": "string"
         },
         "slug__nisw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "status": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "status__n": {
             "description": "",
             "required": false,
             "type": "string"

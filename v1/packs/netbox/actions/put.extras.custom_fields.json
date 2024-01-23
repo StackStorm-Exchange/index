@@ -17,7 +17,7 @@
         "default": {
             "description": "Default",
             "required": false,
-            "type": "string"
+            "type": "object"
         },
         "description": {
             "description": "Description",
@@ -39,6 +39,11 @@
             "immutable": true,
             "type": "boolean"
         },
+        "group_name": {
+            "description": "Group name",
+            "required": false,
+            "type": "string"
+        },
         "http_verb": {
             "default": "put",
             "immutable": true,
@@ -59,13 +64,28 @@
             "required": true,
             "type": "string"
         },
+        "object_type": {
+            "description": "Object type",
+            "required": false,
+            "type": "string"
+        },
         "required": {
             "description": "Required",
             "required": false,
             "type": "boolean"
         },
+        "search_weight": {
+            "description": "Search weight",
+            "required": false,
+            "type": "integer"
+        },
         "type": {
             "description": "Type",
+            "required": false,
+            "type": "string"
+        },
+        "ui_visibility": {
+            "description": "UI visibility",
             "required": false,
             "type": "string"
         },
@@ -85,7 +105,7 @@
             "type": "string"
         },
         "weight": {
-            "description": "Weight",
+            "description": "Display weight",
             "required": false,
             "type": "integer"
         }

@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "patch.ipam.aggregates",
     "parameters": {
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
@@ -41,12 +46,12 @@
         },
         "prefix": {
             "description": "Prefix",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "rir": {
             "description": "RIR",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "tags": {

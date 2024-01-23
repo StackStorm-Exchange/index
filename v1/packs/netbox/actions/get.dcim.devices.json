@@ -1,5 +1,5 @@
 {
-    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
+    "description": "GET Devices",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.devices",
@@ -89,7 +89,42 @@
             "required": false,
             "type": "string"
         },
+        "contact": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_group": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_group__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_role": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "contact_role__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__gt": {
             "description": "",
             "required": false,
             "type": "string"
@@ -99,12 +134,32 @@
             "required": false,
             "type": "string"
         },
+        "created__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__lte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "created__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "device_bays": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "device_type": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "device_type__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -194,12 +249,27 @@
             "required": false,
             "type": "string"
         },
+        "last_updated__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__gte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "last_updated__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -304,6 +374,11 @@
             "required": false,
             "type": "string"
         },
+        "module_bays": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "name": {
             "description": "",
             "required": false,
@@ -363,6 +438,21 @@
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+        },
+        "parent_device_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "parent_device_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
         },
         "pass_through_ports": {
             "description": "",
@@ -425,6 +515,26 @@
             "type": "string"
         },
         "power_ports": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "primary_ip4_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "primary_ip4_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "primary_ip6_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "primary_ip6_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -499,6 +609,56 @@
             "type": "integer"
         },
         "serial": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__empty": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__ic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__ie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__iew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__isw": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__nic": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__nie": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__niew": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "serial__nisw": {
             "description": "",
             "required": false,
             "type": "string"

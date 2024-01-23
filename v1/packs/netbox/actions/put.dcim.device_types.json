@@ -19,6 +19,11 @@
             "required": false,
             "type": "object"
         },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/dcim/device-types/{{ id }}/",
             "immutable": true,
@@ -75,9 +80,19 @@
             "type": "array"
         },
         "u_height": {
-            "description": "Height (U)",
+            "description": "Position (U)",
             "required": false,
             "type": "integer"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "integer"
+        },
+        "weight_unit": {
+            "description": "Weight unit",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

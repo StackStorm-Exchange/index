@@ -19,6 +19,11 @@
             "required": false,
             "type": "object"
         },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "email": {
             "description": "Email",
             "required": false,
@@ -36,7 +41,7 @@
         },
         "group": {
             "description": "Group",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "http_verb": {
@@ -49,9 +54,14 @@
             "required": true,
             "type": "string"
         },
+        "link": {
+            "description": "Link",
+            "required": false,
+            "type": "string"
+        },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "phone": {

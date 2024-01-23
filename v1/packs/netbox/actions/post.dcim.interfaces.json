@@ -10,7 +10,7 @@
             "type": "integer"
         },
         "cable": {
-            "description": "Id of cable",
+            "description": "ID of cable",
             "required": false,
             "type": "integer"
         },
@@ -28,6 +28,11 @@
             "description": "Device",
             "required": true,
             "type": "integer"
+        },
+        "duplex": {
+            "description": "Duplex",
+            "required": false,
+            "type": "string"
         },
         "enabled": {
             "description": "Enabled",
@@ -79,6 +84,11 @@
             "required": false,
             "type": "string"
         },
+        "module": {
+            "description": "Module",
+            "required": false,
+            "type": "integer"
+        },
         "mtu": {
             "description": "MTU",
             "required": false,
@@ -93,6 +103,16 @@
             "description": "Parent interface",
             "required": false,
             "type": "integer"
+        },
+        "poe_mode": {
+            "description": "PoE mode",
+            "required": false,
+            "type": "string"
+        },
+        "poe_type": {
+            "description": "PoE type",
+            "required": false,
+            "type": "string"
         },
         "rf_channel": {
             "description": "Wireless channel",
@@ -113,6 +133,11 @@
             "description": "Wireless role",
             "required": false,
             "type": "string"
+        },
+        "speed": {
+            "description": "Speed (Kbps)",
+            "required": false,
+            "type": "integer"
         },
         "tagged_vlans": {
             "description": "Tagged vlans",
@@ -136,6 +161,16 @@
         },
         "untagged_vlan": {
             "description": "Untagged VLAN",
+            "required": false,
+            "type": "integer"
+        },
+        "vdcs": {
+            "description": "Vdcs",
+            "required": true,
+            "type": "array"
+        },
+        "vrf": {
+            "description": "VRF",
             "required": false,
             "type": "integer"
         },

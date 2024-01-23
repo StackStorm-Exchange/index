@@ -24,6 +24,11 @@
             "required": false,
             "type": "boolean"
         },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/dcim/racks/{{ id }}/",
             "immutable": true,
@@ -51,12 +56,22 @@
         },
         "location": {
             "description": "Location",
-            "required": true,
+            "required": false,
+            "type": "integer"
+        },
+        "max_weight": {
+            "description": "Max weight",
+            "required": false,
+            "type": "integer"
+        },
+        "mounting_depth": {
+            "description": "Mounting depth",
+            "required": false,
             "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "outer_depth": {
@@ -86,7 +101,7 @@
         },
         "site": {
             "description": "Site",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "status": {
@@ -113,6 +128,16 @@
             "description": "Height (U)",
             "required": false,
             "type": "integer"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "integer"
+        },
+        "weight_unit": {
+            "description": "Weight unit",
+            "required": false,
+            "type": "string"
         },
         "width": {
             "description": "Width",

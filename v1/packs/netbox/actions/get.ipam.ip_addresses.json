@@ -1,5 +1,5 @@
 {
-    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
+    "description": "GET Ip Addresses",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.ipam.ip_addresses",
@@ -19,12 +19,27 @@
             "required": false,
             "type": "string"
         },
+        "created__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__gte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "created__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -159,6 +174,16 @@
             "required": false,
             "type": "integer"
         },
+        "fhrpgroup_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "fhrpgroup_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -224,12 +249,27 @@
             "required": false,
             "type": "string"
         },
+        "last_updated__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__gte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "last_updated__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -248,6 +288,11 @@
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
         },
         "parent": {
             "description": "",

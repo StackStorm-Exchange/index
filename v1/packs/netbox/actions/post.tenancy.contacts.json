@@ -19,6 +19,11 @@
             "required": false,
             "type": "object"
         },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "email": {
             "description": "Email",
             "required": false,
@@ -36,12 +41,17 @@
         },
         "group": {
             "description": "Group",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "http_verb": {
             "default": "post",
             "immutable": true,
+            "type": "string"
+        },
+        "link": {
+            "description": "Link",
+            "required": false,
             "type": "string"
         },
         "name": {

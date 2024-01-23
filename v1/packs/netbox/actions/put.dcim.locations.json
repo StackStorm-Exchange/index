@@ -54,6 +54,11 @@
             "required": true,
             "type": "string"
         },
+        "status": {
+            "description": "Status",
+            "required": false,
+            "type": "string"
+        },
         "tags": {
             "description": "Array of tag strings",
             "required": false,

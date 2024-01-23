@@ -5,7 +5,7 @@ keywords:
 - networking
 - ipam
 - dcim
-version: 3.0.7
+version: 3.1.0
 python_versions:
 - '3'
 author: John Anderson, Jefferson White
@@ -14,13 +14,14 @@ contributors:
 - Abhimanyu Saharan <asaharan@onemindservices.com>
 content:
   actions:
-    count: 413
+    count: 474
     resources:
     - delete.circuits.circuit_terminations
     - delete.circuits.circuit_types
     - delete.circuits.circuits
     - delete.circuits.provider_networks
     - delete.circuits.providers
+    - delete.dcim.cable_terminations
     - delete.dcim.cables
     - delete.dcim.console_port_templates
     - delete.dcim.console_ports
@@ -35,9 +36,15 @@ content:
     - delete.dcim.front_ports
     - delete.dcim.interface_templates
     - delete.dcim.interfaces
+    - delete.dcim.inventory_item_roles
+    - delete.dcim.inventory_item_templates
     - delete.dcim.inventory_items
     - delete.dcim.locations
     - delete.dcim.manufacturers
+    - delete.dcim.module_bay_templates
+    - delete.dcim.module_bays
+    - delete.dcim.module_types
+    - delete.dcim.modules
     - delete.dcim.platforms
     - delete.dcim.power_feeds
     - delete.dcim.power_outlet_templates
@@ -54,12 +61,14 @@ content:
     - delete.dcim.site_groups
     - delete.dcim.sites
     - delete.dcim.virtual_chassis
+    - delete.dcim.virtual_device_contexts
     - delete.extras.config_contexts
     - delete.extras.custom_fields
     - delete.extras.custom_links
     - delete.extras.export_templates
     - delete.extras.image_attachments
     - delete.extras.journal_entries
+    - delete.extras.saved_filters
     - delete.extras.tags
     - delete.extras.webhooks
     - delete.ipam.aggregates
@@ -68,10 +77,13 @@ content:
     - delete.ipam.fhrp_groups
     - delete.ipam.ip_addresses
     - delete.ipam.ip_ranges
+    - delete.ipam.l2vpn_terminations
+    - delete.ipam.l2vpns
     - delete.ipam.prefixes
     - delete.ipam.rirs
     - delete.ipam.roles
     - delete.ipam.route_targets
+    - delete.ipam.service_templates
     - delete.ipam.services
     - delete.ipam.vlan_groups
     - delete.ipam.vlans
@@ -100,6 +112,7 @@ content:
     - get.circuits.circuits
     - get.circuits.provider_networks
     - get.circuits.providers
+    - get.dcim.cable_terminations
     - get.dcim.cables
     - get.dcim.connected_device
     - get.dcim.console_port_templates
@@ -120,9 +133,15 @@ content:
     - get.dcim.interface_templates
     - get.dcim.interfaces
     - get.dcim.interfaces.trace
+    - get.dcim.inventory_item_roles
+    - get.dcim.inventory_item_templates
     - get.dcim.inventory_items
     - get.dcim.locations
     - get.dcim.manufacturers
+    - get.dcim.module_bay_templates
+    - get.dcim.module_bays
+    - get.dcim.module_types
+    - get.dcim.modules
     - get.dcim.platforms
     - get.dcim.power_feeds
     - get.dcim.power_feeds.trace
@@ -144,6 +163,7 @@ content:
     - get.dcim.site_groups
     - get.dcim.sites
     - get.dcim.virtual_chassis
+    - get.dcim.virtual_device_contexts
     - get.extras.config_contexts
     - get.extras.content_types
     - get.extras.custom_fields
@@ -154,6 +174,7 @@ content:
     - get.extras.journal_entries
     - get.extras.object_changes
     - get.extras.reports
+    - get.extras.saved_filters
     - get.extras.scripts
     - get.extras.tags
     - get.extras.webhooks
@@ -164,14 +185,18 @@ content:
     - get.ipam.ip_addresses
     - get.ipam.ip_ranges
     - get.ipam.ip_ranges.available_ips
+    - get.ipam.l2vpn_terminations
+    - get.ipam.l2vpns
     - get.ipam.prefixes
     - get.ipam.prefixes.available_ips
     - get.ipam.prefixes.available_prefixes
     - get.ipam.rirs
     - get.ipam.roles
     - get.ipam.route_targets
+    - get.ipam.service_templates
     - get.ipam.services
     - get.ipam.vlan_groups
+    - get.ipam.vlan_groups.available_vlans
     - get.ipam.vlans
     - get.ipam.vrfs
     - get.status
@@ -199,6 +224,7 @@ content:
     - patch.circuits.circuits
     - patch.circuits.provider_networks
     - patch.circuits.providers
+    - patch.dcim.cable_terminations
     - patch.dcim.cables
     - patch.dcim.console_port_templates
     - patch.dcim.console_ports
@@ -213,9 +239,15 @@ content:
     - patch.dcim.front_ports
     - patch.dcim.interface_templates
     - patch.dcim.interfaces
+    - patch.dcim.inventory_item_roles
+    - patch.dcim.inventory_item_templates
     - patch.dcim.inventory_items
     - patch.dcim.locations
     - patch.dcim.manufacturers
+    - patch.dcim.module_bay_templates
+    - patch.dcim.module_bays
+    - patch.dcim.module_types
+    - patch.dcim.modules
     - patch.dcim.platforms
     - patch.dcim.power_feeds
     - patch.dcim.power_outlet_templates
@@ -232,12 +264,14 @@ content:
     - patch.dcim.site_groups
     - patch.dcim.sites
     - patch.dcim.virtual_chassis
+    - patch.dcim.virtual_device_contexts
     - patch.extras.config_contexts
     - patch.extras.custom_fields
     - patch.extras.custom_links
     - patch.extras.export_templates
     - patch.extras.image_attachments
     - patch.extras.journal_entries
+    - patch.extras.saved_filters
     - patch.extras.tags
     - patch.extras.webhooks
     - patch.ipam.aggregates
@@ -246,10 +280,13 @@ content:
     - patch.ipam.fhrp_groups
     - patch.ipam.ip_addresses
     - patch.ipam.ip_ranges
+    - patch.ipam.l2vpn_terminations
+    - patch.ipam.l2vpns
     - patch.ipam.prefixes
     - patch.ipam.rirs
     - patch.ipam.roles
     - patch.ipam.route_targets
+    - patch.ipam.service_templates
     - patch.ipam.services
     - patch.ipam.vlan_groups
     - patch.ipam.vlans
@@ -277,6 +314,7 @@ content:
     - post.circuits.circuits
     - post.circuits.provider_networks
     - post.circuits.providers
+    - post.dcim.cable_terminations
     - post.dcim.cables
     - post.dcim.console_port_templates
     - post.dcim.console_ports
@@ -291,9 +329,15 @@ content:
     - post.dcim.front_ports
     - post.dcim.interface_templates
     - post.dcim.interfaces
+    - post.dcim.inventory_item_roles
+    - post.dcim.inventory_item_templates
     - post.dcim.inventory_items
     - post.dcim.locations
     - post.dcim.manufacturers
+    - post.dcim.module_bay_templates
+    - post.dcim.module_bays
+    - post.dcim.module_types
+    - post.dcim.modules
     - post.dcim.platforms
     - post.dcim.power_feeds
     - post.dcim.power_outlet_templates
@@ -310,12 +354,14 @@ content:
     - post.dcim.site_groups
     - post.dcim.sites
     - post.dcim.virtual_chassis
+    - post.dcim.virtual_device_contexts
     - post.extras.config_contexts
     - post.extras.custom_fields
     - post.extras.custom_links
     - post.extras.export_templates
     - post.extras.image_attachments
     - post.extras.journal_entries
+    - post.extras.saved_filters
     - post.extras.tags
     - post.extras.webhooks
     - post.ipam.aggregates
@@ -324,10 +370,13 @@ content:
     - post.ipam.fhrp_groups
     - post.ipam.ip_addresses
     - post.ipam.ip_ranges
+    - post.ipam.l2vpn_terminations
+    - post.ipam.l2vpns
     - post.ipam.prefixes
     - post.ipam.rirs
     - post.ipam.roles
     - post.ipam.route_targets
+    - post.ipam.service_templates
     - post.ipam.services
     - post.ipam.vlan_groups
     - post.ipam.vlans
@@ -356,6 +405,7 @@ content:
     - put.circuits.circuits
     - put.circuits.provider_networks
     - put.circuits.providers
+    - put.dcim.cable_terminations
     - put.dcim.cables
     - put.dcim.console_port_templates
     - put.dcim.console_ports
@@ -370,9 +420,15 @@ content:
     - put.dcim.front_ports
     - put.dcim.interface_templates
     - put.dcim.interfaces
+    - put.dcim.inventory_item_roles
+    - put.dcim.inventory_item_templates
     - put.dcim.inventory_items
     - put.dcim.locations
     - put.dcim.manufacturers
+    - put.dcim.module_bay_templates
+    - put.dcim.module_bays
+    - put.dcim.module_types
+    - put.dcim.modules
     - put.dcim.platforms
     - put.dcim.power_feeds
     - put.dcim.power_outlet_templates
@@ -389,12 +445,14 @@ content:
     - put.dcim.site_groups
     - put.dcim.sites
     - put.dcim.virtual_chassis
+    - put.dcim.virtual_device_contexts
     - put.extras.config_contexts
     - put.extras.custom_fields
     - put.extras.custom_links
     - put.extras.export_templates
     - put.extras.image_attachments
     - put.extras.journal_entries
+    - put.extras.saved_filters
     - put.extras.tags
     - put.extras.webhooks
     - put.ipam.aggregates
@@ -403,10 +461,13 @@ content:
     - put.ipam.fhrp_groups
     - put.ipam.ip_addresses
     - put.ipam.ip_ranges
+    - put.ipam.l2vpn_terminations
+    - put.ipam.l2vpns
     - put.ipam.prefixes
     - put.ipam.rirs
     - put.ipam.roles
     - put.ipam.route_targets
+    - put.ipam.service_templates
     - put.ipam.services
     - put.ipam.vlan_groups
     - put.ipam.vlans

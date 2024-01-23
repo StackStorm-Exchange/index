@@ -1,5 +1,5 @@
 {
-    "description": "Overrides ListModelMixin to allow processing ExportTemplates.",
+    "description": "GET Interfaces",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.interfaces",
@@ -10,6 +10,16 @@
             "type": "string"
         },
         "bridge_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "cable_end": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "cable_end__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -29,12 +39,27 @@
             "required": false,
             "type": "string"
         },
+        "created__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__gte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "created__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "created__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -104,6 +129,16 @@
             "required": false,
             "type": "string"
         },
+        "duplex": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "duplex__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "enabled": {
             "description": "",
             "required": false,
@@ -155,6 +190,26 @@
             "type": "string"
         },
         "kind": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "l2vpn": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "l2vpn__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "l2vpn_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "l2vpn_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -229,12 +284,27 @@
             "required": false,
             "type": "string"
         },
+        "last_updated__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__gte": {
             "description": "",
             "required": false,
             "type": "string"
         },
+        "last_updated__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "last_updated__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "last_updated__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -329,6 +399,16 @@
             "required": false,
             "type": "string"
         },
+        "module_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "module_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "mtu": {
             "description": "",
             "required": false,
@@ -414,10 +494,20 @@
             "required": false,
             "type": "string"
         },
+        "occupied": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "offset": {
             "description": "The initial index from which to return the results.",
             "required": false,
             "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
         },
         "parent_id": {
             "description": "",
@@ -429,7 +519,47 @@
             "required": false,
             "type": "string"
         },
+        "poe_mode": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "poe_mode__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "poe_type": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "poe_type__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "q": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rack": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rack__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rack_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "rack_id__n": {
             "description": "",
             "required": false,
             "type": "string"
@@ -588,6 +718,36 @@
             "required": false,
             "type": "string"
         },
+        "speed": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "speed__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "speed__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "speed__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "speed__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "speed__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "tag": {
             "description": "",
             "required": false,
@@ -638,6 +798,36 @@
             "required": false,
             "type": "string"
         },
+        "vdc": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vdc__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vdc_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vdc_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vdc_identifier": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vdc_identifier__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "virtual_chassis": {
             "description": "",
             "required": false,
@@ -664,6 +854,26 @@
             "type": "string"
         },
         "vlan_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vrf": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vrf__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vrf_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "vrf_id__n": {
             "description": "",
             "required": false,
             "type": "string"

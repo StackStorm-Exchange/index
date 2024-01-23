@@ -14,6 +14,11 @@
             "required": false,
             "type": "string"
         },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
@@ -36,7 +41,7 @@
         },
         "group_id": {
             "description": "Group ID",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "http_verb": {
@@ -49,9 +54,14 @@
             "required": true,
             "type": "string"
         },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
         "protocol": {
             "description": "Protocol",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

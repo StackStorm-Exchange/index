@@ -5,7 +5,7 @@
     "name": "patch.dcim.console_server_ports",
     "parameters": {
         "cable": {
-            "description": "Id of cable",
+            "description": "ID of cable",
             "required": false,
             "type": "integer"
         },
@@ -21,7 +21,7 @@
         },
         "device": {
             "description": "Device",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -54,9 +54,14 @@
             "required": false,
             "type": "boolean"
         },
+        "module": {
+            "description": "Module",
+            "required": false,
+            "type": "integer"
+        },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "speed": {

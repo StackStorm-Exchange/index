@@ -9,15 +9,10 @@
             "required": false,
             "type": "string"
         },
-        "admin_contact": {
-            "description": "Admin contact",
+        "asns": {
+            "description": "Asns",
             "required": false,
-            "type": "string"
-        },
-        "asn": {
-            "description": "ASN",
-            "required": false,
-            "type": "integer"
+            "type": "array"
         },
         "comments": {
             "description": "Comments",
@@ -28,6 +23,11 @@
             "description": "Custom fields",
             "required": false,
             "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
         },
         "endpoint_uri": {
             "default": "/circuits/providers/{{ id }}/",
@@ -52,16 +52,6 @@
         "name": {
             "description": "Name",
             "required": true,
-            "type": "string"
-        },
-        "noc_contact": {
-            "description": "NOC contact",
-            "required": false,
-            "type": "string"
-        },
-        "portal_url": {
-            "description": "Portal URL",
-            "required": false,
             "type": "string"
         },
         "slug": {

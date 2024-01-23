@@ -9,6 +9,11 @@
             "required": false,
             "type": "array"
         },
+        "cluster_types": {
+            "description": "Cluster types",
+            "required": false,
+            "type": "array"
+        },
         "clusters": {
             "description": "Clusters",
             "required": false,
@@ -17,7 +22,7 @@
         "data": {
             "description": "Data",
             "required": true,
-            "type": "string"
+            "type": "object"
         },
         "description": {
             "description": "Description",
@@ -53,6 +58,11 @@
             "description": "Is active",
             "required": false,
             "type": "boolean"
+        },
+        "locations": {
+            "description": "Locations",
+            "required": false,
+            "type": "array"
         },
         "name": {
             "description": "Name",

@@ -9,10 +9,15 @@
             "required": false,
             "type": "string"
         },
-        "content_type": {
-            "description": "Content type",
-            "required": true,
-            "type": "string"
+        "content_types": {
+            "description": "Content types",
+            "required": false,
+            "type": "array"
+        },
+        "enabled": {
+            "description": "Enabled",
+            "required": false,
+            "type": "boolean"
         },
         "endpoint_uri": {
             "default": "/extras/custom-links/{{ id }}/",
@@ -41,17 +46,17 @@
         },
         "link_text": {
             "description": "Link text",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "link_url": {
             "description": "Link URL",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "new_window": {

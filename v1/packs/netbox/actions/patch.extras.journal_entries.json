@@ -6,23 +6,28 @@
     "parameters": {
         "assigned_object_id": {
             "description": "Assigned object id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "assigned_object_type": {
             "description": "Assigned object type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "comments": {
             "description": "Comments",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "created_by": {
             "description": "Created by",
             "required": false,
             "type": "integer"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/extras/journal-entries/{{ id }}/",
@@ -48,6 +53,11 @@
             "description": "Kind",
             "required": false,
             "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"

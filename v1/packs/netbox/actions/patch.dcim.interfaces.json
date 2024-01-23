@@ -10,7 +10,7 @@
             "type": "integer"
         },
         "cable": {
-            "description": "Id of cable",
+            "description": "ID of cable",
             "required": false,
             "type": "integer"
         },
@@ -26,8 +26,13 @@
         },
         "device": {
             "description": "Device",
-            "required": true,
+            "required": false,
             "type": "integer"
+        },
+        "duplex": {
+            "description": "Duplex",
+            "required": false,
+            "type": "string"
         },
         "enabled": {
             "description": "Enabled",
@@ -84,6 +89,11 @@
             "required": false,
             "type": "string"
         },
+        "module": {
+            "description": "Module",
+            "required": false,
+            "type": "integer"
+        },
         "mtu": {
             "description": "MTU",
             "required": false,
@@ -91,13 +101,23 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parent": {
             "description": "Parent interface",
             "required": false,
             "type": "integer"
+        },
+        "poe_mode": {
+            "description": "PoE mode",
+            "required": false,
+            "type": "string"
+        },
+        "poe_type": {
+            "description": "PoE type",
+            "required": false,
+            "type": "string"
         },
         "rf_channel": {
             "description": "Wireless channel",
@@ -119,6 +139,11 @@
             "required": false,
             "type": "string"
         },
+        "speed": {
+            "description": "Speed (Kbps)",
+            "required": false,
+            "type": "integer"
+        },
         "tagged_vlans": {
             "description": "Tagged vlans",
             "required": false,
@@ -136,11 +161,21 @@
         },
         "type": {
             "description": "Type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "untagged_vlan": {
             "description": "Untagged VLAN",
+            "required": false,
+            "type": "integer"
+        },
+        "vdcs": {
+            "description": "Vdcs",
+            "required": false,
+            "type": "array"
+        },
+        "vrf": {
+            "description": "VRF",
             "required": false,
             "type": "integer"
         },

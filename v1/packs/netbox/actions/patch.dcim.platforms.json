@@ -41,13 +41,13 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "napalm_args": {
             "description": "NAPALM arguments",
             "required": false,
-            "type": "string"
+            "type": "object"
         },
         "napalm_driver": {
             "description": "NAPALM driver",
@@ -56,7 +56,7 @@
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

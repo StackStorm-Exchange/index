@@ -9,6 +9,11 @@
             "required": true,
             "type": "integer"
         },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,

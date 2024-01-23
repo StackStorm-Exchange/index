@@ -22,11 +22,11 @@
         "conditions": {
             "description": "Conditions",
             "required": false,
-            "type": "string"
+            "type": "object"
         },
         "content_types": {
             "description": "Content types",
-            "required": true,
+            "required": false,
             "type": "array"
         },
         "enabled": {
@@ -66,12 +66,12 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "payload_url": {
             "description": "URL",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "secret": {

@@ -15,7 +15,12 @@
             "type": "string"
         },
         "auth_type": {
-            "description": "Auth type",
+            "description": "Auth Type",
+            "required": false,
+            "type": "string"
+        },
+        "comments": {
+            "description": "Comments",
             "required": false,
             "type": "string"
         },
@@ -56,13 +61,23 @@
         },
         "ssid": {
             "description": "SSID",
-            "required": true,
+            "required": false,
+            "type": "string"
+        },
+        "status": {
+            "description": "Status",
+            "required": false,
             "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
         },
         "vlan": {
             "description": "VLAN",

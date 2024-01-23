@@ -1,0 +1,74 @@
+{
+    "description": "PATCH Module Types",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "patch.dcim.module_types",
+    "parameters": {
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/dcim/module-types/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "patch",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to patch.",
+            "required": true,
+            "type": "string"
+        },
+        "manufacturer": {
+            "description": "Manufacturer",
+            "required": false,
+            "type": "integer"
+        },
+        "model": {
+            "description": "Model",
+            "required": false,
+            "type": "string"
+        },
+        "part_number": {
+            "description": "Part number",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "integer"
+        },
+        "weight_unit": {
+            "description": "Weight unit",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

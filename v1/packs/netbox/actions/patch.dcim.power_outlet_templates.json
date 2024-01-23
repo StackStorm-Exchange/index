@@ -11,7 +11,7 @@
         },
         "device_type": {
             "description": "Device type",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -44,9 +44,14 @@
             "required": false,
             "type": "string"
         },
+        "module_type": {
+            "description": "Module type",
+            "required": false,
+            "type": "integer"
+        },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "power_port": {

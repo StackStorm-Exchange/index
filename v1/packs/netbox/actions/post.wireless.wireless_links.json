@@ -15,7 +15,12 @@
             "type": "string"
         },
         "auth_type": {
-            "description": "Auth type",
+            "description": "Auth Type",
+            "required": false,
+            "type": "string"
+        },
+        "comments": {
+            "description": "Comments",
             "required": false,
             "type": "string"
         },
@@ -45,12 +50,12 @@
             "type": "string"
         },
         "interface_a": {
-            "description": "Interface a",
+            "description": "Interface A",
             "required": true,
             "type": "integer"
         },
         "interface_b": {
-            "description": "Interface b",
+            "description": "Interface B",
             "required": true,
             "type": "integer"
         },
@@ -68,6 +73,11 @@
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

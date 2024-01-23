@@ -36,7 +36,7 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parent": {
@@ -46,12 +46,17 @@
         },
         "site": {
             "description": "Site",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
+            "type": "string"
+        },
+        "status": {
+            "description": "Status",
+            "required": false,
             "type": "string"
         },
         "tags": {

@@ -24,6 +24,11 @@
             "required": false,
             "type": "integer"
         },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
         "endpoint_uri": {
             "default": "/extras/journal-entries/{{ id }}/",
             "immutable": true,
@@ -48,6 +53,11 @@
             "description": "Kind",
             "required": false,
             "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"

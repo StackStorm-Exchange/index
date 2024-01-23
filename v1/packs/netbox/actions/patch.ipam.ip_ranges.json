@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "patch.ipam.ip_ranges",
     "parameters": {
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
@@ -16,7 +21,7 @@
         },
         "end_address": {
             "description": "End address",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "endpoint_uri": {
@@ -46,7 +51,7 @@
         },
         "start_address": {
             "description": "Start address",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "status": {

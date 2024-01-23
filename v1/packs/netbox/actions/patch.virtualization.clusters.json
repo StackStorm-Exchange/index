@@ -14,6 +14,11 @@
             "required": false,
             "type": "object"
         },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/virtualization/clusters/{{ id }}/",
             "immutable": true,
@@ -26,7 +31,7 @@
         },
         "group": {
             "description": "Group",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "http_verb": {
@@ -41,13 +46,18 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "site": {
             "description": "Site",
-            "required": true,
+            "required": false,
             "type": "integer"
+        },
+        "status": {
+            "description": "Status",
+            "required": false,
+            "type": "string"
         },
         "tags": {
             "description": "Array of tag strings",
@@ -61,7 +71,7 @@
         },
         "type": {
             "description": "Type",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },
