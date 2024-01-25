@@ -1,0 +1,99 @@
+{
+    "description": "Post a list of event rule objects.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.extras.event_rules",
+    "parameters": {
+        "action_object_id": {
+            "description": "Action object id",
+            "required": false,
+            "type": "integer"
+        },
+        "action_object_type": {
+            "description": "Action object type",
+            "required": false,
+            "type": "string"
+        },
+        "action_type": {
+            "description": "* `webhook` - Webhook * `script` - Script",
+            "required": false,
+            "type": "string"
+        },
+        "conditions": {
+            "description": "A set of conditions which determine whether the event will be generated.",
+            "required": false,
+            "type": "object"
+        },
+        "content_types": {
+            "description": "Content types",
+            "required": false,
+            "type": "array"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "enabled": {
+            "description": "Enabled",
+            "required": false,
+            "type": "boolean"
+        },
+        "endpoint_uri": {
+            "default": "/extras/event-rules/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "type_create": {
+            "description": "On create",
+            "required": false,
+            "type": "boolean"
+        },
+        "type_delete": {
+            "description": "On delete",
+            "required": false,
+            "type": "boolean"
+        },
+        "type_job_end": {
+            "description": "On job end",
+            "required": false,
+            "type": "boolean"
+        },
+        "type_job_start": {
+            "description": "On job start",
+            "required": false,
+            "type": "boolean"
+        },
+        "type_update": {
+            "description": "On update",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

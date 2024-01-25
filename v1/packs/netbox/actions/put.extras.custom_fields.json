@@ -89,8 +89,13 @@
             "required": false,
             "type": "string"
         },
-        "ui_visibility": {
-            "description": "Specifies the visibility of custom field in the UI\n* `read-write` - Read/write * `read-only` - Read-only * `hidden` - Hidden * `hidden-ifunset` - Hidden (if unset)",
+        "ui_editable": {
+            "description": "Specifies whether the custom field value can be edited in the UI\n* `yes` - Yes * `no` - No * `hidden` - Hidden",
+            "required": false,
+            "type": "string"
+        },
+        "ui_visible": {
+            "description": "Specifies whether the custom field is displayed in the UI\n* `always` - Always * `if-set` - If set * `hidden` - Hidden",
             "required": false,
             "type": "string"
         },

@@ -149,6 +149,11 @@
             "immutable": true,
             "type": "string"
         },
+        "exclude_from_utilization": {
+            "description": "Exclude_from_utilization",
+            "required": false,
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,

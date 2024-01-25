@@ -1,0 +1,69 @@
+{
+    "description": "Patch a IPSec profile object.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "patch.vpn.ipsec_profiles",
+    "parameters": {
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/vpn/ipsec-profiles/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "patch",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to patch.",
+            "required": true,
+            "type": "integer"
+        },
+        "ike_policy": {
+            "description": "Ike policy",
+            "required": false,
+            "type": "integer"
+        },
+        "ipsec_policy": {
+            "description": "Ipsec policy",
+            "required": false,
+            "type": "integer"
+        },
+        "mode": {
+            "description": "* `esp` - ESP * `ah` - AH",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

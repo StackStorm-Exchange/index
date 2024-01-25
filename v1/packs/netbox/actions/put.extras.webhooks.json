@@ -19,25 +19,15 @@
             "required": false,
             "type": "string"
         },
-        "conditions": {
-            "description": "A set of conditions which determine whether the webhook will be generated.",
-            "required": false,
-            "type": "object"
-        },
-        "content_types": {
-            "description": "Content types",
-            "required": false,
-            "type": "array"
-        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
             "type": "object"
         },
-        "enabled": {
-            "description": "Enabled",
+        "description": {
+            "description": "Description",
             "required": false,
-            "type": "boolean"
+            "type": "string"
         },
         "endpoint_uri": {
             "default": "/extras/webhooks/{{ id }}/",
@@ -93,31 +83,6 @@
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
-        },
-        "type_create": {
-            "description": "On create",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_delete": {
-            "description": "On delete",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_job_end": {
-            "description": "On job end",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_job_start": {
-            "description": "On job start",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_update": {
-            "description": "On update",
-            "required": false,
-            "type": "boolean"
         }
     },
     "runner_type": "python-script"

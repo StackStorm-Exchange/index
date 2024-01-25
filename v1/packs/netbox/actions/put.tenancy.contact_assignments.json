@@ -14,6 +14,11 @@
             "required": false,
             "type": "string"
         },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
         "endpoint_uri": {
             "default": "/tenancy/contact-assignments/{{ id }}/",
             "immutable": true,

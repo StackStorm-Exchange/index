@@ -1,0 +1,433 @@
+{
+    "description": "Get a list of tunnel objects.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get.vpn.tunnels",
+    "parameters": {
+        "created": {
+            "description": "Created",
+            "required": false,
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "created__gt": {
+            "description": "Created greater than",
+            "required": false,
+            "type": "array"
+        },
+        "created__gte": {
+            "description": "Created greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__lt": {
+            "description": "Created less than",
+            "required": false,
+            "type": "array"
+        },
+        "created__lte": {
+            "description": "Created less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__n": {
+            "description": "Created not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created_by_request": {
+            "description": "Created_by_request",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "array"
+        },
+        "description__empty": {
+            "description": "Description is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "description__ic": {
+            "description": "Description contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__ie": {
+            "description": "Description exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__iew": {
+            "description": "Description ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__isw": {
+            "description": "Description starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__n": {
+            "description": "Description not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "description__nic": {
+            "description": "Description does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__nie": {
+            "description": "Description inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__niew": {
+            "description": "Description does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__nisw": {
+            "description": "Description does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "encapsulation": {
+            "description": "Encapsulation",
+            "required": false,
+            "type": "array"
+        },
+        "encapsulation__n": {
+            "description": "Encapsulation not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "endpoint_uri": {
+            "default": "/vpn/tunnels/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "group": {
+            "description": "Tunnel group (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "group__n": {
+            "description": "Group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "group_id": {
+            "description": "Tunnel group (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "group_id__n": {
+            "description": "Group_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "http_verb": {
+            "default": "get",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "Id",
+            "required": false,
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "id__gt": {
+            "description": "Id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "id__gte": {
+            "description": "Id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "id__lt": {
+            "description": "Id less than",
+            "required": false,
+            "type": "array"
+        },
+        "id__lte": {
+            "description": "Id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "id__n": {
+            "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ipsec_profile": {
+            "description": "IPSec profile (name)",
+            "required": false,
+            "type": "array"
+        },
+        "ipsec_profile__n": {
+            "description": "Ipsec_profile not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ipsec_profile_id": {
+            "description": "IPSec profile (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "ipsec_profile_id__n": {
+            "description": "Ipsec_profile_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated": {
+            "description": "Last_updated",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gt": {
+            "description": "Last_updated greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gte": {
+            "description": "Last_updated greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lt": {
+            "description": "Last_updated less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lte": {
+            "description": "Last_updated less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__n": {
+            "description": "Last_updated not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "limit": {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "array"
+        },
+        "name__empty": {
+            "description": "Name is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "name__ic": {
+            "description": "Name contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__ie": {
+            "description": "Name exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__iew": {
+            "description": "Name ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__isw": {
+            "description": "Name starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__n": {
+            "description": "Name not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "name__nic": {
+            "description": "Name does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__nie": {
+            "description": "Name inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__niew": {
+            "description": "Name does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__nisw": {
+            "description": "Name does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "offset": {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+        },
+        "q": {
+            "description": "Search",
+            "required": false,
+            "type": "string"
+        },
+        "save_in_key_store": {
+            "default": false,
+            "description": "Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.",
+            "type": "boolean"
+        },
+        "save_in_key_store_key_name": {
+            "description": "Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.",
+            "type": "string"
+        },
+        "save_in_key_store_ttl": {
+            "default": 60,
+            "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
+            "type": "integer"
+        },
+        "status": {
+            "description": "Status",
+            "required": false,
+            "type": "array"
+        },
+        "status__n": {
+            "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag": {
+            "description": "Tag",
+            "required": false,
+            "type": "array"
+        },
+        "tag__n": {
+            "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "tenant__n": {
+            "description": "Tenant not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_group": {
+            "description": "Tenant Group (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_group__n": {
+            "description": "Tenant_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_group_id": {
+            "description": "Tenant Group (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_group_id__n": {
+            "description": "Tenant_group_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_id": {
+            "description": "Tenant (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_id__n": {
+            "description": "Tenant_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel_id": {
+            "description": "Tunnel_id",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel_id__empty": {
+            "description": "Tunnel_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "tunnel_id__gt": {
+            "description": "Tunnel_id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel_id__gte": {
+            "description": "Tunnel_id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel_id__lt": {
+            "description": "Tunnel_id less than",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel_id__lte": {
+            "description": "Tunnel_id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel_id__n": {
+            "description": "Tunnel_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "updated_by_request": {
+            "description": "Updated_by_request",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

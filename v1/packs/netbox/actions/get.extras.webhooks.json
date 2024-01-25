@@ -59,91 +59,6 @@
             "required": false,
             "type": "array"
         },
-        "content_type_id": {
-            "description": "Content_type_id",
-            "required": false,
-            "type": "array"
-        },
-        "content_type_id__empty": {
-            "description": "Content_type_id is empty/null (boolean)",
-            "required": false,
-            "type": "array"
-        },
-        "content_type_id__gt": {
-            "description": "Content_type_id greater than",
-            "required": false,
-            "type": "array"
-        },
-        "content_type_id__gte": {
-            "description": "Content_type_id greater than or equal to",
-            "required": false,
-            "type": "array"
-        },
-        "content_type_id__lt": {
-            "description": "Content_type_id less than",
-            "required": false,
-            "type": "array"
-        },
-        "content_type_id__lte": {
-            "description": "Content_type_id less than or equal to",
-            "required": false,
-            "type": "array"
-        },
-        "content_type_id__n": {
-            "description": "Content_type_id not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "content_types": {
-            "description": "Content_types",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__ic": {
-            "description": "Content_types contains (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__ie": {
-            "description": "Content_types exact match (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__iew": {
-            "description": "Content_types ends with (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__isw": {
-            "description": "Content_types starts with (case-sensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__n": {
-            "description": "Content_types not equal to",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__nic": {
-            "description": "Content_types does not contain (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__nie": {
-            "description": "Content_types inverse exact match (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__niew": {
-            "description": "Content_types does not end with (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__nisw": {
-            "description": "Content_types does not start with (case-sensitive)",
-            "required": false,
-            "type": "string"
-        },
         "created": {
             "description": "Created",
             "required": false,
@@ -184,10 +99,60 @@
             "required": false,
             "type": "string"
         },
-        "enabled": {
-            "description": "Enabled",
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "array"
+        },
+        "description__empty": {
+            "description": "Description is empty/null (boolean)",
             "required": false,
             "type": "boolean"
+        },
+        "description__ic": {
+            "description": "Description contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__ie": {
+            "description": "Description exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__iew": {
+            "description": "Description ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__isw": {
+            "description": "Description starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__n": {
+            "description": "Description not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "description__nic": {
+            "description": "Description does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__nie": {
+            "description": "Description inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__niew": {
+            "description": "Description does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__nisw": {
+            "description": "Description does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/extras/webhooks/",
@@ -419,56 +384,6 @@
             "required": false,
             "type": "array"
         },
-        "payload_url__empty": {
-            "description": "Payload_url is empty/null (boolean)",
-            "required": false,
-            "type": "boolean"
-        },
-        "payload_url__ic": {
-            "description": "Payload_url contains (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "payload_url__ie": {
-            "description": "Payload_url exact match (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "payload_url__iew": {
-            "description": "Payload_url ends with (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "payload_url__isw": {
-            "description": "Payload_url starts with (case-sensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "payload_url__n": {
-            "description": "Payload_url not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "payload_url__nic": {
-            "description": "Payload_url does not contain (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "payload_url__nie": {
-            "description": "Payload_url inverse exact match (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "payload_url__niew": {
-            "description": "Payload_url does not end with (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "payload_url__nisw": {
-            "description": "Payload_url does not start with (case-sensitive)",
-            "required": false,
-            "type": "array"
-        },
         "q": {
             "description": "Search",
             "required": false,
@@ -557,31 +472,6 @@
             "description": "Tag not equal to",
             "required": false,
             "type": "array"
-        },
-        "type_create": {
-            "description": "Type_create",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_delete": {
-            "description": "Type_delete",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_job_end": {
-            "description": "Type_job_end",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_job_start": {
-            "description": "Type_job_start",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_update": {
-            "description": "Type_update",
-            "required": false,
-            "type": "boolean"
         },
         "updated_by_request": {
             "description": "Updated_by_request",

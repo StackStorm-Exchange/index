@@ -34,6 +34,11 @@
             "immutable": true,
             "type": "string"
         },
+        "exclude_from_utilization": {
+            "description": "Devices of this type are excluded when calculating rack utilization.",
+            "required": false,
+            "type": "boolean"
+        },
         "front_image": {
             "description": "Front image",
             "required": false,
@@ -50,7 +55,7 @@
             "type": "string"
         },
         "is_full_depth": {
-            "description": "Device consumes both front and rear rack faces",
+            "description": "Device consumes both front and rear rack faces.",
             "required": false,
             "type": "boolean"
         },

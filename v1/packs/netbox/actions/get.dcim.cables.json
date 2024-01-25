@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "get.dcim.cables",
     "parameters": {
+        "circuittermination_id": {
+            "description": "Circuittermination_id",
+            "required": false,
+            "type": "array"
+        },
         "color": {
             "description": "Color",
             "required": false,
@@ -11,6 +16,16 @@
         },
         "color__n": {
             "description": "Color not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "consoleport_id": {
+            "description": "Consoleport_id",
+            "required": false,
+            "type": "array"
+        },
+        "consoleserverport_id": {
+            "description": "Consoleserverport_id",
             "required": false,
             "type": "array"
         },
@@ -124,6 +139,11 @@
             "immutable": true,
             "type": "string"
         },
+        "frontport_id": {
+            "description": "Frontport_id",
+            "required": false,
+            "type": "array"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -166,6 +186,11 @@
         },
         "id__n": {
             "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface_id": {
+            "description": "Interface_id",
             "required": false,
             "type": "array"
         },
@@ -334,6 +359,21 @@
             "required": false,
             "type": "string"
         },
+        "powerfeed_id": {
+            "description": "Powerfeed_id",
+            "required": false,
+            "type": "array"
+        },
+        "poweroutlet_id": {
+            "description": "Poweroutlet_id",
+            "required": false,
+            "type": "array"
+        },
+        "powerport_id": {
+            "description": "Powerport_id",
+            "required": false,
+            "type": "array"
+        },
         "q": {
             "description": "Search",
             "required": false,
@@ -346,6 +386,11 @@
         },
         "rack_id": {
             "description": "Rack_id",
+            "required": false,
+            "type": "array"
+        },
+        "rearport_id": {
+            "description": "Rearport_id",
             "required": false,
             "type": "array"
         },

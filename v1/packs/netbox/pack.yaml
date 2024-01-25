@@ -5,7 +5,7 @@ keywords:
 - networking
 - ipam
 - dcim
-version: 3.3.0
+version: 3.4.0
 python_versions:
 - '3'
 author: John Anderson, Jefferson White
@@ -14,7 +14,7 @@ contributors:
 - Abhimanyu Saharan <asaharan@onemindservices.com>
 content:
   actions:
-    count: 505
+    count: 555
     resources:
     - delete.circuits.circuit_terminations
     - delete.circuits.circuit_types
@@ -71,6 +71,7 @@ content:
     - delete.extras.custom_fields
     - delete.extras.custom_links
     - delete.extras.dashboard
+    - delete.extras.event_rules
     - delete.extras.export_templates
     - delete.extras.image_attachments
     - delete.extras.journal_entries
@@ -84,8 +85,6 @@ content:
     - delete.ipam.fhrp_groups
     - delete.ipam.ip_addresses
     - delete.ipam.ip_ranges
-    - delete.ipam.l2vpn_terminations
-    - delete.ipam.l2vpns
     - delete.ipam.prefixes
     - delete.ipam.rirs
     - delete.ipam.roles
@@ -109,7 +108,18 @@ content:
     - delete.virtualization.cluster_types
     - delete.virtualization.clusters
     - delete.virtualization.interfaces
+    - delete.virtualization.virtual_disks
     - delete.virtualization.virtual_machines
+    - delete.vpn.ike_policies
+    - delete.vpn.ike_proposals
+    - delete.vpn.ipsec_policies
+    - delete.vpn.ipsec_profiles
+    - delete.vpn.ipsec_proposals
+    - delete.vpn.l2vpn_terminations
+    - delete.vpn.l2vpns
+    - delete.vpn.tunnel_groups
+    - delete.vpn.tunnel_terminations
+    - delete.vpn.tunnels
     - delete.wireless.wireless_lan_groups
     - delete.wireless.wireless_lans
     - delete.wireless.wireless_links
@@ -182,6 +192,7 @@ content:
     - get.extras.custom_field_choice_sets.choices
     - get.extras.custom_fields
     - get.extras.custom_links
+    - get.extras.event_rules
     - get.extras.export_templates
     - get.extras.image_attachments
     - get.extras.journal_entries
@@ -198,8 +209,6 @@ content:
     - get.ipam.ip_addresses
     - get.ipam.ip_ranges
     - get.ipam.ip_ranges.available_ips
-    - get.ipam.l2vpn_terminations
-    - get.ipam.l2vpns
     - get.ipam.prefixes
     - get.ipam.prefixes.available_ips
     - get.ipam.prefixes.available_prefixes
@@ -226,7 +235,18 @@ content:
     - get.virtualization.cluster_types
     - get.virtualization.clusters
     - get.virtualization.interfaces
+    - get.virtualization.virtual_disks
     - get.virtualization.virtual_machines
+    - get.vpn.ike_policies
+    - get.vpn.ike_proposals
+    - get.vpn.ipsec_policies
+    - get.vpn.ipsec_profiles
+    - get.vpn.ipsec_proposals
+    - get.vpn.l2vpn_terminations
+    - get.vpn.l2vpns
+    - get.vpn.tunnel_groups
+    - get.vpn.tunnel_terminations
+    - get.vpn.tunnels
     - get.wireless.wireless_lan_groups
     - get.wireless.wireless_lans
     - get.wireless.wireless_links
@@ -285,6 +305,7 @@ content:
     - patch.extras.custom_fields
     - patch.extras.custom_links
     - patch.extras.dashboard
+    - patch.extras.event_rules
     - patch.extras.export_templates
     - patch.extras.image_attachments
     - patch.extras.journal_entries
@@ -298,8 +319,6 @@ content:
     - patch.ipam.fhrp_groups
     - patch.ipam.ip_addresses
     - patch.ipam.ip_ranges
-    - patch.ipam.l2vpn_terminations
-    - patch.ipam.l2vpns
     - patch.ipam.prefixes
     - patch.ipam.rirs
     - patch.ipam.roles
@@ -323,7 +342,18 @@ content:
     - patch.virtualization.cluster_types
     - patch.virtualization.clusters
     - patch.virtualization.interfaces
+    - patch.virtualization.virtual_disks
     - patch.virtualization.virtual_machines
+    - patch.vpn.ike_policies
+    - patch.vpn.ike_proposals
+    - patch.vpn.ipsec_policies
+    - patch.vpn.ipsec_profiles
+    - patch.vpn.ipsec_proposals
+    - patch.vpn.l2vpn_terminations
+    - patch.vpn.l2vpns
+    - patch.vpn.tunnel_groups
+    - patch.vpn.tunnel_terminations
+    - patch.vpn.tunnels
     - patch.wireless.wireless_lan_groups
     - patch.wireless.wireless_lans
     - patch.wireless.wireless_links
@@ -381,6 +411,7 @@ content:
     - post.extras.custom_field_choice_sets
     - post.extras.custom_fields
     - post.extras.custom_links
+    - post.extras.event_rules
     - post.extras.export_templates
     - post.extras.image_attachments
     - post.extras.journal_entries
@@ -394,8 +425,6 @@ content:
     - post.ipam.fhrp_groups
     - post.ipam.ip_addresses
     - post.ipam.ip_ranges
-    - post.ipam.l2vpn_terminations
-    - post.ipam.l2vpns
     - post.ipam.prefixes
     - post.ipam.rirs
     - post.ipam.roles
@@ -420,7 +449,18 @@ content:
     - post.virtualization.cluster_types
     - post.virtualization.clusters
     - post.virtualization.interfaces
+    - post.virtualization.virtual_disks
     - post.virtualization.virtual_machines
+    - post.vpn.ike_policies
+    - post.vpn.ike_proposals
+    - post.vpn.ipsec_policies
+    - post.vpn.ipsec_profiles
+    - post.vpn.ipsec_proposals
+    - post.vpn.l2vpn_terminations
+    - post.vpn.l2vpns
+    - post.vpn.tunnel_groups
+    - post.vpn.tunnel_terminations
+    - post.vpn.tunnels
     - post.wireless.wireless_lan_groups
     - post.wireless.wireless_lans
     - post.wireless.wireless_links
@@ -479,6 +519,7 @@ content:
     - put.extras.custom_fields
     - put.extras.custom_links
     - put.extras.dashboard
+    - put.extras.event_rules
     - put.extras.export_templates
     - put.extras.image_attachments
     - put.extras.journal_entries
@@ -492,8 +533,6 @@ content:
     - put.ipam.fhrp_groups
     - put.ipam.ip_addresses
     - put.ipam.ip_ranges
-    - put.ipam.l2vpn_terminations
-    - put.ipam.l2vpns
     - put.ipam.prefixes
     - put.ipam.rirs
     - put.ipam.roles
@@ -517,7 +556,18 @@ content:
     - put.virtualization.cluster_types
     - put.virtualization.clusters
     - put.virtualization.interfaces
+    - put.virtualization.virtual_disks
     - put.virtualization.virtual_machines
+    - put.vpn.ike_policies
+    - put.vpn.ike_proposals
+    - put.vpn.ipsec_policies
+    - put.vpn.ipsec_profiles
+    - put.vpn.ipsec_proposals
+    - put.vpn.l2vpn_terminations
+    - put.vpn.l2vpns
+    - put.vpn.tunnel_groups
+    - put.vpn.tunnel_terminations
+    - put.vpn.tunnels
     - put.wireless.wireless_lan_groups
     - put.wireless.wireless_lans
     - put.wireless.wireless_links

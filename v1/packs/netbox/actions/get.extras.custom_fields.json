@@ -423,13 +423,23 @@
             "required": false,
             "type": "array"
         },
-        "ui_visibility": {
-            "description": "Specifies the visibility of custom field in the UI",
+        "ui_editable": {
+            "description": "Specifies whether the custom field value can be edited in the UI",
             "required": false,
             "type": "string"
         },
-        "ui_visibility__n": {
-            "description": "Ui_visibility not equal to",
+        "ui_editable__n": {
+            "description": "Ui_editable not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "ui_visible": {
+            "description": "Specifies whether the custom field is displayed in the UI",
+            "required": false,
+            "type": "string"
+        },
+        "ui_visible__n": {
+            "description": "Ui_visible not equal to",
             "required": false,
             "type": "string"
         },

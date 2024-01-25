@@ -1,0 +1,278 @@
+{
+    "description": "Get a list of tunnel termination objects.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "get.vpn.tunnel_terminations",
+    "parameters": {
+        "created": {
+            "description": "Created",
+            "required": false,
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "created__gt": {
+            "description": "Created greater than",
+            "required": false,
+            "type": "array"
+        },
+        "created__gte": {
+            "description": "Created greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__lt": {
+            "description": "Created less than",
+            "required": false,
+            "type": "array"
+        },
+        "created__lte": {
+            "description": "Created less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__n": {
+            "description": "Created not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created_by_request": {
+            "description": "Created_by_request",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/vpn/tunnel-terminations/",
+            "immutable": true,
+            "type": "string"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "get",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "Id",
+            "required": false,
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "id__gt": {
+            "description": "Id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "id__gte": {
+            "description": "Id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "id__lt": {
+            "description": "Id less than",
+            "required": false,
+            "type": "array"
+        },
+        "id__lte": {
+            "description": "Id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "id__n": {
+            "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface": {
+            "description": "Interface (name)",
+            "required": false,
+            "type": "array"
+        },
+        "interface__n": {
+            "description": "Interface not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface_id": {
+            "description": "Interface (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "interface_id__n": {
+            "description": "Interface_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated": {
+            "description": "Last_updated",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gt": {
+            "description": "Last_updated greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gte": {
+            "description": "Last_updated greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lt": {
+            "description": "Last_updated less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lte": {
+            "description": "Last_updated less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__n": {
+            "description": "Last_updated not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "limit": {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
+            "required": false,
+            "type": "string"
+        },
+        "offset": {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+        },
+        "outside_ip_id": {
+            "description": "Outside IP (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "outside_ip_id__n": {
+            "description": "Outside_ip_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "q": {
+            "description": "Search",
+            "required": false,
+            "type": "string"
+        },
+        "role": {
+            "description": "Role",
+            "required": false,
+            "type": "array"
+        },
+        "role__n": {
+            "description": "Role not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "save_in_key_store": {
+            "default": false,
+            "description": "Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.",
+            "type": "boolean"
+        },
+        "save_in_key_store_key_name": {
+            "description": "Name of the key to store the json result value in the st2 key store. Must be used with save_in_key_store and optionally save_in_key_store_ttl.",
+            "type": "string"
+        },
+        "save_in_key_store_ttl": {
+            "default": 60,
+            "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
+            "type": "integer"
+        },
+        "tag": {
+            "description": "Tag",
+            "required": false,
+            "type": "array"
+        },
+        "tag__n": {
+            "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "termination_type": {
+            "description": "Termination_type",
+            "required": false,
+            "type": "string"
+        },
+        "termination_type__n": {
+            "description": "Termination_type not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "tunnel": {
+            "description": "Tunnel (name)",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel__n": {
+            "description": "Tunnel not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel_id": {
+            "description": "Tunnel (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "tunnel_id__n": {
+            "description": "Tunnel_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "updated_by_request": {
+            "description": "Updated_by_request",
+            "required": false,
+            "type": "string"
+        },
+        "vminterface": {
+            "description": "VM interface (name)",
+            "required": false,
+            "type": "array"
+        },
+        "vminterface__n": {
+            "description": "Vminterface not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "vminterface_id": {
+            "description": "VM interface (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "vminterface_id__n": {
+            "description": "Vminterface_id not equal to",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}
