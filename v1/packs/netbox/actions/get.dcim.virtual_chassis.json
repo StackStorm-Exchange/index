@@ -1,98 +1,158 @@
 {
-    "description": "GET Virtual Chassis",
+    "description": "Get a list of virtual chassis objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.virtual_chassis",
     "parameters": {
         "created": {
-            "description": "",
+            "description": "Created",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "created__gt": {
-            "description": "",
+            "description": "Created greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__gte": {
-            "description": "",
+            "description": "Created greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lt": {
-            "description": "",
+            "description": "Created less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lte": {
-            "description": "",
+            "description": "Created less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__n": {
-            "description": "",
+            "description": "Created not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created_by_request": {
-            "description": "",
+            "description": "Created_by_request",
             "required": false,
             "type": "string"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "array"
+        },
+        "description__empty": {
+            "description": "Description is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "description__ic": {
+            "description": "Description contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__ie": {
+            "description": "Description exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__iew": {
+            "description": "Description ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__isw": {
+            "description": "Description starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__n": {
+            "description": "Description not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "description__nic": {
+            "description": "Description does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__nie": {
+            "description": "Description inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__niew": {
+            "description": "Description does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__nisw": {
+            "description": "Description does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "domain": {
-            "description": "",
+            "description": "Domain",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__empty": {
-            "description": "",
+            "description": "Domain is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "domain__ic": {
-            "description": "",
+            "description": "Domain contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__ie": {
-            "description": "",
+            "description": "Domain exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__iew": {
-            "description": "",
+            "description": "Domain ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__isw": {
-            "description": "",
+            "description": "Domain starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__n": {
-            "description": "",
+            "description": "Domain not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__nic": {
-            "description": "",
+            "description": "Domain does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__nie": {
-            "description": "",
+            "description": "Domain inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__niew": {
-            "description": "",
+            "description": "Domain does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "domain__nisw": {
-            "description": "",
+            "description": "Domain does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/dcim/virtual-chassis/",
@@ -110,64 +170,74 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated": {
-            "description": "",
+            "description": "Last_updated",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "last_updated__gt": {
-            "description": "",
+            "description": "Last_updated greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__gte": {
-            "description": "",
+            "description": "Last_updated greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lt": {
-            "description": "",
+            "description": "Last_updated less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lte": {
-            "description": "",
+            "description": "Last_updated less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__n": {
-            "description": "",
+            "description": "Last_updated not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -175,79 +245,84 @@
             "type": "integer"
         },
         "master": {
-            "description": "",
+            "description": "Master (name)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "master__n": {
-            "description": "",
+            "description": "Master not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "master_id": {
-            "description": "",
+            "description": "Master (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "master_id__n": {
-            "description": "",
+            "description": "Master_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
             "required": false,
             "type": "string"
         },
         "name": {
-            "description": "",
+            "description": "Name",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__empty": {
-            "description": "",
+            "description": "Name is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "name__ic": {
-            "description": "",
+            "description": "Name contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__ie": {
-            "description": "",
+            "description": "Name exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__iew": {
-            "description": "",
+            "description": "Name ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__isw": {
-            "description": "",
+            "description": "Name starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__n": {
-            "description": "",
+            "description": "Name not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nic": {
-            "description": "",
+            "description": "Name does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nie": {
-            "description": "",
+            "description": "Name inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__niew": {
-            "description": "",
+            "description": "Name does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nisw": {
-            "description": "",
+            "description": "Name does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "offset": {
             "description": "The initial index from which to return the results.",
@@ -260,29 +335,29 @@
             "type": "string"
         },
         "q": {
-            "description": "",
+            "description": "Search",
             "required": false,
             "type": "string"
         },
         "region": {
-            "description": "",
+            "description": "Region (slug)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "region__n": {
-            "description": "",
+            "description": "Region not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "region_id": {
-            "description": "",
+            "description": "Region (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "region_id__n": {
-            "description": "",
+            "description": "Region_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "save_in_key_store": {
             "default": false,
@@ -299,77 +374,77 @@
             "type": "integer"
         },
         "site": {
-            "description": "",
+            "description": "Site name (slug)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site__n": {
-            "description": "",
+            "description": "Site not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_group": {
-            "description": "",
+            "description": "Site group (slug)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_group__n": {
-            "description": "",
+            "description": "Site_group not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_group_id": {
-            "description": "",
+            "description": "Site group (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_group_id__n": {
-            "description": "",
+            "description": "Site_group_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_id": {
-            "description": "",
+            "description": "Site (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_id__n": {
-            "description": "",
+            "description": "Site_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tag": {
-            "description": "",
+            "description": "Tag",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tag__n": {
-            "description": "",
+            "description": "Tag not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tenant": {
-            "description": "",
+            "description": "Tenant (slug)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tenant__n": {
-            "description": "",
+            "description": "Tenant not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tenant_id": {
-            "description": "",
+            "description": "Tenant (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tenant_id__n": {
-            "description": "",
+            "description": "Tenant_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "updated_by_request": {
-            "description": "",
+            "description": "Updated_by_request",
             "required": false,
             "type": "string"
         }

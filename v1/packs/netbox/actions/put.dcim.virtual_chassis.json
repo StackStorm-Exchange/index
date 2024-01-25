@@ -1,5 +1,5 @@
 {
-    "description": "PUT Virtual Chassis",
+    "description": "Put a virtual chassis object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.dcim.virtual_chassis",
@@ -42,7 +42,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "master": {
             "description": "Master",
@@ -51,7 +51,7 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

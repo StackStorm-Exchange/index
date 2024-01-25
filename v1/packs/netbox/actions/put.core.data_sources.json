@@ -1,5 +1,5 @@
 {
-    "description": "PUT Data Sources",
+    "description": "Put a data source object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.core.data_sources",
@@ -37,16 +37,16 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "ignore_rules": {
-            "description": "Ignore rules",
+            "description": "Patterns (one per line) matching files to ignore when syncing",
             "required": false,
             "type": "string"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parameters": {
@@ -56,11 +56,11 @@
         },
         "source_url": {
             "description": "URL",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "type": {
-            "description": "Type",
+            "description": "* `local` - Local * `git` - Git * `amazon-s3` - Amazon S3",
             "required": false,
             "type": "string"
         }

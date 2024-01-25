@@ -1,5 +1,5 @@
 {
-    "description": "PUT Vlan Groups",
+    "description": "Put a VLAN group object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.ipam.vlan_groups",
@@ -32,7 +32,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "max_vid": {
             "description": "Maximum VLAN ID",
@@ -46,7 +46,7 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "scope_id": {
@@ -61,7 +61,7 @@
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

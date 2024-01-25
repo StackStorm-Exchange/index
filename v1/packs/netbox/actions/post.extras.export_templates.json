@@ -1,26 +1,21 @@
 {
-    "description": "POST Export Templates",
+    "description": "Post a list of export template objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.extras.export_templates",
     "parameters": {
         "as_attachment": {
-            "description": "As attachment",
+            "description": "Download file as attachment",
             "required": false,
             "type": "boolean"
         },
         "content_types": {
             "description": "Content types",
-            "required": true,
+            "required": false,
             "type": "array"
         },
-        "data_file": {
-            "description": "Data file",
-            "required": false,
-            "type": "integer"
-        },
         "data_source": {
-            "description": "Data source",
+            "description": "Remote data source",
             "required": false,
             "type": "integer"
         },
@@ -35,7 +30,7 @@
             "type": "string"
         },
         "file_extension": {
-            "description": "File extension",
+            "description": "Extension to append to the rendered filename",
             "required": false,
             "type": "string"
         },
@@ -50,18 +45,18 @@
             "type": "string"
         },
         "mime_type": {
-            "description": "MIME type",
+            "description": "Defaults to &lt;code&gt;text/plain; charset=utf-8&lt;/code&gt;",
             "required": false,
             "type": "string"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "template_code": {
-            "description": "Template code",
-            "required": true,
+            "description": "Jinja2 template code. The list of objects being exported is passed as a context variable named &lt;code&gt;queryset&lt;/code&gt;.",
+            "required": false,
             "type": "string"
         }
     },

@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Data Sources",
+    "description": "Patch a data source object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.core.data_sources",
@@ -37,10 +37,10 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "ignore_rules": {
-            "description": "Ignore rules",
+            "description": "Patterns (one per line) matching files to ignore when syncing",
             "required": false,
             "type": "string"
         },
@@ -60,7 +60,7 @@
             "type": "string"
         },
         "type": {
-            "description": "Type",
+            "description": "* `local` - Local * `git` - Git * `amazon-s3` - Amazon S3",
             "required": false,
             "type": "string"
         }

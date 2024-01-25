@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Module Bay Templates",
+    "description": "Patch a module bay template object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.dcim.module_bay_templates",
@@ -32,20 +32,20 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "label": {
-            "description": "Label",
+            "description": "Physical label",
             "required": false,
             "type": "string"
         },
         "name": {
-            "description": "Name",
+            "description": "{module} is accepted as a substitution for the module bay position when attached to a module type.",
             "required": false,
             "type": "string"
         },
         "position": {
-            "description": "Position",
+            "description": "Identifier to reference when renaming installed components",
             "required": false,
             "type": "string"
         }

@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Dashboard",
+    "description": "Patch a list of dashboard objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.extras.dashboard",
@@ -27,7 +27,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "layout": {
             "description": "Layout",

@@ -1,17 +1,17 @@
 {
-    "description": "PUT L2Vpn Terminations",
+    "description": "Put a L2VPN termination object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.ipam.l2vpn_terminations",
     "parameters": {
         "assigned_object_id": {
             "description": "Assigned object id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "assigned_object_type": {
             "description": "Assigned object type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "custom_fields": {
@@ -37,11 +37,11 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "l2vpn": {
             "description": "L2vpn",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "tags": {

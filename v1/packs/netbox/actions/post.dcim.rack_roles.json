@@ -1,5 +1,5 @@
 {
-    "description": "POST Rack Roles",
+    "description": "Post a list of rack role objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.dcim.rack_roles",
@@ -36,12 +36,12 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

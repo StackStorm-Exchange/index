@@ -1,148 +1,193 @@
 {
-    "description": "GET Webhooks",
+    "description": "Get a list of webhook objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.extras.webhooks",
     "parameters": {
         "ca_file_path": {
-            "description": "",
+            "description": "Ca_file_path",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__empty": {
-            "description": "",
+            "description": "Ca_file_path is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "ca_file_path__ic": {
-            "description": "",
+            "description": "Ca_file_path contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__ie": {
-            "description": "",
+            "description": "Ca_file_path exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__iew": {
-            "description": "",
+            "description": "Ca_file_path ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__isw": {
-            "description": "",
+            "description": "Ca_file_path starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__n": {
-            "description": "",
+            "description": "Ca_file_path not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__nic": {
-            "description": "",
+            "description": "Ca_file_path does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__nie": {
-            "description": "",
+            "description": "Ca_file_path inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__niew": {
-            "description": "",
+            "description": "Ca_file_path does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ca_file_path__nisw": {
-            "description": "",
+            "description": "Ca_file_path does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "content_type_id": {
-            "description": "",
+            "description": "Content_type_id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "content_type_id__empty": {
+            "description": "Content_type_id is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "content_type_id__gt": {
-            "description": "",
+            "description": "Content_type_id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "content_type_id__gte": {
-            "description": "",
+            "description": "Content_type_id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "content_type_id__lt": {
-            "description": "",
+            "description": "Content_type_id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "content_type_id__lte": {
-            "description": "",
+            "description": "Content_type_id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "content_type_id__n": {
-            "description": "",
+            "description": "Content_type_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "content_types": {
-            "description": "",
+            "description": "Content_types",
             "required": false,
             "type": "string"
         },
         "content_types__ic": {
-            "description": "",
+            "description": "Content_types contains (case-insensitive)",
             "required": false,
             "type": "string"
         },
         "content_types__ie": {
-            "description": "",
+            "description": "Content_types exact match (case-insensitive)",
             "required": false,
             "type": "string"
         },
         "content_types__iew": {
-            "description": "",
+            "description": "Content_types ends with (case-insensitive)",
             "required": false,
             "type": "string"
         },
         "content_types__isw": {
-            "description": "",
+            "description": "Content_types starts with (case-sensitive)",
             "required": false,
             "type": "string"
         },
         "content_types__n": {
-            "description": "",
+            "description": "Content_types not equal to",
             "required": false,
             "type": "string"
         },
         "content_types__nic": {
-            "description": "",
+            "description": "Content_types does not contain (case-insensitive)",
             "required": false,
             "type": "string"
         },
         "content_types__nie": {
-            "description": "",
+            "description": "Content_types inverse exact match (case-insensitive)",
             "required": false,
             "type": "string"
         },
         "content_types__niew": {
-            "description": "",
+            "description": "Content_types does not end with (case-insensitive)",
             "required": false,
             "type": "string"
         },
         "content_types__nisw": {
-            "description": "",
+            "description": "Content_types does not start with (case-sensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "description": "Created",
+            "required": false,
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "created__gt": {
+            "description": "Created greater than",
+            "required": false,
+            "type": "array"
+        },
+        "created__gte": {
+            "description": "Created greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__lt": {
+            "description": "Created less than",
+            "required": false,
+            "type": "array"
+        },
+        "created__lte": {
+            "description": "Created less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__n": {
+            "description": "Created not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created_by_request": {
+            "description": "Created_by_request",
             "required": false,
             "type": "string"
         },
         "enabled": {
-            "description": "",
+            "description": "Enabled",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "endpoint_uri": {
             "default": "/extras/webhooks/",
@@ -155,69 +200,69 @@
             "type": "boolean"
         },
         "http_content_type": {
-            "description": "",
+            "description": "Http_content_type",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__empty": {
-            "description": "",
+            "description": "Http_content_type is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "http_content_type__ic": {
-            "description": "",
+            "description": "Http_content_type contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__ie": {
-            "description": "",
+            "description": "Http_content_type exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__iew": {
-            "description": "",
+            "description": "Http_content_type ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__isw": {
-            "description": "",
+            "description": "Http_content_type starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__n": {
-            "description": "",
+            "description": "Http_content_type not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__nic": {
-            "description": "",
+            "description": "Http_content_type does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__nie": {
-            "description": "",
+            "description": "Http_content_type inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__niew": {
-            "description": "",
+            "description": "Http_content_type does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_content_type__nisw": {
-            "description": "",
+            "description": "Http_content_type does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_method": {
-            "description": "",
+            "description": "Http_method",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_method__n": {
-            "description": "",
+            "description": "Http_method not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_verb": {
             "default": "get",
@@ -225,94 +270,139 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "last_updated": {
+            "description": "Last_updated",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gt": {
+            "description": "Last_updated greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gte": {
+            "description": "Last_updated greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lt": {
+            "description": "Last_updated less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lte": {
+            "description": "Last_updated less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__n": {
+            "description": "Last_updated not equal to",
+            "required": false,
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
         },
-        "name": {
-            "description": "",
+        "modified_by_request": {
+            "description": "Modified_by_request",
             "required": false,
             "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "array"
         },
         "name__empty": {
-            "description": "",
+            "description": "Name is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "name__ic": {
-            "description": "",
+            "description": "Name contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__ie": {
-            "description": "",
+            "description": "Name exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__iew": {
-            "description": "",
+            "description": "Name ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__isw": {
-            "description": "",
+            "description": "Name starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__n": {
-            "description": "",
+            "description": "Name not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nic": {
-            "description": "",
+            "description": "Name does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nie": {
-            "description": "",
+            "description": "Name inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__niew": {
-            "description": "",
+            "description": "Name does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nisw": {
-            "description": "",
+            "description": "Name does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "offset": {
             "description": "The initial index from which to return the results.",
@@ -325,62 +415,62 @@
             "type": "string"
         },
         "payload_url": {
-            "description": "",
+            "description": "Payload_url",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__empty": {
-            "description": "",
+            "description": "Payload_url is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "payload_url__ic": {
-            "description": "",
+            "description": "Payload_url contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__ie": {
-            "description": "",
+            "description": "Payload_url exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__iew": {
-            "description": "",
+            "description": "Payload_url ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__isw": {
-            "description": "",
+            "description": "Payload_url starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__n": {
-            "description": "",
+            "description": "Payload_url not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__nic": {
-            "description": "",
+            "description": "Payload_url does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__nie": {
-            "description": "",
+            "description": "Payload_url inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__niew": {
-            "description": "",
+            "description": "Payload_url does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "payload_url__nisw": {
-            "description": "",
+            "description": "Payload_url does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "q": {
-            "description": "",
+            "description": "Search",
             "required": false,
             "type": "string"
         },
@@ -399,87 +489,102 @@
             "type": "integer"
         },
         "secret": {
-            "description": "",
+            "description": "Secret",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__empty": {
-            "description": "",
+            "description": "Secret is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "secret__ic": {
-            "description": "",
+            "description": "Secret contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__ie": {
-            "description": "",
+            "description": "Secret exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__iew": {
-            "description": "",
+            "description": "Secret ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__isw": {
-            "description": "",
+            "description": "Secret starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__n": {
-            "description": "",
+            "description": "Secret not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__nic": {
-            "description": "",
+            "description": "Secret does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__nie": {
-            "description": "",
+            "description": "Secret inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__niew": {
-            "description": "",
+            "description": "Secret does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "secret__nisw": {
-            "description": "",
+            "description": "Secret does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "ssl_verification": {
-            "description": "",
+            "description": "Ssl_verification",
             "required": false,
-            "type": "string"
+            "type": "boolean"
+        },
+        "tag": {
+            "description": "Tag",
+            "required": false,
+            "type": "array"
+        },
+        "tag__n": {
+            "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
         },
         "type_create": {
-            "description": "",
+            "description": "Type_create",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "type_delete": {
-            "description": "",
+            "description": "Type_delete",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "type_job_end": {
-            "description": "",
+            "description": "Type_job_end",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "type_job_start": {
-            "description": "",
+            "description": "Type_job_start",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "type_update": {
-            "description": "",
+            "description": "Type_update",
+            "required": false,
+            "type": "boolean"
+        },
+        "updated_by_request": {
+            "description": "Updated_by_request",
             "required": false,
             "type": "string"
         }

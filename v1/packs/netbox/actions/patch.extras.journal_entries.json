@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Journal Entries",
+    "description": "Patch a journal entry object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.extras.journal_entries",
@@ -47,10 +47,10 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "kind": {
-            "description": "Kind",
+            "description": "* `info` - Info * `success` - Success * `warning` - Warning * `danger` - Danger",
             "required": false,
             "type": "string"
         },

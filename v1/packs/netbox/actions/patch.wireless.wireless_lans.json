@@ -1,11 +1,11 @@
 {
-    "description": "PATCH Wireless Lans",
+    "description": "Patch a wireless LAN object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.wireless.wireless_lans",
     "parameters": {
         "auth_cipher": {
-            "description": "Auth cipher",
+            "description": "Authentication cipher",
             "required": false,
             "type": "string"
         },
@@ -15,7 +15,7 @@
             "type": "string"
         },
         "auth_type": {
-            "description": "Auth Type",
+            "description": "Authentication type",
             "required": false,
             "type": "string"
         },
@@ -57,15 +57,15 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "ssid": {
-            "description": "SSID",
+            "description": "Ssid",
             "required": false,
             "type": "string"
         },
         "status": {
-            "description": "Status",
+            "description": "* `active` - Active * `reserved` - Reserved * `disabled` - Disabled * `deprecated` - Deprecated",
             "required": false,
             "type": "string"
         },
@@ -80,7 +80,7 @@
             "type": "integer"
         },
         "vlan": {
-            "description": "VLAN",
+            "description": "Vlan",
             "required": false,
             "type": "integer"
         }

@@ -1,5 +1,5 @@
 {
-    "description": "PUT Tenant Groups",
+    "description": "Put a tenant group object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.tenancy.tenant_groups",
@@ -32,11 +32,11 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parent": {
@@ -46,7 +46,7 @@
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

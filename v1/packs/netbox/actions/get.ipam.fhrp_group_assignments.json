@@ -1,53 +1,58 @@
 {
-    "description": "GET Fhrp Group Assignments",
+    "description": "Get a list of FHRP group assignment objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.ipam.fhrp_group_assignments",
     "parameters": {
         "created": {
-            "description": "",
+            "description": "Created",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "created__gt": {
-            "description": "",
+            "description": "Created greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__gte": {
-            "description": "",
+            "description": "Created greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lt": {
-            "description": "",
+            "description": "Created less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lte": {
-            "description": "",
+            "description": "Created less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__n": {
-            "description": "",
+            "description": "Created not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created_by_request": {
-            "description": "",
+            "description": "Created_by_request",
             "required": false,
             "type": "string"
         },
         "device": {
-            "description": "",
+            "description": "Device",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "device_id": {
-            "description": "",
+            "description": "Device_id",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/ipam/fhrp-group-assignments/",
@@ -60,14 +65,14 @@
             "type": "boolean"
         },
         "group_id": {
-            "description": "",
+            "description": "Group (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "group_id__n": {
-            "description": "",
+            "description": "Group_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_verb": {
             "default": "get",
@@ -75,109 +80,129 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface_id": {
-            "description": "",
+            "description": "Interface_id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "interface_id__empty": {
+            "description": "Interface_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "interface_id__gt": {
-            "description": "",
+            "description": "Interface_id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface_id__gte": {
-            "description": "",
+            "description": "Interface_id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface_id__lt": {
-            "description": "",
+            "description": "Interface_id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface_id__lte": {
-            "description": "",
+            "description": "Interface_id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface_id__n": {
-            "description": "",
+            "description": "Interface_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface_type": {
-            "description": "",
+            "description": "Interface_type",
             "required": false,
             "type": "string"
         },
         "interface_type__n": {
-            "description": "",
+            "description": "Interface_type not equal to",
             "required": false,
             "type": "string"
         },
         "last_updated": {
-            "description": "",
+            "description": "Last_updated",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "last_updated__gt": {
-            "description": "",
+            "description": "Last_updated greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__gte": {
-            "description": "",
+            "description": "Last_updated greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lt": {
-            "description": "",
+            "description": "Last_updated less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lte": {
-            "description": "",
+            "description": "Last_updated less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__n": {
-            "description": "",
+            "description": "Last_updated not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
+            "required": false,
+            "type": "string"
         },
         "offset": {
             "description": "The initial index from which to return the results.",
@@ -190,34 +215,39 @@
             "type": "string"
         },
         "priority": {
-            "description": "",
+            "description": "Priority",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "priority__empty": {
+            "description": "Priority is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "priority__gt": {
-            "description": "",
+            "description": "Priority greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "priority__gte": {
-            "description": "",
+            "description": "Priority greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "priority__lt": {
-            "description": "",
+            "description": "Priority less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "priority__lte": {
-            "description": "",
+            "description": "Priority less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "priority__n": {
-            "description": "",
+            "description": "Priority not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "save_in_key_store": {
             "default": false,
@@ -234,19 +264,19 @@
             "type": "integer"
         },
         "updated_by_request": {
-            "description": "",
+            "description": "Updated_by_request",
             "required": false,
             "type": "string"
         },
         "virtual_machine": {
-            "description": "",
+            "description": "Virtual_machine",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "virtual_machine_id": {
-            "description": "",
+            "description": "Virtual_machine_id",
             "required": false,
-            "type": "string"
+            "type": "array"
         }
     },
     "runner_type": "python-script"

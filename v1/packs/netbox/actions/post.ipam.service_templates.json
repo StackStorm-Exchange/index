@@ -1,5 +1,5 @@
 {
-    "description": "POST Service Templates",
+    "description": "Post a list of service template objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.ipam.service_templates",
@@ -36,17 +36,17 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "ports": {
-            "description": "Ports",
-            "required": true,
+            "description": "Port numbers",
+            "required": false,
             "type": "array"
         },
         "protocol": {
-            "description": "Protocol",
-            "required": true,
+            "description": "* `tcp` - TCP * `udp` - UDP * `sctp` - SCTP",
+            "required": false,
             "type": "string"
         },
         "tags": {

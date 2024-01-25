@@ -1,12 +1,12 @@
 {
-    "description": "POST Image Attachments",
+    "description": "Post a list of image attachment objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.extras.image_attachments",
     "parameters": {
         "content_type": {
             "description": "Content type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "endpoint_uri": {
@@ -24,14 +24,19 @@
             "immutable": true,
             "type": "string"
         },
+        "image": {
+            "description": "Image",
+            "required": false,
+            "type": "string"
+        },
         "image_height": {
             "description": "Image height",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "image_width": {
             "description": "Image width",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "name": {
@@ -41,7 +46,7 @@
         },
         "object_id": {
             "description": "Object id",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

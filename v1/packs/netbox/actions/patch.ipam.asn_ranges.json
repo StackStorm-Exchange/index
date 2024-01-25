@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Asn Ranges",
+    "description": "Patch a ASN range object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.ipam.asn_ranges",
@@ -37,7 +37,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
@@ -45,7 +45,7 @@
             "type": "string"
         },
         "rir": {
-            "description": "RIR",
+            "description": "Rir",
             "required": false,
             "type": "integer"
         },

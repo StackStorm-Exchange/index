@@ -1,12 +1,12 @@
 {
-    "description": "PUT Provider Accounts",
+    "description": "Put a provider account object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.circuits.provider_accounts",
     "parameters": {
         "account": {
             "description": "Account ID",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "comments": {
@@ -42,7 +42,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
@@ -51,7 +51,7 @@
         },
         "provider": {
             "description": "Provider",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "tags": {

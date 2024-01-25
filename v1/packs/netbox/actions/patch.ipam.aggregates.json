@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Aggregates",
+    "description": "Patch a aggregate object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.ipam.aggregates",
@@ -42,7 +42,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "prefix": {
             "description": "Prefix",
@@ -50,7 +50,7 @@
             "type": "string"
         },
         "rir": {
-            "description": "RIR",
+            "description": "Regional Internet Registry responsible for this IP space",
             "required": false,
             "type": "integer"
         },

@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Circuits",
+    "description": "Patch a circuit object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.circuits.circuits",
@@ -47,7 +47,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "install_date": {
             "description": "Installed",
@@ -65,7 +65,7 @@
             "type": "integer"
         },
         "status": {
-            "description": "Status",
+            "description": "* `planned` - Planned * `provisioning` - Provisioning * `active` - Active * `offline` - Offline * `deprovisioning` - Deprovisioning * `decommissioned` - Decommissioned",
             "required": false,
             "type": "string"
         },

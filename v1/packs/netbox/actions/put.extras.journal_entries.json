@@ -1,22 +1,22 @@
 {
-    "description": "PUT Journal Entries",
+    "description": "Put a journal entry object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.extras.journal_entries",
     "parameters": {
         "assigned_object_id": {
             "description": "Assigned object id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "assigned_object_type": {
             "description": "Assigned object type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "comments": {
             "description": "Comments",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "created_by": {
@@ -47,10 +47,10 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "kind": {
-            "description": "Kind",
+            "description": "* `info` - Info * `success` - Success * `warning` - Warning * `danger` - Danger",
             "required": false,
             "type": "string"
         },

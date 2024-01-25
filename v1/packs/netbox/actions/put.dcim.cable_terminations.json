@@ -1,17 +1,17 @@
 {
-    "description": "PUT Cable Terminations",
+    "description": "Put a cable termination object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.dcim.cable_terminations",
     "parameters": {
         "cable": {
             "description": "Cable",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "cable_end": {
             "description": "End",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "endpoint_uri": {
@@ -32,16 +32,16 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "termination_id": {
             "description": "Termination id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "termination_type": {
             "description": "Termination type",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

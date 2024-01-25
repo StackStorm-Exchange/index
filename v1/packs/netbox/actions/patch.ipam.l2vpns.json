@@ -1,5 +1,5 @@
 {
-    "description": "PATCH L2Vpns",
+    "description": "Patch a L2VPN object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.ipam.l2vpns",
@@ -42,7 +42,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "identifier": {
             "description": "Identifier",
@@ -75,7 +75,7 @@
             "type": "integer"
         },
         "type": {
-            "description": "Type",
+            "description": "* `vpws` - VPWS * `vpls` - VPLS * `vxlan` - VXLAN * `vxlan-evpn` - VXLAN-EVPN * `mpls-evpn` - MPLS EVPN * `pbb-evpn` - PBB EVPN * `epl` - EPL * `evpl` - EVPL * `ep-lan` - Ethernet Private LAN * `evp-lan` - Ethernet Virtual Private LAN * `ep-tree` - Ethernet Private Tree * `evp-tree` - Ethernet Virtual Private Tree",
             "required": false,
             "type": "string"
         }

@@ -1,11 +1,11 @@
 {
-    "description": "PUT Modules",
+    "description": "Put a module object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.dcim.modules",
     "parameters": {
         "asset_tag": {
-            "description": "Asset tag",
+            "description": "A unique tag used to identify this device",
             "required": false,
             "type": "string"
         },
@@ -26,7 +26,7 @@
         },
         "device": {
             "description": "Device",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -47,16 +47,16 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "module_bay": {
             "description": "Module bay",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "module_type": {
             "description": "Module type",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "serial": {
@@ -65,7 +65,7 @@
             "type": "string"
         },
         "status": {
-            "description": "Status",
+            "description": "* `offline` - Offline * `active` - Active * `planned` - Planned * `staged` - Staged * `failed` - Failed * `decommissioning` - Decommissioning",
             "required": false,
             "type": "string"
         },

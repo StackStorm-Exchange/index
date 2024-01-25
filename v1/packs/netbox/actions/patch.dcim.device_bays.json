@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Device Bays",
+    "description": "Patch a device bay object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.dcim.device_bays",
@@ -37,7 +37,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "installed_device": {
             "description": "Installed device",
@@ -45,7 +45,7 @@
             "type": "integer"
         },
         "label": {
-            "description": "Label",
+            "description": "Physical label",
             "required": false,
             "type": "string"
         },

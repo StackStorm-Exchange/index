@@ -1,5 +1,5 @@
 {
-    "description": "PUT Prefixes",
+    "description": "Put a prefix object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.ipam.prefixes",
@@ -37,7 +37,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "is_pool": {
             "description": "Is a pool",
@@ -45,17 +45,17 @@
             "type": "boolean"
         },
         "mark_utilized": {
-            "description": "Mark utilized",
+            "description": "Treat as 100% utilized",
             "required": false,
             "type": "boolean"
         },
         "prefix": {
             "description": "Prefix",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "role": {
-            "description": "Role",
+            "description": "The primary function of this prefix",
             "required": false,
             "type": "integer"
         },
@@ -65,7 +65,7 @@
             "type": "integer"
         },
         "status": {
-            "description": "Status",
+            "description": "Operational status of this prefix\n* `container` - Container * `active` - Active * `reserved` - Reserved * `deprecated` - Deprecated",
             "required": false,
             "type": "string"
         },
@@ -80,12 +80,12 @@
             "type": "integer"
         },
         "vlan": {
-            "description": "VLAN",
+            "description": "Vlan",
             "required": false,
             "type": "integer"
         },
         "vrf": {
-            "description": "VRF",
+            "description": "Vrf",
             "required": false,
             "type": "integer"
         }

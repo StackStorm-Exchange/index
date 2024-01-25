@@ -1,5 +1,5 @@
 {
-    "description": "POST Data Sources",
+    "description": "Post a list of data source objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.core.data_sources",
@@ -35,13 +35,13 @@
             "type": "string"
         },
         "ignore_rules": {
-            "description": "Ignore rules",
+            "description": "Patterns (one per line) matching files to ignore when syncing",
             "required": false,
             "type": "string"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parameters": {
@@ -51,11 +51,11 @@
         },
         "source_url": {
             "description": "URL",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "type": {
-            "description": "Type",
+            "description": "* `local` - Local * `git` - Git * `amazon-s3` - Amazon S3",
             "required": false,
             "type": "string"
         }

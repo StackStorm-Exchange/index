@@ -1,11 +1,11 @@
 {
-    "description": "PUT Racks",
+    "description": "Put a rack object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.dcim.racks",
     "parameters": {
         "asset_tag": {
-            "description": "Asset tag",
+            "description": "A unique tag used to identify this rack",
             "required": false,
             "type": "string"
         },
@@ -35,7 +35,7 @@
             "type": "string"
         },
         "facility_id": {
-            "description": "Facility ID",
+            "description": "Facility id",
             "required": false,
             "type": "string"
         },
@@ -52,7 +52,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "location": {
             "description": "Location",
@@ -60,37 +60,37 @@
             "type": "integer"
         },
         "max_weight": {
-            "description": "Max weight",
+            "description": "Maximum load capacity for the rack",
             "required": false,
             "type": "integer"
         },
         "mounting_depth": {
-            "description": "Mounting depth",
+            "description": "Maximum depth of a mounted device, in millimeters. For four-post racks, this is the distance between the front and rear rails.",
             "required": false,
             "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "outer_depth": {
-            "description": "Outer depth",
+            "description": "Outer dimension of rack (depth)",
             "required": false,
             "type": "integer"
         },
         "outer_unit": {
-            "description": "Outer unit",
+            "description": "* `mm` - Millimeters * `in` - Inches",
             "required": false,
             "type": "string"
         },
         "outer_width": {
-            "description": "Outer width",
+            "description": "Outer dimension of rack (width)",
             "required": false,
             "type": "integer"
         },
         "role": {
-            "description": "Role",
+            "description": "Functional role",
             "required": false,
             "type": "integer"
         },
@@ -101,11 +101,16 @@
         },
         "site": {
             "description": "Site",
-            "required": true,
+            "required": false,
+            "type": "integer"
+        },
+        "starting_unit": {
+            "description": "Starting unit for rack",
+            "required": false,
             "type": "integer"
         },
         "status": {
-            "description": "Status",
+            "description": "* `reserved` - Reserved * `available` - Available * `planned` - Planned * `active` - Active * `deprecated` - Deprecated",
             "required": false,
             "type": "string"
         },
@@ -120,7 +125,7 @@
             "type": "integer"
         },
         "type": {
-            "description": "Type",
+            "description": "* `2-post-frame` - 2-post frame * `4-post-frame` - 4-post frame * `4-post-cabinet` - 4-post cabinet * `wall-frame` - Wall-mounted frame * `wall-frame-vertical` - Wall-mounted frame (vertical) * `wall-cabinet` - Wall-mounted cabinet * `wall-cabinet-vertical` - Wall-mounted cabinet (vertical)",
             "required": false,
             "type": "string"
         },
@@ -135,12 +140,12 @@
             "type": "integer"
         },
         "weight_unit": {
-            "description": "Weight unit",
+            "description": "* `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces",
             "required": false,
             "type": "string"
         },
         "width": {
-            "description": "Width",
+            "description": "Rail-to-rail width\n* `10` - 10 inches * `19` - 19 inches * `21` - 21 inches * `23` - 23 inches",
             "required": false,
             "type": "integer"
         }

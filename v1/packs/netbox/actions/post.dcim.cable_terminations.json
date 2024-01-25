@@ -1,17 +1,17 @@
 {
-    "description": "POST Cable Terminations",
+    "description": "Post a list of cable termination objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.dcim.cable_terminations",
     "parameters": {
         "cable": {
             "description": "Cable",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "cable_end": {
             "description": "End",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "endpoint_uri": {
@@ -31,12 +31,12 @@
         },
         "termination_id": {
             "description": "Termination id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "termination_type": {
             "description": "Termination type",
-            "required": true,
+            "required": false,
             "type": "string"
         }
     },

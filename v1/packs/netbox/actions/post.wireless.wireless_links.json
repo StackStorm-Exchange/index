@@ -1,11 +1,11 @@
 {
-    "description": "POST Wireless Links",
+    "description": "Post a list of wireless link objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.wireless.wireless_links",
     "parameters": {
         "auth_cipher": {
-            "description": "Auth cipher",
+            "description": "Authentication cipher",
             "required": false,
             "type": "string"
         },
@@ -15,7 +15,7 @@
             "type": "string"
         },
         "auth_type": {
-            "description": "Auth Type",
+            "description": "Authentication type",
             "required": false,
             "type": "string"
         },
@@ -50,22 +50,22 @@
             "type": "string"
         },
         "interface_a": {
-            "description": "Interface A",
-            "required": true,
+            "description": "Interface a",
+            "required": false,
             "type": "integer"
         },
         "interface_b": {
-            "description": "Interface B",
-            "required": true,
+            "description": "Interface b",
+            "required": false,
             "type": "integer"
         },
         "ssid": {
-            "description": "SSID",
+            "description": "Ssid",
             "required": false,
             "type": "string"
         },
         "status": {
-            "description": "Status",
+            "description": "* `connected` - Connected * `planned` - Planned * `decommissioning` - Decommissioning",
             "required": false,
             "type": "string"
         },

@@ -1,12 +1,57 @@
 {
-    "description": "POST Devices",
+    "description": "Post a list of device objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.dcim.devices",
     "parameters": {
+        "airflow": {
+            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `passive` - Passive * `mixed` - Mixed",
+            "required": false,
+            "type": "string"
+        },
+        "asset_tag": {
+            "description": "A unique tag used to identify this device",
+            "required": false,
+            "type": "string"
+        },
+        "cluster": {
+            "description": "Cluster",
+            "required": false,
+            "type": "integer"
+        },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "config_template": {
+            "description": "Config template",
+            "required": false,
+            "type": "integer"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "device_type": {
+            "description": "Device type",
+            "required": false,
+            "type": "integer"
+        },
         "endpoint_uri": {
             "default": "/dcim/devices/",
             "immutable": true,
+            "type": "string"
+        },
+        "face": {
+            "description": "Rack face",
+            "required": false,
             "type": "string"
         },
         "get_detail_route_eligible": {
@@ -18,6 +63,106 @@
             "default": "post",
             "immutable": true,
             "type": "string"
+        },
+        "latitude": {
+            "description": "GPS coordinate in decimal format (xx.yyyyyy)",
+            "required": false,
+            "type": "integer"
+        },
+        "local_context_data": {
+            "description": "Local config context data takes precedence over source contexts in the final rendered config context",
+            "required": false,
+            "type": "object"
+        },
+        "location": {
+            "description": "Location",
+            "required": false,
+            "type": "integer"
+        },
+        "longitude": {
+            "description": "GPS coordinate in decimal format (xx.yyyyyy)",
+            "required": false,
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "oob_ip": {
+            "description": "Out-of-band IP",
+            "required": false,
+            "type": "integer"
+        },
+        "platform": {
+            "description": "Platform",
+            "required": false,
+            "type": "integer"
+        },
+        "position": {
+            "description": "Position (U)",
+            "required": false,
+            "type": "integer"
+        },
+        "primary_ip4": {
+            "description": "Primary IPv4",
+            "required": false,
+            "type": "integer"
+        },
+        "primary_ip6": {
+            "description": "Primary IPv6",
+            "required": false,
+            "type": "integer"
+        },
+        "rack": {
+            "description": "Rack",
+            "required": false,
+            "type": "integer"
+        },
+        "role": {
+            "description": "The function this device serves",
+            "required": false,
+            "type": "integer"
+        },
+        "serial": {
+            "description": "Serial number",
+            "required": false,
+            "type": "string"
+        },
+        "site": {
+            "description": "Site",
+            "required": false,
+            "type": "integer"
+        },
+        "status": {
+            "description": "* `offline` - Offline * `active` - Active * `planned` - Planned * `staged` - Staged * `failed` - Failed * `inventory` - Inventory * `decommissioning` - Decommissioning",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
+        },
+        "vc_position": {
+            "description": "Vc position",
+            "required": false,
+            "type": "integer"
+        },
+        "vc_priority": {
+            "description": "Virtual chassis master election priority",
+            "required": false,
+            "type": "integer"
+        },
+        "virtual_chassis": {
+            "description": "Virtual chassis",
+            "required": false,
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

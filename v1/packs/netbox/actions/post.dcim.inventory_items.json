@@ -1,11 +1,11 @@
 {
-    "description": "POST Inventory Items",
+    "description": "Post a list of inventory item objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.dcim.inventory_items",
     "parameters": {
         "asset_tag": {
-            "description": "Asset tag",
+            "description": "A unique tag used to identify this item",
             "required": false,
             "type": "string"
         },
@@ -31,11 +31,11 @@
         },
         "device": {
             "description": "Device",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "discovered": {
-            "description": "Discovered",
+            "description": "This item was automatically discovered",
             "required": false,
             "type": "boolean"
         },
@@ -55,7 +55,7 @@
             "type": "string"
         },
         "label": {
-            "description": "Label",
+            "description": "Physical label",
             "required": false,
             "type": "string"
         },
@@ -66,7 +66,7 @@
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parent": {
@@ -75,7 +75,7 @@
             "type": "integer"
         },
         "part_id": {
-            "description": "Part ID",
+            "description": "Manufacturer-assigned part identifier",
             "required": false,
             "type": "string"
         },

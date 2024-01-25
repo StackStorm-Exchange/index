@@ -1,123 +1,128 @@
 {
-    "description": "GET Circuit Terminations",
+    "description": "Get a list of circuit termination objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.circuits.circuit_terminations",
     "parameters": {
         "cable_end": {
-            "description": "",
+            "description": "Cable_end",
             "required": false,
             "type": "string"
         },
         "cable_end__n": {
-            "description": "",
+            "description": "Cable_end not equal to",
             "required": false,
             "type": "string"
         },
         "cabled": {
-            "description": "",
+            "description": "Cabled",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "circuit_id": {
-            "description": "",
+            "description": "Circuit",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "circuit_id__n": {
-            "description": "",
+            "description": "Circuit_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created": {
-            "description": "",
+            "description": "Created",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "created__gt": {
-            "description": "",
+            "description": "Created greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__gte": {
-            "description": "",
+            "description": "Created greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lt": {
-            "description": "",
+            "description": "Created less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lte": {
-            "description": "",
+            "description": "Created less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__n": {
-            "description": "",
+            "description": "Created not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created_by_request": {
-            "description": "",
+            "description": "Created_by_request",
             "required": false,
             "type": "string"
         },
         "description": {
-            "description": "",
+            "description": "Description",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__empty": {
-            "description": "",
+            "description": "Description is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "description__ic": {
-            "description": "",
+            "description": "Description contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__ie": {
-            "description": "",
+            "description": "Description exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__iew": {
-            "description": "",
+            "description": "Description ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__isw": {
-            "description": "",
+            "description": "Description starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__n": {
-            "description": "",
+            "description": "Description not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nic": {
-            "description": "",
+            "description": "Description does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nie": {
-            "description": "",
+            "description": "Description inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__niew": {
-            "description": "",
+            "description": "Description does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nisw": {
-            "description": "",
+            "description": "Description does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/circuits/circuit-terminations/",
@@ -135,74 +140,89 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated": {
-            "description": "",
+            "description": "Last_updated",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "last_updated__gt": {
-            "description": "",
+            "description": "Last_updated greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__gte": {
-            "description": "",
+            "description": "Last_updated greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lt": {
-            "description": "",
+            "description": "Last_updated less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lte": {
-            "description": "",
+            "description": "Last_updated less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__n": {
-            "description": "",
+            "description": "Last_updated not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
         },
-        "occupied": {
-            "description": "",
+        "modified_by_request": {
+            "description": "Modified_by_request",
             "required": false,
             "type": "string"
+        },
+        "occupied": {
+            "description": "Occupied",
+            "required": false,
+            "type": "boolean"
         },
         "offset": {
             "description": "The initial index from which to return the results.",
@@ -215,47 +235,52 @@
             "type": "string"
         },
         "port_speed": {
-            "description": "",
+            "description": "Port_speed",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "port_speed__empty": {
+            "description": "Port_speed is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "port_speed__gt": {
-            "description": "",
+            "description": "Port_speed greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "port_speed__gte": {
-            "description": "",
+            "description": "Port_speed greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "port_speed__lt": {
-            "description": "",
+            "description": "Port_speed less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "port_speed__lte": {
-            "description": "",
+            "description": "Port_speed less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "port_speed__n": {
-            "description": "",
+            "description": "Port_speed not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "provider_network_id": {
-            "description": "",
+            "description": "ProviderNetwork (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "provider_network_id__n": {
-            "description": "",
+            "description": "Provider_network_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "q": {
-            "description": "",
+            "description": "Search",
             "required": false,
             "type": "string"
         },
@@ -274,134 +299,139 @@
             "type": "integer"
         },
         "site": {
-            "description": "",
+            "description": "Site (slug)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site__n": {
-            "description": "",
+            "description": "Site not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_id": {
-            "description": "",
+            "description": "Site (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_id__n": {
-            "description": "",
+            "description": "Site_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tag": {
-            "description": "",
+            "description": "Tag",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tag__n": {
-            "description": "",
+            "description": "Tag not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "term_side": {
-            "description": "",
+            "description": "Term_side",
             "required": false,
             "type": "string"
         },
         "term_side__n": {
-            "description": "",
+            "description": "Term_side not equal to",
             "required": false,
             "type": "string"
         },
         "updated_by_request": {
-            "description": "",
+            "description": "Updated_by_request",
             "required": false,
             "type": "string"
         },
         "upstream_speed": {
-            "description": "",
+            "description": "Upstream_speed",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "upstream_speed__empty": {
+            "description": "Upstream_speed is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "upstream_speed__gt": {
-            "description": "",
+            "description": "Upstream_speed greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "upstream_speed__gte": {
-            "description": "",
+            "description": "Upstream_speed greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "upstream_speed__lt": {
-            "description": "",
+            "description": "Upstream_speed less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "upstream_speed__lte": {
-            "description": "",
+            "description": "Upstream_speed less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "upstream_speed__n": {
-            "description": "",
+            "description": "Upstream_speed not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id": {
-            "description": "",
+            "description": "Xconnect_id",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__empty": {
-            "description": "",
+            "description": "Xconnect_id is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "xconnect_id__ic": {
-            "description": "",
+            "description": "Xconnect_id contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__ie": {
-            "description": "",
+            "description": "Xconnect_id exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__iew": {
-            "description": "",
+            "description": "Xconnect_id ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__isw": {
-            "description": "",
+            "description": "Xconnect_id starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__n": {
-            "description": "",
+            "description": "Xconnect_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__nic": {
-            "description": "",
+            "description": "Xconnect_id does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__nie": {
-            "description": "",
+            "description": "Xconnect_id inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__niew": {
-            "description": "",
+            "description": "Xconnect_id does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "xconnect_id__nisw": {
-            "description": "",
+            "description": "Xconnect_id does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         }
     },
     "runner_type": "python-script"

@@ -1,16 +1,16 @@
 {
-    "description": "PUT Permissions",
+    "description": "Put a permission object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.users.permissions",
     "parameters": {
         "actions": {
-            "description": "Actions",
-            "required": true,
+            "description": "The list of actions granted by this permission",
+            "required": false,
             "type": "array"
         },
         "constraints": {
-            "description": "Constraints",
+            "description": "Queryset filter matching the applicable objects of the selected type(s)",
             "required": false,
             "type": "object"
         },
@@ -47,16 +47,16 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "object_types": {
             "description": "Object types",
-            "required": true,
+            "required": false,
             "type": "array"
         },
         "users": {

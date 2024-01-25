@@ -1,5 +1,5 @@
 {
-    "description": "PUT Device Roles",
+    "description": "Put a device role object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.dcim.device_roles",
@@ -42,16 +42,16 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {
@@ -60,7 +60,7 @@
             "type": "array"
         },
         "vm_role": {
-            "description": "VM Role",
+            "description": "Virtual machines may be assigned to this role",
             "required": false,
             "type": "boolean"
         }

@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Contact Roles",
+    "description": "Patch a contact role object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.tenancy.contact_roles",
@@ -32,7 +32,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",

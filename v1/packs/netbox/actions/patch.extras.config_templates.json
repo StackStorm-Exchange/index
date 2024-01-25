@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Config Templates",
+    "description": "Patch a config template object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.extras.config_templates",
@@ -10,7 +10,7 @@
             "type": "integer"
         },
         "data_source": {
-            "description": "Data source",
+            "description": "Remote data source",
             "required": false,
             "type": "integer"
         },
@@ -25,7 +25,7 @@
             "type": "string"
         },
         "environment_params": {
-            "description": "Environment params",
+            "description": "Environment parameters",
             "required": false,
             "type": "object"
         },
@@ -42,7 +42,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
@@ -55,7 +55,7 @@
             "type": "array"
         },
         "template_code": {
-            "description": "Template code",
+            "description": "Jinja2 template code.",
             "required": false,
             "type": "string"
         }

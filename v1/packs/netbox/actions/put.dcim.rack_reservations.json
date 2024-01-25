@@ -1,5 +1,5 @@
 {
-    "description": "PUT Rack Reservations",
+    "description": "Put a rack reservation object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.dcim.rack_reservations",
@@ -16,7 +16,7 @@
         },
         "description": {
             "description": "Description",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "endpoint_uri": {
@@ -37,11 +37,11 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "rack": {
             "description": "Rack",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "tags": {
@@ -56,12 +56,12 @@
         },
         "units": {
             "description": "Units",
-            "required": true,
+            "required": false,
             "type": "array"
         },
         "user": {
             "description": "User",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

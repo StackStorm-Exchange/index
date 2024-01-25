@@ -1,14 +1,9 @@
 {
-    "description": "POST Tokens",
+    "description": "Post a list of token objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.users.tokens",
     "parameters": {
-        "allowed_ips": {
-            "description": "Allowed ips",
-            "required": false,
-            "type": "array"
-        },
         "description": {
             "description": "Description",
             "required": false,
@@ -46,11 +41,11 @@
         },
         "user": {
             "description": "User",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "write_enabled": {
-            "description": "Write enabled",
+            "description": "Permit create/update/delete operations using this key",
             "required": false,
             "type": "boolean"
         }

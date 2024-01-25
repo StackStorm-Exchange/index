@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Services",
+    "description": "Patch a service object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.ipam.services",
@@ -42,10 +42,10 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "ipaddresses": {
-            "description": "Ipaddresses",
+            "description": "IP addresses",
             "required": false,
             "type": "array"
         },
@@ -55,12 +55,12 @@
             "type": "string"
         },
         "ports": {
-            "description": "Ports",
+            "description": "Port numbers",
             "required": false,
             "type": "array"
         },
         "protocol": {
-            "description": "Protocol",
+            "description": "* `tcp` - TCP * `udp` - UDP * `sctp` - SCTP",
             "required": false,
             "type": "string"
         },

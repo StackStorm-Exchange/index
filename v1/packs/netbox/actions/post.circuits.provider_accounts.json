@@ -1,12 +1,12 @@
 {
-    "description": "POST Provider Accounts",
+    "description": "Post a list of provider account objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.circuits.provider_accounts",
     "parameters": {
         "account": {
             "description": "Account ID",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "comments": {
@@ -46,7 +46,7 @@
         },
         "provider": {
             "description": "Provider",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "tags": {

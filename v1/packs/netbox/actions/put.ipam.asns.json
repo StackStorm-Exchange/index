@@ -1,12 +1,12 @@
 {
-    "description": "PUT Asns",
+    "description": "Put a ASN object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.ipam.asns",
     "parameters": {
         "asn": {
-            "description": "ASN",
-            "required": true,
+            "description": "16- or 32-bit autonomous system number",
+            "required": false,
             "type": "integer"
         },
         "comments": {
@@ -42,11 +42,11 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "rir": {
-            "description": "RIR",
-            "required": true,
+            "description": "Regional Internet Registry responsible for this AS number space",
+            "required": false,
             "type": "integer"
         },
         "tags": {

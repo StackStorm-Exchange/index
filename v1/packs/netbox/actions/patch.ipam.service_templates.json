@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Service Templates",
+    "description": "Patch a service template object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.ipam.service_templates",
@@ -37,7 +37,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
@@ -45,12 +45,12 @@
             "type": "string"
         },
         "ports": {
-            "description": "Ports",
+            "description": "Port numbers",
             "required": false,
             "type": "array"
         },
         "protocol": {
-            "description": "Protocol",
+            "description": "* `tcp` - TCP * `udp` - UDP * `sctp` - SCTP",
             "required": false,
             "type": "string"
         },

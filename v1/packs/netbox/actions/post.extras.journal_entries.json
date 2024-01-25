@@ -1,22 +1,22 @@
 {
-    "description": "POST Journal Entries",
+    "description": "Post a list of journal entry objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.extras.journal_entries",
     "parameters": {
         "assigned_object_id": {
             "description": "Assigned object id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "assigned_object_type": {
             "description": "Assigned object type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "comments": {
             "description": "Comments",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "created_by": {
@@ -45,7 +45,7 @@
             "type": "string"
         },
         "kind": {
-            "description": "Kind",
+            "description": "* `info` - Info * `success` - Success * `warning` - Warning * `danger` - Danger",
             "required": false,
             "type": "string"
         },

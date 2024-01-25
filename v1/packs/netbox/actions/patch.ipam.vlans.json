@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Vlans",
+    "description": "Patch a VLAN object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.ipam.vlans",
@@ -30,7 +30,7 @@
             "type": "boolean"
         },
         "group": {
-            "description": "Group",
+            "description": "VLAN group (optional)",
             "required": false,
             "type": "integer"
         },
@@ -42,7 +42,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
@@ -50,17 +50,17 @@
             "type": "string"
         },
         "role": {
-            "description": "Role",
+            "description": "The primary function of this VLAN",
             "required": false,
             "type": "integer"
         },
         "site": {
-            "description": "Site",
+            "description": "The specific site to which this VLAN is assigned (if any)",
             "required": false,
             "type": "integer"
         },
         "status": {
-            "description": "Status",
+            "description": "Operational status of this VLAN\n* `active` - Active * `reserved` - Reserved * `deprecated` - Deprecated",
             "required": false,
             "type": "string"
         },
@@ -75,7 +75,7 @@
             "type": "integer"
         },
         "vid": {
-            "description": "ID",
+            "description": "VLAN ID",
             "required": false,
             "type": "integer"
         }

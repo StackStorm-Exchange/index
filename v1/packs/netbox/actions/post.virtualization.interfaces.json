@@ -1,5 +1,5 @@
 {
-    "description": "POST Interfaces",
+    "description": "Post a list of interface objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.virtualization.interfaces",
@@ -40,23 +40,23 @@
             "type": "string"
         },
         "mac_address": {
-            "description": "MAC Address",
+            "description": "Mac address",
             "required": false,
             "type": "string"
         },
         "mode": {
-            "description": "Mode",
+            "description": "IEEE 802.1Q tagging strategy\n* `access` - Access * `tagged` - Tagged * `tagged-all` - Tagged (All)",
             "required": false,
             "type": "string"
         },
         "mtu": {
-            "description": "MTU",
+            "description": "Mtu",
             "required": false,
             "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "parent": {
@@ -75,17 +75,17 @@
             "type": "array"
         },
         "untagged_vlan": {
-            "description": "Untagged VLAN",
+            "description": "Untagged vlan",
             "required": false,
             "type": "integer"
         },
         "virtual_machine": {
             "description": "Virtual machine",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "vrf": {
-            "description": "VRF",
+            "description": "Vrf",
             "required": false,
             "type": "integer"
         }

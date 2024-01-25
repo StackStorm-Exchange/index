@@ -1,98 +1,103 @@
 {
-    "description": "GET Provider Networks",
+    "description": "Get a list of provider network objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.circuits.provider_networks",
     "parameters": {
         "created": {
-            "description": "",
+            "description": "Created",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "created__gt": {
-            "description": "",
+            "description": "Created greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__gte": {
-            "description": "",
+            "description": "Created greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lt": {
-            "description": "",
+            "description": "Created less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lte": {
-            "description": "",
+            "description": "Created less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__n": {
-            "description": "",
+            "description": "Created not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created_by_request": {
-            "description": "",
+            "description": "Created_by_request",
             "required": false,
             "type": "string"
         },
         "description": {
-            "description": "",
+            "description": "Description",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__empty": {
-            "description": "",
+            "description": "Description is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "description__ic": {
-            "description": "",
+            "description": "Description contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__ie": {
-            "description": "",
+            "description": "Description exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__iew": {
-            "description": "",
+            "description": "Description ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__isw": {
-            "description": "",
+            "description": "Description starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__n": {
-            "description": "",
+            "description": "Description not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nic": {
-            "description": "",
+            "description": "Description does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nie": {
-            "description": "",
+            "description": "Description inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__niew": {
-            "description": "",
+            "description": "Description does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nisw": {
-            "description": "",
+            "description": "Description does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/circuits/provider-networks/",
@@ -110,124 +115,139 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated": {
-            "description": "",
+            "description": "Last_updated",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "last_updated__gt": {
-            "description": "",
+            "description": "Last_updated greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__gte": {
-            "description": "",
+            "description": "Last_updated greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lt": {
-            "description": "",
+            "description": "Last_updated less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lte": {
-            "description": "",
+            "description": "Last_updated less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__n": {
-            "description": "",
+            "description": "Last_updated not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
         },
-        "name": {
-            "description": "",
+        "modified_by_request": {
+            "description": "Modified_by_request",
             "required": false,
             "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "array"
         },
         "name__empty": {
-            "description": "",
+            "description": "Name is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "name__ic": {
-            "description": "",
+            "description": "Name contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__ie": {
-            "description": "",
+            "description": "Name exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__iew": {
-            "description": "",
+            "description": "Name ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__isw": {
-            "description": "",
+            "description": "Name starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__n": {
-            "description": "",
+            "description": "Name not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nic": {
-            "description": "",
+            "description": "Name does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nie": {
-            "description": "",
+            "description": "Name inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__niew": {
-            "description": "",
+            "description": "Name does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "name__nisw": {
-            "description": "",
+            "description": "Name does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "offset": {
             "description": "The initial index from which to return the results.",
@@ -240,27 +260,27 @@
             "type": "string"
         },
         "provider": {
-            "description": "",
+            "description": "Provider (slug)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "provider__n": {
-            "description": "",
+            "description": "Provider not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "provider_id": {
-            "description": "",
+            "description": "Provider (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "provider_id__n": {
-            "description": "",
+            "description": "Provider_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "q": {
-            "description": "",
+            "description": "Search",
             "required": false,
             "type": "string"
         },
@@ -279,72 +299,72 @@
             "type": "integer"
         },
         "service_id": {
-            "description": "",
+            "description": "Service_id",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__empty": {
-            "description": "",
+            "description": "Service_id is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "service_id__ic": {
-            "description": "",
+            "description": "Service_id contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__ie": {
-            "description": "",
+            "description": "Service_id exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__iew": {
-            "description": "",
+            "description": "Service_id ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__isw": {
-            "description": "",
+            "description": "Service_id starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__n": {
-            "description": "",
+            "description": "Service_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__nic": {
-            "description": "",
+            "description": "Service_id does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__nie": {
-            "description": "",
+            "description": "Service_id inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__niew": {
-            "description": "",
+            "description": "Service_id does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "service_id__nisw": {
-            "description": "",
+            "description": "Service_id does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tag": {
-            "description": "",
+            "description": "Tag",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tag__n": {
-            "description": "",
+            "description": "Tag not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "updated_by_request": {
-            "description": "",
+            "description": "Updated_by_request",
             "required": false,
             "type": "string"
         }

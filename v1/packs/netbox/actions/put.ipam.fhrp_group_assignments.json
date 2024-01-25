@@ -1,5 +1,5 @@
 {
-    "description": "PUT Fhrp Group Assignments",
+    "description": "Put a FHRP group assignment object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.ipam.fhrp_group_assignments",
@@ -16,7 +16,7 @@
         },
         "group": {
             "description": "Group",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "http_verb": {
@@ -27,21 +27,21 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "interface_id": {
             "description": "Interface id",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "interface_type": {
             "description": "Interface type",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "priority": {
             "description": "Priority",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

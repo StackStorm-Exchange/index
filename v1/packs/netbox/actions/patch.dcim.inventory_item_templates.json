@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Inventory Item Templates",
+    "description": "Patch a inventory item template object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.dcim.inventory_item_templates",
@@ -42,10 +42,10 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "label": {
-            "description": "Label",
+            "description": "Physical label",
             "required": false,
             "type": "string"
         },
@@ -55,7 +55,7 @@
             "type": "integer"
         },
         "name": {
-            "description": "Name",
+            "description": "{module} is accepted as a substitution for the module bay position when attached to a module type.",
             "required": false,
             "type": "string"
         },
@@ -65,7 +65,7 @@
             "type": "integer"
         },
         "part_id": {
-            "description": "Part ID",
+            "description": "Manufacturer-assigned part identifier",
             "required": false,
             "type": "string"
         },

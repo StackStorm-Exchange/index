@@ -1,63 +1,63 @@
 {
-    "description": "GET Users",
+    "description": "Get a list of user objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.users.users",
     "parameters": {
         "email": {
-            "description": "",
+            "description": "Email",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__empty": {
-            "description": "",
+            "description": "Email is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "email__ic": {
-            "description": "",
+            "description": "Email contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__ie": {
-            "description": "",
+            "description": "Email exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__iew": {
-            "description": "",
+            "description": "Email ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__isw": {
-            "description": "",
+            "description": "Email starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__n": {
-            "description": "",
+            "description": "Email not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__nic": {
-            "description": "",
+            "description": "Email does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__nie": {
-            "description": "",
+            "description": "Email inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__niew": {
-            "description": "",
+            "description": "Email does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "email__nisw": {
-            "description": "",
+            "description": "Email does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/users/users/",
@@ -65,59 +65,59 @@
             "type": "string"
         },
         "first_name": {
-            "description": "",
+            "description": "First_name",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__empty": {
-            "description": "",
+            "description": "First_name is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "first_name__ic": {
-            "description": "",
+            "description": "First_name contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__ie": {
-            "description": "",
+            "description": "First_name exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__iew": {
-            "description": "",
+            "description": "First_name ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__isw": {
-            "description": "",
+            "description": "First_name starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__n": {
-            "description": "",
+            "description": "First_name not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__nic": {
-            "description": "",
+            "description": "First_name does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__nie": {
-            "description": "",
+            "description": "First_name inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__niew": {
-            "description": "",
+            "description": "First_name does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "first_name__nisw": {
-            "description": "",
+            "description": "First_name does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -125,24 +125,24 @@
             "type": "boolean"
         },
         "group": {
-            "description": "",
+            "description": "Group (name)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "group__n": {
-            "description": "",
+            "description": "Group not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "group_id": {
-            "description": "",
+            "description": "Group",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "group_id__n": {
-            "description": "",
+            "description": "Group_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "http_verb": {
             "default": "get",
@@ -150,99 +150,109 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "is_active": {
-            "description": "",
+            "description": "Is_active",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "is_staff": {
-            "description": "",
+            "description": "Is_staff",
             "required": false,
-            "type": "string"
+            "type": "boolean"
+        },
+        "is_superuser": {
+            "description": "Is_superuser",
+            "required": false,
+            "type": "boolean"
         },
         "last_name": {
-            "description": "",
+            "description": "Last_name",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__empty": {
-            "description": "",
+            "description": "Last_name is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "last_name__ic": {
-            "description": "",
+            "description": "Last_name contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__ie": {
-            "description": "",
+            "description": "Last_name exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__iew": {
-            "description": "",
+            "description": "Last_name ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__isw": {
-            "description": "",
+            "description": "Last_name starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__n": {
-            "description": "",
+            "description": "Last_name not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__nic": {
-            "description": "",
+            "description": "Last_name does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__nie": {
-            "description": "",
+            "description": "Last_name inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__niew": {
-            "description": "",
+            "description": "Last_name does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_name__nisw": {
-            "description": "",
+            "description": "Last_name does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -260,7 +270,7 @@
             "type": "string"
         },
         "q": {
-            "description": "",
+            "description": "Search",
             "required": false,
             "type": "string"
         },
@@ -279,59 +289,59 @@
             "type": "integer"
         },
         "username": {
-            "description": "",
+            "description": "Username",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__empty": {
-            "description": "",
+            "description": "Username is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "username__ic": {
-            "description": "",
+            "description": "Username contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__ie": {
-            "description": "",
+            "description": "Username exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__iew": {
-            "description": "",
+            "description": "Username ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__isw": {
-            "description": "",
+            "description": "Username starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__n": {
-            "description": "",
+            "description": "Username not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__nic": {
-            "description": "",
+            "description": "Username does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__nie": {
-            "description": "",
+            "description": "Username inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__niew": {
-            "description": "",
+            "description": "Username does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "username__nisw": {
-            "description": "",
+            "description": "Username does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         }
     },
     "runner_type": "python-script"

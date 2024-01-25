@@ -1,12 +1,12 @@
 {
-    "description": "PUT Ip Addresses",
+    "description": "Put a IP address object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.ipam.ip_addresses",
     "parameters": {
         "address": {
             "description": "Address",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "assigned_object_id": {
@@ -35,7 +35,7 @@
             "type": "string"
         },
         "dns_name": {
-            "description": "DNS Name",
+            "description": "Hostname or FQDN (not case-sensitive)",
             "required": false,
             "type": "string"
         },
@@ -57,20 +57,20 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "nat_inside": {
-            "description": "NAT (Inside)",
+            "description": "NAT (inside)",
             "required": false,
             "type": "integer"
         },
         "role": {
-            "description": "Role",
+            "description": "The functional role of this IP\n* `loopback` - Loopback * `secondary` - Secondary * `anycast` - Anycast * `vip` - VIP * `vrrp` - VRRP * `hsrp` - HSRP * `glbp` - GLBP * `carp` - CARP",
             "required": false,
             "type": "string"
         },
         "status": {
-            "description": "Status",
+            "description": "The operational status of this IP\n* `active` - Active * `reserved` - Reserved * `deprecated` - Deprecated * `dhcp` - DHCP * `slaac` - SLAAC",
             "required": false,
             "type": "string"
         },
@@ -85,7 +85,7 @@
             "type": "integer"
         },
         "vrf": {
-            "description": "VRF",
+            "description": "Vrf",
             "required": false,
             "type": "integer"
         }

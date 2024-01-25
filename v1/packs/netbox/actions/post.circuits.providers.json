@@ -1,12 +1,12 @@
 {
-    "description": "POST Providers",
+    "description": "Post a list of provider objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.circuits.providers",
     "parameters": {
         "accounts": {
             "description": "Accounts",
-            "required": true,
+            "required": false,
             "type": "array"
         },
         "asns": {
@@ -45,13 +45,13 @@
             "type": "string"
         },
         "name": {
-            "description": "Name",
-            "required": true,
+            "description": "Full name of the provider",
+            "required": false,
             "type": "string"
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

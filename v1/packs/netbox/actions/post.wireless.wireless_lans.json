@@ -1,11 +1,11 @@
 {
-    "description": "POST Wireless Lans",
+    "description": "Post a list of wireless LAN objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.wireless.wireless_lans",
     "parameters": {
         "auth_cipher": {
-            "description": "Auth cipher",
+            "description": "Authentication cipher",
             "required": false,
             "type": "string"
         },
@@ -15,7 +15,7 @@
             "type": "string"
         },
         "auth_type": {
-            "description": "Auth Type",
+            "description": "Authentication type",
             "required": false,
             "type": "string"
         },
@@ -55,12 +55,12 @@
             "type": "string"
         },
         "ssid": {
-            "description": "SSID",
-            "required": true,
+            "description": "Ssid",
+            "required": false,
             "type": "string"
         },
         "status": {
-            "description": "Status",
+            "description": "* `active` - Active * `reserved` - Reserved * `disabled` - Disabled * `deprecated` - Deprecated",
             "required": false,
             "type": "string"
         },
@@ -75,7 +75,7 @@
             "type": "integer"
         },
         "vlan": {
-            "description": "VLAN",
+            "description": "Vlan",
             "required": false,
             "type": "integer"
         }

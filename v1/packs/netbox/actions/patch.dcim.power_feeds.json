@@ -1,16 +1,11 @@
 {
-    "description": "PATCH Power Feeds",
+    "description": "Patch a power feed object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.dcim.power_feeds",
     "parameters": {
         "amperage": {
             "description": "Amperage",
-            "required": false,
-            "type": "integer"
-        },
-        "cable": {
-            "description": "ID of cable",
             "required": false,
             "type": "integer"
         },
@@ -47,15 +42,15 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "mark_connected": {
-            "description": "Mark connected",
+            "description": "Treat as if a cable is connected",
             "required": false,
             "type": "boolean"
         },
         "max_utilization": {
-            "description": "Max utilization",
+            "description": "Maximum permissible draw (percentage)",
             "required": false,
             "type": "integer"
         },
@@ -65,7 +60,7 @@
             "type": "string"
         },
         "phase": {
-            "description": "Phase",
+            "description": "* `single-phase` - Single phase * `three-phase` - Three-phase",
             "required": false,
             "type": "string"
         },
@@ -80,12 +75,12 @@
             "type": "integer"
         },
         "status": {
-            "description": "Status",
+            "description": "* `offline` - Offline * `active` - Active * `planned` - Planned * `failed` - Failed",
             "required": false,
             "type": "string"
         },
         "supply": {
-            "description": "Supply",
+            "description": "* `ac` - AC * `dc` - DC",
             "required": false,
             "type": "string"
         },
@@ -94,8 +89,13 @@
             "required": false,
             "type": "array"
         },
+        "tenant": {
+            "description": "Tenant",
+            "required": false,
+            "type": "integer"
+        },
         "type": {
-            "description": "Type",
+            "description": "* `primary` - Primary * `redundant` - Redundant",
             "required": false,
             "type": "string"
         },

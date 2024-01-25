@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Users",
+    "description": "Patch a user object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.users.users",
@@ -30,7 +30,7 @@
             "type": "boolean"
         },
         "groups": {
-            "description": "Groups",
+            "description": "The groups this user belongs to. A user will get all permissions granted to each of their groups.",
             "required": false,
             "type": "array"
         },
@@ -42,7 +42,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "is_active": {
             "description": "Active",
@@ -65,7 +65,7 @@
             "type": "string"
         },
         "username": {
-            "description": "Username",
+            "description": "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.",
             "required": false,
             "type": "string"
         }

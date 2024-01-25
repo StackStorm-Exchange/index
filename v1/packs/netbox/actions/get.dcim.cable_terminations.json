@@ -1,26 +1,26 @@
 {
-    "description": "GET Cable Terminations",
+    "description": "Get a list of cable termination objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.dcim.cable_terminations",
     "parameters": {
         "cable": {
-            "description": "",
+            "description": "Cable",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "cable__n": {
-            "description": "",
+            "description": "Cable not equal to",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "cable_end": {
-            "description": "",
+            "description": "Cable_end",
             "required": false,
             "type": "string"
         },
         "cable_end__n": {
-            "description": "",
+            "description": "Cable_end not equal to",
             "required": false,
             "type": "string"
         },
@@ -40,34 +40,39 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -99,42 +104,47 @@
             "type": "integer"
         },
         "termination_id": {
-            "description": "",
+            "description": "Termination_id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "termination_id__empty": {
+            "description": "Termination_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "termination_id__gt": {
-            "description": "",
+            "description": "Termination_id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "termination_id__gte": {
-            "description": "",
+            "description": "Termination_id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "termination_id__lt": {
-            "description": "",
+            "description": "Termination_id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "termination_id__lte": {
-            "description": "",
+            "description": "Termination_id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "termination_id__n": {
-            "description": "",
+            "description": "Termination_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "termination_type": {
-            "description": "",
+            "description": "Termination_type",
             "required": false,
             "type": "string"
         },
         "termination_type__n": {
-            "description": "",
+            "description": "Termination_type not equal to",
             "required": false,
             "type": "string"
         }

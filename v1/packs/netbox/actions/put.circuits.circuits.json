@@ -1,12 +1,12 @@
 {
-    "description": "PUT Circuits",
+    "description": "Put a circuit object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.circuits.circuits",
     "parameters": {
         "cid": {
             "description": "Circuit ID",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "comments": {
@@ -47,7 +47,7 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "install_date": {
             "description": "Installed",
@@ -56,7 +56,7 @@
         },
         "provider": {
             "description": "Provider",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "provider_account": {
@@ -65,7 +65,7 @@
             "type": "integer"
         },
         "status": {
-            "description": "Status",
+            "description": "* `planned` - Planned * `provisioning` - Provisioning * `active` - Active * `offline` - Offline * `deprovisioning` - Deprovisioning * `decommissioned` - Decommissioned",
             "required": false,
             "type": "string"
         },
@@ -86,7 +86,7 @@
         },
         "type": {
             "description": "Type",
-            "required": true,
+            "required": false,
             "type": "integer"
         }
     },

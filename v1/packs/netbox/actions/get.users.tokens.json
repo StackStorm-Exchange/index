@@ -1,78 +1,78 @@
 {
-    "description": "GET Tokens",
+    "description": "Get a list of token objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.users.tokens",
     "parameters": {
         "created": {
-            "description": "",
+            "description": "Created",
             "required": false,
             "type": "string"
         },
         "created__gte": {
-            "description": "",
+            "description": "Created greater than or equal to",
             "required": false,
             "type": "string"
         },
         "created__lte": {
-            "description": "",
+            "description": "Created less than or equal to",
             "required": false,
             "type": "string"
         },
         "description": {
-            "description": "",
+            "description": "Description",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__empty": {
-            "description": "",
+            "description": "Description is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "description__ic": {
-            "description": "",
+            "description": "Description contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__ie": {
-            "description": "",
+            "description": "Description exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__iew": {
-            "description": "",
+            "description": "Description ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__isw": {
-            "description": "",
+            "description": "Description starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__n": {
-            "description": "",
+            "description": "Description not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nic": {
-            "description": "",
+            "description": "Description does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nie": {
-            "description": "",
+            "description": "Description inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__niew": {
-            "description": "",
+            "description": "Description does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "description__nisw": {
-            "description": "",
+            "description": "Description does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/users/tokens/",
@@ -80,17 +80,17 @@
             "type": "string"
         },
         "expires": {
-            "description": "",
+            "description": "Expires",
             "required": false,
             "type": "string"
         },
         "expires__gte": {
-            "description": "",
+            "description": "Expires greater than or equal to",
             "required": false,
             "type": "string"
         },
         "expires__lte": {
-            "description": "",
+            "description": "Expires less than or equal to",
             "required": false,
             "type": "string"
         },
@@ -105,89 +105,94 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key": {
-            "description": "",
+            "description": "Key",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__empty": {
-            "description": "",
+            "description": "Key is empty/null (boolean)",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "key__ic": {
-            "description": "",
+            "description": "Key contains (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__ie": {
-            "description": "",
+            "description": "Key exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__iew": {
-            "description": "",
+            "description": "Key ends with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__isw": {
-            "description": "",
+            "description": "Key starts with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__n": {
-            "description": "",
+            "description": "Key not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__nic": {
-            "description": "",
+            "description": "Key does not contain (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__nie": {
-            "description": "",
+            "description": "Key inverse exact match (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__niew": {
-            "description": "",
+            "description": "Key does not end with (case-insensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "key__nisw": {
-            "description": "",
+            "description": "Key does not start with (case-sensitive)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
@@ -205,7 +210,7 @@
             "type": "string"
         },
         "q": {
-            "description": "",
+            "description": "Search",
             "required": false,
             "type": "string"
         },
@@ -224,29 +229,29 @@
             "type": "integer"
         },
         "user": {
-            "description": "",
+            "description": "User (name)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "user__n": {
-            "description": "",
+            "description": "User not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "user_id": {
-            "description": "",
+            "description": "User",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "user_id__n": {
-            "description": "",
+            "description": "User_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "write_enabled": {
-            "description": "",
+            "description": "Write_enabled",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"

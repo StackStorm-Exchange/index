@@ -1,5 +1,5 @@
 {
-    "description": "POST Module Types",
+    "description": "Post a list of module type objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.dcim.module_types",
@@ -36,16 +36,16 @@
         },
         "manufacturer": {
             "description": "Manufacturer",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "model": {
             "description": "Model",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "part_number": {
-            "description": "Part number",
+            "description": "Discrete part number (optional)",
             "required": false,
             "type": "string"
         },
@@ -60,7 +60,7 @@
             "type": "integer"
         },
         "weight_unit": {
-            "description": "Weight unit",
+            "description": "* `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces",
             "required": false,
             "type": "string"
         }

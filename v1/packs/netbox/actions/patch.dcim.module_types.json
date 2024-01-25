@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Module Types",
+    "description": "Patch a module type object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.dcim.module_types",
@@ -37,7 +37,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "manufacturer": {
             "description": "Manufacturer",
@@ -50,7 +50,7 @@
             "type": "string"
         },
         "part_number": {
-            "description": "Part number",
+            "description": "Discrete part number (optional)",
             "required": false,
             "type": "string"
         },
@@ -65,7 +65,7 @@
             "type": "integer"
         },
         "weight_unit": {
-            "description": "Weight unit",
+            "description": "* `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces",
             "required": false,
             "type": "string"
         }

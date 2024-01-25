@@ -1,83 +1,88 @@
 {
-    "description": "GET L2Vpn Terminations",
+    "description": "Get a list of L2VPN termination objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.ipam.l2vpn_terminations",
     "parameters": {
         "assigned_object_type": {
-            "description": "",
+            "description": "Assigned_object_type",
             "required": false,
             "type": "string"
         },
         "assigned_object_type__n": {
-            "description": "",
+            "description": "Assigned_object_type not equal to",
             "required": false,
             "type": "string"
         },
         "assigned_object_type_id": {
-            "description": "",
+            "description": "Assigned_object_type_id",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "assigned_object_type_id__n": {
-            "description": "",
+            "description": "Assigned_object_type_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "integer"
         },
         "created": {
-            "description": "",
+            "description": "Created",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "created__gt": {
-            "description": "",
+            "description": "Created greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__gte": {
-            "description": "",
+            "description": "Created greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lt": {
-            "description": "",
+            "description": "Created less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__lte": {
-            "description": "",
+            "description": "Created less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created__n": {
-            "description": "",
+            "description": "Created not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "created_by_request": {
-            "description": "",
+            "description": "Created_by_request",
             "required": false,
             "type": "string"
         },
         "device": {
-            "description": "",
+            "description": "Device (name)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "device__n": {
-            "description": "",
+            "description": "Device not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "device_id": {
-            "description": "",
+            "description": "Device (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "device_id__n": {
-            "description": "",
+            "description": "Device_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "endpoint_uri": {
             "default": "/ipam/l2vpn-terminations/",
@@ -95,109 +100,124 @@
             "type": "string"
         },
         "id": {
-            "description": "",
+            "description": "Id",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
         },
         "id__gt": {
-            "description": "",
+            "description": "Id greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__gte": {
-            "description": "",
+            "description": "Id greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lt": {
-            "description": "",
+            "description": "Id less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__lte": {
-            "description": "",
+            "description": "Id less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "id__n": {
-            "description": "",
+            "description": "Id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface": {
-            "description": "",
+            "description": "Interface (name)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface__n": {
-            "description": "",
+            "description": "Interface not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface_id": {
-            "description": "",
+            "description": "Interface (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "interface_id__n": {
-            "description": "",
+            "description": "Interface_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "l2vpn": {
-            "description": "",
+            "description": "L2VPN (slug)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "l2vpn__n": {
-            "description": "",
+            "description": "L2vpn not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "l2vpn_id": {
-            "description": "",
+            "description": "L2VPN (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "l2vpn_id__n": {
-            "description": "",
+            "description": "L2vpn_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated": {
-            "description": "",
+            "description": "Last_updated",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
         },
         "last_updated__gt": {
-            "description": "",
+            "description": "Last_updated greater than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__gte": {
-            "description": "",
+            "description": "Last_updated greater than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lt": {
-            "description": "",
+            "description": "Last_updated less than",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__lte": {
-            "description": "",
+            "description": "Last_updated less than or equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "last_updated__n": {
-            "description": "",
+            "description": "Last_updated not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
+            "required": false,
+            "type": "string"
         },
         "offset": {
             "description": "The initial index from which to return the results.",
@@ -210,19 +230,19 @@
             "type": "string"
         },
         "q": {
-            "description": "",
+            "description": "Search",
             "required": false,
             "type": "string"
         },
         "region": {
-            "description": "",
+            "description": "Region",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "region_id": {
-            "description": "",
+            "description": "Region_id",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "save_in_key_store": {
             "default": false,
@@ -239,119 +259,124 @@
             "type": "integer"
         },
         "site": {
-            "description": "",
+            "description": "Site",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "site_id": {
-            "description": "",
+            "description": "Site_id",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tag": {
-            "description": "",
+            "description": "Tag",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "tag__n": {
-            "description": "",
+            "description": "Tag not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "updated_by_request": {
-            "description": "",
+            "description": "Updated_by_request",
             "required": false,
             "type": "string"
         },
         "virtual_machine": {
-            "description": "",
+            "description": "Virtual machine (name)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "virtual_machine__n": {
-            "description": "",
+            "description": "Virtual_machine not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "virtual_machine_id": {
-            "description": "",
+            "description": "Virtual machine (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "virtual_machine_id__n": {
-            "description": "",
+            "description": "Virtual_machine_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "vlan": {
-            "description": "",
+            "description": "VLAN (name)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "vlan__n": {
-            "description": "",
+            "description": "Vlan not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "vlan_id": {
-            "description": "",
+            "description": "VLAN (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "vlan_id__n": {
-            "description": "",
+            "description": "Vlan_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "vlan_vid": {
-            "description": "",
+            "description": "VLAN number (1-4094)",
+            "required": false,
+            "type": "integer"
+        },
+        "vlan_vid__empty": {
+            "description": "Vlan_vid is empty/null (boolean)",
             "required": false,
             "type": "integer"
         },
         "vlan_vid__gt": {
-            "description": "",
+            "description": "Vlan_vid greater than",
             "required": false,
             "type": "integer"
         },
         "vlan_vid__gte": {
-            "description": "",
+            "description": "Vlan_vid greater than or equal to",
             "required": false,
             "type": "integer"
         },
         "vlan_vid__lt": {
-            "description": "",
+            "description": "Vlan_vid less than",
             "required": false,
             "type": "integer"
         },
         "vlan_vid__lte": {
-            "description": "",
+            "description": "Vlan_vid less than or equal to",
             "required": false,
             "type": "integer"
         },
         "vlan_vid__n": {
-            "description": "",
+            "description": "Vlan_vid not equal to",
             "required": false,
             "type": "integer"
         },
         "vminterface": {
-            "description": "",
+            "description": "VM interface (name)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "vminterface__n": {
-            "description": "",
+            "description": "Vminterface not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "vminterface_id": {
-            "description": "",
+            "description": "VM Interface (ID)",
             "required": false,
-            "type": "string"
+            "type": "array"
         },
         "vminterface_id__n": {
-            "description": "",
+            "description": "Vminterface_id not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
         }
     },
     "runner_type": "python-script"

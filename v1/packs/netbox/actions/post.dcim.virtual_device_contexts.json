@@ -1,5 +1,5 @@
 {
-    "description": "POST Virtual Device Contexts",
+    "description": "Post a list of virtual device context objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "post.dcim.virtual_device_contexts",
@@ -40,13 +40,13 @@
             "type": "string"
         },
         "identifier": {
-            "description": "Identifier",
+            "description": "Numeric identifier unique to the parent device",
             "required": false,
             "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "primary_ip4": {
@@ -60,8 +60,8 @@
             "type": "integer"
         },
         "status": {
-            "description": "Status",
-            "required": true,
+            "description": "* `active` - Active * `planned` - Planned * `offline` - Offline",
+            "required": false,
             "type": "string"
         },
         "tags": {

@@ -1,0 +1,54 @@
+{
+    "description": "Put a custom field choice set object.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "put.extras.custom_field_choice_sets",
+    "parameters": {
+        "base_choices": {
+            "description": "Base set of predefined choices (optional)\n* `IATA` - IATA (Airport codes) * `ISO_3166` - ISO 3166 (Country codes) * `UN_LOCODE` - UN/LOCODE (Location codes)",
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/extras/custom-field-choice-sets/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "extra_choices": {
+            "description": "Extra choices",
+            "required": false,
+            "type": "array"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "put",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to put.",
+            "required": true,
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "order_alphabetically": {
+            "description": "Choices are automatically ordered alphabetically",
+            "required": false,
+            "type": "boolean"
+        }
+    },
+    "runner_type": "python-script"
+}

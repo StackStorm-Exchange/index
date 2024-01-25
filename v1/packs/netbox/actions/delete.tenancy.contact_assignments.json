@@ -1,5 +1,5 @@
 {
-    "description": "DELETE Contact Assignments",
+    "description": "Delete a contact assignment object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "delete.tenancy.contact_assignments",
@@ -22,7 +22,7 @@
         "id": {
             "description": "ID of the object to delete.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

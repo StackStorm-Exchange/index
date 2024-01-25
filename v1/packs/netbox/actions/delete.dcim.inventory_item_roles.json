@@ -1,5 +1,5 @@
 {
-    "description": "DELETE Inventory Item Roles",
+    "description": "Delete a inventory item role object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "delete.dcim.inventory_item_roles",
@@ -22,7 +22,7 @@
         "id": {
             "description": "ID of the object to delete.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

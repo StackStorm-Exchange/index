@@ -1,12 +1,12 @@
 {
-    "description": "PUT Providers",
+    "description": "Put a provider object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.circuits.providers",
     "parameters": {
         "accounts": {
             "description": "Accounts",
-            "required": true,
+            "required": false,
             "type": "array"
         },
         "asns": {
@@ -47,16 +47,16 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
-            "description": "Name",
-            "required": true,
+            "description": "Full name of the provider",
+            "required": false,
             "type": "string"
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {

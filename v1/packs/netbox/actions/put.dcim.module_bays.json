@@ -1,5 +1,5 @@
 {
-    "description": "PUT Module Bays",
+    "description": "Put a module bay object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.dcim.module_bays",
@@ -16,7 +16,7 @@
         },
         "device": {
             "description": "Device",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "endpoint_uri": {
@@ -37,25 +37,25 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "installed_module": {
             "description": "Installed module",
-            "required": true,
+            "required": false,
             "type": "integer"
         },
         "label": {
-            "description": "Label",
+            "description": "Physical label",
             "required": false,
             "type": "string"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "position": {
-            "description": "Position",
+            "description": "Identifier to reference when renaming installed components",
             "required": false,
             "type": "string"
         },

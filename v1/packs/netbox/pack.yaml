@@ -5,7 +5,7 @@ keywords:
 - networking
 - ipam
 - dcim
-version: 3.2.0
+version: 3.3.0
 python_versions:
 - '3'
 author: John Anderson, Jefferson White
@@ -14,7 +14,7 @@ contributors:
 - Abhimanyu Saharan <asaharan@onemindservices.com>
 content:
   actions:
-    count: 498
+    count: 505
     resources:
     - delete.circuits.circuit_terminations
     - delete.circuits.circuit_types
@@ -64,8 +64,10 @@ content:
     - delete.dcim.sites
     - delete.dcim.virtual_chassis
     - delete.dcim.virtual_device_contexts
+    - delete.extras.bookmarks
     - delete.extras.config_contexts
     - delete.extras.config_templates
+    - delete.extras.custom_field_choice_sets
     - delete.extras.custom_fields
     - delete.extras.custom_links
     - delete.extras.dashboard
@@ -172,18 +174,19 @@ content:
     - get.dcim.sites
     - get.dcim.virtual_chassis
     - get.dcim.virtual_device_contexts
+    - get.extras.bookmarks
     - get.extras.config_contexts
     - get.extras.config_templates
     - get.extras.content_types
+    - get.extras.custom_field_choice_sets
+    - get.extras.custom_field_choice_sets.choices
     - get.extras.custom_fields
     - get.extras.custom_links
     - get.extras.export_templates
     - get.extras.image_attachments
     - get.extras.journal_entries
     - get.extras.object_changes
-    - get.extras.reports
     - get.extras.saved_filters
-    - get.extras.scripts
     - get.extras.tags
     - get.extras.webhooks
     - get.ipam.aggregates
@@ -209,14 +212,12 @@ content:
     - get.ipam.vlan_groups.available_vlans
     - get.ipam.vlans
     - get.ipam.vrfs
-    - get.status
     - get.tenancy.contact_assignments
     - get.tenancy.contact_groups
     - get.tenancy.contact_roles
     - get.tenancy.contacts
     - get.tenancy.tenant_groups
     - get.tenancy.tenants
-    - get.users.config
     - get.users.groups
     - get.users.permissions
     - get.users.tokens
@@ -277,8 +278,10 @@ content:
     - patch.dcim.sites
     - patch.dcim.virtual_chassis
     - patch.dcim.virtual_device_contexts
+    - patch.extras.bookmarks
     - patch.extras.config_contexts
     - patch.extras.config_templates
+    - patch.extras.custom_field_choice_sets
     - patch.extras.custom_fields
     - patch.extras.custom_links
     - patch.extras.dashboard
@@ -372,8 +375,10 @@ content:
     - post.dcim.sites
     - post.dcim.virtual_chassis
     - post.dcim.virtual_device_contexts
+    - post.extras.bookmarks
     - post.extras.config_contexts
     - post.extras.config_templates
+    - post.extras.custom_field_choice_sets
     - post.extras.custom_fields
     - post.extras.custom_links
     - post.extras.export_templates
@@ -467,8 +472,10 @@ content:
     - put.dcim.sites
     - put.dcim.virtual_chassis
     - put.dcim.virtual_device_contexts
+    - put.extras.bookmarks
     - put.extras.config_contexts
     - put.extras.config_templates
+    - put.extras.custom_field_choice_sets
     - put.extras.custom_fields
     - put.extras.custom_links
     - put.extras.dashboard

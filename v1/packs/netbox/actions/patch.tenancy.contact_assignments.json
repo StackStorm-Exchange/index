@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Contact Assignments",
+    "description": "Patch a contact assignment object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.tenancy.contact_assignments",
@@ -32,7 +32,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "object_id": {
             "description": "Object id",
@@ -40,7 +40,7 @@
             "type": "integer"
         },
         "priority": {
-            "description": "Priority",
+            "description": "* `primary` - Primary * `secondary` - Secondary * `tertiary` - Tertiary * `inactive` - Inactive",
             "required": false,
             "type": "string"
         },
@@ -48,6 +48,11 @@
             "description": "Role",
             "required": false,
             "type": "integer"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"

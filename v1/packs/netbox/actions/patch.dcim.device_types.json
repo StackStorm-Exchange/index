@@ -1,11 +1,11 @@
 {
-    "description": "PATCH Device Types",
+    "description": "Patch a device type object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.dcim.device_types",
     "parameters": {
         "airflow": {
-            "description": "Airflow",
+            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `passive` - Passive * `mixed` - Mixed",
             "required": false,
             "type": "string"
         },
@@ -34,6 +34,11 @@
             "immutable": true,
             "type": "string"
         },
+        "front_image": {
+            "description": "Front image",
+            "required": false,
+            "type": "string"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -47,10 +52,10 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "is_full_depth": {
-            "description": "Is full depth",
+            "description": "Device consumes both front and rear rack faces",
             "required": false,
             "type": "boolean"
         },
@@ -65,7 +70,12 @@
             "type": "string"
         },
         "part_number": {
-            "description": "Part number",
+            "description": "Discrete part number (optional)",
+            "required": false,
+            "type": "string"
+        },
+        "rear_image": {
+            "description": "Rear image",
             "required": false,
             "type": "string"
         },
@@ -95,7 +105,7 @@
             "type": "integer"
         },
         "weight_unit": {
-            "description": "Weight unit",
+            "description": "* `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces",
             "required": false,
             "type": "string"
         }

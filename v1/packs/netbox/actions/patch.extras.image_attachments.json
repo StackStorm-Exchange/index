@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Image Attachments",
+    "description": "Patch a image attachment object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.extras.image_attachments",
@@ -27,6 +27,11 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
+            "type": "integer"
+        },
+        "image": {
+            "description": "Image",
+            "required": false,
             "type": "string"
         },
         "image_height": {

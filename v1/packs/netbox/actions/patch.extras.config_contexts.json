@@ -1,5 +1,5 @@
 {
-    "description": "PATCH Config Contexts",
+    "description": "Patch a config context object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "patch.extras.config_contexts",
@@ -24,13 +24,8 @@
             "required": false,
             "type": "object"
         },
-        "data_file": {
-            "description": "Data file",
-            "required": false,
-            "type": "integer"
-        },
         "data_source": {
-            "description": "Data source",
+            "description": "Remote data source",
             "required": false,
             "type": "integer"
         },
@@ -62,7 +57,7 @@
         "id": {
             "description": "ID of the object to patch.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "is_active": {
             "description": "Is active",

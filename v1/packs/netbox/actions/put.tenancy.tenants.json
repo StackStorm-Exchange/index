@@ -1,5 +1,5 @@
 {
-    "description": "PUT Tenants",
+    "description": "Put a tenant object.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "put.tenancy.tenants",
@@ -42,16 +42,16 @@
         "id": {
             "description": "ID of the object to put.",
             "required": true,
-            "type": "string"
+            "type": "integer"
         },
         "name": {
             "description": "Name",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "slug": {
             "description": "Slug",
-            "required": true,
+            "required": false,
             "type": "string"
         },
         "tags": {
