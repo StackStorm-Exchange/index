@@ -79,6 +79,16 @@
             "required": false,
             "type": "string"
         },
+        "config_template_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "config_template_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "console_ports": {
             "description": "",
             "required": false,
@@ -145,6 +155,11 @@
             "type": "string"
         },
         "created__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created_by_request": {
             "description": "",
             "required": false,
             "type": "string"
@@ -759,6 +774,11 @@
             "type": "string"
         },
         "tenant_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"

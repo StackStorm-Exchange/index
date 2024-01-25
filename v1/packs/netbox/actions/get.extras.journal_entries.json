@@ -79,6 +79,11 @@
             "required": false,
             "type": "string"
         },
+        "created_by_request": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/extras/journal-entries/",
             "immutable": true,
@@ -204,6 +209,11 @@
             "type": "string"
         },
         "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"

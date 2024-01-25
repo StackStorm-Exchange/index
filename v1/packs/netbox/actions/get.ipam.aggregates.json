@@ -34,6 +34,11 @@
             "required": false,
             "type": "string"
         },
+        "created_by_request": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "date_added": {
             "description": "",
             "required": false,
@@ -304,6 +309,11 @@
             "type": "string"
         },
         "tenant_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"

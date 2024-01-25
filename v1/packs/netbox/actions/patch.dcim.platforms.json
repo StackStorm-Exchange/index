@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "patch.dcim.platforms",
     "parameters": {
+        "config_template": {
+            "description": "Config template",
+            "required": false,
+            "type": "integer"
+        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,

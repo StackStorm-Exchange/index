@@ -84,6 +84,61 @@
             "required": false,
             "type": "string"
         },
+        "created_by_request": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_file_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_file_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_source_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_source_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_synced": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_synced__gt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_synced__gte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_synced__lt": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_synced__lte": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "data_synced__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "device_type_id": {
             "description": "",
             "required": false,
@@ -439,6 +494,11 @@
             "type": "string"
         },
         "tenant_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"

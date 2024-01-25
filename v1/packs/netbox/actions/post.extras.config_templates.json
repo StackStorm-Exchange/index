@@ -1,0 +1,59 @@
+{
+    "description": "POST Config Templates",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.extras.config_templates",
+    "parameters": {
+        "data_file": {
+            "description": "Data file",
+            "required": false,
+            "type": "integer"
+        },
+        "data_source": {
+            "description": "Data source",
+            "required": false,
+            "type": "integer"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "endpoint_uri": {
+            "default": "/extras/config-templates/",
+            "immutable": true,
+            "type": "string"
+        },
+        "environment_params": {
+            "description": "Environment params",
+            "required": false,
+            "type": "object"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": true,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "template_code": {
+            "description": "Template code",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

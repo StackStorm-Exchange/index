@@ -54,6 +54,31 @@
             "required": false,
             "type": "string"
         },
+        "created_by_request": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "default_platform": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "default_platform__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "default_platform_id": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "default_platform_id__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "device_bays": {
             "description": "",
             "required": false,
@@ -444,6 +469,11 @@
             "type": "string"
         },
         "u_height__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"

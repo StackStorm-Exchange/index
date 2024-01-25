@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "post.dcim.interface_templates",
     "parameters": {
+        "bridge": {
+            "description": "Bridge interface",
+            "required": false,
+            "type": "integer"
+        },
         "description": {
             "description": "Description",
             "required": false,
@@ -13,6 +18,11 @@
             "description": "Device type",
             "required": false,
             "type": "integer"
+        },
+        "enabled": {
+            "description": "Enabled",
+            "required": false,
+            "type": "boolean"
         },
         "endpoint_uri": {
             "default": "/dcim/interface-templates/",

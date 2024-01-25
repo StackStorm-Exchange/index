@@ -84,6 +84,11 @@
             "required": false,
             "type": "string"
         },
+        "created_by_request": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/dcim/power-feeds/",
             "immutable": true,
@@ -409,6 +414,11 @@
             "type": "string"
         },
         "type__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"

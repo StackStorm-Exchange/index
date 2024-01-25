@@ -54,6 +54,11 @@
             "required": true,
             "type": "integer"
         },
+        "provider_account": {
+            "description": "Provider account",
+            "required": false,
+            "type": "integer"
+        },
         "status": {
             "description": "Status",
             "required": false,

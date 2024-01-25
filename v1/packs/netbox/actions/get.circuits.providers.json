@@ -4,61 +4,6 @@
     "entry_point": "run.py",
     "name": "get.circuits.providers",
     "parameters": {
-        "account": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__empty": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__ic": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__ie": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__iew": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__isw": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__n": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__nic": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__nie": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__niew": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
-        "account__nisw": {
-            "description": "",
-            "required": false,
-            "type": "string"
-        },
         "asn_id": {
             "description": "",
             "required": false,
@@ -125,6 +70,11 @@
             "type": "string"
         },
         "created__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "created_by_request": {
             "description": "",
             "required": false,
             "type": "string"
@@ -414,6 +364,11 @@
             "type": "string"
         },
         "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"

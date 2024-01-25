@@ -129,6 +129,11 @@
             "required": false,
             "type": "string"
         },
+        "created_by_request": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "device": {
             "description": "",
             "required": false,
@@ -639,6 +644,11 @@
             "type": "string"
         },
         "tag__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"

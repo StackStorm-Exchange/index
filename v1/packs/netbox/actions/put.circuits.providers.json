@@ -4,10 +4,10 @@
     "entry_point": "run.py",
     "name": "put.circuits.providers",
     "parameters": {
-        "account": {
-            "description": "Account number",
-            "required": false,
-            "type": "string"
+        "accounts": {
+            "description": "Accounts",
+            "required": true,
+            "type": "array"
         },
         "asns": {
             "description": "Asns",

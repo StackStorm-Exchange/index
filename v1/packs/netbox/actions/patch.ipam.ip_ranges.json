@@ -44,6 +44,11 @@
             "required": true,
             "type": "string"
         },
+        "mark_utilized": {
+            "description": "Mark utilized",
+            "required": false,
+            "type": "boolean"
+        },
         "role": {
             "description": "Role",
             "required": false,

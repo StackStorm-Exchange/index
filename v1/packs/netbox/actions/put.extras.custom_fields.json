@@ -54,6 +54,11 @@
             "required": true,
             "type": "string"
         },
+        "is_cloneable": {
+            "description": "Cloneable",
+            "required": false,
+            "type": "boolean"
+        },
         "label": {
             "description": "Label",
             "required": false,

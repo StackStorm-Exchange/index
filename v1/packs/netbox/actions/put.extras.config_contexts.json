@@ -24,6 +24,16 @@
             "required": true,
             "type": "object"
         },
+        "data_file": {
+            "description": "Data file",
+            "required": false,
+            "type": "integer"
+        },
+        "data_source": {
+            "description": "Data source",
+            "required": false,
+            "type": "integer"
+        },
         "description": {
             "description": "Description",
             "required": false,

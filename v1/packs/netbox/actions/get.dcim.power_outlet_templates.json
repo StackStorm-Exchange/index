@@ -34,6 +34,11 @@
             "required": false,
             "type": "string"
         },
+        "created_by_request": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
         "devicetype_id": {
             "description": "",
             "required": false,
@@ -234,6 +239,11 @@
             "type": "string"
         },
         "type__n": {
+            "description": "",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
             "description": "",
             "required": false,
             "type": "string"
