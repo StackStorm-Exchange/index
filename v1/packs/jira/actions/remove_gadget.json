@@ -1,0 +1,19 @@
+{
+    "description": "Remove a gadget from a dashboard.",
+    "enabled": true,
+    "entry_point": "remove_gadget.py",
+    "name": "remove_gadget",
+    "parameters": {
+        "dashboard_id": {
+            "description": "The ID of the Dashboard to remove the gadget from.",
+            "required": true,
+            "type": "string"
+        },
+        "gadget_id": {
+            "description": "The ID of the Gadget to remove.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

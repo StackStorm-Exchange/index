@@ -1,0 +1,19 @@
+{
+    "description": "Get the property keys of an item (gadget) on a dashboard.",
+    "enabled": true,
+    "entry_point": "get_dashboard_item_property_keys.py",
+    "name": "get_dashboard_item_property_keys",
+    "parameters": {
+        "dashboard_id": {
+            "description": "The ID of the Dashboard.",
+            "required": true,
+            "type": "string"
+        },
+        "item_id": {
+            "description": "The ID of the dashboard item (gadget).",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

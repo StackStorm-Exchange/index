@@ -1,0 +1,55 @@
+{
+    "description": "Add a gadget to a dashboard.",
+    "enabled": true,
+    "entry_point": "add_gadget.py",
+    "name": "add_gadget",
+    "parameters": {
+        "color": {
+            "default": "blue",
+            "description": "The color of the gadget.",
+            "enum": [
+                "blue",
+                "red",
+                "yellow",
+                "green",
+                "cyan",
+                "purple",
+                "gray",
+                "white"
+            ],
+            "required": false,
+            "type": "string"
+        },
+        "dashboard_id": {
+            "description": "The ID of the Dashboard to add the gadget to.",
+            "required": true,
+            "type": "string"
+        },
+        "ignore_uri_and_module_key_validation": {
+            "default": false,
+            "description": "Whether to ignore the validation of the module key and URI.\nFor example, when a gadget is created that is part of an\napplication that is not installed.\n",
+            "required": false,
+            "type": "boolean"
+        },
+        "module_key": {
+            "description": "The module to use in the gadget. Mutually exclusive with `uri`.\n",
+            "required": false,
+            "type": "string"
+        },
+        "position": {
+            "description": "A dictionary (object) containing positioning information for the\ngadget like - {\"column\": 0, \"row\": 0}\n",
+            "required": false,
+            "type": "object"
+        },
+        "title": {
+            "description": "The title of the gadget.",
+            "required": false,
+            "type": "string"
+        },
+        "uri": {
+            "description": "The uri to the module to use in the gadget. Mutually exclusive\nwith `uri`.\n",
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

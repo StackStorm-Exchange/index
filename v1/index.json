@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1711485916,
-        "hash": "22fe82cc9f160ba6c8d7e6e9bec6d0c6"
+        "generated_ts": 1711490141,
+        "hash": "0930577487300337ab7ca24a9e9d1b7a"
     },
     "packs": {
         "acos": {
@@ -9310,24 +9310,39 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 16,
+                    "count": 31,
                     "resources": [
                         "add_field_value",
+                        "add_gadget",
                         "assign_issue",
                         "attach_file_to_issue",
                         "attach_files_to_issue",
                         "bulk_link_issue",
                         "comment_issue",
+                        "copy_dashboard",
+                        "create_dashboard",
                         "create_issue",
+                        "delete_dashboard",
+                        "delete_dashboard_item_property",
+                        "get_available_gadgets",
+                        "get_dashboard_gadgets",
+                        "get_dashboard_item_property",
+                        "get_dashboard_item_property_keys",
                         "get_issue",
                         "get_issue_attachments",
                         "get_issue_comments",
                         "get_issue_links",
                         "link_issue",
+                        "remove_gadget",
                         "search_issues",
+                        "set_dashboard_item_property",
                         "transition_issue",
                         "transition_issue_by_name",
-                        "update_field_value"
+                        "update_dashboard",
+                        "update_dashboard_automatic_refresh",
+                        "update_dashboard_item_property",
+                        "update_field_value",
+                        "update_gadget"
                     ]
                 },
                 "sensors": {
@@ -9338,10 +9353,25 @@
                     ]
                 },
                 "tests": {
-                    "count": 4,
+                    "count": 19,
                     "resources": [
                         "__init__.py",
+                        "test_action_add_gadget.py",
+                        "test_action_copy_dashboard.py",
+                        "test_action_create_dashboard.py",
+                        "test_action_delete_dashboard.py",
+                        "test_action_delete_dashboard_item_property.py",
+                        "test_action_get_available_gadgets.py",
+                        "test_action_get_dashboard_gadgets.py",
+                        "test_action_get_dashboard_item_property.py",
+                        "test_action_get_dashboard_item_property_keys.py",
+                        "test_action_remove_gadget.py",
                         "test_action_run.py",
+                        "test_action_set_dashboard_item_property.py",
+                        "test_action_update_dashboard.py",
+                        "test_action_update_dashboard_automatic_refresh.py",
+                        "test_action_update_dashboard_property.py",
+                        "test_action_update_gadget.py",
                         "test_sensor_jira_sensor.py",
                         "test_sensor_jira_sensor_for_apiv2.py"
                     ]
@@ -9360,8 +9390,9 @@
             ],
             "ref": "jira",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira",
-            "version": "2.6.0",
+            "version": "3.0.0",
             "versions": [
+                "3.0.0",
                 "2.6.0",
                 "2.5.1",
                 "2.5.0",

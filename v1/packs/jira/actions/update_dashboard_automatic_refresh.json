@@ -1,0 +1,19 @@
+{
+    "description": "Update how often an existing JIRA dashboard refreshes.",
+    "enabled": true,
+    "entry_point": "update_dashboard_automatic_refresh.py",
+    "name": "update_dashboard_automatic_refresh",
+    "parameters": {
+        "id": {
+            "description": "The ID of the Dashboard to update.",
+            "required": true,
+            "type": "string"
+        },
+        "minutes": {
+            "description": "The refresh interval for the target dashboard in minutes.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

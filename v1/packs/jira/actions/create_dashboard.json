@@ -1,0 +1,35 @@
+{
+    "description": "Create a new JIRA dashboard.",
+    "enabled": true,
+    "entry_point": "create_dashboard.py",
+    "name": "create_dashboard",
+    "parameters": {
+        "description": {
+            "description": "A description of the dashboard.",
+            "required": false,
+            "type": "string"
+        },
+        "edit_permissions": {
+            "description": "A list of permission objects to grant editing permissions.",
+            "items": {
+                "type": "object"
+            },
+            "required": false,
+            "type": "array"
+        },
+        "name": {
+            "description": "The name of the new dashboard.",
+            "required": true,
+            "type": "string"
+        },
+        "share_permissions": {
+            "description": "A list of permissions objects to grant sharing permissions.",
+            "items": {
+                "type": "object"
+            },
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "python-script"
+}

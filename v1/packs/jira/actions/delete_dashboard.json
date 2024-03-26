@@ -1,0 +1,14 @@
+{
+    "description": "delete an existing JIRA dashboard.",
+    "enabled": true,
+    "entry_point": "delete_dashboard.py",
+    "name": "delete_dashboard",
+    "parameters": {
+        "dashboard_id": {
+            "description": "The ID of the Dashboard to delete.",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}
