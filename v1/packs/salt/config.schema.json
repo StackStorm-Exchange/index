@@ -1,32 +1,32 @@
 {
     "api_url": {
-        "description": "Salt NetAPI URL if using remote server",
+        "description": "Salt NetAPI URL if using remote server.",
         "required": false,
         "secret": false,
         "type": "string"
     },
     "eauth": {
         "default": "pam",
-        "description": "Salt External Authentication System",
+        "description": "Salt external authentication system.",
         "required": false,
         "secret": false,
         "type": "string"
     },
     "password": {
-        "description": "Password for Salt NetAPI integration",
+        "description": "Password for Salt NetAPI integration.",
         "required": false,
         "secret": true,
         "type": "string"
     },
     "username": {
-        "description": "Username for Salt NetAPI integration",
+        "description": "Username for Salt NetAPI integration.",
         "required": false,
         "secret": false,
         "type": "string"
     },
     "verify_ssl": {
         "default": true,
-        "description": "Whether ST2 should verify the Salt NetAPI SSL certificate or not",
+        "description": "True: verify the Salt API certificate is valid.",
         "required": false,
         "secret": false,
         "type": "boolean"
