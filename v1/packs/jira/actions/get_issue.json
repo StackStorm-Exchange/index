@@ -44,6 +44,12 @@
             "description": "Issue key (e.g. PROJECT-1000).",
             "required": true,
             "type": "string"
+        },
+        "sanitize_formatting": {
+            "default": false,
+            "description": "When set to true removes jinja template artifacts.",
+            "required": true,
+            "type": "boolean"
         }
     },
     "runner_type": "python-script"
