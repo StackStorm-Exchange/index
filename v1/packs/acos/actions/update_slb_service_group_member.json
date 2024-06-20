@@ -1,12 +1,12 @@
 {
-    "description": "add a server to the ServiceGroup as a member",
+    "description": "update a server to the ServiceGroup as a member",
     "enabled": true,
     "entry_point": "ax_action_runner.py",
-    "name": "add_slb_service_group_member",
+    "name": "update_slb_service_group_member",
     "pack": "acos",
     "parameters": {
         "action": {
-            "default": "create",
+            "default": "update",
             "immutable": true,
             "type": "string"
         },
@@ -36,12 +36,12 @@
         },
         "server_name": {
             "default": "",
-            "description": "the name of server to add",
+            "description": "the name of server to update",
             "type": "string"
         },
         "server_port": {
             "default": 80,
-            "description": "the port-number of server to add",
+            "description": "the port-number of server to update",
             "type": "integer"
         },
         "service_group_name": {
