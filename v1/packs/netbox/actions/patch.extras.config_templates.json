@@ -4,15 +4,10 @@
     "entry_point": "run.py",
     "name": "patch.extras.config_templates",
     "parameters": {
-        "data_file": {
-            "description": "Data file",
-            "required": false,
-            "type": "integer"
-        },
         "data_source": {
-            "description": "Remote data source",
+            "description": "Data source",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "description": {
             "description": "Description",

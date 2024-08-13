@@ -144,6 +144,16 @@
             "required": false,
             "type": "array"
         },
+        "device_type_id": {
+            "description": "Device type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "device_type_id__n": {
+            "description": "Device_type_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "devicetype_id": {
             "description": "Device type (ID)",
             "required": false,

@@ -218,6 +218,41 @@
             "required": false,
             "type": "array"
         },
+        "termination_id": {
+            "description": "Termination_id",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__empty": {
+            "description": "Termination_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "termination_id__gt": {
+            "description": "Termination_id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__gte": {
+            "description": "Termination_id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__lt": {
+            "description": "Termination_id less than",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__lte": {
+            "description": "Termination_id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__n": {
+            "description": "Termination_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "termination_type": {
             "description": "Termination_type",
             "required": false,

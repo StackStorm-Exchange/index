@@ -62,12 +62,12 @@
         "power_panel": {
             "description": "Power panel",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "rack": {
             "description": "Rack",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "status": {
             "description": "* `offline` - Offline * `active` - Active * `planned` - Planned * `failed` - Failed",
@@ -87,7 +87,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "type": {
             "description": "* `primary` - Primary * `redundant` - Redundant",

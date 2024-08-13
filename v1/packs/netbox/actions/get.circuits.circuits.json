@@ -369,6 +369,16 @@
             "required": false,
             "type": "array"
         },
+        "provider_account": {
+            "description": "Provider account (account)",
+            "required": false,
+            "type": "array"
+        },
+        "provider_account__n": {
+            "description": "Provider_account not equal to",
+            "required": false,
+            "type": "array"
+        },
         "provider_account_id": {
             "description": "Provider account (ID)",
             "required": false,
@@ -538,6 +548,16 @@
             "required": false,
             "type": "array"
         },
+        "termination_a_id": {
+            "description": "Termination A (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "termination_a_id__n": {
+            "description": "Termination_a_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "termination_date": {
             "description": "Termination_date",
             "required": false,
@@ -570,6 +590,16 @@
         },
         "termination_date__n": {
             "description": "Termination_date not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "termination_z_id": {
+            "description": "Termination A (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "termination_z_id__n": {
+            "description": "Termination_z_id not equal to",
             "required": false,
             "type": "array"
         },

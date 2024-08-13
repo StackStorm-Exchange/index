@@ -214,6 +214,66 @@
             "required": false,
             "type": "array"
         },
+        "object_type": {
+            "description": "Object_type",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__ic": {
+            "description": "Object_type contains (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__ie": {
+            "description": "Object_type exact match (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__iew": {
+            "description": "Object_type ends with (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__isw": {
+            "description": "Object_type starts with (case-sensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__n": {
+            "description": "Object_type not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__nic": {
+            "description": "Object_type does not contain (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__nie": {
+            "description": "Object_type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__niew": {
+            "description": "Object_type does not end with (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__nisw": {
+            "description": "Object_type does not start with (case-sensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type_id": {
+            "description": "Object_type_id",
+            "required": false,
+            "type": "array"
+        },
+        "object_type_id__n": {
+            "description": "Object_type_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "object_types": {
             "description": "Object_types",
             "required": false,

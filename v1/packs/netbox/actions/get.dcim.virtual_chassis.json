@@ -264,6 +264,41 @@
             "required": false,
             "type": "array"
         },
+        "member_count": {
+            "description": "Member_count",
+            "required": false,
+            "type": "array"
+        },
+        "member_count__empty": {
+            "description": "Member_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "member_count__gt": {
+            "description": "Member_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "member_count__gte": {
+            "description": "Member_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "member_count__lt": {
+            "description": "Member_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "member_count__lte": {
+            "description": "Member_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "member_count__n": {
+            "description": "Member_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "modified_by_request": {
             "description": "Modified_by_request",
             "required": false,

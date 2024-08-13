@@ -52,7 +52,7 @@
         "virtual_machine": {
             "description": "Virtual machine",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

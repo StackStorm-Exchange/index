@@ -30,9 +30,9 @@
             "type": "boolean"
         },
         "group": {
-            "description": "VLAN group (optional)",
+            "description": "Group",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "http_verb": {
             "default": "put",
@@ -50,14 +50,14 @@
             "type": "string"
         },
         "role": {
-            "description": "The primary function of this VLAN",
+            "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "site": {
-            "description": "The specific site to which this VLAN is assigned (if any)",
+            "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "status": {
             "description": "Operational status of this VLAN\n* `active` - Active * `reserved` - Reserved * `deprecated` - Deprecated",
@@ -72,7 +72,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "vid": {
             "description": "VLAN ID",

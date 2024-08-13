@@ -4,6 +4,26 @@
     "entry_point": "run.py",
     "name": "get.dcim.locations",
     "parameters": {
+        "ancestor": {
+            "description": "Location (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor__n": {
+            "description": "Ancestor not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor_id": {
+            "description": "Location (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor_id__n": {
+            "description": "Ancestor_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "contact": {
             "description": "Contact",
             "required": false,
@@ -133,6 +153,61 @@
             "default": "/dcim/locations/",
             "immutable": true,
             "type": "string"
+        },
+        "facility": {
+            "description": "Facility",
+            "required": false,
+            "type": "array"
+        },
+        "facility__empty": {
+            "description": "Facility is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "facility__ic": {
+            "description": "Facility contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "facility__ie": {
+            "description": "Facility exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "facility__iew": {
+            "description": "Facility ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "facility__isw": {
+            "description": "Facility starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "facility__n": {
+            "description": "Facility not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "facility__nic": {
+            "description": "Facility does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "facility__nie": {
+            "description": "Facility inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "facility__niew": {
+            "description": "Facility does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "facility__nisw": {
+            "description": "Facility does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -290,7 +365,7 @@
             "type": "string"
         },
         "parent": {
-            "description": "Location (slug)",
+            "description": "Parent location (slug)",
             "required": false,
             "type": "array"
         },
@@ -300,7 +375,7 @@
             "type": "array"
         },
         "parent_id": {
-            "description": "Location (ID)",
+            "description": "Parent location (ID)",
             "required": false,
             "type": "array"
         },

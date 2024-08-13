@@ -5,7 +5,7 @@
     "name": "get.extras.custom_field_choice_sets",
     "parameters": {
         "base_choices": {
-            "description": "Base set of predefined choices (optional)",
+            "description": "Base set of predefined choices (optional)\n* `IATA` - IATA (Airport codes) * `ISO_3166` - ISO 3166 (Country codes) * `UN_LOCODE` - UN/LOCODE (Location codes)",
             "required": false,
             "type": "string"
         },
@@ -18,6 +18,46 @@
             "description": "Choice",
             "required": false,
             "type": "array"
+        },
+        "created": {
+            "description": "Created",
+            "required": false,
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "created__gt": {
+            "description": "Created greater than",
+            "required": false,
+            "type": "array"
+        },
+        "created__gte": {
+            "description": "Created greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__lt": {
+            "description": "Created less than",
+            "required": false,
+            "type": "array"
+        },
+        "created__lte": {
+            "description": "Created less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__n": {
+            "description": "Created not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created_by_request": {
+            "description": "Created_by_request",
+            "required": false,
+            "type": "string"
         },
         "description": {
             "description": "Description",
@@ -124,10 +164,50 @@
             "required": false,
             "type": "array"
         },
+        "last_updated": {
+            "description": "Last_updated",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gt": {
+            "description": "Last_updated greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gte": {
+            "description": "Last_updated greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lt": {
+            "description": "Last_updated less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lte": {
+            "description": "Last_updated less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__n": {
+            "description": "Last_updated not equal to",
+            "required": false,
+            "type": "array"
+        },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
+            "required": false,
+            "type": "string"
         },
         "name": {
             "description": "Name",
@@ -217,6 +297,11 @@
             "default": 60,
             "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
             "type": "integer"
+        },
+        "updated_by_request": {
+            "description": "Updated_by_request",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

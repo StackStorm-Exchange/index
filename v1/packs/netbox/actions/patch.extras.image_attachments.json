@@ -4,11 +4,6 @@
     "entry_point": "run.py",
     "name": "patch.extras.image_attachments",
     "parameters": {
-        "content_type": {
-            "description": "Content type",
-            "required": false,
-            "type": "string"
-        },
         "endpoint_uri": {
             "default": "/extras/image-attachments/{{ id }}/",
             "immutable": true,
@@ -53,6 +48,11 @@
             "description": "Object id",
             "required": false,
             "type": "integer"
+        },
+        "object_type": {
+            "description": "Object type",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

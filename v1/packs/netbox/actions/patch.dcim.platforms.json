@@ -7,7 +7,7 @@
         "config_template": {
             "description": "Config template",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "custom_fields": {
             "description": "Custom fields",
@@ -40,9 +40,9 @@
             "type": "integer"
         },
         "manufacturer": {
-            "description": "Optionally limit this platform to devices of a certain manufacturer",
+            "description": "Manufacturer",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "name": {
             "description": "Name",

@@ -4,6 +4,51 @@
     "entry_point": "run.py",
     "name": "get.extras.config_templates",
     "parameters": {
+        "auto_sync_enabled": {
+            "description": "Auto_sync_enabled",
+            "required": false,
+            "type": "boolean"
+        },
+        "created": {
+            "description": "Created",
+            "required": false,
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "created__gt": {
+            "description": "Created greater than",
+            "required": false,
+            "type": "array"
+        },
+        "created__gte": {
+            "description": "Created greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__lt": {
+            "description": "Created less than",
+            "required": false,
+            "type": "array"
+        },
+        "created__lte": {
+            "description": "Created less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__n": {
+            "description": "Created not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created_by_request": {
+            "description": "Created_by_request",
+            "required": false,
+            "type": "string"
+        },
         "data_file_id": {
             "description": "Data file (ID)",
             "required": false,
@@ -164,10 +209,50 @@
             "required": false,
             "type": "array"
         },
+        "last_updated": {
+            "description": "Last_updated",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gt": {
+            "description": "Last_updated greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gte": {
+            "description": "Last_updated greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lt": {
+            "description": "Last_updated less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lte": {
+            "description": "Last_updated less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__n": {
+            "description": "Last_updated not equal to",
+            "required": false,
+            "type": "array"
+        },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
+            "required": false,
+            "type": "string"
         },
         "name": {
             "description": "Name",
@@ -262,6 +347,11 @@
             "description": "Tag not equal to",
             "required": false,
             "type": "array"
+        },
+        "updated_by_request": {
+            "description": "Updated_by_request",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

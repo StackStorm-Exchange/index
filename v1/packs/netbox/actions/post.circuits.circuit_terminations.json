@@ -7,7 +7,7 @@
         "circuit": {
             "description": "Circuit",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "custom_fields": {
             "description": "Custom fields",
@@ -52,12 +52,12 @@
         "provider_network": {
             "description": "Provider network",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "site": {
             "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "tags": {
             "description": "Array of tag strings",

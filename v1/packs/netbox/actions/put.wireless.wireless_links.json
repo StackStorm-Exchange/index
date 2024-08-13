@@ -57,12 +57,12 @@
         "interface_a": {
             "description": "Interface a",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "interface_b": {
             "description": "Interface b",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "ssid": {
             "description": "Ssid",
@@ -82,7 +82,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

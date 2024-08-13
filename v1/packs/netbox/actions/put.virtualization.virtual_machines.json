@@ -7,7 +7,7 @@
         "cluster": {
             "description": "Cluster",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "comments": {
             "description": "Comments",
@@ -17,7 +17,7 @@
         "config_template": {
             "description": "Config template",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "custom_fields": {
             "description": "Custom fields",
@@ -32,7 +32,7 @@
         "device": {
             "description": "Device",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "disk": {
             "description": "Disk (GB)",
@@ -77,27 +77,27 @@
         "platform": {
             "description": "Platform",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "primary_ip4": {
-            "description": "Primary IPv4",
+            "description": "Primary ip4",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "primary_ip6": {
-            "description": "Primary IPv6",
+            "description": "Primary ip6",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "role": {
             "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "site": {
             "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "status": {
             "description": "* `offline` - Offline * `active` - Active * `planned` - Planned * `staged` - Staged * `failed` - Failed * `decommissioning` - Decommissioning",
@@ -112,7 +112,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "vcpus": {
             "description": "Vcpus",

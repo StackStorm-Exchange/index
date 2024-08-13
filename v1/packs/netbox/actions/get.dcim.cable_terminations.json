@@ -15,12 +15,52 @@
             "type": "integer"
         },
         "cable_end": {
-            "description": "Cable_end",
+            "description": "* `A` - A * `B` - B",
             "required": false,
             "type": "string"
         },
         "cable_end__n": {
             "description": "Cable_end not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "description": "Created",
+            "required": false,
+            "type": "array"
+        },
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "created__gt": {
+            "description": "Created greater than",
+            "required": false,
+            "type": "array"
+        },
+        "created__gte": {
+            "description": "Created greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__lt": {
+            "description": "Created less than",
+            "required": false,
+            "type": "array"
+        },
+        "created__lte": {
+            "description": "Created less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created__n": {
+            "description": "Created not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "created_by_request": {
+            "description": "Created_by_request",
             "required": false,
             "type": "string"
         },
@@ -74,10 +114,50 @@
             "required": false,
             "type": "array"
         },
+        "last_updated": {
+            "description": "Last_updated",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gt": {
+            "description": "Last_updated greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gte": {
+            "description": "Last_updated greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lt": {
+            "description": "Last_updated less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lte": {
+            "description": "Last_updated less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__n": {
+            "description": "Last_updated not equal to",
+            "required": false,
+            "type": "array"
+        },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
+            "required": false,
+            "type": "string"
         },
         "offset": {
             "description": "The initial index from which to return the results.",
@@ -145,6 +225,11 @@
         },
         "termination_type__n": {
             "description": "Termination_type not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "updated_by_request": {
+            "description": "Updated_by_request",
             "required": false,
             "type": "string"
         }

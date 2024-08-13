@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "put.users.groups",
     "parameters": {
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/users/groups/{{ id }}/",
             "immutable": true,
@@ -28,6 +33,11 @@
             "description": "Name",
             "required": false,
             "type": "string"
+        },
+        "permissions": {
+            "description": "Permissions",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"

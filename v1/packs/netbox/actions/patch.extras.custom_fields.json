@@ -7,12 +7,12 @@
         "choice_set": {
             "description": "Choice set",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
-        "content_types": {
-            "description": "Content types",
+        "comments": {
+            "description": "Comments",
             "required": false,
-            "type": "array"
+            "type": "string"
         },
         "default": {
             "description": "Default value for the field (must be a JSON value). Encapsulate strings with double quotes (e.g. &#34;Foo&#34;).",
@@ -69,8 +69,13 @@
             "required": false,
             "type": "string"
         },
-        "object_type": {
-            "description": "Object type",
+        "object_types": {
+            "description": "Object types",
+            "required": false,
+            "type": "array"
+        },
+        "related_object_type": {
+            "description": "Related object type",
             "required": false,
             "type": "string"
         },

@@ -347,6 +347,41 @@
             "description": "Updated_by_request",
             "required": false,
             "type": "string"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "array"
+        },
+        "weight__empty": {
+            "description": "Weight is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "weight__gt": {
+            "description": "Weight greater than",
+            "required": false,
+            "type": "array"
+        },
+        "weight__gte": {
+            "description": "Weight greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "weight__lt": {
+            "description": "Weight less than",
+            "required": false,
+            "type": "array"
+        },
+        "weight__lte": {
+            "description": "Weight less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "weight__n": {
+            "description": "Weight not equal to",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"

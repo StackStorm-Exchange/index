@@ -169,6 +169,26 @@
             "required": false,
             "type": "array"
         },
+        "ip_address": {
+            "description": "IP address",
+            "required": false,
+            "type": "array"
+        },
+        "ip_address__n": {
+            "description": "Ip_address not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ip_address_id": {
+            "description": "IP address (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "ip_address_id__n": {
+            "description": "Ip_address_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "ipaddress": {
             "description": "IP address",
             "required": false,
@@ -305,7 +325,7 @@
             "type": "integer"
         },
         "protocol": {
-            "description": "Protocol",
+            "description": "* `tcp` - TCP * `udp` - UDP * `sctp` - SCTP",
             "required": false,
             "type": "string"
         },

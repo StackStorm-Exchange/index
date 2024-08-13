@@ -5,7 +5,7 @@ keywords:
 - networking
 - ipam
 - dcim
-version: 3.4.1
+version: 3.4.2
 python_versions:
 - '3'
 author: John Anderson, Jefferson White
@@ -14,7 +14,7 @@ contributors:
 - Abhimanyu Saharan <asaharan@onemindservices.com>
 content:
   actions:
-    count: 555
+    count: 560
     resources:
     - delete.circuits.circuit_terminations
     - delete.circuits.circuit_types
@@ -76,6 +76,7 @@ content:
     - delete.extras.image_attachments
     - delete.extras.journal_entries
     - delete.extras.saved_filters
+    - delete.extras.scripts
     - delete.extras.tags
     - delete.extras.webhooks
     - delete.ipam.aggregates
@@ -187,7 +188,6 @@ content:
     - get.extras.bookmarks
     - get.extras.config_contexts
     - get.extras.config_templates
-    - get.extras.content_types
     - get.extras.custom_field_choice_sets
     - get.extras.custom_field_choice_sets.choices
     - get.extras.custom_fields
@@ -197,7 +197,9 @@ content:
     - get.extras.image_attachments
     - get.extras.journal_entries
     - get.extras.object_changes
+    - get.extras.object_types
     - get.extras.saved_filters
+    - get.extras.scripts
     - get.extras.tags
     - get.extras.webhooks
     - get.ipam.aggregates
@@ -310,6 +312,7 @@ content:
     - patch.extras.image_attachments
     - patch.extras.journal_entries
     - patch.extras.saved_filters
+    - patch.extras.scripts
     - patch.extras.tags
     - patch.extras.webhooks
     - patch.ipam.aggregates
@@ -416,6 +419,7 @@ content:
     - post.extras.image_attachments
     - post.extras.journal_entries
     - post.extras.saved_filters
+    - post.extras.scripts
     - post.extras.tags
     - post.extras.webhooks
     - post.ipam.aggregates
@@ -524,6 +528,7 @@ content:
     - put.extras.image_attachments
     - put.extras.journal_entries
     - put.extras.saved_filters
+    - put.extras.scripts
     - put.extras.tags
     - put.extras.webhooks
     - put.ipam.aggregates

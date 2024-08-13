@@ -17,7 +17,7 @@
         "device_type": {
             "description": "Device type",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/dcim/front-port-templates/{{ id }}/",
@@ -47,7 +47,7 @@
         "module_type": {
             "description": "Module type",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "name": {
             "description": "{module} is accepted as a substitution for the module bay position when attached to a module type.",
@@ -57,7 +57,7 @@
         "rear_port": {
             "description": "Rear port",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "rear_port_position": {
             "description": "Rear port position",

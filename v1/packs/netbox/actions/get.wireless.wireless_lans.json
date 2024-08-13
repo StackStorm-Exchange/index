@@ -244,6 +244,16 @@
             "required": false,
             "type": "array"
         },
+        "interface_id": {
+            "description": "Interface_id",
+            "required": false,
+            "type": "array"
+        },
+        "interface_id__n": {
+            "description": "Interface_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "last_updated": {
             "description": "Last_updated",
             "required": false,

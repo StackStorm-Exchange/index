@@ -149,6 +149,26 @@
             "required": false,
             "type": "array"
         },
+        "ike_proposal": {
+            "description": "Ike_proposal",
+            "required": false,
+            "type": "array"
+        },
+        "ike_proposal__n": {
+            "description": "Ike_proposal not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ike_proposal_id": {
+            "description": "Ike_proposal_id",
+            "required": false,
+            "type": "array"
+        },
+        "ike_proposal_id__n": {
+            "description": "Ike_proposal_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "last_updated": {
             "description": "Last_updated",
             "required": false,
@@ -324,83 +344,13 @@
             "required": false,
             "type": "array"
         },
-        "proposal__empty": {
-            "description": "Proposal is empty/null (boolean)",
-            "required": false,
-            "type": "boolean"
-        },
-        "proposal__ic": {
-            "description": "Proposal contains (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "proposal__ie": {
-            "description": "Proposal exact match (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "proposal__iew": {
-            "description": "Proposal ends with (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "proposal__isw": {
-            "description": "Proposal starts with (case-sensitive)",
-            "required": false,
-            "type": "array"
-        },
         "proposal__n": {
             "description": "Proposal not equal to",
             "required": false,
             "type": "array"
         },
-        "proposal__nic": {
-            "description": "Proposal does not contain (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "proposal__nie": {
-            "description": "Proposal inverse exact match (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "proposal__niew": {
-            "description": "Proposal does not end with (case-insensitive)",
-            "required": false,
-            "type": "array"
-        },
-        "proposal__nisw": {
-            "description": "Proposal does not start with (case-sensitive)",
-            "required": false,
-            "type": "array"
-        },
         "proposal_id": {
             "description": "Proposal_id",
-            "required": false,
-            "type": "array"
-        },
-        "proposal_id__empty": {
-            "description": "Proposal_id is empty/null (boolean)",
-            "required": false,
-            "type": "array"
-        },
-        "proposal_id__gt": {
-            "description": "Proposal_id greater than",
-            "required": false,
-            "type": "array"
-        },
-        "proposal_id__gte": {
-            "description": "Proposal_id greater than or equal to",
-            "required": false,
-            "type": "array"
-        },
-        "proposal_id__lt": {
-            "description": "Proposal_id less than",
-            "required": false,
-            "type": "array"
-        },
-        "proposal_id__lte": {
-            "description": "Proposal_id less than or equal to",
             "required": false,
             "type": "array"
         },

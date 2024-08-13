@@ -9,11 +9,6 @@
             "required": false,
             "type": "string"
         },
-        "content_types": {
-            "description": "Content types",
-            "required": false,
-            "type": "array"
-        },
         "enabled": {
             "description": "Enabled",
             "required": false,
@@ -63,6 +58,11 @@
             "description": "Force link to open in a new window",
             "required": false,
             "type": "boolean"
+        },
+        "object_types": {
+            "description": "Object types",
+            "required": false,
+            "type": "array"
         },
         "weight": {
             "description": "Weight",

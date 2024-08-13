@@ -24,11 +24,6 @@
             "required": false,
             "type": "object"
         },
-        "content_types": {
-            "description": "Content types",
-            "required": false,
-            "type": "array"
-        },
         "custom_fields": {
             "description": "Custom fields",
             "required": false,
@@ -63,6 +58,11 @@
             "description": "Name",
             "required": false,
             "type": "string"
+        },
+        "object_types": {
+            "description": "Object types",
+            "required": false,
+            "type": "array"
         },
         "tags": {
             "description": "Array of tag strings",

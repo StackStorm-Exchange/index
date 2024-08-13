@@ -52,7 +52,7 @@
         "location": {
             "description": "Location",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "max_weight": {
             "description": "Maximum load capacity for the rack",
@@ -85,9 +85,9 @@
             "type": "integer"
         },
         "role": {
-            "description": "Functional role",
+            "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "serial": {
             "description": "Serial number",
@@ -97,7 +97,7 @@
         "site": {
             "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "starting_unit": {
             "description": "Starting unit for rack",
@@ -117,7 +117,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "type": {
             "description": "* `2-post-frame` - 2-post frame * `4-post-frame` - 4-post frame * `4-post-cabinet` - 4-post cabinet * `wall-frame` - Wall-mounted frame * `wall-frame-vertical` - Wall-mounted frame (vertical) * `wall-cabinet` - Wall-mounted cabinet * `wall-cabinet-vertical` - Wall-mounted cabinet (vertical)",

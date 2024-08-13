@@ -194,6 +194,41 @@
             "required": false,
             "type": "array"
         },
+        "last_used": {
+            "description": "Last_used",
+            "required": false,
+            "type": "array"
+        },
+        "last_used__empty": {
+            "description": "Last_used is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "last_used__gt": {
+            "description": "Last_used greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_used__gte": {
+            "description": "Last_used greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_used__lt": {
+            "description": "Last_used less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_used__lte": {
+            "description": "Last_used less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_used__n": {
+            "description": "Last_used not equal to",
+            "required": false,
+            "type": "array"
+        },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,

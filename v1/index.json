@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1723556297,
-        "hash": "1e4f4d164e5f8f8e5fe57a3508e6949c"
+        "generated_ts": 1723557083,
+        "hash": "6a320c047f62bfe42c8a1b696b272947"
     },
     "packs": {
         "acos": {
@@ -11266,7 +11266,7 @@
             "author": "John Anderson, Jefferson White",
             "content": {
                 "actions": {
-                    "count": 555,
+                    "count": 560,
                     "resources": [
                         "delete.circuits.circuit_terminations",
                         "delete.circuits.circuit_types",
@@ -11328,6 +11328,7 @@
                         "delete.extras.image_attachments",
                         "delete.extras.journal_entries",
                         "delete.extras.saved_filters",
+                        "delete.extras.scripts",
                         "delete.extras.tags",
                         "delete.extras.webhooks",
                         "delete.ipam.aggregates",
@@ -11439,7 +11440,6 @@
                         "get.extras.bookmarks",
                         "get.extras.config_contexts",
                         "get.extras.config_templates",
-                        "get.extras.content_types",
                         "get.extras.custom_field_choice_sets",
                         "get.extras.custom_field_choice_sets.choices",
                         "get.extras.custom_fields",
@@ -11449,7 +11449,9 @@
                         "get.extras.image_attachments",
                         "get.extras.journal_entries",
                         "get.extras.object_changes",
+                        "get.extras.object_types",
                         "get.extras.saved_filters",
+                        "get.extras.scripts",
                         "get.extras.tags",
                         "get.extras.webhooks",
                         "get.ipam.aggregates",
@@ -11562,6 +11564,7 @@
                         "patch.extras.image_attachments",
                         "patch.extras.journal_entries",
                         "patch.extras.saved_filters",
+                        "patch.extras.scripts",
                         "patch.extras.tags",
                         "patch.extras.webhooks",
                         "patch.ipam.aggregates",
@@ -11668,6 +11671,7 @@
                         "post.extras.image_attachments",
                         "post.extras.journal_entries",
                         "post.extras.saved_filters",
+                        "post.extras.scripts",
                         "post.extras.tags",
                         "post.extras.webhooks",
                         "post.ipam.aggregates",
@@ -11776,6 +11780,7 @@
                         "put.extras.image_attachments",
                         "put.extras.journal_entries",
                         "put.extras.saved_filters",
+                        "put.extras.scripts",
                         "put.extras.tags",
                         "put.extras.webhooks",
                         "put.ipam.aggregates",
@@ -11848,8 +11853,9 @@
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-netbox",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "versions": [
+                "3.4.2",
                 "3.4.1",
                 "3.4.0",
                 "3.3.0",

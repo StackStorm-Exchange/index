@@ -608,6 +608,56 @@
             "required": false,
             "type": "array"
         },
+        "time_zone": {
+            "description": "Time_zone",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__ic": {
+            "description": "Time_zone contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__ie": {
+            "description": "Time_zone exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__iew": {
+            "description": "Time_zone ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__isw": {
+            "description": "Time_zone starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__n": {
+            "description": "Time_zone not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__nic": {
+            "description": "Time_zone does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__nie": {
+            "description": "Time_zone inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__niew": {
+            "description": "Time_zone does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "time_zone__nisw": {
+            "description": "Time_zone does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "updated_by_request": {
             "description": "Updated_by_request",
             "required": false,

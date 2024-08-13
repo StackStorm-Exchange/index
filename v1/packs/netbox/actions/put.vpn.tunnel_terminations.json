@@ -32,7 +32,7 @@
         "outside_ip": {
             "description": "Outside ip",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "role": {
             "description": "* `peer` - Peer * `hub` - Hub * `spoke` - Spoke",
@@ -57,7 +57,7 @@
         "tunnel": {
             "description": "Tunnel",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

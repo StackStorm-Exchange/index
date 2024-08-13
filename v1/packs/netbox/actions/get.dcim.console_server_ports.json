@@ -5,7 +5,7 @@
     "name": "get.dcim.console_server_ports",
     "parameters": {
         "cable_end": {
-            "description": "Cable_end",
+            "description": "* `A` - A * `B` - B",
             "required": false,
             "type": "string"
         },
@@ -13,6 +13,16 @@
             "description": "Cable_end not equal to",
             "required": false,
             "type": "string"
+        },
+        "cable_id": {
+            "description": "Cable (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "cable_id__n": {
+            "description": "Cable_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "cabled": {
             "description": "Cabled",
@@ -136,26 +146,6 @@
         },
         "device_id__n": {
             "description": "Device_id not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "device_role": {
-            "description": "Device role (slug)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role__n": {
-            "description": "Device_role not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id": {
-            "description": "Device role (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id__n": {
-            "description": "Device_role_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -343,6 +333,11 @@
             "description": "Location_id not equal to",
             "required": false,
             "type": "array"
+        },
+        "mark_connected": {
+            "description": "Mark_connected",
+            "required": false,
+            "type": "boolean"
         },
         "modified_by_request": {
             "description": "Modified_by_request",
@@ -547,6 +542,16 @@
             "description": "Site_id not equal to",
             "required": false,
             "type": "array"
+        },
+        "speed": {
+            "description": "Port speed in bits per second\n* `1200` - 1200 bps * `2400` - 2400 bps * `4800` - 4800 bps * `9600` - 9600 bps * `19200` - 19.2 kbps * `38400` - 38.4 kbps * `57600` - 57.6 kbps * `115200` - 115.2 kbps",
+            "required": false,
+            "type": "integer"
+        },
+        "speed__n": {
+            "description": "Speed not equal to",
+            "required": false,
+            "type": "integer"
         },
         "tag": {
             "description": "Tag",

@@ -32,7 +32,7 @@
         "device": {
             "description": "Device",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "discovered": {
             "description": "This item was automatically discovered",
@@ -67,7 +67,7 @@
         "manufacturer": {
             "description": "Manufacturer",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "name": {
             "description": "Name",
@@ -87,7 +87,7 @@
         "role": {
             "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "serial": {
             "description": "Serial number",

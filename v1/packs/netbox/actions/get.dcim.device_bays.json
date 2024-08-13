@@ -119,26 +119,6 @@
             "required": false,
             "type": "array"
         },
-        "device_role": {
-            "description": "Device role (slug)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role__n": {
-            "description": "Device_role not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id": {
-            "description": "Device role (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id__n": {
-            "description": "Device_role_id not equal to",
-            "required": false,
-            "type": "array"
-        },
         "device_type": {
             "description": "Device type (model)",
             "required": false,
@@ -206,6 +186,26 @@
         },
         "id__n": {
             "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "installed_device": {
+            "description": "Installed device (name)",
+            "required": false,
+            "type": "array"
+        },
+        "installed_device__n": {
+            "description": "Installed_device not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "installed_device_id": {
+            "description": "Installed device (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "installed_device_id__n": {
+            "description": "Installed_device_id not equal to",
             "required": false,
             "type": "array"
         },

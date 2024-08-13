@@ -99,6 +99,16 @@
             "required": false,
             "type": "array"
         },
+        "device_type_id": {
+            "description": "Device type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "device_type_id__n": {
+            "description": "Device_type_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "devicetype_id": {
             "description": "Device type (ID)",
             "required": false,
@@ -159,6 +169,61 @@
             "required": false,
             "type": "array"
         },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "array"
+        },
+        "label__empty": {
+            "description": "Label is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "label__ic": {
+            "description": "Label contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__ie": {
+            "description": "Label exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__iew": {
+            "description": "Label ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__isw": {
+            "description": "Label starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__n": {
+            "description": "Label not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "label__nic": {
+            "description": "Label does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nie": {
+            "description": "Label inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__niew": {
+            "description": "Label does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nisw": {
+            "description": "Label does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "last_updated": {
             "description": "Last_updated",
             "required": false,
@@ -203,6 +268,16 @@
             "description": "Modified_by_request",
             "required": false,
             "type": "string"
+        },
+        "module_type_id": {
+            "description": "Module type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "module_type_id__n": {
+            "description": "Module_type_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "moduletype_id": {
             "description": "Module type (ID)",
@@ -299,7 +374,7 @@
             "type": "integer"
         },
         "type": {
-            "description": "Type",
+            "description": "* `Serial` - [(&#39;de-9&#39;, &#39;DE-9&#39;), (&#39;db-25&#39;, &#39;DB-25&#39;), (&#39;rj-11&#39;, &#39;RJ-11&#39;), (&#39;rj-12&#39;, &#39;RJ-12&#39;), (&#39;rj-45&#39;, &#39;RJ-45&#39;), (&#39;mini-din-8&#39;, &#39;Mini-DIN 8&#39;)] * `USB` - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-b&#39;, &#39;USB Type B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;), (&#39;usb-mini-a&#39;, &#39;USB Mini A&#39;), (&#39;usb-mini-b&#39;, &#39;USB Mini B&#39;), (&#39;usb-micro-a&#39;, &#39;USB Micro A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-micro-ab&#39;, &#39;USB Micro AB&#39;)] * `Other` - [(&#39;other&#39;, &#39;Other&#39;)]",
             "required": false,
             "type": "string"
         },

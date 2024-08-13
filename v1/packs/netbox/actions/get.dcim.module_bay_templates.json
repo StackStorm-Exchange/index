@@ -99,6 +99,16 @@
             "required": false,
             "type": "array"
         },
+        "device_type_id": {
+            "description": "Device type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "device_type_id__n": {
+            "description": "Device_type_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "devicetype_id": {
             "description": "Device type (ID)",
             "required": false,
@@ -156,6 +166,61 @@
         },
         "id__n": {
             "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "array"
+        },
+        "label__empty": {
+            "description": "Label is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "label__ic": {
+            "description": "Label contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__ie": {
+            "description": "Label exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__iew": {
+            "description": "Label ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__isw": {
+            "description": "Label starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__n": {
+            "description": "Label not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "label__nic": {
+            "description": "Label does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nie": {
+            "description": "Label inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__niew": {
+            "description": "Label does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nisw": {
+            "description": "Label does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -268,6 +333,61 @@
             "description": "Which field to use when ordering the results.",
             "required": false,
             "type": "string"
+        },
+        "position": {
+            "description": "Position",
+            "required": false,
+            "type": "array"
+        },
+        "position__empty": {
+            "description": "Position is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "position__ic": {
+            "description": "Position contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__ie": {
+            "description": "Position exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__iew": {
+            "description": "Position ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__isw": {
+            "description": "Position starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__n": {
+            "description": "Position not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "position__nic": {
+            "description": "Position does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__nie": {
+            "description": "Position inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__niew": {
+            "description": "Position does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__nisw": {
+            "description": "Position does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "q": {
             "description": "Search",

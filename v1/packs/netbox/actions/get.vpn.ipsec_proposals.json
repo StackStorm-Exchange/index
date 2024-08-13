@@ -169,6 +169,26 @@
             "required": false,
             "type": "array"
         },
+        "ipsec_policy": {
+            "description": "IPSec policy (name)",
+            "required": false,
+            "type": "array"
+        },
+        "ipsec_policy__n": {
+            "description": "Ipsec_policy not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ipsec_policy_id": {
+            "description": "IPSec policy (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "ipsec_policy_id__n": {
+            "description": "Ipsec_policy_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "last_updated": {
             "description": "Last_updated",
             "required": false,

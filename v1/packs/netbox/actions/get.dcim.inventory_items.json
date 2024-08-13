@@ -144,6 +144,61 @@
             "required": false,
             "type": "string"
         },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "array"
+        },
+        "description__empty": {
+            "description": "Description is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "description__ic": {
+            "description": "Description contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__ie": {
+            "description": "Description exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__iew": {
+            "description": "Description ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__isw": {
+            "description": "Description starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__n": {
+            "description": "Description not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "description__nic": {
+            "description": "Description does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__nie": {
+            "description": "Description inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__niew": {
+            "description": "Description does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "description__nisw": {
+            "description": "Description does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "device": {
             "description": "Device (name)",
             "required": false,
@@ -161,26 +216,6 @@
         },
         "device_id__n": {
             "description": "Device_id not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "device_role": {
-            "description": "Device role (slug)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role__n": {
-            "description": "Device_role not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id": {
-            "description": "Device role (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id__n": {
-            "description": "Device_role_id not equal to",
             "required": false,
             "type": "array"
         },

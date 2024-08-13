@@ -22,7 +22,7 @@
         "device": {
             "description": "Device",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/ipam/services/",
@@ -40,7 +40,7 @@
             "type": "string"
         },
         "ipaddresses": {
-            "description": "IP addresses",
+            "description": "Ipaddresses",
             "required": false,
             "type": "array"
         },
@@ -67,7 +67,7 @@
         "virtual_machine": {
             "description": "Virtual machine",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

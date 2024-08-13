@@ -154,6 +154,16 @@
             "required": false,
             "type": "array"
         },
+        "device_type_id": {
+            "description": "Device type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "device_type_id__n": {
+            "description": "Device_type_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "devicetype_id": {
             "description": "Device type (ID)",
             "required": false,
@@ -214,6 +224,61 @@
             "required": false,
             "type": "array"
         },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "array"
+        },
+        "label__empty": {
+            "description": "Label is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "label__ic": {
+            "description": "Label contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__ie": {
+            "description": "Label exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__iew": {
+            "description": "Label ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__isw": {
+            "description": "Label starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__n": {
+            "description": "Label not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "label__nic": {
+            "description": "Label does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nie": {
+            "description": "Label inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__niew": {
+            "description": "Label does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nisw": {
+            "description": "Label does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "last_updated": {
             "description": "Last_updated",
             "required": false,
@@ -258,6 +323,16 @@
             "description": "Modified_by_request",
             "required": false,
             "type": "string"
+        },
+        "module_type_id": {
+            "description": "Module type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "module_type_id__n": {
+            "description": "Module_type_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "moduletype_id": {
             "description": "Module type (ID)",
@@ -338,6 +413,51 @@
             "description": "Search",
             "required": false,
             "type": "string"
+        },
+        "rear_port_id": {
+            "description": "Rear_port_id",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_id__n": {
+            "description": "Rear_port_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position": {
+            "description": "Rear_port_position",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__empty": {
+            "description": "Rear_port_position is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "rear_port_position__gt": {
+            "description": "Rear_port_position greater than",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__gte": {
+            "description": "Rear_port_position greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__lt": {
+            "description": "Rear_port_position less than",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__lte": {
+            "description": "Rear_port_position less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__n": {
+            "description": "Rear_port_position not equal to",
+            "required": false,
+            "type": "array"
         },
         "save_in_key_store": {
             "default": false,

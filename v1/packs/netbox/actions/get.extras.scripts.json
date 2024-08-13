@@ -1,5 +1,5 @@
 {
-    "description": "GET Scripts",
+    "description": "Get a list of script objects.",
     "enabled": true,
     "entry_point": "run.py",
     "name": "get.extras.scripts",
@@ -17,6 +17,131 @@
         "http_verb": {
             "default": "get",
             "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "Id",
+            "required": false,
+            "type": "array"
+        },
+        "id__empty": {
+            "description": "Id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "id__gt": {
+            "description": "Id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "id__gte": {
+            "description": "Id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "id__lt": {
+            "description": "Id less than",
+            "required": false,
+            "type": "array"
+        },
+        "id__lte": {
+            "description": "Id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "id__n": {
+            "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "is_executable": {
+            "description": "Is_executable",
+            "required": false,
+            "type": "boolean"
+        },
+        "limit": {
+            "description": "Number of results to return per page.",
+            "required": false,
+            "type": "integer"
+        },
+        "module_id": {
+            "description": "Script module (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "module_id__n": {
+            "description": "Module_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "array"
+        },
+        "name__empty": {
+            "description": "Name is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "name__ic": {
+            "description": "Name contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__ie": {
+            "description": "Name exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__iew": {
+            "description": "Name ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__isw": {
+            "description": "Name starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__n": {
+            "description": "Name not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "name__nic": {
+            "description": "Name does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__nie": {
+            "description": "Name inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__niew": {
+            "description": "Name does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "name__nisw": {
+            "description": "Name does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "offset": {
+            "description": "The initial index from which to return the results.",
+            "required": false,
+            "type": "integer"
+        },
+        "ordering": {
+            "description": "Which field to use when ordering the results.",
+            "required": false,
+            "type": "string"
+        },
+        "q": {
+            "description": "Search",
+            "required": false,
             "type": "string"
         },
         "save_in_key_store": {

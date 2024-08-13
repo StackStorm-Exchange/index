@@ -4,11 +4,6 @@
     "entry_point": "run.py",
     "name": "post.ipam.rirs",
     "parameters": {
-        "custom_fields": {
-            "description": "Custom fields",
-            "required": false,
-            "type": "object"
-        },
         "description": {
             "description": "Description",
             "required": false,
@@ -29,11 +24,6 @@
             "immutable": true,
             "type": "string"
         },
-        "is_private": {
-            "description": "Private",
-            "required": false,
-            "type": "boolean"
-        },
         "name": {
             "description": "Name",
             "required": false,
@@ -43,11 +33,6 @@
             "description": "Slug",
             "required": false,
             "type": "string"
-        },
-        "tags": {
-            "description": "Array of tag strings",
-            "required": false,
-            "type": "array"
         }
     },
     "runner_type": "python-script"

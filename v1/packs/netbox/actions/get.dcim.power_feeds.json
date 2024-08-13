@@ -39,8 +39,43 @@
             "required": false,
             "type": "array"
         },
+        "available_power": {
+            "description": "Available_power",
+            "required": false,
+            "type": "array"
+        },
+        "available_power__empty": {
+            "description": "Available_power is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "available_power__gt": {
+            "description": "Available_power greater than",
+            "required": false,
+            "type": "array"
+        },
+        "available_power__gte": {
+            "description": "Available_power greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "available_power__lt": {
+            "description": "Available_power less than",
+            "required": false,
+            "type": "array"
+        },
+        "available_power__lte": {
+            "description": "Available_power less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "available_power__n": {
+            "description": "Available_power not equal to",
+            "required": false,
+            "type": "array"
+        },
         "cable_end": {
-            "description": "Cable_end",
+            "description": "* `A` - A * `B` - B",
             "required": false,
             "type": "string"
         },
@@ -48,6 +83,16 @@
             "description": "Cable_end not equal to",
             "required": false,
             "type": "string"
+        },
+        "cable_id": {
+            "description": "Cable (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "cable_id__n": {
+            "description": "Cable_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "cabled": {
             "description": "Cabled",
@@ -244,6 +289,11 @@
             "required": false,
             "type": "integer"
         },
+        "mark_connected": {
+            "description": "Mark_connected",
+            "required": false,
+            "type": "boolean"
+        },
         "max_utilization": {
             "description": "Max_utilization",
             "required": false,
@@ -355,7 +405,7 @@
             "type": "string"
         },
         "phase": {
-            "description": "Phase",
+            "description": "* `single-phase` - Single phase * `three-phase` - Three-phase",
             "required": false,
             "type": "string"
         },
@@ -474,7 +524,7 @@
             "type": "array"
         },
         "supply": {
-            "description": "Supply",
+            "description": "* `ac` - AC * `dc` - DC",
             "required": false,
             "type": "string"
         },
@@ -534,7 +584,7 @@
             "type": "array"
         },
         "type": {
-            "description": "Type",
+            "description": "* `primary` - Primary * `redundant` - Redundant",
             "required": false,
             "type": "string"
         },

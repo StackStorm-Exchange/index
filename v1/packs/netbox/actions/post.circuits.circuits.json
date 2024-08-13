@@ -52,12 +52,12 @@
         "provider": {
             "description": "Provider",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "provider_account": {
             "description": "Provider account",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "status": {
             "description": "* `planned` - Planned * `provisioning` - Provisioning * `active` - Active * `offline` - Offline * `deprovisioning` - Deprovisioning * `decommissioned` - Decommissioned",
@@ -72,7 +72,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "termination_date": {
             "description": "Terminates",
@@ -82,7 +82,7 @@
         "type": {
             "description": "Type",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

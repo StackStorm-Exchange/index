@@ -239,6 +239,26 @@
             "required": false,
             "type": "string"
         },
+        "provider": {
+            "description": "Provider (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "provider__n": {
+            "description": "Provider not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "provider_id": {
+            "description": "Provider (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "provider_id__n": {
+            "description": "Provider_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "q": {
             "description": "Search",
             "required": false,

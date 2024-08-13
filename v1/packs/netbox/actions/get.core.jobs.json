@@ -119,6 +119,11 @@
             "required": false,
             "type": "array"
         },
+        "job_id": {
+            "description": "Job_id",
+            "required": false,
+            "type": "string"
+        },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,

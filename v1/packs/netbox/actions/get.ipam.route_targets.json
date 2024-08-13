@@ -104,6 +104,26 @@
             "immutable": true,
             "type": "string"
         },
+        "exporting_l2vpn": {
+            "description": "Exporting L2VPN (identifier)",
+            "required": false,
+            "type": "array"
+        },
+        "exporting_l2vpn__n": {
+            "description": "Exporting_l2vpn not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "exporting_l2vpn_id": {
+            "description": "Exporting L2VPN",
+            "required": false,
+            "type": "array"
+        },
+        "exporting_l2vpn_id__n": {
+            "description": "Exporting_l2vpn_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "exporting_vrf": {
             "description": "Export VRF (RD)",
             "required": false,
@@ -166,6 +186,26 @@
         },
         "id__n": {
             "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "importing_l2vpn": {
+            "description": "Importing L2VPN (identifier)",
+            "required": false,
+            "type": "array"
+        },
+        "importing_l2vpn__n": {
+            "description": "Importing_l2vpn not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "importing_l2vpn_id": {
+            "description": "Importing L2VPN",
+            "required": false,
+            "type": "array"
+        },
+        "importing_l2vpn_id__n": {
+            "description": "Importing_l2vpn_id not equal to",
             "required": false,
             "type": "array"
         },

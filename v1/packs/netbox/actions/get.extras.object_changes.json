@@ -5,7 +5,7 @@
     "name": "get.extras.object_changes",
     "parameters": {
         "action": {
-            "description": "Action",
+            "description": "* `create` - Created * `update` - Updated * `delete` - Deleted",
             "required": false,
             "type": "string"
         },
@@ -193,6 +193,51 @@
             "description": "Search",
             "required": false,
             "type": "string"
+        },
+        "related_object_id": {
+            "description": "Related_object_id",
+            "required": false,
+            "type": "array"
+        },
+        "related_object_id__empty": {
+            "description": "Related_object_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "related_object_id__gt": {
+            "description": "Related_object_id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "related_object_id__gte": {
+            "description": "Related_object_id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "related_object_id__lt": {
+            "description": "Related_object_id less than",
+            "required": false,
+            "type": "array"
+        },
+        "related_object_id__lte": {
+            "description": "Related_object_id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "related_object_id__n": {
+            "description": "Related_object_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "related_object_type": {
+            "description": "Related_object_type",
+            "required": false,
+            "type": "integer"
+        },
+        "related_object_type__n": {
+            "description": "Related_object_type not equal to",
+            "required": false,
+            "type": "integer"
         },
         "request_id": {
             "description": "Request_id",

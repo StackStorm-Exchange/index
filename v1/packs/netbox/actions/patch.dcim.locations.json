@@ -19,6 +19,11 @@
             "immutable": true,
             "type": "string"
         },
+        "facility": {
+            "description": "Local facility ID or description",
+            "required": false,
+            "type": "string"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -47,7 +52,7 @@
         "site": {
             "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "slug": {
             "description": "Slug",
@@ -67,7 +72,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

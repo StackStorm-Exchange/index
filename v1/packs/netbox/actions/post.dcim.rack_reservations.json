@@ -37,7 +37,7 @@
         "rack": {
             "description": "Rack",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "tags": {
             "description": "Array of tag strings",
@@ -47,7 +47,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "units": {
             "description": "Units",
@@ -57,7 +57,7 @@
         "user": {
             "description": "User",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

@@ -82,17 +82,17 @@
         "untagged_vlan": {
             "description": "Untagged vlan",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "virtual_machine": {
             "description": "Virtual machine",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "vrf": {
             "description": "Vrf",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

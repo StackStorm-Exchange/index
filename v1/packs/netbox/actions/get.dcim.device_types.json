@@ -5,7 +5,7 @@
     "name": "get.dcim.device_types",
     "parameters": {
         "airflow": {
-            "description": "Airflow",
+            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `passive` - Passive * `mixed` - Mixed",
             "required": false,
             "type": "string"
         },
@@ -14,10 +14,80 @@
             "required": false,
             "type": "string"
         },
+        "console_port_template_count": {
+            "description": "Console_port_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_template_count__empty": {
+            "description": "Console_port_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "console_port_template_count__gt": {
+            "description": "Console_port_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_template_count__gte": {
+            "description": "Console_port_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_template_count__lt": {
+            "description": "Console_port_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_template_count__lte": {
+            "description": "Console_port_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_template_count__n": {
+            "description": "Console_port_template_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "console_ports": {
             "description": "Has console ports",
             "required": false,
             "type": "boolean"
+        },
+        "console_server_port_template_count": {
+            "description": "Console_server_port_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_template_count__empty": {
+            "description": "Console_server_port_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "console_server_port_template_count__gt": {
+            "description": "Console_server_port_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_template_count__gte": {
+            "description": "Console_server_port_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_template_count__lt": {
+            "description": "Console_server_port_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_template_count__lte": {
+            "description": "Console_server_port_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_template_count__n": {
+            "description": "Console_server_port_template_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "console_server_ports": {
             "description": "Has console server ports",
@@ -139,6 +209,41 @@
             "required": false,
             "type": "array"
         },
+        "device_bay_template_count": {
+            "description": "Device_bay_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_template_count__empty": {
+            "description": "Device_bay_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "device_bay_template_count__gt": {
+            "description": "Device_bay_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_template_count__gte": {
+            "description": "Device_bay_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_template_count__lt": {
+            "description": "Device_bay_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_template_count__lte": {
+            "description": "Device_bay_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_template_count__n": {
+            "description": "Device_bay_template_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "device_bays": {
             "description": "Has device bays",
             "required": false,
@@ -153,6 +258,41 @@
             "description": "Exclude_from_utilization",
             "required": false,
             "type": "boolean"
+        },
+        "front_port_template_count": {
+            "description": "Front_port_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_template_count__empty": {
+            "description": "Front_port_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "front_port_template_count__gt": {
+            "description": "Front_port_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_template_count__gte": {
+            "description": "Front_port_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_template_count__lt": {
+            "description": "Front_port_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_template_count__lte": {
+            "description": "Front_port_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_template_count__n": {
+            "description": "Front_port_template_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -209,10 +349,80 @@
             "required": false,
             "type": "array"
         },
+        "interface_template_count": {
+            "description": "Interface_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "interface_template_count__empty": {
+            "description": "Interface_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "interface_template_count__gt": {
+            "description": "Interface_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "interface_template_count__gte": {
+            "description": "Interface_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface_template_count__lt": {
+            "description": "Interface_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "interface_template_count__lte": {
+            "description": "Interface_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface_template_count__n": {
+            "description": "Interface_template_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "interfaces": {
             "description": "Has interfaces",
             "required": false,
             "type": "boolean"
+        },
+        "inventory_item_template_count": {
+            "description": "Inventory_item_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_template_count__empty": {
+            "description": "Inventory_item_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "inventory_item_template_count__gt": {
+            "description": "Inventory_item_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_template_count__gte": {
+            "description": "Inventory_item_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_template_count__lt": {
+            "description": "Inventory_item_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_template_count__lte": {
+            "description": "Inventory_item_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_template_count__n": {
+            "description": "Inventory_item_template_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "inventory_items": {
             "description": "Has inventory items",
@@ -344,6 +554,41 @@
             "required": false,
             "type": "string"
         },
+        "module_bay_template_count": {
+            "description": "Module_bay_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_template_count__empty": {
+            "description": "Module_bay_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "module_bay_template_count__gt": {
+            "description": "Module_bay_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_template_count__gte": {
+            "description": "Module_bay_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_template_count__lt": {
+            "description": "Module_bay_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_template_count__lte": {
+            "description": "Module_bay_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_template_count__n": {
+            "description": "Module_bay_template_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "module_bays": {
             "description": "Has module bays",
             "required": false,
@@ -419,10 +664,80 @@
             "required": false,
             "type": "boolean"
         },
+        "power_outlet_template_count": {
+            "description": "Power_outlet_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_template_count__empty": {
+            "description": "Power_outlet_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "power_outlet_template_count__gt": {
+            "description": "Power_outlet_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_template_count__gte": {
+            "description": "Power_outlet_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_template_count__lt": {
+            "description": "Power_outlet_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_template_count__lte": {
+            "description": "Power_outlet_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_template_count__n": {
+            "description": "Power_outlet_template_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "power_outlets": {
             "description": "Has power outlets",
             "required": false,
             "type": "boolean"
+        },
+        "power_port_template_count": {
+            "description": "Power_port_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_template_count__empty": {
+            "description": "Power_port_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "power_port_template_count__gt": {
+            "description": "Power_port_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_template_count__gte": {
+            "description": "Power_port_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_template_count__lt": {
+            "description": "Power_port_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_template_count__lte": {
+            "description": "Power_port_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_template_count__n": {
+            "description": "Power_port_template_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "power_ports": {
             "description": "Has power ports",
@@ -433,6 +748,41 @@
             "description": "Search",
             "required": false,
             "type": "string"
+        },
+        "rear_port_template_count": {
+            "description": "Rear_port_template_count",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_template_count__empty": {
+            "description": "Rear_port_template_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "rear_port_template_count__gt": {
+            "description": "Rear_port_template_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_template_count__gte": {
+            "description": "Rear_port_template_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_template_count__lt": {
+            "description": "Rear_port_template_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_template_count__lte": {
+            "description": "Rear_port_template_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_template_count__n": {
+            "description": "Rear_port_template_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "save_in_key_store": {
             "default": false,
@@ -504,7 +854,7 @@
             "type": "array"
         },
         "subdevice_role": {
-            "description": "Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.",
+            "description": "Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.\n* `parent` - Parent * `child` - Child",
             "required": false,
             "type": "string"
         },
@@ -599,7 +949,7 @@
             "type": "array"
         },
         "weight_unit": {
-            "description": "Weight_unit",
+            "description": "* `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces",
             "required": false,
             "type": "string"
         },

@@ -22,7 +22,7 @@
         "device": {
             "description": "Device",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/dcim/virtual-device-contexts/",
@@ -40,7 +40,7 @@
             "type": "string"
         },
         "identifier": {
-            "description": "Numeric identifier unique to the parent device",
+            "description": "Identifier",
             "required": false,
             "type": "integer"
         },
@@ -50,14 +50,14 @@
             "type": "string"
         },
         "primary_ip4": {
-            "description": "Primary IPv4",
+            "description": "Primary ip4",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "primary_ip6": {
-            "description": "Primary IPv6",
+            "description": "Primary ip6",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "status": {
             "description": "* `active` - Active * `planned` - Planned * `offline` - Offline",
@@ -72,7 +72,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

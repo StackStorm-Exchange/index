@@ -32,7 +32,7 @@
         "group": {
             "description": "Group",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "http_verb": {
             "default": "patch",
@@ -52,7 +52,7 @@
         "site": {
             "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "status": {
             "description": "* `planned` - Planned * `staging` - Staging * `active` - Active * `decommissioning` - Decommissioning * `offline` - Offline",
@@ -67,12 +67,12 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "type": {
             "description": "Type",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

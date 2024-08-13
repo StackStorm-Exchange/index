@@ -17,7 +17,7 @@
         "device": {
             "description": "Device",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/dcim/console-ports/{{ id }}/",
@@ -52,7 +52,7 @@
         "module": {
             "description": "Module",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "name": {
             "description": "Name",

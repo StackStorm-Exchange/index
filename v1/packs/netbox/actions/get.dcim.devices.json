@@ -5,7 +5,7 @@
     "name": "get.dcim.devices",
     "parameters": {
         "airflow": {
-            "description": "Airflow",
+            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `passive` - Passive * `mixed` - Mixed",
             "required": false,
             "type": "string"
         },
@@ -89,10 +89,80 @@
             "required": false,
             "type": "array"
         },
+        "console_port_count": {
+            "description": "Console_port_count",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_count__empty": {
+            "description": "Console_port_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "console_port_count__gt": {
+            "description": "Console_port_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_count__gte": {
+            "description": "Console_port_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_count__lt": {
+            "description": "Console_port_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_count__lte": {
+            "description": "Console_port_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "console_port_count__n": {
+            "description": "Console_port_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "console_ports": {
             "description": "Has console ports",
             "required": false,
             "type": "boolean"
+        },
+        "console_server_port_count": {
+            "description": "Console_server_port_count",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_count__empty": {
+            "description": "Console_server_port_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "console_server_port_count__gt": {
+            "description": "Console_server_port_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_count__gte": {
+            "description": "Console_server_port_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_count__lt": {
+            "description": "Console_server_port_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_count__lte": {
+            "description": "Console_server_port_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "console_server_port_count__n": {
+            "description": "Console_server_port_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "console_server_ports": {
             "description": "Has console server ports",
@@ -224,6 +294,41 @@
             "required": false,
             "type": "array"
         },
+        "device_bay_count": {
+            "description": "Device_bay_count",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_count__empty": {
+            "description": "Device_bay_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "device_bay_count__gt": {
+            "description": "Device_bay_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_count__gte": {
+            "description": "Device_bay_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_count__lt": {
+            "description": "Device_bay_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_count__lte": {
+            "description": "Device_bay_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_bay_count__n": {
+            "description": "Device_bay_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "device_bays": {
             "description": "Has device bays",
             "required": false,
@@ -255,7 +360,7 @@
             "type": "string"
         },
         "face": {
-            "description": "Face",
+            "description": "* `front` - Front * `rear` - Rear",
             "required": false,
             "type": "string"
         },
@@ -263,6 +368,41 @@
             "description": "Face not equal to",
             "required": false,
             "type": "string"
+        },
+        "front_port_count": {
+            "description": "Front_port_count",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_count__empty": {
+            "description": "Front_port_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "front_port_count__gt": {
+            "description": "Front_port_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_count__gte": {
+            "description": "Front_port_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_count__lt": {
+            "description": "Front_port_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_count__lte": {
+            "description": "Front_port_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "front_port_count__n": {
+            "description": "Front_port_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -276,6 +416,11 @@
         },
         "has_primary_ip": {
             "description": "Has a primary IP",
+            "required": false,
+            "type": "boolean"
+        },
+        "has_virtual_device_context": {
+            "description": "Has virtual device context",
             "required": false,
             "type": "boolean"
         },
@@ -319,10 +464,80 @@
             "required": false,
             "type": "array"
         },
+        "interface_count": {
+            "description": "Interface_count",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__empty": {
+            "description": "Interface_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "interface_count__gt": {
+            "description": "Interface_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__gte": {
+            "description": "Interface_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__lt": {
+            "description": "Interface_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__lte": {
+            "description": "Interface_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__n": {
+            "description": "Interface_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "interfaces": {
             "description": "Has interfaces",
             "required": false,
             "type": "boolean"
+        },
+        "inventory_item_count": {
+            "description": "Inventory_item_count",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_count__empty": {
+            "description": "Inventory_item_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "inventory_item_count__gt": {
+            "description": "Inventory_item_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_count__gte": {
+            "description": "Inventory_item_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_count__lt": {
+            "description": "Inventory_item_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_count__lte": {
+            "description": "Inventory_item_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "inventory_item_count__n": {
+            "description": "Inventory_item_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "is_full_depth": {
             "description": "Is full depth",
@@ -539,6 +754,41 @@
             "required": false,
             "type": "string"
         },
+        "module_bay_count": {
+            "description": "Module_bay_count",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_count__empty": {
+            "description": "Module_bay_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "module_bay_count__gt": {
+            "description": "Module_bay_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_count__gte": {
+            "description": "Module_bay_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_count__lt": {
+            "description": "Module_bay_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_count__lte": {
+            "description": "Module_bay_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "module_bay_count__n": {
+            "description": "Module_bay_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "module_bays": {
             "description": "Has module bays",
             "required": false,
@@ -619,6 +869,16 @@
             "required": false,
             "type": "string"
         },
+        "parent_bay_id": {
+            "description": "Parent bay (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "parent_bay_id__n": {
+            "description": "Parent_bay_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "parent_device_id": {
             "description": "Parent Device (ID)",
             "required": false,
@@ -689,10 +949,80 @@
             "required": false,
             "type": "array"
         },
+        "power_outlet_count": {
+            "description": "Power_outlet_count",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_count__empty": {
+            "description": "Power_outlet_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "power_outlet_count__gt": {
+            "description": "Power_outlet_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_count__gte": {
+            "description": "Power_outlet_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_count__lt": {
+            "description": "Power_outlet_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_count__lte": {
+            "description": "Power_outlet_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "power_outlet_count__n": {
+            "description": "Power_outlet_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "power_outlets": {
             "description": "Has power outlets",
             "required": false,
             "type": "boolean"
+        },
+        "power_port_count": {
+            "description": "Power_port_count",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_count__empty": {
+            "description": "Power_port_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "power_port_count__gt": {
+            "description": "Power_port_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_count__gte": {
+            "description": "Power_port_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_count__lt": {
+            "description": "Power_port_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_count__lte": {
+            "description": "Power_port_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "power_port_count__n": {
+            "description": "Power_port_count not equal to",
+            "required": false,
+            "type": "array"
         },
         "power_ports": {
             "description": "Has power ports",
@@ -731,6 +1061,41 @@
         },
         "rack_id__n": {
             "description": "Rack_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_count": {
+            "description": "Rear_port_count",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_count__empty": {
+            "description": "Rear_port_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "rear_port_count__gt": {
+            "description": "Rear_port_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_count__gte": {
+            "description": "Rear_port_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_count__lt": {
+            "description": "Rear_port_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_count__lte": {
+            "description": "Rear_port_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_count__n": {
+            "description": "Rear_port_count not equal to",
             "required": false,
             "type": "array"
         },

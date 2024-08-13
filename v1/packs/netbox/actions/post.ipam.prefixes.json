@@ -50,14 +50,14 @@
             "type": "string"
         },
         "role": {
-            "description": "The primary function of this prefix",
+            "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "site": {
             "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "status": {
             "description": "Operational status of this prefix\n* `container` - Container * `active` - Active * `reserved` - Reserved * `deprecated` - Deprecated",
@@ -72,17 +72,17 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "vlan": {
             "description": "Vlan",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "vrf": {
             "description": "Vrf",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

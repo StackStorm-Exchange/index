@@ -5,7 +5,7 @@
     "name": "get.dcim.front_ports",
     "parameters": {
         "cable_end": {
-            "description": "Cable_end",
+            "description": "* `A` - A * `B` - B",
             "required": false,
             "type": "string"
         },
@@ -13,6 +13,16 @@
             "description": "Cable_end not equal to",
             "required": false,
             "type": "string"
+        },
+        "cable_id": {
+            "description": "Cable (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "cable_id__n": {
+            "description": "Cable_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "cabled": {
             "description": "Cabled",
@@ -186,26 +196,6 @@
         },
         "device_id__n": {
             "description": "Device_id not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "device_role": {
-            "description": "Device role (slug)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role__n": {
-            "description": "Device_role not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id": {
-            "description": "Device role (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id__n": {
-            "description": "Device_role_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -394,6 +384,11 @@
             "required": false,
             "type": "array"
         },
+        "mark_connected": {
+            "description": "Mark_connected",
+            "required": false,
+            "type": "boolean"
+        },
         "modified_by_request": {
             "description": "Modified_by_request",
             "required": false,
@@ -501,6 +496,51 @@
         },
         "rack_id__n": {
             "description": "Rack_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_id": {
+            "description": "Rear_port_id",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_id__n": {
+            "description": "Rear_port_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position": {
+            "description": "Rear_port_position",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__empty": {
+            "description": "Rear_port_position is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "rear_port_position__gt": {
+            "description": "Rear_port_position greater than",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__gte": {
+            "description": "Rear_port_position greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__lt": {
+            "description": "Rear_port_position less than",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__lte": {
+            "description": "Rear_port_position less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rear_port_position__n": {
+            "description": "Rear_port_position not equal to",
             "required": false,
             "type": "array"
         },

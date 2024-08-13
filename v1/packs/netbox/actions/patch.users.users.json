@@ -30,7 +30,7 @@
             "type": "boolean"
         },
         "groups": {
-            "description": "The groups this user belongs to. A user will get all permissions granted to each of their groups.",
+            "description": "Groups",
             "required": false,
             "type": "array"
         },
@@ -68,6 +68,11 @@
             "description": "Password",
             "required": false,
             "type": "string"
+        },
+        "permissions": {
+            "description": "Permissions",
+            "required": false,
+            "type": "array"
         },
         "username": {
             "description": "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.",

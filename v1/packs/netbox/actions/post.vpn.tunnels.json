@@ -37,7 +37,7 @@
         "group": {
             "description": "Group",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "http_verb": {
             "default": "post",
@@ -47,7 +47,7 @@
         "ipsec_profile": {
             "description": "Ipsec profile",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "name": {
             "description": "Name",
@@ -67,7 +67,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "tunnel_id": {
             "description": "Tunnel id",

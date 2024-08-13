@@ -17,7 +17,7 @@
         "device": {
             "description": "Device",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/dcim/module-bays/{{ id }}/",
@@ -42,7 +42,7 @@
         "installed_module": {
             "description": "Installed module",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "label": {
             "description": "Physical label",

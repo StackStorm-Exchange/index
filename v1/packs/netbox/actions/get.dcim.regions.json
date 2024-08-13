@@ -4,6 +4,26 @@
     "entry_point": "run.py",
     "name": "get.dcim.regions",
     "parameters": {
+        "ancestor": {
+            "description": "Region (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor__n": {
+            "description": "Ancestor not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor_id": {
+            "description": "Region (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor_id__n": {
+            "description": "Ancestor_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "contact": {
             "description": "Contact",
             "required": false,

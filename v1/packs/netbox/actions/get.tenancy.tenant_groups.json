@@ -4,6 +4,26 @@
     "entry_point": "run.py",
     "name": "get.tenancy.tenant_groups",
     "parameters": {
+        "ancestor": {
+            "description": "Tenant group (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor__n": {
+            "description": "Ancestor not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor_id": {
+            "description": "Tenant group (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "ancestor_id__n": {
+            "description": "Ancestor_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "created": {
             "description": "Created",
             "required": false,
@@ -260,7 +280,7 @@
             "type": "string"
         },
         "parent": {
-            "description": "Tenant group (slug)",
+            "description": "Parent tenant group (slug)",
             "required": false,
             "type": "array"
         },
@@ -270,7 +290,7 @@
             "type": "array"
         },
         "parent_id": {
-            "description": "Tenant group (ID)",
+            "description": "Parent tenant group (ID)",
             "required": false,
             "type": "array"
         },

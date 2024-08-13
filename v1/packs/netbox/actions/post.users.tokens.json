@@ -42,7 +42,7 @@
         "user": {
             "description": "User",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "write_enabled": {
             "description": "Permit create/update/delete operations using this key",

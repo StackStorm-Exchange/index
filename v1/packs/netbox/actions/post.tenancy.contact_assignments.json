@@ -7,12 +7,7 @@
         "contact": {
             "description": "Contact",
             "required": false,
-            "type": "integer"
-        },
-        "content_type": {
-            "description": "Content type",
-            "required": false,
-            "type": "string"
+            "type": "object"
         },
         "custom_fields": {
             "description": "Custom fields",
@@ -39,6 +34,11 @@
             "required": false,
             "type": "integer"
         },
+        "object_type": {
+            "description": "Object type",
+            "required": false,
+            "type": "string"
+        },
         "priority": {
             "description": "* `primary` - Primary * `secondary` - Secondary * `tertiary` - Tertiary * `inactive` - Inactive",
             "required": false,
@@ -47,7 +47,7 @@
         "role": {
             "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "tags": {
             "description": "Array of tag strings",

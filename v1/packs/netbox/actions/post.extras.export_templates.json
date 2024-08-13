@@ -9,15 +9,10 @@
             "required": false,
             "type": "boolean"
         },
-        "content_types": {
-            "description": "Content types",
-            "required": false,
-            "type": "array"
-        },
         "data_source": {
-            "description": "Remote data source",
+            "description": "Data source",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "description": {
             "description": "Description",
@@ -53,6 +48,11 @@
             "description": "Name",
             "required": false,
             "type": "string"
+        },
+        "object_types": {
+            "description": "Object types",
+            "required": false,
+            "type": "array"
         },
         "template_code": {
             "description": "Jinja2 template code. The list of objects being exported is passed as a context variable named &lt;code&gt;queryset&lt;/code&gt;.",

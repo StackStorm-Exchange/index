@@ -47,7 +47,7 @@
         "group": {
             "description": "Group",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "http_verb": {
             "default": "patch",
@@ -77,12 +77,12 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "vlan": {
             "description": "Vlan",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

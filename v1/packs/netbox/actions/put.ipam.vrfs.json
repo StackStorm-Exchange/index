@@ -4,16 +4,6 @@
     "entry_point": "run.py",
     "name": "put.ipam.vrfs",
     "parameters": {
-        "comments": {
-            "description": "Comments",
-            "required": false,
-            "type": "string"
-        },
-        "custom_fields": {
-            "description": "Custom fields",
-            "required": false,
-            "type": "object"
-        },
         "description": {
             "description": "Description",
             "required": false,
@@ -23,16 +13,6 @@
             "default": "/ipam/vrfs/{{ id }}/",
             "immutable": true,
             "type": "string"
-        },
-        "enforce_unique": {
-            "description": "Enforce unique space",
-            "required": false,
-            "type": "boolean"
-        },
-        "export_targets": {
-            "description": "Export targets",
-            "required": false,
-            "type": "array"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -49,11 +29,6 @@
             "required": true,
             "type": "integer"
         },
-        "import_targets": {
-            "description": "Import targets",
-            "required": false,
-            "type": "array"
-        },
         "name": {
             "description": "Name",
             "required": false,
@@ -63,16 +38,6 @@
             "description": "Route distinguisher",
             "required": false,
             "type": "string"
-        },
-        "tags": {
-            "description": "Array of tag strings",
-            "required": false,
-            "type": "array"
-        },
-        "tenant": {
-            "description": "Tenant",
-            "required": false,
-            "type": "integer"
         }
     },
     "runner_type": "python-script"

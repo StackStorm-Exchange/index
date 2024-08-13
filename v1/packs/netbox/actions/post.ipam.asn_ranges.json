@@ -42,7 +42,7 @@
         "rir": {
             "description": "Rir",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "slug": {
             "description": "Slug",
@@ -62,7 +62,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

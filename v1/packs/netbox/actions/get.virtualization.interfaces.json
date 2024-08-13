@@ -294,6 +294,16 @@
             "required": false,
             "type": "array"
         },
+        "mode": {
+            "description": "IEEE 802.1Q tagging strategy\n* `access` - Access * `tagged` - Tagged * `tagged-all` - Tagged (All)",
+            "required": false,
+            "type": "string"
+        },
+        "mode__n": {
+            "description": "Mode not equal to",
+            "required": false,
+            "type": "string"
+        },
         "modified_by_request": {
             "description": "Modified_by_request",
             "required": false,

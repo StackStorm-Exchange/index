@@ -22,7 +22,7 @@
         "device_type": {
             "description": "Device type",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/dcim/inventory-item-templates/{{ id }}/",
@@ -52,7 +52,7 @@
         "manufacturer": {
             "description": "Manufacturer",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "name": {
             "description": "{module} is accepted as a substitution for the module bay position when attached to a module type.",
@@ -72,7 +72,7 @@
         "role": {
             "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

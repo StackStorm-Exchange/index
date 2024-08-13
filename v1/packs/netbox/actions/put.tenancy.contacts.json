@@ -4,28 +4,8 @@
     "entry_point": "run.py",
     "name": "put.tenancy.contacts",
     "parameters": {
-        "address": {
-            "description": "Address",
-            "required": false,
-            "type": "string"
-        },
-        "comments": {
-            "description": "Comments",
-            "required": false,
-            "type": "string"
-        },
-        "custom_fields": {
-            "description": "Custom fields",
-            "required": false,
-            "type": "object"
-        },
         "description": {
             "description": "Description",
-            "required": false,
-            "type": "string"
-        },
-        "email": {
-            "description": "Email",
             "required": false,
             "type": "string"
         },
@@ -39,11 +19,6 @@
             "immutable": true,
             "type": "boolean"
         },
-        "group": {
-            "description": "Group",
-            "required": false,
-            "type": "integer"
-        },
         "http_verb": {
             "default": "put",
             "immutable": true,
@@ -54,28 +29,8 @@
             "required": true,
             "type": "integer"
         },
-        "link": {
-            "description": "Link",
-            "required": false,
-            "type": "string"
-        },
         "name": {
             "description": "Name",
-            "required": false,
-            "type": "string"
-        },
-        "phone": {
-            "description": "Phone",
-            "required": false,
-            "type": "string"
-        },
-        "tags": {
-            "description": "Array of tag strings",
-            "required": false,
-            "type": "array"
-        },
-        "title": {
-            "description": "Title",
             "required": false,
             "type": "string"
         }

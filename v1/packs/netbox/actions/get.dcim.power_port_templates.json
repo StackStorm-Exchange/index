@@ -134,6 +134,16 @@
             "required": false,
             "type": "array"
         },
+        "device_type_id": {
+            "description": "Device type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "device_type_id__n": {
+            "description": "Device_type_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "devicetype_id": {
             "description": "Device type (ID)",
             "required": false,
@@ -191,6 +201,61 @@
         },
         "id__n": {
             "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "array"
+        },
+        "label__empty": {
+            "description": "Label is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "label__ic": {
+            "description": "Label contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__ie": {
+            "description": "Label exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__iew": {
+            "description": "Label ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__isw": {
+            "description": "Label starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__n": {
+            "description": "Label not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "label__nic": {
+            "description": "Label does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nie": {
+            "description": "Label inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__niew": {
+            "description": "Label does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nisw": {
+            "description": "Label does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -273,6 +338,16 @@
             "description": "Modified_by_request",
             "required": false,
             "type": "string"
+        },
+        "module_type_id": {
+            "description": "Module type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "module_type_id__n": {
+            "description": "Module_type_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "moduletype_id": {
             "description": "Module type (ID)",
@@ -369,7 +444,7 @@
             "type": "integer"
         },
         "type": {
-            "description": "Type",
+            "description": "* `IEC 60320` - [(&#39;iec-60320-c6&#39;, &#39;C6&#39;), (&#39;iec-60320-c8&#39;, &#39;C8&#39;), (&#39;iec-60320-c14&#39;, &#39;C14&#39;), (&#39;iec-60320-c16&#39;, &#39;C16&#39;), (&#39;iec-60320-c20&#39;, &#39;C20&#39;), (&#39;iec-60320-c22&#39;, &#39;C22&#39;)] * `IEC 60309` - [(&#39;iec-60309-p-n-e-4h&#39;, &#39;P+N+E 4H&#39;), (&#39;iec-60309-p-n-e-6h&#39;, &#39;P+N+E 6H&#39;), (&#39;iec-60309-p-n-e-9h&#39;, &#39;P+N+E 9H&#39;), (&#39;iec-60309-2p-e-4h&#39;, &#39;2P+E 4H&#39;), (&#39;iec-60309-2p-e-6h&#39;, &#39;2P+E 6H&#39;), (&#39;iec-60309-2p-e-9h&#39;, &#39;2P+E 9H&#39;), (&#39;iec-60309-3p-e-4h&#39;, &#39;3P+E 4H&#39;), (&#39;iec-60309-3p-e-6h&#39;, &#39;3P+E 6H&#39;), (&#39;iec-60309-3p-e-9h&#39;, &#39;3P+E 9H&#39;), (&#39;iec-60309-3p-n-e-4h&#39;, &#39;3P+N+E 4H&#39;), (&#39;iec-60309-3p-n-e-6h&#39;, &#39;3P+N+E 6H&#39;), (&#39;iec-60309-3p-n-e-9h&#39;, &#39;3P+N+E 9H&#39;)] * `IEC 60906-1` - [(&#39;iec-60906-1&#39;, &#39;IEC 60906-1&#39;), (&#39;nbr-14136-10a&#39;, &#39;2P+T 10A (NBR 14136)&#39;), (&#39;nbr-14136-20a&#39;, &#39;2P+T 20A (NBR 14136)&#39;)] * `NEMA (Non-locking)` - [(&#39;nema-1-15p&#39;, &#39;NEMA 1-15P&#39;), (&#39;nema-5-15p&#39;, &#39;NEMA 5-15P&#39;), (&#39;nema-5-20p&#39;, &#39;NEMA 5-20P&#39;), (&#39;nema-5-30p&#39;, &#39;NEMA 5-30P&#39;), (&#39;nema-5-50p&#39;, &#39;NEMA 5-50P&#39;), (&#39;nema-6-15p&#39;, &#39;NEMA 6-15P&#39;), (&#39;nema-6-20p&#39;, &#39;NEMA 6-20P&#39;), (&#39;nema-6-30p&#39;, &#39;NEMA 6-30P&#39;), (&#39;nema-6-50p&#39;, &#39;NEMA 6-50P&#39;), (&#39;nema-10-30p&#39;, &#39;NEMA 10-30P&#39;), (&#39;nema-10-50p&#39;, &#39;NEMA 10-50P&#39;), (&#39;nema-14-20p&#39;, &#39;NEMA 14-20P&#39;), (&#39;nema-14-30p&#39;, &#39;NEMA 14-30P&#39;), (&#39;nema-14-50p&#39;, &#39;NEMA 14-50P&#39;), (&#39;nema-14-60p&#39;, &#39;NEMA 14-60P&#39;), (&#39;nema-15-15p&#39;, &#39;NEMA 15-15P&#39;), (&#39;nema-15-20p&#39;, &#39;NEMA 15-20P&#39;), (&#39;nema-15-30p&#39;, &#39;NEMA 15-30P&#39;), (&#39;nema-15-50p&#39;, &#39;NEMA 15-50P&#39;), (&#39;nema-15-60p&#39;, &#39;NEMA 15-60P&#39;)] * `NEMA (Locking)` - [(&#39;nema-l1-15p&#39;, &#39;NEMA L1-15P&#39;), (&#39;nema-l5-15p&#39;, &#39;NEMA L5-15P&#39;), (&#39;nema-l5-20p&#39;, &#39;NEMA L5-20P&#39;), (&#39;nema-l5-30p&#39;, &#39;NEMA L5-30P&#39;), (&#39;nema-l5-50p&#39;, &#39;NEMA L5-50P&#39;), (&#39;nema-l6-15p&#39;, &#39;NEMA L6-15P&#39;), (&#39;nema-l6-20p&#39;, &#39;NEMA L6-20P&#39;), (&#39;nema-l6-30p&#39;, &#39;NEMA L6-30P&#39;), (&#39;nema-l6-50p&#39;, &#39;NEMA L6-50P&#39;), (&#39;nema-l10-30p&#39;, &#39;NEMA L10-30P&#39;), (&#39;nema-l14-20p&#39;, &#39;NEMA L14-20P&#39;), (&#39;nema-l14-30p&#39;, &#39;NEMA L14-30P&#39;), (&#39;nema-l14-50p&#39;, &#39;NEMA L14-50P&#39;), (&#39;nema-l14-60p&#39;, &#39;NEMA L14-60P&#39;), (&#39;nema-l15-20p&#39;, &#39;NEMA L15-20P&#39;), (&#39;nema-l15-30p&#39;, &#39;NEMA L15-30P&#39;), (&#39;nema-l15-50p&#39;, &#39;NEMA L15-50P&#39;), (&#39;nema-l15-60p&#39;, &#39;NEMA L15-60P&#39;), (&#39;nema-l21-20p&#39;, &#39;NEMA L21-20P&#39;), (&#39;nema-l21-30p&#39;, &#39;NEMA L21-30P&#39;), (&#39;nema-l22-30p&#39;, &#39;NEMA L22-30P&#39;)] * `California Style` - [(&#39;cs6361c&#39;, &#39;CS6361C&#39;), (&#39;cs6365c&#39;, &#39;CS6365C&#39;), (&#39;cs8165c&#39;, &#39;CS8165C&#39;), (&#39;cs8265c&#39;, &#39;CS8265C&#39;), (&#39;cs8365c&#39;, &#39;CS8365C&#39;), (&#39;cs8465c&#39;, &#39;CS8465C&#39;)] * `International/ITA` - [(&#39;ita-c&#39;, &#39;ITA Type C (CEE 7/16)&#39;), (&#39;ita-e&#39;, &#39;ITA Type E (CEE 7/6)&#39;), (&#39;ita-f&#39;, &#39;ITA Type F (CEE 7/4)&#39;), (&#39;ita-ef&#39;, &#39;ITA Type E/F (CEE 7/7)&#39;), (&#39;ita-g&#39;, &#39;ITA Type G (BS 1363)&#39;), (&#39;ita-h&#39;, &#39;ITA Type H&#39;), (&#39;ita-i&#39;, &#39;ITA Type I&#39;), (&#39;ita-j&#39;, &#39;ITA Type J&#39;), (&#39;ita-k&#39;, &#39;ITA Type K&#39;), (&#39;ita-l&#39;, &#39;ITA Type L (CEI 23-50)&#39;), (&#39;ita-m&#39;, &#39;ITA Type M (BS 546)&#39;), (&#39;ita-n&#39;, &#39;ITA Type N&#39;), (&#39;ita-o&#39;, &#39;ITA Type O&#39;)] * `USB` - [(&#39;usb-a&#39;, &#39;USB Type A&#39;), (&#39;usb-b&#39;, &#39;USB Type B&#39;), (&#39;usb-c&#39;, &#39;USB Type C&#39;), (&#39;usb-mini-a&#39;, &#39;USB Mini A&#39;), (&#39;usb-mini-b&#39;, &#39;USB Mini B&#39;), (&#39;usb-micro-a&#39;, &#39;USB Micro A&#39;), (&#39;usb-micro-b&#39;, &#39;USB Micro B&#39;), (&#39;usb-micro-ab&#39;, &#39;USB Micro AB&#39;), (&#39;usb-3-b&#39;, &#39;USB 3.0 Type B&#39;), (&#39;usb-3-micro-b&#39;, &#39;USB 3.0 Micro B&#39;)] * `Molex` - [(&#39;molex-micro-fit-1x2&#39;, &#39;Molex Micro-Fit 1x2&#39;), (&#39;molex-micro-fit-2x2&#39;, &#39;Molex Micro-Fit 2x2&#39;), (&#39;molex-micro-fit-2x4&#39;, &#39;Molex Micro-Fit 2x4&#39;)] * `DC` - [(&#39;dc-terminal&#39;, &#39;DC Terminal&#39;)] * `Proprietary` - [(&#39;saf-d-grid&#39;, &#39;Saf-D-Grid&#39;), (&#39;neutrik-powercon-20&#39;, &#39;Neutrik powerCON (20A)&#39;), (&#39;neutrik-powercon-32&#39;, &#39;Neutrik powerCON (32A)&#39;), (&#39;neutrik-powercon-true1&#39;, &#39;Neutrik powerCON TRUE1&#39;), (&#39;neutrik-powercon-true1-top&#39;, &#39;Neutrik powerCON TRUE1 TOP&#39;), (&#39;ubiquiti-smartpower&#39;, &#39;Ubiquiti SmartPower&#39;)] * `Other` - [(&#39;hardwired&#39;, &#39;Hardwired&#39;), (&#39;other&#39;, &#39;Other&#39;)]",
             "required": false,
             "type": "string"
         },

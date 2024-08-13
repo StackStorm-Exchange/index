@@ -22,7 +22,7 @@
         "default_platform": {
             "description": "Default platform",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "description": {
             "description": "Description",
@@ -62,7 +62,7 @@
         "manufacturer": {
             "description": "Manufacturer",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "model": {
             "description": "Model",

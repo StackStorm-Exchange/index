@@ -42,7 +42,7 @@
         "location": {
             "description": "Location",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "name": {
             "description": "Name",
@@ -52,7 +52,7 @@
         "site": {
             "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "tags": {
             "description": "Array of tag strings",

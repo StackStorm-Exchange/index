@@ -45,9 +45,9 @@
             "type": "boolean"
         },
         "role": {
-            "description": "The primary function of this range",
+            "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "start_address": {
             "description": "Start address",
@@ -67,12 +67,12 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "vrf": {
             "description": "Vrf",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

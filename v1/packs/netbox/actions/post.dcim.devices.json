@@ -17,7 +17,7 @@
         "cluster": {
             "description": "Cluster",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "comments": {
             "description": "Comments",
@@ -27,7 +27,7 @@
         "config_template": {
             "description": "Config template",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "custom_fields": {
             "description": "Custom fields",
@@ -42,7 +42,7 @@
         "device_type": {
             "description": "Device type",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/dcim/devices/",
@@ -77,7 +77,7 @@
         "location": {
             "description": "Location",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "longitude": {
             "description": "GPS coordinate in decimal format (xx.yyyyyy)",
@@ -90,14 +90,14 @@
             "type": "string"
         },
         "oob_ip": {
-            "description": "Out-of-band IP",
+            "description": "Oob ip",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "platform": {
             "description": "Platform",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "position": {
             "description": "Position (U)",
@@ -105,24 +105,24 @@
             "type": "integer"
         },
         "primary_ip4": {
-            "description": "Primary IPv4",
+            "description": "Primary ip4",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "primary_ip6": {
-            "description": "Primary IPv6",
+            "description": "Primary ip6",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "rack": {
             "description": "Rack",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "role": {
-            "description": "The function this device serves",
+            "description": "Role",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "serial": {
             "description": "Serial number",
@@ -132,7 +132,7 @@
         "site": {
             "description": "Site",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "status": {
             "description": "* `offline` - Offline * `active` - Active * `planned` - Planned * `staged` - Staged * `failed` - Failed * `inventory` - Inventory * `decommissioning` - Decommissioning",
@@ -147,7 +147,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "vc_position": {
             "description": "Vc position",
@@ -162,7 +162,7 @@
         "virtual_chassis": {
             "description": "Virtual chassis",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

@@ -189,6 +189,26 @@
             "required": false,
             "type": "array"
         },
+        "ike_policy": {
+            "description": "IKE policy (name)",
+            "required": false,
+            "type": "array"
+        },
+        "ike_policy__n": {
+            "description": "Ike_policy not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "ike_policy_id": {
+            "description": "IKE policy (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "ike_policy_id__n": {
+            "description": "Ike_policy_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "last_updated": {
             "description": "Last_updated",
             "required": false,

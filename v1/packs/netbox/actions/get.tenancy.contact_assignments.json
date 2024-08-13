@@ -14,26 +14,6 @@
             "required": false,
             "type": "array"
         },
-        "content_type": {
-            "description": "Content_type",
-            "required": false,
-            "type": "string"
-        },
-        "content_type__n": {
-            "description": "Content_type not equal to",
-            "required": false,
-            "type": "string"
-        },
-        "content_type_id": {
-            "description": "Content_type_id",
-            "required": false,
-            "type": "integer"
-        },
-        "content_type_id__n": {
-            "description": "Content_type_id not equal to",
-            "required": false,
-            "type": "integer"
-        },
         "created": {
             "description": "Created",
             "required": false,
@@ -224,6 +204,26 @@
             "required": false,
             "type": "array"
         },
+        "object_type": {
+            "description": "Object_type",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__n": {
+            "description": "Object_type not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "object_type_id": {
+            "description": "Object_type_id",
+            "required": false,
+            "type": "integer"
+        },
+        "object_type_id__n": {
+            "description": "Object_type_id not equal to",
+            "required": false,
+            "type": "integer"
+        },
         "offset": {
             "description": "The initial index from which to return the results.",
             "required": false,
@@ -235,7 +235,7 @@
             "type": "string"
         },
         "priority": {
-            "description": "Priority",
+            "description": "* `primary` - Primary * `secondary` - Secondary * `tertiary` - Tertiary * `inactive` - Inactive",
             "required": false,
             "type": "string"
         },

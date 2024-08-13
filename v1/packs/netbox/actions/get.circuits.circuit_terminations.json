@@ -5,7 +5,7 @@
     "name": "get.circuits.circuit_terminations",
     "parameters": {
         "cable_end": {
-            "description": "Cable_end",
+            "description": "* `A` - A * `B` - B",
             "required": false,
             "type": "string"
         },
@@ -13,6 +13,16 @@
             "description": "Cable_end not equal to",
             "required": false,
             "type": "string"
+        },
+        "cable_id": {
+            "description": "Cable (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "cable_id__n": {
+            "description": "Cable_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "cabled": {
             "description": "Cabled",
@@ -214,6 +224,11 @@
             "required": false,
             "type": "integer"
         },
+        "mark_connected": {
+            "description": "Mark_connected",
+            "required": false,
+            "type": "boolean"
+        },
         "modified_by_request": {
             "description": "Modified_by_request",
             "required": false,
@@ -266,6 +281,81 @@
         },
         "port_speed__n": {
             "description": "Port_speed not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info": {
+            "description": "Pp_info",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__empty": {
+            "description": "Pp_info is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "pp_info__ic": {
+            "description": "Pp_info contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__ie": {
+            "description": "Pp_info exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__iew": {
+            "description": "Pp_info ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__isw": {
+            "description": "Pp_info starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__n": {
+            "description": "Pp_info not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__nic": {
+            "description": "Pp_info does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__nie": {
+            "description": "Pp_info inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__niew": {
+            "description": "Pp_info does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pp_info__nisw": {
+            "description": "Pp_info does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "provider": {
+            "description": "Provider (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "provider__n": {
+            "description": "Provider not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "provider_id": {
+            "description": "Provider (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "provider_id__n": {
+            "description": "Provider_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -329,7 +419,7 @@
             "type": "array"
         },
         "term_side": {
-            "description": "Term_side",
+            "description": "* `A` - A * `Z` - Z",
             "required": false,
             "type": "string"
         },

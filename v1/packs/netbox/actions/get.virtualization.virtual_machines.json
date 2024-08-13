@@ -309,6 +309,41 @@
             "required": false,
             "type": "array"
         },
+        "interface_count": {
+            "description": "Interface_count",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__empty": {
+            "description": "Interface_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "interface_count__gt": {
+            "description": "Interface_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__gte": {
+            "description": "Interface_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__lt": {
+            "description": "Interface_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__lte": {
+            "description": "Interface_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "interface_count__n": {
+            "description": "Interface_count not equal to",
+            "required": false,
+            "type": "array"
+        },
         "last_updated": {
             "description": "Last_updated",
             "required": false,
@@ -745,6 +780,41 @@
         },
         "vcpus__n": {
             "description": "Vcpus not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_disk_count": {
+            "description": "Virtual_disk_count",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_disk_count__empty": {
+            "description": "Virtual_disk_count is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "virtual_disk_count__gt": {
+            "description": "Virtual_disk_count greater than",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_disk_count__gte": {
+            "description": "Virtual_disk_count greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_disk_count__lt": {
+            "description": "Virtual_disk_count less than",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_disk_count__lte": {
+            "description": "Virtual_disk_count less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_disk_count__n": {
+            "description": "Virtual_disk_count not equal to",
             "required": false,
             "type": "array"
         }

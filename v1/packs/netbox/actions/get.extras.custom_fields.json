@@ -24,88 +24,43 @@
             "required": false,
             "type": "array"
         },
-        "content_type_id": {
-            "description": "Content_type_id",
+        "created": {
+            "description": "Created",
             "required": false,
             "type": "array"
         },
-        "content_type_id__empty": {
-            "description": "Content_type_id is empty/null (boolean)",
+        "created__empty": {
+            "description": "Created is empty/null (boolean)",
             "required": false,
             "type": "array"
         },
-        "content_type_id__gt": {
-            "description": "Content_type_id greater than",
+        "created__gt": {
+            "description": "Created greater than",
             "required": false,
             "type": "array"
         },
-        "content_type_id__gte": {
-            "description": "Content_type_id greater than or equal to",
+        "created__gte": {
+            "description": "Created greater than or equal to",
             "required": false,
             "type": "array"
         },
-        "content_type_id__lt": {
-            "description": "Content_type_id less than",
+        "created__lt": {
+            "description": "Created less than",
             "required": false,
             "type": "array"
         },
-        "content_type_id__lte": {
-            "description": "Content_type_id less than or equal to",
+        "created__lte": {
+            "description": "Created less than or equal to",
             "required": false,
             "type": "array"
         },
-        "content_type_id__n": {
-            "description": "Content_type_id not equal to",
+        "created__n": {
+            "description": "Created not equal to",
             "required": false,
             "type": "array"
         },
-        "content_types": {
-            "description": "Content_types",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__ic": {
-            "description": "Content_types contains (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__ie": {
-            "description": "Content_types exact match (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__iew": {
-            "description": "Content_types ends with (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__isw": {
-            "description": "Content_types starts with (case-sensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__n": {
-            "description": "Content_types not equal to",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__nic": {
-            "description": "Content_types does not contain (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__nie": {
-            "description": "Content_types inverse exact match (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__niew": {
-            "description": "Content_types does not end with (case-insensitive)",
-            "required": false,
-            "type": "string"
-        },
-        "content_types__nisw": {
-            "description": "Content_types does not start with (case-sensitive)",
+        "created_by_request": {
+            "description": "Created_by_request",
             "required": false,
             "type": "string"
         },
@@ -170,7 +125,7 @@
             "type": "string"
         },
         "filter_logic": {
-            "description": "Loose matches any instance of a given string; exact matches the entire field.",
+            "description": "Loose matches any instance of a given string; exact matches the entire field.\n* `disabled` - Disabled * `loose` - Loose * `exact` - Exact",
             "required": false,
             "type": "string"
         },
@@ -284,10 +239,105 @@
             "required": false,
             "type": "boolean"
         },
+        "label": {
+            "description": "Label",
+            "required": false,
+            "type": "array"
+        },
+        "label__empty": {
+            "description": "Label is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "label__ic": {
+            "description": "Label contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__ie": {
+            "description": "Label exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__iew": {
+            "description": "Label ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__isw": {
+            "description": "Label starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__n": {
+            "description": "Label not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "label__nic": {
+            "description": "Label does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nie": {
+            "description": "Label inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__niew": {
+            "description": "Label does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "label__nisw": {
+            "description": "Label does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated": {
+            "description": "Last_updated",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__empty": {
+            "description": "Last_updated is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gt": {
+            "description": "Last_updated greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__gte": {
+            "description": "Last_updated greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lt": {
+            "description": "Last_updated less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__lte": {
+            "description": "Last_updated less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_updated__n": {
+            "description": "Last_updated not equal to",
+            "required": false,
+            "type": "array"
+        },
         "limit": {
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "modified_by_request": {
+            "description": "Modified_by_request",
+            "required": false,
+            "type": "string"
         },
         "name": {
             "description": "Name",
@@ -344,6 +394,66 @@
             "required": false,
             "type": "array"
         },
+        "object_type": {
+            "description": "Object_type",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__ic": {
+            "description": "Object_type contains (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__ie": {
+            "description": "Object_type exact match (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__iew": {
+            "description": "Object_type ends with (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__isw": {
+            "description": "Object_type starts with (case-sensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__n": {
+            "description": "Object_type not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__nic": {
+            "description": "Object_type does not contain (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__nie": {
+            "description": "Object_type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__niew": {
+            "description": "Object_type does not end with (case-insensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type__nisw": {
+            "description": "Object_type does not start with (case-sensitive)",
+            "required": false,
+            "type": "string"
+        },
+        "object_type_id": {
+            "description": "Object_type_id",
+            "required": false,
+            "type": "array"
+        },
+        "object_type_id__n": {
+            "description": "Object_type_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "offset": {
             "description": "The initial index from which to return the results.",
             "required": false,
@@ -358,6 +468,26 @@
             "description": "Search",
             "required": false,
             "type": "string"
+        },
+        "related_object_type": {
+            "description": "Related_object_type",
+            "required": false,
+            "type": "string"
+        },
+        "related_object_type__n": {
+            "description": "Related_object_type not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "related_object_type_id": {
+            "description": "Related_object_type_id",
+            "required": false,
+            "type": "array"
+        },
+        "related_object_type_id__n": {
+            "description": "Related_object_type_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "required": {
             "description": "Required",
@@ -424,7 +554,7 @@
             "type": "array"
         },
         "ui_editable": {
-            "description": "Specifies whether the custom field value can be edited in the UI",
+            "description": "Specifies whether the custom field value can be edited in the UI\n* `yes` - Yes * `no` - No * `hidden` - Hidden",
             "required": false,
             "type": "string"
         },
@@ -434,7 +564,7 @@
             "type": "string"
         },
         "ui_visible": {
-            "description": "Specifies whether the custom field is displayed in the UI",
+            "description": "Specifies whether the custom field is displayed in the UI\n* `always` - Always * `if-set` - If set * `hidden` - Hidden",
             "required": false,
             "type": "string"
         },
@@ -442,6 +572,136 @@
             "description": "Ui_visible not equal to",
             "required": false,
             "type": "string"
+        },
+        "updated_by_request": {
+            "description": "Updated_by_request",
+            "required": false,
+            "type": "string"
+        },
+        "validation_maximum": {
+            "description": "Validation_maximum",
+            "required": false,
+            "type": "array"
+        },
+        "validation_maximum__empty": {
+            "description": "Validation_maximum is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "validation_maximum__gt": {
+            "description": "Validation_maximum greater than",
+            "required": false,
+            "type": "array"
+        },
+        "validation_maximum__gte": {
+            "description": "Validation_maximum greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "validation_maximum__lt": {
+            "description": "Validation_maximum less than",
+            "required": false,
+            "type": "array"
+        },
+        "validation_maximum__lte": {
+            "description": "Validation_maximum less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "validation_maximum__n": {
+            "description": "Validation_maximum not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "validation_minimum": {
+            "description": "Validation_minimum",
+            "required": false,
+            "type": "array"
+        },
+        "validation_minimum__empty": {
+            "description": "Validation_minimum is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "validation_minimum__gt": {
+            "description": "Validation_minimum greater than",
+            "required": false,
+            "type": "array"
+        },
+        "validation_minimum__gte": {
+            "description": "Validation_minimum greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "validation_minimum__lt": {
+            "description": "Validation_minimum less than",
+            "required": false,
+            "type": "array"
+        },
+        "validation_minimum__lte": {
+            "description": "Validation_minimum less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "validation_minimum__n": {
+            "description": "Validation_minimum not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex": {
+            "description": "Validation_regex",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__empty": {
+            "description": "Validation_regex is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "validation_regex__ic": {
+            "description": "Validation_regex contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__ie": {
+            "description": "Validation_regex exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__iew": {
+            "description": "Validation_regex ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__isw": {
+            "description": "Validation_regex starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__n": {
+            "description": "Validation_regex not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__nic": {
+            "description": "Validation_regex does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__nie": {
+            "description": "Validation_regex inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__niew": {
+            "description": "Validation_regex does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "validation_regex__nisw": {
+            "description": "Validation_regex does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "weight": {
             "description": "Weight",

@@ -530,7 +530,7 @@
             "type": "array"
         },
         "outer_unit": {
-            "description": "Outer_unit",
+            "description": "* `mm` - Millimeters * `in` - Inches",
             "required": false,
             "type": "string"
         },
@@ -909,7 +909,7 @@
             "type": "array"
         },
         "weight_unit": {
-            "description": "Weight_unit",
+            "description": "* `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces",
             "required": false,
             "type": "string"
         },

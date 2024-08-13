@@ -4,16 +4,6 @@
     "entry_point": "run.py",
     "name": "post.extras.config_templates",
     "parameters": {
-        "data_file": {
-            "description": "Data file",
-            "required": false,
-            "type": "integer"
-        },
-        "data_source": {
-            "description": "Remote data source",
-            "required": false,
-            "type": "integer"
-        },
         "description": {
             "description": "Description",
             "required": false,
@@ -23,11 +13,6 @@
             "default": "/extras/config-templates/",
             "immutable": true,
             "type": "string"
-        },
-        "environment_params": {
-            "description": "Environment parameters",
-            "required": false,
-            "type": "object"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -41,16 +26,6 @@
         },
         "name": {
             "description": "Name",
-            "required": false,
-            "type": "string"
-        },
-        "tags": {
-            "description": "Array of tag strings",
-            "required": false,
-            "type": "array"
-        },
-        "template_code": {
-            "description": "Jinja2 template code.",
             "required": false,
             "type": "string"
         }

@@ -42,12 +42,12 @@
         "ike_policy": {
             "description": "Ike policy",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "ipsec_policy": {
             "description": "Ipsec policy",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "mode": {
             "description": "* `esp` - ESP * `ah` - AH",

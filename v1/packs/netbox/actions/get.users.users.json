@@ -4,6 +4,41 @@
     "entry_point": "run.py",
     "name": "get.users.users",
     "parameters": {
+        "date_joined": {
+            "description": "Date_joined",
+            "required": false,
+            "type": "array"
+        },
+        "date_joined__empty": {
+            "description": "Date_joined is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "date_joined__gt": {
+            "description": "Date_joined greater than",
+            "required": false,
+            "type": "array"
+        },
+        "date_joined__gte": {
+            "description": "Date_joined greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "date_joined__lt": {
+            "description": "Date_joined less than",
+            "required": false,
+            "type": "array"
+        },
+        "date_joined__lte": {
+            "description": "Date_joined less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "date_joined__n": {
+            "description": "Date_joined not equal to",
+            "required": false,
+            "type": "array"
+        },
         "email": {
             "description": "Email",
             "required": false,
@@ -199,6 +234,41 @@
             "required": false,
             "type": "boolean"
         },
+        "last_login": {
+            "description": "Last_login",
+            "required": false,
+            "type": "array"
+        },
+        "last_login__empty": {
+            "description": "Last_login is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "last_login__gt": {
+            "description": "Last_login greater than",
+            "required": false,
+            "type": "array"
+        },
+        "last_login__gte": {
+            "description": "Last_login greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_login__lt": {
+            "description": "Last_login less than",
+            "required": false,
+            "type": "array"
+        },
+        "last_login__lte": {
+            "description": "Last_login less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "last_login__n": {
+            "description": "Last_login not equal to",
+            "required": false,
+            "type": "array"
+        },
         "last_name": {
             "description": "Last_name",
             "required": false,
@@ -268,6 +338,16 @@
             "description": "Which field to use when ordering the results.",
             "required": false,
             "type": "string"
+        },
+        "permission_id": {
+            "description": "Permission (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "permission_id__n": {
+            "description": "Permission_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "q": {
             "description": "Search",

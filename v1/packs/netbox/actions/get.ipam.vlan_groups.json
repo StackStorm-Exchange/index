@@ -9,6 +9,11 @@
             "required": false,
             "type": "integer"
         },
+        "cluster_group": {
+            "description": "Cluster_group",
+            "required": false,
+            "type": "integer"
+        },
         "clustergroup": {
             "description": "Clustergroup",
             "required": false,
@@ -420,6 +425,11 @@
         },
         "site": {
             "description": "Site",
+            "required": false,
+            "type": "integer"
+        },
+        "site_group": {
+            "description": "Site_group",
             "required": false,
             "type": "integer"
         },

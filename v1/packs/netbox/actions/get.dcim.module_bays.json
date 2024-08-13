@@ -119,26 +119,6 @@
             "required": false,
             "type": "array"
         },
-        "device_role": {
-            "description": "Device role (slug)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role__n": {
-            "description": "Device_role not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id": {
-            "description": "Device role (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "device_role_id__n": {
-            "description": "Device_role_id not equal to",
-            "required": false,
-            "type": "array"
-        },
         "device_type": {
             "description": "Device type (model)",
             "required": false,
@@ -206,6 +186,16 @@
         },
         "id__n": {
             "description": "Id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "installed_module_id": {
+            "description": "Installed module (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "installed_module_id__n": {
+            "description": "Installed_module_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -393,6 +383,61 @@
             "description": "Which field to use when ordering the results.",
             "required": false,
             "type": "string"
+        },
+        "position": {
+            "description": "Position",
+            "required": false,
+            "type": "array"
+        },
+        "position__empty": {
+            "description": "Position is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "position__ic": {
+            "description": "Position contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__ie": {
+            "description": "Position exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__iew": {
+            "description": "Position ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__isw": {
+            "description": "Position starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__n": {
+            "description": "Position not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "position__nic": {
+            "description": "Position does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__nie": {
+            "description": "Position inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__niew": {
+            "description": "Position does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "position__nisw": {
+            "description": "Position does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "q": {
             "description": "Search",

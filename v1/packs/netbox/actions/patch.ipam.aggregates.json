@@ -50,9 +50,9 @@
             "type": "string"
         },
         "rir": {
-            "description": "Regional Internet Registry responsible for this IP space",
+            "description": "Rir",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "tags": {
             "description": "Array of tag strings",
@@ -62,7 +62,7 @@
         "tenant": {
             "description": "Tenant",
             "required": false,
-            "type": "integer"
+            "type": "object"
         }
     },
     "runner_type": "python-script"

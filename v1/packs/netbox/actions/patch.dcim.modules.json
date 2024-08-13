@@ -27,7 +27,7 @@
         "device": {
             "description": "Device",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "endpoint_uri": {
             "default": "/dcim/modules/{{ id }}/",
@@ -57,7 +57,7 @@
         "module_type": {
             "description": "Module type",
             "required": false,
-            "type": "integer"
+            "type": "object"
         },
         "serial": {
             "description": "Serial number",
