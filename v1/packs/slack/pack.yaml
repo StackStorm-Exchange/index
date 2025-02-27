@@ -6,14 +6,14 @@ keywords:
 - chat
 - messaging
 - instant messaging
-version: 2.1.0
+version: 2.3.0
 python_versions:
 - '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 193
+    count: 194
     resources:
     - admin.apps.approve
     - admin.apps.approved.list
@@ -160,6 +160,7 @@ content:
     - pins.add
     - pins.list
     - pins.remove
+    - post_attachment
     - post_message
     - reactions.add
     - reactions.get

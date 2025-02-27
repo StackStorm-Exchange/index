@@ -5,7 +5,7 @@ keywords:
 - customer support
 - chat
 - CRM
-version: 1.0.0
+version: 1.0.1
 author: James Fryman
 email: james@stackstorm.com
 python_versions:
@@ -20,3 +20,7 @@ content:
     - article_update
     - create_message
     - get_conversations
+  tests:
+    count: 1
+    resources:
+    - test_action_lib_actions.py

@@ -1,0 +1,30 @@
+{
+    "description": "List all alerts for a given host ID in Zabbix",
+    "enabled": true,
+    "entry_point": "call_api.py",
+    "name": "host_get_alerts",
+    "pack": "zabbix",
+    "parameters": {
+        "api_method": {
+            "default": "alert.get",
+            "immutable": true
+        },
+        "expandDescription": {
+            "default": "",
+            "description": "test flag",
+            "immutable": true,
+            "type": "string"
+        },
+        "filter": {
+            "description": "Condition to filter the result",
+            "type": "object"
+        },
+        "token": {
+            "default": "{% if st2kv.user.zabbix.secret_token|string != '' %}{{ st2kv.user.zabbix.secret_token | decrypt_kv }}{% endif %}\n",
+            "description": "Encrypted access token to authenticate to ZabbixServer",
+            "secret": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

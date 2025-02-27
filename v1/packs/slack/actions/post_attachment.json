@@ -1,0 +1,45 @@
+{
+    "description": "Post an attachment to the Slack channel.",
+    "enabled": true,
+    "entry_point": "post_attachment.py",
+    "name": "post_attachment",
+    "parameters": {
+        "attachment": {
+            "description": "Attachment to send (only one allowed)",
+            "required": true,
+            "type": "object"
+        },
+        "channel": {
+            "description": "Optional channel to post to. Note channel must contain leading #",
+            "required": false,
+            "type": "string"
+        },
+        "disable_formatting": {
+            "default": false,
+            "description": "Disable formatting, don't parse the message and treat it as raw text",
+            "required": false,
+            "type": "boolean"
+        },
+        "icon_emoji": {
+            "description": "Bot icon emoji",
+            "required": false,
+            "type": "string"
+        },
+        "icon_url": {
+            "description": "Bot icon URL",
+            "required": false,
+            "type": "string"
+        },
+        "username": {
+            "description": "Bot username.",
+            "required": false,
+            "type": "string"
+        },
+        "webhook_url": {
+            "description": "Optional Webhook url",
+            "required": false,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

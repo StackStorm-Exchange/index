@@ -1,0 +1,21 @@
+{
+    "description": "List all active triggers for a given host",
+    "enabled": true,
+    "entry_point": "workflows/host_get_active_triggers.yaml",
+    "name": "host_get_active_triggers",
+    "pack": "zabbix",
+    "parameters": {
+        "host": {
+            "description": "Name of the Zabbix Host",
+            "required": true,
+            "type": "string"
+        },
+        "priority": {
+            "default": [],
+            "description": "List of priority numbers (severity) to get triggers for",
+            "required": false,
+            "type": "array"
+        }
+    },
+    "runner_type": "orquesta"
+}

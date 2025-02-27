@@ -5,7 +5,7 @@ keywords:
 - elasticsearch
 - curator
 - databases
-version: 2.0.0
+version: 2.0.1
 author: StackStorm, Inc.
 email: info@stackstorm.com
 python_versions:
@@ -39,3 +39,7 @@ content:
     count: 1
     resources:
     - ElasticsearchCountSensor
+  tests:
+    count: 1
+    resources:
+    - test_action_curator_runner.py

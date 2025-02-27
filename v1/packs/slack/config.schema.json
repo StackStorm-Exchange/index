@@ -59,6 +59,11 @@
                 "required": false,
                 "type": "string"
             },
+            "icon_url": {
+                "description": "Default icon url of user under which messages will be posted",
+                "required": false,
+                "type": "string"
+            },
             "username": {
                 "description": "Default name of user under which messages will be posted",
                 "required": true,

@@ -1,0 +1,20 @@
+{
+    "description": "Gets/Checks the hostgroups of one or more Zabbix Hosts",
+    "enabled": true,
+    "entry_point": "host_get_hostgroups.py",
+    "name": "host_get_hostgroups",
+    "pack": "zabbix",
+    "parameters": {
+        "group_id": {
+            "description": "Optional Group ID to check if host is in",
+            "required": false,
+            "type": "string"
+        },
+        "host_id": {
+            "description": "Host ID to find hostgroups for",
+            "required": true,
+            "type": "string"
+        }
+    },
+    "runner_type": "python-script"
+}

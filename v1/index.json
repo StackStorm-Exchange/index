@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1729766978,
-        "hash": "eae75ddae57dd3309ee20daa46a0db61"
+        "generated_ts": 1740694469,
+        "hash": "44bfabfa0da6bebc3b936fa24c872372"
     },
     "packs": {
         "acos": {
@@ -236,8 +236,9 @@
             ],
             "ref": "activecampaign",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-activecampaign",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.3.4",
                 "0.3.3",
@@ -499,8 +500,9 @@
             ],
             "ref": "algosec",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-algosec",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.1.1",
                 "0.1.0"
@@ -542,8 +544,9 @@
             ],
             "ref": "ansible",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ansible",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "versions": [
+                "1.1.0",
                 "1.0.0",
                 "0.5.9",
                 "0.5.8",
@@ -4749,8 +4752,9 @@
             "ref": "bitbucket",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-bitbucket",
             "stackstorm_version": ">=2.1.0",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "versions": [
+                "1.0.3",
                 "1.0.2",
                 "1.0.1",
                 "1.0.0",
@@ -4940,8 +4944,9 @@
             ],
             "ref": "check_mk",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-check_mk",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.2.2",
                 "0.2.1",
@@ -5627,8 +5632,9 @@
             ],
             "ref": "cloudflare",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-cloudflare",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.4.1",
                 "0.4.0",
@@ -6287,8 +6293,9 @@
             ],
             "ref": "dimensiondata",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-dimensiondata",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.1.3",
                 "0.1.2",
@@ -6374,8 +6381,9 @@
             ],
             "ref": "dripstat",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-dripstat",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.2.0",
                 "0.1.0",
@@ -6474,6 +6482,12 @@
                     "resources": [
                         "ElasticsearchCountSensor"
                     ]
+                },
+                "tests": {
+                    "count": 1,
+                    "resources": [
+                        "test_action_curator_runner.py"
+                    ]
                 }
             },
             "description": "st2 elasticsearch integration pack",
@@ -6489,8 +6503,9 @@
             ],
             "ref": "elasticsearch",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-elasticsearch",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "versions": [
+                "2.0.1",
                 "2.0.0",
                 "1.1.1",
                 "1.1.0",
@@ -7531,8 +7546,9 @@
             ],
             "ref": "foreman",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-foreman",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "versions": [
+                "2.1.1",
                 "2.1.0",
                 "2.0.0",
                 "1.2.0",
@@ -8205,8 +8221,9 @@
             ],
             "ref": "ghost2logger",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-ghost2logger",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "versions": [
+                "2.0.1",
                 "2.0.0",
                 "1.1.2",
                 "1.1.1",
@@ -10057,9 +10074,10 @@
             ],
             "ref": "kubernetes",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-kubernetes",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
                 "1.8.0",
+                "1.0.1",
                 "1.0.0",
                 "0.9.9",
                 "0.9.8",
@@ -10908,7 +10926,8 @@
                 }
             },
             "contributors": [
-                "Tim Jones <tdjones74021@yahoo.com>"
+                "Tim Jones <tdjones74021@yahoo.com>",
+                "Dennis Whitney <dennis@irunasroot.com"
             ],
             "description": "A pack for interfacing with a Microsoft Exchange server",
             "email": "anthonyshaw@apache.org",
@@ -10924,8 +10943,9 @@
             ],
             "ref": "msexchange",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-msexchange",
-            "version": "1.1.1",
+            "version": "1.1.3",
             "versions": [
+                "1.1.3",
                 "1.1.1",
                 "1.1.0",
                 "1.0.1",
@@ -11069,8 +11089,9 @@
             ],
             "ref": "nagios",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-nagios",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "versions": [
+                "1.1.1",
                 "1.1.0",
                 "1.0.0",
                 "0.2.3",
@@ -11211,8 +11232,9 @@
                 "3"
             ],
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-napalm_logs",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.1.2",
                 "0.1.1",
@@ -12077,8 +12099,9 @@
             ],
             "ref": "networking_utils",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-networking_utils",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "versions": [
+                "1.2.1",
                 "1.2.0",
                 "1.1.0",
                 "1.0.0",
@@ -12478,8 +12501,9 @@
             ],
             "ref": "openhab",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-openhab",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.2.2",
                 "0.2.1",
@@ -13526,8 +13550,9 @@
             ],
             "ref": "orion",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-orion",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "versions": [
+                "1.0.4",
                 "1.0.3",
                 "1.0.2",
                 "1.0.1",
@@ -14253,6 +14278,12 @@
                         "create_message",
                         "get_conversations"
                     ]
+                },
+                "tests": {
+                    "count": 1,
+                    "resources": [
+                        "test_action_lib_actions.py"
+                    ]
                 }
             },
             "description": "reamaze CRM",
@@ -14268,8 +14299,9 @@
             ],
             "ref": "reamaze",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-reamaze",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.3.1",
                 "0.3.0",
@@ -14711,8 +14743,9 @@
             ],
             "ref": "sensu",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-sensu",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "versions": [
+                "1.0.2",
                 "1.0.1",
                 "1.0.0",
                 "0.5.2",
@@ -14833,7 +14866,7 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 193,
+                    "count": 194,
                     "resources": [
                         "admin.apps.approve",
                         "admin.apps.approved.list",
@@ -14980,6 +15013,7 @@
                         "pins.add",
                         "pins.list",
                         "pins.remove",
+                        "post_attachment",
                         "post_message",
                         "reactions.add",
                         "reactions.get",
@@ -15062,8 +15096,10 @@
             ],
             "ref": "slack",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-slack",
-            "version": "2.1.0",
+            "version": "2.3.0",
             "versions": [
+                "2.3.0",
+                "2.2.1",
                 "2.1.0",
                 "2.0.5",
                 "2.0.4",
@@ -15186,8 +15222,9 @@
             ],
             "ref": "softlayer",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-softlayer",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "versions": [
+                "1.0.1",
                 "1.0.0",
                 "0.3.2",
                 "0.3.1",
@@ -16223,8 +16260,9 @@
             ],
             "ref": "vault",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vault",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "versions": [
+                "2.1.0",
                 "2.0.0",
                 "1.0.0",
                 "0.6.0",
@@ -16303,8 +16341,9 @@
             ],
             "ref": "vcd",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vcd",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "versions": [
+                "1.0.2",
                 "1.0.1",
                 "1.0.0",
                 "0.2.5",
@@ -16666,7 +16705,7 @@
                     ]
                 },
                 "tests": {
-                    "count": 68,
+                    "count": 67,
                     "resources": [
                         "test_action_affinity_rule_create.py",
                         "test_action_affinity_rule_delete.py",
@@ -16733,7 +16772,6 @@
                         "test_action_vm_tools_options_update.py",
                         "test_action_vmwarelib_actions.py",
                         "test_action_vmwarelib_tagging.py",
-                        "test_config_schema.py",
                         "test_sensor_taskinfo.py",
                         "vsphere_base_action_test_case.py"
                     ]
@@ -16756,8 +16794,9 @@
             "ref": "vsphere",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-vsphere",
             "stackstorm_version": ">=2.9.0",
-            "version": "1.3.3",
+            "version": "1.3.5",
             "versions": [
+                "1.3.5",
                 "1.3.3",
                 "1.3.2",
                 "1.2.0",
@@ -17149,17 +17188,22 @@
             "author": "Hiroyasu OHYAMA",
             "content": {
                 "actions": {
-                    "count": 18,
+                    "count": 23,
                     "resources": [
                         "ack_event",
                         "create_host",
                         "host_delete",
                         "host_delete_by_id",
+                        "host_get_active_triggers",
+                        "host_get_alerts",
+                        "host_get_events",
+                        "host_get_hostgroups",
                         "host_get_id",
                         "host_get_interfaces",
                         "host_get_inventory",
                         "host_get_multiple_ids",
                         "host_get_status",
+                        "host_get_triggers",
                         "host_update_status",
                         "list_host_groups",
                         "list_host_interfaces",
@@ -17211,8 +17255,9 @@
             ],
             "ref": "zabbix",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-zabbix",
-            "version": "1.0.0",
+            "version": "1.2.4",
             "versions": [
+                "1.2.4",
                 "1.0.0",
                 "0.4.0",
                 "0.3.2",

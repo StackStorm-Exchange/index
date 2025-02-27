@@ -35,6 +35,12 @@
                     "required": false,
                     "type": "string"
                 },
+                "mount_point": {
+                    "description": "Authentication mount point (method=approle)",
+                    "required": false,
+                    "secret": false,
+                    "type": "string"
+                },
                 "name": {
                     "description": "Name of the profile.",
                     "required": true,
