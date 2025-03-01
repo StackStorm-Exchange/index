@@ -4,6 +4,11 @@
     "entry_point": "transition_issue.py",
     "name": "transition_issue",
     "parameters": {
+        "fields": {
+            "description": "Fields to update on the issue. For example to set resolution to \"Fixed\" {\"resolution\": {\"name\": \"Fixed\"}}.",
+            "required": false,
+            "type": "object"
+        },
         "issue_key": {
             "description": "Issue key (e.g. PROJECT-1000).",
             "required": true,
