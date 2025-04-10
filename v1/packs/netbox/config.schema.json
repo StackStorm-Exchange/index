@@ -2,6 +2,7 @@
     "api_token": {
         "description": "API Token to use against the API",
         "required": true,
+        "secret": true,
         "type": "string"
     },
     "hostname": {
@@ -22,6 +23,7 @@
     "sensor_secret": {
         "default": "",
         "description": "When provided, will force request signature verification using the provided secret value.",
+        "secret": true,
         "type": "string"
     },
     "ssl_verify": {
