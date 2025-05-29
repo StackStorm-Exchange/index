@@ -13,6 +13,11 @@
             "description": "Parameter overrides",
             "required": false,
             "type": "object"
+        },
+        "tasks": {
+            "description": "List of tasks to re-run",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"
