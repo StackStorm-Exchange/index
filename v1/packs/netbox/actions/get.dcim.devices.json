@@ -5,12 +5,7 @@
     "name": "get.dcim.devices",
     "parameters": {
         "airflow": {
-            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `passive` - Passive * `mixed` - Mixed",
-            "required": false,
-            "type": "string"
-        },
-        "airflow__n": {
-            "description": "Airflow not equal to",
+            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `rear-to-side` - Rear to side * `bottom-to-top` - Bottom to top * `top-to-bottom` - Top to bottom * `passive` - Passive * `mixed` - Mixed",
             "required": false,
             "type": "string"
         },
@@ -66,6 +61,26 @@
         },
         "asset_tag__nisw": {
             "description": "Asset_tag does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "cluster_group": {
+            "description": "Cluster group (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "cluster_group__n": {
+            "description": "Cluster_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "cluster_group_id": {
+            "description": "Cluster group (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "cluster_group_id__n": {
+            "description": "Cluster_group_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -180,7 +195,7 @@
             "type": "array"
         },
         "contact_group": {
-            "description": "Contact group",
+            "description": "Contact_group",
             "required": false,
             "type": "array"
         },
@@ -364,10 +379,10 @@
             "required": false,
             "type": "string"
         },
-        "face__n": {
-            "description": "Face not equal to",
-            "required": false,
-            "type": "string"
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "front_port_count": {
             "description": "Front_port_count",
@@ -624,8 +639,18 @@
             "required": false,
             "type": "boolean"
         },
+        "location": {
+            "description": "Location",
+            "required": false,
+            "type": "array"
+        },
+        "location__n": {
+            "description": "Location not equal to",
+            "required": false,
+            "type": "array"
+        },
         "location_id": {
-            "description": "Location (ID)",
+            "description": "Location_id",
             "required": false,
             "type": "array"
         },
@@ -1029,6 +1054,16 @@
             "required": false,
             "type": "boolean"
         },
+        "primary_ip4": {
+            "description": "Primary IPv4 (address)",
+            "required": false,
+            "type": "array"
+        },
+        "primary_ip4__n": {
+            "description": "Primary_ip4 not equal to",
+            "required": false,
+            "type": "array"
+        },
         "primary_ip4_id": {
             "description": "Primary IPv4 (ID)",
             "required": false,
@@ -1036,6 +1071,16 @@
         },
         "primary_ip4_id__n": {
             "description": "Primary_ip4_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "primary_ip6": {
+            "description": "Primary IPv6 (address)",
+            "required": false,
+            "type": "array"
+        },
+        "primary_ip6__n": {
+            "description": "Primary_ip6 not equal to",
             "required": false,
             "type": "array"
         },
@@ -1100,7 +1145,7 @@
             "type": "array"
         },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -1110,7 +1155,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -1120,7 +1165,7 @@
             "type": "array"
         },
         "role": {
-            "description": "Role (slug)",
+            "description": "Role",
             "required": false,
             "type": "array"
         },
@@ -1130,7 +1175,7 @@
             "type": "array"
         },
         "role_id": {
-            "description": "Role (ID)",
+            "description": "Role_id",
             "required": false,
             "type": "array"
         },
@@ -1219,7 +1264,7 @@
             "type": "array"
         },
         "site_group": {
-            "description": "Site group (slug)",
+            "description": "Site_group",
             "required": false,
             "type": "array"
         },
@@ -1229,7 +1274,7 @@
             "type": "array"
         },
         "site_group_id": {
-            "description": "Site group (ID)",
+            "description": "Site_group_id",
             "required": false,
             "type": "array"
         },
@@ -1253,8 +1298,53 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -1265,6 +1355,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -1279,7 +1379,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -1289,7 +1389,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },

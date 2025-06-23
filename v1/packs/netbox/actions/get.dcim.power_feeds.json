@@ -79,11 +79,6 @@
             "required": false,
             "type": "string"
         },
-        "cable_end__n": {
-            "description": "Cable_end not equal to",
-            "required": false,
-            "type": "string"
-        },
         "cable_id": {
             "description": "Cable (ID)",
             "required": false,
@@ -203,6 +198,11 @@
             "default": "/dcim/power-feeds/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -409,11 +409,6 @@
             "required": false,
             "type": "string"
         },
-        "phase__n": {
-            "description": "Phase not equal to",
-            "required": false,
-            "type": "string"
-        },
         "power_panel_id": {
             "description": "Power panel (ID)",
             "required": false,
@@ -440,7 +435,7 @@
             "type": "array"
         },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -450,7 +445,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -484,7 +479,7 @@
             "type": "array"
         },
         "site_group": {
-            "description": "Site group (slug)",
+            "description": "Site_group",
             "required": false,
             "type": "array"
         },
@@ -494,7 +489,7 @@
             "type": "array"
         },
         "site_group_id": {
-            "description": "Site group (ID)",
+            "description": "Site_group_id",
             "required": false,
             "type": "array"
         },
@@ -518,18 +513,58 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
             "required": false,
             "type": "array"
         },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "supply": {
             "description": "* `ac` - AC * `dc` - DC",
-            "required": false,
-            "type": "string"
-        },
-        "supply__n": {
-            "description": "Supply not equal to",
             "required": false,
             "type": "string"
         },
@@ -540,6 +575,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -554,7 +599,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -564,7 +609,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },
@@ -585,11 +630,6 @@
         },
         "type": {
             "description": "* `primary` - Primary * `redundant` - Redundant",
-            "required": false,
-            "type": "string"
-        },
-        "type__n": {
-            "description": "Type not equal to",
             "required": false,
             "type": "string"
         },

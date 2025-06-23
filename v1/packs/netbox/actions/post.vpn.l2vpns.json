@@ -29,6 +29,11 @@
             "required": false,
             "type": "array"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -59,6 +64,11 @@
             "required": false,
             "type": "string"
         },
+        "status": {
+            "description": "* `active` - Active * `planned` - Planned * `decommissioning` - Decommissioning",
+            "required": false,
+            "type": "string"
+        },
         "tags": {
             "description": "Array of tag strings",
             "required": false,
@@ -70,7 +80,7 @@
             "type": "object"
         },
         "type": {
-            "description": "* `vpws` - VPWS * `vpls` - VPLS * `vxlan` - VXLAN * `vxlan-evpn` - VXLAN-EVPN * `mpls-evpn` - MPLS EVPN * `pbb-evpn` - PBB EVPN * `epl` - EPL * `evpl` - EVPL * `ep-lan` - Ethernet Private LAN * `evp-lan` - Ethernet Virtual Private LAN * `ep-tree` - Ethernet Private Tree * `evp-tree` - Ethernet Virtual Private Tree",
+            "description": "* `vpws` - VPWS * `vpls` - VPLS * `vxlan` - VXLAN * `vxlan-evpn` - VXLAN-EVPN * `mpls-evpn` - MPLS EVPN * `pbb-evpn` - PBB EVPN * `evpn-vpws` - EVPN VPWS * `epl` - EPL * `evpl` - EVPL * `ep-lan` - Ethernet Private LAN * `evp-lan` - Ethernet Virtual Private LAN * `ep-tree` - Ethernet Private Tree * `evp-tree` - Ethernet Virtual Private Tree * `spb` - SPB",
             "required": false,
             "type": "string"
         }

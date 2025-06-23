@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "put.ipam.rirs",
     "parameters": {
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
         "description": {
             "description": "Description",
             "required": false,
@@ -13,6 +18,11 @@
             "default": "/ipam/rirs/{{ id }}/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -29,6 +39,11 @@
             "required": true,
             "type": "integer"
         },
+        "is_private": {
+            "description": "Private",
+            "required": false,
+            "type": "boolean"
+        },
         "name": {
             "description": "Name",
             "required": false,
@@ -38,6 +53,11 @@
             "description": "Slug",
             "required": false,
             "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"

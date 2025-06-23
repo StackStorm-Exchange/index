@@ -109,6 +109,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -378,8 +383,103 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval": {
+            "description": "Sync_interval",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__ic": {
+            "description": "Sync_interval contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__ie": {
+            "description": "Sync_interval exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__iew": {
+            "description": "Sync_interval ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__isw": {
+            "description": "Sync_interval starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__n": {
+            "description": "Sync_interval not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__nic": {
+            "description": "Sync_interval does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__nie": {
+            "description": "Sync_interval inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__niew": {
+            "description": "Sync_interval does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "sync_interval__nisw": {
+            "description": "Sync_interval does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -393,13 +493,68 @@
             "required": false,
             "type": "array"
         },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "type": {
             "description": "Type",
             "required": false,
             "type": "array"
         },
+        "type__empty": {
+            "description": "Type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "type__ic": {
+            "description": "Type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__ie": {
+            "description": "Type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__iew": {
+            "description": "Type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__isw": {
+            "description": "Type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "type__n": {
             "description": "Type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "type__nic": {
+            "description": "Type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nie": {
+            "description": "Type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__niew": {
+            "description": "Type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nisw": {
+            "description": "Type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },

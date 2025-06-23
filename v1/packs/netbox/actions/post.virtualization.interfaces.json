@@ -29,6 +29,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -39,13 +44,8 @@
             "immutable": true,
             "type": "string"
         },
-        "mac_address": {
-            "description": "Mac address",
-            "required": false,
-            "type": "string"
-        },
         "mode": {
-            "description": "IEEE 802.1Q tagging strategy\n* `access` - Access * `tagged` - Tagged * `tagged-all` - Tagged (All)",
+            "description": "IEEE 802.1Q tagging strategy\n* `access` - Access * `tagged` - Tagged * `tagged-all` - Tagged (All) * `q-in-q` - Q-in-Q (802.1ad)",
             "required": false,
             "type": "string"
         },
@@ -64,6 +64,16 @@
             "required": false,
             "type": "integer"
         },
+        "primary_mac_address": {
+            "description": "Primary mac address",
+            "required": false,
+            "type": "object"
+        },
+        "qinq_svlan": {
+            "description": "Qinq svlan",
+            "required": false,
+            "type": "object"
+        },
         "tagged_vlans": {
             "description": "Tagged vlans",
             "required": false,
@@ -81,6 +91,11 @@
         },
         "virtual_machine": {
             "description": "Virtual machine",
+            "required": false,
+            "type": "object"
+        },
+        "vlan_translation_policy": {
+            "description": "Vlan translation policy",
             "required": false,
             "type": "object"
         },

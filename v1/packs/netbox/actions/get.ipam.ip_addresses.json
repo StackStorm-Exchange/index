@@ -64,6 +64,36 @@
             "required": false,
             "type": "boolean"
         },
+        "contact": {
+            "description": "Contact",
+            "required": false,
+            "type": "array"
+        },
+        "contact__n": {
+            "description": "Contact not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "contact_group": {
+            "description": "Contact_group",
+            "required": false,
+            "type": "array"
+        },
+        "contact_group__n": {
+            "description": "Contact_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "contact_role": {
+            "description": "Contact Role",
+            "required": false,
+            "type": "array"
+        },
+        "contact_role__n": {
+            "description": "Contact_role not equal to",
+            "required": false,
+            "type": "array"
+        },
         "created": {
             "description": "Created",
             "required": false,
@@ -228,6 +258,11 @@
             "default": "/ipam/ip-addresses/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "family": {
             "description": "Family",
@@ -414,8 +449,53 @@
             "required": false,
             "type": "array"
         },
+        "role__empty": {
+            "description": "Role is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "role__ic": {
+            "description": "Role contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__ie": {
+            "description": "Role exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__iew": {
+            "description": "Role ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__isw": {
+            "description": "Role starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "role__n": {
             "description": "Role not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "role__nic": {
+            "description": "Role does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__nie": {
+            "description": "Role inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__niew": {
+            "description": "Role does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__nisw": {
+            "description": "Role does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -448,8 +528,53 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -460,6 +585,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -474,7 +609,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -484,7 +619,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },

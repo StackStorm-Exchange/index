@@ -159,6 +159,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -224,8 +229,53 @@
             "required": false,
             "type": "array"
         },
+        "http_method__empty": {
+            "description": "Http_method is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "http_method__ic": {
+            "description": "Http_method contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "http_method__ie": {
+            "description": "Http_method exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "http_method__iew": {
+            "description": "Http_method ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "http_method__isw": {
+            "description": "Http_method starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "http_method__n": {
             "description": "Http_method not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "http_method__nic": {
+            "description": "Http_method does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "http_method__nie": {
+            "description": "Http_method inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "http_method__niew": {
+            "description": "Http_method does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "http_method__nisw": {
+            "description": "Http_method does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -470,6 +520,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },

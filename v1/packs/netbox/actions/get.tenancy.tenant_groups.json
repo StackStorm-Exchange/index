@@ -5,7 +5,7 @@
     "name": "get.tenancy.tenant_groups",
     "parameters": {
         "ancestor": {
-            "description": "Tenant group (slug)",
+            "description": "Ancestor",
             "required": false,
             "type": "array"
         },
@@ -15,7 +15,7 @@
             "type": "array"
         },
         "ancestor_id": {
-            "description": "Tenant group (ID)",
+            "description": "Ancestor_id",
             "required": false,
             "type": "array"
         },
@@ -123,6 +123,11 @@
             "default": "/tenancy/tenant-groups/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -380,6 +385,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },

@@ -9,11 +9,6 @@
             "required": false,
             "type": "string"
         },
-        "cable_end__n": {
-            "description": "Cable_end not equal to",
-            "required": false,
-            "type": "string"
-        },
         "cable_id": {
             "description": "Cable (ID)",
             "required": false,
@@ -139,6 +134,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -223,6 +223,26 @@
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "location": {
+            "description": "Location",
+            "required": false,
+            "type": "array"
+        },
+        "location__n": {
+            "description": "Location not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "location_id": {
+            "description": "Location_id",
+            "required": false,
+            "type": "array"
+        },
+        "location_id__n": {
+            "description": "Location_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "mark_connected": {
             "description": "Mark_connected",
@@ -374,6 +394,26 @@
             "required": false,
             "type": "string"
         },
+        "region": {
+            "description": "Region",
+            "required": false,
+            "type": "array"
+        },
+        "region__n": {
+            "description": "Region not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "region_id": {
+            "description": "Region_id",
+            "required": false,
+            "type": "array"
+        },
+        "region_id__n": {
+            "description": "Region_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "save_in_key_store": {
             "default": false,
             "description": "Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.",
@@ -398,6 +438,26 @@
             "required": false,
             "type": "array"
         },
+        "site_group": {
+            "description": "Site_group",
+            "required": false,
+            "type": "array"
+        },
+        "site_group__n": {
+            "description": "Site_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "site_group_id": {
+            "description": "Site_group_id",
+            "required": false,
+            "type": "array"
+        },
+        "site_group_id__n": {
+            "description": "Site_group_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "site_id": {
             "description": "Site (ID)",
             "required": false,
@@ -418,13 +478,63 @@
             "required": false,
             "type": "array"
         },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "term_side": {
             "description": "* `A` - A * `Z` - Z",
             "required": false,
             "type": "string"
         },
-        "term_side__n": {
-            "description": "Term_side not equal to",
+        "termination_id": {
+            "description": "Termination_id",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__empty": {
+            "description": "Termination_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "termination_id__gt": {
+            "description": "Termination_id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__gte": {
+            "description": "Termination_id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__lt": {
+            "description": "Termination_id less than",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__lte": {
+            "description": "Termination_id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "termination_id__n": {
+            "description": "Termination_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "termination_type": {
+            "description": "Termination_type",
+            "required": false,
+            "type": "string"
+        },
+        "termination_type__n": {
+            "description": "Termination_type not equal to",
             "required": false,
             "type": "string"
         },

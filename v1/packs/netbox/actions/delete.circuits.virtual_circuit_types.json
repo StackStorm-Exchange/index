@@ -1,0 +1,34 @@
+{
+    "description": "Delete a virtual circuit type object.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "delete.circuits.virtual_circuit_types",
+    "parameters": {
+        "endpoint_uri": {
+            "default": "/circuits/virtual-circuit-types/{{ id }}/",
+            "immutable": true,
+            "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "delete",
+            "immutable": true,
+            "type": "string"
+        },
+        "id": {
+            "description": "ID of the object to delete.",
+            "required": true,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

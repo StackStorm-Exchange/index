@@ -29,6 +29,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "filter_logic": {
             "description": "Loose matches any instance of a given string; exact matches the entire field.\n* `disabled` - Disabled * `loose` - Loose * `exact` - Exact",
             "required": false,
@@ -74,13 +79,18 @@
             "required": false,
             "type": "array"
         },
+        "related_object_filter": {
+            "description": "Filter the object selection choices using a query_params dict (must be a JSON value).Encapsulate strings with double quotes (e.g. &#34;Foo&#34;).",
+            "required": false,
+            "type": "object"
+        },
         "related_object_type": {
             "description": "Related object type",
             "required": false,
             "type": "string"
         },
         "required": {
-            "description": "If true, this field is required when creating new objects or editing an existing object.",
+            "description": "This field is required when creating new objects or editing an existing object.",
             "required": false,
             "type": "boolean"
         },
@@ -103,6 +113,11 @@
             "description": "Specifies whether the custom field is displayed in the UI\n* `always` - Always * `if-set` - If set * `hidden` - Hidden",
             "required": false,
             "type": "string"
+        },
+        "unique": {
+            "description": "Must be unique",
+            "required": false,
+            "type": "boolean"
         },
         "validation_maximum": {
             "description": "Maximum value",

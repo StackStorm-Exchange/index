@@ -35,7 +35,7 @@
             "type": "array"
         },
         "contact_group": {
-            "description": "Contact group",
+            "description": "Contact_group",
             "required": false,
             "type": "array"
         },
@@ -209,13 +209,18 @@
             "required": false,
             "type": "array"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
             "type": "boolean"
         },
         "group": {
-            "description": "Group (slug)",
+            "description": "Group",
             "required": false,
             "type": "array"
         },
@@ -225,7 +230,7 @@
             "type": "array"
         },
         "group_id": {
-            "description": "Group (ID)",
+            "description": "Group_id",
             "required": false,
             "type": "array"
         },
@@ -460,7 +465,7 @@
             "type": "string"
         },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -470,7 +475,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -553,8 +558,53 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -565,6 +615,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -579,7 +639,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -589,7 +649,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },

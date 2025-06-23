@@ -54,8 +54,53 @@
             "required": false,
             "type": "array"
         },
+        "action_type__empty": {
+            "description": "Action_type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "action_type__ic": {
+            "description": "Action_type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "action_type__ie": {
+            "description": "Action_type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "action_type__iew": {
+            "description": "Action_type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "action_type__isw": {
+            "description": "Action_type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "action_type__n": {
             "description": "Action_type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "action_type__nic": {
+            "description": "Action_type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "action_type__nie": {
+            "description": "Action_type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "action_type__niew": {
+            "description": "Action_type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "action_type__nisw": {
+            "description": "Action_type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -163,6 +208,16 @@
             "default": "/extras/event-rules/",
             "immutable": true,
             "type": "string"
+        },
+        "event_type": {
+            "description": "Event_type",
+            "required": false,
+            "type": "array"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -408,30 +463,15 @@
             "required": false,
             "type": "array"
         },
-        "type_create": {
-            "description": "Type_create",
+        "tag_id": {
+            "description": "Tag_id",
             "required": false,
-            "type": "boolean"
+            "type": "array"
         },
-        "type_delete": {
-            "description": "Type_delete",
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
-            "type": "boolean"
-        },
-        "type_job_end": {
-            "description": "Type_job_end",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_job_start": {
-            "description": "Type_job_start",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_update": {
-            "description": "Type_update",
-            "required": false,
-            "type": "boolean"
+            "type": "array"
         },
         "updated_by_request": {
             "description": "Updated_by_request",

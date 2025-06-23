@@ -19,6 +19,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -35,7 +40,7 @@
             "type": "string"
         },
         "size": {
-            "description": "Size (GB)",
+            "description": "Size (MB)",
             "required": false,
             "type": "integer"
         },

@@ -104,6 +104,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -284,28 +289,48 @@
             "required": false,
             "type": "array"
         },
+        "pfs_group__ic": {
+            "description": "Pfs_group contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pfs_group__ie": {
+            "description": "Pfs_group exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pfs_group__iew": {
+            "description": "Pfs_group ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "pfs_group__isw": {
+            "description": "Pfs_group starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "pfs_group__n": {
             "description": "Pfs_group not equal to",
             "required": false,
             "type": "array"
         },
-        "proposal": {
-            "description": "Proposal",
+        "pfs_group__nic": {
+            "description": "Pfs_group does not contain (case-insensitive)",
             "required": false,
             "type": "array"
         },
-        "proposal__n": {
-            "description": "Proposal not equal to",
+        "pfs_group__nie": {
+            "description": "Pfs_group inverse exact match (case-insensitive)",
             "required": false,
             "type": "array"
         },
-        "proposal_id": {
-            "description": "Proposal_id",
+        "pfs_group__niew": {
+            "description": "Pfs_group does not end with (case-insensitive)",
             "required": false,
             "type": "array"
         },
-        "proposal_id__n": {
-            "description": "Proposal_id not equal to",
+        "pfs_group__nisw": {
+            "description": "Pfs_group does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -335,6 +360,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },

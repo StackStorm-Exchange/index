@@ -164,20 +164,15 @@
             "required": false,
             "type": "array"
         },
-        "devicetype_id": {
-            "description": "Device type (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "devicetype_id__n": {
-            "description": "Devicetype_id not equal to",
-            "required": false,
-            "type": "array"
-        },
         "endpoint_uri": {
             "default": "/dcim/front-port-templates/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -334,16 +329,6 @@
             "required": false,
             "type": "array"
         },
-        "moduletype_id": {
-            "description": "Module type (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "moduletype_id__n": {
-            "description": "Moduletype_id not equal to",
-            "required": false,
-            "type": "array"
-        },
         "name": {
             "description": "Name",
             "required": false,
@@ -478,8 +463,53 @@
             "required": false,
             "type": "array"
         },
+        "type__empty": {
+            "description": "Type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "type__ic": {
+            "description": "Type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__ie": {
+            "description": "Type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__iew": {
+            "description": "Type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__isw": {
+            "description": "Type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "type__n": {
             "description": "Type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "type__nic": {
+            "description": "Type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nie": {
+            "description": "Type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__niew": {
+            "description": "Type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nisw": {
+            "description": "Type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },

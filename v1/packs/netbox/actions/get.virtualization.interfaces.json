@@ -139,6 +139,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -295,14 +300,59 @@
             "type": "array"
         },
         "mode": {
-            "description": "IEEE 802.1Q tagging strategy\n* `access` - Access * `tagged` - Tagged * `tagged-all` - Tagged (All)",
+            "description": "802.1Q Mode",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "mode__empty": {
+            "description": "Mode is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "mode__ic": {
+            "description": "Mode contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__ie": {
+            "description": "Mode exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__iew": {
+            "description": "Mode ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__isw": {
+            "description": "Mode starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "mode__n": {
             "description": "Mode not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "mode__nic": {
+            "description": "Mode does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__nie": {
+            "description": "Mode inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__niew": {
+            "description": "Mode does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__nisw": {
+            "description": "Mode does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "modified_by_request": {
             "description": "Modified_by_request",
@@ -419,6 +469,26 @@
             "required": false,
             "type": "array"
         },
+        "primary_mac_address": {
+            "description": "Primary MAC address",
+            "required": false,
+            "type": "array"
+        },
+        "primary_mac_address__n": {
+            "description": "Primary_mac_address not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "primary_mac_address_id": {
+            "description": "Primary MAC address (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "primary_mac_address_id__n": {
+            "description": "Primary_mac_address_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "q": {
             "description": "Search",
             "required": false,
@@ -445,6 +515,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -482,6 +562,26 @@
             "description": "Assigned VLAN",
             "required": false,
             "type": "string"
+        },
+        "vlan_translation_policy": {
+            "description": "VLAN Translation Policy",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_translation_policy__n": {
+            "description": "Vlan_translation_policy not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_translation_policy_id": {
+            "description": "VLAN Translation Policy (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_translation_policy_id__n": {
+            "description": "Vlan_translation_policy_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "vrf": {
             "description": "VRF (RD)",

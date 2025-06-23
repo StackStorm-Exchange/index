@@ -99,6 +99,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "first_name": {
             "description": "First_name",
             "required": false,
@@ -328,6 +333,16 @@
             "description": "Number of results to return per page.",
             "required": false,
             "type": "integer"
+        },
+        "notification_group_id": {
+            "description": "Notification group (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "notification_group_id__n": {
+            "description": "Notification_group_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "offset": {
             "description": "The initial index from which to return the results.",

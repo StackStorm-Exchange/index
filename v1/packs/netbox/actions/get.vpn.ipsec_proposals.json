@@ -9,8 +9,53 @@
             "required": false,
             "type": "array"
         },
+        "authentication_algorithm__empty": {
+            "description": "Authentication_algorithm is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "authentication_algorithm__ic": {
+            "description": "Authentication_algorithm contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "authentication_algorithm__ie": {
+            "description": "Authentication_algorithm exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "authentication_algorithm__iew": {
+            "description": "Authentication_algorithm ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "authentication_algorithm__isw": {
+            "description": "Authentication_algorithm starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "authentication_algorithm__n": {
             "description": "Authentication_algorithm not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "authentication_algorithm__nic": {
+            "description": "Authentication_algorithm does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "authentication_algorithm__nie": {
+            "description": "Authentication_algorithm inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "authentication_algorithm__niew": {
+            "description": "Authentication_algorithm does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "authentication_algorithm__nisw": {
+            "description": "Authentication_algorithm does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -114,8 +159,53 @@
             "required": false,
             "type": "array"
         },
+        "encryption_algorithm__empty": {
+            "description": "Encryption_algorithm is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "encryption_algorithm__ic": {
+            "description": "Encryption_algorithm contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "encryption_algorithm__ie": {
+            "description": "Encryption_algorithm exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "encryption_algorithm__iew": {
+            "description": "Encryption_algorithm ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "encryption_algorithm__isw": {
+            "description": "Encryption_algorithm starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "encryption_algorithm__n": {
             "description": "Encryption_algorithm not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "encryption_algorithm__nic": {
+            "description": "Encryption_algorithm does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "encryption_algorithm__nie": {
+            "description": "Encryption_algorithm inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "encryption_algorithm__niew": {
+            "description": "Encryption_algorithm does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "encryption_algorithm__nisw": {
+            "description": "Encryption_algorithm does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -123,6 +213,11 @@
             "default": "/vpn/ipsec-proposals/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -395,6 +490,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },

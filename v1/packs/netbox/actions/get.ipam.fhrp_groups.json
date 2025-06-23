@@ -64,8 +64,53 @@
             "required": false,
             "type": "array"
         },
+        "auth_type__empty": {
+            "description": "Auth_type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "auth_type__ic": {
+            "description": "Auth_type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__ie": {
+            "description": "Auth_type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__iew": {
+            "description": "Auth_type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__isw": {
+            "description": "Auth_type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "auth_type__n": {
             "description": "Auth_type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nic": {
+            "description": "Auth_type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nie": {
+            "description": "Auth_type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__niew": {
+            "description": "Auth_type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nisw": {
+            "description": "Auth_type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -168,6 +213,11 @@
             "default": "/ipam/fhrp-groups/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -364,8 +414,53 @@
             "required": false,
             "type": "array"
         },
+        "protocol__empty": {
+            "description": "Protocol is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "protocol__ic": {
+            "description": "Protocol contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "protocol__ie": {
+            "description": "Protocol exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "protocol__iew": {
+            "description": "Protocol ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "protocol__isw": {
+            "description": "Protocol starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "protocol__n": {
             "description": "Protocol not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "protocol__nic": {
+            "description": "Protocol does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "protocol__nie": {
+            "description": "Protocol inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "protocol__niew": {
+            "description": "Protocol does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "protocol__nisw": {
+            "description": "Protocol does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -400,6 +495,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },

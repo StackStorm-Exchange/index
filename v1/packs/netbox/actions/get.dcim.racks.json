@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "get.dcim.racks",
     "parameters": {
+        "airflow": {
+            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front",
+            "required": false,
+            "type": "string"
+        },
         "asset_tag": {
             "description": "Asset_tag",
             "required": false,
@@ -70,7 +75,7 @@
             "type": "array"
         },
         "contact_group": {
-            "description": "Contact group",
+            "description": "Contact_group",
             "required": false,
             "type": "array"
         },
@@ -249,6 +254,66 @@
             "required": false,
             "type": "array"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
+        "form_factor": {
+            "description": "Form_factor",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__empty": {
+            "description": "Form_factor is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "form_factor__ic": {
+            "description": "Form_factor contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__ie": {
+            "description": "Form_factor exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__iew": {
+            "description": "Form_factor ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__isw": {
+            "description": "Form_factor starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__n": {
+            "description": "Form_factor not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__nic": {
+            "description": "Form_factor does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__nie": {
+            "description": "Form_factor inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__niew": {
+            "description": "Form_factor does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "form_factor__nisw": {
+            "description": "Form_factor does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -335,7 +400,7 @@
             "type": "integer"
         },
         "location": {
-            "description": "Location (slug)",
+            "description": "Location",
             "required": false,
             "type": "array"
         },
@@ -345,12 +410,32 @@
             "type": "array"
         },
         "location_id": {
-            "description": "Location (ID)",
+            "description": "Location_id",
             "required": false,
             "type": "array"
         },
         "location_id__n": {
             "description": "Location_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "manufacturer": {
+            "description": "Manufacturer (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "manufacturer__n": {
+            "description": "Manufacturer not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "manufacturer_id": {
+            "description": "Manufacturer (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "manufacturer_id__n": {
+            "description": "Manufacturer_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -529,13 +614,43 @@
             "required": false,
             "type": "array"
         },
+        "outer_height": {
+            "description": "Outer_height",
+            "required": false,
+            "type": "array"
+        },
+        "outer_height__empty": {
+            "description": "Outer_height is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "outer_height__gt": {
+            "description": "Outer_height greater than",
+            "required": false,
+            "type": "array"
+        },
+        "outer_height__gte": {
+            "description": "Outer_height greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "outer_height__lt": {
+            "description": "Outer_height less than",
+            "required": false,
+            "type": "array"
+        },
+        "outer_height__lte": {
+            "description": "Outer_height less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "outer_height__n": {
+            "description": "Outer_height not equal to",
+            "required": false,
+            "type": "array"
+        },
         "outer_unit": {
             "description": "* `mm` - Millimeters * `in` - Inches",
-            "required": false,
-            "type": "string"
-        },
-        "outer_unit__n": {
-            "description": "Outer_unit not equal to",
             "required": false,
             "type": "string"
         },
@@ -579,8 +694,28 @@
             "required": false,
             "type": "string"
         },
+        "rack_type": {
+            "description": "Rack type (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "rack_type__n": {
+            "description": "Rack_type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rack_type_id": {
+            "description": "Rack type (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "rack_type_id__n": {
+            "description": "Rack_type_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -590,7 +725,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -699,7 +834,7 @@
             "type": "array"
         },
         "site_group": {
-            "description": "Site group (slug)",
+            "description": "Site_group",
             "required": false,
             "type": "array"
         },
@@ -709,7 +844,7 @@
             "type": "array"
         },
         "site_group_id": {
-            "description": "Site group (ID)",
+            "description": "Site_group_id",
             "required": false,
             "type": "array"
         },
@@ -768,8 +903,53 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -780,6 +960,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -794,7 +984,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -804,7 +994,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },
@@ -820,16 +1010,6 @@
         },
         "tenant_id__n": {
             "description": "Tenant_id not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "type": {
-            "description": "Type",
-            "required": false,
-            "type": "array"
-        },
-        "type__n": {
-            "description": "Type not equal to",
             "required": false,
             "type": "array"
         },
@@ -913,18 +1093,53 @@
             "required": false,
             "type": "string"
         },
-        "weight_unit__n": {
-            "description": "Weight_unit not equal to",
-            "required": false,
-            "type": "string"
-        },
         "width": {
             "description": "Rail-to-rail width",
             "required": false,
             "type": "array"
         },
+        "width__ic": {
+            "description": "Width contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "width__ie": {
+            "description": "Width exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "width__iew": {
+            "description": "Width ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "width__isw": {
+            "description": "Width starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "width__n": {
             "description": "Width not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "width__nic": {
+            "description": "Width does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "width__nie": {
+            "description": "Width inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "width__niew": {
+            "description": "Width does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "width__nisw": {
+            "description": "Width does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         }

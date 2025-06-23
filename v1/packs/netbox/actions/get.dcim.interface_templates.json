@@ -119,16 +119,6 @@
             "required": false,
             "type": "array"
         },
-        "devicetype_id": {
-            "description": "Device type (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "devicetype_id__n": {
-            "description": "Devicetype_id not equal to",
-            "required": false,
-            "type": "array"
-        },
         "enabled": {
             "description": "Enabled",
             "required": false,
@@ -138,6 +128,11 @@
             "default": "/dcim/interface-templates/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -299,16 +294,6 @@
             "required": false,
             "type": "array"
         },
-        "moduletype_id": {
-            "description": "Module type (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "moduletype_id__n": {
-            "description": "Moduletype_id not equal to",
-            "required": false,
-            "type": "array"
-        },
         "name": {
             "description": "Name",
             "required": false,
@@ -379,8 +364,53 @@
             "required": false,
             "type": "array"
         },
+        "poe_mode__empty": {
+            "description": "Poe_mode is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "poe_mode__ic": {
+            "description": "Poe_mode contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__ie": {
+            "description": "Poe_mode exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__iew": {
+            "description": "Poe_mode ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__isw": {
+            "description": "Poe_mode starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "poe_mode__n": {
             "description": "Poe_mode not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__nic": {
+            "description": "Poe_mode does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__nie": {
+            "description": "Poe_mode inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__niew": {
+            "description": "Poe_mode does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__nisw": {
+            "description": "Poe_mode does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -389,8 +419,53 @@
             "required": false,
             "type": "array"
         },
+        "poe_type__empty": {
+            "description": "Poe_type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "poe_type__ic": {
+            "description": "Poe_type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__ie": {
+            "description": "Poe_type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__iew": {
+            "description": "Poe_type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__isw": {
+            "description": "Poe_type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "poe_type__n": {
             "description": "Poe_type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__nic": {
+            "description": "Poe_type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__nie": {
+            "description": "Poe_type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__niew": {
+            "description": "Poe_type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__nisw": {
+            "description": "Poe_type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -404,8 +479,53 @@
             "required": false,
             "type": "array"
         },
+        "rf_role__empty": {
+            "description": "Rf_role is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "rf_role__ic": {
+            "description": "Rf_role contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__ie": {
+            "description": "Rf_role exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__iew": {
+            "description": "Rf_role ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__isw": {
+            "description": "Rf_role starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "rf_role__n": {
             "description": "Rf_role not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__nic": {
+            "description": "Rf_role does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__nie": {
+            "description": "Rf_role inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__niew": {
+            "description": "Rf_role does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__nisw": {
+            "description": "Rf_role does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -428,8 +548,53 @@
             "required": false,
             "type": "array"
         },
+        "type__empty": {
+            "description": "Type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "type__ic": {
+            "description": "Type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__ie": {
+            "description": "Type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__iew": {
+            "description": "Type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__isw": {
+            "description": "Type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "type__n": {
             "description": "Type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "type__nic": {
+            "description": "Type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nie": {
+            "description": "Type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__niew": {
+            "description": "Type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nisw": {
+            "description": "Type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },

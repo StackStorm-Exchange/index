@@ -104,6 +104,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -190,7 +195,7 @@
             "type": "integer"
         },
         "location": {
-            "description": "Location (slug)",
+            "description": "Location",
             "required": false,
             "type": "array"
         },
@@ -200,7 +205,7 @@
             "type": "array"
         },
         "location_id": {
-            "description": "Location (ID)",
+            "description": "Location_id",
             "required": false,
             "type": "array"
         },
@@ -240,7 +245,7 @@
             "type": "array"
         },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -250,7 +255,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -284,7 +289,7 @@
             "type": "array"
         },
         "site_group": {
-            "description": "Site group (slug)",
+            "description": "Site_group",
             "required": false,
             "type": "array"
         },
@@ -294,7 +299,7 @@
             "type": "array"
         },
         "site_group_id": {
-            "description": "Site group (ID)",
+            "description": "Site_group_id",
             "required": false,
             "type": "array"
         },
@@ -323,6 +328,16 @@
             "required": false,
             "type": "array"
         },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "tenant": {
             "description": "Tenant (slug)",
             "required": false,
@@ -334,7 +349,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -344,7 +359,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },

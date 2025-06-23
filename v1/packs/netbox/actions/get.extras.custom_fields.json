@@ -124,13 +124,13 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "filter_logic": {
             "description": "Loose matches any instance of a given string; exact matches the entire field.\n* `disabled` - Disabled * `loose` - Loose * `exact` - Exact",
-            "required": false,
-            "type": "string"
-        },
-        "filter_logic__n": {
-            "description": "Filter_logic not equal to",
             "required": false,
             "type": "string"
         },
@@ -548,8 +548,53 @@
             "required": false,
             "type": "array"
         },
+        "type__empty": {
+            "description": "Type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "type__ic": {
+            "description": "Type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__ie": {
+            "description": "Type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__iew": {
+            "description": "Type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__isw": {
+            "description": "Type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "type__n": {
             "description": "Type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "type__nic": {
+            "description": "Type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nie": {
+            "description": "Type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__niew": {
+            "description": "Type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nisw": {
+            "description": "Type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -558,20 +603,15 @@
             "required": false,
             "type": "string"
         },
-        "ui_editable__n": {
-            "description": "Ui_editable not equal to",
-            "required": false,
-            "type": "string"
-        },
         "ui_visible": {
             "description": "Specifies whether the custom field is displayed in the UI\n* `always` - Always * `if-set` - If set * `hidden` - Hidden",
             "required": false,
             "type": "string"
         },
-        "ui_visible__n": {
-            "description": "Ui_visible not equal to",
+        "unique": {
+            "description": "Unique",
             "required": false,
-            "type": "string"
+            "type": "boolean"
         },
         "updated_by_request": {
             "description": "Updated_by_request",

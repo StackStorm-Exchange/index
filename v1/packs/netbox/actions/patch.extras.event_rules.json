@@ -15,7 +15,7 @@
             "type": "string"
         },
         "action_type": {
-            "description": "* `webhook` - Webhook * `script` - Script",
+            "description": "* `webhook` - Webhook * `script` - Script * `notification` - Notification",
             "required": false,
             "type": "string"
         },
@@ -43,6 +43,16 @@
             "default": "/extras/event-rules/{{ id }}/",
             "immutable": true,
             "type": "string"
+        },
+        "event_types": {
+            "description": "The types of event which will trigger this rule.",
+            "required": false,
+            "type": "array"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -73,31 +83,6 @@
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
-        },
-        "type_create": {
-            "description": "On create",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_delete": {
-            "description": "On delete",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_job_end": {
-            "description": "On job end",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_job_start": {
-            "description": "On job start",
-            "required": false,
-            "type": "boolean"
-        },
-        "type_update": {
-            "description": "On update",
-            "required": false,
-            "type": "boolean"
         }
     },
     "runner_type": "python-script"

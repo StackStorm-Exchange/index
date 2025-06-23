@@ -59,6 +59,36 @@
             "required": false,
             "type": "array"
         },
+        "contact": {
+            "description": "Contact",
+            "required": false,
+            "type": "array"
+        },
+        "contact__n": {
+            "description": "Contact not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "contact_group": {
+            "description": "Contact_group",
+            "required": false,
+            "type": "array"
+        },
+        "contact_group__n": {
+            "description": "Contact_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "contact_role": {
+            "description": "Contact Role",
+            "required": false,
+            "type": "array"
+        },
+        "contact_role__n": {
+            "description": "Contact_role not equal to",
+            "required": false,
+            "type": "array"
+        },
         "created": {
             "description": "Created",
             "required": false,
@@ -158,6 +188,11 @@
             "default": "/circuits/provider-accounts/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -360,6 +395,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },

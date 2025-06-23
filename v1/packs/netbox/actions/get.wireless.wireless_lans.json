@@ -9,8 +9,53 @@
             "required": false,
             "type": "array"
         },
+        "auth_cipher__empty": {
+            "description": "Auth_cipher is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "auth_cipher__ic": {
+            "description": "Auth_cipher contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__ie": {
+            "description": "Auth_cipher exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__iew": {
+            "description": "Auth_cipher ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__isw": {
+            "description": "Auth_cipher starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "auth_cipher__n": {
             "description": "Auth_cipher not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__nic": {
+            "description": "Auth_cipher does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__nie": {
+            "description": "Auth_cipher inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__niew": {
+            "description": "Auth_cipher does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__nisw": {
+            "description": "Auth_cipher does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -74,8 +119,53 @@
             "required": false,
             "type": "array"
         },
+        "auth_type__empty": {
+            "description": "Auth_type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "auth_type__ic": {
+            "description": "Auth_type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__ie": {
+            "description": "Auth_type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__iew": {
+            "description": "Auth_type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__isw": {
+            "description": "Auth_type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "auth_type__n": {
             "description": "Auth_type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nic": {
+            "description": "Auth_type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nie": {
+            "description": "Auth_type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__niew": {
+            "description": "Auth_type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nisw": {
+            "description": "Auth_type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -178,6 +268,11 @@
             "default": "/wireless/wireless-lans/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -294,6 +389,26 @@
             "required": false,
             "type": "integer"
         },
+        "location": {
+            "description": "Location",
+            "required": false,
+            "type": "array"
+        },
+        "location__n": {
+            "description": "Location not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "location_id": {
+            "description": "Location_id",
+            "required": false,
+            "type": "array"
+        },
+        "location_id__n": {
+            "description": "Location_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "modified_by_request": {
             "description": "Modified_by_request",
             "required": false,
@@ -314,6 +429,26 @@
             "required": false,
             "type": "string"
         },
+        "region": {
+            "description": "Region",
+            "required": false,
+            "type": "array"
+        },
+        "region__n": {
+            "description": "Region not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "region_id": {
+            "description": "Region_id",
+            "required": false,
+            "type": "array"
+        },
+        "region_id__n": {
+            "description": "Region_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "save_in_key_store": {
             "default": false,
             "description": "Save the result of the action as a json object in the st2 key store. Used when the expected result from Netbox is very large and the result will be piped to another action. You must also specify a save_in_key_store_keyname and an optional save_in_key_store_ttl.",
@@ -327,6 +462,91 @@
             "default": 60,
             "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
             "type": "integer"
+        },
+        "scope_id": {
+            "description": "Scope_id",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__empty": {
+            "description": "Scope_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "scope_id__gt": {
+            "description": "Scope_id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__gte": {
+            "description": "Scope_id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__lt": {
+            "description": "Scope_id less than",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__lte": {
+            "description": "Scope_id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__n": {
+            "description": "Scope_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "scope_type": {
+            "description": "Scope_type",
+            "required": false,
+            "type": "string"
+        },
+        "scope_type__n": {
+            "description": "Scope_type not equal to",
+            "required": false,
+            "type": "string"
+        },
+        "site": {
+            "description": "Site (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "site__n": {
+            "description": "Site not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "site_group": {
+            "description": "Site_group",
+            "required": false,
+            "type": "array"
+        },
+        "site_group__n": {
+            "description": "Site_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "site_group_id": {
+            "description": "Site_group_id",
+            "required": false,
+            "type": "array"
+        },
+        "site_group_id__n": {
+            "description": "Site_group_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "site_id": {
+            "description": "Site (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "site_id__n": {
+            "description": "Site_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "ssid": {
             "description": "Ssid",
@@ -388,8 +608,53 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -400,6 +665,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -414,7 +689,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -424,7 +699,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },

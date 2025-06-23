@@ -24,6 +24,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -49,23 +54,23 @@
             "required": false,
             "type": "string"
         },
-        "provider_network": {
-            "description": "Provider network",
-            "required": false,
-            "type": "object"
-        },
-        "site": {
-            "description": "Site",
-            "required": false,
-            "type": "object"
-        },
         "tags": {
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
         },
         "term_side": {
-            "description": "Termination",
+            "description": "Termination side",
+            "required": false,
+            "type": "string"
+        },
+        "termination_id": {
+            "description": "Termination id",
+            "required": false,
+            "type": "integer"
+        },
+        "termination_type": {
+            "description": "Termination type",
             "required": false,
             "type": "string"
         },

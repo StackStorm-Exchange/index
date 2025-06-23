@@ -9,6 +9,11 @@
             "required": false,
             "type": "string"
         },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
         "config_template": {
             "description": "Config template",
             "required": false,
@@ -29,6 +34,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -48,6 +58,11 @@
             "description": "Name",
             "required": false,
             "type": "string"
+        },
+        "parent": {
+            "description": "Parent",
+            "required": false,
+            "type": "integer"
         },
         "slug": {
             "description": "Slug",

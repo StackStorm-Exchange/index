@@ -9,8 +9,53 @@
             "required": false,
             "type": "array"
         },
+        "auth_cipher__empty": {
+            "description": "Auth_cipher is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "auth_cipher__ic": {
+            "description": "Auth_cipher contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__ie": {
+            "description": "Auth_cipher exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__iew": {
+            "description": "Auth_cipher ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__isw": {
+            "description": "Auth_cipher starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "auth_cipher__n": {
             "description": "Auth_cipher not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__nic": {
+            "description": "Auth_cipher does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__nie": {
+            "description": "Auth_cipher inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__niew": {
+            "description": "Auth_cipher does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_cipher__nisw": {
+            "description": "Auth_cipher does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -74,8 +119,53 @@
             "required": false,
             "type": "array"
         },
+        "auth_type__empty": {
+            "description": "Auth_type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "auth_type__ic": {
+            "description": "Auth_type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__ie": {
+            "description": "Auth_type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__iew": {
+            "description": "Auth_type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__isw": {
+            "description": "Auth_type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "auth_type__n": {
             "description": "Auth_type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nic": {
+            "description": "Auth_type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nie": {
+            "description": "Auth_type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__niew": {
+            "description": "Auth_type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "auth_type__nisw": {
+            "description": "Auth_type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -174,10 +264,55 @@
             "required": false,
             "type": "array"
         },
+        "distance": {
+            "description": "Distance",
+            "required": false,
+            "type": "array"
+        },
+        "distance__empty": {
+            "description": "Distance is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "distance__gt": {
+            "description": "Distance greater than",
+            "required": false,
+            "type": "array"
+        },
+        "distance__gte": {
+            "description": "Distance greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "distance__lt": {
+            "description": "Distance less than",
+            "required": false,
+            "type": "array"
+        },
+        "distance__lte": {
+            "description": "Distance less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "distance__n": {
+            "description": "Distance not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "distance_unit": {
+            "description": "* `km` - Kilometers * `m` - Meters * `mi` - Miles * `ft` - Feet",
+            "required": false,
+            "type": "string"
+        },
         "endpoint_uri": {
             "default": "/wireless/wireless-links/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -378,8 +513,53 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -390,6 +570,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -404,7 +594,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -414,7 +604,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },

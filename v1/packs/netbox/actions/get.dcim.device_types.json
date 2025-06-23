@@ -5,12 +5,7 @@
     "name": "get.dcim.device_types",
     "parameters": {
         "airflow": {
-            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `passive` - Passive * `mixed` - Mixed",
-            "required": false,
-            "type": "string"
-        },
-        "airflow__n": {
-            "description": "Airflow not equal to",
+            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front * `left-to-right` - Left to right * `right-to-left` - Right to left * `side-to-rear` - Side to rear * `rear-to-side` - Rear to side * `bottom-to-top` - Bottom to top * `top-to-bottom` - Top to bottom * `passive` - Passive * `mixed` - Mixed",
             "required": false,
             "type": "string"
         },
@@ -257,6 +252,11 @@
         "exclude_from_utilization": {
             "description": "Exclude_from_utilization",
             "required": false,
+            "type": "boolean"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
             "type": "boolean"
         },
         "front_port_template_count": {
@@ -858,11 +858,6 @@
             "required": false,
             "type": "string"
         },
-        "subdevice_role__n": {
-            "description": "Subdevice_role not equal to",
-            "required": false,
-            "type": "string"
-        },
         "tag": {
             "description": "Tag",
             "required": false,
@@ -870,6 +865,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -950,11 +955,6 @@
         },
         "weight_unit": {
             "description": "* `kg` - Kilograms * `g` - Grams * `lb` - Pounds * `oz` - Ounces",
-            "required": false,
-            "type": "string"
-        },
-        "weight_unit__n": {
-            "description": "Weight_unit not equal to",
             "required": false,
             "type": "string"
         }

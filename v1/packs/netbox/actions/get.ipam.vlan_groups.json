@@ -14,8 +14,8 @@
             "required": false,
             "type": "integer"
         },
-        "clustergroup": {
-            "description": "Clustergroup",
+        "contains_vid": {
+            "description": "Contains_vid",
             "required": false,
             "type": "integer"
         },
@@ -119,6 +119,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -208,76 +213,6 @@
             "description": "Location",
             "required": false,
             "type": "integer"
-        },
-        "max_vid": {
-            "description": "Max_vid",
-            "required": false,
-            "type": "array"
-        },
-        "max_vid__empty": {
-            "description": "Max_vid is empty/null (boolean)",
-            "required": false,
-            "type": "boolean"
-        },
-        "max_vid__gt": {
-            "description": "Max_vid greater than",
-            "required": false,
-            "type": "array"
-        },
-        "max_vid__gte": {
-            "description": "Max_vid greater than or equal to",
-            "required": false,
-            "type": "array"
-        },
-        "max_vid__lt": {
-            "description": "Max_vid less than",
-            "required": false,
-            "type": "array"
-        },
-        "max_vid__lte": {
-            "description": "Max_vid less than or equal to",
-            "required": false,
-            "type": "array"
-        },
-        "max_vid__n": {
-            "description": "Max_vid not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "min_vid": {
-            "description": "Min_vid",
-            "required": false,
-            "type": "array"
-        },
-        "min_vid__empty": {
-            "description": "Min_vid is empty/null (boolean)",
-            "required": false,
-            "type": "boolean"
-        },
-        "min_vid__gt": {
-            "description": "Min_vid greater than",
-            "required": false,
-            "type": "array"
-        },
-        "min_vid__gte": {
-            "description": "Min_vid greater than or equal to",
-            "required": false,
-            "type": "array"
-        },
-        "min_vid__lt": {
-            "description": "Min_vid less than",
-            "required": false,
-            "type": "array"
-        },
-        "min_vid__lte": {
-            "description": "Min_vid less than or equal to",
-            "required": false,
-            "type": "array"
-        },
-        "min_vid__n": {
-            "description": "Min_vid not equal to",
-            "required": false,
-            "type": "array"
         },
         "modified_by_request": {
             "description": "Modified_by_request",
@@ -433,11 +368,6 @@
             "required": false,
             "type": "integer"
         },
-        "sitegroup": {
-            "description": "Sitegroup",
-            "required": false,
-            "type": "integer"
-        },
         "slug": {
             "description": "Slug",
             "required": false,
@@ -500,6 +430,56 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tenant": {
+            "description": "Tenant (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "tenant__n": {
+            "description": "Tenant not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_group": {
+            "description": "Tenant_group",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_group__n": {
+            "description": "Tenant_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_group_id": {
+            "description": "Tenant_group_id",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_group_id__n": {
+            "description": "Tenant_group_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_id": {
+            "description": "Tenant (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "tenant_id__n": {
+            "description": "Tenant_id not equal to",
             "required": false,
             "type": "array"
         },

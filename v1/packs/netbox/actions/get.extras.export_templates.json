@@ -169,6 +169,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "file_extension": {
             "description": "File_extension",
             "required": false,
@@ -221,6 +226,61 @@
         },
         "file_extension__nisw": {
             "description": "File_extension does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "file_name": {
+            "description": "File_name",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__empty": {
+            "description": "File_name is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "file_name__ic": {
+            "description": "File_name contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__ie": {
+            "description": "File_name exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__iew": {
+            "description": "File_name ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__isw": {
+            "description": "File_name starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__n": {
+            "description": "File_name not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__nic": {
+            "description": "File_name does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__nie": {
+            "description": "File_name inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__niew": {
+            "description": "File_name does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "file_name__nisw": {
+            "description": "File_name does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },

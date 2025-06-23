@@ -19,11 +19,6 @@
             "required": false,
             "type": "string"
         },
-        "cable_end__n": {
-            "description": "Cable_end not equal to",
-            "required": false,
-            "type": "string"
-        },
         "cable_id": {
             "description": "Cable (ID)",
             "required": false,
@@ -159,6 +154,81 @@
             "required": false,
             "type": "array"
         },
+        "device_role": {
+            "description": "Device role (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "device_role__n": {
+            "description": "Device_role not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_role_id": {
+            "description": "Device role (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "device_role_id__n": {
+            "description": "Device_role_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_status": {
+            "description": "Device_status",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__empty": {
+            "description": "Device_status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "device_status__ic": {
+            "description": "Device_status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__ie": {
+            "description": "Device_status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__iew": {
+            "description": "Device_status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__isw": {
+            "description": "Device_status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__n": {
+            "description": "Device_status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__nic": {
+            "description": "Device_status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__nie": {
+            "description": "Device_status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__niew": {
+            "description": "Device_status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__nisw": {
+            "description": "Device_status does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "device_type": {
             "description": "Device type (model)",
             "required": false,
@@ -184,8 +254,53 @@
             "required": false,
             "type": "array"
         },
+        "duplex__empty": {
+            "description": "Duplex is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "duplex__ic": {
+            "description": "Duplex contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "duplex__ie": {
+            "description": "Duplex exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "duplex__iew": {
+            "description": "Duplex ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "duplex__isw": {
+            "description": "Duplex starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "duplex__n": {
             "description": "Duplex not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "duplex__nic": {
+            "description": "Duplex does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "duplex__nie": {
+            "description": "Duplex inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "duplex__niew": {
+            "description": "Duplex does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "duplex__nisw": {
+            "description": "Duplex does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -198,6 +313,11 @@
             "default": "/dcim/interfaces/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -455,14 +575,59 @@
             "type": "boolean"
         },
         "mode": {
-            "description": "IEEE 802.1Q tagging strategy\n* `access` - Access * `tagged` - Tagged * `tagged-all` - Tagged (All)",
+            "description": "802.1Q Mode",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "mode__empty": {
+            "description": "Mode is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "mode__ic": {
+            "description": "Mode contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__ie": {
+            "description": "Mode exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__iew": {
+            "description": "Mode ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__isw": {
+            "description": "Mode starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "mode__n": {
             "description": "Mode not equal to",
             "required": false,
-            "type": "string"
+            "type": "array"
+        },
+        "mode__nic": {
+            "description": "Mode does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__nie": {
+            "description": "Mode inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__niew": {
+            "description": "Mode does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__nisw": {
+            "description": "Mode does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
         },
         "modified_by_request": {
             "description": "Modified_by_request",
@@ -599,8 +764,53 @@
             "required": false,
             "type": "array"
         },
+        "poe_mode__empty": {
+            "description": "Poe_mode is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "poe_mode__ic": {
+            "description": "Poe_mode contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__ie": {
+            "description": "Poe_mode exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__iew": {
+            "description": "Poe_mode ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__isw": {
+            "description": "Poe_mode starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "poe_mode__n": {
             "description": "Poe_mode not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__nic": {
+            "description": "Poe_mode does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__nie": {
+            "description": "Poe_mode inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__niew": {
+            "description": "Poe_mode does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_mode__nisw": {
+            "description": "Poe_mode does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -609,8 +819,73 @@
             "required": false,
             "type": "array"
         },
+        "poe_type__empty": {
+            "description": "Poe_type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "poe_type__ic": {
+            "description": "Poe_type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__ie": {
+            "description": "Poe_type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__iew": {
+            "description": "Poe_type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__isw": {
+            "description": "Poe_type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "poe_type__n": {
             "description": "Poe_type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__nic": {
+            "description": "Poe_type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__nie": {
+            "description": "Poe_type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__niew": {
+            "description": "Poe_type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "poe_type__nisw": {
+            "description": "Poe_type does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "primary_mac_address": {
+            "description": "Primary MAC address",
+            "required": false,
+            "type": "array"
+        },
+        "primary_mac_address__n": {
+            "description": "Primary_mac_address not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "primary_mac_address_id": {
+            "description": "Primary MAC address (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "primary_mac_address_id__n": {
+            "description": "Primary_mac_address_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -640,7 +915,7 @@
             "type": "array"
         },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -650,7 +925,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -664,8 +939,53 @@
             "required": false,
             "type": "array"
         },
+        "rf_channel__empty": {
+            "description": "Rf_channel is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "rf_channel__ic": {
+            "description": "Rf_channel contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_channel__ie": {
+            "description": "Rf_channel exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_channel__iew": {
+            "description": "Rf_channel ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_channel__isw": {
+            "description": "Rf_channel starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "rf_channel__n": {
             "description": "Rf_channel not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "rf_channel__nic": {
+            "description": "Rf_channel does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_channel__nie": {
+            "description": "Rf_channel inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_channel__niew": {
+            "description": "Rf_channel does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_channel__nisw": {
+            "description": "Rf_channel does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -744,28 +1064,53 @@
             "required": false,
             "type": "array"
         },
+        "rf_role__empty": {
+            "description": "Rf_role is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "rf_role__ic": {
+            "description": "Rf_role contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__ie": {
+            "description": "Rf_role exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__iew": {
+            "description": "Rf_role ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "rf_role__isw": {
+            "description": "Rf_role starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "rf_role__n": {
             "description": "Rf_role not equal to",
             "required": false,
             "type": "array"
         },
-        "role": {
-            "description": "Device role (slug)",
+        "rf_role__nic": {
+            "description": "Rf_role does not contain (case-insensitive)",
             "required": false,
             "type": "array"
         },
-        "role__n": {
-            "description": "Role not equal to",
+        "rf_role__nie": {
+            "description": "Rf_role inverse exact match (case-insensitive)",
             "required": false,
             "type": "array"
         },
-        "role_id": {
-            "description": "Device role (ID)",
+        "rf_role__niew": {
+            "description": "Rf_role does not end with (case-insensitive)",
             "required": false,
             "type": "array"
         },
-        "role_id__n": {
-            "description": "Role_id not equal to",
+        "rf_role__nisw": {
+            "description": "Rf_role does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -794,7 +1139,7 @@
             "type": "array"
         },
         "site_group": {
-            "description": "Site group (slug)",
+            "description": "Site_group",
             "required": false,
             "type": "array"
         },
@@ -804,7 +1149,7 @@
             "type": "array"
         },
         "site_group_id": {
-            "description": "Site group (ID)",
+            "description": "Site_group_id",
             "required": false,
             "type": "array"
         },
@@ -868,6 +1213,16 @@
             "required": false,
             "type": "array"
         },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "tx_power": {
             "description": "Tx_power",
             "required": false,
@@ -908,8 +1263,53 @@
             "required": false,
             "type": "array"
         },
+        "type__empty": {
+            "description": "Type is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "type__ic": {
+            "description": "Type contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__ie": {
+            "description": "Type exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__iew": {
+            "description": "Type ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__isw": {
+            "description": "Type starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "type__n": {
             "description": "Type not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "type__nic": {
+            "description": "Type does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nie": {
+            "description": "Type inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__niew": {
+            "description": "Type does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "type__nisw": {
+            "description": "Type does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -978,6 +1378,26 @@
             "required": false,
             "type": "array"
         },
+        "virtual_circuit_id": {
+            "description": "Virtual circuit (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_circuit_id__n": {
+            "description": "Virtual_circuit_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_circuit_termination_id": {
+            "description": "Virtual circuit termination (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "virtual_circuit_termination_id__n": {
+            "description": "Virtual_circuit_termination_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "vlan": {
             "description": "Assigned VID",
             "required": false,
@@ -987,6 +1407,26 @@
             "description": "Assigned VLAN",
             "required": false,
             "type": "string"
+        },
+        "vlan_translation_policy": {
+            "description": "VLAN Translation Policy",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_translation_policy__n": {
+            "description": "Vlan_translation_policy not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_translation_policy_id": {
+            "description": "VLAN Translation Policy (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_translation_policy_id__n": {
+            "description": "Vlan_translation_policy_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "vrf": {
             "description": "VRF (RD)",

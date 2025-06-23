@@ -5,7 +5,7 @@ keywords:
 - networking
 - ipam
 - dcim
-version: 3.4.3
+version: 3.4.4
 python_versions:
 - '3'
 author: John Anderson, Jefferson White
@@ -14,14 +14,19 @@ contributors:
 - Abhimanyu Saharan <asaharan@onemindservices.com>
 content:
   actions:
-    count: 560
+    count: 632
     resources:
+    - delete.circuits.circuit_group_assignments
+    - delete.circuits.circuit_groups
     - delete.circuits.circuit_terminations
     - delete.circuits.circuit_types
     - delete.circuits.circuits
     - delete.circuits.provider_accounts
     - delete.circuits.provider_networks
     - delete.circuits.providers
+    - delete.circuits.virtual_circuit_terminations
+    - delete.circuits.virtual_circuit_types
+    - delete.circuits.virtual_circuits
     - delete.core.data_sources
     - delete.dcim.cable_terminations
     - delete.dcim.cables
@@ -42,9 +47,11 @@ content:
     - delete.dcim.inventory_item_templates
     - delete.dcim.inventory_items
     - delete.dcim.locations
+    - delete.dcim.mac_addresses
     - delete.dcim.manufacturers
     - delete.dcim.module_bay_templates
     - delete.dcim.module_bays
+    - delete.dcim.module_type_profiles
     - delete.dcim.module_types
     - delete.dcim.modules
     - delete.dcim.platforms
@@ -56,6 +63,7 @@ content:
     - delete.dcim.power_ports
     - delete.dcim.rack_reservations
     - delete.dcim.rack_roles
+    - delete.dcim.rack_types
     - delete.dcim.racks
     - delete.dcim.rear_port_templates
     - delete.dcim.rear_ports
@@ -75,8 +83,12 @@ content:
     - delete.extras.export_templates
     - delete.extras.image_attachments
     - delete.extras.journal_entries
+    - delete.extras.notification_groups
+    - delete.extras.notifications
     - delete.extras.saved_filters
     - delete.extras.scripts
+    - delete.extras.subscriptions
+    - delete.extras.table_configs
     - delete.extras.tags
     - delete.extras.webhooks
     - delete.ipam.aggregates
@@ -93,6 +105,8 @@ content:
     - delete.ipam.service_templates
     - delete.ipam.services
     - delete.ipam.vlan_groups
+    - delete.ipam.vlan_translation_policies
+    - delete.ipam.vlan_translation_rules
     - delete.ipam.vlans
     - delete.ipam.vrfs
     - delete.tenancy.contact_assignments
@@ -124,6 +138,8 @@ content:
     - delete.wireless.wireless_lan_groups
     - delete.wireless.wireless_lans
     - delete.wireless.wireless_links
+    - get.circuits.circuit_group_assignments
+    - get.circuits.circuit_groups
     - get.circuits.circuit_terminations
     - get.circuits.circuit_terminations.paths
     - get.circuits.circuit_types
@@ -131,9 +147,14 @@ content:
     - get.circuits.provider_accounts
     - get.circuits.provider_networks
     - get.circuits.providers
+    - get.circuits.virtual_circuit_terminations
+    - get.circuits.virtual_circuit_terminations.paths
+    - get.circuits.virtual_circuit_types
+    - get.circuits.virtual_circuits
     - get.core.data_files
     - get.core.data_sources
     - get.core.jobs
+    - get.core.object_changes
     - get.dcim.cable_terminations
     - get.dcim.cables
     - get.dcim.connected_device
@@ -158,9 +179,11 @@ content:
     - get.dcim.inventory_item_templates
     - get.dcim.inventory_items
     - get.dcim.locations
+    - get.dcim.mac_addresses
     - get.dcim.manufacturers
     - get.dcim.module_bay_templates
     - get.dcim.module_bays
+    - get.dcim.module_type_profiles
     - get.dcim.module_types
     - get.dcim.modules
     - get.dcim.platforms
@@ -175,6 +198,7 @@ content:
     - get.dcim.power_ports.trace
     - get.dcim.rack_reservations
     - get.dcim.rack_roles
+    - get.dcim.rack_types
     - get.dcim.racks
     - get.dcim.racks.elevation
     - get.dcim.rear_port_templates
@@ -196,10 +220,14 @@ content:
     - get.extras.export_templates
     - get.extras.image_attachments
     - get.extras.journal_entries
-    - get.extras.object_changes
+    - get.extras.notification_groups
+    - get.extras.notifications
     - get.extras.object_types
     - get.extras.saved_filters
     - get.extras.scripts
+    - get.extras.subscriptions
+    - get.extras.table_configs
+    - get.extras.tagged_objects
     - get.extras.tags
     - get.extras.webhooks
     - get.ipam.aggregates
@@ -221,6 +249,8 @@ content:
     - get.ipam.services
     - get.ipam.vlan_groups
     - get.ipam.vlan_groups.available_vlans
+    - get.ipam.vlan_translation_policies
+    - get.ipam.vlan_translation_rules
     - get.ipam.vlans
     - get.ipam.vrfs
     - get.tenancy.contact_assignments
@@ -252,12 +282,17 @@ content:
     - get.wireless.wireless_lan_groups
     - get.wireless.wireless_lans
     - get.wireless.wireless_links
+    - patch.circuits.circuit_group_assignments
+    - patch.circuits.circuit_groups
     - patch.circuits.circuit_terminations
     - patch.circuits.circuit_types
     - patch.circuits.circuits
     - patch.circuits.provider_accounts
     - patch.circuits.provider_networks
     - patch.circuits.providers
+    - patch.circuits.virtual_circuit_terminations
+    - patch.circuits.virtual_circuit_types
+    - patch.circuits.virtual_circuits
     - patch.core.data_sources
     - patch.dcim.cable_terminations
     - patch.dcim.cables
@@ -278,9 +313,11 @@ content:
     - patch.dcim.inventory_item_templates
     - patch.dcim.inventory_items
     - patch.dcim.locations
+    - patch.dcim.mac_addresses
     - patch.dcim.manufacturers
     - patch.dcim.module_bay_templates
     - patch.dcim.module_bays
+    - patch.dcim.module_type_profiles
     - patch.dcim.module_types
     - patch.dcim.modules
     - patch.dcim.platforms
@@ -292,6 +329,7 @@ content:
     - patch.dcim.power_ports
     - patch.dcim.rack_reservations
     - patch.dcim.rack_roles
+    - patch.dcim.rack_types
     - patch.dcim.racks
     - patch.dcim.rear_port_templates
     - patch.dcim.rear_ports
@@ -311,8 +349,12 @@ content:
     - patch.extras.export_templates
     - patch.extras.image_attachments
     - patch.extras.journal_entries
+    - patch.extras.notification_groups
+    - patch.extras.notifications
     - patch.extras.saved_filters
     - patch.extras.scripts
+    - patch.extras.subscriptions
+    - patch.extras.table_configs
     - patch.extras.tags
     - patch.extras.webhooks
     - patch.ipam.aggregates
@@ -329,6 +371,8 @@ content:
     - patch.ipam.service_templates
     - patch.ipam.services
     - patch.ipam.vlan_groups
+    - patch.ipam.vlan_translation_policies
+    - patch.ipam.vlan_translation_rules
     - patch.ipam.vlans
     - patch.ipam.vrfs
     - patch.tenancy.contact_assignments
@@ -360,12 +404,17 @@ content:
     - patch.wireless.wireless_lan_groups
     - patch.wireless.wireless_lans
     - patch.wireless.wireless_links
+    - post.circuits.circuit_group_assignments
+    - post.circuits.circuit_groups
     - post.circuits.circuit_terminations
     - post.circuits.circuit_types
     - post.circuits.circuits
     - post.circuits.provider_accounts
     - post.circuits.provider_networks
     - post.circuits.providers
+    - post.circuits.virtual_circuit_terminations
+    - post.circuits.virtual_circuit_types
+    - post.circuits.virtual_circuits
     - post.core.data_sources
     - post.dcim.cable_terminations
     - post.dcim.cables
@@ -386,9 +435,11 @@ content:
     - post.dcim.inventory_item_templates
     - post.dcim.inventory_items
     - post.dcim.locations
+    - post.dcim.mac_addresses
     - post.dcim.manufacturers
     - post.dcim.module_bay_templates
     - post.dcim.module_bays
+    - post.dcim.module_type_profiles
     - post.dcim.module_types
     - post.dcim.modules
     - post.dcim.platforms
@@ -400,6 +451,7 @@ content:
     - post.dcim.power_ports
     - post.dcim.rack_reservations
     - post.dcim.rack_roles
+    - post.dcim.rack_types
     - post.dcim.racks
     - post.dcim.rear_port_templates
     - post.dcim.rear_ports
@@ -418,8 +470,12 @@ content:
     - post.extras.export_templates
     - post.extras.image_attachments
     - post.extras.journal_entries
+    - post.extras.notification_groups
+    - post.extras.notifications
     - post.extras.saved_filters
     - post.extras.scripts
+    - post.extras.subscriptions
+    - post.extras.table_configs
     - post.extras.tags
     - post.extras.webhooks
     - post.ipam.aggregates
@@ -436,6 +492,8 @@ content:
     - post.ipam.service_templates
     - post.ipam.services
     - post.ipam.vlan_groups
+    - post.ipam.vlan_translation_policies
+    - post.ipam.vlan_translation_rules
     - post.ipam.vlans
     - post.ipam.vrfs
     - post.tenancy.contact_assignments
@@ -468,12 +526,17 @@ content:
     - post.wireless.wireless_lan_groups
     - post.wireless.wireless_lans
     - post.wireless.wireless_links
+    - put.circuits.circuit_group_assignments
+    - put.circuits.circuit_groups
     - put.circuits.circuit_terminations
     - put.circuits.circuit_types
     - put.circuits.circuits
     - put.circuits.provider_accounts
     - put.circuits.provider_networks
     - put.circuits.providers
+    - put.circuits.virtual_circuit_terminations
+    - put.circuits.virtual_circuit_types
+    - put.circuits.virtual_circuits
     - put.core.data_sources
     - put.dcim.cable_terminations
     - put.dcim.cables
@@ -494,9 +557,11 @@ content:
     - put.dcim.inventory_item_templates
     - put.dcim.inventory_items
     - put.dcim.locations
+    - put.dcim.mac_addresses
     - put.dcim.manufacturers
     - put.dcim.module_bay_templates
     - put.dcim.module_bays
+    - put.dcim.module_type_profiles
     - put.dcim.module_types
     - put.dcim.modules
     - put.dcim.platforms
@@ -508,6 +573,7 @@ content:
     - put.dcim.power_ports
     - put.dcim.rack_reservations
     - put.dcim.rack_roles
+    - put.dcim.rack_types
     - put.dcim.racks
     - put.dcim.rear_port_templates
     - put.dcim.rear_ports
@@ -527,8 +593,12 @@ content:
     - put.extras.export_templates
     - put.extras.image_attachments
     - put.extras.journal_entries
+    - put.extras.notification_groups
+    - put.extras.notifications
     - put.extras.saved_filters
     - put.extras.scripts
+    - put.extras.subscriptions
+    - put.extras.table_configs
     - put.extras.tags
     - put.extras.webhooks
     - put.ipam.aggregates
@@ -545,6 +615,8 @@ content:
     - put.ipam.service_templates
     - put.ipam.services
     - put.ipam.vlan_groups
+    - put.ipam.vlan_translation_policies
+    - put.ipam.vlan_translation_rules
     - put.ipam.vlans
     - put.ipam.vrfs
     - put.tenancy.contact_assignments

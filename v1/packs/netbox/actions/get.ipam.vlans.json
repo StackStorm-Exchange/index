@@ -119,6 +119,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -183,6 +188,11 @@
             "description": "Id not equal to",
             "required": false,
             "type": "array"
+        },
+        "interface_id": {
+            "description": "Assigned interface",
+            "required": false,
+            "type": "string"
         },
         "l2vpn": {
             "description": "L2VPN",
@@ -319,8 +329,108 @@
             "required": false,
             "type": "string"
         },
+        "qinq_role": {
+            "description": "Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__empty": {
+            "description": "Qinq_role is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "qinq_role__ic": {
+            "description": "Qinq_role contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__ie": {
+            "description": "Qinq_role exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__iew": {
+            "description": "Qinq_role ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__isw": {
+            "description": "Qinq_role starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__n": {
+            "description": "Qinq_role not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__nic": {
+            "description": "Qinq_role does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__nie": {
+            "description": "Qinq_role inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__niew": {
+            "description": "Qinq_role does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_role__nisw": {
+            "description": "Qinq_role does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_id": {
+            "description": "Q-in-Q SVLAN (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_id__n": {
+            "description": "Qinq_svlan_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_vid": {
+            "description": "Qinq_svlan_vid",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_vid__empty": {
+            "description": "Qinq_svlan_vid is empty/null (boolean)",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_vid__gt": {
+            "description": "Qinq_svlan_vid greater than",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_vid__gte": {
+            "description": "Qinq_svlan_vid greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_vid__lt": {
+            "description": "Qinq_svlan_vid less than",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_vid__lte": {
+            "description": "Qinq_svlan_vid less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "qinq_svlan_vid__n": {
+            "description": "Qinq_svlan_vid not equal to",
+            "required": false,
+            "type": "array"
+        },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -330,7 +440,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -384,7 +494,7 @@
             "type": "array"
         },
         "site_group": {
-            "description": "Site group (slug)",
+            "description": "Site_group",
             "required": false,
             "type": "array"
         },
@@ -394,7 +504,7 @@
             "type": "array"
         },
         "site_group_id": {
-            "description": "Site group (ID)",
+            "description": "Site_group_id",
             "required": false,
             "type": "array"
         },
@@ -418,8 +528,53 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -430,6 +585,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -444,7 +609,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -454,7 +619,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },
@@ -512,6 +677,11 @@
             "description": "Vid not equal to",
             "required": false,
             "type": "array"
+        },
+        "vminterface_id": {
+            "description": "Assigned VM interface",
+            "required": false,
+            "type": "string"
         }
     },
     "runner_type": "python-script"

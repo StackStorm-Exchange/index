@@ -1,0 +1,79 @@
+{
+    "description": "Post a list of table config objects.",
+    "enabled": true,
+    "entry_point": "run.py",
+    "name": "post.extras.table_configs",
+    "parameters": {
+        "columns": {
+            "description": "Columns",
+            "required": false,
+            "type": "array"
+        },
+        "description": {
+            "description": "Description",
+            "required": false,
+            "type": "string"
+        },
+        "enabled": {
+            "description": "Enabled",
+            "required": false,
+            "type": "boolean"
+        },
+        "endpoint_uri": {
+            "default": "/extras/table-configs/",
+            "immutable": true,
+            "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
+        "get_detail_route_eligible": {
+            "default": true,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "http_verb": {
+            "default": "post",
+            "immutable": true,
+            "type": "string"
+        },
+        "name": {
+            "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "object_type": {
+            "description": "Object type",
+            "required": false,
+            "type": "string"
+        },
+        "ordering": {
+            "description": "Ordering",
+            "required": false,
+            "type": "array"
+        },
+        "shared": {
+            "description": "Shared",
+            "required": false,
+            "type": "boolean"
+        },
+        "table": {
+            "description": "Table",
+            "required": false,
+            "type": "string"
+        },
+        "user": {
+            "description": "User",
+            "required": false,
+            "type": "integer"
+        },
+        "weight": {
+            "description": "Weight",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}

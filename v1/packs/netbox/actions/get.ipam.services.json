@@ -4,6 +4,36 @@
     "entry_point": "run.py",
     "name": "get.ipam.services",
     "parameters": {
+        "contact": {
+            "description": "Contact",
+            "required": false,
+            "type": "array"
+        },
+        "contact__n": {
+            "description": "Contact not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "contact_group": {
+            "description": "Contact_group",
+            "required": false,
+            "type": "array"
+        },
+        "contact_group__n": {
+            "description": "Contact_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "contact_role": {
+            "description": "Contact Role",
+            "required": false,
+            "type": "array"
+        },
+        "contact_role__n": {
+            "description": "Contact_role not equal to",
+            "required": false,
+            "type": "array"
+        },
         "created": {
             "description": "Created",
             "required": false,
@@ -100,22 +130,12 @@
             "type": "array"
         },
         "device": {
-            "description": "Device (name)",
-            "required": false,
-            "type": "array"
-        },
-        "device__n": {
-            "description": "Device not equal to",
+            "description": "Device",
             "required": false,
             "type": "array"
         },
         "device_id": {
-            "description": "Device (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "device_id__n": {
-            "description": "Device_id not equal to",
+            "description": "Device_id",
             "required": false,
             "type": "array"
         },
@@ -123,6 +143,21 @@
             "default": "/ipam/services/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
+        "fhrpgroup": {
+            "description": "Fhrpgroup",
+            "required": false,
+            "type": "array"
+        },
+        "fhrpgroup_id": {
+            "description": "Fhrpgroup_id",
+            "required": false,
+            "type": "array"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -186,26 +221,6 @@
         },
         "ip_address_id__n": {
             "description": "Ip_address_id not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "ipaddress": {
-            "description": "IP address",
-            "required": false,
-            "type": "array"
-        },
-        "ipaddress__n": {
-            "description": "Ipaddress not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "ipaddress_id": {
-            "description": "IP address (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "ipaddress_id__n": {
-            "description": "Ipaddress_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -319,6 +334,51 @@
             "required": false,
             "type": "string"
         },
+        "parent_object_id": {
+            "description": "Parent_object_id",
+            "required": false,
+            "type": "array"
+        },
+        "parent_object_id__empty": {
+            "description": "Parent_object_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "parent_object_id__gt": {
+            "description": "Parent_object_id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "parent_object_id__gte": {
+            "description": "Parent_object_id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "parent_object_id__lt": {
+            "description": "Parent_object_id less than",
+            "required": false,
+            "type": "array"
+        },
+        "parent_object_id__lte": {
+            "description": "Parent_object_id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "parent_object_id__n": {
+            "description": "Parent_object_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "parent_object_type": {
+            "description": "Parent_object_type",
+            "required": false,
+            "type": "integer"
+        },
+        "parent_object_type__n": {
+            "description": "Parent_object_type not equal to",
+            "required": false,
+            "type": "integer"
+        },
         "port": {
             "description": "Port",
             "required": false,
@@ -326,11 +386,6 @@
         },
         "protocol": {
             "description": "* `tcp` - TCP * `udp` - UDP * `sctp` - SCTP",
-            "required": false,
-            "type": "string"
-        },
-        "protocol__n": {
-            "description": "Protocol not equal to",
             "required": false,
             "type": "string"
         },
@@ -363,28 +418,28 @@
             "required": false,
             "type": "array"
         },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "updated_by_request": {
             "description": "Updated_by_request",
             "required": false,
             "type": "string"
         },
         "virtual_machine": {
-            "description": "Virtual machine (name)",
-            "required": false,
-            "type": "array"
-        },
-        "virtual_machine__n": {
-            "description": "Virtual_machine not equal to",
+            "description": "Virtual_machine",
             "required": false,
             "type": "array"
         },
         "virtual_machine_id": {
-            "description": "Virtual machine (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "virtual_machine_id__n": {
-            "description": "Virtual_machine_id not equal to",
+            "description": "Virtual_machine_id",
             "required": false,
             "type": "array"
         }

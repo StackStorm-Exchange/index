@@ -19,15 +19,15 @@
             "required": false,
             "type": "string"
         },
-        "device": {
-            "description": "Device",
-            "required": false,
-            "type": "object"
-        },
         "endpoint_uri": {
             "default": "/ipam/services/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -49,6 +49,16 @@
             "required": false,
             "type": "string"
         },
+        "parent_object_id": {
+            "description": "Parent object id",
+            "required": false,
+            "type": "integer"
+        },
+        "parent_object_type": {
+            "description": "Parent object type",
+            "required": false,
+            "type": "string"
+        },
         "ports": {
             "description": "Port numbers",
             "required": false,
@@ -63,11 +73,6 @@
             "description": "Array of tag strings",
             "required": false,
             "type": "array"
-        },
-        "virtual_machine": {
-            "description": "Virtual machine",
-            "required": false,
-            "type": "object"
         }
     },
     "runner_type": "python-script"

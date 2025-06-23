@@ -39,6 +39,36 @@
             "required": false,
             "type": "array"
         },
+        "contact": {
+            "description": "Contact",
+            "required": false,
+            "type": "array"
+        },
+        "contact__n": {
+            "description": "Contact not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "contact_group": {
+            "description": "Contact_group",
+            "required": false,
+            "type": "array"
+        },
+        "contact_group__n": {
+            "description": "Contact_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "contact_role": {
+            "description": "Contact Role",
+            "required": false,
+            "type": "array"
+        },
+        "contact_role__n": {
+            "description": "Contact_role not equal to",
+            "required": false,
+            "type": "array"
+        },
         "contains": {
             "description": "Prefixes which contain this prefix or IP",
             "required": false,
@@ -179,6 +209,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "family": {
             "description": "Family",
             "required": false,
@@ -274,6 +309,26 @@
             "required": false,
             "type": "integer"
         },
+        "location": {
+            "description": "Location",
+            "required": false,
+            "type": "array"
+        },
+        "location__n": {
+            "description": "Location not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "location_id": {
+            "description": "Location_id",
+            "required": false,
+            "type": "array"
+        },
+        "location_id__n": {
+            "description": "Location_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "mark_utilized": {
             "description": "Mark_utilized",
             "required": false,
@@ -330,7 +385,7 @@
             "type": "string"
         },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -340,7 +395,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -383,6 +438,51 @@
             "description": "TTL (seconds) of the saved json result in the st2 key store. Defaults to 60 seconds. Must be used with save_in_key_store and save_in_key_store_key_name.",
             "type": "integer"
         },
+        "scope_id": {
+            "description": "Scope_id",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__empty": {
+            "description": "Scope_id is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "scope_id__gt": {
+            "description": "Scope_id greater than",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__gte": {
+            "description": "Scope_id greater than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__lt": {
+            "description": "Scope_id less than",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__lte": {
+            "description": "Scope_id less than or equal to",
+            "required": false,
+            "type": "array"
+        },
+        "scope_id__n": {
+            "description": "Scope_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "scope_type": {
+            "description": "Scope_type",
+            "required": false,
+            "type": "string"
+        },
+        "scope_type__n": {
+            "description": "Scope_type not equal to",
+            "required": false,
+            "type": "string"
+        },
         "site": {
             "description": "Site (slug)",
             "required": false,
@@ -394,7 +494,7 @@
             "type": "array"
         },
         "site_group": {
-            "description": "Site group (slug)",
+            "description": "Site_group",
             "required": false,
             "type": "array"
         },
@@ -404,7 +504,7 @@
             "type": "array"
         },
         "site_group_id": {
-            "description": "Site group (ID)",
+            "description": "Site_group_id",
             "required": false,
             "type": "array"
         },
@@ -428,8 +528,53 @@
             "required": false,
             "type": "array"
         },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "status__n": {
             "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -440,6 +585,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },
@@ -454,7 +609,7 @@
             "type": "array"
         },
         "tenant_group": {
-            "description": "Tenant Group (slug)",
+            "description": "Tenant_group",
             "required": false,
             "type": "array"
         },
@@ -464,7 +619,7 @@
             "type": "array"
         },
         "tenant_group_id": {
-            "description": "Tenant Group (ID)",
+            "description": "Tenant_group_id",
             "required": false,
             "type": "array"
         },
@@ -487,6 +642,26 @@
             "description": "Updated_by_request",
             "required": false,
             "type": "string"
+        },
+        "vlan_group": {
+            "description": "VLAN Group (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_group__n": {
+            "description": "Vlan_group not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_group_id": {
+            "description": "VLAN Group (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "vlan_group_id__n": {
+            "description": "Vlan_group_id not equal to",
+            "required": false,
+            "type": "array"
         },
         "vlan_id": {
             "description": "VLAN (ID)",

@@ -19,11 +19,6 @@
             "required": false,
             "type": "string"
         },
-        "cable_end__n": {
-            "description": "Cable_end not equal to",
-            "required": false,
-            "type": "string"
-        },
         "created": {
             "description": "Created",
             "required": false,
@@ -68,6 +63,11 @@
             "default": "/dcim/cable-terminations/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,

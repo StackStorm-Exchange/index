@@ -219,6 +219,81 @@
             "required": false,
             "type": "array"
         },
+        "device_role": {
+            "description": "Device role (slug)",
+            "required": false,
+            "type": "array"
+        },
+        "device_role__n": {
+            "description": "Device_role not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_role_id": {
+            "description": "Device role (ID)",
+            "required": false,
+            "type": "array"
+        },
+        "device_role_id__n": {
+            "description": "Device_role_id not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_status": {
+            "description": "Device_status",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__empty": {
+            "description": "Device_status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "device_status__ic": {
+            "description": "Device_status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__ie": {
+            "description": "Device_status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__iew": {
+            "description": "Device_status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__isw": {
+            "description": "Device_status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__n": {
+            "description": "Device_status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__nic": {
+            "description": "Device_status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__nie": {
+            "description": "Device_status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__niew": {
+            "description": "Device_status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "device_status__nisw": {
+            "description": "Device_status does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "device_type": {
             "description": "Device type (model)",
             "required": false,
@@ -248,6 +323,11 @@
             "default": "/dcim/inventory-items/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -590,7 +670,7 @@
             "type": "array"
         },
         "region": {
-            "description": "Region (slug)",
+            "description": "Region",
             "required": false,
             "type": "array"
         },
@@ -600,7 +680,7 @@
             "type": "array"
         },
         "region_id": {
-            "description": "Region (ID)",
+            "description": "Region_id",
             "required": false,
             "type": "array"
         },
@@ -709,7 +789,7 @@
             "type": "array"
         },
         "site_group": {
-            "description": "Site group (slug)",
+            "description": "Site_group",
             "required": false,
             "type": "array"
         },
@@ -719,7 +799,7 @@
             "type": "array"
         },
         "site_group_id": {
-            "description": "Site group (ID)",
+            "description": "Site_group_id",
             "required": false,
             "type": "array"
         },
@@ -738,6 +818,61 @@
             "required": false,
             "type": "array"
         },
+        "status": {
+            "description": "Status",
+            "required": false,
+            "type": "array"
+        },
+        "status__empty": {
+            "description": "Status is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "status__ic": {
+            "description": "Status contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__ie": {
+            "description": "Status exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__iew": {
+            "description": "Status ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__isw": {
+            "description": "Status starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__n": {
+            "description": "Status not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "status__nic": {
+            "description": "Status does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nie": {
+            "description": "Status inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__niew": {
+            "description": "Status does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "status__nisw": {
+            "description": "Status does not start with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "tag": {
             "description": "Tag",
             "required": false,
@@ -745,6 +880,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },

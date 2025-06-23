@@ -49,6 +49,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -189,8 +194,53 @@
             "required": false,
             "type": "array"
         },
+        "role__empty": {
+            "description": "Role is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "role__ic": {
+            "description": "Role contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__ie": {
+            "description": "Role exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__iew": {
+            "description": "Role ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__isw": {
+            "description": "Role starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "role__n": {
             "description": "Role not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "role__nic": {
+            "description": "Role does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__nie": {
+            "description": "Role inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__niew": {
+            "description": "Role does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "role__nisw": {
+            "description": "Role does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -215,6 +265,16 @@
         },
         "tag__n": {
             "description": "Tag not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
             "required": false,
             "type": "array"
         },

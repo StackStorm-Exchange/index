@@ -109,20 +109,15 @@
             "required": false,
             "type": "array"
         },
-        "devicetype_id": {
-            "description": "Device type (ID)",
-            "required": false,
-            "type": "array"
-        },
-        "devicetype_id__n": {
-            "description": "Devicetype_id not equal to",
-            "required": false,
-            "type": "array"
-        },
         "endpoint_uri": {
             "default": "/dcim/device-bay-templates/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,

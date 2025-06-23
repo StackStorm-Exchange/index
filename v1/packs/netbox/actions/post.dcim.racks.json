@@ -4,6 +4,11 @@
     "entry_point": "run.py",
     "name": "post.dcim.racks",
     "parameters": {
+        "airflow": {
+            "description": "* `front-to-rear` - Front to rear * `rear-to-front` - Rear to front",
+            "required": false,
+            "type": "string"
+        },
         "asset_tag": {
             "description": "A unique tag used to identify this rack",
             "required": false,
@@ -36,6 +41,16 @@
         },
         "facility_id": {
             "description": "Facility id",
+            "required": false,
+            "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
+        "form_factor": {
+            "description": "* `2-post-frame` - 2-post frame * `4-post-frame` - 4-post frame * `4-post-cabinet` - 4-post cabinet * `wall-frame` - Wall-mounted frame * `wall-frame-vertical` - Wall-mounted frame (vertical) * `wall-cabinet` - Wall-mounted cabinet * `wall-cabinet-vertical` - Wall-mounted cabinet (vertical)",
             "required": false,
             "type": "string"
         },
@@ -74,6 +89,11 @@
             "required": false,
             "type": "integer"
         },
+        "outer_height": {
+            "description": "Outer dimension of rack (height)",
+            "required": false,
+            "type": "integer"
+        },
         "outer_unit": {
             "description": "* `mm` - Millimeters * `in` - Inches",
             "required": false,
@@ -83,6 +103,11 @@
             "description": "Outer dimension of rack (width)",
             "required": false,
             "type": "integer"
+        },
+        "rack_type": {
+            "description": "Rack type",
+            "required": false,
+            "type": "object"
         },
         "role": {
             "description": "Role",
@@ -118,11 +143,6 @@
             "description": "Tenant",
             "required": false,
             "type": "object"
-        },
-        "type": {
-            "description": "* `2-post-frame` - 2-post frame * `4-post-frame` - 4-post frame * `4-post-cabinet` - 4-post cabinet * `wall-frame` - Wall-mounted frame * `wall-frame-vertical` - Wall-mounted frame (vertical) * `wall-cabinet` - Wall-mounted cabinet * `wall-cabinet-vertical` - Wall-mounted cabinet (vertical)",
-            "required": false,
-            "type": "string"
         },
         "u_height": {
             "description": "Height (U)",

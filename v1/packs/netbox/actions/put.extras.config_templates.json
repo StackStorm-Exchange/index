@@ -4,6 +4,16 @@
     "entry_point": "run.py",
     "name": "put.extras.config_templates",
     "parameters": {
+        "as_attachment": {
+            "description": "Download file as attachment",
+            "required": false,
+            "type": "boolean"
+        },
+        "data_source": {
+            "description": "Data source",
+            "required": false,
+            "type": "object"
+        },
         "description": {
             "description": "Description",
             "required": false,
@@ -12,6 +22,26 @@
         "endpoint_uri": {
             "default": "/extras/config-templates/{{ id }}/",
             "immutable": true,
+            "type": "string"
+        },
+        "environment_params": {
+            "description": "Environment parameters",
+            "required": false,
+            "type": "object"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
+        "file_extension": {
+            "description": "Extension to append to the rendered filename",
+            "required": false,
+            "type": "string"
+        },
+        "file_name": {
+            "description": "Filename to give to the rendered export file",
+            "required": false,
             "type": "string"
         },
         "get_detail_route_eligible": {
@@ -29,8 +59,23 @@
             "required": true,
             "type": "integer"
         },
+        "mime_type": {
+            "description": "Defaults to &lt;code&gt;text/plain; charset=utf-8&lt;/code&gt;",
+            "required": false,
+            "type": "string"
+        },
         "name": {
             "description": "Name",
+            "required": false,
+            "type": "string"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
+        },
+        "template_code": {
+            "description": "Jinja template code.",
             "required": false,
             "type": "string"
         }

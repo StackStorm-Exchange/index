@@ -9,6 +9,16 @@
             "required": false,
             "type": "string"
         },
+        "comments": {
+            "description": "Comments",
+            "required": false,
+            "type": "string"
+        },
+        "custom_fields": {
+            "description": "Custom fields",
+            "required": false,
+            "type": "object"
+        },
         "description": {
             "description": "Description",
             "required": false,
@@ -18,6 +28,11 @@
             "default": "/circuits/provider-accounts/{{ id }}/",
             "immutable": true,
             "type": "string"
+        },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
         },
         "get_detail_route_eligible": {
             "default": true,
@@ -38,6 +53,16 @@
             "description": "Name",
             "required": false,
             "type": "string"
+        },
+        "provider": {
+            "description": "Provider",
+            "required": false,
+            "type": "object"
+        },
+        "tags": {
+            "description": "Array of tag strings",
+            "required": false,
+            "type": "array"
         }
     },
     "runner_type": "python-script"

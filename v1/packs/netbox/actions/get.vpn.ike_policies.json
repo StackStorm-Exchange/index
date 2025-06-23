@@ -104,6 +104,11 @@
             "immutable": true,
             "type": "string"
         },
+        "fail_non_2xx": {
+            "default": false,
+            "description": "Set action as failed when http return reponse status isn't 2xx.",
+            "type": "boolean"
+        },
         "get_detail_route_eligible": {
             "default": true,
             "immutable": true,
@@ -214,8 +219,53 @@
             "required": false,
             "type": "array"
         },
+        "mode__empty": {
+            "description": "Mode is empty/null (boolean)",
+            "required": false,
+            "type": "boolean"
+        },
+        "mode__ic": {
+            "description": "Mode contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__ie": {
+            "description": "Mode exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__iew": {
+            "description": "Mode ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__isw": {
+            "description": "Mode starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "mode__n": {
             "description": "Mode not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "mode__nic": {
+            "description": "Mode does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__nie": {
+            "description": "Mode inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__niew": {
+            "description": "Mode does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "mode__nisw": {
+            "description": "Mode does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         },
@@ -339,26 +389,6 @@
             "required": false,
             "type": "string"
         },
-        "proposal": {
-            "description": "Proposal",
-            "required": false,
-            "type": "array"
-        },
-        "proposal__n": {
-            "description": "Proposal not equal to",
-            "required": false,
-            "type": "array"
-        },
-        "proposal_id": {
-            "description": "Proposal_id",
-            "required": false,
-            "type": "array"
-        },
-        "proposal_id__n": {
-            "description": "Proposal_id not equal to",
-            "required": false,
-            "type": "array"
-        },
         "q": {
             "description": "Search",
             "required": false,
@@ -388,6 +418,16 @@
             "required": false,
             "type": "array"
         },
+        "tag_id": {
+            "description": "Tag_id",
+            "required": false,
+            "type": "array"
+        },
+        "tag_id__n": {
+            "description": "Tag_id not equal to",
+            "required": false,
+            "type": "array"
+        },
         "updated_by_request": {
             "description": "Updated_by_request",
             "required": false,
@@ -398,8 +438,48 @@
             "required": false,
             "type": "array"
         },
+        "version__ic": {
+            "description": "Version contains (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "version__ie": {
+            "description": "Version exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "version__iew": {
+            "description": "Version ends with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "version__isw": {
+            "description": "Version starts with (case-sensitive)",
+            "required": false,
+            "type": "array"
+        },
         "version__n": {
             "description": "Version not equal to",
+            "required": false,
+            "type": "array"
+        },
+        "version__nic": {
+            "description": "Version does not contain (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "version__nie": {
+            "description": "Version inverse exact match (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "version__niew": {
+            "description": "Version does not end with (case-insensitive)",
+            "required": false,
+            "type": "array"
+        },
+        "version__nisw": {
+            "description": "Version does not start with (case-sensitive)",
             "required": false,
             "type": "array"
         }
