@@ -1,0 +1,32 @@
+{
+    "description": "get configuration of IP address of Interface",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "get_interface_ve_v21",
+    "parameters": {
+        "action": {
+            "default": "get",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "type": "string"
+        },
+        "object_path": {
+            "default": "interface.virtual_ethernet",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": false,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "specified_target": {
+            "description": "Specify the target dynamically, (key: 'target', 'api_version', 'userid', 'passwd')",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

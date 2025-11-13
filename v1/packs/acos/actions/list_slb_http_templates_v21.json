@@ -1,0 +1,37 @@
+{
+    "description": "lists HTTP Template entries which are registered in SLB",
+    "enabled": true,
+    "entry_point": "ax_action_runner.py",
+    "name": "list_slb_http_templates_v21",
+    "parameters": {
+        "action": {
+            "default": "all",
+            "immutable": true,
+            "type": "string"
+        },
+        "appliance": {
+            "description": "The appliance information to connect, which is specified at the 'appliance' parameter in the configuration.",
+            "type": "string"
+        },
+        "name": {
+            "default": "",
+            "immutable": true,
+            "type": "string"
+        },
+        "object_path": {
+            "default": "slb.template.http_templates",
+            "immutable": true,
+            "type": "string"
+        },
+        "one_target": {
+            "default": false,
+            "immutable": true,
+            "type": "boolean"
+        },
+        "specified_target": {
+            "description": "Specify the target dynamically, (key: 'target', 'api_version', 'userid', 'passwd')",
+            "type": "object"
+        }
+    },
+    "runner_type": "python-script"
+}

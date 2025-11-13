@@ -1,11 +1,12 @@
 {
-    "description": "register a server to the SLB",
+    "description": "Update SLB virtual-server configuration",
     "enabled": true,
     "entry_point": "ax_action_runner.py",
-    "name": "add_slb_server",
+    "name": "update_slb_virtual_server",
+    "pack": "acos",
     "parameters": {
         "action": {
-            "default": "create",
+            "default": "update",
             "immutable": true,
             "type": "string"
         },
@@ -14,23 +15,17 @@
             "required": true,
             "type": "string"
         },
-        "health_check": {
-            "default": "ping",
-            "description": "name of health monitor for adding Server",
-            "type": "string"
-        },
         "ip_address": {
-            "description": "IP address of Server to add",
-            "required": true,
+            "description": "IP address to set target virtual-server",
             "type": "string"
         },
         "name": {
-            "description": "name of Server to add",
-            "required": true,
+            "default": "",
+            "description": "the name of VirtualPort to be registered",
             "type": "string"
         },
         "object_path": {
-            "default": "slb.server",
+            "default": "slb.virtual_server",
             "immutable": true,
             "type": "string"
         },
@@ -39,18 +34,17 @@
             "immutable": true,
             "type": "boolean"
         },
+        "port_list": {
+            "description": "Port information to set target virtual-server\n(c.f. https://acos.docs.a10networks.com/axapi/521/slb_virtual_server.html#port-list)\n",
+            "type": "array"
+        },
         "specified_target": {
             "description": "Specify the target dynamically, (key: 'target', 'api_version', 'userid', 'passwd')",
             "type": "object"
         },
-        "status": {
-            "default": false,
-            "description": "When it is set to True, the 'Action' parameter of registering server will be 'Enable'",
-            "enum": [
-                true,
-                false
-            ],
-            "type": "boolean"
+        "vrid": {
+            "description": "VRID to set target virtual-server (1-31)",
+            "type": "integer"
         }
     },
     "runner_type": "python-script"

@@ -1,14 +1,14 @@
 {
     "metadata": {
-        "generated_ts": 1762565423,
-        "hash": "894bafbd20900866aeb69fee620d63d9"
+        "generated_ts": 1763012489,
+        "hash": "e1d4ac9954a1e4a753d9c0fc01940f43"
     },
     "packs": {
         "acos": {
             "author": "Hiroyasu OHYAMA",
             "content": {
                 "actions": {
-                    "count": 29,
+                    "count": 35,
                     "resources": [
                         "add_slb_server",
                         "add_slb_server_port",
@@ -24,12 +24,17 @@
                         "del_slb_virtual_server",
                         "del_slb_virtual_server_port",
                         "delete_ip_nat_pool",
+                        "get_interface",
+                        "get_interface_ve_v21",
                         "get_ip_nat_pool",
                         "get_slb_server",
                         "get_slb_service_group",
                         "get_slb_service_group_members",
                         "get_slb_virtual_server",
+                        "get_vrrpa",
+                        "get_vrrpa_v21",
                         "list_ip_nat_pool",
+                        "list_slb_http_templates_v21",
                         "list_slb_policy_templates_v21",
                         "list_slb_servers",
                         "list_slb_servers_v21",
@@ -38,7 +43,8 @@
                         "list_slb_templates",
                         "list_slb_virtual_servers",
                         "list_slb_virtual_servers_v21",
-                        "update_slb_service_group_member"
+                        "update_slb_service_group_member",
+                        "update_slb_virtual_server"
                     ]
                 },
                 "tests": {
@@ -66,13 +72,14 @@
             ],
             "ref": "acos",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-acos",
-            "version": "1.6.0",
+            "version": "1.10.0",
             "versions": [
                 "1.6.0",
                 "1.5.0",
                 "1.4.0",
                 "1.3.0",
                 "1.2.0",
+                "1.10.0",
                 "1.1.0",
                 "1.0.0",
                 "0.2.6",
