@@ -5,14 +5,14 @@ keywords:
 - issues
 - ticket management
 - project management
-version: 3.2.3
+version: 3.3.0
 python_versions:
 - '3'
 author: StackStorm, Inc.
 email: info@stackstorm.com
 content:
   actions:
-    count: 31
+    count: 32
     resources:
     - add_field_value
     - add_gadget
@@ -37,6 +37,7 @@ content:
     - link_issue
     - remove_gadget
     - search_issues
+    - search_users
     - set_dashboard_item_property
     - transition_issue
     - transition_issue_by_name

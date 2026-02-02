@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "generated_ts": 1768952270,
-        "hash": "f45533de872348ea8a83d598cfe4df7e"
+        "generated_ts": 1770044550,
+        "hash": "62b7f35c9bd5ad19c530fb979b0b43ef"
     },
     "packs": {
         "acos": {
@@ -9337,7 +9337,7 @@
             "author": "StackStorm, Inc.",
             "content": {
                 "actions": {
-                    "count": 31,
+                    "count": 32,
                     "resources": [
                         "add_field_value",
                         "add_gadget",
@@ -9362,6 +9362,7 @@
                         "link_issue",
                         "remove_gadget",
                         "search_issues",
+                        "search_users",
                         "set_dashboard_item_property",
                         "transition_issue",
                         "transition_issue_by_name",
@@ -9417,8 +9418,9 @@
             ],
             "ref": "jira",
             "repo_url": "https://github.com/StackStorm-Exchange/stackstorm-jira",
-            "version": "3.2.3",
+            "version": "3.3.0",
             "versions": [
+                "3.3.0",
                 "3.2.3",
                 "3.2.2",
                 "3.2.1",

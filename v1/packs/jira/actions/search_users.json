@@ -1,0 +1,38 @@
+{
+    "description": "Search JIRA users with a query",
+    "enabled": true,
+    "entry_point": "search_users.py",
+    "name": "search_users",
+    "parameters": {
+        "include_active": {
+            "default": true,
+            "description": "True to include active users.",
+            "required": false,
+            "type": "boolean"
+        },
+        "include_inactive": {
+            "default": false,
+            "description": "True to include inactive users.",
+            "required": false,
+            "type": "boolean"
+        },
+        "max_results": {
+            "default": 50,
+            "description": "Maximum number of returned results",
+            "required": false,
+            "type": "integer"
+        },
+        "query": {
+            "description": "Query string. Can be something like an email.",
+            "required": true,
+            "type": "string"
+        },
+        "start_at": {
+            "default": 0,
+            "description": "Offset for pagination",
+            "required": false,
+            "type": "integer"
+        }
+    },
+    "runner_type": "python-script"
+}
